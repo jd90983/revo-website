@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta Tags -->
+  <title>Pricing | Revo - AI Receptionist</title>
+  <meta name="title" content="Pricing | Revo - AI Receptionist">
+  <meta name="description" content="Discover Revo's flexible pricing plans for AI receptionist services.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://revo.app/pricing">
+  <meta property="og:title" content="Pricing | Revo - AI Receptionist">
+  <meta property="og:description" content="Discover Revo's flexible pricing plans for AI receptionist services.">
+  <meta property="og:image" content="/images/og-image.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://revo.app/pricing">
+  <meta property="twitter:title" content="Pricing | Revo - AI Receptionist">
+  <meta property="twitter:description" content="Discover Revo's flexible pricing plans.">
+  <meta property="twitter:image" content="/images/twitter-image.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend+Deca:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <style>
+    /* Under Construction Specific Styles */
+    .under-construction {
+      min-height: calc(100vh - 72px - 200px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-3xl) var(--page-padding);
+      background: radial-gradient(circle at 50% 50%, rgba(15, 90, 215, 0.1) 0%, rgba(0, 0, 0, 0) 70%),
+                  linear-gradient(180deg, rgba(0, 0, 0, 0.95) 0%, rgba(34, 35, 36, 1) 100%);
+    }
+
+    .construction-container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .construction-icon {
+      width: 120px;
+      height: 120px;
+      margin: 0 auto var(--space-xl);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15, 90, 215, 0.1);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(15, 90, 215, 0.4);
+      }
+      50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 20px rgba(15, 90, 215, 0);
+      }
+    }
+
+    .construction-container h1 {
+      font-size: 56px;
+      margin-bottom: var(--space-md);
+      background: linear-gradient(135deg, var(--color-primary) 0%, #6b9dff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .construction-container .tagline {
+      display: inline-block;
+      margin-bottom: var(--space-lg);
+    }
+
+    .construction-container p {
+      font-size: var(--text-large);
+      line-height: var(--line-height-relaxed);
+      color: var(--color-gray-light);
+      margin-bottom: var(--space-xl);
+    }
+
+    .construction-actions {
+      display: flex;
+      gap: var(--space-md);
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: var(--space-2xl);
+    }
+
+    .construction-features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-lg);
+      margin-top: var(--space-2xl);
+    }
+
+    .construction-feature-item {
+      padding: var(--space-lg);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--color-white-10);
+      border-radius: var(--radius-lg);
+      transition: all var(--transition-base);
+    }
+
+    .construction-feature-item:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: var(--color-primary);
+      transform: translateY(-4px);
+    }
+
+    .construction-feature-item svg {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto var(--space-md);
+      display: block;
+    }
+
+    .construction-feature-item h3 {
+      font-size: 20px;
+      font-weight: var(--font-bold);
+      margin-bottom: var(--space-xs);
+      color: var(--color-white);
+    }
+
+    .construction-feature-item p {
+      font-size: var(--text-small);
+      color: var(--color-gray-light);
+      margin: 0;
+    }
+
+    @media (max-width: 767px) {
+      .construction-container h1 {
+        font-size: 40px;
+      }
+
+      .construction-features {
+        grid-template-columns: 1fr;
+      }
+
+      .construction-actions {
+        flex-direction: column;
+      }
+
+      .construction-actions button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Skip to main content for accessibility -->
+  <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="navbar-container">
+      <div class="navbar-logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Revo - AI Receptionist" width="120" height="40">
+        </a>
+      </div>
+      <ul class="navbar-menu">
+        <li><a href="index.html#services">Services</a></li>
+        <li><a href="industries.html">Industries</a></li>
+        <li class="dropdown">
+          <a href="#resources">
+            Resources
+            <svg class="chevron" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1.5L6 6.5L11 1.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </li>
+        <li><a href="pricing.html" class="active">Pricing</a></li>
+      </ul>
+      <div class="navbar-actions">
+        <a href="tel:+18445231919" class="btn-phone">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          (844) 523-1919
+        </a>
+        <button class="btn-secondary">Login</button>
+        <button class="btn-primary">Get Started</button>
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <section class="under-construction">
+      <div class="construction-container">
+        <div class="construction-icon">
+          <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 8L8 20V44L32 56L56 44V20L32 8Z" stroke="#0f5ad7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M32 8V32M8 20L32 32L56 20M32 32L32 56" stroke="#0f5ad7" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="32" cy="32" r="4" fill="#0f5ad7"/>
+          </svg>
+        </div>
+
+        <span class="tagline">COMING SOON</span>
+        <h1>Pricing Plans Under Construction</h1>
+        <p>
+          We're crafting flexible pricing plans designed to fit businesses of all sizes.
+          From startups to enterprises, Revo will offer transparent, value-driven options
+          that scale with your needs.
+        </p>
+
+        <div class="construction-actions">
+          <button class="btn-primary-large" onclick="window.location.href='index.html'">Back to Home</button>
+          <button class="btn-secondary-large" onclick="window.location.href='tel:+18445231919'">Contact Sales</button>
+        </div>
+
+        <div class="construction-features">
+          <div class="construction-feature-item">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="8" fill="rgba(15, 90, 215, 0.1)"/>
+              <path d="M24 16V32M18 22H30M18 26H30" stroke="#0f5ad7" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h3>Flexible Plans</h3>
+            <p>Options tailored to your business size and call volume</p>
+          </div>
+
+          <div class="construction-feature-item">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="8" fill="rgba(15, 90, 215, 0.1)"/>
+              <circle cx="24" cy="24" r="8" stroke="#0f5ad7" stroke-width="2"/>
+              <path d="M20 24L22 26L28 20" stroke="#0f5ad7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>No Hidden Fees</h3>
+            <p>Transparent pricing with no surprises</p>
+          </div>
+
+          <div class="construction-feature-item">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" rx="8" fill="rgba(15, 90, 215, 0.1)"/>
+              <path d="M16 24L24 16L32 24M24 16V32" stroke="#0f5ad7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <h3>Easy Scaling</h3>
+            <p>Upgrade or downgrade anytime as your business grows</p>
+          </div>
+        </div>
+
+        <p style="margin-top: 3rem; font-size: 14px;">
+          Want to learn more about pricing? <a href="tel:+18445231919" style="color: var(--color-primary); text-decoration: underline;">Call us at (844) 523-1919</a>
+          or <a href="index.html#demo" style="color: var(--color-primary); text-decoration: underline;">book a demo</a> to discuss your specific needs.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+          <div class="newsletter-logo">
+            <img src="images/logo.png" alt="Revo" width="120" height="40">
+          </div>
+          <h3>Stay ahead with Revo's latest AI communication insights</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter-disclaimer">
+            By subscribing, you agree to our <a href="#privacy">privacy policy</a> and consent to receive updates from our company.
+          </p>
+        </div>
+
+        <!-- Links -->
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Quick links</h4>
+            <ul>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="industries.html">Industries</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#demo">Demo</a></li>
+              <li><a href="#support">Support</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#resources">Resources</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h4>Connect with us</h4>
+            <ul class="social-links">
+              <li>
+                <a href="#facebook">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="#instagram">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Instagram
+                </a>
+              </li>
+              <li>
+                <a href="#twitter">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 4l9 9m0 0l9 9m-9-9l9-9m-9 9l-9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  X
+                </a>
+              </li>
+              <li>
+                <a href="#linkedin">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="#youtube">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                    <path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  YouTube
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom">
+        <p>© 2024 Revo. All communication rights reserved</p>
+        <div class="footer-legal">
+          <a href="#privacy">Privacy policy</a>
+          <a href="#terms">Terms of service</a>
+          <a href="#cookies">Cookie settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/navigation.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
