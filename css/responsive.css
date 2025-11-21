@@ -10,6 +10,11 @@
     gap: var(--space-2xl);
   }
 
+  /* Dashboard Image */
+  .dashboard-image {
+    max-width: 350px;
+  }
+
   /* Stats Section */
   .stats-content {
     grid-template-columns: 1fr;
@@ -109,6 +114,15 @@
 
   .features-left h2 {
     font-size: 36px;
+  }
+
+  /* Dashboard Image */
+  .dashboard-image-container {
+    margin-top: 30px;
+  }
+
+  .dashboard-image {
+    max-width: 300px;
   }
 
   .features-grid {
@@ -220,6 +234,15 @@
     font-size: 32px;
   }
 
+  /* Dashboard Image */
+  .dashboard-image-container {
+    margin-top: 24px;
+  }
+
+  .dashboard-image {
+    max-width: 250px;
+  }
+
   .stat-card .stat-number {
     font-size: 56px;
   }
@@ -267,7 +290,8 @@
   .feature-card:hover,
   .how-card:hover,
   .stat-card:hover,
-  .testimonial-card:hover {
+  .testimonial-card:hover,
+  .dashboard-image:hover {
     transform: none;
   }
 

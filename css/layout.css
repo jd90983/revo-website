@@ -143,13 +143,37 @@
   inset: 0;
   z-index: 0;
   background: url('../images/hero-bg.jpeg') no-repeat center center;
-  background-size: cover;
+  background-size: 100% auto; /* Fit width, height scales proportionally - no excessive zoom */
   overflow: hidden;
+}
+
+/* Gradient overlay at bottom of hero - ultra smooth seamless blend */
+.hero-background::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 800px; /* Extra long for imperceptible transition */
+  background: linear-gradient(180deg,
+    rgba(10,11,12,0) 0%,
+    rgba(10,11,12,0.05) 15%,
+    rgba(10,11,12,0.1) 25%,
+    rgba(10,11,12,0.18) 35%,
+    rgba(10,11,12,0.28) 45%,
+    rgba(10,11,12,0.4) 55%,
+    rgba(10,11,12,0.55) 65%,
+    rgba(10,11,12,0.7) 75%,
+    rgba(10,11,12,0.85) 85%,
+    rgba(10,11,12,0.95) 92%,
+    rgba(10,11,12,1) 100%);
+  pointer-events: none;
+  z-index: 1;
 }
 
 .hero-container {
   position: relative;
-  z-index: 1;
+  z-index: 2; /* Above gradient overlay */
   max-width: 1280px;
   margin: 0 auto;
   display: flex;
@@ -244,36 +268,308 @@
 }
 
 /* ===== FEATURES SECTION ===== */
+/* EXACT FIGMA SPECIFICATIONS - Pure Black Background */
 
 .features {
-  background: var(--color-dark-bg);
+  background-color: #0a0b0c; /* EXACT: Pure black - removed gradients for cleaner blend from hero */
+  padding: 112px 64px; /* EXACT: 112px vertical, 64px horizontal */
 }
 
 .features-container {
   max-width: 1280px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--space-xl);
-  align-items: start;
+  display: flex;
+  gap: 80px; /* EXACT: 80px between columns */
+  align-items: flex-start;
+}
+
+/* Left Column */
+.features-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.features-left .tagline {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #e7eefb; /* EXACT: Light blue */
+  margin-bottom: 16px;
+  display: block;
 }
 
 .features-left h2 {
-  font-size: var(--text-h2);
-  line-height: var(--line-height-tight);
-  margin-bottom: 0;
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  font-size: 52px; /* EXACT: 52px per Figma */
+  line-height: 1.2;
+  letter-spacing: -0.52px; /* EXACT: -0.52px */
+  color: #ffffff;
+  margin: 0;
+}
+
+/* 3D Dashboard Image */
+.dashboard-image-container {
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-image {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0px 20px 40px rgba(15, 90, 215, 0.3))
+          drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.5));
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.dashboard-image:hover {
+  transform: translateY(-4px) scale(1.02);
+  filter: drop-shadow(0px 24px 48px rgba(15, 90, 215, 0.4))
+          drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.6));
+}
+
+/* Right Column */
+.features-right {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 75px; /* EXACT: 75px between sections */
 }
 
 .features-description {
-  font-size: var(--text-large);
-  line-height: var(--line-height-relaxed);
-  margin-bottom: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
 }
 
-.features-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-md);
+.features-description p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 18px; /* EXACT: 18px */
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0 0 18px 0;
+}
+
+.features-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Feature Cards Wrapper - Contains both cards */
+.features-cards-wrapper {
+  width: 100%;
+  margin: 0;
+}
+
+/* Feature Cards Container - Row layout */
+.features-cards-container {
+  display: flex;
+  gap: 24px; /* EXACT: 24px gap between cards */
+  width: 100%;
+}
+
+/* Individual Feature Card - GRADIENT BORDER ON 3 SIDES! */
+.features-cards-container .feature-card {
+  flex: 1;
+  display: flex;
+  gap: 10px; /* EXACT: 10px between icon and content */
+  align-items: flex-start;
+  padding: 15px 20px; /* EXACT: 15px vertical, 20px horizontal */
+  border-radius: 0 0 10px 10px; /* Only round BOTTOM corners - top blends with background */
+  box-sizing: border-box;
+  position: relative;
+
+  /* Gradient borders on LEFT, RIGHT, and BOTTOM only (no top) */
+  background:
+    /* Left border */
+    linear-gradient(180deg,
+      #00021F 0%,
+      rgba(187, 42, 67, 0.6) 50%,
+      #0054EF 100%
+    ) left / 1px 100% no-repeat,
+
+    /* Right border */
+    linear-gradient(180deg,
+      #00021F 0%,
+      rgba(187, 42, 67, 0.6) 50%,
+      #0054EF 100%
+    ) right / 1px 100% no-repeat,
+
+    /* Bottom border */
+    linear-gradient(90deg,
+      #00021F 0%,
+      rgba(187, 42, 67, 0.6) 50%,
+      #0054EF 100%
+    ) bottom / 100% 1px no-repeat,
+
+    /* Card background */
+    #0a0b0c;
+}
+
+/* Remove divider - not needed anymore */
+.feature-card-divider {
+  display: none;
+}
+
+.features-cards-container .feature-card .feature-icon {
+  width: 32px; /* EXACT: 32×32px */
+  height: 32px;
+  flex-shrink: 0;
+  margin: 0;
+}
+
+.features-cards-container .feature-card .feature-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* EXACT: 16px between title and description */
+}
+
+.features-cards-container .feature-card h3 {
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  font-size: 22px; /* EXACT: 22px */
+  line-height: 1.4;
+  letter-spacing: -0.22px; /* EXACT: -0.22px */
+  color: #ffffff;
+  margin: 0;
+}
+
+.features-cards-container .feature-card p {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 16px; /* EXACT: 16px */
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Buttons Container */
+.features-buttons {
+  display: flex;
+  gap: 24px; /* EXACT: 24px gap between buttons */
+  align-items: center;
+  margin: 0;
+}
+
+/* Button 1: "Get Started" - Perfect oval/pill shape */
+.btn-outline-white {
+  /* Layout - CRITICAL: inline-flex for natural sizing */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  /* Spacing - CRITICAL: Creates the button size */
+  padding: 10px 24px; /* EXACT: 10px vertical, 24px horizontal */
+
+  /* Shape - CRITICAL: 100px for perfect pill */
+  border-radius: 100px; /* EXACT: Perfect oval shape */
+
+  /* Background & Border */
+  background-color: rgba(10, 11, 12, 0.05); /* EXACT: Very subtle dark background */
+  border: 1px solid #ffffff; /* EXACT: White border (NOT 0.5px) */
+
+  /* Text */
+  font-family: var(--font-body);
+  font-weight: 500; /* EXACT: Medium */
+  font-size: 16px; /* EXACT: 16px */
+  line-height: 1.5;
+  color: #ffffff;
+  white-space: nowrap; /* CRITICAL: Prevents text wrapping */
+
+  /* Behavior */
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  text-decoration: none;
+
+  /* Ensure proper sizing */
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+
+  /* No fixed dimensions - let content define size */
+  width: auto;
+  height: auto;
+}
+
+.btn-outline-white:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+.btn-outline-white:active {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(0.98);
+}
+
+.btn-outline-white:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+/* Button 2: "Hear a Sample" - Text button with chevron icon */
+.btn-text-white {
+  /* Layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* EXACT: 8px between text and icon */
+
+  /* Spacing */
+  padding: 10px 0; /* EXACT: Only vertical padding */
+
+  /* Shape */
+  border-radius: 100px;
+
+  /* Background & Border */
+  background: transparent; /* EXACT: No background */
+  border: none; /* EXACT: No border */
+
+  /* Text */
+  font-family: var(--font-body);
+  font-weight: 500; /* EXACT: Medium */
+  font-size: 16px; /* EXACT: 16px */
+  line-height: 1.5;
+  color: #ffffff;
+
+  /* Behavior */
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+  outline: none;
+}
+
+.btn-text-white:hover {
+  opacity: 0.8;
+}
+
+.btn-text-white:active {
+  opacity: 0.6;
+}
+
+.btn-text-white:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+/* Chevron Icon */
+.btn-text-white .chevron {
+  width: 24px; /* EXACT: 24×24px */
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.btn-text-white .chevron path {
+  stroke: #ffffff;
 }
 
 /* ===== HOW IT WORKS SECTION ===== */
