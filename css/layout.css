@@ -4,33 +4,39 @@
    ============================================ */
 
 /* ===== NAVIGATION ===== */
+/* EXACT FIGMA SPECIFICATIONS - DO NOT CHANGE */
 
 .navbar {
   position: sticky;
   top: 0;
   z-index: var(--z-fixed);
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--color-white-20);
-  height: 72px;
+  background: #222324;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  height: 72px; /* EXACT: 72px */
   transition: all var(--transition-base);
+}
+
+.navbar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
 }
 
 .navbar.scrolled {
   box-shadow: var(--shadow-lg);
-  background: rgba(0, 0, 0, 0.8);
 }
 
 .navbar-container {
+  position: relative;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
-  height: 100%;
+  padding: 0 64px; /* EXACT: 64px horizontal */
+  height: 72px; /* EXACT: 72px */
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--space-lg);
 }
 
 .navbar-logo {
@@ -38,37 +44,44 @@
 }
 
 .navbar-logo img {
-  height: 30px;
-  width: auto;
+  width: 75px; /* EXACT: 75px */
+  height: 19px; /* EXACT: 19px */
+  object-fit: contain;
 }
 
 .navbar-menu {
   display: flex;
   align-items: center;
-  gap: var(--space-lg);
+  gap: 32px; /* EXACT: 32px between links */
   flex-grow: 1;
   justify-content: flex-start;
-  padding-left: 30px;
+  padding-left: 24px; /* EXACT: 24px from logo */
 }
 
 .navbar-menu a {
   font-family: var(--font-body);
-  font-size: var(--text-regular);
-  font-weight: var(--font-medium);
-  color: var(--color-white);
+  font-size: 16px; /* EXACT: 16px */
+  font-weight: 400; /* EXACT: Regular */
+  line-height: 1.5; /* EXACT: 24px computed */
+  color: #ffffff;
   transition: color var(--transition-fast);
   display: flex;
   align-items: center;
   gap: 4px;
+  text-decoration: none;
 }
 
 .navbar-menu a:hover {
-  color: var(--color-primary);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-menu a.active {
+  font-weight: 500;
 }
 
 .navbar-menu .chevron {
-  width: 12px;
-  height: 12px;
+  width: 24px; /* EXACT: 24px */
+  height: 24px; /* EXACT: 24px */
   transition: transform var(--transition-fast);
 }
 
@@ -79,7 +92,7 @@
 .navbar-actions {
   display: flex;
   align-items: center;
-  gap: var(--space-sm);
+  gap: 15px; /* EXACT: 15px between actions */
   flex-shrink: 0;
 }
 

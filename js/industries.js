@@ -1,16 +1,15 @@
 /* ============================================
-   Industries Page - Tabs & Accordion
+   Industries Page - Interactions
    ============================================ */
 
-// Benefits Tabs (Left Image, Right Tabs)
-const benefitsTabItems = document.querySelectorAll('.benefits-tabs-section .tab-item');
-const benefitsImage = document.querySelector('.benefits-tabs-section .tabs-image-placeholder');
+// Tab Switching for Benefits Section
+const benefitsTabItems = document.querySelectorAll('.benefits-tabbed-section .tab-item');
+const benefitsImage = document.querySelector('#benefits-image');
 
-// Placeholder images for benefits tabs (replace with actual images later)
 const benefitsImages = [
-  'data:image/svg+xml,%3Csvg width="600" height="600" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="600" height="600" fill="%23222324"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%230f5ad7" font-size="24" font-family="Arial"%3E24/7 Availability%3C/text%3E%3C/svg%3E',
-  'data:image/svg+xml,%3Csvg width="600" height="600" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="600" height="600" fill="%23222324"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%230f5ad7" font-size="24" font-family="Arial"%3ESmart Call Management%3C/text%3E%3C/svg%3E',
-  'data:image/svg+xml,%3Csvg width="600" height="600" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="600" height="600" fill="%23222324"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%230f5ad7" font-size="24" font-family="Arial"%3EAI Caller Memory%3C/text%3E%3C/svg%3E'
+  'linear-gradient(135deg, rgba(15, 90, 215, 0.2) 0%, rgba(107, 157, 255, 0.1) 100%)',
+  'linear-gradient(135deg, rgba(15, 90, 215, 0.25) 0%, rgba(107, 157, 255, 0.15) 100%)',
+  'linear-gradient(135deg, rgba(15, 90, 215, 0.3) 0%, rgba(107, 157, 255, 0.2) 100%)'
 ];
 
 if (benefitsTabItems.length > 0 && benefitsImage) {
@@ -25,9 +24,7 @@ if (benefitsTabItems.length > 0 && benefitsImage) {
       // Change image with fade effect
       benefitsImage.style.opacity = '0';
       setTimeout(() => {
-        benefitsImage.style.backgroundImage = `url('${benefitsImages[index]}')`;
-        benefitsImage.style.backgroundSize = 'cover';
-        benefitsImage.style.backgroundPosition = 'center';
+        benefitsImage.style.background = benefitsImages[index];
         benefitsImage.style.opacity = '1';
       }, 150);
     });
@@ -35,21 +32,18 @@ if (benefitsTabItems.length > 0 && benefitsImage) {
 
   // Set initial image
   if (benefitsImage) {
-    benefitsImage.style.backgroundImage = `url('${benefitsImages[0]}')`;
-    benefitsImage.style.backgroundSize = 'cover';
-    benefitsImage.style.backgroundPosition = 'center';
+    benefitsImage.style.background = benefitsImages[0];
   }
 }
 
-// Features Tabs (Left Tabs, Right Image)
-const featuresTabItems = document.querySelectorAll('.features-tabs-section .tab-item');
-const featuresImage = document.querySelector('.features-tabs-section .tabs-image-placeholder');
+// Tab Switching for Features Section
+const featuresTabItems = document.querySelectorAll('.features-tabbed-section .tab-item');
+const featuresImage = document.querySelector('#features-image');
 
-// Placeholder images for features tabs (replace with actual images later)
 const featuresImages = [
-  'data:image/svg+xml,%3Csvg width="584" height="584" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="584" height="584" fill="%23222324"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%230f5ad7" font-size="24" font-family="Arial"%3EPersonalized AI Reception%3C/text%3E%3C/svg%3E',
-  'data:image/svg+xml,%3Csvg width="584" height="584" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="584" height="584" fill="%23222324"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%230f5ad7" font-size="24" font-family="Arial"%3ESmart Response Timing%3C/text%3E%3C/svg%3E',
-  'data:image/svg+xml,%3Csvg width="584" height="584" xmlns="http://www.w3.org/2000/svg"%3E%3Crect width="584" height="584" fill="%23222324"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dy=".3em" fill="%230f5ad7" font-size="24" font-family="Arial"%3EDetailed Call Reports%3C/text%3E%3C/svg%3E'
+  'linear-gradient(135deg, rgba(15, 90, 215, 0.2) 0%, rgba(107, 157, 255, 0.1) 100%)',
+  'linear-gradient(135deg, rgba(15, 90, 215, 0.25) 0%, rgba(107, 157, 255, 0.15) 100%)',
+  'linear-gradient(135deg, rgba(15, 90, 215, 0.3) 0%, rgba(107, 157, 255, 0.2) 100%)'
 ];
 
 if (featuresTabItems.length > 0 && featuresImage) {
@@ -64,9 +58,7 @@ if (featuresTabItems.length > 0 && featuresImage) {
       // Change image with fade effect
       featuresImage.style.opacity = '0';
       setTimeout(() => {
-        featuresImage.style.backgroundImage = `url('${featuresImages[index]}')`;
-        featuresImage.style.backgroundSize = 'cover';
-        featuresImage.style.backgroundPosition = 'center';
+        featuresImage.style.background = featuresImages[index];
         featuresImage.style.opacity = '1';
       }, 150);
     });
@@ -74,24 +66,22 @@ if (featuresTabItems.length > 0 && featuresImage) {
 
   // Set initial image
   if (featuresImage) {
-    featuresImage.style.backgroundImage = `url('${featuresImages[0]}')`;
-    featuresImage.style.backgroundSize = 'cover';
-    featuresImage.style.backgroundPosition = 'center';
+    featuresImage.style.background = featuresImages[0];
   }
 }
 
-// FAQ Accordion (Industries Page)
-const faqItemsIndustries = document.querySelectorAll('.accordion-item-industries');
+// FAQ Accordion
+const faqItems = document.querySelectorAll('.faq-accordion-item');
 
-faqItemsIndustries.forEach(item => {
-  const question = item.querySelector('.accordion-question-industries');
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
 
   if (question) {
     question.addEventListener('click', () => {
       const isOpen = item.classList.contains('open');
 
-      // Close all accordion items (optional - remove if you want multiple open)
-      faqItemsIndustries.forEach(i => i.classList.remove('open'));
+      // Close all FAQ items
+      faqItems.forEach(i => i.classList.remove('open'));
 
       // Toggle current item
       if (!isOpen) {
@@ -109,7 +99,37 @@ faqItemsIndustries.forEach(item => {
   }
 });
 
-// Smooth scroll for all anchor links on Industries page
+// Mega Menu - Open on hover for Industries dropdown
+const dropdown = document.querySelector('.dropdown');
+const megaMenu = document.querySelector('.mega-menu');
+
+if (dropdown && megaMenu) {
+  let hideTimeout;
+
+  dropdown.addEventListener('mouseenter', () => {
+    clearTimeout(hideTimeout);
+    dropdown.classList.add('active');
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    hideTimeout = setTimeout(() => {
+      dropdown.classList.remove('active');
+    }, 200);
+  });
+
+  // Keep menu open when hovering over it
+  megaMenu.addEventListener('mouseenter', () => {
+    clearTimeout(hideTimeout);
+  });
+
+  megaMenu.addEventListener('mouseleave', () => {
+    hideTimeout = setTimeout(() => {
+      dropdown.classList.remove('active');
+    }, 200);
+  });
+}
+
+// Smooth scroll for anchor links
 document.addEventListener('DOMContentLoaded', () => {
   const anchors = document.querySelectorAll('a[href^="#"]');
 
@@ -141,7 +161,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Add fade-in animation on scroll for Industries page sections
+// Scroll animations with IntersectionObserver
 if ('IntersectionObserver' in window) {
   const sectionObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -155,8 +175,8 @@ if ('IntersectionObserver' in window) {
     rootMargin: '0px 0px -50px 0px'
   });
 
-  // Observe all major sections except hero
-  const sections = document.querySelectorAll('.industry-grid-section, .success-stories-section, .numbered-feature, .tabs-section, .large-testimonial-section, .cta-section-industries, .faq-industries');
+  // Observe major sections
+  const sections = document.querySelectorAll('.industry-section, .success-stories-section, .numbered-feature, .tabbed-section, .testimonial-large-section, .cta-dramatic, .faq-two-column');
 
   sections.forEach(section => {
     section.style.opacity = '0';
@@ -166,7 +186,7 @@ if ('IntersectionObserver' in window) {
   });
 }
 
-// Add scroll animation class
+// Add animation class styles
 const style = document.createElement('style');
 style.textContent = `
   .animate-in {
@@ -175,3 +195,52 @@ style.textContent = `
   }
 `;
 document.head.appendChild(style);
+
+// Card hover effects with subtle scale
+const industryCards = document.querySelectorAll('.industry-card');
+industryCards.forEach(card => {
+  card.addEventListener('mouseenter', function() {
+    this.style.transition = 'all 0.3s ease';
+  });
+
+  card.addEventListener('mouseleave', function() {
+    this.style.transition = 'all 0.3s ease';
+  });
+});
+
+// Article card hover effects
+const articleCards = document.querySelectorAll('.article-card');
+articleCards.forEach(card => {
+  card.addEventListener('mouseenter', function() {
+    this.style.transition = 'all 0.3s ease';
+  });
+
+  card.addEventListener('mouseleave', function() {
+    this.style.transition = 'all 0.3s ease';
+  });
+});
+
+// Sticky feature number bars - update active state on scroll
+const featureNumbers = document.querySelectorAll('.feature-number-bar');
+const numberedFeatures = document.querySelectorAll('.numbered-feature');
+
+function updateActiveFeature() {
+  const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+  numberedFeatures.forEach((feature, index) => {
+    const rect = feature.getBoundingClientRect();
+    const featureTop = rect.top + window.scrollY;
+    const featureBottom = featureTop + rect.height;
+
+    if (scrollPosition >= featureTop && scrollPosition <= featureBottom) {
+      featureNumbers[index]?.classList.add('active');
+    } else {
+      featureNumbers[index]?.classList.remove('active');
+    }
+  });
+}
+
+if (numberedFeatures.length > 0) {
+  window.addEventListener('scroll', updateActiveFeature);
+  updateActiveFeature(); // Initial call
+}
