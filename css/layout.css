@@ -48,7 +48,7 @@
   gap: var(--space-lg);
   flex-grow: 1;
   justify-content: flex-start;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 
 .navbar-menu a {
