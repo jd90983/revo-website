@@ -22,9 +22,9 @@
 }
 
 .navbar-container {
-  max-width: 1440px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 var(--page-padding);
+  padding: 0 20px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -46,7 +46,8 @@
   align-items: center;
   gap: var(--space-lg);
   flex-grow: 1;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 40px;
 }
 
 .navbar-menu a {
