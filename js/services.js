@@ -30,7 +30,7 @@ if (featureTabs.length > 0) {
   });
 }
 
-// ===== FAQ ACCORDION =====
+// ===== FAQ ACCORDION (Services Page) =====
 const accordionItems = document.querySelectorAll('.accordion-item-service');
 
 if (accordionItems.length > 0) {
@@ -60,6 +60,34 @@ if (accordionItems.length > 0) {
     }
   });
 }
+
+// ===== FAQ ACCORDION (Homepage) =====
+// Toggle accordion function for onclick handler
+function toggleAccordion(button) {
+  const accordionItem = button.closest('.accordion-item');
+  const isOpen = accordionItem.classList.contains('open');
+
+  // Close all accordion items
+  document.querySelectorAll('.accordion-item').forEach(item => {
+    item.classList.remove('open');
+  });
+
+  // Open clicked item if it wasn't already open
+  if (!isOpen) {
+    accordionItem.classList.add('open');
+  }
+}
+
+// Make toggleAccordion available globally
+window.toggleAccordion = toggleAccordion;
+
+// Open first FAQ item by default
+document.addEventListener('DOMContentLoaded', () => {
+  const firstFaqItem = document.querySelector('.faq-section .accordion-item');
+  if (firstFaqItem) {
+    firstFaqItem.classList.add('open');
+  }
+});
 
 // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
 document.addEventListener('DOMContentLoaded', () => {

@@ -89,25 +89,61 @@
     font-size: 16px;
   }
 
-  /* Stats Section */
-  .stats-content {
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
+  /* Your Time is Valuable - Efficiency Section */
+  .efficiency-section {
+    padding: 80px 40px;
+  }
+
+  .efficiency-content-wrapper {
+    max-width: 768px;
+  }
+
+  .efficiency-heading {
+    font-size: 42px;
+    letter-spacing: -0.42px;
+  }
+
+  /* Adjust spheres for tablet */
+  .efficiency-decorative-spheres {
+    width: 400px;
+    height: 350px;
+    bottom: -40px;
+    right: -40px;
   }
 
   /* FAQ Section */
-  .faq-container {
-    grid-template-columns: 1fr;
-    gap: var(--space-2xl);
+  .faq-section {
+    padding: 80px 40px;
+  }
+
+  .faq-wrapper {
+    gap: 60px;
+  }
+
+  .faq-left {
+    width: 400px;
+  }
+
+  .faq-title {
+    font-size: 42px;
   }
 
   /* Footer */
+  .footer {
+    padding: 60px 40px;
+  }
+
   .footer-content {
-    grid-template-columns: 1fr;
+    gap: 80px;
   }
 
   .footer-newsletter {
-    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .footer-links {
+    gap: 32px;
   }
 }
 
@@ -333,83 +369,126 @@
     justify-content: center;
   }
 
-  /* Stats Section */
-  .stats-content {
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
+  /* Your Time is Valuable - Efficiency Section */
+  .efficiency-section {
+    padding: 60px 24px;
   }
 
-  .stats-heading {
-    font-size: 36px;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
-  }
-
-  .stat-card .stat-number {
-    font-size: 72px;
-  }
-
-  /* Power CTA Section */
-  .power-cta-heading {
-    font-size: 36px;
+  .efficiency-content-wrapper {
     max-width: 100%;
   }
 
-  /* Testimonials Section */
-  .testimonials-header h2 {
+  .efficiency-heading {
+    font-size: 36px;
+    line-height: 1.25;
+    letter-spacing: -0.36px;
+  }
+
+  .efficiency-tagline {
+    font-size: 14px;
+  }
+
+  /* Hide or minimize spheres on mobile */
+  .efficiency-decorative-spheres {
+    width: 250px;
+    height: 220px;
+    bottom: -30px;
+    right: -30px;
+    opacity: 0.3; /* Reduce visibility on mobile */
+  }
+
+  /* Customer Trust Testimonials Section */
+  .customer-trust-section {
+    padding: 60px 24px;
+  }
+
+  .trust-section-title {
     font-size: 36px;
   }
 
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
+  .trust-testimonials-row {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .trust-testimonial-column {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .trust-testimonial-quote {
+    font-size: 18px;
   }
 
   /* FAQ Section */
-  .faq-container {
-    grid-template-columns: 1fr;
-    gap: var(--space-xl);
+  .faq-section {
+    padding: 60px 24px;
   }
 
-  .faq-left h2 {
+  .faq-wrapper {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .faq-left {
+    width: 100%;
+  }
+
+  .faq-title {
     font-size: 36px;
   }
 
-  .accordion-question {
-    font-size: var(--text-regular);
-    padding: var(--space-md);
+  .faq-description {
+    font-size: 16px;
+  }
+
+  .question-text {
+    font-size: 16px;
+  }
+
+  .answer-text {
+    font-size: 15px;
   }
 
   /* Footer */
+  .footer {
+    padding: 60px 24px;
+  }
+
   .footer-content {
-    grid-template-columns: 1fr;
-    gap: var(--space-xl);
+    flex-direction: column;
+    gap: 48px;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
+  }
+
+  .footer-newsletter {
+    width: 100%;
   }
 
   .footer-links {
     grid-template-columns: 1fr;
-    gap: var(--space-lg);
+    gap: 32px;
   }
 
   .newsletter-form {
     flex-direction: column;
   }
 
-  .newsletter-form button {
+  .newsletter-submit-btn {
     width: 100%;
   }
 
   .footer-bottom {
     flex-direction: column;
     text-align: center;
+    gap: 16px;
   }
 
   .footer-legal {
     flex-direction: column;
     align-items: center;
+    gap: 16px;
   }
 }
 
@@ -421,11 +500,22 @@
 
   .features-left h2,
   .how-heading,
-  .stats-heading,
+  .efficiency-heading,
   .power-cta-heading,
   .testimonials-header h2,
-  .faq-left h2 {
+  .faq-title {
     font-size: 32px;
+  }
+
+  /* FAQ Section */
+  .accordion-question {
+    padding: 16px 0;
+    gap: 16px;
+  }
+
+  .chevron-icon {
+    width: 24px;
+    height: 24px;
   }
 
   .how-feature-title {
@@ -451,6 +541,22 @@
 
   .cta-transform-description {
     font-size: 15px;
+  }
+
+  /* Your Time is Valuable - Efficiency Section */
+  .efficiency-heading {
+    font-size: 28px;
+    line-height: 1.3;
+    letter-spacing: -0.28px;
+  }
+
+  .efficiency-tagline {
+    font-size: 14px;
+  }
+
+  /* Hide spheres completely on very small screens */
+  .efficiency-decorative-spheres {
+    display: none;
   }
 
   /* Dashboard Image */
