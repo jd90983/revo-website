@@ -15,6 +15,80 @@
     max-width: 350px;
   }
 
+  /* How It Works Section */
+  .how-it-works {
+    padding: 80px 40px;
+  }
+
+  .how-heading {
+    font-size: 42px;
+  }
+
+  .how-features-row {
+    gap: 32px;
+  }
+
+  .how-feature-title {
+    font-size: 28px;
+  }
+
+  /* Benefits Section */
+  .benefits-section {
+    padding: 80px 40px;
+  }
+
+  .benefits-heading {
+    font-size: 42px;
+  }
+
+  .benefits-row {
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  .benefit-column {
+    flex: 1 1 calc(50% - 16px);
+    min-width: 280px;
+  }
+
+  /* AI Performance Section */
+  .ai-performance-section {
+    padding: 80px 40px;
+  }
+
+  .performance-container {
+    gap: 60px;
+  }
+
+  .performance-top-content {
+    gap: 48px;
+  }
+
+  .performance-title {
+    font-size: 38px;
+  }
+
+  .performance-stats-row {
+    gap: 32px;
+  }
+
+  .performance-stat-number {
+    font-size: 64px;
+  }
+
+  /* Transform Your Business Communications CTA Section */
+  .cta-transform-section {
+    padding: 80px 40px;
+  }
+
+  .cta-transform-heading {
+    font-size: 42px;
+  }
+
+  .cta-transform-description {
+    font-size: 16px;
+  }
+
   /* Stats Section */
   .stats-content {
     grid-template-columns: 1fr;
@@ -130,13 +204,133 @@
   }
 
   /* How It Works Section */
-  .how-it-works-header h2 {
+  .how-it-works {
+    padding: 60px 24px;
+  }
+
+  .how-heading {
     font-size: 36px;
   }
 
-  .how-it-works-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
+  .how-description {
+    font-size: 16px;
+  }
+
+  .how-features-row {
+    flex-direction: column;
+    gap: 48px;
+    min-height: auto;
+  }
+
+  .how-feature-column {
+    width: 100%;
+  }
+
+  .how-feature-title {
+    font-size: 24px;
+  }
+
+  /* Benefits Section */
+  .benefits-section {
+    padding: 60px 24px;
+  }
+
+  .benefits-heading {
+    font-size: 36px;
+  }
+
+  .benefits-description {
+    font-size: 16px;
+  }
+
+  .benefits-row {
+    flex-direction: column;
+    gap: 48px;
+    min-height: auto;
+  }
+
+  .benefit-column {
+    width: 100%;
+  }
+
+  /* AI Performance Section */
+  .ai-performance-section {
+    padding: 60px 24px;
+  }
+
+  .performance-container {
+    gap: 48px;
+  }
+
+  .performance-top-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .performance-title {
+    font-size: 32px;
+  }
+
+  .performance-description {
+    font-size: 16px;
+  }
+
+  .performance-stats-row {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .performance-stat-item {
+    padding-left: 0;
+    padding-top: 32px;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .performance-stat-item:first-child {
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .performance-stat-number {
+    font-size: 56px;
+  }
+
+  .performance-stat-label {
+    font-size: 20px;
+  }
+
+  /* Transform Your Business Communications CTA Section */
+  .cta-transform-section {
+    padding: 60px 24px;
+  }
+
+  .cta-transform-content-wrapper {
+    gap: 24px;
+  }
+
+  .cta-transform-text-content {
+    gap: 16px;
+  }
+
+  .cta-transform-heading {
+    font-size: 36px;
+  }
+
+  .cta-transform-description {
+    font-size: 16px;
+  }
+
+  .cta-transform-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .btn-cta-get-started,
+  .btn-book-demo {
+    width: 100%;
+    justify-content: center;
   }
 
   /* Stats Section */
@@ -226,12 +420,37 @@
   }
 
   .features-left h2,
-  .how-it-works-header h2,
+  .how-heading,
   .stats-heading,
   .power-cta-heading,
   .testimonials-header h2,
   .faq-left h2 {
     font-size: 32px;
+  }
+
+  .how-feature-title {
+    font-size: 22px;
+  }
+
+  .how-feature-description {
+    font-size: 15px;
+  }
+
+  .benefits-heading {
+    font-size: 28px;
+  }
+
+  .benefit-title {
+    font-size: 20px;
+  }
+
+  /* Transform Your Business Communications CTA Section */
+  .cta-transform-heading {
+    font-size: 32px;
+  }
+
+  .cta-transform-description {
+    font-size: 15px;
   }
 
   /* Dashboard Image */
