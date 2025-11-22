@@ -122,55 +122,56 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ===== SCROLL ANIMATIONS WITH INTERSECTION OBSERVER =====
-if ('IntersectionObserver' in window) {
-  const sectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate-in');
-        sectionObserver.unobserve(entry.target);
-      }
-    });
-  }, {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-  });
+// DISABLED: This was hiding all sections and preventing content from showing
+// if ('IntersectionObserver' in window) {
+//   const sectionObserver = new IntersectionObserver((entries) => {
+//     entries.forEach(entry => {
+//       if (entry.isIntersecting) {
+//         entry.target.classList.add('animate-in');
+//         sectionObserver.unobserve(entry.target);
+//       }
+//     });
+//   }, {
+//     threshold: 0.1,
+//     rootMargin: '0px 0px -50px 0px'
+//   });
 
-  // Observe major sections
-  const sections = document.querySelectorAll(`
-    .humanize-section,
-    .smart-comm-section,
-    .advanced-ai-section,
-    .how-works-section,
-    .benefits-section,
-    .features-section-service,
-    .testimonial-section-service,
-    .security-section,
-    .getting-started-section,
-    .banner-cta-section,
-    .final-cta-section,
-    .faq-section-service
-  `.trim().split(/\s*,\s*/));
+//   // Observe major sections
+//   const sections = document.querySelectorAll(`
+//     .humanize-section,
+//     .smart-comm-section,
+//     .advanced-ai-section,
+//     .how-works-section,
+//     .benefits-section,
+//     .features-section-service,
+//     .testimonial-section-service,
+//     .security-section,
+//     .getting-started-section,
+//     .banner-cta-section,
+//     .final-cta-section,
+//     .faq-section-service
+//   `.trim().split(/\s*,\s*/));
 
-  sections.forEach(selector => {
-    const elements = document.querySelectorAll(selector);
-    elements.forEach(section => {
-      section.style.opacity = '0';
-      section.style.transform = 'translateY(30px)';
-      section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-      sectionObserver.observe(section);
-    });
-  });
-}
+//   sections.forEach(selector => {
+//     const elements = document.querySelectorAll(selector);
+//     elements.forEach(section => {
+//       section.style.opacity = '0';
+//       section.style.transform = 'translateY(30px)';
+//       section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+//       sectionObserver.observe(section);
+//     });
+//   });
+// }
 
-// Add animation class styles
-const style = document.createElement('style');
-style.textContent = `
-  .animate-in {
-    opacity: 1 !important;
-    transform: translateY(0) !important;
-  }
-`;
-document.head.appendChild(style);
+// // Add animation class styles
+// const style = document.createElement('style');
+// style.textContent = `
+//   .animate-in {
+//     opacity: 1 !important;
+//     transform: translateY(0) !important;
+//   }
+// `;
+// document.head.appendChild(style);
 
 // ===== CARD HOVER EFFECTS =====
 const industryCards = document.querySelectorAll('.advanced-card');
@@ -270,5 +271,99 @@ focusStyle.textContent = `
   }
 `;
 document.head.appendChild(focusStyle);
+
+// ===== HOW IT WORKS: SCROLL-TRIGGERED CARD STACK =====
+document.addEventListener('DOMContentLoaded', () => {
+  const howSection = document.querySelector('.how-works-section');
+  const howCards = document.querySelectorAll('.card-how');
+
+  if (!howSection || howCards.length === 0) return;
+
+  const totalCards = howCards.length;
+  let currentCardIndex = 0;
+
+  // Calculate which card should be active based on scroll position
+  const updateCardStack = () => {
+    const sectionRect = howSection.getBoundingClientRect();
+    const sectionTop = sectionRect.top;
+    const sectionHeight = sectionRect.height;
+    const viewportHeight = window.innerHeight;
+
+    // Calculate scroll progress through the section (0 to 1)
+    // When section top is at viewport top, progress = 0
+    // When section bottom reaches viewport top, progress = 1
+    const scrollProgress = Math.max(0, Math.min(1, -sectionTop / (sectionHeight - viewportHeight)));
+
+    // Determine active card index based on scroll progress
+    // Divide progress into equal segments for each card
+    const newCardIndex = Math.min(
+      totalCards - 1,
+      Math.floor(scrollProgress * totalCards)
+    );
+
+    // Only update if card changed
+    if (newCardIndex !== currentCardIndex) {
+      // Remove active/exiting from all cards
+      howCards.forEach(card => {
+        card.classList.remove('active', 'exiting');
+      });
+
+      // Mark previous card as exiting (slides up)
+      if (currentCardIndex >= 0 && howCards[currentCardIndex]) {
+        howCards[currentCardIndex].classList.add('exiting');
+      }
+
+      // Mark new card as active (slides in)
+      if (howCards[newCardIndex]) {
+        howCards[newCardIndex].classList.add('active');
+      }
+
+      currentCardIndex = newCardIndex;
+    }
+  };
+
+  // Initialize first card as active
+  if (howCards[0]) {
+    howCards[0].classList.add('active');
+  }
+
+  // Update on scroll with throttling for performance
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateCardStack();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, { passive: true });
+
+  // Initial check
+  updateCardStack();
+});
+
+// ===== BENEFITS ACCORDION =====
+document.addEventListener('DOMContentLoaded', () => {
+  const accordionItems = document.querySelectorAll('.accordion-item-benefits');
+  const accordionHeaders = document.querySelectorAll('.accordion-header-benefits');
+
+  if (accordionHeaders.length === 0) return;
+
+  accordionHeaders.forEach((header, index) => {
+    header.addEventListener('click', () => {
+      const item = accordionItems[index];
+      const isActive = item.classList.contains('active');
+
+      // Close all accordion items
+      accordionItems.forEach(i => i.classList.remove('active'));
+
+      // If the clicked item wasn't active, open it
+      if (!isActive) {
+        item.classList.add('active');
+      }
+    });
+  });
+});
 
 console.log('Services page interactions loaded successfully');
