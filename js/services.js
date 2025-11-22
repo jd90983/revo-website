@@ -223,29 +223,30 @@ if ('IntersectionObserver' in window) {
 }
 
 // ===== SCROLL PROGRESS INDICATOR =====
-const createScrollProgress = () => {
-  const progressBar = document.createElement('div');
-  progressBar.style.cssText = `
-    position: fixed;
-    top: var(--nav-height, 72px);
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background: linear-gradient(90deg, #0f5ad7 0%, #6b9dff 100%);
-    z-index: 9999;
-    transition: width 0.1s ease;
-  `;
-  document.body.appendChild(progressBar);
+// DISABLED: Removed scroll progress bar from services page
+// const createScrollProgress = () => {
+//   const progressBar = document.createElement('div');
+//   progressBar.style.cssText = `
+//     position: fixed;
+//     top: var(--nav-height, 72px);
+//     left: 0;
+//     width: 0%;
+//     height: 3px;
+//     background: linear-gradient(90deg, #0f5ad7 0%, #6b9dff 100%);
+//     z-index: 9999;
+//     transition: width 0.1s ease;
+//   `;
+//   document.body.appendChild(progressBar);
 
-  window.addEventListener('scroll', () => {
-    const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (window.pageYOffset / windowHeight) * 100;
-    progressBar.style.width = scrolled + '%';
-  });
-};
+//   window.addEventListener('scroll', () => {
+//     const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+//     const scrolled = (window.pageYOffset / windowHeight) * 100;
+//     progressBar.style.width = scrolled + '%';
+//   });
+// };
 
 // Initialize scroll progress
-createScrollProgress();
+// createScrollProgress();
 
 // ===== ACCESSIBILITY: Focus visible for keyboard navigation =====
 document.body.addEventListener('keydown', (e) => {
