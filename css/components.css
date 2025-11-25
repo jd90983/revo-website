@@ -12,19 +12,19 @@
   border: 1px solid #0f5ad7;
   padding: 8px 20px; /* EXACT: 8px vertical, 20px horizontal */
   border-radius: 100px; /* EXACT: fully rounded */
-  font-family: var(--font-body);
+  font-family: 'Lexend Deca', sans-serif;
   font-weight: 500; /* EXACT: Medium */
   font-size: 16px; /* EXACT: 16px */
   line-height: 1.5;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: all 200ms ease;
   white-space: nowrap;
 }
 
 .btn-primary:hover,
 .btn-primary-large:hover {
-  background: #0d4db5;
-  border-color: #0d4db5;
+  background: #0D4EC0; /* EXACT: #0D4EC0 darker blue */
+  border-color: #0D4EC0;
 }
 
 .btn-primary:focus,
@@ -46,12 +46,12 @@
   border: 1px solid transparent;
   padding: 8px 20px; /* EXACT: 8px vertical, 20px horizontal */
   border-radius: 100px; /* EXACT: fully rounded */
-  font-family: var(--font-body);
+  font-family: 'Lexend Deca', sans-serif;
   font-weight: 500; /* EXACT: Medium */
   font-size: 16px; /* EXACT: 16px */
   line-height: 1.5;
   cursor: pointer;
-  transition: all var(--transition-fast);
+  transition: all 200ms ease;
   white-space: nowrap;
 }
 
@@ -81,11 +81,11 @@
   color: #ffffff;
   border: 1px solid transparent; /* EXACT: transparent border */
   border-radius: 100px; /* EXACT: fully rounded */
-  font-family: var(--font-body);
+  font-family: 'Lexend Deca', sans-serif;
   font-weight: 500; /* EXACT: Medium */
   font-size: 16px; /* EXACT: 16px */
   line-height: 1.5;
-  transition: all var(--transition-fast);
+  transition: all 200ms ease;
   white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
@@ -95,11 +95,19 @@
   background: rgba(255, 255, 255, 0.05);
 }
 
-.btn-phone svg {
+.btn-phone .phone-icon {
   width: 24px; /* EXACT: 24px */
   height: 24px; /* EXACT: 24px */
   flex-shrink: 0;
+  fill: none;
   stroke: currentColor;
+  stroke-width: 1.5;
+  display: block;
+}
+
+.btn-phone .phone-text {
+  white-space: nowrap;
+  display: block;
 }
 
 /* White Button (for dark backgrounds) */
@@ -388,7 +396,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: var(--space-sm);
+  margin-bottom: 0;
 }
 
 .avatar-group .avatar {
