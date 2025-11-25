@@ -367,4 +367,105 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// ===== INTERACTIVE BENEFITS ACCORDION WITH IMAGE UPDATES =====
+document.addEventListener('DOMContentLoaded', () => {
+  const accordionItems = document.querySelectorAll('.benefits-accordion-item');
+  const accordionButtons = document.querySelectorAll('.benefits-accordion-button');
+  const dynamicImage = document.getElementById('benefits-dynamic-image');
+
+  if (accordionItems.length === 0) return;
+
+  // Set initial image based on active item
+  const activeItem = document.querySelector('.benefits-accordion-item.active');
+  if (activeItem && dynamicImage) {
+    const imagePath = activeItem.getAttribute('data-image');
+    if (imagePath) {
+      dynamicImage.src = imagePath;
+    }
+  }
+
+  accordionButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      const item = accordionItems[index];
+      const isActive = item.classList.contains('active');
+      const imagePath = item.getAttribute('data-image');
+
+      // Close all accordion items
+      accordionItems.forEach(i => {
+        i.classList.remove('active');
+        const content = i.querySelector('.benefits-accordion-content');
+        const title = i.querySelector('.benefits-accordion-title');
+        
+        if (content) {
+          content.style.maxHeight = '0';
+        }
+        if (title) {
+          title.style.color = 'rgba(10, 11, 12, 0.3)';
+        }
+      });
+
+      // If the clicked item wasn't active, open it
+      if (!isActive) {
+        item.classList.add('active');
+        const content = item.querySelector('.benefits-accordion-content');
+        const title = item.querySelector('.benefits-accordion-title');
+        
+        if (content) {
+          // Temporarily set max-height to auto to get accurate scrollHeight
+          content.style.maxHeight = 'none';
+          const height = content.scrollHeight;
+          content.style.maxHeight = '0';
+          
+          // Force reflow
+          void content.offsetHeight;
+          
+          // Now animate to full height
+          content.style.maxHeight = height + 'px';
+        }
+        if (title) {
+          title.style.color = '#0a0b0c';
+        }
+
+        // Update image with fade effect
+        if (dynamicImage && imagePath) {
+          dynamicImage.style.opacity = '0';
+          setTimeout(() => {
+            dynamicImage.src = imagePath;
+            dynamicImage.style.opacity = '1';
+          }, 150);
+        }
+      } else {
+        // If clicking the active item, keep it open (don't close)
+        const content = item.querySelector('.benefits-accordion-content');
+        const title = item.querySelector('.benefits-accordion-title');
+        
+        if (content) {
+          // Ensure it stays at full height
+          content.style.maxHeight = content.scrollHeight + 'px';
+        }
+        if (title) {
+          title.style.color = '#0a0b0c';
+        }
+      }
+    });
+  });
+
+  // Initialize active item on load
+  const activeItemOnLoad = document.querySelector('.benefits-accordion-item.active');
+  if (activeItemOnLoad) {
+    const content = activeItemOnLoad.querySelector('.benefits-accordion-content');
+    const title = activeItemOnLoad.querySelector('.benefits-accordion-title');
+    
+    if (content) {
+      // Get accurate height
+      content.style.maxHeight = 'none';
+      const height = content.scrollHeight;
+      content.style.maxHeight = height + 'px';
+    }
+    if (title) {
+      title.style.color = '#0a0b0c';
+    }
+  }
+});
+
 console.log('Services page interactions loaded successfully');

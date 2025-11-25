@@ -4,6 +4,15 @@
 
 /* ===== TABLET (768px - 1023px) ===== */
 @media (max-width: 1023px) {
+  /* Navigation */
+  .navbar-container {
+    padding: 0 32px;
+  }
+
+  .navbar-menu {
+    gap: 16px;
+  }
+
   /* Features Section */
   .features-container {
     grid-template-columns: 1fr;
@@ -150,7 +159,11 @@
 /* ===== MOBILE (max-width: 767px) ===== */
 @media (max-width: 767px) {
   /* Navigation */
-  .navbar-menu {
+  .navbar-container {
+    padding: 0 32px;
+  }
+
+  .navbar-left .navbar-menu {
     position: fixed;
     top: 72px;
     left: 0;
@@ -165,9 +178,10 @@
     transform: translateX(-100%);
     transition: transform var(--transition-base);
     overflow-y: auto;
+    margin: 0;
   }
 
-  .navbar-menu.active {
+  .navbar-left .navbar-menu.active {
     transform: translateX(0);
   }
 
@@ -177,7 +191,17 @@
   }
 
   .navbar-actions {
+    display: flex;
+    gap: 15px;
+  }
+
+  .navbar-actions .btn-phone,
+  .navbar-actions .btn-secondary {
     display: none;
+  }
+
+  .navbar-actions .btn-primary {
+    display: block;
   }
 
   .mobile-menu-toggle {

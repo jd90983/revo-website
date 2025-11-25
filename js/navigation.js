@@ -40,12 +40,45 @@ if (mobileMenuToggle && navbarMenu) {
   });
 }
 
-// Sticky Navbar with Shadow on Scroll
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
+// Sticky Navbar with Shadow on Scroll & Hide/Show on Scroll Direction
+document.addEventListener('DOMContentLoaded', () => {
+  const navbar = document.querySelector('.navbar');
+  
+  if (navbar) {
+    let lastScrollY = window.scrollY;
+    let ticking = false;
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY;
+          
+          // Add shadow when scrolled
+          if (currentScrollY > 50) {
+            navbar.classList.add('scrolled');
+          } else {
+            navbar.classList.remove('scrolled');
+            // Always show navbar at the top
+            navbar.classList.remove('navbar-hidden');
+          }
+
+          // Hide/show navbar based on scroll direction (only after scrolling past 100px)
+          if (currentScrollY > 100) {
+            if (currentScrollY > lastScrollY && currentScrollY - lastScrollY > 5) {
+              // Scrolling down - hide navbar (with threshold to avoid flickering)
+              navbar.classList.add('navbar-hidden');
+            } else if (currentScrollY < lastScrollY && lastScrollY - currentScrollY > 5) {
+              // Scrolling up - show navbar (with threshold to avoid flickering)
+              navbar.classList.remove('navbar-hidden');
+            }
+          }
+
+          lastScrollY = currentScrollY;
+          ticking = false;
+        });
+        ticking = true;
+      }
+    }, { passive: true });
   }
 });
 
@@ -72,6 +105,67 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       window.scrollTo({
         top: targetPosition,
         behavior: 'smooth'
+      });
+    }
+  });
+});
+
+// Megamenu with delay on close
+document.addEventListener('DOMContentLoaded', () => {
+  const megaMenuItems = document.querySelectorAll('.navbar-menu-item-with-mega');
+  
+  megaMenuItems.forEach(item => {
+    const menuLink = item.querySelector('a');
+    const megamenu = item.querySelector('.megamenu');
+    let closeTimeout = null;
+
+    if (menuLink && megamenu) {
+      // Open megamenu on hover over link
+      menuLink.addEventListener('mouseenter', () => {
+        // Clear any pending close timeout
+        if (closeTimeout) {
+          clearTimeout(closeTimeout);
+          closeTimeout = null;
+        }
+        // Open immediately
+        megamenu.style.opacity = '1';
+        megamenu.style.visibility = 'visible';
+        megamenu.style.pointerEvents = 'all';
+      });
+
+      // Close megamenu with delay when leaving link
+      menuLink.addEventListener('mouseleave', () => {
+        // Set timeout to close after 0.3 seconds
+        closeTimeout = setTimeout(() => {
+          megamenu.style.opacity = '0';
+          megamenu.style.visibility = 'hidden';
+          megamenu.style.pointerEvents = 'none';
+          closeTimeout = null;
+        }, 300);
+      });
+
+      // Keep megamenu open when hovering over it
+      megamenu.addEventListener('mouseenter', () => {
+        // Clear any pending close timeout
+        if (closeTimeout) {
+          clearTimeout(closeTimeout);
+          closeTimeout = null;
+        }
+        // Keep it open
+        megamenu.style.opacity = '1';
+        megamenu.style.visibility = 'visible';
+        megamenu.style.pointerEvents = 'all';
+      });
+
+      // Close megamenu with delay when leaving megamenu
+      megamenu.addEventListener('mouseleave', () => {
+        // Set timeout to close after 0.5 seconds
+        closeTimeout = setTimeout(() => {
+          megamenu.style.opacity = '0';
+          megamenu.style.visibility = 'hidden';
+          megamenu.style.pointerEvents = 'none';
+          closeTimeout = null;
+        }, 500);
       });
     }
   });
