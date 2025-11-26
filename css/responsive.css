@@ -125,12 +125,9 @@
     padding: 80px 40px;
   }
 
-  .faq-wrapper {
+  .faq-section .faq-wrapper {
+    grid-template-columns: 400px 1fr;
     gap: 60px;
-  }
-
-  .faq-left {
-    width: 400px;
   }
 
   .faq-title {
@@ -449,13 +446,9 @@
     padding: 60px 24px;
   }
 
-  .faq-wrapper {
-    flex-direction: column;
+  .faq-section .faq-wrapper {
+    grid-template-columns: 1fr;
     gap: 48px;
-  }
-
-  .faq-left {
-    width: 100%;
   }
 
   .faq-title {
@@ -537,10 +530,6 @@
     gap: 16px;
   }
 
-  .chevron-icon {
-    width: 24px;
-    height: 24px;
-  }
 
   .how-feature-title {
     font-size: 22px;
