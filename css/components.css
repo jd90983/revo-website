@@ -399,6 +399,13 @@
   margin-bottom: 0;
 }
 
+.avatar-group .avatars-combined {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .avatar-group .avatar {
   width: 48px;
   height: 48px;
@@ -410,6 +417,12 @@
 
 .avatar-group .avatar:first-child {
   margin-left: 0;
+}
+
+.avatar-group .avatar.avatar-with-stroke {
+  border: none;
+  object-fit: contain;
+  padding: 2px;
 }
 
 /* ===== ACCORDION ===== */

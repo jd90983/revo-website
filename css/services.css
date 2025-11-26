@@ -626,14 +626,16 @@
   cursor: pointer;
   transition: all 0.3s ease;
   min-height: 44px;
+  padding: 10px 24px;
+  border-radius: 100px;
 }
 
 .link-humanize-secondary:hover {
-  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .link-humanize-secondary:hover svg {
-  transform: translateX(2px);
+  transform: translateX(4px);
 }
 
 .link-humanize-secondary:active {
@@ -648,6 +650,8 @@
 .link-humanize-secondary svg {
   width: 24px;
   height: 24px;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
   flex-shrink: 0;
   transition: transform 0.3s ease;
 }
@@ -1033,10 +1037,12 @@
   gap: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
+  padding: 10px 24px;
+  border-radius: 100px;
 }
 
 .link-smart-comm-secondary:hover {
-  opacity: 0.7;
+  background: rgba(10, 11, 12, 0.05);
 }
 
 .link-smart-comm-secondary svg {
@@ -1047,7 +1053,7 @@
 }
 
 .link-smart-comm-secondary:hover svg {
-  transform: translateX(2px);
+  transform: translateX(4px);
 }
 
 /* ===== 4. ADVANCED AI SOLUTIONS ===== */
@@ -1278,10 +1284,12 @@
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  padding: 10px 24px;
+  border-radius: 100px;
 }
 
 .link-hear-sample-advanced:hover {
-  color: #0f5ad7;
+  background: rgba(10, 11, 12, 0.05);
 }
 
 .link-hear-sample-advanced svg {
@@ -1598,15 +1606,18 @@
   text-decoration: none;
   cursor: pointer;
   transition: all 0.3s ease;
+  padding: 10px 24px;
+  border-radius: 100px;
 }
 
 .link-how-chevron:hover {
-  color: #0f5ad7;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .link-how-chevron svg {
   width: 24px;
   height: 24px;
+  flex-shrink: 0;
   transition: transform 0.3s ease;
 }
 
@@ -1615,7 +1626,7 @@
 }
 
 .link-how-chevron:hover svg path {
-  stroke: #0f5ad7;
+  stroke: #ffffff;
 }
 
 /* CARD IMAGE SECTION */
