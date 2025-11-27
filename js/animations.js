@@ -193,3 +193,80 @@ if (document.readyState === 'loading') {
 } else {
   initTextReveal();
 }
+
+// ===== SMOOTH BACKGROUND TRANSITION ON SCROLL =====
+// Transitions the efficiency section background from black to gray as user scrolls
+const initBackgroundTransition = () => {
+  const efficiencySection = document.querySelector('.efficiency-section');
+  const customerTrustSection = document.querySelector('.customer-trust-section');
+  
+  if (!efficiencySection || !customerTrustSection) return;
+
+  const updateBackgroundTransition = () => {
+    const windowHeight = window.innerHeight;
+    const efficiencyRect = efficiencySection.getBoundingClientRect();
+    const customerTrustRect = customerTrustSection.getBoundingClientRect();
+    
+    // Get the bottom of efficiency section relative to viewport
+    const efficiencyBottom = efficiencyRect.bottom;
+    
+    // Calculate when transition should start (when efficiency bottom is visible)
+    // Transition starts when efficiency section bottom reaches viewport
+    // Transition completes when efficiency section bottom is at 50% of viewport
+    const transitionStart = windowHeight;
+    const transitionEnd = windowHeight * 0.5;
+    const transitionRange = transitionStart - transitionEnd;
+    
+    let opacity = 0;
+    
+    if (efficiencyBottom <= transitionStart && efficiencyBottom >= transitionEnd) {
+      // Section is in the transition range
+      opacity = (transitionStart - efficiencyBottom) / transitionRange;
+      opacity = Math.max(0, Math.min(1, opacity)); // Clamp between 0 and 1
+    } else if (efficiencyBottom < transitionEnd) {
+      // Transition complete - fully gray
+      opacity = 1;
+    } else {
+      // Before transition - fully black
+      opacity = 0;
+    }
+    
+    // Apply opacity to the ::after pseudo-element via CSS custom property
+    efficiencySection.style.setProperty('--transition-opacity', opacity);
+  };
+
+  // Update CSS to use the custom property for opacity
+  const style = document.createElement('style');
+  style.textContent = `
+    .efficiency-section::after {
+      opacity: var(--transition-opacity, 0);
+    }
+  `;
+  document.head.appendChild(style);
+
+  // Throttle scroll events for performance
+  let ticking = false;
+  const handleScroll = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateBackgroundTransition();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  };
+
+  // Initial check
+  updateBackgroundTransition();
+
+  // Listen to scroll events
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', handleScroll, { passive: true });
+};
+
+// Initialize background transition when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initBackgroundTransition);
+} else {
+  initBackgroundTransition();
+}

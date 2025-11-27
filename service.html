@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service | Revo - AI Receptionist</title>
+  <meta name="description" content="Transform your answering services with powerful AI technology. Revo's virtual receptionist manages calls 24/7 with intelligent automation.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend+Deca:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/service.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-to-main">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="navbar-container">
+      <div class="navbar-left">
+        <div class="navbar-logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="Revo - AI Receptionist" width="75" height="19">
+          </a>
+        </div>
+        <ul class="navbar-menu">
+          <li><a href="service.html" class="active">Services</a></li>
+          <li class="navbar-menu-item-with-mega">
+            <a href="ind.html">Industry</a>
+            <div class="megamenu">
+              <div class="megamenu-container">
+                <div class="megamenu-titles-row">
+                  <p class="megamenu-column-title">HOME SERVICE PROS</p>
+                  <p class="megamenu-column-title">PROFESSIONAL BUSINESSES</p>
+                </div>
+                <div class="megamenu-content-row">
+                  <div class="megamenu-column">
+                    <div class="megamenu-list">
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/air_purifier.svg" alt="Air Duct Cleaning icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Air Duct Cleaning</p>
+                          <p class="megamenu-item-subtitle">HVAC Professionals</p>
+                        </div>
+                      </a>
+                      <a href="industry_locksmith.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/construction.svg" alt="Locksmith icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Locksmith</p>
+                          <p class="megamenu-item-subtitle">Create Your Account</p>
+                        </div>
+                      </a>
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/hvac.svg" alt="HVAC icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">HVAC</p>
+                          <p class="megamenu-item-subtitle">24/7 Help Desk</p>
+                        </div>
+                      </a>
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/plumbing.svg" alt="Plumbing icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Plumbing</p>
+                          <p class="megamenu-item-subtitle">AI in Real Time</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="megamenu-column">
+                    <div class="megamenu-list">
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/snowing.svg" alt="Snow Removal icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Snow Removal</p>
+                          <p class="megamenu-item-subtitle">Create Account</p>
+                        </div>
+                      </a>
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/roofing.svg" alt="Roofing icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Roofing</p>
+                          <p class="megamenu-item-subtitle">24/7 Support Team</p>
+                        </div>
+                      </a>
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/landscape.svg" alt="Landscape icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Landscape</p>
+                          <p class="megamenu-item-subtitle">See AI Live Now</p>
+                        </div>
+                      </a>
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/solar_home-2-broken.svg" alt="Home Service Pros icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Home Service Pros</p>
+                          <p class="megamenu-item-subtitle">Professional services</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="megamenu-column">
+                    <div class="megamenu-list">
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/stethoscope.svg" alt="Healthcare & Medical icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Healthcare & Medical</p>
+                          <p class="megamenu-item-subtitle">Learn our story</p>
+                        </div>
+                      </a>
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/add_business.svg" alt="Small Business icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Small Business</p>
+                          <p class="megamenu-item-subtitle">Meet our experts</p>
+                        </div>
+                      </a>
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/computer.svg" alt="IT & Technology icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">IT & Technology</p>
+                          <p class="megamenu-item-subtitle">Join our innovative team</p>
+                        </div>
+                      </a>
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/gavel.svg" alt="Legal icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Legal</p>
+                          <p class="megamenu-item-subtitle">Latest insights</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="megamenu-column">
+                    <div class="megamenu-list">
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/record_voice_over.svg" alt="Corporate & Government icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Corporate & Government</p>
+                          <p class="megamenu-item-subtitle">Learn our story</p>
+                        </div>
+                      </a>
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/nature_people.svg" alt="Travel & Hospitality icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Travel & Hospitality</p>
+                          <p class="megamenu-item-subtitle">Meet our experts</p>
+                        </div>
+                      </a>
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/finance_mode.svg" alt="Financial Services icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Financial Services</p>
+                          <p class="megamenu-item-subtitle">Join our innovative team</p>
+                        </div>
+                      </a>
+                      <a href="ind.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/money_bag.svg" alt="Retail & eCommerce icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Retail & eCommerce</p>
+                          <p class="megamenu-item-subtitle">Latest insights</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="megamenu-footer">
+                <div class="megamenu-footer-content">
+                  <div class="megamenu-footer-text">
+                    <h3 class="megamenu-footer-title">Want to see more industries?</h3>
+                    <p class="megamenu-footer-description">Explore our complete list of industries and find the perfect solution for your business</p>
+                  </div>
+                  <button class="megamenu-footer-button" type="button" onclick="window.location.href='ind.html'">See More Industries</button>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="pricing.html">Pricing</a></li>
+        </ul>
+      </div>
+      <div class="navbar-actions">
+        <a href="tel:+18445231919" class="btn-phone" aria-label="Call (844) 523-1919">
+          <svg class="phone-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="phone-text">(844) 523-1919</span>
+        </a>
+        <button class="btn-secondary" type="button">Login</button>
+        <button class="btn-primary" type="button">Get Started</button>
+      </div>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="services-hero">
+      <div class="services-hero-outer-container">
+        <div class="services-hero-content-container">
+          <!-- Section Title Component -->
+          <div class="section-title-component">
+            <div class="tagline-wrapper">
+              <span class="tagline-text">Services</span>
+            </div>
+            <div class="content-block">
+              <h1>Transform your answering services with <span class="h1-accent">powerful AI </span>technology</h1>
+              <p class="description-paragraph">Powerful virtual receptionist service that transforms how businesses manage incoming calls with intelligent AI technology 24/7</p>
+            </div>
+          </div>
+          <!-- Actions Section -->
+          <div class="actions-container">
+            <button class="btn-get-started">Get Started</button>
+            <button class="btn-book-demo">Book a Demo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Humanize Section -->
+    <section class="humanize-section animate-in">
+      <div class="humanize-container">
+        <!-- Left Column: Text Content -->
+        <div class="humanize-content-left">
+          <!-- Section Title Component -->
+          <div class="humanize-section-title">
+            <span class="humanize-tagline">Humanize</span>
+            <div class="humanize-content-block">
+              <h2><span class="h2-accent">AI receptionists</span> that sound and feel human</h2>
+              <p class="humanize-description">Our virtual receptionists understand nuance. They communicate with the precision of technology and the warmth of human connection.</p>
+            </div>
+          </div>
+          <!-- Actions Container -->
+          <div class="humanize-actions-container">
+            <button class="btn-humanize-primary">Get Started</button>
+            <a href="#" class="link-humanize-secondary">
+              Hear a Sample
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Phone Mockup Visualization -->
+        <div class="humanize-content-right">
+          <div class="phone-mockup-container">
+            <!-- Circular Wave Pattern Background -->
+            <div class="circular-wave-pattern"></div>
+
+            <!-- Phone Mockup Image -->
+            <img src="images/05.png" alt="Revo AI Receptionist app interface on mobile device" class="phone-mockup-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intelligent Communication Section -->
+    <section class="service-intelligent">
+      <div class="service-container">
+        <div class="service-section-header">
+          <span class="service-tagline-dark">Smarter communication starts with Revo</span>
+          <h2 class="service-heading-center"><span class="service-text-dark">Intelligent </span><span class="service-text-primary">communication</span><span class="service-text-dark"> built for real business results</span></h2>
+          <p class="service-description-center">Revo merges natural conversation with automation to keep your business connected and organized. Our AI receptionists manage all communication, making every client feel valued and capturing every opportunity.</p>
+        </div>
+        <div class="service-features-grid">
+          <div class="service-feature-column">
+            <div class="service-feature-card">
+              <img src="images/icons/nest_clock_farsight_analog.svg" alt="24/7 Availability" class="service-feature-icon" width="48" height="48">
+              <h3 class="service-feature-title">24/7 Availability</h3>
+              <p class="service-feature-text">Never miss a call — Revo answers instantly, day or night, giving your business a professional presence around the clock.</p>
+            </div>
+            <div class="service-feature-card">
+              <img src="images/icons/book_ribbon.svg" alt="Seamless Scheduling" class="service-feature-icon" width="48" height="48">
+              <h3 class="service-feature-title">Seamless Scheduling<br>& Booking</h3>
+              <p class="service-feature-text">Integrated with your calendar or CRM, Revo schedules appointments, sends confirmations, and keeps your agenda perfectly organized.</p>
+            </div>
+          </div>
+          <div class="service-feature-image">
+            <img src="images/Placeholder Image.png" alt="Revo team collaboration" />
+          </div>
+          <div class="service-feature-column">
+            <div class="service-feature-card">
+              <img src="images/icons/call_split.svg" alt="Smart Call Routing" class="service-feature-icon" width="48" height="48">
+              <h3 class="service-feature-title">Smart Call Routing<br>& Escalation</h3>
+              <p class="service-feature-text">Automatically directs calls to the right person or department based on context and priority, so clients always reach the right expert.</p>
+            </div>
+            <div class="service-feature-card">
+              <img src="images/icons/network_intel_node.svg" alt="Automated Follow-Ups" class="service-feature-icon" width="48" height="48">
+              <h3 class="service-feature-title">Automated Client Follow-Ups</h3>
+              <p class="service-feature-text">Revo remembers every detail — from sending appointment reminders to following up on missed calls — helping you maintain strong, consistent customer relationships.</p>
+            </div>
+          </div>
+        </div>
+        <div class="service-cta-center">
+          <button class="service-btn-outline-dark">Get Started</button>
+          <a href="#" class="service-link-arrow-dark">Hear a Sample <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advanced AI Solutions -->
+    <section class="service-advanced">
+      <div class="service-container">
+        <div class="service-section-header">
+          <h2 class="service-heading-center"><span class="service-text-dark">Advanced </span><span class="service-text-primary">AI solutions </span><span class="service-text-dark">designed for growing businesses</span></h2>
+          <p class="service-description-center">Revo empowers companies to scale efficiently, serving clients in multiple languages, managing leads, and supporting high call volumes without sacrificing quality.</p>
+        </div>
+        <div class="service-advanced-grid">
+          <div class="service-advanced-card">
+            <div class="service-advanced-icon">💬</div>
+            <h3 class="service-advanced-title">Multi-language support</h3>
+            <p class="service-advanced-text">Communicate naturally in English or Spanish (with more languages coming soon), ensuring every customer feels understood and attended.</p>
+          </div>
+          <div class="service-advanced-card">
+            <div class="service-advanced-icon">✓</div>
+            <h3 class="service-advanced-title">Lead Qualification<br>& Intake</h3>
+            <p class="service-advanced-text">Revo gathers essential client details, qualifies leads, and routes them to your sales or support team — saving time and improving conversion rates.</p>
+          </div>
+          <div class="service-advanced-card">
+            <div class="service-advanced-icon">🔗</div>
+            <h3 class="service-advanced-title">CRM & Business Tool Integration</h3>
+            <p class="service-advanced-text">Sync Revo seamlessly with your favorite systems (HubSpot, Salesforce, Google Calendar, and more) for smarter, automated workflows.</p>
+          </div>
+          <div class="service-advanced-card">
+            <div class="service-advanced-icon">📊</div>
+            <h3 class="service-advanced-title">Analytics &<br>Performance Insights</h3>
+            <p class="service-advanced-text">Track call volume, missed opportunities, and conversion trends to understand how Revo improves your business efficiency.</p>
+          </div>
+        </div>
+        <div class="service-cta-center">
+          <button class="service-btn-outline-dark">Get Started</button>
+          <a href="#" class="service-link-arrow-dark">Hear a Sample <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-works-section animate-in">
+      <div class="how-works-container">
+        <!-- Header -->
+        <div class="section-header-how">
+          <span class="tagline-how">How It Works</span>
+          <h2><span style="color: #ffffff">How </span><span style="color: #0f5ad7">Revo Handles</span><span style="color: #ffffff"> Every Call</span></h2>
+          <p class="description-how">Smarter Conversations. Stronger Connections. Stay One Step Ahead of Your Competition.</p>
+        </div>
+
+        <!-- Cards Container -->
+        <div class="cards-how-container">
+          <!-- Card 1: Call Reception (Text Left, Image Right) -->
+          <div class="card-how" data-card="1">
+            <div class="card-content-how">
+              <div class="content-top-how">
+                <span class="card-tagline-how">01. Call Reception</span>
+                <div class="content-block-how">
+                  <h3>Where Every Call Begins with Intelligence</h3>
+                  <p class="card-description-how">Our AI tracks every communication nuance with sharp, focused intelligence. No detail escapes our system's careful analysis.</p>
+                </div>
+              </div>
+              <div class="card-actions-how">
+                <button class="btn-how-border">Get Started</button>
+                <a href="#" class="link-how-chevron">
+                  Hear a Sample
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 6L15 12L9 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card-image-how">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=800&fit=crop" alt="Professional woman on phone" />
+            </div>
+          </div>
+
+          <!-- Card 2: Call Analysis (Image Left, Text Right) -->
+          <div class="card-how card-reverse" data-card="2">
+            <div class="card-content-how">
+              <div class="content-top-how">
+                <span class="card-tagline-how">02. Call Analysis</span>
+                <div class="content-block-how">
+                  <h3>Understanding Every Word and Intention</h3>
+                  <p class="card-description-how">Each interaction ends with clear outcomes and actionable insights. Your business stays informed and connected.</p>
+                </div>
+              </div>
+              <div class="card-actions-how">
+                <button class="btn-how-border">Get Started</button>
+                <a href="#" class="link-how-chevron">
+                  Hear a Sample
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 6L15 12L9 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card-image-how">
+              <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=800&fit=crop" alt="AI analysis and laptop" />
+            </div>
+          </div>
+
+          <!-- Card 3: Call Resolution (Text Left, Image Right) -->
+          <div class="card-how" data-card="3">
+            <div class="card-content-how">
+              <div class="content-top-how">
+                <span class="card-tagline-how">03. Call Resolution</span>
+                <div class="content-block-how">
+                  <h3>Action with Accuracy and Care</h3>
+                  <p class="card-description-how">Continuous learning improves our AI's performance with every single call. Performance gets better, faster.</p>
+                </div>
+              </div>
+              <div class="card-actions-how">
+                <button class="btn-how-border">Get Started</button>
+                <a href="#" class="link-how-chevron">
+                  Hear a Sample
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 6L15 12L9 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="card-image-how">
+              <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&h=800&fit=crop" alt="Smiling professional with phone" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="service-benefits">
+      <div class="service-container">
+        <div class="service-section-header">
+          <span class="service-tagline-dark">Benefits</span>
+          <h2 class="service-heading-center">Unleash the Benefits of Revo's <span class="service-text-primary">AI Answering System</span></h2>
+          <p class="service-description-center">Give your business a voice that's smart, reliable, and uniquely yours.<br />Revo blends human-like communication with powerful automation — filtering spam, managing multiple calls at once, and keeping your clients connected anytime.</p>
+          <div class="service-cta-center">
+            <button class="service-btn-outline-dark">Get Started</button>
+            <a href="#" class="service-link-arrow-dark">Book a Demo <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+        <div class="service-benefits-content">
+          <div class="service-benefits-image">
+            <img id="service-benefits-image" src="images/services/Smart Call-Management.png" alt="Benefits illustration" />
+          </div>
+          <div class="service-benefits-accordion">
+            <div class="service-benefits-accordion-item active" data-image="images/services/24_7-Availability.png">
+              <button class="service-benefits-accordion-button">
+                <h3 class="service-benefits-accordion-title">24/7 Availability</h3>
+              </button>
+              <div class="service-benefits-accordion-content">
+                <p>Never miss an opportunity. Revo's AI receptionists are always online — ready to greet customers, handle inquiries, and keep your business running smoothly day or night.<br /><br />✅ Keeps your business responsive 24/7<br />✅ Captures after-hours opportunities automatically</p>
+              </div>
+            </div>
+            <div class="service-benefits-accordion-item" data-image="images/services/Smart Call-Management.png">
+              <button class="service-benefits-accordion-button">
+                <h3 class="service-benefits-accordion-title">Smart Call Management</h3>
+              </button>
+              <div class="service-benefits-accordion-content">
+                <p>Handle multiple calls with ease.<br />Revo filters spam, prioritizes real customers, and prevents double bookings — ensuring every call is handled efficiently and every client feels heard.<br /><br />✅ Filters spam and unwanted calls automatically<br />✅ Manages multiple callers simultaneously<br />✅ Prevents double bookings and missed opportunities</p>
+              </div>
+            </div>
+            <div class="service-benefits-accordion-item" data-image="images/services/AI-Caller-Memory-&-Context-Recall.png">
+              <button class="service-benefits-accordion-button">
+                <h3 class="service-benefits-accordion-title">AI Caller Memory & Context Recall</h3>
+              </button>
+              <div class="service-benefits-accordion-content">
+                <p>Because your customers deserve to be remembered.<br />Revo could remember returning callers – not just their name, but their preferences, past requests, and communication tone.<br /><br />✅ Builds loyalty and human-like trust<br />✅ Reduces friction for repeat customers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="service-features">
+      <div class="service-container">
+        <div class="service-section-header">
+          <span class="service-tagline">FEATURES</span>
+          <h2 class="service-heading-center-white">Intelligent Communication Tailored to <span class="service-text-primary">Every Business</span></h2>
+          <p class="service-description-center-white">When you get started with Revo, your setup goes beyond automation—it's personalization that makes every call feel uniquely yours. From custom voice tones to intelligent response timing, Revo adapts to your business style, ensuring your customers always experience seamless, professional communication that reflects your brand perfectly.</p>
+          <div class="service-cta-center">
+            <button class="service-btn-outline">Get Started</button>
+            <a href="#" class="service-link-arrow">Book a Demo <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+        <div class="service-features-tabs">
+          <div class="service-features-image">
+            <img src="images/phone-mockup-features.png" alt="3D phone mockup" />
+          </div>
+          <div class="service-features-list">
+            <div class="service-features-tab active">
+              <h3 class="service-features-tab-title">Personalized AI Reception</h3>
+              <p>Choose how your business sounds.</p>
+              <p>Revo lets you customize your virtual receptionist—from voice tone to personality.</p>
+              <ul class="service-features-checklist">
+                <li>✅ Customizable voice tone and speaking style</li>
+                <li>✅ Personality options to match your brand identity</li>
+              </ul>
+            </div>
+            <div class="service-features-tab">
+              <h3 class="service-features-tab-title">Smart Response Timing</h3>
+            </div>
+            <div class="service-features-tab">
+              <h3 class="service-features-tab-title">Detailed Call Reports</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Enterprise Reliability Section -->
+    <section class="service-enterprise">
+      <div class="service-container">
+        <div class="service-enterprise-content">
+          <div class="service-enterprise-text">
+            <span class="service-tagline-blue">Reliable & Secure - Built for Business Confidence</span>
+            <h2 class="service-heading">Enterprise-grade reliability and protection</h2>
+            <p class="service-description">Revo delivers enterprise-level reliability and protection, ensuring every conversation stays private, secure, and uninterrupted. Trusted by businesses that demand the highest communication standards.</p>
+            <ul class="service-enterprise-list">
+              <li>End-to-end encryption protects every interaction</li>
+              <li>99.99% uptime guarantee ensures continuous service</li>
+              <li>Compliant with global data protection regulations</li>
+            </ul>
+            <button class="service-btn-outline-dark">Get Started</button>
+          </div>
+          <div class="service-enterprise-image">
+            <img src="images/Placeholder Image.png" alt="Enterprise dashboard" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Getting Started Section -->
+    <section class="service-getting-started">
+      <div class="service-container">
+        <div class="service-getting-started-content">
+          <div class="service-getting-started-text">
+            <span class="service-tagline">You're Just Minutes Away from Smarter Calls</span>
+            <h2 class="service-heading">How to Get Started with Revo in <span class="service-text-primary">4 Easy Steps</span></h2>
+            <div class="service-actions">
+              <button class="service-btn-outline">Get Started</button>
+              <a href="#" class="service-link-arrow">Book a Demo <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+          <div class="service-getting-started-steps">
+            <div class="service-step">
+              <div class="service-step-number">1</div>
+              <div class="service-step-content">
+                <h4 class="service-step-title">Create Your Account</h4>
+                <p class="service-step-text">Sign up for your business account by adding your company details and selecting the plan that best fits your needs.</p>
+              </div>
+              <div class="service-step-line"></div>
+            </div>
+            <div class="service-step">
+              <div class="service-step-number">2</div>
+              <div class="service-step-content">
+                <h4 class="service-step-title">Customize Your Setup</h4>
+                <p class="service-step-text">Tell us how you want your calls handled — from services to schedules. Revo adapts perfectly to your business flow.</p>
+              </div>
+              <div class="service-step-line"></div>
+            </div>
+            <div class="service-step">
+              <div class="service-step-number">3</div>
+              <div class="service-step-content">
+                <h4 class="service-step-title">Launch Within Minutes</h4>
+                <p class="service-step-text">Train your AI receptionist with your preferred tone and communication style. Go live in under 10 minutes — no complex setup. Need help? Our support team is here for you.</p>
+              </div>
+              <div class="service-step-line"></div>
+            </div>
+            <div class="service-step">
+              <div class="service-step-number">4</div>
+              <div class="service-step-content">
+                <h4 class="service-step-title">Track Everything from One Platform</h4>
+                <p class="service-step-text">Access your real-time call history, analytics, and performance insights — anytime, anywhere.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner CTA -->
+    <section class="service-banner">
+      <div class="service-banner-bg"></div>
+      <div class="service-banner-content">
+        <h2 class="service-banner-text-1">Intelligent communication. Real business growth.</h2>
+        <h2 class="service-banner-text-2">Your calls. Our AI. Zero missed opportunities.</h2>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="service-testimonial">
+      <div class="service-container">
+        <div class="service-testimonial-content">
+          <div class="service-testimonial-image">
+            <img src="images/Placeholder Image.png" alt="Testimonial" />
+          </div>
+          <div class="service-testimonial-text">
+            <div class="service-testimonial-stars">★★★★★</div>
+            <blockquote class="service-testimonial-quote">"Before Revo, we were missing calls every evening and weekend. Now, every inquiry is answered instantly—even when our office is closed. It's like having a full team working 24/7 without the overhead"</blockquote>
+            <div class="service-testimonial-author">
+              <p class="service-testimonial-name">Laura Bennett</p>
+              <p class="service-testimonial-role">Operations Manager, Horizon Plumbing Co.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section class="service-final-cta">
+      <div class="service-final-cta-bg"></div>
+      <div class="service-container">
+        <div class="service-final-cta-content">
+          <h2 class="service-final-cta-title">Transform your business communications</h2>
+          <p class="service-final-cta-description">Start experiencing the power of AI-driven call management. No complex setup, no long-term commitments.</p>
+          <div class="service-final-cta-actions">
+            <button class="service-btn-white">Get Started</button>
+            <button class="service-btn-transparent">Book a Demo</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="service-faq">
+      <div class="service-container">
+        <div class="service-faq-content">
+          <div class="service-faq-left">
+            <h2 class="service-faq-title">FAQs</h2>
+            <p class="service-faq-description">Get answers to the most common questions about Revo's intelligent virtual receptionist service.</p>
+            <button class="service-btn-outline">Contact</button>
+          </div>
+          <div class="service-faq-right">
+            <div class="service-faq-accordion">
+              <div class="service-faq-item">
+                <button class="service-faq-question">
+                  <span>How does Revo work?</span>
+                  <svg class="service-faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="service-faq-answer">
+                  <p>Our AI uses advanced natural language processing to understand and route calls. It learns from each interaction, becoming more precise over time.</p>
+                </div>
+              </div>
+              <div class="service-faq-item">
+                <button class="service-faq-question">
+                  <span>Is my data secure?</span>
+                  <svg class="service-faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="service-faq-answer">
+                  <p>We use bank-level encryption and follow strict data protection protocols. Your business information remains completely confidential.</p>
+                </div>
+              </div>
+              <div class="service-faq-item">
+                <button class="service-faq-question">
+                  <span>Can Revo handle multiple languages?</span>
+                  <svg class="service-faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="service-faq-answer">
+                  <p>Yes. Our AI supports multiple languages, enabling seamless communication across different linguistic contexts. This ensures your business can connect with clients globally.</p>
+                </div>
+              </div>
+              <div class="service-faq-item">
+                <button class="service-faq-question">
+                  <span>Can I customize the AI?</span>
+                  <svg class="service-faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="service-faq-answer">
+                  <p>Yes. Our platform allows detailed customization to match your brand voice and specific communication needs.</p>
+                </div>
+              </div>
+              <div class="service-faq-item">
+                <button class="service-faq-question">
+                  <span>What businesses can use Revo?</span>
+                  <svg class="service-faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="service-faq-answer">
+                  <p>Revo serves businesses of all sizes, from small startups to large enterprises. Our flexible AI adapts to various industries and communication needs.</p>
+                </div>
+              </div>
+              <div class="service-faq-item">
+                <button class="service-faq-question">
+                  <span>How quickly can I set up?</span>
+                  <svg class="service-faq-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div class="service-faq-answer">
+                  <p>Setup is fast and straightforward. Most businesses complete configuration within 30 minutes, with minimal technical expertise required.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-newsletter">
+          <div class="newsletter-logo">
+            <img src="images/logo.png" alt="Revo" width="120" height="40">
+          </div>
+          <h3>Stay ahead with Revo's latest AI communication insights</h3>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter-disclaimer">
+            By subscribing, you agree to our <a href="#privacy">privacy policy</a> and consent to receive updates from our company.
+          </p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Quick links</h4>
+            <ul>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="service.html">Services</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#demo">Demo</a></li>
+              <li><a href="#support">Support</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#about">About us</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#resources">Resources</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Connect with us</h4>
+            <ul class="social-links">
+              <li><a href="#facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Facebook</a></li>
+              <li><a href="#instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke="currentColor" stroke-width="2"/></svg>Instagram</a></li>
+              <li><a href="#twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 4l9 9m0 0l9 9m-9-9l9-9m-9 9l-9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>X</a></li>
+              <li><a href="#linkedin"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>LinkedIn</a></li>
+              <li><a href="#youtube"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Revo. All communication rights reserved</p>
+        <div class="footer-legal">
+          <a href="#privacy">Privacy policy</a>
+          <a href="#terms">Terms of service</a>
+          <a href="#cookies">Cookie settings</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navigation.js"></script>
+  <script src="js/service.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+
