@@ -1597,6 +1597,22 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden; /* Hide overflow spheres */
+  transition: background-color 0.1s ease-out;
+}
+
+/* Smooth transition overlay that fades in on scroll */
+.efficiency-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222324; /* Gray color of next section */
+  opacity: var(--transition-opacity, 0);
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity 0.1s ease-out;
 }
 
 /* Container */
@@ -1607,7 +1623,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 1;
+  z-index: 2; /* Above the transition overlay */
 }
 
 /* Content Wrapper */
@@ -1714,7 +1730,7 @@
   width: 500px;
   height: 450px;
   pointer-events: none;
-  z-index: 0;
+  z-index: 2; /* Above the transition overlay */
 }
 
 .efficiency-spheres-image {
