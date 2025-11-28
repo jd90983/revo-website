@@ -2143,7 +2143,7 @@
 }
 
 .newsletter-logo img {
-  height: 40px;
+  height: 21px;
   width: auto;
 }
 
@@ -2158,49 +2158,64 @@
 
 .newsletter-form {
   display: flex;
-  gap: 8px;
+  gap: 16px;
   margin-top: 8px;
+  align-items: flex-start;
 }
 
 .newsletter-form input {
-  flex: 1;
+  flex: 1 0 0;
   padding: 8px 12px;
-  background: rgba(10, 11, 12, 0.05);
+  min-height: auto;
+  height: auto;
+  background: #0A0B0C;
   border: 2px solid rgba(255, 255, 255, 0.05);
   border-radius: 12px;
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.5;
   color: #ffffff;
   outline: none;
   transition: border-color 0.2s ease;
+  box-sizing: border-box;
 }
 
 .newsletter-form input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-family: var(--font-body);
 }
 
 .newsletter-form input:focus {
-  border-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .newsletter-submit-btn {
   padding: 10px 24px;
+  min-height: auto;
+  height: auto;
   background: rgba(10, 11, 12, 0.05);
   border: 1px solid transparent;
   border-radius: 100px;
   font-family: var(--font-body);
   font-weight: 500;
   font-size: 16px;
+  line-height: 1.5;
   color: #ffffff;
   cursor: pointer;
   white-space: nowrap;
   transition: background-color 0.2s ease, border-color 0.2s ease;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .newsletter-submit-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(10, 11, 12, 0.1);
+  border-color: transparent;
 }
 
 .newsletter-disclaimer {
