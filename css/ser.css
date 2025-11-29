@@ -2,6 +2,24 @@
    SER Page Styles - No gaps between sections
    ============================================ */
 
+/* Ensure main content is visible */
+main#main-content {
+  background: transparent !important;
+  position: relative;
+  z-index: 1;
+}
+
+/* Force all sections to have proper z-index */
+main#main-content > section {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+/* Intelligent banner needs higher z-index to avoid stacking context issues */
+.ser-intelligent-banner {
+  z-index: 10 !important;
+}
+
 /* Reset section spacing to ensure no gaps */
 .ser-hero,
 .ser-services-header,
@@ -2178,7 +2196,7 @@ main > section {
 /* ===== TESTIMONIAL SECTION ===== */
 .ser-testimonial {
   position: relative;
-  background: var(--color-very-dark-bg);
+  background: #0A0B0C;
   padding: var(--space-3xl) 0;
   width: 100%;
   overflow: hidden;
@@ -2190,100 +2208,198 @@ main > section {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.6) 100%);
+  background: linear-gradient(180deg, rgba(10, 11, 12, 0.95) 0%, rgba(10, 11, 12, 0.98) 50%, rgba(10, 11, 12, 0.95) 100%);
   z-index: 1;
 }
 
-.ser-testimonial-background::before {
-  content: '';
+.ser-testimonial-bg-element {
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  max-height: 800px;
+  z-index: 2;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.ser-testimonial-line-element {
+  position: absolute;
+  top: -20px;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('../images/backgrounds/transform_business_background.png');
-  background-size: cover;
-  background-position: center;
-  opacity: 0.3;
-  filter: blur(2px);
+  width: auto;
+  height: auto;
+  max-width: 200px;
+  max-height: 50px;
+  z-index: 1;
+  opacity: 0.8;
+  pointer-events: none;
 }
 
 .ser-testimonial-content {
   position: relative;
-  z-index: 2;
-  text-align: center;
-  max-width: 1000px;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 0 var(--page-padding);
 }
 
-.ser-testimonial-quote {
-  font-size: var(--text-h2);
-  font-weight: var(--font-bold);
-  line-height: var(--line-height-tight);
-  color: var(--color-white);
-  margin-bottom: var(--space-3xl);
-  letter-spacing: var(--tracking-h2);
+.ser-testimonial-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.ser-testimonial-card {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: var(--radius-md);
-  padding: var(--space-3xl);
-  max-width: 800px;
-  margin: 0 auto;
+.ser-testimonial-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ser-testimonial-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.ser-testimonial-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: left;
 }
 
 .ser-testimonial-stars {
-  color: #ffd700;
-  margin-bottom: var(--space-lg);
+  margin-bottom: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+.ser-testimonial-stars-icon {
+  width: 116px;
+  height: 19px;
+  display: block;
 }
 
 .ser-testimonial-text {
-  font-size: var(--text-large);
-  line-height: var(--line-height-relaxed);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
   color: var(--color-white);
-  margin-bottom: var(--space-xl);
-  font-style: italic;
+  margin: 0;
+  font-style: normal;
+  letter-spacing: 0;
 }
 
 .ser-testimonial-author {
   display: flex;
-  align-items: center;
-  gap: var(--space-md);
-  justify-content: center;
-}
-
-.ser-testimonial-avatar {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.ser-avatar-placeholder {
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, var(--color-primary) 0%, #6b9dff 100%);
-}
-
-.ser-testimonial-info {
-  text-align: left;
+  flex-direction: column;
+  gap: 4px;
+  align-items: flex-start;
 }
 
 .ser-testimonial-name {
-  font-size: var(--text-regular);
-  font-weight: var(--font-bold);
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
   color: var(--color-white);
-  margin-bottom: var(--space-xs);
+  margin: 0;
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
 }
 
 .ser-testimonial-company {
-  font-size: var(--text-small);
-  color: var(--color-gray-light);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-white);
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Responsive styles for testimonial section */
+@media (max-width: 1023px) {
+  .ser-testimonial-content {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+
+  .ser-testimonial-left {
+    justify-content: center;
+  }
+
+  .ser-testimonial-right {
+    text-align: center;
+    align-items: center;
+  }
+
+  .ser-testimonial-stars {
+    justify-content: center;
+  }
+
+  .ser-testimonial-author {
+    align-items: center;
+  }
+
+  .ser-testimonial-bg-element {
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  .ser-testimonial-line-element {
+    top: -15px;
+    max-width: 150px;
+    max-height: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ser-testimonial-content {
+    gap: 32px;
+    padding: 0 var(--space-md);
+  }
+
+  .ser-testimonial-image-wrapper {
+    max-width: 100%;
+  }
+
+  .ser-testimonial-text {
+    font-size: 16px;
+  }
+
+  .ser-testimonial-name {
+    font-size: 18px;
+  }
+
+  .ser-testimonial-company {
+    font-size: 14px;
+  }
+
+  .ser-testimonial-bg-element {
+    max-width: 350px;
+    max-height: 350px;
+  }
+
+  .ser-testimonial-line-element {
+    top: -10px;
+    max-width: 100px;
+    max-height: 30px;
+  }
 }
 
 /* ===== TRANSFORM CTA SECTION ===== */
@@ -2326,11 +2442,226 @@ main > section {
   margin: 0 auto;
 }
 
+/* ===== INTELLIGENT COMMUNICATION BANNER SECTION ===== */
+.ser-intelligent-banner {
+  position: relative !important;
+  width: 100%;
+  padding: 60px 64px;
+  overflow: hidden;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10 !important;
+  visibility: visible !important;
+  margin: 0 !important;
+  box-sizing: border-box;
+  height: auto;
+  min-height: 350px; /* 60px top + 230px content + 60px bottom */
+  isolation: isolate; /* Create new stacking context */
+  /* Animation will be handled by JavaScript - initial state is opacity: 0, transform: translateY(30px) */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ser-intelligent-banner-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.ser-intelligent-banner-base {
+  position: absolute;
+  inset: 0;
+  background: #000000;
+  z-index: 1;
+}
+
+.ser-intelligent-banner-image {
+  position: absolute;
+  inset: 0;
+  background-image: url('https://www.figma.com/api/mcp/asset/fb07c451-f551-4b29-8a61-bfd81c012bbf');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: 50% 50%;
+  opacity: 0.85;
+  z-index: 2;
+}
+
+.ser-intelligent-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.ser-intelligent-banner-content {
+  position: relative;
+  z-index: 4 !important;
+  max-width: 1708px;
+  width: 100%;
+  height: 230px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: 90px;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  box-sizing: border-box;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.ser-intelligent-banner-line1,
+.ser-intelligent-banner-line2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 90px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.9px;
+  color: #ffffff !important;
+  margin: 0;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  z-index: 5 !important;
+  visibility: visible !important;
+  display: block !important;
+  will-change: transform, opacity;
+  white-space: nowrap;
+  overflow: visible;
+}
+
+.ser-intelligent-banner-line1 {
+  top: 50%;
+  /* Initial state: off-screen to the left */
+  transform: translate(calc(-50% - 100vw), calc(-50% - 35px));
+  opacity: 0;
+}
+
+.ser-intelligent-banner-line2 {
+  top: 50%;
+  /* Initial state: off-screen to the right */
+  transform: translate(calc(-50% + 100vw), calc(-50% + 35px));
+  left: calc(50% + 0.5px);
+  opacity: 0;
+}
+
+/* Force visibility of all elements in intelligent banner */
+.ser-intelligent-banner * {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.ser-intelligent-banner-content * {
+  color: #ffffff !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Responsive styles for Intelligent Banner */
+@media (max-width: 1023px) {
+  .ser-intelligent-banner {
+    padding: 80px 64px;
+    min-height: 350px;
+  }
+
+  .ser-intelligent-banner .ser-section-container {
+    height: auto;
+    min-height: 200px;
+  }
+
+  .ser-intelligent-banner-content {
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ser-intelligent-banner-line1,
+  .ser-intelligent-banner-line2 {
+    position: relative;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: -0.48px;
+    left: auto;
+    transform: none;
+    width: 100%;
+  }
+
+  .ser-intelligent-banner-line1 {
+    top: auto;
+  }
+
+  .ser-intelligent-banner-line2 {
+    top: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .ser-intelligent-banner {
+    padding: 60px 24px;
+    min-height: 300px;
+  }
+
+  .ser-intelligent-banner .ser-section-container {
+    height: auto;
+    min-height: 180px;
+  }
+
+  .ser-intelligent-banner-content {
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ser-intelligent-banner-line1,
+  .ser-intelligent-banner-line2 {
+    position: relative;
+    font-size: 32px;
+    line-height: 1.3;
+    letter-spacing: -0.32px;
+    left: auto;
+    transform: none;
+    width: 100%;
+  }
+
+  .ser-intelligent-banner-line1 {
+    top: auto;
+  }
+
+  .ser-intelligent-banner-line2 {
+    top: auto;
+  }
+}
+
 /* ===== FAQS SECTION ===== */
 .ser-faqs {
   background: var(--color-dark-bg);
   padding: var(--space-3xl) 0;
   width: 100%;
+  position: relative !important;
+  z-index: 11 !important; /* Higher than intelligent banner */
+  margin: 0 !important;
+  isolation: isolate; /* Create new stacking context */
 }
 
 .ser-faq-list {
@@ -2898,10 +3229,6 @@ main > section {
   .ser-section-actions button,
   .ser-process-actions button {
     width: 100%;
-  }
-
-  .ser-testimonial-quote {
-    font-size: var(--text-h4);
   }
 }
 

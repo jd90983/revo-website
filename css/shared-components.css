@@ -1,0 +1,374 @@
+/* ============================================
+   Shared Components CSS
+   Reusable components that can be used across multiple pages
+   ============================================ */
+
+/* ===== TEMPLATE CONTAINER ===== */
+#get-started-template-container {
+  width: 100%;
+  position: relative;
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  background: transparent;
+  min-height: 0;
+}
+
+#get-started-template-container > * {
+  width: 100%;
+}
+
+/* ===== GET STARTED SECTION ===== */
+.ser-get-started {
+  background: #0a0b0c;
+  background-image: url('../images/backgrounds/how_to_get_started_background.png') !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  padding: var(--space-3xl) 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: block !important;
+  visibility: visible !important;
+  /* Start visible by default */
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  color: #ffffff !important;
+}
+
+/* Only apply animation if section is being observed */
+.ser-get-started[data-animate] {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.ser-get-started.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Ensure all text is visible */
+.ser-get-started * {
+  color: #ffffff !important;
+}
+
+/* Tagline should be white */
+.ser-get-started-tagline {
+  color: #FFFFFF !important;
+}
+
+.ser-get-started .ser-section-container {
+  padding: var(--space-3xl) var(--page-padding);
+}
+
+.ser-get-started-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.45;
+  overflow: hidden;
+}
+
+.ser-get-started-background::before {
+  content: '';
+  position: absolute;
+  background: #0a0b0c;
+  inset: 0;
+}
+
+.ser-get-started-background::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 62.556%, #000000 93.889%);
+}
+
+.ser-get-started-wrapper {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.ser-get-started-left {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.ser-get-started-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ser-get-started-title {
+  position: relative;
+  display: inline-block;
+}
+
+.ser-get-started-tagline {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--font-semibold);
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.ser-get-started-title {
+  font-family: var(--font-heading);
+  font-size: 44px;
+  font-weight: var(--font-bold);
+  line-height: 1.2;
+  letter-spacing: -0.44px;
+  color: var(--color-white);
+  margin: 0;
+  display: block;
+  max-width: 600px;
+}
+
+.ser-get-started-highlight {
+  color: #EFAC0E !important;
+  position: relative;
+  display: inline-block;
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+
+.ser-get-started-title-underline {
+  margin-top: 4px;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 0;
+  width: fit-content;
+  position: absolute;
+  left: 0;
+  bottom: -20px;
+}
+
+.ser-get-started-title-underline img {
+  width: 290px;
+  height: 16px;
+  display: block;
+  object-fit: contain;
+}
+
+.ser-get-started-actions {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.ser-get-started-btn-primary {
+  background: rgba(10, 11, 12, 0.05);
+  border: 1px solid #00021f;
+  border-radius: 100px;
+  padding: 10px 24px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--font-medium);
+  line-height: 1.5;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: var(--transition-base);
+  box-shadow: 0 0 20px rgba(0, 2, 31, 0.5);
+}
+
+.ser-get-started-btn-primary:hover {
+  background: rgba(10, 11, 12, 0.1);
+  box-shadow: 0 0 30px rgba(0, 2, 31, 0.7);
+}
+
+.ser-get-started-btn-secondary {
+  background: transparent;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 0;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: var(--color-white);
+  cursor: pointer;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  transition: opacity 0.2s ease;
+}
+
+.ser-get-started-btn-secondary:hover {
+  opacity: 0.8;
+}
+
+.ser-get-started-btn-secondary svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.ser-get-started-right {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ===== STEPS TIMELINE ===== */
+.ser-steps-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ser-step-item {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.ser-step-number-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.ser-step-number {
+  font-family: var(--font-heading);
+  font-size: 52px;
+  font-weight: var(--font-bold);
+  line-height: 1.2;
+  letter-spacing: -0.52px;
+  color: var(--color-white);
+}
+
+.ser-step-divider {
+  width: 1px;
+  height: 100px;
+  background: var(--color-white);
+  opacity: 0.3;
+}
+
+.ser-step-item:last-child .ser-step-divider {
+  display: none;
+}
+
+.ser-step-content {
+  flex: 1 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: var(--color-white);
+}
+
+.ser-step-title {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  font-weight: var(--font-bold);
+  line-height: 1.4;
+  letter-spacing: -0.22px;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.ser-step-description {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--font-regular);
+  line-height: 1.5;
+  color: var(--color-white);
+  margin: 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+  .ser-get-started-wrapper {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .ser-get-started-title {
+    font-size: 36px;
+    letter-spacing: -0.36px;
+  }
+
+  .ser-step-item {
+    gap: 24px;
+  }
+
+  .ser-step-number {
+    font-size: 44px;
+    letter-spacing: -0.44px;
+  }
+
+  .ser-step-title {
+    font-size: 20px;
+    letter-spacing: -0.2px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ser-get-started {
+    padding: var(--space-2xl) 0;
+  }
+
+  .ser-get-started .ser-section-container {
+    padding: var(--space-2xl) var(--page-padding);
+  }
+
+  .ser-get-started-wrapper {
+    gap: 32px;
+  }
+
+  .ser-get-started-title {
+    font-size: 32px;
+    letter-spacing: -0.32px;
+  }
+
+  .ser-get-started-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .ser-get-started-btn-primary,
+  .ser-get-started-btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ser-step-item {
+    gap: 16px;
+  }
+
+  .ser-step-number {
+    font-size: 36px;
+    letter-spacing: -0.36px;
+  }
+
+  .ser-step-divider {
+    height: 80px;
+  }
+
+  .ser-step-title {
+    font-size: 18px;
+    letter-spacing: -0.18px;
+  }
+
+  .ser-step-description {
+    font-size: 14px;
+  }
+}
+

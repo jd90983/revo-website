@@ -211,7 +211,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, observerOptions);
 
-  // Observe all sections except hero
+  // Observe all sections except hero and intelligent banner (handled separately)
   const sections = document.querySelectorAll('.ser-ai-receptionists, .ser-intelligent-communication, .ser-advanced-solutions, .ser-how-it-works, .ser-benefits, .ser-tailored, .ser-reliability, .ser-get-started, .ser-testimonial, .ser-transform-cta, .ser-faqs');
   
   sections.forEach(section => {
@@ -220,6 +220,98 @@ document.addEventListener('DOMContentLoaded', () => {
     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
     observer.observe(section);
   });
+});
+
+// Scroll-triggered text animation for intelligent banner (slide in from sides based on scroll progress)
+document.addEventListener('DOMContentLoaded', () => {
+  const intelligentBanner = document.querySelector('.ser-intelligent-banner');
+  const line1 = document.querySelector('.ser-intelligent-banner-line1');
+  const line2 = document.querySelector('.ser-intelligent-banner-line2');
+  
+  if (!intelligentBanner || !line1 || !line2) return;
+
+  // Set initial state for section
+  intelligentBanner.style.opacity = '0';
+  intelligentBanner.style.transform = 'translateY(30px)';
+  intelligentBanner.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+
+  // Function to update text position based on scroll progress
+  const updateTextAnimation = () => {
+    const windowHeight = window.innerHeight;
+    const bannerRect = intelligentBanner.getBoundingClientRect();
+    const bannerTop = bannerRect.top;
+    const bannerHeight = bannerRect.height;
+    const bannerBottom = bannerRect.bottom;
+
+    // Calculate scroll progress through the banner section
+    // Animation starts when banner top is at 80% of viewport
+    // Animation continues until banner bottom is at 0% of viewport (fully scrolled past)
+    const startPoint = windowHeight * 0.8; // Animation starts here
+    const endPoint = -bannerHeight; // Animation ends when banner is fully scrolled past
+    const range = startPoint - endPoint;
+
+    let progress = 0;
+
+    if (bannerTop <= startPoint && bannerTop >= endPoint) {
+      // Banner is in the animation range
+      progress = (startPoint - bannerTop) / range;
+      progress = Math.max(0, Math.min(1, progress)); // Clamp between 0 and 1
+    } else if (bannerTop < endPoint) {
+      // Banner has passed the end point - animation complete
+      progress = 1;
+    } else {
+      // Banner hasn't reached start point - no animation
+      progress = 0;
+    }
+
+    // Calculate horizontal offset based on progress
+    // At progress 0: line1 is off-screen to the left (-100vw), line2 is off-screen to the right (+100vw)
+    // At progress 0.5: both lines are centered (0 offset)
+    // At progress 1: line1 is off-screen to the right (+100vw), line2 is off-screen to the left (-100vw)
+    // Line1: moves from -100vw (left) to +100vw (right) as progress goes from 0 to 1
+    // Line2: moves from +100vw (right) to -100vw (left) as progress goes from 0 to 1
+    const line1Offset = -100 + (progress * 200); // From -100vw to +100vw
+    const line2Offset = 100 - (progress * 200); // From +100vw to -100vw
+
+    // Update line1 (slides from left to right, passing through center)
+    const line1Transform = `translate(calc(-50% + ${line1Offset}vw), calc(-50% - 35px))`;
+    line1.style.transform = line1Transform;
+    // Opacity: visible when in viewport range (0.2 to 0.8 progress)
+    line1.style.opacity = progress >= 0.2 && progress <= 0.8 ? 1 : Math.max(0, 1 - Math.abs(progress - 0.5) * 2);
+
+    // Update line2 (slides from right to left, passing through center)
+    const line2Transform = `translate(calc(-50% + ${line2Offset}vw), calc(-50% + 35px))`;
+    line2.style.transform = line2Transform;
+    // Opacity: visible when in viewport range (0.2 to 0.8 progress)
+    line2.style.opacity = progress >= 0.2 && progress <= 0.8 ? 1 : Math.max(0, 1 - Math.abs(progress - 0.5) * 2);
+
+    // Also handle the section fade-in
+    if (bannerTop < windowHeight && bannerTop > -bannerHeight) {
+      intelligentBanner.style.opacity = '1';
+      intelligentBanner.style.transform = 'translateY(0)';
+    }
+  };
+
+  // Throttle scroll events for performance
+  let ticking = false;
+  const handleScroll = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateTextAnimation();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  };
+
+  // Initial check
+  updateTextAnimation();
+
+  // Listen to scroll events
+  window.addEventListener('scroll', handleScroll, { passive: true });
+
+  // Also listen to resize events to recalculate on window size change
+  window.addEventListener('resize', handleScroll, { passive: true });
 });
 
 

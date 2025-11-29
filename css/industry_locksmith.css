@@ -36,6 +36,8 @@ main#main-content > section {
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
+  /* Hero should always be visible, no animation */
+  transform: translateY(0) !important;
 }
 
 .locksmith-hero * {
@@ -182,25 +184,35 @@ main#main-content > section {
   opacity: 1 !important;
 }
 
-.locksmith-hero-btn-primary {
+.locksmith-hero-btn-primary,
+.locksmith-hero .locksmith-hero-btn-primary {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: #0A0B0C;
-  background: #FFFFFF;
+  letter-spacing: 0;
+  color: #0A0B0C !important;
+  background: #FFFFFF !important;
   border: none;
   padding: 10px 24px;
   border-radius: 100px;
   cursor: pointer;
-  transition: background 0.3s ease;
-  display: flex !important;
+  transition: all 0.3s ease;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   visibility: visible !important;
   opacity: 1 !important;
+  white-space: nowrap;
+  box-shadow: none;
+  box-sizing: border-box;
 }
 
 .locksmith-hero-btn-primary:hover {
-  background: rgba(255, 255, 255, 0.9);
+  background: #FFFFFF;
+  color: #0A0B0C;
+  opacity: 0.95;
 }
 
 .locksmith-hero-btn-secondary {
@@ -208,20 +220,27 @@ main#main-content > section {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  letter-spacing: 0;
   color: #FFFFFF !important;
   background: rgba(255, 255, 255, 0.1) !important;
   border: 1px solid transparent;
   padding: 10px 24px;
   border-radius: 100px;
   cursor: pointer;
-  transition: background 0.3s ease;
-  display: flex !important;
+  transition: all 0.3s ease;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   visibility: visible !important;
   opacity: 1 !important;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 .locksmith-hero-btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.15) !important;
+  opacity: 0.9;
 }
 
 /* ===== SECTIONS ===== */
@@ -232,7 +251,32 @@ main#main-content > section {
   z-index: 1;
   display: block !important;
   visibility: visible !important;
+  /* Allow opacity to be controlled by animations */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Features Grid Section - Specific height */
+.locksmith-section.locksmith-section-light:has(.locksmith-features-wrapper) {
+  min-height: 864px;
+  height: 864px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.locksmith-section.locksmith-section-light:has(.locksmith-features-wrapper) .locksmith-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Animated sections become visible */
+.locksmith-section.animate-in {
   opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .locksmith-section-dark {
@@ -246,9 +290,69 @@ main#main-content > section {
   opacity: 1 !important;
 }
 
-.locksmith-section-light {
-  background: #FAFBFC !important;
+.locksmith-section.locksmith-section-light {
+  background-image: url('../images/backgrounds/white_background_locksmith.png') !important;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-color: transparent !important;
   color: #0A0B0C !important;
+  position: relative;
+}
+
+.locksmith-section.locksmith-section-light.locksmith-impact-section,
+.locksmith-impact-section.locksmith-section-light {
+  background-color: #FAFBFC !important;
+  background-image: none !important;
+  background-position: initial !important;
+  background-size: initial !important;
+  background-repeat: initial !important;
+  position: relative;
+  overflow: visible;
+}
+
+.locksmith-impact-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 500px;
+  height: auto;
+  max-height: 360px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.locksmith-impact-decoration img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.locksmith-impact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.locksmith-impact-title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 768px;
+  width: 100%;
+}
+
+.locksmith-impact-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
 }
 
 .locksmith-section-light * {
@@ -268,10 +372,10 @@ main#main-content > section {
   content: '';
   position: absolute;
   inset: 0;
-  background-image: url('https://www.figma.com/api/mcp/asset/b52ff2db-cb0f-407e-8429-7a3b969b107c');
+  background-image: url('../images/backgrounds/elevate_locksmith_communication_background.png');
   background-size: cover;
   background-position: center;
-  opacity: 0.45;
+  background-repeat: no-repeat;
   z-index: 1;
 }
 
@@ -430,6 +534,10 @@ main#main-content > section {
   width: 100%;
 }
 
+.locksmith-smart-evolution .locksmith-text-content {
+  gap: 24px;
+}
+
 .locksmith-text-content-center {
   display: flex;
   flex-direction: column;
@@ -456,7 +564,11 @@ main#main-content > section {
   letter-spacing: -0.52px;
   color: #0A0B0C !important;
   margin: 0;
-  text-align: center;
+  text-align: left;
+}
+
+.locksmith-impact-title-section .locksmith-heading-center {
+  text-align: left;
 }
 
 .locksmith-heading-left {
@@ -493,7 +605,11 @@ main#main-content > section {
   line-height: 1.5;
   color: #0A0B0C !important;
   margin: 0;
-  text-align: center;
+  text-align: left;
+}
+
+.locksmith-impact-text-content .locksmith-description-center {
+  text-align: left;
 }
 
 .locksmith-description-left {
@@ -507,6 +623,23 @@ main#main-content > section {
 
 .locksmith-description p {
   margin: 0 0 0 0;
+}
+
+.locksmith-heading-dark {
+  color: #0A0B0C !important;
+}
+
+.locksmith-description-dark {
+  color: #0A0B0C !important;
+  font-size: 18px;
+}
+
+.locksmith-description-dark p {
+  margin: 0 0 8px 0;
+}
+
+.locksmith-description-dark p:last-child {
+  margin-bottom: 0;
 }
 
 /* ===== FEATURE LIST ===== */
@@ -595,7 +728,11 @@ main#main-content > section {
   display: flex;
   gap: 24px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+}
+
+.locksmith-impact-content .locksmith-actions-center {
+  justify-content: flex-start;
 }
 
 .locksmith-btn-primary {
@@ -658,11 +795,11 @@ main#main-content > section {
   line-height: 1.5;
   color: #0A0B0C !important;
   background: rgba(10, 11, 12, 0.05);
-  border: 1px solid transparent;
+  border: 1px solid #FFFFFF;
   padding: 10px 24px;
   border-radius: 100px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, border-color 0.3s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -704,7 +841,113 @@ main#main-content > section {
   transform: translateX(4px);
 }
 
+/* ===== SMART EVOLUTION SECTION ===== */
+.locksmith-section.locksmith-section-light.locksmith-smart-evolution,
+.locksmith-smart-evolution.locksmith-section-light {
+  background-color: #FAFBFC !important;
+  background-image: none !important;
+  background-position: initial !important;
+  background-size: initial !important;
+  background-repeat: initial !important;
+}
+
+.locksmith-smart-evolution-image {
+  flex: 1 0 0;
+  min-width: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 600 / 640;
+  position: relative;
+}
+
+.locksmith-smart-evolution-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.locksmith-smart-evolution-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.locksmith-smart-evolution-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
+}
+
+.locksmith-smart-evolution-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.locksmith-smart-evolution-icon img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.locksmith-smart-evolution-text {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0A0B0C !important;
+  margin: 0;
+  flex: 1;
+}
+
+.locksmith-smart-evolution-actions {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
 /* ===== FEATURES GRID ===== */
+.locksmith-features-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.locksmith-features-image {
+  flex-shrink: 0;
+  width: 400px;
+  height: 426px;
+  position: relative;
+  border-radius: 16px 16px 16px 0;
+  overflow: hidden;
+}
+
+.locksmith-features-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.locksmith-features-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  min-width: 0;
+}
+
 .locksmith-features-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -718,29 +961,36 @@ main#main-content > section {
   gap: 16px;
 }
 
+.locksmith-feature-card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .locksmith-feature-card-icon {
-  width: 48px;
-  height: 48px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0A0B0C;
   flex-shrink: 0;
 }
 
-.locksmith-feature-card-icon svg {
+.locksmith-feature-card-icon img {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 .locksmith-feature-card-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1.4;
-  letter-spacing: -0.28px;
+  letter-spacing: -0.22px;
   color: #0A0B0C !important;
   margin: 0;
+  flex: 1;
 }
 
 .locksmith-feature-card-description {
@@ -760,6 +1010,12 @@ main#main-content > section {
   margin-bottom: 0;
 }
 
+.locksmith-features-actions {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
 /* ===== ELEVATE SECTION ===== */
 .locksmith-elevate-heading {
   font-family: 'Inter', sans-serif;
@@ -775,6 +1031,12 @@ main#main-content > section {
   margin-right: auto;
 }
 
+.locksmith-elevate-content {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .locksmith-elevate-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -788,6 +1050,15 @@ main#main-content > section {
   gap: 32px;
   align-items: center;
   text-align: center;
+  flex: 1 0 0;
+}
+
+.locksmith-elevate-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  width: 100%;
 }
 
 .locksmith-elevate-icon {
@@ -796,13 +1067,13 @@ main#main-content > section {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
   flex-shrink: 0;
 }
 
-.locksmith-elevate-icon svg {
+.locksmith-elevate-icon img {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
 .locksmith-elevate-title {
@@ -813,6 +1084,7 @@ main#main-content > section {
   letter-spacing: -0.28px;
   color: #FFFFFF !important;
   margin: 0;
+  width: 100%;
 }
 
 .locksmith-elevate-description {
@@ -822,6 +1094,10 @@ main#main-content > section {
   line-height: 1.5;
   color: #FFFFFF !important;
   margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .locksmith-elevate-description p {
@@ -846,6 +1122,7 @@ main#main-content > section {
   transition: opacity 0.3s ease;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   margin-top: auto;
 }
@@ -862,20 +1139,18 @@ main#main-content > section {
 
 /* ===== STATS SECTION ===== */
 .locksmith-stats-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 48px;
   width: 100%;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  padding-top: 64px;
 }
 
 .locksmith-stat {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex: 1 0 0;
   padding-left: 32px;
-  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  border-left: 1px solid rgba(10, 11, 12, 0.1);
 }
 
 .locksmith-stat:first-child {
@@ -1231,12 +1506,43 @@ main#main-content > section {
   }
 
   .locksmith-stats-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 32px;
+  }
+
+  .locksmith-stat {
+    border-left: none;
+    padding-left: 0;
+    padding-top: 32px;
+    border-top: 1px solid rgba(10, 11, 12, 0.1);
+  }
+
+  .locksmith-stat:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .locksmith-features-wrapper {
+    flex-direction: column;
+    gap: 48px;
+  }
+
+  .locksmith-features-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
   }
 
   .locksmith-features-grid {
     grid-template-columns: 1fr;
+  }
+
+  .locksmith-impact-decoration {
+    display: none;
+  }
+
+  .locksmith-impact-content {
+    gap: 64px;
   }
 }
 
@@ -1287,6 +1593,31 @@ main#main-content > section {
 
   .locksmith-container {
     gap: 64px;
+  }
+
+  .locksmith-impact-decoration {
+    display: none;
+  }
+
+  .locksmith-impact-content {
+    gap: 64px;
+  }
+
+  .locksmith-stats-grid {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .locksmith-stat {
+    border-left: none;
+    padding-left: 0;
+    padding-top: 32px;
+    border-top: 1px solid rgba(10, 11, 12, 0.1);
+  }
+
+  .locksmith-stat:first-child {
+    border-top: none;
+    padding-top: 0;
   }
 }
 

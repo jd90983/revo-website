@@ -904,15 +904,10 @@
   position: absolute;
   inset: 0;
   pointer-events: none;
+  z-index: 0;
 }
 
-.bg-color {
-  position: absolute;
-  inset: 0;
-  background-color: #0a0b0c;
-}
-
-/* Wave Pattern - CRITICAL: 15% opacity for subtle effect */
+/* Wave Pattern - Background image only */
 .wave-pattern {
   position: absolute;
   inset: 0;
@@ -920,9 +915,8 @@
   height: 100%;
   object-fit: cover;
   object-position: 50% 50%;
-  opacity: 0.4; /* Temporarily increased to 40% to verify image loads */
+  opacity: 1;
   max-width: none;
-  z-index: 0;
 }
 
 /* Content Container */

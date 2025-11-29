@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/shared-components.css">
   <link rel="stylesheet" href="css/ser.css">
 </head>
 <body>
@@ -38,7 +39,7 @@
         </a>
       </div>
         <ul class="navbar-menu">
-          <li><a href="service.html">Services</a></li>
+          <li><a href="ser.html" class="active">Services</a></li>
           <li class="navbar-menu-item-with-mega">
             <a href="ind.html">Industry</a>
             <div class="megamenu">
@@ -798,114 +799,45 @@
       </div>
     </section>
 
-    <!-- How to Get Started Section -->
-    <section class="ser-get-started">
-      <div class="ser-get-started-background"></div>
-      <div class="ser-section-container">
-        <div class="ser-get-started-wrapper">
-          <div class="ser-get-started-left">
-            <div class="ser-get-started-header">
-              <p class="ser-get-started-tagline">You're Just Minutes Away from Smarter Calls</p>
-              <h2 class="ser-get-started-title">
-                How to Get Started with Revo in <span class="ser-get-started-highlight">4 Easy Steps</span>
-              </h2>
-            </div>
-            <div class="ser-get-started-actions">
-              <button class="ser-get-started-btn-primary">Get Started</button>
-              <button class="ser-get-started-btn-secondary">
-                Book a Demo
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
-            </div>
-          </div>
-          <div class="ser-get-started-right">
-            <div class="ser-steps-timeline">
-              <div class="ser-step-item">
-                <div class="ser-step-number-wrapper">
-                  <div class="ser-step-number">1</div>
-                  <div class="ser-step-divider"></div>
-                </div>
-                <div class="ser-step-content">
-                  <h3 class="ser-step-title">Create Your Account</h3>
-                  <p class="ser-step-description">
-                    Sign up for your business account by adding your company details and selecting the plan that best fits your needs.
-                  </p>
-                </div>
-              </div>
-              <div class="ser-step-item">
-                <div class="ser-step-number-wrapper">
-                  <div class="ser-step-number">2</div>
-                  <div class="ser-step-divider"></div>
-                </div>
-                <div class="ser-step-content">
-                  <h3 class="ser-step-title">Customize Your Setup</h3>
-                  <p class="ser-step-description">
-                    Tell us how you want your calls handled — from services to schedules. Revo adapts perfectly to your business flow.
-                  </p>
-                </div>
-              </div>
-              <div class="ser-step-item">
-                <div class="ser-step-number-wrapper">
-                  <div class="ser-step-number">3</div>
-                  <div class="ser-step-divider"></div>
-                </div>
-                <div class="ser-step-content">
-                  <h3 class="ser-step-title">Launch Within Minutes</h3>
-                  <p class="ser-step-description">
-                    Train your AI receptionist with your preferred tone and communication style. Go live in under 10 minutes — no complex setup. Need help? Our support team is here for you.
-                  </p>
-                </div>
-              </div>
-              <div class="ser-step-item">
-                <div class="ser-step-number-wrapper">
-                  <div class="ser-step-number">4</div>
-                </div>
-                <div class="ser-step-content">
-                  <h3 class="ser-step-title">Track Everything from One Platform</h3>
-                  <p class="ser-step-description">
-                    Access your real-time call history, analytics, and performance insights — anytime, anywhere.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- How to Get Started Section - Loaded from template -->
+    <div id="get-started-template-container"></div>
+
+    <!-- Intelligent Communication Banner Section -->
+    <section class="ser-intelligent-banner" style="position: relative !important; z-index: 10 !important; display: flex !important; visibility: visible !important;">
+      <div class="ser-intelligent-banner-background" aria-hidden="true">
+        <div class="ser-intelligent-banner-base"></div>
+        <div class="ser-intelligent-banner-image"></div>
+        <div class="ser-intelligent-banner-overlay"></div>
+      </div>
+      <div class="ser-intelligent-banner-content">
+        <p class="ser-intelligent-banner-line1">Intelligent communication - Real business growth</p>
+        <p class="ser-intelligent-banner-line2">Your calls - Our AI - Zero missed opportunities</p>
       </div>
     </section>
 
     <!-- Testimonial/Impact Section -->
     <section class="ser-testimonial">
-      <div class="ser-testimonial-background"></div>
+      <div class="ser-testimonial-background">
+        <img src="images/backgrounds/background_element_1.png" alt="" class="ser-testimonial-bg-element">
+      </div>
       <div class="ser-section-container">
         <div class="ser-testimonial-content">
-          <h2 class="ser-testimonial-quote">
-            Intelligent communication. Real business results. Our AI. Zero missed opportunities.
-          </h2>
-          <div class="ser-testimonial-card">
+          <div class="ser-testimonial-left">
+            <div class="ser-testimonial-image-wrapper">
+              <img src="images/avatars/Laura Bennett.png" alt="Laura Bennett" class="ser-testimonial-image">
+            </div>
+          </div>
+          <div class="ser-testimonial-right">
+            <img src="images/line.png" alt="" class="ser-testimonial-line-element">
             <div class="ser-testimonial-stars">
-              <svg width="120" height="20" viewBox="0 0 120 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10 0L12.5 7.5L20 10L12.5 12.5L10 20L7.5 12.5L0 10L7.5 7.5L10 0Z" fill="currentColor"/>
-                <path d="M30 0L32.5 7.5L40 10L32.5 12.5L30 20L27.5 12.5L20 10L27.5 7.5L30 0Z" fill="currentColor"/>
-                <path d="M50 0L52.5 7.5L60 10L52.5 12.5L50 20L47.5 12.5L40 10L47.5 7.5L50 0Z" fill="currentColor"/>
-                <path d="M70 0L72.5 7.5L80 10L72.5 12.5L70 20L67.5 12.5L60 10L67.5 7.5L70 0Z" fill="currentColor"/>
-                <path d="M90 0L92.5 7.5L100 10L92.5 12.5L90 20L87.5 12.5L80 10L87.5 7.5L90 0Z" fill="currentColor"/>
-              </svg>
+              <img src="images/icons/Stars.svg" alt="5 stars rating" class="ser-testimonial-stars-icon">
             </div>
             <p class="ser-testimonial-text">
-              "Revo has transformed how we handle customer calls. The AI receptionist is 
-              incredibly natural and has never missed a call. Our customer satisfaction 
-              has increased significantly."
+              "Before Revo, we were missing calls every evening and weekend. Now, every inquiry is answered instantly — even when our office is closed. It's like having a full team working 24/7 without the overhead"
             </p>
             <div class="ser-testimonial-author">
-              <div class="ser-testimonial-avatar">
-                <div class="ser-avatar-placeholder"></div>
-              </div>
-              <div class="ser-testimonial-info">
-                <p class="ser-testimonial-name">Sarah M., Owner</p>
-                <p class="ser-testimonial-company">Horizon Plumbing Co.</p>
-              </div>
+              <p class="ser-testimonial-name">Laura Bennett</p>
+              <p class="ser-testimonial-company">Operations Manager, Horizon Plumbing Co.</p>
             </div>
           </div>
         </div>
@@ -1059,7 +991,7 @@
           <div class="footer-column">
             <h4>Quick links</h4>
             <ul>
-              <li><a href="service.html">Services</a></li>
+              <li><a href="ser.html" class="active">Services</a></li>
               <li><a href="ind.html">Industries</a></li>
               <li><a href="pricing.html">Pricing</a></li>
               <li><a href="#demo">Demo</a></li>
@@ -1145,7 +1077,14 @@
   <!-- JavaScript -->
   <script src="js/navigation.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/template-loader.js"></script>
   <script src="js/ser.js"></script>
+  <script>
+    // Load Get Started section template
+    document.addEventListener('DOMContentLoaded', function() {
+      loadTemplate('templates/get-started-section.html', '#get-started-template-container');
+    });
+  </script>
 </body>
 </html>
 
