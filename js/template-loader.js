@@ -1,0 +1,95 @@
+/* ============================================
+   Template Loader - Load shared HTML templates
+   ============================================ */
+
+/**
+ * Loads an HTML template from a file and inserts it into a container
+ * @param {string} templatePath - Path to the template HTML file
+ * @param {string} containerSelector - CSS selector for the container element
+ */
+async function loadTemplate(templatePath, containerSelector) {
+  try {
+    console.log(`Loading template from: ${templatePath}`);
+    const response = await fetch(templatePath);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    const html = await response.text();
+    const container = document.querySelector(containerSelector);
+    if (container) {
+      container.innerHTML = html;
+      console.log('Template loaded successfully into:', containerSelector);
+      
+      // Re-inicializar scripts si es necesario
+      // Por ejemplo, si hay animaciones o interactividad
+      if (typeof initGetStartedSection === 'function') {
+        // Small delay to ensure DOM is ready
+        setTimeout(() => {
+          initGetStartedSection();
+        }, 50);
+      }
+      
+      // Trigger custom event for other scripts to listen
+      const event = new CustomEvent('templateLoaded', {
+        detail: { templatePath, containerSelector }
+      });
+      document.dispatchEvent(event);
+    } else {
+      console.warn(`Container not found: ${containerSelector}`);
+    }
+  } catch (error) {
+    console.error('Error loading template:', error);
+    // Fallback: show error message in container if it exists
+    const container = document.querySelector(containerSelector);
+    if (container) {
+      container.innerHTML = `<div style="background: #ff0000; color: white; padding: 20px; border-radius: 8px; margin: 20px;">
+        <strong>Error loading template:</strong><br>
+        ${error.message}<br>
+        <small>Make sure you're running a local server (not opening file directly)</small>
+      </div>`;
+    }
+  }
+}
+
+/**
+ * Initialize the Get Started section after template is loaded
+ * This can be used to add event listeners, animations, etc.
+ */
+function initGetStartedSection() {
+  const section = document.querySelector('.ser-get-started');
+  if (!section) {
+    console.warn('Get Started section not found after template load');
+    return;
+  }
+  
+  // Initialize scroll animations for the loaded section
+  if ('IntersectionObserver' in window) {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+          sectionObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Mark section for animation and set initial state
+    section.setAttribute('data-animate', 'true');
+    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    
+    // Small delay to ensure styles are applied
+    setTimeout(() => {
+      section.style.opacity = '0';
+      section.style.transform = 'translateY(30px)';
+      sectionObserver.observe(section);
+    }, 10);
+  }
+  
+  console.log('Get Started section template loaded and initialized');
+}
+
