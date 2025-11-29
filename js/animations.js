@@ -270,3 +270,85 @@ if (document.readyState === 'loading') {
 } else {
   initBackgroundTransition();
 }
+
+// ===== SCROLL-TRIGGERED COUNTER ANIMATION =====
+// Counts up from 0 to target number when section comes into view
+const initCounterAnimation = () => {
+  const statNumbers = document.querySelectorAll('.performance-stat-number[data-target]');
+
+  if (!statNumbers.length) {
+    console.log('No stat numbers found');
+    return;
+  }
+
+  console.log('Counter animation initialized, found', statNumbers.length, 'stat numbers');
+
+  // Animation configuration
+  const duration = 2000; // 2 seconds for the count animation
+  const frameDuration = 1000 / 60; // 60fps
+  const totalFrames = Math.round(duration / frameDuration);
+
+  // Easing function for smooth animation (ease-out)
+  const easeOutQuad = (t) => t * (2 - t);
+
+  // Function to animate a single counter
+  const animateCounter = (element) => {
+    const target = parseInt(element.dataset.target, 10);
+    console.log('Animating counter to', target);
+    let frame = 0;
+
+    const counter = setInterval(() => {
+      frame++;
+      const progress = easeOutQuad(frame / totalFrames);
+      const currentValue = Math.round(target * progress);
+
+      element.textContent = currentValue + '%';
+
+      if (frame === totalFrames) {
+        clearInterval(counter);
+        element.textContent = target + '%';
+      }
+    }, frameDuration);
+  };
+
+  // Create intersection observer for the stats row (more specific target)
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      console.log('Intersection observed:', entry.isIntersecting, 'ratio:', entry.intersectionRatio);
+      if (entry.isIntersecting) {
+        // Get all stat numbers within this section
+        const statsInView = entry.target.querySelectorAll('.performance-stat-number[data-target]');
+        console.log('Stats in view:', statsInView.length);
+
+        // Start animation for each stat with a slight stagger
+        statsInView.forEach((stat, index) => {
+          setTimeout(() => {
+            animateCounter(stat);
+          }, index * 200); // 200ms delay between each counter
+        });
+
+        // Only animate once
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1, // Trigger when 10% of section is visible
+    rootMargin: '0px 0px -50px 0px'
+  });
+
+  // Observe the performance stats section
+  const statsSection = document.querySelector('.ai-performance-section');
+  if (statsSection) {
+    console.log('Observing ai-performance-section');
+    counterObserver.observe(statsSection);
+  } else {
+    console.log('ai-performance-section not found');
+  }
+};
+
+// Initialize counter animation when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initCounterAnimation);
+} else {
+  initCounterAnimation();
+}

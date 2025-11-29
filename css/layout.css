@@ -405,6 +405,183 @@
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
+/* Mobile Menu Overlay - Full screen menu */
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  min-height: 100vh !important;
+  background: #ffffff !important;
+  z-index: 999999 !important;
+  display: none;
+  flex-direction: column;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  pointer-events: none;
+}
+
+.mobile-menu-overlay.active {
+  display: flex !important;
+  pointer-events: auto !important;
+}
+
+/* Mobile Menu Header - DARK THEME */
+.mobile-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu-logo img {
+  height: 32px;
+  width: auto;
+}
+
+.mobile-menu-close {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu-close svg {
+  width: 24px;
+  height: 24px;
+  stroke: #ffffff;
+}
+
+/* Mobile Menu Navigation Items - DARK THEME */
+.mobile-menu-nav {
+  flex: 1;
+  padding: 24px;
+}
+
+.mobile-menu-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu-nav li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu-nav li:last-child {
+  border-bottom: none;
+}
+
+.mobile-menu-nav a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.mobile-menu-nav a:hover {
+  color: var(--color-primary);
+}
+
+.mobile-menu-nav .menu-chevron {
+  width: 20px;
+  height: 20px;
+  stroke: rgba(255, 255, 255, 0.5);
+  transition: stroke 0.2s ease;
+}
+
+.mobile-menu-nav a:hover .menu-chevron {
+  stroke: var(--color-primary);
+}
+
+/* Mobile Menu Footer - DARK THEME */
+.mobile-menu-footer {
+  padding: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.mobile-menu-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.mobile-menu-phone svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--color-primary);
+}
+
+.mobile-menu-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mobile-menu-actions .btn-login {
+  padding: 14px 24px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.mobile-menu-actions .btn-login:hover {
+  color: #ffffff;
+}
+
+.mobile-menu-actions .btn-register {
+  padding: 14px 24px;
+  background: var(--color-primary);
+  border: none;
+  border-radius: 100px;
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.mobile-menu-actions .btn-register:hover {
+  background: #2563eb;
+}
+
+/* Prevent body scroll when menu is open */
+body.mobile-menu-open {
+  overflow: hidden;
+}
+
 /* ===== HERO SECTION ===== */
 
 .hero {

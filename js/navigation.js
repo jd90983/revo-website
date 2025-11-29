@@ -2,43 +2,99 @@
    Navigation - Mobile Menu & Smooth Scroll
    ============================================ */
 
-// Mobile Menu Toggle
-const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-const navbarMenu = document.querySelector('.navbar-menu');
-const navbar = document.querySelector('.navbar');
+// Mobile Menu Toggle - Full Screen Overlay
+document.addEventListener('DOMContentLoaded', () => {
+  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+  const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+  const mobileMenuClose = document.getElementById('mobileMenuClose');
 
-if (mobileMenuToggle && navbarMenu) {
-  mobileMenuToggle.addEventListener('click', () => {
-    navbarMenu.classList.toggle('active');
-    mobileMenuToggle.classList.toggle('active');
-    document.body.classList.toggle('menu-open');
-
-    // Update aria-expanded for accessibility
-    const isExpanded = navbarMenu.classList.contains('active');
-    mobileMenuToggle.setAttribute('aria-expanded', isExpanded);
+  // Debug: Check if elements are found
+  console.log('Mobile menu elements:', {
+    toggle: mobileMenuToggle,
+    overlay: mobileMenuOverlay,
+    close: mobileMenuClose
   });
 
-  // Close menu when clicking on a link
-  const menuLinks = navbarMenu.querySelectorAll('a');
-  menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      navbarMenu.classList.remove('active');
-      mobileMenuToggle.classList.remove('active');
-      document.body.classList.remove('menu-open');
-      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+  // Function to open mobile menu
+  function openMobileMenu() {
+    console.log('Opening mobile menu');
+    if (mobileMenuOverlay) {
+      // Force display with inline styles to override any CSS - DARK THEME
+      mobileMenuOverlay.style.cssText = `
+        display: flex !important;
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        background-color: #0a0b0c !important;
+        z-index: 999999 !important;
+        flex-direction: column !important;
+        overflow-y: auto !important;
+      `;
+      mobileMenuOverlay.classList.add('active');
+      document.body.classList.add('mobile-menu-open');
+      document.body.style.overflow = 'hidden';
+      if (mobileMenuToggle) {
+        mobileMenuToggle.setAttribute('aria-expanded', 'true');
+      }
+    }
+  }
+
+  // Function to close mobile menu
+  function closeMobileMenu() {
+    console.log('Closing mobile menu');
+    if (mobileMenuOverlay) {
+      // Reset inline styles
+      mobileMenuOverlay.style.cssText = '';
+      mobileMenuOverlay.classList.remove('active');
+      document.body.classList.remove('mobile-menu-open');
+      document.body.style.overflow = '';
+      if (mobileMenuToggle) {
+        mobileMenuToggle.setAttribute('aria-expanded', 'false');
+      }
+    }
+  }
+
+  // Toggle menu on hamburger click
+  if (mobileMenuToggle) {
+    mobileMenuToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      console.log('Hamburger clicked');
+      if (mobileMenuOverlay && mobileMenuOverlay.classList.contains('active')) {
+        closeMobileMenu();
+      } else {
+        openMobileMenu();
+      }
     });
-  });
+  }
 
-  // Close menu when clicking outside
-  document.addEventListener('click', (e) => {
-    if (!e.target.closest('.navbar') && navbarMenu.classList.contains('active')) {
-      navbarMenu.classList.remove('active');
-      mobileMenuToggle.classList.remove('active');
-      document.body.classList.remove('menu-open');
-      mobileMenuToggle.setAttribute('aria-expanded', 'false');
+  // Close menu on X button click
+  if (mobileMenuClose) {
+    mobileMenuClose.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeMobileMenu();
+    });
+  }
+
+  // Close menu when clicking a nav link
+  if (mobileMenuOverlay) {
+    const menuLinks = mobileMenuOverlay.querySelectorAll('.mobile-menu-nav a');
+    menuLinks.forEach(link => {
+      link.addEventListener('click', closeMobileMenu);
+    });
+  }
+
+  // Close menu on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenuOverlay && mobileMenuOverlay.classList.contains('active')) {
+      closeMobileMenu();
     }
   });
-}
+});
 
 // Sticky Navbar with Shadow on Scroll & Hide/Show on Scroll Direction
 document.addEventListener('DOMContentLoaded', () => {
