@@ -2899,6 +2899,35 @@ main > section {
 }
 
 @media (max-width: 767px) {
+  /* Prevent horizontal scrolling on mobile */
+  html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  /* Ensure all sections don't overflow */
+  section,
+  .ser-hero,
+  .ser-services-header,
+  .ser-ai-receptionists,
+  .ser-stacked-cards-section,
+  .ser-humanize-section {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  /* Hero background - fit to page on mobile */
+  .ser-hero,
+  .ser-services-header {
+    min-height: auto;
+  }
+
+  .ser-hero-background,
+  .ser-services-header-background {
+    background-size: 100% auto;
+    background-position: center 65%;
+  }
+
   .ser-hero-container,
   .ser-services-header-container {
     padding: 80px 24px;
@@ -2930,6 +2959,7 @@ main > section {
     flex-direction: column;
     width: 100%;
     gap: 12px;
+    margin-top: 40px;
   }
 
   .ser-hero-btn-primary,
@@ -2973,20 +3003,45 @@ main > section {
   }
 
   .ser-ai-content-right {
-    height: 300px;
-    min-height: 300px;
+    height: auto;
+    min-height: auto;
+    padding: 0;
+    margin-top: -150px;
+  }
+
+  .ser-ai-phone-mockup-container {
+    width: 100%;
+    height: auto;
+    padding: 0 20px 40px 20px;
   }
 
   .ser-ai-phone-mockup-image {
-    max-height: 210px;
-    max-width: 70%;
-    width: 70%;
-    min-width: 200px;
+    max-height: none;
+    max-width: 280px;
+    width: 80%;
+    min-width: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Reliable & Secure section image - zoom out for mobile */
+  .ser-ai-receptionists:not(.ser-ai-receptionists-original) .ser-ai-phone-mockup-image {
+    max-width: 100%;
+    width: 100%;
+    min-width: auto;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+  }
+
+  /* Match bottom padding to top padding for Reliable & Secure section */
+  .ser-ai-receptionists:not(.ser-ai-receptionists-original) .ser-ai-phone-mockup-container {
+    padding-bottom: 0;
   }
 
   .ser-ai-circular-wave-pattern {
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 320px;
   }
 
   .ser-intelligent-communication {
@@ -3078,65 +3133,207 @@ main > section {
     justify-content: center;
   }
 
+  /* ===== HOW IT WORKS - MOBILE CAROUSEL ===== */
+  /* Disable desktop sticky scroll behavior */
   .ser-how-it-works-wrapper {
-    height: calc(100vh * 3);
+    height: auto !important;
+    min-height: auto;
+    position: relative;
   }
 
   .ser-how-it-works {
-    padding: 60px 0;
+    padding: 60px 0 42px 0; /* Reduced bottom padding by 30% (60px -> 42px) */
+    position: relative !important;
+    top: auto !important;
   }
-  
+
   .ser-how-it-works .ser-section-container {
-    padding: 0 var(--page-padding-mobile);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
   }
 
   .ser-how-header {
-    margin-bottom: 40px;
+    margin-bottom: 32px;
+    padding: 0 24px;
   }
 
   .ser-how-title {
-    font-size: var(--text-h4);
+    font-size: 28px;
+    line-height: 1.2;
   }
 
   .ser-how-description {
-    font-size: var(--text-regular);
+    font-size: 16px;
   }
 
+  /* Horizontal scrolling carousel */
   .ser-how-cards-container {
-    gap: var(--space-2xl);
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    padding: 0 24px 24px 24px;
+    margin: 0;
+    position: relative;
+    height: auto !important;
+  }
+
+  .ser-how-cards-container::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  /* Reset card positioning for mobile carousel */
+  .ser-how-card {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    flex: 0 0 85%;
+    min-width: 85%;
+    max-width: 85%;
+    height: auto !important;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    /* Carousel animation - cards scale and fade based on position */
+    opacity: 0.5 !important;
+    transform: scale(0.92) !important;
+    transition: opacity 0.4s ease, transform 0.4s ease !important;
+  }
+
+  /* Active card in center - full size and opacity */
+  .ser-how-card.carousel-active {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+  }
+
+  .ser-how-card.active,
+  .ser-how-card.exiting {
+    position: relative !important;
   }
 
   .ser-how-card-inner {
     flex-direction: column;
-    min-height: auto;
+    min-height: 520px; /* Fixed height for uniform cards */
+    height: 520px;
+    border-radius: 16px;
+    display: flex;
+    transition: box-shadow 0.4s ease;
+  }
+
+  /* Add glow effect to active card */
+  .ser-how-card.carousel-active .ser-how-card-inner {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   }
 
   .ser-how-card-reverse {
     flex-direction: column;
   }
 
+  /* Content always on top - fixed height section */
   .ser-how-card-content {
-    padding: var(--space-xl);
+    padding: 24px;
+    order: 1;
+    flex: 0 0 auto;
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ser-how-card-top {
+    gap: 12px;
+    flex: 1;
+  }
+
+  .ser-how-card-tagline {
+    font-size: 14px;
+  }
+
+  .ser-how-card-text {
+    gap: 16px;
   }
 
   .ser-how-card-title {
-    font-size: var(--text-h4);
+    font-size: 22px;
+    line-height: 1.3;
   }
 
+  .ser-how-card-description {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  /* Image always on bottom - fills remaining space */
   .ser-how-card-image {
-    min-height: 300px;
+    order: 2;
+    flex: 1;
+    min-height: 0;
+    height: 200px;
+    border-radius: 0 0 16px 16px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+  }
+
+  .ser-how-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
   }
 
   .ser-how-card-actions {
     flex-direction: column;
     width: 100%;
-    gap: var(--space-md);
+    gap: 12px;
+    margin-top: 8px;
   }
 
   .ser-how-btn-primary,
   .ser-how-btn-secondary {
     width: 100%;
     justify-content: center;
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  /* Dot navigation for carousel - created via JS */
+  .ser-how-carousel-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 24px;
+    margin-top: 8px;
+  }
+
+  .ser-how-carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.35);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .ser-how-carousel-dot:hover {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .ser-how-carousel-dot.active {
+    background: var(--color-primary, #4F6EF7);
+    transform: scale(1.2);
   }
 
   .ser-benefits {

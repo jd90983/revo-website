@@ -535,3 +535,96 @@ document.addEventListener('DOMContentLoaded', function() {
   updateCardStack();
 });
 
+// ===== HOW IT WORKS: MOBILE CAROUSEL WITH DOTS =====
+document.addEventListener('DOMContentLoaded', function() {
+  // Only run on mobile
+  const isMobile = () => window.innerWidth <= 767;
+
+  if (!isMobile()) return;
+
+  const cardsContainer = document.querySelector('.ser-how-cards-container');
+  const cards = document.querySelectorAll('.ser-how-card');
+  const howSection = document.querySelector('.ser-how-it-works');
+
+  if (!cardsContainer || cards.length === 0 || !howSection) return;
+
+  // Create dots container
+  const dotsContainer = document.createElement('div');
+  dotsContainer.className = 'ser-how-carousel-dots';
+
+  // Create a dot for each card
+  cards.forEach((card, index) => {
+    const dot = document.createElement('button');
+    dot.className = 'ser-how-carousel-dot' + (index === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', `Go to card ${index + 1}`);
+    dot.addEventListener('click', () => {
+      cards[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    });
+    dotsContainer.appendChild(dot);
+  });
+
+  // Insert dots after cards container
+  cardsContainer.parentNode.insertBefore(dotsContainer, cardsContainer.nextSibling);
+
+  // Update active dot and card animation on scroll
+  const updateCarousel = () => {
+    const containerRect = cardsContainer.getBoundingClientRect();
+    const containerCenter = containerRect.left + containerRect.width / 2;
+
+    let closestCard = 0;
+    let closestDistance = Infinity;
+
+    cards.forEach((card, index) => {
+      const cardRect = card.getBoundingClientRect();
+      const cardCenter = cardRect.left + cardRect.width / 2;
+      const distance = Math.abs(containerCenter - cardCenter);
+
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestCard = index;
+      }
+    });
+
+    // Update card animations - add/remove carousel-active class
+    cards.forEach((card, index) => {
+      if (index === closestCard) {
+        card.classList.add('carousel-active');
+      } else {
+        card.classList.remove('carousel-active');
+      }
+    });
+
+    // Update dots
+    const dots = dotsContainer.querySelectorAll('.ser-how-carousel-dot');
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === closestCard);
+    });
+  };
+
+  // Set first card as active initially
+  if (cards[0]) {
+    cards[0].classList.add('carousel-active');
+  }
+
+  // Throttled scroll handler
+  let scrollTimeout;
+  cardsContainer.addEventListener('scroll', () => {
+    if (scrollTimeout) clearTimeout(scrollTimeout);
+    scrollTimeout = setTimeout(updateCarousel, 50);
+  }, { passive: true });
+
+  // Initial update
+  updateCarousel();
+
+  // Handle resize - remove dots on desktop
+  let resizeTimeout;
+  window.addEventListener('resize', () => {
+    if (resizeTimeout) clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(() => {
+      if (!isMobile() && dotsContainer.parentNode) {
+        dotsContainer.remove();
+      }
+    }, 250);
+  });
+});
+

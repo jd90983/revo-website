@@ -442,8 +442,11 @@
 }
 
 .mobile-menu-logo img {
-  height: 32px;
-  width: auto;
+  width: 75px !important; /* Match navbar logo size */
+  height: 19px !important; /* Match navbar logo size */
+  max-width: 75px !important;
+  max-height: 19px !important;
+  object-fit: contain;
 }
 
 .mobile-menu-close {
@@ -454,12 +457,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #ffffff; /* Make X icon white */
 }
 
 .mobile-menu-close svg {
   width: 24px;
   height: 24px;
-  stroke: #ffffff;
+  stroke: #ffffff !important;
+}
+
+.mobile-menu-close svg path {
+  stroke: #ffffff !important;
 }
 
 /* Mobile Menu Navigation Items - DARK THEME */
