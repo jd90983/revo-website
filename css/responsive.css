@@ -698,6 +698,146 @@
   }
 }
 
+/* ===== HEAR A SAMPLE SECTION - RESPONSIVE ===== */
+@media (max-width: 1023px) {
+  .hear-sample-section {
+    padding: 80px 40px;
+  }
+
+  .hear-sample-container {
+    gap: 64px;
+  }
+
+  .hear-sample-title {
+    font-size: 42px;
+    letter-spacing: -0.42px;
+  }
+
+  .hear-sample-card-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .hear-sample-left-panel {
+    width: 100%;
+    height: 400px;
+  }
+
+  .hear-sample-image-wrapper {
+    height: 400px;
+  }
+
+  .hear-sample-right-panel {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .hear-sample-section {
+    padding: 60px 24px;
+  }
+
+  .hear-sample-container {
+    gap: 48px;
+  }
+
+  .hear-sample-header {
+    gap: 12px;
+  }
+
+  .hear-sample-tagline {
+    font-size: 14px;
+  }
+
+  .hear-sample-title {
+    font-size: 36px;
+    letter-spacing: -0.36px;
+  }
+
+  .hear-sample-description p {
+    font-size: 16px;
+  }
+
+  .hear-sample-card {
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .hear-sample-card-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hear-sample-left-panel {
+    width: 100%;
+    height: 300px;
+  }
+
+  .hear-sample-image-wrapper {
+    height: 300px;
+  }
+
+  .hear-sample-service-icons {
+    width: 56px;
+    padding: 16px 0;
+  }
+
+  .hear-sample-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hear-sample-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .hear-sample-professional-label {
+    font-size: 20px;
+    bottom: 16px;
+  }
+
+  .hear-sample-right-panel {
+    padding: 0;
+    gap: 20px;
+  }
+
+  .hear-sample-chat {
+    gap: 20px;
+    max-height: 350px; /* Altura reducida en móvil */
+  }
+
+  .hear-sample-message-bubble {
+    max-width: 100%;
+  }
+
+  .hear-sample-audio-player {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .hear-sample-progress-container {
+    width: 100%;
+    order: 2;
+  }
+
+  .hear-sample-volume-control {
+    order: 3;
+  }
+
+  .hear-sample-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+  }
+
+  .hear-sample-btn-primary,
+  .hear-sample-btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* ===== PRINT STYLES ===== */
 @media print {
   .navbar,

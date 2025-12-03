@@ -1380,8 +1380,10 @@ main#main-content > section {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  display: flex;
-  gap: 80px;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 60px;
+  align-items: flex-start;
 }
 
 .ind-faq-title-section {
@@ -1404,7 +1406,7 @@ main#main-content > section {
 .ind-faq-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   color: #FFFFFF !important;
   margin: 0;
@@ -1433,10 +1435,23 @@ main#main-content > section {
   flex: 1;
   display: flex;
   flex-direction: column;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .ind-faq-item {
+  background: transparent;
+  border-radius: 0;
+  overflow: visible;
+  padding: 0;
+  border: none;
+}
+
+.ind-faq-item:first-child {
+  border-top: none;
+}
+
+.ind-faq-item:not(:first-child) .ind-faq-question {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -1444,8 +1459,19 @@ main#main-content > section {
   display: flex;
   gap: 24px;
   align-items: center;
-  padding: 20px 0;
+  padding: 16px 0;
   cursor: pointer;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.ind-faq-item:first-child .ind-faq-question {
+  border-top: none;
+  padding-top: 0;
 }
 
 .ind-faq-question p {
