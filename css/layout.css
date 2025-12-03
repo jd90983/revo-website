@@ -1095,13 +1095,15 @@ body.mobile-menu-open {
 /* Wave Pattern - Background image only */
 .wave-pattern {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 50% 50%;
+  object-position: center center;
   opacity: 1;
-  max-width: none;
+  min-width: 100%;
 }
 
 /* Content Container */
@@ -1170,13 +1172,12 @@ body.mobile-menu-open {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 64px;
+  gap: 0;
 }
 
 .how-features-row {
   display: flex;
   gap: 48px;
-  min-height: 320px;
   width: 100%;
 }
 
@@ -1215,9 +1216,9 @@ body.mobile-menu-open {
 .how-feature-title {
   font-family: var(--font-heading);
   font-weight: var(--font-bold);
-  font-size: 36px;
-  line-height: 1.3;
-  letter-spacing: -0.36px;
+  font-size: 22px;
+  line-height: 1.4;
+  letter-spacing: -0.22px;
   color: #ffffff;
   margin: 0;
   text-align: center;
@@ -1622,15 +1623,43 @@ body.mobile-menu-open {
   overflow: hidden;
 }
 
+/* Background Wrapper */
+.cta-background-wrapper {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Background Base */
+.cta-background-base {
+  position: absolute;
+  inset: 0;
+  background-color: #000000;
+  z-index: 0;
+}
+
 /* Background Image */
 .cta-background-image {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center;
-  z-index: 0;
+  object-position: center center;
+  opacity: 1;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Background Overlay */
+.cta-background-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
   pointer-events: none;
 }
 
@@ -1642,6 +1671,7 @@ body.mobile-menu-open {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 80px;
   z-index: 1;
 }
 
@@ -1704,14 +1734,20 @@ body.mobile-menu-open {
   justify-content: center;
 }
 
-/* Button: Get Started (Primary - White) */
+/* Button: Get Started (Primary - Gradient) */
 .btn-cta-get-started {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   padding: 10px 24px;
-  background-color: #ffffff;
-  border: 0.5px solid #002d79;
+  background: #ffffff;
+  background-image: 
+    radial-gradient(circle at 89.6% 17.3%, rgba(205, 175, 250, 0.8) 0%, rgba(205, 175, 250, 0) 60%),
+    radial-gradient(circle at 15.4% 26.4%, rgba(247, 203, 191, 0.8) 0%, rgba(247, 203, 191, 0) 60%),
+    radial-gradient(circle at 72.5% 100%, rgba(129, 169, 248, 0.8) 0%, rgba(129, 169, 248, 0) 60%),
+    radial-gradient(circle at 42.1% 65%, rgba(164, 252, 245, 0.8) 0%, rgba(164, 252, 245, 0) 60%);
+  border: 0.25px solid rgba(255, 255, 255, 0.8);
   border-radius: 100px;
   font-family: var(--font-body);
   font-weight: 500;
@@ -1722,17 +1758,17 @@ body.mobile-menu-open {
   transition: all 0.2s ease;
   white-space: nowrap;
   outline: none;
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.41);
 }
 
 .btn-cta-get-started:hover {
-  background-color: #f5f5f5;
+  box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.5);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .btn-cta-get-started:active {
   transform: translateY(0);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.3);
 }
 
 /* Button: Book a Demo (Secondary - Glass) */
@@ -1740,9 +1776,10 @@ body.mobile-menu-open {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   padding: 10px 24px;
   background-color: rgba(255, 255, 255, 0.1); /* Glass effect */
-  border: 1px solid transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 100px;
   font-family: var(--font-body);
   font-weight: 500;
@@ -2075,8 +2112,11 @@ body.mobile-menu-open {
 }
 
 /* ===== FAQ SECTION ===== */
-
-.faq-section {
+/* Apply styles to all FAQ sections */
+.faq-section,
+.ind-faq-section,
+.locksmith-section.locksmith-section-dark-alt,
+.service-faq {
   position: relative;
   width: 100%;
   background-color: #222324;
@@ -2099,7 +2139,7 @@ body.mobile-menu-open {
 .faq-wrapper {
   display: grid;
   grid-template-columns: 500px 1fr;
-  gap: 80px;
+  gap: 60px;
   width: 100%;
   align-items: flex-start;
 }
@@ -2130,7 +2170,7 @@ body.mobile-menu-open {
 .faq-description {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
   margin: 0;
@@ -2165,15 +2205,22 @@ body.mobile-menu-open {
 }
 
 /* RIGHT COLUMN - Accordion List */
-.accordion-list {
+.accordion-list,
+.ind-faq-accordion,
+.locksmith-faq-accordion,
+.service-faq-accordion {
   display: flex;
   flex-direction: column;
   width: 100%;
   position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 /* Accordion Item - Override generic accordion styles */
-.faq-section .accordion-item {
+.faq-section .accordion-item,
+.ind-faq-item,
+.locksmith-faq-item,
+.service-faq-item {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -2184,108 +2231,182 @@ body.mobile-menu-open {
   padding: 0;
 }
 
-.faq-section .accordion-item:hover {
+.faq-section .accordion-item:hover,
+.ind-faq-item:hover,
+.locksmith-faq-item:hover,
+.service-faq-item:hover {
   background: transparent;
   border: none;
 }
 
 .faq-section .accordion-item.active,
-.faq-section .accordion-item.open {
+.faq-section .accordion-item.open,
+.ind-faq-item.active,
+.locksmith-faq-item.active,
+.service-faq-item.active {
   background: transparent;
   border: none;
 }
 
 /* Accordion Question (Header) */
-.faq-section .accordion-question {
+.faq-section .accordion-question,
+.ind-faq-question,
+.locksmith-faq-question,
+.service-faq-question {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 24px;
-  padding: 20px 0;
-  padding-right: 0;
-  border: none;
+  padding: 16px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   background: transparent;
   cursor: pointer;
   outline: none;
-  text-align: left;
   position: relative;
+  overflow: hidden;
 }
 
-.faq-section .accordion-item:first-child .accordion-question {
+.faq-section .accordion-item:first-child .accordion-question,
+.ind-faq-item:first-child .ind-faq-question,
+.locksmith-faq-item:first-child .locksmith-faq-question,
+.service-faq-item:first-child .service-faq-question {
   border-top: none;
   padding-top: 0;
 }
 
-.faq-section .accordion-question:hover {
+.faq-section .accordion-question:hover,
+.ind-faq-question:hover,
+.locksmith-faq-question:hover,
+.service-faq-question:hover {
   opacity: 0.9;
-  color: inherit;
-  background: transparent;
 }
 
-.faq-section .accordion-question:hover .question-text {
-  color: inherit;
-}
-
-.faq-section .question-text {
-  flex: 1;
+.faq-section .question-text,
+.ind-faq-question p,
+.locksmith-faq-question p,
+.service-faq-question span {
+  flex: 1 0 0;
   font-family: var(--font-body);
   font-weight: 700;
   font-size: 18px;
   line-height: 1.5;
   color: #ffffff;
   margin: 0;
+  min-width: 0;
+  white-space: pre-wrap;
 }
 
-/* Accordion Icon (Plus) */
+/* Accordion Icon (Chevron) */
 .faq-section .accordion-icon {
   flex-shrink: 0;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  transition: color 0.3s ease;
-  margin-left: auto;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  transform: rotate(180deg);
 }
 
-.faq-section .accordion-icon svg {
+.ind-faq-question svg,
+.locksmith-faq-question svg,
+.service-faq-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  transform: rotate(180deg);
+}
+
+.faq-section .accordion-icon svg,
+.ind-faq-question svg,
+.locksmith-faq-question svg,
+.service-faq-icon {
   width: 100%;
   height: 100%;
+  display: block;
 }
 
-.faq-section .accordion-item.open .accordion-icon {
-  color: #0f5ad7; /* Blue when open */
+.faq-section .accordion-item.active .accordion-icon,
+.ind-faq-item.active .ind-faq-question svg,
+.locksmith-faq-item.active .locksmith-faq-question svg,
+.service-faq-item.active .service-faq-icon {
+  transform: rotate(0deg);
 }
 
 /* Accordion Answer (Content) */
-.faq-section .accordion-answer {
+.faq-section .accordion-answer,
+.ind-faq-answer,
+.locksmith-faq-answer,
+.service-faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
   padding: 0;
   background: transparent;
   border: none;
+  box-sizing: border-box;
+  opacity: 0;
 }
 
-.faq-section .accordion-item.open .accordion-answer {
+.faq-section .accordion-item.active .accordion-answer,
+.ind-faq-item.active .ind-faq-answer,
+.locksmith-faq-item.active .locksmith-faq-answer,
+.service-faq-item.active .service-faq-answer {
   max-height: 500px;
-  padding-bottom: 24px;
+  padding-bottom: 16px;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
   background: transparent;
+  opacity: 1;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease 0.15s;
 }
 
 .faq-section .answer-text {
   font-family: var(--font-body);
-  font-weight: 400;
+  font-weight: 0;
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
   margin: 0;
+  padding: 0;
+  transform: translateY(-8px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.ind-faq-answer p,
+.locksmith-faq-answer p,
+.service-faq-answer p {
+  font-family: var(--font-body);
+  font-weight: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  transform: translateY(-8px);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+.faq-section .accordion-item.active .answer-text,
+.ind-faq-item.active .ind-faq-answer p,
+.locksmith-faq-item.active .locksmith-faq-answer p,
+.service-faq-item.active .service-faq-answer p {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.3s ease 0.15s, opacity 0.3s ease 0.15s;
 }
 
 /* ===== FOOTER ===== */
@@ -3087,4 +3208,530 @@ body.mobile-menu-open {
     width: 100%;
     justify-content: center;
   }
+}
+
+/* ===== HEAR A SAMPLE SECTION ===== */
+
+.hear-sample-section {
+  background: #ffffff;
+  width: 100%;
+  padding: 112px 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hear-sample-container {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+/* Section Header */
+.hear-sample-header {
+  max-width: 768px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.hear-sample-tagline {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0a0b0c;
+  margin: 0;
+}
+
+.hear-sample-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1.2;
+  letter-spacing: -0.52px;
+  color: #0a0b0c;
+  margin: 0;
+  text-align: center;
+}
+
+.hear-sample-title-highlight {
+  color: #0f5ad7;
+}
+
+.hear-sample-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+}
+
+.hear-sample-description p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #0a0b0c;
+  margin: 0;
+  text-align: center;
+}
+
+/* Main Card */
+.hear-sample-card {
+  background: transparent;
+  border-radius: 24px;
+  box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  min-height: 600px; /* Altura mínima, pero puede crecer */
+  display: flex;
+  flex-direction: column;
+  overflow: visible; /* Permitir que se vea todo el contenido */
+  height: auto; /* Altura automática basada en contenido */
+}
+
+.hear-sample-card-content {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+  align-items: flex-start; /* Alinear al inicio para que ambos paneles se ajusten */
+  min-height: 600px; /* Altura mínima para que coincida con la imagen */
+  overflow: visible; /* Permitir que se vea todo el contenido */
+  height: auto; /* Altura automática basada en el contenido más alto */
+}
+
+/* Left Panel */
+.hear-sample-left-panel {
+  width: 500px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.hear-sample-image-container {
+  position: relative;
+  width: 500px;
+  min-height: 600px; /* Altura mínima, pero puede crecer */
+  border-radius: 20px;
+  overflow: visible; /* Permitir que se vea todo el contenido */
+  flex-shrink: 0;
+}
+
+.hear-sample-professional-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  display: block;
+}
+
+.hear-sample-professional-label {
+  position: absolute;
+  left: 288.5px;
+  top: 530.5px;
+  transform: translate(-50%, -50%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.4;
+  letter-spacing: -0.28px;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Service Icons Menu */
+.hear-sample-service-icons-menu {
+  position: absolute;
+  left: 0;
+  top: 287px;
+  width: 68px;
+  height: 313px;
+  background: #f1f5f9;
+  border-radius: 20px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.hear-sample-icon-btn {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hear-sample-icon-btn:nth-child(1) {
+  top: 20px;
+}
+
+.hear-sample-icon-btn:nth-child(2) {
+  top: 77px;
+}
+
+.hear-sample-icon-btn:nth-child(3) {
+  top: 134px;
+}
+
+.hear-sample-icon-btn:nth-child(4) {
+  top: 191px;
+}
+
+.hear-sample-icon-btn:nth-child(5) {
+  top: 248px;
+}
+
+.hear-sample-icon-btn-active {
+  background: #007aff;
+  padding: 0;
+  box-shadow: 0px 10px 15px -3px rgba(0, 122, 255, 0.2), 0px 4px 6px -4px rgba(0, 122, 255, 0.2);
+}
+
+.hear-sample-icon-btn:hover:not(.hear-sample-icon-btn-active) {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.hear-sample-icon-img {
+  width: 25px;
+  height: 25px;
+  display: block;
+  transition: filter 0.2s ease;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* When icon is active, make it white */
+.hear-sample-icon-btn-active .hear-sample-icon-img {
+  filter: brightness(0) invert(1);
+}
+
+/* Right Panel */
+.hear-sample-right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0 30px;
+  justify-content: flex-end; /* Alineado hacia abajo */
+  position: relative;
+  min-height: 600px; /* Altura mínima para que coincida con la imagen */
+  max-height: 600px; /* Altura máxima fija para permitir scroll */
+  overflow: hidden; /* Evitar scroll en el panel, solo en el chat */
+}
+
+/* Chat Interface */
+.hear-sample-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  overflow-y: auto; /* Scroll vertical activo */
+  overflow-x: hidden;
+  flex: 1 1 0; /* Ocupa espacio disponible pero puede encogerse */
+  min-height: 0; /* Permite que flex funcione correctamente */
+  max-height: calc(100% - 80px); /* Altura máxima: 100% menos espacio del audio player */
+  padding: 0; /* Sin padding para permitir scroll completo */
+  margin-bottom: 0; /* Sin margen inferior */
+  position: relative;
+  /* Alinear contenido hacia abajo como WhatsApp, pero permitir scroll completo */
+  justify-content: flex-start; /* Cambiado a flex-start para que el scroll funcione desde el primer mensaje */
+  /* Asegurar que el scroll funcione desde el inicio */
+  scroll-behavior: smooth;
+  /* Ocultar scrollbar pero mantener funcionalidad de scroll */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge */
+}
+
+.hear-sample-chat::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Gradiente superior para indicar más contenido arriba (máscara como WhatsApp) */
+.hear-sample-chat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 30px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar gradiente solo cuando hay scroll disponible arriba */
+.hear-sample-chat:not(:first-child)::before {
+  opacity: 1;
+}
+
+/* Gradiente inferior para indicar más contenido abajo */
+.hear-sample-chat::after {
+  content: '';
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.95) 30%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+  z-index: 2;
+  margin-top: -40px;
+  display: block;
+}
+
+.hear-sample-message {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hear-sample-message-agent {
+  align-items: flex-start;
+}
+
+.hear-sample-message-client {
+  align-items: flex-end;
+}
+
+.hear-sample-message-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hear-sample-message-header-right {
+  flex-direction: row-reverse;
+}
+
+.hear-sample-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hear-sample-avatar-agent {
+  background: rgba(0, 122, 255, 0.1);
+}
+
+.hear-sample-avatar-client {
+  background: #e2e8f0;
+}
+
+.hear-sample-message-author {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1e293b;
+}
+
+.hear-sample-message-bubble {
+  padding: 12px;
+  border-radius: 16px;
+  max-width: 500px;
+}
+
+.hear-sample-message-bubble-agent {
+  background: #f1f5f9;
+  border-top-left-radius: 0;
+}
+
+.hear-sample-message-bubble-client {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-top-right-radius: 0;
+}
+
+.hear-sample-message-bubble p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #334155;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* Audio Player */
+.hear-sample-audio-player {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 10px; /* Padding mínimo */
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 0; /* Sin margen superior */
+  flex-shrink: 0; /* No se comprime */
+}
+
+.hear-sample-play-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #007aff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.hear-sample-play-button:hover {
+  background: #0056d6;
+  transform: scale(1.05);
+}
+
+.hear-sample-progress-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hear-sample-time {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #64748b;
+  white-space: nowrap;
+}
+
+.hear-sample-progress-bar {
+  flex: 1;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 9999px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hear-sample-progress-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  background: #007aff;
+  border-radius: 9999px;
+}
+
+.hear-sample-volume-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.hear-sample-volume-slider {
+  width: 96px;
+  height: 4px;
+  background: #e2e8f0;
+  border-radius: 9999px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hear-sample-volume-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 44%;
+  background: #007aff;
+  border-radius: 9999px;
+}
+
+/* CTA Buttons */
+.hear-sample-actions {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hear-sample-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  background: #ffffff;
+  background-image: 
+    radial-gradient(circle at 89.6% 17.3%, rgba(205, 175, 250, 0.8) 0%, rgba(205, 175, 250, 0) 60%),
+    radial-gradient(circle at 15.4% 26.4%, rgba(247, 203, 191, 0.8) 0%, rgba(247, 203, 191, 0) 60%),
+    radial-gradient(circle at 72.5% 100%, rgba(129, 169, 248, 0.8) 0%, rgba(129, 169, 248, 0) 60%),
+    radial-gradient(circle at 42.1% 65%, rgba(164, 252, 245, 0.8) 0%, rgba(164, 252, 245, 0) 60%);
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0a0b0c;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  outline: none;
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.41);
+}
+
+.hear-sample-btn-primary:hover {
+  box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.hear-sample-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background: transparent;
+  border: none;
+  border-radius: 100px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0a0b0c;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  outline: none;
+}
+
+.hear-sample-btn-secondary:hover {
+  opacity: 0.7;
+}
+
+.hear-sample-btn-secondary svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
 }
