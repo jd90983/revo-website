@@ -3328,39 +3328,45 @@ body.mobile-menu-open {
   object-fit: cover;
   object-position: 50% 50%;
   display: block;
+  border-radius: 20px;
 }
 
 .hear-sample-professional-label {
-  position: absolute;
-  left: 288.5px;
-  top: 530.5px;
-  transform: translate(-50%, -50%);
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 28px;
-  line-height: 1.4;
-  letter-spacing: -0.28px;
-  color: #ffffff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1e293b;
   text-align: center;
   white-space: nowrap;
-  z-index: 2;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  flex-shrink: 0;
 }
 
 /* Service Icons Menu */
 .hear-sample-service-icons-menu {
   position: absolute;
-  left: 0;
-  top: 287px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   width: 68px;
-  height: 313px;
-  background: #f1f5f9;
+  height: auto;
+  background: transparent;
   border-radius: 20px;
-  overflow: hidden;
+  overflow: visible;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 2px;
+  align-items: center;
+  justify-content: center;
 }
 
 .hear-sample-icon-btn {
-  position: absolute;
+  position: relative;
   width: 48px;
   height: 48px;
   min-width: 48px;
@@ -3373,41 +3379,44 @@ body.mobile-menu-open {
   justify-content: center;
   cursor: pointer;
   transition: all 0.2s ease;
-  padding: 0;
+  padding: 10px;
   outline: none;
   box-sizing: border-box;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 .hear-sample-icon-btn:nth-child(1) {
-  top: 20px;
+  /* First button - no special positioning needed */
 }
 
 .hear-sample-icon-btn:nth-child(2) {
-  top: 77px;
+  /* Second button - no special positioning needed */
 }
 
 .hear-sample-icon-btn:nth-child(3) {
-  top: 134px;
+  /* Third button - no special positioning needed */
 }
 
 .hear-sample-icon-btn:nth-child(4) {
-  top: 191px;
+  /* Fourth button - no special positioning needed */
 }
 
 .hear-sample-icon-btn:nth-child(5) {
-  top: 248px;
+  /* Fifth button - no special positioning needed */
 }
 
 .hear-sample-icon-btn-active {
-  background: #007aff;
-  padding: 0;
-  box-shadow: 0px 10px 15px -3px rgba(0, 122, 255, 0.2), 0px 4px 6px -4px rgba(0, 122, 255, 0.2);
+  background: #848585;
+  border: 0.5px solid #ffffff;
+  box-shadow: 0px 0px 10px 0px #f4f4f4;
+  padding: 10px;
+}
+
+.hear-sample-icon-btn-active .hear-sample-icon-img {
+  filter: brightness(0) invert(1);
 }
 
 .hear-sample-icon-btn:hover:not(.hear-sample-icon-btn-active) {
-  background: rgba(0, 0, 0, 0.05);
+  background: transparent;
 }
 
 .hear-sample-icon-img {
@@ -3534,19 +3543,30 @@ body.mobile-menu-open {
 }
 
 .hear-sample-avatar-agent {
-  background: rgba(0, 122, 255, 0.1);
+  background: transparent;
+  overflow: hidden;
+  position: relative;
 }
 
 .hear-sample-avatar-client {
-  background: #e2e8f0;
+  background: transparent;
+  overflow: hidden;
+  position: relative;
+}
+
+.hear-sample-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .hear-sample-message-author {
   font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.5;
-  color: #1e293b;
+  line-height: 24px;
+  color: #848585;
 }
 
 .hear-sample-message-bubble {
@@ -3556,13 +3576,14 @@ body.mobile-menu-open {
 }
 
 .hear-sample-message-bubble-agent {
-  background: #f1f5f9;
+  background: #f2f2f2;
+  border-radius: 16px;
   border-top-left-radius: 0;
 }
 
 .hear-sample-message-bubble-client {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
+  background: #f2f2f2;
+  border-radius: 16px;
   border-top-right-radius: 0;
 }
 
@@ -3570,66 +3591,181 @@ body.mobile-menu-open {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 24px;
   color: #334155;
   margin: 0;
   white-space: pre-wrap;
 }
 
+/* Thinking indicator - ChatGPT style dots */
+.hear-sample-thinking {
+  opacity: 1;
+}
+
+.hear-sample-thinking-dots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.hear-sample-thinking-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #848585;
+  display: inline-block;
+  animation: thinking-dot 1.4s infinite ease-in-out;
+}
+
+.hear-sample-thinking-dots span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.hear-sample-thinking-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+@keyframes thinking-dot {
+  0%, 60%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Typing animation - letter by letter */
+.hear-sample-message-bubble p span {
+  display: inline;
+}
+
+/* Listening indicator - dots animation when client is speaking */
+.hear-sample-listening-indicator {
+  opacity: 1;
+}
+
+.hear-sample-listening-dots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.hear-sample-listening-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #848585;
+  display: inline-block;
+  animation: listening-dot 1.4s infinite ease-in-out;
+  animation-play-state: running;
+}
+
+.hear-sample-listening-dots span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.hear-sample-listening-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.hear-sample-listening-dots span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes listening-dot {
+  0%, 60%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Active message indicator - Inner stroke */
+.hear-sample-message.active .hear-sample-message-bubble {
+  box-shadow: inset 0 0 0 2px rgba(15, 90, 215, 0.4);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.hear-sample-message.active .hear-sample-message-bubble-agent {
+  background: #f2f2f2;
+}
+
+.hear-sample-message.active .hear-sample-message-bubble-client {
+  background: #f2f2f2;
+}
+
 /* Audio Player */
 .hear-sample-audio-player {
   border-top: 1px solid #e2e8f0;
-  padding-top: 10px; /* Padding mínimo */
+  padding-top: 11px;
   padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
   display: flex;
   align-items: center;
   gap: 25px;
-  margin-top: 0; /* Sin margen superior */
-  flex-shrink: 0; /* No se comprime */
+  margin-top: 0;
+  flex-shrink: 0;
 }
 
 .hear-sample-play-button {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: #007aff;
+  background: transparent;
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   flex-shrink: 0;
-  transition: all 0.2s ease;
+  transition: transform 0.2s ease;
+  padding: 0;
 }
 
 .hear-sample-play-button:hover {
-  background: #0056d6;
   transform: scale(1.05);
+}
+
+.hear-sample-play-icon {
+  width: 32px;
+  height: 32px;
+  display: block;
 }
 
 .hear-sample-progress-container {
   flex: 1;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
+  min-width: 0;
 }
 
 .hear-sample-time {
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.43;
+  line-height: 20px;
   color: #64748b;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .hear-sample-progress-bar {
   flex: 1;
   height: 8px;
-  background: #e2e8f0;
+  background: #f2f2f2;
   border-radius: 9999px;
-  overflow: hidden;
   position: relative;
+  cursor: pointer;
+  min-width: 0;
 }
 
 .hear-sample-progress-fill {
@@ -3638,8 +3774,38 @@ body.mobile-menu-open {
   top: 0;
   bottom: 0;
   width: 25%;
-  background: #007aff;
+  background: #0f5ad7;
   border-radius: 9999px;
+  pointer-events: none;
+}
+
+.hear-sample-progress-handle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  border: none;
+  background: #0f5ad7;
+  border-radius: 50%;
+  cursor: grab;
+  pointer-events: all;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  z-index: 10;
+}
+
+.hear-sample-progress-handle:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+  box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.1);
+}
+
+.hear-sample-progress-handle:active {
+  cursor: grabbing;
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .hear-sample-volume-control {
@@ -3649,13 +3815,22 @@ body.mobile-menu-open {
   flex-shrink: 0;
 }
 
+.hear-sample-volume-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
 .hear-sample-volume-slider {
   width: 96px;
   height: 4px;
-  background: #e2e8f0;
+  background: #f2f2f2;
   border-radius: 9999px;
   position: relative;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .hear-sample-volume-fill {
@@ -3664,8 +3839,36 @@ body.mobile-menu-open {
   top: 0;
   bottom: 0;
   width: 44%;
-  background: #007aff;
+  background: #0f5ad7;
   border-radius: 9999px;
+  pointer-events: none;
+}
+
+.hear-sample-volume-handle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 12px;
+  height: 12px;
+  background: #0f5ad7;
+  border-radius: 50%;
+  cursor: grab;
+  pointer-events: all;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  transition: transform 0.1s ease;
+  z-index: 10;
+}
+
+.hear-sample-volume-handle:hover {
+  transform: translate(-50%, -50%) scale(1.2);
+}
+
+.hear-sample-volume-handle:active {
+  cursor: grabbing;
+  transform: translate(-50%, -50%) scale(1.1);
 }
 
 /* CTA Buttons */
