@@ -23,8 +23,9 @@ const HEAR_SAMPLE_CONFIG = {
   // ===== HOME SERVICES (Icono de casa) =====
   home: {
     audio: './audio/sample-home-services.mp3',
-    image: './images/Hear a Sample Call/sample-home-services_2.png',
+    image: './images/Hear a Sample Call/sample-home-services_pros_2.png',
     label: 'Home Services',
+    title: 'Home Services Pros',
     messages: [
       {
         type: 'agent', // Revo Agent habla
@@ -52,8 +53,9 @@ const HEAR_SAMPLE_CONFIG = {
   // ===== PLUMBING (Icono de llave inglesa) =====
   wrench: {
     audio: './audio/sample-plumbing.mp3',
-    image: './images/Hear a Sample Call/sample-home-services_2.png',
+    image: './images/Hear a Sample Call/Plumbing Pros.png',
     label: 'Plumbing',
+    title: 'Plumbing Pros',
     messages: [
       {
         type: 'agent',
@@ -72,12 +74,12 @@ const HEAR_SAMPLE_CONFIG = {
       },
       {
         type: 'client',
-        time: 9, // Tiempo: 00:00:08,680
+        time: 8, // Tiempo: 00:00:08,680
         text: 'I\'m fine, thanks. What is your name?'
       },
       {
         type: 'agent',
-        time: 11, // Tiempo: 00:00:11,299
+        time: 12, // Tiempo: 00:00:11,299
         text: 'I\'m Kovi. What\'s yours?'
       },
       {
@@ -111,8 +113,9 @@ const HEAR_SAMPLE_CONFIG = {
   // ===== LAW FIRMS (Icono de martillo) =====
   hammer: {
     audio: './audio/sample-law-firms.mp3',
-    image: './images/Hear a Sample Call/sample-home-services_2.png',
+    image: './images/Hear a Sample Call/Legal Services Pros.png',
     label: 'Law Firms',
+    title: 'Legal Services Pros',
     messages: [
       {
         type: 'agent',
@@ -136,8 +139,9 @@ const HEAR_SAMPLE_CONFIG = {
   // ===== LOCKSMITH (Icono de llave) =====
   key: {
     audio: './audio/sample-locksmith.mp3',
-    image: './images/Hear a Sample Call/sample-home-services_2.png',
+    image: './images/Hear a Sample Call/Locksmith Pros.png',
     label: 'Locksmith',
+    title: 'Locksmith Pros',
     messages: [
       {
         type: 'agent',
@@ -161,8 +165,9 @@ const HEAR_SAMPLE_CONFIG = {
   // ===== CYBER SECURITY (Icono de escudo) =====
   shield: {
     audio: './audio/sample-cyber-security.mp3',
-    image: './images/Hear a Sample Call/sample-home-services_2.png',
+    image: './images/Hear a Sample Call/Cybersecurity Pros.png',
     label: 'Cyber Security',
+    title: 'Cybersecurity Pros',
     messages: [
       {
         type: 'agent',

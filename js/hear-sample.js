@@ -2,119 +2,12 @@
 (function() {
   'use strict';
 
-  // Use configuration from external file if available, otherwise use default
-  const sampleData = typeof HEAR_SAMPLE_CONFIG !== 'undefined' ? HEAR_SAMPLE_CONFIG : {
-    home: {
-      audio: './audio/sample-home-services.mp3',
-      image: './images/Hear a Sample Call/sample-home-services_2.png',
-      label: 'Home Services',
-      messages: [
-        {
-          type: 'agent',
-          time: 0,
-          text: 'Thank you for calling Elite Home Services. How can I assist you today?'
-        },
-        {
-          type: 'client',
-          time: 3,
-          text: 'Hi, I need someone to come out and take a look at my HVAC system. It\'s making a strange noise and not cooling properly.'
-        },
-        {
-          type: 'agent',
-          time: 8,
-          text: 'I understand how uncomfortable that can be, especially during warm weather. I can schedule one of our HVAC technicians to come out and diagnose the issue. What\'s your availability this week?'
-        }
-      ]
-    },
-    wrench: {
-      audio: './audio/sample-plumbing.mp3',
-      image: './images/Hear a Sample Call/sample-home-services_2.png',
-      label: 'Plumbing',
-      messages: [
-        {
-          type: 'agent',
-          time: 0,
-          text: 'Thank you for calling Repair Pro. How can I help you today?'
-        },
-        {
-          type: 'client',
-          time: 3,
-          text: 'I have a leaky faucet that needs fixing.'
-        },
-        {
-          type: 'agent',
-          time: 6,
-          text: 'I can help you with that. Let me schedule a plumber for you. When would be a good time?'
-        }
-      ]
-    },
-    hammer: {
-      audio: './audio/sample-law-firms.mp3',
-      image: './images/Hear a Sample Call/sample-home-services_2.png',
-      label: 'Law Firms',
-      messages: [
-        {
-          type: 'agent',
-          time: 0,
-          text: 'Thank you for calling Construction Experts. How may I assist you?'
-        },
-        {
-          type: 'client',
-          time: 3,
-          text: 'I need an estimate for a kitchen renovation.'
-        },
-        {
-          type: 'agent',
-          time: 6,
-          text: 'I\'d be happy to help you with that. Let me connect you with one of our project managers to schedule a consultation.'
-        }
-      ]
-    },
-    key: {
-      audio: './audio/sample-locksmith.mp3',
-      image: './images/Hear a Sample Call/sample-home-services_2.png',
-      label: 'Locksmith',
-      messages: [
-        {
-          type: 'agent',
-          time: 0,
-          text: 'Thank you for calling Secure Locks. How can I help you today?'
-        },
-        {
-          type: 'client',
-          time: 3,
-          text: 'I\'m locked out of my house. I need emergency service.'
-        },
-        {
-          type: 'agent',
-          time: 6,
-          text: 'I understand this is urgent. I can dispatch a locksmith to your location right away. What\'s your address?'
-        }
-      ]
-    },
-    shield: {
-      audio: './audio/sample-cyber-security.mp3',
-      image: './images/Hear a Sample Call/sample-home-services_2.png',
-      label: 'Cyber Security',
-      messages: [
-        {
-          type: 'agent',
-          time: 0,
-          text: 'Thank you for calling Security Plus. How may I assist you?'
-        },
-        {
-          type: 'client',
-          time: 3,
-          text: 'I\'m interested in installing a home security system.'
-        },
-        {
-          type: 'agent',
-          time: 6,
-          text: 'Great! I can help you with that. Let me schedule a free consultation with one of our security specialists.'
-        }
-      ]
-    }
-  };
+  // Use configuration from external file (required)
+  // Make sure hear-sample-config.js is loaded before this file
+  if (typeof HEAR_SAMPLE_CONFIG === 'undefined') {
+    console.error('HEAR_SAMPLE_CONFIG is not defined. Please make sure hear-sample-config.js is loaded before hear-sample.js');
+  }
+  const sampleData = HEAR_SAMPLE_CONFIG || {};
 
   let currentSample = 'home';
   let audio = null;
@@ -122,6 +15,9 @@
   let currentTime = 0;
   let displayedMessages = [];
   let animationFrameId = null;
+  let hasStartedPlaying = false; // Track if user has pressed play for the first time
+  let typingTimeouts = []; // Store typing animation timeouts to pause/resume
+  let isTypingPaused = false; // Track if typing animation is paused
 
   // Initialize
   function init() {
@@ -129,8 +25,23 @@
     const iconButtons = document.querySelectorAll('.hear-sample-icon-btn');
     const progressBar = document.querySelector('.hear-sample-progress-bar');
     const volumeSlider = document.querySelector('.hear-sample-volume-slider');
+    const chat = document.querySelector('.hear-sample-chat');
 
     if (!playButton) return;
+
+    // Prevent page scroll when scrolling inside chat container
+    if (chat) {
+      chat.addEventListener('wheel', (e) => {
+        // Check if chat is at top or bottom
+        const isAtTop = chat.scrollTop === 0;
+        const isAtBottom = chat.scrollTop + chat.clientHeight >= chat.scrollHeight - 1;
+        
+        // If scrolling up at top or down at bottom, prevent default to avoid page scroll
+        if ((isAtTop && e.deltaY < 0) || (isAtBottom && e.deltaY > 0)) {
+          e.preventDefault();
+        }
+      }, { passive: false });
+    }
 
     // Load initial sample
     loadSample('home');
@@ -148,31 +59,152 @@
       });
     });
 
-    // Progress bar click
+    // Progress bar click and drag
+    const progressHandle = document.querySelector('.hear-sample-progress-handle');
+    
     if (progressBar) {
+      let isDragging = false;
+      
+      // Click on progress bar
       progressBar.addEventListener('click', (e) => {
-        if (!audio) return;
+        if (isDragging || !audio) return;
         const rect = progressBar.getBoundingClientRect();
-        const percent = (e.clientX - rect.left) / rect.width;
+        const percent = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+        
+        // Wait for audio to be loaded
+        if (!audio.duration || isNaN(audio.duration)) {
+          audio.addEventListener('loadedmetadata', () => {
+            const newTime = percent * audio.duration;
+            if (!isNaN(newTime) && isFinite(newTime) && newTime >= 0) {
+              seekToTime(newTime, isPlaying); // Preserve playing state
+            }
+          }, { once: true });
+          return;
+        }
+        
         const newTime = percent * audio.duration;
-        if (!isNaN(newTime) && isFinite(newTime)) {
-          audio.currentTime = newTime;
-          // Re-check messages for new time
-          displayedMessages = [];
-          checkMessages(newTime);
+        if (!isNaN(newTime) && isFinite(newTime) && newTime >= 0) {
+          seekToTime(newTime, isPlaying); // Preserve playing state
         }
       });
+      
+      // Drag handle
+      if (progressHandle) {
+        progressHandle.addEventListener('mousedown', (e) => {
+          e.stopPropagation();
+          e.preventDefault();
+          isDragging = true;
+          if (!audio) {
+            isDragging = false;
+            return;
+          }
+          
+          const rect = progressBar.getBoundingClientRect();
+          const wasPlaying = isPlaying;
+          
+          // Update visual position only during drag (no seeking)
+          const updateVisualPosition = (e) => {
+            if (!audio || !audio.duration || isNaN(audio.duration)) return;
+            const percent = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+            const newTime = percent * audio.duration;
+            if (!isNaN(newTime) && isFinite(newTime) && newTime >= 0) {
+              // Only update visual progress, don't seek yet
+              updateProgressFill((newTime / audio.duration) * 100);
+              updateTimeDisplay(newTime, audio.duration);
+            }
+          };
+          
+          const onMouseMove = (e) => {
+            if (!isDragging) return;
+            e.preventDefault(); // Prevent page scroll during drag
+            updateVisualPosition(e);
+          };
+          
+          const onMouseUp = (e) => {
+            isDragging = false;
+            document.removeEventListener('mousemove', onMouseMove);
+            document.removeEventListener('mouseup', onMouseUp);
+            
+            // Now seek to the final position
+            if (!audio || !audio.duration || isNaN(audio.duration)) {
+              const onLoadedMetadata = () => {
+                const percent = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+                const newTime = percent * audio.duration;
+                if (!isNaN(newTime) && isFinite(newTime) && newTime >= 0) {
+                  seekToTime(newTime, wasPlaying); // Preserve playing state
+                }
+                audio.removeEventListener('loadedmetadata', onLoadedMetadata);
+              };
+              audio.addEventListener('loadedmetadata', onLoadedMetadata);
+            } else {
+              const percent = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+              const newTime = percent * audio.duration;
+              if (!isNaN(newTime) && isFinite(newTime) && newTime >= 0) {
+                seekToTime(newTime, wasPlaying); // Preserve playing state
+              }
+            }
+          };
+          
+          document.addEventListener('mousemove', onMouseMove);
+          document.addEventListener('mouseup', onMouseUp);
+        });
+      }
     }
 
+    // Keyboard shortcuts
+    document.addEventListener('keydown', handleKeyboardShortcuts);
+
     // Volume control
+    const volumeHandle = document.querySelector('.hear-sample-volume-handle');
+    
     if (volumeSlider) {
+      let isDraggingVolume = false;
+      
+      // Click on volume slider
       volumeSlider.addEventListener('click', (e) => {
-        if (!audio) return;
+        if (isDraggingVolume || !audio) return;
         const rect = volumeSlider.getBoundingClientRect();
         const percent = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
         audio.volume = percent;
         updateVolumeFill(percent);
+        updateVolumeIcon(percent);
       });
+      
+      // Drag volume handle
+      if (volumeHandle) {
+        volumeHandle.addEventListener('mousedown', (e) => {
+          e.stopPropagation();
+          e.preventDefault(); // Prevent default behavior
+          isDraggingVolume = true;
+          if (!audio) return;
+          
+          const rect = volumeSlider.getBoundingClientRect();
+          
+          const updateVolumePosition = (e) => {
+            const percent = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+            audio.volume = percent;
+            updateVolumeFill(percent);
+            updateVolumeIcon(percent);
+          };
+          
+          updateVolumePosition(e);
+          
+          const onMouseMove = (e) => {
+            if (!isDraggingVolume) return;
+            e.preventDefault(); // Prevent page scroll during drag
+            updateVolumePosition(e);
+          };
+          
+          const onMouseUp = () => {
+            isDraggingVolume = false;
+            document.removeEventListener('mousemove', onMouseMove);
+            document.removeEventListener('mouseup', onMouseUp);
+          };
+          
+          document.addEventListener('mousemove', onMouseMove);
+          document.addEventListener('mouseup', onMouseUp);
+        });
+      }
     }
   }
 
@@ -184,6 +216,12 @@
     currentSample = sampleKey;
     displayedMessages = [];
     isPlaying = false;
+    hasStartedPlaying = false; // Reset flag when loading new sample
+    
+    // Clear typing animation timeouts
+    typingTimeouts.forEach(timeout => clearTimeout(timeout));
+    typingTimeouts = [];
+    isTypingPaused = false;
 
     // Update image
     const image = document.querySelector('.hear-sample-professional-image');
@@ -191,26 +229,16 @@
       image.src = sample.image;
     }
 
-    // Update label
-    const label = document.querySelector('.hear-sample-professional-label');
-    if (label) {
-      label.textContent = sample.label;
+    // Update title
+    const title = document.querySelector('.hear-sample-professional-label');
+    if (title && sample.title) {
+      title.textContent = sample.title;
     }
 
-    // Clear chat and show initial messages
+    // Clear chat - don't show any messages until user presses play
     const chat = document.querySelector('.hear-sample-chat');
     if (chat) {
       chat.innerHTML = '';
-      // Show first message immediately for better UX
-      if (sample.messages && sample.messages.length > 0) {
-        const firstMessage = sample.messages[0];
-        displayMessage(firstMessage, false);
-        displayedMessages.push(0);
-        // Asegurar que el scroll esté al final (como WhatsApp) cuando se carga un nuevo sample
-        setTimeout(() => {
-          chat.scrollTop = chat.scrollHeight;
-        }, 50);
-      }
     }
 
     // Stop and remove old audio
@@ -237,9 +265,7 @@
           <div class="hear-sample-message hear-sample-message-agent">
             <div class="hear-sample-message-header">
               <div class="hear-sample-avatar hear-sample-avatar-agent">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 12.43 6.67 11.2 10 11.2C13.33 11.2 15.97 12.43 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z" fill="#007AFF"/>
-                </svg>
+                <img src="./images/Hear a Sample Call/revo_profile.png" alt="Revo Agent" />
               </div>
               <span class="hear-sample-message-author">Revo Agent</span>
             </div>
@@ -263,11 +289,23 @@
     // Set initial volume
     audio.volume = 0.7;
     updateVolumeFill(0.7);
+    updateVolumeIcon(0.7);
 
     // Reset UI
     updatePlayButton();
     updateProgressFill(0);
     updateTimeDisplay(0, 0);
+    
+    // Initialize handle positions
+    const progressHandle = document.querySelector('.hear-sample-progress-handle');
+    if (progressHandle) {
+      progressHandle.style.left = '0%';
+    }
+    
+    const volumeHandle = document.querySelector('.hear-sample-volume-handle');
+    if (volumeHandle) {
+      volumeHandle.style.left = '70%';
+    }
   }
 
   // Switch sample
@@ -294,11 +332,89 @@
       if (animationFrameId) {
         cancelAnimationFrame(animationFrameId);
       }
+      
+      // Pause typing animation
+      isTypingPaused = true;
+      
+      // Pause listening dots animation
+      const listeningIndicator = document.querySelector('.hear-sample-listening-indicator');
+      if (listeningIndicator) {
+        const dots = listeningIndicator.querySelector('.hear-sample-listening-dots');
+        if (dots) {
+          dots.style.animationPlayState = 'paused';
+        }
+      }
     } else {
+      // Check if this is the first time playing
+      if (!hasStartedPlaying) {
+        hasStartedPlaying = true;
+        
+        // Clear chat and start from beginning
+        const chat = document.querySelector('.hear-sample-chat');
+        if (chat) {
+          chat.innerHTML = '';
+        }
+        
+        // Reset displayed messages
+        displayedMessages = [];
+        currentTime = 0;
+        audio.currentTime = 0;
+        
+        // Reset progress display
+        updateProgressFill(0);
+        updateTimeDisplay(0, audio.duration);
+        
+        // Reset handle position
+        const progressHandle = document.querySelector('.hear-sample-progress-handle');
+        if (progressHandle) {
+          progressHandle.style.left = '0%';
+        }
+      } else {
+        // Check if audio has ended - if so, restart from beginning
+        if (audio.ended || (audio.duration && audio.currentTime >= audio.duration - 0.1)) {
+          // Reset audio and chat to beginning
+          audio.currentTime = 0;
+          currentTime = 0;
+          
+          // Clear chat and rebuild it from the beginning
+          const chat = document.querySelector('.hear-sample-chat');
+          if (chat) {
+            chat.innerHTML = '';
+          }
+          
+          // Reset displayed messages
+          displayedMessages = [];
+          // Keep hasStartedPlaying as true - user has already started playing
+          
+          // Reset progress display
+          updateProgressFill(0);
+          updateTimeDisplay(0, audio.duration);
+          
+          // Reset handle position
+          const progressHandle = document.querySelector('.hear-sample-progress-handle');
+          if (progressHandle) {
+            progressHandle.style.left = '0%';
+          }
+        }
+      }
+      
       audio.play().catch(err => {
         console.warn('Could not play audio:', err);
       });
       isPlaying = true;
+      
+      // Resume typing animation
+      isTypingPaused = false;
+      
+      // Resume listening dots animation
+      const listeningIndicator = document.querySelector('.hear-sample-listening-indicator');
+      if (listeningIndicator) {
+        const dots = listeningIndicator.querySelector('.hear-sample-listening-dots');
+        if (dots) {
+          dots.style.animationPlayState = 'running';
+        }
+      }
+      
       // Start animation loop for smooth updates
       animateProgress();
     }
@@ -319,18 +435,31 @@
     if (!playButton) return;
 
     if (isPlaying) {
+      // Pause icon
       playButton.innerHTML = `
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect x="8" y="7.5" width="4" height="15" fill="#007AFF"/>
-          <rect x="18" y="7.5" width="4" height="15" fill="#007AFF"/>
-        </svg>
+        <img src="./images/icons/pause.svg" alt="Pause" class="hear-sample-play-icon">
       `;
     } else {
+      // Play icon
       playButton.innerHTML = `
-        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 7.5L22.5 15L10 22.5V7.5Z" fill="#007AFF"/>
-        </svg>
+        <img src="./images/icons/play.svg" alt="Play" class="hear-sample-play-icon">
       `;
+    }
+  }
+
+  // Update volume icon based on volume level
+  function updateVolumeIcon(volume) {
+    const volumeIcon = document.querySelector('.hear-sample-volume-icon');
+    if (!volumeIcon) return;
+
+    if (volume === 0) {
+      volumeIcon.src = './images/icons/volume_mute.svg';
+    } else if (volume < 0.33) {
+      volumeIcon.src = './images/icons/volume_low.svg';
+    } else if (volume < 0.66) {
+      volumeIcon.src = './images/icons/volume_medium.svg';
+    } else {
+      volumeIcon.src = './images/icons/volume_high.svg';
     }
   }
 
@@ -350,8 +479,15 @@
   // Update progress fill
   function updateProgressFill(percent) {
     const progressFill = document.querySelector('.hear-sample-progress-fill');
+    const progressHandle = document.querySelector('.hear-sample-progress-handle');
+    const progressBar = document.querySelector('.hear-sample-progress-bar');
+    
     if (progressFill) {
       progressFill.style.width = Math.max(0, Math.min(100, percent)) + '%';
+    }
+    
+    if (progressHandle && progressBar) {
+      progressHandle.style.left = Math.max(0, Math.min(100, percent)) + '%';
     }
   }
 
@@ -372,84 +508,510 @@
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   }
 
+  // Seek to specific time and update chat accordingly
+  function seekToTime(newTime, preservePlayingState = false) {
+    if (!audio) return;
+    
+    // Ensure audio duration is valid
+    if (!audio.duration || isNaN(audio.duration)) {
+      // Wait for audio to be ready
+      const onLoadedMetadata = () => {
+        seekToTime(newTime, preservePlayingState);
+        audio.removeEventListener('loadedmetadata', onLoadedMetadata);
+      };
+      audio.addEventListener('loadedmetadata', onLoadedMetadata);
+      return;
+    }
+    
+    // Clamp newTime to valid range
+    newTime = Math.max(0, Math.min(audio.duration, newTime));
+    
+    // Preserve playing state
+    const wasPlaying = isPlaying;
+    
+    // Set audio time
+    audio.currentTime = newTime;
+    currentTime = newTime;
+    
+    // Clear chat and rebuild it with messages up to the new time
+    const chat = document.querySelector('.hear-sample-chat');
+    if (chat) {
+      chat.innerHTML = '';
+    }
+    
+    // Mark as started if user is seeking (interacting with the player)
+    hasStartedPlaying = true;
+    
+    // Reset displayed messages and rebuild based on new time
+    // When seeking, show all messages immediately without animation
+    displayedMessages = [];
+    const sample = sampleData[currentSample];
+    if (sample && sample.messages) {
+      sample.messages.forEach((message, index) => {
+        if (newTime >= message.time) {
+          // When seeking, show messages immediately without typing animation
+          displayMessage(message, false, index);
+          displayedMessages.push(index);
+        }
+      });
+    }
+    
+    // Update progress display
+    updateProgressFill((newTime / audio.duration) * 100);
+    updateTimeDisplay(newTime, audio.duration);
+    
+    // Update active message indicator
+    updateActiveMessage(newTime);
+    
+    // Scroll to active message or bottom (within chat container only)
+    if (chat) {
+      requestAnimationFrame(() => {
+        const activeMessage = chat.querySelector('.hear-sample-message.active');
+        if (activeMessage) {
+          // Scroll within chat container, not the page
+          const chatRect = chat.getBoundingClientRect();
+          const messageRect = activeMessage.getBoundingClientRect();
+          const messageTopRelativeToChat = messageRect.top - chatRect.top + chat.scrollTop;
+          const targetScroll = messageTopRelativeToChat - (chat.clientHeight / 2) + (messageRect.height / 2);
+          // Use scrollTop directly instead of scrollTo to avoid page scroll
+          chat.scrollTop = Math.max(0, targetScroll);
+        } else {
+          chat.scrollTop = chat.scrollHeight;
+        }
+      });
+    }
+    
+    // Restore playing state if it was playing
+    if (wasPlaying && preservePlayingState) {
+      audio.play().catch(err => {
+        console.warn('Could not resume audio after seek:', err);
+        isPlaying = false;
+        updatePlayButton();
+      });
+    }
+  }
+
   // Check and display messages based on time
   function checkMessages(currentTime) {
+    // Only check messages if user has started playing
+    if (!hasStartedPlaying) return;
+    
     const sample = sampleData[currentSample];
     if (!sample || !sample.messages) return;
 
     sample.messages.forEach((message, index) => {
       if (currentTime >= message.time && !displayedMessages.includes(index)) {
-        displayMessage(message);
+        displayMessage(message, true, index);
         displayedMessages.push(index);
       }
     });
+    
+    // Update active message indicator
+    updateActiveMessage(currentTime);
+  }
+
+  // Show listening indicator (dots animation) when client is speaking
+  function showListeningIndicator() {
+    const chat = document.querySelector('.hear-sample-chat');
+    if (!chat) return null;
+
+    // Check if indicator already exists - if so, don't recreate it
+    const existingIndicator = chat.querySelector('.hear-sample-listening-indicator');
+    if (existingIndicator) {
+      return existingIndicator;
+    }
+
+    // Create listening indicator message
+    const listeningDiv = document.createElement('div');
+    listeningDiv.className = 'hear-sample-message hear-sample-message-agent hear-sample-listening-indicator';
+    listeningDiv.innerHTML = `
+      <div class="hear-sample-message-header">
+        <div class="hear-sample-avatar hear-sample-avatar-agent">
+          <img src="./images/Hear a Sample Call/revo_profile.png" alt="Revo Agent" />
+        </div>
+        <span class="hear-sample-message-author">Revo Agent</span>
+      </div>
+      <div class="hear-sample-message-bubble hear-sample-message-bubble-agent">
+        <div class="hear-sample-listening-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    `;
+
+    chat.appendChild(listeningDiv);
+    
+    // Scroll to show listening indicator
+    requestAnimationFrame(() => {
+      chat.scrollTop = chat.scrollHeight;
+    });
+
+    return listeningDiv;
+  }
+
+  // Remove listening indicator
+  function removeListeningIndicator() {
+    const chat = document.querySelector('.hear-sample-chat');
+    if (!chat) return;
+    
+    const listeningIndicator = chat.querySelector('.hear-sample-listening-indicator');
+    if (listeningIndicator) {
+      listeningIndicator.remove();
+    }
+  }
+
+  // Update active message indicator based on current time
+  function updateActiveMessage(currentTime) {
+    const sample = sampleData[currentSample];
+    if (!sample || !sample.messages) return;
+
+    // Remove active class from all messages
+    const chat = document.querySelector('.hear-sample-chat');
+    if (chat) {
+      chat.querySelectorAll('.hear-sample-message').forEach(msg => {
+        msg.classList.remove('active');
+      });
+    }
+
+    // Find the current active message (the last message whose time has passed)
+    let activeIndex = -1;
+    for (let i = sample.messages.length - 1; i >= 0; i--) {
+      if (currentTime >= sample.messages[i].time) {
+        activeIndex = i;
+        break;
+      }
+    }
+
+    // Add active class to current message
+    if (activeIndex >= 0) {
+      const activeMessage = chat?.querySelector(`[data-message-index="${activeIndex}"]`);
+      const activeMessageData = sample.messages[activeIndex];
+      
+      if (activeMessage) {
+        activeMessage.classList.add('active');
+        
+        // Check if active message is from client - show listening indicator
+        if (activeMessageData.type === 'client') {
+          // Only show listening indicator if there's a next message (agent will respond)
+          const nextMessage = sample.messages[activeIndex + 1];
+          if (nextMessage) {
+            // Show listening indicator while client is speaking and agent will respond
+            showListeningIndicator();
+          } else {
+            // Client is the last message - no need to show listening indicator
+            removeListeningIndicator();
+          }
+        } else {
+          // Remove listening indicator when agent starts speaking
+          removeListeningIndicator();
+        }
+        
+        // Scroll to active message within chat container only (not the page)
+        // Use requestAnimationFrame to prevent page scroll interference
+        requestAnimationFrame(() => {
+          const chatRect = chat.getBoundingClientRect();
+          const messageRect = activeMessage.getBoundingClientRect();
+          
+          // Check if message is not fully visible within chat container
+          const messageTopRelativeToChat = messageRect.top - chatRect.top + chat.scrollTop;
+          const messageBottomRelativeToChat = messageRect.bottom - chatRect.top + chat.scrollTop;
+          const chatViewportTop = chat.scrollTop;
+          const chatViewportBottom = chat.scrollTop + chat.clientHeight;
+          
+          // Only scroll if message is outside viewport
+          if (messageTopRelativeToChat < chatViewportTop || messageBottomRelativeToChat > chatViewportBottom) {
+            // Calculate center position within chat container
+            const targetScroll = messageTopRelativeToChat - (chat.clientHeight / 2) + (messageRect.height / 2);
+            // Use scrollTop directly instead of scrollTo to avoid page scroll
+            chat.scrollTop = Math.max(0, targetScroll);
+          }
+        });
+      }
+    } else {
+      // No active message - remove listening indicator
+      removeListeningIndicator();
+    }
+  }
+
+  // Display thinking indicator for agent messages
+  function showThinkingIndicator(callback) {
+    const chat = document.querySelector('.hear-sample-chat');
+    if (!chat) {
+      callback();
+      return;
+    }
+
+    const thinkingDiv = document.createElement('div');
+    thinkingDiv.className = 'hear-sample-message hear-sample-message-agent hear-sample-thinking';
+    thinkingDiv.innerHTML = `
+      <div class="hear-sample-message-header">
+        <div class="hear-sample-avatar hear-sample-avatar-agent">
+          <img src="./images/Hear a Sample Call/revo_profile.png" alt="Revo Agent" />
+        </div>
+        <span class="hear-sample-message-author">Revo Agent</span>
+      </div>
+      <div class="hear-sample-message-bubble hear-sample-message-bubble-agent">
+        <div class="hear-sample-thinking-dots">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    `;
+
+    chat.appendChild(thinkingDiv);
+    
+    // Scroll to show thinking indicator
+    requestAnimationFrame(() => {
+      chat.scrollTop = chat.scrollHeight;
+    });
+
+    // Show thinking indicator for a short time (500-800ms)
+    setTimeout(() => {
+      thinkingDiv.remove();
+      callback();
+    }, 600);
+  }
+
+  // Type message letter by letter with opacity transition
+  // durationMs: duration in milliseconds that the typing animation should take
+  function typeMessage(text, element, onComplete, durationMs = null) {
+    const textArray = text.split('');
+    let currentIndex = 0;
+    let currentTimeout = null;
+    
+    // Clear element first
+    element.innerHTML = '';
+    
+    // Clear any existing typing timeouts
+    typingTimeouts.forEach(timeout => clearTimeout(timeout));
+    typingTimeouts = [];
+    
+    // Calculate delay per character based on duration
+    let delayPerChar = 30; // Default delay
+    if (durationMs && textArray.length > 0) {
+      // Calculate delay to match audio duration
+      delayPerChar = Math.max(10, durationMs / textArray.length);
+    }
+    
+    function typeNextLetter() {
+      if (isTypingPaused) {
+        // If paused, wait and check again
+        currentTimeout = setTimeout(typeNextLetter, 50);
+        typingTimeouts.push(currentTimeout);
+        return;
+      }
+      
+      if (currentIndex < textArray.length) {
+        const span = document.createElement('span');
+        span.textContent = textArray[currentIndex];
+        span.style.opacity = '0';
+        element.appendChild(span);
+        
+        // Animate opacity
+        requestAnimationFrame(() => {
+          span.style.transition = 'opacity 0.1s ease';
+          span.style.opacity = '1';
+        });
+        
+        currentIndex++;
+        
+        // Use calculated delay to match audio duration
+        currentTimeout = setTimeout(typeNextLetter, delayPerChar);
+        typingTimeouts.push(currentTimeout);
+      } else {
+        if (onComplete) onComplete();
+      }
+    }
+    
+    typeNextLetter();
   }
 
   // Display message in chat
-  function displayMessage(message, animate = true) {
+  function displayMessage(message, animate = true, messageIndex = null) {
     const chat = document.querySelector('.hear-sample-chat');
     if (!chat) return;
 
     const messageDiv = document.createElement('div');
     messageDiv.className = `hear-sample-message hear-sample-message-${message.type}`;
+    
+    // Add data attribute to identify message by index
+    if (messageIndex !== null) {
+      messageDiv.setAttribute('data-message-index', messageIndex);
+    }
 
     const isAgent = message.type === 'agent';
     const headerClass = isAgent ? 'hear-sample-message-header' : 'hear-sample-message-header hear-sample-message-header-right';
+    
+    // Calculate message duration for agent messages
+    // Make animation finish slightly before audio ends (85% of duration)
+    let messageDuration = null;
+    if (isAgent && messageIndex !== null) {
+      const sample = sampleData[currentSample];
+      if (sample && sample.messages) {
+        const currentMessage = sample.messages[messageIndex];
+        const nextMessage = sample.messages[messageIndex + 1];
+        
+        let rawDuration = null;
+        if (nextMessage) {
+          // Duration is from current message time to next message time
+          rawDuration = (nextMessage.time - currentMessage.time) * 1000; // Convert to milliseconds
+        } else if (audio && audio.duration) {
+          // Last message: duration is from message time to end of audio
+          rawDuration = (audio.duration - currentMessage.time) * 1000; // Convert to milliseconds
+        }
+        
+        // Make animation finish 15% earlier (85% of original duration)
+        if (rawDuration) {
+          messageDuration = rawDuration * 0.50;
+        }
+      }
+    }
 
+    // For agent messages, show header immediately but delay bubble content
     messageDiv.innerHTML = `
       <div class="${headerClass}">
         ${isAgent ? `
           <div class="hear-sample-avatar hear-sample-avatar-agent">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 12.43 6.67 11.2 10 11.2C13.33 11.2 15.97 12.43 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z" fill="#007AFF"/>
-            </svg>
+            <img src="./images/Hear a Sample Call/revo_profile.png" alt="Revo Agent" />
           </div>
           <span class="hear-sample-message-author">Revo Agent</span>
         ` : `
           <span class="hear-sample-message-author">Client</span>
           <div class="hear-sample-avatar hear-sample-avatar-client">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 3C11.66 3 13 4.34 13 6C13 7.66 11.66 9 10 9C8.34 9 7 7.66 7 6C7 4.34 8.34 3 10 3ZM10 17.2C7.5 17.2 5.29 15.92 4 13.98C4.03 12.43 6.67 11.2 10 11.2C13.33 11.2 15.97 12.43 16 13.98C14.71 15.92 12.5 17.2 10 17.2Z" fill="#94A3B8"/>
-            </svg>
+            <img src="./images/Hear a Sample Call/client_profile.png" alt="Client" />
           </div>
         `}
       </div>
       <div class="hear-sample-message-bubble hear-sample-message-bubble-${message.type}">
-        <p>${message.text}</p>
+        <p></p>
       </div>
     `;
 
     if (animate) {
-      // Add animation
+      // Add animation for message container
       messageDiv.style.opacity = '0';
       messageDiv.style.transform = 'translateY(10px)';
       chat.appendChild(messageDiv);
 
-      // Animate in
+      // Animate in container
       requestAnimationFrame(() => {
         messageDiv.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
         messageDiv.style.opacity = '1';
         messageDiv.style.transform = 'translateY(0)';
       });
-    } else {
-      // No animation for initial message
-      chat.appendChild(messageDiv);
-    }
 
-    // Scroll to bottom (como WhatsApp - siempre al final)
-    setTimeout(() => {
-      chat.scrollTo({
-        top: chat.scrollHeight,
-        behavior: 'smooth'
+      // For agent messages, type message directly without thinking indicator
+      if (isAgent) {
+        const textElement = messageDiv.querySelector('.hear-sample-message-bubble p');
+        typeMessage(message.text, textElement, () => {
+          // Scroll after typing completes
+          requestAnimationFrame(() => {
+            chat.scrollTop = chat.scrollHeight;
+          });
+        }, messageDuration);
+      } else {
+        // For client messages, show immediately
+        const textElement = messageDiv.querySelector('.hear-sample-message-bubble p');
+        textElement.textContent = message.text;
+        requestAnimationFrame(() => {
+          chat.scrollTop = chat.scrollHeight;
+        });
+      }
+    } else {
+      // No animation - show messages immediately (used when seeking)
+      chat.appendChild(messageDiv);
+      const textElement = messageDiv.querySelector('.hear-sample-message-bubble p');
+      // Show text immediately without typing animation when seeking
+      textElement.textContent = message.text;
+      requestAnimationFrame(() => {
+        chat.scrollTop = chat.scrollHeight;
       });
-    }, animate ? 100 : 0);
+    }
   }
 
   // Update volume fill
   function updateVolumeFill(percent) {
     const volumeFill = document.querySelector('.hear-sample-volume-fill');
+    const volumeHandle = document.querySelector('.hear-sample-volume-handle');
+    const volumeSlider = document.querySelector('.hear-sample-volume-slider');
+    
     if (volumeFill) {
       volumeFill.style.width = (Math.max(0, Math.min(1, percent)) * 100) + '%';
+    }
+    
+    if (volumeHandle && volumeSlider) {
+      volumeHandle.style.left = (Math.max(0, Math.min(1, percent)) * 100) + '%';
+    }
+    
+    // Update volume icon
+    updateVolumeIcon(percent);
+  }
+
+  // Handle keyboard shortcuts
+  function handleKeyboardShortcuts(e) {
+    // Don't trigger shortcuts if user is typing in an input, textarea, or contenteditable
+    const activeElement = document.activeElement;
+    const isInputFocused = activeElement && (
+      activeElement.tagName === 'INPUT' ||
+      activeElement.tagName === 'TEXTAREA' ||
+      activeElement.isContentEditable
+    );
+
+    if (isInputFocused) return;
+
+    // Check if audio player section is visible
+    const audioPlayer = document.querySelector('.hear-sample-audio-player');
+    if (!audioPlayer || !audio) return;
+
+    // Check if the section is in viewport (optional - can be removed if you want shortcuts to work globally)
+    const section = audioPlayer.closest('.hear-sample-section');
+    if (section) {
+      const rect = section.getBoundingClientRect();
+      const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+      if (!isVisible) return;
+    }
+
+    switch(e.key) {
+      case ' ':
+      case 'Spacebar':
+        e.preventDefault();
+        togglePlayPause();
+        break;
+      
+      case 'ArrowLeft':
+        e.preventDefault();
+        if (audio && audio.duration && !isNaN(audio.duration)) {
+          const newTime = Math.max(0, (audio.currentTime || 0) - 5);
+          seekToTime(newTime, isPlaying); // Preserve playing state
+        }
+        break;
+      
+      case 'ArrowRight':
+        e.preventDefault();
+        if (audio && audio.duration && !isNaN(audio.duration)) {
+          const newTime = Math.min(audio.duration, (audio.currentTime || 0) + 5);
+          seekToTime(newTime, isPlaying); // Preserve playing state
+        }
+        break;
+      
+      case 'ArrowUp':
+        e.preventDefault();
+        const currentVolume = audio.volume;
+        const newVolumeUp = Math.min(1, currentVolume + 0.1);
+        audio.volume = newVolumeUp;
+        updateVolumeFill(newVolumeUp);
+        updateVolumeIcon(newVolumeUp);
+        break;
+      
+      case 'ArrowDown':
+        e.preventDefault();
+        const currentVol = audio.volume;
+        const newVolumeDown = Math.max(0, currentVol - 0.1);
+        audio.volume = newVolumeDown;
+        updateVolumeFill(newVolumeDown);
+        updateVolumeIcon(newVolumeDown);
+        break;
     }
   }
 
