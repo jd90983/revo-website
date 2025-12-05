@@ -50,6 +50,11 @@ The "How to Get Started" section with 4 steps timeline. Used in:
 - `ser.html`
 - `industry_locksmith.html`
 
+### get-started-form-section.html
+The "Get Started" form section with contact form. Used in:
+- `index.html`
+- Can be added to any page by including the template loader
+
 ## Modifying Templates
 
 When you modify a template file, the changes will automatically appear on all pages that use it, as long as:

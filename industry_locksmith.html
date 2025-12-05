@@ -650,6 +650,9 @@
     <!-- How to Get Started Section - Loaded from template -->
     <div id="get-started-template-container"></div>
 
+    <!-- Get Started Form Section - Loaded from template -->
+    <div id="get-started-form-template-container"></div>
+
     <!-- CTA Section -->
     <section class="locksmith-section locksmith-section-cta">
       <div class="locksmith-container">
@@ -914,11 +917,14 @@
   <script src="js/navigation.js"></script>
   <script src="js/animations.js"></script>
   <script src="js/template-loader.js"></script>
+  <script src="js/get-started-form.js"></script>
   <script src="js/industry_locksmith.js"></script>
   <script>
     // Load Get Started section template
     document.addEventListener('DOMContentLoaded', function() {
       loadTemplate('templates/get-started-section.html', '#get-started-template-container');
+      // Load Get Started Form section template
+      loadTemplate('templates/get-started-form-section.html', '#get-started-form-template-container');
     });
   </script>
 </body>

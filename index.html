@@ -705,7 +705,29 @@
               <h3 class="hear-sample-professional-label">Home Services Pros</h3>
               <!-- Chat Messages - Will be populated dynamically by JavaScript -->
               <div class="hear-sample-chat">
-                <!-- Messages will appear here when audio plays -->
+                <!-- Summary Card - shown before audio plays -->
+                <div class="hear-sample-summary-card">
+                  
+                  <div class="hear-sample-summary-section">
+                    <p class="hear-sample-summary-label">Customer Issue:</p>
+                    <p class="hear-sample-summary-issue">Customer issue description</p>
+                  </div>
+                  
+                  <div class="hear-sample-summary-section">
+                    <p class="hear-sample-summary-label">Revo Action:</p>
+                    <ul class="hear-sample-summary-actions">
+                      <li>Greets professionally</li>
+                      <li>Shows empathy</li>
+                      <li>Collects job details</li>
+                      <li>Schedules service</li>
+                    </ul>
+                  </div>
+                  
+                  <div class="hear-sample-summary-section">
+                    <p class="hear-sample-summary-label">Why it matters:</p>
+                    <p class="hear-sample-summary-why">Revo handles urgent home service calls with clarity and confidence.</p>
+                  </div>
+                </div>
               </div>
 
               <!-- Audio Player -->
@@ -735,7 +757,7 @@
 
         <!-- CTA Buttons -->
         <div class="hear-sample-actions">
-          <button class="hear-sample-btn-primary">Get Started</button>
+          <button class="benefits-modern-btn-primary">Get Started</button>
           <button class="hear-sample-btn-secondary">
             Book a Demo
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -744,49 +766,6 @@
           </button>
         </div>
       </div>
-    </section>
-
-    <!-- Transform Business Communications CTA Section -->
-    <section class="cta-transform-section">
-
-      <!-- Background Image with Overlay -->
-      <div class="cta-background-wrapper" aria-hidden="true">
-        <div class="cta-background-base"></div>
-        <img
-          src="./images/backgrounds/transform_business_background.png"
-          alt=""
-          class="cta-background-image"
-          aria-hidden="true"
-        />
-        <div class="cta-background-overlay"></div>
-      </div>
-
-      <!-- Container -->
-      <div class="cta-transform-container">
-
-        <!-- Centered Content -->
-        <div class="cta-transform-content-wrapper">
-
-          <!-- Heading & Description -->
-          <div class="cta-transform-text-content">
-            <h2 class="cta-transform-heading">
-              Transform your business communications
-            </h2>
-            <p class="cta-transform-description">
-              Start experiencing the power of AI-driven call management. No complex setup, no long-term commitments.
-            </p>
-          </div>
-
-          <!-- Action Buttons -->
-          <div class="cta-transform-actions">
-            <button class="btn-cta-get-started">Get Started</button>
-            <button class="btn-book-demo">Book a Demo</button>
-          </div>
-
-        </div>
-
-      </div>
-
     </section>
 
     <!-- Your Time is Valuable - Efficiency Section -->
@@ -819,17 +798,10 @@
 
       </div>
 
-      <!-- Decorative 3D Spheres (Bottom Right) -->
-      <div class="efficiency-decorative-spheres">
-        <img
-          src="./images/maskgroup.png"
-          alt=""
-          class="efficiency-spheres-image"
-          aria-hidden="true"
-        />
-      </div>
-
     </section>
+
+    <!-- Get Started Form Section - Loaded from template -->
+    <div id="get-started-form-template-container"></div>
 
     <!-- Customer Trust Testimonials Section -->
     <section class="customer-trust-section">
@@ -954,47 +926,28 @@
 
     </section>
 
-    <!-- Transform Business Communications CTA Section - Final (Second Instance) -->
-    <section class="cta-transform-section">
-
+    <!-- Transform Business Communications CTA Section -->
+    <section class="transform-cta-section">
       <!-- Background Image with Overlay -->
-      <div class="cta-background-wrapper" aria-hidden="true">
-        <div class="cta-background-base"></div>
-        <img
-          src="./images/backgrounds/transform_business_background.png"
-          alt=""
-          class="cta-background-image"
-          aria-hidden="true"
-        />
-        <div class="cta-background-overlay"></div>
+      <div class="transform-cta-background" aria-hidden="true">
+        <div class="transform-cta-bg-base"></div>
+        <img src="./images/backgrounds/transform_business_background_2.png" alt="" class="transform-cta-bg-image" />
+        <div class="transform-cta-overlay"></div>
       </div>
 
       <!-- Container -->
-      <div class="cta-transform-container">
-
-        <!-- Centered Content -->
-        <div class="cta-transform-content-wrapper">
-
-          <!-- Heading & Description -->
-          <div class="cta-transform-text-content">
-            <h2 class="cta-transform-heading">
-              Transform your business communications
-            </h2>
-            <p class="cta-transform-description">
-              Start experiencing the power of AI-driven call management. No complex setup, no long-term commitments.
-            </p>
+      <div class="transform-cta-container">
+        <div class="transform-cta-content">
+          <h2 class="transform-cta-heading">Transform your business communications</h2>
+          <p class="transform-cta-description">
+            Start experiencing the power of AI-driven call management. No complex setup, no long-term commitments.
+          </p>
+          <div class="transform-cta-actions">
+            <button class="transform-cta-btn-primary">Get Started</button>
+            <button class="transform-cta-btn-secondary">Book a Demo</button>
           </div>
-
-          <!-- Action Buttons -->
-          <div class="cta-transform-actions">
-            <button class="btn-cta-get-started">Get Started</button>
-            <button class="btn-book-demo">Book a Demo</button>
-          </div>
-
         </div>
-
       </div>
-
     </section>
 
     <!-- FAQ Section -->
@@ -1227,8 +1180,17 @@
     Configuración personalizada de transcripciones de audio activada
     Los textos se cargan desde js/hear-sample-config.js
   -->
+  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module"></script>
   <script src="js/hear-sample-config.js"></script>
   <script src="js/hear-sample.js"></script>
+  <script src="js/template-loader.js"></script>
+  <script src="js/get-started-form.js"></script>
+  <script>
+    // Load Get Started Form template
+    document.addEventListener('DOMContentLoaded', function() {
+      loadTemplate('templates/get-started-form-section.html', '#get-started-form-template-container');
+    });
+  </script>
   <script src="js/main.js"></script>
 </body>
 </html>
