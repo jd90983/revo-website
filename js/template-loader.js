@@ -29,6 +29,13 @@ async function loadTemplate(templatePath, containerSelector) {
         }, 50);
       }
       
+      // Initialize Get Started Form section if template is loaded
+      if (html.includes('get-started-form-section')) {
+        setTimeout(() => {
+          initGetStartedFormSection();
+        }, 100);
+      }
+      
       // Trigger custom event for other scripts to listen
       const event = new CustomEvent('templateLoaded', {
         detail: { templatePath, containerSelector }
@@ -91,5 +98,52 @@ function initGetStartedSection() {
   }
   
   console.log('Get Started section template loaded and initialized');
+}
+
+/**
+ * Initialize the Get Started Form section after template is loaded
+ * This initializes form functionality and animations
+ */
+function initGetStartedFormSection() {
+  const section = document.querySelector('.get-started-form-section');
+  if (!section) {
+    console.warn('Get Started Form section not found after template load');
+    return;
+  }
+  
+  // Initialize scroll animations for the loaded section
+  if ('IntersectionObserver' in window) {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+          sectionObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    sectionObserver.observe(section);
+  }
+  
+  // Initialize form functionality after template loads
+  // This ensures the gradient stroke and validation work
+  if (typeof window.initGetStartedForm === 'function') {
+    // Small delay to ensure DOM is fully ready
+    setTimeout(() => {
+      window.initGetStartedForm();
+    }, 100);
+  }
+  
+  // Initialize background transition animation
+  if (typeof initGetStartedFormTransition === 'function') {
+    initGetStartedFormTransition();
+  }
+  
+  console.log('Get Started Form section template loaded and initialized');
 }
 

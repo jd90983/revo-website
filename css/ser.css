@@ -2202,7 +2202,7 @@ main > section {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(180deg, rgba(10, 11, 12, 0.95) 0%, rgba(10, 11, 12, 0.98) 50%, rgba(10, 11, 12, 0.95) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
   z-index: 1;
 }
 
@@ -2422,7 +2422,7 @@ main > section {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('../images/backgrounds/transform_business_background.png');
+  background-image: url('../images/backgrounds/transform_business_background_2.png');
   background-size: cover;
   background-position: center;
   opacity: 0.4;
@@ -3533,5 +3533,75 @@ main > section {
   .ser-process-actions button {
     width: 100%;
   }
+}
+
+/* ===== GET STARTED FORM SECTION - Allow Animation ===== */
+.get-started-form-section {
+  position: relative !important;
+  z-index: 1 !important;
+  display: flex !important;
+  visibility: visible !important;
+  background: #0a0b0c !important;
+  opacity: 1 !important; /* Ensure section is visible */
+}
+
+/* When section has animate-in, ensure it's visible */
+.get-started-form-section.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Allow the wrapper to animate - but ensure visibility */
+.get-started-form-section .get-started-form-wrapper {
+  visibility: visible !important;
+  display: flex !important;
+}
+
+/* When section is animated, wrapper should be visible */
+.get-started-form-section.animate-in .get-started-form-wrapper {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+  filter: blur(0) !important;
+}
+
+/* Allow left and right sections to animate */
+.get-started-form-section .get-started-form-left,
+.get-started-form-section .get-started-form-right {
+  visibility: visible !important;
+  display: flex !important;
+}
+
+/* When section is animated, left and right should be visible */
+.get-started-form-section.animate-in .get-started-form-left,
+.get-started-form-section.animate-in .get-started-form-right {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
+/* Ensure all form elements are visible when section is animated */
+.get-started-form-section.animate-in * {
+  visibility: visible !important;
+}
+
+.get-started-form-section .get-started-form-content,
+.get-started-form-section .get-started-form-form-wrapper {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.get-started-form-section .get-started-form-tagline p,
+.get-started-form-section .get-started-form-heading h2,
+.get-started-form-section .get-started-form-description p,
+.get-started-form-section .get-started-form-feature-item p {
+  color: #ffffff !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Desactivar la transición de fondo al siguiente section */
+.get-started-form-section::after {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
 }
 

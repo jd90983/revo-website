@@ -271,6 +271,82 @@ if (document.readyState === 'loading') {
   initBackgroundTransition();
 }
 
+// ===== SMOOTH BACKGROUND TRANSITION: GET STARTED FORM TO CUSTOMER TRUST =====
+// Transitions the get-started-form section background from black to gray as user scrolls
+const initGetStartedFormTransition = () => {
+  const getStartedFormSection = document.querySelector('.get-started-form-section');
+  const customerTrustSection = document.querySelector('.customer-trust-section');
+  
+  if (!getStartedFormSection || !customerTrustSection) return;
+
+  const updateBackgroundTransition = () => {
+    const windowHeight = window.innerHeight;
+    const getStartedFormRect = getStartedFormSection.getBoundingClientRect();
+    
+    // Get the bottom of get-started-form section relative to viewport
+    const getStartedFormBottom = getStartedFormRect.bottom;
+    
+    // Calculate when transition should start (when section bottom is visible)
+    // Transition starts when section bottom reaches viewport
+    // Transition completes when section bottom is at 50% of viewport
+    const transitionStart = windowHeight;
+    const transitionEnd = windowHeight * 0.5;
+    const transitionRange = transitionStart - transitionEnd;
+    
+    let opacity = 0;
+    
+    if (getStartedFormBottom <= transitionStart && getStartedFormBottom >= transitionEnd) {
+      // Section is in the transition range
+      opacity = (transitionStart - getStartedFormBottom) / transitionRange;
+      opacity = Math.max(0, Math.min(1, opacity)); // Clamp between 0 and 1
+    } else if (getStartedFormBottom < transitionEnd) {
+      // Transition complete - fully gray
+      opacity = 1;
+    } else {
+      // Before transition - fully black
+      opacity = 0;
+    }
+    
+    // Apply opacity to the ::after pseudo-element via CSS custom property
+    getStartedFormSection.style.setProperty('--transition-opacity', opacity);
+  };
+
+  // Update CSS to use the custom property for opacity
+  const style = document.createElement('style');
+  style.textContent = `
+    .get-started-form-section::after {
+      opacity: var(--transition-opacity, 0);
+    }
+  `;
+  document.head.appendChild(style);
+
+  // Throttle scroll events for performance
+  let ticking = false;
+  const handleScroll = () => {
+    if (!ticking) {
+      window.requestAnimationFrame(() => {
+        updateBackgroundTransition();
+        ticking = false;
+      });
+      ticking = true;
+    }
+  };
+
+  // Initial check
+  updateBackgroundTransition();
+
+  // Listen to scroll events
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  window.addEventListener('resize', handleScroll, { passive: true });
+};
+
+// Initialize background transition when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initGetStartedFormTransition);
+} else {
+  initGetStartedFormTransition();
+}
+
 // ===== SCROLL-TRIGGERED COUNTER ANIMATION =====
 // Counts up from 0 to target number when section comes into view
 const initCounterAnimation = () => {

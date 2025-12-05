@@ -235,10 +235,10 @@
       title.textContent = sample.title;
     }
 
-    // Clear chat - don't show any messages until user presses play
+    // Show summary card - don't show messages until user presses play
     const chat = document.querySelector('.hear-sample-chat');
     if (chat) {
-      chat.innerHTML = '';
+      updateSummaryCard(sample);
     }
 
     // Stop and remove old audio
@@ -308,6 +308,45 @@
     }
   }
 
+  // Update summary card with sample data
+  function updateSummaryCard(sample) {
+    const chat = document.querySelector('.hear-sample-chat');
+    if (!chat) return;
+
+    // Default values if not provided
+    const cardTitle = sample.cardTitle || sample.title || 'Sample Call';
+    const cardIcon = sample.cardIcon || './images/icons/fa7-solid_home-lg.svg';
+    const customerIssue = sample.customerIssue || 'Customer issue description';
+    const revoActions = sample.revoActions || [
+      'Greets professionally',
+      'Shows empathy',
+      'Collects job details',
+      'Schedules service'
+    ];
+    const whyItMatters = sample.whyItMatters || 'Revo handles calls with clarity and confidence.';
+
+    chat.innerHTML = `
+      <div class="hear-sample-summary-card">
+        <div class="hear-sample-summary-section">
+          <p class="hear-sample-summary-label">Customer Issue:</p>
+          <p class="hear-sample-summary-issue">${customerIssue}</p>
+        </div>
+        
+        <div class="hear-sample-summary-section">
+          <p class="hear-sample-summary-label">Revo Action:</p>
+          <ul class="hear-sample-summary-actions">
+            ${revoActions.map(action => `<li>${action}</li>`).join('')}
+          </ul>
+        </div>
+        
+        <div class="hear-sample-summary-section">
+          <p class="hear-sample-summary-label">Why it matters:</p>
+          <p class="hear-sample-summary-why">${whyItMatters}</p>
+        </div>
+      </div>
+    `;
+  }
+
   // Switch sample
   function switchSample(sampleKey, button) {
     // Update active icon
@@ -336,12 +375,13 @@
       // Pause typing animation
       isTypingPaused = true;
       
-      // Pause listening dots animation
-      const listeningIndicator = document.querySelector('.hear-sample-listening-indicator');
-      if (listeningIndicator) {
-        const dots = listeningIndicator.querySelector('.hear-sample-listening-dots');
-        if (dots) {
-          dots.style.animationPlayState = 'paused';
+      // Pause Lottie animation
+      if (lottieElementRef) {
+        // Try different methods to pause the animation
+        if (typeof lottieElementRef.pause === 'function') {
+          lottieElementRef.pause();
+        } else if (lottieElementRef.setAttribute) {
+          lottieElementRef.removeAttribute('autoplay');
         }
       }
     } else {
@@ -406,12 +446,13 @@
       // Resume typing animation
       isTypingPaused = false;
       
-      // Resume listening dots animation
-      const listeningIndicator = document.querySelector('.hear-sample-listening-indicator');
-      if (listeningIndicator) {
-        const dots = listeningIndicator.querySelector('.hear-sample-listening-dots');
-        if (dots) {
-          dots.style.animationPlayState = 'running';
+      // Resume Lottie animation
+      if (lottieElementRef) {
+        // Try different methods to play the animation
+        if (typeof lottieElementRef.play === 'function') {
+          lottieElementRef.play();
+        } else if (lottieElementRef.setAttribute) {
+          lottieElementRef.setAttribute('autoplay', '');
         }
       }
       
@@ -529,9 +570,33 @@
     // Preserve playing state
     const wasPlaying = isPlaying;
     
-    // Set audio time
-    audio.currentTime = newTime;
-    currentTime = newTime;
+    // Set audio time - ensure it's set correctly
+    try {
+      // Set the audio time
+      audio.currentTime = newTime;
+      // Immediately update our currentTime variable to keep it in sync
+      currentTime = newTime;
+      
+      // Use the 'seeked' event to ensure the seek actually completed
+      const onSeeked = () => {
+        // Verify the seek worked correctly
+        const actualTime = audio.currentTime || 0;
+        const timeDiff = Math.abs(actualTime - newTime);
+        if (timeDiff > 0.1) {
+          // Seek didn't work as expected, try once more
+          audio.currentTime = newTime;
+          currentTime = newTime;
+        } else {
+          // Seek was successful, update currentTime to match actual audio time
+          currentTime = actualTime;
+        }
+        audio.removeEventListener('seeked', onSeeked);
+      };
+      audio.addEventListener('seeked', onSeeked, { once: true });
+    } catch (err) {
+      console.warn('Error seeking audio:', err);
+      currentTime = newTime;
+    }
     
     // Clear chat and rebuild it with messages up to the new time
     const chat = document.querySelector('.hear-sample-chat');
@@ -610,40 +675,39 @@
     updateActiveMessage(currentTime);
   }
 
-  // Show listening indicator (dots animation) when client is speaking
+  // Show listening indicator (Lottie animation) when client is speaking
+  let listeningIndicatorElement = null; // Store reference to prevent recreation
+  let lottieElementRef = null; // Store reference to Lottie element for pause/play control
   function showListeningIndicator() {
     const chat = document.querySelector('.hear-sample-chat');
     if (!chat) return null;
 
-    // Check if indicator already exists - if so, don't recreate it
-    const existingIndicator = chat.querySelector('.hear-sample-listening-indicator');
-    if (existingIndicator) {
-      return existingIndicator;
+    // If indicator already exists, do nothing
+    if (listeningIndicatorElement && chat.contains(listeningIndicatorElement)) {
+      return listeningIndicatorElement;
     }
 
     // Create listening indicator message
     const listeningDiv = document.createElement('div');
     listeningDiv.className = 'hear-sample-message hear-sample-message-agent hear-sample-listening-indicator';
     listeningDiv.innerHTML = `
-      <div class="hear-sample-message-header">
-        <div class="hear-sample-avatar hear-sample-avatar-agent">
-          <img src="./images/Hear a Sample Call/revo_profile.png" alt="Revo Agent" />
-        </div>
-        <span class="hear-sample-message-author">Revo Agent</span>
-      </div>
       <div class="hear-sample-message-bubble hear-sample-message-bubble-agent">
-        <div class="hear-sample-listening-dots">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
+        <dotlottie-wc 
+          src="https://lottie.host/071a23b7-df8a-46c3-b3d1-b3137a45bedc/z56G1f9QJh.lottie" 
+          class="hear-sample-lottie-animation"
+          autoplay 
+          loop>
+        </dotlottie-wc>
+        <span class="hear-sample-message-author">Revo agent is listening</span>
       </div>
     `;
 
     chat.appendChild(listeningDiv);
+    listeningIndicatorElement = listeningDiv; // Store reference
     
-    // Scroll to show listening indicator
+    // Get reference to Lottie element after it's added to DOM
     requestAnimationFrame(() => {
+      lottieElementRef = listeningDiv.querySelector('dotlottie-wc');
       chat.scrollTop = chat.scrollHeight;
     });
 
@@ -652,12 +716,10 @@
 
   // Remove listening indicator
   function removeListeningIndicator() {
-    const chat = document.querySelector('.hear-sample-chat');
-    if (!chat) return;
-    
-    const listeningIndicator = chat.querySelector('.hear-sample-listening-indicator');
-    if (listeningIndicator) {
-      listeningIndicator.remove();
+    if (listeningIndicatorElement) {
+      listeningIndicatorElement.remove();
+      listeningIndicatorElement = null;
+      lottieElementRef = null;
     }
   }
 

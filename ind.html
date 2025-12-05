@@ -38,6 +38,7 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/shared-components.css">
   <link rel="stylesheet" href="css/ind.css">
   <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -770,6 +771,9 @@
       </div>
     </section>
 
+    <!-- Get Started Form Section - Loaded from template -->
+    <div id="get-started-form-template-container"></div>
+
     <!-- CTA Section -->
     <section class="ind-cta-section" style="background: #000000 !important; color: #FFFFFF !important; position: relative; z-index: 1; display: block !important; visibility: visible !important; opacity: 1 !important;">
       <div class="ind-cta-background">
@@ -980,7 +984,16 @@
 
   <!-- Scripts -->
   <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/template-loader.js"></script>
+  <script src="js/get-started-form.js"></script>
   <script src="js/ind.js"></script>
+  <script>
+    // Load Get Started Form section template
+    document.addEventListener('DOMContentLoaded', function() {
+      loadTemplate('templates/get-started-form-section.html', '#get-started-form-template-container');
+    });
+  </script>
 </body>
 </html>
 

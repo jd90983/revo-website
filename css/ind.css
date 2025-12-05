@@ -44,12 +44,28 @@ main#main-content > section {
   padding: 112px 64px;
   display: block !important;
   visibility: visible !important;
+  /* Allow animations - opacity controlled by animate-in class */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ind-home-service-pros-section.animate-in,
+.ind-professional-businesses-section.animate-in {
   opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .ind-home-service-pros-section *,
 .ind-professional-businesses-section * {
   color: #0A0B0C !important;
+  /* Allow parent section to control opacity for animation */
+}
+
+/* Ensure elements are visible when section is animated */
+.ind-home-service-pros-section.animate-in *,
+.ind-professional-businesses-section.animate-in * {
+  opacity: 1 !important;
 }
 
 /* Force visibility of all text elements */
@@ -105,12 +121,24 @@ main#main-content > section {
   z-index: 1 !important;
   display: block !important;
   visibility: visible !important;
+  /* Allow animations - opacity controlled by animate-in class */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ind-success-stories-section.animate-in {
   opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .ind-success-stories-section * {
   color: #FFFFFF !important;
   visibility: visible !important;
+  /* Allow parent section to control opacity for animation */
+}
+
+.ind-success-stories-section.animate-in * {
   opacity: 1 !important;
 }
 
@@ -122,12 +150,24 @@ main#main-content > section {
   z-index: 1 !important;
   display: block !important;
   visibility: visible !important;
+  /* Allow animations - opacity controlled by animate-in class */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ind-feature-section.animate-in {
   opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .ind-feature-section * {
   color: #FFFFFF !important;
   visibility: visible !important;
+  /* Allow parent section to control opacity for animation */
+}
+
+.ind-feature-section.animate-in * {
   opacity: 1 !important;
 }
 
@@ -139,12 +179,24 @@ main#main-content > section {
   z-index: 1 !important;
   display: block !important;
   visibility: visible !important;
+  /* Allow animations - opacity controlled by animate-in class */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ind-benefits-section.animate-in {
   opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .ind-benefits-section * {
   color: #0A0B0C !important;
   visibility: visible !important;
+  /* Allow parent section to control opacity for animation */
+}
+
+.ind-benefits-section.animate-in * {
   opacity: 1 !important;
 }
 
@@ -156,12 +208,24 @@ main#main-content > section {
   z-index: 1 !important;
   display: block !important;
   visibility: visible !important;
+  /* Allow animations - opacity controlled by animate-in class */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ind-features-personalized-section.animate-in {
   opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .ind-features-personalized-section * {
   color: #FFFFFF !important;
   visibility: visible !important;
+  /* Allow parent section to control opacity for animation */
+}
+
+.ind-features-personalized-section.animate-in * {
   opacity: 1 !important;
 }
 
@@ -173,12 +237,24 @@ main#main-content > section {
   z-index: 1 !important;
   display: block !important;
   visibility: visible !important;
+  /* Allow animations - opacity controlled by animate-in class */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ind-testimonial-section.animate-in {
   opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .ind-testimonial-section * {
   color: #0A0B0C !important;
   visibility: visible !important;
+  /* Allow parent section to control opacity for animation */
+}
+
+.ind-testimonial-section.animate-in * {
   opacity: 1 !important;
 }
 
@@ -190,12 +266,24 @@ main#main-content > section {
   z-index: 1 !important;
   display: block !important;
   visibility: visible !important;
+  /* Allow animations - opacity controlled by animate-in class */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ind-cta-section.animate-in {
   opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .ind-cta-section * {
   color: #FFFFFF !important;
   visibility: visible !important;
+  /* Allow parent section to control opacity for animation */
+}
+
+.ind-cta-section.animate-in * {
   opacity: 1 !important;
 }
 
@@ -207,12 +295,24 @@ main#main-content > section {
   z-index: 1 !important;
   display: block !important;
   visibility: visible !important;
+  /* Allow animations - opacity controlled by animate-in class */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ind-faq-section.animate-in {
   opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .ind-faq-section * {
   color: #FFFFFF !important;
   visibility: visible !important;
+  /* Allow parent section to control opacity for animation */
+}
+
+.ind-faq-section.animate-in * {
   opacity: 1 !important;
 }
 
@@ -231,6 +331,8 @@ main#main-content > section {
   display: block !important;
   visibility: visible !important;
   opacity: 1 !important;
+  /* Hero section should always be visible - no animation */
+  transform: translateY(0) !important;
 }
 
 

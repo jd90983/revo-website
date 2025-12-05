@@ -860,3 +860,138 @@
     page-break-inside: avoid;
   }
 }
+
+/* ===== GET STARTED FORM SECTION - RESPONSIVE ===== */
+@media (max-width: 1023px) {
+  .get-started-form-section {
+    padding: 80px 40px;
+  }
+
+  .get-started-form-wrapper {
+    flex-direction: column;
+    height: auto;
+    border-radius: 24px;
+  }
+
+  .get-started-form-left {
+    border-radius: 24px 24px 0 0;
+    padding: 40px 32px;
+    min-height: 500px;
+  }
+
+  .get-started-form-background {
+    border-radius: 24px 24px 0 0;
+  }
+
+  .get-started-form-background-overlay {
+    border-radius: 24px 24px 0 0;
+  }
+
+  .get-started-form-content {
+    width: 100%;
+    max-width: 450px;
+  }
+
+  .get-started-form-description {
+    width: 100%;
+  }
+
+  .get-started-form-features {
+    width: 100%;
+  }
+
+  .get-started-form-right {
+    border-radius: 0 0 24px 24px;
+    padding: 40px 32px;
+  }
+
+  .get-started-form-form-wrapper {
+    width: 100%;
+    max-width: 416px;
+  }
+
+  .get-started-form-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .get-started-form-section {
+    padding: 60px 24px;
+  }
+
+  .get-started-form-left {
+    padding: 32px 24px;
+    min-height: 400px;
+  }
+
+  .get-started-form-heading h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .get-started-form-description {
+    width: 100%;
+  }
+
+  .get-started-form-description p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .get-started-form-right {
+    padding: 32px 24px;
+  }
+
+  .get-started-form-submit-btn {
+    padding: 13px 32px;
+  }
+}
+
+/* ===== TRANSFORM CTA SECTION - RESPONSIVE ===== */
+@media (max-width: 1023px) {
+  .transform-cta-section {
+    padding: 80px 40px;
+  }
+
+  .transform-cta-heading {
+    font-size: 42px;
+    letter-spacing: -0.42px;
+  }
+
+  .transform-cta-description {
+    font-size: 16px;
+  }
+
+  .transform-cta-actions {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .transform-cta-section {
+    padding: 60px 24px;
+  }
+
+  .transform-cta-heading {
+    font-size: 32px;
+    letter-spacing: -0.32px;
+  }
+
+  .transform-cta-description {
+    font-size: 16px;
+  }
+
+  .transform-cta-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .transform-cta-btn-primary,
+  .transform-cta-btn-secondary {
+    width: 100%;
+    max-width: 300px;
+  }
+}
