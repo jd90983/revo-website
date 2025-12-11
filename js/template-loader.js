@@ -36,6 +36,20 @@ async function loadTemplate(templatePath, containerSelector) {
         }, 100);
       }
       
+      // Initialize Transform CTA section if template is loaded
+      if (html.includes('transform-cta-section')) {
+        setTimeout(() => {
+          initTransformCTASection();
+        }, 100);
+      }
+      
+      // Initialize Experience the Power section if template is loaded
+      if (html.includes('experience-power-section') || html.includes('ser-experience-power')) {
+        setTimeout(() => {
+          initExperiencePowerSection();
+        }, 100);
+      }
+      
       // Trigger custom event for other scripts to listen
       const event = new CustomEvent('templateLoaded', {
         detail: { templatePath, containerSelector }
@@ -145,5 +159,71 @@ function initGetStartedFormSection() {
   }
   
   console.log('Get Started Form section template loaded and initialized');
+}
+
+/**
+ * Initialize the Transform CTA section after template is loaded
+ * This initializes scroll animations
+ */
+function initTransformCTASection() {
+  const section = document.querySelector('.transform-cta-section');
+  if (!section) {
+    console.warn('Transform CTA section not found after template load');
+    return;
+  }
+  
+  // Initialize scroll animations for the loaded section
+  if ('IntersectionObserver' in window) {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+          sectionObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    sectionObserver.observe(section);
+  }
+  
+  console.log('Transform CTA section template loaded and initialized');
+}
+
+/**
+ * Initialize the Experience the Power section after template is loaded
+ * This initializes scroll animations
+ */
+function initExperiencePowerSection() {
+  const section = document.querySelector('.ser-experience-power');
+  if (!section) {
+    console.warn('Experience the Power section not found after template load');
+    return;
+  }
+  
+  // Initialize scroll animations for the loaded section
+  if ('IntersectionObserver' in window) {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const sectionObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+          sectionObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    sectionObserver.observe(section);
+  }
+  
+  console.log('Experience the Power section template loaded and initialized');
 }
 
