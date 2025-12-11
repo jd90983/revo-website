@@ -55,6 +55,11 @@ The "Get Started" form section with contact form. Used in:
 - `index.html`
 - Can be added to any page by including the template loader
 
+### transform-cta-section.html
+The "Transform your business communications" CTA section with background image and action buttons. Used in:
+- `index.html`
+- Can be added to any page by including the template loader
+
 ## Modifying Templates
 
 When you modify a template file, the changes will automatically appear on all pages that use it, as long as:

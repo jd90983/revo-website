@@ -26,6 +26,7 @@ main#main-content > section {
 .ser-ai-receptionists,
 .ser-intelligent-communication,
 .ser-advanced-solutions,
+.ser-experience-power,
 .ser-how-it-works,
 .ser-benefits,
 .ser-tailored,
@@ -1061,20 +1062,255 @@ main > section {
 .ser-advanced-feature-title {
   font-family: var(--font-heading);
   font-weight: var(--font-bold);
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.4;
   color: var(--color-text-dark);
   margin: 0;
-  letter-spacing: -0.22px;
+  letter-spacing: -0.18px;
 }
 
 .ser-advanced-feature-description {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: var(--text-regular);
+  font-size: 14px;
   line-height: 1.5;
   color: var(--color-text-dark);
   margin: 0;
+}
+
+/* ===== EXPERIENCE THE POWER SECTION ===== */
+.ser-experience-power {
+  position: relative !important;
+  width: 100%;
+  padding: 112px 0;
+  overflow: hidden;
+  background-color: #0a0b0c !important; /* Fallback dark background */
+  min-height: auto;
+  height: auto;
+  z-index: 1 !important;
+  display: flex !important;
+  align-items: center;
+  visibility: visible !important;
+  /* Initial state for animation */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ser-experience-power.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.ser-experience-power * {
+  visibility: visible !important;
+}
+
+.ser-experience-power.animate-in * {
+  opacity: 1 !important;
+}
+
+.ser-experience-background {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.ser-experience-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ser-experience-power .ser-section-container {
+  position: relative !important;
+  z-index: 2 !important;
+  display: flex !important;
+  align-items: center;
+  width: 100% !important;
+  max-width: var(--max-content-width) !important;
+  margin: 0 auto !important;
+  padding: 0 var(--page-padding);
+  visibility: visible !important;
+  opacity: 1 !important;
+  box-sizing: border-box;
+}
+
+.ser-experience-power.animate-in .ser-section-container,
+.ser-experience-power .ser-section-container {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.ser-experience-content {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: flex !important;
+  flex-direction: row;
+  gap: 80px;
+  align-items: flex-start;
+  position: relative;
+  z-index: 3 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  min-height: auto;
+  height: auto;
+  width: 100% !important;
+  box-sizing: border-box;
+}
+
+.ser-experience-power.animate-in .ser-experience-content,
+.ser-experience-power .ser-experience-content {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.ser-experience-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 4 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  margin: 0;
+  padding: 0;
+}
+
+.ser-experience-heading {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  color: #ffffff !important;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  position: relative;
+  z-index: 4 !important;
+  visibility: visible !important;
+  display: block !important;
+  opacity: 1 !important;
+  width: 100%;
+  align-self: flex-start;
+}
+
+.ser-experience-power.animate-in .ser-experience-heading,
+.ser-experience-power .ser-experience-heading {
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: #ffffff !important;
+}
+
+.ser-experience-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: flex-start;
+  position: relative;
+  z-index: 4 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.ser-experience-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+
+.ser-experience-description {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff !important;
+  margin: 0;
+  text-align: left;
+  position: relative;
+  z-index: 4 !important;
+  visibility: visible !important;
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.ser-experience-power.animate-in .ser-experience-description,
+.ser-experience-power .ser-experience-description {
+  opacity: 1 !important;
+  visibility: visible !important;
+  color: #ffffff !important;
+}
+
+.ser-experience-description:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.ser-experience-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ser-experience-btn-primary {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0a0b0c !important;
+  background: #ffffff !important;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+}
+
+.ser-experience-btn-primary:hover {
+  background: #f5f5f5 !important;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ser-experience-btn-secondary {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+}
+
+.ser-experience-btn-secondary:hover {
+  background: rgba(34, 35, 36, 1) !important;
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .ser-advanced-actions {
@@ -1237,28 +1473,27 @@ main > section {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transform: translateY(100px) scale(0.9);
-  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-              transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(50px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
   will-change: opacity, transform;
   z-index: 1;
 }
 
 .ser-how-card.active {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
   z-index: 10;
 }
 
 .ser-how-card.exiting {
   opacity: 0;
-  transform: translateY(-100px) scale(0.9);
+  transform: translateY(-50px);
   z-index: 5;
 }
 
 .ser-how-card-inner {
   background: #0a0b0c;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: none;
   border-radius: var(--radius-md);
   display: flex;
   align-items: stretch;
@@ -1283,40 +1518,42 @@ main > section {
 .ser-how-card-top {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 
 .ser-how-card-tagline {
   font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 500;
+  font-size: 14px;
   line-height: 1.5;
-  color: var(--color-white);
+  color: rgba(255, 255, 255, 0.6);
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .ser-how-card-text {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 20px;
 }
 
 .ser-how-card-title {
   font-family: var(--font-heading);
   font-weight: var(--font-bold);
-  font-size: var(--text-h3);
-  line-height: 1.2;
+  font-size: 32px;
+  line-height: 1.3;
   color: var(--color-white);
   margin: 0;
-  letter-spacing: var(--tracking-h3);
+  letter-spacing: -0.5px;
 }
 
 .ser-how-card-description {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: var(--text-regular);
-  line-height: 1.5;
-  color: var(--color-white);
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.9);
   margin: 0;
 }
 
@@ -2466,32 +2703,14 @@ main > section {
   z-index: 0;
 }
 
-.ser-intelligent-banner-base {
-  position: absolute;
-  inset: 0;
-  background: #000000;
-  z-index: 1;
-}
-
 .ser-intelligent-banner-image {
   position: absolute;
   inset: 0;
-  background-image: url('https://www.figma.com/api/mcp/asset/fb07c451-f551-4b29-8a61-bfd81c012bbf');
+  background-image: url('../images/backgrounds/extra_decoration_background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  object-fit: cover;
-  object-position: 50% 50%;
-  opacity: 0.85;
-  z-index: 2;
-}
-
-.ser-intelligent-banner-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 3;
-  pointer-events: none;
+  z-index: 1;
 }
 
 .ser-intelligent-banner-content {
@@ -2540,14 +2759,14 @@ main > section {
 .ser-intelligent-banner-line1 {
   top: 50%;
   /* Initial state: off-screen to the left */
-  transform: translate(calc(-50% - 100vw), calc(-50% - 35px));
+  transform: translate(calc(-50% - 100vw), calc(-50% - 50px));
   opacity: 0;
 }
 
 .ser-intelligent-banner-line2 {
   top: 50%;
   /* Initial state: off-screen to the right */
-  transform: translate(calc(-50% + 100vw), calc(-50% + 35px));
+  transform: translate(calc(-50% + 100vw), calc(-50% + 50px));
   left: calc(50% + 0.5px);
   opacity: 0;
 }
@@ -3224,6 +3443,66 @@ main > section {
   }
 
   .ser-advanced-feature-column {
+    width: 100%;
+  }
+
+  /* Experience Power Section - Mobile */
+  .ser-experience-power {
+    padding: 60px 0;
+  }
+
+  .ser-experience-power .ser-section-container {
+    padding: 0 var(--page-padding-mobile);
+  }
+
+  .ser-experience-content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0;
+    align-items: flex-start;
+  }
+
+  .ser-experience-left {
+    width: 100%;
+  }
+
+  .ser-experience-heading {
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: left;
+    width: 100%;
+  }
+
+  .ser-experience-right {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .ser-experience-text {
+    width: 100%;
+  }
+
+  .ser-experience-description {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+  }
+
+  .ser-experience-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .ser-experience-btn-primary,
+  .ser-experience-btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .ser-experience-btn-primary,
+  .ser-experience-btn-secondary {
     width: 100%;
   }
 

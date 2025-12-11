@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, observerOptions);
 
   // Observe all sections except hero and intelligent banner (handled separately)
-  const sections = document.querySelectorAll('.ser-ai-receptionists, .ser-intelligent-communication, .ser-advanced-solutions, .ser-how-it-works, .ser-benefits, .ser-tailored, .ser-reliability, .ser-get-started, .ser-testimonial, .ser-transform-cta, .ser-faqs');
+  const sections = document.querySelectorAll('.ser-ai-receptionists, .ser-intelligent-communication, .ser-advanced-solutions, .ser-how-it-works, .ser-benefits, .ser-tailored, .ser-reliability, .ser-get-started, .ser-testimonial, .ser-transform-cta, .ser-faqs, .ser-experience-power');
   
   sections.forEach(section => {
     section.style.opacity = '0';
@@ -347,13 +347,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const line2Offset = 100 - (progress * 200); // From +100vw to -100vw
 
     // Update line1 (slides from left to right, passing through center)
-    const line1Transform = `translate(calc(-50% + ${line1Offset}vw), calc(-50% - 35px))`;
+    const line1Transform = `translate(calc(-50% + ${line1Offset}vw), calc(-50% - 50px))`;
     line1.style.transform = line1Transform;
     // Opacity: visible when in viewport range (0.2 to 0.8 progress)
     line1.style.opacity = progress >= 0.2 && progress <= 0.8 ? 1 : Math.max(0, 1 - Math.abs(progress - 0.5) * 2);
 
     // Update line2 (slides from right to left, passing through center)
-    const line2Transform = `translate(calc(-50% + ${line2Offset}vw), calc(-50% + 35px))`;
+    const line2Transform = `translate(calc(-50% + ${line2Offset}vw), calc(-50% + 50px))`;
     line2.style.transform = line2Transform;
     // Opacity: visible when in viewport range (0.2 to 0.8 progress)
     line2.style.opacity = progress >= 0.2 && progress <= 0.8 ? 1 : Math.max(0, 1 - Math.abs(progress - 0.5) * 2);
@@ -521,7 +521,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-// ===== HOW IT WORKS: SCROLL-TRIGGERED CARD STACK (Figma Sticky Behavior) =====
+// ===== HOW IT WORKS: SEQUENTIAL CARD ANIMATION (One by one on scroll) =====
 document.addEventListener('DOMContentLoaded', function() {
   const wrapper = document.querySelector('.ser-how-it-works-wrapper');
   const howSection = document.querySelector('.ser-how-it-works');
@@ -530,74 +530,85 @@ document.addEventListener('DOMContentLoaded', function() {
   if (!wrapper || !howSection || cards.length === 0) return;
 
   const totalCards = cards.length;
-  let currentCardIndex = 0;
+  let currentActiveIndex = -1;
 
-  // Calculate which card should be active based on scroll position (matching Figma sticky behavior)
-  const updateCardStack = () => {
+  // Set initial state for all cards - all hidden
+  cards.forEach((card, index) => {
+    card.style.opacity = '0';
+    card.style.transform = 'translateY(50px)';
+    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    card.style.zIndex = '1';
+    card.classList.remove('active');
+  });
+
+  // Function to show a specific card and hide others
+  const showCard = (index) => {
+    if (index === currentActiveIndex) return; // Already showing this card
+    if (index < 0 || index >= totalCards) return;
+
+    // Hide all cards first
+    cards.forEach((card, i) => {
+      if (i !== index) {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(50px)';
+        card.style.zIndex = '1';
+        card.classList.remove('active');
+      }
+    });
+
+    // Show the target card
+    const targetCard = cards[index];
+    if (targetCard) {
+      targetCard.style.opacity = '1';
+      targetCard.style.transform = 'translateY(0)';
+      targetCard.style.zIndex = '10';
+      targetCard.classList.add('active');
+      currentActiveIndex = index;
+    }
+  };
+
+  // Function to check scroll position and determine which card to show
+  const checkCardsOnScroll = () => {
     const wrapperRect = wrapper.getBoundingClientRect();
     const wrapperTop = wrapperRect.top;
     const wrapperHeight = wrapperRect.height;
     const viewportHeight = window.innerHeight;
 
-    // Calculate scroll progress through the wrapper (0 to 1)
-    // When wrapper top is at viewport top, progress = 0
-    // When wrapper bottom reaches viewport top, progress = 1
-    // The scrollable distance is wrapperHeight - viewportHeight
-    const scrollableDistance = wrapperHeight - viewportHeight;
-    
-    // Calculate progress: when wrapperTop is 0 (at top), progress = 0
-    // When wrapperTop is -scrollableDistance (bottom at top), progress = 1
+    // Calculate scroll progress through the wrapper
+    // When wrapper top is at viewport top (0), progress = 0
+    // When wrapper bottom is at viewport top, progress = 1
+    const scrollableDistance = wrapperHeight;
     let scrollProgress = 0;
-    if (scrollableDistance > 0) {
-      // When wrapper is above viewport (wrapperTop < 0), we're scrolling through it
-      if (wrapperTop <= 0 && wrapperTop >= -scrollableDistance) {
-        scrollProgress = Math.abs(wrapperTop) / scrollableDistance;
-      } else if (wrapperTop < -scrollableDistance) {
-        scrollProgress = 1; // Fully scrolled
-      } else {
-        scrollProgress = 0; // Not yet scrolled
-      }
+
+    if (wrapperTop <= viewportHeight && wrapperTop >= -wrapperHeight) {
+      // Wrapper is in viewport range
+      const scrolled = viewportHeight - wrapperTop;
+      scrollProgress = Math.max(0, Math.min(1, scrolled / (scrollableDistance + viewportHeight)));
+    } else if (wrapperTop < -wrapperHeight) {
+      // Wrapper is fully scrolled past
+      scrollProgress = 1;
+    } else {
+      // Wrapper hasn't entered viewport yet
+      scrollProgress = 0;
     }
 
-    // Determine active card index based on scroll progress
+    // Determine which card should be active based on scroll progress
     // Divide progress into equal segments for each card
-    const newCardIndex = Math.min(
+    const cardIndex = Math.min(
       totalCards - 1,
       Math.max(0, Math.floor(scrollProgress * totalCards))
     );
 
-    // Only update if card changed
-    if (newCardIndex !== currentCardIndex) {
-      // Remove active/exiting from all cards
-      cards.forEach(card => {
-        card.classList.remove('active', 'exiting');
-      });
-
-      // Mark previous card as exiting (slides up)
-      if (currentCardIndex >= 0 && cards[currentCardIndex]) {
-        cards[currentCardIndex].classList.add('exiting');
-      }
-
-      // Mark new card as active (slides in)
-      if (cards[newCardIndex]) {
-        cards[newCardIndex].classList.add('active');
-      }
-
-      currentCardIndex = newCardIndex;
-    }
+    // Show the appropriate card
+    showCard(cardIndex);
   };
 
-  // Initialize first card as active (01. Call Reception)
-  if (cards[0]) {
-    cards[0].classList.add('active');
-  }
-
-  // Update on scroll with throttling for performance
+  // Check on scroll
   let ticking = false;
   window.addEventListener('scroll', () => {
     if (!ticking) {
       window.requestAnimationFrame(() => {
-        updateCardStack();
+        checkCardsOnScroll();
         ticking = false;
       });
       ticking = true;
@@ -605,7 +616,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }, { passive: true });
 
   // Initial check
-  updateCardStack();
+  checkCardsOnScroll();
 });
 
 // ===== HOW IT WORKS: MOBILE CAROUSEL WITH DOTS =====

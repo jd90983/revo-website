@@ -124,5 +124,53 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   }
+
+  // Animate the features sticky container on scroll
+  const featuresContainer = document.querySelector('.ind-features-sticky-container');
+  if (featuresContainer && 'IntersectionObserver' in window) {
+    // Set initial state for animation
+    featuresContainer.style.opacity = '0';
+    featuresContainer.style.transform = 'translateY(30px)';
+    featuresContainer.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    
+    const containerObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+          containerObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    });
+    
+    containerObserver.observe(featuresContainer);
+  }
+
+  // Animate the ser-benefits sections on scroll
+  const serBenefitsSections = document.querySelectorAll('.ser-benefits');
+  serBenefitsSections.forEach(serBenefitsSection => {
+    if (serBenefitsSection && 'IntersectionObserver' in window) {
+      // Set initial state for animation
+      serBenefitsSection.style.opacity = '0';
+      serBenefitsSection.style.transform = 'translateY(30px)';
+      serBenefitsSection.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      
+      const benefitsObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-in');
+            benefitsObserver.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
+      
+      benefitsObserver.observe(serBenefitsSection);
+    }
+  });
 });
 
