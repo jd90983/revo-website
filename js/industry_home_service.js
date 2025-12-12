@@ -1,11 +1,11 @@
-// Industry Locksmith Page JavaScript
+// Industry Home Service Page JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
   // FAQ Accordion
-  const faqItems = document.querySelectorAll('.locksmith-faq-item');
+  const faqItems = document.querySelectorAll('.home-service-faq-item');
   
   faqItems.forEach(item => {
-    const question = item.querySelector('.locksmith-faq-question');
+    const question = item.querySelector('.home-service-faq-question');
     
     question.addEventListener('click', function() {
       // Close all other items
@@ -66,26 +66,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===== STAGGER EFFECT FOR CARDS AND GRIDS =====
     // Add stagger effect to cards within sections
     const addStaggerEffect = () => {
-      // Select all card containers specific to locksmith page
+      // Select all card containers specific to home-service page
       const cardContainers = document.querySelectorAll(
-        '.locksmith-features-grid, ' +
-        '.locksmith-elevate-grid, ' +
-        '.locksmith-stats-grid, ' +
-        '.locksmith-testimonials-grid, ' +
-        '.locksmith-feature-list, ' +
-        '.locksmith-bullet-list, ' +
-        '.locksmith-timeline'
+        '.home-service-features-grid, ' +
+        '.home-service-elevate-grid, ' +
+        '.home-service-stats-grid, ' +
+        '.home-service-testimonials-grid, ' +
+        '.home-service-feature-list, ' +
+        '.home-service-bullet-list, ' +
+        '.home-service-timeline'
       );
 
       cardContainers.forEach(container => {
         const cards = container.querySelectorAll(
-          '.locksmith-feature-card, ' +
-          '.locksmith-elevate-card, ' +
-          '.locksmith-stat, ' +
-          '.locksmith-testimonial-card, ' +
-          '.locksmith-feature-item, ' +
-          '.locksmith-bullet-list li, ' +
-          '.locksmith-timeline-item'
+          '.home-service-feature-card, ' +
+          '.home-service-elevate-card, ' +
+          '.home-service-stat, ' +
+          '.home-service-testimonial-card, ' +
+          '.home-service-feature-item, ' +
+          '.home-service-bullet-list li, ' +
+          '.home-service-timeline-item'
         );
 
         if (cards.length > 0) {
@@ -100,13 +100,13 @@ document.addEventListener('DOMContentLoaded', function() {
             entries.forEach(entry => {
               if (entry.isIntersecting) {
                 const cards = entry.target.querySelectorAll(
-                  '.locksmith-feature-card, ' +
-                  '.locksmith-elevate-card, ' +
-                  '.locksmith-stat, ' +
-                  '.locksmith-testimonial-card, ' +
-                  '.locksmith-feature-item, ' +
-                  '.locksmith-bullet-list li, ' +
-                  '.locksmith-timeline-item'
+                  '.home-service-feature-card, ' +
+                  '.home-service-elevate-card, ' +
+                  '.home-service-stat, ' +
+                  '.home-service-testimonial-card, ' +
+                  '.home-service-feature-item, ' +
+                  '.home-service-bullet-list li, ' +
+                  '.home-service-timeline-item'
                 );
                 cards.forEach(card => {
                   card.style.opacity = '1';

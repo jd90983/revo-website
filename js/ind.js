@@ -172,5 +172,69 @@ document.addEventListener('DOMContentLoaded', function() {
       benefitsObserver.observe(serBenefitsSection);
     }
   });
+
+  // Load More functionality for Home Service Categories
+  const loadMoreBtn = document.getElementById('home-service-load-more');
+  const categoriesGrid = document.getElementById('home-service-categories-grid');
+  
+  if (loadMoreBtn && categoriesGrid) {
+    const itemsPerLoad = 2; // Show 2 more rows (2 items per column)
+    let currentlyVisible = 4; // Initially showing 4 items per column (2 rows)
+    
+    // Initialize: show first 2 rows (4 items per column)
+    const columns = categoriesGrid.querySelectorAll('.ind-categories-column');
+    columns.forEach(column => {
+      const items = column.querySelectorAll('.ind-category-item');
+      items.forEach((item, index) => {
+        if (index < currentlyVisible) {
+          item.setAttribute('data-visible', 'true');
+        } else {
+          item.setAttribute('data-visible', 'false');
+        }
+      });
+    });
+    
+    // Check if there are more items to show
+    function checkIfMoreItems() {
+      let allColumnsHaveMore = false;
+      
+      columns.forEach(column => {
+        const items = column.querySelectorAll('.ind-category-item');
+        const hiddenItems = Array.from(items).filter(item => item.getAttribute('data-visible') === 'false');
+        if (hiddenItems.length > 0) {
+          allColumnsHaveMore = true;
+        }
+      });
+      
+      if (!allColumnsHaveMore) {
+        loadMoreBtn.classList.add('hidden');
+      } else {
+        loadMoreBtn.classList.remove('hidden');
+      }
+    }
+    
+    // Load more items
+    loadMoreBtn.addEventListener('click', function() {
+      let hasMoreItems = false;
+      
+      columns.forEach(column => {
+        const items = column.querySelectorAll('.ind-category-item');
+        const nextVisibleCount = currentlyVisible + itemsPerLoad;
+        
+        items.forEach((item, index) => {
+          if (index >= currentlyVisible && index < nextVisibleCount) {
+            item.setAttribute('data-visible', 'true');
+            hasMoreItems = true;
+          }
+        });
+      });
+      
+      currentlyVisible += itemsPerLoad;
+      checkIfMoreItems();
+    });
+    
+    // Initial check
+    checkIfMoreItems();
+  }
 });
 

@@ -4556,6 +4556,87 @@ body.mobile-menu-open {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: #000000;
+  will-change: opacity, transform;
+}
+
+.transform-cta-section.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.transform-cta-section * {
+  visibility: visible !important;
+}
+
+.transform-cta-section.animate-in * {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.transform-cta-section.animate-in .transform-cta-heading,
+.transform-cta-section.animate-in .transform-cta-description,
+.transform-cta-section.animate-in .transform-cta-actions {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: flex !important;
+}
+
+.transform-cta-section.animate-in .transform-cta-actions {
+  display: flex !important;
+}
+
+/* Stagger animation for content elements */
+.transform-cta-content {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s,
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+}
+
+.transform-cta-section.animate-in .transform-cta-content {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.transform-cta-heading {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s,
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
+}
+
+.transform-cta-section.animate-in .transform-cta-heading {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.transform-cta-description {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s,
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s;
+}
+
+.transform-cta-section.animate-in .transform-cta-description {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.transform-cta-actions {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s,
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+}
+
+.transform-cta-section.animate-in .transform-cta-actions {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .transform-cta-background {
@@ -4564,6 +4645,8 @@ body.mobile-menu-open {
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .transform-cta-bg-base {
@@ -4576,7 +4659,9 @@ body.mobile-menu-open {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  opacity: 1;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
 }
 
 .transform-cta-overlay {
@@ -4592,6 +4677,8 @@ body.mobile-menu-open {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .transform-cta-content {
@@ -4602,6 +4689,8 @@ body.mobile-menu-open {
   gap: 32px;
   align-items: center;
   text-align: center;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
 .transform-cta-heading {

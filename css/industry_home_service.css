@@ -1,10 +1,10 @@
 /* ============================================
-   Industry Locksmith Page Styles
+   Industry Home Service Page Styles
    ============================================ */
 
-/* Override body background for locksmith page */
-body:has(.locksmith-hero),
-html:has(.locksmith-hero) body {
+/* Override body background for home service page */
+body:has(.home-service-hero),
+html:has(.home-service-hero) body {
   background: #000000 !important;
   color: #FFFFFF !important;
 }
@@ -22,7 +22,7 @@ main#main-content > section {
 }
 
 /* ===== HERO SECTION ===== */
-.locksmith-hero {
+.home-service-hero {
   position: relative;
   width: 100%;
   min-height: 800px;
@@ -40,26 +40,26 @@ main#main-content > section {
   transform: translateY(0) !important;
 }
 
-.locksmith-hero * {
+.home-service-hero * {
   color: #FFFFFF !important;
   visibility: visible !important;
   opacity: 1 !important;
 }
 
-.locksmith-hero-background {
+.home-service-hero-background {
   position: absolute;
   inset: 0;
   z-index: 1;
 }
 
-.locksmith-hero-base {
+.home-service-hero-base {
   position: absolute;
   inset: 0;
   background: #000000 !important;
   z-index: 1;
 }
 
-.locksmith-hero-image {
+.home-service-hero-image {
   position: absolute;
   inset: 0;
   background-image: url('https://www.figma.com/api/mcp/asset/c4389cc0-9456-4f1a-b28c-499b12eeefd5');
@@ -70,17 +70,17 @@ main#main-content > section {
   z-index: 2;
 }
 
-.locksmith-hero-gradient {
+.home-service-hero-gradient {
   position: absolute;
   inset: 0;
-  background-image: url('../images/backgrounds/locksmith_header.png');
+  background-image: url('../images/backgrounds/home-service_header.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 3;
 }
 
-.locksmith-hero-container {
+.home-service-hero-container {
   position: relative;
   z-index: 10 !important;
   max-width: 1280px;
@@ -94,7 +94,7 @@ main#main-content > section {
   min-height: 800px;
 }
 
-.locksmith-hero-content {
+.home-service-hero-content {
   max-width: 924px;
   width: 100%;
   display: flex !important;
@@ -106,7 +106,7 @@ main#main-content > section {
   opacity: 1 !important;
 }
 
-.locksmith-hero-title-section {
+.home-service-hero-title-section {
   display: flex !important;
   flex-direction: column;
   align-items: center;
@@ -116,11 +116,11 @@ main#main-content > section {
   opacity: 1 !important;
 }
 
-.locksmith-hero-tagline-wrapper {
+.home-service-hero-tagline-wrapper {
   margin-bottom: 0;
 }
 
-.locksmith-hero-tagline {
+.home-service-hero-tagline {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -132,7 +132,7 @@ main#main-content > section {
   display: block !important;
 }
 
-.locksmith-hero-text-content {
+.home-service-hero-text-content {
   display: flex !important;
   flex-direction: column;
   align-items: center;
@@ -142,7 +142,7 @@ main#main-content > section {
   opacity: 1 !important;
 }
 
-.locksmith-hero-heading {
+.home-service-hero-heading {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 72px;
@@ -156,11 +156,11 @@ main#main-content > section {
   display: block !important;
 }
 
-.locksmith-hero-highlight {
+.home-service-hero-highlight {
   color: #0F5AD7 !important;
 }
 
-.locksmith-hero-description {
+.home-service-hero-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -174,11 +174,11 @@ main#main-content > section {
   max-width: 100%;
 }
 
-.locksmith-hero-description p {
+.home-service-hero-description p {
   margin: 0 0 0 0;
 }
 
-.locksmith-hero-actions {
+.home-service-hero-actions {
   display: flex !important;
   gap: 16px;
   align-items: center;
@@ -187,8 +187,8 @@ main#main-content > section {
   opacity: 1 !important;
 }
 
-.locksmith-hero-btn-primary,
-.locksmith-hero .locksmith-hero-btn-primary {
+.home-service-hero-btn-primary,
+.home-service-hero .home-service-hero-btn-primary {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -212,13 +212,13 @@ main#main-content > section {
   box-sizing: border-box;
 }
 
-.locksmith-hero-btn-primary:hover {
+.home-service-hero-btn-primary:hover {
   background: #FFFFFF;
   color: #0A0B0C;
   opacity: 0.95;
 }
 
-.locksmith-hero-btn-secondary {
+.home-service-hero-btn-secondary {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -241,13 +241,13 @@ main#main-content > section {
   box-sizing: border-box;
 }
 
-.locksmith-hero-btn-secondary:hover {
+.home-service-hero-btn-secondary:hover {
   background: rgba(255, 255, 255, 0.15) !important;
   opacity: 0.9;
 }
 
 /* ===== SECTIONS ===== */
-.locksmith-section {
+.home-service-section {
   width: 100%;
   padding: 112px 64px;
   position: relative;
@@ -261,7 +261,7 @@ main#main-content > section {
 }
 
 /* Features Grid Section - Specific height */
-.locksmith-section.locksmith-section-light:has(.locksmith-features-wrapper) {
+.home-service-section.home-service-section-light:has(.home-service-features-wrapper) {
   min-height: auto;
   height: auto;
   display: flex;
@@ -269,7 +269,7 @@ main#main-content > section {
   justify-content: center;
 }
 
-.locksmith-section.locksmith-section-light:has(.locksmith-features-wrapper) .locksmith-container {
+.home-service-section.home-service-section-light:has(.home-service-features-wrapper) .home-service-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -277,7 +277,7 @@ main#main-content > section {
 }
 
 /* Animated sections become visible */
-.locksmith-section.locksmith-section-dark-alt.animate-in {
+.home-service-section.home-service-section-dark-alt.animate-in {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
@@ -292,23 +292,23 @@ main#main-content > section {
   }
 }
 
-.locksmith-section.animate-in {
+.home-service-section.animate-in {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
 
-.locksmith-section-dark {
+.home-service-section-dark {
   background: #0A0B0C !important;
   color: #FFFFFF !important;
 }
 
-.locksmith-section-dark * {
+.home-service-section-dark * {
   color: #FFFFFF !important;
   visibility: visible !important;
   opacity: 1 !important;
 }
 
-.locksmith-section.locksmith-section-light {
+.home-service-section.home-service-section-light {
   background-image: url('../images/backgrounds/white_background_locksmith.png') !important;
   background-position: center !important;
   background-size: cover !important;
@@ -318,8 +318,8 @@ main#main-content > section {
   position: relative;
 }
 
-.locksmith-section.locksmith-section-light.locksmith-impact-section,
-.locksmith-impact-section.locksmith-section-light {
+.home-service-section.home-service-section-light.home-service-impact-section,
+.home-service-impact-section.home-service-section-light {
   background-color: #FAFBFC !important;
   background-image: none !important;
   background-position: initial !important;
@@ -329,7 +329,7 @@ main#main-content > section {
   overflow: visible;
 }
 
-.locksmith-impact-decoration {
+.home-service-impact-decoration {
   position: absolute;
   top: 0;
   right: 0;
@@ -340,14 +340,14 @@ main#main-content > section {
   pointer-events: none;
 }
 
-.locksmith-impact-decoration img {
+.home-service-impact-decoration img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: contain;
 }
 
-.locksmith-impact-content {
+.home-service-impact-content {
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -358,7 +358,7 @@ main#main-content > section {
   z-index: 2;
 }
 
-.locksmith-impact-title-section {
+.home-service-impact-title-section {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -366,39 +366,39 @@ main#main-content > section {
   width: 100%;
 }
 
-.locksmith-impact-text-content {
+.home-service-impact-text-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
   width: 100%;
 }
 
-.locksmith-section-light * {
+.home-service-section-light * {
   color: #0A0B0C !important;
   visibility: visible !important;
   opacity: 1 !important;
 }
 
-.locksmith-section-gradient {
+.home-service-section-gradient {
   position: relative;
   background: #000000 url('../images/backgrounds/elevate_locksmith_communication_background.png') center center / cover no-repeat !important;
   color: #FFFFFF !important;
   overflow: hidden;
 }
 
-.locksmith-section-gradient > * {
+.home-service-section-gradient > * {
   position: relative;
   z-index: 1;
 }
 
-.locksmith-section-cta {
+.home-service-section-cta {
   position: relative;
   background: #000000 !important;
   color: #FFFFFF !important;
   overflow: hidden;
 }
 
-.locksmith-section-cta::before {
+.home-service-section-cta::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -409,7 +409,7 @@ main#main-content > section {
   z-index: 1;
 }
 
-.locksmith-section-cta::after {
+.home-service-section-cta::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -417,23 +417,23 @@ main#main-content > section {
   z-index: 2;
 }
 
-.locksmith-section-cta > * {
+.home-service-section-cta > * {
   position: relative;
   z-index: 3;
 }
 
-.locksmith-section-dark-alt {
+.home-service-section-dark-alt {
   background: #222324 !important;
   color: #FFFFFF !important;
 }
 
-.locksmith-section-dark-alt * {
+.home-service-section-dark-alt * {
   color: #FFFFFF !important;
   visibility: visible !important;
   opacity: 1 !important;
 }
 
-.locksmith-container {
+.home-service-container {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
@@ -444,12 +444,12 @@ main#main-content > section {
   opacity: 1 !important;
 }
 
-.locksmith-section.locksmith-section-dark-alt .locksmith-container {
+.home-service-section.home-service-section-dark-alt .home-service-container {
   gap: 80px;
 }
 
 /* ===== TWO COLUMN LAYOUT ===== */
-.locksmith-two-column {
+.home-service-two-column {
   display: grid;
   grid-template-columns: 500px 1fr;
   gap: 60px;
@@ -457,11 +457,11 @@ main#main-content > section {
   width: 100%;
 }
 
-.locksmith-two-column-reverse {
+.home-service-two-column-reverse {
   flex-direction: row-reverse;
 }
 
-.locksmith-content {
+.home-service-content {
   flex: 1 0 0;
   display: flex;
   flex-direction: column;
@@ -469,7 +469,7 @@ main#main-content > section {
   min-width: 0;
 }
 
-.locksmith-image {
+.home-service-image {
   flex: 1 0 0;
   min-width: 0;
   border-radius: 16px;
@@ -477,7 +477,7 @@ main#main-content > section {
   aspect-ratio: 409 / 436;
 }
 
-.locksmith-image img {
+.home-service-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -485,14 +485,14 @@ main#main-content > section {
 }
 
 /* ===== SECTION TITLES ===== */
-.locksmith-section-title {
+.home-service-section-title {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 100%;
 }
 
-.locksmith-section-title-center {
+.home-service-section-title-center {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -502,18 +502,18 @@ main#main-content > section {
   margin: 0 auto;
 }
 
-.locksmith-section-title-left {
+.home-service-section-title-left {
   display: flex;
   flex-direction: column;
   gap: 24px;
   max-width: 768px;
 }
 
-.locksmith-tagline-wrapper {
+.home-service-tagline-wrapper {
   margin-bottom: 0;
 }
 
-.locksmith-tagline {
+.home-service-tagline {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -522,7 +522,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-tagline-dark {
+.home-service-tagline-dark {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -531,18 +531,18 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-text-content {
+.home-service-text-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
   width: 100%;
 }
 
-.locksmith-smart-evolution .locksmith-text-content {
+.home-service-smart-evolution .home-service-text-content {
   gap: 24px;
 }
 
-.locksmith-text-content-center {
+.home-service-text-content-center {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -550,7 +550,7 @@ main#main-content > section {
   text-align: center;
 }
 
-.locksmith-heading {
+.home-service-heading {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 52px;
@@ -560,7 +560,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-heading-center {
+.home-service-heading-center {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 52px;
@@ -571,11 +571,11 @@ main#main-content > section {
   text-align: left;
 }
 
-.locksmith-impact-title-section .locksmith-heading-center {
+.home-service-impact-title-section .home-service-heading-center {
   text-align: left;
 }
 
-.locksmith-heading-left {
+.home-service-heading-left {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 52px;
@@ -585,15 +585,15 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-highlight {
+.home-service-highlight {
   color: #0F5AD7 !important;
 }
 
-.locksmith-highlight-yellow {
+.home-service-highlight-yellow {
   color: #EFAC0E !important;
 }
 
-.locksmith-description {
+.home-service-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -602,7 +602,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-description-center {
+.home-service-description-center {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -612,11 +612,11 @@ main#main-content > section {
   text-align: left;
 }
 
-.locksmith-impact-text-content .locksmith-description-center {
+.home-service-impact-text-content .home-service-description-center {
   text-align: left;
 }
 
-.locksmith-description-left {
+.home-service-description-left {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -625,57 +625,57 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-description p {
+.home-service-description p {
   margin: 0 0 0 0;
 }
 
-.locksmith-heading-dark {
+.home-service-heading-dark {
   color: #0A0B0C !important;
 }
 
-.locksmith-description-dark {
+.home-service-description-dark {
   color: #0A0B0C !important;
   font-size: 18px;
 }
 
-.locksmith-description-dark p {
+.home-service-description-dark p {
   margin: 0 0 8px 0;
 }
 
-.locksmith-description-dark p:last-child {
+.home-service-description-dark p:last-child {
   margin-bottom: 0;
 }
 
 /* ===== RELIABILITY SECTION SPECIFIC STYLES ===== */
-.locksmith-reliability-section .locksmith-heading {
+.home-service-reliability-section .home-service-heading {
   font-size: 52px;
   line-height: 1.3;
   letter-spacing: -0.36px;
 }
 
-.locksmith-reliability-section .locksmith-description {
+.home-service-reliability-section .home-service-description {
   font-size: 16px;
   line-height: 1.5;
 }
 
-.locksmith-reliability-section .locksmith-two-column {
+.home-service-reliability-section .home-service-two-column {
   grid-template-columns: 1fr 550px;
   gap: 60px;
   align-items: center;
 }
 
-.locksmith-reliability-section .locksmith-image {
+.home-service-reliability-section .home-service-image {
   max-width: 900px;
   width: 100%;
   justify-self: end;
   margin-left: auto;
 }
 
-.locksmith-reliability-section .locksmith-content {
+.home-service-reliability-section .home-service-content {
   max-width: 600px;
 }
 
-.locksmith-reliability-section .locksmith-feature-list {
+.home-service-reliability-section .home-service-feature-list {
   display: block;
   list-style: disc;
   padding-left: 24px;
@@ -684,7 +684,7 @@ main#main-content > section {
   gap: 0;
 }
 
-.locksmith-reliability-section .locksmith-feature-item {
+.home-service-reliability-section .home-service-feature-item {
   display: list-item;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
@@ -697,23 +697,23 @@ main#main-content > section {
   list-style-type: disc;
 }
 
-.locksmith-reliability-section .locksmith-feature-item:last-child {
+.home-service-reliability-section .home-service-feature-item:last-child {
   margin-bottom: 0;
 }
 
 /* ===== SMART EVOLUTION SECTION SPECIFIC STYLES ===== */
-.locksmith-smart-evolution-section .locksmith-heading-dark {
+.home-service-smart-evolution-section .home-service-heading-dark {
   font-size: 36px;
   line-height: 1.3;
   letter-spacing: -0.36px;
 }
 
-.locksmith-smart-evolution-section .locksmith-description-dark {
+.home-service-smart-evolution-section .home-service-description-dark {
   font-size: 16px;
   line-height: 1.5;
 }
 
-.locksmith-smart-evolution-section .locksmith-smart-evolution-list {
+.home-service-smart-evolution-section .home-service-smart-evolution-list {
   display: block;
   list-style: disc;
   padding-left: 24px;
@@ -722,7 +722,7 @@ main#main-content > section {
   gap: 0;
 }
 
-.locksmith-smart-evolution-section .locksmith-smart-evolution-item {
+.home-service-smart-evolution-section .home-service-smart-evolution-item {
   display: list-item;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
@@ -735,40 +735,40 @@ main#main-content > section {
   list-style-type: disc;
 }
 
-.locksmith-smart-evolution-section .locksmith-smart-evolution-item:last-child {
+.home-service-smart-evolution-section .home-service-smart-evolution-item:last-child {
   margin-bottom: 0;
 }
 
-.locksmith-smart-evolution-section .locksmith-two-column {
+.home-service-smart-evolution-section .home-service-two-column {
   grid-template-columns: 1fr 550px;
   gap: 60px;
   align-items: center;
 }
 
-.locksmith-smart-evolution-section .locksmith-smart-evolution-image {
+.home-service-smart-evolution-section .home-service-smart-evolution-image {
   max-width: 900px;
   width: 100%;
   justify-self: start;
   margin-left: 0;
 }
 
-.locksmith-smart-evolution-section .locksmith-content {
+.home-service-smart-evolution-section .home-service-content {
   max-width: 600px;
 }
 
 /* ===== REAL-TIME INSIGHTS SECTION SPECIFIC STYLES ===== */
-.locksmith-realtime-insights-section .locksmith-heading {
+.home-service-realtime-insights-section .home-service-heading {
   font-size: 36px;
   line-height: 1.3;
   letter-spacing: -0.36px;
 }
 
-.locksmith-realtime-insights-section .locksmith-description {
+.home-service-realtime-insights-section .home-service-description {
   font-size: 16px;
   line-height: 1.5;
 }
 
-.locksmith-realtime-insights-section .locksmith-feature-list {
+.home-service-realtime-insights-section .home-service-feature-list {
   display: block;
   list-style: disc;
   padding-left: 24px;
@@ -777,7 +777,7 @@ main#main-content > section {
   gap: 0;
 }
 
-.locksmith-realtime-insights-section .locksmith-feature-item {
+.home-service-realtime-insights-section .home-service-feature-item {
   display: list-item;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
@@ -790,29 +790,29 @@ main#main-content > section {
   list-style-type: disc;
 }
 
-.locksmith-realtime-insights-section .locksmith-feature-item:last-child {
+.home-service-realtime-insights-section .home-service-feature-item:last-child {
   margin-bottom: 0;
 }
 
-.locksmith-realtime-insights-section .locksmith-two-column {
+.home-service-realtime-insights-section .home-service-two-column {
   grid-template-columns: 1fr 550px;
   gap: 60px;
   align-items: center;
 }
 
-.locksmith-realtime-insights-section .locksmith-image {
+.home-service-realtime-insights-section .home-service-image {
   max-width: 900px;
   width: 100%;
   justify-self: end;
   margin-left: auto;
 }
 
-.locksmith-realtime-insights-section .locksmith-content {
+.home-service-realtime-insights-section .home-service-content {
   max-width: 600px;
 }
 
 /* ===== FEATURE LIST ===== */
-.locksmith-feature-list {
+.home-service-feature-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -822,21 +822,21 @@ main#main-content > section {
   padding-left: 0;
 }
 
-.locksmith-feature-list li {
+.home-service-feature-list li {
   display: flex;
   gap: 16px;
   align-items: center;
   width: 100%;
 }
 
-.locksmith-feature-item {
+.home-service-feature-item {
   display: flex;
   gap: 16px;
   align-items: center;
   width: 100%;
 }
 
-.locksmith-feature-icon {
+.home-service-feature-icon {
   flex-shrink: 0;
   width: 24px;
   height: 24px;
@@ -846,19 +846,19 @@ main#main-content > section {
   color: #FFFFFF;
 }
 
-.locksmith-feature-icon svg {
+.home-service-feature-icon svg {
   width: 100%;
   height: 100%;
 }
 
-.locksmith-feature-icon img {
+.home-service-feature-icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
 }
 
-.locksmith-feature-text {
+.home-service-feature-text {
   flex: 1 0 0;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
@@ -869,14 +869,14 @@ main#main-content > section {
   min-width: 0;
 }
 
-.locksmith-bullet-list {
+.home-service-bullet-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 100%;
 }
 
-.locksmith-bullet-list ul {
+.home-service-bullet-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -885,7 +885,7 @@ main#main-content > section {
   gap: 16px;
 }
 
-.locksmith-bullet-list li {
+.home-service-bullet-list li {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -895,7 +895,7 @@ main#main-content > section {
   position: relative;
 }
 
-.locksmith-bullet-list li::before {
+.home-service-bullet-list li::before {
   content: '•';
   position: absolute;
   left: 0;
@@ -903,24 +903,24 @@ main#main-content > section {
 }
 
 /* ===== ACTIONS ===== */
-.locksmith-actions {
+.home-service-actions {
   display: flex;
   gap: 24px;
   align-items: center;
 }
 
-.locksmith-actions-center {
+.home-service-actions-center {
   display: flex;
   gap: 24px;
   align-items: center;
   justify-content: flex-start;
 }
 
-.locksmith-impact-content .locksmith-actions-center {
+.home-service-impact-content .home-service-actions-center {
   justify-content: flex-start;
 }
 
-.locksmith-btn-primary {
+.home-service-btn-primary {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -937,11 +937,11 @@ main#main-content > section {
   justify-content: center;
 }
 
-.locksmith-btn-primary:hover {
+.home-service-btn-primary:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.locksmith-btn-secondary {
+.home-service-btn-secondary {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -958,22 +958,22 @@ main#main-content > section {
   gap: 8px;
 }
 
-.locksmith-btn-secondary:hover {
+.home-service-btn-secondary:hover {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.locksmith-btn-secondary svg {
+.home-service-btn-secondary svg {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
   transition: transform 0.3s ease;
 }
 
-.locksmith-btn-secondary:hover svg {
+.home-service-btn-secondary:hover svg {
   transform: translateX(4px);
 }
 
-.locksmith-btn-primary-light {
+.home-service-btn-primary-light {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -990,11 +990,11 @@ main#main-content > section {
   justify-content: center;
 }
 
-.locksmith-btn-primary-light:hover {
+.home-service-btn-primary-light:hover {
   background: rgba(10, 11, 12, 0.1);
 }
 
-.locksmith-btn-secondary-light {
+.home-service-btn-secondary-light {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1011,24 +1011,24 @@ main#main-content > section {
   gap: 0;
 }
 
-.locksmith-btn-secondary-light:hover {
+.home-service-btn-secondary-light:hover {
   background: rgba(10, 11, 12, 0.05);
 }
 
-.locksmith-btn-secondary-light svg {
+.home-service-btn-secondary-light svg {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
   transition: transform 0.3s ease;
 }
 
-.locksmith-btn-secondary-light:hover svg {
+.home-service-btn-secondary-light:hover svg {
   transform: translateX(4px);
 }
 
 /* ===== SMART EVOLUTION SECTION ===== */
-.locksmith-section.locksmith-section-light.locksmith-smart-evolution,
-.locksmith-smart-evolution.locksmith-section-light {
+.home-service-section.home-service-section-light.home-service-smart-evolution,
+.home-service-smart-evolution.home-service-section-light {
   background-color: #FAFBFC !important;
   background-image: none !important;
   background-position: initial !important;
@@ -1036,7 +1036,7 @@ main#main-content > section {
   background-repeat: initial !important;
 }
 
-.locksmith-smart-evolution-image {
+.home-service-smart-evolution-image {
   flex: 1 0 0;
   min-width: 0;
   border-radius: 16px;
@@ -1045,7 +1045,7 @@ main#main-content > section {
   position: relative;
 }
 
-.locksmith-smart-evolution-image img {
+.home-service-smart-evolution-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1053,21 +1053,21 @@ main#main-content > section {
   display: block;
 }
 
-.locksmith-smart-evolution-list {
+.home-service-smart-evolution-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 100%;
 }
 
-.locksmith-smart-evolution-item {
+.home-service-smart-evolution-item {
   display: flex;
   gap: 16px;
   align-items: center;
   width: 100%;
 }
 
-.locksmith-smart-evolution-icon {
+.home-service-smart-evolution-icon {
   width: 24px;
   height: 24px;
   display: flex;
@@ -1076,13 +1076,13 @@ main#main-content > section {
   flex-shrink: 0;
 }
 
-.locksmith-smart-evolution-icon img {
+.home-service-smart-evolution-icon img {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.locksmith-smart-evolution-text {
+.home-service-smart-evolution-text {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1092,14 +1092,14 @@ main#main-content > section {
   flex: 1;
 }
 
-.locksmith-smart-evolution-actions {
+.home-service-smart-evolution-actions {
   display: flex;
   gap: 24px;
   align-items: center;
 }
 
 /* ===== FEATURES GRID ===== */
-.locksmith-features-wrapper {
+.home-service-features-wrapper {
   display: flex;
   gap: 60px;
   align-items: center;
@@ -1108,8 +1108,8 @@ main#main-content > section {
   height: 100%;
 }
 
-.locksmith-features-content.locksmith-features-left,
-.locksmith-features-content.locksmith-features-right {
+.home-service-features-content.home-service-features-left,
+.home-service-features-content.home-service-features-right {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -1118,27 +1118,27 @@ main#main-content > section {
   justify-content: center;
 }
 
-.locksmith-features-content.locksmith-features-left .locksmith-features-grid,
-.locksmith-features-content.locksmith-features-right .locksmith-features-grid {
+.home-service-features-content.home-service-features-left .home-service-features-grid,
+.home-service-features-content.home-service-features-right .home-service-features-grid {
   grid-template-columns: 1fr;
 }
 
-.locksmith-features-content.locksmith-features-left .locksmith-feature-card {
+.home-service-features-content.home-service-features-left .home-service-feature-card {
   align-items: flex-end;
   text-align: right;
 }
 
-.locksmith-features-content.locksmith-features-left .locksmith-feature-card-header {
+.home-service-features-content.home-service-features-left .home-service-feature-card-header {
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
 
-.locksmith-features-content.locksmith-features-left .locksmith-feature-card-title,
-.locksmith-features-content.locksmith-features-left .locksmith-feature-card-description {
+.home-service-features-content.home-service-features-left .home-service-feature-card-title,
+.home-service-features-content.home-service-features-left .home-service-feature-card-description {
   text-align: right;
 }
 
-.locksmith-features-image {
+.home-service-features-image {
   flex-shrink: 0;
   max-width: 450px;
   width: 100%;
@@ -1151,7 +1151,7 @@ main#main-content > section {
   align-items: center;
 }
 
-.locksmith-features-image img {
+.home-service-features-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1159,7 +1159,7 @@ main#main-content > section {
   display: block;
 }
 
-.locksmith-features-content {
+.home-service-features-content {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -1167,34 +1167,34 @@ main#main-content > section {
   min-width: 0;
 }
 
-.locksmith-features-grid {
+.home-service-features-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
   width: 100%;
 }
 
-.locksmith-features-content.locksmith-features-left .locksmith-features-grid,
-.locksmith-features-content.locksmith-features-right .locksmith-features-grid {
+.home-service-features-content.home-service-features-left .home-service-features-grid,
+.home-service-features-content.home-service-features-right .home-service-features-grid {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 32px;
 }
 
-.locksmith-feature-card {
+.home-service-feature-card {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.locksmith-feature-card-header {
+.home-service-feature-card-header {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.locksmith-feature-card-icon {
+.home-service-feature-card-icon {
   width: 36px;
   height: 36px;
   display: flex;
@@ -1203,13 +1203,13 @@ main#main-content > section {
   flex-shrink: 0;
 }
 
-.locksmith-feature-card-icon img {
+.home-service-feature-card-icon img {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.locksmith-feature-card-title {
+.home-service-feature-card-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -1220,7 +1220,7 @@ main#main-content > section {
   flex: 1;
 }
 
-.locksmith-feature-card-description {
+.home-service-feature-card-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1229,15 +1229,15 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-feature-card-description p {
+.home-service-feature-card-description p {
   margin: 0 0 8px 0;
 }
 
-.locksmith-feature-card-description p:last-child {
+.home-service-feature-card-description p:last-child {
   margin-bottom: 0;
 }
 
-.locksmith-features-actions {
+.home-service-features-actions {
   display: flex;
   gap: 24px;
   align-items: center;
@@ -1247,7 +1247,7 @@ main#main-content > section {
 }
 
 /* ===== ELEVATE SECTION ===== */
-.locksmith-elevate-heading {
+.home-service-elevate-heading {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 38px;
@@ -1261,7 +1261,7 @@ main#main-content > section {
   margin-right: auto;
 }
 
-.locksmith-elevate-content {
+.home-service-elevate-content {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -1270,7 +1270,7 @@ main#main-content > section {
   align-items: center;
 }
 
-.locksmith-section-gradient .locksmith-actions {
+.home-service-section-gradient .home-service-actions {
   display: flex;
   gap: 24px;
   align-items: center;
@@ -1279,14 +1279,14 @@ main#main-content > section {
   width: 100%;
 }
 
-.locksmith-elevate-grid {
+.home-service-elevate-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
   width: 100%;
 }
 
-.locksmith-elevate-card {
+.home-service-elevate-card {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -1295,7 +1295,7 @@ main#main-content > section {
   flex: 1 0 0;
 }
 
-.locksmith-elevate-card-content {
+.home-service-elevate-card-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1303,7 +1303,7 @@ main#main-content > section {
   width: 100%;
 }
 
-.locksmith-elevate-icon {
+.home-service-elevate-icon {
   width: 48px;
   height: 48px;
   display: flex;
@@ -1312,13 +1312,13 @@ main#main-content > section {
   flex-shrink: 0;
 }
 
-.locksmith-elevate-icon img {
+.home-service-elevate-icon img {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.locksmith-elevate-title {
+.home-service-elevate-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 28px;
@@ -1329,7 +1329,7 @@ main#main-content > section {
   width: 100%;
 }
 
-.locksmith-elevate-description {
+.home-service-elevate-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1342,15 +1342,15 @@ main#main-content > section {
   gap: 0;
 }
 
-.locksmith-elevate-description p {
+.home-service-elevate-description p {
   margin: 0 0 8px 0;
 }
 
-.locksmith-elevate-description p:last-child {
+.home-service-elevate-description p:last-child {
   margin-bottom: 0;
 }
 
-.locksmith-elevate-btn {
+.home-service-elevate-btn {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1369,24 +1369,24 @@ main#main-content > section {
   margin-top: auto;
 }
 
-.locksmith-elevate-btn:hover {
+.home-service-elevate-btn:hover {
   opacity: 0.8;
 }
 
-.locksmith-elevate-btn svg {
+.home-service-elevate-btn svg {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
 }
 
 /* ===== STATS SECTION ===== */
-.locksmith-stats-grid {
+.home-service-stats-grid {
   display: flex;
   gap: 48px;
   width: 100%;
 }
 
-.locksmith-stat {
+.home-service-stat {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -1395,12 +1395,12 @@ main#main-content > section {
   border-left: 1px solid rgba(10, 11, 12, 0.1);
 }
 
-.locksmith-stat:first-child {
+.home-service-stat:first-child {
   border-left: none;
   padding-left: 0;
 }
 
-.locksmith-stat-number {
+.home-service-stat-number {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 80px;
@@ -1409,7 +1409,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-stat-label {
+.home-service-stat-label {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -1420,21 +1420,21 @@ main#main-content > section {
 }
 
 /* ===== TIMELINE SECTION ===== */
-.locksmith-timeline {
+.home-service-timeline {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 100%;
 }
 
-.locksmith-timeline-item {
+.home-service-timeline-item {
   display: flex;
   gap: 40px;
   align-items: flex-start;
   width: 100%;
 }
 
-.locksmith-timeline-number {
+.home-service-timeline-number {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 52px;
@@ -1446,7 +1446,7 @@ main#main-content > section {
   text-align: center;
 }
 
-.locksmith-timeline-content {
+.home-service-timeline-content {
   flex: 1 0 0;
   display: flex;
   flex-direction: column;
@@ -1454,7 +1454,7 @@ main#main-content > section {
   min-width: 0;
 }
 
-.locksmith-timeline-title {
+.home-service-timeline-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -1464,7 +1464,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-timeline-description {
+.home-service-timeline-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1474,7 +1474,7 @@ main#main-content > section {
 }
 
 /* ===== CTA SECTION ===== */
-.locksmith-cta-content {
+.home-service-cta-content {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -1484,7 +1484,7 @@ main#main-content > section {
   margin: 0 auto;
 }
 
-.locksmith-cta-heading {
+.home-service-cta-heading {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 52px;
@@ -1494,7 +1494,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-cta-description {
+.home-service-cta-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -1505,21 +1505,21 @@ main#main-content > section {
 
 /* ===== TESTIMONIALS SECTION ===== */
 /* ===== TESTIMONIALS SECTION ===== */
-.locksmith-testimonials-wrapper {
+.home-service-testimonials-wrapper {
   display: flex;
   flex-direction: column;
   gap: 80px;
   width: 100%;
 }
 
-.locksmith-testimonials-title-section {
+.home-service-testimonials-title-section {
   display: flex;
   flex-direction: column;
   gap: 24px;
   max-width: 768px;
 }
 
-.locksmith-testimonials-heading {
+.home-service-testimonials-heading {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 52px;
@@ -1529,7 +1529,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-testimonials-subtitle {
+.home-service-testimonials-subtitle {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -1539,21 +1539,21 @@ main#main-content > section {
   max-width: 560px;
 }
 
-.locksmith-testimonials-content {
+.home-service-testimonials-content {
   display: flex;
   flex-direction: column;
   gap: 48px;
   width: 100%;
 }
 
-.locksmith-testimonials-grid {
+.home-service-testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
   width: 100%;
 }
 
-.locksmith-testimonial-column {
+.home-service-testimonial-column {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -1561,22 +1561,22 @@ main#main-content > section {
   padding-right: 48px;
 }
 
-.locksmith-testimonial-column:last-child {
+.home-service-testimonial-column:last-child {
   padding-right: 0;
 }
 
-.locksmith-stars {
+.home-service-stars {
   width: 116px;
   height: 19px;
 }
 
-.locksmith-stars img {
+.home-service-stars img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.locksmith-testimonial-quote {
+.home-service-testimonial-quote {
   font-family: 'Inter', sans-serif;
   font-weight: 0;
   font-size: 18px;
@@ -1586,7 +1586,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-testimonial-quote p {
+.home-service-testimonial-quote p {
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 0;
@@ -1596,20 +1596,20 @@ main#main-content > section {
   color: #FFFFFF;
 }
 
-.locksmith-testimonial-avatar-section {
+.home-service-testimonial-avatar-section {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.locksmith-testimonial-avatar {
+.home-service-testimonial-avatar {
   width: 56px;
   height: 56px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.locksmith-testimonial-avatar-info {
+.home-service-testimonial-avatar-info {
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -1618,7 +1618,7 @@ main#main-content > section {
   font-size: 16px;
 }
 
-.locksmith-testimonial-name {
+.home-service-testimonial-name {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -1627,7 +1627,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-testimonial-title {
+.home-service-testimonial-title {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1637,30 +1637,30 @@ main#main-content > section {
 }
 
 
-.locksmith-testimonials-controls {
+.home-service-testimonials-controls {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
-.locksmith-slider-dots {
+.home-service-slider-dots {
   width: 88px;
   height: 8px;
 }
 
-.locksmith-slider-dots img {
+.home-service-slider-dots img {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.locksmith-slider-buttons {
+.home-service-slider-buttons {
   display: flex;
   gap: 16px;
 }
 
-.locksmith-slider-btn {
+.home-service-slider-btn {
   background: #0A0B0C;
   border: 1px solid #222324;
   border-radius: 100px;
@@ -1673,17 +1673,17 @@ main#main-content > section {
   color: #FFFFFF;
 }
 
-.locksmith-slider-btn:hover {
+.home-service-slider-btn:hover {
   background: rgba(34, 35, 36, 0.5);
 }
 
-.locksmith-slider-btn svg {
+.home-service-slider-btn svg {
   width: 24px;
   height: 24px;
 }
 
 /* ===== FAQ SECTION ===== */
-.locksmith-faq-title-section {
+.home-service-faq-title-section {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -1691,7 +1691,7 @@ main#main-content > section {
   flex-shrink: 0;
 }
 
-.locksmith-faq-title-section h2 {
+.home-service-faq-title-section h2 {
   font-family: var(--font-heading);
   font-weight: var(--font-bold);
   font-size: 52px;
@@ -1701,7 +1701,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-faq-title-section p {
+.home-service-faq-title-section p {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 16px;
@@ -1710,7 +1710,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-btn-contact {
+.home-service-btn-contact {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1725,11 +1725,11 @@ main#main-content > section {
   align-self: flex-start;
 }
 
-.locksmith-btn-contact:hover {
+.home-service-btn-contact:hover {
   background: rgba(10, 11, 12, 0.8);
 }
 
-.locksmith-faq-accordion {
+.home-service-faq-accordion {
   flex: 1 0 0;
   display: flex;
   flex-direction: column;
@@ -1738,7 +1738,7 @@ main#main-content > section {
   min-width: 0;
 }
 
-.locksmith-faq-item {
+.home-service-faq-item {
   display: flex;
   flex-direction: column;
   background: transparent;
@@ -1748,20 +1748,20 @@ main#main-content > section {
   border: none;
 }
 
-.locksmith-faq-item:first-child {
+.home-service-faq-item:first-child {
   border-top: none;
 }
 
-.locksmith-faq-item:first-child .locksmith-faq-question {
+.home-service-faq-item:first-child .home-service-faq-question {
   border-top: none;
   padding-top: 0;
 }
 
-.locksmith-faq-item:not(:first-child) .locksmith-faq-question {
+.home-service-faq-item:not(:first-child) .home-service-faq-question {
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.locksmith-faq-question {
+.home-service-faq-question {
   display: flex;
   gap: 24px;
   align-items: center;
@@ -1775,7 +1775,7 @@ main#main-content > section {
   overflow: hidden;
 }
 
-.locksmith-faq-question p {
+.home-service-faq-question p {
   flex: 1 0 0;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 700;
@@ -1786,7 +1786,7 @@ main#main-content > section {
   min-width: 0;
 }
 
-.locksmith-faq-question svg {
+.home-service-faq-question svg {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
@@ -1797,11 +1797,11 @@ main#main-content > section {
   transform: rotate(180deg);
 }
 
-.locksmith-faq-item.active .locksmith-faq-question svg {
+.home-service-faq-item.active .home-service-faq-question svg {
   transform: rotate(0deg);
 }
 
-.locksmith-faq-answer {
+.home-service-faq-answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
@@ -1812,7 +1812,7 @@ main#main-content > section {
   opacity: 0;
 }
 
-.locksmith-faq-item.active .locksmith-faq-answer {
+.home-service-faq-item.active .home-service-faq-answer {
   max-height: 500px;
   padding-bottom: 16px;
   padding-top: 0;
@@ -1823,7 +1823,7 @@ main#main-content > section {
   transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease 0.15s;
 }
 
-.locksmith-faq-answer p {
+.home-service-faq-answer p {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 0;
   font-size: 16px;
@@ -1836,7 +1836,7 @@ main#main-content > section {
   opacity: 0;
 }
 
-.locksmith-faq-item.active .locksmith-faq-answer p {
+.home-service-faq-item.active .home-service-faq-answer p {
   transform: translateY(0);
   opacity: 1;
   transition: transform 0.3s ease 0.15s, opacity 0.3s ease 0.15s;
@@ -1844,173 +1844,173 @@ main#main-content > section {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
-  .locksmith-hero-heading {
+  .home-service-hero-heading {
     font-size: 56px;
     letter-spacing: -0.56px;
   }
 
-  .locksmith-heading,
-  .locksmith-heading-center,
-  .locksmith-heading-left {
+  .home-service-heading,
+  .home-service-heading-center,
+  .home-service-heading-left {
     font-size: 44px;
     letter-spacing: -0.44px;
   }
 
-  .locksmith-two-column {
+  .home-service-two-column {
     flex-direction: column;
     gap: 48px;
   }
 
-  .locksmith-two-column-reverse {
+  .home-service-two-column-reverse {
     flex-direction: column;
   }
 
-  .locksmith-elevate-grid {
+  .home-service-elevate-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .locksmith-testimonials-wrapper {
+  .home-service-testimonials-wrapper {
     gap: 48px;
   }
   
-  .locksmith-testimonials-title-section {
+  .home-service-testimonials-title-section {
     max-width: 100%;
   }
   
-  .locksmith-testimonials-heading {
+  .home-service-testimonials-heading {
     font-size: 36px;
     line-height: 1.2;
   }
   
-  .locksmith-testimonials-subtitle {
+  .home-service-testimonials-subtitle {
     font-size: 16px;
     max-width: 100%;
   }
   
-  .locksmith-testimonials-content {
+  .home-service-testimonials-content {
     gap: 32px;
   }
   
-  .locksmith-testimonials-grid {
+  .home-service-testimonials-grid {
     grid-template-columns: 1fr;
     gap: 32px;
   }
   
-  .locksmith-testimonial-column {
+  .home-service-testimonial-column {
     padding-right: 0;
   }
 
-  .locksmith-stats-grid {
+  .home-service-stats-grid {
     flex-direction: column;
     gap: 32px;
   }
 
-  .locksmith-stat {
+  .home-service-stat {
     border-left: none;
     padding-left: 0;
     padding-top: 32px;
     border-top: 1px solid rgba(10, 11, 12, 0.1);
   }
 
-  .locksmith-stat:first-child {
+  .home-service-stat:first-child {
     border-top: none;
     padding-top: 0;
   }
 
-  .locksmith-features-wrapper {
+  .home-service-features-wrapper {
     flex-direction: column;
     gap: 48px;
   }
 
-  .locksmith-features-image {
+  .home-service-features-image {
     width: 100%;
     height: auto;
     max-height: 400px;
   }
 
-  .locksmith-features-grid {
+  .home-service-features-grid {
     grid-template-columns: 1fr;
   }
 
-  .locksmith-impact-decoration {
+  .home-service-impact-decoration {
     display: none;
   }
 
-  .locksmith-impact-content {
+  .home-service-impact-content {
     gap: 64px;
   }
 }
 
 @media (max-width: 768px) {
-  .locksmith-section {
+  .home-service-section {
     padding: 80px 24px;
   }
 
-  .locksmith-hero-container {
+  .home-service-hero-container {
     padding: 80px 24px;
   }
 
-  .locksmith-hero-heading {
+  .home-service-hero-heading {
     font-size: 48px;
     letter-spacing: -0.48px;
   }
 
-  .locksmith-heading,
-  .locksmith-heading-center,
-  .locksmith-heading-left {
+  .home-service-heading,
+  .home-service-heading-center,
+  .home-service-heading-left {
     font-size: 36px;
     letter-spacing: -0.36px;
   }
 
-  .locksmith-hero-actions,
-  .locksmith-actions,
-  .locksmith-actions-center {
+  .home-service-hero-actions,
+  .home-service-actions,
+  .home-service-actions-center {
     flex-direction: column;
     width: 100%;
   }
 
-  .locksmith-hero-btn-primary,
-  .locksmith-hero-btn-secondary,
-  .locksmith-btn-primary,
-  .locksmith-btn-secondary,
-  .locksmith-btn-primary-light,
-  .locksmith-btn-secondary-light {
+  .home-service-hero-btn-primary,
+  .home-service-hero-btn-secondary,
+  .home-service-btn-primary,
+  .home-service-btn-secondary,
+  .home-service-btn-primary-light,
+  .home-service-btn-secondary-light {
     width: 100%;
   }
 
-  .locksmith-elevate-grid {
+  .home-service-elevate-grid {
     grid-template-columns: 1fr;
   }
 
-  .locksmith-faq-title-section {
+  .home-service-faq-title-section {
     width: 100%;
   }
 
-  .locksmith-container {
+  .home-service-container {
     gap: 64px;
   }
 
-  .locksmith-impact-decoration {
+  .home-service-impact-decoration {
     display: none;
   }
 
-  .locksmith-impact-content {
+  .home-service-impact-content {
     gap: 64px;
   }
 
-  .locksmith-stats-grid {
+  .home-service-stats-grid {
     flex-direction: column;
     gap: 32px;
   }
 
-  .locksmith-stat {
+  .home-service-stat {
     border-left: none;
     padding-left: 0;
     padding-top: 32px;
     border-top: 1px solid rgba(10, 11, 12, 0.1);
   }
 
-  .locksmith-stat:first-child {
+  .home-service-stat:first-child {
     border-top: none;
     padding-top: 0;
   }
