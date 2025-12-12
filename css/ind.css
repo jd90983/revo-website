@@ -628,6 +628,99 @@ main#main-content > section {
   display: block !important;
 }
 
+/* New Categories Grid Styles */
+.ind-categories-grid-wrapper {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.ind-categories-grid {
+  display: flex;
+  gap: 40px;
+  width: 100%;
+}
+
+.ind-categories-column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  flex: 1 1 0;
+}
+
+.ind-category-item {
+  display: none;
+  align-items: center;
+  gap: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.ind-category-item[data-visible="true"] {
+  display: flex;
+  opacity: 1;
+}
+
+.ind-category-icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ind-category-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ind-category-title {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #535454;
+  margin: 0;
+  flex: 1;
+}
+
+.ind-load-more-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 48px;
+}
+
+.ind-load-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0A0B0C;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.3s ease;
+}
+
+.ind-load-more-btn:hover {
+  opacity: 0.7;
+}
+
+.ind-load-more-btn svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.ind-load-more-btn.hidden {
+  display: none;
+}
+
 .ind-actions {
   display: flex;
   gap: 24px;
@@ -1698,6 +1791,14 @@ main#main-content > section {
     min-width: 280px;
   }
 
+  .ind-categories-grid {
+    gap: 32px;
+  }
+
+  .ind-categories-column {
+    gap: 24px;
+  }
+
   .ind-blog-grid {
     flex-direction: column;
   }
@@ -1784,6 +1885,24 @@ main#main-content > section {
 
   .ind-grid-card {
     flex: 1 1 100%;
+  }
+
+  .ind-categories-grid {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ind-categories-column {
+    gap: 20px;
+  }
+
+  .ind-category-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ind-category-title {
+    font-size: 14px;
   }
 
   .ind-actions {

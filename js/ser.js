@@ -205,8 +205,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.style.opacity = '1';
-        entry.target.style.transform = 'translateY(0)';
+        entry.target.classList.add('animate-in');
+        // Remove inline styles to allow CSS animations to work smoothly
+        entry.target.style.opacity = '';
+        entry.target.style.transform = '';
       }
     });
   }, observerOptions);
@@ -215,6 +217,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.ser-ai-receptionists, .ser-intelligent-communication, .ser-advanced-solutions, .ser-how-it-works, .ser-benefits, .ser-tailored, .ser-reliability, .ser-get-started, .ser-testimonial, .ser-transform-cta, .ser-faqs, .ser-experience-power');
   
   sections.forEach(section => {
+    // Skip sections that are initialized by template loader
+    if (section.hasAttribute('data-template-initialized')) {
+      return;
+    }
     section.style.opacity = '0';
     section.style.transform = 'translateY(30px)';
     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
