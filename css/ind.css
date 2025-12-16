@@ -653,6 +653,7 @@ main#main-content > section {
   gap: 16px;
   opacity: 0;
   transition: opacity 0.3s ease;
+  cursor: pointer;
 }
 
 .ind-category-item[data-visible="true"] {
@@ -661,28 +662,58 @@ main#main-content > section {
 }
 
 .ind-category-icon {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 50%;
+  padding: 8px;
+  transition: background-color 0.3s ease;
 }
 
 .ind-category-icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  filter: brightness(0) saturate(100%) invert(52%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(100%) contrast(100%);
 }
 
 .ind-category-title {
   font-family: 'Lexend Deca', sans-serif;
-  font-weight: 500;
+  font-weight: none;
   font-size: 16px;
   line-height: 1.5;
-  color: #535454;
+  color: #848585;
   margin: 0;
   flex: 1;
+  transition: color 0.3s ease;
+}
+
+/* Hover effects */
+.ind-category-item:hover .ind-category-icon {
+  background-color: #CFDEF7;
+}
+
+.ind-category-item:hover .ind-category-icon img {
+  filter: none;
+  opacity: 1;
+}
+
+.ind-category-item:hover .ind-category-title {
+  color: #0A0B0C;
+  font-weight: none;
+}
+
+/* Specific styles for all column items */
+.ind-categories-column .ind-category-item .ind-category-title {
+  color: #848585 !important;
+}
+
+.ind-categories-column .ind-category-item:hover .ind-category-title {
+  color: #0A0B0C !important;
 }
 
 .ind-load-more-wrapper {
@@ -725,7 +756,7 @@ main#main-content > section {
   display: flex;
   gap: 24px;
   align-items: center;
-  margin-top: 48px;
+  margin-top: 100px;
   justify-content: flex-start;
 }
 
@@ -1601,6 +1632,14 @@ main#main-content > section {
   color: #FFFFFF !important;
   position: relative !important;
   z-index: 1 !important;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ind-faq-section.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .ind-faq-section * {
@@ -1722,7 +1761,7 @@ main#main-content > section {
 .ind-faq-question p {
   flex: 1;
   font-family: 'Lexend Deca', sans-serif;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 18px;
   line-height: 1.5;
   color: #FFFFFF !important;
@@ -1734,20 +1773,38 @@ main#main-content > section {
   height: 32px;
   flex-shrink: 0;
   stroke: #FFFFFF;
-  transition: transform 0.3s ease;
-}
-
-.ind-faq-item.active .ind-faq-question svg {
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   transform: rotate(180deg);
 }
 
+.ind-faq-item.active .ind-faq-question svg {
+  transform: rotate(0deg);
+}
+
 .ind-faq-answer {
-  padding: 0 0 24px 0;
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              padding 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  opacity: 0;
 }
 
 .ind-faq-item.active .ind-faq-answer {
-  display: block;
+  max-height: 500px;
+  padding-bottom: 16px;
+  padding-top: 0;
+  padding-left: 0;
+  padding-right: 0;
+  background: transparent;
+  opacity: 1;
+  transition: max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              padding 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
 }
 
 .ind-faq-answer p {
@@ -1757,6 +1814,18 @@ main#main-content > section {
   line-height: 1.5;
   color: #FFFFFF !important;
   margin: 0;
+  padding: 0;
+  transform: translateY(-10px);
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s, 
+              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s;
+  opacity: 0;
+}
+
+.ind-faq-item.active .ind-faq-answer p {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s, 
+              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s;
 }
 
 /* ===== RESPONSIVE STYLES ===== */
