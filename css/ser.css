@@ -367,9 +367,11 @@ main > section {
 
 /* ===== AI RECEPTIONISTS SECTION ===== */
 .ser-ai-receptionists {
-  background: #FFFFFF;
+  background: #FAFBFC;
   padding: 112px 0;
   width: 100%;
+  position: relative;
+  overflow: visible;
 }
 
 .ser-ai-receptionists-original {
@@ -385,7 +387,7 @@ main > section {
 
 .ser-ai-content-wrapper {
   display: flex;
-  gap: 32px;
+  gap: 80px;
   align-items: center;
   width: 100%;
 }
@@ -399,8 +401,16 @@ main > section {
 }
 
 .ser-ai-receptionists .ser-ai-content-left {
-  max-width: 560px;
-  flex: 0 0 auto;
+  max-width: 450px;
+  flex: 0 0 450px;
+  padding: 48px;
+  padding-left: 0;
+  padding-right: 0;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .ser-ai-receptionists-original .ser-ai-content-left {
@@ -445,7 +455,7 @@ main > section {
 }
 
 .ser-ai-receptionists .ser-ai-title-content {
-  gap: 40px;
+  gap: 24px;
 }
 
 .ser-ai-title {
@@ -454,6 +464,7 @@ main > section {
   font-size: var(--text-h2);
   line-height: 1.2;
   color: var(--color-white);
+  margin: 0;
 }
 
 .ser-ai-receptionists .ser-ai-title {
@@ -484,6 +495,7 @@ main > section {
   font-size: 18px;
   line-height: 1.5;
   color: var(--color-white);
+  margin: 0;
 }
 
 .ser-ai-receptionists .ser-ai-description {
@@ -595,6 +607,19 @@ main > section {
   justify-content: center;
 }
 
+.ser-ai-receptionists .ser-ai-content-right {
+  flex: 1;
+  height: auto;
+  width: 100%;
+  min-width: 0;
+  padding-right: 0;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  overflow: visible;
+}
+
 .ser-ai-phone-mockup-container {
   position: relative;
   width: 100%;
@@ -647,26 +672,38 @@ main > section {
 
 .ser-ai-phone-mockup-image {
   position: relative;
-  max-width: 70%;
-  width: 70%;
-  min-width: 300px;
+  max-width: 35%;
+  width: 35%;
+  min-width: 200px;
   height: auto;
   z-index: 1;
   filter: none;
 }
 
 .ser-ai-receptionists:not(.ser-ai-receptionists-original) .ser-ai-phone-mockup-image {
-  max-width: 100%;
-  width: 100%;
-  min-width: 835px;
-  height: 564px;
-  object-fit: cover;
-  object-position: 50% 50%;
+  width: auto;
+  max-width: 1200px;
+  height: auto;
+  min-width: 0;
+  object-fit: contain;
+  object-position: center;
+  margin-left: auto;
+  margin-right: 0;
+  display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .ser-ai-receptionists:not(.ser-ai-receptionists-original) .ser-ai-phone-mockup-container {
-  width: 935px;
-  height: 564px;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  position: relative;
+  z-index: 1;
 }
 
 .ser-section-title {
@@ -2151,7 +2188,7 @@ main > section {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: var(--space-sm);
+  gap: 16px;
 }
 
 .ser-reliability-list li {
@@ -3003,6 +3040,14 @@ main > section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ser-faqs.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 .ser-faq-section-container {
@@ -3110,7 +3155,7 @@ main > section {
 .ser-faq-question-text {
   flex: 1 0 0;
   font-family: var(--font-body);
-  font-weight: 700;
+  font-weight: 300;
   font-size: 18px;
   line-height: 1.5;
   color: #ffffff;
@@ -3127,7 +3172,7 @@ main > section {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.3s ease;
   overflow: hidden;
   position: relative;
   transform: rotate(180deg);
@@ -3146,7 +3191,9 @@ main > section {
 .ser-faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease;
+  transition: max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              padding 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   padding: 0;
   background: transparent;
   border: none;
@@ -3162,7 +3209,9 @@ main > section {
   padding-right: 0;
   background: transparent;
   opacity: 1;
-  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease 0.15s;
+  transition: max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              padding 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
 }
 
 .ser-faq-answer-text {
@@ -3173,15 +3222,17 @@ main > section {
   color: #ffffff;
   margin: 0;
   padding: 0;
-  transform: translateY(-8px);
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform: translateY(-10px);
   opacity: 0;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s, 
+              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s;
 }
 
 .ser-faq-item.active .ser-faq-answer-text {
   transform: translateY(0);
   opacity: 1;
-  transition: transform 0.3s ease 0.15s, opacity 0.3s ease 0.15s;
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s, 
+              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s;
 }
 
 /* ===== FOOTER ===== */
