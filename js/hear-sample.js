@@ -49,11 +49,42 @@
     // Play/Pause button
     playButton.addEventListener('click', togglePlayPause);
 
-    // Icon menu buttons
-    iconButtons.forEach((btn, index) => {
-      btn.addEventListener('click', () => {
-        const samples = ['home', 'wrench', 'hammer', 'key', 'shield'];
+    // Icon menu buttons - handle both desktop and mobile menus
+    const desktopIconButtons = document.querySelectorAll('.hear-sample-service-icons-menu .hear-sample-icon-btn');
+    const mobileIconButtons = document.querySelectorAll('.hear-sample-mobile-icons .hear-sample-icon-btn');
+    const samples = ['home', 'wrench', 'hammer', 'key', 'shield'];
+
+    // Desktop menu buttons
+    desktopIconButtons.forEach((btn, index) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
         if (samples[index]) {
+          // Update active state for both menus
+          desktopIconButtons.forEach(b => b.classList.remove('hear-sample-icon-btn-active'));
+          mobileIconButtons.forEach(b => b.classList.remove('hear-sample-icon-btn-active'));
+          btn.classList.add('hear-sample-icon-btn-active');
+          if (mobileIconButtons[index]) {
+            mobileIconButtons[index].classList.add('hear-sample-icon-btn-active');
+          }
+          switchSample(samples[index], btn);
+        }
+      });
+    });
+
+    // Mobile menu buttons
+    mobileIconButtons.forEach((btn, index) => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        if (samples[index]) {
+          // Update active state for both menus
+          desktopIconButtons.forEach(b => b.classList.remove('hear-sample-icon-btn-active'));
+          mobileIconButtons.forEach(b => b.classList.remove('hear-sample-icon-btn-active'));
+          btn.classList.add('hear-sample-icon-btn-active');
+          if (desktopIconButtons[index]) {
+            desktopIconButtons[index].classList.add('hear-sample-icon-btn-active');
+          }
           switchSample(samples[index], btn);
         }
       });
@@ -61,51 +92,91 @@
 
     // Progress bar click and drag
     const progressHandle = document.querySelector('.hear-sample-progress-handle');
+    const progressContainer = document.querySelector('.hear-sample-progress-container');
+    
+    // Helper function to handle seeking
+    const handleSeek = (e, preservePlaying = true) => {
+      if (!audio || !progressBar) return;
+      
+      const rect = progressBar.getBoundingClientRect();
+      let clientX = 0;
+      if (e.clientX !== undefined) {
+        clientX = e.clientX;
+      } else if (e.touches && e.touches.length > 0) {
+        clientX = e.touches[0].clientX;
+      } else if (e.changedTouches && e.changedTouches.length > 0) {
+        clientX = e.changedTouches[0].clientX;
+      }
+      const percent = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+      
+      // Wait for audio to be loaded
+      if (!audio.duration || isNaN(audio.duration)) {
+        audio.addEventListener('loadedmetadata', () => {
+          const newTime = percent * audio.duration;
+          if (!isNaN(newTime) && isFinite(newTime) && newTime >= 0) {
+            seekToTime(newTime, preservePlaying ? isPlaying : false);
+          }
+        }, { once: true });
+        return;
+      }
+      
+      const newTime = percent * audio.duration;
+      if (!isNaN(newTime) && isFinite(newTime) && newTime >= 0) {
+        seekToTime(newTime, preservePlaying ? isPlaying : false);
+      }
+    };
     
     if (progressBar) {
       let isDragging = false;
       
-      // Click on progress bar
+      // Click on progress bar (mouse)
       progressBar.addEventListener('click', (e) => {
         if (isDragging || !audio) return;
-        const rect = progressBar.getBoundingClientRect();
-        const percent = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
-        
-        // Wait for audio to be loaded
-        if (!audio.duration || isNaN(audio.duration)) {
-          audio.addEventListener('loadedmetadata', () => {
-            const newTime = percent * audio.duration;
-            if (!isNaN(newTime) && isFinite(newTime) && newTime >= 0) {
-              seekToTime(newTime, isPlaying); // Preserve playing state
-            }
-          }, { once: true });
+        // Don't seek if clicking directly on the handle
+        if (progressHandle && progressHandle.contains(e.target)) {
           return;
         }
-        
-        const newTime = percent * audio.duration;
-        if (!isNaN(newTime) && isFinite(newTime) && newTime >= 0) {
-          seekToTime(newTime, isPlaying); // Preserve playing state
-        }
+        e.stopPropagation();
+        handleSeek(e, true);
       });
       
-      // Drag handle
+      // Touch support for mobile
+      progressBar.addEventListener('touchend', (e) => {
+        if (isDragging || !audio) return;
+        // Don't seek if clicking directly on the handle
+        if (progressHandle && progressHandle.contains(e.target)) {
+          return;
+        }
+        e.preventDefault();
+        e.stopPropagation();
+        handleSeek(e, true);
+      });
+      
+      // Drag handle (mouse)
       if (progressHandle) {
-        progressHandle.addEventListener('mousedown', (e) => {
+        const startDrag = (e) => {
           e.stopPropagation();
           e.preventDefault();
           isDragging = true;
-          if (!audio) {
+          if (!audio || !progressBar) {
             isDragging = false;
             return;
           }
           
           const rect = progressBar.getBoundingClientRect();
           const wasPlaying = isPlaying;
+          const getClientX = (e) => {
+            if (e.clientX !== undefined) return e.clientX;
+            if (e.touches && e.touches.length > 0) return e.touches[0].clientX;
+            if (e.changedTouches && e.changedTouches.length > 0) return e.changedTouches[0].clientX;
+            return 0;
+          };
           
           // Update visual position only during drag (no seeking)
           const updateVisualPosition = (e) => {
             if (!audio || !audio.duration || isNaN(audio.duration)) return;
-            const percent = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+            const clientX = getClientX(e);
+            const percent = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
             const newTime = percent * audio.duration;
             if (!isNaN(newTime) && isFinite(newTime) && newTime >= 0) {
               // Only update visual progress, don't seek yet
@@ -114,39 +185,61 @@
             }
           };
           
-          const onMouseMove = (e) => {
+          const onMove = (e) => {
             if (!isDragging) return;
-            e.preventDefault(); // Prevent page scroll during drag
+            e.preventDefault();
             updateVisualPosition(e);
           };
           
-          const onMouseUp = (e) => {
+          const onEnd = (e) => {
+            if (!isDragging) return;
             isDragging = false;
-            document.removeEventListener('mousemove', onMouseMove);
-            document.removeEventListener('mouseup', onMouseUp);
+            document.removeEventListener('mousemove', onMove);
+            document.removeEventListener('mouseup', onEnd);
+            document.removeEventListener('touchmove', onMove);
+            document.removeEventListener('touchend', onEnd);
             
             // Now seek to the final position
             if (!audio || !audio.duration || isNaN(audio.duration)) {
               const onLoadedMetadata = () => {
-                const percent = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+                const clientX = getClientX(e);
+                const percent = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
                 const newTime = percent * audio.duration;
                 if (!isNaN(newTime) && isFinite(newTime) && newTime >= 0) {
-                  seekToTime(newTime, wasPlaying); // Preserve playing state
+                  seekToTime(newTime, wasPlaying);
                 }
                 audio.removeEventListener('loadedmetadata', onLoadedMetadata);
               };
               audio.addEventListener('loadedmetadata', onLoadedMetadata);
             } else {
-              const percent = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+              const clientX = getClientX(e);
+              const percent = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
               const newTime = percent * audio.duration;
               if (!isNaN(newTime) && isFinite(newTime) && newTime >= 0) {
-                seekToTime(newTime, wasPlaying); // Preserve playing state
+                seekToTime(newTime, wasPlaying);
               }
             }
           };
           
-          document.addEventListener('mousemove', onMouseMove);
-          document.addEventListener('mouseup', onMouseUp);
+          // Add both mouse and touch event listeners
+          document.addEventListener('mousemove', onMove);
+          document.addEventListener('mouseup', onEnd);
+          document.addEventListener('touchmove', onMove, { passive: false });
+          document.addEventListener('touchend', onEnd);
+        };
+        
+        progressHandle.addEventListener('mousedown', startDrag);
+        progressHandle.addEventListener('touchstart', startDrag, { passive: false });
+      }
+      
+      // Also allow clicking on the progress container
+      if (progressContainer) {
+        progressContainer.addEventListener('click', (e) => {
+          // Only handle if clicking on the container itself, not on child elements that have their own handlers
+          if (e.target === progressContainer || e.target.classList.contains('hear-sample-time')) {
+            if (isDragging || !audio) return;
+            handleSeek(e, true);
+          }
         });
       }
     }
@@ -238,6 +331,11 @@
     // Show summary card - don't show messages until user presses play
     const chat = document.querySelector('.hear-sample-chat');
     if (chat) {
+      // Remove notification if it exists
+      const existingNotification = chat.querySelector('.hear-sample-revo-notification');
+      if (existingNotification) {
+        existingNotification.remove();
+      }
       updateSummaryCard(sample);
     }
 
@@ -284,6 +382,8 @@
       if (animationFrameId) {
         cancelAnimationFrame(animationFrameId);
       }
+      // Show notification asking if user wants to start using Revo
+      showRevoStartNotification();
     });
 
     // Set initial volume
@@ -419,6 +519,11 @@
           // Clear chat and rebuild it from the beginning
           const chat = document.querySelector('.hear-sample-chat');
           if (chat) {
+            // Remove notification if it exists
+            const existingNotification = chat.querySelector('.hear-sample-revo-notification');
+            if (existingNotification) {
+              existingNotification.remove();
+            }
             chat.innerHTML = '';
           }
           
@@ -1074,6 +1179,86 @@
         updateVolumeFill(newVolumeDown);
         updateVolumeIcon(newVolumeDown);
         break;
+    }
+  }
+
+  // Show notification asking if user wants to start using Revo
+  function showRevoStartNotification() {
+    const chat = document.querySelector('.hear-sample-chat');
+    if (!chat) return;
+
+    // Check if notification already exists
+    if (chat.querySelector('.hear-sample-revo-notification')) {
+      return;
+    }
+
+    // Create notification message
+    const notificationDiv = document.createElement('div');
+    notificationDiv.className = 'hear-sample-message hear-sample-revo-notification';
+    notificationDiv.innerHTML = `
+      <div class="hear-sample-message-bubble hear-sample-message-bubble-notification">
+        <button class="hear-sample-notification-close" aria-label="Close notification">×</button>
+        <div class="hear-sample-notification-header">
+          <div class="hear-sample-notification-icon"><img src="./images/Hear a Sample Call/revo_profile.png" alt="Revo Agent"></div>
+          <div class="hear-sample-notification-header-text">
+            <h3 class="hear-sample-notification-title">Want to start using Revo?</h3>
+            <p class="hear-sample-notification-description">Experience AI-powered receptionists that never miss a call.</p>
+          </div>
+        </div>
+        <div class="hear-sample-notification-actions">
+          <button class="hear-sample-notification-btn hear-sample-notification-btn-primary">Yes, start now</button>
+          <button class="hear-sample-notification-btn hear-sample-notification-btn-secondary">Maybe later</button>
+        </div>
+      </div>
+    `;
+
+    // Animate in
+    notificationDiv.style.opacity = '0';
+    notificationDiv.style.transform = 'translateY(20px)';
+    chat.appendChild(notificationDiv);
+
+    requestAnimationFrame(() => {
+      notificationDiv.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+      notificationDiv.style.opacity = '1';
+      notificationDiv.style.transform = 'translateY(0)';
+    });
+
+    // Scroll to show notification
+    requestAnimationFrame(() => {
+      chat.scrollTop = chat.scrollHeight;
+    });
+
+    // Handle button clicks
+    const primaryBtn = notificationDiv.querySelector('.hear-sample-notification-btn-primary');
+    const secondaryBtn = notificationDiv.querySelector('.hear-sample-notification-btn-secondary');
+    const closeBtn = notificationDiv.querySelector('.hear-sample-notification-close');
+
+    const closeNotification = () => {
+      notificationDiv.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+      notificationDiv.style.opacity = '0';
+      notificationDiv.style.transform = 'translateY(-10px)';
+      setTimeout(() => {
+        notificationDiv.remove();
+      }, 300);
+    };
+
+    if (primaryBtn) {
+      primaryBtn.addEventListener('click', () => {
+        // Redirect to get started or trigger action
+        // You can change this to your desired action (e.g., scroll to section, open form, etc.)
+        const getStartedSection = document.querySelector('#get-started') || document.querySelector('.hero-actions');
+        if (getStartedSection) {
+          getStartedSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+    }
+
+    if (secondaryBtn) {
+      secondaryBtn.addEventListener('click', closeNotification);
+    }
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closeNotification);
     }
   }
 

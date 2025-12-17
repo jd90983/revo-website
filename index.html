@@ -291,13 +291,32 @@
             </svg>
           </a>
         </li>
-        <li>
-          <a href="ind.html">
+        <li class="mobile-menu-dropdown">
+          <button class="mobile-menu-dropdown-toggle" aria-expanded="false">
             Industries
             <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </a>
+          </button>
+          <div class="mobile-menu-dropdown-content">
+            <p class="mobile-menu-category">Home Service Pros</p>
+            <ul class="mobile-menu-submenu">
+              <li><a href="ind.html">Air Duct Cleaning</a></li>
+              <li><a href="industry_locksmith.html">Locksmith</a></li>
+              <li><a href="ind.html">HVAC</a></li>
+              <li><a href="ind.html">Plumbing</a></li>
+              <li><a href="industry_home_service.html">Home Services</a></li>
+            </ul>
+            <p class="mobile-menu-category">Professional Businesses</p>
+            <ul class="mobile-menu-submenu">
+              <li><a href="ind.html">Healthcare & Medical</a></li>
+              <li><a href="ind.html">Small Business</a></li>
+              <li><a href="ind.html">IT & Technology</a></li>
+              <li><a href="ind.html">Legal</a></li>
+              <li><a href="ind.html">Corporate & Government</a></li>
+            </ul>
+            <a href="ind.html" class="mobile-menu-view-all">View All Industries →</a>
+          </div>
         </li>
         <li>
           <a href="pricing.html">
@@ -332,7 +351,9 @@
       <div class="hero-container">
         <div class="hero-content">
           <h1 class="hero-title">
-            The complete <span class="text-primary">AI Receptionists</span> for your business
+            The complete<br class="hero-title-break">
+            <span class="text-primary">AI Receptionists</span> for<br class="hero-title-break">
+            your business
           </h1>
           <p class="hero-subtitle">
             Revo transforms missed calls into meaningful connections. Our intelligent virtual receptionist ensures no business opportunity slips through the cracks.
@@ -357,7 +378,7 @@
     <section class="features" id="services">
       <div class="features-container">
         <div class="features-left">
-          <span class="tagline">Revo – Powered by AI</span>
+          <span class="tagline">Revo – Powered By AI</span>
           <h2><span class="text-primary">Revo that speaks</span> the language of business communication</h2>
           <!-- 3D Isometric Dashboard Image -->
           <div class="dashboard-image-container">
@@ -396,13 +417,8 @@
             </div>
           </div>
           <div class="features-buttons">
-            <button class="btn-outline-white">Get Started</button>
-            <button class="btn-text-white">
-              Hear a Sample
-              <svg class="chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
+            <button class="btn-primary-large">Get Started</button>
+            <button class="btn-outline-white">Hear a Sample</button>
           </div>
         </div>
       </div>
@@ -429,7 +445,7 @@
 
           <div class="how-header-content">
             <h2 class="how-heading">
-              How Revo's AI receptionists transform your business calls
+              How <span class="text-primary">Revo's AI receptionists</span> transform your business calls
             </h2>
             <p class="how-description">
               Revo's intelligent voice system answers calls instantly, understands intent,
@@ -509,7 +525,8 @@
 
         <!-- Button -->
         <div class="how-actions">
-          <button class="btn-outline-white">Get Started</button>
+          <button class="btn-primary-large">Get Started</button>
+          <button class="btn-outline-white">Hear a Sample</button>
         </div>
 
       </div>
@@ -663,13 +680,30 @@
             Listen to a Real Conversation <span class="hear-sample-title-highlight">Powered by Revo</span>
           </h2>
           <div class="hear-sample-description">
-            <p>Experience how natural and human-like Revo's AI sounds in real home-service calls.</p>
-            <p>See how Revo handles tone, urgency, and customer needs with effortless, professional responses. Choose a sample to hear it in action.</p>
+            <p>Experience how natural and human-like Revo's AI sounds in real home-service calls. See how Revo handles tone, urgency, and customer needs with effortless, professional responses. Choose a sample to hear it in action.</p>
           </div>
         </div>
 
         <!-- Main Card -->
         <div class="hear-sample-card">
+          <!-- Mobile Service Icons (shown only on mobile) -->
+          <div class="hear-sample-mobile-icons">
+            <button class="hear-sample-icon-btn hear-sample-icon-btn-active" aria-label="Home Services" data-sample="home">
+              <img src="./images/icons/fa7-solid_home-lg.svg" alt="Home Services" class="hear-sample-icon-img" />
+            </button>
+            <button class="hear-sample-icon-btn" aria-label="Plumbing" data-sample="wrench">
+              <img src="./images/icons/fa7-solid_wrench.svg" alt="Plumbing" class="hear-sample-icon-img" />
+            </button>
+            <button class="hear-sample-icon-btn" aria-label="Law Firms" data-sample="hammer">
+              <img src="./images/icons/fa7-solid_legal.svg" alt="Law Firms" class="hear-sample-icon-img" />
+            </button>
+            <button class="hear-sample-icon-btn" aria-label="Locksmith" data-sample="key">
+              <img src="./images/icons/fa7-solid_key.svg" alt="Locksmith" class="hear-sample-icon-img" />
+            </button>
+            <button class="hear-sample-icon-btn" aria-label="Cyber Security" data-sample="shield">
+              <img src="./images/icons/fa7-solid_shield-alt.svg" alt="Cyber Security" class="hear-sample-icon-img" />
+            </button>
+          </div>
           <div class="hear-sample-card-content">
             <!-- Left Panel: Service Professional -->
             <div class="hear-sample-left-panel">
@@ -754,17 +788,6 @@
             </div>
           </div>
       </div>
-
-        <!-- CTA Buttons -->
-        <div class="hear-sample-actions">
-          <button class="benefits-modern-btn-primary">Get Started</button>
-          <button class="hear-sample-btn-secondary">
-            Book a Demo
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 18L15 12L9 6" stroke="#0A0B0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-        </div>
       </div>
     </section>
 
@@ -850,7 +873,7 @@
                 />
                 <div class="trust-avatar-info">
                   <p class="trust-avatar-name">Sarah Lopez</p>
-                  <p class="trust-avatar-title">Operations Manager — BrightFix Plumbing & HVAC</p>
+                  <p class="trust-avatar-title"><span class="trust-avatar-role">Operations Manager</span></p>
                 </div>
               </div>
 
@@ -882,7 +905,7 @@
                 />
                 <div class="trust-avatar-info">
                   <p class="trust-avatar-name">Melissa Turner</p>
-                  <p class="trust-avatar-title">Real Estate Broker — PrimeHome Realty</p>
+                  <p class="trust-avatar-title"><span class="trust-avatar-role">Real Estate Broker</span></p>
                 </div>
               </div>
 
@@ -913,7 +936,7 @@
                 />
                 <div class="trust-avatar-info">
                   <p class="trust-avatar-name">Daniel Reyes</p>
-                  <p class="trust-avatar-title">Owner — LuxeStyle Salon & Spa</p>
+                  <p class="trust-avatar-title"><span class="trust-avatar-role">Owner</span></p>
                 </div>
               </div>
 
@@ -1065,9 +1088,14 @@
 
         <!-- Links -->
         <div class="footer-links">
-          <div class="footer-column">
-            <h4>Quick links</h4>
-            <ul>
+          <div class="footer-column footer-dropdown">
+            <button class="footer-dropdown-toggle" aria-expanded="false">
+              <h4>Quick links</h4>
+              <svg class="footer-dropdown-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="footer-dropdown-content">
               <li><a href="#services">Services</a></li>
               <li><a href="#industries">Industries</a></li>
               <li><a href="#pricing">Pricing</a></li>
@@ -1076,9 +1104,14 @@
             </ul>
           </div>
 
-          <div class="footer-column">
-            <h4>Company</h4>
-            <ul>
+          <div class="footer-column footer-dropdown">
+            <button class="footer-dropdown-toggle" aria-expanded="false">
+              <h4>Company</h4>
+              <svg class="footer-dropdown-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="footer-dropdown-content">
               <li><a href="#about">About us</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><a href="#careers">Careers</a></li>
