@@ -49,9 +49,14 @@
   transform: translateY(0) !important;
 }
 
-/* Ensure all text is visible */
-.ser-get-started * {
+/* Ensure all text is visible EXCEPT the primary button and highlights */
+.ser-get-started *:not(.btn-primary-large):not(.ser-get-started-highlight) {
   color: #ffffff !important;
+}
+
+/* Fix primary button text color in Get Started section */
+.ser-get-started .btn-primary-large {
+  color: #0a0b0c !important;
 }
 
 /* Tagline should be white */
@@ -294,9 +299,37 @@
 
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 1024px) {
+  .ser-get-started {
+    padding: 20px 0 60px 0;
+  }
+
+  .ser-get-started .ser-section-container {
+    padding: 0 var(--page-padding);
+  }
+
   .ser-get-started-wrapper {
     flex-direction: column;
-    gap: 48px;
+    gap: 0; /* Gaps will be handled by margins since we use display: contents */
+  }
+
+  .ser-get-started-left,
+  .ser-get-started-right {
+    display: contents;
+  }
+
+  .ser-get-started-header {
+    order: 1;
+    margin-bottom: 48px;
+  }
+
+  .ser-get-started-right .ser-steps-timeline {
+    order: 2;
+    margin-bottom: 48px;
+  }
+
+  .ser-get-started-left .features-buttons.ser-ai-actions {
+    order: 3 !important;
+    margin-bottom: 0;
   }
 
   .ser-get-started-title {
@@ -321,26 +354,46 @@
 
 @media (max-width: 768px) {
   .ser-get-started {
-    padding: var(--space-2xl) 0;
+    padding: 10px 0 40px 0;
   }
 
   .ser-get-started .ser-section-container {
-    padding: var(--space-2xl) var(--page-padding);
+    padding: 0 var(--page-padding-mobile);
   }
 
   .ser-get-started-wrapper {
-    gap: 32px;
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ser-get-started-left,
+  .ser-get-started-right {
+    display: contents !important;
+  }
+
+  .ser-get-started-header {
+    order: 1 !important;
+    margin-bottom: 32px;
+  }
+
+  .ser-get-started-right .ser-steps-timeline {
+    order: 2 !important;
+    margin-bottom: 32px;
+  }
+
+  .ser-get-started-left .features-buttons.ser-ai-actions {
+    order: 3 !important;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    margin-bottom: 0;
+    display: flex !important;
   }
 
   .ser-get-started-title {
     font-size: 32px;
     letter-spacing: -0.32px;
-  }
-
-  .ser-get-started-actions {
-    flex-direction: column;
-    width: 100%;
-    gap: 16px;
   }
 
   .ser-get-started-btn-primary,

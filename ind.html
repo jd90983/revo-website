@@ -270,6 +270,81 @@
     </div>
   </nav>
 
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobileMenuOverlay">
+    <div class="mobile-menu-header">
+      <div class="mobile-menu-logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="Revo" width="75" height="19">
+        </a>
+      </div>
+      <button class="mobile-menu-close" aria-label="Close menu" id="mobileMenuClose">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-menu-nav">
+      <ul>
+        <li>
+          <a href="ser.html">
+            Services
+            <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-menu-dropdown">
+          <button class="mobile-menu-dropdown-toggle" aria-expanded="false">
+            Industries
+            <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="mobile-menu-dropdown-content">
+            <p class="mobile-menu-category">Home Service Pros</p>
+            <ul class="mobile-menu-submenu">
+              <li><a href="ind.html">Air Duct Cleaning</a></li>
+              <li><a href="industry_locksmith.html">Locksmith</a></li>
+              <li><a href="ind.html">HVAC</a></li>
+              <li><a href="ind.html">Plumbing</a></li>
+              <li><a href="industry_home_service.html">Home Services</a></li>
+            </ul>
+            <p class="mobile-menu-category">Professional Businesses</p>
+            <ul class="mobile-menu-submenu">
+              <li><a href="ind.html">Healthcare & Medical</a></li>
+              <li><a href="ind.html">Small Business</a></li>
+              <li><a href="ind.html">IT & Technology</a></li>
+              <li><a href="ind.html">Legal</a></li>
+              <li><a href="ind.html">Corporate & Government</a></li>
+            </ul>
+            <a href="ind.html" class="mobile-menu-view-all">View All Industries →</a>
+          </div>
+        </li>
+        <li>
+          <a href="pricing.html">
+            Pricing
+            <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mobile-menu-footer">
+      <a href="tel:+18445231919" class="mobile-menu-phone">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        (844) 523-1919
+      </a>
+      <div class="mobile-menu-actions">
+        <button class="btn-login" type="button">Login</button>
+        <button class="btn-register" type="button">Get Started</button>
+      </div>
+    </div>
+  </div>
+
   <!-- Main Content -->
   <main id="main-content">
     <!-- Hero Section -->
@@ -291,8 +366,8 @@
             </div>
           </div>
           <div class="ind-hero-actions" style="display: flex !important; visibility: visible !important; opacity: 1 !important;">
-            <button class="ind-hero-btn-primary" type="button" style="color: #0A0B0C !important; background: #FFFFFF !important; visibility: visible !important; opacity: 1 !important; display: flex !important;">Get Started</button>
-            <button class="ind-hero-btn-secondary" type="button" style="color: #FFFFFF !important; background: rgba(255, 255, 255, 0.1) !important; visibility: visible !important; opacity: 1 !important; display: flex !important;">Book a Demo</button>
+            <button class="ind-hero-btn-primary" type="button">Get Started</button>
+            <button class="ind-hero-btn-secondary" type="button">Book a Demo</button>
           </div>
         </div>
       </div>
@@ -512,9 +587,6 @@
           <button class="ind-btn-primary" type="button">Get Started</button>
           <button class="ind-btn-secondary" type="button">
             Book a Demo
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
           </button>
         </div>
       </div>
@@ -620,9 +692,6 @@
           <button class="ind-btn-primary" type="button">Get Started</button>
           <button class="ind-btn-secondary" type="button">
             Book a Demo
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
           </button>
         </div>
       </div>
@@ -644,14 +713,9 @@
             <div class="ind-feature-text">
               <h2 class="ind-feature-heading">Every Call That Matters, None That Don't</h2>
               <p class="ind-feature-description">Revo automatically filters spam calls and prioritizes real customers — saving time and keeping your lines clear for actual opportunities. With adaptive voice recognition, it understands context and intent, responding naturally and professionally every time.</p>
-              <div class="ind-feature-actions">
-                <button class="ind-feature-btn-primary" type="button">Get Started</button>
-                <button class="ind-feature-btn-secondary" type="button">
-                  Hear a Sample
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
+              <div class="features-buttons ind-feature-actions">
+                <button class="btn-primary-large">Get Started</button>
+                <button class="btn-secondary-large">Book a Demo</button>
               </div>
             </div>
             <div class="ind-feature-image">
@@ -672,14 +736,9 @@
             <div class="ind-feature-text">
               <h2 class="ind-feature-heading">No Double Bookings, No Missed Opportunities</h2>
               <p class="ind-feature-description">Revo syncs seamlessly with your calendar to manage appointments and prevent overlapping bookings. It confirms availability, logs details, and instantly updates your system — all while maintaining your preferred communication style.</p>
-              <div class="ind-feature-actions">
-                <button class="ind-feature-btn-primary" type="button">Get Started</button>
-                <button class="ind-feature-btn-secondary" type="button">
-                  Hear a Sample
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
+              <div class="features-buttons ind-feature-actions">
+                <button class="btn-primary-large">Get Started</button>
+                <button class="btn-secondary-large">Book a Demo</button>
               </div>
             </div>
             <div class="ind-feature-image">
@@ -700,14 +759,9 @@
             <div class="ind-feature-text">
               <h2 class="ind-feature-heading">Multiple Conversations, One Perfect Experience</h2>
               <p class="ind-feature-description">Revo handles multiple calls simultaneously with ease — every caller receives immediate, personalized attention without waiting. Whether it's answering questions, capturing leads, or sending messages, Revo keeps your business responsive and reliable.</p>
-              <div class="ind-feature-actions">
-                <button class="ind-feature-btn-primary" type="button">Get Started</button>
-                <button class="ind-feature-btn-secondary" type="button">
-                  Hear a Sample
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-                </button>
+              <div class="features-buttons ind-feature-actions">
+                <button class="btn-primary-large">Get Started</button>
+                <button class="btn-secondary-large">Book a Demo</button>
               </div>
             </div>
             <div class="ind-feature-image">
@@ -983,12 +1037,12 @@
     <div id="transform-cta-template-container"></div>
 
     <!-- FAQ Section -->
-    <section class="ind-faq-section" style="background: #222324 !important; color: #FFFFFF !important; position: relative; z-index: 1; display: block !important; visibility: visible !important; opacity: 1 !important;">
+    <section class="ind-faq-section animate-in" id="faq">
       <div class="ind-container" style="color: #FFFFFF !important; display: flex !important; visibility: visible !important; opacity: 1 !important;">
         <div class="ind-faq-content">
           <div class="ind-faq-title-section">
             <h2 class="ind-faq-heading">FAQs</h2>
-            <p class="ind-faq-description">Get answers to the most common questions about Revo's intelligent virtual receptionist service.</p>
+            <p class="ind-faq-description">Common questions about Revo's AI virtual receptionist service</p>
             <button class="ind-faq-contact-btn" type="button">Contact</button>
           </div>
           <div class="ind-faq-accordion">
@@ -1076,7 +1130,12 @@
           <p class="newsletter-heading">Stay ahead with Revo's latest AI communication insights</p>
           <form class="newsletter-form">
             <input type="email" placeholder="Email address" required>
-            <button type="submit" class="newsletter-submit-btn">Subscribe</button>
+            <button type="submit" class="newsletter-submit-btn">
+              Subscribe
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
           </form>
           <p class="newsletter-disclaimer">
             By subscribing, you agree to our privacy policy and communication updates
@@ -1085,9 +1144,14 @@
 
         <!-- Links -->
         <div class="footer-links">
-          <div class="footer-column">
-            <h4>Quick links</h4>
-            <ul>
+          <div class="footer-column footer-dropdown">
+            <button class="footer-dropdown-toggle" aria-expanded="false">
+              <h4>Quick links</h4>
+              <svg class="footer-dropdown-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="footer-dropdown-content">
               <li><a href="ser.html">Services</a></li>
               <li><a href="ind.html">Industries</a></li>
               <li><a href="pricing.html">Pricing</a></li>
@@ -1096,9 +1160,14 @@
             </ul>
           </div>
 
-          <div class="footer-column">
-            <h4>Company</h4>
-            <ul>
+          <div class="footer-column footer-dropdown">
+            <button class="footer-dropdown-toggle" aria-expanded="false">
+              <h4>Company</h4>
+              <svg class="footer-dropdown-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="footer-dropdown-content">
               <li><a href="#about">About us</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><a href="#careers">Careers</a></li>
@@ -1173,6 +1242,7 @@
 
   <!-- Scripts -->
   <script src="js/navigation.js"></script>
+  <script src="js/accordion.js"></script>
   <script src="js/animations.js"></script>
   <script src="js/template-loader.js"></script>
   <script src="js/get-started-form.js"></script>

@@ -164,37 +164,6 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// FAQ Accordion Functionality
-function toggleSerFaq(button) {
-  const faqItem = button.closest('.ser-faq-item');
-  const isActive = faqItem.classList.contains('active');
-  
-  // Close all other FAQ items
-  document.querySelectorAll('.ser-faq-item').forEach(item => {
-    if (item !== faqItem) {
-      item.classList.remove('active');
-    }
-  });
-  
-  // Toggle current FAQ item
-  if (isActive) {
-    faqItem.classList.remove('active');
-  } else {
-    faqItem.classList.add('active');
-  }
-}
-
-// Initialize FAQ items on page load
-document.addEventListener('DOMContentLoaded', () => {
-  // Add click handlers to all FAQ questions
-  const faqQuestions = document.querySelectorAll('.ser-faq-question');
-  faqQuestions.forEach(question => {
-    question.addEventListener('click', function() {
-      toggleSerFaq(this);
-    });
-  });
-});
-
 // Smooth scroll animations for sections
 document.addEventListener('DOMContentLoaded', () => {
   const observerOptions = {
@@ -343,23 +312,24 @@ document.addEventListener('DOMContentLoaded', () => {
       progress = 0;
     }
 
-    // Calculate horizontal offset based on progress
-    // At progress 0: line1 is off-screen to the left (-100vw), line2 is off-screen to the right (+100vw)
-    // At progress 0.5: both lines are centered (0 offset)
-    // At progress 1: line1 is off-screen to the right (+100vw), line2 is off-screen to the left (-100vw)
-    // Line1: moves from -100vw (left) to +100vw (right) as progress goes from 0 to 1
-    // Line2: moves from +100vw (right) to -100vw (left) as progress goes from 0 to 1
-    const line1Offset = -100 + (progress * 200); // From -100vw to +100vw
-    const line2Offset = 100 - (progress * 200); // From +100vw to -100vw
+    // Calculate horizontal offset range based on screen size
+    // Desktop: full sweep (-100vw to +100vw)
+    // Tablet/Mobile: subtle movement (e.g. -30vw to +30vw) to avoid getting cut off
+    const hRange = window.innerWidth <= 1023 ? 60 : 200; 
+    const line1Offset = -(hRange/2) + (progress * hRange); 
+    const line2Offset = (hRange/2) - (progress * hRange); 
+
+    // Calculate vertical offset based on screen size (smaller on mobile/tablet)
+    const vOffset = window.innerWidth <= 767 ? 15 : (window.innerWidth <= 1023 ? 20 : 60);
 
     // Update line1 (slides from left to right, passing through center)
-    const line1Transform = `translate(calc(-50% + ${line1Offset}vw), calc(-50% - 50px))`;
+    const line1Transform = `translate(calc(-50% + ${line1Offset}vw), calc(-50% - ${vOffset}px))`;
     line1.style.transform = line1Transform;
     // Opacity: visible when in viewport range (0.2 to 0.8 progress)
     line1.style.opacity = progress >= 0.2 && progress <= 0.8 ? 1 : Math.max(0, 1 - Math.abs(progress - 0.5) * 2);
 
     // Update line2 (slides from right to left, passing through center)
-    const line2Transform = `translate(calc(-50% + ${line2Offset}vw), calc(-50% + 50px))`;
+    const line2Transform = `translate(calc(-50% + ${line2Offset}vw), calc(-50% + ${vOffset}px))`;
     line2.style.transform = line2Transform;
     // Opacity: visible when in viewport range (0.2 to 0.8 progress)
     line2.style.opacity = progress >= 0.2 && progress <= 0.8 ? 1 : Math.max(0, 1 - Math.abs(progress - 0.5) * 2);
@@ -627,8 +597,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ===== HOW IT WORKS: MOBILE CAROUSEL WITH DOTS =====
 document.addEventListener('DOMContentLoaded', function() {
-  // Only run on mobile
-  const isMobile = () => window.innerWidth <= 767;
+  // Only run on mobile and tablet
+  const isMobile = () => window.innerWidth <= 1023;
 
   if (!isMobile()) return;
 

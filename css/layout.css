@@ -804,7 +804,8 @@ body.mobile-menu-open {
 
 /* HOME PAGE HERO BUTTONS - EXACT FIGMA SPECIFICATIONS */
 /* Primary "Get Started" button - WHITE background */
-.hero-actions .btn-primary-large {
+.hero-actions .btn-primary-large,
+.ser-services-header-actions .btn-primary-large {
   background: #ffffff; /* EXACT: WHITE not blue! */
   color: #0a0b0c; /* EXACT: BLACK text */
   border: none;
@@ -821,14 +822,16 @@ body.mobile-menu-open {
   box-sizing: border-box;
 }
 
-.hero-actions .btn-primary-large:hover {
+.hero-actions .btn-primary-large:hover,
+.ser-services-header-actions .btn-primary-large:hover {
   background: #f5f5f5;
   transform: none;
   box-shadow: none;
 }
 
 /* Secondary "Book a Demo" button - Transparent white */
-.hero-actions .btn-secondary-large {
+.hero-actions .btn-secondary-large,
+.ser-services-header-actions .btn-secondary-large {
   background: rgba(255, 255, 255, 0.1); /* EXACT: 10% white opacity */
   color: #ffffff; /* EXACT: WHITE text */
   border: 1px solid transparent;
@@ -843,7 +846,8 @@ body.mobile-menu-open {
   box-sizing: border-box;
 }
 
-.hero-actions .btn-secondary-large:hover {
+.hero-actions .btn-secondary-large:hover,
+.ser-services-header-actions .btn-secondary-large:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: none;
 }
@@ -1055,31 +1059,20 @@ body.mobile-menu-open {
 
 .features-buttons .btn-outline-white,
 .features-buttons .btn-text-white,
-.features-buttons .btn-primary-large {
+.features-buttons .btn-primary-large,
+.features-buttons .btn-secondary-large,
+.features-buttons .transform-cta-btn-secondary {
   width: 200px;
   box-sizing: border-box;
 }
 
-.features-buttons .btn-primary-large {
-  background: #ffffff;
-  color: #0a0b0c;
-  border: none;
-  padding: 10px 24px;
-  border-radius: 100px;
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+.features-buttons .btn-primary-large,
+.features-buttons .btn-secondary-large {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: background-color 0.2s ease;
   white-space: nowrap;
-}
-
-.features-buttons .btn-primary-large:hover {
-  background: #f5f5f5;
 }
 
 /* Button 1: "Get Started" - Perfect oval/pill shape */
@@ -2270,7 +2263,9 @@ body.mobile-menu-open {
 .faq-section,
 .ind-faq-section,
 .locksmith-section.locksmith-section-dark-alt,
-.service-faq {
+.home-service-section.home-service-section-dark-alt,
+.service-faq,
+.ser-faqs {
   position: relative;
   width: 100%;
   background-color: #222324;
@@ -2278,10 +2273,28 @@ body.mobile-menu-open {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Scroll Animation - Consistent State */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.faq-section.animate-in,
+.ind-faq-section.animate-in,
+.locksmith-section.locksmith-section-dark-alt.animate-in,
+.home-service-section.home-service-section-dark-alt.animate-in,
+.service-faq.animate-in,
+.ser-faqs.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
 
 /* Container */
-.faq-section-container {
+.faq-section-container,
+.ser-faq-section-container,
+.home-service-container,
+.locksmith-container,
+.ind-container {
   max-width: 1280px;
   width: 100%;
   display: flex;
@@ -2290,7 +2303,11 @@ body.mobile-menu-open {
 }
 
 /* FAQ Wrapper - 2 Columns */
-.faq-wrapper {
+.faq-wrapper,
+.ser-faq-wrapper,
+.ind-faq-content,
+.home-service-two-column,
+.locksmith-two-column {
   display: grid;
   grid-template-columns: 500px 1fr;
   gap: 60px;
@@ -2299,19 +2316,28 @@ body.mobile-menu-open {
 }
 
 /* LEFT COLUMN */
-.faq-left {
+.faq-left,
+.ser-faq-left,
+.ind-faq-title-section,
+.home-service-faq-title-section,
+.locksmith-faq-title-section {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.faq-header {
+.faq-header,
+.ser-faq-header {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.faq-title {
+.faq-title,
+.ser-faq-title,
+.ind-faq-heading,
+.home-service-heading-left,
+.locksmith-heading-left {
   font-family: var(--font-heading);
   font-weight: var(--font-bold);
   font-size: 52px;
@@ -2321,7 +2347,11 @@ body.mobile-menu-open {
   margin: 0;
 }
 
-.faq-description {
+.faq-description,
+.ser-faq-description,
+.ind-faq-description,
+.home-service-description-left,
+.locksmith-description-left {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 16px;
@@ -2330,12 +2360,16 @@ body.mobile-menu-open {
   margin: 0;
 }
 
-.faq-actions {
+.faq-actions,
+.ser-faq-actions {
   display: flex;
   gap: 24px;
 }
 
-.btn-contact {
+.btn-contact,
+.ind-faq-contact-btn,
+.home-service-btn-contact,
+.locksmith-btn-contact {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2352,9 +2386,13 @@ body.mobile-menu-open {
   transition: all 0.2s ease;
   white-space: nowrap;
   outline: none;
+  width: fit-content;
 }
 
-.btn-contact:hover {
+.btn-contact:hover,
+.ind-faq-contact-btn:hover,
+.home-service-btn-contact:hover,
+.locksmith-btn-contact:hover {
   background-color: rgba(10, 11, 12, 0.8);
 }
 
@@ -2362,7 +2400,9 @@ body.mobile-menu-open {
 .accordion-list,
 .ind-faq-accordion,
 .locksmith-faq-accordion,
-.service-faq-accordion {
+.service-faq-accordion,
+.ser-faq-accordion-list,
+.home-service-faq-accordion {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -2370,11 +2410,13 @@ body.mobile-menu-open {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Accordion Item - Override generic accordion styles */
+/* Accordion Item - Unified Across All Pages */
 .faq-section .accordion-item,
 .ind-faq-item,
 .locksmith-faq-item,
-.service-faq-item {
+.service-faq-item,
+.ser-faq-item,
+.home-service-faq-item {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -2385,28 +2427,13 @@ body.mobile-menu-open {
   padding: 0;
 }
 
-.faq-section .accordion-item:hover,
-.ind-faq-item:hover,
-.locksmith-faq-item:hover,
-.service-faq-item:hover {
-  background: transparent;
-  border: none;
-}
-
-.faq-section .accordion-item.active,
-.faq-section .accordion-item.open,
-.ind-faq-item.active,
-.locksmith-faq-item.active,
-.service-faq-item.active {
-  background: transparent;
-  border: none;
-}
-
 /* Accordion Question (Header) */
 .faq-section .accordion-question,
 .ind-faq-question,
 .locksmith-faq-question,
-.service-faq-question {
+.service-faq-question,
+.ser-faq-question,
+.home-service-faq-question {
   width: 100%;
   display: flex;
   align-items: center;
@@ -2418,40 +2445,42 @@ body.mobile-menu-open {
   outline: none;
   position: relative;
   overflow: hidden;
+  transition: background 0.4s ease, transform 0.3s ease;
 }
 
-.faq-section .accordion-item:first-child .accordion-question,
-.ind-faq-item:first-child .ind-faq-question,
-.locksmith-faq-item:first-child .locksmith-faq-question,
-.service-faq-item:first-child .service-faq-question {
-  border-top: none;
-  padding-top: 0;
-}
-
-.faq-section .accordion-question:hover,
-.ind-faq-question:hover,
-.locksmith-faq-question:hover,
-.service-faq-question:hover {
-  opacity: 0.9;
-}
-
-.faq-section .question-text,
+.faq-section .accordion-question p,
 .ind-faq-question p,
 .locksmith-faq-question p,
-.service-faq-question span {
-  flex: 1 0 0;
+.service-faq-question p,
+.ser-faq-question-text,
+.home-service-faq-question p {
+  flex: 1;
   font-family: var(--font-body);
   font-weight: 300;
   font-size: 18px;
   line-height: 1.5;
   color: #ffffff;
   margin: 0;
-  min-width: 0;
-  white-space: pre-wrap;
+  text-align: left;
+}
+
+.faq-section .accordion-item:first-child .accordion-question,
+.ind-faq-item:first-child .ind-faq-question,
+.locksmith-faq-item:first-child .locksmith-faq-question,
+.service-faq-item:first-child .service-faq-question,
+.ser-faq-item:first-child .ser-faq-question,
+.home-service-faq-item:first-child .home-service-faq-question {
+  border-top: none;
+  padding-top: 0;
 }
 
 /* Accordion Icon (Chevron) */
-.faq-section .accordion-icon {
+.faq-section .accordion-icon,
+.ind-faq-question svg,
+.locksmith-faq-question svg,
+.service-faq-icon,
+.ser-faq-icon,
+.home-service-faq-question svg {
   flex-shrink: 0;
   width: 24px;
   height: 24px;
@@ -2459,42 +2488,18 @@ body.mobile-menu-open {
   align-items: center;
   justify-content: center;
   color: #ffffff;
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.3s ease;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   position: relative;
   transform: rotate(180deg);
-}
-
-.ind-faq-question svg,
-.locksmith-faq-question svg,
-.service-faq-icon {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.3s ease;
-  overflow: hidden;
-  position: relative;
-  transform: rotate(180deg);
-}
-
-.faq-section .accordion-icon svg,
-.ind-faq-question svg,
-.locksmith-faq-question svg,
-.service-faq-icon {
-  width: 100%;
-  height: 100%;
-  display: block;
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .faq-section .accordion-item.active .accordion-icon,
 .ind-faq-item.active .ind-faq-question svg,
 .locksmith-faq-item.active .locksmith-faq-question svg,
-.service-faq-item.active .service-faq-icon {
+.service-faq-item.active .service-faq-icon,
+.ser-faq-item.active .ser-faq-icon,
+.home-service-faq-item.active .home-service-faq-question svg {
   transform: rotate(0deg);
 }
 
@@ -2502,12 +2507,14 @@ body.mobile-menu-open {
 .faq-section .accordion-answer,
 .ind-faq-answer,
 .locksmith-faq-answer,
-.service-faq-answer {
+.service-faq-answer,
+.ser-faq-answer,
+.home-service-faq-answer {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-              padding 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              padding 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0;
   background: transparent;
   border: none;
@@ -2518,57 +2525,50 @@ body.mobile-menu-open {
 .faq-section .accordion-item.active .accordion-answer,
 .ind-faq-item.active .ind-faq-answer,
 .locksmith-faq-item.active .locksmith-faq-answer,
-.service-faq-item.active .service-faq-answer {
+.service-faq-item.active .service-faq-answer,
+.ser-faq-item.active .ser-faq-answer,
+.home-service-faq-item.active .home-service-faq-answer {
   max-height: 500px;
   padding-bottom: 16px;
   padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
-  background: transparent;
   opacity: 1;
-  transition: max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-              padding 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              padding 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
 }
 
-.faq-section .answer-text {
-  font-family: var(--font-body);
-  font-weight: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  transform: translateY(-10px);
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s, 
-              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s;
-  opacity: 0;
-}
-
+/* Text slide-up animation for all FAQ answers */
+.faq-section .answer-text,
 .ind-faq-answer p,
 .locksmith-faq-answer p,
-.service-faq-answer p {
+.service-faq-answer p,
+.ser-faq-answer p,
+.ser-faq-answer-text,
+.home-service-faq-answer p {
   font-family: var(--font-body);
-  font-weight: 0;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
   margin: 0;
   padding: 0;
-  transform: translateY(-10px);
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s, 
-              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s;
+  transform: translateY(-8px);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.1s, 
+              opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.1s;
   opacity: 0;
 }
 
 .faq-section .accordion-item.active .answer-text,
 .ind-faq-item.active .ind-faq-answer p,
 .locksmith-faq-item.active .locksmith-faq-answer p,
-.service-faq-item.active .service-faq-answer p {
+.service-faq-item.active .service-faq-answer p,
+.ser-faq-item.active .ser-faq-answer p,
+.ser-faq-item.active .ser-faq-answer-text,
+.home-service-faq-item.active .home-service-faq-answer p {
   transform: translateY(0);
   opacity: 1;
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s, 
-              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.15s, 
+              opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.15s;
 }
 
 /* ===== FOOTER ===== */
@@ -2678,6 +2678,10 @@ body.mobile-menu-open {
 .newsletter-submit-btn:hover {
   background: rgba(10, 11, 12, 0.1);
   border-color: transparent;
+}
+
+.newsletter-submit-btn svg {
+  display: none;
 }
 
 .newsletter-disclaimer {
@@ -5068,8 +5072,15 @@ body.mobile-menu-open {
 
 .transform-cta-actions {
   display: flex;
-  gap: 16px;
+  gap: 24px;
   align-items: center;
+  justify-content: center;
+}
+
+.transform-cta-actions .transform-cta-btn-primary,
+.transform-cta-actions .transform-cta-btn-secondary {
+  width: 200px;
+  box-sizing: border-box;
 }
 
 .transform-cta-btn-primary {
