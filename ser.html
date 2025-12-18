@@ -20,9 +20,9 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/responsive.css">
   <link rel="stylesheet" href="css/shared-components.css">
   <link rel="stylesheet" href="css/ser.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
   <!-- Skip to main content for accessibility -->
@@ -54,6 +54,15 @@
                 <div class="megamenu-content-row">
                   <div class="megamenu-column">
                     <div class="megamenu-list">
+                      <a href="industry_home_service.html" class="megamenu-item">
+                        <div class="megamenu-icon">
+                          <img src="images/icons/solar_home-2-broken.svg" alt="Home Service Pros icon" width="24" height="24">
+                        </div>
+                        <div class="megamenu-content">
+                          <p class="megamenu-item-title">Home Service Pros</p>
+                          <p class="megamenu-item-subtitle">Professional services</p>
+                        </div>
+                      </a>
                       <a href="ind.html" class="megamenu-item">
                         <div class="megamenu-icon">
                           <img src="images/icons/fa6-solid_wind.svg" alt="Air Duct Cleaning icon" width="24" height="24">
@@ -79,15 +88,6 @@
                         <div class="megamenu-content">
                           <p class="megamenu-item-title">HVAC</p>
                           <p class="megamenu-item-subtitle">24/7 Help Desk</p>
-                        </div>
-                      </a>
-                      <a href="ind.html" class="megamenu-item">
-                        <div class="megamenu-icon">
-                          <img src="images/icons/plumbing_.svg" alt="Plumbing icon" width="24" height="24">
-                        </div>
-                        <div class="megamenu-content">
-                          <p class="megamenu-item-title">Plumbing</p>
-                          <p class="megamenu-item-subtitle">AI in Real Time</p>
                         </div>
                       </a>
                     </div>
@@ -121,13 +121,13 @@
                           <p class="megamenu-item-subtitle">See AI Live Now</p>
                         </div>
                       </a>
-                      <a href="industry_home_service.html" class="megamenu-item">
+                      <a href="ind.html" class="megamenu-item">
                         <div class="megamenu-icon">
-                          <img src="images/icons/solar_home-2-broken.svg" alt="Home Service Pros icon" width="24" height="24">
+                          <img src="images/icons/plumbing_.svg" alt="Plumbing icon" width="24" height="24">
                         </div>
                         <div class="megamenu-content">
-                          <p class="megamenu-item-title">Home Service Pros</p>
-                          <p class="megamenu-item-subtitle">Professional services</p>
+                          <p class="megamenu-item-title">Plumbing</p>
+                          <p class="megamenu-item-subtitle">AI in Real Time</p>
                         </div>
                       </a>
                     </div>
@@ -275,13 +275,32 @@
             </svg>
           </a>
         </li>
-        <li>
-          <a href="ind.html">
+        <li class="mobile-menu-dropdown">
+          <button class="mobile-menu-dropdown-toggle" aria-expanded="false">
             Industries
             <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-          </a>
+          </button>
+          <div class="mobile-menu-dropdown-content">
+            <p class="mobile-menu-category">Home Service Pros</p>
+            <ul class="mobile-menu-submenu">
+              <li><a href="ind.html">Air Duct Cleaning</a></li>
+              <li><a href="industry_locksmith.html">Locksmith</a></li>
+              <li><a href="ind.html">HVAC</a></li>
+              <li><a href="ind.html">Plumbing</a></li>
+              <li><a href="industry_home_service.html">Home Services</a></li>
+            </ul>
+            <p class="mobile-menu-category">Professional Businesses</p>
+            <ul class="mobile-menu-submenu">
+              <li><a href="ind.html">Healthcare & Medical</a></li>
+              <li><a href="ind.html">Small Business</a></li>
+              <li><a href="ind.html">IT & Technology</a></li>
+              <li><a href="ind.html">Legal</a></li>
+              <li><a href="ind.html">Corporate & Government</a></li>
+            </ul>
+            <a href="ind.html" class="mobile-menu-view-all">View All Industries →</a>
+          </div>
         </li>
         <li>
           <a href="pricing.html">
@@ -302,7 +321,7 @@
       </a>
       <div class="mobile-menu-actions">
         <button class="btn-login" type="button">Login</button>
-        <button class="btn-register" type="button">Register</button>
+        <button class="btn-register" type="button">Get Started</button>
       </div>
     </div>
   </div>
@@ -332,8 +351,10 @@
               </div>
             </div>
             <div class="ser-services-header-actions">
-              <button class="ser-services-header-btn-primary">Get Started</button>
-              <button class="ser-services-header-btn-secondary">Book a Demo</button>
+              <div class="btn-get-started-wrapper">
+                <button class="btn-primary-large">Get Started</button>
+              </div>
+              <button class="btn-secondary-large">Book a Demo</button>
             </div>
           </div>
         </div>
@@ -361,14 +382,9 @@
                 </p>
               </div>
             </div>
-            <div class="ser-ai-actions">
-              <button class="ser-ai-btn-primary">Get Started</button>
-              <button class="ser-ai-btn-secondary">
-                Hear a Sample
-                <svg class="ser-ai-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
+            <div class="features-buttons ser-ai-actions">
+              <button class="btn-primary-large">Get Started</button>
+              <button class="btn-outline-white">Hear a Sample</button>
             </div>
           </div>
           <div class="ser-ai-content-right">
@@ -388,7 +404,7 @@
       <div class="ser-section-container">
         <div class="ser-intelligent-header">
           <div class="ser-intelligent-tagline-wrapper">
-            <p class="ser-intelligent-tagline">Smarter communication starts with Revo</p>
+            <p class="ser-intelligent-tagline">Revo enables smarter communication</p>
           </div>
           <div class="ser-intelligent-title-content">
             <h2 class="ser-intelligent-title">
@@ -430,7 +446,10 @@
             </div>
           </div>
           <div class="ser-intelligent-image-container">
-            <img src="images/services/smarter_communication.png" alt="Business team collaboration" class="ser-intelligent-center-image">
+            <picture>
+              <source srcset="images/services/mobile_services_intelligent_communication.png" media="(max-width: 1023px)">
+              <img src="images/services/smarter_communication.png" alt="Business team collaboration" class="ser-intelligent-center-image">
+            </picture>
           </div>
           <div class="ser-intelligent-features-column">
             <div class="ser-intelligent-feature-item">
@@ -460,14 +479,43 @@
             </div>
           </div>
         </div>
-        <div class="ser-intelligent-actions">
-          <button class="ser-intelligent-btn-primary">Get Started</button>
-          <button class="ser-intelligent-btn-secondary">
+        <div class="benefits-modern-actions">
+          <button class="benefits-modern-btn-primary">Get Started</button>
+          <button class="benefits-modern-btn-secondary">
             Hear a Sample
-            <svg class="ser-intelligent-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
           </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience the Power Section -->
+    <section class="ser-experience-power">
+      <div class="ser-experience-background" aria-hidden="true">
+        <img src="images/backgrounds/experience_the_power_background.png" alt="" class="ser-experience-bg-image" />
+      </div>
+      <div class="ser-section-container">
+        <div class="ser-experience-content">
+          <div class="ser-experience-left">
+            <h2 class="ser-experience-heading">
+              Experience the power<br>
+              of Revo's AI<br>
+              receptionists
+            </h2>
+          </div>
+          <div class="ser-experience-right">
+            <div class="ser-experience-text">
+              <p class="ser-experience-description">
+                Discover how natural and human-like our AI virtual receptionists sound in real business calls.
+              </p>
+              <p class="ser-experience-description">
+                Revo understands tone, intent, and context — delivering intelligent, professional responses that feel effortless.
+              </p>
+            </div>
+            <div class="features-buttons ser-experience-actions">
+              <button class="btn-primary-large">Get Started</button>
+              <button class="transform-cta-btn-secondary">Hear a Sample</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -542,46 +590,11 @@
             </div>
           </div>
         </div>
-        <div class="ser-advanced-actions">
-          <button class="ser-advanced-btn-primary">Get Started</button>
-          <button class="ser-advanced-btn-secondary">
+        <div class="benefits-modern-actions">
+          <button class="benefits-modern-btn-primary">Get Started</button>
+          <button class="benefits-modern-btn-secondary">
             Hear a Sample
-            <svg class="ser-advanced-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
           </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience the Power Section -->
-    <section class="ser-experience-power">
-      <div class="ser-experience-background" aria-hidden="true">
-        <img src="images/backgrounds/experience_the_power_background.png" alt="" class="ser-experience-bg-image" />
-      </div>
-      <div class="ser-section-container">
-        <div class="ser-experience-content">
-          <div class="ser-experience-left">
-            <h2 class="ser-experience-heading">
-              Experience the power<br>
-              of Revo's AI<br>
-              receptionists
-            </h2>
-          </div>
-          <div class="ser-experience-right">
-            <div class="ser-experience-text">
-              <p class="ser-experience-description">
-                Discover how natural and human-like our AI virtual receptionists sound in real business calls.
-              </p>
-              <p class="ser-experience-description">
-                Revo understands tone, intent, and context — delivering intelligent, professional responses that feel effortless.
-              </p>
-            </div>
-            <div class="ser-experience-actions">
-              <button class="ser-experience-btn-primary">Try a Demo Call</button>
-              <button class="ser-experience-btn-secondary">Get Started</button>
-            </div>
-          </div>
         </div>
       </div>
     </section>
@@ -612,20 +625,19 @@
                 <div class="ser-how-card-top">
                   <p class="ser-how-card-tagline">01. Call Reception</p>
                   <div class="ser-how-card-text">
-                    <h3 class="ser-how-card-title">Where Every Call Begins with Intelligence</h3>
+                    <h3 class="ser-how-card-title">
+                      <span class="desktop-only-text">Where Every Call Begins with Intelligence</span>
+                      <span class="mobile-only-text">Smart Call Reception</span>
+                    </h3>
                     <p class="ser-how-card-description">
-                      Our AI tracks every communication nuance with sharp, focused intelligence. No detail escapes our system's careful analysis.
+                      <span class="desktop-only-text">Our AI tracks every communication nuance with sharp, focused intelligence. No detail escapes our system's careful analysis.</span>
+                      <span class="mobile-only-text">Our AI tracks every nuance with sharp intelligence. No detail escapes analysis.</span>
                     </p>
                   </div>
                 </div>
-                <div class="ser-how-card-actions">
-                  <button class="ser-how-btn-primary">Get Started</button>
-                  <button class="ser-how-btn-secondary">
-                    Hear a Sample
-                    <svg class="ser-how-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
+                <div class="features-buttons ser-how-card-actions">
+                  <button class="btn-primary-large">Get Started</button>
+                  <button class="btn-outline-white">Hear a Sample</button>
                 </div>
               </div>
               <div class="ser-how-card-image">
@@ -642,20 +654,19 @@
                 <div class="ser-how-card-top">
                   <p class="ser-how-card-tagline">02. Call Analysis</p>
                   <div class="ser-how-card-text">
-                    <h3 class="ser-how-card-title">Understanding Every Word and Intention</h3>
+                    <h3 class="ser-how-card-title">
+                      <span class="desktop-only-text">Understanding Every Word and Intention</span>
+                      <span class="mobile-only-text">Intelligent Analysis</span>
+                    </h3>
                     <p class="ser-how-card-description">
-                      Each interaction ends with clear outcomes and actionable insights. Your business stays informed and connected.
+                      <span class="desktop-only-text">Each interaction ends with clear outcomes and actionable insights. Your business stays informed and connected.</span>
+                      <span class="mobile-only-text">Each interaction ends with clear outcomes. Your business stays connected.</span>
                     </p>
                   </div>
                 </div>
-                <div class="ser-how-card-actions">
-                  <button class="ser-how-btn-primary">Get Started</button>
-                  <button class="ser-how-btn-secondary">
-                    Hear a Sample
-                    <svg class="ser-how-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
+                <div class="features-buttons ser-how-card-actions">
+                  <button class="btn-primary-large">Get Started</button>
+                  <button class="btn-outline-white">Hear a Sample</button>
                 </div>
               </div>
             </div>
@@ -666,20 +677,19 @@
                 <div class="ser-how-card-top">
                   <p class="ser-how-card-tagline">03. Call Resolution</p>
                   <div class="ser-how-card-text">
-                    <h3 class="ser-how-card-title">Action with Accuracy and Care</h3>
+                    <h3 class="ser-how-card-title">
+                      <span class="desktop-only-text">Action with Accuracy and Care</span>
+                      <span class="mobile-only-text">Careful Resolution</span>
+                    </h3>
                     <p class="ser-how-card-description">
-                      Continuous learning improves our AI's performance with every single call. Performance gets better, faster.
+                      <span class="desktop-only-text">Continuous learning improves our AI's performance with every single call. Performance gets better, faster.</span>
+                      <span class="mobile-only-text">Continuous learning improves performance with every single call.</span>
                     </p>
                   </div>
                 </div>
-                <div class="ser-how-card-actions">
-                  <button class="ser-how-btn-primary">Get Started</button>
-                  <button class="ser-how-btn-secondary">
-                    Hear a Sample
-                    <svg class="ser-how-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                  </button>
+                <div class="features-buttons ser-how-card-actions">
+                  <button class="btn-primary-large">Get Started</button>
+                  <button class="btn-outline-white">Hear a Sample</button>
                 </div>
               </div>
               <div class="ser-how-card-image">
@@ -706,14 +716,9 @@
               </div>
             </div>
           </div>
-          <div class="ser-benefits-actions">
-            <button class="ser-btn-get-started">Get Started</button>
-            <button class="ser-btn-book-demo">
-              Book a Demo
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
+          <div class="benefits-modern-actions">
+            <button class="benefits-modern-btn-primary">Get Started</button>
+            <button class="benefits-modern-btn-secondary">Book a Demo</button>
           </div>
         </div>
         <div class="ser-benefits-content">
@@ -782,14 +787,9 @@
               </div>
             </div>
           </div>
-          <div class="ser-benefits-actions">
-            <button class="ser-btn-get-started">Get Started</button>
-            <button class="ser-btn-book-demo">
-              Book a Demo
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
+          <div class="features-buttons ser-ai-actions">
+            <button class="btn-primary-large">Get Started</button>
+            <button class="btn-outline-white">Book a Demo</button>
           </div>
         </div>
         <div class="ser-benefits-content">
@@ -871,7 +871,7 @@
               <li>Compliant with global data protection regulations</li>
             </ul>
             <div class="ser-ai-actions">
-              <button class="ser-ai-btn-primary">Get Started</button>
+              <button class="benefits-modern-btn-primary">Get Started</button>
             </div>
           </div>
           <div class="ser-ai-content-right">
@@ -1074,16 +1074,16 @@
     </section>
 
     <!-- FAQs Section -->
-    <section class="ser-faqs">
+    <section class="ser-faqs animate-in" id="faq">
       <div class="ser-faq-section-container">
         <div class="ser-faq-wrapper">
           <div class="ser-faq-left">
             <div class="ser-faq-header">
               <h2 class="ser-faq-title">FAQs</h2>
-              <p class="ser-faq-description">Common questions about Revo's AI answering service and how it can help your business.</p>
+              <p class="ser-faq-description">Common questions about Revo's AI virtual receptionist service</p>
             </div>
             <div class="ser-faq-actions">
-              <button class="btn-secondary-large">View All FAQs</button>
+              <button class="btn-contact">Contact</button>
             </div>
           </div>
           <div class="ser-faq-accordion-list">
@@ -1184,7 +1184,12 @@
           <p class="newsletter-heading">Stay ahead with Revo's latest AI communication insights</p>
           <form class="newsletter-form">
             <input type="email" placeholder="Email address" required>
-            <button type="submit" class="newsletter-submit-btn">Subscribe</button>
+            <button type="submit" class="newsletter-submit-btn">
+              Subscribe
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
           </form>
           <p class="newsletter-disclaimer">
             By subscribing, you agree to our privacy policy and communication updates
@@ -1193,10 +1198,15 @@
 
         <!-- Links -->
         <div class="footer-links">
-          <div class="footer-column">
-            <h4>Quick links</h4>
-            <ul>
-              <li><a href="ser.html" class="active">Services</a></li>
+          <div class="footer-column footer-dropdown">
+            <button class="footer-dropdown-toggle" aria-expanded="false">
+              <h4>Quick links</h4>
+              <svg class="footer-dropdown-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="footer-dropdown-content">
+              <li><a href="ser.html">Services</a></li>
               <li><a href="ind.html">Industries</a></li>
               <li><a href="pricing.html">Pricing</a></li>
               <li><a href="#demo">Demo</a></li>
@@ -1204,9 +1214,14 @@
             </ul>
           </div>
 
-          <div class="footer-column">
-            <h4>Company</h4>
-            <ul>
+          <div class="footer-column footer-dropdown">
+            <button class="footer-dropdown-toggle" aria-expanded="false">
+              <h4>Company</h4>
+              <svg class="footer-dropdown-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <ul class="footer-dropdown-content">
               <li><a href="#about">About us</a></li>
               <li><a href="#contact">Contact</a></li>
               <li><a href="#careers">Careers</a></li>
@@ -1281,6 +1296,7 @@
 
   <!-- JavaScript -->
   <script src="js/navigation.js"></script>
+  <script src="js/accordion.js"></script>
   <script src="js/main.js"></script>
   <script src="js/template-loader.js"></script>
   <script src="js/get-started-form.js"></script>

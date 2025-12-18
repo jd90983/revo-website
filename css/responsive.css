@@ -120,18 +120,57 @@
     right: -40px;
   }
 
-  /* FAQ Section */
-  .faq-section {
-    padding: 80px 40px;
+  /* FAQ Section - Consistent Across Pages */
+  .faq-section,
+  .ind-faq-section,
+  .ser-faqs,
+  .home-service-section-dark-alt,
+  .locksmith-section-dark-alt {
+    padding: 80px 40px !important;
   }
 
-  .faq-section .faq-wrapper {
-    grid-template-columns: 400px 1fr;
-    gap: 60px;
+  .faq-section .faq-wrapper,
+  .ind-faq-content,
+  .ser-faq-wrapper,
+  .home-service-two-column,
+  .locksmith-two-column {
+    display: grid !important;
+    grid-template-columns: 400px 1fr !important;
+    gap: 60px !important;
+    align-items: flex-start !important;
   }
 
-  .faq-title {
-    font-size: 42px;
+  .faq-title,
+  .ser-faq-title,
+  .ind-faq-heading,
+  .home-service-heading-left,
+  .locksmith-heading-left {
+    font-size: 42px !important;
+  }
+
+  .faq-description,
+  .ser-faq-description,
+  .ind-faq-description,
+  .home-service-description-left,
+  .locksmith-description-left {
+    font-size: 16px !important;
+  }
+
+  .faq-section .accordion-question p,
+  .ind-faq-question p,
+  .locksmith-faq-question p,
+  .ser-faq-question-text,
+  .home-service-faq-question p {
+    font-size: 18px !important;
+  }
+
+  .faq-section .answer-text,
+  .ind-faq-answer p,
+  .locksmith-faq-answer p,
+  .ser-faq-answer p,
+  .ser-faq-answer-text,
+  .home-service-faq-answer p {
+    font-size: 16px !important;
   }
 
   /* Footer */
@@ -259,7 +298,7 @@
   }
 
   .trust-testimonial-quote::before {
-    content: """;
+    content: "\"";
     font-size: 32px;
     color: #0F5AD7;
     display: block;
@@ -467,7 +506,8 @@
     margin-bottom: 48px !important; /* Increased spacing below subtitle (from 32px desktop) */
   }
 
-  .hero-actions {
+  .hero-actions,
+  .ser-services-header-actions {
     flex-direction: column;
     width: 100%;
     gap: 12px;
@@ -476,7 +516,10 @@
 
   .hero-actions button,
   .hero-actions .btn-primary-large,
-  .hero-actions .btn-secondary-large {
+  .hero-actions .btn-secondary-large,
+  .ser-services-header-actions button,
+  .ser-services-header-actions .btn-primary-large,
+  .ser-services-header-actions .btn-secondary-large {
     width: 100%;
     max-width: 300px;
     padding: 12px 24px;
@@ -492,24 +535,28 @@
   }
 
   /* Ensure both buttons have consistent border-box sizing */
-  .hero-actions .btn-primary-large {
+  .hero-actions .btn-primary-large,
+  .ser-services-header-actions .btn-primary-large {
     border: none;
     width: 100% !important;
     max-width: 300px !important;
   }
 
-  .hero-actions .btn-secondary-large {
+  .hero-actions .btn-secondary-large,
+  .ser-services-header-actions .btn-secondary-large {
     border: 1px solid transparent;
     width: 100% !important;
     max-width: 300px !important;
   }
 
-  .hero-actions .btn-get-started-wrapper {
+  .hero-actions .btn-get-started-wrapper,
+  .ser-services-header-actions .btn-get-started-wrapper {
     width: 100%;
     max-width: 300px;
   }
 
-  .hero-actions .btn-get-started-wrapper .btn-primary-large {
+  .hero-actions .btn-get-started-wrapper .btn-primary-large,
+  .ser-services-header-actions .btn-get-started-wrapper .btn-primary-large {
     width: 100% !important;
     max-width: 300px !important;
   }
@@ -621,7 +668,7 @@
 
   .features-cards-container {
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
     width: 100%;
   }
 
@@ -662,7 +709,9 @@
 
   .features-buttons .btn-primary-large,
   .features-buttons .btn-outline-white,
-  .features-buttons .btn-text-white {
+  .features-buttons .btn-secondary-large,
+  .features-buttons .btn-text-white,
+  .features-buttons .transform-cta-btn-secondary {
     width: 100%;
     max-width: 300px;
     padding: 12px 24px;
@@ -936,12 +985,7 @@
   }
 
   .trust-testimonial-quote::before {
-    content: """;
-    font-size: 32px;
-    color: #0F5AD7;
-    display: block;
-    margin-bottom: 8px;
-    line-height: 1;
+    display: none;
   }
 
   .trust-testimonial-author {
@@ -1046,38 +1090,80 @@
     display: flex !important;
   }
 
-  /* FAQ Section */
-  .faq-section {
-    padding: 60px 24px;
+  /* FAQ Section - Consistent Mobile Layout */
+  .faq-section,
+  .ind-faq-section,
+  .ser-faqs,
+  .home-service-section-dark-alt,
+  .locksmith-section-dark-alt {
+    padding: 60px 24px !important;
   }
 
-  .faq-section .faq-wrapper {
-    grid-template-columns: 1fr;
-    gap: 48px;
+  .faq-section .faq-wrapper,
+  .ind-faq-content,
+  .ser-faq-wrapper,
+  .home-service-two-column,
+  .locksmith-two-column {
+    display: flex !important;
+    flex-direction: column !important;
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
   }
 
-  .faq-section .faq-left {
-    text-align: center;
+  .faq-section .faq-left,
+  .ind-faq-title-section,
+  .ser-faq-left,
+  .home-service-faq-title-section,
+  .locksmith-faq-title-section {
+    text-align: center !important;
+    align-items: center !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
   }
 
-  .faq-section .faq-left .btn-contact {
-    margin: 0 auto;
+  .faq-section .faq-left .btn-contact,
+  .ind-faq-contact-btn,
+  .ser-faq-actions button,
+  .home-service-btn-contact,
+  .locksmith-btn-contact {
+    margin: 0 auto !important;
+    padding: 10px 24px !important;
+    border-radius: 100px !important;
+    min-width: 160px !important;
+    width: fit-content !important;
   }
 
-  .faq-title {
-    font-size: 36px;
+  .faq-title,
+  .ind-faq-heading,
+  .ser-faq-title,
+  .home-service-heading-left,
+  .locksmith-heading-left {
+    font-size: 36px !important;
   }
 
-  .faq-description {
-    font-size: 16px;
+  .faq-description,
+  .ind-faq-description,
+  .ser-faq-description,
+  .home-service-description-left,
+  .locksmith-description-left {
+    font-size: 16px !important;
   }
 
-  .question-text {
-    font-size: 16px;
+  .question-text,
+  .ind-faq-question p,
+  .ser-faq-question-text,
+  .home-service-faq-question p,
+  .locksmith-faq-question p {
+    font-size: 16px !important;
   }
 
-  .answer-text {
-    font-size: 15px;
+  .answer-text,
+  .ind-faq-answer p,
+  .ser-faq-answer p,
+  .home-service-faq-answer p,
+  .locksmith-faq-answer p {
+    font-size: 14px !important;
   }
 
   /* Footer */
@@ -1183,6 +1269,7 @@
   .newsletter-form input[type="email"] {
     width: 100%;
     padding-right: 50px;
+    border-radius: 100px !important;
   }
 
   .newsletter-disclaimer {
@@ -1195,7 +1282,7 @@
     top: 50%;
     transform: translateY(-50%);
     min-width: auto !important;
-    padding: 8px 12px !important;
+    padding: 0 !important;
     font-size: 0 !important;
     color: transparent !important;
     border-radius: 50% !important;
@@ -1204,13 +1291,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #0f5ad7 !important;
+    border: none !important;
+  }
+
+  .newsletter-submit-btn svg {
+    display: block !important;
+    color: #ffffff !important;
+    width: 18px !important;
+    height: 18px !important;
   }
 
   .newsletter-submit-btn::after {
-    content: ">";
-    font-size: 16px;
-    font-weight: bold;
-    color: #ffffff;
+    display: none;
   }
 
 
@@ -1244,16 +1337,13 @@
   .efficiency-heading,
   .power-cta-heading,
   .testimonials-header h2,
-  .faq-title {
+  .faq-title,
+  .ind-faq-heading,
+  .ser-faq-title,
+  .home-service-heading-left,
+  .locksmith-heading-left {
     font-size: 32px;
   }
-
-  /* FAQ Section */
-  .accordion-question {
-    padding: 16px 0;
-    gap: 16px;
-  }
-
 
   .how-feature-title {
     font-size: 22px;
@@ -1504,7 +1594,7 @@
 
   .hear-sample-card {
     padding: 16px;
-    min-height: 500px;
+    min-height: 600px;
     border-radius: 20px;
     background: #ffffff;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
@@ -1538,12 +1628,17 @@
 
   .hear-sample-chat {
     gap: 12px;
-    max-height: 380px;
-    min-height: 280px;
+    max-height: 520px;
+    min-height: 400px;
     padding-right: 4px;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
+  }
+
+  .hear-sample-chat::before,
+  .hear-sample-chat::after {
+    display: none;
   }
 
   /* Message bubbles on mobile */
@@ -2058,6 +2153,12 @@
   .transform-cta-actions {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 24px;
+  }
+
+  .transform-cta-actions .transform-cta-btn-primary,
+  .transform-cta-actions .transform-cta-btn-secondary {
+    width: 200px;
   }
 }
 
@@ -2081,8 +2182,8 @@
     gap: 12px;
   }
 
-  .transform-cta-btn-primary,
-  .transform-cta-btn-secondary {
+  .transform-cta-actions .transform-cta-btn-primary,
+  .transform-cta-actions .transform-cta-btn-secondary {
     width: 100%;
     max-width: 300px;
   }

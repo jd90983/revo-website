@@ -54,6 +54,25 @@ p {
   font-size: var(--text-small);
 }
 
+/* Visibility Utility Classes */
+.mobile-only-text {
+  display: none;
+}
+
+.desktop-only-text {
+  display: inline;
+}
+
+@media (max-width: 1023px) {
+  .mobile-only-text {
+    display: inline;
+  }
+  
+  .desktop-only-text {
+    display: none;
+  }
+}
+
 /* Skip to Main Content Link (Accessibility) */
 .skip-to-main {
   position: absolute;

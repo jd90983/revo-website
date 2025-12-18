@@ -320,49 +320,9 @@ main > section {
 .ser-services-header-actions {
   display: flex;
   gap: 16px;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.ser-services-header-btn-primary {
-  background: #ffffff;
-  border: none;
-  border-radius: 100px;
-  padding: 10px 24px;
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #0a0b0c;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-}
-
-.ser-services-header-btn-primary:hover {
-  background: rgba(255, 255, 255, 0.95);
-  transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.2);
-}
-
-.ser-services-header-btn-secondary {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0);
-  border-radius: 100px;
-  padding: 10px 24px;
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ffffff;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.ser-services-header-btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.15);
-  border-color: rgba(255, 255, 255, 0.3);
 }
 
 /* ===== AI RECEPTIONISTS SECTION ===== */
@@ -536,64 +496,12 @@ main > section {
   margin: 0;
 }
 
+/* Removed ser-ai-actions styles - now using features-buttons */
 .ser-ai-actions {
   display: flex;
   gap: 24px;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.ser-ai-btn-primary {
-  background: rgba(10, 11, 12, 0.05);
-  border: 1px solid var(--color-white);
-  border-radius: 100px;
-  padding: 10px 24px;
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-white);
-  cursor: pointer;
-  white-space: nowrap;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ser-ai-btn-primary:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: var(--color-white);
-}
-
-.ser-ai-btn-secondary {
-  background: transparent;
-  border: none;
-  border-radius: 100px;
-  padding: 10px 0;
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-white);
-  cursor: pointer;
-  white-space: nowrap;
-  transition: opacity 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.ser-ai-btn-secondary:hover {
-  opacity: 0.8;
-}
-
-.ser-ai-chevron {
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  color: var(--color-white);
 }
 
 .ser-ai-content-right {
@@ -871,64 +779,13 @@ main > section {
   border-radius: var(--radius-md);
 }
 
+/* Removed ser-intelligent-actions button styles */
 .ser-intelligent-actions {
   display: flex;
   gap: 24px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.ser-intelligent-btn-primary {
-  background: rgba(10, 11, 12, 0.05);
-  border: 1px solid transparent;
-  border-radius: 100px;
-  padding: 10px 24px;
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-text-dark);
-  cursor: pointer;
-  white-space: nowrap;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ser-intelligent-btn-primary:hover {
-  background: rgba(10, 11, 12, 0.1);
-}
-
-.ser-intelligent-btn-secondary {
-  background: transparent;
-  border: none;
-  border-radius: 100px;
-  padding: 10px 0;
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-text-dark);
-  cursor: pointer;
-  white-space: nowrap;
-  transition: opacity 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.ser-intelligent-btn-secondary:hover {
-  opacity: 0.8;
-}
-
-.ser-intelligent-chevron {
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  color: var(--color-text-dark);
 }
 
 .ser-tagline {
@@ -1295,6 +1152,7 @@ main > section {
   margin-bottom: 0;
 }
 
+/* Removed ser-experience-actions button styles */
 .ser-experience-actions {
   display: flex;
   gap: 16px;
@@ -1303,108 +1161,13 @@ main > section {
   margin-bottom: 0;
 }
 
-.ser-experience-btn-primary {
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #0a0b0c !important;
-  background: #ffffff !important;
-  border: none;
-  border-radius: 100px;
-  padding: 10px 24px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
-  white-space: nowrap;
-}
-
-.ser-experience-btn-primary:hover {
-  background: #f5f5f5 !important;
-  transform: translateY(-2px);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.ser-experience-btn-secondary {
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ffffff !important;
-  background: rgba(255, 255, 255, 0.1) !important;
-  border: 1px solid transparent;
-  border-radius: 100px;
-  padding: 10px 24px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
-  white-space: nowrap;
-}
-
-.ser-experience-btn-secondary:hover {
-  background: rgba(34, 35, 36, 1) !important;
-  transform: translateY(-2px);
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-}
-
+/* Removed ser-advanced-actions button styles */
 .ser-advanced-actions {
   display: flex;
   gap: 24px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.ser-advanced-btn-primary {
-  background: rgba(10, 11, 12, 0.05);
-  border: 1px solid transparent;
-  border-radius: 100px;
-  padding: 10px 24px;
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-text-dark);
-  cursor: pointer;
-  white-space: nowrap;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ser-advanced-btn-primary:hover {
-  background: rgba(10, 11, 12, 0.1);
-}
-
-.ser-advanced-btn-secondary {
-  background: transparent;
-  border: none;
-  border-radius: 100px;
-  padding: 10px 0;
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-text-dark);
-  cursor: pointer;
-  white-space: nowrap;
-  transition: opacity 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.ser-advanced-btn-secondary:hover {
-  opacity: 0.8;
-}
-
-.ser-advanced-chevron {
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  color: var(--color-text-dark);
 }
 
 /* ===== HOW IT WORKS SECTION ===== */
@@ -1591,64 +1354,12 @@ main > section {
   margin: 0;
 }
 
+/* Removed ser-how-card-actions button styles */
 .ser-how-card-actions {
   display: flex;
   gap: 24px;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.ser-how-btn-primary {
-  background: rgba(10, 11, 12, 0.05);
-  border: 1px solid var(--color-white);
-  border-radius: 100px;
-  padding: 10px 24px;
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-white);
-  cursor: pointer;
-  white-space: nowrap;
-  transition: background-color 0.2s ease, border-color 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.ser-how-btn-primary:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: var(--color-white);
-}
-
-.ser-how-btn-secondary {
-  background: transparent;
-  border: none;
-  border-radius: 100px;
-  padding: 10px 0;
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  color: var(--color-white);
-  cursor: pointer;
-  white-space: nowrap;
-  transition: opacity 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-}
-
-.ser-how-btn-secondary:hover {
-  opacity: 0.8;
-}
-
-.ser-how-chevron {
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
-  color: var(--color-white);
 }
 
 .ser-how-card-image {
@@ -1701,8 +1412,9 @@ main > section {
 /* ===== BENEFITS SECTION DUPLICATE - Dark Background ===== */
 .ser-benefits-duplicate {
   background: #0A0B0C;
-  min-height: 1300px;
-  height: 1300px;
+  min-height: auto;
+  height: auto;
+  padding-bottom: 80px;
 }
 
 .ser-benefits-duplicate .ser-benefits-background {
@@ -1891,56 +1603,12 @@ main > section {
   color: #0A0B0C;
 }
 
+/* Removed ser-benefits-actions button styles */
 .ser-benefits-actions {
   display: flex;
   gap: var(--space-md);
   align-items: center;
   justify-content: center;
-}
-
-.ser-btn-get-started {
-  background: rgba(10, 11, 12, 0.05);
-  border: 1px solid transparent;
-  border-radius: 100px;
-  padding: 10px 24px;
-  font-family: var(--font-body);
-  font-size: var(--text-regular);
-  font-weight: var(--font-medium);
-  line-height: 1.5;
-  color: var(--color-text-dark);
-  cursor: pointer;
-  transition: var(--transition-base);
-}
-
-.ser-btn-get-started:hover {
-  background: rgba(10, 11, 12, 0.1);
-}
-
-.ser-btn-book-demo {
-  background: transparent;
-  border: none;
-  border-radius: var(--radius-button);
-  padding: 10px 24px;
-  font-family: var(--font-body);
-  font-size: var(--text-regular);
-  font-weight: var(--font-medium);
-  line-height: var(--line-height-relaxed);
-  color: var(--color-text-dark);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: var(--transition-base);
-}
-
-.ser-btn-book-demo:hover {
-  background: rgba(10, 11, 12, 0.05);
-}
-
-.ser-btn-book-demo svg {
-  width: 24px;
-  height: 24px;
-  flex-shrink: 0;
 }
 
 .ser-benefits-content {
@@ -2335,6 +2003,12 @@ main > section {
   display: flex;
   gap: 24px;
   align-items: center;
+}
+
+.ser-get-started-actions .btn-primary-large,
+.ser-get-started-actions .btn-secondary-large {
+  width: 200px;
+  box-sizing: border-box;
 }
 
 .ser-get-started-btn-primary {
@@ -2883,11 +2557,11 @@ main > section {
   z-index: 4 !important;
   max-width: 1708px;
   width: 100%;
-  height: 230px;
+  height: 250px;
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   line-height: 1.2;
-  font-size: 90px;
+  font-size: 100px;
   color: #ffffff;
   text-align: center;
   display: flex;
@@ -2903,10 +2577,10 @@ main > section {
 .ser-intelligent-banner-line1,
 .ser-intelligent-banner-line2 {
   font-family: 'Inter', sans-serif;
-  font-size: 90px;
+  font-size: 100px;
   font-weight: 700;
   line-height: 1.2;
-  letter-spacing: -0.9px;
+  letter-spacing: -1px;
   color: #ffffff !important;
   margin: 0;
   text-align: center;
@@ -2951,34 +2625,33 @@ main > section {
 /* Responsive styles for Intelligent Banner */
 @media (max-width: 1023px) {
   .ser-intelligent-banner {
-    padding: 80px 64px;
-    min-height: 350px;
+    padding: 80px 48px 0px 48px;
+    min-height: auto;
+    height: auto;
   }
 
   .ser-intelligent-banner .ser-section-container {
     height: auto;
-    min-height: 200px;
+    min-height: auto;
   }
 
   .ser-intelligent-banner-content {
-    height: auto;
+    height: 90px; /* Reduced to pull content up */
     position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+    display: block;
+    text-align: center;
   }
 
   .ser-intelligent-banner-line1,
   .ser-intelligent-banner-line2 {
-    position: relative;
-    font-size: 48px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 28px;
     line-height: 1.2;
-    letter-spacing: -0.48px;
-    left: auto;
-    transform: none;
+    letter-spacing: -0.28px;
     width: 100%;
+    margin: 0;
   }
 
   .ser-intelligent-banner-line1 {
@@ -2992,34 +2665,33 @@ main > section {
 
 @media (max-width: 767px) {
   .ser-intelligent-banner {
-    padding: 60px 24px;
-    min-height: 300px;
+    padding: 70px 24px 0px 24px;
+    min-height: auto;
+    height: auto;
   }
 
   .ser-intelligent-banner .ser-section-container {
     height: auto;
-    min-height: 180px;
+    min-height: auto;
   }
 
   .ser-intelligent-banner-content {
-    height: auto;
+    height: 70px; /* Reduced to pull content up */
     position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-    justify-content: center;
+    display: block; /* Back to block/absolute as JS needs it */
+    text-align: center;
   }
 
   .ser-intelligent-banner-line1,
   .ser-intelligent-banner-line2 {
-    position: relative;
-    font-size: 32px;
-    line-height: 1.3;
-    letter-spacing: -0.32px;
-    left: auto;
-    transform: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 24px; /* Slightly smaller for better fit */
+    line-height: 1.1;
+    letter-spacing: -0.24px;
     width: 100%;
+    margin: 0;
   }
 
   .ser-intelligent-banner-line1 {
@@ -3031,214 +2703,7 @@ main > section {
   }
 }
 
-/* ===== FAQS SECTION ===== */
-.ser-faqs {
-  position: relative;
-  width: 100%;
-  background-color: #222324;
-  padding: 112px 64px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  opacity: 0;
-  transform: translateY(30px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.ser-faqs.animate-in {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
-
-.ser-faq-section-container {
-  max-width: 1280px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
-}
-
-.ser-faq-wrapper {
-  display: grid;
-  grid-template-columns: 500px 1fr;
-  gap: 60px;
-  width: 100%;
-  align-items: flex-start;
-}
-
-.ser-faq-left {
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-}
-
-.ser-faq-header {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.ser-faq-title {
-  font-family: var(--font-heading);
-  font-weight: var(--font-bold);
-  font-size: 52px;
-  line-height: 1.2;
-  letter-spacing: -0.52px;
-  color: #ffffff;
-  margin: 0;
-}
-
-.ser-faq-description {
-  font-family: var(--font-body);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ffffff;
-  margin: 0;
-}
-
-.ser-faq-actions {
-  display: flex;
-  gap: 24px;
-}
-
-.ser-faq-accordion-list {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.ser-faq-item {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-  overflow: visible;
-  padding: 0;
-}
-
-.ser-faq-item:first-child {
-  border-top: none;
-}
-
-.ser-faq-item:not(:first-child) .ser-faq-question {
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.ser-faq-question {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  padding: 16px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-  background: transparent;
-  cursor: pointer;
-  outline: none;
-  position: relative;
-  overflow: hidden;
-}
-
-.ser-faq-item:first-child .ser-faq-question {
-  border-top: none;
-  padding-top: 0;
-}
-
-.ser-faq-question:hover {
-  opacity: 0.9;
-}
-
-.ser-faq-question-text {
-  flex: 1 0 0;
-  font-family: var(--font-body);
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #ffffff;
-  margin: 0;
-  min-width: 0;
-  white-space: pre-wrap;
-}
-
-.ser-faq-icon {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), color 0.3s ease;
-  overflow: hidden;
-  position: relative;
-  transform: rotate(180deg);
-}
-
-.ser-faq-icon svg {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.ser-faq-item.active .ser-faq-icon {
-  transform: rotate(0deg);
-}
-
-.ser-faq-answer {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-              padding 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  padding: 0;
-  background: transparent;
-  border: none;
-  box-sizing: border-box;
-  opacity: 0;
-}
-
-.ser-faq-item.active .ser-faq-answer {
-  max-height: 500px;
-  padding-bottom: 16px;
-  padding-top: 0;
-  padding-left: 0;
-  padding-right: 0;
-  background: transparent;
-  opacity: 1;
-  transition: max-height 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-              padding 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
-              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
-}
-
-.ser-faq-answer-text {
-  font-family: var(--font-body);
-  font-weight: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #ffffff;
-  margin: 0;
-  padding: 0;
-  transform: translateY(-10px);
-  opacity: 0;
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s, 
-              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s;
-}
-
-.ser-faq-item.active .ser-faq-answer-text {
-  transform: translateY(0);
-  opacity: 1;
-  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s, 
-              opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.15s;
-}
-
-/* ===== FOOTER ===== */
-/* Footer styles are handled by layout.css */
-
-/* ===== RESPONSIVE DESIGN ===== */
+/* ===== FAQS SECTION handled by layout.css ===== */
 @media (max-width: 1023px) {
   .ser-hero-container,
   .ser-services-header-container {
@@ -3256,20 +2721,42 @@ main > section {
     letter-spacing: -0.56px;
   }
 
-  .ser-ai-content-wrapper {
-    flex-direction: column;
-    gap: var(--space-xl);
+  .ser-ai-receptionists .ser-ai-content-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
   }
 
   .ser-ai-content-left {
-    flex: 1;
-    width: 100%;
+    display: contents !important;
   }
 
   .ser-ai-content-right {
-    width: 100%;
-    height: 400px;
-    min-height: 400px;
+    display: contents !important;
+  }
+
+  .ser-ai-title-wrapper {
+    order: 1 !important;
+    width: 100% !important;
+    margin-bottom: var(--space-lg) !important;
+  }
+
+  .ser-reliability-list {
+    order: 2 !important;
+    width: 100% !important;
+    margin-bottom: var(--space-lg) !important;
+  }
+
+  .ser-ai-phone-mockup-container {
+    order: 3 !important;
+    width: 100% !important;
+    margin-bottom: var(--space-lg) !important;
+  }
+
+  .ser-ai-actions {
+    order: 4 !important;
+    width: 100% !important;
+    gap: 12px !important;
   }
 
   .ser-ai-phone-mockup-image {
@@ -3280,38 +2767,73 @@ main > section {
   }
 
   .ser-intelligent-features-wrapper {
-    flex-direction: column;
-    gap: var(--space-3xl);
+    flex-direction: column !important;
+    gap: 64px !important;
+    margin-bottom: 80px !important;
+    align-items: center !important;
   }
 
   .ser-intelligent-features-column {
-    gap: var(--space-3xl);
+    gap: 64px !important;
+    width: 100% !important;
+  }
+
+  .ser-intelligent-feature-item {
+    gap: 24px !important;
+  }
+
+  .ser-intelligent-feature-content {
+    gap: 16px !important;
   }
 
   .ser-intelligent-image-container {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    aspect-ratio: 1 / 1;
-    order: 2;
+    width: 320px !important;
+    height: 320px !important;
+    max-width: 90% !important;
+    aspect-ratio: 1 / 1 !important;
+    order: 2 !important;
+    margin: 40px auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    border-radius: 50% !important;
+  }
+
+  .ser-intelligent-center-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
   }
 
   .ser-intelligent-features-column:first-child {
-    order: 1;
+    order: 1 !important;
   }
 
   .ser-intelligent-features-column:last-child {
-    order: 3;
+    order: 3 !important;
   }
 
   .ser-advanced-features-row {
     flex-direction: column;
-    gap: var(--space-3xl);
+    gap: 48px;
     min-height: auto;
+    margin-bottom: 60px;
+  }
+
+  .ser-advanced-header {
+    margin-bottom: 48px;
+    max-width: 100%;
   }
 
   .ser-advanced-feature-column {
     width: 100%;
+    gap: 16px;
+  }
+
+  .ser-advanced-feature-content {
+    gap: 12px;
   }
 
   .ser-benefits {
@@ -3342,9 +2864,14 @@ main > section {
     gap: var(--space-xl);
   }
 
+  .ser-get-started {
+    padding: 20px 0 40px 0 !important;
+  }
+
   .ser-get-started-wrapper {
-    flex-direction: column;
-    gap: var(--space-3xl);
+    flex-direction: column !important;
+    gap: 0 !important;
+    padding: 0 var(--page-padding) !important;
   }
 
   .ser-get-started-title {
@@ -3399,6 +2926,225 @@ main > section {
 
   .ser-tailored-list {
     order: 2;
+  }
+
+  /* Experience Power Section - Tablet */
+  .ser-experience-power {
+    padding: 80px 0;
+  }
+
+  .ser-experience-content {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .ser-experience-left, .ser-experience-right {
+    width: 100%;
+  }
+
+  .ser-experience-right {
+    gap: 24px;
+  }
+
+  /* ===== HOW IT WORKS - TABLET & MOBILE CAROUSEL ===== */
+  /* Disable desktop sticky scroll behavior */
+  .ser-how-it-works-wrapper {
+    height: auto !important;
+    min-height: auto;
+    position: relative;
+  }
+
+  .ser-how-it-works {
+    padding: 60px 0 100px 0; /* Increased bottom padding to prevent cut-off */
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .ser-how-it-works .ser-section-container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    overflow: visible;
+  }
+
+  .ser-how-header {
+    margin-bottom: 32px;
+    padding: 0 24px;
+  }
+
+  .ser-how-title {
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .ser-how-description {
+    font-size: 16px;
+  }
+
+  /* Horizontal scrolling carousel */
+  .ser-how-cards-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+    padding: 40px 24px;
+    margin: 0;
+    position: relative;
+    height: auto !important;
+    min-height: 700px;
+    align-items: flex-end; /* Anchor all cards to the bottom */
+  }
+
+  .ser-how-cards-container::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  /* Reset card positioning for mobile carousel */
+  .ser-how-card {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    flex: 0 0 88%;
+    min-width: 88%;
+    max-width: 88%;
+    height: 100% !important;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    opacity: 0.6 !important;
+    transform: scale(0.94) !important;
+    transform-origin: bottom center; /* Keeps cards aligned at the bottom when scaling */
+    transition: opacity 0.4s ease, transform 0.4s ease !important;
+    display: flex !important;
+    align-items: stretch !important; /* Forces inner card to fill height */
+  }
+
+  .ser-how-card.carousel-active {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+  }
+
+  .ser-how-card-inner {
+    flex-direction: column;
+    min-height: 620px;
+    height: 100%; /* Fill the container height */
+    background: #0a0b0c;
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    transition: box-shadow 0.4s ease;
+    width: 100%;
+  }
+
+  .ser-how-card.carousel-active .ser-how-card-inner {
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Content always on top */
+  .ser-how-card-content {
+    padding: 32px 24px;
+    order: 1;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .ser-how-card-tagline {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+
+  .ser-how-card-title {
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+  }
+
+  .ser-how-card-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .ser-how-card-actions {
+    margin-top: 8px;
+    gap: 12px !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+  }
+
+  .ser-how-card-actions button {
+    width: auto !important;
+    flex: 1;
+    min-width: 0;
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
+
+  /* Image always on bottom */
+  .ser-how-card-image {
+    order: 2;
+    flex: 1;
+    min-height: 300px;
+    height: 300px;
+    border-radius: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+  }
+
+  .ser-how-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+  }
+
+  /* Dot navigation styles */
+  .ser-how-carousel-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 24px;
+    margin-top: 8px;
+  }
+
+  .ser-how-carousel-dot {
+    width: 10px !important;
+    height: 10px !important;
+    min-width: 10px !important;
+    min-height: 10px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.35);
+    border: none !important;
+    padding: 0 !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0 !important;
+  }
+
+  .ser-how-carousel-dot.active {
+    background: #ffffff;
+    width: 28px !important;
+    min-width: 28px !important;
+    border-radius: 100px !important;
   }
 }
 
@@ -3464,12 +3210,11 @@ main > section {
     width: 100%;
     gap: 12px;
     margin-top: 40px;
+    align-items: center;
   }
 
   .ser-hero-btn-primary,
-  .ser-hero-btn-secondary,
-  .ser-services-header-btn-primary,
-  .ser-services-header-btn-secondary {
+  .ser-hero-btn-secondary {
     width: 100%;
     justify-content: center;
   }
@@ -3482,8 +3227,20 @@ main > section {
     padding: 0 var(--page-padding-mobile);
   }
 
+  .ser-ai-receptionists .ser-ai-content-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
   .ser-ai-content-left {
-    gap: var(--space-lg);
+    display: contents !important;
+  }
+
+  .ser-ai-title-wrapper {
+    order: 1 !important;
+    width: 100% !important;
+    margin-bottom: var(--space-lg) !important;
   }
 
   .ser-ai-title {
@@ -3494,29 +3251,35 @@ main > section {
     font-size: var(--text-regular);
   }
 
-  .ser-ai-actions {
-    flex-direction: column;
-    width: 100%;
-    gap: var(--space-md);
+  .ser-reliability-list {
+    order: 2 !important;
+    width: 100% !important;
+    margin-bottom: var(--space-lg) !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
 
-  .ser-ai-btn-primary,
-  .ser-ai-btn-secondary {
-    width: 100%;
-    justify-content: center;
+  .ser-ai-actions {
+    order: 4 !important;
+    width: 100% !important;
+    gap: 12px !important;
+    display: flex !important;
+    flex-direction: column !important;
   }
+
+  /* Removed ser-ai-btn styles - now using features-buttons */
 
   .ser-ai-content-right {
-    height: auto;
-    min-height: auto;
-    padding: 0;
-    margin-top: -150px;
+    display: contents !important;
   }
 
   .ser-ai-phone-mockup-container {
-    width: 100%;
-    height: auto;
-    padding: 0 20px 40px 20px;
+    order: 3 !important;
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 20px 20px 20px !important;
+    margin-top: var(--space-lg) !important;
+    margin-bottom: var(--space-lg) !important;
   }
 
   .ser-ai-phone-mockup-image {
@@ -3557,7 +3320,7 @@ main > section {
   }
 
   .ser-intelligent-header {
-    margin-bottom: var(--space-3xl);
+    margin-bottom: 80px;
   }
 
   .ser-intelligent-title {
@@ -3569,29 +3332,62 @@ main > section {
   }
 
   .ser-intelligent-features-wrapper {
-    gap: var(--space-2xl);
-    margin-bottom: var(--space-3xl);
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 48px !important;
+    margin-bottom: 80px !important;
+    align-items: center !important;
+    width: 100% !important;
   }
 
   .ser-intelligent-features-column {
-    gap: var(--space-2xl);
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 48px !important;
+    width: 100% !important;
+  }
+
+  .ser-intelligent-feature-item {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .ser-intelligent-feature-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
   }
 
   .ser-intelligent-image-container {
-    width: 100%;
-    max-width: 100%;
+    width: 320px !important;
+    height: 320px !important;
+    max-width: 90% !important;
+    aspect-ratio: 1 / 1 !important;
+    order: 2 !important;
+    margin: 32px auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    overflow: hidden !important;
+    border-radius: 50% !important;
   }
 
-  .ser-intelligent-actions {
-    flex-direction: column;
-    width: 100%;
-    gap: var(--space-md);
+  .ser-intelligent-center-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
   }
 
-  .ser-intelligent-btn-primary,
-  .ser-intelligent-btn-secondary {
-    width: 100%;
-    justify-content: center;
+  .ser-intelligent-features-column:first-child {
+    order: 1 !important;
+  }
+
+  .ser-intelligent-features-column:last-child {
+    order: 3 !important;
   }
 
   .ser-advanced-solutions {
@@ -3603,7 +3399,7 @@ main > section {
   }
 
   .ser-advanced-header {
-    margin-bottom: var(--space-3xl);
+    margin-bottom: 80px;
   }
 
   .ser-advanced-title {
@@ -3616,13 +3412,22 @@ main > section {
 
   .ser-advanced-features-row {
     flex-direction: column;
-    gap: var(--space-2xl);
-    margin-bottom: var(--space-3xl);
+    gap: 32px;
+    margin-bottom: 48px;
     min-height: auto;
   }
 
   .ser-advanced-feature-column {
     width: 100%;
+    gap: 12px;
+  }
+
+  .ser-advanced-feature-content {
+    gap: 8px;
+  }
+
+  .ser-advanced-feature-title {
+    font-size: 18px;
   }
 
   /* Experience Power Section - Mobile */
@@ -3636,7 +3441,7 @@ main > section {
 
   .ser-experience-content {
     flex-direction: column;
-    gap: 40px;
+    gap: 24px;
     padding: 0;
     align-items: flex-start;
   }
@@ -3646,7 +3451,7 @@ main > section {
   }
 
   .ser-experience-heading {
-    font-size: 36px;
+    font-size: 32px;
     line-height: 1.2;
     text-align: left;
     width: 100%;
@@ -3654,24 +3459,29 @@ main > section {
 
   .ser-experience-right {
     width: 100%;
-    gap: 24px;
+    gap: 16px;
   }
 
   .ser-experience-text {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .ser-experience-description {
     font-size: 16px;
     line-height: 1.5;
     text-align: left;
+    margin: 0;
   }
 
   .ser-experience-actions {
     flex-direction: column;
     width: 100%;
-    gap: 16px;
+    gap: 12px;
     align-items: stretch;
+    margin-top: 8px;
   }
 
   .ser-experience-btn-primary,
@@ -3695,209 +3505,6 @@ main > section {
   .ser-advanced-btn-secondary {
     width: 100%;
     justify-content: center;
-  }
-
-  /* ===== HOW IT WORKS - MOBILE CAROUSEL ===== */
-  /* Disable desktop sticky scroll behavior */
-  .ser-how-it-works-wrapper {
-    height: auto !important;
-    min-height: auto;
-    position: relative;
-  }
-
-  .ser-how-it-works {
-    padding: 60px 0 42px 0; /* Reduced bottom padding by 30% (60px -> 42px) */
-    position: relative !important;
-    top: auto !important;
-  }
-
-  .ser-how-it-works .ser-section-container {
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    overflow: visible;
-  }
-
-  .ser-how-header {
-    margin-bottom: 32px;
-    padding: 0 24px;
-  }
-
-  .ser-how-title {
-    font-size: 28px;
-    line-height: 1.2;
-  }
-
-  .ser-how-description {
-    font-size: 16px;
-  }
-
-  /* Horizontal scrolling carousel */
-  .ser-how-cards-container {
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge */
-    padding: 0 24px 24px 24px;
-    margin: 0;
-    position: relative;
-    height: auto !important;
-  }
-
-  .ser-how-cards-container::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
-  }
-
-  /* Reset card positioning for mobile carousel */
-  .ser-how-card {
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-    flex: 0 0 85%;
-    min-width: 85%;
-    max-width: 85%;
-    height: auto !important;
-    scroll-snap-align: center;
-    scroll-snap-stop: always;
-    /* Carousel animation - cards scale and fade based on position */
-    opacity: 0.5 !important;
-    transform: scale(0.92) !important;
-    transition: opacity 0.4s ease, transform 0.4s ease !important;
-  }
-
-  /* Active card in center - full size and opacity */
-  .ser-how-card.carousel-active {
-    opacity: 1 !important;
-    transform: scale(1) !important;
-  }
-
-  .ser-how-card.active,
-  .ser-how-card.exiting {
-    position: relative !important;
-  }
-
-  .ser-how-card-inner {
-    flex-direction: column;
-    min-height: 520px; /* Fixed height for uniform cards */
-    height: 520px;
-    border-radius: 16px;
-    display: flex;
-    transition: box-shadow 0.4s ease;
-  }
-
-  /* Add glow effect to active card */
-  .ser-how-card.carousel-active .ser-how-card-inner {
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-  }
-
-  .ser-how-card-reverse {
-    flex-direction: column;
-  }
-
-  /* Content always on top - fixed height section */
-  .ser-how-card-content {
-    padding: 24px;
-    order: 1;
-    flex: 0 0 auto;
-    min-height: 320px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .ser-how-card-top {
-    gap: 12px;
-    flex: 1;
-  }
-
-  .ser-how-card-tagline {
-    font-size: 14px;
-  }
-
-  .ser-how-card-text {
-    gap: 16px;
-  }
-
-  .ser-how-card-title {
-    font-size: 22px;
-    line-height: 1.3;
-  }
-
-  .ser-how-card-description {
-    font-size: 15px;
-    line-height: 1.5;
-  }
-
-  /* Image always on bottom - fills remaining space */
-  .ser-how-card-image {
-    order: 2;
-    flex: 1;
-    min-height: 0;
-    height: 200px;
-    border-radius: 0 0 16px 16px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #1a1a1a;
-  }
-
-  .ser-how-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center center;
-  }
-
-  .ser-how-card-actions {
-    flex-direction: column;
-    width: 100%;
-    gap: 12px;
-    margin-top: 8px;
-  }
-
-  .ser-how-btn-primary,
-  .ser-how-btn-secondary {
-    width: 100%;
-    justify-content: center;
-    padding: 12px 20px;
-    font-size: 15px;
-  }
-
-  /* Dot navigation for carousel - created via JS */
-  .ser-how-carousel-dots {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: 20px 24px;
-    margin-top: 8px;
-  }
-
-  .ser-how-carousel-dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.35);
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    flex-shrink: 0;
-  }
-
-  .ser-how-carousel-dot:hover {
-    background: rgba(255, 255, 255, 0.5);
-  }
-
-  .ser-how-carousel-dot.active {
-    background: var(--color-primary, #4F6EF7);
-    transform: scale(1.2);
   }
 
   .ser-benefits {
@@ -3943,9 +3550,22 @@ main > section {
     justify-content: center;
   }
 
+  .ser-benefits .ser-section-container {
+    min-height: auto !important;
+    height: auto !important;
+    padding-bottom: 40px;
+  }
+
   .ser-benefits-content {
     flex-direction: column;
     gap: var(--space-lg);
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  .ser-benefits-accordion {
+    min-height: auto !important;
+    height: auto !important;
   }
 
   .ser-benefits-image {
@@ -3958,6 +3578,14 @@ main > section {
   .ser-benefits-accordion-title {
     font-size: 28px;
     letter-spacing: -0.28px;
+  }
+
+  .ser-get-started {
+    padding: 10px 0 40px 0 !important;
+  }
+
+  .ser-get-started-wrapper {
+    padding: 0 var(--page-padding-mobile) !important;
   }
 
   .ser-hero-title,
