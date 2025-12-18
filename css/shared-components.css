@@ -105,7 +105,7 @@
   flex: 1 0 0;
   display: flex;
   flex-direction: column;
-  gap: 35px;
+  gap: 100px;
 }
 
 .ser-get-started-header {
@@ -319,12 +319,12 @@
 
   .ser-get-started-header {
     order: 1;
-    margin-bottom: 48px;
+    margin-bottom: 100px;
   }
 
   .ser-get-started-right .ser-steps-timeline {
     order: 2;
-    margin-bottom: 48px;
+    margin-bottom: 64px;
   }
 
   .ser-get-started-left .features-buttons.ser-ai-actions {
@@ -374,12 +374,12 @@
 
   .ser-get-started-header {
     order: 1 !important;
-    margin-bottom: 32px;
+    margin-bottom: 80px !important;
   }
 
   .ser-get-started-right .ser-steps-timeline {
     order: 2 !important;
-    margin-bottom: 32px;
+    margin-bottom: 48px !important;
   }
 
   .ser-get-started-left .features-buttons.ser-ai-actions {

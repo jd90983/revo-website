@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.style.overflow = 'hidden';
       if (mobileMenuToggle) {
         mobileMenuToggle.setAttribute('aria-expanded', 'true');
+        mobileMenuToggle.classList.add('active');
       }
     }
   }
@@ -54,6 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.style.overflow = '';
       if (mobileMenuToggle) {
         mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        mobileMenuToggle.classList.remove('active');
       }
     }
   }
