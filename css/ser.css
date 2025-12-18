@@ -2371,6 +2371,7 @@ main > section {
   margin: 0;
   font-style: normal;
   letter-spacing: 0;
+  order: 2;
 }
 
 .ser-testimonial-author {
@@ -2378,6 +2379,7 @@ main > section {
   flex-direction: column;
   gap: 4px;
   align-items: flex-start;
+  order: 3;
 }
 
 .ser-testimonial-name {
@@ -2386,10 +2388,6 @@ main > section {
   font-weight: 700;
   color: var(--color-white);
   margin: 0;
-  text-decoration: underline;
-  text-decoration-color: var(--color-primary);
-  text-underline-offset: 4px;
-  text-decoration-thickness: 2px;
 }
 
 .ser-testimonial-company {
@@ -2424,6 +2422,16 @@ main > section {
 
   .ser-testimonial-author {
     align-items: center;
+    order: 2;
+    margin-bottom: 8px;
+  }
+
+  .ser-testimonial-text {
+    order: 3;
+  }
+
+  .testimonial-role {
+    display: block;
   }
 
   .ser-testimonial-bg-element {
@@ -2865,7 +2873,7 @@ main > section {
   }
 
   .ser-get-started {
-    padding: 20px 0 40px 0 !important;
+    padding: 80px 0 40px 0 !important;
   }
 
   .ser-get-started-wrapper {
@@ -3581,7 +3589,7 @@ main > section {
   }
 
   .ser-get-started {
-    padding: 10px 0 40px 0 !important;
+    padding: 60px 0 40px 0 !important;
   }
 
   .ser-get-started-wrapper {

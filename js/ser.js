@@ -424,23 +424,6 @@ if ('IntersectionObserver' in window) {
   });
 }
 
-// Mobile menu toggle (if navigation.js doesn't handle it)
-document.addEventListener('DOMContentLoaded', () => {
-  const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
-  const navbarMenu = document.querySelector('.navbar-menu');
-  
-  if (mobileMenuToggle && navbarMenu) {
-    mobileMenuToggle.addEventListener('click', () => {
-      navbarMenu.classList.toggle('active');
-      mobileMenuToggle.classList.toggle('active');
-      document.body.classList.toggle('menu-open');
-      
-      const isExpanded = navbarMenu.classList.contains('active');
-      mobileMenuToggle.setAttribute('aria-expanded', isExpanded);
-    });
-  }
-});
-
 // Add smooth scroll to anchor links
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
