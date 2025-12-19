@@ -14,6 +14,10 @@
   }
 
   /* Features Section */
+  .features {
+    padding: 80px 40px;
+  }
+
   .features-container {
     flex-direction: column;
     gap: var(--space-2xl);
@@ -104,7 +108,7 @@
   }
 
   .efficiency-content-wrapper {
-    max-width: 768px;
+    max-width: 1280px;
   }
 
   .efficiency-heading {
@@ -602,7 +606,7 @@
 
   /* Features Section */
   .features {
-    padding: 60px 20px;
+    padding: 60px 24px;
   }
 
   .features-container {
@@ -1408,7 +1412,6 @@
 
 /* ===== DESKTOP OPTIMIZATIONS (min-width: 1440px) ===== */
 @media (min-width: 1440px) {
-  .features-container,
   .how-it-works-container,
   .stats-container,
   .testimonials-container,

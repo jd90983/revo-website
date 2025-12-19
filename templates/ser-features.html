@@ -1,0 +1,386 @@
+<!-- 
+  SER Features (Dark Benefits) Section Template
+  This template includes the HTML, CSS, and JS for the dark variant of the Benefits accordion.
+  To use: 
+  1. Include the CSS in your stylesheet or a <style> tag.
+  2. Include the JS in your script file or a <script> tag.
+  3. Insert the HTML structure where needed.
+-->
+
+<!-- HTML Structure -->
+<section class="ser-benefits ser-benefits-duplicate">
+  <div class="ser-benefits-background"></div>
+  <div class="ser-section-container">
+    <div class="ser-benefits-header">
+      <div class="ser-benefits-title-wrapper">
+        <p class="ser-tagline">Features</p>
+        <div class="ser-benefits-heading-content">
+          <h2 class="ser-section-title">Intelligent Communication Tailored to <span class="text-primary">Every Business</span></h2>
+          <div class="ser-section-description">
+            <p>When you get started with Revo, your setup goes beyond automation — it’s personalization. We design every interaction to match your business’s tone, response timing, and customer experience goals. From call handling to scheduling, every detail reflects your brand’s unique voice.</p>
+          </div>
+        </div>
+      </div>
+      <div class="features-buttons ser-ai-actions">
+        <button class="btn-primary-large">Get Started</button>
+        <button class="btn-outline-white">Book a Demo</button>
+      </div>
+    </div>
+    <div class="ser-benefits-content">
+      <div class="ser-benefits-image">
+        <img id="ser-benefits-image-duplicate" src="images/services/Personalized AI Reception.png" alt="Revo AI Receptionist app interface" class="ser-benefits-phone-image">
+      </div>
+      <div class="ser-benefits-accordion">
+        <div class="ser-benefits-accordion-item active" data-image="images/services/Personalized AI Reception.png">
+          <div class="ser-benefits-accordion-header">
+            <h3 class="ser-benefits-accordion-title">Personalized AI Reception</h3>
+          </div>
+          <div class="ser-benefits-accordion-content">
+            <p>Choose how your business sounds.</p>
+            <p>Revo lets you customize your virtual receptionist — from voice tone to personality. Whether you prefer a friendly, cheerful tone or a calm, professional presence, your AI sounds just like your brand.</p>
+            <p>&nbsp;</p>
+            <ul class="ser-benefits-check-list">
+              <li>✅ Customizable voice tone and speaking style</li>
+              <li>✅ Personality options to match your brand identity</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ser-benefits-accordion-item" data-image="images/services/Smart Response Timing.png">
+          <div class="ser-benefits-accordion-header">
+            <h3 class="ser-benefits-accordion-title">Smart Response Timing</h3>
+          </div>
+          <div class="ser-benefits-accordion-content">
+            <p>Answer every call on your terms.</p>
+            <p>Define exactly when Revo picks up — instantly, after a few rings, or based on time of day. You stay in control while your customers always get a professional, prompt response.</p>
+            <p>&nbsp;</p>
+            <ul class="ser-benefits-check-list">
+              <li>✅ Control when and how Revo answers calls</li>
+              <li>✅ Ensure every caller gets a timely, human-like response</li>
+              <li>✅ Maintain a smooth and predictable customer experience</li>
+            </ul>
+          </div>
+        </div>
+        <div class="ser-benefits-accordion-item" data-image="images/services/Detailed Call Reports.png">
+          <div class="ser-benefits-accordion-header">
+            <h3 class="ser-benefits-accordion-title">Detailed Call Reports</h3>
+          </div>
+          <div class="ser-benefits-accordion-content">
+            <p>Turn every call into actionable insight.</p>
+            <p>Revo's detailed call analytics help you track performance, monitor customer trends, and identify opportunities for improvement — giving you the clarity to make smarter, data-driven business decisions.</p>
+            <p>&nbsp;</p>
+            <ul class="ser-benefits-check-list">
+              <li>✅ Track call volume, performance, and caller patterns</li>
+              <li>✅ Identify peak hours and service opportunities</li>
+              <li>✅ Make informed decisions backed by AI insights</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+/* ===== BASE BENEFITS STYLES (REQUIRED FOR DARK VERSION) ===== */
+.ser-benefits {
+  position: relative;
+  padding-top: 140px;
+  padding-bottom: 140px;
+  padding-left: var(--page-padding);
+  padding-right: var(--page-padding);
+  width: 100%;
+  overflow: hidden;
+  min-height: 900px;
+  height: auto;
+}
+
+.ser-benefits .ser-section-container {
+  position: relative;
+  max-width: var(--max-content-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xl);
+  min-height: 800px;
+}
+
+.ser-benefits-header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  align-items: center;
+  max-width: 768px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ser-benefits-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  width: 100%;
+  align-items: center;
+}
+
+.ser-benefits .ser-tagline {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--font-semibold);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.ser-benefits .ser-section-title {
+  font-family: var(--font-heading);
+  font-size: 52px;
+  font-weight: var(--font-bold);
+  line-height: 1.2;
+  letter-spacing: -0.52px;
+  margin: 0;
+  text-align: center;
+  white-space: pre-wrap;
+}
+
+.ser-benefits .ser-section-title .text-primary {
+  color: var(--color-primary);
+}
+
+.ser-benefits .ser-section-description {
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.ser-benefits-content {
+  display: flex;
+  gap: var(--space-2xl);
+  align-items: flex-start;
+  width: 100%;
+  min-height: 650px;
+}
+
+.ser-benefits-image {
+  flex-shrink: 0;
+  width: 450px;
+  height: 562px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ser-benefits-phone-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: relative;
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.ser-benefits-accordion {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 600px;
+}
+
+.ser-benefits-accordion-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--space-md) 0;
+}
+
+.ser-benefits-accordion-item:last-child {
+  border-bottom: none;
+}
+
+.ser-benefits-accordion-header {
+  cursor: pointer;
+  user-select: none;
+}
+
+.ser-benefits-accordion-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h4);
+  font-weight: var(--font-bold);
+  line-height: var(--line-height-medium);
+  margin: 0;
+  transition: var(--transition-base);
+}
+
+.ser-benefits-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.5s ease;
+  padding: 0;
+}
+
+.ser-benefits-accordion-item.active .ser-benefits-accordion-content {
+  max-height: 1000px;
+  padding-top: var(--space-sm);
+}
+
+.ser-benefits-accordion-content p {
+  font-family: var(--font-body);
+  font-size: var(--text-regular);
+  margin: 0 0 var(--space-xs) 0;
+}
+
+.ser-benefits-check-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-sm) 0 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.ser-benefits-check-list li {
+  font-family: var(--font-body);
+  font-size: var(--text-regular);
+  display: flex;
+  align-items: flex-start;
+}
+
+/* ===== DARK VERSION OVERRIDES (ser-benefits-duplicate) ===== */
+.ser-benefits-duplicate {
+  background: #0A0B0C;
+  min-height: auto;
+  height: auto;
+  padding-bottom: 80px;
+}
+
+.ser-benefits-duplicate .ser-benefits-background {
+  display: none;
+}
+
+.ser-benefits-duplicate .ser-tagline {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.ser-benefits-duplicate .ser-section-title {
+  color: var(--color-white) !important;
+}
+
+.ser-benefits-duplicate .ser-section-description p {
+  color: var(--color-white) !important;
+}
+
+.ser-benefits-duplicate .ser-benefits-accordion-title {
+  color: var(--color-white);
+}
+
+.ser-benefits-duplicate .ser-benefits-accordion-item:not(.active) .ser-benefits-accordion-title {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.ser-benefits-duplicate .ser-benefits-accordion-content p,
+.ser-benefits-duplicate .ser-benefits-check-list li {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Tablet (max-width: 1023px) */
+@media (max-width: 1023px) {
+  .ser-benefits {
+    padding: var(--space-2xl) var(--page-padding-mobile);
+  }
+
+  .ser-benefits-content {
+    flex-direction: column;
+    gap: var(--space-xl);
+  }
+
+  .ser-benefits-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 594 / 742;
+    margin: 0 auto;
+  }
+
+  .ser-benefits-accordion {
+    width: 100%;
+  }
+}
+
+/* Mobile (max-width: 767px) */
+@media (max-width: 767px) {
+  .ser-benefits .ser-section-title {
+    font-size: 30px;
+    letter-spacing: -0.36px;
+  }
+
+  .features-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ser-benefits-image {
+    max-width: 300px;
+  }
+
+  .ser-benefits-accordion-title {
+    font-size: 28px;
+  }
+}
+</style>
+
+<script>
+/* ===== DARK BENEFITS ACCORDION LOGIC ===== */
+document.addEventListener('DOMContentLoaded', () => {
+  const benefitsSections = document.querySelectorAll('.ser-benefits-duplicate');
+  
+  benefitsSections.forEach((section) => {
+    const accordionItems = section.querySelectorAll('.ser-benefits-accordion-item');
+    const benefitsImage = section.querySelector('.ser-benefits-phone-image');
+    
+    if (accordionItems.length > 0) {
+      accordionItems.forEach(item => {
+        const header = item.querySelector('.ser-benefits-accordion-header');
+        
+        if (header) {
+          header.addEventListener('click', () => {
+            const isActive = item.classList.contains('active');
+            const imagePath = item.getAttribute('data-image');
+            
+            // Close all
+            accordionItems.forEach(otherItem => {
+              otherItem.classList.remove('active');
+              const otherContent = otherItem.querySelector('.ser-benefits-accordion-content');
+              if (otherContent) otherContent.style.maxHeight = '0';
+            });
+            
+            // Open clicked
+            if (!isActive) {
+              item.classList.add('active');
+              const content = item.querySelector('.ser-benefits-accordion-content');
+              if (content) {
+                content.style.maxHeight = 'none';
+                const height = content.scrollHeight;
+                content.style.maxHeight = '0';
+                void content.offsetHeight; // Force reflow
+                content.style.maxHeight = height + 'px';
+              }
+              
+              // Update Image
+              if (imagePath && benefitsImage) {
+                benefitsImage.style.opacity = '0';
+                benefitsImage.style.transform = 'translateY(10px)';
+                
+                setTimeout(() => {
+                  benefitsImage.src = imagePath;
+                  benefitsImage.style.opacity = '1';
+                  benefitsImage.style.transform = 'translateY(0)';
+                }, 300);
+              }
+            }
+          });
+        }
+      });
+    }
+  });
+});
+</script>
+
+
