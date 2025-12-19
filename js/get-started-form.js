@@ -217,10 +217,24 @@ async function sendFormToAPI(formData, form, submitBtn, originalBtnText) {
       body: JSON.stringify(formData)
     });
 
+    // Check if response is OK and is JSON
+    const contentType = response.headers.get('content-type');
+    if (!contentType || !contentType.includes('application/json')) {
+      const text = await response.text();
+      console.error('Non-JSON response received:', {
+        status: response.status,
+        statusText: response.statusText,
+        contentType: contentType,
+        url: response.url,
+        text: text.substring(0, 500)
+      });
+      throw new Error(`Server returned ${response.status} ${response.statusText}. The API endpoint may not be deployed correctly.`);
+    }
+
     const result = await response.json();
 
     if (!response.ok) {
-      throw new Error(result.error || 'Submission failed');
+      throw new Error(result.error || `Submission failed with status ${response.status}`);
     }
 
     // Success - form submitted and saved to database

@@ -179,9 +179,10 @@ export default async function handler(req, res) {
 
   } catch (error) {
     console.error('Form submission error:', error);
+    // Always return JSON, even on error
     return res.status(500).json({
       error: 'Internal server error',
-      message: error.message
+      message: error.message || 'An unexpected error occurred'
     });
   }
 }
