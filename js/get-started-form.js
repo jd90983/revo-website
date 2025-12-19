@@ -102,6 +102,221 @@ document.addEventListener('DOMContentLoaded', function() {
   initGetStartedForm();
 });
 
+// Form submission handler
+function handleFormSubmission(form) {
+  // Get all form fields
+  const formData = {
+    firstName: form.querySelector('#firstName').value.trim(),
+    lastName: form.querySelector('#lastName').value.trim(),
+    contactNumber: form.querySelector('#contactNumber').value.trim(),
+    email: form.querySelector('#email').value.trim(),
+    industry: form.querySelector('#industry').value,
+    callsPerWeek: form.querySelector('#callsPerWeek').value
+  };
+
+  // Validate all required fields
+  const requiredFields = ['firstName', 'lastName', 'contactNumber', 'email', 'industry', 'callsPerWeek'];
+  let isValid = true;
+  let firstInvalidField = null;
+
+  requiredFields.forEach(fieldName => {
+    const field = form.querySelector(`#${fieldName}`);
+    if (!field) return;
+    
+    validateField(field);
+    const wrapper = field.closest('.get-started-form-input-wrapper');
+    
+    if (!formData[fieldName] || formData[fieldName] === '') {
+      isValid = false;
+      if (wrapper) wrapper.classList.remove('valid');
+      if (!firstInvalidField) firstInvalidField = field;
+    }
+  });
+
+  // Additional email validation
+  if (formData.email) {
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(formData.email)) {
+      isValid = false;
+      const emailField = form.querySelector('#email');
+      const emailWrapper = emailField.closest('.get-started-form-input-wrapper');
+      if (emailWrapper) emailWrapper.classList.remove('valid');
+      if (!firstInvalidField) firstInvalidField = emailField;
+    }
+  }
+
+  // Additional phone validation
+  if (formData.contactNumber) {
+    const digitsOnly = formData.contactNumber.replace(/\D/g, '');
+    if (digitsOnly.length < 10) {
+      isValid = false;
+      const phoneField = form.querySelector('#contactNumber');
+      const phoneWrapper = phoneField.closest('.get-started-form-input-wrapper');
+      if (phoneWrapper) phoneWrapper.classList.remove('valid');
+      if (!firstInvalidField) firstInvalidField = phoneField;
+    }
+  }
+
+  if (!isValid) {
+    // Scroll to first invalid field
+    if (firstInvalidField) {
+      firstInvalidField.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      firstInvalidField.focus();
+    }
+    showFormMessage(form, 'Please fill in all required fields correctly.', 'error');
+    return false;
+  }
+
+  // Disable submit button and show loading state
+  const submitBtn = form.querySelector('.get-started-form-submit-btn');
+  const originalBtnText = submitBtn.textContent;
+  submitBtn.disabled = true;
+  submitBtn.textContent = 'Submitting...';
+
+  // Save to localStorage as backup
+  try {
+    const submissions = JSON.parse(localStorage.getItem('revoFormSubmissions') || '[]');
+    const submission = {
+      ...formData,
+      timestamp: new Date().toISOString(),
+      submittedAt: new Date().toLocaleString()
+    };
+    submissions.push(submission);
+    // Keep only last 100 submissions
+    if (submissions.length > 100) {
+      submissions.shift();
+    }
+    localStorage.setItem('revoFormSubmissions', JSON.stringify(submissions));
+  } catch (e) {
+    console.warn('Could not save to localStorage:', e);
+  }
+
+  // Send form data to API (saves to Supabase and sends email)
+  sendFormToAPI(formData, form, submitBtn, originalBtnText);
+
+  return false; // Prevent default form submission
+}
+
+// Send form data to Vercel API route (saves to Supabase and sends email)
+async function sendFormToAPI(formData, form, submitBtn, originalBtnText) {
+  // Determine API URL - use deployed URL for localhost, relative for production
+  // Declare outside try block so it's accessible in catch
+  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  const apiUrl = isLocalhost 
+    ? 'https://revoapp.ai/api/submit-form'  // Use deployed API for localhost testing
+    : '/api/submit-form';  // Use relative URL when deployed
+  
+  console.log('Submitting form to:', apiUrl, 'from:', window.location.hostname);
+  
+  try {
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData)
+    });
+
+    const result = await response.json();
+
+    if (!response.ok) {
+      throw new Error(result.error || 'Submission failed');
+    }
+
+    // Success - form submitted and saved to database
+    showFormMessage(form, 'Thank you! Your information has been received. We\'ll contact you soon.', 'success');
+    form.reset();
+    
+    // Clear validation states
+    form.querySelectorAll('.get-started-form-input-wrapper').forEach(wrapper => {
+      wrapper.classList.remove('valid');
+    });
+
+  } catch (error) {
+    console.error('Form submission error:', error);
+    
+    // Show error message to help with debugging
+    const errorMessage = error.message || 'Failed to submit form. Please check console for details.';
+    console.error('Full error details:', {
+      message: error.message,
+      apiUrl: apiUrl,
+      formData: formData,
+      errorType: error.name
+    });
+    
+    // Show error message to user (for debugging)
+    showFormMessage(form, `Error: ${errorMessage}. Data saved locally as backup.`, 'error');
+    
+    // Data is still saved to localStorage as backup
+    // Don't reset form so user can try again
+  } finally {
+    submitBtn.disabled = false;
+    submitBtn.textContent = originalBtnText;
+  }
+}
+
+// Show form message (success or error)
+function showFormMessage(form, message, type) {
+  // Remove existing message
+  const existingMessage = form.querySelector('.get-started-form-message');
+  if (existingMessage) {
+    existingMessage.remove();
+  }
+
+  // Create message element
+  const messageEl = document.createElement('div');
+  messageEl.className = `get-started-form-message get-started-form-message-${type}`;
+  messageEl.textContent = message;
+  
+  // Insert before submit button
+  const submitBtn = form.querySelector('.get-started-form-submit-btn');
+  form.insertBefore(messageEl, submitBtn);
+
+  // Auto-remove success messages after 5 seconds
+  if (type === 'success') {
+    setTimeout(() => {
+      if (messageEl.parentNode) {
+        messageEl.remove();
+      }
+    }, 5000);
+  }
+
+  // Scroll to message
+  messageEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// Initialize form submission handler
+function initFormSubmission() {
+  const forms = document.querySelectorAll('.get-started-form-form');
+  
+  forms.forEach(form => {
+    // Skip if already initialized
+    if (form.hasAttribute('data-submission-initialized')) {
+      return;
+    }
+    
+    form.setAttribute('data-submission-initialized', 'true');
+    
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      handleFormSubmission(this);
+    });
+  });
+}
+
+// Initialize form submission on DOMContentLoaded
+document.addEventListener('DOMContentLoaded', function() {
+  initFormSubmission();
+});
+
+// Also initialize when templates are loaded
+const originalInitGetStartedForm = initGetStartedForm;
+initGetStartedForm = function() {
+  originalInitGetStartedForm();
+  // Small delay to ensure form is in DOM
+  setTimeout(initFormSubmission, 100);
+};
+
 // Make function available globally for template loader
 window.initGetStartedForm = initGetStartedForm;
 

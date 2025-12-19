@@ -27,10 +27,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-  <!-- Fonts -->
+  <!-- Preconnect to Fonts (before CSS) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/variables.css">
@@ -42,6 +41,9 @@
   <link rel="stylesheet" href="css/ser.css">
   <link rel="stylesheet" href="css/industry_home_service.css">
   <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Skip to main content for accessibility -->
@@ -934,11 +936,11 @@
 
   <!-- Scripts -->
   <script src="js/navigation.js"></script>
-  <script src="js/accordion.js"></script>
-  <script src="js/animations.js"></script>
-  <script src="js/template-loader.js"></script>
-  <script src="js/get-started-form.js"></script>
-  <script src="js/industry_home_service.js"></script>
+  <script src="js/accordion.js" defer></script>
+  <script src="js/animations.js" defer></script>
+  <script src="js/template-loader.js" defer></script>
+  <script src="js/get-started-form.js" defer></script>
+  <script src="js/industry_home_service.js" defer></script>
   <script>
     // Load Get Started section template
     document.addEventListener('DOMContentLoaded', function() {
