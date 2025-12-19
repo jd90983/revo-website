@@ -318,7 +318,12 @@
               <li><a href="ind.html">Legal</a></li>
               <li><a href="ind.html">Corporate & Government</a></li>
             </ul>
-            <a href="ind.html" class="mobile-menu-view-all">View All Industries →</a>
+            <a href="ind.html" class="mobile-menu-view-all">
+              View All Industries
+              <svg class="menu-chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
           </div>
         </li>
         <li>
@@ -354,9 +359,7 @@
         <div class="ind-hero-image" style="position: absolute; inset: 0; background-image: url('../images/backgrounds/industry_page_background.png'); background-size: cover; background-position: center; background-repeat: no-repeat; opacity: 1;"></div>
         <div class="ind-hero-gradient" style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 62.556%, #000000 93.889%);"></div>
       </div>
-      <div class="ind-hero-container" style="position: relative; z-index: 2; color: #FFFFFF !important; display: flex !important; visibility: visible !important; opacity: 1 !important;">
-        <div class="ind-hero-content" style="color: #FFFFFF !important; display: flex !important; visibility: visible !important; opacity: 1 !important;">
-          <div class="ind-hero-title-section" style="display: flex !important; visibility: visible !important; opacity: 1 !important;">
+      <div class="ind-hero-title-section" style="position: relative; z-index: 2; color: #FFFFFF !important; display: flex !important; visibility: visible !important; opacity: 1 !important;">
             <div class="ind-hero-tagline-wrapper" style="visibility: visible !important; opacity: 1 !important;">
               <span class="ind-hero-tagline" style="color: #FFFFFF !important; visibility: visible !important; opacity: 1 !important; display: block !important;">Reliable by Design</span>
             </div>
@@ -365,11 +368,11 @@
               <p class="ind-hero-description" style="color: #FFFFFF !important; visibility: visible !important; opacity: 1 !important; display: block !important;">Revo gives your business a voice that feels human — answering every call with care and precision. Whether you're getting one call or ten at once, Revo keeps everything running smoothly, so your clients always get the attention they deserve.</p>
             </div>
           </div>
-          <div class="ind-hero-actions" style="display: flex !important; visibility: visible !important; opacity: 1 !important;">
-            <button class="ind-hero-btn-primary" type="button">Get Started</button>
-            <button class="ind-hero-btn-secondary" type="button">Book a Demo</button>
+      <div class="hero-actions ind-hero-actions" style="position: relative; z-index: 2; display: flex !important; visibility: visible !important; opacity: 1 !important;">
+        <div class="btn-get-started-wrapper">
+          <button class="btn-primary-large">Get Started</button>
           </div>
-        </div>
+        <button class="btn-secondary-large">Book a Demo</button>
       </div>
     </section>
 
@@ -599,7 +602,7 @@
           <div class="ind-tagline-wrapper">
             <span class="ind-tagline">Made for Professionals Like You</span>
           </div>
-          <h2 class="ind-heading">AI Receptionist for Modern <span class="ind-highlight">Professional Businesses</span></h2>
+          <h2 class="ind-heading" style="color: #0A0B0C !important; visibility: visible !important; opacity: 1 !important; display: block !important;">AI Receptionist for Modern <span class="ind-highlight" style="color: #0F5AD7 !important;">Professional Businesses</span></h2>
         </div>
         <div class="ind-categories-grid-wrapper">
           <div class="ind-categories-grid" id="professional-businesses-categories-grid">
@@ -715,7 +718,7 @@
               <p class="ind-feature-description">Revo automatically filters spam calls and prioritizes real customers — saving time and keeping your lines clear for actual opportunities. With adaptive voice recognition, it understands context and intent, responding naturally and professionally every time.</p>
               <div class="features-buttons ind-feature-actions">
                 <button class="btn-primary-large">Get Started</button>
-                <button class="btn-secondary-large">Book a Demo</button>
+                <button class="btn-outline-white">Hear a Sample</button>
               </div>
             </div>
             <div class="ind-feature-image">
@@ -738,7 +741,7 @@
               <p class="ind-feature-description">Revo syncs seamlessly with your calendar to manage appointments and prevent overlapping bookings. It confirms availability, logs details, and instantly updates your system — all while maintaining your preferred communication style.</p>
               <div class="features-buttons ind-feature-actions">
                 <button class="btn-primary-large">Get Started</button>
-                <button class="btn-secondary-large">Book a Demo</button>
+                <button class="btn-outline-white">Hear a Sample</button>
               </div>
             </div>
             <div class="ind-feature-image">
@@ -761,7 +764,7 @@
               <p class="ind-feature-description">Revo handles multiple calls simultaneously with ease — every caller receives immediate, personalized attention without waiting. Whether it's answering questions, capturing leads, or sending messages, Revo keeps your business responsive and reliable.</p>
               <div class="features-buttons ind-feature-actions">
                 <button class="btn-primary-large">Get Started</button>
-                <button class="btn-secondary-large">Book a Demo</button>
+                <button class="btn-outline-white">Hear a Sample</button>
               </div>
             </div>
             <div class="ind-feature-image">
@@ -772,8 +775,8 @@
       </section>
     </div>
 
-    <!-- Benefits Section - ser-benefits design -->
-    <section class="ser-benefits">
+    <!-- Unleash the Benefits Section -->
+    <section class="ser-benefits animate-in" style="transition: opacity 0.6s, transform 0.6s;">
       <div class="ser-benefits-background"></div>
       <div class="ser-section-container">
         <div class="ser-benefits-header">
@@ -786,14 +789,9 @@
               </div>
             </div>
           </div>
-          <div class="ser-benefits-actions">
-            <button class="ser-btn-get-started">Get Started</button>
-            <button class="ser-btn-book-demo">
-              Book a Demo
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
+          <div class="benefits-modern-actions">
+            <button class="benefits-modern-btn-primary">Get Started</button>
+            <button class="benefits-modern-btn-secondary">Book a Demo</button>
           </div>
         </div>
         <div class="ser-benefits-content">
@@ -849,7 +847,7 @@
     </section>
 
     <!-- Features Section - ser-benefits-duplicate design -->
-    <section class="ser-benefits ser-benefits-duplicate">
+    <section class="ser-benefits ser-benefits-duplicate animate-in" style="transition: opacity 0.6s, transform 0.6s;">
       <div class="ser-benefits-background"></div>
       <div class="ser-section-container">
         <div class="ser-benefits-header">
@@ -858,18 +856,13 @@
             <div class="ser-benefits-heading-content">
               <h2 class="ser-section-title">Intelligent Communication Tailored to <span class="text-primary">Every Business</span></h2>
               <div class="ser-section-description">
-                <p>When you get started with Revo, your setup goes beyond automation — it's personalization. We design every interaction to match your business's tone, response timing, and customer experience goals. From call handling to scheduling, every detail reflects your brand's unique voice.</p>
+                <p>When you get started with Revo, your setup goes beyond automation — it’s personalization. We design every interaction to match your business’s tone, response timing, and customer experience goals. From call handling to scheduling, every detail reflects your brand’s unique voice.</p>
               </div>
             </div>
           </div>
-          <div class="ser-benefits-actions">
-            <button class="ser-btn-get-started">Get Started</button>
-            <button class="ser-btn-book-demo">
-              Book a Demo
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </button>
+          <div class="features-buttons ser-ai-actions">
+            <button class="btn-primary-large">Get Started</button>
+            <button class="btn-outline-white">Book a Demo</button>
           </div>
         </div>
         <div class="ser-benefits-content">
@@ -925,6 +918,12 @@
         </div>
       </div>
     </section>
+
+    <!-- Intelligent Banner Section - Loaded from template -->
+    <div id="intelligent-banner-template-container"></div>
+
+    <!-- Get Started Form Section - Loaded from template -->
+    <div id="get-started-form-template-container"></div>
 
     <!-- Success Stories Section -->
     <section class="ind-success-stories-section" style="background: #0A0B0C !important; color: #FFFFFF !important; position: relative; z-index: 1; display: block !important; visibility: visible !important; opacity: 1 !important;">
@@ -1000,12 +999,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Intelligent Banner Section - Loaded from template -->
-    <div id="intelligent-banner-template-container"></div>
-
-    <!-- Get Started Form Section - Loaded from template -->
-    <div id="get-started-form-template-container"></div>
 
     <!-- Testimonial Section -->
     <section class="ind-testimonial-section" style="background: #FAFBFC !important; color: #0A0B0C !important; position: relative; z-index: 1; display: block !important; visibility: visible !important; opacity: 1 !important;">
