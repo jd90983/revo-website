@@ -92,19 +92,29 @@ export default async function handler(req, res) {
     }
 
     const supabase = createClient(supabaseUrl, supabaseAnonKey);
+    
+    // Test connection by checking if we can query (this will fail if table doesn't exist or RLS blocks)
+    console.log('Supabase client created, testing connection...');
 
     // Check for duplicate email (within last 30 days)
     const thirtyDaysAgo = new Date();
     thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
 
-    const { data: existing } = await supabase
+    const { data: existingData, error: queryError } = await supabase
       .from('leads')
       .select('id, status, submitted_at')
       .eq('email', formData.email.toLowerCase())
       .gte('submitted_at', thirtyDaysAgo.toISOString())
       .order('submitted_at', { ascending: false })
-      .limit(1)
-      .single();
+      .limit(1);
+    
+    // Handle query errors (like table doesn't exist)
+    if (queryError) {
+      console.error('Supabase query error:', queryError);
+      throw new Error(`Database query failed: ${queryError.message}`);
+    }
+    
+    const existing = existingData && existingData.length > 0 ? existingData[0] : null;
 
     let lead;
     let isUpdate = false;
@@ -179,10 +189,28 @@ export default async function handler(req, res) {
 
   } catch (error) {
     console.error('Form submission error:', error);
+    console.error('Error stack:', error.stack);
+    console.error('Error details:', {
+      name: error.name,
+      message: error.message,
+      code: error.code,
+      details: error.details,
+      hint: error.hint
+    });
+    
     // Always return JSON, even on error
+    // Include more details in development/preview, less in production
+    const isProduction = process.env.VERCEL_ENV === 'production';
     return res.status(500).json({
       error: 'Internal server error',
-      message: error.message || 'An unexpected error occurred'
+      message: isProduction 
+        ? 'An unexpected error occurred. Please try again later.'
+        : error.message || 'An unexpected error occurred',
+      ...(isProduction ? {} : { 
+        details: error.details,
+        hint: error.hint,
+        code: error.code
+      })
     });
   }
 }
