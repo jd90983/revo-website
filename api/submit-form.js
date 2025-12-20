@@ -25,15 +25,25 @@ const SECURITY_CONFIG = {
     callsPerWeek: 20
   },
   
-  // Allowed industries (whitelist approach)
+  // Allowed industries (whitelist approach) - matches form values
   ALLOWED_INDUSTRIES: [
-    'Air Duct Cleaning', 'Locksmith', 'HVAC', 'Plumbing',
-    'Chimney Sweep', 'Lawn Care', 'Restoration', 'Junk Removal',
-    'Pressure Washing', 'Carpet Cleaning'
+    // HOME SERVICE PROS
+    'air-duct-cleaning', 'locksmith', 'hvac', 'plumbing',
+    'chimney-sweep', 'lawn-care', 'restoration', 'junk-removal',
+    'pressure-washing', 'carpet-cleaning', 'computer-repair', 'pest-control',
+    'snow-removal', 'roofing', 'landscape', 'construction',
+    'maid-cleaning', 'electrical', 'property-maintenance', 'general-contracting',
+    'towing', 'moving', 'handyman', 'alarm-security', 'pool-services',
+    'appliance-repair', 'solar-installation', 'garage-door', 'painting',
+    'tilling', 'window-cleaning',
+    // PROFESSIONAL BUSINESSES
+    'healthcare-medical', 'small-business', 'it-technology', 'legal',
+    'corporate-government', 'franchises', 'travel-hospitality', 'financial-services',
+    'retail-ecommerce', 'real-estate', 'marketing-media', 'building-construction'
   ],
   
-  // Allowed calls per week values
-  ALLOWED_CALLS_PER_WEEK: ['1-5', '6-10', '11-20', '21-50', '50+'],
+  // Allowed calls per week values - matches form values
+  ALLOWED_CALLS_PER_WEEK: ['0-24', '25-50', '51-100', '100+'],
   
   // Request size limit (bytes)
   MAX_REQUEST_SIZE: 10240, // 10KB
