@@ -325,6 +325,28 @@ export default async function handler(req, res) {
     const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
     // ============================================
+    // 10b. EXTRACT GEO/COUNTRY INFORMATION
+    // ============================================
+    // Vercel provides geo info in headers automatically
+    const geoInfo = {
+      // From Vercel headers (server-side, most accurate)
+      countryCode: req.headers['x-vercel-ip-country'] || null,
+      region: req.headers['x-vercel-ip-country-region'] || null,
+      city: req.headers['x-vercel-ip-city'] || null,
+      // From client-side detection (fallback)
+      clientCountry: formData.detectedCountry || null
+    };
+    
+    // Use Vercel's detection if available, otherwise use client-side
+    const country = geoInfo.countryCode || geoInfo.clientCountry?.code || null;
+    const countryName = geoInfo.clientCountry?.name || null;
+    
+    console.log('Geo info:', { 
+      vercel: { country: geoInfo.countryCode, region: geoInfo.region, city: geoInfo.city },
+      client: geoInfo.clientCountry 
+    });
+
+    // ============================================
     // 11. CHECK FOR EXACT DUPLICATE SUBMISSIONS
     // ============================================
     // Check for exact duplicate: same email + phone + industry + calls within 1 hour
@@ -444,9 +466,11 @@ export default async function handler(req, res) {
           calls_per_week: sanitizedData.callsPerWeek,
           source: 'website',
           status: 'new',
-          // Optional: Add IP and user agent for security monitoring
-          // ip_address: clientIp,
-          // user_agent: req.headers['user-agent']
+          // Country/Geo information
+          country_code: country,
+          country_name: countryName,
+          city: geoInfo.city,
+          region: geoInfo.region
         })
         .select()
         .single();

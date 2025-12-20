@@ -1,5 +1,76 @@
 // Get Started Form - Focus gradient border and validation
 
+// ============================================
+// COUNTRY DETECTION
+// ============================================
+
+// Store detected country info globally
+let detectedCountry = null;
+
+// Country calling codes mapping
+const countryCallingCodes = {
+  'US': '+1', 'CA': '+1', 'MX': '+52', 'GB': '+44', 'DE': '+49',
+  'FR': '+33', 'ES': '+34', 'IT': '+39', 'AU': '+61', 'NZ': '+64',
+  'JP': '+81', 'KR': '+82', 'CN': '+86', 'IN': '+91', 'BR': '+55',
+  'AR': '+54', 'CO': '+57', 'CL': '+56', 'PE': '+51', 'VE': '+58',
+  'NL': '+31', 'BE': '+32', 'CH': '+41', 'AT': '+43', 'PL': '+48',
+  'PT': '+351', 'SE': '+46', 'NO': '+47', 'DK': '+45', 'FI': '+358',
+  'IE': '+353', 'RU': '+7', 'UA': '+380', 'ZA': '+27', 'EG': '+20',
+  'NG': '+234', 'KE': '+254', 'IL': '+972', 'AE': '+971', 'SA': '+966',
+  'SG': '+65', 'MY': '+60', 'PH': '+63', 'TH': '+66', 'VN': '+84',
+  'ID': '+62', 'PK': '+92', 'BD': '+880', 'TR': '+90', 'GR': '+30'
+};
+
+// Detect user's country from IP (free API)
+async function detectCountry() {
+  try {
+    // Using ipapi.co - free tier allows 1000 requests/day
+    const response = await fetch('https://ipapi.co/json/', {
+      method: 'GET',
+      headers: { 'Accept': 'application/json' }
+    });
+    
+    if (!response.ok) {
+      throw new Error('Country detection failed');
+    }
+    
+    const data = await response.json();
+    
+    detectedCountry = {
+      code: data.country_code,           // "US", "MX", "GB"
+      name: data.country_name,           // "United States", "Mexico"
+      callingCode: data.country_calling_code || countryCallingCodes[data.country_code] || '+1',
+      city: data.city,
+      region: data.region
+    };
+    
+    console.log('Country detected:', detectedCountry);
+    return detectedCountry;
+  } catch (error) {
+    console.log('Could not detect country:', error.message);
+    // Default to US if detection fails
+    detectedCountry = { code: 'US', name: 'United States', callingCode: '+1' };
+    return detectedCountry;
+  }
+}
+
+// Auto-fill phone placeholder with detected country code
+async function applyCountryToForm() {
+  const country = await detectCountry();
+  
+  if (country) {
+    const phoneInput = document.querySelector('#contactNumber');
+    if (phoneInput && !phoneInput.value) {
+      // Update placeholder with country code
+      phoneInput.placeholder = `${country.callingCode} (xxx) xxx-xxxx`;
+    }
+  }
+}
+
+// ============================================
+// FIELD VALIDATION
+// ============================================
+
 // Validate fields and show check icon
 function validateField(field) {
   const wrapper = field.closest('.get-started-form-input-wrapper');
@@ -100,6 +171,8 @@ function initGetStartedForm() {
 // Initialize on DOMContentLoaded (for forms that are already in the page)
 document.addEventListener('DOMContentLoaded', function() {
   initGetStartedForm();
+  // Detect country and update phone placeholder
+  applyCountryToForm();
 });
 
 // Form submission handler
@@ -111,7 +184,15 @@ function handleFormSubmission(form) {
     contactNumber: form.querySelector('#contactNumber').value.trim(),
     email: form.querySelector('#email').value.trim(),
     industry: form.querySelector('#industry').value,
-    callsPerWeek: form.querySelector('#callsPerWeek').value
+    callsPerWeek: form.querySelector('#callsPerWeek').value,
+    // Include detected country info (if available)
+    detectedCountry: detectedCountry ? {
+      code: detectedCountry.code,
+      name: detectedCountry.name,
+      callingCode: detectedCountry.callingCode,
+      city: detectedCountry.city,
+      region: detectedCountry.region
+    } : null
   };
 
   // Validate all required fields
