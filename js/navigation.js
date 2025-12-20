@@ -181,6 +181,44 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// "Get Started" buttons - scroll to form section (using event delegation)
+document.addEventListener('click', (e) => {
+  const button = e.target.closest('button');
+  
+  // Check if it's a "Get Started" button
+  if (button && button.textContent.trim() === 'Get Started') {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    console.log('Get Started button clicked - scrolling to form');
+    
+    // Find the form section
+    const formSection = document.querySelector('.get-started-form-section') || 
+                       document.getElementById('get-started-form-template-container');
+    
+    if (formSection) {
+      // Calculate offset for sticky navbar + scroll past form top to center it
+      const navbar = document.querySelector('.navbar');
+      const navbarHeight = navbar ? navbar.offsetHeight : 0;
+      const extraOffset = 100;  // Scroll 100px past form top to center it better
+      const targetPosition = formSection.getBoundingClientRect().top + window.pageYOffset - navbarHeight + extraOffset;
+      
+      window.scrollTo({
+        top: targetPosition,
+        behavior: 'smooth'
+      });
+      
+      // Focus on first input after scrolling
+      setTimeout(() => {
+        const firstInput = formSection.querySelector('input');
+        if (firstInput) firstInput.focus();
+      }, 800);
+    } else {
+      console.log('Form section not found');
+    }
+  }
+});
+
 // Megamenu with delay on close
 document.addEventListener('DOMContentLoaded', () => {
   const megaMenuItems = document.querySelectorAll('.navbar-menu-item-with-mega');
