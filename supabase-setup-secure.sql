@@ -108,35 +108,22 @@ ALTER TABLE leads ENABLE ROW LEVEL SECURITY;
 
 -- Policy 1: Anonymous users can ONLY insert (no read/update/delete)
 -- This is the most restrictive policy - they can't see any data
+-- Note: Duplicate prevention is handled by the unique index and API logic
+-- RLS policies can't use NEW in subqueries, so we keep validation simple
 DROP POLICY IF EXISTS "Allow anonymous form submissions" ON leads;
 CREATE POLICY "Allow anonymous form submissions"
   ON leads
   FOR INSERT
   TO anon
   WITH CHECK (
-    -- Additional security checks
+    -- Basic validation checks (can reference NEW directly in WITH CHECK)
     LENGTH(TRIM(first_name)) >= 1 AND
     LENGTH(TRIM(last_name)) >= 1 AND
-    LENGTH(TRIM(email)) >= 5 AND
-    -- Prevent spam: max 5 submissions per email per day
-    (
-      SELECT COUNT(*) 
-      FROM leads 
-      WHERE email = NEW.email 
-        AND submitted_at > NOW() - INTERVAL '24 hours'
-        AND deleted_at IS NULL
-    ) < 5 AND
-    -- Prevent exact duplicates: same email + phone + industry + calls within 1 hour
-    NOT EXISTS (
-      SELECT 1 
-      FROM leads 
-      WHERE email = NEW.email 
-        AND contact_number = NEW.contact_number
-        AND industry = NEW.industry
-        AND calls_per_week = NEW.calls_per_week
-        AND submitted_at > NOW() - INTERVAL '1 hour'
-        AND deleted_at IS NULL
-    )
+    LENGTH(TRIM(email)) >= 5
+    -- Duplicate prevention is enforced by:
+    -- 1. Unique index (idx_leads_duplicate_prevention) - prevents exact duplicates at DB level
+    -- 2. API logic - checks before insert and returns 409 if duplicate
+    -- 3. Rate limiting in API - max 10 requests per IP per hour
   );
 
 -- Policy 2: Authenticated users can read non-deleted leads
