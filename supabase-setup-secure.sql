@@ -57,11 +57,30 @@ CREATE TABLE IF NOT EXISTS leads (
   updated_at TIMESTAMP DEFAULT NOW() NOT NULL,
   
   -- Soft delete (security best practice)
-  deleted_at TIMESTAMP,
-  
-  -- Prevent duplicate spam submissions (same email within 1 hour)
-  CONSTRAINT unique_recent_email UNIQUE NULLS NOT DISTINCT (email, submitted_at)
+  deleted_at TIMESTAMP
 );
+
+-- ============================================
+-- 1.5. DUPLICATE PREVENTION INDEX
+-- ============================================
+
+-- Create a unique index to prevent exact duplicates
+-- This prevents the same exact submission (email + phone + industry + calls) within 1 hour
+CREATE UNIQUE INDEX IF NOT EXISTS idx_leads_duplicate_prevention 
+ON leads (
+  email, 
+  contact_number, 
+  industry, 
+  calls_per_week, 
+  DATE_TRUNC('hour', submitted_at)
+) 
+WHERE deleted_at IS NULL;
+
+-- Alternative: Prevent same email + phone within 24 hours (less strict)
+-- Uncomment if you want to allow same email with different industry/calls
+-- CREATE UNIQUE INDEX IF NOT EXISTS idx_leads_email_phone_24h 
+-- ON leads (email, contact_number, DATE_TRUNC('day', submitted_at))
+-- WHERE deleted_at IS NULL;
 
 -- ============================================
 -- 2. INDEXES FOR PERFORMANCE & SECURITY
@@ -106,7 +125,18 @@ CREATE POLICY "Allow anonymous form submissions"
       WHERE email = NEW.email 
         AND submitted_at > NOW() - INTERVAL '24 hours'
         AND deleted_at IS NULL
-    ) < 5
+    ) < 5 AND
+    -- Prevent exact duplicates: same email + phone + industry + calls within 1 hour
+    NOT EXISTS (
+      SELECT 1 
+      FROM leads 
+      WHERE email = NEW.email 
+        AND contact_number = NEW.contact_number
+        AND industry = NEW.industry
+        AND calls_per_week = NEW.calls_per_week
+        AND submitted_at > NOW() - INTERVAL '1 hour'
+        AND deleted_at IS NULL
+    )
   );
 
 -- Policy 2: Authenticated users can read non-deleted leads

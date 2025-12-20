@@ -315,56 +315,112 @@ export default async function handler(req, res) {
     const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
     // ============================================
-    // 11. CHECK FOR DUPLICATE SUBMISSIONS
+    // 11. CHECK FOR EXACT DUPLICATE SUBMISSIONS
     // ============================================
-    const thirtyDaysAgo = new Date();
-    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+    // Check for exact duplicate: same email + phone + industry + calls within 1 hour
+    const oneHourAgo = new Date();
+    oneHourAgo.setHours(oneHourAgo.getHours() - 1);
 
-    const { data: existingData, error: queryError } = await supabase
+    const { data: exactDuplicate, error: duplicateCheckError } = await supabase
       .from('leads')
       .select('id, status, submitted_at')
       .eq('email', sanitizedData.email)
-      .gte('submitted_at', thirtyDaysAgo.toISOString())
+      .eq('contact_number', sanitizedData.contactNumber)
+      .eq('industry', sanitizedData.industry)
+      .eq('calls_per_week', sanitizedData.callsPerWeek)
+      .gte('submitted_at', oneHourAgo.toISOString())
+      .is('deleted_at', null)
       .order('submitted_at', { ascending: false })
       .limit(1);
     
-    if (queryError) {
-      console.error('Supabase query error:', queryError);
-      // Log full error internally, but don't expose to client
+    if (duplicateCheckError) {
+      console.error('Duplicate check error:', duplicateCheckError);
+      return res.status(500).json({ error: 'Internal server error' });
+    }
+
+    // If exact duplicate found within 1 hour, reject it
+    if (exactDuplicate && exactDuplicate.length > 0) {
+      const duplicate = exactDuplicate[0];
+      const timeSinceSubmission = Math.floor((Date.now() - new Date(duplicate.submitted_at).getTime()) / 1000 / 60);
+      
+      console.log(`Duplicate submission detected - Lead ID: ${duplicate.id}, submitted ${timeSinceSubmission} minutes ago`);
+      
+      return res.status(409).json({ 
+        error: 'Duplicate submission',
+        message: `You have already submitted this information ${timeSinceSubmission} minute${timeSinceSubmission !== 1 ? 's' : ''} ago. Please wait before submitting again.`,
+        leadId: duplicate.id
+      });
+    }
+
+    // ============================================
+    // 12. CHECK FOR SAME EMAIL (UPDATE EXISTING IF DIFFERENT DATA)
+    // ============================================
+    // Check if same email exists (but different data) - update instead of creating new
+    const thirtyDaysAgo = new Date();
+    thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+
+    const { data: existingEmailData, error: emailCheckError } = await supabase
+      .from('leads')
+      .select('id, status, submitted_at, contact_number, industry, calls_per_week')
+      .eq('email', sanitizedData.email)
+      .gte('submitted_at', thirtyDaysAgo.toISOString())
+      .is('deleted_at', null)
+      .order('submitted_at', { ascending: false })
+      .limit(1);
+    
+    if (emailCheckError) {
+      console.error('Email check error:', emailCheckError);
       return res.status(500).json({ error: 'Internal server error' });
     }
 
     // ============================================
-    // 12. INSERT OR UPDATE LEAD
+    // 13. INSERT OR UPDATE LEAD
     // ============================================
     let lead;
     let isUpdate = false;
 
-    if (existingData && existingData.length > 0) {
-      // Update existing lead
-      isUpdate = true;
-      const existing = existingData[0];
+    // If same email exists but with different data, update it
+    if (existingEmailData && existingEmailData.length > 0) {
+      const existing = existingEmailData[0];
       
-      const { data: updatedLead, error: updateError } = await supabase
-        .from('leads')
-        .update({
-          first_name: sanitizedData.firstName,
-          last_name: sanitizedData.lastName,
-          contact_number: sanitizedData.contactNumber,
-          industry: sanitizedData.industry,
-          calls_per_week: sanitizedData.callsPerWeek,
-          updated_at: new Date().toISOString()
-        })
-        .eq('id', existing.id)
-        .select()
-        .single();
+      // Only update if data is actually different
+      const dataChanged = 
+        existing.contact_number !== sanitizedData.contactNumber ||
+        existing.industry !== sanitizedData.industry ||
+        existing.calls_per_week !== sanitizedData.callsPerWeek;
+      
+      if (dataChanged) {
+        // Update existing lead with new information
+        isUpdate = true;
+        
+        const { data: updatedLead, error: updateError } = await supabase
+          .from('leads')
+          .update({
+            first_name: sanitizedData.firstName,
+            last_name: sanitizedData.lastName,
+            contact_number: sanitizedData.contactNumber,
+            industry: sanitizedData.industry,
+            calls_per_week: sanitizedData.callsPerWeek,
+            updated_at: new Date().toISOString()
+          })
+          .eq('id', existing.id)
+          .select()
+          .single();
 
-      if (updateError) {
-        console.error('Update error:', updateError);
-        return res.status(500).json({ error: 'Internal server error' });
+        if (updateError) {
+          console.error('Update error:', updateError);
+          return res.status(500).json({ error: 'Internal server error' });
+        }
+
+        lead = updatedLead;
+      } else {
+        // Same email, same data - treat as duplicate (shouldn't happen due to exact duplicate check above, but safety net)
+        return res.status(409).json({ 
+          error: 'Duplicate submission',
+          message: 'You have already submitted this information. Please wait before submitting again.',
+          leadId: existing.id
+        });
       }
-
-      lead = updatedLead;
     } else {
       // Insert new lead
       const { data: newLead, error: insertError } = await supabase
