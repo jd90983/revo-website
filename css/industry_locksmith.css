@@ -187,64 +187,12 @@ main#main-content > section {
   opacity: 1 !important;
 }
 
-.locksmith-hero-btn-primary,
-.locksmith-hero .locksmith-hero-btn-primary {
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0;
-  color: #0A0B0C !important;
-  background: #FFFFFF !important;
-  border: none;
-  padding: 10px 24px;
-  border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  visibility: visible !important;
-  opacity: 1 !important;
-  white-space: nowrap;
-  box-shadow: none;
-  box-sizing: border-box;
+/* Ensure btn-primary-large has black text in locksmith hero */
+.locksmith-hero-actions .btn-primary-large {
+  color: #0a0b0c !important;
 }
 
-.locksmith-hero-btn-primary:hover {
-  background: #FFFFFF;
-  color: #0A0B0C;
-  opacity: 0.95;
-}
-
-.locksmith-hero-btn-secondary {
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0;
-  color: #FFFFFF !important;
-  background: rgba(255, 255, 255, 0.1) !important;
-  border: 1px solid transparent;
-  padding: 10px 24px;
-  border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  visibility: visible !important;
-  opacity: 1 !important;
-  white-space: nowrap;
-  box-sizing: border-box;
-}
-
-.locksmith-hero-btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.15) !important;
-  opacity: 0.9;
-}
+/* Locksmith hero actions now use hero-actions styles from layout.css */
 
 /* ===== SECTIONS ===== */
 .locksmith-section {
@@ -701,11 +649,19 @@ main#main-content > section {
   margin-bottom: 0;
 }
 
+.locksmith-reliability-section .features-buttons .btn-primary-large {
+  color: #0A0B0C !important;
+}
+
 /* ===== SMART EVOLUTION SECTION SPECIFIC STYLES ===== */
 .locksmith-smart-evolution-section .locksmith-heading-dark {
   font-size: 36px;
   line-height: 1.3;
   letter-spacing: -0.36px;
+}
+
+.locksmith-smart-evolution-actions {
+  justify-content: flex-start !important;
 }
 
 .locksmith-smart-evolution-section .locksmith-description-dark {
@@ -809,6 +765,10 @@ main#main-content > section {
 
 .locksmith-realtime-insights-section .locksmith-content {
   max-width: 600px;
+}
+
+.locksmith-realtime-insights-section .features-buttons .btn-primary-large {
+  color: #0A0B0C !important;
 }
 
 /* ===== FEATURE LIST ===== */
@@ -1074,6 +1034,7 @@ main#main-content > section {
   display: flex;
   gap: 24px;
   align-items: center;
+  justify-content: flex-start !important;
 }
 
 /* ===== FEATURES GRID ===== */
@@ -1616,21 +1577,40 @@ main#main-content > section {
 
 
 .locksmith-testimonials-controls {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
 .locksmith-slider-dots {
-  width: 88px;
-  height: 8px;
+  display: none;
+  gap: 8px;
+  align-items: center;
+  flex-shrink: 0;
 }
 
-.locksmith-slider-dots img {
-  width: 100%;
-  height: 100%;
-  display: block;
+.locksmith-dot {
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  min-height: 8px;
+  max-width: 8px;
+  max-height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: background 0.3s ease;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  aspect-ratio: 1 / 1;
+}
+
+.locksmith-dot.locksmith-dot-active {
+  background: #FFFFFF;
 }
 
 .locksmith-slider-buttons {
@@ -1665,8 +1645,25 @@ main#main-content > section {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .locksmith-hero-heading {
-    font-size: 56px;
-    letter-spacing: -0.56px;
+    font-size: 40px;
+    letter-spacing: -0.4px;
+  }
+
+  .locksmith-hero-title-section {
+    gap: 16px;
+  }
+
+  .locksmith-hero-description {
+    font-size: 16px;
+  }
+
+  .locksmith-hero-content {
+    gap: 60px;
+  }
+
+  .locksmith-hero-tagline-wrapper,
+  .locksmith-hero-tagline {
+    display: none !important;
   }
 
   .locksmith-heading,
@@ -1677,7 +1674,8 @@ main#main-content > section {
   }
 
   .locksmith-two-column {
-    flex-direction: column;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
     gap: 48px;
   }
 
@@ -1687,6 +1685,42 @@ main#main-content > section {
 
   .locksmith-elevate-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .locksmith-elevate-heading {
+    font-size: 32px;
+    letter-spacing: -0.32px;
+    margin-bottom: 48px;
+  }
+
+  .locksmith-elevate-card {
+    gap: 24px;
+  }
+
+  .locksmith-elevate-card-content {
+    gap: 16px;
+  }
+
+  .locksmith-elevate-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .locksmith-elevate-title {
+    font-size: 22px;
+    letter-spacing: -0.22px;
+    line-height: 1.3;
+  }
+
+  .locksmith-elevate-description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .locksmith-section-gradient .locksmith-actions {
+    margin-top: 48px;
+    gap: 16px;
   }
 
   .locksmith-testimonials-wrapper {
@@ -1706,18 +1740,107 @@ main#main-content > section {
     font-size: 16px;
     max-width: 100%;
   }
+
+  .locksmith-impact-content {
+    gap: 48px;
+  }
+
+  .locksmith-impact-title-section {
+    gap: 12px;
+  }
+
+  .locksmith-impact-text-content {
+    gap: 16px;
+  }
+
+  .locksmith-heading-center {
+    font-size: 36px;
+    letter-spacing: -0.36px;
+    line-height: 1.2;
+  }
+
+  .locksmith-description-center {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .locksmith-stat-number {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .locksmith-stat-label {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .locksmith-stats-grid {
+    gap: 32px;
+  }
+
+  .locksmith-stat {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding-left: 0;
+    border-left: none;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .locksmith-stat-number {
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .locksmith-stat-label {
+    flex: 1;
+    margin: 0;
+  }
+
+  .benefits-modern-actions.locksmith-actions-center {
+    gap: 16px;
+    margin-top: 48px;
+  }
   
   .locksmith-testimonials-content {
     gap: 32px;
   }
   
   .locksmith-testimonials-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 16px 0;
   }
-  
+
+  .locksmith-testimonials-grid::-webkit-scrollbar {
+    display: none;
+  }
+
   .locksmith-testimonial-column {
+    flex: 0 0 45%;
+    min-width: 45%;
+    max-width: 45%;
+    scroll-snap-align: center;
     padding-right: 0;
+    padding-right: 0;
+  }
+
+  .locksmith-testimonials-controls {
+    display: flex !important;
+  }
+
+  .locksmith-slider-dots {
+    display: flex !important;
   }
 
   .locksmith-stats-grid {
@@ -1752,12 +1875,297 @@ main#main-content > section {
     grid-template-columns: 1fr;
   }
 
+  .locksmith-features-content.locksmith-features-left .locksmith-feature-card {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .locksmith-features-content.locksmith-features-left .locksmith-feature-card-header {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+  }
+
+  .locksmith-features-content.locksmith-features-left .locksmith-feature-card-title,
+  .locksmith-features-content.locksmith-features-left .locksmith-feature-card-description {
+    text-align: left !important;
+  }
+
+  .benefits-modern-actions.locksmith-features-actions {
+    gap: 12px !important;
+  }
+
+  .benefits-modern-actions.locksmith-actions-center {
+    gap: 12px !important;
+  }
+
   .locksmith-impact-decoration {
     display: none;
   }
 
   .locksmith-impact-content {
     gap: 64px;
+  }
+
+  /* Reliability Section - Tablet */
+  .locksmith-reliability-section .locksmith-heading {
+    font-size: 36px;
+    letter-spacing: -0.36px;
+  }
+
+  .locksmith-reliability-section .locksmith-description {
+    font-size: 14px;
+  }
+
+  .locksmith-reliability-section .locksmith-two-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 48px;
+  }
+
+  .locksmith-reliability-section .locksmith-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    order: 1;
+    margin: 0 !important;
+    justify-self: stretch !important;
+    aspect-ratio: auto !important;
+    flex: none !important;
+    min-width: auto !important;
+  }
+
+  .locksmith-reliability-section .locksmith-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .locksmith-reliability-section .locksmith-content {
+    order: 0;
+    display: contents !important;
+  }
+
+  .locksmith-reliability-section .locksmith-section-title {
+    order: 0;
+    margin-bottom: 24px;
+    gap: 16px;
+  }
+
+  .locksmith-reliability-section .locksmith-image {
+    margin-bottom: 24px;
+  }
+
+  .locksmith-reliability-section .locksmith-feature-list {
+    order: 2;
+    margin-bottom: 24px;
+  }
+
+  .locksmith-reliability-section .features-buttons.locksmith-actions {
+    order: 3;
+  }
+
+  .locksmith-reliability-section .locksmith-feature-item {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .locksmith-reliability-section .locksmith-text-content {
+    gap: 16px;
+  }
+
+  /* Reliability Section - Tablet - Keep buttons horizontal */
+  .locksmith-reliability-section .features-buttons.locksmith-actions {
+    flex-direction: row !important;
+    width: 100%;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .locksmith-reliability-section .features-buttons.locksmith-actions .btn-primary-large,
+  .locksmith-reliability-section .features-buttons.locksmith-actions .btn-outline-white {
+    flex: 1 1 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 10px 18px !important;
+    font-size: 14px !important;
+  }
+
+  /* Smart Evolution Section - Tablet */
+  .locksmith-smart-evolution-section .locksmith-heading-dark {
+    font-size: 28px;
+    letter-spacing: -0.28px;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-description-dark {
+    font-size: 14px;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-two-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 48px;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-content {
+    order: 0;
+    display: contents !important;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-section-title {
+    order: 0;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-smart-evolution-list {
+    order: 1;
+    margin-bottom: 24px;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-smart-evolution-image {
+    margin-bottom: 24px;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-smart-evolution-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    order: 1;
+    margin: 0 !important;
+    justify-self: stretch !important;
+    aspect-ratio: auto !important;
+    flex: none !important;
+    min-width: auto !important;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-smart-evolution-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .locksmith-smart-evolution-section .benefits-modern-actions.locksmith-smart-evolution-actions {
+    order: 3;
+    flex-direction: row !important;
+    width: 100%;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .locksmith-smart-evolution-section .benefits-modern-actions.locksmith-smart-evolution-actions .benefits-modern-btn-primary,
+  .locksmith-smart-evolution-section .benefits-modern-actions.locksmith-smart-evolution-actions .benefits-modern-btn-secondary {
+    flex: 1 1 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 10px 18px !important;
+    font-size: 14px !important;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-smart-evolution-item {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-text-content {
+    gap: 16px;
+  }
+
+  /* Real-Time Insights Section - Tablet */
+  .locksmith-realtime-insights-section .locksmith-heading {
+    font-size: 28px;
+    letter-spacing: -0.28px;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-description {
+    font-size: 14px;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-two-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 48px;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-content {
+    order: 0;
+    display: contents !important;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-section-title {
+    order: 0;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    order: 1;
+    margin-bottom: 24px;
+    margin: 0 !important;
+    justify-self: stretch !important;
+    aspect-ratio: auto !important;
+    flex: none !important;
+    min-width: auto !important;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-feature-list {
+    order: 2;
+    margin-bottom: 24px;
+  }
+
+  .locksmith-realtime-insights-section .features-buttons.locksmith-actions {
+    order: 3;
+    flex-direction: row !important;
+    width: 100%;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .locksmith-realtime-insights-section .features-buttons.locksmith-actions .btn-primary-large,
+  .locksmith-realtime-insights-section .features-buttons.locksmith-actions .btn-outline-white {
+    flex: 1 1 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 10px 18px !important;
+    font-size: 14px !important;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-feature-item {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-text-content {
+    gap: 16px;
   }
 }
 
@@ -1767,12 +2175,29 @@ main#main-content > section {
   }
 
   .locksmith-hero-container {
-    padding: 80px 24px;
+    padding: 100px 20px 100px;
   }
 
   .locksmith-hero-heading {
-    font-size: 48px;
-    letter-spacing: -0.48px;
+    font-size: 32px;
+    letter-spacing: -0.32px;
+  }
+
+  .locksmith-hero-title-section {
+    gap: 16px;
+  }
+
+  .locksmith-hero-description {
+    font-size: 16px;
+  }
+
+  .locksmith-hero-content {
+    gap: 60px;
+  }
+
+  .locksmith-hero-tagline-wrapper,
+  .locksmith-hero-tagline {
+    display: none !important;
   }
 
   .locksmith-heading,
@@ -1800,6 +2225,43 @@ main#main-content > section {
 
   .locksmith-elevate-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .locksmith-elevate-heading {
+    font-size: 28px;
+    letter-spacing: -0.28px;
+    margin-bottom: 40px;
+  }
+
+  .locksmith-elevate-card {
+    gap: 20px;
+  }
+
+  .locksmith-elevate-card-content {
+    gap: 12px;
+  }
+
+  .locksmith-elevate-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .locksmith-elevate-title {
+    font-size: 20px;
+    letter-spacing: -0.20px;
+    line-height: 1.3;
+  }
+
+  .locksmith-elevate-description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .locksmith-section-gradient .locksmith-actions {
+    margin-top: 40px;
+    gap: 12px;
+    flex-wrap: wrap;
   }
 
   .locksmith-container {
@@ -1811,12 +2273,61 @@ main#main-content > section {
   }
 
   .locksmith-impact-content {
-    gap: 64px;
+    gap: 40px;
+  }
+
+  .locksmith-impact-title-section {
+    gap: 10px;
+  }
+
+  .locksmith-impact-text-content {
+    gap: 12px;
+  }
+
+  .locksmith-heading-center {
+    font-size: 28px;
+    letter-spacing: -0.28px;
+    line-height: 1.2;
+  }
+
+  .locksmith-description-center {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .locksmith-stat-number {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .locksmith-stat-label {
+    font-size: 14px;
+    line-height: 1.4;
   }
 
   .locksmith-stats-grid {
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
+  }
+
+  .locksmith-stat {
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    padding-left: 0;
+    border-left: none;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .locksmith-stat-number {
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .locksmith-stat-label {
+    flex: 1;
+    margin: 0;
   }
 
   .locksmith-stat {
@@ -1829,6 +2340,354 @@ main#main-content > section {
   .locksmith-stat:first-child {
     border-top: none;
     padding-top: 0;
+  }
+
+  /* Reliability Section - Mobile */
+  .locksmith-reliability-section .locksmith-heading {
+    font-size: 28px;
+    letter-spacing: -0.28px;
+    line-height: 1.3;
+  }
+
+  .locksmith-reliability-section .locksmith-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .locksmith-reliability-section .locksmith-two-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px;
+  }
+
+  .locksmith-reliability-section .locksmith-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    order: 1;
+    margin: 0 !important;
+    justify-self: stretch !important;
+    aspect-ratio: auto !important;
+    flex: none !important;
+    min-width: auto !important;
+  }
+
+  .locksmith-reliability-section .locksmith-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .locksmith-reliability-section .locksmith-content {
+    max-width: 100%;
+    order: 0;
+    display: contents !important;
+  }
+
+  .locksmith-reliability-section .locksmith-section-title {
+    order: 0;
+    margin-bottom: 20px;
+  }
+
+  .locksmith-reliability-section .locksmith-image {
+    margin-bottom: 20px;
+  }
+
+  .locksmith-reliability-section .locksmith-feature-list {
+    order: 2;
+    margin-bottom: 20px;
+  }
+
+  .locksmith-reliability-section .features-buttons.locksmith-actions {
+    order: 3;
+  }
+
+  .locksmith-reliability-section .locksmith-feature-item {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .locksmith-reliability-section .locksmith-feature-list {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .locksmith-reliability-section .locksmith-section-title {
+    gap: 12px;
+  }
+
+  .locksmith-reliability-section .locksmith-text-content {
+    gap: 12px;
+  }
+
+  /* Reliability Section - Mobile - Keep buttons horizontal */
+  .locksmith-reliability-section .features-buttons.locksmith-actions {
+    flex-direction: row !important;
+    width: 100%;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .locksmith-reliability-section .features-buttons.locksmith-actions .btn-primary-large,
+  .locksmith-reliability-section .features-buttons.locksmith-actions .btn-outline-white {
+    flex: 1 1 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
+
+  /* Smart Evolution Section - Mobile */
+  .locksmith-smart-evolution-section .locksmith-heading-dark {
+    font-size: 24px;
+    letter-spacing: -0.24px;
+    line-height: 1.3;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-description-dark {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-two-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-content {
+    max-width: 100%;
+    order: 0;
+    display: contents !important;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-section-title {
+    order: 0;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-smart-evolution-list {
+    order: 1;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-smart-evolution-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    order: 1;
+    margin-bottom: 20px;
+    margin: 0 !important;
+    justify-self: stretch !important;
+    aspect-ratio: auto !important;
+    flex: none !important;
+    min-width: auto !important;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-smart-evolution-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .locksmith-smart-evolution-section .benefits-modern-actions.locksmith-smart-evolution-actions {
+    order: 3;
+    flex-direction: row !important;
+    width: 100%;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .locksmith-smart-evolution-section .benefits-modern-actions.locksmith-smart-evolution-actions .benefits-modern-btn-primary,
+  .locksmith-smart-evolution-section .benefits-modern-actions.locksmith-smart-evolution-actions .benefits-modern-btn-secondary {
+    flex: 1 1 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-smart-evolution-item {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .locksmith-smart-evolution-section .locksmith-text-content {
+    gap: 12px;
+  }
+
+  /* Real-Time Insights Section - Mobile */
+  .locksmith-realtime-insights-section .locksmith-heading {
+    font-size: 24px;
+    letter-spacing: -0.24px;
+    line-height: 1.3;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-two-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-content {
+    max-width: 100%;
+    order: 0;
+    display: contents !important;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-section-title {
+    order: 0;
+    margin-bottom: 20px;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    order: 1;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+    justify-self: stretch !important;
+    aspect-ratio: auto !important;
+    flex: none !important;
+    min-width: auto !important;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-feature-list {
+    order: 2;
+    margin-bottom: 20px;
+  }
+
+  .locksmith-realtime-insights-section .features-buttons.locksmith-actions {
+    order: 3;
+    flex-direction: row !important;
+    width: 100%;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .locksmith-realtime-insights-section .features-buttons.locksmith-actions .btn-primary-large,
+  .locksmith-realtime-insights-section .features-buttons.locksmith-actions .btn-outline-white {
+    flex: 1 1 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-feature-item {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-feature-list {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-section-title {
+    gap: 12px;
+  }
+
+  .locksmith-realtime-insights-section .locksmith-text-content {
+    gap: 12px;
+  }
+
+  .locksmith-features-content.locksmith-features-left .locksmith-feature-card {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .locksmith-features-content.locksmith-features-left .locksmith-feature-card-header {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+  }
+
+  .locksmith-features-content.locksmith-features-left .locksmith-feature-card-title,
+  .locksmith-features-content.locksmith-features-left .locksmith-feature-card-description {
+    text-align: left !important;
+  }
+
+  .benefits-modern-actions.locksmith-features-actions {
+    gap: 12px !important;
+  }
+
+  .benefits-modern-actions.locksmith-actions-center {
+    gap: 12px !important;
+  }
+
+  .locksmith-testimonials-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 16px 0;
+  }
+
+  .locksmith-testimonials-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .locksmith-testimonial-column {
+    flex: 0 0 85%;
+    min-width: 85%;
+    max-width: 85%;
+    scroll-snap-align: center;
+  }
+
+  .locksmith-testimonials-controls {
+    display: flex !important;
+  }
+
+  .locksmith-slider-dots {
+    display: flex !important;
   }
 }
 

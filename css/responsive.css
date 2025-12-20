@@ -78,15 +78,38 @@
   }
 
   .performance-title {
-    font-size: 38px;
+    font-size: 32px;
+    letter-spacing: -0.32px;
+  }
+
+  .performance-description {
+    font-size: 16px;
   }
 
   .performance-stats-row {
     gap: 32px;
   }
 
+  .performance-stat-item {
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+
   .performance-stat-number {
-    font-size: 64px;
+    font-size: 56px;
+    text-align: left;
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .performance-stat-label {
+    font-size: 18px;
+    letter-spacing: -0.18px;
+    text-align: left;
+    margin: 0;
+    flex: 1;
   }
 
   /* Transform Your Business Communications CTA Section */
@@ -358,6 +381,68 @@
     align-items: flex-start;
   }
 
+  /* Main Testimonials Section */
+  .main-testimonials-section {
+    padding: 80px 40px;
+  }
+
+  .main-testimonials-wrapper {
+    gap: 48px;
+  }
+  
+  .main-testimonials-title-section {
+    max-width: 100%;
+  }
+  
+  .main-testimonials-heading {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+  
+  .main-testimonials-subtitle {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  
+  .main-testimonials-content {
+    gap: 32px;
+  }
+  
+  .main-testimonials-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 16px 0;
+  }
+
+  .main-testimonials-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main-testimonial-column {
+    flex: 0 0 45%;
+    min-width: 45%;
+    max-width: 45%;
+    scroll-snap-align: center;
+    padding-right: 0;
+  }
+
+  .main-testimonials-controls {
+    display: flex !important;
+  }
+
+  .main-slider-dots {
+    display: flex !important;
+  }
+
   /* Footer Dropdowns */
   .footer-dropdown-toggle {
     display: flex !important;
@@ -511,7 +596,8 @@
   }
 
   .hero-actions,
-  .ser-services-header-actions {
+  .ser-services-header-actions,
+  .home-service-hero-actions {
     flex-direction: column;
     width: 100%;
     gap: 12px;
@@ -523,7 +609,10 @@
   .hero-actions .btn-secondary-large,
   .ser-services-header-actions button,
   .ser-services-header-actions .btn-primary-large,
-  .ser-services-header-actions .btn-secondary-large {
+  .ser-services-header-actions .btn-secondary-large,
+  .home-service-hero-actions button,
+  .home-service-hero-actions .btn-primary-large,
+  .home-service-hero-actions .btn-secondary-large {
     width: 100%;
     max-width: 300px;
     padding: 12px 24px;
@@ -540,27 +629,31 @@
 
   /* Ensure both buttons have consistent border-box sizing */
   .hero-actions .btn-primary-large,
-  .ser-services-header-actions .btn-primary-large {
+  .ser-services-header-actions .btn-primary-large,
+  .home-service-hero-actions .btn-primary-large {
     border: none;
     width: 100% !important;
     max-width: 300px !important;
   }
 
   .hero-actions .btn-secondary-large,
-  .ser-services-header-actions .btn-secondary-large {
+  .ser-services-header-actions .btn-secondary-large,
+  .home-service-hero-actions .btn-secondary-large {
     border: 1px solid transparent;
     width: 100% !important;
     max-width: 300px !important;
   }
 
   .hero-actions .btn-get-started-wrapper,
-  .ser-services-header-actions .btn-get-started-wrapper {
+  .ser-services-header-actions .btn-get-started-wrapper,
+  .home-service-hero-actions .btn-get-started-wrapper {
     width: 100%;
     max-width: 300px;
   }
 
   .hero-actions .btn-get-started-wrapper .btn-primary-large,
-  .ser-services-header-actions .btn-get-started-wrapper .btn-primary-large {
+  .ser-services-header-actions .btn-get-started-wrapper .btn-primary-large,
+  .home-service-hero-actions .btn-get-started-wrapper .btn-primary-large {
     width: 100% !important;
     max-width: 300px !important;
   }
@@ -828,33 +921,39 @@
   }
 
   .performance-container {
-    gap: 48px;
+    gap: 40px;
   }
 
   .performance-top-content {
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
   }
 
   .performance-title {
-    font-size: 32px;
+    font-size: 28px;
+    letter-spacing: -0.28px;
+    line-height: 1.3;
   }
 
   .performance-description {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 1.5;
   }
 
   .performance-stats-row {
     flex-direction: column;
-    gap: 40px;
+    gap: 32px;
   }
 
   .performance-stat-item {
     padding-left: 0;
-    padding-top: 32px;
+    padding-top: 24px;
     border-left: none;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    text-align: center;
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
   }
 
   .performance-stat-item:first-child {
@@ -863,11 +962,20 @@
   }
 
   .performance-stat-number {
-    font-size: 56px;
+    font-size: 48px;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0;
+    flex-shrink: 0;
   }
 
   .performance-stat-label {
-    font-size: 20px;
+    font-size: 16px;
+    letter-spacing: -0.16px;
+    line-height: 1.4;
+    text-align: left;
+    margin: 0;
+    flex: 1;
   }
 
   /* Transform Your Business Communications CTA Section */
@@ -978,6 +1086,55 @@
 
   .trust-testimonial-column:last-child {
     margin-right: 7.5%;
+  }
+
+  /* Main Testimonials Section */
+  .main-testimonials-section {
+    padding: 60px 24px;
+  }
+
+  .main-testimonials-heading {
+    font-size: 32px;
+    letter-spacing: -0.32px;
+  }
+
+  .main-testimonials-subtitle {
+    font-size: 16px;
+  }
+
+  .main-testimonials-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 16px 0;
+  }
+
+  .main-testimonials-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .main-testimonial-column {
+    flex: 0 0 85%;
+    min-width: 85%;
+    max-width: 85%;
+    scroll-snap-align: center;
+    padding-right: 0;
+  }
+
+  .main-testimonials-controls {
+    display: flex !important;
+  }
+
+  .main-slider-dots {
+    display: flex !important;
   }
 
   .trust-testimonial-quote {

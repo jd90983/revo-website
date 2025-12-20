@@ -64,30 +64,30 @@ main#main-content > section {
 }
 
 /* Force visibility of all text elements */
-.ind-home-service-pros-section h1,
-.ind-home-service-pros-section h2,
-.ind-home-service-pros-section h3,
-.ind-home-service-pros-section h4,
-.ind-home-service-pros-section h5,
-.ind-home-service-pros-section h6,
-.ind-home-service-pros-section p,
-.ind-home-service-pros-section span,
-.ind-home-service-pros-section div,
-.ind-home-service-pros-section button,
-.ind-home-service-pros-section a,
-.ind-home-service-pros-section li,
-.ind-professional-businesses-section h1,
-.ind-professional-businesses-section h2,
-.ind-professional-businesses-section h3,
-.ind-professional-businesses-section h4,
-.ind-professional-businesses-section h5,
-.ind-professional-businesses-section h6,
-.ind-professional-businesses-section p,
-.ind-professional-businesses-section span,
-.ind-professional-businesses-section div,
-.ind-professional-businesses-section button,
-.ind-professional-businesses-section a,
-.ind-professional-businesses-section li {
+.ind-home-service-pros-section.animate-in h1,
+.ind-home-service-pros-section.animate-in h2,
+.ind-home-service-pros-section.animate-in h3,
+.ind-home-service-pros-section.animate-in h4,
+.ind-home-service-pros-section.animate-in h5,
+.ind-home-service-pros-section.animate-in h6,
+.ind-home-service-pros-section.animate-in p,
+.ind-home-service-pros-section.animate-in span,
+.ind-home-service-pros-section.animate-in div,
+.ind-home-service-pros-section.animate-in button,
+.ind-home-service-pros-section.animate-in a,
+.ind-home-service-pros-section.animate-in li,
+.ind-professional-businesses-section.animate-in h1,
+.ind-professional-businesses-section.animate-in h2,
+.ind-professional-businesses-section.animate-in h3,
+.ind-professional-businesses-section.animate-in h4,
+.ind-professional-businesses-section.animate-in h5,
+.ind-professional-businesses-section.animate-in h6,
+.ind-professional-businesses-section.animate-in p,
+.ind-professional-businesses-section.animate-in span,
+.ind-professional-businesses-section.animate-in div,
+.ind-professional-businesses-section.animate-in button,
+.ind-professional-businesses-section.animate-in a,
+.ind-professional-businesses-section.animate-in li {
   color: #0A0B0C !important;
   visibility: visible !important;
   opacity: 1 !important;
@@ -297,7 +297,7 @@ main#main-content > section {
 .ind-hero {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 800px;
   overflow: hidden;
   margin-top: -72px;
   padding-top: 72px;
@@ -340,7 +340,10 @@ main#main-content > section {
 .ind-hero-gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 62.556%, #000000 93.889%);
+  background-image: url('../images/backgrounds/industry_page_background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   z-index: 3;
 }
 
@@ -1559,10 +1562,7 @@ main#main-content > section {
 
   .ind-hero-tagline-wrapper,
   .ind-hero-tagline {
-    width: 100% !important;
-    max-width: 100% !important;
-    text-align: center !important;
-    display: block !important;
+    display: none !important;
   }
 
   .ind-home-service-pros-section,
