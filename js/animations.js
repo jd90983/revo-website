@@ -428,3 +428,98 @@ if (document.readyState === 'loading') {
 } else {
   initCounterAnimation();
 }
+
+// ===== MAIN TESTIMONIALS SLIDER =====
+const initMainTestimonialsSlider = () => {
+  const testimonialsGrid = document.querySelector('.main-testimonials-grid');
+  const dots = document.querySelectorAll('.main-dot');
+  const testimonials = document.querySelectorAll('.main-testimonial-column');
+  const prevBtn = document.querySelector('.main-slider-btn-prev');
+  const nextBtn = document.querySelector('.main-slider-btn-next');
+
+  if (!testimonialsGrid || !dots.length || !testimonials.length) {
+    return;
+  }
+
+  let currentIndex = 0;
+
+  // Function to update active dot
+  const updateDots = (index) => {
+    dots.forEach((dot, i) => {
+      if (i === index) {
+        dot.classList.add('main-dot-active');
+      } else {
+        dot.classList.remove('main-dot-active');
+      }
+    });
+  };
+
+  // Function to scroll to testimonial
+  const scrollToTestimonial = (index) => {
+    if (index < 0) index = testimonials.length - 1;
+    if (index >= testimonials.length) index = 0;
+    
+    currentIndex = index;
+    const testimonial = testimonials[index];
+    const scrollPosition = testimonial.offsetLeft - testimonialsGrid.offsetLeft;
+    
+    testimonialsGrid.scrollTo({
+      left: scrollPosition,
+      behavior: 'smooth'
+    });
+    
+    updateDots(index);
+  };
+
+  // Dot click handlers
+  dots.forEach((dot, index) => {
+    dot.addEventListener('click', () => {
+      scrollToTestimonial(index);
+    });
+  });
+
+  // Previous button handler
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      scrollToTestimonial(currentIndex - 1);
+    });
+  }
+
+  // Next button handler
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      scrollToTestimonial(currentIndex + 1);
+    });
+  }
+
+  // Update dots on scroll
+  testimonialsGrid.addEventListener('scroll', () => {
+    const scrollLeft = testimonialsGrid.scrollLeft;
+    
+    // Find which testimonial is most visible
+    let closestIndex = 0;
+    let closestDistance = Infinity;
+    
+    testimonials.forEach((testimonial, index) => {
+      const testimonialLeft = testimonial.offsetLeft - testimonialsGrid.offsetLeft;
+      const distance = Math.abs(scrollLeft - testimonialLeft);
+      
+      if (distance < closestDistance) {
+        closestDistance = distance;
+        closestIndex = index;
+      }
+    });
+    
+    if (closestIndex !== currentIndex) {
+      currentIndex = closestIndex;
+      updateDots(closestIndex);
+    }
+  });
+};
+
+// Initialize main testimonials slider when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initMainTestimonialsSlider);
+} else {
+  initMainTestimonialsSlider();
+}

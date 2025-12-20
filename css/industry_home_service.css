@@ -179,71 +179,55 @@ main#main-content > section {
 }
 
 .home-service-hero-actions {
-  display: flex !important;
+  display: flex;
   gap: 16px;
-  align-items: center;
   justify-content: center;
-  visibility: visible !important;
-  opacity: 1 !important;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.home-service-hero-btn-primary,
-.home-service-hero .home-service-hero-btn-primary {
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0;
-  color: #0A0B0C !important;
-  background: #FFFFFF !important;
+/* Apply hero-actions button styles to home-service-hero-actions */
+.home-service-hero-actions .btn-primary-large {
+  background: #ffffff;
+  color: #0a0b0c !important;
   border: none;
   padding: 10px 24px;
   border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  visibility: visible !important;
-  opacity: 1 !important;
-  white-space: nowrap;
-  box-shadow: none;
-  box-sizing: border-box;
-}
-
-.home-service-hero-btn-primary:hover {
-  background: #FFFFFF;
-  color: #0A0B0C;
-  opacity: 0.95;
-}
-
-.home-service-hero-btn-secondary {
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: var(--font-body);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0;
-  color: #FFFFFF !important;
-  background: rgba(255, 255, 255, 0.1) !important;
-  border: 1px solid transparent;
-  padding: 10px 24px;
-  border-radius: 100px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: inline-flex !important;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  visibility: visible !important;
-  opacity: 1 !important;
-  white-space: nowrap;
+  transition: background-color 0.2s ease;
+  position: relative;
+  z-index: 1;
+  width: 200px;
   box-sizing: border-box;
 }
 
-.home-service-hero-btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.15) !important;
-  opacity: 0.9;
+.home-service-hero-actions .btn-primary-large:hover {
+  background: #f5f5f5;
+  transform: none;
+  box-shadow: none;
+}
+
+.home-service-hero-actions .btn-secondary-large {
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: 1px solid transparent;
+  padding: 10px 24px;
+  border-radius: 100px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: background-color 0.2s ease;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.home-service-hero-actions .btn-secondary-large:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: none;
 }
 
 /* ===== SECTIONS ===== */
@@ -701,6 +685,10 @@ main#main-content > section {
   margin-bottom: 0;
 }
 
+.home-service-reliability-section .features-buttons .btn-primary-large {
+  color: #0A0B0C !important;
+}
+
 /* ===== SMART EVOLUTION SECTION SPECIFIC STYLES ===== */
 .home-service-smart-evolution-section .home-service-heading-dark {
   font-size: 36px;
@@ -756,6 +744,10 @@ main#main-content > section {
   max-width: 600px;
 }
 
+.home-service-smart-evolution-actions {
+  justify-content: flex-start !important;
+}
+
 /* ===== REAL-TIME INSIGHTS SECTION SPECIFIC STYLES ===== */
 .home-service-realtime-insights-section .home-service-heading {
   font-size: 36px;
@@ -809,6 +801,10 @@ main#main-content > section {
 
 .home-service-realtime-insights-section .home-service-content {
   max-width: 600px;
+}
+
+.home-service-realtime-insights-section .features-buttons .btn-primary-large {
+  color: #0A0B0C !important;
 }
 
 /* ===== FEATURE LIST ===== */
@@ -1074,6 +1070,7 @@ main#main-content > section {
   display: flex;
   gap: 24px;
   align-items: center;
+  justify-content: flex-start !important;
 }
 
 /* ===== FEATURES GRID ===== */
@@ -1616,21 +1613,40 @@ main#main-content > section {
 
 
 .home-service-testimonials-controls {
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
 .home-service-slider-dots {
-  width: 88px;
-  height: 8px;
+  display: none;
+  gap: 8px;
+  align-items: center;
+  flex-shrink: 0;
 }
 
-.home-service-slider-dots img {
-  width: 100%;
-  height: 100%;
-  display: block;
+.home-service-dot {
+  width: 8px;
+  height: 8px;
+  min-width: 8px;
+  min-height: 8px;
+  max-width: 8px;
+  max-height: 8px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  transition: background 0.3s ease;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  aspect-ratio: 1 / 1;
+}
+
+.home-service-dot.home-service-dot-active {
+  background: #FFFFFF;
 }
 
 .home-service-slider-buttons {
@@ -1665,8 +1681,25 @@ main#main-content > section {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
   .home-service-hero-heading {
-    font-size: 56px;
-    letter-spacing: -0.56px;
+    font-size: 40px;
+    letter-spacing: -0.4px;
+  }
+
+  .home-service-hero-title-section {
+    gap: 16px;
+  }
+
+  .home-service-hero-description {
+    font-size: 16px;
+  }
+
+  .home-service-hero-content {
+    gap: 60px;
+  }
+
+  .home-service-hero-tagline-wrapper,
+  .home-service-hero-tagline {
+    display: none !important;
   }
 
   .home-service-heading,
@@ -1681,12 +1714,310 @@ main#main-content > section {
     gap: 48px;
   }
 
+  /* Reliability Section - Tablet */
+  .home-service-reliability-section .home-service-heading {
+    font-size: 36px;
+    letter-spacing: -0.36px;
+  }
+
+  .home-service-reliability-section .home-service-description {
+    font-size: 14px;
+  }
+
+  .home-service-reliability-section .home-service-two-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 48px;
+  }
+
+  .home-service-reliability-section .home-service-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    order: 1;
+    margin: 0 !important;
+    justify-self: stretch !important;
+    aspect-ratio: auto !important;
+    flex: none !important;
+    min-width: auto !important;
+  }
+
+  .home-service-reliability-section .home-service-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .home-service-reliability-section .home-service-content {
+    order: 0;
+    display: contents !important;
+  }
+
+  .home-service-reliability-section .home-service-section-title {
+    order: 0;
+    margin-bottom: 24px;
+    gap: 16px;
+  }
+
+  .home-service-reliability-section .home-service-image {
+    margin-bottom: 24px;
+  }
+
+  .home-service-reliability-section .home-service-feature-list {
+    order: 2;
+    margin-bottom: 24px;
+  }
+
+  .home-service-reliability-section .features-buttons.home-service-actions {
+    order: 3;
+  }
+
+  .home-service-reliability-section .home-service-feature-item {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .home-service-reliability-section .home-service-text-content {
+    gap: 16px;
+  }
+
+  /* Reliability Section - Tablet - Keep buttons horizontal */
+  .home-service-reliability-section .features-buttons.home-service-actions {
+    flex-direction: row !important;
+    width: 100%;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .home-service-reliability-section .features-buttons.home-service-actions .btn-primary-large,
+  .home-service-reliability-section .features-buttons.home-service-actions .btn-outline-white {
+    flex: 1 1 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 10px 18px !important;
+    font-size: 14px !important;
+  }
+
+  /* Smart Evolution Section - Tablet */
+  .home-service-smart-evolution-section .home-service-heading-dark {
+    font-size: 28px;
+    letter-spacing: -0.28px;
+  }
+
+  .home-service-smart-evolution-section .home-service-description-dark {
+    font-size: 14px;
+  }
+
+  .home-service-smart-evolution-section .home-service-two-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 48px;
+  }
+
+  .home-service-smart-evolution-section .home-service-content {
+    order: 0;
+    display: contents !important;
+  }
+
+  .home-service-smart-evolution-section .home-service-section-title {
+    order: 0;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .home-service-smart-evolution-section .home-service-smart-evolution-list {
+    order: 1;
+    margin-bottom: 24px;
+  }
+
+  .home-service-smart-evolution-section .home-service-smart-evolution-image {
+    margin-bottom: 24px;
+  }
+
+  .home-service-smart-evolution-section .home-service-smart-evolution-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    order: 1;
+    margin: 0 !important;
+    justify-self: stretch !important;
+    aspect-ratio: auto !important;
+    flex: none !important;
+    min-width: auto !important;
+  }
+
+  .home-service-smart-evolution-section .home-service-smart-evolution-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .home-service-smart-evolution-section .benefits-modern-actions.home-service-smart-evolution-actions {
+    order: 3;
+    flex-direction: row !important;
+    width: 100%;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .home-service-smart-evolution-section .benefits-modern-actions.home-service-smart-evolution-actions .benefits-modern-btn-primary,
+  .home-service-smart-evolution-section .benefits-modern-actions.home-service-smart-evolution-actions .benefits-modern-btn-secondary {
+    flex: 1 1 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 10px 18px !important;
+    font-size: 14px !important;
+  }
+
+  .home-service-smart-evolution-section .home-service-smart-evolution-item {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .home-service-smart-evolution-section .home-service-text-content {
+    gap: 16px;
+  }
+
+  /* Real-Time Insights Section - Tablet */
+  .home-service-realtime-insights-section .home-service-heading {
+    font-size: 28px;
+    letter-spacing: -0.28px;
+  }
+
+  .home-service-realtime-insights-section .home-service-description {
+    font-size: 14px;
+  }
+
+  .home-service-realtime-insights-section .home-service-two-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 48px;
+  }
+
+  .home-service-realtime-insights-section .home-service-content {
+    order: 0;
+    display: contents !important;
+  }
+
+  .home-service-realtime-insights-section .home-service-section-title {
+    order: 0;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .home-service-realtime-insights-section .home-service-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    order: 1;
+    margin-bottom: 24px;
+    margin: 0 !important;
+    justify-self: stretch !important;
+    aspect-ratio: auto !important;
+    flex: none !important;
+    min-width: auto !important;
+  }
+
+  .home-service-realtime-insights-section .home-service-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .home-service-realtime-insights-section .home-service-feature-list {
+    order: 2;
+    margin-bottom: 24px;
+  }
+
+  .home-service-realtime-insights-section .features-buttons.home-service-actions {
+    order: 3;
+    flex-direction: row !important;
+    width: 100%;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .home-service-realtime-insights-section .features-buttons.home-service-actions .btn-primary-large,
+  .home-service-realtime-insights-section .features-buttons.home-service-actions .btn-outline-white {
+    flex: 1 1 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 10px 18px !important;
+    font-size: 14px !important;
+  }
+
+  .home-service-realtime-insights-section .home-service-feature-item {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .home-service-realtime-insights-section .home-service-text-content {
+    gap: 16px;
+  }
+
   .home-service-two-column-reverse {
     flex-direction: column;
   }
 
   .home-service-elevate-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .home-service-elevate-heading {
+    font-size: 30px;
+    letter-spacing: -0.30px;
+    margin-bottom: 48px;
+  }
+
+  .home-service-elevate-card {
+    gap: 24px;
+  }
+
+  .home-service-elevate-card-content {
+    gap: 16px;
+  }
+
+  .home-service-elevate-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .home-service-elevate-title {
+    font-size: 22px;
+    letter-spacing: -0.22px;
+    line-height: 1.3;
+  }
+
+  .home-service-elevate-description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .home-service-section-gradient .home-service-actions {
+    margin-top: 48px;
+    gap: 16px;
   }
 
   .home-service-testimonials-wrapper {
@@ -1712,29 +2043,66 @@ main#main-content > section {
   }
   
   .home-service-testimonials-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 16px 0;
   }
-  
+
+  .home-service-testimonials-grid::-webkit-scrollbar {
+    display: none;
+  }
+
   .home-service-testimonial-column {
+    flex: 0 0 45%;
+    min-width: 45%;
+    max-width: 45%;
+    scroll-snap-align: center;
     padding-right: 0;
   }
 
+  .home-service-testimonials-controls {
+    display: flex !important;
+  }
+
+  .home-service-slider-dots {
+    display: flex !important;
+  }
+
   .home-service-stats-grid {
-    flex-direction: column;
     gap: 32px;
   }
 
   .home-service-stat {
-    border-left: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
     padding-left: 0;
-    padding-top: 32px;
-    border-top: 1px solid rgba(10, 11, 12, 0.1);
+    border-left: none;
+    padding-top: 0;
+    border-top: none;
   }
 
-  .home-service-stat:first-child {
-    border-top: none;
-    padding-top: 0;
+  .home-service-stat-number {
+    font-size: 48px;
+    line-height: 1.2;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .home-service-stat-label {
+    font-size: 16px;
+    line-height: 1.4;
+    flex: 1;
+    margin: 0;
   }
 
   .home-service-features-wrapper {
@@ -1752,12 +2120,82 @@ main#main-content > section {
     grid-template-columns: 1fr;
   }
 
+  .home-service-features-content.home-service-features-left .home-service-feature-card {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .home-service-features-content.home-service-features-left .home-service-feature-card-header {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+  }
+
+  .home-service-features-content.home-service-features-left .home-service-feature-card-title,
+  .home-service-features-content.home-service-features-left .home-service-feature-card-description {
+    text-align: left !important;
+  }
+
+  .benefits-modern-actions.home-service-features-actions {
+    gap: 12px !important;
+  }
+
+  .benefits-modern-actions.home-service-actions-center {
+    gap: 12px !important;
+  }
+
   .home-service-impact-decoration {
     display: none;
   }
 
   .home-service-impact-content {
-    gap: 64px;
+    gap: 48px;
+  }
+
+  .home-service-impact-title-section {
+    gap: 12px;
+  }
+
+  .home-service-impact-text-content {
+    gap: 16px;
+  }
+
+  .home-service-heading-center {
+    font-size: 36px;
+    letter-spacing: -0.36px;
+    line-height: 1.2;
+  }
+
+  .home-service-description-center {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .home-service-stats-grid {
+    gap: 32px;
+  }
+
+  .home-service-stat {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding-left: 0;
+    border-left: none;
+    padding-top: 0;
+    border-top: none;
+  }
+
+  .home-service-stat-number {
+    font-size: 48px;
+    line-height: 1.2;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .home-service-stat-label {
+    font-size: 16px;
+    line-height: 1.4;
+    flex: 1;
+    margin: 0;
   }
 }
 
@@ -1771,8 +2209,25 @@ main#main-content > section {
   }
 
   .home-service-hero-heading {
-    font-size: 48px;
-    letter-spacing: -0.48px;
+    font-size: 32px;
+    letter-spacing: -0.32px;
+  }
+
+  .home-service-hero-title-section {
+    gap: 16px;
+  }
+
+  .home-service-hero-description {
+    font-size: 16px;
+  }
+
+  .home-service-hero-content {
+    gap: 60px;
+  }
+
+  .home-service-hero-tagline-wrapper,
+  .home-service-hero-tagline {
+    display: none !important;
   }
 
   .home-service-heading,
@@ -1800,6 +2255,43 @@ main#main-content > section {
 
   .home-service-elevate-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .home-service-elevate-heading {
+    font-size: 26px;
+    letter-spacing: -0.26px;
+    margin-bottom: 40px;
+  }
+
+  .home-service-elevate-card {
+    gap: 20px;
+  }
+
+  .home-service-elevate-card-content {
+    gap: 12px;
+  }
+
+  .home-service-elevate-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .home-service-elevate-title {
+    font-size: 20px;
+    letter-spacing: -0.20px;
+    line-height: 1.3;
+  }
+
+  .home-service-elevate-description {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .home-service-section-gradient .home-service-actions {
+    margin-top: 40px;
+    gap: 12px;
+    flex-wrap: wrap;
   }
 
   .home-service-container {
@@ -1811,24 +2303,409 @@ main#main-content > section {
   }
 
   .home-service-impact-content {
-    gap: 64px;
+    gap: 40px;
+  }
+
+  .home-service-impact-title-section {
+    gap: 10px;
+  }
+
+  .home-service-impact-text-content {
+    gap: 12px;
+  }
+
+  .home-service-heading-center {
+    font-size: 28px;
+    letter-spacing: -0.28px;
+    line-height: 1.2;
+  }
+
+  .home-service-description-center {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .home-service-stat-number {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+
+  .home-service-stat-label {
+    font-size: 14px;
+    line-height: 1.4;
   }
 
   .home-service-stats-grid {
     flex-direction: column;
-    gap: 32px;
+    gap: 24px;
   }
 
   .home-service-stat {
-    border-left: none;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
     padding-left: 0;
-    padding-top: 32px;
-    border-top: 1px solid rgba(10, 11, 12, 0.1);
+    border-left: none;
+    padding-top: 0;
+    border-top: none;
   }
 
-  .home-service-stat:first-child {
-    border-top: none;
-    padding-top: 0;
+  .home-service-stat-number {
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .home-service-stat-label {
+    flex: 1;
+    margin: 0;
+  }
+
+  /* Reliability Section - Mobile */
+  .home-service-reliability-section .home-service-heading {
+    font-size: 28px;
+    letter-spacing: -0.28px;
+    line-height: 1.3;
+  }
+
+  .home-service-reliability-section .home-service-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .home-service-reliability-section .home-service-two-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px;
+  }
+
+  .home-service-reliability-section .home-service-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    order: 1;
+    margin: 0 !important;
+    justify-self: stretch !important;
+    aspect-ratio: auto !important;
+    flex: none !important;
+    min-width: auto !important;
+  }
+
+  .home-service-reliability-section .home-service-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .home-service-reliability-section .home-service-content {
+    max-width: 100%;
+    order: 0;
+    display: contents !important;
+  }
+
+  .home-service-reliability-section .home-service-section-title {
+    order: 0;
+    margin-bottom: 20px;
+  }
+
+  .home-service-reliability-section .home-service-image {
+    margin-bottom: 20px;
+  }
+
+  .home-service-reliability-section .home-service-feature-list {
+    order: 2;
+    margin-bottom: 20px;
+  }
+
+  .home-service-reliability-section .features-buttons.home-service-actions {
+    order: 3;
+  }
+
+  .home-service-reliability-section .home-service-feature-item {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .home-service-reliability-section .home-service-feature-list {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .home-service-reliability-section .home-service-section-title {
+    gap: 12px;
+  }
+
+  .home-service-reliability-section .home-service-text-content {
+    gap: 12px;
+  }
+
+  /* Reliability Section - Mobile - Keep buttons horizontal */
+  .home-service-reliability-section .features-buttons.home-service-actions {
+    flex-direction: row !important;
+    width: 100%;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .home-service-reliability-section .features-buttons.home-service-actions .btn-primary-large,
+  .home-service-reliability-section .features-buttons.home-service-actions .btn-outline-white {
+    flex: 1 1 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
+
+  /* Smart Evolution Section - Mobile */
+  .home-service-smart-evolution-section .home-service-heading-dark {
+    font-size: 24px;
+    letter-spacing: -0.24px;
+    line-height: 1.3;
+  }
+
+  .home-service-smart-evolution-section .home-service-description-dark {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .home-service-smart-evolution-section .home-service-two-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px;
+  }
+
+  .home-service-smart-evolution-section .home-service-content {
+    max-width: 100%;
+    order: 0;
+    display: contents !important;
+  }
+
+  .home-service-smart-evolution-section .home-service-section-title {
+    order: 0;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .home-service-smart-evolution-section .home-service-smart-evolution-list {
+    order: 1;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 16px;
+    margin-bottom: 20px;
+  }
+
+  .home-service-smart-evolution-section .home-service-smart-evolution-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    order: 1;
+    margin-bottom: 20px;
+    margin: 0 !important;
+    justify-self: stretch !important;
+    aspect-ratio: auto !important;
+    flex: none !important;
+    min-width: auto !important;
+  }
+
+  .home-service-smart-evolution-section .home-service-smart-evolution-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .home-service-smart-evolution-section .benefits-modern-actions.home-service-smart-evolution-actions {
+    order: 3;
+    flex-direction: row !important;
+    width: 100%;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .home-service-smart-evolution-section .benefits-modern-actions.home-service-smart-evolution-actions .benefits-modern-btn-primary,
+  .home-service-smart-evolution-section .benefits-modern-actions.home-service-smart-evolution-actions .benefits-modern-btn-secondary {
+    flex: 1 1 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
+
+  .home-service-smart-evolution-section .home-service-smart-evolution-item {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .home-service-smart-evolution-section .home-service-text-content {
+    gap: 12px;
+  }
+
+  /* Real-Time Insights Section - Mobile */
+  .home-service-realtime-insights-section .home-service-heading {
+    font-size: 24px;
+    letter-spacing: -0.24px;
+    line-height: 1.3;
+  }
+
+  .home-service-realtime-insights-section .home-service-description {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .home-service-realtime-insights-section .home-service-two-column {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 40px;
+  }
+
+  .home-service-realtime-insights-section .home-service-content {
+    max-width: 100%;
+    order: 0;
+    display: contents !important;
+  }
+
+  .home-service-realtime-insights-section .home-service-section-title {
+    order: 0;
+    margin-bottom: 20px;
+  }
+
+  .home-service-realtime-insights-section .home-service-image {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    order: 1;
+    margin: 0 !important;
+    margin-bottom: 20px !important;
+    justify-self: stretch !important;
+    aspect-ratio: auto !important;
+    flex: none !important;
+    min-width: auto !important;
+  }
+
+  .home-service-realtime-insights-section .home-service-image img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
+
+  .home-service-realtime-insights-section .home-service-feature-list {
+    order: 2;
+    margin-bottom: 20px;
+  }
+
+  .home-service-realtime-insights-section .features-buttons.home-service-actions {
+    order: 3;
+    flex-direction: row !important;
+    width: 100%;
+    gap: 12px;
+    justify-content: flex-start;
+  }
+
+  .home-service-realtime-insights-section .features-buttons.home-service-actions .btn-primary-large,
+  .home-service-realtime-insights-section .features-buttons.home-service-actions .btn-outline-white {
+    flex: 1 1 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    padding: 10px 16px !important;
+    font-size: 14px !important;
+  }
+
+  .home-service-realtime-insights-section .home-service-feature-item {
+    font-size: 14px;
+    margin-bottom: 12px;
+  }
+
+  .home-service-realtime-insights-section .home-service-feature-list {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .home-service-realtime-insights-section .home-service-section-title {
+    gap: 12px;
+  }
+
+  .home-service-realtime-insights-section .home-service-text-content {
+    gap: 12px;
+  }
+
+  .home-service-features-content.home-service-features-left .home-service-feature-card {
+    align-items: flex-start !important;
+    text-align: left !important;
+  }
+
+  .home-service-features-content.home-service-features-left .home-service-feature-card-header {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+  }
+
+  .home-service-features-content.home-service-features-left .home-service-feature-card-title,
+  .home-service-features-content.home-service-features-left .home-service-feature-card-description {
+    text-align: left !important;
+  }
+
+  .benefits-modern-actions.home-service-features-actions {
+    gap: 12px !important;
+  }
+
+  .benefits-modern-actions.home-service-actions-center {
+    gap: 12px !important;
+  }
+
+  .home-service-testimonials-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 16px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding: 16px 0;
+  }
+
+  .home-service-testimonials-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+  .home-service-testimonial-column {
+    flex: 0 0 85%;
+    min-width: 85%;
+    max-width: 85%;
+    scroll-snap-align: center;
+  }
+
+  .home-service-testimonials-controls {
+    display: flex !important;
+  }
+
+  .home-service-slider-dots {
+    display: flex !important;
   }
 }
 

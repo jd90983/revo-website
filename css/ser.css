@@ -215,24 +215,36 @@ main > section {
 
 .ser-services-header-background {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
+  z-index: 1;
+}
+
+.ser-services-header-base {
+  position: absolute;
+  inset: 0;
+  background: #000000 !important;
+  z-index: 1;
+}
+
+.ser-services-header-image {
+  position: absolute;
+  inset: 0;
   background-image: url('../images/backgrounds/services_page_background_2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  z-index: 1;
-  pointer-events: none;
+  opacity: 0.2 !important;
+  z-index: 2;
 }
 
-.ser-services-header-background::after {
-  content: '';
+.ser-services-header-gradient {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 62.556%, #000000 93.889%);
-  z-index: 2;
+  background-image: url('../images/backgrounds/services_page_background_3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 3;
 }
 
 .ser-services-header-component {
@@ -240,7 +252,7 @@ main > section {
   z-index: 10 !important;
   max-width: 1280px;
   margin: 0 auto;
-  padding: 120px 64px 0;
+  padding: 120px 64px 60px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -2786,10 +2798,7 @@ main > section {
 
   .ser-services-header-tagline-wrapper,
   .ser-services-header-tagline {
-    width: 100% !important;
-    max-width: 100% !important;
-    text-align: center !important;
-    display: block !important;
+    display: none !important;
   }
 
   .ser-ai-receptionists .ser-ai-content-wrapper {
@@ -3011,6 +3020,16 @@ main > section {
 
   .ser-experience-left, .ser-experience-right {
     width: 100%;
+  }
+
+  .ser-experience-heading {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .ser-experience-description {
+    font-size: 15px;
+    line-height: 1.5;
   }
 
   .ser-experience-right {
@@ -3541,7 +3560,7 @@ main > section {
   }
 
   .ser-experience-heading {
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1.2;
     text-align: left;
     width: 100%;
@@ -3560,7 +3579,7 @@ main > section {
   }
 
   .ser-experience-description {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
     text-align: left;
     margin: 0;
