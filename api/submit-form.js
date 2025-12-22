@@ -585,7 +585,7 @@ Source: Website (revoapp.ai)
       from: 'Revo Website <noreply@revoapp.ai>',
       to: recipients,  // Supports single email or array of emails
       replyTo: formData.email,
-      subject: `${formData.isUpdate ? 'Updated' : 'New'} Lead: ${formData.firstName} ${formData.lastName} - ${formData.industry}`,
+      subject: `${formData.isUpdate ? 'Updated Revo Lead' : 'New Revo Lead'}: ${formData.firstName} ${formData.lastName} - ${formData.industry}`,
       text: emailBody,
       html: emailBody.replace(/\n/g, '<br>')
     })
