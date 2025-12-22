@@ -544,12 +544,17 @@ export default async function handler(req, res) {
 async function sendEmailNotification(formData) {
   const RESEND_API_KEY = process.env.RESEND_API_KEY;
   const SALES_EMAIL = process.env.SALES_EMAIL || 'sales@revoapp.ai';
+  
+  // Support multiple comma-separated email addresses
+  const recipients = SALES_EMAIL.split(',').map(email => email.trim()).filter(email => email);
 
   // If Resend is not configured, skip email (lead is still saved)
   if (!RESEND_API_KEY) {
     console.warn('RESEND_API_KEY not configured, skipping email notification');
     return;
   }
+  
+  console.log('Sending email notification to:', recipients);
 
   const emailBody = `
 New Lead Submission from Revo Website
@@ -578,7 +583,7 @@ Source: Website (revoapp.ai)
     },
     body: JSON.stringify({
       from: 'Revo Website <noreply@revoapp.ai>',
-      to: SALES_EMAIL,
+      to: recipients,  // Supports single email or array of emails
       replyTo: formData.email,
       subject: `${formData.isUpdate ? 'Updated' : 'New'} Lead: ${formData.firstName} ${formData.lastName} - ${formData.industry}`,
       text: emailBody,
