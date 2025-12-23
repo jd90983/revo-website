@@ -40,6 +40,29 @@ async function loadTemplate(templatePath, containerSelector) {
       container.innerHTML = processedHtml;
       console.log('Template loaded successfully into:', containerSelector);
       
+      // Special handling for Transform CTA section - move it from container to main
+      if (html.includes('transform-cta-section') && containerSelector === '#transform-cta-template-container') {
+        const section = container.querySelector('.transform-cta-section');
+        if (section) {
+          const main = document.querySelector('main#main-content');
+          // Target the ser-testimonial section - insert transform-cta-section right after it
+          const targetSection = document.querySelector('section.ser-testimonial.animate-in') || 
+                                document.querySelector('section.ser-testimonial');
+          if (main && targetSection) {
+            // Insert the section as a direct child of main, right after the target section
+            const nextSibling = targetSection.nextElementSibling;
+            if (nextSibling) {
+              main.insertBefore(section, nextSibling);
+            } else {
+              main.appendChild(section);
+            }
+            // Remove the container div since it's no longer needed
+            container.remove();
+            console.log('Transform CTA section moved to main, right after ser-testimonial section');
+          }
+        }
+      }
+      
       // Initialize Get Started section if template is loaded
       if (html.includes('ser-get-started') || html.includes('get-started-section')) {
         // Small delay to ensure DOM is ready, then initialize observer

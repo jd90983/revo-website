@@ -327,6 +327,11 @@ async function sendFormToAPI(formData, form, submitBtn, originalBtnText) {
       wrapper.classList.remove('valid');
     });
 
+    // Redirect to thank-you page after a short delay
+    setTimeout(() => {
+      window.location.href = 'thank-you.html';
+    }, 1500); // 1.5 second delay to show success message
+
   } catch (error) {
     console.error('Form submission error:', error);
     
