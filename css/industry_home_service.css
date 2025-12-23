@@ -73,7 +73,7 @@ main#main-content > section {
 .home-service-hero-gradient {
   position: absolute;
   inset: 0;
-  background-image: url('../images/backgrounds/home-service_header.png');
+  background-image: url('../images/backgrounds/home_service_header.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
