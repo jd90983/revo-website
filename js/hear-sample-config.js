@@ -186,5 +186,1019 @@ const HEAR_SAMPLE_CONFIG = {
       }
       // 💡 Agrega más mensajes si es necesario
     ]
+  },
+
+  // ===== AIR DUCT CLEANING =====
+  'air-duct-cleaning': {
+    audio: './audio/sample-air-duct-cleaning.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Air Duct Cleaning',
+    title: 'Air Duct Cleaning Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Fresh Air Solutions. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need to schedule a duct cleaning service for my home.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I\'d be happy to help you with that. When would be a convenient time for you?' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== HVAC =====
+  'hvac': {
+    audio: './audio/sample-hvac.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'HVAC',
+    title: 'HVAC Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Climate Control Experts. How can I help you today?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'My air conditioning stopped working. It\'s really hot in here.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I understand how uncomfortable that must be. Let me schedule a technician to come out and assess the situation.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== CHIMNEY SWEEP =====
+  'chimney-sweep': {
+    audio: './audio/sample-chimney-sweep.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Chimney Sweep',
+    title: 'Chimney Sweep Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Clean Chimney Services. How can I help you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need to have my chimney cleaned before winter.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'That\'s a great idea for safety. Let me check our availability and schedule an appointment for you.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== LAWN CARE =====
+  'lawn-care': {
+    audio: './audio/sample-lawn-care.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Lawn Care',
+    title: 'Lawn Care Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Green Lawn Services. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need regular lawn maintenance for my property.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I\'d be happy to help you with that. Let me gather some information about your lawn to provide the best service.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== RESTORATION =====
+  'restoration': {
+    audio: './audio/sample-restoration.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Restoration',
+    title: 'Restoration Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Restoration Experts. How can I help you today?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I had water damage in my basement. I need emergency restoration services.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I understand this is urgent. Let me dispatch a team to assess the damage and start the restoration process.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== JUNK REMOVAL =====
+  'junk-removal': {
+    audio: './audio/sample-junk-removal.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Junk Removal',
+    title: 'Junk Removal Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Quick Junk Removal. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need to get rid of some old furniture and appliances.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Can you tell me what items you need removed and your location?' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== PRESSURE WASHING =====
+  'pressure-washing': {
+    audio: './audio/sample-pressure-washing.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Pressure Washing',
+    title: 'Pressure Washing Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Clean Surfaces Pro. How can I help you today?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need to have my driveway and siding pressure washed.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I\'d be happy to help you with that. Let me schedule a service appointment for you.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== CARPET CLEANING =====
+  'carpet-cleaning': {
+    audio: './audio/sample-carpet-cleaning.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Carpet Cleaning',
+    title: 'Carpet Cleaning Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Fresh Carpets. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need professional carpet cleaning for my home.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. How many rooms need cleaning and when would be convenient for you?' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== COMPUTER REPAIR =====
+  'computer-repair': {
+    audio: './audio/sample-computer-repair.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Computer Repair',
+    title: 'Computer Repair Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Tech Fix Solutions. How can I help you today?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'My computer is running very slowly and keeps freezing.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I understand how frustrating that can be. Let me schedule a diagnostic appointment to identify the issue.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== PEST CONTROL =====
+  'pest-control': {
+    audio: './audio/sample-pest-control.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Pest Control',
+    title: 'Pest Control Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Pest Free Solutions. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I have an ant problem in my kitchen. I need pest control service.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Let me schedule an inspection and treatment for your home.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== SNOW REMOVAL =====
+  'snow-removal': {
+    audio: './audio/sample-snow-removal.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Snow Removal',
+    title: 'Snow Removal Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Clear Path Services. How can I help you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need snow removal for my driveway and walkway.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Would you like one-time service or a seasonal contract?' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== ROOFING =====
+  'roofing': {
+    audio: './audio/sample-roofing.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Roofing',
+    title: 'Roofing Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Top Roof Solutions. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need a roof inspection and possibly some repairs.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I\'d be happy to help. Let me schedule a free inspection to assess your roof\'s condition.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== LANDSCAPE =====
+  'landscape': {
+    audio: './audio/sample-landscape.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Landscape',
+    title: 'Landscape Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Beautiful Landscapes. How can I help you today?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I want to redesign my front yard landscaping.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'That sounds exciting! Let me schedule a consultation with one of our landscape designers.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== CONSTRUCTION =====
+  'construction': {
+    audio: './audio/sample-construction.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Construction',
+    title: 'Construction Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Build Right Construction. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need an estimate for a home addition project.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I\'d be happy to help you with that. Let me connect you with one of our project managers to discuss your needs.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== MAID & CLEANING =====
+  'maid-cleaning': {
+    audio: './audio/sample-maid-cleaning.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Maid & Cleaning',
+    title: 'Maid & Cleaning Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Sparkle Clean Services. How can I help you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need regular house cleaning services.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Would you like weekly, bi-weekly, or monthly service?' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== ELECTRICAL =====
+  'electrical': {
+    audio: './audio/sample-electrical.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Electrical',
+    title: 'Electrical Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Safe Electric. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I have some outlets that stopped working. I need an electrician.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I understand this is important for your safety. Let me schedule an electrician to come out and diagnose the issue.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== PROPERTY MAINTENANCE =====
+  'property-maintenance': {
+    audio: './audio/sample-property-maintenance.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Property Maintenance',
+    title: 'Property Maintenance Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Maintenance Masters. How can I help you today?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need ongoing maintenance services for my rental properties.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Let me discuss our maintenance packages and find the best solution for your properties.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== GENERAL CONTRACTING =====
+  'general-contracting': {
+    audio: './audio/sample-general-contracting.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'General Contracting',
+    title: 'General Contracting Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Pro Contractors. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need a contractor for a bathroom renovation project.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I\'d be happy to help you with that. Let me schedule a consultation to discuss your renovation plans.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== TOWING =====
+  'towing': {
+    audio: './audio/sample-towing.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Towing',
+    title: 'Towing Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Quick Tow Service. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'My car broke down on the highway. I need a tow truck.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Can you provide your current location and vehicle information?' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== MOVING =====
+  'moving': {
+    audio: './audio/sample-moving.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Moving',
+    title: 'Moving Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Reliable Movers. How can I help you today?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need to schedule a moving service for next month.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I\'d be happy to help you with that. Let me gather some information about your move to provide an accurate quote.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== HANDYMAN =====
+  'handyman': {
+    audio: './audio/sample-handyman.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Handyman',
+    title: 'Handyman Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Fix It All Handyman. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I have several small repairs around the house that need attention.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Can you tell me what repairs you need so I can schedule a visit?' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== ALARM & SECURITY =====
+  'alarm-security': {
+    audio: './audio/sample-alarm-security.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Alarm & Security',
+    title: 'Alarm & Security Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Secure Home Systems. How can I help you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I want to install a home security alarm system.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Let me schedule a free consultation to discuss your security needs.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== POOL SERVICES =====
+  'pool-services': {
+    audio: './audio/sample-pool-services.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Pool Services',
+    title: 'Pool Services Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Crystal Clear Pools. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need regular pool maintenance and cleaning services.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Let me discuss our maintenance packages and find the best schedule for your pool.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== APPLIANCE REPAIR =====
+  'appliance-repair': {
+    audio: './audio/sample-appliance-repair.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Appliance Repair',
+    title: 'Appliance Repair Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Appliance Fix Pro. How can I help you today?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'My dishwasher stopped working. I need it repaired.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Let me schedule a technician to come out and diagnose the problem.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== SOLAR INSTALLATION =====
+  'solar-installation': {
+    audio: './audio/sample-solar-installation.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Solar Installation',
+    title: 'Solar Installation Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Solar Energy Solutions. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I\'m interested in installing solar panels on my home.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'That\'s great! Let me schedule a free consultation to assess your home\'s solar potential and discuss options.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== GARAGE DOOR =====
+  'garage-door': {
+    audio: './audio/sample-garage-door.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Garage Door',
+    title: 'Garage Door Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Door Masters. How can I help you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'My garage door opener stopped working. I need it fixed.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Let me schedule a technician to come out and repair your garage door.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== PAINTING =====
+  'painting': {
+    audio: './audio/sample-painting.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Painting',
+    title: 'Painting Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Perfect Paint. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need to have the interior of my house painted.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I\'d be happy to help you with that. Let me schedule an estimate to discuss colors and timing.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== TILLING =====
+  'tilling': {
+    audio: './audio/sample-tilling.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Tilling',
+    title: 'Tilling Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Ground Prep Services. How can I help you today?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need tilling services for my garden before planting season.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Let me schedule a service to prepare your garden soil.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== WINDOW CLEANING =====
+  'window-cleaning': {
+    audio: './audio/sample-window-cleaning.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Window Cleaning',
+    title: 'Window Cleaning Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Clear View Windows. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need professional window cleaning for my home.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Would you like one-time service or regular maintenance?' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== HEALTHCARE & MEDICAL =====
+  'healthcare-medical': {
+    audio: './audio/sample-healthcare-medical.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Healthcare & Medical',
+    title: 'Healthcare & Medical Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Medical Care Center. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need to schedule an appointment with a doctor.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. What type of appointment do you need and when would be convenient?' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== FINANCIAL SERVICE =====
+  'financial-service': {
+    audio: './audio/sample-financial-service.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Financial Service',
+    title: 'Financial Service Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Financial Advisors Plus. How can I help you today?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need advice on retirement planning.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I\'d be happy to help you with that. Let me schedule a consultation with one of our financial advisors.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== REAL ESTATE & PROPERTY MANAGEMENT =====
+  'real-estate-property-management': {
+    audio: './audio/sample-real-estate-property-management.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Real Estate & Property Management',
+    title: 'Real Estate & Property Management Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Property Experts. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I\'m looking to rent out my property and need management services.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Let me schedule a consultation to discuss our property management services.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== SMALL BUSINESS =====
+  'small-business': {
+    audio: './audio/sample-small-business.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Small Business',
+    title: 'Small Business Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Business Solutions. How can I help you today?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need help with customer service for my small business.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I\'d be happy to help you with that. Let me discuss our solutions for small businesses.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== CORPORATE & GOVERNMENT =====
+  'corporate-government': {
+    audio: './audio/sample-corporate-government.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Corporate & Government',
+    title: 'Corporate & Government Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Enterprise Solutions. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need information about your corporate communication services.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Let me connect you with our enterprise solutions team.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== RETAIL & ECOMMERCE =====
+  'retail-ecommerce': {
+    audio: './audio/sample-retail-ecommerce.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Retail & eCommerce',
+    title: 'Retail & eCommerce Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Retail Support Services. How can I help you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need customer service support for my online store.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Let me discuss our eCommerce customer service solutions.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== MARKETING, MEDIA & ADVERTISING =====
+  'marketing-media-advertising': {
+    audio: './audio/sample-marketing-media-advertising.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Marketing, Media & Advertising',
+    title: 'Marketing, Media & Advertising Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Creative Media Solutions. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need help managing incoming calls for my marketing agency.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Let me discuss our communication solutions for marketing agencies.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== FRANCHISES =====
+  'franchises': {
+    audio: './audio/sample-franchises.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Franchises',
+    title: 'Franchises Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Franchise Support. How can I help you today?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I own multiple franchise locations and need consistent call handling.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Let me discuss our franchise communication solutions.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== TOURISM, TRAVEL & HOSPITALITY =====
+  'tourism-travel-hospitality': {
+    audio: './audio/sample-tourism-travel-hospitality.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Tourism, Travel & Hospitality',
+    title: 'Tourism, Travel & Hospitality Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Travel Services. How may I assist you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need to make a reservation for a hotel room.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I\'d be happy to help you with that. What dates are you looking for?' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
+  },
+
+  // ===== BUILDING, CONSTRUCTION & TRADES =====
+  'building-construction-trades': {
+    audio: './audio/sample-building-construction-trades.mp3',
+    image: './images/Hear a Sample Call/example_call.png',
+    label: 'Building, Construction & Trades',
+    title: 'Building, Construction & Trades Pros',
+    messages: [
+      {
+        type: 'agent',
+        time: 0, // ⏱️ ACTUALIZA
+        text: 'Thank you for calling Trade Professionals. How can I help you?' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'client',
+        time: 3, // ⏱️ ACTUALIZA
+        text: 'I need a contractor for a commercial building project.' // ✏️ ACTUALIZA
+      },
+      {
+        type: 'agent',
+        time: 6, // ⏱️ ACTUALIZA
+        text: 'I can help you with that. Let me connect you with one of our project managers.' // ✏️ ACTUALIZA
+      }
+      // 💡 Agrega más mensajes si es necesario
+    ]
   }
 };

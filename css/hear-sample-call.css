@@ -101,9 +101,10 @@ section {
 
 .hear-sample-call-trust {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: var(--space-xs);
+  justify-content: center;
+  gap: 12px;
   margin-top: var(--space-xs);
 }
 
@@ -111,7 +112,7 @@ section {
   display: flex;
   align-items: center;
   gap: 0;
-  margin-bottom: var(--space-xs);
+  margin-bottom: 0;
 }
 
 .hear-sample-call-avatar {
@@ -537,6 +538,85 @@ section {
   display: none !important;
 }
 
+/* Dark theme for summary card - ONLY for hear-sample-call-page */
+.hear-sample-call-page .hear-sample-summary-card {
+  background: linear-gradient(148.7deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2) !important;
+  backdrop-filter: blur(10px);
+}
+
+.hear-sample-call-page .hear-sample-summary-card:hover {
+  background: linear-gradient(148.7deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%) !important;
+  border-color: rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3) !important;
+}
+
+.hear-sample-call-page .hear-sample-summary-section:not(:last-of-type) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.hear-sample-call-page .hear-sample-summary-label {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.hear-sample-call-page .hear-sample-summary-issue {
+  color: var(--color-white) !important;
+}
+
+.hear-sample-call-page .hear-sample-summary-actions li {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Dark theme for notification - ONLY for hear-sample-call-page */
+.hear-sample-call-page .hear-sample-message-bubble-notification {
+  background: linear-gradient(148.7deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.3) !important;
+  backdrop-filter: blur(10px);
+}
+
+.hear-sample-call-page .hear-sample-notification-close {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.hear-sample-call-page .hear-sample-notification-close:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.hear-sample-call-page .hear-sample-notification-title {
+  color: #ffffff !important;
+}
+
+.hear-sample-call-page .hear-sample-notification-description {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.hear-sample-call-page .hear-sample-notification-btn-secondary {
+  background: transparent !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.hear-sample-call-page .hear-sample-notification-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+.hear-sample-call-page .hear-sample-summary-actions li::before {
+  background: var(--color-primary) !important;
+}
+
+.hear-sample-call-page .hear-sample-summary-actions li:hover {
+  color: var(--color-white) !important;
+}
+
+.hear-sample-call-page .hear-sample-summary-why {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
 .hear-sample-section .hear-sample-professional-label {
   position: absolute;
   left: 50%;
@@ -645,6 +725,22 @@ section {
 .hear-sample-call-page .hear-sample-image-container {
   overflow: visible !important;
   min-height: 600px !important;
+  position: relative;
+}
+
+/* Apply inner shadow effects from Figma design - ONLY for hear-sample-call-page */
+.hear-sample-call-page .hear-sample-image-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: 20px;
+  box-shadow: 
+    inset 0px 2px 6px -2px rgba(255, 255, 255, 0.15),
+    inset 0px -10px 20px -6px rgba(255, 255, 255, 0.4),
+    inset 0px -30px 30px -8px rgba(102, 148, 255, 0.5),
+    inset 0px -90px 60px -30px rgba(20, 76, 205, 0.25);
+  z-index: 1;
 }
 
 .hear-sample-call-page .hear-sample-left-panel .hear-sample-industry-selector {
@@ -660,8 +756,8 @@ section {
 .hear-sample-industry-button {
   width: 100%;
   height: 50px;
-  background: transparent;
-  border: none;
+  background: linear-gradient(148.7deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.04) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -676,16 +772,45 @@ section {
   color: #fcfcfc;
   position: relative;
   transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0px 4px 16px rgba(0, 0, 0, 0.2),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+/* Glassmorphism light effect - simulating light source at 52° */
+.hear-sample-industry-button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -20%;
+  width: 140%;
+  height: 200%;
+  background: linear-gradient(52deg, rgba(255, 255, 255, 0.15) 0%, transparent 50%);
+  pointer-events: none;
+  opacity: 0.6;
+  filter: blur(1px);
 }
 
 .hear-sample-industry-button:hover {
-  opacity: 0.9;
+  background: linear-gradient(148.7deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.06) 100%);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 
+    0px 6px 20px rgba(0, 0, 0, 0.3),
+    inset 0px 1px 0px rgba(255, 255, 255, 0.15);
+}
+
+.hear-sample-industry-button:hover::before {
+  opacity: 0.8;
 }
 
 .hear-sample-industry-button img {
   width: 25px;
   height: 25px;
   flex-shrink: 0;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(90%);
+  /* Converts icon color to #787978 */
 }
 
 .hear-sample-industry-button-text {
@@ -716,15 +841,14 @@ section {
   padding: 8px;
   display: none;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(10px);
   z-index: 1001;
-  overflow: visible !important;
-  /* Ensure dropdown can extend beyond container */
+  overflow: hidden;
   min-width: 100%;
-  max-height: none !important;
-  height: auto !important;
+  max-height: 400px;
+  width: 300px;
 }
 
 /* If dropdown would be cut off at bottom, show it above the button */
@@ -736,6 +860,79 @@ section {
 .hear-sample-industry-dropdown.show {
   display: flex !important;
   visibility: visible !important;
+}
+
+/* Search Input Styles */
+.hear-sample-industry-search {
+  position: relative;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.hear-sample-search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hear-sample-industry-search-input {
+  width: 100%;
+  padding: 10px 12px 10px 36px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-white);
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.hear-sample-industry-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.hear-sample-industry-search-input:focus {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Options Container - Scrollable */
+.hear-sample-industry-options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 320px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 4px;
+}
+
+/* Custom Scrollbar */
+.hear-sample-industry-options-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.hear-sample-industry-options-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+
+.hear-sample-industry-options-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.hear-sample-industry-options-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .hear-sample-industry-option {
@@ -752,26 +949,54 @@ section {
   font-weight: var(--font-regular);
   font-size: 16px;
   line-height: 24px;
-  color: var(--color-white);
+  color: rgba(255, 255, 255, 0.5); /* Muted text color for non-active items */
   text-align: left;
-  transition: background-color 0.2s ease;
+  transition: all 0.2s ease;
   flex-shrink: 0;
   white-space: nowrap;
 }
 
-.hear-sample-industry-option:hover {
-  background: rgba(255, 255, 255, 0.1);
+.hear-sample-industry-option.hidden {
+  display: none;
 }
 
+/* Hover state - only for non-active items */
+.hear-sample-industry-option:not(.hear-sample-industry-option-active):hover {
+  background: rgba(255, 255, 255, 0.05); /* Very subtle hover background */
+  color: rgba(255, 255, 255, 0.6); /* Slightly brighter text on hover, but still muted */
+}
+
+.hear-sample-industry-option:not(.hear-sample-industry-option-active):hover img {
+  opacity: 0.6; /* Slightly brighter icon on hover, but still muted */
+}
+
+/* Active state - should be clearly distinct */
 .hear-sample-industry-option-active {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.15) !important;
   font-weight: 600;
+  color: var(--color-white) !important; /* White text for active item */
+}
+
+/* Active state should not have hover effects */
+.hear-sample-industry-option-active:hover {
+  background: rgba(255, 255, 255, 0.15) !important;
+  color: var(--color-white) !important;
 }
 
 .hear-sample-industry-option img {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
+  opacity: 1;
+  filter: brightness(0) saturate(100%) invert(48%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(90%);
+  /* Converts icon color to #787978 */
+  transition: all 0.2s ease;
+}
+
+/* Active option icons should be white */
+.hear-sample-industry-option-active img {
+  opacity: 1;
+  filter: brightness(0) saturate(100%) invert(100%); /* White for active item */
 }
 
 .hear-sample-industry-option span {
@@ -792,5 +1017,28 @@ section {
   .hear-sample-cta-features {
     padding: 0 var(--space-xl);
     gap: var(--space-xl);
+  }
+
+  /* Dark theme for summary card on mobile - ONLY for hear-sample-call-page */
+  .hear-sample-call-page .hear-sample-summary-card {
+    background: linear-gradient(148.7deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .hear-sample-call-page .hear-sample-summary-section {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .hear-sample-call-page .hear-sample-summary-label {
+    color: rgba(255, 255, 255, 0.6) !important;
+  }
+
+  .hear-sample-call-page .hear-sample-summary-issue,
+  .hear-sample-call-page .hear-sample-summary-why {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+
+  .hear-sample-call-page .hear-sample-summary-actions li {
+    color: rgba(255, 255, 255, 0.8) !important;
   }
 }
