@@ -425,7 +425,7 @@
           </div>
           <div class="features-buttons">
             <button class="btn-primary-large">Get Started</button>
-            <button class="btn-outline-white">Hear a Sample</button>
+            <button class="btn-outline-white" onclick="document.querySelector('#hear-sample').scrollIntoView({ behavior: 'smooth', block: 'start' });">Hear a Sample</button>
           </div>
         </div>
       </div>
@@ -539,7 +539,7 @@
         <!-- Button -->
         <div class="how-actions">
           <button class="btn-primary-large">Get Started</button>
-          <button class="btn-outline-white">Hear a Sample</button>
+          <button class="btn-outline-white" onclick="document.querySelector('#hear-sample').scrollIntoView({ behavior: 'smooth', block: 'start' });">Hear a Sample</button>
         </div>
 
       </div>
@@ -609,7 +609,7 @@
         <!-- CTA Buttons -->
         <div class="benefits-modern-actions">
           <button class="benefits-modern-btn-primary">Get Started</button>
-          <button class="benefits-modern-btn-secondary">
+          <button class="benefits-modern-btn-secondary" onclick="document.querySelector('#hear-sample').scrollIntoView({ behavior: 'smooth', block: 'start' });">
             Hear a Sample
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M9 18L15 12L9 6" stroke="#0A0B0C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -687,7 +687,7 @@
     </section>
 
     <!-- Hear a Sample Section -->
-    <section class="hear-sample-section">
+    <section class="hear-sample-section animate-in" id="hear-sample">
       <div class="hear-sample-container">
         <!-- Section Header -->
         <div class="hear-sample-header">

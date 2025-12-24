@@ -5524,6 +5524,7 @@ body.mobile-menu-open {
   color: #ffffff;
   cursor: pointer;
   transition: all 0.2s ease;
+  text-align: center;
 }
 
 .transform-cta-btn-secondary:hover {

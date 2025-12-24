@@ -247,6 +247,14 @@
     // Keyboard shortcuts
     document.addEventListener('keydown', handleKeyboardShortcuts);
 
+    // Listen for industry sample change from new dropdown
+    document.addEventListener('industrySampleChange', function(e) {
+      const sampleKey = e.detail.sampleKey;
+      if (sampleKey) {
+        switchSample(sampleKey, null);
+      }
+    });
+
     // Volume control
     const volumeHandle = document.querySelector('.hear-sample-volume-handle');
     
@@ -316,19 +324,64 @@
     typingTimeouts = [];
     isTypingPaused = false;
 
-    // Update image
-    const image = document.querySelector('.hear-sample-professional-image');
-    if (image && sample.image) {
+    // Check if we're in hear-sample-call-page (only once)
+    const pageSection = document.querySelector('.hear-sample-call-page');
+    
+    // Update image - check if we're in hear-sample-call-page first
+    const image = pageSection 
+      ? pageSection.querySelector('.hear-sample-professional-image')
+      : document.querySelector('.hear-sample-professional-image');
+    
+    // Only update image if not in hear-sample-call-page (that page uses example_call.png)
+    if (image && sample.image && !pageSection) {
       image.src = sample.image;
     }
 
-    // Update title
-    const title = document.querySelector('.hear-sample-professional-label');
+    // Update title - check context first
+    const title = pageSection
+      ? pageSection.querySelector('.hear-sample-professional-label')
+      : document.querySelector('.hear-sample-professional-label');
     if (title && sample.title) {
       title.textContent = sample.title;
     }
 
+    // Update industry button text if it exists - only in hear-sample-call-page
+    if (pageSection) {
+      const industryButton = document.getElementById('hearSampleIndustryButton');
+      const industryButtonText = industryButton?.querySelector('.hear-sample-industry-button-text');
+      const industryButtonIcon = industryButton?.querySelector('img');
+      
+      if (industryButtonText && sample.title) {
+        industryButtonText.textContent = sample.title;
+      }
+      
+      // Update button icon based on sample key
+      if (industryButtonIcon) {
+        const iconMap = {
+          'home': 'images/icons/fa7-solid_home-lg.svg',
+          'wrench': 'images/icons/fa6-solid_wrench.svg',
+          'hammer': 'images/icons/fa6-solid_hammer.svg',
+          'key': 'images/icons/fa7-solid_key_.svg',
+          'shield': 'images/icons/fa6-solid_shield-halved.svg'
+        };
+        if (iconMap[sampleKey]) {
+          industryButtonIcon.src = iconMap[sampleKey];
+        }
+      }
+      
+      // Update active state in dropdown
+      const industryOptions = pageSection.querySelectorAll('.hear-sample-industry-option');
+      industryOptions.forEach(opt => {
+        if (opt.getAttribute('data-sample') === sampleKey) {
+          opt.classList.add('hear-sample-industry-option-active');
+        } else {
+          opt.classList.remove('hear-sample-industry-option-active');
+        }
+      });
+    }
+
     // Show summary card - don't show messages until user presses play
+    // Always search globally for chat, as it should work in both pages
     const chat = document.querySelector('.hear-sample-chat');
     if (chat) {
       // Remove notification if it exists
@@ -356,7 +409,7 @@
 
     audio.addEventListener('error', (e) => {
       console.warn('Audio file not found:', sample.audio);
-      // Show placeholder message in chat
+      // Show placeholder message in chat - always search globally
       const chat = document.querySelector('.hear-sample-chat');
       if (chat && chat.children.length === 0) {
         chat.innerHTML = `
