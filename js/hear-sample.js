@@ -9,6 +9,56 @@
   }
   const sampleData = HEAR_SAMPLE_CONFIG || {};
 
+  // Map industry names to sample keys
+  const industryToSampleKey = {
+    'Home Services': 'home',
+    'Plumbing': 'wrench',
+    'Legal': 'hammer',
+    'Legal Services': 'hammer',
+    'Locksmith': 'key',
+    'Cybersecurity': 'shield',
+    'IT, Technology & Communications': 'shield',
+    'Air Duct Cleaning': 'air-duct-cleaning',
+    'HVAC': 'hvac',
+    'Chimney Sweep': 'chimney-sweep',
+    'Lawn Care': 'lawn-care',
+    'Restoration': 'restoration',
+    'Junk Removal': 'junk-removal',
+    'Pressure Washing': 'pressure-washing',
+    'Carpet Cleaning': 'carpet-cleaning',
+    'Computer Repair': 'computer-repair',
+    'Pest Control': 'pest-control',
+    'Snow Removal': 'snow-removal',
+    'Roofing': 'roofing',
+    'Landscape': 'landscape',
+    'Construction': 'construction',
+    'Maid & Cleaning': 'maid-cleaning',
+    'Electrical': 'electrical',
+    'Property Maintenance': 'property-maintenance',
+    'General Contracting': 'general-contracting',
+    'Towing': 'towing',
+    'Moving': 'moving',
+    'Handyman': 'handyman',
+    'Alarm & Security': 'alarm-security',
+    'Pool Services': 'pool-services',
+    'Appliance Repair': 'appliance-repair',
+    'Solar Installation': 'solar-installation',
+    'Garage Door': 'garage-door',
+    'Painting': 'painting',
+    'Tilling': 'tilling',
+    'Window Cleaning': 'window-cleaning',
+    'Healthcare & Medical': 'healthcare-medical',
+    'Financial Service': 'financial-service',
+    'Real Estate & Property Management': 'real-estate-property-management',
+    'Small Business': 'small-business',
+    'Corporate & Government': 'corporate-government',
+    'Retail & eCommerce': 'retail-ecommerce',
+    'Marketing, Media & Advertising': 'marketing-media-advertising',
+    'Franchises': 'franchises',
+    'Tourism, Travel & Hospitality': 'tourism-travel-hospitality',
+    'Building, Construction & Trades': 'building-construction-trades'
+  };
+
   let currentSample = 'home';
   let audio = null;
   let isPlaying = false;
@@ -250,8 +300,9 @@
     // Listen for industry sample change from new dropdown
     document.addEventListener('industrySampleChange', function(e) {
       const sampleKey = e.detail.sampleKey;
+      const selectedOption = e.detail.selectedOption;
       if (sampleKey) {
-        switchSample(sampleKey, null);
+        switchSample(sampleKey, null, selectedOption);
       }
     });
 
@@ -310,11 +361,35 @@
   }
 
   // Load sample
-  function loadSample(sampleKey) {
-    const sample = sampleData[sampleKey];
-    if (!sample) return;
+  function loadSample(sampleKey, selectedOption) {
+    // Get industry name from selected option if available
+    let industryName = null;
+    if (selectedOption) {
+      industryName = selectedOption.getAttribute('data-industry') || selectedOption.textContent.trim();
+    }
+    
+    // Try to find the correct sample key based on industry name
+    let actualSampleKey = sampleKey;
+    if (industryName && industryToSampleKey[industryName]) {
+      actualSampleKey = industryToSampleKey[industryName];
+    }
+    
+    // Get sample data
+    const sample = sampleData[actualSampleKey];
+    if (!sample) {
+      // If sample doesn't exist, try to use the original sampleKey as fallback
+      const fallbackSample = sampleData[sampleKey];
+      if (fallbackSample) {
+        actualSampleKey = sampleKey;
+      } else {
+        return; // No sample found
+      }
+    }
+    
+    const finalSample = sampleData[actualSampleKey];
+    if (!finalSample) return;
 
-    currentSample = sampleKey;
+    currentSample = actualSampleKey;
     displayedMessages = [];
     isPlaying = false;
     hasStartedPlaying = false; // Reset flag when loading new sample
@@ -333,16 +408,17 @@
       : document.querySelector('.hear-sample-professional-image');
     
     // Only update image if not in hear-sample-call-page (that page uses example_call.png)
-    if (image && sample.image && !pageSection) {
-      image.src = sample.image;
+    if (image && finalSample.image && !pageSection) {
+      image.src = finalSample.image;
     }
 
     // Update title - check context first
-    const title = pageSection
-      ? pageSection.querySelector('.hear-sample-professional-label')
-      : document.querySelector('.hear-sample-professional-label');
-    if (title && sample.title) {
-      title.textContent = sample.title;
+    // Don't update title in hear-sample-call-page, it should stay as "Choose your industry"
+    if (!pageSection) {
+      const title = document.querySelector('.hear-sample-professional-label');
+      if (title && finalSample.title) {
+        title.textContent = finalSample.title;
+      }
     }
 
     // Update industry button text if it exists - only in hear-sample-call-page
@@ -351,36 +427,53 @@
       const industryButtonText = industryButton?.querySelector('.hear-sample-industry-button-text');
       const industryButtonIcon = industryButton?.querySelector('img');
       
-      if (industryButtonText && sample.title) {
-        industryButtonText.textContent = sample.title;
+      if (industryButtonText && finalSample.title) {
+        industryButtonText.textContent = finalSample.title;
       }
       
       // Update button icon based on sample key
       if (industryButtonIcon) {
-        const iconMap = {
-          'home': 'images/icons/fa7-solid_home-lg.svg',
-          'wrench': 'images/icons/fa6-solid_wrench.svg',
-          'hammer': 'images/icons/fa6-solid_hammer.svg',
-          'key': 'images/icons/fa7-solid_key_.svg',
-          'shield': 'images/icons/fa6-solid_shield-halved.svg'
-        };
-        if (iconMap[sampleKey]) {
-          industryButtonIcon.src = iconMap[sampleKey];
+        // Update button icon from selected option if available
+        if (selectedOption && selectedOption.querySelector('img')) {
+          industryButtonIcon.src = selectedOption.querySelector('img').src;
+        } else {
+          // Fallback to icon map
+          const iconMap = {
+            'home': 'images/icons/fa7-solid_home-lg.svg',
+            'wrench': 'images/icons/fa6-solid_wrench.svg',
+            'hammer': 'images/icons/fa6-solid_hammer.svg',
+            'key': 'images/icons/fa7-solid_key_.svg',
+            'shield': 'images/icons/fa6-solid_shield-halved.svg'
+          };
+          if (iconMap[actualSampleKey]) {
+            industryButtonIcon.src = iconMap[actualSampleKey];
+          }
         }
       }
       
-      // Update active state in dropdown
+      // Update active state in dropdown - only mark the specific selected option
+      // Don't mark all options with the same data-sample, only the one that was actually selected
       const industryOptions = pageSection.querySelectorAll('.hear-sample-industry-option');
       industryOptions.forEach(opt => {
-        if (opt.getAttribute('data-sample') === sampleKey) {
-          opt.classList.add('hear-sample-industry-option-active');
-        } else {
-          opt.classList.remove('hear-sample-industry-option-active');
-        }
+        opt.classList.remove('hear-sample-industry-option-active');
       });
+      
+      // Only mark as active if we have a specific selected option passed as parameter
+      // Otherwise, find the first option with matching sampleKey (for backward compatibility)
+      if (selectedOption) {
+        selectedOption.classList.add('hear-sample-industry-option-active');
+      } else {
+        // Fallback: find first option with matching sampleKey (for cases where selectedOption is not provided)
+        const firstMatchingOption = Array.from(industryOptions).find(opt => 
+          opt.getAttribute('data-sample') === sampleKey
+        );
+        if (firstMatchingOption) {
+          firstMatchingOption.classList.add('hear-sample-industry-option-active');
+        }
+      }
     }
 
-    // Show summary card - don't show messages until user presses play
+    // Show messages or summary card
     // Always search globally for chat, as it should work in both pages
     const chat = document.querySelector('.hear-sample-chat');
     if (chat) {
@@ -389,7 +482,9 @@
       if (existingNotification) {
         existingNotification.remove();
       }
-      updateSummaryCard(sample);
+      
+      // Always show summary card initially - messages will appear when user presses play
+      updateSummaryCard(finalSample);
     }
 
     // Stop and remove old audio
@@ -400,7 +495,7 @@
     }
 
     // Create new audio element
-    audio = new Audio(sample.audio);
+    audio = new Audio(finalSample.audio);
     
     // Handle audio loading
     audio.addEventListener('loadedmetadata', () => {
@@ -408,7 +503,7 @@
     });
 
     audio.addEventListener('error', (e) => {
-      console.warn('Audio file not found:', sample.audio);
+      console.warn('Audio file not found:', finalSample.audio);
       // Show placeholder message in chat - always search globally
       const chat = document.querySelector('.hear-sample-chat');
       if (chat && chat.children.length === 0) {
@@ -461,6 +556,48 @@
     }
   }
 
+  // Show preconfigured messages from sample config in chat (for industries with messages but no audio yet)
+  function showPreconfiguredMessages(messages, chat) {
+    // Clear chat and display messages immediately
+    chat.innerHTML = '';
+    messages.forEach((message, index) => {
+      const messageDiv = document.createElement('div');
+      messageDiv.className = `hear-sample-message hear-sample-message-${message.type}`;
+      
+      const messageHeader = document.createElement('div');
+      messageHeader.className = 'hear-sample-message-header';
+      
+      const avatar = document.createElement('div');
+      avatar.className = message.type === 'agent' 
+        ? 'hear-sample-avatar hear-sample-avatar-agent'
+        : 'hear-sample-avatar hear-sample-avatar-client';
+      
+      if (message.type === 'agent') {
+        avatar.innerHTML = '<img src="./images/Hear a Sample Call/revo_profile.png" alt="Revo Agent" />';
+      } else {
+        avatar.innerHTML = '<img src="./images/Hear a Sample Call/client_profile.png" alt="Client" />';
+      }
+      
+      const author = document.createElement('span');
+      author.className = 'hear-sample-message-author';
+      author.textContent = message.type === 'agent' ? 'Revo Agent' : 'Client';
+      
+      messageHeader.appendChild(avatar);
+      messageHeader.appendChild(author);
+      
+      const bubble = document.createElement('div');
+      bubble.className = `hear-sample-message-bubble hear-sample-message-bubble-${message.type}`;
+      const text = document.createElement('p');
+      text.textContent = message.text;
+      bubble.appendChild(text);
+      
+      messageDiv.appendChild(messageHeader);
+      messageDiv.appendChild(bubble);
+      
+      chat.appendChild(messageDiv);
+    });
+  }
+
   // Update summary card with sample data
   function updateSummaryCard(sample) {
     const chat = document.querySelector('.hear-sample-chat');
@@ -501,7 +638,7 @@
   }
 
   // Switch sample
-  function switchSample(sampleKey, button) {
+  function switchSample(sampleKey, button, selectedOption) {
     // Update active icon
     document.querySelectorAll('.hear-sample-icon-btn').forEach(btn => {
       btn.classList.remove('hear-sample-icon-btn-active');
@@ -511,7 +648,7 @@
     }
 
     // Load new sample
-    loadSample(sampleKey);
+    loadSample(sampleKey, selectedOption);
   }
 
   // Toggle play/pause
@@ -548,7 +685,7 @@
           chat.innerHTML = '';
         }
         
-        // Reset displayed messages
+        // Reset displayed messages - they will appear progressively as audio plays
         displayedMessages = [];
         currentTime = 0;
         audio.currentTime = 0;

@@ -417,26 +417,197 @@
                   </svg>
                 </button>
                 <div class="hear-sample-industry-dropdown" id="hearSampleIndustryDropdown" role="menu">
-                  <button class="hear-sample-industry-option hear-sample-industry-option-active" data-sample="home" role="menuitem">
-                    <img src="images/icons/fa7-solid_home-lg.svg" alt="Home Services" width="20" height="20">
-                    <span>Home Services</span>
-                  </button>
-                  <button class="hear-sample-industry-option" data-sample="wrench" role="menuitem">
-                    <img src="images/icons/fa6-solid_wrench.svg" alt="Plumbing" width="20" height="20">
-                    <span>Plumbing</span>
-                  </button>
-                  <button class="hear-sample-industry-option" data-sample="hammer" role="menuitem">
-                    <img src="images/icons/fa6-solid_hammer.svg" alt="Legal Services" width="20" height="20">
-                    <span>Legal Services</span>
-                  </button>
-                  <button class="hear-sample-industry-option" data-sample="key" role="menuitem">
-                    <img src="images/icons/fa7-solid_key_.svg" alt="Locksmith" width="20" height="20">
-                    <span>Locksmith</span>
-                  </button>
-                  <button class="hear-sample-industry-option" data-sample="shield" role="menuitem">
-                    <img src="images/icons/fa6-solid_shield-halved.svg" alt="Cybersecurity" width="20" height="20">
-                    <span>Cybersecurity</span>
-                  </button>
+                  <!-- Search Input -->
+                  <div class="hear-sample-industry-search">
+                    <svg class="hear-sample-search-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M14 14L11.1 11.1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <input type="text" id="hearSampleIndustrySearch" class="hear-sample-industry-search-input" placeholder="Search industries..." autocomplete="off">
+                  </div>
+                  
+                  <!-- Industries List -->
+                  <div class="hear-sample-industry-options-container">
+                    <!-- Home Service Pros -->
+                    <button class="hear-sample-industry-option hear-sample-industry-option-active" data-sample="home" data-industry="Home Services" role="menuitem">
+                      <img src="images/icons/fa7-solid_home-lg.svg" alt="Home Services" width="20" height="20">
+                      <span>Home Services</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="wrench" data-industry="Plumbing" role="menuitem">
+                      <img src="images/icons/plumbing_.svg" alt="Plumbing" width="20" height="20">
+                      <span>Plumbing</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="key" data-industry="Locksmith" role="menuitem">
+                      <img src="images/icons/fa7-solid_key_.svg" alt="Locksmith" width="20" height="20">
+                      <span>Locksmith</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Air Duct Cleaning" role="menuitem">
+                      <img src="images/icons/fa6-solid_wind.svg" alt="Air Duct Cleaning" width="20" height="20">
+                      <span>Air Duct Cleaning</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="HVAC" role="menuitem">
+                      <img src="images/icons/fa6-solid_fan.svg" alt="HVAC" width="20" height="20">
+                      <span>HVAC</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Chimney Sweep" role="menuitem">
+                      <img src="images/icons/fa6-solid_fire-burner.svg" alt="Chimney Sweep" width="20" height="20">
+                      <span>Chimney Sweep</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Lawn Care" role="menuitem">
+                      <img src="images/icons/fa6-solid_leaf.svg" alt="Lawn Care" width="20" height="20">
+                      <span>Lawn Care</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Restoration" role="menuitem">
+                      <img src="images/icons/fa6-solid_house-chimney-crack.svg" alt="Restoration" width="20" height="20">
+                      <span>Restoration</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Junk Removal" role="menuitem">
+                      <img src="images/icons/fa6-solid_dumpster.svg" alt="Junk Removal" width="20" height="20">
+                      <span>Junk Removal</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Pressure Washing" role="menuitem">
+                      <img src="images/icons/fa6-solid_faucet-drip.svg" alt="Pressure Washing" width="20" height="20">
+                      <span>Pressure Washing</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Carpet Cleaning" role="menuitem">
+                      <img src="images/icons/fa6-solid_rug.svg" alt="Carpet Cleaning" width="20" height="20">
+                      <span>Carpet Cleaning</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Computer Repair" role="menuitem">
+                      <img src="images/icons/fa6-solid_computer.svg" alt="Computer Repair" width="20" height="20">
+                      <span>Computer Repair</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Pest Control" role="menuitem">
+                      <img src="images/icons/fa7-solid_bug.svg" alt="Pest Control" width="20" height="20">
+                      <span>Pest Control</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Snow Removal" role="menuitem">
+                      <img src="images/icons/fa7-solid_snowplow.svg" alt="Snow Removal" width="20" height="20">
+                      <span>Snow Removal</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Roofing" role="menuitem">
+                      <img src="images/icons/fa6-solid_house_.svg" alt="Roofing" width="20" height="20">
+                      <span>Roofing</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Landscape" role="menuitem">
+                      <img src="images/icons/fa6-solid_tree.svg" alt="Landscape" width="20" height="20">
+                      <span>Landscape</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Construction" role="menuitem">
+                      <img src="images/icons/fa6-solid_trowel-bricks.svg" alt="Construction" width="20" height="20">
+                      <span>Construction</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Maid & Cleaning" role="menuitem">
+                      <img src="images/icons/fa6-solid_broom.svg" alt="Maid & Cleaning" width="20" height="20">
+                      <span>Maid & Cleaning</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Electrical" role="menuitem">
+                      <img src="images/icons/fa6-solid_plug.svg" alt="Electrical" width="20" height="20">
+                      <span>Electrical</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Property Maintenance" role="menuitem">
+                      <img src="images/icons/fa6-solid_screwdriver.svg" alt="Property Maintenance" width="20" height="20">
+                      <span>Property Maintenance</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="General Contracting" role="menuitem">
+                      <img src="images/icons/fa6-solid_clipboard.svg" alt="General Contracting" width="20" height="20">
+                      <span>General Contracting</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Towing" role="menuitem">
+                      <img src="images/icons/fa6-solid_truck-pickup.svg" alt="Towing" width="20" height="20">
+                      <span>Towing</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Moving" role="menuitem">
+                      <img src="images/icons/fa6-solid_truck.svg" alt="Moving" width="20" height="20">
+                      <span>Moving</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Handyman" role="menuitem">
+                      <img src="images/icons/fa7-solid_tools.svg" alt="Handyman" width="20" height="20">
+                      <span>Handyman</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Alarm & Security" role="menuitem">
+                      <img src="images/icons/fa6-solid_alarm.svg" alt="Alarm & Security" width="20" height="20">
+                      <span>Alarm & Security</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Pool Services" role="menuitem">
+                      <img src="images/icons/fa6-solid_water.svg" alt="Pool Services" width="20" height="20">
+                      <span>Pool Services</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Appliance Repair" role="menuitem">
+                      <img src="images/icons/fa6-solid_store.svg" alt="Appliance Repair" width="20" height="20">
+                      <span>Appliance Repair</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Solar Installation" role="menuitem">
+                      <img src="images/icons/fa6-solid_solar-panel.svg" alt="Solar Installation" width="20" height="20">
+                      <span>Solar Installation</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Garage Door" role="menuitem">
+                      <img src="images/icons/fa6-solid_warehouse.svg" alt="Garage Door" width="20" height="20">
+                      <span>Garage Door</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Painting" role="menuitem">
+                      <img src="images/icons/fa6-solid_paint-roller.svg" alt="Painting" width="20" height="20">
+                      <span>Painting</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Tilling" role="menuitem">
+                      <img src="images/icons/fa6-solid_tractor.svg" alt="Tilling" width="20" height="20">
+                      <span>Tilling</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Window Cleaning" role="menuitem">
+                      <img src="images/icons/fa6-solid_house-chimney-window.svg" alt="Window Cleaning" width="20" height="20">
+                      <span>Window Cleaning</span>
+                    </button>
+                    
+                    <!-- Professional Businesses -->
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Healthcare & Medical" role="menuitem">
+                      <img src="images/icons/fa6-solid_stethoscope.svg" alt="Healthcare & Medical" width="20" height="20">
+                      <span>Healthcare & Medical</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="hammer" data-industry="Legal" role="menuitem">
+                      <img src="images/icons/fa6-solid_gavel_.svg" alt="Legal" width="20" height="20">
+                      <span>Legal</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Financial Service" role="menuitem">
+                      <img src="images/icons/fa6-solid_chart-line.svg" alt="Financial Service" width="20" height="20">
+                      <span>Financial Service</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Real Estate & Property Management" role="menuitem">
+                      <img src="images/icons/fa6-solid_sign-hanging.svg" alt="Real Estate & Property Management" width="20" height="20">
+                      <span>Real Estate & Property Management</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Small Business" role="menuitem">
+                      <img src="images/icons/fa6-solid_shop.svg" alt="Small Business" width="20" height="20">
+                      <span>Small Business</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Corporate & Government" role="menuitem">
+                      <img src="images/icons/fa6-solid_building-columns.svg" alt="Corporate & Government" width="20" height="20">
+                      <span>Corporate & Government</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Retail & eCommerce" role="menuitem">
+                      <img src="images/icons/fa6-solid_store.svg" alt="Retail & eCommerce" width="20" height="20">
+                      <span>Retail & eCommerce</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Marketing, Media & Advertising" role="menuitem">
+                      <img src="images/icons/fa6-solid_briefcase.svg" alt="Marketing, Media & Advertising" width="20" height="20">
+                      <span>Marketing, Media & Advertising</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="shield" data-industry="IT, Technology & Communications" role="menuitem">
+                      <img src="images/icons/fa6-solid_shield-halved.svg" alt="IT, Technology & Communications" width="20" height="20">
+                      <span>IT, Technology & Communications</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Franchises" role="menuitem">
+                      <img src="images/icons/fa6-solid_building.svg" alt="Franchises" width="20" height="20">
+                      <span>Franchises</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Tourism, Travel & Hospitality" role="menuitem">
+                      <img src="images/icons/fa6-solid_suitcase-rolling.svg" alt="Tourism, Travel & Hospitality" width="20" height="20">
+                      <span>Tourism, Travel & Hospitality</span>
+                    </button>
+                    <button class="hear-sample-industry-option" data-sample="home" data-industry="Building, Construction & Trades" role="menuitem">
+                      <img src="images/icons/fa6-solid_hotel.svg" alt="Building, Construction & Trades" width="20" height="20">
+                      <span>Building, Construction & Trades</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -521,6 +692,9 @@
         </div>
       </div>
     </section>
+
+    <!-- Get Started Form Section - Loaded from template -->
+    <div id="get-started-form-template-container"></div>
 
     <!-- CTA Section -->
     <section class="hear-sample-cta">
@@ -689,6 +863,8 @@
   <!-- JavaScript -->
   <script src="js/navigation.js"></script>
   <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module" defer></script>
+  <script src="js/template-loader.js" defer></script>
+  <script src="js/get-started-form.js" defer></script>
   <script src="js/hear-sample-config.js" defer></script>
   <script src="js/hear-sample.js" defer></script>
   <script>
@@ -700,14 +876,28 @@
       
       if (!industryButton || !industryDropdown) return;
 
-      // Sample mapping
-      const sampleLabels = {
-        'home': 'Home Services Pros',
-        'wrench': 'Plumbing Pros',
-        'hammer': 'Legal Services Pros',
-        'key': 'Locksmith Pros',
-        'shield': 'Cybersecurity Pros'
-      };
+      // Get search input and options container
+      const searchInput = document.getElementById('hearSampleIndustrySearch');
+      const optionsContainer = document.querySelector('.hear-sample-industry-options-container');
+      
+      // Search functionality
+      if (searchInput && optionsContainer) {
+        searchInput.addEventListener('input', function(e) {
+          const searchQuery = e.target.value.toLowerCase().trim();
+          const allOptions = optionsContainer.querySelectorAll('.hear-sample-industry-option');
+          
+          allOptions.forEach(option => {
+            const industryName = option.getAttribute('data-industry') || option.textContent.trim();
+            const matches = industryName.toLowerCase().includes(searchQuery);
+            
+            if (matches) {
+              option.classList.remove('hidden');
+            } else {
+              option.classList.add('hidden');
+            }
+          });
+        });
+      }
 
       // Toggle dropdown
       industryButton.addEventListener('click', function(e) {
@@ -746,6 +936,14 @@
           industryDropdown.classList.remove('show');
           industryDropdown.style.display = 'none';
           industryDropdown.style.visibility = '';
+          // Clear search when dropdown closes
+          if (searchInput && optionsContainer) {
+            setTimeout(() => {
+              searchInput.value = '';
+              const allOptions = optionsContainer.querySelectorAll('.hear-sample-industry-option');
+              allOptions.forEach(option => option.classList.remove('hidden'));
+            }, 300);
+          }
         }
       });
 
@@ -771,16 +969,26 @@
           industryOptions.forEach(opt => opt.classList.remove('hear-sample-industry-option-active'));
           option.classList.add('hear-sample-industry-option-active');
           
-          // Update button text
+          // Update button text - use industry name from data-industry attribute
           const buttonText = industryButton.querySelector('.hear-sample-industry-button-text');
           const buttonIcon = industryButton.querySelector('img');
-          if (buttonText && sampleLabels[sampleKey]) {
-            buttonText.textContent = sampleLabels[sampleKey];
+          const industryName = option.getAttribute('data-industry') || option.textContent.trim();
+          
+          if (buttonText && industryName) {
+            // Add "Pros" suffix for consistency
+            buttonText.textContent = industryName + (industryName.includes('Pros') ? '' : ' Pros');
           }
           
           // Update button icon
           if (buttonIcon && option.querySelector('img')) {
             buttonIcon.src = option.querySelector('img').src;
+          }
+          
+          // Clear search when option is selected
+          if (searchInput && optionsContainer) {
+            searchInput.value = '';
+            const allOptions = optionsContainer.querySelectorAll('.hear-sample-industry-option');
+            allOptions.forEach(opt => opt.classList.remove('hidden'));
           }
           
           // Close dropdown - remove both class and inline style
@@ -792,12 +1000,96 @@
           // Trigger sample switch by dispatching custom event
           // The hear-sample.js will listen for this event
           const event = new CustomEvent('industrySampleChange', { 
-            detail: { sampleKey },
+            detail: { 
+              sampleKey,
+              selectedOption: option, // Pass the specific option element
+              industryName: industryName
+            },
             bubbles: true
           });
           document.dispatchEvent(event);
         });
       });
+      
+    })();
+
+    // Preselect industry from URL parameter
+    (function() {
+      // Get industry parameter from URL
+      const urlParams = new URLSearchParams(window.location.search);
+      const industryParam = urlParams.get('industry');
+      
+      if (!industryParam) return; // No industry parameter, use default
+      
+      // Wait for DOM and scripts to be ready
+      function preselectIndustry() {
+        const industryOptions = document.querySelectorAll('.hear-sample-industry-option');
+        const industryButton = document.getElementById('hearSampleIndustryButton');
+        
+        if (!industryOptions.length || !industryButton) {
+          // Retry if elements aren't ready yet
+          setTimeout(preselectIndustry, 100);
+          return;
+        }
+        
+        // Find the option that matches the industry name
+        let selectedOption = null;
+        industryOptions.forEach(option => {
+          const industryName = option.getAttribute('data-industry') || option.textContent.trim();
+          // Normalize comparison (remove "Pros" suffix if present)
+          const normalizedParam = industryParam.trim();
+          const normalizedName = industryName.replace(/\s*Pros\s*$/i, '').trim();
+          
+          if (normalizedName.toLowerCase() === normalizedParam.toLowerCase() || 
+              normalizedName.toLowerCase().includes(normalizedParam.toLowerCase()) ||
+              normalizedParam.toLowerCase().includes(normalizedName.toLowerCase())) {
+            selectedOption = option;
+          }
+        });
+        
+        if (selectedOption) {
+          // Get the sample key and industry name
+          const sampleKey = selectedOption.getAttribute('data-sample');
+          const industryName = selectedOption.getAttribute('data-industry') || selectedOption.textContent.trim();
+          
+          // Update button text and icon
+          const buttonText = industryButton.querySelector('.hear-sample-industry-button-text');
+          const buttonIcon = industryButton.querySelector('img');
+          
+          if (buttonText && industryName) {
+            buttonText.textContent = industryName + (industryName.includes('Pros') ? '' : ' Pros');
+          }
+          
+          if (buttonIcon && selectedOption.querySelector('img')) {
+            buttonIcon.src = selectedOption.querySelector('img').src;
+          }
+          
+          // Update active state
+          industryOptions.forEach(opt => opt.classList.remove('hear-sample-industry-option-active'));
+          selectedOption.classList.add('hear-sample-industry-option-active');
+          
+          // Trigger sample switch
+          const event = new CustomEvent('industrySampleChange', { 
+            detail: { 
+              sampleKey,
+              selectedOption: selectedOption,
+              industryName: industryName
+            },
+            bubbles: true
+          });
+          document.dispatchEvent(event);
+        }
+      }
+      
+      // Wait for scripts to load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+          // Wait a bit more for hear-sample.js to initialize
+          setTimeout(preselectIndustry, 300);
+        });
+      } else {
+        setTimeout(preselectIndustry, 300);
+      }
     })();
 
     // Override image for this page only - always use example_call.png
@@ -845,6 +1137,13 @@
         setTimeout(overrideImage, 1000);
       }
     })();
+
+    // Load Get Started Form section template
+    document.addEventListener('DOMContentLoaded', function() {
+      if (typeof loadTemplate === 'function') {
+        loadTemplate('templates/get-started-form-section.html', '#get-started-form-template-container');
+      }
+    });
   </script>
 </body>
 </html>
