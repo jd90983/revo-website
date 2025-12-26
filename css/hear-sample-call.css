@@ -419,6 +419,259 @@ section {
     background: var(--color-very-dark-bg) !important;
     padding: 48px 20px !important;
   }
+
+  /* Show left panel in mobile/tablet as a compact rectangle - ONLY for hear-sample-call-page */
+  .hear-sample-call-page .hear-sample-left-panel {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin-bottom: 16px;
+    padding: 0 !important;
+    align-self: flex-start !important;
+    overflow: visible !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+
+  /* Force override desktop min-height for mobile */
+  .hear-sample-call-page .hear-sample-left-panel[class*="hear-sample-left-panel"] {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  /* Hide image container completely on mobile to make it more compact */
+  .hear-sample-call-page .hear-sample-image-container {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+
+  /* Hide professional button and label on mobile to make it more compact */
+  .hear-sample-call-page .hear-sample-professional-button {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .hear-sample-call-page .hear-sample-professional-label {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .hear-sample-call-page .hear-sample-professional-image {
+    display: none !important;
+    height: 0 !important;
+    width: 0 !important;
+  }
+
+  /* Make industry selector relative and centered for mobile */
+  .hear-sample-call-page .hear-sample-left-panel .hear-sample-industry-selector {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    z-index: 1000;
+    padding: 0;
+  }
+
+  /* Reduce card padding on mobile */
+  .hear-sample-call-page .hear-sample-card {
+    padding: 16px !important;
+  }
+
+  /* Ensure card content is column layout with reduced gap */
+  .hear-sample-call-page .hear-sample-card-content {
+    flex-direction: column !important;
+    gap: 16px !important;
+    min-height: auto !important;
+  }
+
+  /* Right panel adjustments with reduced padding */
+  .hear-sample-call-page .hear-sample-right-panel {
+    width: 100% !important;
+    padding: 16px 12px !important;
+    min-height: auto !important;
+    max-height: none !important;
+    gap: 20px !important;
+  }
+
+  /* Reduce chat gap on mobile */
+  .hear-sample-call-page .hear-sample-chat {
+    gap: 16px !important;
+  }
+
+  /* Reduce summary card padding on mobile */
+  .hear-sample-call-page .hear-sample-summary-card {
+    padding: 16px !important;
+    gap: 16px !important;
+  }
+
+  .hear-sample-call-page .hear-sample-summary-section {
+    gap: 8px !important;
+  }
+
+  /* Stack trust section vertically on mobile */
+  .hear-sample-call-trust {
+    flex-direction: column !important;
+    gap: 12px !important;
+    align-items: center !important;
+  }
+
+  /* Center avatars on mobile */
+  .hear-sample-call-avatars {
+    justify-content: center !important;
+  }
+
+  /* Make trust text break into two lines on mobile */
+  .hear-sample-call-trust-text {
+    text-align: center !important;
+    white-space: normal !important;
+  }
+}
+
+/* Tablet styles - ONLY for hear-sample-call-page */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Show left panel in tablet as a compact rectangle - ONLY for hear-sample-call-page */
+  .hear-sample-call-page .hear-sample-left-panel {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+    margin-bottom: 20px;
+    padding: 0 !important;
+    align-self: flex-start !important;
+    overflow: visible !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+  }
+
+  /* Force override desktop min-height for tablet */
+  .hear-sample-call-page .hear-sample-left-panel[class*="hear-sample-left-panel"] {
+    min-height: 0 !important;
+    height: auto !important;
+  }
+
+  /* Hide image container completely on tablet to make it more compact */
+  .hear-sample-call-page .hear-sample-image-container {
+    display: none !important;
+    height: 0 !important;
+    min-height: 0 !important;
+    max-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+  }
+
+  /* Hide professional button and label on tablet to make it more compact */
+  .hear-sample-call-page .hear-sample-professional-button {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .hear-sample-call-page .hear-sample-professional-label {
+    display: none !important;
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .hear-sample-call-page .hear-sample-professional-image {
+    display: none !important;
+    height: 0 !important;
+    width: 0 !important;
+  }
+
+  /* Make industry selector relative and centered for tablet */
+  .hear-sample-call-page .hear-sample-left-panel .hear-sample-industry-selector {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    z-index: 1000;
+    padding: 0;
+  }
+
+  /* Reduce card padding on tablet */
+  .hear-sample-call-page .hear-sample-card {
+    padding: 20px !important;
+  }
+
+  /* Ensure card content is column layout with reduced gap */
+  .hear-sample-call-page .hear-sample-card-content {
+    flex-direction: column !important;
+    gap: 20px !important;
+    min-height: auto !important;
+  }
+
+  /* Right panel adjustments with reduced padding */
+  .hear-sample-call-page .hear-sample-right-panel {
+    width: 100% !important;
+    padding: 20px 24px 0 24px !important;
+    min-height: auto !important;
+    max-height: none !important;
+    gap: 24px !important;
+  }
+
+  /* Reduce chat gap on tablet */
+  .hear-sample-call-page .hear-sample-chat {
+    gap: 20px !important;
+  }
+
+  /* Reduce summary card padding on tablet */
+  .hear-sample-call-page .hear-sample-summary-card {
+    padding: 20px !important;
+    gap: 20px !important;
+  }
+
+  .hear-sample-call-page .hear-sample-summary-section {
+    gap: 10px !important;
+  }
+
+  /* Stack trust section vertically on tablet */
+  .hear-sample-call-trust {
+    flex-direction: column !important;
+    gap: 12px !important;
+    align-items: center !important;
+  }
+
+  /* Center avatars on tablet */
+  .hear-sample-call-avatars {
+    justify-content: center !important;
+  }
+
+  /* Make trust text break into two lines on tablet */
+  .hear-sample-call-trust-text {
+    text-align: center !important;
+    white-space: normal !important;
+  }
 }
 
 /* Ensure text colors are correct for dark background - ONLY for hear-sample-call-page */
@@ -717,15 +970,21 @@ section {
 }
 
 /* Industry Selector Button and Dropdown - positioned on the image - ONLY for hear-sample-call-page */
-.hear-sample-call-page .hear-sample-left-panel {
-  overflow: visible !important;
-  min-height: 600px !important;
+/* Desktop styles - will be overridden in mobile/tablet media queries */
+@media (min-width: 1024px) {
+  .hear-sample-call-page .hear-sample-left-panel {
+    overflow: visible !important;
+    min-height: 600px !important;
+  }
 }
 
-.hear-sample-call-page .hear-sample-image-container {
-  overflow: visible !important;
-  min-height: 600px !important;
-  position: relative;
+/* Desktop styles - will be overridden in mobile/tablet media queries */
+@media (min-width: 1024px) {
+  .hear-sample-call-page .hear-sample-image-container {
+    overflow: visible !important;
+    min-height: 600px !important;
+    position: relative;
+  }
 }
 
 /* Apply inner shadow effects from Figma design - ONLY for hear-sample-call-page */
