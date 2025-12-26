@@ -237,13 +237,27 @@ function initGetStartedFormSection() {
 
 /**
  * Initialize the Transform CTA section after template is loaded
- * This initializes scroll animations
+ * This initializes scroll animations and Spline viewer
  */
 function initTransformCTASection() {
   const section = document.querySelector('.transform-cta-section');
   if (!section) {
     console.warn('Transform CTA section not found after template load');
     return;
+  }
+  
+  // Load Spline viewer script if not already loaded
+  if (!document.querySelector('script[src*="spline-viewer"]')) {
+    const splineScript = document.createElement('script');
+    splineScript.type = 'module';
+    splineScript.src = 'https://unpkg.com/@splinetool/viewer@1.12.28/build/spline-viewer.js';
+    splineScript.onload = () => {
+      console.log('Spline viewer script loaded and ready');
+    };
+    document.head.appendChild(splineScript);
+    console.log('Spline viewer script loading...');
+  } else {
+    console.log('Spline viewer script already loaded');
   }
   
   // Remove animate-in class if it exists (from template)
