@@ -5344,10 +5344,14 @@ body.mobile-menu-open {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1 !important;
   overflow: hidden;
   visibility: visible !important;
   opacity: 1 !important;
+}
+
+.transform-cta-background .transform-cta-spline-container {
+  pointer-events: auto;
 }
 
 .transform-cta-bg-base {
@@ -5370,7 +5374,7 @@ body.mobile-menu-open {
   inset: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
+  z-index: -1 !important;
   pointer-events: auto;
   overflow: hidden;
 }
@@ -5390,21 +5394,45 @@ body.mobile-menu-open {
   margin: 0 !important;
   padding: 0 !important;
   pointer-events: auto !important;
-  cursor: default;
+  z-index: -1 !important;
+  overscroll-behavior: none;
+  touch-action: pan-y pinch-zoom;
 }
 
-/* Ensure Spline viewer canvas fills container and receives mouse events */
+/* Show desktop viewer by default, hide mobile viewer */
+.transform-cta-spline-desktop {
+  display: block !important;
+}
+
+.transform-cta-spline-mobile {
+  display: none !important;
+}
+
+/* Hide/pause Spline viewer when section is not visible */
+.transform-cta-section:not(.is-visible) .transform-cta-spline-viewer {
+  display: none !important;
+  visibility: hidden !important;
+}
+
 .transform-cta-spline-viewer canvas {
   width: 100% !important;
   height: 100% !important;
   display: block !important;
   pointer-events: auto !important;
+  z-index: -1 !important;
 }
 
-/* Ensure content is above Spline but allows pointer events to pass through to Spline */
+.transform-cta-section:not(.is-visible) .transform-cta-spline-viewer canvas {
+  display: none !important;
+}
+
+.transform-cta-overlay {
+  display: none;
+}
+
 .transform-cta-container {
   position: relative;
-  z-index: 1;
+  z-index: 10 !important;
   max-width: 1280px;
   width: 100%;
   display: flex;
@@ -5417,40 +5445,41 @@ body.mobile-menu-open {
 }
 
 .transform-cta-content {
-  pointer-events: none;
+  pointer-events: auto;
+  position: relative;
+  z-index: 10 !important;
 }
 
 .transform-cta-heading {
-  pointer-events: none;
+  pointer-events: auto;
+  position: relative;
+  z-index: 10 !important;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
 }
 
 .transform-cta-description {
-  pointer-events: none;
+  pointer-events: auto;
+  position: relative;
+  z-index: 10 !important;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
 }
 
 .transform-cta-actions {
   pointer-events: auto;
+  position: relative;
+  z-index: 10 !important;
 }
 
 .transform-cta-actions button {
   pointer-events: auto;
-}
-
-.transform-cta-overlay {
-  display: none;
-}
-
-.transform-cta-container {
   position: relative;
-  z-index: 1;
-  max-width: 1280px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  visibility: visible !important;
-  opacity: 1 !important;
+  z-index: 10 !important;
 }
 
 .transform-cta-content {
