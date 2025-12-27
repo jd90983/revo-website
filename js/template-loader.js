@@ -237,7 +237,7 @@ function initGetStartedFormSection() {
 
 /**
  * Initialize the Transform CTA section after template is loaded
- * This initializes scroll animations and Spline viewer
+ * This initializes scroll animations and Spline viewer with lazy loading
  */
 function initTransformCTASection() {
   const section = document.querySelector('.transform-cta-section');
@@ -246,18 +246,83 @@ function initTransformCTASection() {
     return;
   }
   
-  // Load Spline viewer script if not already loaded
-  if (!document.querySelector('script[src*="spline-viewer"]')) {
-    const splineScript = document.createElement('script');
-    splineScript.type = 'module';
-    splineScript.src = 'https://unpkg.com/@splinetool/viewer@1.12.28/build/spline-viewer.js';
-    splineScript.onload = () => {
-      console.log('Spline viewer script loaded and ready');
+  const splineContainer = section.querySelector('.transform-cta-spline-container');
+  const splineViewers = section.querySelectorAll('.transform-cta-spline-viewer');
+  const splineViewerDesktop = section.querySelector('.transform-cta-spline-desktop');
+  const splineViewerMobile = section.querySelector('.transform-cta-spline-mobile');
+  let splineScriptLoaded = false;
+  let splineViewerLoaded = false;
+  
+  // Get the active viewer based on screen size
+  function getActiveViewer() {
+    if (window.innerWidth > 1023) {
+      return splineViewerDesktop;
+    } else {
+      return splineViewerMobile;
+    }
+  }
+  
+  // Function to load Spline viewer script
+  function loadSplineScript() {
+    if (splineScriptLoaded) return;
+    
+    if (!document.querySelector('script[src*="spline-viewer"]')) {
+      const splineScript = document.createElement('script');
+      splineScript.type = 'module';
+      splineScript.src = 'https://unpkg.com/@splinetool/viewer@1.12.28/build/spline-viewer.js';
+      splineScript.onload = () => {
+        console.log('Spline viewer script loaded and ready');
+        splineScriptLoaded = true;
+        // Wait a bit for the web component to register
+        setTimeout(() => {
+          splineViewers.forEach(viewer => {
+            if (viewer) {
+              viewer.setAttribute('loaded', 'true');
+            }
+          });
+        }, 100);
+      };
+      document.head.appendChild(splineScript);
+      console.log('Spline viewer script loading...');
+    } else {
+      splineScriptLoaded = true;
+    }
+  }
+  
+  // Function to show/hide Spline viewer (hiding pauses rendering)
+  function toggleSplineViewer(visible) {
+    if (visible) {
+      section.classList.add('is-visible');
+    } else {
+      section.classList.remove('is-visible');
+    }
+  }
+  
+  // Function to allow scroll to pass through Spline viewer
+  function allowScrollThroughSpline() {
+    if (!section) return;
+    
+    // Add wheel event listener to allow scrolling over Spline viewer
+    // This ensures page scroll works even when mouse is over the viewer
+    const handleWheel = (e) => {
+      // Always allow page to scroll when wheel event occurs over section
+      // This works alongside Spline's mouse tracking
+      window.scrollBy({
+        top: e.deltaY,
+        left: e.deltaX,
+        behavior: 'auto'
+      });
     };
-    document.head.appendChild(splineScript);
-    console.log('Spline viewer script loading...');
-  } else {
-    console.log('Spline viewer script already loaded');
+    
+    // Add listener to the section to catch wheel events
+    section.addEventListener('wheel', handleWheel, { passive: true });
+    
+    // Also add to all spline viewers if they exist
+    splineViewers.forEach(viewer => {
+      if (viewer) {
+        viewer.addEventListener('wheel', handleWheel, { passive: true });
+      }
+    });
   }
   
   // Remove animate-in class if it exists (from template)
@@ -270,39 +335,65 @@ function initTransformCTASection() {
   
   // Small delay to ensure DOM is ready
   setTimeout(() => {
-    // Initialize scroll animations for the loaded section
+    // Initialize scroll animations for the loaded section with lazy loading
     if ('IntersectionObserver' in window) {
       const observerOptions = {
         threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
+        rootMargin: '100px 0px 100px 0px' // Start loading 100px before section enters viewport
       };
 
       const sectionObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
+            // Load Spline script when section is about to be visible
+            if (!splineScriptLoaded) {
+              loadSplineScript();
+              // Wait for script to load before enabling scroll
+              setTimeout(() => {
+                allowScrollThroughSpline();
+              }, 500);
+            } else {
+              // Enable scroll if already loaded
+              allowScrollThroughSpline();
+            }
+            
+            // Show and resume Spline viewer
+            toggleSplineViewer(true);
+            
+            // Animation
             entry.target.classList.add('animate-in');
-            // Remove inline styles to allow CSS animations to work smoothly
             entry.target.style.opacity = '';
             entry.target.style.transform = '';
-            sectionObserver.unobserve(entry.target);
+          } else {
+            // Hide and pause Spline viewer when section is not visible
+            toggleSplineViewer(false);
           }
         });
       }, observerOptions);
 
       sectionObserver.observe(section);
       
-      // If section is already in viewport, trigger animation immediately
+      // If section is already in viewport, trigger animation and load Spline immediately
       const rect = section.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      if (rect.top < windowHeight && rect.bottom > 0) {
+      if (rect.top < windowHeight + 100 && rect.bottom > -100) {
+        loadSplineScript();
+        toggleSplineViewer(true);
+        // Enable scroll after script loads
+        setTimeout(() => {
+          allowScrollThroughSpline();
+        }, 500);
         section.classList.add('animate-in');
         section.style.opacity = '';
         section.style.transform = '';
+      } else {
+        // Section not visible, start paused
+        toggleSplineViewer(false);
       }
     }
   }, 100);
   
-  console.log('Transform CTA section template loaded and initialized');
+  console.log('Transform CTA section template loaded and initialized with lazy loading');
 }
 
 /**

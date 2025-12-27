@@ -2320,6 +2320,26 @@
   .transform-cta-actions .transform-cta-btn-secondary {
     width: 200px;
   }
+
+  /* Show mobile viewer, hide desktop viewer on tablet */
+  .transform-cta-spline-desktop {
+    display: none !important;
+  }
+
+  .transform-cta-spline-mobile {
+    display: block !important;
+  }
+
+  /* Disable Spline viewer interactions on tablet */
+  .transform-cta-spline-viewer {
+    pointer-events: none !important;
+    touch-action: none !important;
+  }
+
+  .transform-cta-spline-viewer canvas {
+    pointer-events: none !important;
+    touch-action: none !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2346,5 +2366,25 @@
   .transform-cta-actions .transform-cta-btn-secondary {
     width: 100%;
     max-width: 300px;
+  }
+
+  /* Show mobile viewer, hide desktop viewer on mobile */
+  .transform-cta-spline-desktop {
+    display: none !important;
+  }
+
+  .transform-cta-spline-mobile {
+    display: block !important;
+  }
+
+  /* Disable Spline viewer interactions on mobile */
+  .transform-cta-spline-viewer {
+    pointer-events: none !important;
+    touch-action: none !important;
+  }
+
+  .transform-cta-spline-viewer canvas {
+    pointer-events: none !important;
+    touch-action: none !important;
   }
 }
