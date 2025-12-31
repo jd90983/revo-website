@@ -2340,6 +2340,17 @@
     pointer-events: none !important;
     touch-action: none !important;
   }
+
+  /* Disable hero Spline viewer interactions on tablet */
+  .hero-spline-viewer {
+    pointer-events: none !important;
+    touch-action: none !important;
+  }
+
+  .hero-spline-viewer canvas {
+    pointer-events: none !important;
+    touch-action: none !important;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2384,6 +2395,17 @@
   }
 
   .transform-cta-spline-viewer canvas {
+    pointer-events: none !important;
+    touch-action: none !important;
+  }
+
+  /* Disable hero Spline viewer interactions on mobile */
+  .hero-spline-viewer {
+    pointer-events: none !important;
+    touch-action: none !important;
+  }
+
+  .hero-spline-viewer canvas {
     pointer-events: none !important;
     touch-action: none !important;
   }
