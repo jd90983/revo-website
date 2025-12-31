@@ -28,6 +28,12 @@
     max-width: 350px;
   }
 
+  /* Dashboard Rive Animation */
+  .dashboard-rive-animation {
+    max-width: 350px;
+    height: 350px;
+  }
+
   /* How It Works Section */
   .how-it-works {
     padding: 80px 40px;
@@ -728,11 +734,17 @@
   .dashboard-image-container {
     margin-top: 24px;
     justify-content: center;
+    max-width: 350px;
   }
 
   .dashboard-image {
     max-width: 280px;
     width: 100%;
+  }
+
+  .dashboard-rive-animation {
+    max-width: 280px;
+    height: 280px;
   }
 
   .features-right {
@@ -1550,10 +1562,16 @@
   /* Dashboard Image */
   .dashboard-image-container {
     margin-top: 24px;
+    max-width: 250px;
   }
 
   .dashboard-image {
     max-width: 250px;
+  }
+
+  .dashboard-rive-animation {
+    max-width: 250px;
+    height: 250px;
   }
 
   .stat-card .stat-number {
@@ -1603,7 +1621,8 @@
   .how-card:hover,
   .stat-card:hover,
   .testimonial-card:hover,
-  .dashboard-image:hover {
+  .dashboard-image:hover,
+  .dashboard-rive-animation:hover {
     transform: none;
   }
 
