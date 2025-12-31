@@ -31,3 +31,4 @@ DO $$
 BEGIN
   RAISE NOTICE 'SUCCESS! Country columns added to leads table.';
 END $$;
+
