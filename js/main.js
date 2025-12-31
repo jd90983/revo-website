@@ -175,3 +175,122 @@ focusStyle.textContent = `
   }
 `;
 document.head.appendChild(focusStyle);
+
+// Allow scroll to pass through hero Spline viewer
+function allowScrollThroughHeroSpline() {
+  const heroSection = document.querySelector('.hero');
+  const heroSplineViewer = heroSection ? heroSection.querySelector('.hero-spline-viewer') : null;
+
+  if (heroSection && heroSplineViewer) {
+    // Simply ensure pointer events don't block scroll
+    // The browser's native scroll should work, we just need to make sure
+    // Spline doesn't capture it exclusively
+    
+    // Wait for Spline viewer to be fully loaded
+    heroSplineViewer.addEventListener('loaded', () => {
+      console.log('Hero Spline viewer loaded');
+    });
+
+    // If already loaded (e.g., on page refresh), log it
+    if (heroSplineViewer.hasAttribute('loaded')) {
+      console.log('Hero Spline viewer already loaded');
+    }
+  }
+}
+
+// Initialize hero Spline with lazy loading and performance optimization
+function initHeroSplineOptimization() {
+  const heroSection = document.querySelector('.hero');
+  const heroSplineViewer = heroSection ? heroSection.querySelector('.hero-spline-viewer') : null;
+  
+  if (!heroSection || !heroSplineViewer) {
+    console.warn('Hero section or Spline viewer not found');
+    return;
+  }
+
+  let splineScriptLoaded = false;
+  let splineViewerLoaded = false;
+
+  // Function to load Spline viewer script lazily
+  function loadSplineScript() {
+    if (splineScriptLoaded) return;
+    
+    if (!document.querySelector('script[src*="spline-viewer"]')) {
+      const splineScript = document.createElement('script');
+      splineScript.type = 'module';
+      splineScript.src = 'https://unpkg.com/@splinetool/viewer@1.12.28/build/spline-viewer.js';
+      splineScript.onload = () => {
+        console.log('Hero Spline viewer script loaded');
+        splineScriptLoaded = true;
+        // Viewer is already visible via CSS, just enable it
+        setTimeout(() => {
+          // Wait for viewer to be ready
+          if (heroSplineViewer.hasAttribute('loaded')) {
+            enableSplineViewer();
+          } else {
+            heroSplineViewer.addEventListener('loaded', enableSplineViewer, { once: true });
+          }
+        }, 100);
+      };
+      document.head.appendChild(splineScript);
+      console.log('Hero Spline viewer script loading...');
+    } else {
+      splineScriptLoaded = true;
+    }
+  }
+
+  // Function to show/hide Spline viewer (hiding pauses rendering)
+  function toggleSplineViewer(visible) {
+    if (visible) {
+      heroSection.classList.add('hero-spline-visible');
+      heroSplineViewer.style.display = 'block';
+    } else {
+      heroSection.classList.remove('hero-spline-visible');
+      heroSplineViewer.style.display = 'none';
+    }
+  }
+
+  // Enable Spline viewer after it's loaded
+  function enableSplineViewer() {
+    splineViewerLoaded = true;
+    allowScrollThroughHeroSpline();
+    console.log('Hero Spline viewer enabled');
+  }
+
+  // Load Spline immediately since hero is always visible on page load
+  // Also ensure viewer is visible from the start
+  toggleSplineViewer(true);
+  loadSplineScript();
+  
+  // Use IntersectionObserver to pause Spline when hero is not visible (for performance)
+  if ('IntersectionObserver' in window) {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px 0px 0px'
+    };
+
+    const heroObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Hero is visible - show Spline
+          toggleSplineViewer(true);
+        } else {
+          // Hero is not visible - hide and pause Spline to save resources
+          toggleSplineViewer(false);
+        }
+      });
+    }, observerOptions);
+
+    // Start observing the hero section
+    heroObserver.observe(heroSection);
+  }
+}
+
+// Initialize hero Spline optimization when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(initHeroSplineOptimization, 100);
+  });
+} else {
+  setTimeout(initHeroSplineOptimization, 100);
+}

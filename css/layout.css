@@ -816,19 +816,99 @@ body.mobile-menu-open {
   justify-content: center;
   padding: var(--space-3xl) var(--page-padding);
   overflow: hidden;
+  /* Prevent scroll jumping */
+  scroll-behavior: smooth;
+  /* Prevent layout shifts */
+  contain: layout style;
+  /* Transparent background to show Spline */
+  background: transparent;
 }
 
 .hero-background {
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: url('../images/backgrounds/home_page_background.png') no-repeat center center;
-  background-size: cover; /* Cover entire section */
   overflow: hidden;
+  pointer-events: none;
+  /* Prevent layout shifts */
+  contain: layout style paint;
+  will-change: auto;
+  /* Transparent background to show Spline */
+  background: transparent;
+}
+
+.hero-spline-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none; /* Allow scroll to pass through */
+  overflow: hidden;
+  /* Prevent layout shifts */
+  contain: layout style paint;
+}
+
+.hero-spline-viewer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  display: block !important; /* Show immediately to display Spline background */
+  visibility: visible !important;
+  opacity: 1 !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  pointer-events: none !important; /* Allow scroll to pass through, but allow mouse tracking */
+  z-index: 0;
+  overscroll-behavior: none;
+  touch-action: pan-y pinch-zoom;
+  /* Prevent layout shifts */
+  contain: layout style paint;
+  will-change: transform;
+  /* Allow scroll to pass through */
+  overflow: hidden;
+  /* Ensure Spline background is visible */
+  background: transparent;
+}
+
+/* Show Spline viewer when section is visible (for performance optimization) */
+.hero.hero-spline-visible .hero-spline-viewer {
+  display: block !important;
+  visibility: visible !important;
+}
+
+/* Hide/pause Spline viewer when section is not visible (saves resources) */
+.hero:not(.hero-spline-visible) .hero-spline-viewer {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+/* Ensure Spline is visible by default on page load */
+.hero .hero-spline-viewer {
+  display: block !important;
+  visibility: visible !important;
+}
+
+.hero-spline-viewer canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block !important;
+  pointer-events: auto !important;
+  z-index: 0;
+  /* Prevent layout shifts and scroll issues */
+  position: absolute;
+  top: 0;
+  left: 0;
+  contain: layout style paint;
 }
 
 /* Gradient overlay at bottom of hero - ultra smooth seamless blend */
-.hero-background::after {
+.hero-overlay {
   content: '';
   position: absolute;
   bottom: 0;
