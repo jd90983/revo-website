@@ -1215,9 +1215,15 @@ body.mobile-menu-open {
 .dashboard-image-container {
   margin-top: 40px;
   width: 100%;
+  max-width: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #0A0B0C;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dashboard-image {
@@ -1232,6 +1238,29 @@ body.mobile-menu-open {
   transform: translateY(-4px) scale(1.02);
   filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.6));
 }
+
+.dashboard-rive-animation {
+  max-width: 450px;
+  width: 100%;
+  height: 450px;
+  filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.5));
+  border: none !important;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.dashboard-rive-animation.loaded {
+  opacity: 1;
+}
+
+@media (max-width: 450px) {
+  .dashboard-rive-animation {
+    height: calc(100vw - 32px);
+    max-height: 450px;
+  }
+}
+
 
 /* Right Column */
 .features-right {
@@ -1515,6 +1544,7 @@ body.mobile-menu-open {
   inset: 0;
   pointer-events: none;
   z-index: 0;
+  overflow: hidden;
 }
 
 /* Wave Pattern - Background image only */
@@ -1531,6 +1561,38 @@ body.mobile-menu-open {
   min-width: 100%;
 }
 
+/* How It Works Spline Viewer Background */
+.how-it-works-spline-viewer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: none !important;
+  pointer-events: none !important;
+  z-index: 0;
+  display: block;
+}
+
+/* How It Works Linear Gradient Overlay */
+.how-it-works::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(10, 11, 12, 1) 0%,
+    rgba(10, 11, 12, 0) 20%,
+    rgba(10, 11, 12, 0) 80%,
+    rgba(10, 11, 12, 1) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
 /* Content Container */
 .how-container {
   position: relative;
@@ -1540,7 +1602,7 @@ body.mobile-menu-open {
   flex-direction: column;
   align-items: center;
   gap: 80px;
-  z-index: 1;
+  z-index: 2;
 }
 
 /* Section Header */
@@ -3604,6 +3666,10 @@ body.mobile-menu-open {
 
 .benefits-modern-section {
   background: #FFFFFF;
+  background-image: url('../images/backgrounds/white_background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   padding: 112px 64px;
   position: relative;

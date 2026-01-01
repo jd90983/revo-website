@@ -130,6 +130,54 @@ if ('IntersectionObserver' in window) {
   lazyLoadImages();
 }
 
+// Lazy load Rive animation when features section becomes visible
+function initRiveAnimationLazyLoad() {
+  const featuresSection = document.querySelector('#services.features');
+  const riveIframe = document.querySelector('.dashboard-rive-animation');
+  
+  if (!featuresSection || !riveIframe) {
+    return;
+  }
+  
+  // Check if iframe has already been loaded
+  if (riveIframe.src) {
+    riveIframe.classList.add('loaded');
+    return;
+  }
+  
+  // Create Intersection Observer for the features section
+  const riveObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Section is visible - load the iframe
+        const dataSrc = riveIframe.getAttribute('data-src');
+        if (dataSrc && !riveIframe.src) {
+          riveIframe.src = dataSrc;
+          riveIframe.removeAttribute('data-src');
+          riveIframe.classList.add('loaded');
+        }
+        // Stop observing after loading
+        riveObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  });
+  
+  // Start observing the features section
+  riveObserver.observe(featuresSection);
+}
+
+// Initialize Rive animation lazy loading
+if ('IntersectionObserver' in window) {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initRiveAnimationLazyLoad);
+  } else {
+    initRiveAnimationLazyLoad();
+  }
+}
+
 // Prevent default for dummy links (links with href="#")
 document.querySelectorAll('a[href="#"]').forEach(link => {
   link.addEventListener('click', (e) => {
