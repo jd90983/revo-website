@@ -523,3 +523,55 @@ if (document.readyState === 'loading') {
 } else {
   initMainTestimonialsSlider();
 }
+
+// ===== INDIVIDUAL CONTENT ELEMENT ANIMATIONS =====
+// Animate individual content elements when they enter viewport
+// Exclude .hear-sample-section and all its children
+const initIndividualContentAnimations = () => {
+  // Only run on index.html
+  if (!window.location.pathname.includes('index.html') && window.location.pathname !== '/') {
+    return;
+  }
+
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  // Select elements that should animate (individual items, not containers)
+  const elementsToAnimate = document.querySelectorAll(`
+    .hero-subtitle,
+    .features-description,
+    .features-cards-container .feature-card,
+    .how-features-row .how-feature-column,
+    .benefits-modern-features .benefits-modern-feature-column,
+    .performance-stats-row .performance-stat-item
+  `);
+
+  // Filter out elements inside .hear-sample-section
+  const filteredElements = Array.from(elementsToAnimate).filter(element => {
+    return !element.closest('.hear-sample-section');
+  });
+
+  const contentObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-in');
+        contentObserver.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  filteredElements.forEach(element => {
+    if (!element.classList.contains('animate-in')) {
+      contentObserver.observe(element);
+    }
+  });
+};
+
+// Initialize individual content animations when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initIndividualContentAnimations);
+} else {
+  initIndividualContentAnimations();
+}

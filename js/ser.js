@@ -671,3 +671,261 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+// ===== BENEFITS: SCROLL-TRIGGERED AUTO-SWITCHING (Mobile & Tablet Only) =====
+document.addEventListener('DOMContentLoaded', function() {
+  // Only run on mobile and tablet
+  const isMobileOrTablet = () => window.innerWidth <= 1023;
+  
+  if (!isMobileOrTablet()) return;
+
+  const benefitsSections = document.querySelectorAll('.ser-benefits');
+  
+  benefitsSections.forEach((section) => {
+    const benefitsContent = section.querySelector('.ser-benefits-content');
+    const benefitsAccordionItems = section.querySelectorAll('.ser-benefits-accordion-item');
+    const benefitsImage = section.querySelector('[id^="ser-benefits-image"]');
+    
+    if (!benefitsContent || benefitsAccordionItems.length === 0 || !benefitsImage) return;
+
+    // In mobile/tablet, set background images for cards using data-image attribute
+    if (isMobileOrTablet()) {
+      benefitsAccordionItems.forEach((item) => {
+        const imagePath = item.getAttribute('data-image');
+        if (imagePath) {
+          // Set background image using CSS custom property
+          item.style.setProperty('--card-image', `url('${imagePath}')`);
+          // Also set it directly on the pseudo-element via inline style
+          const style = document.createElement('style');
+          style.textContent = `
+            .ser-benefits-accordion-item[data-image="${imagePath}"]::after {
+              background-image: url('${imagePath}') !important;
+            }
+          `;
+          document.head.appendChild(style);
+        }
+      });
+    }
+
+    const totalItems = benefitsAccordionItems.length;
+    let currentActiveIndex = -1;
+    let isUserInteracting = false;
+    let interactionTimeout;
+    let sectionStartScroll = null; // Track when section enters viewport
+
+    // Function to activate an accordion item
+    const activateItem = (index) => {
+      if (index === currentActiveIndex || index < 0 || index >= totalItems) return;
+      if (isUserInteracting) return; // Don't auto-switch if user is interacting
+
+      const item = benefitsAccordionItems[index];
+      const imagePath = item.getAttribute('data-image');
+      
+      // Remove active class from all items
+      benefitsAccordionItems.forEach((otherItem, i) => {
+        if (i !== index) {
+          otherItem.classList.remove('active');
+          const otherHeader = otherItem.querySelector('.ser-benefits-accordion-header');
+          const otherContent = otherItem.querySelector('.ser-benefits-accordion-content');
+          
+          if (otherHeader) {
+            otherHeader.setAttribute('aria-expanded', 'false');
+          }
+          
+          // Only manage maxHeight for desktop (accordion behavior)
+          if (!isMobileOrTablet() && otherContent) {
+            otherContent.style.maxHeight = '0';
+          }
+        }
+      });
+
+      // Activate the target item
+      item.classList.add('active');
+      const header = item.querySelector('.ser-benefits-accordion-header');
+      const content = item.querySelector('.ser-benefits-accordion-content');
+      
+      if (header) {
+        header.setAttribute('aria-expanded', 'true');
+      }
+      
+      // Only manage maxHeight for desktop (accordion behavior)
+      // In mobile/tablet, content is always visible
+      if (!isMobileOrTablet() && content) {
+        content.style.maxHeight = 'none';
+        const height = content.scrollHeight;
+        const targetHeight = Math.max(height + 20, 300);
+        content.style.maxHeight = targetHeight + 'px';
+      }
+
+      // Update image with smooth transition (only for desktop)
+      if (!isMobileOrTablet() && imagePath && benefitsImage) {
+        const previousActiveIndex = currentActiveIndex;
+        currentActiveIndex = index;
+        const slideDirection = index > previousActiveIndex ? 1 : -1;
+        
+        // Fade out current image
+        benefitsImage.style.transition = 'opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+        benefitsImage.style.opacity = '0';
+        benefitsImage.style.transform = `translateX(${slideDirection * 30}px) translateY(10px)`;
+        
+        // After fade out, change image and fade in
+        setTimeout(() => {
+          const newImage = new Image();
+          newImage.onload = () => {
+            benefitsImage.src = imagePath;
+            benefitsImage.style.transform = `translateX(${-slideDirection * 30}px) translateY(-10px)`;
+            requestAnimationFrame(() => {
+              requestAnimationFrame(() => {
+                benefitsImage.style.opacity = '1';
+                benefitsImage.style.transform = 'translateX(0) translateY(0)';
+              });
+            });
+          };
+          newImage.onerror = () => {
+            benefitsImage.src = imagePath;
+            benefitsImage.style.opacity = '1';
+            benefitsImage.style.transform = 'translateX(0) translateY(0)';
+          };
+          newImage.src = imagePath;
+        }, 250);
+      } else {
+        currentActiveIndex = index;
+      }
+    };
+
+    // Track user interactions (click/touch) to prevent auto-switching temporarily
+    // In mobile/tablet, make all content visible (card style, not accordion)
+    if (isMobileOrTablet()) {
+      benefitsAccordionItems.forEach((item) => {
+        const content = item.querySelector('.ser-benefits-accordion-content');
+        if (content) {
+          // Make content always visible in mobile/tablet
+          content.style.maxHeight = 'none';
+          content.style.opacity = '1';
+          content.style.display = 'block';
+        }
+      });
+    }
+
+    benefitsAccordionItems.forEach((item) => {
+      const header = item.querySelector('.ser-benefits-accordion-header');
+      if (header) {
+        header.addEventListener('click', () => {
+          // In mobile/tablet, clicking just changes active state (visual only)
+          // In desktop, it toggles accordion
+          if (isMobileOrTablet()) {
+            const clickedIndex = Array.from(benefitsAccordionItems).indexOf(item);
+            if (clickedIndex !== -1) {
+              activateItem(clickedIndex);
+            }
+          }
+          
+          isUserInteracting = true;
+          if (interactionTimeout) clearTimeout(interactionTimeout);
+          // Re-enable auto-switching after 2 seconds of no interaction
+          interactionTimeout = setTimeout(() => {
+            isUserInteracting = false;
+          }, 2000);
+        });
+      }
+    });
+
+    // Function to check scroll position and determine which item should be active
+    // Disabled for mobile/tablet card view - cards are always visible
+    const checkScrollProgress = () => {
+      // Disable auto-scroll switching in mobile/tablet card view
+      // Cards are always visible, no need for scroll-based switching
+      if (isMobileOrTablet()) return;
+      if (isUserInteracting) return;
+
+      const contentRect = benefitsContent.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+      const navbarHeight = 72;
+      const currentScrollY = window.scrollY || window.pageYOffset;
+      
+      // Calculate when the content is in viewport and user is reading it
+      const contentTop = contentRect.top;
+      const contentBottom = contentRect.bottom;
+      const contentHeight = contentRect.height;
+      
+      // Start tracking when content is visible and user can read it
+      // Content should be in the viewport (top is above bottom of viewport, bottom is below top of viewport)
+      if (contentBottom < navbarHeight || contentTop > viewportHeight) {
+        sectionStartScroll = null; // Reset when content is out of viewport
+        return; // Content not in viewport
+      }
+
+      // Initialize scroll position when content enters the readable area
+      // Consider content "readable" when its top is below navbar and visible in viewport
+      const readableThreshold = navbarHeight + 50; // Start when content is 50px below navbar
+      
+      if (sectionStartScroll === null && contentTop <= readableThreshold && contentTop >= navbarHeight - 100) {
+        // Content is now readable - start tracking scroll
+        sectionStartScroll = currentScrollY;
+      }
+
+      // If content hasn't entered readable area yet, don't do anything
+      if (sectionStartScroll === null) {
+        return;
+      }
+
+      // Calculate how much the user has scrolled since content became readable
+      const scrolledDistance = currentScrollY - sectionStartScroll;
+      
+      // Change item every 200px of scroll
+      const scrollThreshold = 200;
+      
+      // Determine which item should be active based on scroll distance
+      let itemIndex = 0;
+      
+      if (scrolledDistance <= 0) {
+        // At the start, show first item
+        itemIndex = 0;
+      } else if (scrolledDistance >= (totalItems - 1) * scrollThreshold) {
+        // At the end, show last item
+        itemIndex = totalItems - 1;
+      } else {
+        // Calculate which item based on scroll distance
+        // Each item triggers after scrollThreshold pixels
+        itemIndex = Math.min(totalItems - 1, Math.max(0, Math.floor(scrolledDistance / scrollThreshold)));
+      }
+
+      // Activate the appropriate item
+      if (itemIndex !== currentActiveIndex) {
+        activateItem(itemIndex);
+      }
+    };
+
+    // Throttled scroll handler
+    let ticking = false;
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          checkScrollProgress();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    // Listen to scroll events
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    
+    // Initial check after a small delay to ensure DOM is ready
+    setTimeout(() => {
+      checkScrollProgress();
+    }, 100);
+    
+    // Also check on resize (in case user rotates device)
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      if (resizeTimeout) clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        if (isMobileOrTablet()) {
+          sectionStartScroll = null; // Reset on resize
+          checkScrollProgress();
+        }
+      }, 250);
+    }, { passive: true });
+  });
+});
+

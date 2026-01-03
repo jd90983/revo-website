@@ -360,7 +360,7 @@ main > section {
 
 .ser-ai-content-wrapper {
   display: flex;
-  gap: 80px;
+  gap: 40px;
   align-items: center;
   width: 100%;
 }
@@ -543,6 +543,7 @@ main > section {
   height: auto;
   width: 100%;
   min-width: 0;
+  max-width: 700px;
   padding-right: 0;
   padding-left: 0;
   display: flex;
@@ -557,7 +558,7 @@ main > section {
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .ser-ai-circular-wave-pattern {
@@ -609,6 +610,30 @@ main > section {
   height: auto;
   z-index: 1;
   filter: none;
+}
+
+/* Spline Viewer Styles */
+.ser-ai-spline-viewer {
+  position: relative;
+  width: 700px;
+  height: 700px;
+  min-width: 700px;
+  min-height: 700px;
+  max-width: 700px;
+  max-height: 700px;
+  z-index: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+/* Desktop Animation - Show only on desktop */
+.ser-ai-spline-desktop {
+  display: block;
+}
+
+.ser-ai-spline-mobile {
+  display: none;
 }
 
 .ser-ai-receptionists:not(.ser-ai-receptionists-original) .ser-ai-phone-mockup-image {
@@ -1333,6 +1358,9 @@ main > section {
   gap: 32px;
   padding: 48px;
   justify-content: center;
+  min-width: 0;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 .ser-how-card-top {
@@ -1380,9 +1408,39 @@ main > section {
 /* Removed ser-how-card-actions button styles */
 .ser-how-card-actions {
   display: flex;
-  gap: 24px;
+  gap: 16px;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.ser-how-card-actions .btn-primary-large {
+  height: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.ser-how-card-actions .btn-outline-white {
+  height: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .ser-how-card-image {
@@ -2433,33 +2491,50 @@ main > section {
 
 /* Responsive styles for testimonial section */
 @media (max-width: 1023px) {
+  .ser-testimonial .ser-section-container {
+    padding: 0 var(--page-padding);
+  }
+
   .ser-testimonial-content {
     grid-template-columns: 1fr;
     gap: 48px;
+    row-gap: 32px;
     text-align: center;
+    padding: 0;
+    display: grid;
   }
 
   .ser-testimonial-left {
     justify-content: center;
+    order: 1;
+    margin-top: 0;
+    margin-bottom: 8px;
   }
 
   .ser-testimonial-right {
     text-align: center;
-    align-items: center;
+  align-items: center;
+    order: 2;
+    display: contents;
   }
 
   .ser-testimonial-stars {
-    justify-content: center;
+  justify-content: center;
+    order: 2;
+    margin-bottom: 4px;
   }
 
   .ser-testimonial-author {
     align-items: center;
-    order: 2;
-    margin-bottom: 8px;
+    order: 3;
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 2px;
   }
 
   .ser-testimonial-text {
-    order: 3;
+    order: 4;
+    margin-top: 8px;
   }
 
   .testimonial-role {
@@ -2479,26 +2554,62 @@ main > section {
 }
 
 @media (max-width: 767px) {
-  .ser-testimonial-content {
-    gap: 32px;
-    padding: 0 var(--space-md);
+  .ser-testimonial .ser-section-container {
+    padding: 0 var(--page-padding-mobile);
   }
 
-  .ser-testimonial-image-wrapper {
-    max-width: 100%;
+  .ser-testimonial-content {
+    gap: 32px;
+    row-gap: 24px;
+    padding: 0;
+    display: grid;
+  }
+
+  .ser-testimonial-left {
+    order: 1;
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+
+  .ser-testimonial-right {
+    order: 2;
+    display: contents;
+  }
+
+  .ser-testimonial-stars {
+    order: 2;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .ser-testimonial-author {
+    order: 3;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    gap: 2px;
   }
 
   .ser-testimonial-text {
     font-size: 18px;
     line-height: 1.5;
     letter-spacing: 0;
+    order: 4;
+    text-align: center;
+    margin-top: 8px;
   }
 
-  .ser-testimonial-name {
+  .ser-testimonial-image-wrapper {
+    max-width: 100%;
+}
+
+.ser-testimonial-name {
     font-size: 18px;
-  }
+}
 
-  .ser-testimonial-company {
+.ser-testimonial-company {
     font-size: 14px;
   }
 
@@ -2693,8 +2804,8 @@ main > section {
     line-height: 1.2;
     letter-spacing: -0.28px;
     width: 100%;
-    margin: 0;
-  }
+  margin: 0;
+}
 
   .ser-intelligent-banner-line1 {
     top: auto;
@@ -2827,10 +2938,19 @@ main > section {
     margin-bottom: var(--space-lg) !important;
   }
 
+  /* Move animation to appear after title and description in tablet */
+  .ser-ai-content-right {
+    order: 3 !important;
+  }
+  
   .ser-ai-phone-mockup-container {
     order: 3 !important;
     width: 100% !important;
     margin-bottom: var(--space-lg) !important;
+  }
+  
+  .ser-ai-spline-viewer {
+    order: 3 !important;
   }
 
   .ser-ai-actions {
@@ -2844,6 +2964,44 @@ main > section {
     max-width: 70%;
     width: 70%;
     min-width: 280px;
+  }
+
+  /* Hide desktop animation, show mobile animation on tablet */
+  .ser-ai-spline-desktop {
+    display: none !important;
+  }
+  
+  .ser-ai-spline-mobile {
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  .ser-ai-spline-viewer {
+    width: 400px !important;
+    height: 400px !important;
+    min-width: 400px !important;
+    min-height: 400px !important;
+    max-width: 400px !important;
+    max-height: 400px !important;
+    margin: 0 auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .ser-ai-phone-mockup-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    overflow: visible !important;
+  }
+  
+  .ser-ai-receptionists .ser-ai-content-right {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 100% !important;
+    overflow: visible !important;
   }
 
   .ser-intelligent-features-wrapper {
@@ -2922,19 +3080,146 @@ main > section {
 
   .ser-benefits-content {
     flex-direction: column;
-    gap: var(--space-xl);
+    gap: 32px;
+    align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
   }
 
   .ser-benefits-image {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    aspect-ratio: 594 / 742;
-    margin: 0 auto;
+    display: none; /* Hide separate image, will be shown in card */
   }
 
   .ser-benefits-accordion {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* Card-style design for each accordion item in tablet */
+  .ser-benefits-accordion-item {
+    background: var(--color-white);
+    border-radius: 16px;
+    padding: 32px;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: 0 4px 16px rgba(10, 11, 12, 0.08);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ser-benefits-accordion-item:hover {
+    box-shadow: 0 8px 24px rgba(10, 11, 12, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .ser-benefits-accordion-item.active {
+    box-shadow: 0 8px 24px rgba(10, 11, 12, 0.15);
+  }
+
+  .ser-benefits-accordion-header {
+    padding: 0 !important;
+    cursor: pointer;
+    order: 1;
+  }
+
+  .ser-benefits-accordion-title {
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.32px !important;
+    color: var(--color-text-dark) !important;
+    margin: 0 0 16px 0 !important;
+  }
+
+  .ser-benefits-accordion-item:not(.active) .ser-benefits-accordion-title {
+    color: var(--color-text-dark) !important;
+    opacity: 1 !important;
+  }
+
+  .ser-benefits-accordion-content {
+    order: 2;
+    max-height: none !important;
+    padding: 0 !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  .ser-benefits-accordion-content p {
+    font-size: 18px !important;
+    line-height: 1.6 !important;
+    color: var(--color-text-dark) !important;
+    margin: 0 0 16px 0 !important;
+  }
+
+  .ser-benefits-accordion-content p:first-child {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    margin-bottom: 12px !important;
+  }
+
+  .ser-benefits-accordion-content p:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .ser-benefits-check-list {
+    margin: 16px 0 0 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+  }
+
+  .ser-benefits-check-list li {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 8px !important;
+    color: var(--color-text-dark) !important;
+  }
+
+  /* Image container inside card using pseudo-element */
+  .ser-benefits-accordion-item::after {
+    content: '';
+    display: block;
+    order: 3;
+    width: 100%;
+    height: 240px;
+    background: var(--color-gray-light);
+    border-radius: 12px;
+    margin-top: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Set image for each item based on data-image attribute */
+  .ser-benefits-accordion-item[data-image="images/services/24_7-Availability.png"]::after {
+    background-image: url('images/services/24_7-Availability.png');
+  }
+
+  .ser-benefits-accordion-item[data-image="images/services/Smart Call-Management.png"]::after {
+    background-image: url('images/services/Smart Call-Management.png');
+  }
+
+  .ser-benefits-accordion-item[data-image="images/services/AI-Caller-Memory-&-Context-Recall.png"]::after {
+    background-image: url('images/services/AI-Caller-Memory-&-Context-Recall.png');
+  }
+
+  .ser-benefits-accordion-item[data-image="images/services/Personalized AI Reception.png"]::after {
+    background-image: url('images/services/Personalized AI Reception.png');
+  }
+
+  .ser-benefits-accordion-item[data-image="images/services/Smart Response Timing.png"]::after {
+    background-image: url('images/services/Smart Response Timing.png');
+  }
+
+  .ser-benefits-accordion-item[data-image="images/services/Detailed Call Reports.png"]::after {
+    background-image: url('images/services/Detailed Call Reports.png');
   }
 
   .ser-benefits-content,
@@ -2945,7 +3230,7 @@ main > section {
   }
 
   .ser-get-started {
-    padding: 80px 0 40px 0 !important;
+    padding: 80px 0 80px 0 !important;
   }
 
   .ser-get-started-wrapper {
@@ -3013,9 +3298,25 @@ main > section {
     padding: 80px 0;
   }
 
+  .ser-experience-power .ser-section-container {
+    padding: 0 var(--page-padding);
+  }
+
   .ser-experience-content {
     flex-direction: column;
     gap: 32px;
+  }
+
+  /* Benefits Section - Tablet - Align with Experience Power */
+  .ser-benefits {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ser-benefits .ser-section-container {
+    padding: 0 var(--page-padding);
   }
 
   .ser-experience-left, .ser-experience-right {
@@ -3146,6 +3447,11 @@ main > section {
     display: flex;
     flex-direction: column;
     gap: 24px;
+    min-width: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
   }
 
   .ser-how-card-tagline {
@@ -3175,14 +3481,36 @@ main > section {
     flex-wrap: nowrap !important;
     justify-content: flex-start !important;
     width: 100% !important;
+    max-width: 100% !important;
+    align-items: center !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
   }
 
-  .ser-how-card-actions button {
+  .ser-how-card-actions .btn-primary-large {
+    height: 44px !important;
+    min-height: 44px !important;
     width: auto !important;
-    flex: 1;
-    min-width: 0;
+    flex: 0 0 auto !important;
+    min-width: 120px !important;
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .ser-how-card-actions .btn-outline-white {
+    height: 44px !important;
+    min-height: 44px !important;
     padding: 10px 16px !important;
     font-size: 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 1 !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
   }
 
   /* Image always on bottom */
@@ -3368,18 +3696,10 @@ main > section {
     flex-direction: column !important;
   }
 
-  .ser-ai-actions {
-    order: 4 !important;
-    width: 100% !important;
-    gap: 12px !important;
-    display: flex !important;
-    flex-direction: column !important;
-  }
-
-  /* Removed ser-ai-btn styles - now using features-buttons */
-
+  /* Move animation to left content area in mobile */
   .ser-ai-content-right {
     display: contents !important;
+    order: 3 !important;
   }
 
   .ser-ai-phone-mockup-container {
@@ -3390,6 +3710,20 @@ main > section {
     margin-top: var(--space-lg) !important;
     margin-bottom: var(--space-lg) !important;
   }
+  
+  .ser-ai-spline-viewer {
+    order: 3 !important;
+  }
+
+  .ser-ai-actions {
+    order: 4 !important;
+    width: 100% !important;
+    gap: 12px !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  /* Removed ser-ai-btn styles - now using features-buttons */
 
   .ser-ai-phone-mockup-image {
     max-height: none;
@@ -3398,6 +3732,44 @@ main > section {
     min-width: auto;
     margin: 0 auto;
     display: block;
+  }
+
+  /* Hide desktop animation, show mobile animation on mobile */
+  .ser-ai-spline-desktop {
+    display: none !important;
+  }
+  
+  .ser-ai-spline-mobile {
+    display: block !important;
+    margin: 0 auto !important;
+  }
+
+  .ser-ai-spline-viewer {
+    width: 400px !important;
+    height: 400px !important;
+    min-width: 400px !important;
+    min-height: 400px !important;
+    max-width: 400px !important;
+    max-height: 400px !important;
+    margin: 0 auto !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  
+  .ser-ai-phone-mockup-container {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    overflow: visible !important;
+  }
+  
+  .ser-ai-receptionists .ser-ai-content-right {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 100% !important;
+    overflow: visible !important;
   }
 
   /* Reliable & Secure section image - zoom out for mobile */
@@ -3617,11 +3989,166 @@ main > section {
   }
 
   .ser-benefits {
-    padding: var(--space-2xl) var(--page-padding-mobile);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ser-benefits .ser-section-container {
+    padding: 0 var(--page-padding-mobile);
   }
 
   .ser-benefits-header {
     gap: var(--space-md);
+  }
+
+  .ser-benefits-content {
+    flex-direction: column;
+    gap: 20px;
+    align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    min-height: auto !important;
+    height: auto !important;
+  }
+
+  .ser-benefits-image {
+    display: none; /* Hide separate image, will be shown in card */
+  }
+
+  .ser-benefits-accordion {
+    min-height: auto !important;
+    height: auto !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Card-style design for each accordion item in mobile */
+  .ser-benefits-accordion-item {
+    background: var(--color-white);
+    border-radius: 16px;
+    padding: 24px;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: 0 4px 16px rgba(10, 11, 12, 0.08);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ser-benefits-accordion-item:hover {
+    box-shadow: 0 8px 24px rgba(10, 11, 12, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .ser-benefits-accordion-item.active {
+    box-shadow: 0 8px 24px rgba(10, 11, 12, 0.15);
+  }
+
+  .ser-benefits-accordion-header {
+    padding: 0 !important;
+    cursor: pointer;
+    order: 1;
+  }
+
+  .ser-benefits-accordion-title {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.28px !important;
+    color: var(--color-text-dark) !important;
+    margin: 0 0 12px 0 !important;
+  }
+
+  .ser-benefits-accordion-item:not(.active) .ser-benefits-accordion-title {
+    color: var(--color-text-dark) !important;
+    opacity: 1 !important;
+  }
+
+  .ser-benefits-accordion-content {
+    order: 2;
+    max-height: none !important;
+    padding: 0 !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  .ser-benefits-accordion-content p {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: var(--color-text-dark) !important;
+    margin: 0 0 12px 0 !important;
+  }
+
+  .ser-benefits-accordion-content p:first-child {
+    font-size: 18px !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .ser-benefits-accordion-content p:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .ser-benefits-check-list {
+    margin: 12px 0 0 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+  }
+
+  .ser-benefits-check-list li {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+    margin-bottom: 6px !important;
+    color: var(--color-text-dark) !important;
+  }
+
+  /* Image container inside card using pseudo-element */
+  .ser-benefits-accordion-item::after {
+    content: '';
+    display: block;
+    order: 3;
+    width: 100%;
+    height: 200px;
+    background: var(--color-gray-light);
+    border-radius: 12px;
+    margin-top: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Set image for each item based on data-image attribute */
+  .ser-benefits-accordion-item[data-image="images/services/24_7-Availability.png"]::after {
+    background-image: url('images/services/24_7-Availability.png');
+  }
+
+  .ser-benefits-accordion-item[data-image="images/services/Smart Call-Management.png"]::after {
+    background-image: url('images/services/Smart Call-Management.png');
+  }
+
+  .ser-benefits-accordion-item[data-image="images/services/AI-Caller-Memory-&-Context-Recall.png"]::after {
+    background-image: url('images/services/AI-Caller-Memory-&-Context-Recall.png');
+  }
+
+  .ser-benefits-accordion-item[data-image="images/services/Personalized AI Reception.png"]::after {
+    background-image: url('images/services/Personalized AI Reception.png');
+  }
+
+  .ser-benefits-accordion-item[data-image="images/services/Smart Response Timing.png"]::after {
+    background-image: url('images/services/Smart Response Timing.png');
+  }
+
+  .ser-benefits-accordion-item[data-image="images/services/Detailed Call Reports.png"]::after {
+    background-image: url('images/services/Detailed Call Reports.png');
   }
 
   .ser-benefits-title-wrapper {
@@ -3667,7 +4194,11 @@ main > section {
 
   .ser-benefits-content {
     flex-direction: column;
-    gap: var(--space-lg);
+    gap: 24px;
+    align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
     min-height: auto !important;
     height: auto !important;
   }
@@ -3675,13 +4206,14 @@ main > section {
   .ser-benefits-accordion {
     min-height: auto !important;
     height: auto !important;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
 
   .ser-benefits-image {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    aspect-ratio: 594 / 742;
+    display: none; /* Hide separate image, will be shown in card */
   }
 
   .ser-benefits-accordion-title {
@@ -3690,7 +4222,7 @@ main > section {
   }
 
   .ser-get-started {
-    padding: 60px 0 40px 0 !important;
+    padding: 80px 0 80px 0 !important;
   }
 
   .ser-get-started-wrapper {
