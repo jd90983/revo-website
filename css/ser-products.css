@@ -1,0 +1,1081 @@
+/* ============================================
+   Products Section - Sticky Scroll
+   ============================================ */
+
+/* Override body colors for products section */
+body:has(.ser-products-section),
+html:has(.ser-products-section) body {
+  background: #FFFFFF !important;
+  color: #0A0B0C !important;
+}
+
+.ser-products-section {
+  position: relative;
+  width: 100%;
+  background: #ffffff !important;
+  padding: 112px 0;
+  color: #0A0B0C !important;
+  overflow: visible; /* Ensure sticky works */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  visibility: visible !important;
+}
+
+.ser-products-section.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Force colors on all child elements */
+.ser-products-section *:not(.text-primary) {
+  color: #0A0B0C !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Specific rules for each element type */
+.ser-products-section h1,
+.ser-products-section h2,
+.ser-products-section h3,
+.ser-products-section h4,
+.ser-products-section h5,
+.ser-products-section h6 {
+  color: #0A0B0C !important;
+}
+
+.ser-products-section p,
+.ser-products-section span:not(.text-primary),
+.ser-products-section div,
+.ser-products-section a {
+  color: #0A0B0C !important;
+}
+
+/* Don't override benefits-modern buttons in products section */
+.ser-products-section .benefits-modern-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.ser-products-section .benefits-modern-btn-primary {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0A0B0C;
+  background: rgba(10, 11, 12, 0.05);
+  border: none;
+  border-radius: 100px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.ser-products-section .benefits-modern-btn-primary:hover {
+  background: rgba(10, 11, 12, 0.1);
+  transform: translateY(-2px);
+}
+
+.ser-products-section .benefits-modern-btn-secondary {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0A0B0C;
+  background: transparent;
+  border: 1px solid rgba(10, 11, 12, 0.15);
+  border-radius: 100px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.ser-products-section .benefits-modern-btn-secondary:hover {
+  background: rgba(10, 11, 12, 0.05);
+}
+
+.padding-global {
+  position: relative;
+  width: 100%;
+  padding: 0 var(--page-padding);
+  background: #ffffff;
+  overflow: visible; /* Ensure sticky works */
+}
+
+.container-large {
+  max-width: var(--max-content-width);
+  width: 100%;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: visible; /* Ensure sticky works */
+}
+
+/* Products header - same as benefits header */
+.ser-products-section .ser-benefits-header {
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+/* Section title with primary color accent */
+.ser-products-section .ser-section-title .text-primary {
+  color: #0F5AD7 !important;
+}
+
+.products_wr {
+  position: relative;
+  width: 100%;
+  background: #ffffff;
+  overflow: visible; /* Ensure sticky works */
+}
+
+/* Desktop only - Sticky scroll behavior */
+@media (min-width: 1024px) {
+  .products_wr {
+    position: relative;
+  }
+  
+  .products-content {
+    position: -webkit-sticky; /* Safari support */
+    position: sticky;
+    top: 72px; /* Navbar height */
+    z-index: 10;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0;
+    background: #ffffff;
+    will-change: transform; /* Optimize for sticky */
+    border-bottom: 1px solid #FFFFFF;
+  }
+  
+  /* Create scroll space for sticky effect */
+  .products_wr::after {
+    content: '';
+    display: block;
+    height: calc(100vh * 3); /* 3 items = 3 viewport heights */
+    pointer-events: none;
+    width: 100%;
+  }
+}
+
+.products-left {
+  flex: 0 0 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.products-item {
+  padding: 40px 0 40px 0;
+  border-bottom: 1px solid rgba(10, 11, 12, 0.1);
+  opacity: 0.4;
+  transition: opacity 0.4s ease, padding 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.products-item:last-child {
+  border-bottom: none;
+}
+
+.products-item.active {
+  opacity: 1;
+  padding: 40px 0 40px 0;
+}
+
+/* Desktop only - Hide/show behavior */
+@media (min-width: 1024px) {
+  /* Hide description and button for inactive items */
+  .products-item:not(.active) .products-description,
+  .products-item:not(.active) .products-actions {
+    max-height: 0 !important;
+    opacity: 0 !important;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease;
+    pointer-events: none;
+  }
+
+  /* Show description and button for active item */
+  .products-item.active .products-description,
+  .products-item.active .products-actions {
+    max-height: 500px !important;
+    opacity: 1 !important;
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease;
+    pointer-events: auto;
+  }
+}
+
+.products-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h4);
+  font-weight: var(--font-bold);
+  line-height: var(--line-height-medium);
+  letter-spacing: var(--tracking-h4);
+  color: var(--color-text-dark);
+  margin: 0 0 16px 0;
+  transition: var(--transition-base);
+}
+
+.products-item.active .products-title {
+  color: var(--color-text-dark);
+}
+
+.products-item:not(.active) .products-title {
+  color: rgba(10, 11, 12, 0.15);
+}
+
+.products-description {
+  font-family: var(--font-body);
+  font-size: var(--text-regular);
+  font-weight: var(--font-regular);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-dark);
+  margin: 0 0 var(--space-xs) 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease, color 0.3s ease;
+  overflow: hidden;
+}
+
+.products-description:last-child {
+  margin-bottom: 0;
+}
+
+.products-item.active .products-description {
+  color: var(--color-text-dark);
+}
+
+.products-item:not(.active) .products-description {
+  color: rgba(10, 11, 12, 0.15);
+}
+
+.products-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.products-btn {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--font-medium);
+  line-height: 1.5;
+  color: #ffffff;
+  background: #0F5AD7;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease, all 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.products-btn:hover {
+  background: #0d4ba8;
+  transform: translateY(-2px);
+}
+
+.products-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+}
+
+.products-image-container {
+  width: 100%;
+  max-width: 600px;
+  height: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.4s ease;
+}
+
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+  /* Hide sticky behavior in mobile/tablet */
+  .products_wr::after {
+    display: none;
+  }
+  
+  .products-content {
+    position: relative !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    top: auto !important;
+    align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+    min-height: auto !important;
+  }
+  
+  .products-left {
+    flex: 1;
+    width: 100%;
+    order: 2; /* Items appear after image */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .products-item {
+    background: var(--color-white);
+    border-radius: 16px;
+    padding: 40px 24px !important;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: 0 4px 16px rgba(10, 11, 12, 0.08);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
+    opacity: 1; /* All items visible in mobile/tablet */
+    cursor: pointer;
+  }
+  
+  .products-item:hover {
+    box-shadow: 0 8px 24px rgba(10, 11, 12, 0.12);
+    transform: translateY(-2px);
+  }
+  
+  .products-item.active {
+    box-shadow: 0 8px 24px rgba(10, 11, 12, 0.15);
+  }
+  
+  /* Image container inside card using pseudo-element - similar to benefits */
+  .products-item::after {
+    content: '';
+    display: block;
+    order: 3;
+    width: 100%;
+    height: 200px;
+    background: var(--color-gray-light);
+    border-radius: 12px;
+    margin-top: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Set image for each item based on data-image attribute */
+  .products-item[data-image="images/services/24_7-Availability.png"]::after {
+    background-image: url('../images/services/24_7-Availability.png');
+  }
+  
+  .products-item[data-image="images/services/Smart Call-Management.png"]::after {
+    background-image: url('../images/services/Smart Call-Management.png');
+  }
+  
+  .products-item[data-image="images/services/AI-Caller-Memory-&-Context-Recall.png"]::after {
+    background-image: url('../images/services/AI-Caller-Memory-&-Context-Recall.png');
+  }
+  
+  /* Show all content in mobile/tablet - always visible */
+  .products-item .products-description,
+  .products-item .products-actions {
+    max-height: none !important;
+    opacity: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    visibility: visible !important;
+    overflow: visible !important;
+  }
+  
+  .products-item .products-description {
+    margin-bottom: 12px !important;
+    display: block !important;
+  }
+  
+  .products-item .products-actions {
+    margin-top: 0 !important;
+    display: flex !important;
+  }
+  
+  /* Override any hiding styles for mobile/tablet */
+  .products-item:not(.active) .products-description,
+  .products-item:not(.active) .products-actions {
+    max-height: none !important;
+    opacity: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    visibility: visible !important;
+  }
+  
+  .products-title {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.28px !important;
+    color: var(--color-text-dark) !important;
+    margin: 0 0 12px 0 !important;
+  }
+  
+  .products-item:not(.active) .products-title {
+    color: var(--color-text-dark) !important;
+    opacity: 1 !important;
+  }
+  
+  .products-description {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: var(--color-text-dark) !important;
+    margin: 0 0 12px 0 !important;
+  }
+  
+  .products-item:not(.active) .products-description {
+    color: var(--color-text-dark) !important;
+    opacity: 1 !important;
+  }
+  
+  .products-right {
+    display: none; /* Hide image container in mobile/tablet - images will be in cards */
+  }
+  
+  .products-image-container {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  /* Apply benefits-modern-actions styles from ser-benefits section */
+  .ser-products-section .benefits-modern-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .ser-products-section .benefits-modern-btn-primary,
+  .ser-products-section .benefits-modern-btn-secondary {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .padding-global {
+    padding: 0 var(--page-padding-mobile);
+  }
+  
+  .products-content {
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .products-item {
+    padding: 32px 24px !important;
+    border-radius: 16px;
+  }
+  
+  .products-title {
+    font-size: 28px !important;
+  }
+  
+  .products-description {
+    font-size: 16px !important;
+  }
+  
+  .products-image-container {
+    height: 300px;
+  }
+  
+  .products-actions {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  .products-actions .benefits-modern-btn-secondary {
+    width: 100%;
+  }
+}
+
+/* ============================================
+   Features Section - Dark Theme (Similar to Products)
+   ============================================ */
+
+/* Override body colors for features section */
+body:has(.ser-features-section),
+html:has(.ser-features-section) body {
+  background: #0A0B0C !important;
+  color: #FFFFFF !important;
+}
+
+.ser-features-section {
+  position: relative;
+  width: 100%;
+  background: #0A0B0C !important;
+  padding: 112px 0;
+  color: #FFFFFF !important;
+  overflow: visible; /* Ensure sticky works */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  visibility: visible !important;
+}
+
+.ser-features-section.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+/* Force colors on all child elements */
+.ser-features-section * {
+  color: #FFFFFF !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Specific rules for each element type */
+.ser-features-section h1,
+.ser-features-section h2,
+.ser-features-section h3,
+.ser-features-section h4,
+.ser-features-section h5,
+.ser-features-section h6 {
+  color: #FFFFFF !important;
+}
+
+.ser-features-section p,
+.ser-features-section span,
+.ser-features-section div,
+.ser-features-section a {
+  color: #FFFFFF !important;
+}
+
+/* Tagline - Light gray */
+.ser-features-section .ser-tagline {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Main title - White with blue accent */
+.ser-features-section .ser-section-title {
+  color: #FFFFFF !important;
+}
+
+.ser-features-section .ser-section-title .text-primary {
+  color: var(--color-primary) !important;
+}
+
+/* Description - White */
+.ser-features-section .ser-section-description {
+  color: #FFFFFF !important;
+}
+
+.ser-features-section .ser-section-description p {
+  color: #FFFFFF !important;
+}
+
+/* Title wrapper - ensure all text is white */
+.ser-features-section .ser-benefits-title-wrapper,
+.ser-features-section .ser-benefits-title-wrapper * {
+  color: #FFFFFF !important;
+}
+
+.ser-features-section .ser-benefits-title-wrapper .text-primary {
+  color: var(--color-primary) !important;
+}
+
+/* Padding global for features section */
+.ser-features-section .padding-global {
+  position: relative;
+  width: 100%;
+  padding: 0 var(--page-padding);
+  background: #0A0B0C !important;
+  overflow: visible;
+}
+
+.ser-features-section .container-large {
+  max-width: var(--max-content-width);
+  width: 100%;
+  margin: 0 auto;
+  background: #0A0B0C !important;
+  overflow: visible;
+}
+
+/* Products header - same as benefits header */
+.ser-features-section .ser-benefits-header {
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.ser-features-section .products_wr {
+  position: relative;
+  width: 100%;
+  background: #0A0B0C !important;
+  overflow: visible;
+}
+
+.ser-features-section .products-content {
+  background: #0A0B0C !important;
+}
+
+/* Desktop only - Sticky scroll behavior */
+@media (min-width: 1024px) {
+  .ser-features-section .products_wr {
+    position: relative;
+    background: #0A0B0C !important;
+  }
+  
+  .ser-features-section .products-content {
+    position: -webkit-sticky; /* Safari support */
+    position: sticky;
+    top: 72px; /* Navbar height */
+    z-index: 10;
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    min-height: 80vh;
+    padding: 80px 0;
+    background: #0A0B0C !important;
+    will-change: transform; /* Optimize for sticky */
+    border-bottom: 1px solid rgba(10, 11, 12, 0.1);
+  }
+  
+  /* Create scroll space for sticky effect */
+  .ser-features-section .products_wr::after {
+    content: '';
+    display: block;
+    height: calc(100vh * 3); /* 3 items = 3 viewport heights */
+    pointer-events: none;
+    width: 100%;
+  }
+}
+
+.ser-features-section .products-left {
+  flex: 0 0 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.ser-features-section .products-item {
+  padding: 40px 0 40px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 0.4;
+  transition: opacity 0.4s ease, padding 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.ser-features-section .products-item:last-child {
+  border-bottom: none;
+}
+
+.ser-features-section .products-item.active {
+  opacity: 1;
+  padding: 40px 0 40px 0;
+}
+
+/* Desktop only - Hide/show behavior */
+@media (min-width: 1024px) {
+  /* Hide description and button for inactive items */
+  .ser-features-section .products-item:not(.active) .products-description,
+  .ser-features-section .products-item:not(.active) .products-actions {
+    max-height: 0 !important;
+    opacity: 0 !important;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease;
+    pointer-events: none;
+  }
+
+  /* Show description and button for active item */
+  .ser-features-section .products-item.active .products-description,
+  .ser-features-section .products-item.active .products-actions {
+    max-height: 500px !important;
+    opacity: 1 !important;
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease;
+    pointer-events: auto;
+  }
+}
+
+.ser-features-section .products-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h4);
+  font-weight: var(--font-bold);
+  line-height: var(--line-height-medium);
+  letter-spacing: var(--tracking-h4);
+  color: #FFFFFF !important;
+  margin: 0 0 16px 0;
+  transition: var(--transition-base);
+}
+
+.ser-features-section .products-item.active .products-title {
+  color: #FFFFFF !important;
+}
+
+.ser-features-section .products-item:not(.active) .products-title {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.ser-features-section .products-description {
+  font-family: var(--font-body);
+  font-size: var(--text-regular);
+  font-weight: var(--font-regular);
+  line-height: var(--line-height-relaxed);
+  color: rgba(255, 255, 255, 0.8) !important;
+  margin: 0 0 var(--space-xs) 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease, color 0.3s ease;
+  overflow: hidden;
+}
+
+.ser-features-section .products-description:last-child {
+  margin-bottom: 0;
+}
+
+.ser-features-section .products-item.active .products-description {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ser-features-section .products-item:not(.active) .products-description {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.ser-features-section .products-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.ser-features-section .products-btn {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--font-medium);
+  line-height: 1.5;
+  color: #ffffff;
+  background: #0F5AD7;
+  border: none;
+  border-radius: 100px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease, all 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.ser-features-section .products-btn:hover {
+  background: #0d4ba8;
+  transform: translateY(-2px);
+}
+
+.ser-features-section .products-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 450px;
+}
+
+.ser-features-section .products-image-container {
+  width: 100%;
+  max-width: 450px;
+  height: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ser-features-section .products-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: opacity 0.4s ease;
+}
+
+/* Buttons - Dark theme styling */
+.ser-features-section .benefits-modern-btn-primary {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 100px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.ser-features-section .benefits-modern-btn-primary:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.ser-features-section .benefits-modern-btn-secondary {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 100px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 200px;
+}
+
+.ser-features-section .benefits-modern-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Tablet and Mobile */
+@media (max-width: 1023px) {
+  /* Hide sticky behavior in mobile/tablet */
+  .ser-features-section .products_wr::after {
+    display: none;
+  }
+  
+  .ser-features-section .products-content {
+    position: relative !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    top: auto !important;
+    align-items: stretch;
+    width: 100%;
+    max-width: 100%;
+    min-height: auto !important;
+    background: #0A0B0C !important;
+  }
+  
+  .ser-features-section .products-left {
+    flex: 1;
+    width: 100%;
+    order: 2; /* Items appear after image */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .ser-features-section .products-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 40px 24px !important;
+    border: none !important;
+    border-bottom: none !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+    overflow: hidden;
+    opacity: 1; /* All items visible in mobile/tablet */
+    cursor: pointer;
+  }
+  
+  .ser-features-section .products-item:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+  }
+  
+  .ser-features-section .products-item.active {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Image container inside card using pseudo-element - similar to benefits */
+  .ser-features-section .products-item::after {
+    content: '';
+    display: block;
+    order: 3;
+    width: 100%;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    margin-top: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Set image for each item based on data-image attribute */
+  .ser-features-section .products-item[data-image="images/services/Personalized AI Reception.png"]::after {
+    background-image: url('../images/services/Personalized AI Reception.png');
+  }
+  
+  .ser-features-section .products-item[data-image="images/services/Smart Response Timing.png"]::after {
+    background-image: url('../images/services/Smart Response Timing.png');
+  }
+  
+  .ser-features-section .products-item[data-image="images/services/Detailed Call Reports.png"]::after {
+    background-image: url('../images/services/Detailed Call Reports.png');
+  }
+  
+  /* Show all content in mobile/tablet - always visible */
+  .ser-features-section .products-item .products-description,
+  .ser-features-section .products-item .products-actions {
+    max-height: none !important;
+    opacity: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    visibility: visible !important;
+    overflow: visible !important;
+  }
+  
+  .ser-features-section .products-item .products-description {
+    margin-bottom: 12px !important;
+    display: block !important;
+  }
+  
+  .ser-features-section .products-item .products-actions {
+    margin-top: 0 !important;
+    display: flex !important;
+  }
+  
+  /* Override any hiding styles for mobile/tablet */
+  .ser-features-section .products-item:not(.active) .products-description,
+  .ser-features-section .products-item:not(.active) .products-actions {
+    max-height: none !important;
+    opacity: 1 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    visibility: visible !important;
+  }
+  
+  .ser-features-section .products-title {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.28px !important;
+    color: #FFFFFF !important;
+    margin: 0 0 12px 0 !important;
+  }
+  
+  .ser-features-section .products-item:not(.active) .products-title {
+    color: #FFFFFF !important;
+    opacity: 1 !important;
+  }
+  
+  .ser-features-section .products-description {
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    margin: 0 0 12px 0 !important;
+  }
+  
+  .ser-features-section .products-item:not(.active) .products-description {
+    color: rgba(255, 255, 255, 0.8) !important;
+    opacity: 1 !important;
+  }
+  
+  .ser-features-section .products-right {
+    display: none; /* Hide image container in mobile/tablet - images will be in cards */
+  }
+  
+  .ser-features-section .products-image-container {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px) {
+  /* Apply benefits-modern-actions styles from ser-benefits section */
+  .ser-features-section .benefits-modern-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    align-items: center;
+  }
+  
+  .ser-features-section .benefits-modern-btn-primary,
+  .ser-features-section .benefits-modern-btn-secondary {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .ser-features-section .padding-global {
+    padding: 0 var(--page-padding-mobile);
+  }
+  
+  .ser-features-section .products-content {
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .ser-features-section .products-item {
+    padding: 32px 24px !important;
+    border-radius: 16px;
+  }
+  
+  .ser-features-section .products-title {
+    font-size: 28px !important;
+  }
+  
+  .ser-features-section .products-description {
+    font-size: 16px !important;
+  }
+  
+  .ser-features-section .products-image-container {
+    height: 300px;
+  }
+  
+  .ser-features-section .products-actions {
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  
+  .ser-features-section .products-actions .benefits-modern-btn-secondary {
+    width: 100%;
+  }
+}
+

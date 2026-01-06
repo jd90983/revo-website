@@ -1,10 +1,10 @@
 /* ============================================
-   Industry Locksmith Page Styles
+   Industry Page Styles
    ============================================ */
 
 /* Override body background for locksmith page */
-body:has(.locksmith-hero),
-html:has(.locksmith-hero) body {
+body:has(.industry-hero),
+html:has(.industry-hero) body {
   background: #000000 !important;
   color: #FFFFFF !important;
 }
@@ -22,7 +22,7 @@ main#main-content > section {
 }
 
 /* ===== HERO SECTION ===== */
-.locksmith-hero {
+.industry-hero {
   position: relative;
   width: 100%;
   min-height: 800px;
@@ -40,26 +40,26 @@ main#main-content > section {
   transform: translateY(0) !important;
 }
 
-.locksmith-hero * {
+.industry-hero * {
   color: #FFFFFF !important;
   visibility: visible !important;
   opacity: 1 !important;
 }
 
-.locksmith-hero-background {
+.industry-hero-background {
   position: absolute;
   inset: 0;
   z-index: 1;
 }
 
-.locksmith-hero-base {
+.industry-hero-base {
   position: absolute;
   inset: 0;
   background: #000000 !important;
   z-index: 1;
 }
 
-.locksmith-hero-image {
+.industry-hero-image {
   position: absolute;
   inset: 0;
   background-image: url('https://www.figma.com/api/mcp/asset/c4389cc0-9456-4f1a-b28c-499b12eeefd5');
@@ -70,7 +70,7 @@ main#main-content > section {
   z-index: 2;
 }
 
-.locksmith-hero-gradient {
+.industry-hero-gradient {
   position: absolute;
   inset: 0;
   background-image: url('../images/backgrounds/locksmith_header.png');
@@ -80,7 +80,7 @@ main#main-content > section {
   z-index: 3;
 }
 
-.locksmith-hero-container {
+.industry-hero-container {
   position: relative;
   z-index: 10 !important;
   max-width: 1280px;
@@ -94,7 +94,7 @@ main#main-content > section {
   min-height: 800px;
 }
 
-.locksmith-hero-content {
+.industry-hero-content {
   max-width: 924px;
   width: 100%;
   display: flex !important;
@@ -106,7 +106,7 @@ main#main-content > section {
   opacity: 1 !important;
 }
 
-.locksmith-hero-title-section {
+.industry-hero-title-section {
   display: flex !important;
   flex-direction: column;
   align-items: center;
@@ -116,11 +116,11 @@ main#main-content > section {
   opacity: 1 !important;
 }
 
-.locksmith-hero-tagline-wrapper {
+.industry-hero-tagline-wrapper {
   margin-bottom: 0;
 }
 
-.locksmith-hero-tagline {
+.industry-hero-tagline {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -132,7 +132,7 @@ main#main-content > section {
   display: block !important;
 }
 
-.locksmith-hero-text-content {
+.industry-hero-text-content {
   display: flex !important;
   flex-direction: column;
   align-items: center;
@@ -142,7 +142,7 @@ main#main-content > section {
   opacity: 1 !important;
 }
 
-.locksmith-hero-heading {
+.industry-hero-heading {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 72px;
@@ -156,11 +156,11 @@ main#main-content > section {
   display: block !important;
 }
 
-.locksmith-hero-highlight {
+.industry-hero-highlight {
   color: #0F5AD7 !important;
 }
 
-.locksmith-hero-description {
+.industry-hero-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -174,11 +174,11 @@ main#main-content > section {
   max-width: 100%;
 }
 
-.locksmith-hero-description p {
+.industry-hero-description p {
   margin: 0 0 0 0;
 }
 
-.locksmith-hero-actions {
+.industry-hero-actions {
   display: flex !important;
   gap: 16px;
   align-items: center;
@@ -188,14 +188,14 @@ main#main-content > section {
 }
 
 /* Ensure btn-primary-large has black text in locksmith hero */
-.locksmith-hero-actions .btn-primary-large {
+.industry-hero-actions .btn-primary-large {
   color: #0a0b0c !important;
 }
 
 /* Locksmith hero actions now use hero-actions styles from layout.css */
 
 /* ===== SECTIONS ===== */
-.locksmith-section {
+.industry-section {
   width: 100%;
   padding: 112px 64px;
   position: relative;
@@ -209,7 +209,7 @@ main#main-content > section {
 }
 
 /* Features Grid Section - Specific height */
-.locksmith-section.locksmith-section-light:has(.locksmith-features-wrapper) {
+.industry-section.industry-section-light:has(.industry-features-wrapper) {
   min-height: auto;
   height: auto;
   display: flex;
@@ -217,7 +217,7 @@ main#main-content > section {
   justify-content: center;
 }
 
-.locksmith-section.locksmith-section-light:has(.locksmith-features-wrapper) .locksmith-container {
+.industry-section.industry-section-light:has(.industry-features-wrapper) .industry-container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -225,7 +225,7 @@ main#main-content > section {
 }
 
 /* Animated sections become visible */
-.locksmith-section.locksmith-section-dark-alt.animate-in {
+.industry-section.industry-section-dark-alt.animate-in {
   animation: fadeInUp 0.6s ease-out forwards;
 }
 
@@ -240,23 +240,23 @@ main#main-content > section {
   }
 }
 
-.locksmith-section.animate-in {
+.industry-section.animate-in {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
 
-.locksmith-section-dark {
+.industry-section-dark {
   background: #0A0B0C !important;
   color: #FFFFFF !important;
 }
 
-.locksmith-section-dark * {
+.industry-section-dark * {
   color: #FFFFFF !important;
   visibility: visible !important;
   opacity: 1 !important;
 }
 
-.locksmith-section.locksmith-section-light {
+.industry-section.industry-section-light {
   background-image: url('../images/backgrounds/white_background_locksmith.png') !important;
   background-position: center !important;
   background-size: cover !important;
@@ -266,8 +266,8 @@ main#main-content > section {
   position: relative;
 }
 
-.locksmith-section.locksmith-section-light.locksmith-impact-section,
-.locksmith-impact-section.locksmith-section-light {
+.industry-section.industry-section-light.industry-impact-section,
+.industry-impact-section.industry-section-light {
   background-color: #FAFBFC !important;
   background-image: none !important;
   background-position: initial !important;
@@ -277,7 +277,7 @@ main#main-content > section {
   overflow: visible;
 }
 
-.locksmith-impact-decoration {
+.industry-impact-decoration {
   position: absolute;
   top: 0;
   right: 0;
@@ -288,14 +288,14 @@ main#main-content > section {
   pointer-events: none;
 }
 
-.locksmith-impact-decoration img {
+.industry-impact-decoration img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: contain;
 }
 
-.locksmith-impact-content {
+.industry-impact-content {
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -306,7 +306,7 @@ main#main-content > section {
   z-index: 2;
 }
 
-.locksmith-impact-title-section {
+.industry-impact-title-section {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -314,39 +314,39 @@ main#main-content > section {
   width: 100%;
 }
 
-.locksmith-impact-text-content {
+.industry-impact-text-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
   width: 100%;
 }
 
-.locksmith-section-light * {
+.industry-section-light * {
   color: #0A0B0C !important;
   visibility: visible !important;
   opacity: 1 !important;
 }
 
-.locksmith-section-gradient {
+.industry-section-gradient {
   position: relative;
   background: #000000 url('../images/backgrounds/elevate_locksmith_communication_background.png') center center / cover no-repeat !important;
   color: #FFFFFF !important;
   overflow: hidden;
 }
 
-.locksmith-section-gradient > * {
+.industry-section-gradient > * {
   position: relative;
   z-index: 1;
 }
 
-.locksmith-section-cta {
+.industry-section-cta {
   position: relative;
   background: #000000 !important;
   color: #FFFFFF !important;
   overflow: hidden;
 }
 
-.locksmith-section-cta::before {
+.industry-section-cta::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -357,7 +357,7 @@ main#main-content > section {
   z-index: 1;
 }
 
-.locksmith-section-cta::after {
+.industry-section-cta::after {
   content: '';
   position: absolute;
   inset: 0;
@@ -365,23 +365,23 @@ main#main-content > section {
   z-index: 2;
 }
 
-.locksmith-section-cta > * {
+.industry-section-cta > * {
   position: relative;
   z-index: 3;
 }
 
-.locksmith-section-dark-alt {
+.industry-section-dark-alt {
   background: #222324 !important;
   color: #FFFFFF !important;
 }
 
-.locksmith-section-dark-alt * {
+.industry-section-dark-alt * {
   color: #FFFFFF !important;
   visibility: visible !important;
   opacity: 1 !important;
 }
 
-.locksmith-container {
+.industry-container {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
@@ -392,12 +392,12 @@ main#main-content > section {
   opacity: 1 !important;
 }
 
-.locksmith-section.locksmith-section-dark-alt .locksmith-container {
+.industry-section.industry-section-dark-alt .industry-container {
   gap: 80px;
 }
 
 /* ===== TWO COLUMN LAYOUT ===== */
-.locksmith-two-column {
+.industry-two-column {
   display: grid;
   grid-template-columns: 500px 1fr;
   gap: 60px;
@@ -405,11 +405,11 @@ main#main-content > section {
   width: 100%;
 }
 
-.locksmith-two-column-reverse {
+.industry-two-column-reverse {
   flex-direction: row-reverse;
 }
 
-.locksmith-content {
+.industry-content {
   flex: 1 0 0;
   display: flex;
   flex-direction: column;
@@ -417,7 +417,7 @@ main#main-content > section {
   min-width: 0;
 }
 
-.locksmith-image {
+.industry-image {
   flex: 1 0 0;
   min-width: 0;
   border-radius: 16px;
@@ -425,7 +425,7 @@ main#main-content > section {
   aspect-ratio: 409 / 436;
 }
 
-.locksmith-image img {
+.industry-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -433,14 +433,14 @@ main#main-content > section {
 }
 
 /* ===== SECTION TITLES ===== */
-.locksmith-section-title {
+.industry-section-title {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 100%;
 }
 
-.locksmith-section-title-center {
+.industry-section-title-center {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -450,18 +450,18 @@ main#main-content > section {
   margin: 0 auto;
 }
 
-.locksmith-section-title-left {
+.industry-section-title-left {
   display: flex;
   flex-direction: column;
   gap: 24px;
   max-width: 768px;
 }
 
-.locksmith-tagline-wrapper {
+.industry-tagline-wrapper {
   margin-bottom: 0;
 }
 
-.locksmith-tagline {
+.industry-tagline {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -470,7 +470,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-tagline-dark {
+.industry-tagline-dark {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -479,18 +479,18 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-text-content {
+.industry-text-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
   width: 100%;
 }
 
-.locksmith-smart-evolution .locksmith-text-content {
+.industry-smart-evolution .industry-text-content {
   gap: 24px;
 }
 
-.locksmith-text-content-center {
+.industry-text-content-center {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -498,7 +498,7 @@ main#main-content > section {
   text-align: center;
 }
 
-.locksmith-heading {
+.industry-heading {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 52px;
@@ -508,7 +508,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-heading-center {
+.industry-heading-center {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 52px;
@@ -519,11 +519,11 @@ main#main-content > section {
   text-align: left;
 }
 
-.locksmith-impact-title-section .locksmith-heading-center {
+.industry-impact-title-section .industry-heading-center {
   text-align: left;
 }
 
-.locksmith-heading-left {
+.industry-heading-left {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 52px;
@@ -533,15 +533,15 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-highlight {
+.industry-highlight {
   color: #0F5AD7 !important;
 }
 
-.locksmith-highlight-yellow {
+.industry-highlight-yellow {
   color: #EFAC0E !important;
 }
 
-.locksmith-description {
+.industry-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -550,7 +550,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-description-center {
+.industry-description-center {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -560,11 +560,11 @@ main#main-content > section {
   text-align: left;
 }
 
-.locksmith-impact-text-content .locksmith-description-center {
+.industry-impact-text-content .industry-description-center {
   text-align: left;
 }
 
-.locksmith-description-left {
+.industry-description-left {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -573,57 +573,57 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-description p {
+.industry-description p {
   margin: 0 0 0 0;
 }
 
-.locksmith-heading-dark {
+.industry-heading-dark {
   color: #0A0B0C !important;
 }
 
-.locksmith-description-dark {
+.industry-description-dark {
   color: #0A0B0C !important;
   font-size: 18px;
 }
 
-.locksmith-description-dark p {
+.industry-description-dark p {
   margin: 0 0 8px 0;
 }
 
-.locksmith-description-dark p:last-child {
+.industry-description-dark p:last-child {
   margin-bottom: 0;
 }
 
 /* ===== RELIABILITY SECTION SPECIFIC STYLES ===== */
-.locksmith-reliability-section .locksmith-heading {
+.industry-reliability-section .industry-heading {
   font-size: 52px;
   line-height: 1.3;
   letter-spacing: -0.36px;
 }
 
-.locksmith-reliability-section .locksmith-description {
+.industry-reliability-section .industry-description {
   font-size: 16px;
   line-height: 1.5;
 }
 
-.locksmith-reliability-section .locksmith-two-column {
+.industry-reliability-section .industry-two-column {
   grid-template-columns: 1fr 550px;
   gap: 60px;
   align-items: center;
 }
 
-.locksmith-reliability-section .locksmith-image {
+.industry-reliability-section .industry-image {
   max-width: 900px;
   width: 100%;
   justify-self: end;
   margin-left: auto;
 }
 
-.locksmith-reliability-section .locksmith-content {
+.industry-reliability-section .industry-content {
   max-width: 600px;
 }
 
-.locksmith-reliability-section .locksmith-feature-list {
+.industry-reliability-section .industry-feature-list {
   display: block;
   list-style: disc;
   padding-left: 24px;
@@ -632,7 +632,7 @@ main#main-content > section {
   gap: 0;
 }
 
-.locksmith-reliability-section .locksmith-feature-item {
+.industry-reliability-section .industry-feature-item {
   display: list-item;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
@@ -645,31 +645,31 @@ main#main-content > section {
   list-style-type: disc;
 }
 
-.locksmith-reliability-section .locksmith-feature-item:last-child {
+.industry-reliability-section .industry-feature-item:last-child {
   margin-bottom: 0;
 }
 
-.locksmith-reliability-section .features-buttons .btn-primary-large {
+.industry-reliability-section .features-buttons .btn-primary-large {
   color: #0A0B0C !important;
 }
 
 /* ===== SMART EVOLUTION SECTION SPECIFIC STYLES ===== */
-.locksmith-smart-evolution-section .locksmith-heading-dark {
+.industry-smart-evolution-section .industry-heading-dark {
   font-size: 36px;
   line-height: 1.3;
   letter-spacing: -0.36px;
 }
 
-.locksmith-smart-evolution-actions {
+.industry-smart-evolution-actions {
   justify-content: flex-start !important;
 }
 
-.locksmith-smart-evolution-section .locksmith-description-dark {
+.industry-smart-evolution-section .industry-description-dark {
   font-size: 16px;
   line-height: 1.5;
 }
 
-.locksmith-smart-evolution-section .locksmith-smart-evolution-list {
+.industry-smart-evolution-section .industry-smart-evolution-list {
   display: block;
   list-style: disc;
   padding-left: 24px;
@@ -678,7 +678,7 @@ main#main-content > section {
   gap: 0;
 }
 
-.locksmith-smart-evolution-section .locksmith-smart-evolution-item {
+.industry-smart-evolution-section .industry-smart-evolution-item {
   display: list-item;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
@@ -691,40 +691,40 @@ main#main-content > section {
   list-style-type: disc;
 }
 
-.locksmith-smart-evolution-section .locksmith-smart-evolution-item:last-child {
+.industry-smart-evolution-section .industry-smart-evolution-item:last-child {
   margin-bottom: 0;
 }
 
-.locksmith-smart-evolution-section .locksmith-two-column {
+.industry-smart-evolution-section .industry-two-column {
   grid-template-columns: 1fr 550px;
   gap: 60px;
   align-items: center;
 }
 
-.locksmith-smart-evolution-section .locksmith-smart-evolution-image {
+.industry-smart-evolution-section .industry-smart-evolution-image {
   max-width: 900px;
   width: 100%;
   justify-self: start;
   margin-left: 0;
 }
 
-.locksmith-smart-evolution-section .locksmith-content {
+.industry-smart-evolution-section .industry-content {
   max-width: 600px;
 }
 
 /* ===== REAL-TIME INSIGHTS SECTION SPECIFIC STYLES ===== */
-.locksmith-realtime-insights-section .locksmith-heading {
+.industry-realtime-insights-section .industry-heading {
   font-size: 36px;
   line-height: 1.3;
   letter-spacing: -0.36px;
 }
 
-.locksmith-realtime-insights-section .locksmith-description {
+.industry-realtime-insights-section .industry-description {
   font-size: 16px;
   line-height: 1.5;
 }
 
-.locksmith-realtime-insights-section .locksmith-feature-list {
+.industry-realtime-insights-section .industry-feature-list {
   display: block;
   list-style: disc;
   padding-left: 24px;
@@ -733,7 +733,7 @@ main#main-content > section {
   gap: 0;
 }
 
-.locksmith-realtime-insights-section .locksmith-feature-item {
+.industry-realtime-insights-section .industry-feature-item {
   display: list-item;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
@@ -746,33 +746,33 @@ main#main-content > section {
   list-style-type: disc;
 }
 
-.locksmith-realtime-insights-section .locksmith-feature-item:last-child {
+.industry-realtime-insights-section .industry-feature-item:last-child {
   margin-bottom: 0;
 }
 
-.locksmith-realtime-insights-section .locksmith-two-column {
+.industry-realtime-insights-section .industry-two-column {
   grid-template-columns: 1fr 550px;
   gap: 60px;
   align-items: center;
 }
 
-.locksmith-realtime-insights-section .locksmith-image {
+.industry-realtime-insights-section .industry-image {
   max-width: 900px;
   width: 100%;
   justify-self: end;
   margin-left: auto;
 }
 
-.locksmith-realtime-insights-section .locksmith-content {
+.industry-realtime-insights-section .industry-content {
   max-width: 600px;
 }
 
-.locksmith-realtime-insights-section .features-buttons .btn-primary-large {
+.industry-realtime-insights-section .features-buttons .btn-primary-large {
   color: #0A0B0C !important;
 }
 
 /* ===== FEATURE LIST ===== */
-.locksmith-feature-list {
+.industry-feature-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -782,21 +782,21 @@ main#main-content > section {
   padding-left: 0;
 }
 
-.locksmith-feature-list li {
+.industry-feature-list li {
   display: flex;
   gap: 16px;
   align-items: center;
   width: 100%;
 }
 
-.locksmith-feature-item {
+.industry-feature-item {
   display: flex;
   gap: 16px;
   align-items: center;
   width: 100%;
 }
 
-.locksmith-feature-icon {
+.industry-feature-icon {
   flex-shrink: 0;
   width: 24px;
   height: 24px;
@@ -806,19 +806,19 @@ main#main-content > section {
   color: #FFFFFF;
 }
 
-.locksmith-feature-icon svg {
+.industry-feature-icon svg {
   width: 100%;
   height: 100%;
 }
 
-.locksmith-feature-icon img {
+.industry-feature-icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
 }
 
-.locksmith-feature-text {
+.industry-feature-text {
   flex: 1 0 0;
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
@@ -829,14 +829,14 @@ main#main-content > section {
   min-width: 0;
 }
 
-.locksmith-bullet-list {
+.industry-bullet-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 100%;
 }
 
-.locksmith-bullet-list ul {
+.industry-bullet-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -845,7 +845,7 @@ main#main-content > section {
   gap: 16px;
 }
 
-.locksmith-bullet-list li {
+.industry-bullet-list li {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -855,7 +855,7 @@ main#main-content > section {
   position: relative;
 }
 
-.locksmith-bullet-list li::before {
+.industry-bullet-list li::before {
   content: '•';
   position: absolute;
   left: 0;
@@ -863,24 +863,24 @@ main#main-content > section {
 }
 
 /* ===== ACTIONS ===== */
-.locksmith-actions {
+.industry-actions {
   display: flex;
   gap: 24px;
   align-items: center;
 }
 
-.locksmith-actions-center {
+.industry-actions-center {
   display: flex;
   gap: 24px;
   align-items: center;
   justify-content: flex-start;
 }
 
-.locksmith-impact-content .locksmith-actions-center {
+.industry-impact-content .industry-actions-center {
   justify-content: flex-start;
 }
 
-.locksmith-btn-primary {
+.industry-btn-primary {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -897,11 +897,11 @@ main#main-content > section {
   justify-content: center;
 }
 
-.locksmith-btn-primary:hover {
+.industry-btn-primary:hover {
   background: rgba(255, 255, 255, 0.9) !important;
 }
 
-.locksmith-btn-secondary {
+.industry-btn-secondary {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -918,11 +918,11 @@ main#main-content > section {
   justify-content: center;
 }
 
-.locksmith-btn-secondary:hover {
+.industry-btn-secondary:hover {
   background: rgba(255, 255, 255, 0.1) !important;
 }
 
-.locksmith-btn-primary-light {
+.industry-btn-primary-light {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -939,11 +939,11 @@ main#main-content > section {
   justify-content: center;
 }
 
-.locksmith-btn-primary-light:hover {
+.industry-btn-primary-light:hover {
   background: rgba(255, 255, 255, 0.9) !important;
 }
 
-.locksmith-btn-secondary-light {
+.industry-btn-secondary-light {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -960,13 +960,13 @@ main#main-content > section {
   justify-content: center;
 }
 
-.locksmith-btn-secondary-light:hover {
+.industry-btn-secondary-light:hover {
   background: rgba(10, 11, 12, 0.05) !important;
 }
 
 /* ===== SMART EVOLUTION SECTION ===== */
-.locksmith-section.locksmith-section-light.locksmith-smart-evolution,
-.locksmith-smart-evolution.locksmith-section-light {
+.industry-section.industry-section-light.industry-smart-evolution,
+.industry-smart-evolution.industry-section-light {
   background-color: #FAFBFC !important;
   background-image: none !important;
   background-position: initial !important;
@@ -974,7 +974,7 @@ main#main-content > section {
   background-repeat: initial !important;
 }
 
-.locksmith-smart-evolution-image {
+.industry-smart-evolution-image {
   flex: 1 0 0;
   min-width: 0;
   border-radius: 16px;
@@ -983,7 +983,7 @@ main#main-content > section {
   position: relative;
 }
 
-.locksmith-smart-evolution-image img {
+.industry-smart-evolution-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -991,21 +991,21 @@ main#main-content > section {
   display: block;
 }
 
-.locksmith-smart-evolution-list {
+.industry-smart-evolution-list {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 100%;
 }
 
-.locksmith-smart-evolution-item {
+.industry-smart-evolution-item {
   display: flex;
   gap: 16px;
   align-items: center;
   width: 100%;
 }
 
-.locksmith-smart-evolution-icon {
+.industry-smart-evolution-icon {
   width: 24px;
   height: 24px;
   display: flex;
@@ -1014,13 +1014,13 @@ main#main-content > section {
   flex-shrink: 0;
 }
 
-.locksmith-smart-evolution-icon img {
+.industry-smart-evolution-icon img {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.locksmith-smart-evolution-text {
+.industry-smart-evolution-text {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1030,7 +1030,7 @@ main#main-content > section {
   flex: 1;
 }
 
-.locksmith-smart-evolution-actions {
+.industry-smart-evolution-actions {
   display: flex;
   gap: 24px;
   align-items: center;
@@ -1038,7 +1038,7 @@ main#main-content > section {
 }
 
 /* ===== FEATURES GRID ===== */
-.locksmith-features-wrapper {
+.industry-features-wrapper {
   display: flex;
   gap: 60px;
   align-items: center;
@@ -1047,8 +1047,8 @@ main#main-content > section {
   height: 100%;
 }
 
-.locksmith-features-content.locksmith-features-left,
-.locksmith-features-content.locksmith-features-right {
+.industry-features-content.industry-features-left,
+.industry-features-content.industry-features-right {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -1057,27 +1057,27 @@ main#main-content > section {
   justify-content: center;
 }
 
-.locksmith-features-content.locksmith-features-left .locksmith-features-grid,
-.locksmith-features-content.locksmith-features-right .locksmith-features-grid {
+.industry-features-content.industry-features-left .industry-features-grid,
+.industry-features-content.industry-features-right .industry-features-grid {
   grid-template-columns: 1fr;
 }
 
-.locksmith-features-content.locksmith-features-left .locksmith-feature-card {
+.industry-features-content.industry-features-left .industry-feature-card {
   align-items: flex-end;
   text-align: right;
 }
 
-.locksmith-features-content.locksmith-features-left .locksmith-feature-card-header {
+.industry-features-content.industry-features-left .industry-feature-card-header {
   flex-direction: row-reverse;
   justify-content: flex-end;
 }
 
-.locksmith-features-content.locksmith-features-left .locksmith-feature-card-title,
-.locksmith-features-content.locksmith-features-left .locksmith-feature-card-description {
+.industry-features-content.industry-features-left .industry-feature-card-title,
+.industry-features-content.industry-features-left .industry-feature-card-description {
   text-align: right;
 }
 
-.locksmith-features-image {
+.industry-features-image {
   flex-shrink: 0;
   max-width: 450px;
   width: 100%;
@@ -1090,7 +1090,7 @@ main#main-content > section {
   align-items: center;
 }
 
-.locksmith-features-image img {
+.industry-features-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1098,7 +1098,7 @@ main#main-content > section {
   display: block;
 }
 
-.locksmith-features-content {
+.industry-features-content {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -1106,34 +1106,34 @@ main#main-content > section {
   min-width: 0;
 }
 
-.locksmith-features-grid {
+.industry-features-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px;
   width: 100%;
 }
 
-.locksmith-features-content.locksmith-features-left .locksmith-features-grid,
-.locksmith-features-content.locksmith-features-right .locksmith-features-grid {
+.industry-features-content.industry-features-left .industry-features-grid,
+.industry-features-content.industry-features-right .industry-features-grid {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 32px;
 }
 
-.locksmith-feature-card {
+.industry-feature-card {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.locksmith-feature-card-header {
+.industry-feature-card-header {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.locksmith-feature-card-icon {
+.industry-feature-card-icon {
   width: 36px;
   height: 36px;
   display: flex;
@@ -1142,13 +1142,13 @@ main#main-content > section {
   flex-shrink: 0;
 }
 
-.locksmith-feature-card-icon img {
+.industry-feature-card-icon img {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.locksmith-feature-card-title {
+.industry-feature-card-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -1159,7 +1159,7 @@ main#main-content > section {
   flex: 1;
 }
 
-.locksmith-feature-card-description {
+.industry-feature-card-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1168,15 +1168,15 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-feature-card-description p {
+.industry-feature-card-description p {
   margin: 0 0 8px 0;
 }
 
-.locksmith-feature-card-description p:last-child {
+.industry-feature-card-description p:last-child {
   margin-bottom: 0;
 }
 
-.locksmith-features-actions {
+.industry-features-actions {
   display: flex;
   gap: 24px;
   align-items: center;
@@ -1186,7 +1186,7 @@ main#main-content > section {
 }
 
 /* ===== ELEVATE SECTION ===== */
-.locksmith-elevate-heading {
+.industry-elevate-heading {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 38px;
@@ -1200,7 +1200,7 @@ main#main-content > section {
   margin-right: auto;
 }
 
-.locksmith-elevate-content {
+.industry-elevate-content {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
@@ -1209,7 +1209,7 @@ main#main-content > section {
   align-items: center;
 }
 
-.locksmith-section-gradient .locksmith-actions {
+.industry-section-gradient .industry-actions {
   display: flex;
   gap: 24px;
   align-items: center;
@@ -1218,14 +1218,14 @@ main#main-content > section {
   width: 100%;
 }
 
-.locksmith-elevate-grid {
+.industry-elevate-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 32px;
   width: 100%;
 }
 
-.locksmith-elevate-card {
+.industry-elevate-card {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -1234,7 +1234,7 @@ main#main-content > section {
   flex: 1 0 0;
 }
 
-.locksmith-elevate-card-content {
+.industry-elevate-card-content {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -1242,7 +1242,7 @@ main#main-content > section {
   width: 100%;
 }
 
-.locksmith-elevate-icon {
+.industry-elevate-icon {
   width: 48px;
   height: 48px;
   display: flex;
@@ -1251,13 +1251,13 @@ main#main-content > section {
   flex-shrink: 0;
 }
 
-.locksmith-elevate-icon img {
+.industry-elevate-icon img {
   width: 100%;
   height: 100%;
   display: block;
 }
 
-.locksmith-elevate-title {
+.industry-elevate-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 28px;
@@ -1268,7 +1268,7 @@ main#main-content > section {
   width: 100%;
 }
 
-.locksmith-elevate-description {
+.industry-elevate-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1281,15 +1281,15 @@ main#main-content > section {
   gap: 0;
 }
 
-.locksmith-elevate-description p {
+.industry-elevate-description p {
   margin: 0 0 8px 0;
 }
 
-.locksmith-elevate-description p:last-child {
+.industry-elevate-description p:last-child {
   margin-bottom: 0;
 }
 
-.locksmith-elevate-btn {
+.industry-elevate-btn {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1308,44 +1308,47 @@ main#main-content > section {
   margin-top: auto;
 }
 
-.locksmith-elevate-btn:hover {
+.industry-elevate-btn:hover {
   opacity: 0.8;
 }
 
-.locksmith-elevate-btn svg {
+.industry-elevate-btn svg {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
 }
 
 /* ===== STATS SECTION ===== */
-.locksmith-stats-grid {
+.industry-stats-grid {
   display: flex;
   gap: 48px;
   width: 100%;
 }
 
-.locksmith-stat {
+.industry-stat {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 16px;
+  flex-direction: column;
+  gap: 8px;
   flex: 1 0 0;
-  padding-left: 0;
-  border-left: none;
+  padding-left: 32px;
+  border-left: 1px solid rgba(10, 11, 12, 0.1);
 }
 
-.locksmith-stat-number {
+.industry-stat:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.industry-stat-number {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 80px;
   line-height: 1.3;
   color: #0A0B0C !important;
   margin: 0;
-  flex-shrink: 0;
 }
 
-.locksmith-stat-label {
+.industry-stat-label {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -1353,25 +1356,24 @@ main#main-content > section {
   letter-spacing: -0.22px;
   color: #0A0B0C !important;
   margin: 0;
-  flex: 1;
 }
 
 /* ===== TIMELINE SECTION ===== */
-.locksmith-timeline {
+.industry-timeline {
   display: flex;
   flex-direction: column;
   gap: 16px;
   width: 100%;
 }
 
-.locksmith-timeline-item {
+.industry-timeline-item {
   display: flex;
   gap: 40px;
   align-items: flex-start;
   width: 100%;
 }
 
-.locksmith-timeline-number {
+.industry-timeline-number {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 52px;
@@ -1383,7 +1385,7 @@ main#main-content > section {
   text-align: center;
 }
 
-.locksmith-timeline-content {
+.industry-timeline-content {
   flex: 1 0 0;
   display: flex;
   flex-direction: column;
@@ -1391,7 +1393,7 @@ main#main-content > section {
   min-width: 0;
 }
 
-.locksmith-timeline-title {
+.industry-timeline-title {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 22px;
@@ -1401,7 +1403,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-timeline-description {
+.industry-timeline-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1411,7 +1413,7 @@ main#main-content > section {
 }
 
 /* ===== CTA SECTION ===== */
-.locksmith-cta-content {
+.industry-cta-content {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -1421,7 +1423,7 @@ main#main-content > section {
   margin: 0 auto;
 }
 
-.locksmith-cta-heading {
+.industry-cta-heading {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 52px;
@@ -1431,7 +1433,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-cta-description {
+.industry-cta-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -1442,21 +1444,21 @@ main#main-content > section {
 
 /* ===== TESTIMONIALS SECTION ===== */
 /* ===== TESTIMONIALS SECTION ===== */
-.locksmith-testimonials-wrapper {
+.industry-testimonials-wrapper {
   display: flex;
   flex-direction: column;
   gap: 80px;
   width: 100%;
 }
 
-.locksmith-testimonials-title-section {
+.industry-testimonials-title-section {
   display: flex;
   flex-direction: column;
   gap: 24px;
   max-width: 768px;
 }
 
-.locksmith-testimonials-heading {
+.industry-testimonials-heading {
   font-family: 'Inter', sans-serif;
   font-weight: 700;
   font-size: 52px;
@@ -1466,7 +1468,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-testimonials-subtitle {
+.industry-testimonials-subtitle {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -1476,21 +1478,21 @@ main#main-content > section {
   max-width: 560px;
 }
 
-.locksmith-testimonials-content {
+.industry-testimonials-content {
   display: flex;
   flex-direction: column;
   gap: 48px;
   width: 100%;
 }
 
-.locksmith-testimonials-grid {
+.industry-testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0;
   width: 100%;
 }
 
-.locksmith-testimonial-column {
+.industry-testimonial-column {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -1498,22 +1500,22 @@ main#main-content > section {
   padding-right: 48px;
 }
 
-.locksmith-testimonial-column:last-child {
+.industry-testimonial-column:last-child {
   padding-right: 0;
 }
 
-.locksmith-stars {
+.industry-stars {
   width: 116px;
   height: 19px;
 }
 
-.locksmith-stars img {
+.industry-stars img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.locksmith-testimonial-quote {
+.industry-testimonial-quote {
   font-family: 'Inter', sans-serif;
   font-weight: 0;
   font-size: 18px;
@@ -1523,7 +1525,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-testimonial-quote p {
+.industry-testimonial-quote p {
   margin: 0;
   font-family: 'Inter', sans-serif;
   font-weight: 0;
@@ -1533,20 +1535,20 @@ main#main-content > section {
   color: #FFFFFF;
 }
 
-.locksmith-testimonial-avatar-section {
+.industry-testimonial-avatar-section {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.locksmith-testimonial-avatar {
+.industry-testimonial-avatar {
   width: 56px;
   height: 56px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-.locksmith-testimonial-avatar-info {
+.industry-testimonial-avatar-info {
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -1555,7 +1557,7 @@ main#main-content > section {
   font-size: 16px;
 }
 
-.locksmith-testimonial-name {
+.industry-testimonial-name {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -1564,7 +1566,7 @@ main#main-content > section {
   margin: 0;
 }
 
-.locksmith-testimonial-title {
+.industry-testimonial-title {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -1574,21 +1576,21 @@ main#main-content > section {
 }
 
 
-.locksmith-testimonials-controls {
+.industry-testimonials-controls {
   display: none;
   align-items: center;
   justify-content: space-between;
   width: 100%;
 }
 
-.locksmith-slider-dots {
+.industry-slider-dots {
   display: none;
   gap: 8px;
   align-items: center;
   flex-shrink: 0;
 }
 
-.locksmith-dot {
+.industry-dot {
   width: 8px;
   height: 8px;
   min-width: 8px;
@@ -1607,16 +1609,16 @@ main#main-content > section {
   aspect-ratio: 1 / 1;
 }
 
-.locksmith-dot.locksmith-dot-active {
+.industry-dot.industry-dot-active {
   background: #FFFFFF;
 }
 
-.locksmith-slider-buttons {
+.industry-slider-buttons {
   display: flex;
   gap: 16px;
 }
 
-.locksmith-slider-btn {
+.industry-slider-btn {
   background: #0A0B0C;
   border: 1px solid #222324;
   border-radius: 100px;
@@ -1629,11 +1631,11 @@ main#main-content > section {
   color: #FFFFFF;
 }
 
-.locksmith-slider-btn:hover {
+.industry-slider-btn:hover {
   background: rgba(34, 35, 36, 0.5);
 }
 
-.locksmith-slider-btn svg {
+.industry-slider-btn svg {
   width: 24px;
   height: 24px;
 }
@@ -1642,141 +1644,141 @@ main#main-content > section {
 /* FAQ SECTION handled by layout.css */
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
-  .locksmith-hero-heading {
+  .industry-hero-heading {
     font-size: 40px;
     letter-spacing: -0.4px;
   }
 
-  .locksmith-hero-title-section {
+  .industry-hero-title-section {
     gap: 16px;
   }
 
-  .locksmith-hero-description {
+  .industry-hero-description {
     font-size: 16px;
   }
 
-  .locksmith-hero-content {
+  .industry-hero-content {
     gap: 60px;
   }
 
-  .locksmith-hero-tagline-wrapper,
-  .locksmith-hero-tagline {
+  .industry-hero-tagline-wrapper,
+  .industry-hero-tagline {
     display: none !important;
   }
 
-  .locksmith-heading,
-  .locksmith-heading-center,
-  .locksmith-heading-left {
+  .industry-heading,
+  .industry-heading-center,
+  .industry-heading-left {
     font-size: 44px;
     letter-spacing: -0.44px;
   }
 
-  .locksmith-two-column {
+  .industry-two-column {
     display: grid !important;
     grid-template-columns: 1fr !important;
     gap: 48px;
   }
 
-  .locksmith-two-column-reverse {
+  .industry-two-column-reverse {
     flex-direction: column;
   }
 
-  .locksmith-elevate-grid {
+  .industry-elevate-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
   }
 
-  .locksmith-elevate-heading {
+  .industry-elevate-heading {
     font-size: 32px;
     letter-spacing: -0.32px;
     margin-bottom: 48px;
   }
 
-  .locksmith-elevate-card {
+  .industry-elevate-card {
     gap: 24px;
   }
 
-  .locksmith-elevate-card-content {
+  .industry-elevate-card-content {
     gap: 16px;
   }
 
-  .locksmith-elevate-icon {
+  .industry-elevate-icon {
     width: 40px;
     height: 40px;
   }
 
-  .locksmith-elevate-title {
+  .industry-elevate-title {
     font-size: 22px;
     letter-spacing: -0.22px;
     line-height: 1.3;
   }
 
-  .locksmith-elevate-description {
+  .industry-elevate-description {
     font-size: 14px;
     line-height: 1.4;
   }
 
-  .locksmith-section-gradient .locksmith-actions {
+  .industry-section-gradient .industry-actions {
     margin-top: 48px;
     gap: 16px;
   }
 
-  .locksmith-testimonials-wrapper {
+  .industry-testimonials-wrapper {
     gap: 48px;
   }
   
-  .locksmith-testimonials-title-section {
+  .industry-testimonials-title-section {
     max-width: 100%;
   }
   
-  .locksmith-testimonials-heading {
+  .industry-testimonials-heading {
     font-size: 36px;
     line-height: 1.2;
   }
   
-  .locksmith-testimonials-subtitle {
+  .industry-testimonials-subtitle {
     font-size: 16px;
     max-width: 100%;
   }
 
-  .locksmith-impact-content {
+  .industry-impact-content {
     gap: 48px;
   }
 
-  .locksmith-impact-title-section {
+  .industry-impact-title-section {
     gap: 12px;
   }
 
-  .locksmith-impact-text-content {
+  .industry-impact-text-content {
     gap: 16px;
   }
 
-  .locksmith-heading-center {
+  .industry-heading-center {
     font-size: 36px;
     letter-spacing: -0.36px;
     line-height: 1.2;
   }
 
-  .locksmith-description-center {
+  .industry-description-center {
     font-size: 16px;
     line-height: 1.5;
   }
 
-  .locksmith-stat-number {
+  .industry-stat-number {
     font-size: 48px;
     line-height: 1.2;
   }
 
-  .locksmith-stat-label {
+  .industry-stat-label {
     font-size: 16px;
     line-height: 1.4;
   }
 
-  .locksmith-stats-grid {
+  .industry-stats-grid {
     gap: 32px;
   }
 
-  .locksmith-stat {
+  .industry-stat {
     flex-direction: row;
     align-items: center;
     gap: 16px;
@@ -1786,26 +1788,26 @@ main#main-content > section {
     border-top: none;
   }
 
-  .locksmith-stat-number {
+  .industry-stat-number {
     flex-shrink: 0;
     margin: 0;
   }
 
-  .locksmith-stat-label {
+  .industry-stat-label {
     flex: 1;
     margin: 0;
   }
 
-  .benefits-modern-actions.locksmith-actions-center {
+  .benefits-modern-actions.industry-actions-center {
     gap: 16px;
     margin-top: 48px;
   }
   
-  .locksmith-testimonials-content {
+  .industry-testimonials-content {
     gap: 32px;
   }
   
-  .locksmith-testimonials-grid {
+  .industry-testimonials-grid {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -1820,11 +1822,11 @@ main#main-content > section {
     padding: 16px 0;
   }
 
-  .locksmith-testimonials-grid::-webkit-scrollbar {
+  .industry-testimonials-grid::-webkit-scrollbar {
     display: none;
   }
 
-  .locksmith-testimonial-column {
+  .industry-testimonial-column {
     flex: 0 0 45%;
     min-width: 45%;
     max-width: 45%;
@@ -1833,94 +1835,94 @@ main#main-content > section {
     padding-right: 0;
   }
 
-  .locksmith-testimonials-controls {
+  .industry-testimonials-controls {
     display: flex !important;
   }
 
-  .locksmith-slider-dots {
+  .industry-slider-dots {
     display: flex !important;
   }
 
-  .locksmith-stats-grid {
+  .industry-stats-grid {
     flex-direction: column;
     gap: 32px;
   }
 
-  .locksmith-stat {
+  .industry-stat {
     border-left: none;
     padding-left: 0;
     padding-top: 32px;
     border-top: 1px solid rgba(10, 11, 12, 0.1);
   }
 
-  .locksmith-stat:first-child {
+  .industry-stat:first-child {
     border-top: none;
     padding-top: 0;
   }
 
-  .locksmith-features-wrapper {
+  .industry-features-wrapper {
     flex-direction: column;
     gap: 48px;
   }
 
-  .locksmith-features-image {
+  .industry-features-image {
     width: 100%;
     height: auto;
     max-height: 400px;
   }
 
-  .locksmith-features-grid {
+  .industry-features-grid {
     grid-template-columns: 1fr;
   }
 
-  .locksmith-features-content.locksmith-features-left .locksmith-feature-card {
+  .industry-features-content.industry-features-left .industry-feature-card {
     align-items: flex-start !important;
     text-align: left !important;
   }
 
-  .locksmith-features-content.locksmith-features-left .locksmith-feature-card-header {
+  .industry-features-content.industry-features-left .industry-feature-card-header {
     flex-direction: row !important;
     justify-content: flex-start !important;
   }
 
-  .locksmith-features-content.locksmith-features-left .locksmith-feature-card-title,
-  .locksmith-features-content.locksmith-features-left .locksmith-feature-card-description {
+  .industry-features-content.industry-features-left .industry-feature-card-title,
+  .industry-features-content.industry-features-left .industry-feature-card-description {
     text-align: left !important;
   }
 
-  .benefits-modern-actions.locksmith-features-actions {
+  .benefits-modern-actions.industry-features-actions {
     gap: 12px !important;
   }
 
-  .benefits-modern-actions.locksmith-actions-center {
+  .benefits-modern-actions.industry-actions-center {
     gap: 12px !important;
   }
 
-  .locksmith-impact-decoration {
+  .industry-impact-decoration {
     display: none;
   }
 
-  .locksmith-impact-content {
+  .industry-impact-content {
     gap: 48px;
   }
 
   /* Reliability Section - Tablet */
-  .locksmith-reliability-section .locksmith-heading {
+  .industry-reliability-section .industry-heading {
     font-size: 36px;
     letter-spacing: -0.36px;
   }
 
-  .locksmith-reliability-section .locksmith-description {
+  .industry-reliability-section .industry-description {
     font-size: 14px;
   }
 
-  .locksmith-reliability-section .locksmith-two-column {
+  .industry-reliability-section .industry-two-column {
     display: flex !important;
     flex-direction: column !important;
     gap: 48px;
   }
 
-  .locksmith-reliability-section .locksmith-image {
+  .industry-reliability-section .industry-image {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -1935,7 +1937,7 @@ main#main-content > section {
     min-width: auto !important;
   }
 
-  .locksmith-reliability-section .locksmith-image img {
+  .industry-reliability-section .industry-image img {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -1944,49 +1946,49 @@ main#main-content > section {
     object-fit: contain !important;
   }
 
-  .locksmith-reliability-section .locksmith-content {
+  .industry-reliability-section .industry-content {
     order: 0;
     display: contents !important;
   }
 
-  .locksmith-reliability-section .locksmith-section-title {
+  .industry-reliability-section .industry-section-title {
     order: 0;
     margin-bottom: 24px;
     gap: 16px;
   }
 
-  .locksmith-reliability-section .locksmith-image {
+  .industry-reliability-section .industry-image {
     margin-bottom: 24px;
   }
 
-  .locksmith-reliability-section .locksmith-feature-list {
+  .industry-reliability-section .industry-feature-list {
     order: 2;
     margin-bottom: 24px;
   }
 
-  .locksmith-reliability-section .features-buttons.locksmith-actions {
+  .industry-reliability-section .features-buttons.industry-actions {
     order: 3;
   }
 
-  .locksmith-reliability-section .locksmith-feature-item {
+  .industry-reliability-section .industry-feature-item {
     font-size: 14px;
     margin-bottom: 12px;
   }
 
-  .locksmith-reliability-section .locksmith-text-content {
+  .industry-reliability-section .industry-text-content {
     gap: 16px;
   }
 
   /* Reliability Section - Tablet - Keep buttons horizontal */
-  .locksmith-reliability-section .features-buttons.locksmith-actions {
+  .industry-reliability-section .features-buttons.industry-actions {
     flex-direction: row !important;
     width: 100%;
     gap: 12px;
     justify-content: flex-start;
   }
 
-  .locksmith-reliability-section .features-buttons.locksmith-actions .btn-primary-large,
-  .locksmith-reliability-section .features-buttons.locksmith-actions .btn-outline-white {
+  .industry-reliability-section .features-buttons.industry-actions .btn-primary-large,
+  .industry-reliability-section .features-buttons.industry-actions .btn-outline-white {
     flex: 1 1 0 !important;
     width: 100% !important;
     max-width: none !important;
@@ -1996,42 +1998,42 @@ main#main-content > section {
   }
 
   /* Smart Evolution Section - Tablet */
-  .locksmith-smart-evolution-section .locksmith-heading-dark {
+  .industry-smart-evolution-section .industry-heading-dark {
     font-size: 28px;
     letter-spacing: -0.28px;
   }
 
-  .locksmith-smart-evolution-section .locksmith-description-dark {
+  .industry-smart-evolution-section .industry-description-dark {
     font-size: 14px;
   }
 
-  .locksmith-smart-evolution-section .locksmith-two-column {
+  .industry-smart-evolution-section .industry-two-column {
     display: flex !important;
     flex-direction: column !important;
     gap: 48px;
   }
 
-  .locksmith-smart-evolution-section .locksmith-content {
+  .industry-smart-evolution-section .industry-content {
     order: 0;
     display: contents !important;
   }
 
-  .locksmith-smart-evolution-section .locksmith-section-title {
+  .industry-smart-evolution-section .industry-section-title {
     order: 0;
     gap: 16px;
     margin-bottom: 24px;
   }
 
-  .locksmith-smart-evolution-section .locksmith-smart-evolution-list {
+  .industry-smart-evolution-section .industry-smart-evolution-list {
     order: 1;
     margin-bottom: 24px;
   }
 
-  .locksmith-smart-evolution-section .locksmith-smart-evolution-image {
+  .industry-smart-evolution-section .industry-smart-evolution-image {
     margin-bottom: 24px;
   }
 
-  .locksmith-smart-evolution-section .locksmith-smart-evolution-image {
+  .industry-smart-evolution-section .industry-smart-evolution-image {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -2046,7 +2048,7 @@ main#main-content > section {
     min-width: auto !important;
   }
 
-  .locksmith-smart-evolution-section .locksmith-smart-evolution-image img {
+  .industry-smart-evolution-section .industry-smart-evolution-image img {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -2055,7 +2057,7 @@ main#main-content > section {
     object-fit: contain !important;
   }
 
-  .locksmith-smart-evolution-section .benefits-modern-actions.locksmith-smart-evolution-actions {
+  .industry-smart-evolution-section .benefits-modern-actions.industry-smart-evolution-actions {
     order: 3;
     flex-direction: row !important;
     width: 100%;
@@ -2063,8 +2065,8 @@ main#main-content > section {
     justify-content: flex-start;
   }
 
-  .locksmith-smart-evolution-section .benefits-modern-actions.locksmith-smart-evolution-actions .benefits-modern-btn-primary,
-  .locksmith-smart-evolution-section .benefits-modern-actions.locksmith-smart-evolution-actions .benefits-modern-btn-secondary {
+  .industry-smart-evolution-section .benefits-modern-actions.industry-smart-evolution-actions .benefits-modern-btn-primary,
+  .industry-smart-evolution-section .benefits-modern-actions.industry-smart-evolution-actions .benefits-modern-btn-secondary {
     flex: 1 1 0 !important;
     width: 100% !important;
     max-width: none !important;
@@ -2073,43 +2075,43 @@ main#main-content > section {
     font-size: 14px !important;
   }
 
-  .locksmith-smart-evolution-section .locksmith-smart-evolution-item {
+  .industry-smart-evolution-section .industry-smart-evolution-item {
     font-size: 14px;
     margin-bottom: 12px;
   }
 
-  .locksmith-smart-evolution-section .locksmith-text-content {
+  .industry-smart-evolution-section .industry-text-content {
     gap: 16px;
   }
 
   /* Real-Time Insights Section - Tablet */
-  .locksmith-realtime-insights-section .locksmith-heading {
+  .industry-realtime-insights-section .industry-heading {
     font-size: 28px;
     letter-spacing: -0.28px;
   }
 
-  .locksmith-realtime-insights-section .locksmith-description {
+  .industry-realtime-insights-section .industry-description {
     font-size: 14px;
   }
 
-  .locksmith-realtime-insights-section .locksmith-two-column {
+  .industry-realtime-insights-section .industry-two-column {
     display: flex !important;
     flex-direction: column !important;
     gap: 48px;
   }
 
-  .locksmith-realtime-insights-section .locksmith-content {
+  .industry-realtime-insights-section .industry-content {
     order: 0;
     display: contents !important;
   }
 
-  .locksmith-realtime-insights-section .locksmith-section-title {
+  .industry-realtime-insights-section .industry-section-title {
     order: 0;
     gap: 16px;
     margin-bottom: 24px;
   }
 
-  .locksmith-realtime-insights-section .locksmith-image {
+  .industry-realtime-insights-section .industry-image {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -2125,7 +2127,7 @@ main#main-content > section {
     min-width: auto !important;
   }
 
-  .locksmith-realtime-insights-section .locksmith-image img {
+  .industry-realtime-insights-section .industry-image img {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -2134,12 +2136,12 @@ main#main-content > section {
     object-fit: contain !important;
   }
 
-  .locksmith-realtime-insights-section .locksmith-feature-list {
+  .industry-realtime-insights-section .industry-feature-list {
     order: 2;
     margin-bottom: 24px;
   }
 
-  .locksmith-realtime-insights-section .features-buttons.locksmith-actions {
+  .industry-realtime-insights-section .features-buttons.industry-actions {
     order: 3;
     flex-direction: row !important;
     width: 100%;
@@ -2147,8 +2149,8 @@ main#main-content > section {
     justify-content: flex-start;
   }
 
-  .locksmith-realtime-insights-section .features-buttons.locksmith-actions .btn-primary-large,
-  .locksmith-realtime-insights-section .features-buttons.locksmith-actions .btn-outline-white {
+  .industry-realtime-insights-section .features-buttons.industry-actions .btn-primary-large,
+  .industry-realtime-insights-section .features-buttons.industry-actions .btn-outline-white {
     flex: 1 1 0 !important;
     width: 100% !important;
     max-width: none !important;
@@ -2157,158 +2159,158 @@ main#main-content > section {
     font-size: 14px !important;
   }
 
-  .locksmith-realtime-insights-section .locksmith-feature-item {
+  .industry-realtime-insights-section .industry-feature-item {
     font-size: 14px;
     margin-bottom: 12px;
   }
 
-  .locksmith-realtime-insights-section .locksmith-text-content {
+  .industry-realtime-insights-section .industry-text-content {
     gap: 16px;
   }
 }
 
 @media (max-width: 768px) {
-  .locksmith-section {
+  .industry-section {
     padding: 80px 24px;
   }
 
-  .locksmith-hero-container {
+  .industry-hero-container {
     padding: 80px 0;
   }
 
-  .locksmith-hero-heading {
+  .industry-hero-heading {
     font-size: 32px;
     letter-spacing: -0.32px;
   }
 
-  .locksmith-hero-title-section {
+  .industry-hero-title-section {
     gap: 16px;
   }
 
-  .locksmith-hero-description {
+  .industry-hero-description {
     font-size: 16px;
   }
 
-  .locksmith-hero-content {
+  .industry-hero-content {
     gap: 60px;
   }
 
-  .locksmith-hero-tagline-wrapper,
-  .locksmith-hero-tagline {
+  .industry-hero-tagline-wrapper,
+  .industry-hero-tagline {
     display: none !important;
   }
 
-  .locksmith-heading,
-  .locksmith-heading-center,
-  .locksmith-heading-left {
+  .industry-heading,
+  .industry-heading-center,
+  .industry-heading-left {
     font-size: 36px;
     letter-spacing: -0.36px;
   }
 
-  .locksmith-hero-actions,
-  .locksmith-actions,
-  .locksmith-actions-center {
+  .industry-hero-actions,
+  .industry-actions,
+  .industry-actions-center {
     flex-direction: column;
     width: 100%;
   }
 
-  .locksmith-hero-btn-primary,
-  .locksmith-hero-btn-secondary,
-  .locksmith-btn-primary,
-  .locksmith-btn-secondary,
-  .locksmith-btn-primary-light,
-  .locksmith-btn-secondary-light {
+  .industry-hero-btn-primary,
+  .industry-hero-btn-secondary,
+  .industry-btn-primary,
+  .industry-btn-secondary,
+  .industry-btn-primary-light,
+  .industry-btn-secondary-light {
     width: 100%;
   }
 
-  .locksmith-elevate-grid {
+  .industry-elevate-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
 
-  .locksmith-elevate-heading {
+  .industry-elevate-heading {
     font-size: 28px;
     letter-spacing: -0.28px;
     margin-bottom: 40px;
   }
 
-  .locksmith-elevate-card {
+  .industry-elevate-card {
     gap: 20px;
   }
 
-  .locksmith-elevate-card-content {
+  .industry-elevate-card-content {
     gap: 12px;
   }
 
-  .locksmith-elevate-icon {
+  .industry-elevate-icon {
     width: 36px;
     height: 36px;
   }
 
-  .locksmith-elevate-title {
+  .industry-elevate-title {
     font-size: 20px;
     letter-spacing: -0.20px;
     line-height: 1.3;
   }
 
-  .locksmith-elevate-description {
+  .industry-elevate-description {
     font-size: 14px;
     line-height: 1.4;
   }
 
-  .locksmith-section-gradient .locksmith-actions {
+  .industry-section-gradient .industry-actions {
     margin-top: 40px;
     gap: 12px;
     flex-wrap: wrap;
   }
 
-  .locksmith-container {
+  .industry-container {
     gap: 64px;
   }
 
-  .locksmith-impact-decoration {
+  .industry-impact-decoration {
     display: none;
   }
 
-  .locksmith-impact-content {
+  .industry-impact-content {
     gap: 40px;
   }
 
-  .locksmith-impact-title-section {
+  .industry-impact-title-section {
     gap: 10px;
   }
 
-  .locksmith-impact-text-content {
+  .industry-impact-text-content {
     gap: 12px;
   }
 
-  .locksmith-heading-center {
+  .industry-heading-center {
     font-size: 28px;
     letter-spacing: -0.28px;
     line-height: 1.2;
   }
 
-  .locksmith-description-center {
+  .industry-description-center {
     font-size: 14px;
     line-height: 1.4;
   }
 
-  .locksmith-stat-number {
+  .industry-stat-number {
     font-size: 40px;
     line-height: 1.2;
   }
 
-  .locksmith-stat-label {
+  .industry-stat-label {
     font-size: 14px;
     line-height: 1.4;
   }
 
-  .locksmith-stats-grid {
+  .industry-stats-grid {
     flex-direction: column;
     gap: 24px;
   }
 
-  .locksmith-stat {
+  .industry-stat {
     flex-direction: row;
     align-items: center;
     gap: 12px;
@@ -2318,35 +2320,35 @@ main#main-content > section {
     border-top: none;
   }
 
-  .locksmith-stat-number {
+  .industry-stat-number {
     flex-shrink: 0;
     margin: 0;
   }
 
-  .locksmith-stat-label {
+  .industry-stat-label {
     flex: 1;
     margin: 0;
   }
 
   /* Reliability Section - Mobile */
-  .locksmith-reliability-section .locksmith-heading {
+  .industry-reliability-section .industry-heading {
     font-size: 28px;
     letter-spacing: -0.28px;
     line-height: 1.3;
   }
 
-  .locksmith-reliability-section .locksmith-description {
+  .industry-reliability-section .industry-description {
     font-size: 14px;
     line-height: 1.5;
   }
 
-  .locksmith-reliability-section .locksmith-two-column {
+  .industry-reliability-section .industry-two-column {
     display: flex !important;
     flex-direction: column !important;
     gap: 40px;
   }
 
-  .locksmith-reliability-section .locksmith-image {
+  .industry-reliability-section .industry-image {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -2361,7 +2363,7 @@ main#main-content > section {
     min-width: auto !important;
   }
 
-  .locksmith-reliability-section .locksmith-image img {
+  .industry-reliability-section .industry-image img {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -2370,60 +2372,60 @@ main#main-content > section {
     object-fit: contain !important;
   }
 
-  .locksmith-reliability-section .locksmith-content {
+  .industry-reliability-section .industry-content {
     max-width: 100%;
     order: 0;
     display: contents !important;
   }
 
-  .locksmith-reliability-section .locksmith-section-title {
+  .industry-reliability-section .industry-section-title {
     order: 0;
     margin-bottom: 20px;
   }
 
-  .locksmith-reliability-section .locksmith-image {
+  .industry-reliability-section .industry-image {
     margin-bottom: 20px;
   }
 
-  .locksmith-reliability-section .locksmith-feature-list {
+  .industry-reliability-section .industry-feature-list {
     order: 2;
     margin-bottom: 20px;
   }
 
-  .locksmith-reliability-section .features-buttons.locksmith-actions {
+  .industry-reliability-section .features-buttons.industry-actions {
     order: 3;
   }
 
-  .locksmith-reliability-section .locksmith-feature-item {
+  .industry-reliability-section .industry-feature-item {
     font-size: 14px;
     margin-bottom: 12px;
   }
 
-  .locksmith-reliability-section .locksmith-feature-list {
+  .industry-reliability-section .industry-feature-list {
     padding-top: 4px;
     padding-bottom: 4px;
     margin-top: 16px;
     margin-bottom: 16px;
   }
 
-  .locksmith-reliability-section .locksmith-section-title {
+  .industry-reliability-section .industry-section-title {
     gap: 12px;
   }
 
-  .locksmith-reliability-section .locksmith-text-content {
+  .industry-reliability-section .industry-text-content {
     gap: 12px;
   }
 
   /* Reliability Section - Mobile - Keep buttons horizontal */
-  .locksmith-reliability-section .features-buttons.locksmith-actions {
+  .industry-reliability-section .features-buttons.industry-actions {
     flex-direction: row !important;
     width: 100%;
     gap: 12px;
     justify-content: flex-start;
   }
 
-  .locksmith-reliability-section .features-buttons.locksmith-actions .btn-primary-large,
-  .locksmith-reliability-section .features-buttons.locksmith-actions .btn-outline-white {
+  .industry-reliability-section .features-buttons.industry-actions .btn-primary-large,
+  .industry-reliability-section .features-buttons.industry-actions .btn-outline-white {
     flex: 1 1 0 !important;
     width: 100% !important;
     max-width: none !important;
@@ -2433,36 +2435,36 @@ main#main-content > section {
   }
 
   /* Smart Evolution Section - Mobile */
-  .locksmith-smart-evolution-section .locksmith-heading-dark {
+  .industry-smart-evolution-section .industry-heading-dark {
     font-size: 24px;
     letter-spacing: -0.24px;
     line-height: 1.3;
   }
 
-  .locksmith-smart-evolution-section .locksmith-description-dark {
+  .industry-smart-evolution-section .industry-description-dark {
     font-size: 14px;
     line-height: 1.5;
   }
 
-  .locksmith-smart-evolution-section .locksmith-two-column {
+  .industry-smart-evolution-section .industry-two-column {
     display: flex !important;
     flex-direction: column !important;
     gap: 40px;
   }
 
-  .locksmith-smart-evolution-section .locksmith-content {
+  .industry-smart-evolution-section .industry-content {
     max-width: 100%;
     order: 0;
     display: contents !important;
   }
 
-  .locksmith-smart-evolution-section .locksmith-section-title {
+  .industry-smart-evolution-section .industry-section-title {
     order: 0;
     gap: 12px;
     margin-bottom: 20px;
   }
 
-  .locksmith-smart-evolution-section .locksmith-smart-evolution-list {
+  .industry-smart-evolution-section .industry-smart-evolution-list {
     order: 1;
     padding-top: 4px;
     padding-bottom: 4px;
@@ -2470,7 +2472,7 @@ main#main-content > section {
     margin-bottom: 20px;
   }
 
-  .locksmith-smart-evolution-section .locksmith-smart-evolution-image {
+  .industry-smart-evolution-section .industry-smart-evolution-image {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -2486,7 +2488,7 @@ main#main-content > section {
     min-width: auto !important;
   }
 
-  .locksmith-smart-evolution-section .locksmith-smart-evolution-image img {
+  .industry-smart-evolution-section .industry-smart-evolution-image img {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -2495,7 +2497,7 @@ main#main-content > section {
     object-fit: contain !important;
   }
 
-  .locksmith-smart-evolution-section .benefits-modern-actions.locksmith-smart-evolution-actions {
+  .industry-smart-evolution-section .benefits-modern-actions.industry-smart-evolution-actions {
     order: 3;
     flex-direction: row !important;
     width: 100%;
@@ -2503,8 +2505,8 @@ main#main-content > section {
     justify-content: flex-start;
   }
 
-  .locksmith-smart-evolution-section .benefits-modern-actions.locksmith-smart-evolution-actions .benefits-modern-btn-primary,
-  .locksmith-smart-evolution-section .benefits-modern-actions.locksmith-smart-evolution-actions .benefits-modern-btn-secondary {
+  .industry-smart-evolution-section .benefits-modern-actions.industry-smart-evolution-actions .benefits-modern-btn-primary,
+  .industry-smart-evolution-section .benefits-modern-actions.industry-smart-evolution-actions .benefits-modern-btn-secondary {
     flex: 1 1 0 !important;
     width: 100% !important;
     max-width: none !important;
@@ -2513,45 +2515,45 @@ main#main-content > section {
     font-size: 14px !important;
   }
 
-  .locksmith-smart-evolution-section .locksmith-smart-evolution-item {
+  .industry-smart-evolution-section .industry-smart-evolution-item {
     font-size: 14px;
     margin-bottom: 12px;
   }
 
-  .locksmith-smart-evolution-section .locksmith-text-content {
+  .industry-smart-evolution-section .industry-text-content {
     gap: 12px;
   }
 
   /* Real-Time Insights Section - Mobile */
-  .locksmith-realtime-insights-section .locksmith-heading {
+  .industry-realtime-insights-section .industry-heading {
     font-size: 24px;
     letter-spacing: -0.24px;
     line-height: 1.3;
   }
 
-  .locksmith-realtime-insights-section .locksmith-description {
+  .industry-realtime-insights-section .industry-description {
     font-size: 14px;
     line-height: 1.5;
   }
 
-  .locksmith-realtime-insights-section .locksmith-two-column {
+  .industry-realtime-insights-section .industry-two-column {
     display: flex !important;
     flex-direction: column !important;
     gap: 40px;
   }
 
-  .locksmith-realtime-insights-section .locksmith-content {
+  .industry-realtime-insights-section .industry-content {
     max-width: 100%;
     order: 0;
     display: contents !important;
   }
 
-  .locksmith-realtime-insights-section .locksmith-section-title {
+  .industry-realtime-insights-section .industry-section-title {
     order: 0;
     margin-bottom: 20px;
   }
 
-  .locksmith-realtime-insights-section .locksmith-image {
+  .industry-realtime-insights-section .industry-image {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -2567,7 +2569,7 @@ main#main-content > section {
     min-width: auto !important;
   }
 
-  .locksmith-realtime-insights-section .locksmith-image img {
+  .industry-realtime-insights-section .industry-image img {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -2576,12 +2578,12 @@ main#main-content > section {
     object-fit: contain !important;
   }
 
-  .locksmith-realtime-insights-section .locksmith-feature-list {
+  .industry-realtime-insights-section .industry-feature-list {
     order: 2;
     margin-bottom: 20px;
   }
 
-  .locksmith-realtime-insights-section .features-buttons.locksmith-actions {
+  .industry-realtime-insights-section .features-buttons.industry-actions {
     order: 3;
     flex-direction: row !important;
     width: 100%;
@@ -2589,8 +2591,8 @@ main#main-content > section {
     justify-content: flex-start;
   }
 
-  .locksmith-realtime-insights-section .features-buttons.locksmith-actions .btn-primary-large,
-  .locksmith-realtime-insights-section .features-buttons.locksmith-actions .btn-outline-white {
+  .industry-realtime-insights-section .features-buttons.industry-actions .btn-primary-large,
+  .industry-realtime-insights-section .features-buttons.industry-actions .btn-outline-white {
     flex: 1 1 0 !important;
     width: 100% !important;
     max-width: none !important;
@@ -2599,50 +2601,50 @@ main#main-content > section {
     font-size: 14px !important;
   }
 
-  .locksmith-realtime-insights-section .locksmith-feature-item {
+  .industry-realtime-insights-section .industry-feature-item {
     font-size: 14px;
     margin-bottom: 12px;
   }
 
-  .locksmith-realtime-insights-section .locksmith-feature-list {
+  .industry-realtime-insights-section .industry-feature-list {
     padding-top: 4px;
     padding-bottom: 4px;
     margin-top: 16px;
     margin-bottom: 16px;
   }
 
-  .locksmith-realtime-insights-section .locksmith-section-title {
+  .industry-realtime-insights-section .industry-section-title {
     gap: 12px;
   }
 
-  .locksmith-realtime-insights-section .locksmith-text-content {
+  .industry-realtime-insights-section .industry-text-content {
     gap: 12px;
   }
 
-  .locksmith-features-content.locksmith-features-left .locksmith-feature-card {
+  .industry-features-content.industry-features-left .industry-feature-card {
     align-items: flex-start !important;
     text-align: left !important;
   }
 
-  .locksmith-features-content.locksmith-features-left .locksmith-feature-card-header {
+  .industry-features-content.industry-features-left .industry-feature-card-header {
     flex-direction: row !important;
     justify-content: flex-start !important;
   }
 
-  .locksmith-features-content.locksmith-features-left .locksmith-feature-card-title,
-  .locksmith-features-content.locksmith-features-left .locksmith-feature-card-description {
+  .industry-features-content.industry-features-left .industry-feature-card-title,
+  .industry-features-content.industry-features-left .industry-feature-card-description {
     text-align: left !important;
   }
 
-  .benefits-modern-actions.locksmith-features-actions {
+  .benefits-modern-actions.industry-features-actions {
     gap: 12px !important;
   }
 
-  .benefits-modern-actions.locksmith-actions-center {
+  .benefits-modern-actions.industry-actions-center {
     gap: 12px !important;
   }
 
-  .locksmith-testimonials-grid {
+  .industry-testimonials-grid {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -2657,22 +2659,22 @@ main#main-content > section {
     padding: 16px 0;
   }
 
-  .locksmith-testimonials-grid::-webkit-scrollbar {
+  .industry-testimonials-grid::-webkit-scrollbar {
     display: none;
   }
 
-  .locksmith-testimonial-column {
+  .industry-testimonial-column {
     flex: 0 0 85%;
     min-width: 85%;
     max-width: 85%;
     scroll-snap-align: center;
   }
 
-  .locksmith-testimonials-controls {
+  .industry-testimonials-controls {
     display: flex !important;
   }
 
-  .locksmith-slider-dots {
+  .industry-slider-dots {
     display: flex !important;
   }
 }

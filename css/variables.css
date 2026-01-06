@@ -33,6 +33,7 @@
   /* Font Sizes - Exact Design Spec */
   --text-h1: 72px;
   --text-h2: 52px;
+  --text-h3: 42px;
   --text-h4: 36px;
   --text-h5: 28px;
   --text-large: 18px;
@@ -43,6 +44,7 @@
   /* Letter Spacing */
   --tracking-h1: -0.72px;
   --tracking-h2: -0.52px;
+  --tracking-h3: -0.42px;
   --tracking-h4: -0.36px;
   --tracking-h5: -0.28px;
 
@@ -102,11 +104,23 @@
   --z-tooltip: 3000;
 }
 
+/* Tablet Variables Override (768px - 1023px) */
+@media (max-width: 1023px) and (min-width: 768px) {
+  :root {
+    --text-h1: 56px;
+    --text-h2: 42px;
+    --text-h3: 36px;
+    --text-h4: 32px;
+    --text-h5: 26px;
+  }
+}
+
 /* Mobile Variables Override */
 @media (max-width: 767px) {
   :root {
     --text-h1: 48px;
     --text-h2: 36px;
+    --text-h3: 32px;
     --text-h4: 28px;
     --text-h5: 24px;
     --page-padding: var(--page-padding-mobile);

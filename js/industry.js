@@ -1,4 +1,4 @@
-// Industry Home Service Page JavaScript
+// Industry Industry Page JavaScript
 
 document.addEventListener('DOMContentLoaded', function() {
   // ===== SCROLL ANIMATIONS FOR SECTIONS =====
@@ -47,29 +47,29 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===== STAGGER EFFECT FOR CARDS AND GRIDS =====
     // Add stagger effect to cards within sections
     const addStaggerEffect = () => {
-      // Select all card containers specific to home-service page
+      // Select all card containers specific to Industry page
       const cardContainers = document.querySelectorAll(
-        '.home-service-features-grid, ' +
-        '.home-service-elevate-grid, ' +
-        '.home-service-stats-grid, ' +
-        '.home-service-testimonials-grid, ' +
-        '.home-service-feature-list, ' +
-        '.home-service-smart-evolution-list, ' +
-        '.home-service-bullet-list, ' +
-        '.home-service-timeline'
+        '.industry-features-grid, ' +
+        '.industry-elevate-grid, ' +
+        '.industry-stats-grid, ' +
+        '.industry-testimonials-grid, ' +
+        '.industry-feature-list, ' +
+        '.industry-smart-evolution-list, ' +
+        '.industry-bullet-list, ' +
+        '.industry-timeline'
       );
 
       cardContainers.forEach(container => {
         const cards = container.querySelectorAll(
-          '.home-service-feature-card, ' +
-          '.home-service-elevate-card, ' +
-          '.home-service-stat, ' +
-          '.home-service-testimonial-card, ' +
-          '.home-service-feature-item, ' +
-          '.home-service-smart-evolution-item, ' +
-          '.home-service-smart-evolution-list li, ' +
-          '.home-service-bullet-list li, ' +
-          '.home-service-timeline-item'
+          '.industry-feature-card, ' +
+          '.industry-elevate-card, ' +
+          '.industry-stat, ' +
+          '.industry-testimonial-card, ' +
+          '.industry-feature-item, ' +
+          '.industry-smart-evolution-item, ' +
+          '.industry-smart-evolution-list li, ' +
+          '.industry-bullet-list li, ' +
+          '.industry-timeline-item'
         );
 
         if (cards.length > 0) {
@@ -84,15 +84,15 @@ document.addEventListener('DOMContentLoaded', function() {
             entries.forEach(entry => {
               if (entry.isIntersecting) {
                 const cards = entry.target.querySelectorAll(
-                  '.home-service-feature-card, ' +
-                  '.home-service-elevate-card, ' +
-                  '.home-service-stat, ' +
-                  '.home-service-testimonial-card, ' +
-                  '.home-service-feature-item, ' +
-                  '.home-service-smart-evolution-item, ' +
-                  '.home-service-smart-evolution-list li, ' +
-                  '.home-service-bullet-list li, ' +
-                  '.home-service-timeline-item'
+                  '.industry-feature-card, ' +
+                  '.industry-elevate-card, ' +
+                  '.industry-stat, ' +
+                  '.industry-testimonial-card, ' +
+                  '.industry-feature-item, ' +
+                  '.industry-smart-evolution-item, ' +
+                  '.industry-smart-evolution-list li, ' +
+                  '.industry-bullet-list li, ' +
+                  '.industry-timeline-item'
                 );
                 cards.forEach(card => {
                   card.style.opacity = '1';
@@ -114,15 +114,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // ===== COUNTER ANIMATION FOR STATS =====
   // Counts up from 0 to target number when section comes into view
-  const initHomeServiceCounterAnimation = () => {
-    const statNumbers = document.querySelectorAll('.home-service-stat-number[data-target]');
+  const initIndustryCounterAnimation = () => {
+    const statNumbers = document.querySelectorAll('.industry-stat-number[data-target]');
 
     if (!statNumbers.length) {
-      console.log('No home-service stat numbers found');
+      console.log('No Industry stat numbers found');
       return;
     }
 
-    console.log('Home-service counter animation initialized, found', statNumbers.length, 'stat numbers');
+    console.log('Industry counter animation initialized, found', statNumbers.length, 'stat numbers');
 
     // Animation configuration
     const duration = 2000; // 2 seconds for the count animation
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to animate a single counter
     const animateCounter = (element) => {
       const target = parseInt(element.dataset.target, 10);
-      console.log('Animating home-service counter to', target);
+      console.log('Animating Industry counter to', target);
       let frame = 0;
 
       const counter = setInterval(() => {
@@ -155,11 +155,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Create intersection observer for the stats section
     const counterObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        console.log('Home-service stats intersection observed:', entry.isIntersecting, 'ratio:', entry.intersectionRatio);
+        console.log('Industry stats intersection observed:', entry.isIntersecting, 'ratio:', entry.intersectionRatio);
         if (entry.isIntersecting) {
           // Get all stat numbers within this section
-          const statsInView = entry.target.querySelectorAll('.home-service-stat-number[data-target]');
-          console.log('Home-service stats in view:', statsInView.length);
+          const statsInView = entry.target.querySelectorAll('.industry-stat-number[data-target]');
+          console.log('Industry stats in view:', statsInView.length);
 
           // Start animation for each stat with a slight stagger
           statsInView.forEach((stat, index) => {
@@ -178,25 +178,29 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Observe the impact section (where stats are located)
-    const statsSection = document.querySelector('.home-service-impact-section');
+    const statsSection = document.querySelector('.industry-impact-section');
     if (statsSection) {
-      console.log('Observing home-service-impact-section');
+      console.log('Observing industry-impact-section');
       counterObserver.observe(statsSection);
     } else {
-      console.log('home-service-impact-section not found');
+      console.log('industry-impact-section not found');
     }
   };
 
-  // Initialize counter animation
-  initHomeServiceCounterAnimation();
+  // Initialize counter animation when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initIndustryCounterAnimation);
+  } else {
+    initIndustryCounterAnimation();
+  }
 
   // ===== TESTIMONIALS DOTS INDICATOR =====
-  const initHomeServiceTestimonialsDots = () => {
-    const testimonialsGrid = document.querySelector('.home-service-testimonials-grid');
-    const dots = document.querySelectorAll('.home-service-dot');
-    const testimonials = document.querySelectorAll('.home-service-testimonial-column');
-    const prevBtn = document.querySelector('.home-service-slider-btn-prev');
-    const nextBtn = document.querySelector('.home-service-slider-btn-next');
+  const initTestimonialsDots = () => {
+    const testimonialsGrid = document.querySelector('.industry-testimonials-grid');
+    const dots = document.querySelectorAll('.industry-dot');
+    const testimonials = document.querySelectorAll('.industry-testimonial-column');
+    const prevBtn = document.querySelector('.industry-slider-btn-prev');
+    const nextBtn = document.querySelector('.industry-slider-btn-next');
 
     if (!testimonialsGrid || !dots.length || !testimonials.length) {
       return;
@@ -208,9 +212,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const updateDots = (index) => {
       dots.forEach((dot, i) => {
         if (i === index) {
-          dot.classList.add('home-service-dot-active');
+          dot.classList.add('industry-dot-active');
         } else {
-          dot.classList.remove('home-service-dot-active');
+          dot.classList.remove('industry-dot-active');
         }
       });
     };
@@ -279,6 +283,10 @@ document.addEventListener('DOMContentLoaded', function() {
   };
 
   // Initialize testimonials dots
-  initHomeServiceTestimonialsDots();
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTestimonialsDots);
+  } else {
+    initTestimonialsDots();
+  }
 });
 

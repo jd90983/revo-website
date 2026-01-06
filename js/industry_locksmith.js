@@ -54,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
         '.locksmith-stats-grid, ' +
         '.locksmith-testimonials-grid, ' +
         '.locksmith-feature-list, ' +
+        '.locksmith-smart-evolution-list, ' +
         '.locksmith-bullet-list, ' +
         '.locksmith-timeline'
       );
@@ -65,6 +66,8 @@ document.addEventListener('DOMContentLoaded', function() {
           '.locksmith-stat, ' +
           '.locksmith-testimonial-card, ' +
           '.locksmith-feature-item, ' +
+          '.locksmith-smart-evolution-item, ' +
+          '.locksmith-smart-evolution-list li, ' +
           '.locksmith-bullet-list li, ' +
           '.locksmith-timeline-item'
         );
@@ -86,6 +89,8 @@ document.addEventListener('DOMContentLoaded', function() {
                   '.locksmith-stat, ' +
                   '.locksmith-testimonial-card, ' +
                   '.locksmith-feature-item, ' +
+                  '.locksmith-smart-evolution-item, ' +
+                  '.locksmith-smart-evolution-list li, ' +
                   '.locksmith-bullet-list li, ' +
                   '.locksmith-timeline-item'
                 );

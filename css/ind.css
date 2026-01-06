@@ -588,6 +588,13 @@ main#main-content > section {
   opacity: 0;
   transition: opacity 0.3s ease;
   cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+a.ind-category-item {
+  text-decoration: none;
+  color: inherit;
 }
 
 .ind-category-item[data-visible="true"] {

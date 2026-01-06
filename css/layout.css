@@ -80,10 +80,10 @@
 }
 
 .navbar-menu a {
-  font-family: 'Lexend Deca', sans-serif;
-  font-size: 16px; /* EXACT: 16px */
-  font-weight: 400; /* EXACT: Regular */
-  line-height: 1.5; /* EXACT: 1.5 */
+  font-family: var(--font-body);
+  font-size: var(--text-regular);
+  font-weight: var(--font-regular);
+  line-height: var(--line-height-relaxed);
   color: #ffffff;
   text-decoration: none;
   white-space: nowrap;
@@ -123,6 +123,8 @@
   z-index: 999;
   margin-top: 0;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
+  will-change: opacity, visibility;
+  transform: translateZ(0); /* Force hardware acceleration */
 }
 
 /* Megamenu visibility is now controlled by JavaScript for delay functionality */
@@ -193,10 +195,10 @@
 }
 
 .megamenu-column-title {
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.5;
+  font-family: var(--font-body);
+  font-weight: var(--font-semibold);
+  font-size: var(--text-tiny);
+  line-height: var(--line-height-relaxed);
   color: #0A0B0C;
   margin: 0;
   padding: 0;
@@ -219,9 +221,10 @@
   padding: 10px 12px;
   margin: 0 -12px;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: background-color 0.2s ease;
   border-radius: 8px;
   min-height: auto;
+  transform: translateZ(0); /* Force hardware acceleration */
 }
 
 .megamenu-item:hover {
@@ -266,10 +269,10 @@
 }
 
 .megamenu-item-title {
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: var(--font-body);
+  font-weight: var(--font-medium);
+  font-size: var(--text-regular);
+  line-height: var(--line-height-relaxed);
   color: #0A0B0C;
   margin: 0;
   white-space: pre-wrap;
@@ -277,20 +280,20 @@
 
 .megamenu-item-subtitle {
   display: none;
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
+  font-family: var(--font-body);
+  font-weight: var(--font-regular);
+  font-size: var(--text-small);
+  line-height: var(--line-height-relaxed);
   color: #666666;
   margin: 0;
   white-space: pre-wrap;
 }
 
 .megamenu-more {
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.5;
+  font-family: var(--font-body);
+  font-weight: var(--font-semibold);
+  font-size: var(--text-small);
+  line-height: var(--line-height-relaxed);
   color: #0f5ad7;
   text-align: left;
   margin: 16px 0 0 0;
@@ -331,28 +334,28 @@
 }
 
 .megamenu-footer-title {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.4;
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  font-size: var(--text-large);
+  line-height: var(--line-height-normal);
   color: #0A0B0C;
   margin: 0;
 }
 
 .megamenu-footer-description {
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.5;
+  font-family: var(--font-body);
+  font-weight: var(--font-regular);
+  font-size: var(--text-small);
+  line-height: var(--line-height-relaxed);
   color: #666666;
   margin: 0;
 }
 
 .megamenu-footer-button {
-  font-family: 'Lexend Deca', sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
+  font-family: var(--font-body);
+  font-weight: var(--font-medium);
+  font-size: var(--text-regular);
+  line-height: var(--line-height-relaxed);
   color: #0A0B0C;
   background: rgba(10, 11, 12, 0.05);
   border: none;
@@ -499,7 +502,7 @@
   margin-bottom: 24px;
   padding: 0 16px 0 44px;
   font-family: var(--font-body);
-  font-size: 14px;
+  font-size: var(--text-small);
   color: rgba(255, 255, 255, 0.4);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='rgba(255,255,255,0.4)'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z' /%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -527,8 +530,8 @@
   align-items: center;
   padding: 14px 16px;
   font-family: var(--font-heading);
-  font-size: 16px;
-  font-weight: 500;
+  font-size: var(--text-regular);
+  font-weight: var(--font-medium);
   color: #ffffff;
   text-decoration: none;
   background: transparent;
@@ -602,8 +605,8 @@
 
 .mobile-menu-category {
   font-family: var(--font-body);
-  font-size: 11px;
-  font-weight: 600;
+  font-size: var(--text-tiny);
+  font-weight: var(--font-semibold);
   color: rgba(255, 255, 255, 0.3);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -627,8 +630,8 @@
 .mobile-menu-submenu a {
   display: block;
   padding: 10px 16px;
-  font-size: 15px;
-  font-weight: 400;
+  font-size: var(--text-regular);
+  font-weight: var(--font-regular);
   color: rgba(255, 255, 255, 0.7);
   border-radius: 10px;
   text-decoration: none;
@@ -652,8 +655,8 @@
   margin-top: 32px;
   padding: 16px !important;
   font-family: var(--font-body);
-  font-size: 15px;
-  font-weight: 600;
+  font-size: var(--text-regular);
+  font-weight: var(--font-semibold);
   color: #ffffff !important;
   text-decoration: none;
   background: rgba(255, 255, 255, 0.05) !important;
@@ -704,8 +707,8 @@
   color: #ffffff;
   text-decoration: none;
   font-family: var(--font-body);
-  font-size: 15px;
-  font-weight: 500;
+  font-size: var(--text-regular);
+  font-weight: var(--font-medium);
   transition: background 0.2s ease;
 }
 
@@ -728,8 +731,8 @@
   padding: 14px;
   border-radius: 12px;
   font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 600;
+  font-size: var(--text-small);
+  font-weight: var(--font-semibold);
   cursor: pointer;
   transition: all 0.2s ease;
 }
@@ -741,8 +744,8 @@
   padding: 14px;
   border-radius: 12px;
   font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 600;
+  font-size: var(--text-small);
+  font-weight: var(--font-semibold);
   cursor: pointer;
   transition: all 0.2s ease;
   box-shadow: 0 4px 12px rgba(15, 90, 215, 0.2);
@@ -774,8 +777,8 @@
   border: none;
   color: rgba(255, 255, 255, 0.6);
   font-family: var(--font-body);
-  font-size: 16px;
-  font-weight: 500;
+  font-size: var(--text-regular);
+  font-weight: var(--font-medium);
   cursor: pointer;
   transition: color 0.2s ease;
 }
@@ -791,8 +794,8 @@
   border-radius: 100px;
   color: #ffffff;
   font-family: var(--font-body);
-  font-size: 16px;
-  font-weight: 500;
+  font-size: var(--text-regular);
+  font-weight: var(--font-medium);
   cursor: pointer;
   transition: background 0.2s ease;
 }
@@ -1044,21 +1047,21 @@ body.mobile-menu-open {
 }
 
 .hero-title {
-  font-size: 72px; /* EXACT: 72px per Figma */
+  font-size: var(--text-h1);
   font-family: var(--font-heading);
   font-weight: var(--font-bold);
-  line-height: 1.2; /* EXACT: 1.2 per Figma */
-  letter-spacing: -0.72px; /* EXACT: -0.72px per Figma */
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--tracking-h1);
   color: #ffffff;
   text-align: center;
   margin-bottom: 24px; /* EXACT: 24px gap to description */
 }
 
 .hero-subtitle {
-  font-size: 18px; /* EXACT: 18px per Figma */
+  font-size: var(--text-large);
   font-family: var(--font-body);
-  font-weight: 400;
-  line-height: 1.5; /* EXACT: 1.5 per Figma */
+  font-weight: var(--font-regular);
+  line-height: var(--line-height-relaxed);
   color: #ffffff;
   text-align: center;
   margin-bottom: 32px; /* EXACT: 32px gap to buttons */
@@ -1201,9 +1204,9 @@ body.mobile-menu-open {
 
 .features-left .tagline {
   font-family: var(--font-body);
-  font-weight: 400; /* Regular font weight */
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: var(--font-regular);
+  font-size: var(--text-regular);
+  line-height: var(--line-height-relaxed);
   color: #e7eefb; /* EXACT: Light blue */
   margin-bottom: 16px;
   display: block;
@@ -1213,9 +1216,9 @@ body.mobile-menu-open {
 .features-left h2 {
   font-family: var(--font-heading);
   font-weight: var(--font-bold);
-  font-size: 52px; /* EXACT: 52px per Figma */
-  line-height: 1.2;
-  letter-spacing: -0.52px; /* EXACT: -0.52px */
+  font-size: var(--text-h2);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--tracking-h2);
   color: #ffffff;
   margin: 0;
   text-align: left;
@@ -1302,9 +1305,9 @@ body.mobile-menu-open {
 
 .features-description p {
   font-family: var(--font-body);
-  font-weight: 400;
-  font-size: 18px; /* EXACT: 18px */
-  line-height: 1.5;
+  font-weight: var(--font-regular);
+  font-size: var(--text-large);
+  line-height: var(--line-height-relaxed);
   color: #ffffff;
   margin: 0 0 18px 0;
   text-align: left;
@@ -1406,18 +1409,18 @@ body.mobile-menu-open {
 .features-cards-container .feature-card h3 {
   font-family: var(--font-heading);
   font-weight: var(--font-bold);
-  font-size: 22px; /* EXACT: 22px */
-  line-height: 1.4;
-  letter-spacing: -0.22px; /* EXACT: -0.22px */
+  font-size: var(--text-h5);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--tracking-h5);
   color: #ffffff;
   margin: 0;
 }
 
 .features-cards-container .feature-card p {
   font-family: var(--font-body);
-  font-weight: 400;
-  font-size: 16px; /* EXACT: 16px */
-  line-height: 1.5;
+  font-weight: var(--font-regular);
+  font-size: var(--text-regular);
+  line-height: var(--line-height-relaxed);
   color: #ffffff;
   margin: 0;
 }

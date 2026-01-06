@@ -8,16 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
   const mobileMenuClose = document.getElementById('mobileMenuClose');
 
-  // Debug: Check if elements are found
-  console.log('Mobile menu elements:', {
-    toggle: mobileMenuToggle,
-    overlay: mobileMenuOverlay,
-    close: mobileMenuClose
-  });
-
   // Function to open mobile menu
   function openMobileMenu() {
-    console.log('Opening mobile menu');
     if (mobileMenuOverlay) {
       // Force display with inline styles to override any CSS - DARK THEME
       mobileMenuOverlay.style.cssText = `
@@ -46,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Function to close mobile menu
   function closeMobileMenu() {
-    console.log('Closing mobile menu');
     if (mobileMenuOverlay) {
       // Reset inline styles
       mobileMenuOverlay.style.cssText = '';
@@ -65,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
     mobileMenuToggle.addEventListener('click', (e) => {
       e.preventDefault();
       e.stopPropagation();
-      console.log('Hamburger clicked');
       if (mobileMenuOverlay && mobileMenuOverlay.classList.contains('active')) {
         closeMobileMenu();
       } else {
@@ -190,8 +180,6 @@ document.addEventListener('click', (e) => {
     e.preventDefault();
     e.stopPropagation();
     
-    console.log('Get Started button clicked - scrolling to form');
-    
     // Find the form section
     const formSection = document.querySelector('.get-started-form-section') || 
                        document.getElementById('get-started-form-template-container');
@@ -213,71 +201,109 @@ document.addEventListener('click', (e) => {
         const firstInput = formSection.querySelector('input');
         if (firstInput) firstInput.focus();
       }, 800);
-    } else {
-      console.log('Form section not found');
     }
   }
 });
 
-// Megamenu with delay on close
+// Megamenu with delay on close - Optimized for desktop, tablet, and mobile
 document.addEventListener('DOMContentLoaded', () => {
   const megaMenuItems = document.querySelectorAll('.navbar-menu-item-with-mega');
+  const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
   
+  // Helper function to open megamenu
+  function openMegamenu(megamenu, closeTimeoutRef) {
+    if (closeTimeoutRef.current) {
+      clearTimeout(closeTimeoutRef.current);
+      closeTimeoutRef.current = null;
+    }
+    megamenu.style.opacity = '1';
+    megamenu.style.visibility = 'visible';
+    megamenu.style.pointerEvents = 'all';
+  }
+
+  // Helper function to close megamenu
+  function closeMegamenu(megamenu, closeTimeoutRef, delay = 300) {
+    closeTimeoutRef.current = setTimeout(() => {
+      megamenu.style.opacity = '0';
+      megamenu.style.visibility = 'hidden';
+      megamenu.style.pointerEvents = 'none';
+      closeTimeoutRef.current = null;
+    }, delay);
+  }
+  
+  // Track open state for each megamenu (for touch devices)
+  const megamenuStates = new Map();
+
   megaMenuItems.forEach(item => {
     const menuLink = item.querySelector('a');
     const megamenu = item.querySelector('.megamenu');
-    let closeTimeout = null;
+    const closeTimeout = { current: null };
 
     if (menuLink && megamenu) {
-      // Open megamenu on hover over link
-      menuLink.addEventListener('mouseenter', () => {
-        // Clear any pending close timeout
-        if (closeTimeout) {
-          clearTimeout(closeTimeout);
-          closeTimeout = null;
-        }
-        // Open immediately
-        megamenu.style.opacity = '1';
-        megamenu.style.visibility = 'visible';
-        megamenu.style.pointerEvents = 'all';
-      });
+      // Desktop: Hover interactions
+      if (!isTouchDevice) {
+        // Open megamenu on hover over link
+        menuLink.addEventListener('mouseenter', () => {
+          openMegamenu(megamenu, closeTimeout);
+        });
 
-      // Close megamenu with delay when leaving link
-      menuLink.addEventListener('mouseleave', () => {
-        // Set timeout to close after 0.3 seconds
-        closeTimeout = setTimeout(() => {
-          megamenu.style.opacity = '0';
-          megamenu.style.visibility = 'hidden';
-          megamenu.style.pointerEvents = 'none';
-          closeTimeout = null;
-        }, 300);
-      });
+        // Close megamenu with delay when leaving link
+        menuLink.addEventListener('mouseleave', () => {
+          closeMegamenu(megamenu, closeTimeout, 300);
+        });
 
-      // Keep megamenu open when hovering over it
-      megamenu.addEventListener('mouseenter', () => {
-        // Clear any pending close timeout
-        if (closeTimeout) {
-          clearTimeout(closeTimeout);
-          closeTimeout = null;
-        }
-        // Keep it open
-        megamenu.style.opacity = '1';
-        megamenu.style.visibility = 'visible';
-        megamenu.style.pointerEvents = 'all';
-      });
+        // Keep megamenu open when hovering over it
+        megamenu.addEventListener('mouseenter', () => {
+          openMegamenu(megamenu, closeTimeout);
+        });
 
-      // Close megamenu with delay when leaving megamenu
-      megamenu.addEventListener('mouseleave', () => {
-        // Set timeout to close after 0.5 seconds
-        closeTimeout = setTimeout(() => {
-          megamenu.style.opacity = '0';
-          megamenu.style.visibility = 'hidden';
-          megamenu.style.pointerEvents = 'none';
-          closeTimeout = null;
-        }, 500);
-      });
+        // Close megamenu with delay when leaving megamenu
+        megamenu.addEventListener('mouseleave', () => {
+          closeMegamenu(megamenu, closeTimeout, 500);
+        });
+      } else {
+        // Tablet/Touch: Click/tap interactions
+        megamenuStates.set(item, false);
+
+        menuLink.addEventListener('click', (e) => {
+          // Only prevent default if we're on a touch device and menu is not a direct link
+          if (isTouchDevice && window.innerWidth > 767) {
+            e.preventDefault();
+            const isOpen = megamenuStates.get(item);
+            const newState = !isOpen;
+            megamenuStates.set(item, newState);
+            
+            if (newState) {
+              openMegamenu(megamenu, closeTimeout);
+            } else {
+              closeMegamenu(megamenu, closeTimeout, 0);
+            }
+          }
+        });
+
+        // Close when clicking outside (using event delegation)
+        item.addEventListener('click', (e) => {
+          if (e.target === menuLink || menuLink.contains(e.target)) {
+            return; // Let the click handler above handle it
+          }
+        });
+      }
     }
   });
+
+  // Global click handler to close megamenu when clicking outside (for touch devices)
+  if (isTouchDevice) {
+    document.addEventListener('click', (e) => {
+      megaMenuItems.forEach(item => {
+        if (!item.contains(e.target) && megamenuStates.get(item)) {
+          const megamenu = item.querySelector('.megamenu');
+          const closeTimeout = { current: null };
+          megamenuStates.set(item, false);
+          closeMegamenu(megamenu, closeTimeout, 0);
+        }
+      });
+    }, true);
+  }
 
   // Footer Dropdowns for Mobile/Tablet
   const footerDropdowns = document.querySelectorAll('.footer-dropdown-toggle');

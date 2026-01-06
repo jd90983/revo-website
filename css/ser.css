@@ -552,6 +552,21 @@ main > section {
   overflow: visible;
 }
 
+.ser-ai-receptionists-original .ser-ai-content-right {
+  flex: 1;
+  height: auto;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
 .ser-ai-phone-mockup-container {
   position: relative;
   width: 100%;
@@ -559,6 +574,22 @@ main > section {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+
+.ser-ai-receptionists-original .ser-ai-phone-mockup-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.ser-ai-receptionists .ser-ai-circular-wave-pattern {
+  display: none !important;
 }
 
 .ser-ai-circular-wave-pattern {
@@ -613,6 +644,7 @@ main > section {
 }
 
 /* Spline Viewer Styles */
+/* Base spline viewer - Desktop size */
 .ser-ai-spline-viewer {
   position: relative;
   width: 700px;
@@ -627,13 +659,71 @@ main > section {
   margin-right: 0;
 }
 
+/* Desktop animation - 657x700px */
+.ser-ai-spline-desktop {
+  width: 657px;
+  height: 700px;
+  min-width: 657px;
+  min-height: 700px;
+  max-width: 657px;
+  max-height: 700px;
+}
+
+/* Mobile animation - 300x300px (hidden on desktop, shown on mobile/tablet) */
+.ser-ai-spline-mobile {
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+/* For ser-ai-receptionists-original section - desktop animation 657x700px */
+.ser-ai-receptionists-original .ser-ai-spline-desktop {
+  width: 657px;
+  height: 700px;
+  min-width: 657px;
+  min-height: 700px;
+  max-width: 657px;
+  max-height: 700px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  left: 0;
+  right: 0;
+  transform: none;
+}
+
+/* For ser-ai-receptionists-original section - mobile animation is 300x300px */
+.ser-ai-receptionists-original .ser-ai-spline-mobile {
+  width: 300px;
+  height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+  max-width: 300px;
+  max-height: 300px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  left: 0;
+  right: 0;
+  transform: none;
+}
+
 /* Desktop Animation - Show only on desktop */
 .ser-ai-spline-desktop {
   display: block;
 }
 
 .ser-ai-spline-mobile {
-  display: none;
+  display: none !important;
+}
+
+/* Ensure mobile animation is hidden on desktop view */
+.ser-ai-receptionists .ser-ai-spline-mobile,
+.ser-ai-receptionists-original .ser-ai-spline-mobile {
+  display: none !important;
 }
 
 .ser-ai-receptionists:not(.ser-ai-receptionists-original) .ser-ai-phone-mockup-image {
@@ -1435,12 +1525,12 @@ main > section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 20px;
+  padding: 10px 24px;
   box-sizing: border-box;
   white-space: nowrap;
-  flex: 1;
-  min-width: 0;
-  max-width: 100%;
+  flex-shrink: 0;
+  width: auto;
+  min-width: 140px;
 }
 
 .ser-how-card-image {
@@ -2918,6 +3008,12 @@ main > section {
     gap: 0 !important;
   }
 
+  .ser-ai-receptionists-original .ser-ai-content-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
   .ser-ai-content-left {
     display: contents !important;
   }
@@ -2946,7 +3042,7 @@ main > section {
   .ser-ai-phone-mockup-container {
     order: 3 !important;
     width: 100% !important;
-    margin-bottom: var(--space-lg) !important;
+    margin-bottom: var(--space-2xl) !important;
   }
   
   .ser-ai-spline-viewer {
@@ -2957,6 +3053,7 @@ main > section {
     order: 4 !important;
     width: 100% !important;
     gap: 12px !important;
+    margin-top: var(--space-md) !important;
   }
 
   .ser-ai-phone-mockup-image {
@@ -2974,34 +3071,66 @@ main > section {
   .ser-ai-spline-mobile {
     display: block !important;
     margin: 0 auto !important;
-  }
-
-  .ser-ai-spline-viewer {
-    width: 400px !important;
-    height: 400px !important;
-    min-width: 400px !important;
-    min-height: 400px !important;
-    max-width: 400px !important;
-    max-height: 400px !important;
-    margin: 0 auto !important;
+    width: 300px !important;
+    height: 300px !important;
+    min-width: 300px !important;
+    min-height: 300px !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
     margin-left: auto !important;
     margin-right: auto !important;
   }
   
-  .ser-ai-phone-mockup-container {
+  /* Container already defined above - ensure visibility */
+  .ser-ai-receptionists .ser-ai-content-right {
+    display: contents !important;
+    visibility: visible !important;
+  }
+
+  .ser-ai-receptionists-original .ser-ai-content-right {
+    display: contents !important;
+    visibility: visible !important;
+  }
+  
+  /* Ensure phone mockup container is visible and displays animation */
+  .ser-ai-receptionists-original .ser-ai-phone-mockup-container {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
     overflow: visible !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
-  
-  .ser-ai-receptionists .ser-ai-content-right {
+
+  .ser-ai-receptionists-original .ser-ai-spline-viewer {
+    width: 300px !important;
+    height: 300px !important;
+    min-width: 300px !important;
+    min-height: 300px !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+  }
+
+  .ser-ai-receptionists-original .ser-ai-phone-mockup-container {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
-    max-width: 100% !important;
+    width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
     overflow: visible !important;
+  }
+
+  .ser-ai-receptionists-original .ser-ai-content-right {
+    overflow: hidden !important;
+    position: relative !important;
+    box-sizing: border-box !important;
   }
 
   .ser-intelligent-features-wrapper {
@@ -3305,6 +3434,17 @@ main > section {
   .ser-experience-content {
     flex-direction: column;
     gap: 32px;
+    text-align: center !important;
+  }
+
+  .ser-experience-content .ser-experience-heading,
+  .ser-experience-content .ser-experience-description,
+  .ser-experience-content p {
+    text-align: center !important;
+  }
+
+  .ser-experience-content .ser-experience-left {
+    align-items: center !important;
   }
 
   /* Benefits Section - Tablet - Align with Experience Power */
@@ -3659,12 +3799,26 @@ main > section {
   .ser-ai-receptionists {
     padding: 60px 0;
   }
+
+  .ser-ai-receptionists-original {
+    padding: 60px 0;
+  }
   
   .ser-ai-receptionists .ser-section-container {
     padding: 0 var(--page-padding-mobile);
   }
 
+  .ser-ai-receptionists-original .ser-section-container {
+    padding: 0 var(--page-padding-mobile);
+  }
+
   .ser-ai-receptionists .ser-ai-content-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
+  .ser-ai-receptionists-original .ser-ai-content-wrapper {
     display: flex !important;
     flex-direction: column !important;
     gap: 0 !important;
@@ -3700,6 +3854,7 @@ main > section {
   .ser-ai-content-right {
     display: contents !important;
     order: 3 !important;
+    visibility: visible !important;
   }
 
   .ser-ai-phone-mockup-container {
@@ -3708,11 +3863,18 @@ main > section {
     height: auto !important;
     padding: 0 20px 20px 20px !important;
     margin-top: var(--space-lg) !important;
-    margin-bottom: var(--space-lg) !important;
+    margin-bottom: var(--space-2xl) !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    overflow: visible !important;
+    visibility: visible !important;
   }
   
   .ser-ai-spline-viewer {
     order: 3 !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
 
   .ser-ai-actions {
@@ -3721,6 +3883,7 @@ main > section {
     gap: 12px !important;
     display: flex !important;
     flex-direction: column !important;
+    margin-top: var(--space-md) !important;
   }
 
   /* Removed ser-ai-btn styles - now using features-buttons */
@@ -3737,39 +3900,80 @@ main > section {
   /* Hide desktop animation, show mobile animation on mobile */
   .ser-ai-spline-desktop {
     display: none !important;
+    visibility: hidden !important;
   }
   
   .ser-ai-spline-mobile {
     display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
     margin: 0 auto !important;
-  }
-
-  .ser-ai-spline-viewer {
-    width: 400px !important;
-    height: 400px !important;
-    min-width: 400px !important;
-    min-height: 400px !important;
-    max-width: 400px !important;
-    max-height: 400px !important;
-    margin: 0 auto !important;
+    width: 300px !important;
+    height: 300px !important;
+    min-width: 300px !important;
+    min-height: 300px !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    position: relative !important;
+    z-index: 1 !important;
   }
   
-  .ser-ai-phone-mockup-container {
+  /* When using display: contents, ensure child elements are visible */
+  .ser-ai-receptionists .ser-ai-content-right,
+  .ser-ai-receptionists-original .ser-ai-content-right {
+    visibility: visible !important;
+  }
+
+  .ser-ai-receptionists-original .ser-ai-spline-viewer {
+    width: 300px !important;
+    height: 300px !important;
+    min-width: 300px !important;
+    min-height: 300px !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    left: 0 !important;
+    right: 0 !important;
+    transform: none !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  
+  /* Ensure mobile animation is visible in original section on mobile */
+  .ser-ai-receptionists-original .ser-ai-spline-mobile {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 300px !important;
+    height: 300px !important;
+    min-width: 300px !important;
+    min-height: 300px !important;
+    max-width: 300px !important;
+    max-height: 300px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    z-index: 1 !important;
+  }
+
+  .ser-ai-receptionists-original .ser-ai-phone-mockup-container {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     width: 100% !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
     overflow: visible !important;
+    visibility: visible !important;
+    opacity: 1 !important;
   }
-  
-  .ser-ai-receptionists .ser-ai-content-right {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    max-width: 100% !important;
-    overflow: visible !important;
+
+  .ser-ai-receptionists-original .ser-ai-content-right {
+    overflow: hidden !important;
+    position: relative !important;
+    box-sizing: border-box !important;
   }
 
   /* Reliable & Secure section image - zoom out for mobile */
@@ -3924,17 +4128,25 @@ main > section {
     flex-direction: column;
     gap: 24px;
     padding: 0;
-    align-items: flex-start;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .ser-experience-content .ser-experience-heading,
+  .ser-experience-content .ser-experience-description,
+  .ser-experience-content p {
+    text-align: center !important;
   }
 
   .ser-experience-left {
     width: 100%;
+    align-items: center !important;
   }
 
   .ser-experience-heading {
     font-size: 28px;
     line-height: 1.2;
-    text-align: left;
+    text-align: center !important;
     width: 100%;
   }
 
@@ -3953,7 +4165,7 @@ main > section {
   .ser-experience-description {
     font-size: 14px;
     line-height: 1.5;
-    text-align: left;
+    text-align: center !important;
     margin: 0;
   }
 
