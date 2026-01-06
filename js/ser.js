@@ -183,7 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, observerOptions);
 
   // Observe all sections except hero and intelligent banner (handled separately)
-  const sections = document.querySelectorAll('.ser-ai-receptionists, .ser-intelligent-communication, .ser-advanced-solutions, .ser-how-it-works, .ser-benefits, .ser-tailored, .ser-reliability, .ser-get-started, .ser-testimonial, .ser-transform-cta, .ser-faqs, .ser-experience-power');
+  const sections = document.querySelectorAll('.ser-ai-receptionists, .ser-intelligent-communication, .ser-advanced-solutions, .ser-how-it-works, .ser-benefits, .ser-tailored, .ser-reliability, .ser-get-started, .ser-testimonial, .ser-transform-cta, .ser-faqs, .ser-experience-power, .ser-products-section, .ser-features-section');
   
   sections.forEach(section => {
     // Skip sections that are initialized by template loader

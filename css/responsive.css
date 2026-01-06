@@ -13,6 +13,50 @@
     gap: 16px;
   }
 
+  /* Megamenu - Tablet Optimizations */
+  .megamenu {
+    padding: 32px 0;
+    top: 72px; /* Ensure proper positioning on tablet */
+  }
+
+  .megamenu-container {
+    padding: 0 40px;
+    gap: 20px;
+  }
+
+  .megamenu-titles-row {
+    gap: 32px;
+    margin-bottom: 16px;
+  }
+
+  .megamenu-content-row {
+    gap: 32px;
+    flex-wrap: wrap; /* Allow wrapping on smaller tablets */
+  }
+
+  .megamenu-column {
+    flex: 1 1 calc(50% - 16px);
+    min-width: 200px; /* Prevent columns from getting too narrow */
+  }
+
+  .megamenu-footer-content {
+    padding: 0 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .megamenu-footer-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Improve touch targets on tablet */
+  .megamenu-item {
+    min-height: 48px; /* Better touch target size */
+    padding: 12px;
+  }
+
   /* Features Section */
   .features {
     padding: 80px 40px;
@@ -40,7 +84,7 @@
   }
 
   .how-heading {
-    font-size: 42px;
+    font-size: var(--text-h3);
   }
 
   .how-features-row {
@@ -57,7 +101,7 @@
   }
 
   .benefits-heading {
-    font-size: 42px;
+    font-size: var(--text-h3);
   }
 
   .benefits-row {
@@ -536,8 +580,18 @@
 
   /* Mobile Menu styles moved to layout.css */
 
-  /* Hide the old mobile menu */
+  /* Hide the old mobile menu and megamenu */
   .navbar-left .navbar-menu {
+    display: none;
+  }
+
+  /* Hide megamenu on mobile - use mobile menu instead */
+  .megamenu {
+    display: none !important;
+  }
+
+  /* Ensure megamenu doesn't interfere with mobile menu */
+  .navbar-menu-item-with-mega > a::after {
     display: none;
   }
 
@@ -587,7 +641,7 @@
   }
 
   .hero-title {
-    font-size: 48px;
+    font-size: var(--text-h1);
     margin-bottom: 40px !important; /* Increased spacing below title (from 24px desktop) */
   }
 
@@ -857,7 +911,7 @@
   }
 
   .how-heading {
-    font-size: 36px;
+    font-size: var(--text-h4);
   }
 
   .how-description {
@@ -910,7 +964,7 @@
   }
 
   .benefits-heading {
-    font-size: 36px;
+    font-size: var(--text-h4);
   }
 
   .benefits-description {
@@ -1502,7 +1556,7 @@
 /* ===== SMALL MOBILE (max-width: 480px) ===== */
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 40px;
+    font-size: var(--text-h1);
   }
 
   .features-left h2,
@@ -1527,7 +1581,7 @@
   }
 
   .benefits-heading {
-    font-size: 28px;
+    font-size: var(--text-h5);
   }
 
   .benefit-title {
