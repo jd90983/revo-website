@@ -1586,6 +1586,10 @@ a.ind-category-item {
     padding: 80px 40px !important;
   }
 
+  .ind-testimonial-section {
+    padding: 80px 24px !important;
+  }
+
   .ind-home-service-pros-section,
   .ind-professional-businesses-section,
   .ind-success-stories-section,
@@ -1613,6 +1617,7 @@ a.ind-category-item {
   .ind-blog-grid {
     flex-direction: column;
     margin-top: 32px !important;
+    gap: 48px !important;
   }
 
   .ind-section-title-center {
@@ -1639,6 +1644,25 @@ a.ind-category-item {
   .ind-section-title-center .ind-description-center {
     text-align: center !important;
     width: 100% !important;
+  }
+
+  /* Reduce content sizes for success stories section in tablet */
+  .ind-success-stories-section .ind-heading-center {
+    font-size: 36px !important;
+    letter-spacing: -0.36px !important;
+  }
+
+  .ind-success-stories-section .ind-description-center {
+    font-size: 16px !important;
+  }
+
+  .ind-success-stories-section .ind-blog-title {
+    font-size: 22px !important;
+    letter-spacing: -0.22px !important;
+  }
+
+  .ind-success-stories-section .ind-blog-description {
+    font-size: 14px !important;
   }
 
   .ind-feature-section {
@@ -1870,6 +1894,10 @@ a.ind-category-item {
     padding: 60px 24px !important;
   }
 
+  .ind-testimonial-section {
+    padding: 80px 24px !important;
+  }
+
   .ind-home-service-pros-section,
   .ind-professional-businesses-section,
   .ind-success-stories-section,
@@ -1896,6 +1924,25 @@ a.ind-category-item {
   .ind-heading {
     font-size: 36px;
     letter-spacing: -0.36px;
+  }
+
+  /* Reduce content sizes for success stories section in mobile */
+  .ind-success-stories-section .ind-heading-center {
+    font-size: 32px !important;
+    letter-spacing: -0.32px !important;
+  }
+
+  .ind-success-stories-section .ind-description-center {
+    font-size: 15px !important;
+  }
+
+  .ind-success-stories-section .ind-blog-title {
+    font-size: 20px !important;
+    letter-spacing: -0.20px !important;
+  }
+
+  .ind-success-stories-section .ind-blog-description {
+    font-size: 14px !important;
   }
 
   .ind-grid-row {
@@ -2065,6 +2112,7 @@ a.ind-category-item {
 
   .ind-blog-grid {
     margin-top: 24px !important;
+    gap: 48px !important;
   }
 
   .ser-intelligent-banner {

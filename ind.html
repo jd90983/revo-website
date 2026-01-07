@@ -40,6 +40,7 @@
   <link rel="stylesheet" href="css/shared-components.css">
   <link rel="stylesheet" href="css/ind.css">
   <link rel="stylesheet" href="css/ser.css">
+  <link rel="stylesheet" href="css/ser-products.css">
   <link rel="stylesheet" href="css/responsive.css">
 
   <!-- Fonts -->
@@ -308,17 +309,17 @@
             <ul class="mobile-menu-submenu">
               <li><a href="industry_home_service.html">Home Services</a></li>
               <li><a href="industry_locksmith.html">Locksmith</a></li>
-              <li><a href="ind.html">HVAC</a></li>
-              <li><a href="ind.html">Plumbing</a></li>
-              <li><a href="ind.html">Air Duct Cleaning</a></li>
+              <li><a href="industry_hvac.html">HVAC</a></li>
+              <li><a href="industry_plumbing.html">Plumbing</a></li>
+              <li><a href="industry_air_duct_cleaning.html">Air Duct Cleaning</a></li>
             </ul>
             <p class="mobile-menu-category">Professional Businesses</p>
             <ul class="mobile-menu-submenu">
-              <li><a href="ind.html">Healthcare & Medical</a></li>
-              <li><a href="ind.html">Small Business</a></li>
-              <li><a href="ind.html">IT & Technology</a></li>
-              <li><a href="ind.html">Legal</a></li>
-              <li><a href="ind.html">Corporate & Government</a></li>
+              <li><a href="industry_healthcare_medical.html">Healthcare & Medical</a></li>
+              <li><a href="industry_small_business.html">Small Business</a></li>
+              <li><a href="industry_it_technology_communications.html">IT & Technology</a></li>
+              <li><a href="industry_legal.html">Legal</a></li>
+              <li><a href="industry_corporate_government.html">Corporate & Government</a></li>
             </ul>
             <a href="ind.html" class="mobile-menu-view-all">
               View All Industries
@@ -777,70 +778,65 @@
       </section>
     </div>
 
-    <!-- Unleash the Benefits Section -->
-    <section class="ser-benefits animate-in" style="transition: opacity 0.6s, transform 0.6s;">
-      <div class="ser-benefits-background"></div>
-      <div class="ser-section-container">
-        <div class="ser-benefits-header">
-          <div class="ser-benefits-title-wrapper">
-            <p class="ser-tagline">Benefits</p>
-            <div class="ser-benefits-heading-content">
-              <h2 class="ser-section-title">Unleash the Benefits of Revo's <span class="text-primary">AI Answering System</span></h2>
-              <div class="ser-section-description">
-                <p>Give your business a voice that's smart, reliable, and uniquely yours. Revo blends human-like communication with powerful automation — filtering spam, managing multiple calls at once, and keeping your clients connected anytime.</p>
+    <!-- Sticky Products Section Template -->
+    <section class="ser-products-section" style="background: #FFFFFF !important; color: #0A0B0C !important; display: block !important; visibility: visible !important;">
+      <div class="padding-global relative" style="background: #FFFFFF !important; color: #0A0B0C !important;">
+        <div class="container-large">
+          <!-- Header Section -->
+          <div class="ser-benefits-header">
+            <div class="ser-benefits-title-wrapper">
+              <p class="ser-tagline">Benefits</p>
+              <div class="ser-benefits-heading-content">
+                <h2 class="ser-section-title">Unleash the Benefits of Revo's <span class="text-primary">AI Answering System</span></h2>
+                <div class="ser-section-description">
+                  <p>Give your business a voice that's smart, reliable, and uniquely yours. Revo blends human-like communication with powerful automation — filtering spam, managing multiple calls at once, and keeping your clients connected anytime.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="benefits-modern-actions">
-            <button class="benefits-modern-btn-primary">Get Started</button>
-            <button class="benefits-modern-btn-secondary">Book a Demo</button>
-          </div>
-        </div>
-        <div class="ser-benefits-content">
-          <div class="ser-benefits-image">
-            <img id="ser-benefits-image" src="images/services/24_7-Availability.png" alt="Revo AI Receptionist app interface" class="ser-benefits-phone-image">
-          </div>
-          <div class="ser-benefits-accordion">
-            <div class="ser-benefits-accordion-item active" data-image="images/services/24_7-Availability.png">
-              <div class="ser-benefits-accordion-header">
-                <h3 class="ser-benefits-accordion-title">24/7 Availability</h3>
-              </div>
-              <div class="ser-benefits-accordion-content">
-                <p>Never miss an opportunity.</p>
-                <p>Revo's AI receptionists are always online — ready to greet customers, handle inquiries, and keep your business running smoothly day or night.</p>
-                <p>&nbsp;</p>
-                <ul class="ser-benefits-check-list">
-                  <li>✅ Keeps your business responsive 24/7</li>
-                  <li>✅ Captures after-hours opportunities automatically</li>
-                </ul>
-              </div>
+            <div class="benefits-modern-actions">
+              <button class="benefits-modern-btn-primary">Get Started</button>
+              <button class="benefits-modern-btn-secondary">Book a Demo</button>
             </div>
-            <div class="ser-benefits-accordion-item" data-image="images/services/Smart Call-Management.png">
-              <div class="ser-benefits-accordion-header">
-                <h3 class="ser-benefits-accordion-title">Smart Call Management</h3>
+          </div>
+          
+          <!-- Products/Features Content -->
+          <div class="products_wr">
+            <div class="products-content">
+              <!-- Left Side: Items List -->
+              <div class="products-left">
+                <!-- Item 1 -->
+                <div class="products-item active" data-product="24-7-availability" data-image="images/services/24_7-Availability.png">
+                  <h2 class="products-title">24/7 Availability</h2>
+                  <p class="products-description">Never miss an opportunity. Revo's AI receptionists are always online — ready to greet customers, handle inquiries, and keep your business running smoothly day or night.</p>
+                  <div class="products-actions">
+                    <button class="benefits-modern-btn-secondary">Book a Demo</button>
+                  </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="products-item" data-product="smart-call-management" data-image="images/services/Smart Call-Management.png">
+                  <h2 class="products-title">Smart Call Management</h2>
+                  <p class="products-description">Handle multiple calls with ease. Revo filters spam, prioritizes real customers, and prevents double bookings — ensuring every call is handled efficiently and every client feels heard.</p>
+                  <div class="products-actions">
+                    <button class="benefits-modern-btn-secondary">Book a Demo</button>
+                  </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="products-item" data-product="ai-caller-memory" data-image="images/services/AI-Caller-Memory-&-Context-Recall.png">
+                  <h2 class="products-title">AI Caller Memory & Context Recall</h2>
+                  <p class="products-description">Because your customers deserve to be remembered. Revo remembers returning callers — not just their name, but their preferences, past requests, and communication tone.</p>
+                  <div class="products-actions">
+                    <button class="benefits-modern-btn-secondary">Book a Demo</button>
+                  </div>
+                </div>
               </div>
-              <div class="ser-benefits-accordion-content">
-                <p>Handle multiple calls with ease. Revo filters spam, prioritizes real customers, and prevents double bookings — ensuring every call is handled efficiently and every client feels heard.</p>
-                <p>&nbsp;</p>
-                <ul class="ser-benefits-check-list">
-                  <li>✅ Filters spam and unwanted calls automatically</li>
-                  <li>✅ Manages multiple callers simultaneously</li>
-                  <li>✅ Prevents double bookings and missed opportunities</li>
-                </ul>
-              </div>
-            </div>
-            <div class="ser-benefits-accordion-item" data-image="images/services/AI-Caller-Memory-&-Context-Recall.png">
-              <div class="ser-benefits-accordion-header">
-                <h3 class="ser-benefits-accordion-title">AI Caller Memory & Context Recall</h3>
-              </div>
-              <div class="ser-benefits-accordion-content">
-                <p>Because your customers deserve to be remembered.</p>
-                <p>Revo could remember returning callers — not just their name, but their preferences, past requests, and communication tone.</p>
-                <p>&nbsp;</p>
-                <ul class="ser-benefits-check-list">
-                  <li>✅ Builds loyalty and human-like trust.</li>
-                  <li>✅ Reduces friction for repeat customers.</li>
-                </ul>
+              
+              <!-- Right Side: Image Display -->
+              <div class="products-right">
+                <div class="products-image-container">
+                  <img id="industry-products-image" src="images/services/24_7-Availability.png" alt="24/7 Availability" class="products-image">
+                </div>
               </div>
             </div>
           </div>
@@ -848,72 +844,65 @@
       </div>
     </section>
 
-    <!-- Features Section - ser-benefits-duplicate design -->
-    <section class="ser-benefits ser-benefits-duplicate animate-in" style="transition: opacity 0.6s, transform 0.6s;">
-      <div class="ser-benefits-background"></div>
-      <div class="ser-section-container">
-        <div class="ser-benefits-header">
-          <div class="ser-benefits-title-wrapper">
-            <p class="ser-tagline">Features</p>
-            <div class="ser-benefits-heading-content">
-              <h2 class="ser-section-title">Intelligent Communication Tailored to <span class="text-primary">Every Business</span></h2>
-              <div class="ser-section-description">
-                <p>When you get started with Revo, your setup goes beyond automation — it’s personalization. We design every interaction to match your business’s tone, response timing, and customer experience goals. From call handling to scheduling, every detail reflects your brand’s unique voice.</p>
+    <!-- Features Section with Dark Theme -->
+    <section class="ser-features-section" style="background: #0A0B0C !important; color: #FFFFFF !important; display: block !important; visibility: visible !important;">
+      <div class="padding-global relative" style="background: #0A0B0C !important; color: #FFFFFF !important;">
+        <div class="container-large">
+          <!-- Header Section -->
+          <div class="ser-benefits-header">
+            <div class="ser-benefits-title-wrapper">
+              <p class="ser-tagline">Features</p>
+              <div class="ser-benefits-heading-content">
+                <h2 class="ser-section-title">Intelligent Communication Tailored to <span class="text-primary">Every Business</span></h2>
+                <div class="ser-section-description">
+                  <p>When you get started with Revo, your setup goes beyond automation — it's personalization. We design every interaction to match your business's tone, response timing, and customer experience goals. From call handling to scheduling, every detail reflects your brand's unique voice.</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="features-buttons ser-ai-actions">
-            <button class="btn-primary-large">Get Started</button>
-            <button class="btn-outline-white">Book a Demo</button>
-          </div>
-        </div>
-        <div class="ser-benefits-content">
-          <div class="ser-benefits-image">
-            <img id="ser-benefits-image-duplicate" src="images/services/Personalized AI Reception.png" alt="Revo AI Receptionist app interface" class="ser-benefits-phone-image">
-          </div>
-          <div class="ser-benefits-accordion">
-            <div class="ser-benefits-accordion-item active" data-image="images/services/Personalized AI Reception.png">
-              <div class="ser-benefits-accordion-header">
-                <h3 class="ser-benefits-accordion-title">Personalized AI Reception</h3>
-              </div>
-              <div class="ser-benefits-accordion-content">
-                <p>Choose how your business sounds.</p>
-                <p>Revo lets you customize your virtual receptionist — from voice tone to personality. Whether you prefer a friendly, cheerful tone or a calm, professional presence, your AI sounds just like your brand.</p>
-                <p>&nbsp;</p>
-                <ul class="ser-benefits-check-list">
-                  <li>✅ Customizable voice tone and speaking style</li>
-                  <li>✅ Personality options to match your brand identity</li>
-                </ul>
-              </div>
+            <div class="benefits-modern-actions">
+              <button class="benefits-modern-btn-primary">Get Started</button>
+              <button class="benefits-modern-btn-secondary">Book a Demo</button>
             </div>
-            <div class="ser-benefits-accordion-item" data-image="images/services/Smart Response Timing.png">
-              <div class="ser-benefits-accordion-header">
-                <h3 class="ser-benefits-accordion-title">Smart Response Timing</h3>
+          </div>
+          
+          <!-- Features Content -->
+          <div class="products_wr">
+            <div class="products-content">
+              <!-- Left Side: Items List -->
+              <div class="products-left">
+                <!-- Item 1 -->
+                <div class="products-item active" data-product="personalized-ai-reception" data-image="images/services/Personalized AI Reception.png">
+                  <h2 class="products-title">Personalized AI Reception</h2>
+                  <p class="products-description">Choose how your business sounds. Revo lets you customize your virtual receptionist — from voice tone to personality. Whether you prefer a friendly, cheerful tone or a calm, professional presence, your AI sounds just like your brand.</p>
+                  <div class="products-actions">
+                    <button class="benefits-modern-btn-secondary">Book a Demo</button>
+                  </div>
+                </div>
+                
+                <!-- Item 2 -->
+                <div class="products-item" data-product="smart-response-timing" data-image="images/services/Smart Response Timing.png">
+                  <h2 class="products-title">Smart Response Timing</h2>
+                  <p class="products-description">Answer every call on your terms. Define exactly when Revo picks up — instantly, after a few rings, or based on time of day. You stay in control while your customers always get a professional, prompt response.</p>
+                  <div class="products-actions">
+                    <button class="benefits-modern-btn-secondary">Book a Demo</button>
+                  </div>
+                </div>
+                
+                <!-- Item 3 -->
+                <div class="products-item" data-product="detailed-call-reports" data-image="images/services/Detailed Call Reports.png">
+                  <h2 class="products-title">Detailed Call Reports</h2>
+                  <p class="products-description">Turn every call into actionable insight. Revo's detailed call analytics help you track performance, monitor customer trends, and identify opportunities for improvement — giving you the clarity to make smarter, data-driven business decisions.</p>
+                  <div class="products-actions">
+                    <button class="benefits-modern-btn-secondary">Book a Demo</button>
+                  </div>
+                </div>
               </div>
-              <div class="ser-benefits-accordion-content">
-                <p>Answer every call on your terms.</p>
-                <p>Define exactly when Revo picks up — instantly, after a few rings, or based on time of day. You stay in control while your customers always get a professional, prompt response.</p>
-                <p>&nbsp;</p>
-                <ul class="ser-benefits-check-list">
-                  <li>✅ Control when and how Revo answers calls</li>
-                  <li>✅ Ensure every caller gets a timely, human-like response</li>
-                  <li>✅ Maintain a smooth and predictable customer experience</li>
-                </ul>
-              </div>
-            </div>
-            <div class="ser-benefits-accordion-item" data-image="images/services/Detailed Call Reports.png">
-              <div class="ser-benefits-accordion-header">
-                <h3 class="ser-benefits-accordion-title">Detailed Call Reports</h3>
-              </div>
-              <div class="ser-benefits-accordion-content">
-                <p>Turn every call into actionable insight.</p>
-                <p>Revo's detailed call analytics help you track performance, monitor customer trends, and identify opportunities for improvement — giving you the clarity to make smarter, data-driven business decisions.</p>
-                <p>&nbsp;</p>
-                <ul class="ser-benefits-check-list">
-                  <li>✅ Track call volume, performance, and caller patterns</li>
-                  <li>✅ Identify peak hours and service opportunities</li>
-                  <li>✅ Make informed decisions backed by AI insights</li>
-                </ul>
+              
+              <!-- Right Side: Image Display -->
+              <div class="products-right">
+                <div class="products-image-container">
+                  <img id="industry-features-image" src="images/services/Personalized AI Reception.png" alt="Personalized AI Reception" class="products-image">
+                </div>
               </div>
             </div>
           </div>
@@ -1380,6 +1369,78 @@
         }, 150);
       });
     });
+  </script>
+  
+  <!-- Sticky Products Section Script -->
+  <script src="js/sticky-products-section-standalone.js" defer></script>
+  <script>
+    // Initialize Sticky Products Section
+    (function() {
+      function initProductsSection() {
+        if (typeof window.initStickyProductsSection === 'function') {
+          try {
+            window.initStickyProductsSection({
+              sectionSelector: '.ser-products-section',
+              imageId: 'industry-products-image',
+              imagePaths: [
+                'images/services/24_7-Availability.png',
+                'images/services/Smart Call-Management.png',
+                'images/services/AI-Caller-Memory-&-Context-Recall.png'
+              ]
+            });
+            console.log('✅ Industry products section initialized');
+          } catch (error) {
+            console.error('❌ Error initializing products section:', error);
+          }
+        } else {
+          console.warn('⚠️ initStickyProductsSection not available yet, retrying...');
+          setTimeout(initProductsSection, 200);
+        }
+      }
+      
+      // Try to initialize when page loads
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(initProductsSection, 300);
+      } else {
+        window.addEventListener('load', function() {
+          setTimeout(initProductsSection, 300);
+        });
+      }
+    })();
+    
+    // Initialize Sticky Features Section
+    (function() {
+      function initFeaturesSection() {
+        if (typeof window.initStickyProductsSection === 'function') {
+          try {
+            window.initStickyProductsSection({
+              sectionSelector: '.ser-features-section',
+              imageId: 'industry-features-image',
+              imagePaths: [
+                'images/services/Personalized AI Reception.png',
+                'images/services/Smart Response Timing.png',
+                'images/services/Detailed Call Reports.png'
+              ]
+            });
+            console.log('✅ Industry features section initialized');
+          } catch (error) {
+            console.error('❌ Error initializing features section:', error);
+          }
+        } else {
+          console.warn('⚠️ initStickyProductsSection not available yet, retrying...');
+          setTimeout(initFeaturesSection, 200);
+        }
+      }
+      
+      // Try to initialize when page loads
+      if (document.readyState === 'complete' || document.readyState === 'interactive') {
+        setTimeout(initFeaturesSection, 300);
+      } else {
+        window.addEventListener('load', function() {
+          setTimeout(initFeaturesSection, 300);
+        });
+      }
+    })();
   </script>
 </body>
 </html>

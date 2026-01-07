@@ -350,10 +350,15 @@ main > section {
   max-width: var(--max-content-width);
   margin: 0 auto;
   width: 100%;
-  padding: 0 var(--page-padding);
+  padding: 0;
 }
 
 .ser-ai-receptionists-original .ser-section-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.ser-ai-receptionists .ser-section-container {
   padding-left: 0;
   padding-right: 0;
 }
@@ -1175,6 +1180,129 @@ main > section {
   box-sizing: border-box;
 }
 
+/* Desktop only - Remove lateral padding */
+@media (min-width: 1024px) {
+  .ser-experience-power .ser-section-container {
+    padding: 0 !important;
+  }
+
+  /* Align How It Works container to full width grid on desktop */
+  .ser-how-it-works .ser-section-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Ensure card area height on desktop */
+  .ser-how-cards-container {
+    height: 640px;
+    flex: 0 0 640px;
+  }
+
+  /* Desktop visual refinements for How cards */
+  .ser-how-card-inner {
+    border-radius: var(--radius-lg);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: scale(0.98);
+    opacity: 0;
+  }
+  
+  .ser-how-card.active .ser-how-card-inner {
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  }
+  
+  .ser-how-card.exiting .ser-how-card-inner {
+    transform: scale(0.95);
+    opacity: 0;
+  }
+  
+  /* Animate content elements with stagger effect */
+  .ser-how-card-content {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s,
+                transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s;
+  }
+  
+  .ser-how-card.active .ser-how-card-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .ser-how-card-image {
+    opacity: 0;
+    transform: translateX(20px) scale(0.95);
+    transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s,
+                transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.3s;
+  }
+  
+  .ser-how-card.active .ser-how-card-image {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  
+  .ser-how-card-reverse .ser-how-card-image {
+    transform: translateX(-20px) scale(0.95);
+  }
+  
+  .ser-how-card-reverse.active .ser-how-card-image {
+    transform: translateX(0) scale(1);
+  }
+  
+  /* Animate internal elements with subtle stagger */
+  .ser-how-card-top {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s,
+                transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.4s;
+  }
+  
+  .ser-how-card.active .ser-how-card-top {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .ser-how-card-actions {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s,
+                transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s;
+  }
+  
+  .ser-how-card.active .ser-how-card-actions {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .ser-how-card-content {
+    padding: 48px;
+    gap: 28px;
+    flex: 0 0 62%;
+  }
+
+  .ser-how-card-image {
+    flex: 0 0 38%;
+  }
+
+  .ser-how-card-title {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .ser-how-card-description {
+    font-size: 20px;
+  }
+
+  .ser-how-card-actions .btn-primary-large,
+  .ser-how-card-actions .btn-outline-white {
+    height: 48px;
+    min-height: 48px;
+    padding: 12px 28px;
+  }
+}
+
 .ser-experience-power.animate-in .ser-section-container,
 .ser-experience-power .ser-section-container {
   opacity: 1 !important;
@@ -1318,12 +1446,12 @@ main > section {
 .ser-how-it-works {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 980px;
   background: #222324;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 80px 0;
+  padding: 112px 0;
   width: 100%;
   overflow: hidden;
 }
@@ -1408,21 +1536,24 @@ main > section {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
+  transform: translateY(30px) scale(0.95);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   will-change: opacity, transform;
   z-index: 1;
 }
 
 .ser-how-card.active {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
   z-index: 10;
 }
 
 .ser-how-card.exiting {
   opacity: 0;
-  transform: translateY(-50px);
+  transform: translateY(-30px) scale(0.95);
+  transition: opacity 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+              transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   z-index: 5;
 }
 
@@ -1704,6 +1835,23 @@ main > section {
   max-width: 768px;
   margin: 0 auto;
   text-align: center;
+}
+
+@media (min-width: 1024px) {
+  .ser-products-section .ser-benefits-header,
+  .ser-features-section .ser-benefits-header {
+    gap: 20px;
+  }
+  
+  .ser-products-section .ser-benefits-title-wrapper,
+  .ser-features-section .ser-benefits-title-wrapper {
+    gap: 8px;
+  }
+  
+  .ser-products-section .ser-benefits-heading-content,
+  .ser-features-section .ser-benefits-heading-content {
+    gap: 16px;
+  }
 }
 
 .ser-benefits-title-wrapper {
@@ -2121,7 +2269,7 @@ main > section {
   width: 100%;
   position: relative;
   z-index: 1;
-  padding: 60px var(--page-padding);
+  padding: 60px 0;
 }
 
 .ser-get-started-left {
@@ -2436,12 +2584,42 @@ main > section {
 
 /* ===== TESTIMONIAL SECTION ===== */
 .ser-testimonial {
-  position: relative;
-  background: #FAFBFC;
-  color: #0A0B0C;
-  padding: var(--space-3xl) 0;
+  background: #FAFBFC !important;
+  color: #0A0B0C !important;
+  position: relative !important;
+  z-index: 1 !important;
+  display: block !important;
+  visibility: visible !important;
+  padding: 112px 64px;
   width: 100%;
   overflow: hidden;
+  /* Allow animations - opacity controlled by animate-in class */
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ser-testimonial.animate-in {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.ser-testimonial * {
+  color: #0A0B0C !important;
+  visibility: visible !important;
+  /* Allow parent section to control opacity for animation */
+}
+
+.ser-testimonial.animate-in * {
+  opacity: 1 !important;
+}
+
+.ser-testimonial h2,
+.ser-testimonial h3,
+.ser-testimonial p,
+.ser-testimonial span,
+.ser-testimonial div {
+  color: #0A0B0C !important;
 }
 
 .ser-testimonial-background {
@@ -2460,6 +2638,7 @@ main > section {
 .ser-testimonial .ser-section-container {
   position: relative;
   z-index: 1;
+  padding: 0;
 }
 
 .ser-testimonial-bg-element {
@@ -2492,32 +2671,34 @@ main > section {
 .ser-testimonial-content {
   position: relative;
   z-index: 3;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 80px;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 var(--page-padding);
+  padding: 0;
 }
 
 .ser-testimonial-left {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex: 1;
 }
 
 .ser-testimonial-image-wrapper {
   position: relative;
   width: 100%;
-  max-width: 500px;
-  border-radius: 12px;
+  flex: 1;
+  aspect-ratio: 600 / 640;
+  border-radius: 16px;
   overflow: hidden;
 }
 
 .ser-testimonial-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
 }
@@ -2526,8 +2707,9 @@ main > section {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
   text-align: left;
+  flex: 1;
 }
 
 .ser-testimonial-stars {
@@ -2581,8 +2763,15 @@ main > section {
 
 /* Responsive styles for testimonial section */
 @media (max-width: 1023px) {
+  .ser-testimonial {
+    padding: 80px 24px !important;
+  }
+  
   .ser-testimonial .ser-section-container {
-    padding: 0 var(--page-padding);
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .ser-testimonial-content {
@@ -2644,8 +2833,15 @@ main > section {
 }
 
 @media (max-width: 767px) {
+  .ser-testimonial {
+    padding: 80px 24px !important;
+  }
+  
   .ser-testimonial .ser-section-container {
-    padding: 0 var(--page-padding-mobile);
+    padding: 0;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .ser-testimonial-content {
@@ -2948,6 +3144,21 @@ main > section {
 
 /* ===== FAQS SECTION handled by layout.css ===== */
 @media (max-width: 1023px) {
+  .ser-products-section .ser-benefits-header,
+  .ser-features-section .ser-benefits-header {
+    gap: 16px;
+  }
+  
+  .ser-products-section .ser-benefits-title-wrapper,
+  .ser-features-section .ser-benefits-title-wrapper {
+    gap: 8px;
+  }
+  
+  .ser-products-section .ser-benefits-heading-content,
+  .ser-features-section .ser-benefits-heading-content {
+    gap: 16px;
+  }
+  
   .ser-hero,
   .ser-services-header {
     min-height: auto !important;
@@ -3042,7 +3253,7 @@ main > section {
   .ser-ai-phone-mockup-container {
     order: 3 !important;
     width: 100% !important;
-    margin-bottom: var(--space-2xl) !important;
+    margin-bottom: 16px !important;
   }
   
   .ser-ai-spline-viewer {
@@ -3053,14 +3264,16 @@ main > section {
     order: 4 !important;
     width: 100% !important;
     gap: 12px !important;
-    margin-top: var(--space-md) !important;
+    margin-top: 0 !important;
   }
 
   .ser-ai-phone-mockup-image {
-    max-height: 280px;
-    max-width: 70%;
-    width: 70%;
-    min-width: 280px;
+    max-height: 350px;
+    max-width: 85%;
+    width: 85%;
+    min-width: 320px;
+    margin: 0 auto;
+    display: block;
   }
 
   /* Hide desktop animation, show mobile animation on tablet */
@@ -3486,7 +3699,7 @@ main > section {
   }
 
   .ser-how-it-works {
-    padding: 60px 0 100px 0; /* Increased bottom padding to prevent cut-off */
+    padding: 80px 0 80px 0; /* Equal top and bottom padding */
     position: relative !important;
     top: auto !important;
     bottom: auto !important;
@@ -3531,8 +3744,8 @@ main > section {
     margin: 0;
     position: relative;
     height: auto !important;
-    min-height: 700px;
-    align-items: flex-end; /* Anchor all cards to the bottom */
+    min-height: 600px;
+    align-items: stretch;
   }
 
   .ser-how-cards-container::-webkit-scrollbar {
@@ -3548,14 +3761,15 @@ main > section {
     min-width: 88%;
     max-width: 88%;
     height: 100% !important;
+    min-height: 600px;
     scroll-snap-align: center;
     scroll-snap-stop: always;
     opacity: 0.6 !important;
     transform: scale(0.94) !important;
-    transform-origin: bottom center; /* Keeps cards aligned at the bottom when scaling */
+    transform-origin: center center;
     transition: opacity 0.4s ease, transform 0.4s ease !important;
     display: flex !important;
-    align-items: stretch !important; /* Forces inner card to fill height */
+    align-items: stretch !important;
   }
 
   .ser-how-card.carousel-active {
@@ -3565,113 +3779,183 @@ main > section {
 
   .ser-how-card-inner {
     flex-direction: column;
-    min-height: 620px;
-    height: 100%; /* Fill the container height */
+    min-height: 600px;
+    height: 100%;
     background: #0a0b0c;
-    border-radius: 20px;
+    border-radius: 34px 34px 34px 34px;
     display: flex;
-    overflow: hidden;
-    transition: box-shadow 0.4s ease;
+    overflow: visible;
+    transition: box-shadow 0.4s ease, transform 0.3s ease;
     width: 100%;
+    position: relative;
+    padding-bottom: 0;
+    border: 1px solid rgba(255, 255, 255, 0.06);
   }
 
   .ser-how-card.carousel-active .ser-how-card-inner {
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
   }
 
   /* Content always on top */
   .ser-how-card-content {
-    padding: 32px 24px;
+    padding: 32px 24px 24px 24px;
     order: 1;
     flex: 0 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
     min-width: 0;
-    overflow: hidden;
+    overflow: visible;
     box-sizing: border-box;
     width: 100%;
     max-width: 100%;
+    position: static;
+  }
+
+  .ser-how-card-top {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .ser-how-card-tagline {
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.45);
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: 'Lexend Deca', sans-serif;
+  }
+
+  .ser-how-card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .ser-how-card-title {
-    font-size: 32px;
-    line-height: 1.1;
+    font-size: 26px;
+    line-height: 1.25;
     font-weight: 700;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.3px;
+    color: #ffffff;
+    margin: 0;
   }
 
   .ser-how-card-description {
-    font-size: 16px;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-weight: 400;
   }
 
   .ser-how-card-actions {
     margin-top: 8px;
-    gap: 12px !important;
+    gap: 0 !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
     justify-content: flex-start !important;
     width: 100% !important;
     max-width: 100% !important;
-    align-items: center !important;
+    align-items: stretch !important;
     box-sizing: border-box !important;
-    overflow: hidden !important;
+    overflow: visible !important;
+    position: static;
   }
 
+  /* Make the card inner container relative so absolute positioning works */
+  .ser-how-card-inner {
+    position: relative;
+    overflow: visible;
+  }
+
+  /* Primary button - Get Started - Minimalist design */
   .ser-how-card-actions .btn-primary-large {
     height: 44px !important;
     min-height: 44px !important;
-    width: auto !important;
-    flex: 0 0 auto !important;
-    min-width: 120px !important;
-    padding: 10px 20px !important;
+    width: 100% !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    padding: 0 20px !important;
     font-size: 14px !important;
+    font-weight: 500 !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
+    border-radius: 12px !important;
+    box-shadow: none !important;
+    transition: all 0.2s ease !important;
+    background: #ffffff !important;
+    color: #0a0b0c !important;
+    border: none !important;
+    letter-spacing: 0.2px;
   }
 
+  .ser-how-card-actions .btn-primary-large:hover {
+    transform: none !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.15) !important;
+  }
+
+  .ser-how-card-actions .btn-primary-large:active {
+    transform: scale(0.98) !important;
+  }
+
+  /* Hide "Hear a Sample" button in mobile and tablet view */
   .ser-how-card-actions .btn-outline-white {
-    height: 44px !important;
-    min-height: 44px !important;
-    padding: 10px 16px !important;
-    font-size: 14px !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    flex: 1 !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
+    display: none !important;
   }
 
   /* Image always on bottom */
   .ser-how-card-image {
     order: 2;
-    flex: 1;
-    min-height: 300px;
-    height: 300px;
-    border-radius: 0;
+    flex: 1 1 auto;
+    min-height: 0;
+    height: auto;
+    border-radius: 0 0 34px 34px;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
-    background-color: transparent;
+    background: #0a0b0c;
+    position: relative;
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .ser-how-card-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background: linear-gradient(180deg, rgba(10, 11, 12, 0.4) 0%, transparent 100%);
+    z-index: 1;
+    pointer-events: none;
   }
 
   .ser-how-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
+    width: 100% !important;
+    height: 100% !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    object-position: center bottom !important;
+    transition: transform 0.4s ease;
+    display: block;
+    flex: 1;
+    align-self: flex-end;
+  }
+
+  .ser-how-card.carousel-active .ser-how-image {
+    transform: scale(1.02);
   }
 
   /* Dot navigation styles */
@@ -3797,11 +4081,11 @@ main > section {
   }
 
   .ser-ai-receptionists {
-    padding: 60px 0;
+    padding: 80px 0 !important;
   }
 
   .ser-ai-receptionists-original {
-    padding: 60px 0;
+    padding: 80px 0 !important;
   }
   
   .ser-ai-receptionists .ser-section-container {
@@ -3863,7 +4147,7 @@ main > section {
     height: auto !important;
     padding: 0 20px 20px 20px !important;
     margin-top: var(--space-lg) !important;
-    margin-bottom: var(--space-2xl) !important;
+    margin-bottom: 16px !important;
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -3883,15 +4167,15 @@ main > section {
     gap: 12px !important;
     display: flex !important;
     flex-direction: column !important;
-    margin-top: var(--space-md) !important;
+    margin-top: 0 !important;
   }
 
   /* Removed ser-ai-btn styles - now using features-buttons */
 
   .ser-ai-phone-mockup-image {
     max-height: none;
-    max-width: 280px;
-    width: 80%;
+    max-width: 340px;
+    width: 90%;
     min-width: auto;
     margin: 0 auto;
     display: block;
@@ -4212,7 +4496,15 @@ main > section {
   }
 
   .ser-benefits-header {
-    gap: var(--space-md);
+    gap: 16px;
+  }
+  
+  .ser-benefits-title-wrapper {
+    gap: 8px;
+  }
+  
+  .ser-benefits-heading-content {
+    gap: 16px;
   }
 
   .ser-benefits-content {
@@ -4364,11 +4656,11 @@ main > section {
   }
 
   .ser-benefits-title-wrapper {
-    gap: var(--space-sm);
+    gap: 8px;
   }
 
   .ser-benefits-heading-content {
-    gap: 20px;
+    gap: 16px;
   }
 
   .ser-benefits .ser-tagline {

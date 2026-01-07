@@ -202,7 +202,8 @@
   .ind-faq-section,
   .ser-faqs,
   .home-service-section-dark-alt,
-  .locksmith-section-dark-alt {
+  .locksmith-section-dark-alt,
+  .industry-section.industry-section-dark-alt {
     padding: 80px 40px !important;
   }
 
@@ -210,7 +211,8 @@
   .ind-faq-content,
   .ser-faq-wrapper,
   .home-service-two-column,
-  .locksmith-two-column {
+  .locksmith-two-column,
+  .industry-section.industry-section-dark-alt .industry-two-column {
     display: grid !important;
     grid-template-columns: 400px 1fr !important;
     gap: 60px !important;
@@ -221,7 +223,8 @@
   .ser-faq-title,
   .ind-faq-heading,
   .home-service-heading-left,
-  .locksmith-heading-left {
+  .locksmith-heading-left,
+  .industry-section.industry-section-dark-alt .industry-heading-left {
     font-size: 42px !important;
   }
 
@@ -229,7 +232,8 @@
   .ser-faq-description,
   .ind-faq-description,
   .home-service-description-left,
-  .locksmith-description-left {
+  .locksmith-description-left,
+  .industry-section.industry-section-dark-alt .industry-description-left {
     font-size: 16px !important;
   }
 
@@ -237,7 +241,8 @@
   .ind-faq-question p,
   .locksmith-faq-question p,
   .ser-faq-question-text,
-  .home-service-faq-question p {
+  .home-service-faq-question p,
+  .industry-section.industry-section-dark-alt .industry-faq-question p {
     font-size: 18px !important;
   }
 
@@ -246,7 +251,8 @@
   .locksmith-faq-answer p,
   .ser-faq-answer p,
   .ser-faq-answer-text,
-  .home-service-faq-answer p {
+  .home-service-faq-answer p,
+  .industry-section.industry-section-dark-alt .industry-faq-answer p {
     font-size: 16px !important;
   }
 
@@ -1322,7 +1328,8 @@
   .ind-faq-section,
   .ser-faqs,
   .home-service-section-dark-alt,
-  .locksmith-section-dark-alt {
+  .locksmith-section-dark-alt,
+  .industry-section.industry-section-dark-alt {
     padding: 60px 24px !important;
   }
 
@@ -1330,7 +1337,8 @@
   .ind-faq-content,
   .ser-faq-wrapper,
   .home-service-two-column,
-  .locksmith-two-column {
+  .locksmith-two-column,
+  .industry-section.industry-section-dark-alt .industry-two-column {
     display: flex !important;
     flex-direction: column !important;
     grid-template-columns: 1fr !important;
@@ -1341,7 +1349,8 @@
   .ind-faq-title-section,
   .ser-faq-left,
   .home-service-faq-title-section,
-  .locksmith-faq-title-section {
+  .locksmith-faq-title-section,
+  .industry-section.industry-section-dark-alt .industry-faq-title-section {
     text-align: center !important;
     align-items: center !important;
     display: flex !important;
@@ -1353,7 +1362,8 @@
   .ind-faq-contact-btn,
   .ser-faq-actions button,
   .home-service-btn-contact,
-  .locksmith-btn-contact {
+  .locksmith-btn-contact,
+  .industry-section.industry-section-dark-alt .industry-btn-contact {
     margin: 0 auto !important;
     padding: 10px 24px !important;
     border-radius: 100px !important;
@@ -1365,7 +1375,8 @@
   .ind-faq-heading,
   .ser-faq-title,
   .home-service-heading-left,
-  .locksmith-heading-left {
+  .locksmith-heading-left,
+  .industry-section.industry-section-dark-alt .industry-heading-left {
     font-size: 36px !important;
   }
 
@@ -1373,7 +1384,8 @@
   .ind-faq-description,
   .ser-faq-description,
   .home-service-description-left,
-  .locksmith-description-left {
+  .locksmith-description-left,
+  .industry-section.industry-section-dark-alt .industry-description-left {
     font-size: 16px !important;
   }
 
@@ -1381,7 +1393,8 @@
   .ind-faq-question p,
   .ser-faq-question-text,
   .home-service-faq-question p,
-  .locksmith-faq-question p {
+  .locksmith-faq-question p,
+  .industry-section.industry-section-dark-alt .industry-faq-question p {
     font-size: 16px !important;
   }
 
@@ -1389,7 +1402,8 @@
   .ind-faq-answer p,
   .ser-faq-answer p,
   .home-service-faq-answer p,
-  .locksmith-faq-answer p {
+  .locksmith-faq-answer p,
+  .industry-section.industry-section-dark-alt .industry-faq-answer p {
     font-size: 14px !important;
   }
 
@@ -1646,7 +1660,7 @@
   .testimonials-container,
   .faq-container,
   .footer-container {
-    max-width: 1400px;
+    max-width: 1280px;
   }
 
   .hero-container {

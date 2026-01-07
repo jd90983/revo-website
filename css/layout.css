@@ -2943,6 +2943,7 @@ body.mobile-menu-open {
 .ind-faq-section,
 .locksmith-section.locksmith-section-dark-alt,
 .home-service-section.home-service-section-dark-alt,
+.industry-section.industry-section-dark-alt,
 .service-faq,
 .ser-faqs {
   position: relative;
@@ -2962,6 +2963,7 @@ body.mobile-menu-open {
 .ind-faq-section.animate-in,
 .locksmith-section.locksmith-section-dark-alt.animate-in,
 .home-service-section.home-service-section-dark-alt.animate-in,
+.industry-section.industry-section-dark-alt.animate-in,
 .service-faq.animate-in,
 .ser-faqs.animate-in {
   opacity: 1 !important;
@@ -2986,6 +2988,7 @@ body.mobile-menu-open {
 .ser-faq-wrapper,
 .ind-faq-content,
 .home-service-two-column,
+.industry-section.industry-section-dark-alt .industry-two-column,
 .locksmith-two-column {
   display: grid;
   grid-template-columns: 500px 1fr;
@@ -2999,6 +3002,7 @@ body.mobile-menu-open {
 .ser-faq-left,
 .ind-faq-title-section,
 .home-service-faq-title-section,
+.industry-section.industry-section-dark-alt .industry-faq-title-section,
 .locksmith-faq-title-section {
   display: flex;
   flex-direction: column;
@@ -3016,6 +3020,7 @@ body.mobile-menu-open {
 .ser-faq-title,
 .ind-faq-heading,
 .home-service-heading-left,
+.industry-section.industry-section-dark-alt .industry-heading-left,
 .locksmith-heading-left {
   font-family: var(--font-heading);
   font-weight: var(--font-bold);
@@ -3030,6 +3035,7 @@ body.mobile-menu-open {
 .ser-faq-description,
 .ind-faq-description,
 .home-service-description-left,
+.industry-section.industry-section-dark-alt .industry-description-left,
 .locksmith-description-left {
   font-family: var(--font-body);
   font-weight: 400;
@@ -3048,6 +3054,7 @@ body.mobile-menu-open {
 .btn-contact,
 .ind-faq-contact-btn,
 .home-service-btn-contact,
+.industry-section.industry-section-dark-alt .industry-btn-contact,
 .locksmith-btn-contact {
   display: inline-flex;
   align-items: center;
@@ -3071,6 +3078,7 @@ body.mobile-menu-open {
 .btn-contact:hover,
 .ind-faq-contact-btn:hover,
 .home-service-btn-contact:hover,
+.industry-section.industry-section-dark-alt .industry-btn-contact:hover,
 .locksmith-btn-contact:hover {
   background-color: rgba(10, 11, 12, 0.8);
 }
@@ -3081,7 +3089,8 @@ body.mobile-menu-open {
 .locksmith-faq-accordion,
 .service-faq-accordion,
 .ser-faq-accordion-list,
-.home-service-faq-accordion {
+.home-service-faq-accordion,
+.industry-section.industry-section-dark-alt .industry-faq-accordion {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -3095,7 +3104,8 @@ body.mobile-menu-open {
 .locksmith-faq-item,
 .service-faq-item,
 .ser-faq-item,
-.home-service-faq-item {
+.home-service-faq-item,
+.industry-section.industry-section-dark-alt .industry-faq-item {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -3112,7 +3122,8 @@ body.mobile-menu-open {
 .locksmith-faq-question,
 .service-faq-question,
 .ser-faq-question,
-.home-service-faq-question {
+.home-service-faq-question,
+.industry-section.industry-section-dark-alt .industry-faq-question {
   width: 100%;
   display: flex;
   align-items: center;
@@ -3132,7 +3143,8 @@ body.mobile-menu-open {
 .locksmith-faq-question p,
 .service-faq-question p,
 .ser-faq-question-text,
-.home-service-faq-question p {
+.home-service-faq-question p,
+.industry-section.industry-section-dark-alt .industry-faq-question p {
   flex: 1;
   font-family: var(--font-body);
   font-weight: 300;
@@ -3148,7 +3160,8 @@ body.mobile-menu-open {
 .locksmith-faq-item:first-child .locksmith-faq-question,
 .service-faq-item:first-child .service-faq-question,
 .ser-faq-item:first-child .ser-faq-question,
-.home-service-faq-item:first-child .home-service-faq-question {
+.home-service-faq-item:first-child .home-service-faq-question,
+.industry-section.industry-section-dark-alt .industry-faq-item:first-child .industry-faq-question {
   border-top: none;
   padding-top: 0;
 }
@@ -3159,7 +3172,8 @@ body.mobile-menu-open {
 .locksmith-faq-question svg,
 .service-faq-icon,
 .ser-faq-icon,
-.home-service-faq-question svg {
+.home-service-faq-question svg,
+.industry-section.industry-section-dark-alt .industry-faq-question svg {
   flex-shrink: 0;
   width: 24px;
   height: 24px;
@@ -3178,7 +3192,8 @@ body.mobile-menu-open {
 .locksmith-faq-item.active .locksmith-faq-question svg,
 .service-faq-item.active .service-faq-icon,
 .ser-faq-item.active .ser-faq-icon,
-.home-service-faq-item.active .home-service-faq-question svg {
+.home-service-faq-item.active .home-service-faq-question svg,
+.industry-section.industry-section-dark-alt .industry-faq-item.active .industry-faq-question svg {
   transform: rotate(0deg);
 }
 
@@ -3188,7 +3203,8 @@ body.mobile-menu-open {
 .locksmith-faq-answer,
 .service-faq-answer,
 .ser-faq-answer,
-.home-service-faq-answer {
+.home-service-faq-answer,
+.industry-section.industry-section-dark-alt .industry-faq-answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), 
@@ -3206,7 +3222,8 @@ body.mobile-menu-open {
 .locksmith-faq-item.active .locksmith-faq-answer,
 .service-faq-item.active .service-faq-answer,
 .ser-faq-item.active .ser-faq-answer,
-.home-service-faq-item.active .home-service-faq-answer {
+.home-service-faq-item.active .home-service-faq-answer,
+.industry-section.industry-section-dark-alt .industry-faq-item.active .industry-faq-answer {
   max-height: 500px;
   padding-bottom: 16px;
   padding-top: 0;
@@ -3223,7 +3240,8 @@ body.mobile-menu-open {
 .service-faq-answer p,
 .ser-faq-answer p,
 .ser-faq-answer-text,
-.home-service-faq-answer p {
+.home-service-faq-answer p,
+.industry-section.industry-section-dark-alt .industry-faq-answer p {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 16px;
@@ -3243,7 +3261,8 @@ body.mobile-menu-open {
 .service-faq-item.active .service-faq-answer p,
 .ser-faq-item.active .ser-faq-answer p,
 .ser-faq-item.active .ser-faq-answer-text,
-.home-service-faq-item.active .home-service-faq-answer p {
+.home-service-faq-item.active .home-service-faq-answer p,
+.industry-section.industry-section-dark-alt .industry-faq-item.active .industry-faq-answer p {
   transform: translateY(0);
   opacity: 1;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1) 0.15s, 
@@ -3255,11 +3274,15 @@ body.mobile-menu-open {
 .footer {
   background: #0a0b0c;
   padding: 80px 64px;
+  box-sizing: border-box;
 }
 
 .footer-container {
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0;
 }
 
 .footer-content {
@@ -3268,6 +3291,8 @@ body.mobile-menu-open {
   margin-bottom: 80px;
   padding-bottom: 80px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* Newsletter Section (Left side) */
