@@ -220,11 +220,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const contentBottom = contentRect.bottom;
     const wrapperRect = productsWrapper.getBoundingClientRect();
     
-    // Check if section is completely out of viewport (reset)
-    if (wrapperRect.bottom < 0 || wrapperRect.top > viewportHeight + 200) {
+    // Check if section is completely out of viewport (reset only when really out of view)
+    // Use a larger threshold to prevent premature reset
+    if (wrapperRect.bottom < -500 || wrapperRect.top > viewportHeight + 500) {
       if (sectionStartY !== null) {
         sectionStartY = null;
         sectionEndY = null;
+        console.log('🔄 Section reset - out of view');
       }
       return;
     }
@@ -242,35 +244,54 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // If section is sticky, calculate progress
-    if (sectionStartY !== null && currentScrollY >= sectionStartY) {
-      // Calculate scroll progress (0 to 1)
+    // Allow reverse scrolling by checking if we're within the section bounds
+    if (sectionStartY !== null) {
+      // Calculate scroll progress (can be negative or > 1 for reverse scrolling)
       const scrolled = currentScrollY - sectionStartY;
       const scrollDistance = viewportHeight * totalItems;
-      const scrollProgress = Math.min(1, Math.max(0, scrolled / scrollDistance));
+      let scrollProgress = scrolled / scrollDistance; // Don't clamp to allow reverse
       
       // Determine which item should be active based on scroll progress
       // Each item gets 1/3 of the scroll distance
-      let itemIndex = Math.floor(scrollProgress * totalItems);
+      let itemIndex;
       
-      // Ensure we catch the last item
-      if (scrollProgress >= 0.95) {
+      // Clamp scrollProgress to a reasonable range for calculation
+      // Allow some negative values but not too extreme
+      const clampedProgress = Math.max(-0.1, Math.min(1.1, scrollProgress));
+      
+      if (clampedProgress >= 1) {
+        // Past the end - stay on last item
         itemIndex = totalItems - 1;
+      } else if (clampedProgress <= 0) {
+        // At or before start - stay on first item
+        itemIndex = 0;
+      } else {
+        // Within range - calculate based on progress
+        // Use a smoother calculation that doesn't jump too quickly
+        itemIndex = Math.floor(clampedProgress * totalItems);
+        
+        // Ensure we catch the last item near the end
+        if (clampedProgress >= 0.95) {
+          itemIndex = totalItems - 1;
+        }
+        
+        // Ensure we catch the first item near the start (but with a buffer)
+        if (clampedProgress <= 0.1) {
+          itemIndex = 0;
+        }
       }
       
       // Clamp to valid range
       itemIndex = Math.min(totalItems - 1, Math.max(0, itemIndex));
       
-      // Always activate to ensure state is correct
+      // Only activate if index actually changed (prevents unnecessary updates)
       if (itemIndex !== currentActiveIndex) {
-        console.log('🔄 Changing item:', currentActiveIndex, '→', itemIndex, 'Progress:', scrollProgress.toFixed(3));
+        console.log('🔄 Changing item:', currentActiveIndex, '→', itemIndex, 'Progress:', scrollProgress.toFixed(3), 'Clamped:', clampedProgress.toFixed(3), 'Scrolled:', scrolled.toFixed(0));
         activateItem(itemIndex);
       }
       
-      // If we've scrolled past the end, reset
-      if (currentScrollY >= sectionEndY) {
-        sectionStartY = null;
-        sectionEndY = null;
-      }
+      // Don't reset sectionStartY/sectionEndY when scrolling past the end
+      // Only reset when section is completely out of view (handled above)
     }
   };
   
@@ -558,11 +579,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const contentBottom = contentRect.bottom;
     const wrapperRect = featuresWrapper.getBoundingClientRect();
     
-    // Check if section is completely out of viewport (reset)
-    if (wrapperRect.bottom < 0 || wrapperRect.top > viewportHeight + 200) {
+    // Check if section is completely out of viewport (reset only when really out of view)
+    // Use a larger threshold to prevent premature reset
+    if (wrapperRect.bottom < -500 || wrapperRect.top > viewportHeight + 500) {
       if (sectionStartY !== null) {
         sectionStartY = null;
         sectionEndY = null;
+        console.log('🔄 Features section reset - out of view');
       }
       return;
     }
@@ -580,35 +603,54 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // If section is sticky, calculate progress
-    if (sectionStartY !== null && currentScrollY >= sectionStartY) {
-      // Calculate scroll progress (0 to 1)
+    // Allow reverse scrolling by checking if we're within the section bounds
+    if (sectionStartY !== null) {
+      // Calculate scroll progress (can be negative or > 1 for reverse scrolling)
       const scrolled = currentScrollY - sectionStartY;
       const scrollDistance = viewportHeight * totalItems;
-      const scrollProgress = Math.min(1, Math.max(0, scrolled / scrollDistance));
+      let scrollProgress = scrolled / scrollDistance; // Don't clamp to allow reverse
       
       // Determine which item should be active based on scroll progress
       // Each item gets 1/3 of the scroll distance
-      let itemIndex = Math.floor(scrollProgress * totalItems);
+      let itemIndex;
       
-      // Ensure we catch the last item
-      if (scrollProgress >= 0.95) {
+      // Clamp scrollProgress to a reasonable range for calculation
+      // Allow some negative values but not too extreme
+      const clampedProgress = Math.max(-0.1, Math.min(1.1, scrollProgress));
+      
+      if (clampedProgress >= 1) {
+        // Past the end - stay on last item
         itemIndex = totalItems - 1;
+      } else if (clampedProgress <= 0) {
+        // At or before start - stay on first item
+        itemIndex = 0;
+      } else {
+        // Within range - calculate based on progress
+        // Use a smoother calculation that doesn't jump too quickly
+        itemIndex = Math.floor(clampedProgress * totalItems);
+        
+        // Ensure we catch the last item near the end
+        if (clampedProgress >= 0.95) {
+          itemIndex = totalItems - 1;
+        }
+        
+        // Ensure we catch the first item near the start (but with a buffer)
+        if (clampedProgress <= 0.1) {
+          itemIndex = 0;
+        }
       }
       
       // Clamp to valid range
       itemIndex = Math.min(totalItems - 1, Math.max(0, itemIndex));
       
-      // Always activate to ensure state is correct
+      // Only activate if index actually changed (prevents unnecessary updates)
       if (itemIndex !== currentActiveIndex) {
-        console.log('🔄 Changing feature item:', currentActiveIndex, '→', itemIndex, 'Progress:', scrollProgress.toFixed(3));
+        console.log('🔄 Changing feature item:', currentActiveIndex, '→', itemIndex, 'Progress:', scrollProgress.toFixed(3), 'Clamped:', clampedProgress.toFixed(3), 'Scrolled:', scrolled.toFixed(0));
         activateItem(itemIndex);
       }
       
-      // If we've scrolled past the end, reset
-      if (currentScrollY >= sectionEndY) {
-        sectionStartY = null;
-        sectionEndY = null;
-      }
+      // Don't reset sectionStartY/sectionEndY when scrolling past the end
+      // Only reset when section is completely out of view (handled above)
     }
   };
   
