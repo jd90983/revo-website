@@ -424,6 +424,151 @@ if ('IntersectionObserver' in window) {
   });
 }
 
+// ===== LAZY LOAD SPLINE VIEWER FOR PERFORMANCE =====
+// Shared script loader (only load once for all Spline viewers)
+let splineScriptLoaded = false;
+const loadSplineScript = () => {
+  if (splineScriptLoaded) return Promise.resolve();
+  splineScriptLoaded = true;
+  
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.type = 'module';
+    script.src = 'https://unpkg.com/@splinetool/viewer@1.12.29/build/spline-viewer.js';
+    script.onload = () => {
+      console.log('Spline script loaded');
+      resolve();
+    };
+    script.onerror = () => {
+      console.error('Failed to load Spline script');
+      reject(new Error('Failed to load Spline script'));
+    };
+    document.head.appendChild(script);
+  });
+};
+
+// Lazy load Spline for Experience Power section
+document.addEventListener('DOMContentLoaded', function() {
+  const experienceSection = document.querySelector('.ser-experience-power');
+  const splineViewer = document.querySelector('.ser-experience-spline[data-spline-viewer]');
+  
+  if (!experienceSection || !splineViewer) return;
+  
+  let splineLoaded = false;
+  
+  // Function to initialize Spline viewer (after script is loaded)
+  const initSplineViewer = () => {
+    if (splineLoaded) return;
+    splineLoaded = true;
+    
+    // Script should be loaded by now, Spline viewer will auto-initialize
+    setTimeout(() => {
+      if (splineViewer.tagName.toLowerCase() === 'spline-viewer') {
+        console.log('Experience Power Spline viewer initialized');
+      }
+    }, 500);
+  };
+  
+  // Use IntersectionObserver to load Spline only when section is near viewport
+  const splineObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !splineLoaded) {
+        // Load script first
+        loadSplineScript().then(() => {
+          // Wait a bit for script to load, then initialize viewer
+          setTimeout(() => {
+            initSplineViewer();
+          }, 100);
+        }).catch(err => {
+          console.error('Error loading Spline for experience section:', err);
+        });
+        
+        // Optionally unobserve after loading to prevent re-checking
+        splineObserver.unobserve(experienceSection);
+      }
+    });
+  }, {
+    // Start loading when section is 200px away from viewport (preload)
+    rootMargin: '200px 0px',
+    threshold: 0.01
+  });
+  
+  // Observe the section
+  splineObserver.observe(experienceSection);
+  
+  // Fallback: If section is already visible on page load, load immediately
+  const rect = experienceSection.getBoundingClientRect();
+  const isVisible = rect.top < window.innerHeight + 200 && rect.bottom > 0;
+  if (isVisible && !splineLoaded) {
+    loadSplineScript().then(() => {
+      setTimeout(() => {
+        initSplineViewer();
+      }, 100);
+    });
+  }
+});
+
+// Lazy load Spline for Intelligent Banner section
+document.addEventListener('DOMContentLoaded', function() {
+  const intelligentBanner = document.querySelector('.ser-intelligent-banner');
+  const bannerSplineViewer = document.querySelector('.ser-intelligent-banner-spline[data-spline-viewer]');
+  
+  if (!intelligentBanner || !bannerSplineViewer) return;
+  
+  let bannerSplineLoaded = false;
+  
+  // Function to initialize Spline viewer (after script is loaded)
+  const initBannerSplineViewer = () => {
+    if (bannerSplineLoaded) return;
+    bannerSplineLoaded = true;
+    
+    // Script should be loaded by now, Spline viewer will auto-initialize
+    setTimeout(() => {
+      if (bannerSplineViewer.tagName.toLowerCase() === 'spline-viewer') {
+        console.log('Intelligent Banner Spline viewer initialized');
+      }
+    }, 500);
+  };
+  
+  // Use IntersectionObserver to load Spline only when section is near viewport
+  const bannerSplineObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !bannerSplineLoaded) {
+        // Load script first (will be shared with other Spline viewers)
+        loadSplineScript().then(() => {
+          // Wait a bit for script to load, then initialize viewer
+          setTimeout(() => {
+            initBannerSplineViewer();
+          }, 100);
+        }).catch(err => {
+          console.error('Error loading Spline for intelligent banner:', err);
+        });
+        
+        // Optionally unobserve after loading to prevent re-checking
+        bannerSplineObserver.unobserve(intelligentBanner);
+      }
+    });
+  }, {
+    // Start loading when section is 200px away from viewport (preload)
+    rootMargin: '200px 0px',
+    threshold: 0.01
+  });
+  
+  // Observe the section
+  bannerSplineObserver.observe(intelligentBanner);
+  
+  // Fallback: If section is already visible on page load, load immediately
+  const rect = intelligentBanner.getBoundingClientRect();
+  const isVisible = rect.top < window.innerHeight + 200 && rect.bottom > 0;
+  if (isVisible && !bannerSplineLoaded) {
+    loadSplineScript().then(() => {
+      setTimeout(() => {
+        initBannerSplineViewer();
+      }, 100);
+    });
+  }
+});
+
 // Add smooth scroll to anchor links
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {

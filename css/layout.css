@@ -1621,9 +1621,46 @@ body.mobile-menu-open {
   pointer-events: none !important;
   z-index: 0;
   display: block;
+  /* Performance optimizations */
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  /* Reduce quality for better performance */
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
 }
 
-/* How It Works Linear Gradient Overlay */
+/* How It Works Linear Gradient Overlay - First Layer (Vertical Vignette) */
+.how-it-works::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(10, 11, 12, 0.4) 0%,
+    rgba(10, 11, 12, 0.25) 10%,
+    rgba(10, 11, 12, 0.15) 20%,
+    rgba(10, 11, 12, 0.1) 30%,
+    rgba(10, 11, 12, 0.1) 40%,
+    rgba(10, 11, 12, 0.12) 50%,
+    rgba(10, 11, 12, 0.2) 60%,
+    rgba(10, 11, 12, 0.4) 70%,
+    rgba(10, 11, 12, 0.65) 80%,
+    rgba(10, 11, 12, 0.85) 88%,
+    rgba(10, 11, 12, 1) 95%,
+    rgba(10, 11, 12, 1) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
+}
+
+/* How It Works Linear Gradient Overlay - Second Layer (Horizontal Vignette) */
 .how-it-works::after {
   content: '';
   position: absolute;
@@ -1633,13 +1670,19 @@ body.mobile-menu-open {
   height: 100%;
   background: linear-gradient(
     to right,
-    rgba(10, 11, 12, 1) 0%,
-    rgba(10, 11, 12, 0) 20%,
-    rgba(10, 11, 12, 0) 80%,
-    rgba(10, 11, 12, 1) 100%
+    rgba(10, 11, 12, 0.5) 0%,
+    rgba(10, 11, 12, 0.3) 10%,
+    rgba(10, 11, 12, 0.2) 20%,
+    rgba(10, 11, 12, 0.15) 30%,
+    rgba(10, 11, 12, 0.15) 70%,
+    rgba(10, 11, 12, 0.2) 80%,
+    rgba(10, 11, 12, 0.3) 90%,
+    rgba(10, 11, 12, 0.5) 100%
   );
   pointer-events: none;
   z-index: 1;
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
 }
 
 /* Content Container */
@@ -1751,6 +1794,38 @@ body.mobile-menu-open {
   align-items: center;
   gap: 24px;
   text-align: center;
+  padding: 24px;
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glassmorphism effect on hover */
+.how-feature-column::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.how-feature-column:hover::before {
+  opacity: 1;
+}
+
+.how-feature-column:hover {
+  transform: translateY(-4px);
 }
 
 /* Feature Icon */
