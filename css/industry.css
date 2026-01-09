@@ -25,11 +25,14 @@ main#main-content > section {
 .industry-hero {
   position: relative;
   width: 100%;
-  min-height: 800px;
-  height: auto;
+  min-height: 850px;
+  height: 850px;
   overflow: hidden;
   margin-top: 0;
   padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
   z-index: 1;
   background: #000000 !important;
   color: #FFFFFF !important;
@@ -50,6 +53,7 @@ main#main-content > section {
   position: absolute;
   inset: 0;
   z-index: 1;
+  height: 100%;
 }
 
 .industry-hero-base {
@@ -80,18 +84,210 @@ main#main-content > section {
   z-index: 3;
 }
 
+/* Specific background image for Air Duct Cleaning page */
+body.industry-air-duct-cleaning-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_air_duct_cleaning.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for HVAC page */
+body.industry-hvac-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_hvac.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Plumbing page */
+body.industry-plumbing-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_plumbing.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Chimney Sweep page */
+body.industry-chimney-sweep-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_chimney_sweep.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Lawn Care page */
+body.industry-lawn-care-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_lawn_care.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Restoration page */
+body.industry-restoration-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_restoration.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Junk Removal page */
+body.industry-junk-removal-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_junk_removal.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Pressure Washing page */
+body.industry-pressure-washing-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_pressure_washing.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Carpet Cleaning page */
+body.industry-carpet-cleaning-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_carpet_cleaning.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Pest Control page */
+body.industry-pest-control-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_pest_control.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Snow Removal page */
+body.industry-snow-removal-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_snow_removal.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Roofing page */
+body.industry-roofing-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_roofing.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Landscape page */
+body.industry-landscape-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_landscape.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Construction page */
+body.industry-construction-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_construction.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Maid & Cleaning page */
+body.industry-maid-cleaning-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_maid_and_cleaning.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Electrical page */
+body.industry-electrical-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_electrical.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Property Maintenance page */
+body.industry-property-maintenance-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_property_maintenance.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for General Contracting page */
+body.industry-general-contracting-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_general_contracting.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Towing page */
+body.industry-towing-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_towing.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Moving page */
+body.industry-moving-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_moving.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Handyman page */
+body.industry-handyman-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_handyman.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Alarm & Security page */
+body.industry-alarm-security-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_alarm_and_security.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Pool Services page */
+body.industry-pool-services-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_pool_services.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Appliance Repair page */
+body.industry-appliance-repair-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_appliance_repair.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
 .industry-hero-container {
   position: relative;
   z-index: 10 !important;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding: 112px 64px;
+  padding: 0;
   display: flex !important;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 800px;
+  height: 100%;
 }
 
 .industry-hero-content {
@@ -100,10 +296,12 @@ main#main-content > section {
   display: flex !important;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   gap: 80px;
   color: #FFFFFF !important;
   visibility: visible !important;
   opacity: 1 !important;
+  height: fit-content;
 }
 
 .industry-hero-title-section {
@@ -1644,6 +1842,15 @@ main#main-content > section {
 /* FAQ SECTION handled by layout.css */
 /* ===== RESPONSIVE ===== */
 @media (max-width: 1024px) {
+  .industry-hero {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .industry-hero-container {
+    padding: 0;
+  }
+
   .industry-hero-heading {
     font-size: 40px;
     letter-spacing: -0.4px;
@@ -2174,8 +2381,13 @@ main#main-content > section {
     padding: 80px 24px;
   }
 
+  .industry-hero {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
   .industry-hero-container {
-    padding: 80px 0;
+    padding: 0;
   }
 
   .industry-hero-heading {

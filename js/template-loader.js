@@ -407,24 +407,135 @@ function initExperiencePowerSection() {
     return;
   }
   
-  // Initialize scroll animations for the loaded section
-  if ('IntersectionObserver' in window) {
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
-    };
-
-    const sectionObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate-in');
-          sectionObserver.unobserve(entry.target);
-        }
-      });
-    }, observerOptions);
-
-    sectionObserver.observe(section);
+  const splineViewer = section.querySelector('.ser-experience-spline[data-spline-viewer]');
+  const backgroundContainer = section.querySelector('.ser-experience-background');
+  let splineScriptLoaded = false;
+  
+  // Ensure background container and Spline viewer are visible
+  if (backgroundContainer) {
+    backgroundContainer.style.visibility = 'visible';
+    backgroundContainer.style.opacity = '1';
+    backgroundContainer.style.display = 'block';
+    backgroundContainer.style.background = 'transparent';
+    backgroundContainer.style.backgroundColor = 'transparent';
   }
+  
+  if (splineViewer) {
+    splineViewer.style.visibility = 'visible';
+    splineViewer.style.opacity = '1';
+    splineViewer.style.display = 'block';
+    splineViewer.style.background = 'transparent';
+    splineViewer.style.backgroundColor = 'transparent';
+  }
+  
+  // Function to load Spline viewer script
+  function loadSplineScript() {
+    if (splineScriptLoaded) return;
+    
+    // Check if script is already loaded
+    const existingScript = document.querySelector('script[src*="spline-viewer"]');
+    if (existingScript) {
+      splineScriptLoaded = true;
+      // Wait for custom element to be defined
+      setTimeout(() => {
+        if (splineViewer && customElements.get('spline-viewer')) {
+          console.log('Experience Power Spline viewer initialized (script already loaded)');
+        }
+      }, 200);
+      return;
+    }
+    
+    // Load script if not already loading/loaded
+    if (!window.splineScriptLoading) {
+      window.splineScriptLoading = true;
+      const splineScript = document.createElement('script');
+      splineScript.type = 'module';
+      splineScript.src = 'https://unpkg.com/@splinetool/viewer@1.12.29/build/spline-viewer.js';
+      splineScript.onload = () => {
+        console.log('Spline viewer script loaded for Experience Power section');
+        splineScriptLoaded = true;
+        window.splineScriptLoading = false;
+        // Wait for custom element to be defined
+        setTimeout(() => {
+          if (splineViewer && customElements.get('spline-viewer')) {
+            console.log('Experience Power Spline viewer initialized');
+          }
+        }, 200);
+      };
+      splineScript.onerror = () => {
+        console.error('Failed to load Spline script for Experience Power section');
+        window.splineScriptLoading = false;
+      };
+      document.head.appendChild(splineScript);
+      console.log('Spline viewer script loading for Experience Power section...');
+    } else {
+      // Script is loading, wait for it
+      const checkLoaded = setInterval(() => {
+        if (customElements.get('spline-viewer')) {
+          clearInterval(checkLoaded);
+          splineScriptLoaded = true;
+          console.log('Experience Power Spline viewer initialized (waited for script)');
+        }
+      }, 100);
+      setTimeout(() => clearInterval(checkLoaded), 5000);
+    }
+  }
+  
+  // Remove animate-in class if it exists (from template)
+  section.classList.remove('animate-in');
+  
+  // Set initial animation state
+  section.style.opacity = '0';
+  section.style.transform = 'translateY(30px)';
+  section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+  
+  // Small delay to ensure DOM is ready
+  setTimeout(() => {
+    // Initialize scroll animations for the loaded section with lazy loading
+    if ('IntersectionObserver' in window) {
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '700px 0px 700px 0px' // Start loading 700px before section enters viewport
+      };
+
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Load Spline script when section is about to be visible
+            if (!splineScriptLoaded) {
+              loadSplineScript();
+            }
+            
+            // Animation
+            entry.target.classList.add('animate-in');
+            entry.target.style.opacity = '';
+            entry.target.style.transform = '';
+            sectionObserver.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      sectionObserver.observe(section);
+      
+      // If section is already in viewport, trigger animation and load Spline immediately
+      const rect = section.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+      if (rect.top < windowHeight + 700 && rect.bottom > -700) {
+        loadSplineScript();
+        section.classList.add('animate-in');
+        section.style.opacity = '';
+        section.style.transform = '';
+      }
+    } else {
+      // Fallback: load immediately and show
+      loadSplineScript();
+      setTimeout(() => {
+        section.classList.add('animate-in');
+        section.style.opacity = '';
+        section.style.transform = '';
+      }, 200);
+    }
+  }, 100);
   
   console.log('Experience the Power section template loaded and initialized');
 }
