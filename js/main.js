@@ -266,7 +266,7 @@ function initHeroSplineOptimization() {
     if (!document.querySelector('script[src*="spline-viewer"]')) {
       const splineScript = document.createElement('script');
       splineScript.type = 'module';
-      splineScript.src = 'https://unpkg.com/@splinetool/viewer@1.12.28/build/spline-viewer.js';
+      splineScript.src = 'https://unpkg.com/@splinetool/viewer@1.12.29/build/spline-viewer.js';
       splineScript.onload = () => {
         console.log('Hero Spline viewer script loaded');
         splineScriptLoaded = true;
@@ -341,4 +341,62 @@ if (document.readyState === 'loading') {
   });
 } else {
   setTimeout(initHeroSplineOptimization, 100);
+}
+
+// Initialize How It Works Spline optimization for performance
+function initHowItWorksSplineOptimization() {
+  const howItWorksSection = document.querySelector('.how-it-works');
+  const howItWorksSplineViewer = howItWorksSection ? howItWorksSection.querySelector('.how-it-works-spline-viewer') : null;
+  
+  if (!howItWorksSection || !howItWorksSplineViewer) {
+    return;
+  }
+
+  // Function to show/hide Spline viewer (hiding pauses rendering)
+  function toggleHowItWorksSplineViewer(visible) {
+    if (visible) {
+      howItWorksSplineViewer.style.display = 'block';
+    } else {
+      howItWorksSplineViewer.style.display = 'none';
+    }
+  }
+
+  // Use IntersectionObserver to pause Spline when section is not visible (for performance)
+  if ('IntersectionObserver' in window) {
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '50px 0px 50px 0px' // Start loading slightly before section is visible
+    };
+
+    const howItWorksObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Section is visible - show Spline
+          toggleHowItWorksSplineViewer(true);
+        } else {
+          // Section is not visible - hide and pause Spline to save resources
+          toggleHowItWorksSplineViewer(false);
+        }
+      });
+    }, observerOptions);
+
+    // Start observing the how-it-works section
+    howItWorksObserver.observe(howItWorksSection);
+    
+    // Initially hide if not visible
+    const rect = howItWorksSection.getBoundingClientRect();
+    const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
+    if (!isVisible) {
+      toggleHowItWorksSplineViewer(false);
+    }
+  }
+}
+
+// Initialize How It Works Spline optimization when DOM is ready
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(initHowItWorksSplineOptimization, 200);
+  });
+} else {
+  setTimeout(initHowItWorksSplineOptimization, 200);
 }

@@ -392,6 +392,12 @@
           <div class="ind-categories-grid" id="home-service-categories-grid">
             <!-- Column 1 -->
             <div class="ind-categories-column">
+              <a href="industry_home_service.html" class="ind-category-item" data-visible="true">
+                <div class="ind-category-icon">
+                  <img src="images/icons/solar_home-2-broken.svg" alt="Home Service Pros" width="40" height="40">
+              </div>
+                <h3 class="ind-category-title">Home Service Pros</h3>
+              </a>
               <a href="industry_air_duct_cleaning.html" class="ind-category-item" data-visible="true">
                 <div class="ind-category-icon">
                   <img src="images/icons/fa6-solid_wind.svg" alt="Air Duct Cleaning" width="40" height="40">
@@ -452,12 +458,6 @@
             </div>
                 <h3 class="ind-category-title">Carpet Cleaning</h3>
               </a>
-              <a href="industry_computer_repair.html" class="ind-category-item" data-visible="true">
-                <div class="ind-category-icon">
-                  <img src="images/icons/fa6-solid_computer.svg" alt="Computer Repair" width="40" height="40">
-              </div>
-                <h3 class="ind-category-title">Computer Repair</h3>
-            </a>
               </div>
             
             <!-- Column 2 -->
@@ -585,6 +585,12 @@
                   <img src="images/icons/fa6-solid_house-chimney-window.svg" alt="Window Cleaning" width="40" height="40">
                 </div>
                 <h3 class="ind-category-title">Window Cleaning</h3>
+              </a>
+              <a href="industry_computer_repair.html" class="ind-category-item" data-visible="true">
+                <div class="ind-category-icon">
+                  <img src="images/icons/fa6-solid_computer.svg" alt="Computer Repair" width="40" height="40">
+                </div>
+                <h3 class="ind-category-title">Computer Repair</h3>
               </a>
             </div>
           </div>
@@ -1242,15 +1248,44 @@
       loadTemplate('templates/intelligent-banner-section.html', '#intelligent-banner-template-container').then(() => {
         // Initialize intelligent banner animation after template loads
         setTimeout(() => {
-          const intelligentBanner = document.querySelector('.ser-intelligent-banner');
-          const line1 = document.querySelector('.ser-intelligent-banner-line1');
-          const line2 = document.querySelector('.ser-intelligent-banner-line2');
+          const templateContainer = document.querySelector('#intelligent-banner-template-container');
+          const intelligentBanner = templateContainer ? templateContainer.querySelector('.ser-intelligent-banner') : document.querySelector('.ser-intelligent-banner');
+          const line1 = intelligentBanner ? intelligentBanner.querySelector('.ser-intelligent-banner-line1') : null;
+          const line2 = intelligentBanner ? intelligentBanner.querySelector('.ser-intelligent-banner-line2') : null;
           
           if (intelligentBanner && line1 && line2) {
             // Set initial state for section
             intelligentBanner.style.opacity = '0';
             intelligentBanner.style.transform = 'translateY(30px)';
             intelligentBanner.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            
+            // Initialize Spline viewer if it exists
+            const splineViewer = intelligentBanner.querySelector('.ser-intelligent-banner-spline[data-spline-viewer]');
+            const backgroundContainer = intelligentBanner.querySelector('.ser-intelligent-banner-background');
+            
+            if (splineViewer && backgroundContainer) {
+              // Ensure background container and Spline viewer are visible
+              backgroundContainer.style.visibility = 'visible';
+              backgroundContainer.style.opacity = '1';
+              backgroundContainer.style.display = 'block';
+              
+              splineViewer.style.visibility = 'visible';
+              splineViewer.style.opacity = '1';
+              splineViewer.style.display = 'block';
+              
+              // Load Spline script if available
+              if (typeof loadSplineScript !== 'undefined') {
+                loadSplineScript().then(() => {
+                  setTimeout(() => {
+                    if (splineViewer.tagName.toLowerCase() === 'spline-viewer') {
+                      console.log('Intelligent Banner Spline viewer initialized from template');
+                    }
+                  }, 200);
+                }).catch(err => {
+                  console.error('Error loading Spline for intelligent banner:', err);
+                });
+              }
+            }
             
             // Function to update text position based on scroll progress (from ser.js)
             const updateTextAnimation = () => {
@@ -1311,63 +1346,8 @@
         }, 150);
       });
       // Load Experience Power section template
-      loadTemplate('templates/experience-power-section.html', '#experience-power-template-container').then(() => {
-        // Wait a bit for DOM to be ready
-        setTimeout(() => {
-          const experienceSection = document.querySelector('.ser-experience-power');
-          if (experienceSection) {
-            // Ensure all child elements are visible
-            const allChildren = experienceSection.querySelectorAll('*');
-            allChildren.forEach(child => {
-              child.style.visibility = 'visible';
-              child.style.opacity = '1';
-            });
-            
-            // Set initial state for animation
-            experienceSection.style.opacity = '0';
-            experienceSection.style.transform = 'translateY(30px)';
-            experienceSection.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            experienceSection.style.visibility = 'visible';
-            experienceSection.style.display = 'flex';
-            
-            // Use the global observer from animations.js if available, or create a new one
-            if (typeof observer !== 'undefined' && observer) {
-              observer.observe(experienceSection);
-            } else if ('IntersectionObserver' in window) {
-              // Check if section is already in viewport
-              const rect = experienceSection.getBoundingClientRect();
-              const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
-              
-              if (isInViewport) {
-                // If already visible, animate immediately
-                setTimeout(() => {
-                  experienceSection.classList.add('animate-in');
-                }, 200);
-              } else {
-                // Create new observer
-                const newObserver = new IntersectionObserver((entries) => {
-                  entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                      entry.target.classList.add('animate-in');
-                      newObserver.unobserve(entry.target);
-                    }
-                  });
-                }, {
-                  threshold: 0.1,
-                  rootMargin: '0px 0px -50px 0px'
-                });
-                
-                newObserver.observe(experienceSection);
-              }
-            } else {
-              // Fallback: show immediately
-              setTimeout(() => {
-                experienceSection.classList.add('animate-in');
-              }, 200);
-            }
-          }
-        }, 150);
-      });
+      // Load template - initExperiencePowerSection() in template-loader.js will handle Spline initialization
+      loadTemplate('templates/experience-power-section.html', '#experience-power-template-container');
     });
   </script>
   

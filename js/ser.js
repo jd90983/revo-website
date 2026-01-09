@@ -424,6 +424,204 @@ if ('IntersectionObserver' in window) {
   });
 }
 
+// ===== LAZY LOAD SPLINE VIEWER FOR PERFORMANCE =====
+// Shared script loader (only load once for all Spline viewers)
+let splineScriptLoaded = false;
+const loadSplineScript = () => {
+  if (splineScriptLoaded) return Promise.resolve();
+  splineScriptLoaded = true;
+  
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.type = 'module';
+    script.src = 'https://unpkg.com/@splinetool/viewer@1.12.29/build/spline-viewer.js';
+    script.onload = () => {
+      console.log('Spline script loaded');
+      resolve();
+    };
+    script.onerror = () => {
+      console.error('Failed to load Spline script');
+      reject(new Error('Failed to load Spline script'));
+    };
+    document.head.appendChild(script);
+  });
+};
+
+// Lazy load Spline for Experience Power section
+document.addEventListener('DOMContentLoaded', function() {
+  const initExperienceSpline = (experienceSection) => {
+    const splineViewer = experienceSection.querySelector('.ser-experience-spline[data-spline-viewer]');
+    if (!splineViewer) return;
+    
+    // Skip if already initialized
+    if (splineViewer.hasAttribute('data-spline-initialized')) return;
+    splineViewer.setAttribute('data-spline-initialized', 'true');
+    
+    let splineLoaded = false;
+    
+    // Function to initialize Spline viewer (after script is loaded)
+    const initSplineViewer = () => {
+      if (splineLoaded) return;
+      splineLoaded = true;
+      
+      // Script should be loaded by now, Spline viewer will auto-initialize
+      setTimeout(() => {
+        if (splineViewer.tagName.toLowerCase() === 'spline-viewer') {
+          console.log('Experience Power Spline viewer initialized');
+        }
+      }, 500);
+    };
+    
+    // Always load Spline immediately - don't wait for viewport intersection
+    // This ensures the Spline background is visible as soon as the page loads
+    if (!splineLoaded) {
+      loadSplineScript().then(() => {
+        setTimeout(() => {
+          initSplineViewer();
+        }, 100);
+      }).catch(err => {
+        console.error('Error loading Spline for experience section:', err);
+      });
+    }
+    
+    // Also set up observer as backup (in case script loading is delayed)
+    const splineObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !splineLoaded) {
+          // Double-check that script is loaded
+          loadSplineScript().then(() => {
+            setTimeout(() => {
+              initSplineViewer();
+            }, 100);
+          });
+          splineObserver.unobserve(experienceSection);
+        }
+      });
+    }, {
+      rootMargin: '500px 0px', // Larger margin to trigger earlier
+      threshold: 0.01
+    });
+    
+    // Observe the section as backup
+    splineObserver.observe(experienceSection);
+  };
+  
+  // Process all existing sections
+  const experienceSections = document.querySelectorAll('.ser-experience-power');
+  experienceSections.forEach(initExperienceSpline);
+  
+  // MutationObserver to handle dynamically added sections (from templates)
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach(mutation => {
+      if (mutation.type === 'childList') {
+        mutation.addedNodes.forEach(node => {
+          if (node.nodeType === 1) {
+            // Check if the added node is a ser-experience-power section
+            if (node.classList && node.classList.contains('ser-experience-power')) {
+              initExperienceSpline(node);
+            }
+            // Also check for ser-experience-power sections within the added node
+            const nestedSections = node.querySelectorAll && node.querySelectorAll('.ser-experience-power');
+            if (nestedSections) {
+              nestedSections.forEach(initExperienceSpline);
+            }
+          }
+        });
+      }
+    });
+  });
+  
+  // Observe the entire document for dynamically added sections
+  observer.observe(document.body, { childList: true, subtree: true });
+});
+
+// Lazy load Spline for Intelligent Banner section
+document.addEventListener('DOMContentLoaded', function() {
+  const initIntelligentBannerSpline = (intelligentBanner) => {
+    const bannerSplineViewer = intelligentBanner.querySelector('.ser-intelligent-banner-spline[data-spline-viewer]');
+    if (!bannerSplineViewer) return;
+    
+    // Skip if already initialized
+    if (bannerSplineViewer.hasAttribute('data-spline-initialized')) return;
+    bannerSplineViewer.setAttribute('data-spline-initialized', 'true');
+    
+    let bannerSplineLoaded = false;
+    
+    // Function to initialize Spline viewer (after script is loaded)
+    const initBannerSplineViewer = () => {
+      if (bannerSplineLoaded) return;
+      bannerSplineLoaded = true;
+      
+      // Script should be loaded by now, Spline viewer will auto-initialize
+      setTimeout(() => {
+        if (bannerSplineViewer.tagName.toLowerCase() === 'spline-viewer') {
+          console.log('Intelligent Banner Spline viewer initialized');
+        }
+      }, 500);
+    };
+    
+    // Always load Spline immediately - don't wait for viewport intersection
+    if (!bannerSplineLoaded) {
+      loadSplineScript().then(() => {
+        setTimeout(() => {
+          initBannerSplineViewer();
+        }, 100);
+      }).catch(err => {
+        console.error('Error loading Spline for intelligent banner:', err);
+      });
+    }
+    
+    // Also set up observer as backup (in case script loading is delayed)
+    const bannerSplineObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !bannerSplineLoaded) {
+          // Double-check that script is loaded
+          loadSplineScript().then(() => {
+            setTimeout(() => {
+              initBannerSplineViewer();
+            }, 100);
+          });
+          bannerSplineObserver.unobserve(intelligentBanner);
+        }
+      });
+    }, {
+      rootMargin: '500px 0px', // Larger margin to trigger earlier
+      threshold: 0.01
+    });
+    
+    // Observe the section as backup
+    bannerSplineObserver.observe(intelligentBanner);
+  };
+  
+  // Process all existing sections
+  const intelligentBanners = document.querySelectorAll('.ser-intelligent-banner');
+  intelligentBanners.forEach(initIntelligentBannerSpline);
+  
+  // MutationObserver to handle dynamically added sections (from templates)
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach(mutation => {
+      if (mutation.type === 'childList') {
+        mutation.addedNodes.forEach(node => {
+          if (node.nodeType === 1) {
+            // Check if the added node is a ser-intelligent-banner section
+            if (node.classList && node.classList.contains('ser-intelligent-banner')) {
+              initIntelligentBannerSpline(node);
+            }
+            // Also check for ser-intelligent-banner sections within the added node
+            const nestedSections = node.querySelectorAll && node.querySelectorAll('.ser-intelligent-banner');
+            if (nestedSections) {
+              nestedSections.forEach(initIntelligentBannerSpline);
+            }
+          }
+        });
+      }
+    });
+  });
+  
+  // Observe the entire document for dynamically added sections
+  observer.observe(document.body, { childList: true, subtree: true });
+});
+
 // Add smooth scroll to anchor links
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {

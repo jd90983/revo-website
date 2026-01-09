@@ -993,7 +993,7 @@ a.ind-category-item {
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
-  padding: 112px 64px;
+  padding: 112px 0;
   display: flex;
   flex-direction: column;
   gap: 48px;
