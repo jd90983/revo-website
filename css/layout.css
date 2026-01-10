@@ -114,17 +114,19 @@
   left: 0;
   right: 0;
   background: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   width: 100%;
   padding: 40px 0;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.2s ease, visibility 0.2s ease;
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   z-index: 999;
   margin-top: 0;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12);
-  will-change: opacity, visibility;
-  transform: translateZ(0); /* Force hardware acceleration */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  will-change: opacity, visibility, transform;
+  transform: translateY(-10px) translateZ(0);
 }
 
 /* Megamenu visibility is now controlled by JavaScript for delay functionality */
@@ -133,6 +135,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: all;
+  transform: translateY(0) translateZ(0);
 }
 
 /* Bridge to prevent gap between menu item and megamenu */
@@ -155,6 +158,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  position: relative;
 }
 
 .megamenu-titles-row {
@@ -199,7 +203,7 @@
   font-weight: var(--font-semibold);
   font-size: var(--text-tiny);
   line-height: var(--line-height-relaxed);
-  color: #0A0B0C;
+  color: rgba(10, 11, 12, 0.5);
   margin: 0;
   padding: 0;
   white-space: pre-wrap;
@@ -218,17 +222,20 @@
   display: flex;
   gap: 12px;
   align-items: flex-start;
-  padding: 10px 12px;
-  margin: 0 -12px;
+  padding: 12px 16px;
+  margin: 0 -16px;
   text-decoration: none;
-  transition: background-color 0.2s ease;
-  border-radius: 8px;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  border-radius: 12px;
   min-height: auto;
   transform: translateZ(0); /* Force hardware acceleration */
+  border: 1px solid transparent;
 }
 
 .megamenu-item:hover {
-  background: rgba(10, 11, 12, 0.05);
+  background: rgba(15, 90, 215, 0.08);
+  border-color: rgba(15, 90, 215, 0.15);
+  transform: translateX(4px) translateZ(0);
 }
 
 .megamenu-icon {
@@ -238,14 +245,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #0f5ad7;
+  color: rgba(10, 11, 12, 0.4);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .megamenu-icon svg {
   width: 100%;
   height: 100%;
-  stroke: #0f5ad7;
+  stroke: rgba(10, 11, 12, 0.4);
   fill: none;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .megamenu-icon img {
@@ -253,10 +262,22 @@
   height: 100%;
   object-fit: contain;
   display: block;
+  filter: brightness(0) saturate(100%) invert(10%) sepia(5%) saturate(100%) hue-rotate(0deg) brightness(90%) contrast(85%);
+  opacity: 0.6;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.megamenu-item:hover .megamenu-icon {
+  color: var(--color-primary);
 }
 
 .megamenu-item:hover .megamenu-icon svg {
-  stroke: #0D4EC0;
+  stroke: var(--color-primary);
+}
+
+.megamenu-item:hover .megamenu-icon img {
+  filter: brightness(0) saturate(100%) invert(37%) sepia(93%) saturate(2500%) hue-rotate(205deg) brightness(95%) contrast(95%);
+  opacity: 1;
 }
 
 .megamenu-content {
@@ -276,6 +297,11 @@
   color: #0A0B0C;
   margin: 0;
   white-space: pre-wrap;
+  transition: color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.megamenu-item:hover .megamenu-item-title {
+  color: var(--color-primary);
 }
 
 .megamenu-item-subtitle {
@@ -284,9 +310,14 @@
   font-weight: var(--font-regular);
   font-size: var(--text-small);
   line-height: var(--line-height-relaxed);
-  color: #666666;
+  color: rgba(10, 11, 12, 0.6);
   margin: 0;
   white-space: pre-wrap;
+  transition: color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.megamenu-item:hover .megamenu-item-subtitle {
+  color: rgba(15, 90, 215, 0.8);
 }
 
 .megamenu-more {
@@ -294,23 +325,23 @@
   font-weight: var(--font-semibold);
   font-size: var(--text-small);
   line-height: var(--line-height-relaxed);
-  color: #0f5ad7;
+  color: var(--color-primary);
   text-align: left;
   margin: 16px 0 0 0;
   white-space: pre-wrap;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   margin-top: auto;
 }
 
 .megamenu-more:hover {
-  color: #0D4EC0;
+  color: var(--color-primary-dark);
   text-decoration: underline;
 }
 
 /* Megamenu Footer Section */
 .megamenu-footer {
-  border-top: 1px solid rgba(10, 11, 12, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
   margin-top: 32px;
   padding-top: 24px;
   width: 100%;
@@ -347,7 +378,7 @@
   font-weight: var(--font-regular);
   font-size: var(--text-small);
   line-height: var(--line-height-relaxed);
-  color: #666666;
+  color: rgba(10, 11, 12, 0.6);
   margin: 0;
 }
 
@@ -358,18 +389,121 @@
   line-height: var(--line-height-relaxed);
   color: #0A0B0C;
   background: rgba(10, 11, 12, 0.05);
-  border: none;
+  border: 1px solid rgba(10, 11, 12, 0.1);
   border-radius: 100px;
   padding: 10px 24px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   white-space: nowrap;
   flex-shrink: 0;
 }
 
 .megamenu-footer-button:hover {
-  background: rgba(10, 11, 12, 0.1);
+  background: var(--color-primary);
+  border-color: var(--color-primary);
   transform: translateY(-2px);
+  color: #ffffff;
+}
+
+/* ============================================
+   Megamenu Dark Mode (Night Mode)
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+  .megamenu {
+    background: var(--color-dark-bg);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px) saturate(180%);
+    -webkit-backdrop-filter: blur(20px) saturate(180%);
+  }
+
+  .megamenu-column-title {
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  .megamenu-item {
+    border-color: transparent;
+  }
+
+  .megamenu-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: transparent;
+  }
+
+  .megamenu-icon {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .megamenu-icon svg {
+    stroke: rgba(255, 255, 255, 0.6);
+  }
+
+  .megamenu-icon img {
+    filter: brightness(0) saturate(100%) invert(100%) brightness(100%) contrast(100%);
+    opacity: 0.7;
+  }
+
+  .megamenu-item:hover .megamenu-icon {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .megamenu-item:hover .megamenu-icon svg {
+    stroke: rgba(255, 255, 255, 0.6);
+  }
+
+  .megamenu-item:hover .megamenu-icon img {
+    filter: brightness(0) saturate(100%) invert(100%) brightness(100%) contrast(100%);
+    opacity: 0.7;
+  }
+
+  .megamenu-item-title {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .megamenu-item:hover .megamenu-item-title {
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .megamenu-item-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .megamenu-item:hover .megamenu-item-subtitle {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .megamenu-more {
+    color: var(--color-primary);
+  }
+
+  .megamenu-more:hover {
+    color: #4d8df0;
+  }
+
+  .megamenu-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .megamenu-footer-title {
+    color: #ffffff;
+  }
+
+  .megamenu-footer-description {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .megamenu-footer-button {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .megamenu-footer-button:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: #ffffff;
+  }
 }
 
 .navbar-actions {
@@ -628,7 +762,9 @@
 }
 
 .mobile-menu-submenu a {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   padding: 10px 16px;
   font-size: var(--text-regular);
   font-weight: var(--font-regular);
@@ -638,9 +774,29 @@
   transition: all 0.2s ease;
 }
 
+.mobile-menu-submenu a span {
+  flex: 1;
+}
+
+.mobile-menu-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  object-fit: contain;
+  display: block;
+  filter: brightness(0) saturate(100%) invert(100%) brightness(100%) contrast(100%);
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+
 .mobile-menu-submenu a:hover {
-  background: rgba(255, 255, 255, 0.03);
+  background: rgba(255, 255, 255, 0.05);
   color: #ffffff;
+}
+
+.mobile-menu-submenu a:hover .mobile-menu-icon {
+  opacity: 1;
+  filter: brightness(0) saturate(100%) invert(37%) sepia(93%) saturate(2500%) hue-rotate(205deg) brightness(95%) contrast(95%);
 }
 
 .mobile-menu-submenu a:hover {
@@ -1425,6 +1581,47 @@ body.mobile-menu-open {
   margin: 0;
 }
 
+/* Glass effect for feature cards on mobile and tablet */
+.features-cards-container .feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Glass effect always visible on mobile and tablet (no hover) */
+@media (max-width: 1023px) {
+  .features-cards-container .feature-card::before {
+    opacity: 1;
+  }
+  
+  /* Remove gradient border hover effect on mobile/tablet */
+  .features-cards-container .feature-card:hover {
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    background-image: none;
+    background: #0a0b0c;
+    background-origin: border-box;
+    background-clip: border-box;
+  }
+  
+  /* Make feature card icons bigger on mobile/tablet like how-feature-icon */
+  .features-cards-container .feature-card .feature-icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+
 /* Buttons Container */
 .features-buttons {
   display: flex;
@@ -1594,6 +1791,7 @@ body.mobile-menu-open {
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
+  background-color: #0A0B0C;
 }
 
 /* Wave Pattern - Background image only */
@@ -1826,6 +2024,13 @@ body.mobile-menu-open {
 
 .how-feature-column:hover {
   transform: translateY(-4px);
+}
+
+/* Glass effect always visible on mobile and tablet (no hover) */
+@media (max-width: 1023px) {
+  .how-feature-column::before {
+    opacity: 1;
+  }
 }
 
 /* Feature Icon */
