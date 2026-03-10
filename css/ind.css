@@ -566,12 +566,30 @@ main#main-content > section {
 .ind-categories-grid-wrapper {
   width: 100%;
   margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .ind-categories-grid {
   display: flex;
   gap: 40px;
   width: 100%;
+}
+
+.ind-categories-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ind-categories-image img {
+  width: 100%;
+  max-width: 1133px;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .ind-categories-column {

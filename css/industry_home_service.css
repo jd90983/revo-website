@@ -84,6 +84,183 @@ main#main-content > section {
   z-index: 3;
 }
 
+/* Industry-specific hero backgrounds */
+.home-service-hero[data-industry="locksmith"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_locksmith.png');
+}
+
+.home-service-hero[data-industry="hvac"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_hvac.png');
+}
+
+.home-service-hero[data-industry="plumbing"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_plumbing.png');
+}
+
+.home-service-hero[data-industry="roofing"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_roofing.png');
+}
+
+.home-service-hero[data-industry="electrical"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_electrical.png');
+}
+
+.home-service-hero[data-industry="healthcare_medical"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_healthcare_and_medical.png');
+}
+
+.home-service-hero[data-industry="legal"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_legal.png');
+}
+
+.home-service-hero[data-industry="home_service"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_home_service.png');
+}
+
+.home-service-hero[data-industry="landscape"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_landscape.png');
+}
+
+.home-service-hero[data-industry="lawn_care"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_lawn_care.png');
+}
+
+.home-service-hero[data-industry="handyman"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_handyman.png');
+}
+
+.home-service-hero[data-industry="snow_removal"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_snow_removal.png');
+}
+
+.home-service-hero[data-industry="painting"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_painting.png');
+}
+
+.home-service-hero[data-industry="maid_cleaning"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_maid_and_cleaning.png');
+}
+
+.home-service-hero[data-industry="carpet_cleaning"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_carpet_cleaning.png');
+}
+
+.home-service-hero[data-industry="window_cleaning"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_window_cleaning.png');
+}
+
+.home-service-hero[data-industry="pressure_washing"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_pressure_washing.png');
+}
+
+.home-service-hero[data-industry="pool_services"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_pool_services.png');
+}
+
+.home-service-hero[data-industry="appliance_repair"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_appliance_repair.png');
+}
+
+.home-service-hero[data-industry="air_duct_cleaning"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_air_duct_cleaning.png');
+}
+
+.home-service-hero[data-industry="pest_control"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_pest_control.png');
+}
+
+.home-service-hero[data-industry="garage_door"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_garage_door.png');
+}
+
+.home-service-hero[data-industry="towing"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_towing.png');
+}
+
+.home-service-hero[data-industry="small_business"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_small_business.png');
+}
+
+.home-service-hero[data-industry="it_technology_communications"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_it_technology_and_communications.png');
+}
+
+.home-service-hero[data-industry="financial_service"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_financial_service.png');
+}
+
+.home-service-hero[data-industry="retail_ecommerce"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_retail_and_ecommerce.png');
+}
+
+.home-service-hero[data-industry="corporate_government"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_corporate_and_goverment.png');
+}
+
+.home-service-hero[data-industry="tourism_travel_hospitality"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_tourism_travel_and_hospitality.png');
+}
+
+.home-service-hero[data-industry="real_estate_property_management"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_real_estate_and_property_management.png');
+}
+
+.home-service-hero[data-industry="construction"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_construction.png');
+}
+
+.home-service-hero[data-industry="restoration"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_restoration.png');
+}
+
+.home-service-hero[data-industry="solar_installation"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_solar_installation.png');
+}
+
+.home-service-hero[data-industry="property_maintenance"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_property_maintenance.png');
+}
+
+.home-service-hero[data-industry="general_contracting"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_general_contracting.png');
+}
+
+.home-service-hero[data-industry="moving"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_moving.png');
+}
+
+.home-service-hero[data-industry="junk_removal"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_junk_removal.png');
+}
+
+.home-service-hero[data-industry="computer_repair"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_computer_repair.png');
+}
+
+.home-service-hero[data-industry="chimney_sweep"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_chimney_sweep.png');
+}
+
+.home-service-hero[data-industry="building_construction_trades"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_building_construction_and_trades.png');
+}
+
+.home-service-hero[data-industry="alarm_security"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_alarm_and_security.png');
+}
+
+.home-service-hero[data-industry="franchises"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_franchises.png');
+}
+
+.home-service-hero[data-industry="marketing_media_advertising"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_marketing_media_and_advertising.png');
+}
+
+.home-service-hero[data-industry="tilling"] .home-service-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_tilling.png');
+}
+
 .home-service-hero-container {
   position: relative;
   z-index: 10 !important;

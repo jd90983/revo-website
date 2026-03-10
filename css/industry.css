@@ -276,6 +276,150 @@ body.industry-appliance-repair-page .industry-hero-gradient {
   background-repeat: no-repeat;
 }
 
+/* Specific background image for Solar Installation page */
+body.industry-solar-installation-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_solar_installation.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Garage Door page */
+body.industry-garage-door-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_garage_door.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Painting page */
+body.industry-painting-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_painting.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Tilling page */
+body.industry-tilling-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_tilling.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Window Cleaning page */
+body.industry-window-cleaning-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_window_cleaning.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Computer Repair page */
+body.industry-computer-repair-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_computer_repair.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Healthcare & Medical page */
+body.industry-healthcare-medical-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_healthcare_and_medical.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Legal page */
+body.industry-legal-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_legal.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Financial Service page */
+body.industry-financial-service-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_financial_service.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Real Estate & Property Management page */
+body.industry-real-estate-property-management-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_real_estate_and_property_management.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Small Business page */
+body.industry-small-business-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_small_business.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Corporate & Government page */
+body.industry-corporate-government-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_corporate_and_goverment.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Retail & eCommerce page */
+body.industry-retail-ecommerce-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_retail_and_ecommerce.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Marketing, Media & Advertising page */
+body.industry-marketing-media-advertising-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_marketing_media_and_advertising.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for IT, Technology & Communications page */
+body.industry-it-technology-communications-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_it_technology_and_communications.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Franchises page */
+body.industry-franchises-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_franchises.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Tourism, Travel & Hospitality page */
+body.industry-tourism-travel-hospitality-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_tourism_travel_and_hospitality.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
+/* Specific background image for Building, Construction & Trades page */
+body.industry-building-construction-trades-page .industry-hero-gradient {
+  background-image: url('../images/industries/hero_industries/hero_building_construction_and_trades.png') !important;
+  background-size: cover;
+  background-position: center bottom !important;
+  background-repeat: no-repeat;
+}
+
 .industry-hero-container {
   position: relative;
   z-index: 10 !important;
