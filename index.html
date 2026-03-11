@@ -1225,17 +1225,94 @@
     Configuración personalizada de transcripciones de audio activada
     Los textos se cargan desde js/hear-sample-config.js
   -->
-  <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js" type="module" defer></script>
-  <script src="js/hear-sample-config.js" defer></script>
-  <script src="js/hear-sample.js" defer></script>
-  <script src="js/template-loader.js" defer></script>
-  <script src="js/get-started-form.js" defer></script>
   <script defer>
-    // Load templates
-    document.addEventListener('DOMContentLoaded', function() {
-      loadTemplate('templates/get-started-form-section.html', '#get-started-form-template-container');
-      loadTemplate('templates/transform-cta-section.html', '#transform-cta-template-container');
-    });
+    (function() {
+      const loadedScripts = new Set();
+
+      function loadScript(src, attrs) {
+        if (loadedScripts.has(src)) return Promise.resolve();
+        loadedScripts.add(src);
+        return new Promise((resolve, reject) => {
+          const script = document.createElement('script');
+          script.src = src;
+          if (attrs) {
+            Object.keys(attrs).forEach((key) => {
+              if (attrs[key] === true) script.setAttribute(key, '');
+              else script.setAttribute(key, attrs[key]);
+            });
+          }
+          script.onload = resolve;
+          script.onerror = reject;
+          document.head.appendChild(script);
+        });
+      }
+
+      function loadTemplatesWhenNeeded() {
+        const targets = [
+          document.querySelector('#get-started-form-template-container'),
+          document.querySelector('#transform-cta-template-container')
+        ].filter(Boolean);
+        if (!targets.length) return;
+
+        let templatesLoaded = false;
+        const onVisible = async () => {
+          if (templatesLoaded) return;
+          templatesLoaded = true;
+          await loadScript('js/template-loader.js');
+          await loadScript('js/get-started-form.js');
+          if (typeof loadTemplate === 'function') {
+            loadTemplate('templates/get-started-form-section.html', '#get-started-form-template-container');
+            loadTemplate('templates/transform-cta-section.html', '#transform-cta-template-container');
+          }
+        };
+
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver((entries) => {
+            if (entries.some((entry) => entry.isIntersecting)) {
+              observer.disconnect();
+              onVisible();
+            }
+          }, { rootMargin: '600px 0px' });
+          targets.forEach((el) => observer.observe(el));
+        } else {
+          setTimeout(onVisible, 1000);
+        }
+      }
+
+      function loadHearSampleWhenNeeded() {
+        const hearSampleSection = document.querySelector('#hear-sample');
+        if (!hearSampleSection) return;
+
+        let hearSampleLoaded = false;
+        const onVisible = async () => {
+          if (hearSampleLoaded) return;
+          hearSampleLoaded = true;
+          await loadScript(
+            'https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.5/dist/dotlottie-wc.js',
+            { type: 'module' }
+          );
+          await loadScript('js/hear-sample-config.js');
+          await loadScript('js/hear-sample.js');
+        };
+
+        if ('IntersectionObserver' in window) {
+          const observer = new IntersectionObserver((entries) => {
+            if (entries.some((entry) => entry.isIntersecting)) {
+              observer.disconnect();
+              onVisible();
+            }
+          }, { rootMargin: '450px 0px' });
+          observer.observe(hearSampleSection);
+        } else {
+          setTimeout(onVisible, 1000);
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        loadTemplatesWhenNeeded();
+        loadHearSampleWhenNeeded();
+      });
+    })();
   </script>
   <!-- Hero Wave Mouse-Following Effect -->
   <!-- <script src="js/hero-wave-follow.js" defer></script> -->

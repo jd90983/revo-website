@@ -256,6 +256,15 @@ function initHeroSplineOptimization() {
     return;
   }
 
+  // Protect mobile and data-saver users from heavy 3D runtime on first load.
+  const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const saveData = navigator.connection && navigator.connection.saveData;
+  if (!isDesktop || reducedMotion || saveData) {
+    heroSplineViewer.style.display = 'none';
+    return;
+  }
+
   let splineScriptLoaded = false;
   let splineViewerLoaded = false;
 
@@ -305,10 +314,16 @@ function initHeroSplineOptimization() {
     console.log('Hero Spline viewer enabled');
   }
 
-  // Load Spline immediately since hero is always visible on page load
-  // Also ensure viewer is visible from the start
+  // Keep hero visible, but postpone heavy 3D runtime initialization.
   toggleSplineViewer(true);
-  loadSplineScript();
+  const scheduleSplineLoad = () => {
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(loadSplineScript, { timeout: 2500 });
+    } else {
+      setTimeout(loadSplineScript, 1500);
+    }
+  };
+  scheduleSplineLoad();
   
   // Use IntersectionObserver to pause Spline when hero is not visible (for performance)
   if ('IntersectionObserver' in window) {
@@ -349,6 +364,14 @@ function initHowItWorksSplineOptimization() {
   const howItWorksSplineViewer = howItWorksSection ? howItWorksSection.querySelector('.how-it-works-spline-viewer') : null;
   
   if (!howItWorksSection || !howItWorksSplineViewer) {
+    return;
+  }
+
+  const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const saveData = navigator.connection && navigator.connection.saveData;
+  if (!isDesktop || reducedMotion || saveData) {
+    howItWorksSplineViewer.style.display = 'none';
     return;
   }
 
