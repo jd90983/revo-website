@@ -409,7 +409,16 @@
     
     // Only update image if not in hear-sample-call-page (that page uses example_call.png)
     if (image && finalSample.image && !pageSection) {
-      image.src = finalSample.image;
+      const normalizedImagePath = finalSample.image.replace(
+        '/Hear a Sample Call/',
+        '/hear-a-sample-call/'
+      );
+      // Defensive fallback so bad config paths do not render a broken panel image.
+      image.onerror = () => {
+        image.onerror = null;
+        image.src = './images/hear-a-sample-call/sample-home-services_pros_2.webp';
+      };
+      image.src = normalizedImagePath;
     }
 
     // Update title - check context first
