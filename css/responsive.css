@@ -1894,8 +1894,30 @@
     width: 100%;
   }
 
+  /* Agent: avatar left, dialogue right, no "Revo Agent" label, aligned left */
   .hear-sample-message-agent {
+    flex-direction: row;
     align-items: flex-start;
+    gap: 8px;
+    align-self: flex-start;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .hear-sample-message-agent .hear-sample-message-author {
+    display: none;
+  }
+
+  .hear-sample-message-agent .hear-sample-message-header {
+    flex-shrink: 0;
+    opacity: 1 !important; /* Avatar always visible on mobile (override JS hide) */
+  }
+
+  /* Bubble content-sized so the whole row (avatar + dialogue) can center */
+  .hear-sample-message-agent .hear-sample-message-bubble {
+    flex: 0 1 auto;
+    min-width: 0;
+    max-width: calc(100% - 36px);
   }
 
   .hear-sample-message-client {
@@ -1926,8 +1948,15 @@
 
   .hear-sample-message-bubble-agent {
     margin-right: auto;
-    background: #f2f2f2;
+    background: transparent;
     box-shadow: none;
+    padding-left: 0;
+    padding-right: 12px;
+  }
+
+  /* Align "Generating conversation" with agent dialogue (no left padding on mobile) */
+  .hear-sample-message-agent .hear-sample-generating-conversation {
+    left: 0 !important;
   }
 
   .hear-sample-message-bubble-client {

@@ -4603,11 +4603,18 @@ body.mobile-menu-open {
 }
 
 /* Service Icons Menu */
+
+/* Temporarily hide service switcher (Plumbing, Legal, Locksmith, Cyber) – remove .hear-sample-options-disabled from HTML to re-enable */
+.hear-sample-service-icons-menu.hear-sample-options-disabled,
+.hear-sample-mobile-icons.hear-sample-options-disabled {
+  display: none !important;
+}
+
 .hear-sample-service-icons-menu {
   position: absolute;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 24%;
+  transform: none;
   width: 68px;
   height: auto;
   background: transparent;
@@ -4717,7 +4724,7 @@ body.mobile-menu-open {
   flex: 1 1 0; /* Ocupa espacio disponible pero puede encogerse */
   min-height: 0; /* Permite que flex funcione correctamente */
   max-height: calc(100% - 80px); /* Altura máxima: 100% menos espacio del audio player */
-  padding: 0; /* Sin padding para permitir scroll completo */
+  padding: 0 0 32px 0; /* Espacio inferior para separar del reproductor */
   margin-bottom: 0; /* Sin margen inferior */
   position: relative;
   /* Centrar contenido cuando solo hay la tarjeta de resumen */
@@ -4822,6 +4829,15 @@ body.mobile-menu-open {
   color: #0f5ad7;
 }
 
+.hear-sample-summary-action {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #475569;
+  margin: 0;
+}
+
 .hear-sample-summary-why {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
@@ -4840,52 +4856,28 @@ body.mobile-menu-open {
   display: none; /* Chrome, Safari, Opera */
 }
 
-/* Gradiente superior para indicar más contenido arriba (máscara como WhatsApp) */
+/* Top/bottom fade overlays disabled to avoid white shader/shadow on chat */
 .hear-sample-chat::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 30px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
-  pointer-events: none;
-  z-index: 2;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  display: none;
 }
 
-/* Mostrar gradiente solo cuando hay scroll disponible arriba */
-.hear-sample-chat:not(:first-child)::before {
-  opacity: 1;
-}
-
-/* Gradiente inferior para indicar más contenido abajo */
 .hear-sample-chat::after {
-  content: '';
-  position: sticky;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 40px;
-  background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.95) 30%, rgba(255, 255, 255, 0) 100%);
-  pointer-events: none;
-  z-index: 2;
-  margin-top: -40px;
-  display: block;
+  display: none;
 }
 
 .hear-sample-message {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  justify-content: flex-start;
 }
 
 .hear-sample-message-agent {
   align-items: flex-start;
 }
 
-.hear-sample-message-client {
+.hear-sample-message-client,
+.hear-sample-message-customer {
   align-items: flex-end;
 }
 
@@ -4895,13 +4887,19 @@ body.mobile-menu-open {
   gap: 8px;
 }
 
+.hear-sample-chat .hear-sample-message-client .hear-sample-message-header,
+.hear-sample-chat .hear-sample-message-customer .hear-sample-message-header {
+  width: 100%;
+  justify-content: flex-end;
+}
+
 .hear-sample-message-header-right {
   flex-direction: row-reverse;
 }
 
 .hear-sample-avatar {
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -4942,14 +4940,18 @@ body.mobile-menu-open {
   max-width: 500px;
 }
 
+/* Revo agent: text-only, no bubble (ChatGPT-style) */
 .hear-sample-message-bubble-agent {
-  background: #f2f2f2;
-  border-radius: 16px;
-  border-top-left-radius: 0;
+  position: relative;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
 }
 
-.hear-sample-message-bubble-client {
-  background: #f2f2f2;
+.hear-sample-message-bubble-client,
+.hear-sample-message-bubble-customer {
+  background: #F2F2F2;
   border-radius: 16px;
   border-top-right-radius: 0;
 }
@@ -5004,9 +5006,49 @@ body.mobile-menu-open {
   }
 }
 
-/* Typing animation - letter by letter */
+/* Typing animation - word by word with preview */
 .hear-sample-message-bubble p span {
   display: inline;
+}
+
+/* Word-by-word reveal: each word fades in as agent reaches it */
+.hear-sample-typing-word {
+  display: inline;
+}
+
+/* "Generating conversation" line: positioned under current line via JS (top set in hear-sample.js) */
+.hear-sample-generating-conversation {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #64748b;
+  transition: top 0.2s ease;
+  white-space: nowrap;
+}
+
+.hear-sample-generating-text {
+  display: inline-block;
+}
+
+.hear-sample-generating-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  border: 1.5px solid #64748b;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: hear-sample-generating-spin 0.8s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes hear-sample-generating-spin {
+  to { transform: rotate(360deg); }
 }
 
 /* Listening indicator - Lottie animation when client is speaking */
@@ -5031,16 +5073,17 @@ body.mobile-menu-open {
 
 /* Active message indicator - Inner stroke */
 .hear-sample-message.active .hear-sample-message-bubble {
-  box-shadow: inset 0 0 0 2px rgba(15, 90, 215, 0.4);
-  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
 }
 
 .hear-sample-message.active .hear-sample-message-bubble-agent {
-  background: #f2f2f2;
+  background: transparent;
 }
 
-.hear-sample-message.active .hear-sample-message-bubble-client {
-  background: #f2f2f2;
+.hear-sample-message.active .hear-sample-message-bubble-client,
+.hear-sample-message.active .hear-sample-message-bubble-customer {
+  background: #F2F2F2;
 }
 
 /* Revo Start Notification */

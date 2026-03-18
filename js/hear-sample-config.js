@@ -21,39 +21,25 @@
 
 const HEAR_SAMPLE_CONFIG = {
   // ===== HOME SERVICES (Icono de casa) =====
+  // Placeholder until sample-home-services.mp3 is added
   home: {
     audio: './audio/sample-home-services.mp3',
-    image: './images/Hear a Sample Call/sample-home-services_pros_2.png',
+    image: './images/hear-a-sample-call/home_service_pros_sample_call.webp',
     label: 'Home Services',
     title: 'Home Services Pros',
     messages: [
-      {
-        type: 'agent', // Revo Agent habla
-        time: 0, // Tiempo: 00:00:00,219 (inicio del audio)
-        text: 'Hi, my name is John. Nice to meet you.'
-      },
-      {
-        type: 'client', // Cliente habla
-        time: 4, // Tiempo: 00:00:03,970 (cuando el cliente empieza a hablar)
-        text: 'Hi John, I\'m Sarah. Nice to meet you too.'
-      },
-      {
-        type: 'agent',
-        time: 9, // Tiempo: 00:00:08,530
-        text: 'How are you doing today?'
-      },
-      {
-        type: 'client',
-        time: 11, // Tiempo: 00:00:10,750
-        text: 'I\'m doing pretty well, thanks.'
-      }
-    ]
+      { type: 'agent', time: 0, text: 'Thank you for calling. How can I help you today?' },
+      { type: 'client', time: 3, text: 'I need help with a home service.' }
+    ],
+    customerIssue: 'Home service request',
+    revoAction: 'Sample call for Home Services Pros will be available soon.',
+    whyItMatters: 'Revo will handle home service calls with clarity and capture the information the business needs.'
   },
 
   // ===== PLUMBING (Icono de llave inglesa) =====
   wrench: {
     audio: './audio/sample-plumbing.mp3',
-    image: './images/Hear a Sample Call/Plumbing Pros.png',
+    image: './images/hear-a-sample-call/Plumbing Pros.webp',
     label: 'Plumbing',
     title: 'Plumbing Pros',
     messages: [
@@ -107,7 +93,10 @@ const HEAR_SAMPLE_CONFIG = {
         time: 26, // Tiempo: 00:00:26,239
         text: 'Goodbye. Have a nice day.'
       }
-    ]
+    ],
+    customerIssue: 'General greeting and introduction',
+    revoAction: 'Revo exchanged a friendly greeting and introduction with the caller.',
+    whyItMatters: 'Revo showed a personable, professional tone and set a positive tone for the conversation.'
   },
 
   // ===== LAW FIRMS (Icono de martillo) =====
@@ -133,33 +122,53 @@ const HEAR_SAMPLE_CONFIG = {
         text: 'I\'d be happy to help you with that. Let me connect you with one of our project managers to schedule a consultation.' // ✏️ ACTUALIZA
       }
       // 💡 Agrega más mensajes si es necesario
-    ]
+    ],
+    customerIssue: 'Request for kitchen renovation estimate',
+    revoAction: 'Revo acknowledged the request and offered to connect the caller with a project manager to schedule a consultation.',
+    whyItMatters: 'Revo quickly identified the need and routed the caller to the right next step without losing the lead.'
   },
 
   // ===== LOCKSMITH (Icono de llave) =====
+  // Dialogue and timing from original sample-home-services.mp3 (car lockout — 10 Minute Locksmith)
   key: {
     audio: './audio/sample-locksmith.mp3',
-    image: './images/Hear a Sample Call/Locksmith Pros.png',
+    image: './images/hear-a-sample-call/locksmith_pros_sample_call.webp',
     label: 'Locksmith',
     title: 'Locksmith Pros',
     messages: [
-      {
-        type: 'agent',
-        time: 0, // ⏱️ ACTUALIZA
-        text: 'Thank you for calling Secure Locks. How can I help you today?' // ✏️ ACTUALIZA
-      },
-      {
-        type: 'client',
-        time: 3, // ⏱️ ACTUALIZA
-        text: 'I\'m locked out of my house. I need emergency service.' // ✏️ ACTUALIZA
-      },
-      {
-        type: 'agent',
-        time: 6, // ⏱️ ACTUALIZA
-        text: 'I understand this is urgent. I can dispatch a locksmith to your location right away. What\'s your address?' // ✏️ ACTUALIZA
-      }
-      // 💡 Agrega más mensajes si es necesario
-    ]
+      { type: 'agent', time: 0.16, text: 'Thank you for calling 10 Minute Locksmith. How can I help you?' },
+      { type: 'client', time: 2.96, text: 'Hello?' },
+      { type: 'agent', time: 4.04, text: 'Hi there, yeah, I\'m here. How can I help you today?' },
+      { type: 'client', time: 6.6, text: 'Oh, hello. I locked myself out of my car, and I need a locksmith to unlock my car for me because my keys are in there and I can\'t get back in.' },
+      { type: 'agent', time: 16.36, text: 'Yeah, no worries at all. That happens more often than you think. I can help you with that. Where will you need us to come out?' },
+      { type: 'client', time: 22.36, text: 'Okay, hold on, let me find the address.' },
+      { type: 'agent', time: 24.52, text: 'Okay, sure, take your time. I\'m right here.' },
+      { type: 'client', time: 28.29, text: 'It\'s, It\'s 985 Bon Road Drive Northeast.' },
+      { type: 'agent', time: 34.04, text: 'And what\'s the zip code?' },
+      { type: 'client', time: 35.84, text: 'Atlanta, Georgia 30308.' },
+      { type: 'agent', time: 39.44, text: 'Okay, I have 985 Bon Road Drive, Atlanta, Georgia 30308. Is that correct?' },
+      { type: 'client', time: 45.88, text: 'Yes.' },
+      { type: 'agent', time: 47.4, text: 'And what kind of car is it? Can I get the year, make, and model?' },
+      { type: 'client', time: 51.57, text: '2018 Mitsubishi Mirage. It\'s a GST4.' },
+      { type: 'agent', time: 59.33, text: 'Got it. I have a 2018 Mitsubishi Mirage GST4. Does that sound right? And can I get your name?' },
+      { type: 'client', time: 67.29, text: 'Yes, Gabriella Bernard Minas.' },
+      { type: 'agent', time: 71.05, text: 'Okay, I have Gabriella Bernard Minas. And what\'s the best number to reach you at just in case we get disconnected?' },
+      { type: 'client', time: 77.57, text: '678-768-515' },
+      { type: 'agent', time: 85.65, text: 'All right, Gabriella, you\'re all set. Please keep your line available. Our specialist will give you a call. And thank you so much for calling.' },
+      { type: 'client', time: 92.17, text: 'Thank you.' },
+      { type: 'agent', time: 93.25, text: 'You\'re very welcome. We\'ll be reaching out shortly. Have a good one.' },
+      { type: 'client', time: 96.61, text: 'You too.' },
+      { type: 'agent', time: 98.05, text: 'Goodbye.' }
+    ],
+    customerIssue: 'Customer locked out of car — needs locksmith',
+    revoActions: [
+      'Answered promptly and reassured the caller',
+      'Collected service address and location details',
+      'Collected vehicle details (year, make, model)',
+      'Collected caller name and phone number',
+      'Confirmed all details and informed customer a specialist would call back'
+    ],
+    whyItMatters: 'Revo kept the call professional and efficient, capturing everything the business needs to dispatch the job while putting the customer at ease.'
   },
 
   // ===== CYBER SECURITY (Icono de escudo) =====
@@ -185,7 +194,10 @@ const HEAR_SAMPLE_CONFIG = {
         text: 'Great! I can help you with that. Let me schedule a free consultation with one of our security specialists.' // ✏️ ACTUALIZA
       }
       // 💡 Agrega más mensajes si es necesario
-    ]
+    ],
+    customerIssue: 'Inquiry about home security system',
+    revoAction: 'Revo offered to schedule a free consultation with a security specialist.',
+    whyItMatters: 'Revo turned the inquiry into a clear next step and kept the lead warm.'
   },
 
   // ===== AIR DUCT CLEANING =====
@@ -211,7 +223,10 @@ const HEAR_SAMPLE_CONFIG = {
         text: 'I\'d be happy to help you with that. When would be a convenient time for you?' // ✏️ ACTUALIZA
       }
       // 💡 Agrega más mensajes si es necesario
-    ]
+    ],
+    customerIssue: 'Request to schedule duct cleaning',
+    revoAction: 'Revo confirmed willingness to help and asked for a convenient time.',
+    whyItMatters: 'Revo moved the caller toward scheduling while keeping the conversation focused.'
   },
 
   // ===== HVAC =====
