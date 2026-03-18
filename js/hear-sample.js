@@ -59,7 +59,7 @@
     'Building, Construction & Trades': 'building-construction-trades'
   };
 
-  let currentSample = 'home';
+  let currentSample = 'key'; // Locksmith Pros (has audio); home is placeholder until sample-home-services.mp3 is added
   let audio = null;
   let isPlaying = false;
   let currentTime = 0;
@@ -93,8 +93,8 @@
       }, { passive: false });
     }
 
-    // Load initial sample
-    loadSample('home');
+    // Load initial sample (Locksmith has audio; home is placeholder)
+    loadSample('key');
 
     // Play/Pause button
     playButton.addEventListener('click', togglePlayPause);
@@ -102,7 +102,7 @@
     // Icon menu buttons - handle both desktop and mobile menus
     const desktopIconButtons = document.querySelectorAll('.hear-sample-service-icons-menu .hear-sample-icon-btn');
     const mobileIconButtons = document.querySelectorAll('.hear-sample-mobile-icons .hear-sample-icon-btn');
-    const samples = ['home', 'wrench', 'hammer', 'key', 'shield'];
+    const samples = ['home', 'key'];
 
     // Desktop menu buttons
     desktopIconButtons.forEach((btn, index) => {
@@ -520,7 +520,7 @@
           <div class="hear-sample-message hear-sample-message-agent">
             <div class="hear-sample-message-header">
               <div class="hear-sample-avatar hear-sample-avatar-agent">
-                <img src="./images/Hear a Sample Call/revo_profile.png" alt="Revo Agent" />
+                <img src="./images/hear-a-sample-call/revo_profile.webp" alt="Revo Agent" />
               </div>
               <span class="hear-sample-message-author">Revo Agent</span>
             </div>
@@ -582,17 +582,22 @@
         : 'hear-sample-avatar hear-sample-avatar-client';
       
       if (message.type === 'agent') {
-        avatar.innerHTML = '<img src="./images/Hear a Sample Call/revo_profile.png" alt="Revo Agent" />';
+        avatar.innerHTML = '<img src="./images/hear-a-sample-call/revo_profile.webp" alt="Revo Agent" />';
       } else {
-        avatar.innerHTML = '<img src="./images/Hear a Sample Call/client_profile.png" alt="Client" />';
+        avatar.innerHTML = '<img src="./images/hear-a-sample-call/customer_profile.webp" alt="Customer" />';
       }
       
       const author = document.createElement('span');
       author.className = 'hear-sample-message-author';
-      author.textContent = message.type === 'agent' ? 'Revo Agent' : 'Client';
+      author.textContent = message.type === 'agent' ? 'Revo Agent' : 'Customer';
       
-      messageHeader.appendChild(avatar);
-      messageHeader.appendChild(author);
+      if (message.type === 'agent') {
+        messageHeader.appendChild(avatar);
+        messageHeader.appendChild(author);
+      } else {
+        messageHeader.appendChild(author);
+        messageHeader.appendChild(avatar);
+      }
       
       const bubble = document.createElement('div');
       bubble.className = `hear-sample-message-bubble hear-sample-message-bubble-${message.type}`;
@@ -612,10 +617,9 @@
     const chat = document.querySelector('.hear-sample-chat');
     if (!chat) return;
 
-    // Default values if not provided
-    const cardTitle = sample.cardTitle || sample.title || 'Sample Call';
-    const cardIcon = sample.cardIcon || './images/icons/fa7-solid_home-lg.svg';
+    // Summary content: concise title, how Revo helped, why it matters
     const customerIssue = sample.customerIssue || 'Customer issue description';
+    const revoAction = sample.revoAction; // narrative paragraph
     const revoActions = sample.revoActions || [
       'Greets professionally',
       'Shows empathy',
@@ -624,22 +628,22 @@
     ];
     const whyItMatters = sample.whyItMatters || 'Revo handles calls with clarity and confidence.';
 
+    const revoActionHtml = revoAction
+      ? `<p class="hear-sample-summary-action">${revoAction}</p>`
+      : `<ul class="hear-sample-summary-actions">${revoActions.map(a => `<li>${a}</li>`).join('')}</ul>`;
+
     chat.innerHTML = `
       <div class="hear-sample-summary-card">
         <div class="hear-sample-summary-section">
-          <p class="hear-sample-summary-label">Customer Issue:</p>
+          <p class="hear-sample-summary-label">Customer Issue</p>
           <p class="hear-sample-summary-issue">${customerIssue}</p>
         </div>
-        
         <div class="hear-sample-summary-section">
-          <p class="hear-sample-summary-label">Revo Action:</p>
-          <ul class="hear-sample-summary-actions">
-            ${revoActions.map(action => `<li>${action}</li>`).join('')}
-          </ul>
+          <p class="hear-sample-summary-label">Revo Action</p>
+          ${revoActionHtml}
         </div>
-        
         <div class="hear-sample-summary-section">
-          <p class="hear-sample-summary-label">Why it matters:</p>
+          <p class="hear-sample-summary-label">Why It Matters</p>
           <p class="hear-sample-summary-why">${whyItMatters}</p>
         </div>
       </div>
@@ -819,6 +823,7 @@
     updateProgressFill(percent);
     updateTimeDisplay(currentTime, duration);
     checkMessages(currentTime);
+    syncAgentMessageToAudio(currentTime);
   }
 
   // Update progress fill
@@ -979,43 +984,11 @@
     updateActiveMessage(currentTime);
   }
 
-  // Show listening indicator (Lottie animation) when client is speaking
-  let listeningIndicatorElement = null; // Store reference to prevent recreation
-  let lottieElementRef = null; // Store reference to Lottie element for pause/play control
+  // Listening indicator disabled (was "Revo agent is listening" when client speaks)
+  let listeningIndicatorElement = null;
+  let lottieElementRef = null;
   function showListeningIndicator() {
-    const chat = document.querySelector('.hear-sample-chat');
-    if (!chat) return null;
-
-    // If indicator already exists, do nothing
-    if (listeningIndicatorElement && chat.contains(listeningIndicatorElement)) {
-      return listeningIndicatorElement;
-    }
-
-    // Create listening indicator message
-    const listeningDiv = document.createElement('div');
-    listeningDiv.className = 'hear-sample-message hear-sample-message-agent hear-sample-listening-indicator';
-    listeningDiv.innerHTML = `
-      <div class="hear-sample-message-bubble hear-sample-message-bubble-agent">
-        <dotlottie-wc 
-          src="https://lottie.host/071a23b7-df8a-46c3-b3d1-b3137a45bedc/z56G1f9QJh.lottie" 
-          class="hear-sample-lottie-animation"
-          autoplay 
-          loop>
-        </dotlottie-wc>
-        <span class="hear-sample-message-author">Revo agent is listening</span>
-      </div>
-    `;
-
-    chat.appendChild(listeningDiv);
-    listeningIndicatorElement = listeningDiv; // Store reference
-    
-    // Get reference to Lottie element after it's added to DOM
-    requestAnimationFrame(() => {
-      lottieElementRef = listeningDiv.querySelector('dotlottie-wc');
-      chat.scrollTop = chat.scrollHeight;
-    });
-
-    return listeningDiv;
+    return null; // Indicator removed per design
   }
 
   // Remove listening indicator
@@ -1113,7 +1086,7 @@
     thinkingDiv.innerHTML = `
       <div class="hear-sample-message-header">
         <div class="hear-sample-avatar hear-sample-avatar-agent">
-          <img src="./images/Hear a Sample Call/revo_profile.png" alt="Revo Agent" />
+          <img src="./images/hear-a-sample-call/revo_profile.webp" alt="Revo Agent" />
         </div>
         <span class="hear-sample-message-author">Revo Agent</span>
       </div>
@@ -1139,58 +1112,272 @@
     }, 600);
   }
 
-  // Type message letter by letter with opacity transition
-  // durationMs: duration in milliseconds that the typing animation should take
-  function typeMessage(text, element, onComplete, durationMs = null) {
-    const textArray = text.split('');
-    let currentIndex = 0;
+  // Build agent message paragraph with word spans (for sync with audio; no timer).
+  function buildAgentMessageWordSpans(text, paragraphElement) {
+    const words = text.trim().split(/\s+/).filter(Boolean);
+    paragraphElement.innerHTML = '';
+    words.forEach((word, i) => {
+      const span = document.createElement('span');
+      span.className = 'hear-sample-typing-word';
+      span.textContent = word;
+      span.style.transition = 'opacity 0.25s ease';
+      span.style.opacity = '0.45';
+      paragraphElement.appendChild(span);
+      if (i < words.length - 1) paragraphElement.appendChild(document.createTextNode(' '));
+    });
+  }
+
+  // Sync active agent message word opacities to audio time: first word full at segment start,
+  // last word full at segment end. Also finalize past agent messages (all words full).
+  function syncAgentMessageToAudio(currentTime) {
+    const chat = document.querySelector('.hear-sample-chat');
+    if (!chat) return;
+    // Finalize past agent messages (all words full, header visible, no generating)
+    chat.querySelectorAll('.hear-sample-message-agent').forEach((msg) => {
+      if (msg.classList.contains('active')) return;
+      const end = parseFloat(msg.dataset.messageEnd);
+      if (isNaN(end) || end > currentTime) return;
+      const spans = msg.querySelectorAll('.hear-sample-typing-word');
+      spans.forEach((s) => { s.style.opacity = '1'; });
+      const gen = msg.querySelector('.hear-sample-generating-conversation');
+      if (gen) gen.style.display = 'none';
+      const h = msg.querySelector('.hear-sample-message-header');
+      if (h) h.style.opacity = '1';
+    });
+    const messageDiv = chat.querySelector('.hear-sample-message.active.hear-sample-message-agent');
+    if (!messageDiv) return;
+    const start = parseFloat(messageDiv.dataset.messageStart);
+    const end = parseFloat(messageDiv.dataset.messageEnd);
+    if (isNaN(start) || isNaN(end) || end <= start) return;
+    const wordSpans = messageDiv.querySelectorAll('.hear-sample-typing-word');
+    const wordCount = wordSpans.length;
+    if (wordCount === 0) return;
+
+    // Last word full 1 second before segment end
+    const effectiveEnd = Math.max(start + 0.01, end - 1);
+    const progress = Math.max(0, Math.min(1, (currentTime - start) / (effectiveEnd - start)));
+    // First word full at progress 0, last word full at progress 1 (by effectiveEnd).
+    const currentWordIndex = wordCount <= 1
+      ? wordCount
+      : Math.min(wordCount, 1 + Math.floor(progress * (wordCount - 1)));
+
+    const bubbleEl = messageDiv.querySelector('.hear-sample-message-bubble');
+    const generatingEl = messageDiv.querySelector('.hear-sample-generating-conversation');
+    const headerEl = messageDiv.querySelector('.hear-sample-message-header');
+
+    function measureLines() {
+      const tops = Array.from(wordSpans).map(span => span.getBoundingClientRect().top);
+      const result = [];
+      let currentLine = [];
+      let lastTop = null;
+      for (let i = 0; i < tops.length; i++) {
+        const top = tops[i];
+        if (lastTop !== null && Math.abs(top - lastTop) > 2) {
+          result.push(currentLine);
+          currentLine = [];
+        }
+        currentLine.push(i);
+        lastTop = top;
+      }
+      if (currentLine.length) result.push(currentLine);
+      return result;
+    }
+    const lines = measureLines();
+    let currentLineIndex = 0;
+    for (let L = 0; L < lines.length; L++) {
+      if (lines[L].indexOf(currentWordIndex) >= 0) {
+        currentLineIndex = L;
+        break;
+      }
+    }
+    if (currentWordIndex >= wordCount && lines.length > 0) currentLineIndex = lines.length - 1;
+    for (let i = 0; i < wordSpans.length; i++) {
+      let lineIndex = 0;
+      for (let L = 0; L < lines.length; L++) {
+        if (lines[L].indexOf(i) >= 0) {
+          lineIndex = L;
+          break;
+        }
+      }
+      if (lineIndex < currentLineIndex) {
+        wordSpans[i].style.opacity = '1';
+      } else if (lineIndex === currentLineIndex) {
+        wordSpans[i].style.opacity = i < currentWordIndex ? '1' : '0.45';
+      } else if (lineIndex === currentLineIndex + 1) {
+        wordSpans[i].style.opacity = '0.45';
+      } else {
+        wordSpans[i].style.opacity = '0';
+      }
+    }
+
+    if (generatingEl) {
+      generatingEl.style.display = progress >= 0.99 ? 'none' : '';
+      if (progress < 0.99 && bubbleEl && lines.length > 0) {
+        const lastVisibleLineIndex = Math.min(currentLineIndex + 1, lines.length - 1);
+        const lineWordIndices = lines[lastVisibleLineIndex];
+        if (lineWordIndices && lineWordIndices.length > 0) {
+          const lastWordIdx = lineWordIndices[lineWordIndices.length - 1];
+          const span = wordSpans[lastWordIdx];
+          const bubbleRect = bubbleEl.getBoundingClientRect();
+          const spanRect = span.getBoundingClientRect();
+          generatingEl.style.position = 'absolute';
+          generatingEl.style.left = '0';
+          generatingEl.style.top = (spanRect.bottom - bubbleRect.top + 6) + 'px';
+        }
+      }
+    }
+    if (headerEl) {
+      headerEl.style.opacity = progress >= 0.99 ? '1' : '0';
+    }
+  }
+
+  // Type message line-by-line: first line = agent actively speaking (word-by-word);
+  // second line appears below at lower opacity; when dialogue reaches second line,
+  // third line appears with smooth animation at lower opacity.
+  function typeMessage(text, element, onComplete, durationMs = null, messageDiv = null) {
+    const words = text.trim().split(/\s+/).filter(Boolean);
+    if (words.length === 0) {
+      if (onComplete) onComplete();
+      return;
+    }
+
+    const generatingEl = messageDiv ? messageDiv.querySelector('.hear-sample-generating-conversation') : null;
+    if (generatingEl) {
+      generatingEl.style.display = '';
+      generatingEl.style.position = 'absolute';
+      generatingEl.style.left = '0';
+      generatingEl.style.top = '0';
+    }
+
+    let currentWordIndex = 0;
     let currentTimeout = null;
-    
-    // Clear element first
+    let lines = null; // array of arrays of word indices per visual line
+
     element.innerHTML = '';
-    
-    // Clear any existing typing timeouts
     typingTimeouts.forEach(timeout => clearTimeout(timeout));
     typingTimeouts = [];
-    
-    // Calculate delay per character based on duration
-    let delayPerChar = 30; // Default delay
-    if (durationMs && textArray.length > 0) {
-      // Calculate delay to match audio duration
-      delayPerChar = Math.max(10, durationMs / textArray.length);
+
+    let delayPerWord = 80;
+    if (durationMs && words.length > 0) {
+      delayPerWord = Math.max(40, durationMs / words.length);
     }
-    
-    function typeNextLetter() {
+
+    const wordSpans = [];
+    words.forEach((word, i) => {
+      const span = document.createElement('span');
+      span.className = 'hear-sample-typing-word';
+      span.textContent = word;
+      span.style.transition = 'opacity 0.25s ease';
+      span.style.opacity = '0';
+      wordSpans.push(span);
+      element.appendChild(span);
+      if (i < words.length - 1) element.appendChild(document.createTextNode(' '));
+    });
+
+    const bubbleEl = element.closest('.hear-sample-message-bubble');
+
+    // Measure which words sit on which visual line (after layout)
+    function measureLines() {
+      const tops = wordSpans.map(span => span.getBoundingClientRect().top);
+      const result = [];
+      let currentLine = [];
+      let lastTop = null;
+      for (let i = 0; i < tops.length; i++) {
+        const top = tops[i];
+        if (lastTop !== null && Math.abs(top - lastTop) > 2) {
+          result.push(currentLine);
+          currentLine = [];
+        }
+        currentLine.push(i);
+        lastTop = top;
+      }
+      if (currentLine.length) result.push(currentLine);
+      return result;
+    }
+
+    function getCurrentLineIndex() {
+      if (!lines || lines.length === 0) return 0;
+      for (let L = 0; L < lines.length; L++) {
+        if (lines[L].indexOf(currentWordIndex) >= 0) return L;
+      }
+      return Math.min(currentWordIndex >= words.length ? lines.length - 1 : 0, lines.length - 1);
+    }
+
+    function getLineIndexForWord(wordIndex) {
+      if (!lines) return 0;
+      for (let L = 0; L < lines.length; L++) {
+        if (lines[L].indexOf(wordIndex) >= 0) return L;
+      }
+      return 0;
+    }
+
+    function updateGeneratingPosition() {
+      if (!generatingEl || !bubbleEl || !lines || lines.length === 0) return;
+      const currentLineIndex = getCurrentLineIndex();
+      // Position below the last visible line (next line / preview) so we don't overlap text
+      const lastVisibleLineIndex = Math.min(currentLineIndex + 1, lines.length - 1);
+      const lineWordIndices = lines[lastVisibleLineIndex];
+      if (!lineWordIndices || lineWordIndices.length === 0) return;
+      const lastWordIdx = lineWordIndices[lineWordIndices.length - 1];
+      const span = wordSpans[lastWordIdx];
+      const bubbleRect = bubbleEl.getBoundingClientRect();
+      const spanRect = span.getBoundingClientRect();
+      const topPx = spanRect.bottom - bubbleRect.top + 6;
+      generatingEl.style.top = topPx + 'px';
+    }
+
+    function updateOpacity() {
+      if (!lines || lines.length === 0) {
+        for (let i = 0; i < wordSpans.length; i++) {
+          wordSpans[i].style.opacity = i < currentWordIndex ? '1' : '0.45';
+        }
+        if (generatingEl) updateGeneratingPosition();
+        return;
+      }
+      const currentLineIndex = getCurrentLineIndex();
+      for (let i = 0; i < wordSpans.length; i++) {
+        const lineIndex = getLineIndexForWord(i);
+        if (lineIndex < currentLineIndex) {
+          wordSpans[i].style.opacity = '1';
+        } else if (lineIndex === currentLineIndex) {
+          wordSpans[i].style.opacity = i < currentWordIndex ? '1' : '0.45';
+        } else if (lineIndex === currentLineIndex + 1) {
+          wordSpans[i].style.opacity = '0.45';
+        } else {
+          wordSpans[i].style.opacity = '0';
+        }
+      }
+      updateGeneratingPosition();
+    }
+
+    function typeNextWord() {
       if (isTypingPaused) {
-        // If paused, wait and check again
-        currentTimeout = setTimeout(typeNextLetter, 50);
+        currentTimeout = setTimeout(typeNextWord, 50);
         typingTimeouts.push(currentTimeout);
         return;
       }
-      
-      if (currentIndex < textArray.length) {
-        const span = document.createElement('span');
-        span.textContent = textArray[currentIndex];
-        span.style.opacity = '0';
-        element.appendChild(span);
-        
-        // Animate opacity
-        requestAnimationFrame(() => {
-          span.style.transition = 'opacity 0.1s ease';
-          span.style.opacity = '1';
-        });
-        
-        currentIndex++;
-        
-        // Use calculated delay to match audio duration
-        currentTimeout = setTimeout(typeNextLetter, delayPerChar);
+
+      if (currentWordIndex < words.length) {
+        currentWordIndex++;
+        updateOpacity();
+        currentTimeout = setTimeout(typeNextWord, delayPerWord);
         typingTimeouts.push(currentTimeout);
       } else {
+        for (let i = 0; i < wordSpans.length; i++) wordSpans[i].style.opacity = '1';
+        if (generatingEl) generatingEl.style.display = 'none';
         if (onComplete) onComplete();
       }
     }
-    
-    typeNextLetter();
+
+    function startTyping() {
+      lines = measureLines();
+      updateOpacity();
+      typeNextWord();
+    }
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(startTyping);
+    });
   }
 
   // Display message in chat
@@ -1207,7 +1394,7 @@
     }
 
     const isAgent = message.type === 'agent';
-    const headerClass = isAgent ? 'hear-sample-message-header' : 'hear-sample-message-header hear-sample-message-header-right';
+    const headerClass = 'hear-sample-message-header';
     
     // Calculate message duration for agent messages
     // Make animation finish slightly before audio ends (85% of duration)
@@ -1227,10 +1414,22 @@
           rawDuration = (audio.duration - currentMessage.time) * 1000; // Convert to milliseconds
         }
         
-        // Make animation finish 15% earlier (85% of original duration)
         if (rawDuration) {
-          messageDuration = rawDuration * 0.50;
+          messageDuration = rawDuration;
         }
+      }
+    }
+
+    // Store segment times on agent messages for audio sync (word fill from start to end)
+    let messageStart = null;
+    let messageEnd = null;
+    if (isAgent && messageIndex !== null) {
+      const sample = sampleData[currentSample];
+      if (sample && sample.messages) {
+        const currentMessage = sample.messages[messageIndex];
+        const nextMessage = sample.messages[messageIndex + 1];
+        messageStart = currentMessage.time;
+        messageEnd = nextMessage ? nextMessage.time : (audio && audio.duration ? audio.duration : currentMessage.time + 10);
       }
     }
 
@@ -1239,18 +1438,19 @@
       <div class="${headerClass}">
         ${isAgent ? `
           <div class="hear-sample-avatar hear-sample-avatar-agent">
-            <img src="./images/Hear a Sample Call/revo_profile.png" alt="Revo Agent" />
+            <img src="./images/hear-a-sample-call/revo_profile.webp" alt="Revo Agent" />
           </div>
           <span class="hear-sample-message-author">Revo Agent</span>
         ` : `
-          <span class="hear-sample-message-author">Client</span>
+          <span class="hear-sample-message-author">Customer</span>
           <div class="hear-sample-avatar hear-sample-avatar-client">
-            <img src="./images/Hear a Sample Call/client_profile.png" alt="Client" />
+            <img src="./images/hear-a-sample-call/customer_profile.webp" alt="Customer" />
           </div>
         `}
       </div>
       <div class="hear-sample-message-bubble hear-sample-message-bubble-${message.type}">
         <p></p>
+        ${isAgent ? `<div class="hear-sample-generating-conversation" style="display: none;"><span class="hear-sample-generating-text">Generating conversation</span><span class="hear-sample-generating-spinner" aria-hidden="true"></span></div>` : ''}
       </div>
     `;
 
@@ -1267,15 +1467,25 @@
         messageDiv.style.transform = 'translateY(0)';
       });
 
-      // For agent messages, type message directly without thinking indicator
+      // For agent messages: build word spans and sync to audio (no timer)
       if (isAgent) {
+        const headerEl = messageDiv.querySelector('.hear-sample-message-header');
+        if (headerEl) {
+          headerEl.style.opacity = '0';
+          headerEl.style.transition = 'opacity 0.25s ease';
+        }
+        if (messageStart != null && messageEnd != null) {
+          messageDiv.dataset.messageStart = messageStart;
+          messageDiv.dataset.messageEnd = messageEnd;
+        }
         const textElement = messageDiv.querySelector('.hear-sample-message-bubble p');
-        typeMessage(message.text, textElement, () => {
-          // Scroll after typing completes
+        buildAgentMessageWordSpans(message.text, textElement);
+        requestAnimationFrame(() => {
           requestAnimationFrame(() => {
+            syncAgentMessageToAudio(audio ? audio.currentTime : 0);
             chat.scrollTop = chat.scrollHeight;
           });
-        }, messageDuration);
+        });
       } else {
         // For client messages, show immediately
         const textElement = messageDiv.querySelector('.hear-sample-message-bubble p');
@@ -1288,11 +1498,20 @@
       // No animation - show messages immediately (used when seeking)
       chat.appendChild(messageDiv);
       const textElement = messageDiv.querySelector('.hear-sample-message-bubble p');
-      // Show text immediately without typing animation when seeking
-      textElement.textContent = message.text;
-      requestAnimationFrame(() => {
-        chat.scrollTop = chat.scrollHeight;
-      });
+      if (isAgent && messageStart != null && messageEnd != null) {
+        messageDiv.dataset.messageStart = messageStart;
+        messageDiv.dataset.messageEnd = messageEnd;
+        buildAgentMessageWordSpans(message.text, textElement);
+        requestAnimationFrame(() => {
+          syncAgentMessageToAudio(audio ? audio.currentTime : 0);
+          chat.scrollTop = chat.scrollHeight;
+        });
+      } else {
+        textElement.textContent = message.text;
+        requestAnimationFrame(() => {
+          chat.scrollTop = chat.scrollHeight;
+        });
+      }
     }
   }
 
@@ -1398,7 +1617,7 @@
       <div class="hear-sample-message-bubble hear-sample-message-bubble-notification">
         <button class="hear-sample-notification-close" aria-label="Close notification">×</button>
         <div class="hear-sample-notification-header">
-          <div class="hear-sample-notification-icon"><img src="./images/Hear a Sample Call/revo_profile.png" alt="Revo Agent"></div>
+          <div class="hear-sample-notification-icon"><img src="./images/hear-a-sample-call/revo_profile.webp" alt="Revo Agent"></div>
           <div class="hear-sample-notification-header-text">
             <h3 class="hear-sample-notification-title">Want to start using Revo?</h3>
             <p class="hear-sample-notification-description">Experience AI-powered receptionists that never miss a call.</p>

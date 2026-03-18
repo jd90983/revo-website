@@ -716,13 +716,20 @@ section {
 }
 
 /* Update message bubble colors to match Figma - ONLY for hear-sample-call-page */
-.hear-sample-call-page .hear-sample-message-bubble-agent,
+.hear-sample-call-page .hear-sample-message-bubble-agent {
+  background: transparent !important; /* text-only, ChatGPT-style */
+}
 .hear-sample-call-page .hear-sample-message-bubble-client {
   background: #222324 !important; /* neutral-darker */
 }
 
 .hear-sample-call-page .hear-sample-message-bubble p {
   color: var(--color-white) !important;
+}
+
+.hear-sample-call-page .hear-sample-message-bubble-customer p,
+.hear-sample-call-page .hear-sample-message-bubble-client p {
+  color: rgba(242, 242, 242, 1) !important;
 }
 
 /* Update author name color - ONLY for hear-sample-call-page */
@@ -776,7 +783,9 @@ section {
 }
 
 /* Change active message stroke to white - ONLY for hear-sample-call-page */
-.hear-sample-call-page .hear-sample-message.active .hear-sample-message-bubble-agent,
+.hear-sample-call-page .hear-sample-message.active .hear-sample-message-bubble-agent {
+  box-shadow: none !important;
+}
 .hear-sample-call-page .hear-sample-message.active .hear-sample-message-bubble-client {
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 1) !important;
 }

@@ -6,11 +6,11 @@ This directory should contain the audio sample files for the "Hear a Sample" sec
 
 Place the following MP3 files in this directory:
 
-1. **sample-home-services.mp3** - Audio sample for Home Services industry
-2. **sample-wrench.mp3** - Audio sample for Repair Services industry
-3. **sample-hammer.mp3** - Audio sample for Construction Services industry
-4. **sample-key.mp3** - Audio sample for Locksmith Services industry
-5. **sample-shield.mp3** - Audio sample for Security Services industry
+1. **sample-home-services.mp3** - Audio sample for Home Services industry *(not yet added)*
+2. **sample-plumbing.mp3** - Audio sample for Plumbing Pros
+3. **sample-law-firms.mp3** - Audio sample for Legal Services Pros
+4. **sample-locksmith.mp3** - Audio sample for Locksmith Pros (car lockout — 10 Minute Locksmith) ✓
+5. **sample-cyber-security.mp3** - Audio sample for Cybersecurity Pros
 
 ## File Format
 
