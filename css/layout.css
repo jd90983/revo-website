@@ -979,7 +979,6 @@ body.mobile-menu-open {
   scroll-behavior: smooth;
   /* Prevent layout shifts */
   contain: layout style;
-  /* Transparent background to show Spline */
   background: transparent;
 }
 
@@ -992,8 +991,31 @@ body.mobile-menu-open {
   /* Prevent layout shifts */
   contain: layout style paint;
   will-change: auto;
-  /* Transparent background to show Spline */
-  background: transparent;
+  background: #0a0b0c; /* Fallback while video loads */
+}
+
+/* Hero background video (replaces Spline) */
+.hero-video-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  display: block;
 }
 
 .hero-spline-container {
@@ -1333,51 +1355,73 @@ body.mobile-menu-open {
 }
 
 /* ===== FEATURES SECTION ===== */
-/* EXACT FIGMA SPECIFICATIONS - Pure Black Background */
+/* Figma 10322-773: Layout padding, Container pl 100px pr 205px, gap 80px, items center */
 
 .features {
-  background-color: #0a0b0c; /* EXACT: Pure black - removed gradients for cleaner blend from hero */
-  padding: 112px 64px; /* EXACT: 112px vertical, 64px horizontal */
+  background-color: #0a0b0c;
+  padding: var(--space-3xl) var(--page-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .features-container {
-  max-width: 1280px;
+  max-width: var(--max-content-width);
   width: 100%;
   display: flex;
-  gap: 80px; /* EXACT: 80px between columns */
+  flex-direction: row;
+  gap: 0;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+
+/* Left Column - Visual (phone + floating cards) */
+.features-left {
+  flex: 0 1 auto;
+  min-width: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Right Column - Text content (Figma: justify-center for vertical center) */
+.features-right {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
 }
 
-/* Left Column */
-.features-left {
-  flex: 1;
-  min-width: 0;
-}
-
-.features-left .tagline {
+.features-right .tagline {
   font-family: var(--font-body);
-  font-weight: var(--font-regular);
+  font-weight: 600; /* Figma: Lexend Deca SemiBold */
   font-size: var(--text-regular);
-  line-height: var(--line-height-relaxed);
-  color: #e7eefb; /* EXACT: Light blue */
+  line-height: 1.5;
+  color: #e7eefb;
   margin-bottom: 16px;
   display: block;
-  text-transform: none; /* Override uppercase to show title case */
+  text-transform: none;
 }
 
-.features-left h2 {
+.features-right h2 {
   font-family: var(--font-heading);
-  font-weight: var(--font-bold);
+  font-weight: 700;
   font-size: var(--text-h2);
-  line-height: var(--line-height-tight);
-  letter-spacing: var(--tracking-h2);
+  line-height: 1.2;
+  letter-spacing: -0.52px;
   color: #ffffff;
   margin: 0;
   text-align: left;
+}
+
+.features-right h2 .text-primary {
+  color: #FA8932;
 }
 
 /* 3D Dashboard Image */
@@ -1431,13 +1475,13 @@ body.mobile-menu-open {
 }
 
 
-/* Right Column */
-.features-right {
-  flex: 1;
-  min-width: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 75px; /* EXACT: 75px between sections */
+/* Right column: description and buttons (Figma: 16px / 80px) */
+.features-right .features-description {
+  margin-top: 16px;
+}
+
+.features-right .features-buttons {
+  margin-top: 80px;
 }
 
 .features-description {
@@ -1445,18 +1489,9 @@ body.mobile-menu-open {
   flex-direction: column;
   gap: 0;
   margin: 0;
-  margin-top: 45px; /* Add space above to align with title */
   text-align: left;
-  /* Entrance animation */
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s,
-              transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.1s;
-}
-
-.features-description.animate-in {
   opacity: 1;
-  transform: translateY(0);
+  transform: none;
 }
 
 .features-description p {
@@ -1471,6 +1506,54 @@ body.mobile-menu-open {
 
 .features-description p:last-child {
   margin-bottom: 0;
+}
+
+/* Features visual block: hero image + floating cards */
+.features-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.features-visual-image-wrap {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.features-hero-image {
+  display: block;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 640px;
+  object-fit: contain;
+}
+
+/* "Hear a Sample" link with chevron (Figma: gap 8px, 24px icon) */
+.btn-hear-sample-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.btn-hear-sample-link:hover {
+  color: #e7eefb;
+  opacity: 0.95;
+}
+
+.btn-hear-sample-chevron {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
 }
 
 /* Feature Cards Wrapper - Contains both cards */

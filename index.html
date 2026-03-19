@@ -405,9 +405,8 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-background" aria-hidden="true">
-        <div class="hero-spline-container">
-          <!-- Spline viewer - script will be loaded lazily via JavaScript -->
-          <spline-viewer url="https://prod.spline.design/AXNV3gA8l7oldzxO/scene.splinecode" class="hero-spline-viewer"></spline-viewer>
+        <div class="hero-video-container">
+          <video class="hero-video" src="./video/hero_background.webm" autoplay muted loop playsinline></video>
         </div>
         <div class="hero-overlay"></div>
       </div>
@@ -437,51 +436,30 @@
       </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Features Section - Revo speaks -->
     <section class="features" id="services">
       <div class="features-container">
         <div class="features-left">
-          <span class="tagline">Revo – Powered By AI</span>
-          <h2><span class="text-primary">Revo that speaks</span> the language of business communication</h2>
-          <!-- Rive Animation -->
-          <div class="dashboard-image-container">
-            <iframe class="dashboard-rive-animation" style="border: none" width="450" height="450" data-src="https://rive.app/s/zfBcUo86QEK4p26_Lvq9kw/embed?runtime=rive-renderer" allowfullscreen allow="autoplay"></iframe>
+          <div class="features-visual">
+            <div class="features-visual-image-wrap">
+              <img src="images/home_page_revo_speaks.webp" alt="Revo app dashboard on smartphone showing call metrics and intelligence" class="features-hero-image" width="480" height="640" loading="lazy" />
+            </div>
           </div>
         </div>
         <div class="features-right">
+          <span class="tagline">Revo · Built for Business Communication</span>
+          <h2><span class="text-primary">Revo speaks</span> the language of real business conversations</h2>
           <div class="features-description">
             <p>
-              Revo combines natural voice technology with real-time intelligence
-              to answer calls, qualify leads, and schedule appointments — just like
-              your best receptionist, only faster, more consistent, and always available.
+              Revo is a communication platform designed to handle real customer interactions at scale.
             </p>
             <p>
-              Our AI understands human intent and tone, creating smooth, natural
-              interactions that build trust and efficiency in every conversation
+              It answers calls instantly, understands intent, and executes your workflows with precision — ensuring every conversation is handled professionally, consistently, and without interruption.
             </p>
           </div>
-          <div class="features-cards-wrapper">
-            <div class="features-cards-container">
-              <div class="feature-card">
-                <img src="images/icons/network_intelligence.svg" alt="Adaptive intelligence icon" class="feature-icon" width="32" height="32" loading="lazy" />
-                <div class="feature-content">
-                  <h3>Adaptive intelligence</h3>
-                  <p>Machine learning that continuously refines how Revo interprets and responds to callers.</p>
-                </div>
-              </div>
-              <div class="feature-card-divider"></div>
-              <div class="feature-card">
-                <img src="images/icons/precision_manufacturing.svg" alt="Precision routing icon" class="feature-icon" width="32" height="32" loading="lazy" />
-                <div class="feature-content">
-                  <h3>Precision routing</h3>
-                  <p>Smart call flows that direct every conversation to the right place with minimal human oversight.</p>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="features-buttons">
-            <button class="btn-primary-large">Get Started</button>
-            <button class="btn-outline-white" onclick="document.querySelector('#hear-sample').scrollIntoView({ behavior: 'smooth', block: 'start' });">Hear a Sample</button>
+            <button class="btn-outline-white" type="button">Get Started</button>
+            <a href="#hear-sample" class="btn-hear-sample-link" onclick="document.querySelector('#hear-sample')?.scrollIntoView({ behavior: 'smooth', block: 'start' }); return false;">Hear a Sample <svg class="btn-hear-sample-chevron" width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
           </div>
         </div>
       </div>
@@ -752,10 +730,10 @@
         <div class="hear-sample-card">
           <!-- Mobile Service Icons (shown only on mobile) -->
           <div class="hear-sample-mobile-icons">
-            <button class="hear-sample-icon-btn" aria-label="Home Services" data-sample="home">
+            <button class="hear-sample-icon-btn hear-sample-icon-btn-active" aria-label="Home Services" data-sample="home">
               <img src="./images/icons/fa7-solid_home-lg.svg" alt="Home Services" class="hear-sample-icon-img" width="24" height="24" loading="lazy" />
             </button>
-            <button class="hear-sample-icon-btn hear-sample-icon-btn-active" aria-label="Locksmith" data-sample="key">
+            <button class="hear-sample-icon-btn" aria-label="Locksmith" data-sample="key">
               <img src="./images/icons/fa7-solid_key.svg" alt="Locksmith" class="hear-sample-icon-img" width="24" height="24" loading="lazy" />
             </button>
           </div>
@@ -764,18 +742,18 @@
             <div class="hear-sample-left-panel">
               <div class="hear-sample-image-container">
                 <img
-                  src="./images/hear-a-sample-call/locksmith_pros_sample_call.webp"
-                  alt="Locksmith Pros"
+                  src="./images/hear-a-sample-call/home_service_pros_sample_call.webp"
+                  alt="Home Services Pros"
                   class="hear-sample-professional-image"
                   loading="lazy"
                   width="400"
                   height="600"
                 />
                 <div class="hear-sample-service-icons-menu">
-                <button class="hear-sample-icon-btn" aria-label="Home Services">
+                <button class="hear-sample-icon-btn hear-sample-icon-btn-active" aria-label="Home Services">
                   <img src="./images/icons/fa7-solid_home-lg.svg" alt="Home Services" class="hear-sample-icon-img" width="24" height="24" loading="lazy" />
                 </button>
-                <button class="hear-sample-icon-btn hear-sample-icon-btn-active" aria-label="Locksmith">
+                <button class="hear-sample-icon-btn" aria-label="Locksmith">
                   <img src="./images/icons/fa7-solid_key.svg" alt="Locksmith" class="hear-sample-icon-img" width="24" height="24" loading="lazy" />
                 </button>
                 </div>
@@ -785,7 +763,7 @@
             <!-- Right Panel: Chat Interface -->
             <div class="hear-sample-right-panel">
               <!-- Title -->
-              <h3 class="hear-sample-professional-label">Locksmith Pros</h3>
+              <h3 class="hear-sample-professional-label">Home Services Pros</h3>
               <!-- Chat Messages - Will be populated dynamically by JavaScript -->
               <div class="hear-sample-chat">
                 <!-- Summary Card - shown before audio plays -->

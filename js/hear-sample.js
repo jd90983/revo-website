@@ -59,7 +59,7 @@
     'Building, Construction & Trades': 'building-construction-trades'
   };
 
-  let currentSample = 'key'; // Locksmith Pros (has audio); home is placeholder until sample-home-services.mp3 is added
+  let currentSample = 'home'; // Home Services Pros (default first); Locksmith also available
   let audio = null;
   let isPlaying = false;
   let currentTime = 0;
@@ -93,8 +93,8 @@
       }, { passive: false });
     }
 
-    // Load initial sample (Locksmith has audio; home is placeholder)
-    loadSample('key');
+    // Load initial sample (Home Services Pros first)
+    loadSample('home');
 
     // Play/Pause button
     playButton.addEventListener('click', togglePlayPause);

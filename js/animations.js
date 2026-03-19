@@ -2,6 +2,9 @@
    Animations - Scroll-based Animations
    ============================================ */
 
+// Set to true to re-enable entrance animations on scroll
+const ENTRANCE_ANIMATIONS_ENABLED = false;
+
 // Intersection Observer for Fade-in Animations on Scroll
 const observerOptions = {
   threshold: 0.1,
@@ -20,15 +23,22 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe all sections except the first one (hero is already visible)
 const sections = document.querySelectorAll('section');
-sections.forEach((section, index) => {
-  // Skip the first section (hero)
-  if (index > 0) {
-    observer.observe(section);
-  }
-});
+if (ENTRANCE_ANIMATIONS_ENABLED) {
+  sections.forEach((section, index) => {
+    // Skip the first section (hero)
+    if (index > 0) {
+      observer.observe(section);
+    }
+  });
+} else {
+  // No entrance animations: show all sections immediately
+  sections.forEach(section => section.classList.add('animate-in'));
+}
 
 // Optional: Add stagger effect to cards within sections
 const addStaggerEffect = () => {
+  if (!ENTRANCE_ANIMATIONS_ENABLED) return;
+
   const cardContainers = document.querySelectorAll('.features-grid, .how-it-works-grid, .stats-grid, .testimonials-grid');
 
   cardContainers.forEach(container => {
@@ -552,6 +562,11 @@ const initIndividualContentAnimations = () => {
   const filteredElements = Array.from(elementsToAnimate).filter(element => {
     return !element.closest('.hear-sample-section');
   });
+
+  if (!ENTRANCE_ANIMATIONS_ENABLED) {
+    filteredElements.forEach(element => element.classList.add('animate-in'));
+    return;
+  }
 
   const contentObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {

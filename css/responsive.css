@@ -65,6 +65,8 @@
   .features-container {
     flex-direction: column;
     gap: var(--space-2xl);
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   /* Dashboard Image */
@@ -771,26 +773,34 @@
   .features-container {
     flex-direction: column;
     gap: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
 
   .features-left {
-    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 
-  .features-left .tagline {
+  .features-right {
+    text-align: center;
+    align-items: center;
+  }
+
+  .features-right .tagline {
     font-size: 14px;
     margin-bottom: 12px;
     text-align: center;
   }
 
-  .features-left h2 {
+  .features-right h2 {
     font-size: 32px;
     letter-spacing: -0.32px;
     line-height: 1.2;
     text-align: center;
   }
 
-  /* Dashboard Image */
+  /* Dashboard Image (legacy / other pages) */
   .dashboard-image-container {
     margin-top: 24px;
     justify-content: center;
@@ -807,10 +817,21 @@
     height: 280px;
   }
 
-  .features-right {
-    gap: 40px;
-    align-items: center;
-    text-align: center;
+  /* Features visual (image in left column) */
+  .features-visual {
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .features-visual-image-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .features-hero-image {
+    max-height: 480px;
   }
 
   .features-description {
@@ -1573,7 +1594,7 @@
     font-size: var(--text-h1);
   }
 
-  .features-left h2,
+  .features-right h2,
   .how-heading,
   .efficiency-heading,
   .power-cta-heading,
