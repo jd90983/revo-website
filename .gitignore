@@ -7,6 +7,3 @@ node_modules/
 .env
 .env.local
 .env.*.local
-
-# Large video assets (use Git LFS or host elsewhere; GitHub limit 100MB)
-video/
