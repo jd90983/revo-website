@@ -14,6 +14,9 @@
 (function() {
   'use strict';
 
+  // Set to true to re-enable the hero neural network effect (mouse-reactive nodes).
+  const HERO_NEURAL_EFFECT_ENABLED = false;
+
   // ============================================
   // Configuration
   // ============================================
@@ -292,6 +295,8 @@
   // ============================================
   
   function init() {
+    if (!HERO_NEURAL_EFFECT_ENABLED) return;
+
     const heroSection = document.querySelector('.hero');
     if (!heroSection) {
       console.warn('Neural Network: Hero section not found');

@@ -375,6 +375,14 @@ function initHowItWorksSplineOptimization() {
     return;
   }
 
+  // Load Spline viewer script if not already loaded (hero no longer uses Spline, so we load it here for How It Works)
+  if (!document.querySelector('script[src*="spline-viewer"]')) {
+    const splineScript = document.createElement('script');
+    splineScript.type = 'module';
+    splineScript.src = 'https://unpkg.com/@splinetool/viewer@1.12.29/build/spline-viewer.js';
+    document.head.appendChild(splineScript);
+  }
+
   // Function to show/hide Spline viewer (hiding pauses rendering)
   function toggleHowItWorksSplineViewer(visible) {
     if (visible) {

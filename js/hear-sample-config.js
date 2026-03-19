@@ -21,19 +21,43 @@
 
 const HEAR_SAMPLE_CONFIG = {
   // ===== HOME SERVICES (Icono de casa) =====
-  // Placeholder until sample-home-services.mp3 is added
+  // Dialogue and timing from sample-home-services.srt (garage door installation)
   home: {
     audio: './audio/sample-home-services.mp3',
     image: './images/hear-a-sample-call/home_service_pros_sample_call.webp',
     label: 'Home Services',
     title: 'Home Services Pros',
     messages: [
-      { type: 'agent', time: 0, text: 'Thank you for calling. How can I help you today?' },
-      { type: 'client', time: 3, text: 'I need help with a home service.' }
+      { type: 'agent', time: 0, text: 'Thank you for calling Locksmith Services. How can I help you?' },
+      { type: 'client', time: 3.08, text: 'Hi, I was wondering, install a garage door?' },
+      { type: 'agent', time: 8.175, text: 'Sure, we can definitely help with that. Just to make sure I get you taken care of properly, what\'s the address where you\'d need the garage door installed?' },
+      { type: 'client', time: 15.667, text: '30353 North, actually, sorry, wait, that\'s my old address. Give me a second.' },
+      { type: 'agent', time: 22.482, text: 'Sorry, go ahead, take your time. I\'m here.' },
+      { type: 'client', time: 26.146, text: 'Okay, thank you. It\'s 650 North Hawes Road, Mesa, Arizona 85207.' },
+      { type: 'agent', time: 34.543, text: 'I have 650 North Hawes Road, Mesa, Arizona 85207. Is that correct?' },
+      { type: 'client', time: 40.1, text: 'Yes.' },
+      { type: 'agent', time: 42.068, text: 'Great, and for the garage door installation, is this for a residential home?' },
+      { type: 'client', time: 46.225, text: 'It is.' },
+      { type: 'agent', time: 47.688, text: 'Okay, perfect. Can I get your first name?' },
+      { type: 'client', time: 49.997, text: 'Lisa.' },
+      { type: 'agent', time: 51.49, text: 'Nice to meet you, Lisa. So I have Lisa, is that right?' },
+      { type: 'client', time: 55.161, text: 'Yes.' },
+      { type: 'agent', time: 56.663, text: 'Perfect. And what\'s the best callback number for you, just in case we get disconnected?' },
+      { type: 'client', time: 61.391, text: 'That\'s 602-541-8211.' },
+      { type: 'agent', time: 66.723, text: 'I have 602-541-8211, is that correct?' },
+      { type: 'client', time: 70.606, text: 'Yes.' },
+      { type: 'agent', time: 71.934, text: 'All right, Lisa, you\'re all set. Please keep your line available. One of our specialists will call you back from a toll-free number starting 1-888- Is there anything else I can help you with in the meantime?' },
+      { type: 'client', time: 82.011, text: 'That\'s all. Thank you so much.' },
+      { type: 'agent', time: 84.796, text: 'You\'re very welcome, Lisa. We appreciate you calling. Have a great rest of your day.' },
+      { type: 'client', time: 89.263, text: 'You too. Bye-bye.' }
     ],
-    customerIssue: 'Home service request',
-    revoAction: 'Sample call for Home Services Pros will be available soon.',
-    whyItMatters: 'Revo will handle home service calls with clarity and capture the information the business needs.'
+    customerIssue: 'Garage door installation inquiry',
+    revoActions: [
+      'Confirmed service need and collected job address',
+      'Collected name and callback number, confirmed residential',
+      'Set expectation for specialist callback and closed politely'
+    ],
+    whyItMatters: 'Revo stayed patient when the caller corrected the address and captured everything needed to schedule the job.'
   },
 
   // ===== PLUMBING (Icono de llave inglesa) =====
@@ -129,44 +153,41 @@ const HEAR_SAMPLE_CONFIG = {
   },
 
   // ===== LOCKSMITH (Icono de llave) =====
-  // Dialogue and timing from original sample-home-services.mp3 (car lockout — 10 Minute Locksmith)
+  // Dialogue and timing from sample-locksmith.srt (house lockout — 10 Minute Locksmith)
   key: {
     audio: './audio/sample-locksmith.mp3',
     image: './images/hear-a-sample-call/locksmith_pros_sample_call.webp',
     label: 'Locksmith',
     title: 'Locksmith Pros',
     messages: [
-      { type: 'agent', time: 0.16, text: 'Thank you for calling 10 Minute Locksmith. How can I help you?' },
-      { type: 'client', time: 2.96, text: 'Hello?' },
-      { type: 'agent', time: 4.04, text: 'Hi there, yeah, I\'m here. How can I help you today?' },
-      { type: 'client', time: 6.6, text: 'Oh, hello. I locked myself out of my car, and I need a locksmith to unlock my car for me because my keys are in there and I can\'t get back in.' },
-      { type: 'agent', time: 16.36, text: 'Yeah, no worries at all. That happens more often than you think. I can help you with that. Where will you need us to come out?' },
-      { type: 'client', time: 22.36, text: 'Okay, hold on, let me find the address.' },
-      { type: 'agent', time: 24.52, text: 'Okay, sure, take your time. I\'m right here.' },
-      { type: 'client', time: 28.29, text: 'It\'s, It\'s 985 Bon Road Drive Northeast.' },
-      { type: 'agent', time: 34.04, text: 'And what\'s the zip code?' },
-      { type: 'client', time: 35.84, text: 'Atlanta, Georgia 30308.' },
-      { type: 'agent', time: 39.44, text: 'Okay, I have 985 Bon Road Drive, Atlanta, Georgia 30308. Is that correct?' },
-      { type: 'client', time: 45.88, text: 'Yes.' },
-      { type: 'agent', time: 47.4, text: 'And what kind of car is it? Can I get the year, make, and model?' },
-      { type: 'client', time: 51.57, text: '2018 Mitsubishi Mirage. It\'s a GST4.' },
-      { type: 'agent', time: 59.33, text: 'Got it. I have a 2018 Mitsubishi Mirage GST4. Does that sound right? And can I get your name?' },
-      { type: 'client', time: 67.29, text: 'Yes, Gabriella Bernard Minas.' },
-      { type: 'agent', time: 71.05, text: 'Okay, I have Gabriella Bernard Minas. And what\'s the best number to reach you at just in case we get disconnected?' },
-      { type: 'client', time: 77.57, text: '678-768-515' },
-      { type: 'agent', time: 85.65, text: 'All right, Gabriella, you\'re all set. Please keep your line available. Our specialist will give you a call. And thank you so much for calling.' },
-      { type: 'client', time: 92.17, text: 'Thank you.' },
-      { type: 'agent', time: 93.25, text: 'You\'re very welcome. We\'ll be reaching out shortly. Have a good one.' },
-      { type: 'client', time: 96.61, text: 'You too.' },
-      { type: 'agent', time: 98.05, text: 'Goodbye.' }
+      { type: 'agent', time: 0.039, text: 'Thank you for calling 10 Minute Locksmith. How can I help you?' },
+      { type: 'client', time: 3.358, text: 'Hi, I got locked out of my house.' },
+      { type: 'agent', time: 7.148, text: 'Hey, yeah, no problem. I just want to make sure I understand. Are you needing a locksmith service today?' },
+      { type: 'client', time: 12.112, text: 'Yes.' },
+      { type: 'agent', time: 13.848, text: 'Okay, sure. What kind of locksmith service do you need?' },
+      { type: 'client', time: 16.967, text: 'I just need someone to help me unlock the front door. I left the keys inside.' },
+      { type: 'agent', time: 22.665, text: 'What\'s the address where you need the service?' },
+      { type: 'client', time: 25.684, text: '690 Stanford Drive, Concho, Arizona 85924.' },
+      { type: 'agent', time: 33.338, text: 'I have 690 Stanford Drive, Concho, Arizona 85924. Is that correct?' },
+      { type: 'client', time: 38.562, text: 'Yes.' },
+      { type: 'agent', time: 40.434, text: 'Can I get your first name?' },
+      { type: 'client', time: 42.235, text: 'Brandy.' },
+      { type: 'agent', time: 44.245, text: 'I have your first name as Brandy. Is that correct?' },
+      { type: 'client', time: 48.082, text: 'That\'s correct.' },
+      { type: 'agent', time: 50.308, text: 'Great.' },
+      { type: 'agent', time: 50.867, text: 'And what\'s the best callback number for you?' },
+      { type: 'client', time: 53.353, text: '602-635-1953.' },
+      { type: 'agent', time: 57.478, text: 'I have 602-635-1953, is that correct?' },
+      { type: 'client', time: 61.751, text: 'Yeah.' },
+      { type: 'agent', time: 65.823, text: 'Please keep your line available, our specialist will give you a call. Thank you so much for calling.' },
+      { type: 'client', time: 70.949, text: 'Thank you, bye.' },
+      { type: 'agent', time: 72.876, text: 'You\'re very welcome, take care and have a good rest of your day. Goodbye, have a nice day.' }
     ],
-    customerIssue: 'Customer locked out of car — needs locksmith',
+    customerIssue: 'House lockout — needs locksmith',
     revoActions: [
-      'Answered promptly and reassured the caller',
-      'Collected service address and location details',
-      'Collected vehicle details (year, make, model)',
-      'Collected caller name and phone number',
-      'Confirmed all details and informed customer a specialist would call back'
+      'Reassured caller and confirmed service needed',
+      'Collected address, name, and callback number',
+      'Confirmed details and set expectation for specialist callback'
     ],
     whyItMatters: 'Revo kept the call professional and efficient, capturing everything the business needs to dispatch the job while putting the customer at ease.'
   },
