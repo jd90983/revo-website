@@ -737,18 +737,20 @@ section {
   color: #848585 !important;
 }
 
-/* Update audio player border color - ONLY for hear-sample-call-page */
+/* Audio player — no panel background on call page */
 .hear-sample-call-page .hear-sample-audio-player {
-  border-top-color: #848585 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-/* Update progress bar colors - ONLY for hear-sample-call-page */
 .hear-sample-call-page .hear-sample-progress-bar {
-  background: #222324 !important; /* neutral-darker */
+  background: rgba(255, 255, 255, 0.16) !important;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4) !important;
 }
 
 .hear-sample-call-page .hear-sample-progress-fill {
-  background: #f2f2f2 !important; /* neutral-lightest */
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-strong) 100%) !important;
 }
 
 /* Update time display color - ONLY for hear-sample-call-page */
@@ -756,23 +758,18 @@ section {
   color: #848585 !important;
 }
 
-/* Update volume slider colors - ONLY for hear-sample-call-page */
 .hear-sample-call-page .hear-sample-volume-slider {
-  background: #222324 !important; /* neutral-darker */
+  background: rgba(255, 255, 255, 0.16) !important;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4) !important;
 }
 
 .hear-sample-call-page .hear-sample-volume-fill {
-  background: #f2f2f2 !important; /* neutral-lightest */
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-strong) 100%) !important;
 }
 
 /* Update volume icon color - ONLY for hear-sample-call-page */
 .hear-sample-call-page .hear-sample-volume-icon {
   filter: brightness(0) invert(0.52); /* Makes icon #848585 color */
-}
-
-/* Update play button icon color - ONLY for hear-sample-call-page */
-.hear-sample-call-page .hear-sample-play-icon {
-  filter: brightness(0) invert(0.95); /* Makes icon #f2f2f2 color (neutral-lightest) */
 }
 
 /* Remove background from listening indicator - ONLY for hear-sample-call-page */

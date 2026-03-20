@@ -340,7 +340,7 @@ main#main-content > section {
 }
 
 .home-service-hero-highlight {
-  color: #0F5AD7 !important;
+  color: var(--color-primary) !important;
 }
 
 .home-service-hero-description {
@@ -753,7 +753,7 @@ main#main-content > section {
 }
 
 .home-service-highlight {
-  color: #0F5AD7 !important;
+  color: var(--color-primary) !important;
 }
 
 .home-service-highlight-yellow {

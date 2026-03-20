@@ -407,11 +407,9 @@ function initExperiencePowerSection() {
     return;
   }
   
-  const splineViewer = section.querySelector('.ser-experience-spline[data-spline-viewer]');
+  const video = section.querySelector('.ser-experience-video');
   const backgroundContainer = section.querySelector('.ser-experience-background');
-  let splineScriptLoaded = false;
   
-  // Ensure background container and Spline viewer are visible
   if (backgroundContainer) {
     backgroundContainer.style.visibility = 'visible';
     backgroundContainer.style.opacity = '1';
@@ -420,65 +418,15 @@ function initExperiencePowerSection() {
     backgroundContainer.style.backgroundColor = 'transparent';
   }
   
-  if (splineViewer) {
-    splineViewer.style.visibility = 'visible';
-    splineViewer.style.opacity = '1';
-    splineViewer.style.display = 'block';
-    splineViewer.style.background = 'transparent';
-    splineViewer.style.backgroundColor = 'transparent';
+  if (video) {
+    video.style.visibility = 'visible';
+    video.style.opacity = '1';
+    video.style.display = 'block';
   }
   
-  // Function to load Spline viewer script
-  function loadSplineScript() {
-    if (splineScriptLoaded) return;
-    
-    // Check if script is already loaded
-    const existingScript = document.querySelector('script[src*="spline-viewer"]');
-    if (existingScript) {
-      splineScriptLoaded = true;
-      // Wait for custom element to be defined
-      setTimeout(() => {
-        if (splineViewer && customElements.get('spline-viewer')) {
-          console.log('Experience Power Spline viewer initialized (script already loaded)');
-        }
-      }, 200);
-      return;
-    }
-    
-    // Load script if not already loading/loaded
-    if (!window.splineScriptLoading) {
-      window.splineScriptLoading = true;
-      const splineScript = document.createElement('script');
-      splineScript.type = 'module';
-      splineScript.src = 'https://unpkg.com/@splinetool/viewer@1.12.29/build/spline-viewer.js';
-      splineScript.onload = () => {
-        console.log('Spline viewer script loaded for Experience Power section');
-        splineScriptLoaded = true;
-        window.splineScriptLoading = false;
-        // Wait for custom element to be defined
-        setTimeout(() => {
-          if (splineViewer && customElements.get('spline-viewer')) {
-            console.log('Experience Power Spline viewer initialized');
-          }
-        }, 200);
-      };
-      splineScript.onerror = () => {
-        console.error('Failed to load Spline script for Experience Power section');
-        window.splineScriptLoading = false;
-      };
-      document.head.appendChild(splineScript);
-      console.log('Spline viewer script loading for Experience Power section...');
-    } else {
-      // Script is loading, wait for it
-      const checkLoaded = setInterval(() => {
-        if (customElements.get('spline-viewer')) {
-          clearInterval(checkLoaded);
-          splineScriptLoaded = true;
-          console.log('Experience Power Spline viewer initialized (waited for script)');
-        }
-      }, 100);
-      setTimeout(() => clearInterval(checkLoaded), 5000);
-    }
+  function tryPlayVideo() {
+    if (!video || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    video.play().catch(() => {});
   }
   
   // Remove animate-in class if it exists (from template)
@@ -501,12 +449,7 @@ function initExperiencePowerSection() {
       const sectionObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            // Load Spline script when section is about to be visible
-            if (!splineScriptLoaded) {
-              loadSplineScript();
-            }
-            
-            // Animation
+            tryPlayVideo();
             entry.target.classList.add('animate-in');
             entry.target.style.opacity = '';
             entry.target.style.transform = '';
@@ -517,18 +460,16 @@ function initExperiencePowerSection() {
 
       sectionObserver.observe(section);
       
-      // If section is already in viewport, trigger animation and load Spline immediately
       const rect = section.getBoundingClientRect();
       const windowHeight = window.innerHeight;
       if (rect.top < windowHeight + 700 && rect.bottom > -700) {
-        loadSplineScript();
+        tryPlayVideo();
         section.classList.add('animate-in');
         section.style.opacity = '';
         section.style.transform = '';
       }
     } else {
-      // Fallback: load immediately and show
-      loadSplineScript();
+      tryPlayVideo();
       setTimeout(() => {
         section.classList.add('animate-in');
         section.style.opacity = '';

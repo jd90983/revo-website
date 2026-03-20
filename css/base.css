@@ -130,7 +130,7 @@ section:first-of-type {
 
 /* Gradient Text Effect */
 .gradient-text {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #6b9dff 100%);
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-strong) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

@@ -447,83 +447,48 @@ const loadSplineScript = () => {
   });
 };
 
-// Lazy load Spline for Experience Power section
+// Experience Power section — background video (WebM), no Spline
 document.addEventListener('DOMContentLoaded', function() {
-  const initExperienceSpline = (experienceSection) => {
-    const splineViewer = experienceSection.querySelector('.ser-experience-spline[data-spline-viewer]');
-    if (!splineViewer) return;
+  const initExperienceVideo = (experienceSection) => {
+    const video = experienceSection.querySelector('.ser-experience-video');
+    if (!video) return;
     
-    // Skip if already initialized
-    if (splineViewer.hasAttribute('data-spline-initialized')) return;
-    splineViewer.setAttribute('data-spline-initialized', 'true');
+    if (video.hasAttribute('data-video-initialized')) return;
+    video.setAttribute('data-video-initialized', 'true');
     
-    let splineLoaded = false;
-    
-    // Function to initialize Spline viewer (after script is loaded)
-    const initSplineViewer = () => {
-      if (splineLoaded) return;
-      splineLoaded = true;
-      
-      // Script should be loaded by now, Spline viewer will auto-initialize
-      setTimeout(() => {
-        if (splineViewer.tagName.toLowerCase() === 'spline-viewer') {
-          console.log('Experience Power Spline viewer initialized');
-        }
-      }, 500);
+    const tryPlay = () => {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      video.play().catch(() => {});
     };
     
-    // Always load Spline immediately - don't wait for viewport intersection
-    // This ensures the Spline background is visible as soon as the page loads
-    if (!splineLoaded) {
-      loadSplineScript().then(() => {
-        setTimeout(() => {
-          initSplineViewer();
-        }, 100);
-      }).catch(err => {
-        console.error('Error loading Spline for experience section:', err);
-      });
+    tryPlay();
+    
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            tryPlay();
+            io.unobserve(experienceSection);
+          }
+        });
+      }, { rootMargin: '400px 0px', threshold: 0.01 });
+      io.observe(experienceSection);
     }
-    
-    // Also set up observer as backup (in case script loading is delayed)
-    const splineObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && !splineLoaded) {
-          // Double-check that script is loaded
-          loadSplineScript().then(() => {
-            setTimeout(() => {
-              initSplineViewer();
-            }, 100);
-          });
-          splineObserver.unobserve(experienceSection);
-        }
-      });
-    }, {
-      rootMargin: '500px 0px', // Larger margin to trigger earlier
-      threshold: 0.01
-    });
-    
-    // Observe the section as backup
-    splineObserver.observe(experienceSection);
   };
   
-  // Process all existing sections
-  const experienceSections = document.querySelectorAll('.ser-experience-power');
-  experienceSections.forEach(initExperienceSpline);
+  document.querySelectorAll('.ser-experience-power').forEach(initExperienceVideo);
   
-  // MutationObserver to handle dynamically added sections (from templates)
   const observer = new MutationObserver((mutations) => {
     mutations.forEach(mutation => {
       if (mutation.type === 'childList') {
         mutation.addedNodes.forEach(node => {
           if (node.nodeType === 1) {
-            // Check if the added node is a ser-experience-power section
             if (node.classList && node.classList.contains('ser-experience-power')) {
-              initExperienceSpline(node);
+              initExperienceVideo(node);
             }
-            // Also check for ser-experience-power sections within the added node
             const nestedSections = node.querySelectorAll && node.querySelectorAll('.ser-experience-power');
             if (nestedSections) {
-              nestedSections.forEach(initExperienceSpline);
+              nestedSections.forEach(initExperienceVideo);
             }
           }
         });
@@ -531,86 +496,51 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Observe the entire document for dynamically added sections
   observer.observe(document.body, { childList: true, subtree: true });
 });
 
-// Lazy load Spline for Intelligent Banner section
+// Intelligent banner — background video (WebM), no Spline
 document.addEventListener('DOMContentLoaded', function() {
-  const initIntelligentBannerSpline = (intelligentBanner) => {
-    const bannerSplineViewer = intelligentBanner.querySelector('.ser-intelligent-banner-spline[data-spline-viewer]');
-    if (!bannerSplineViewer) return;
+  const initIntelligentBannerVideo = (intelligentBanner) => {
+    const video = intelligentBanner.querySelector('.ser-intelligent-banner-video');
+    if (!video) return;
     
-    // Skip if already initialized
-    if (bannerSplineViewer.hasAttribute('data-spline-initialized')) return;
-    bannerSplineViewer.setAttribute('data-spline-initialized', 'true');
+    if (video.hasAttribute('data-video-initialized')) return;
+    video.setAttribute('data-video-initialized', 'true');
     
-    let bannerSplineLoaded = false;
-    
-    // Function to initialize Spline viewer (after script is loaded)
-    const initBannerSplineViewer = () => {
-      if (bannerSplineLoaded) return;
-      bannerSplineLoaded = true;
-      
-      // Script should be loaded by now, Spline viewer will auto-initialize
-      setTimeout(() => {
-        if (bannerSplineViewer.tagName.toLowerCase() === 'spline-viewer') {
-          console.log('Intelligent Banner Spline viewer initialized');
-        }
-      }, 500);
+    const tryPlay = () => {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      video.play().catch(() => {});
     };
     
-    // Always load Spline immediately - don't wait for viewport intersection
-    if (!bannerSplineLoaded) {
-      loadSplineScript().then(() => {
-        setTimeout(() => {
-          initBannerSplineViewer();
-        }, 100);
-      }).catch(err => {
-        console.error('Error loading Spline for intelligent banner:', err);
-      });
+    tryPlay();
+    
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            tryPlay();
+            io.unobserve(intelligentBanner);
+          }
+        });
+      }, { rootMargin: '400px 0px', threshold: 0.01 });
+      io.observe(intelligentBanner);
     }
-    
-    // Also set up observer as backup (in case script loading is delayed)
-    const bannerSplineObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && !bannerSplineLoaded) {
-          // Double-check that script is loaded
-          loadSplineScript().then(() => {
-            setTimeout(() => {
-              initBannerSplineViewer();
-            }, 100);
-          });
-          bannerSplineObserver.unobserve(intelligentBanner);
-        }
-      });
-    }, {
-      rootMargin: '500px 0px', // Larger margin to trigger earlier
-      threshold: 0.01
-    });
-    
-    // Observe the section as backup
-    bannerSplineObserver.observe(intelligentBanner);
   };
   
-  // Process all existing sections
-  const intelligentBanners = document.querySelectorAll('.ser-intelligent-banner');
-  intelligentBanners.forEach(initIntelligentBannerSpline);
+  document.querySelectorAll('.ser-intelligent-banner').forEach(initIntelligentBannerVideo);
   
-  // MutationObserver to handle dynamically added sections (from templates)
   const observer = new MutationObserver((mutations) => {
     mutations.forEach(mutation => {
       if (mutation.type === 'childList') {
         mutation.addedNodes.forEach(node => {
           if (node.nodeType === 1) {
-            // Check if the added node is a ser-intelligent-banner section
             if (node.classList && node.classList.contains('ser-intelligent-banner')) {
-              initIntelligentBannerSpline(node);
+              initIntelligentBannerVideo(node);
             }
-            // Also check for ser-intelligent-banner sections within the added node
             const nestedSections = node.querySelectorAll && node.querySelectorAll('.ser-intelligent-banner');
             if (nestedSections) {
-              nestedSections.forEach(initIntelligentBannerSpline);
+              nestedSections.forEach(initIntelligentBannerVideo);
             }
           }
         });
@@ -618,7 +548,64 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
-  // Observe the entire document for dynamically added sections
+  observer.observe(document.body, { childList: true, subtree: true });
+});
+
+// AI Receptionists — promo videos (replaces Spline)
+document.addEventListener('DOMContentLoaded', function() {
+  const initAiReceptionistsVideos = (section) => {
+    const videos = section.querySelectorAll('video.ser-ai-spline-viewer');
+    if (!videos.length) return;
+
+    videos.forEach((video) => {
+      if (video.hasAttribute('data-video-initialized')) return;
+      video.setAttribute('data-video-initialized', 'true');
+
+      const tryPlay = () => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          video.pause();
+          return;
+        }
+        video.play().catch(() => {});
+      };
+
+      tryPlay();
+
+      if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                tryPlay();
+                io.unobserve(video);
+              }
+            });
+          },
+          { rootMargin: '400px 0px', threshold: 0.01 }
+        );
+        io.observe(video);
+      }
+    });
+  };
+
+  document.querySelectorAll('.ser-ai-receptionists').forEach(initAiReceptionistsVideos);
+
+  const observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.type === 'childList') {
+        mutation.addedNodes.forEach((node) => {
+          if (node.nodeType === 1) {
+            if (node.classList && node.classList.contains('ser-ai-receptionists')) {
+              initAiReceptionistsVideos(node);
+            }
+            const nested = node.querySelectorAll && node.querySelectorAll('.ser-ai-receptionists');
+            if (nested) nested.forEach(initAiReceptionistsVideos);
+          }
+        });
+      }
+    });
+  });
+
   observer.observe(document.body, { childList: true, subtree: true });
 });
 

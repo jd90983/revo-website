@@ -40,7 +40,7 @@
   <link rel="stylesheet" href="css/responsive.css">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend+Deca:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Skip to main content for accessibility -->
@@ -406,7 +406,7 @@
     <section class="hero">
       <div class="hero-background" aria-hidden="true">
         <div class="hero-video-container">
-          <video class="hero-video" src="./video/hero_background.webm" autoplay muted loop playsinline></video>
+          <video class="hero-video" src="https://pub-a31a6b30258b4296b134c12e4ff440c6.r2.dev/hero_background.webm" autoplay muted loop playsinline></video>
         </div>
         <div class="hero-overlay"></div>
       </div>
@@ -467,9 +467,11 @@
 
     <!-- How It Works Section -->
     <section class="how-it-works">
-      <!-- Background Spline 3D animation -->
+      <!-- Background video animation -->
       <div class="background-layer">
-        <spline-viewer url="https://prod.spline.design/7YRJZmeXMTc7fA3Q/scene.splinecode" class="how-it-works-spline-viewer"></spline-viewer>
+        <video class="how-it-works-spline-viewer" autoplay muted loop playsinline preload="metadata">
+          <source src="https://pub-a31a6b30258b4296b134c12e4ff440c6.r2.dev/how_it_works_background.webm" type="video/mp4">
+        </video>
       </div>
 
       <!-- Content Container -->
@@ -859,7 +861,7 @@
         <div class="main-testimonials-wrapper">
           <!-- Section Title -->
           <div class="main-testimonials-title-section">
-            <h2 class="main-testimonials-heading">What <span class="main-testimonials-highlight">Our Clients</span>Are <br>Saying</h2>
+            <h2 class="main-testimonials-heading">What <span class="main-testimonials-highlight">Our Clients </span>Are<br>Saying</h2>
             <p class="main-testimonials-subtitle">Hear from business owners who've modernized the way they connect with customers using Revo.</p>
           </div>
           

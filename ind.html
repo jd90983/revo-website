@@ -44,7 +44,7 @@
   <link rel="stylesheet" href="css/responsive.css">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend+Deca:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Skip to main content for accessibility -->
@@ -436,7 +436,7 @@
           <div class="ind-tagline-wrapper" style="visibility: visible !important; opacity: 1 !important;">
             <span class="ind-tagline" style="color: rgba(10, 11, 12, 0.6) !important; visibility: visible !important; opacity: 1 !important; display: block !important;">Built for Your Industry</span>
           </div>
-          <h2 class="ind-heading" style="color: #0A0B0C !important; visibility: visible !important; opacity: 1 !important; display: block !important;">Smart AI Receptionist for <span class="ind-highlight" style="color: #0F5AD7 !important;">Home Service Pros</span></h2>
+          <h2 class="ind-heading" style="color: #0A0B0C !important; visibility: visible !important; opacity: 1 !important; display: block !important;">Smart AI Receptionist for <span class="ind-highlight" style="color: var(--color-primary) !important;">Home Service Pros</span></h2>
         </div>
         <div class="ind-categories-grid-wrapper">
           <div class="ind-categories-grid" id="home-service-categories-grid">
@@ -661,7 +661,7 @@
           <div class="ind-tagline-wrapper">
             <span class="ind-tagline">Made for Professionals Like You</span>
           </div>
-          <h2 class="ind-heading" style="color: #0A0B0C !important; visibility: visible !important; opacity: 1 !important; display: block !important;">AI Receptionist for Modern <span class="ind-highlight" style="color: #0F5AD7 !important;">Professional Businesses</span></h2>
+          <h2 class="ind-heading" style="color: #0A0B0C !important; visibility: visible !important; opacity: 1 !important; display: block !important;">AI Receptionist for Modern <span class="ind-highlight" style="color: var(--color-primary) !important;">Professional Businesses</span></h2>
         </div>
         <div class="ind-categories-grid-wrapper">
           <div class="ind-categories-grid" id="professional-businesses-categories-grid">
@@ -1309,32 +1309,20 @@
             intelligentBanner.style.transform = 'translateY(30px)';
             intelligentBanner.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             
-            // Initialize Spline viewer if it exists
-            const splineViewer = intelligentBanner.querySelector('.ser-intelligent-banner-spline[data-spline-viewer]');
+            const video = intelligentBanner.querySelector('.ser-intelligent-banner-video');
             const backgroundContainer = intelligentBanner.querySelector('.ser-intelligent-banner-background');
             
-            if (splineViewer && backgroundContainer) {
-              // Ensure background container and Spline viewer are visible
+            if (backgroundContainer) {
               backgroundContainer.style.visibility = 'visible';
               backgroundContainer.style.opacity = '1';
               backgroundContainer.style.display = 'block';
-              
-              splineViewer.style.visibility = 'visible';
-              splineViewer.style.opacity = '1';
-              splineViewer.style.display = 'block';
-              
-              // Load Spline script if available
-              if (typeof loadSplineScript !== 'undefined') {
-                loadSplineScript().then(() => {
-                  setTimeout(() => {
-                    if (splineViewer.tagName.toLowerCase() === 'spline-viewer') {
-                      console.log('Intelligent Banner Spline viewer initialized from template');
-                    }
-                  }, 200);
-                }).catch(err => {
-                  console.error('Error loading Spline for intelligent banner:', err);
-                });
-              }
+            }
+            
+            if (video && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+              video.style.visibility = 'visible';
+              video.style.opacity = '1';
+              video.style.display = 'block';
+              video.play().catch(() => {});
             }
             
             // Function to update text position based on scroll progress (from ser.js)
@@ -1396,7 +1384,7 @@
         }, 150);
       });
       // Load Experience Power section template
-      // Load template - initExperiencePowerSection() in template-loader.js will handle Spline initialization
+      // initExperiencePowerSection() in template-loader.js handles scroll-in + video playback
       loadTemplate('templates/experience-power-section.html', '#experience-power-template-container');
     });
   </script>

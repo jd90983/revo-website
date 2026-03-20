@@ -492,7 +492,7 @@ main#main-content > section {
 }
 
 .ind-highlight {
-  color: #0F5AD7 !important;
+  color: var(--color-primary) !important;
 }
 
 .ind-grid-content {
@@ -805,7 +805,7 @@ a.ind-category-item {
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  color: #0F5AD7 !important;
+  color: var(--color-primary) !important;
 }
 
 .ind-heading-center {

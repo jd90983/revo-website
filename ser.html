@@ -9,6 +9,10 @@
   <meta name="title" content="Revo - Transform Your Answering Services with Powerful AI Technology">
   <meta name="description" content="Transform your answering services with powerful AI technology. AI receptionists that sound and feel human.">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
   <!-- Preconnect to Fonts (before CSS) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +29,7 @@
   <link rel="stylesheet" href="css/responsive.css">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@400;500&display=swap" rel="stylesheet">
-  
-  <!-- Spline Viewer Script -->
-  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.32/build/spline-viewer.js" defer></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend+Deca:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Skip to main content for accessibility -->
@@ -400,10 +401,26 @@
           </div>
           <div class="ser-ai-content-right">
             <div class="ser-ai-phone-mockup-container">
-              <!-- Spline Animation - Desktop -->
-              <spline-viewer url="https://prod.spline.design/RHoiArS7OBZI-IVA/scene.splinecode" class="ser-ai-spline-viewer ser-ai-spline-desktop"></spline-viewer>
-              <!-- Spline Animation - Mobile/Tablet -->
-              <spline-viewer url="https://prod.spline.design/oKMbQUwScYomxU6w/scene.splinecode" class="ser-ai-spline-viewer ser-ai-spline-mobile"></spline-viewer>
+              <!-- Promo video (700×700 source) — desktop -->
+              <video
+                class="ser-ai-spline-viewer ser-ai-spline-desktop"
+                src="video/ai_receptionists.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="AI receptionists in action"></video>
+              <!-- Same asset — mobile/tablet crop -->
+              <video
+                class="ser-ai-spline-viewer ser-ai-spline-mobile"
+                src="video/ai_receptionists.mp4"
+                autoplay
+                muted
+                loop
+                playsinline
+                preload="metadata"
+                aria-label="AI receptionists in action"></video>
             </div>
           </div>
         </div>
@@ -502,11 +519,14 @@
     <!-- Experience the Power Section -->
     <section class="ser-experience-power">
       <div class="ser-experience-background" aria-hidden="true">
-        <spline-viewer 
-          url="https://prod.spline.design/AZcd7u0EsZusIXfH/scene.splinecode" 
-          class="ser-experience-spline"
-          loading="lazy"
-          data-spline-viewer></spline-viewer>
+        <video
+          class="ser-experience-video"
+          src="https://pub-a31a6b30258b4296b134c12e4ff440c6.r2.dev/experience_power_background.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"></video>
       </div>
       <div class="ser-section-container">
         <div class="ser-experience-content">
@@ -1012,11 +1032,14 @@
     <!-- Intelligent Communication Banner Section -->
     <section class="ser-intelligent-banner" style="position: relative !important; z-index: 10 !important; display: flex !important; visibility: visible !important;">
       <div class="ser-intelligent-banner-background" aria-hidden="true">
-        <spline-viewer 
-          url="https://prod.spline.design/Cvty8gUv84pzcWVc/scene.splinecode" 
-          class="ser-intelligent-banner-spline"
-          loading="lazy"
-          data-spline-viewer></spline-viewer>
+        <video
+          class="ser-intelligent-banner-video"
+          src="https://pub-a31a6b30258b4296b134c12e4ff440c6.r2.dev/extra_intelligent_background.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="metadata"></video>
       </div>
       <div class="ser-intelligent-banner-content">
         <p class="ser-intelligent-banner-line1">Intelligent communication - Real business growth</p>
