@@ -143,7 +143,7 @@ html:has(.ser-products-section) body {
 
 /* Section title with primary color accent */
 .ser-products-section .ser-section-title .text-primary {
-  color: #0F5AD7 !important;
+  color: var(--color-primary) !important;
 }
 
 .ser-products-section .products_wr {
@@ -291,7 +291,7 @@ html:has(.ser-products-section) body {
   font-weight: var(--font-medium);
   line-height: 1.5;
   color: #ffffff;
-  background: #0F5AD7;
+  background: var(--color-primary);
   border: none;
   border-radius: 100px;
   padding: 12px 24px;
@@ -808,7 +808,7 @@ html:has(.ser-features-section) body {
   font-weight: var(--font-medium);
   line-height: 1.5;
   color: #ffffff;
-  background: #0F5AD7;
+  background: var(--color-primary);
   border: none;
   border-radius: 100px;
   padding: 12px 24px;

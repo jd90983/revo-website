@@ -135,7 +135,7 @@ main > section {
 }
 
 .ser-hero-accent {
-  color: #0f5ad7;
+  color: var(--color-primary);
 }
 
 .ser-hero-description {
@@ -311,7 +311,7 @@ main > section {
 }
 
 .ser-services-header-accent {
-  color: #0f5ad7;
+  color: var(--color-primary);
 }
 
 .ser-services-header-description {
@@ -648,8 +648,7 @@ main > section {
   filter: none;
 }
 
-/* Spline Viewer Styles */
-/* Base spline viewer - Desktop size */
+/* AI receptionists mockup (video replaces Spline) */
 .ser-ai-spline-viewer {
   position: relative;
   width: 700px;
@@ -662,6 +661,13 @@ main > section {
   display: block;
   margin-left: auto;
   margin-right: 0;
+}
+
+video.ser-ai-spline-viewer {
+  object-fit: cover;
+  object-position: center;
+  background: #0a0b0c;
+  pointer-events: none;
 }
 
 /* Desktop animation - 657x700px */
@@ -1118,7 +1124,7 @@ main > section {
   width: 100%;
   padding: 112px 0;
   overflow: hidden;
-  background-color: transparent !important; /* Transparent to show Spline */
+  background-color: transparent !important; /* Video layer below content */
   min-height: auto;
   height: auto;
   z-index: 1 !important;
@@ -1172,38 +1178,31 @@ main > section {
   left: 0;
 }
 
-.ser-experience-spline {
-  width: 100% !important;
-  height: 100% !important;
+.ser-experience-video {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  object-position: center;
   pointer-events: none;
   z-index: 1;
   opacity: 1 !important;
   display: block !important;
   visibility: visible !important;
-  /* Performance optimizations */
-  will-change: transform;
-  transform: translateZ(0); /* Force GPU acceleration */
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  /* Reduce rendering quality on mobile for better performance */
 }
 
-/* Reduce Spline quality on mobile devices for better performance */
-@media (max-width: 767px) {
-  .ser-experience-spline {
-    /* Lower quality on mobile */
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-  }
-}
-
-/* Pause Spline animation when section is not visible (if supported) */
 @media (prefers-reduced-motion: reduce) {
-  .ser-experience-spline {
-    opacity: 0.8 !important;
+  .ser-experience-video {
+    display: none !important;
+  }
+
+  .ser-experience-power {
+    background-color: #0a0b0c !important;
   }
 }
 
@@ -3032,38 +3031,31 @@ main > section {
   z-index: 1;
 }
 
-.ser-intelligent-banner-spline {
-  width: 100% !important;
-  height: 100% !important;
+.ser-intelligent-banner-video {
   position: absolute;
-  inset: 0;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  object-position: center;
   pointer-events: none;
   z-index: 1;
   opacity: 1 !important;
   display: block !important;
   visibility: visible !important;
-  /* Performance optimizations */
-  will-change: transform;
-  transform: translateZ(0); /* Force GPU acceleration */
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
 }
 
-/* Reduce Spline quality on mobile devices for better performance */
-@media (max-width: 767px) {
-  .ser-intelligent-banner-spline {
-    /* Lower quality on mobile */
-    image-rendering: -webkit-optimize-contrast;
-    image-rendering: crisp-edges;
-  }
-}
-
-/* Pause Spline animation when section is not visible (if supported) */
 @media (prefers-reduced-motion: reduce) {
-  .ser-intelligent-banner-spline {
-    opacity: 0.8 !important;
+  .ser-intelligent-banner-video {
+    display: none !important;
+  }
+
+  .ser-intelligent-banner {
+    background-color: #0a0b0c;
   }
 }
 

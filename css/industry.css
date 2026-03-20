@@ -499,7 +499,7 @@ body.industry-building-construction-trades-page .industry-hero-gradient {
 }
 
 .industry-hero-highlight {
-  color: #0F5AD7 !important;
+  color: var(--color-primary) !important;
 }
 
 .industry-hero-description {
@@ -876,7 +876,7 @@ body.industry-building-construction-trades-page .industry-hero-gradient {
 }
 
 .industry-highlight {
-  color: #0F5AD7 !important;
+  color: var(--color-primary) !important;
 }
 
 .industry-highlight-yellow {

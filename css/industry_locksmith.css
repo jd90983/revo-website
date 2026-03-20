@@ -163,7 +163,7 @@ main#main-content > section {
 }
 
 .locksmith-hero-highlight {
-  color: #0F5AD7 !important;
+  color: var(--color-primary) !important;
 }
 
 .locksmith-hero-description {
@@ -540,7 +540,7 @@ main#main-content > section {
 }
 
 .locksmith-highlight {
-  color: #0F5AD7 !important;
+  color: var(--color-primary) !important;
 }
 
 .locksmith-highlight-yellow {
