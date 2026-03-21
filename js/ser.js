@@ -452,26 +452,35 @@ document.addEventListener('DOMContentLoaded', function() {
   const initExperienceVideo = (experienceSection) => {
     const video = experienceSection.querySelector('.ser-experience-video');
     if (!video) return;
-    
-    if (video.hasAttribute('data-video-initialized')) return;
-    video.setAttribute('data-video-initialized', 'true');
-    
-    const tryPlay = () => {
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    if (experienceSection.hasAttribute('data-inview-video-bound')) return;
+    experienceSection.setAttribute('data-inview-video-bound', 'true');
+
+    const restartAndPlay = () => {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        video.pause();
+        return;
+      }
+      try {
+        video.currentTime = 0;
+      } catch (e) {
+        /* ignore */
+      }
       video.play().catch(() => {});
     };
-    
-    tryPlay();
-    
+
+    restartAndPlay();
+
     if ('IntersectionObserver' in window) {
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            tryPlay();
-            io.unobserve(experienceSection);
-          }
-        });
-      }, { rootMargin: '400px 0px', threshold: 0.01 });
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) restartAndPlay();
+            else video.pause();
+          });
+        },
+        { rootMargin: '400px 0px', threshold: 0.01 }
+      );
       io.observe(experienceSection);
     }
   };
@@ -504,26 +513,35 @@ document.addEventListener('DOMContentLoaded', function() {
   const initIntelligentBannerVideo = (intelligentBanner) => {
     const video = intelligentBanner.querySelector('.ser-intelligent-banner-video');
     if (!video) return;
-    
-    if (video.hasAttribute('data-video-initialized')) return;
-    video.setAttribute('data-video-initialized', 'true');
-    
-    const tryPlay = () => {
-      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    if (intelligentBanner.hasAttribute('data-inview-video-bound')) return;
+    intelligentBanner.setAttribute('data-inview-video-bound', 'true');
+
+    const restartAndPlay = () => {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        video.pause();
+        return;
+      }
+      try {
+        video.currentTime = 0;
+      } catch (e) {
+        /* ignore */
+      }
       video.play().catch(() => {});
     };
-    
-    tryPlay();
-    
+
+    restartAndPlay();
+
     if ('IntersectionObserver' in window) {
-      const io = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            tryPlay();
-            io.unobserve(intelligentBanner);
-          }
-        });
-      }, { rootMargin: '400px 0px', threshold: 0.01 });
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) restartAndPlay();
+            else video.pause();
+          });
+        },
+        { rootMargin: '400px 0px', threshold: 0.01 }
+      );
       io.observe(intelligentBanner);
     }
   };
@@ -557,35 +575,45 @@ document.addEventListener('DOMContentLoaded', function() {
     const videos = section.querySelectorAll('video.ser-ai-spline-viewer');
     if (!videos.length) return;
 
-    videos.forEach((video) => {
-      if (video.hasAttribute('data-video-initialized')) return;
-      video.setAttribute('data-video-initialized', 'true');
+    if (section.hasAttribute('data-inview-video-bound')) return;
+    section.setAttribute('data-inview-video-bound', 'true');
 
-      const tryPlay = () => {
-        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-          video.pause();
+    const restartVisible = () => {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        videos.forEach((v) => v.pause());
+        return;
+      }
+      videos.forEach((v) => {
+        const st = window.getComputedStyle(v);
+        if (st.display === 'none' || st.visibility === 'hidden') {
+          v.pause();
           return;
         }
-        video.play().catch(() => {});
-      };
+        try {
+          v.currentTime = 0;
+        } catch (e) {
+          /* ignore */
+        }
+        v.play().catch(() => {});
+      });
+    };
 
-      tryPlay();
+    const pauseAll = () => videos.forEach((v) => v.pause());
 
-      if ('IntersectionObserver' in window) {
-        const io = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                tryPlay();
-                io.unobserve(video);
-              }
-            });
-          },
-          { rootMargin: '400px 0px', threshold: 0.01 }
-        );
-        io.observe(video);
-      }
-    });
+    restartVisible();
+
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) restartVisible();
+            else pauseAll();
+          });
+        },
+        { rootMargin: '400px 0px', threshold: 0.01 }
+      );
+      io.observe(section);
+    }
   };
 
   document.querySelectorAll('.ser-ai-receptionists').forEach(initAiReceptionistsVideos);

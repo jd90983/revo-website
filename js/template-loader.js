@@ -245,11 +245,103 @@ function initTransformCTASection() {
     console.warn('Transform CTA section not found after template load');
     return;
   }
+
+  if (section.hasAttribute('data-inview-video-bound')) return;
+  section.setAttribute('data-inview-video-bound', 'true');
   
   const splineContainer = section.querySelector('.transform-cta-spline-container');
   const splineViewers = section.querySelectorAll('.transform-cta-spline-viewer');
   const splineViewerDesktop = section.querySelector('.transform-cta-spline-desktop');
   const splineViewerMobile = section.querySelector('.transform-cta-spline-mobile');
+  
+  // Check if we're using videos (not Spline)
+  const isVideoBackground = splineViewers.length > 0 && splineViewers[0].tagName === 'VIDEO';
+  
+  // Video background path
+  if (isVideoBackground) {
+    const videos = Array.from(splineViewers);
+
+    /* CSS hides videos unless .is-visible (same as legacy Spline path). Without toggling it,
+       restart runs while display:none and seek/play never applies. */
+    const showAndRestartVideos = () => {
+      section.classList.add('is-visible');
+      const run = () => {
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          videos.forEach((v) => v.pause());
+          return;
+        }
+        videos.forEach((v) => {
+          try {
+            v.currentTime = 0;
+          } catch (e) {
+            /* ignore */
+          }
+          const st = window.getComputedStyle(v);
+          if (st.display === 'none' || st.visibility === 'hidden') {
+            v.pause();
+            return;
+          }
+          v.play().catch(() => {});
+        });
+      };
+      requestAnimationFrame(() => requestAnimationFrame(run));
+    };
+
+    const hideAndPauseVideos = () => {
+      videos.forEach((v) => v.pause());
+      section.classList.remove('is-visible');
+    };
+
+    // Remove animate-in class if it exists (from template)
+    section.classList.remove('animate-in');
+    
+    // Set initial animation state
+    section.style.opacity = '0';
+    section.style.transform = 'translateY(30px)';
+    section.style.transition = 'opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+    
+    setTimeout(() => {
+      if ('IntersectionObserver' in window) {
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: '100px 0px 100px 0px'
+        };
+
+        const sectionObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              showAndRestartVideos();
+              entry.target.classList.add('animate-in');
+              entry.target.style.opacity = '';
+              entry.target.style.transform = '';
+            } else {
+              hideAndPauseVideos();
+            }
+          });
+        }, observerOptions);
+
+        sectionObserver.observe(section);
+        
+        const rect = section.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if (rect.top < windowHeight + 100 && rect.bottom > -100) {
+          showAndRestartVideos();
+          section.classList.add('animate-in');
+          section.style.opacity = '';
+          section.style.transform = '';
+        } else {
+          hideAndPauseVideos();
+        }
+      } else {
+        showAndRestartVideos();
+      }
+    }, 100);
+    
+    console.log('Transform CTA section template loaded and initialized with video background');
+    return;
+  }
+  
+  // Legacy Spline path (if still using Spline)
   let splineScriptLoaded = false;
   let splineViewerLoaded = false;
   
@@ -406,6 +498,9 @@ function initExperiencePowerSection() {
     console.warn('Experience the Power section not found after template load');
     return;
   }
+
+  if (section.hasAttribute('data-inview-video-bound')) return;
+  section.setAttribute('data-inview-video-bound', 'true');
   
   const video = section.querySelector('.ser-experience-video');
   const backgroundContainer = section.querySelector('.ser-experience-background');
@@ -424,10 +519,18 @@ function initExperiencePowerSection() {
     video.style.display = 'block';
   }
   
-  function tryPlayVideo() {
-    if (!video || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const restartAndPlay = () => {
+    if (!video || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      if (video) video.pause();
+      return;
+    }
+    try {
+      video.currentTime = 0;
+    } catch (e) {
+      /* ignore */
+    }
     video.play().catch(() => {});
-  }
+  };
   
   // Remove animate-in class if it exists (from template)
   section.classList.remove('animate-in');
@@ -449,11 +552,12 @@ function initExperiencePowerSection() {
       const sectionObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            tryPlayVideo();
+            restartAndPlay();
             entry.target.classList.add('animate-in');
             entry.target.style.opacity = '';
             entry.target.style.transform = '';
-            sectionObserver.unobserve(entry.target);
+          } else {
+            if (video) video.pause();
           }
         });
       }, observerOptions);
@@ -463,13 +567,13 @@ function initExperiencePowerSection() {
       const rect = section.getBoundingClientRect();
       const windowHeight = window.innerHeight;
       if (rect.top < windowHeight + 700 && rect.bottom > -700) {
-        tryPlayVideo();
+        restartAndPlay();
         section.classList.add('animate-in');
         section.style.opacity = '';
         section.style.transform = '';
       }
     } else {
-      tryPlayVideo();
+      restartAndPlay();
       setTimeout(() => {
         section.classList.add('animate-in');
         section.style.opacity = '';

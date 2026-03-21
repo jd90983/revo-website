@@ -358,76 +358,90 @@ if (document.readyState === 'loading') {
   setTimeout(initHeroSplineOptimization, 100);
 }
 
-// Initialize How It Works Spline optimization for performance
+// How It Works — background `<video>` (class name kept for CSS). Older builds hid this on non-desktop for Spline.
 function initHowItWorksSplineOptimization() {
   const howItWorksSection = document.querySelector('.how-it-works');
-  const howItWorksSplineViewer = howItWorksSection ? howItWorksSection.querySelector('.how-it-works-spline-viewer') : null;
-  
-  if (!howItWorksSection || !howItWorksSplineViewer) {
-    return;
-  }
+  const bg = howItWorksSection ? howItWorksSection.querySelector('.how-it-works-spline-viewer') : null;
 
-  const isDesktop = window.matchMedia('(min-width: 1024px)').matches;
-  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const saveData = navigator.connection && navigator.connection.saveData;
-  if (!isDesktop || reducedMotion || saveData) {
-    howItWorksSplineViewer.style.display = 'none';
-    return;
-  }
+  if (!howItWorksSection || !bg) return;
 
-  // Load Spline viewer script if not already loaded (hero no longer uses Spline, so we load it here for How It Works)
-  if (!document.querySelector('script[src*="spline-viewer"]')) {
-    const splineScript = document.createElement('script');
-    splineScript.type = 'module';
-    splineScript.src = 'https://unpkg.com/@splinetool/viewer@1.12.29/build/spline-viewer.js';
-    document.head.appendChild(splineScript);
-  }
+  if (bg.tagName !== 'VIDEO') return;
 
-  // Function to show/hide Spline viewer (hiding pauses rendering)
-  function toggleHowItWorksSplineViewer(visible) {
-    if (visible) {
-      howItWorksSplineViewer.style.display = 'block';
-    } else {
-      howItWorksSplineViewer.style.display = 'none';
+  const video = bg;
+  video.style.removeProperty('display');
+
+  const restartAndPlay = () => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      video.pause();
+      return;
     }
-  }
+    try {
+      video.currentTime = 0;
+    } catch (e) {
+      /* ignore */
+    }
+    video.play().catch(() => {});
+  };
 
-  // Use IntersectionObserver to pause Spline when section is not visible (for performance)
-  if ('IntersectionObserver' in window) {
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '50px 0px 50px 0px' // Start loading slightly before section is visible
-    };
+  restartAndPlay();
 
-    const howItWorksObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          // Section is visible - show Spline
-          toggleHowItWorksSplineViewer(true);
-        } else {
-          // Section is not visible - hide and pause Spline to save resources
-          toggleHowItWorksSplineViewer(false);
-        }
+  if (!('IntersectionObserver' in window)) return;
+
+  const howItWorksObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) restartAndPlay();
+        else video.pause();
       });
-    }, observerOptions);
+    },
+    { threshold: 0.1, rootMargin: '50px 0px' }
+  );
 
-    // Start observing the how-it-works section
-    howItWorksObserver.observe(howItWorksSection);
-    
-    // Initially hide if not visible
-    const rect = howItWorksSection.getBoundingClientRect();
-    const isVisible = rect.top < window.innerHeight && rect.bottom > 0;
-    if (!isVisible) {
-      toggleHowItWorksSplineViewer(false);
-    }
-  }
+  howItWorksObserver.observe(howItWorksSection);
 }
 
-// Initialize How It Works Spline optimization when DOM is ready
+// Home hero background video — pause off-screen, restart from start when section returns
+function initHeroBackgroundVideo() {
+  const hero = document.querySelector('.hero');
+  const video = hero ? hero.querySelector('video.hero-video') : null;
+  if (!hero || !video || hero.hasAttribute('data-inview-video-bound')) return;
+  hero.setAttribute('data-inview-video-bound', 'true');
+
+  const restartAndPlay = () => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      video.pause();
+      return;
+    }
+    try {
+      video.currentTime = 0;
+    } catch (e) {
+      /* ignore */
+    }
+    video.play().catch(() => {});
+  };
+
+  restartAndPlay();
+
+  if (!('IntersectionObserver' in window)) return;
+
+  new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) restartAndPlay();
+        else video.pause();
+      });
+    },
+    { threshold: 0.1, rootMargin: '0px' }
+  ).observe(hero);
+}
+
+// Initialize How It Works background video when DOM is ready
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
     setTimeout(initHowItWorksSplineOptimization, 200);
+    setTimeout(initHeroBackgroundVideo, 200);
   });
 } else {
   setTimeout(initHowItWorksSplineOptimization, 200);
+  setTimeout(initHeroBackgroundVideo, 200);
 }
