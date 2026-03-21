@@ -240,7 +240,7 @@ main > section {
 .ser-services-header-gradient {
   position: absolute;
   inset: 0;
-  background-image: url('../images/backgrounds/services_page_background_3.png');
+  background-image: url('../images/backgrounds/services_page_background_3.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -583,13 +583,13 @@ main > section {
 
 .ser-ai-receptionists-original .ser-ai-phone-mockup-container {
   position: relative;
-  width: 100%;
+  width: 657px;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: visible;
-  max-width: 300px;
+  max-width: 657px;
   margin: 0 auto;
 }
 
