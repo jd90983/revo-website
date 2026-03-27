@@ -914,8 +914,8 @@ video.ser-ai-spline-viewer {
 
 .ser-intelligent-image-container {
   position: relative;
-  width: 400px;
-  height: 400px;
+  width: 612px;
+  height: 612px;
   flex-shrink: 0;
   border-radius: var(--radius-md);
   overflow: hidden;
@@ -3435,24 +3435,29 @@ video.ser-ai-spline-viewer {
   }
 
   .ser-intelligent-image-container {
-    width: 320px !important;
-    height: 320px !important;
-    max-width: 90% !important;
-    aspect-ratio: 1 / 1 !important;
+    position: relative !important;
+    width: min(400px, 90%) !important;
+    max-width: 400px !important;
+    aspect-ratio: 400 / 600 !important;
+    height: auto !important;
     order: 2 !important;
     margin: 40px auto !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+    display: block !important;
     overflow: hidden !important;
-    border-radius: 50% !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  .ser-intelligent-image-container picture {
+    position: absolute;
+    inset: 0;
+    display: block;
   }
 
   .ser-intelligent-center-image {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    border-radius: 50% !important;
+    border-radius: var(--radius-md) !important;
   }
 
   .ser-intelligent-features-column:first-child {
@@ -4399,24 +4404,29 @@ video.ser-ai-spline-viewer {
   }
 
   .ser-intelligent-image-container {
-    width: 320px !important;
-    height: 320px !important;
-    max-width: 90% !important;
-    aspect-ratio: 1 / 1 !important;
+    position: relative !important;
+    width: min(400px, 90%) !important;
+    max-width: 400px !important;
+    aspect-ratio: 400 / 600 !important;
+    height: auto !important;
     order: 2 !important;
     margin: 32px auto !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+    display: block !important;
     overflow: hidden !important;
-    border-radius: 50% !important;
+    border-radius: var(--radius-md) !important;
+  }
+
+  .ser-intelligent-image-container picture {
+    position: absolute;
+    inset: 0;
+    display: block;
   }
 
   .ser-intelligent-center-image {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
-    border-radius: 50% !important;
+    border-radius: var(--radius-md) !important;
   }
 
   .ser-intelligent-features-column:first-child {
