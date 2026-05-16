@@ -1853,6 +1853,505 @@ body.mobile-menu-open {
   transform: translateX(4px);
 }
 
+/* ===== REVO VOICE TECHNOLOGY (homepage, Figma 9225-10738) ===== */
+
+.revo-voice-technology {
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--section-padding-y) var(--section-padding-x);
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.revo-voice-technology .rvt-container {
+  max-width: var(--max-content-width);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.revo-voice-technology .rvt-hero-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  width: 100%;
+  min-height: 500px;
+  padding: 50px;
+  box-sizing: border-box;
+  background-color: #f7f7f8;
+  border-radius: 35px;
+}
+
+.revo-voice-technology .rvt-copy {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.revo-voice-technology .rvt-eyebrow {
+  margin: 0;
+  font-family: var(--font-body);
+  font-weight: var(--font-semibold);
+  font-size: var(--text-regular);
+  line-height: var(--line-height-relaxed);
+  color: #848585;
+}
+
+.revo-voice-technology .rvt-heading {
+  margin: 0;
+  max-width: 520px;
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  font-size: var(--text-h2);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--tracking-h2);
+  color: #222324;
+}
+
+.revo-voice-technology .rvt-heading-accent {
+  color: var(--color-primary);
+}
+
+.revo-voice-technology .rvt-body {
+  margin: 0;
+  max-width: 480px;
+  font-family: var(--font-body);
+  font-weight: var(--font-regular);
+  font-size: var(--text-large);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-dark);
+}
+
+.revo-voice-technology .rvt-player-card {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 600px;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #F9F9F9;
+  border-radius: 35px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.revo-voice-technology .rvt-audio-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.revo-voice-technology .rvt-player-header {
+  margin: 0;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.revo-voice-technology .rvt-player-header-media {
+  position: relative;
+  width: 100%;
+  height: 185px;
+  overflow: hidden;
+  border-radius: 15px;
+  line-height: 0;
+  background: #e8ecf2;
+}
+
+.revo-voice-technology .rvt-player-header-media picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.revo-voice-technology .rvt-player-header-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.revo-voice-technology .rvt-player-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: stretch;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.revo-voice-technology .rvt-player-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  min-height: 40px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.revo-voice-technology .rvt-play-btn {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: background var(--transition-fast), transform 0.15s ease, filter var(--transition-fast);
+}
+
+.revo-voice-technology .rvt-play-btn:hover {
+  filter: brightness(0.96);
+}
+
+.revo-voice-technology .rvt-play-btn:active {
+  transform: scale(0.96);
+}
+
+.revo-voice-technology .rvt-play-btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.revo-voice-technology .rvt-play-btn .rvt-play-icon,
+.revo-voice-technology .rvt-play-btn .rvt-pause-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.revo-voice-technology .rvt-player-card.rvt-is-playing .rvt-play-btn .rvt-play-icon {
+  display: none;
+}
+
+.revo-voice-technology .rvt-player-card.rvt-is-playing .rvt-play-btn .rvt-pause-icon {
+  display: block;
+}
+
+.revo-voice-technology .rvt-player-card:not(.rvt-is-playing) .rvt-play-btn .rvt-pause-icon {
+  display: none;
+}
+
+.revo-voice-technology .rvt-progress-block {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.revo-voice-technology .rvt-time {
+  flex-shrink: 0;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.revo-voice-technology .rvt-progress-track {
+  flex: 1 1 auto;
+  min-width: 0;
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: rgba(60, 60, 67, 0.18);
+  position: relative;
+  cursor: pointer;
+}
+
+.revo-voice-technology .rvt-progress-track:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+.revo-voice-technology .rvt-progress-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0%;
+  max-width: 100%;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  pointer-events: none;
+}
+
+.revo-voice-technology .rvt-divider {
+  width: 100%;
+  height: 1px;
+  margin: 0;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.revo-voice-technology .rvt-toggle-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.revo-voice-technology .rvt-toggle-label {
+  font-family: var(--font-body);
+  font-weight: var(--font-semibold);
+  font-size: var(--text-regular);
+  line-height: var(--line-height-relaxed);
+  color: var(--color-text-dark);
+  opacity: 0.5;
+  transition: opacity var(--transition-fast), font-weight var(--transition-fast);
+}
+
+.revo-voice-technology .rvt-toggle-label--active {
+  opacity: 1;
+  font-weight: var(--font-bold);
+}
+
+.revo-voice-technology .rvt-toggle {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  flex-shrink: 0;
+  padding: 0;
+  border: none;
+  border-radius: 100px;
+  box-sizing: border-box;
+  overflow: hidden;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  /* Figma 10464-1167: Generic Voice selected — neutral track */
+  background: #d7d7d8;
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.revo-voice-technology.rvt-revo-active .rvt-toggle {
+  background: var(--color-primary);
+}
+
+.revo-voice-technology .rvt-toggle:focus-visible {
+  outline: 2px solid rgba(0, 0, 0, 0.28);
+  outline-offset: 3px;
+}
+
+.revo-voice-technology.rvt-revo-active .rvt-toggle:focus-visible {
+  outline-color: var(--color-primary);
+}
+
+.revo-voice-technology .rvt-toggle-knob {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--color-white);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+  transition: transform 0.22s ease;
+  pointer-events: none;
+}
+
+.revo-voice-technology.rvt-revo-active .rvt-toggle-knob {
+  transform: translateX(40px);
+}
+
+.revo-voice-technology .rvt-cards-row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 20px;
+  width: 100%;
+}
+
+.revo-voice-technology .rvt-feature-card {
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 350px;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 45px;
+  background-color: #f7f7f8;
+  border-radius: 35px;
+}
+
+.revo-voice-technology .rvt-feature-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  min-width: 0;
+  width: 100%;
+}
+
+.revo-voice-technology .rvt-feature-icon-wrap {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #0a0b0c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.revo-voice-technology .rvt-feature-card--sound .rvt-feature-icon-wrap,
+.revo-voice-technology .rvt-feature-card--chat .rvt-feature-icon-wrap {
+  background: transparent;
+}
+
+.revo-voice-technology .rvt-feature-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.revo-voice-technology .rvt-feature-card--sound .rvt-feature-icon,
+.revo-voice-technology .rvt-feature-card--chat .rvt-feature-icon {
+  width: 80px;
+  height: 80px;
+}
+
+.revo-voice-technology .rvt-feature-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  font-size: var(--text-h5);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--tracking-h5);
+  color: #0a0b0c;
+}
+
+.revo-voice-technology .rvt-feature-desc {
+  margin: 0;
+  max-width: min(313px, 100%);
+  font-family: var(--font-body);
+  font-weight: var(--font-regular);
+  font-size: var(--text-regular);
+  line-height: var(--line-height-relaxed);
+  color: rgba(27, 31, 38, 0.72);
+}
+
+.revo-voice-technology .rvt-cta-card {
+  flex: 1 1 0;
+  min-width: 0;
+  min-height: 350px;
+  padding: 50px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 90px;
+  background-color: #0a0b0c;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.revo-voice-technology .rvt-cta-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-color: transparent;
+  background-image: url('../images/revo-voice-technology/upgrade_box.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Imagen a opacidad plena: el 0.38 anterior la mezclaba con #0a0b0c y la apagaba demasiado */
+}
+
+.revo-voice-technology .rvt-cta-title {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  font-family: var(--font-heading);
+  font-weight: var(--font-bold);
+  font-size: var(--text-h5);
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--tracking-h5);
+  color: var(--color-white);
+}
+
+.revo-voice-technology .rvt-cta-title-line {
+  display: block;
+}
+
+.revo-voice-technology .rvt-cta-button {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  border-radius: 100px;
+  background: #fa8932;
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-weight: var(--font-medium);
+  font-size: var(--text-large);
+  line-height: var(--line-height-relaxed);
+  text-decoration: none;
+  transition: background var(--transition-fast), transform 0.15s ease;
+}
+
+.revo-voice-technology .rvt-cta-button:hover {
+  background: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.revo-voice-technology .rvt-cta-button:active {
+  transform: scale(0.98);
+}
+
+.revo-voice-technology .rvt-cta-button:focus-visible {
+  outline: 2px solid var(--color-white);
+  outline-offset: 3px;
+}
+
 /* ===== HOW IT WORKS SECTION ===== */
 
 /* Section Container */
@@ -5574,6 +6073,11 @@ body.mobile-menu-open {
 
 .hear-sample-btn-secondary:hover {
   background: rgba(10, 11, 12, 0.05);
+}
+
+/* Anchor target for in-page CTAs (navbar is fixed 72px) */
+#get-started-form-template-container {
+  scroll-margin-top: 88px;
 }
 
 /* ===== GET STARTED FORM SECTION ===== */
