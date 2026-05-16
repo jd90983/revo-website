@@ -445,3 +445,320 @@ if (document.readyState === 'loading') {
   setTimeout(initHowItWorksSplineOptimization, 200);
   setTimeout(initHeroBackgroundVideo, 200);
 }
+
+/**
+ * Homepage — Revo Voice Technology: synchronized A/B playback (dual audio, single timeline).
+ * Swap `data-rvt-src-generic` / `data-rvt-src-revo` on `#revo_voice_technology` for matched-length assets.
+ */
+function initRevoVoiceTechnology() {
+  const root = document.getElementById('revo_voice_technology');
+  if (!root) return;
+
+  const audioGeneric = root.querySelector('audio[data-rvt-audio="generic"]');
+  const audioRevo = root.querySelector('audio[data-rvt-audio="revo"]');
+  const playBtn = root.querySelector('[data-rvt-play]');
+  const progressTrack = root.querySelector('[data-rvt-progress]');
+  const progressFill = root.querySelector('[data-rvt-fill]');
+  const elCurrent = root.querySelector('[data-rvt-current]');
+  const elDuration = root.querySelector('[data-rvt-duration]');
+  const toggleBtn = root.querySelector('[data-rvt-switch]');
+  const labelGeneric = root.querySelector('[data-rvt-label-generic]');
+  const labelRevo = root.querySelector('[data-rvt-label-revo]');
+  const playerCard = root.querySelector('[data-rvt-player]');
+
+  if (!audioGeneric || !audioRevo || !playBtn || !progressTrack || !progressFill || !elCurrent || !elDuration || !toggleBtn || !labelGeneric || !labelRevo || !playerCard) {
+    return;
+  }
+
+  const srcGeneric = root.dataset.rvtSrcGeneric || '';
+  const srcRevo = root.dataset.rvtSrcRevo || '';
+  if (srcGeneric) audioGeneric.src = srcGeneric;
+  if (srcRevo) audioRevo.src = srcRevo;
+  try {
+    audioGeneric.load();
+    audioRevo.load();
+  } catch (e) {
+    /* ignore */
+  }
+
+  let activeKey = 'generic';
+  let isPlaying = false;
+  let rafId = 0;
+  let scrubPointerId = null;
+  let pendingSeekRatio = null;
+  let durationWaitersAttached = false;
+
+  function getActiveAudio() {
+    return activeKey === 'revo' ? audioRevo : audioGeneric;
+  }
+
+  function formatTime(sec) {
+    if (!Number.isFinite(sec) || sec < 0) return '0:00';
+    const m = Math.floor(sec / 60);
+    const s = Math.floor(sec % 60);
+    return `${m}:${s.toString().padStart(2, '0')}`;
+  }
+
+  function getSyncDuration() {
+    const dG = audioGeneric.duration;
+    const dR = audioRevo.duration;
+    const gOk = Number.isFinite(dG) && dG > 0;
+    const rOk = Number.isFinite(dR) && dR > 0;
+    if (gOk && rOk) return Math.min(dG, dR);
+    if (rOk) return dR;
+    if (gOk) return dG;
+    return 0;
+  }
+
+  /** Duración usable para seek (fallbacks si un MP3 aún no expone duration tras cold load / Ctrl+F5). */
+  function getSeekDuration() {
+    let d = getSyncDuration();
+    if (d > 0) return d;
+    const a = audioGeneric.duration;
+    const b = audioRevo.duration;
+    if (Number.isFinite(a) && a > 0 && Number.isFinite(b) && b > 0) {
+      return Math.max(a, b);
+    }
+    if (Number.isFinite(a) && a > 0) return a;
+    if (Number.isFinite(b) && b > 0) return b;
+    const m = getActiveAudio().duration;
+    return Number.isFinite(m) && m > 0 ? m : 0;
+  }
+
+  function syncInactiveToActive() {
+    const master = getActiveAudio();
+    const slave = activeKey === 'revo' ? audioGeneric : audioRevo;
+    const dt = Math.abs(slave.currentTime - master.currentTime);
+    if (dt > 0.06) {
+      try {
+        slave.currentTime = master.currentTime;
+      } catch (e) {
+        /* ignore */
+      }
+    }
+  }
+
+  function applyOutputRouting() {
+    audioGeneric.muted = activeKey !== 'generic';
+    audioRevo.muted = activeKey !== 'revo';
+    syncInactiveToActive();
+  }
+
+  function updateToggleUI() {
+    const isRevo = activeKey === 'revo';
+    toggleBtn.setAttribute('aria-checked', String(isRevo));
+    root.classList.toggle('rvt-revo-active', isRevo);
+    labelGeneric.classList.toggle('rvt-toggle-label--active', !isRevo);
+    labelRevo.classList.toggle('rvt-toggle-label--active', isRevo);
+  }
+
+  function updateProgressUI() {
+    const master = getActiveAudio();
+    const dur = getSyncDuration();
+    const t = Number.isFinite(master.currentTime) ? master.currentTime : 0;
+    const end = dur > 0 ? dur : (Number.isFinite(master.duration) && master.duration > 0 ? master.duration : 0);
+    const shownT = end > 0 ? Math.min(t, end) : t;
+    elCurrent.textContent = formatTime(shownT);
+    if (end > 0) {
+      elDuration.textContent = formatTime(end);
+    }
+    const pct = end > 0 ? Math.min(100, (shownT / end) * 100) : 0;
+    progressFill.style.width = `${pct}%`;
+    progressTrack.setAttribute('aria-valuenow', String(Math.round(pct)));
+  }
+
+  function tick() {
+    if (!isPlaying) return;
+    const dur = getSyncDuration();
+    const master = getActiveAudio();
+    if (dur > 0 && master.currentTime >= dur - 0.06) {
+      try {
+        audioGeneric.currentTime = dur;
+        audioRevo.currentTime = dur;
+      } catch (e) {
+        /* ignore */
+      }
+      audioGeneric.pause();
+      audioRevo.pause();
+      setPlaying(false);
+      updateProgressUI();
+      return;
+    }
+    syncInactiveToActive();
+    updateProgressUI();
+    rafId = requestAnimationFrame(tick);
+  }
+
+  function setPlaying(next) {
+    isPlaying = next;
+    playerCard.classList.toggle('rvt-is-playing', next);
+    playBtn.setAttribute('aria-label', next ? 'Pause audio comparison' : 'Play audio comparison');
+    cancelAnimationFrame(rafId);
+    if (next) {
+      rafId = requestAnimationFrame(tick);
+    }
+  }
+
+  function playBoth() {
+    applyOutputRouting();
+    return Promise.allSettled([audioGeneric.play(), audioRevo.play()]);
+  }
+
+  function pauseBoth() {
+    audioGeneric.pause();
+    audioRevo.pause();
+  }
+
+  function removeDurationSeekWaiters(bump) {
+    ['loadedmetadata', 'durationchange', 'canplay'].forEach((evt) => {
+      audioGeneric.removeEventListener(evt, bump);
+      audioRevo.removeEventListener(evt, bump);
+    });
+    durationWaitersAttached = false;
+  }
+
+  function applySeekRatio(ratio) {
+    const dur = getSeekDuration();
+    if (!(dur > 0)) return false;
+    const r = Math.min(1, Math.max(0, ratio));
+    const t = r * dur;
+    if (!Number.isFinite(t) || t < 0) return false;
+    try {
+      audioGeneric.currentTime = t;
+      audioRevo.currentTime = t;
+    } catch (e) {
+      /* ignore */
+    }
+    updateProgressUI();
+    return true;
+  }
+
+  function seekFromClientX(clientX) {
+    if (!Number.isFinite(clientX)) return;
+    const rect = progressTrack.getBoundingClientRect();
+    const w = rect.width;
+    if (!(w > 0)) return;
+    const ratio = Math.min(1, Math.max(0, (clientX - rect.left) / w));
+
+    pendingSeekRatio = ratio;
+    if (applySeekRatio(ratio)) {
+      pendingSeekRatio = null;
+      return;
+    }
+
+    if (durationWaitersAttached) return;
+    durationWaitersAttached = true;
+    const bump = () => {
+      if (pendingSeekRatio == null) {
+        removeDurationSeekWaiters(bump);
+        return;
+      }
+      if (applySeekRatio(pendingSeekRatio)) {
+        pendingSeekRatio = null;
+        removeDurationSeekWaiters(bump);
+      }
+    };
+    ['loadedmetadata', 'durationchange', 'canplay'].forEach((evt) => {
+      audioGeneric.addEventListener(evt, bump);
+      audioRevo.addEventListener(evt, bump);
+    });
+  }
+
+  playBtn.addEventListener('click', () => {
+    if (isPlaying) {
+      pauseBoth();
+      setPlaying(false);
+      return;
+    }
+    const dur = getSyncDuration();
+    if (dur > 0 && getActiveAudio().currentTime >= dur - 0.2) {
+      try {
+        audioGeneric.currentTime = 0;
+        audioRevo.currentTime = 0;
+      } catch (e) {
+        /* ignore */
+      }
+    }
+    playBoth().then((results) => {
+      const blocked = results.some((r) => r.status === 'rejected');
+      if (blocked) {
+        setPlaying(false);
+        return;
+      }
+      setPlaying(true);
+    });
+  });
+
+  toggleBtn.addEventListener('click', () => {
+    activeKey = activeKey === 'revo' ? 'generic' : 'revo';
+    applyOutputRouting();
+    updateToggleUI();
+  });
+
+  function onLoadedMeta() {
+    updateProgressUI();
+  }
+  audioGeneric.addEventListener('loadedmetadata', onLoadedMeta);
+  audioRevo.addEventListener('loadedmetadata', onLoadedMeta);
+
+  progressTrack.addEventListener('pointerdown', (e) => {
+    if (e.button !== undefined && e.button !== 0) return;
+    scrubPointerId = e.pointerId;
+    try {
+      progressTrack.setPointerCapture(e.pointerId);
+    } catch (err) {
+      /* ignore */
+    }
+    seekFromClientX(e.clientX);
+  });
+
+  progressTrack.addEventListener('pointermove', (e) => {
+    if (scrubPointerId !== e.pointerId) return;
+    seekFromClientX(e.clientX);
+  });
+
+  function endScrub(e) {
+    if (scrubPointerId !== e.pointerId) return;
+    scrubPointerId = null;
+    try {
+      progressTrack.releasePointerCapture(e.pointerId);
+    } catch (err) {
+      /* ignore */
+    }
+  }
+  progressTrack.addEventListener('pointerup', endScrub);
+  progressTrack.addEventListener('pointercancel', endScrub);
+
+  progressTrack.addEventListener('keydown', (e) => {
+    const dur = getSeekDuration();
+    if (dur <= 0) return;
+    const step = 5;
+    let t = getActiveAudio().currentTime;
+    if (e.key === 'ArrowLeft') {
+      e.preventDefault();
+      t = Math.max(0, t - step);
+    } else if (e.key === 'ArrowRight') {
+      e.preventDefault();
+      t = Math.min(dur, t + step);
+    } else {
+      return;
+    }
+    try {
+      audioGeneric.currentTime = t;
+      audioRevo.currentTime = t;
+    } catch (err) {
+      /* ignore */
+    }
+    updateProgressUI();
+  });
+
+  applyOutputRouting();
+  updateToggleUI();
+  updateProgressUI();
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initRevoVoiceTechnology);
+} else {
+  initRevoVoiceTechnology();
+}

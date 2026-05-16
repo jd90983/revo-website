@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Smooth Scroll for Anchor Links
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
     const href = this.getAttribute('href');
 
@@ -159,13 +159,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     if (target) {
       e.preventDefault();
 
-      // Calculate offset for sticky navbar
-      const navbarHeight = navbar.offsetHeight;
+      const navbar = document.querySelector('.navbar');
+      const navbarHeight = navbar ? navbar.offsetHeight : 0;
       const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - navbarHeight;
 
       window.scrollTo({
         top: targetPosition,
-        behavior: 'smooth'
+        behavior: 'smooth',
       });
     }
   });

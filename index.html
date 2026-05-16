@@ -465,6 +465,160 @@
       </div>
     </section>
 
+    <!-- Revo Voice Technology — A/B voice comparison (Figma 9225-10738). Set data-rvt-src-generic / data-rvt-src-revo to matched-length MP3s for real A/B. -->
+    <section
+      class="revo-voice-technology animate-in"
+      id="revo_voice_technology"
+      aria-labelledby="revo-voice-technology-heading"
+      data-rvt-src-generic="audio/revo-voice-ab-generic.mp3"
+      data-rvt-src-revo="audio/revo-voice-ab-revo.mp3"
+    >
+      <div class="rvt-container">
+        <div class="rvt-hero-card">
+          <div class="rvt-copy">
+            <p class="rvt-eyebrow">Revo Voice Technology</p>
+            <h2 class="rvt-heading" id="revo-voice-technology-heading">
+              Most AI Voices <span class="rvt-heading-accent">Sound Robotic.</span> Revo Doesn’t.
+            </h2>
+            <p class="rvt-body">
+              Your customers can hear the difference. That’s why Revo is designed to communicate naturally, professionally, and confidently — creating conversations that feel real from the first hello.
+            </p>
+          </div>
+
+          <div class="rvt-player-card" data-rvt-player>
+            <audio class="rvt-audio-visually-hidden" preload="auto" data-rvt-audio="generic" aria-hidden="true"></audio>
+            <audio class="rvt-audio-visually-hidden" preload="auto" data-rvt-audio="revo" aria-hidden="true"></audio>
+
+            <div class="rvt-player-header">
+              <div class="rvt-player-header-media">
+                <picture>
+                  <source
+                    media="(max-width: 767px)"
+                    type="image/webp"
+                    srcset="images/revo-voice-technology/header_revo_voice_technology_mobile.webp"
+                  />
+                  <img
+                    src="images/revo-voice-technology/header_revo_voice_technology.webp"
+                    alt=""
+                    class="rvt-player-header-img"
+                    width="600"
+                    height="185"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+            </div>
+
+            <div class="rvt-player-bottom">
+              <div class="rvt-player-controls">
+                <button type="button" class="rvt-play-btn" data-rvt-play aria-label="Play audio comparison">
+                  <img
+                    class="rvt-play-icon"
+                    src="images/revo-voice-technology/play_figma_10462.svg"
+                    alt=""
+                    width="40"
+                    height="40"
+                    decoding="async"
+                    aria-hidden="true"
+                  />
+                  <img
+                    class="rvt-pause-icon"
+                    src="images/revo-voice-technology/pause_figma_10467.svg"
+                    alt=""
+                    width="40"
+                    height="40"
+                    decoding="async"
+                    aria-hidden="true"
+                  />
+                </button>
+                <div class="rvt-progress-block">
+                  <span class="rvt-time" data-rvt-current>0:00</span>
+                  <div
+                    class="rvt-progress-track"
+                    data-rvt-progress
+                    role="slider"
+                    tabindex="0"
+                    aria-label="Playback position"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="0"
+                  >
+                    <div class="rvt-progress-fill" data-rvt-fill></div>
+                  </div>
+                  <span class="rvt-time" data-rvt-duration>0:00</span>
+                </div>
+              </div>
+
+              <div class="rvt-divider" aria-hidden="true"></div>
+
+              <div class="rvt-toggle-row">
+                <span class="rvt-toggle-label rvt-toggle-label--active" data-rvt-label-generic>Generic Voice</span>
+                <button
+                  type="button"
+                  class="rvt-toggle"
+                  data-rvt-switch
+                  role="switch"
+                  aria-checked="false"
+                  aria-label="Voice comparison: Generic or Revo"
+                >
+                  <span class="rvt-toggle-knob" aria-hidden="true"></span>
+                </button>
+                <span class="rvt-toggle-label" data-rvt-label-revo>Revo Voice</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rvt-cards-row">
+          <article class="rvt-feature-card rvt-feature-card--sound">
+            <div class="rvt-feature-icon-wrap" aria-hidden="true">
+              <img
+                class="rvt-feature-icon"
+                src="images/revo-voice-technology/natural_voice_icon_figma.svg"
+                alt=""
+                width="80"
+                height="80"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div class="rvt-feature-copy">
+              <h3 class="rvt-feature-title">Natural Voice</h3>
+              <p class="rvt-feature-desc">Smooth, human-like conversations that feel professional and easy to trust.</p>
+            </div>
+          </article>
+
+          <article class="rvt-feature-card rvt-feature-card--chat">
+            <div class="rvt-feature-icon-wrap" aria-hidden="true">
+              <img
+                class="rvt-feature-icon"
+                src="images/revo-voice-technology/smarter_responses_icon_figma.svg"
+                alt=""
+                width="80"
+                height="80"
+                decoding="async"
+                loading="lazy"
+              />
+            </div>
+            <div class="rvt-feature-copy">
+              <h3 class="rvt-feature-title">Smarter Responses</h3>
+              <p class="rvt-feature-desc">Understands tone, adapts to conversations, and follows your business workflow naturally.</p>
+            </div>
+          </article>
+
+          <article class="rvt-cta-card">
+            <div class="rvt-cta-bg" aria-hidden="true"></div>
+            <h3 class="rvt-cta-title">
+              <span class="rvt-cta-title-line">Upgrade Your</span>
+              <span class="rvt-cta-title-line">Call Experience</span>
+            </h3>
+            <a href="#get-started-form-template-container" class="rvt-cta-button">Try Now!</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- How It Works Section -->
     <section class="how-it-works">
       <!-- Background video animation -->

@@ -2553,3 +2553,244 @@
     touch-action: none !important;
   }
 }
+
+/* ===== Revo Voice Technology (homepage) ===== */
+@media (max-width: 1200px) {
+  .revo-voice-technology .rvt-hero-card {
+    gap: 56px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .revo-voice-technology .rvt-hero-card {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: 0;
+    gap: 40px;
+    padding: 40px 32px;
+  }
+
+  .revo-voice-technology .rvt-copy {
+    gap: 24px;
+  }
+
+  .revo-voice-technology .rvt-heading {
+    max-width: none;
+  }
+
+  .revo-voice-technology .rvt-body {
+    max-width: none;
+  }
+
+  .revo-voice-technology .rvt-player-card {
+    max-width: none;
+  }
+
+  .revo-voice-technology .rvt-cards-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Row layout uses flex:1 1 0 for equal columns; in a column stack that shares
+     vertical space and min-height:0, cards collapse and overlap. Size to content. */
+  .revo-voice-technology .rvt-feature-card,
+  .revo-voice-technology .rvt-cta-card {
+    flex: 0 0 auto;
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Figma 10487-928 / Layout 300 — stacked feature cards: py 30px, px 20px, no desktop min-height */
+  .revo-voice-technology .rvt-feature-card {
+    min-height: 0;
+    padding: 30px 20px;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .revo-voice-technology .rvt-feature-copy {
+    align-items: center;
+  }
+
+  .revo-voice-technology .rvt-feature-desc {
+    max-width: min(313px, 100%);
+  }
+}
+
+@media (max-width: 767px) {
+  .revo-voice-technology .rvt-player-card {
+    min-height: 0;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #F9F9F9;
+    border-radius: 35px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  /*
+   * Mobile header art: scale by width so the full bitmap fits (no cover crop).
+   * Fixed height + cover was clipping baked-in “Hear the Difference” on narrow phones.
+   */
+  .revo-voice-technology .rvt-player-header-media {
+    height: auto;
+    min-height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    line-height: 0;
+    background: #e8ecf2;
+  }
+
+  .revo-voice-technology .rvt-player-header-media picture {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .revo-voice-technology .rvt-player-header-img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .revo-voice-technology .rvt-player-bottom {
+    padding: 0;
+    gap: 20px;
+  }
+
+  .revo-voice-technology .rvt-hero-card {
+    padding: 30px 20px;
+    gap: 60px;
+  }
+
+  .revo-voice-technology .rvt-copy {
+    gap: 16px;
+  }
+
+  .revo-voice-technology .rvt-player-controls {
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 10px;
+    min-height: 0;
+  }
+
+  .revo-voice-technology .rvt-progress-block {
+    flex: 1 1 auto;
+    min-width: 0;
+    order: 0;
+  }
+
+  .revo-voice-technology .rvt-play-btn {
+    order: 0;
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+  }
+
+  .revo-voice-technology .rvt-play-btn .rvt-play-icon,
+  .revo-voice-technology .rvt-play-btn .rvt-pause-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .revo-voice-technology .rvt-time {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: var(--font-medium);
+  }
+
+  .revo-voice-technology .rvt-toggle-row {
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+  }
+
+  /* Figma 10487-921 — both labels semibold 14px / 1.5; inactive 0.5 opacity only */
+  .revo-voice-technology .rvt-toggle-label {
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: var(--font-semibold);
+  }
+
+  .revo-voice-technology .rvt-toggle-label--active {
+    font-weight: var(--font-semibold);
+  }
+
+  .revo-voice-technology .rvt-toggle-label[data-rvt-label-generic] {
+    text-align: right;
+  }
+
+  /* Track 50×25px — lock box so WebKit/iOS default round button does not win */
+  .revo-voice-technology .rvt-toggle {
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+    height: 25px;
+    min-height: 25px;
+    max-height: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+    -webkit-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent;
+    border-radius: 100px;
+  }
+
+  .revo-voice-technology .rvt-toggle-knob {
+    top: 3px;
+    left: 3px;
+    width: 19px;
+    height: 19px;
+    box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .revo-voice-technology.rvt-revo-active .rvt-toggle-knob {
+    transform: translateX(25px);
+  }
+
+  /* Figma Layout 300 — feature titles at 28px (not global mobile 24px); padding handled at ≤1023 */
+  .revo-voice-technology .rvt-feature-title {
+    font-size: 28px;
+    letter-spacing: -0.28px;
+  }
+
+  .revo-voice-technology .rvt-cta-card {
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    padding: 50px 20px;
+    min-height: 0;
+  }
+
+  .revo-voice-technology .rvt-cta-title {
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: -0.28px;
+  }
+
+  .revo-voice-technology .rvt-cta-bg {
+    background-image: url('../images/revo-voice-technology/upgrade_box_mobile.webp');
+  }
+
+  .revo-voice-technology .rvt-feature-icon-wrap {
+    width: 80px;
+    height: 80px;
+  }
+
+  .revo-voice-technology .rvt-feature-icon {
+    transform: none;
+  }
+
+  .revo-voice-technology .rvt-feature-card--sound .rvt-feature-icon,
+  .revo-voice-technology .rvt-feature-card--chat .rvt-feature-icon {
+    width: 80px;
+    height: 80px;
+  }
+}
