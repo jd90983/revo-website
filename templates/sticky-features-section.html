@@ -1,77 +1,64 @@
 <!-- ============================================
-   Sticky Features Section Template
-   Reusable template for sticky scroll feature sections with dark theme
+   Features Tabs Section Template
+   Same layout/interaction as Benefits tabs section
    ============================================ -->
-
-<!-- 
-  USAGE:
-  1. Copy this entire section to your HTML file
-  2. Update the section class (ser-features-section or your custom class)
-  3. Update the image ID (features-image or your custom ID)
-  4. Update the data attributes and content
-  5. Include the required CSS and JS files
-  6. Initialize the section in your JavaScript
--->
 
 <section class="ser-features-section" style="background: #0A0B0C !important; color: #FFFFFF !important; display: block !important; visibility: visible !important;">
   <div class="padding-global relative" style="background: #0A0B0C !important; color: #FFFFFF !important;">
     <div class="container-large">
-      <!-- Header Section -->
-      <div class="ser-benefits-header">
+      <div class="ser-benefits-header ser-benefits-header--tabs">
         <div class="ser-benefits-title-wrapper">
           <p class="ser-tagline">Features</p>
           <div class="ser-benefits-heading-content">
-            <h2 class="ser-section-title">Your Section Title <span class="text-primary">Highlighted Text</span></h2>
+            <h2 class="ser-section-title">Intelligent Communication Built for<br /><span class="text-primary">Real Businesses</span></h2>
             <div class="ser-section-description">
-              <p>Your section description goes here. This explains what the section is about and provides context for the items below.</p>
+              <p>Your section description goes here.</p>
             </div>
           </div>
-        </div>
-        <div class="benefits-modern-actions">
-          <button class="benefits-modern-btn-primary">Get Started</button>
-          <button class="benefits-modern-btn-secondary">Book a Demo</button>
+          <div class="benefits-modern-actions ser-benefits-tabs-header-actions">
+            <button type="button" class="benefits-modern-btn-primary">Get Started</button>
+            <button type="button" class="benefits-modern-btn-secondary benefits-modern-btn-link">
+              Book a Demo
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
-      
-      <!-- Features Content -->
-      <div class="products_wr">
-        <div class="products-content">
-          <!-- Left Side: Items List -->
+      <div class="products_wr products_wr--tabs">
+        <div class="products-content products-content--tabs">
           <div class="products-left">
-            <!-- Item 1 -->
-            <div class="products-item active" data-product="item-1" data-image="images/services/your-image-1.png">
-              <h2 class="products-title">Item Title 1</h2>
-              <p class="products-description">Item description goes here. This will be shown/hidden based on scroll position in desktop view.</p>
-              <div class="products-actions">
-                <button class="benefits-modern-btn-secondary">Book a Demo</button>
+            <div class="products-tabs" role="tablist" aria-label="Features">
+              <div class="products-item active" data-product="item-1" data-image="images/services/your-image-1.png" data-alt="Item 1">
+                <div class="products-item-header">
+                  <span class="products-item-indicator" aria-hidden="true"></span>
+                  <h3 class="products-title">Item title 1</h3>
+                </div>
+                <div class="products-description">
+                  <p>Item description 1.</p>
+                </div>
+                <div class="products-actions">
+                  <button type="button" class="benefits-modern-btn-secondary">Book a Demo</button>
+                </div>
+                <div class="products-item-media">
+                  <img src="images/services/your-image-1.png" alt="Item 1" width="600" height="600" loading="lazy" />
+                </div>
               </div>
             </div>
-            
-            <!-- Item 2 -->
-            <div class="products-item" data-product="item-2" data-image="images/services/your-image-2.png">
-              <h2 class="products-title">Item Title 2</h2>
-              <p class="products-description">Item description goes here. This will be shown/hidden based on scroll position in desktop view.</p>
-              <div class="products-actions">
-                <button class="benefits-modern-btn-secondary">Book a Demo</button>
-              </div>
+            <div class="products-panel-actions benefits-modern-actions">
+              <button type="button" class="benefits-modern-btn-primary">Get Started</button>
+              <button type="button" class="benefits-modern-btn-secondary benefits-modern-btn-link">
+                Book a Demo
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
             </div>
-            
-            <!-- Item 3 -->
-            <div class="products-item" data-product="item-3" data-image="images/services/your-image-3.png">
-              <h2 class="products-title">Item Title 3</h2>
-              <p class="products-description">Item description goes here. This will be shown/hidden based on scroll position in desktop view.</p>
-              <div class="products-actions">
-                <button class="benefits-modern-btn-secondary">Book a Demo</button>
-              </div>
-            </div>
-            
-            <!-- Add more items as needed -->
           </div>
-          
-          <!-- Right Side: Image Display -->
           <div class="products-right">
             <div class="products-image-container">
-              <img id="features-image" src="images/services/your-image-1.png" alt="Item 1" class="products-image">
+              <img id="features-image" src="images/services/your-image-1.png" alt="Item 1" class="products-image" width="600" height="600" loading="lazy" />
             </div>
           </div>
         </div>
@@ -80,52 +67,4 @@
   </div>
 </section>
 
-<!-- 
-  REQUIRED CSS FILES:
-  - css/ser-products.css (or include the styles in your main CSS)
-  
-  REQUIRED JS FILES:
-  - js/sticky-products-section-standalone.js (standalone version, no modules needed)
-  - js/animations.js (for scroll animations - optional but recommended)
-  
-  INITIALIZATION:
-  Add this to your page's JavaScript (before closing </body> tag):
-  
-  <script src="js/sticky-products-section-standalone.js" defer></script>
-  <script>
-    // Wait for everything to be ready
-    (function() {
-      function initFeaturesSection() {
-        if (typeof window.initStickyProductsSection === 'function') {
-          try {
-            window.initStickyProductsSection({
-              sectionSelector: '.ser-features-section', // Change if using different class
-              imageId: 'features-image', // Change to match your image ID
-              imagePaths: [
-                'images/services/your-image-1.png',
-                'images/services/your-image-2.png',
-                'images/services/your-image-3.png'
-              ]
-            });
-            console.log('✅ Features section initialized');
-          } catch (error) {
-            console.error('❌ Error initializing features section:', error);
-          }
-        } else {
-          console.warn('⚠️ initStickyProductsSection not available yet, retrying...');
-          setTimeout(initFeaturesSection, 200);
-        }
-      }
-      
-      // Try to initialize when page loads
-      if (document.readyState === 'complete' || document.readyState === 'interactive') {
-        setTimeout(initFeaturesSection, 300);
-      } else {
-        window.addEventListener('load', function() {
-          setTimeout(initFeaturesSection, 300);
-        });
-      }
-    })();
-  </script>
--->
-
+<!-- Required: css/ser-products.css, js/benefits-tabs.js -->

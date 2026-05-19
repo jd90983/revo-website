@@ -739,53 +739,96 @@
 
 
 
-    <!-- Products Section with Sticky Scroll -->
+    <!-- Benefits Tabs Section -->
     <section class="ser-products-section" style="background: #FFFFFF !important; color: #0A0B0C !important; display: block !important; visibility: visible !important;">
       <div class="padding-global relative" style="background: #FFFFFF !important; color: #0A0B0C !important;">
         <div class="container-large">
-          <div class="ser-benefits-header">
+          <div class="ser-benefits-header ser-benefits-header--tabs">
             <div class="ser-benefits-title-wrapper">
               <p class="ser-tagline">Benefits</p>
               <div class="ser-benefits-heading-content">
-                <h2 class="ser-section-title">Unleash the Benefits of Revo's <span class="text-primary">AI Answering System</span></h2>
+                <h2 class="ser-section-title">Unlock a Smarter Way<br /><span class="text-primary">To Answer Every Call</span></h2>
                 <div class="ser-section-description">
-                  <p>Give your business a voice that's smart, reliable, and uniquely yours. Revo blends human-like communication with powerful automation — filtering spam, managing multiple calls at once, and keeping your clients connected anytime.</p>
+                  <p>Give your business a voice that's consistent, reliable, and uniquely yours.<br />Revo combines natural, human-like communication with powerful automation, filtering spam, handling multiple calls at once, and keeping your business connected 24/7.</p>
                 </div>
               </div>
-            </div>
-            <div class="benefits-modern-actions">
-              <button class="benefits-modern-btn-primary">Get Started</button>
-              <button class="benefits-modern-btn-secondary">Book a Demo</button>
+              <div class="benefits-modern-actions ser-benefits-tabs-header-actions">
+                <button type="button" class="benefits-modern-btn-primary">Get Started</button>
+                <button type="button" class="benefits-modern-btn-secondary benefits-modern-btn-link">
+                  Book a Demo
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="products_wr">
-            <div class="products-content">
-              <div class="products-left">
-                <div class="products-item active" data-product="24-7-availability" data-image="images/services/24_7-Availability.png">
-                  <h2 class="products-title">24/7 Availability</h2>
-                  <p class="products-description">Never miss an opportunity. Revo's AI receptionists are always online — ready to greet customers, handle inquiries, and keep your business running smoothly day or night.</p>
-                  <div class="products-actions">
-                    <button class="benefits-modern-btn-secondary">Book a Demo</button>
-                  </div>
-                </div>
-                <div class="products-item" data-product="smart-call-management" data-image="images/services/Smart Call-Management.png">
-                  <h2 class="products-title">Smart Call Management</h2>
-                  <p class="products-description">Handle multiple calls with ease. Revo filters spam, prioritizes real customers, and prevents double bookings — ensuring every call is handled efficiently and every client feels heard.</p>
-                  <div class="products-actions">
-                    <button class="benefits-modern-btn-secondary">Book a Demo</button>
-                  </div>
-                </div>
-                <div class="products-item" data-product="ai-caller-memory" data-image="images/services/AI-Caller-Memory-&-Context-Recall.png">
-                  <h2 class="products-title">AI Caller Memory & Context Recall</h2>
-                  <p class="products-description">Because your customers deserve to be remembered. Revo remembers returning callers — not just their name, but their preferences, past requests, and communication tone.</p>
-                  <div class="products-actions">
-                    <button class="benefits-modern-btn-secondary">Book a Demo</button>
-                  </div>
-                </div>
-              </div>
+          <div class="products_wr products_wr--tabs">
+            <div class="products-content products-content--tabs">
               <div class="products-right">
                 <div class="products-image-container">
-                  <img id="products-image" src="images/services/24_7-Availability.png" alt="24/7 Availability" class="products-image">
+                  <img id="products-image" src="images/services/always_on_availability.webp" alt="Always-on availability" class="products-image" width="600" height="600" loading="lazy" />
+                </div>
+              </div>
+              <div class="products-left">
+                <div class="products-tabs" role="tablist" aria-label="Benefits">
+                  <div class="products-item active" data-product="always-on-availability" data-image="images/services/always_on_availability.webp" data-alt="Always-on availability">
+                    <div class="products-item-header">
+                      <span class="products-item-indicator" aria-hidden="true"></span>
+                      <h3 class="products-title">Always-on availability</h3>
+                    </div>
+                    <div class="products-description">
+                      <p>Never miss a call—or a customer. Revo answers instantly, day or night, with a natural, human-like voice. While you work, drive, or sleep, your business stays fully responsive.</p>
+                    </div>
+                    <div class="products-actions">
+                      <button type="button" class="benefits-modern-btn-secondary">Book a Demo</button>
+                    </div>
+                    <div class="products-item-media">
+                      <img src="images/services/always_on_availability.webp" alt="Always-on availability" width="600" height="600" loading="lazy" />
+                    </div>
+
+                  </div>
+                  <div class="products-item" data-product="smart-call-management" data-image="images/services/smart_call_management.webp" data-alt="Smart Call Management">
+                    <div class="products-item-header">
+                      <span class="products-item-indicator" aria-hidden="true"></span>
+                      <h3 class="products-title">Smart Call Management</h3>
+                    </div>
+                    <div class="products-description">
+                      <p>Every call handled. Every detail captured. Revo filters spam, prioritizes real customers, and manages multiple calls at once. No double bookings, no missed opportunities—just organized, efficient communication.</p>
+                    </div>
+                    <div class="products-actions">
+                      <button type="button" class="benefits-modern-btn-secondary">Book a Demo</button>
+                    </div>
+                    <div class="products-item-media">
+                      <img src="images/services/smart_call_management.webp" alt="Smart Call Management" width="600" height="600" loading="lazy" />
+                    </div>
+
+                  </div>
+                  <div class="products-item" data-product="assign-jobs-specialist" data-image="images/services/assign_jobs_to_the_specialist.webp" data-alt="Assign Jobs to the Specialist">
+                    <div class="products-item-header">
+                      <span class="products-item-indicator" aria-hidden="true"></span>
+                      <h3 class="products-title">Assign Jobs to the Specialist</h3>
+                    </div>
+                    <div class="products-description">
+                      <p>The right job, to the right person—automatically. Revo routes requests based on your workflow, availability, and service type. Your team stays focused, and your clients get faster, better service.</p>
+                    </div>
+                    <div class="products-actions">
+                      <button type="button" class="benefits-modern-btn-secondary">Book a Demo</button>
+                    </div>
+                    <div class="products-item-media">
+                      <img src="images/services/assign_jobs_to_the_specialist.webp" alt="Assign Jobs to the Specialist" width="600" height="600" loading="lazy" />
+                    </div>
+
+                  </div>
+                </div>
+                <div class="products-panel-actions benefits-modern-actions">
+                  <button type="button" class="benefits-modern-btn-primary">Get Started</button>
+                  <button type="button" class="benefits-modern-btn-secondary benefits-modern-btn-link">
+                    Book a Demo
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>
@@ -794,53 +837,93 @@
       </div>
     </section>
 
-    <!-- Features Section with Dark Theme (Similar to Products) -->
+    <!-- Features Tabs Section -->
     <section class="ser-features-section" style="background: #0A0B0C !important; color: #FFFFFF !important; display: block !important; visibility: visible !important;">
       <div class="padding-global relative" style="background: #0A0B0C !important; color: #FFFFFF !important;">
         <div class="container-large">
-          <div class="ser-benefits-header">
+          <div class="ser-benefits-header ser-benefits-header--tabs">
             <div class="ser-benefits-title-wrapper">
               <p class="ser-tagline">Features</p>
               <div class="ser-benefits-heading-content">
-                <h2 class="ser-section-title">Intelligent Communication Tailored to <span class="text-primary">Every Business</span></h2>
+                <h2 class="ser-section-title">Intelligent Communication<br />Built for <span class="text-primary">Real Businesses</span></h2>
                 <div class="ser-section-description">
-                  <p>When you get started with Revo, your setup goes beyond automation — it's personalization. We design every interaction to match your business's tone, response timing, and customer experience goals. From call handling to scheduling, every detail reflects your brand's unique voice.</p>
+                  <p>Revo handles calls with precision, consistency, and full alignment to your business.<br />From first contact to scheduling, every interaction follows your rules.<br />No missed details. No guesswork. Just reliable execution.</p>
                 </div>
               </div>
             </div>
-            <div class="benefits-modern-actions">
-              <button class="benefits-modern-btn-primary">Get Started</button>
-              <button class="benefits-modern-btn-secondary">Book a Demo</button>
+            <div class="benefits-modern-actions ser-benefits-tabs-header-actions">
+              <button type="button" class="benefits-modern-btn-primary">Get Started</button>
+              <button type="button" class="benefits-modern-btn-secondary benefits-modern-btn-link">
+                Book a Demo
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="products_wr">
-            <div class="products-content">
+          <div class="products_wr products_wr--tabs">
+            <div class="products-content products-content--tabs">
               <div class="products-left">
-                <div class="products-item active" data-product="personalized-ai-reception" data-image="images/services/Personalized AI Reception.png">
-                  <h2 class="products-title">Personalized AI Reception</h2>
-                  <p class="products-description">Choose how your business sounds. Revo lets you customize your virtual receptionist — from voice tone to personality. Whether you prefer a friendly, cheerful tone or a calm, professional presence, your AI sounds just like your brand.</p>
-                  <div class="products-actions">
-                    <button class="benefits-modern-btn-secondary">Book a Demo</button>
+                <div class="products-tabs" role="tablist" aria-label="Features">
+                  <div class="products-item active" data-product="detailed-call-reports" data-image="images/services/detailed_call_reports.webp" data-alt="Detailed Call Reports">
+                    <div class="products-item-header">
+                      <span class="products-item-indicator" aria-hidden="true"></span>
+                      <h3 class="products-title">Detailed Call Reports</h3>
+                    </div>
+                    <div class="products-description">
+                      <p>Know exactly what happened on every call.<br />Revo organizes each conversation into clear summaries,<br />helping you spot customer needs and missed opportunities faster.</p>
+                    </div>
+                    <div class="products-actions">
+                      <button type="button" class="benefits-modern-btn-secondary">Book a Demo</button>
+                    </div>
+                    <div class="products-item-media">
+                      <img src="images/services/detailed_call_reports.webp" alt="Detailed Call Reports" width="600" height="600" loading="lazy" />
+                    </div>
+                  </div>
+                  <div class="products-item" data-product="smart-response-timing" data-image="images/services/smart_response_timing.webp" data-alt="Smart Response Timing">
+                    <div class="products-item-header">
+                      <span class="products-item-indicator" aria-hidden="true"></span>
+                      <h3 class="products-title">Smart Response Timing</h3>
+                    </div>
+                    <div class="products-description">
+                      <p>You decide how and when calls get answered. Whether it's right away, after a few rings, or only during certain hours—Revo follows your rules. Your customers always get a smooth, professional response, no matter what.</p>
+                    </div>
+                    <div class="products-actions">
+                      <button type="button" class="benefits-modern-btn-secondary">Book a Demo</button>
+                    </div>
+                    <div class="products-item-media">
+                      <img src="images/services/smart_response_timing.webp" alt="Smart Response Timing" width="600" height="600" loading="lazy" />
+                    </div>
+                  </div>
+                  <div class="products-item" data-product="blocked-numbers" data-image="images/services/blocked_numbers.webp" data-alt="Blocked numbers">
+                    <div class="products-item-header">
+                      <span class="products-item-indicator" aria-hidden="true"></span>
+                      <h3 class="products-title">Blocked numbers</h3>
+                    </div>
+                    <div class="products-description">
+                      <p>Not every call deserves your attention. Revo filters out spam and unwanted calls automatically, so your line stays open for real customers. Less noise, more meaningful conversations.</p>
+                    </div>
+                    <div class="products-actions">
+                      <button type="button" class="benefits-modern-btn-secondary">Book a Demo</button>
+                    </div>
+                    <div class="products-item-media">
+                      <img src="images/services/blocked_numbers.webp" alt="Blocked numbers" width="600" height="600" loading="lazy" />
+                    </div>
                   </div>
                 </div>
-                <div class="products-item" data-product="smart-response-timing" data-image="images/services/Smart Response Timing.png">
-                  <h2 class="products-title">Smart Response Timing</h2>
-                  <p class="products-description">Answer every call on your terms. Define exactly when Revo picks up — instantly, after a few rings, or based on time of day. You stay in control while your customers always get a professional, prompt response.</p>
-                  <div class="products-actions">
-                    <button class="benefits-modern-btn-secondary">Book a Demo</button>
-                  </div>
-                </div>
-                <div class="products-item" data-product="detailed-call-reports" data-image="images/services/Detailed Call Reports.png">
-                  <h2 class="products-title">Detailed Call Reports</h2>
-                  <p class="products-description">Turn every call into actionable insight. Revo's detailed call analytics help you track performance, monitor customer trends, and identify opportunities for improvement — giving you the clarity to make smarter, data-driven business decisions.</p>
-                  <div class="products-actions">
-                    <button class="benefits-modern-btn-secondary">Book a Demo</button>
-                  </div>
+                <div class="products-panel-actions benefits-modern-actions">
+                  <button type="button" class="benefits-modern-btn-primary">Get Started</button>
+                  <button type="button" class="benefits-modern-btn-secondary benefits-modern-btn-link">
+                    Book a Demo
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </button>
                 </div>
               </div>
               <div class="products-right">
                 <div class="products-image-container">
-                  <img id="features-image" src="images/services/Personalized AI Reception.png" alt="Personalized AI Reception" class="products-image">
+                  <img id="features-image" src="images/services/detailed_call_reports.webp" alt="Detailed Call Reports" class="products-image" width="600" height="600" loading="lazy" />
                 </div>
               </div>
             </div>
@@ -848,6 +931,7 @@
         </div>
       </div>
     </section>
+
 
     <!-- Humanize AI Receptionists Section (Duplicate) -->
     <section class="ser-ai-receptionists">
@@ -1309,6 +1393,7 @@
   <script src="js/template-loader.js" defer></script>
   <script src="js/get-started-form.js" defer></script>
   <script src="js/ser.js" defer></script>
+  <script src="js/benefits-tabs.js" defer></script>
   <script src="js/ser-products.js" defer></script>
   <script>
     // Load templates

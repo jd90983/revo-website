@@ -159,7 +159,7 @@ html:has(.ser-products-section) body {
     position: relative;
   }
   
-  .ser-products-section .products-content {
+  .ser-products-section .products-content:not(.products-content--tabs) {
     position: -webkit-sticky; /* Safari support */
     position: sticky;
     top: 72px; /* Navbar height */
@@ -175,7 +175,7 @@ html:has(.ser-products-section) body {
   }
   
   /* Create scroll space for sticky effect */
-  .ser-products-section .products_wr::after {
+  .ser-products-section .products_wr:not(.products_wr--tabs)::after {
     content: '';
     display: block;
     height: calc(100vh * 3); /* 3 items = 3 viewport heights */
@@ -212,8 +212,8 @@ html:has(.ser-products-section) body {
 /* Desktop only - Hide/show behavior */
 @media (min-width: 1024px) {
   /* Hide description and button for inactive items - Products section only */
-  .ser-products-section .products-item:not(.active) .products-description,
-  .ser-products-section .products-item:not(.active) .products-actions {
+  .ser-products-section .products-content:not(.products-content--tabs) .products-item:not(.active) .products-description,
+  .ser-products-section .products-content:not(.products-content--tabs) .products-item:not(.active) .products-actions {
     max-height: 0 !important;
     opacity: 0 !important;
     overflow: hidden;
@@ -224,8 +224,8 @@ html:has(.ser-products-section) body {
   }
 
   /* Show description and button for active item - Products section only */
-  .ser-products-section .products-item.active .products-description,
-  .ser-products-section .products-item.active .products-actions {
+  .ser-products-section .products-content:not(.products-content--tabs) .products-item.active .products-description,
+  .ser-products-section .products-content:not(.products-content--tabs) .products-item.active .products-actions {
     max-height: 500px !important;
     opacity: 1 !important;
     transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease;
@@ -654,8 +654,8 @@ html:has(.ser-features-section) body {
   overflow: visible;
 }
 
-/* Products header - same as benefits header */
-.ser-features-section .ser-benefits-header {
+/* Legacy header spacing — tabs header overrides below */
+.ser-features-section .ser-benefits-header:not(.ser-benefits-header--tabs) {
   width: 100%;
   margin-bottom: 120px;
 }
@@ -1103,6 +1103,1168 @@ html:has(.ser-features-section) body {
   
   .ser-features-section .products-actions .benefits-modern-btn-secondary {
     width: 100%;
+  }
+}
+
+/* ============================================
+   Benefits Tabs Layout (Figma Layout 219)
+   ============================================ */
+
+.ser-products-section .products_wr--tabs::after {
+  display: none !important;
+  height: 0 !important;
+}
+
+/* Benefits header — Figma node 9478:1460 */
+.ser-products-section .ser-benefits-header--tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto 80px;
+  padding: 0;
+  text-align: center;
+}
+
+.ser-products-section .ser-benefits-header--tabs .ser-benefits-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.ser-products-section .ser-benefits-header--tabs .ser-benefits-heading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+.ser-products-section .ser-benefits-header--tabs .ser-tagline {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--font-semibold);
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #0a0b0c !important;
+  margin: 0 !important;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ser-products-section .ser-benefits-header--tabs .ser-section-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: var(--font-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--tracking-h2);
+  color: #0a0b0c !important;
+  margin: 0 !important;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.ser-products-section .ser-benefits-header--tabs .ser-section-title .text-primary {
+  color: var(--color-primary) !important;
+}
+
+.ser-products-section .ser-benefits-header--tabs .ser-section-description {
+  font-family: var(--font-body);
+  font-size: var(--text-large);
+  font-weight: var(--font-regular);
+  line-height: var(--line-height-relaxed);
+  letter-spacing: 0;
+  color: #0a0b0c !important;
+  margin: 0 !important;
+  padding: 0;
+  max-width: none;
+  width: 100%;
+  text-align: center;
+}
+
+.ser-products-section .ser-benefits-header--tabs .ser-section-description p {
+  margin: 0;
+  padding: 0;
+  line-height: var(--line-height-relaxed);
+  color: #0a0b0c !important;
+}
+
+/* Header CTAs — mobile only (desktop uses .products-panel-actions) */
+.ser-products-section .ser-benefits-header--tabs .ser-benefits-tabs-header-actions {
+  display: none;
+}
+
+.ser-products-section .products-content--tabs {
+  position: relative !important;
+  top: auto !important;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 80px;
+  min-height: 0 !important;
+  padding: 0 !important;
+  background: #ffffff;
+}
+
+.ser-products-section .products-content--tabs .products-right {
+  flex: 1 1 50%;
+  min-height: 0;
+  order: 1;
+}
+
+.ser-products-section .products-content--tabs .products-left {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48px;
+  order: 2;
+  max-width: 600px;
+}
+
+.ser-products-section .products-content--tabs .products-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: none;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  background: transparent;
+  border-radius: 0;
+  overflow: visible;
+}
+
+.ser-products-section .products-content--tabs .products-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: transparent;
+  border-radius: 16px;
+  transition: opacity 0.35s ease;
+}
+
+.ser-products-section .products-content--tabs .products-image.is-fading {
+  opacity: 0;
+}
+
+/* Per-benefit image — mobile stack only */
+.ser-products-section .products-item-media,
+.ser-products-section .products-content--tabs .products-actions {
+  display: none;
+}
+
+.ser-products-section .products-item-media img {
+  width: 100%;
+  height: auto;
+  max-height: 320px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  background: transparent;
+}
+
+.ser-products-section .products-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.ser-products-section .products-content--tabs .products-item:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+.ser-products-section .products-content--tabs .products-item {
+  --benefits-tab-indicator-offset: 13px; /* 3px bar + 10px gap */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  height: 150px;
+  min-height: 150px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.35s ease, opacity 0.35s ease;
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+.ser-products-section .products-content--tabs .products-item::after {
+  display: none !important;
+}
+
+.ser-products-section .products-content--tabs .products-item-header {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+  margin: 0;
+  transition: gap 0.35s ease;
+}
+
+.ser-products-section .products-content--tabs .products-item.active .products-item-header {
+  gap: 10px;
+}
+
+.ser-products-section .products-content--tabs .products-item-indicator {
+  flex-shrink: 0;
+  width: 0;
+  overflow: hidden;
+  align-self: stretch;
+  background: var(--color-primary);
+  border-radius: 0;
+  opacity: 0;
+  transition: width 0.35s ease, opacity 0.35s ease;
+}
+
+.ser-products-section .products-content--tabs .products-item:not(.active) .products-item-indicator {
+  display: none;
+}
+
+.ser-products-section .products-content--tabs .products-item.active .products-item-indicator {
+  display: block;
+  width: 3px;
+  opacity: 1;
+}
+
+.ser-products-section .products-content--tabs .products-description {
+  transition: margin-left 0.35s ease;
+}
+
+.ser-products-section .products-content--tabs .products-item.active .products-description {
+  margin-left: var(--benefits-tab-indicator-offset) !important;
+}
+
+.ser-products-section .products-content--tabs .products-item:not(.active) .products-description {
+  margin-left: 0 !important;
+}
+
+.ser-products-section .products-content--tabs .products-item:not(.active) .products-title,
+.ser-products-section .products-content--tabs .products-item:not(.active) .products-description,
+.ser-products-section .products-content--tabs .products-item:not(.active) .products-description p {
+  color: rgba(10, 11, 12, 0.5) !important;
+}
+
+.ser-products-section .products-content--tabs .products-item.active .products-title,
+.ser-products-section .products-content--tabs .products-item.active .products-description,
+.ser-products-section .products-content--tabs .products-item.active .products-description p {
+  color: #0a0b0c !important;
+}
+
+.ser-products-section .products-content--tabs .products-item .products-description {
+  max-height: none !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  pointer-events: auto !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+.ser-products-section .products-content--tabs .products-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h4);
+  font-weight: var(--font-bold);
+  line-height: var(--line-height-medium);
+  letter-spacing: var(--tracking-h4);
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+  transition: color 0.35s ease;
+}
+
+.ser-products-section .products-content--tabs .products-item .products-description {
+  font-family: var(--font-body);
+  font-size: var(--text-regular);
+  font-weight: var(--font-regular);
+  line-height: var(--line-height-relaxed);
+  width: 100%;
+}
+
+.ser-products-section .products-content--tabs .products-description p {
+  margin: 0;
+  line-height: var(--line-height-relaxed);
+}
+
+.ser-products-section .products-panel-actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.ser-products-section .products-panel-actions .benefits-modern-btn-primary,
+.ser-products-section .products-panel-actions .benefits-modern-btn-secondary {
+  width: auto;
+  min-width: 0;
+}
+
+.ser-products-section .products-panel-actions .benefits-modern-btn-link {
+  background: transparent;
+  border: none;
+  padding: 10px 0;
+}
+
+.ser-products-section .products-panel-actions .benefits-modern-btn-link:hover {
+  background: transparent;
+  opacity: 0.75;
+  transform: none;
+}
+
+@media (max-width: 1023px) {
+  .ser-products-section .ser-benefits-header--tabs {
+    margin-bottom: 40px;
+    max-width: 100%;
+  }
+
+  .ser-products-section .ser-benefits-header--tabs .ser-benefits-title-wrapper {
+    gap: 16px;
+  }
+
+  .ser-products-section .ser-benefits-header--tabs .ser-benefits-heading-content {
+    gap: 24px;
+  }
+
+  .ser-products-section .ser-benefits-header--tabs .ser-section-title {
+    font-size: 36px;
+    letter-spacing: -0.36px;
+    line-height: 1.2;
+  }
+
+  .ser-products-section .ser-benefits-header--tabs .ser-section-description,
+  .ser-products-section .ser-benefits-header--tabs .ser-section-description p {
+    font-size: var(--text-regular);
+    line-height: 1.5;
+  }
+
+  .ser-products-section .ser-benefits-header--tabs .ser-tagline {
+    white-space: normal;
+  }
+
+  .ser-products-section .ser-benefits-header--tabs .ser-benefits-tabs-header-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    margin-top: 8px;
+    pointer-events: auto;
+  }
+
+  .ser-products-section .ser-benefits-header--tabs .ser-benefits-tabs-header-actions .benefits-modern-btn-primary,
+  .ser-products-section .ser-benefits-header--tabs .ser-benefits-tabs-header-actions .benefits-modern-btn-secondary {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .ser-products-section .ser-benefits-header--tabs .ser-benefits-tabs-header-actions .benefits-modern-btn-link {
+    display: none !important;
+  }
+
+  .ser-products-section .products-content--tabs .products-panel-actions {
+    display: none !important;
+  }
+
+  /* Mobile: hide desktop carousel image */
+  .ser-products-section .products-content--tabs .products-right,
+  .ser-products-section.benefits-tabs--mobile .products-content--tabs .products-right {
+    display: none !important;
+  }
+
+  .ser-products-section .products-content--tabs {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .ser-products-section .products-content--tabs .products-left {
+    max-width: none;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .ser-products-section .products-tabs {
+    max-width: none;
+    gap: 20px;
+    width: 100%;
+  }
+
+  /* Mobile cards — match ser-features-section layout */
+  .ser-products-section .products-content--tabs .products-item,
+  .ser-products-section.benefits-tabs--mobile .products-content--tabs .products-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    min-height: 0;
+    max-width: none;
+    width: 100%;
+    padding: 40px 24px !important;
+    gap: 16px;
+    border: none !important;
+    border-radius: 16px;
+    background: rgba(10, 11, 12, 0.05) !important;
+    box-shadow: 0 2px 12px rgba(10, 11, 12, 0.06), 0 1px 4px rgba(10, 11, 12, 0.04) !important;
+    margin-bottom: 0 !important;
+    cursor: default;
+    pointer-events: none;
+    text-align: left;
+    opacity: 1 !important;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .ser-products-section .products-content--tabs .products-item::after {
+    display: none !important;
+    content: none !important;
+  }
+
+  .ser-products-section .products-content--tabs .products-item:hover,
+  .ser-products-section .products-content--tabs .products-item.active {
+    transform: none;
+    box-shadow: 0 2px 12px rgba(10, 11, 12, 0.06), 0 1px 4px rgba(10, 11, 12, 0.04) !important;
+  }
+
+  .ser-products-section .products-content--tabs .products-item-header {
+    order: 1;
+    gap: 0;
+    width: 100%;
+  }
+
+  .ser-products-section .products-content--tabs .products-item-indicator {
+    display: none !important;
+  }
+
+  .ser-products-section .products-content--tabs .products-description {
+    order: 2;
+    margin-left: 0 !important;
+    width: 100%;
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    display: block !important;
+    visibility: visible !important;
+    margin-bottom: 0 !important;
+  }
+
+  .ser-products-section .products-content--tabs .products-description p {
+    margin: 0 !important;
+    font-size: 16px !important;
+    line-height: 1.6 !important;
+    color: #0a0b0c !important;
+  }
+
+  .ser-products-section .products-content--tabs .products-actions {
+    display: flex !important;
+    order: 3;
+    margin: 0 !important;
+    padding: 0 !important;
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    visibility: visible !important;
+    pointer-events: auto;
+  }
+
+  .ser-products-section .products-content--tabs .products-actions .benefits-modern-btn-secondary {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    pointer-events: auto;
+  }
+
+  .ser-products-section .products-content--tabs .products-item-media {
+    display: block;
+    order: 4;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent !important;
+    border: none;
+    border-radius: 0;
+    overflow: visible;
+    box-sizing: border-box;
+  }
+
+  .ser-products-section .products-content--tabs .products-item-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 0;
+    background: transparent !important;
+    box-sizing: border-box;
+  }
+
+  /* Full contrast for all items on mobile */
+  .ser-products-section .products-content--tabs .products-item .products-title,
+  .ser-products-section .products-content--tabs .products-item:not(.active) .products-title {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.28px !important;
+    color: #0a0b0c !important;
+    margin: 0 0 0 !important;
+  }
+
+  .ser-products-section .products-content--tabs .products-item .products-description,
+  .ser-products-section .products-content--tabs .products-item:not(.active) .products-description {
+    color: #0a0b0c !important;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .ser-products-section .ser-benefits-header--tabs {
+    margin-bottom: 32px;
+  }
+
+  .ser-products-section .ser-benefits-header--tabs .ser-section-title {
+    font-size: 30px;
+    letter-spacing: -0.3px;
+  }
+
+  .ser-products-section .products-tabs {
+    gap: 16px;
+  }
+
+  .ser-products-section .products-content--tabs .products-item {
+    padding: 28px 20px !important;
+    gap: 14px;
+  }
+
+  .ser-products-section .products-content--tabs .products-title {
+    font-size: 24px;
+    letter-spacing: -0.24px;
+  }
+}
+
+/* ============================================
+   Features Tabs Layout (mirrors Benefits)
+   Figma: node 10382:67114
+   ============================================ */
+
+.ser-features-section .ser-benefits-header--tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 768px;
+  width: 100%;
+  margin: 0 auto 80px;
+  padding: 0;
+  text-align: center;
+}
+
+.ser-features-section .ser-benefits-header--tabs .ser-benefits-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.ser-features-section .ser-benefits-header--tabs .ser-benefits-heading-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+
+/* Figma node 9976:773 — Features header typography */
+.ser-features-section .ser-benefits-header--tabs .ser-tagline {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-weight: var(--font-semibold);
+  line-height: 1.5;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #ffffff !important;
+  margin: 0 !important;
+  padding: 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.ser-features-section .ser-benefits-header--tabs .ser-section-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: var(--font-bold);
+  line-height: 1.2;
+  letter-spacing: var(--tracking-h2);
+  color: #ffffff !important;
+  margin: 0 !important;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+  white-space: pre-wrap;
+}
+
+.ser-features-section .ser-benefits-header--tabs .ser-section-title .text-primary {
+  color: var(--color-primary) !important;
+}
+
+.ser-features-section .ser-benefits-header--tabs .ser-section-description {
+  font-family: var(--font-body);
+  font-size: var(--text-large);
+  font-weight: var(--font-regular);
+  line-height: 1.5;
+  letter-spacing: 0;
+  color: #ffffff !important;
+  margin: 0 !important;
+  padding: 0;
+  max-width: none;
+  width: 100%;
+  text-align: center;
+}
+
+.ser-features-section .ser-benefits-header--tabs .ser-section-description p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  color: #ffffff !important;
+}
+
+.ser-features-section .ser-benefits-header.ser-benefits-header--tabs {
+  gap: 0;
+  margin-bottom: 80px !important;
+}
+
+.ser-features-section .ser-benefits-header--tabs .ser-benefits-title-wrapper {
+  gap: 16px !important;
+}
+
+.ser-features-section .ser-benefits-header--tabs .ser-benefits-heading-content {
+  gap: 24px !important;
+}
+
+.ser-features-section .ser-benefits-header--tabs .ser-benefits-tabs-header-actions {
+  display: none;
+}
+
+.ser-features-section .products_wr--tabs::after {
+  display: none !important;
+}
+
+.ser-features-section .products-content--tabs {
+  position: relative !important;
+  top: auto !important;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 80px;
+  min-height: 0 !important;
+  padding: 0 !important;
+  background: #0a0b0c;
+}
+
+.ser-features-section .products-content--tabs .products-left {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48px;
+  order: 1;
+  max-width: 600px;
+}
+
+.ser-features-section .products-content--tabs .products-right {
+  flex: 1 1 50%;
+  min-height: 0;
+  order: 2;
+}
+
+.ser-features-section .products-content--tabs .products-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: none;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  background: transparent;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.ser-features-section .products-content--tabs .products-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  background: transparent;
+  border-radius: 16px;
+  transition: opacity 0.35s ease;
+}
+
+.ser-features-section .products-content--tabs .products-image.is-fading {
+  opacity: 0;
+}
+
+.ser-features-section .products-item-media,
+.ser-features-section .products-content--tabs .products-actions {
+  display: none;
+}
+
+.ser-features-section .products-tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.ser-features-section .products-content--tabs .products-item {
+  --features-tab-indicator-offset: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 600px;
+  height: 160px;
+  min-height: 160px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.35s ease, opacity 0.35s ease;
+  opacity: 1;
+  box-sizing: border-box;
+}
+
+.ser-features-section .products-content--tabs .products-item::after {
+  display: none !important;
+  content: none !important;
+}
+
+.ser-features-section .products-content--tabs .products-item-header {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  width: 100%;
+  margin: 0;
+  transition: gap 0.35s ease;
+}
+
+.ser-features-section .products-content--tabs .products-item.active .products-item-header {
+  gap: 10px;
+}
+
+.ser-features-section .products-content--tabs .products-item-indicator {
+  flex-shrink: 0;
+  width: 0;
+  overflow: hidden;
+  align-self: stretch;
+  background: var(--color-primary);
+  border-radius: 0;
+  opacity: 0;
+  transition: width 0.35s ease, opacity 0.35s ease;
+}
+
+.ser-features-section .products-content--tabs .products-item:not(.active) .products-item-indicator {
+  display: none;
+}
+
+.ser-features-section .products-content--tabs .products-item.active .products-item-indicator {
+  display: block;
+  width: 3px;
+  opacity: 1;
+}
+
+.ser-features-section .products-content--tabs .products-item.active .products-description {
+  margin-left: var(--features-tab-indicator-offset) !important;
+}
+
+.ser-features-section .products-content--tabs .products-item:not(.active) .products-description {
+  margin-left: 0 !important;
+}
+
+.ser-features-section .products-content--tabs .products-item:not(.active) .products-title,
+.ser-features-section .products-content--tabs .products-item:not(.active) .products-description,
+.ser-features-section .products-content--tabs .products-item:not(.active) .products-description p {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.ser-features-section .products-content--tabs .products-item.active .products-title,
+.ser-features-section .products-content--tabs .products-item.active .products-description,
+.ser-features-section .products-content--tabs .products-item.active .products-description p {
+  color: #ffffff !important;
+}
+
+.ser-features-section .products-content--tabs .products-item .products-description {
+  max-height: none !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+  pointer-events: auto !important;
+  display: block !important;
+  visibility: visible !important;
+}
+
+.ser-features-section .products-content--tabs .products-title {
+  font-family: var(--font-heading);
+  font-size: var(--text-h4);
+  font-weight: var(--font-bold);
+  line-height: var(--line-height-medium);
+  letter-spacing: var(--tracking-h4);
+  margin: 0;
+  flex: 1;
+  min-width: 0;
+  transition: color 0.35s ease;
+}
+
+.ser-features-section .products-content--tabs .products-description p {
+  margin: 0;
+  line-height: var(--line-height-relaxed);
+}
+
+.ser-features-section .products-panel-actions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Figma node 9976:780 — Features panel CTAs (desktop) */
+.ser-features-section .products-content--tabs .products-panel-actions .benefits-modern-btn-primary,
+.ser-features-section .products-content--tabs .products-panel-actions .benefits-modern-btn-secondary {
+  width: auto;
+  min-width: 0;
+  max-width: none;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.ser-features-section .products-content--tabs .products-panel-actions .benefits-modern-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  background: rgba(10, 11, 12, 0.05);
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  transition: background 0.25s ease, border-color 0.25s ease, opacity 0.25s ease;
+}
+
+.ser-features-section .products-content--tabs .products-panel-actions .benefits-modern-btn-primary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #ffffff;
+  transform: none;
+}
+
+.ser-features-section .products-content--tabs .products-panel-actions .benefits-modern-btn-secondary.benefits-modern-btn-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 0;
+  background: transparent;
+  border: none;
+  border-radius: 100px;
+  transition: opacity 0.25s ease;
+}
+
+.ser-features-section .products-content--tabs .products-panel-actions .benefits-modern-btn-link svg {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.ser-features-section .products-content--tabs .products-panel-actions .benefits-modern-btn-link:hover {
+  background: transparent;
+  border: none;
+  opacity: 0.75;
+  transform: none;
+}
+
+@media (min-width: 1024px) {
+  .ser-features-section .products_wr--tabs .products-content--tabs {
+    position: relative !important;
+    top: auto !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    border-bottom: none !important;
+    will-change: auto;
+  }
+
+  .ser-features-section .products-content--tabs .products-item {
+    opacity: 1 !important;
+    padding: 0 !important;
+    border-bottom: none !important;
+    overflow: visible !important;
+  }
+
+  .ser-features-section .products-content--tabs .products-item:not(.active) .products-description,
+  .ser-features-section .products-content--tabs .products-item:not(.active) .products-actions {
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    pointer-events: auto !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .ser-features-section .ser-benefits-header--tabs {
+    margin-bottom: 40px;
+    max-width: 100%;
+  }
+
+  .ser-features-section .ser-benefits-header--tabs .ser-benefits-title-wrapper {
+    gap: 16px !important;
+  }
+
+  .ser-features-section .ser-benefits-header--tabs .ser-benefits-heading-content {
+    gap: 24px !important;
+  }
+
+  .ser-features-section .ser-benefits-header--tabs .ser-section-title {
+    font-size: 36px;
+    letter-spacing: -0.36px;
+    line-height: 1.2;
+  }
+
+  .ser-features-section .ser-benefits-header--tabs .ser-section-description,
+  .ser-features-section .ser-benefits-header--tabs .ser-section-description p {
+    font-size: var(--text-regular);
+    line-height: 1.5;
+  }
+
+  .ser-features-section .ser-benefits-header--tabs .ser-tagline {
+    white-space: normal;
+  }
+
+  .ser-features-section .ser-benefits-header--tabs .ser-benefits-tabs-header-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    margin-top: 32px;
+    pointer-events: auto;
+  }
+
+  .ser-features-section .ser-benefits-header--tabs .ser-benefits-tabs-header-actions .benefits-modern-btn-link {
+    display: none !important;
+  }
+
+  .ser-features-section .ser-benefits-header--tabs .ser-benefits-tabs-header-actions .benefits-modern-btn-primary,
+  .ser-features-section .ser-benefits-header--tabs .ser-benefits-tabs-header-actions .benefits-modern-btn-secondary {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .ser-features-section .products-content--tabs .products-right,
+  .ser-features-section.benefits-tabs--mobile .products-content--tabs .products-right {
+    display: none !important;
+  }
+
+  .ser-features-section .products-content--tabs {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .ser-features-section .products-content--tabs .products-left {
+    max-width: none;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .ser-features-section .products-tabs {
+    max-width: none;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .ser-features-section .products-content--tabs .products-item,
+  .ser-features-section.benefits-tabs--mobile .products-content--tabs .products-item {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+    min-height: 0;
+    max-width: none;
+    width: 100%;
+    padding: 40px 24px !important;
+    gap: 16px;
+    border: none !important;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3) !important;
+    margin-bottom: 0 !important;
+    cursor: default;
+    pointer-events: none;
+    text-align: left;
+    opacity: 1 !important;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .ser-features-section .products-content--tabs .products-item-header {
+    order: 1;
+    gap: 0;
+    width: 100%;
+  }
+
+  .ser-features-section .products-content--tabs .products-item-indicator {
+    display: none !important;
+  }
+
+  .ser-features-section .products-content--tabs .products-description {
+    order: 2;
+    margin-left: 0 !important;
+    width: 100%;
+    max-height: none !important;
+    opacity: 1 !important;
+    overflow: visible !important;
+    display: block !important;
+    visibility: visible !important;
+  }
+
+  .ser-features-section .products-content--tabs .products-description p {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+
+  .ser-features-section .products-content--tabs .products-actions {
+    display: flex !important;
+    order: 3;
+    margin: 0 !important;
+    padding: 0 !important;
+    pointer-events: auto;
+  }
+
+  .ser-features-section .products-content--tabs .products-actions .benefits-modern-btn-secondary {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+    pointer-events: auto;
+  }
+
+  .ser-features-section .products-content--tabs .products-item-media {
+    display: block;
+    order: 4;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: transparent !important;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .ser-features-section .products-content--tabs .products-item-media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+    background: transparent !important;
+    border-radius: 16px;
+    box-sizing: border-box;
+  }
+
+  .ser-features-section .products-content--tabs .products-item .products-title,
+  .ser-features-section .products-content--tabs .products-item:not(.active) .products-title {
+    font-size: 28px !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.28px !important;
+    color: #ffffff !important;
+    margin: 0 !important;
+  }
+
+  .ser-features-section .products-content--tabs .products-item .products-description,
+  .ser-features-section .products-content--tabs .products-item:not(.active) .products-description {
+    color: rgba(255, 255, 255, 0.8) !important;
+  }
+
+  .ser-features-section .products-content--tabs .products-panel-actions {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .ser-features-section .ser-benefits-header--tabs {
+    margin-bottom: 32px;
+  }
+
+  .ser-features-section .ser-benefits-header--tabs .ser-section-title {
+    font-size: 30px;
+    letter-spacing: -0.3px;
+  }
+
+  .ser-features-section .products-tabs {
+    gap: 16px;
+  }
+
+  .ser-features-section .products-content--tabs .products-item {
+    padding: 28px 20px !important;
+    gap: 14px;
+  }
+
+  .ser-features-section .products-content--tabs .products-title {
+    font-size: 24px;
+    letter-spacing: -0.24px;
   }
 }
 
