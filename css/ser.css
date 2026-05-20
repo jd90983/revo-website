@@ -1878,18 +1878,18 @@ video.ser-ai-spline-viewer {
 }
 
 @media (min-width: 1024px) {
-  .ser-products-section .ser-benefits-header,
-  .ser-features-section .ser-benefits-header {
+  .ser-products-section .ser-benefits-header:not(.ser-benefits-header--tabs),
+  .ser-features-section .ser-benefits-header:not(.ser-benefits-header--tabs) {
     gap: 20px;
   }
-  
-  .ser-products-section .ser-benefits-title-wrapper,
-  .ser-features-section .ser-benefits-title-wrapper {
+
+  .ser-products-section .ser-benefits-header:not(.ser-benefits-header--tabs) .ser-benefits-title-wrapper,
+  .ser-features-section .ser-benefits-header:not(.ser-benefits-header--tabs) .ser-benefits-title-wrapper {
     gap: 8px;
   }
-  
-  .ser-products-section .ser-benefits-heading-content,
-  .ser-features-section .ser-benefits-heading-content {
+
+  .ser-products-section .ser-benefits-header:not(.ser-benefits-header--tabs) .ser-benefits-heading-content,
+  .ser-features-section .ser-benefits-header:not(.ser-benefits-header--tabs) .ser-benefits-heading-content {
     gap: 16px;
   }
 }
@@ -3212,18 +3212,18 @@ video.ser-ai-spline-viewer {
 
 /* ===== FAQS SECTION handled by layout.css ===== */
 @media (max-width: 1023px) {
-  .ser-products-section .ser-benefits-header,
-  .ser-features-section .ser-benefits-header {
+  .ser-products-section .ser-benefits-header:not(.ser-benefits-header--tabs),
+  .ser-features-section .ser-benefits-header:not(.ser-benefits-header--tabs) {
     gap: 16px;
   }
-  
-  .ser-products-section .ser-benefits-title-wrapper,
-  .ser-features-section .ser-benefits-title-wrapper {
+
+  .ser-products-section .ser-benefits-header:not(.ser-benefits-header--tabs) .ser-benefits-title-wrapper,
+  .ser-features-section .ser-benefits-header:not(.ser-benefits-header--tabs) .ser-benefits-title-wrapper {
     gap: 8px;
   }
-  
-  .ser-products-section .ser-benefits-heading-content,
-  .ser-features-section .ser-benefits-heading-content {
+
+  .ser-products-section .ser-benefits-header:not(.ser-benefits-header--tabs) .ser-benefits-heading-content,
+  .ser-features-section .ser-benefits-header:not(.ser-benefits-header--tabs) .ser-benefits-heading-content {
     gap: 16px;
   }
   
