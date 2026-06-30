@@ -269,11 +269,18 @@
 
   .footer-newsletter {
     width: 100%;
-    max-width: 500px;
+    max-width: 520px;
   }
 
   .footer-links {
+    flex-wrap: wrap;
     gap: 32px;
+    margin-left: auto;
+  }
+
+  .footer-industries {
+    width: 100%;
+    min-width: 0;
   }
 
   /* Get Started Form Tagline - Pill style */
@@ -505,26 +512,18 @@
   .footer-dropdown-toggle {
     display: flex !important;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    width: auto;
     background: transparent;
     border: none;
-    padding: 12px 0;
+    padding: 0;
     cursor: pointer;
     color: inherit;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .footer-dropdown-toggle h4 {
-    margin: 0;
-    color: #ffffff;
-    text-align: center;
-    flex: 1;
   }
 
   .footer-dropdown-icon {
     transition: transform 0.3s ease;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.45);
   }
 
   .footer-dropdown.active .footer-dropdown-icon {
@@ -570,7 +569,7 @@
   }
 
   /* Hide Connect with us title */
-  .footer-column:last-child h4 {
+  .footer-social-group h4 {
     display: none;
   }
 
@@ -1324,26 +1323,18 @@
   .footer-dropdown-toggle {
     display: flex !important;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: center;
+    width: auto;
     background: transparent;
     border: none;
-    padding: 12px 0;
+    padding: 0;
     cursor: pointer;
     color: inherit;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .footer-dropdown-toggle h4 {
-    margin: 0;
-    color: #ffffff;
-    text-align: center;
-    flex: 1;
   }
 
   .footer-dropdown-icon {
     transition: transform 0.3s ease;
-    color: #ffffff;
+    color: rgba(255, 255, 255, 0.45);
   }
 
   .footer-dropdown.active .footer-dropdown-icon {
@@ -1465,11 +1456,10 @@
   .newsletter-logo {
     display: flex;
     justify-content: center;
-    margin-bottom: 8px;
   }
 
   .newsletter-form {
-    margin-bottom: 8px;
+    margin-bottom: var(--space-xs);
   }
 
   .newsletter-disclaimer {
@@ -1494,13 +1484,30 @@
   }
 
   .footer-links {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    flex-direction: column;
+    gap: 0;
     text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  .footer-links-column {
-    align-items: center;
+  .footer-industries,
+  .footer-nav-group,
+  .footer-social-group {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .footer-column-header {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px 0;
+  }
+
+  .footer-column-header h4 {
+    flex: 1;
+    text-align: center;
   }
 
   .social-link {
@@ -1535,14 +1542,13 @@
   }
 
   /* Hide Connect with us title */
-  .footer-column:last-child h4 {
+  .footer-social-group h4 {
     display: none;
   }
 
   .newsletter-form {
     position: relative;
     width: 100%;
-    margin-bottom: 8px;
   }
 
   .newsletter-form input[type="email"] {
