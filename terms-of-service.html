@@ -5,23 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Primary Meta Tags -->
-  <title>Pricing | Revo - AI Receptionist</title>
-  <meta name="title" content="Pricing | Revo - AI Receptionist">
-  <meta name="description" content="Discover Revo's flexible pricing plans for AI receptionist services.">
+  <title>Terms of Service | Revo - AI Receptionist</title>
+  <meta name="title" content="Terms of Service | Revo - AI Receptionist">
+  <meta name="description" content="Revo AI Terms of Service. Read the terms governing your access to and use of Revo AI services.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://revo.app/pricing">
-  <meta property="og:title" content="Pricing | Revo - AI Receptionist">
-  <meta property="og:description" content="Discover Revo's flexible pricing plans for AI receptionist services.">
-  <meta property="og:image" content="/images/og-image.jpg">
+  <meta property="og:url" content="https://revo.app/terms-of-service">
+  <meta property="og:title" content="Terms of Service | Revo - AI Receptionist">
+  <meta property="og:description" content="Revo AI Terms of Service.">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://revo.app/pricing">
-  <meta property="twitter:title" content="Pricing | Revo - AI Receptionist">
-  <meta property="twitter:description" content="Discover Revo's flexible pricing plans.">
-  <meta property="twitter:image" content="/images/twitter-image.jpg">
+  <meta property="twitter:url" content="https://revo.app/terms-of-service">
+  <meta property="twitter:title" content="Terms of Service | Revo - AI Receptionist">
+  <meta property="twitter:description" content="Revo AI Terms of Service.">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -37,256 +35,11 @@
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/legal.css?v=5">
   <link rel="stylesheet" href="css/responsive.css">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend+Deca:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    /* Under Construction Specific Styles */
-    .under-construction {
-      min-height: calc(100vh - 72px - 200px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: var(--space-3xl) var(--page-padding);
-      background: radial-gradient(circle at 50% 50%, rgba(15, 90, 215, 0.1) 0%, rgba(0, 0, 0, 0) 70%),
-                  linear-gradient(180deg, rgba(0, 0, 0, 0.95) 0%, rgba(34, 35, 36, 1) 100%);
-    }
-
-    .construction-container {
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .construction-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 16px;
-      background: var(--color-primary);
-      border-radius: 100px;
-      font-size: var(--text-small);
-      font-weight: var(--font-medium);
-      color: var(--color-white);
-      margin-bottom: var(--space-lg);
-      font-family: var(--font-body);
-      }
-
-    .construction-badge svg {
-      width: 16px;
-      height: 16px;
-    }
-
-    .construction-container h1 {
-      font-size: 56px;
-      margin-bottom: var(--space-md);
-      color: var(--color-white);
-      font-weight: var(--font-bold);
-    }
-
-    .construction-container p {
-      font-size: var(--text-large);
-      line-height: var(--line-height-relaxed);
-      color: var(--color-white);
-      margin-bottom: var(--space-xl);
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .construction-actions {
-      display: flex;
-      gap: var(--space-md);
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-bottom: var(--space-2xl);
-    }
-
-    .construction-actions .btn-primary {
-      padding: 10px 24px;
-      font-size: 16px;
-      border-radius: 100px;
-      font-weight: 500;
-    }
-
-    .construction-actions .btn-link {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid #FFFFFF;
-      color: var(--color-white);
-      font-family: var(--font-body);
-      font-size: 16px;
-      font-weight: var(--font-medium);
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.3s ease;
-      padding: 10px 24px;
-      border-radius: 100px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .construction-actions .btn-link:hover {
-      background: rgba(255, 255, 255, 0.1);
-      text-decoration: none;
-    }
-
-    .construction-features {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--space-lg);
-      margin-top: var(--space-2xl);
-      margin-bottom: var(--space-2xl);
-    }
-
-    .construction-feature-item {
-      padding: var(--space-lg);
-      background: rgba(34, 35, 36, 0.8);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: var(--radius-lg);
-      transition: all var(--transition-base);
-    }
-
-    .construction-feature-item:hover {
-      background: rgba(34, 35, 36, 1);
-      transform: translateY(-4px);
-    }
-
-    .construction-feature-item svg {
-      width: 48px;
-      height: 48px;
-      margin: 0 auto var(--space-md);
-      display: block;
-    }
-
-    .construction-feature-item h3 {
-      font-size: 20px;
-      font-weight: var(--font-bold);
-      margin-bottom: var(--space-xs);
-      color: var(--color-white);
-      text-align: center;
-    }
-
-    .construction-feature-item p {
-      font-size: var(--text-small);
-      color: var(--color-gray-light);
-      margin: 0;
-      text-align: center;
-    }
-
-    .construction-newsletter {
-      margin-top: var(--space-2xl);
-      padding-top: var(--space-2xl);
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .newsletter-form-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      margin-bottom: 0;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .newsletter-input-wrapper {
-      position: relative;
-      flex: 1;
-    }
-
-    .newsletter-input-wrapper svg {
-      position: absolute;
-      left: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 20px;
-      height: 20px;
-      color: var(--color-gray-light);
-    }
-
-    .newsletter-input {
-      width: 100%;
-      padding: 12px 16px 12px 48px;
-      background: rgba(34, 35, 36, 0.8);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: var(--radius-md);
-      color: var(--color-white);
-      font-family: var(--font-body);
-      font-size: var(--text-regular);
-      outline: none;
-      transition: all var(--transition-fast);
-    }
-
-    .newsletter-input::placeholder {
-      color: var(--color-gray-light);
-    }
-
-    .newsletter-input:focus {
-      border-color: var(--color-primary);
-      background: rgba(34, 35, 36, 1);
-    }
-
-    .newsletter-button {
-      padding: 12px 24px;
-      background: var(--color-primary);
-      color: var(--color-white);
-      border: none;
-      border-radius: var(--radius-md);
-      font-family: var(--font-body);
-      font-size: var(--text-regular);
-      font-weight: var(--font-medium);
-      cursor: pointer;
-      transition: background var(--transition-fast);
-      white-space: nowrap;
-    }
-
-    .newsletter-button:hover {
-      background: var(--color-primary-dark);
-    }
-
-    .newsletter-text {
-      font-size: var(--text-small);
-      color: var(--color-white);
-      margin-bottom: var(--space-sm);
-      margin-top: 0;
-    }
-
-    @media (max-width: 767px) {
-      .construction-container h1 {
-        font-size: 40px;
-      }
-
-      .construction-features {
-        grid-template-columns: 1fr;
-      }
-
-      .construction-actions {
-        flex-direction: column;
-        gap: var(--space-sm);
-      }
-
-      .construction-actions .btn-primary,
-      .construction-actions .btn-link {
-        width: 100%;
-        text-align: center;
-        padding: 10px 24px;
-      }
-
-      .newsletter-form-wrapper {
-        flex-direction: column;
-      }
-
-      .newsletter-input-wrapper,
-      .newsletter-button {
-        width: 100%;
-      }
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca:wght@400;500&family=Arimo:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Skip to main content for accessibility -->
@@ -302,7 +55,7 @@
             <img src="images/logo.webp" alt="Revo - AI Receptionist" width="75" height="19">
         </a>
       </div>
-      <ul class="navbar-menu">
+        <ul class="navbar-menu">
           <li><a href="ser.html">Services</a></li>
           <li class="navbar-menu-item-with-mega">
             <a href="ind.html">Industry</a>
@@ -490,7 +243,7 @@
               </div>
             </div>
         </li>
-        <li><a href="pricing.html" class="active">Pricing</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
       </ul>
       </div>
 
@@ -551,17 +304,17 @@
             <ul class="mobile-menu-submenu">
               <li><a href="industry_home_service.html">Home Services</a></li>
               <li><a href="industry_locksmith.html">Locksmith</a></li>
-              <li><a href="industry_hvac.html">HVAC</a></li>
-              <li><a href="industry_plumbing.html">Plumbing</a></li>
-              <li><a href="industry_air_duct_cleaning.html">Air Duct Cleaning</a></li>
+              <li><a href="ind.html">HVAC</a></li>
+              <li><a href="ind.html">Plumbing</a></li>
+              <li><a href="ind.html">Air Duct Cleaning</a></li>
             </ul>
             <p class="mobile-menu-category">Professional Businesses</p>
             <ul class="mobile-menu-submenu">
-              <li><a href="industry_healthcare_medical.html">Healthcare & Medical</a></li>
-              <li><a href="industry_small_business.html">Small Business</a></li>
-              <li><a href="industry_it_technology_communications.html">IT & Technology</a></li>
-              <li><a href="industry_legal.html">Legal</a></li>
-              <li><a href="industry_corporate_government.html">Corporate & Government</a></li>
+              <li><a href="ind.html">Healthcare & Medical</a></li>
+              <li><a href="ind.html">Small Business</a></li>
+              <li><a href="ind.html">IT & Technology</a></li>
+              <li><a href="ind.html">Legal</a></li>
+              <li><a href="ind.html">Corporate & Government</a></li>
             </ul>
             <a href="ind.html" class="mobile-menu-view-all">
               View All Industries
@@ -595,78 +348,166 @@
     </div>
   </div>
 
+
   <!-- Main Content -->
   <main id="main-content">
-    <section class="under-construction">
-      <div class="construction-container">
-        <div class="construction-badge">
-          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 2L6 4L7.5 5.5L4.5 8.5L2 6L1 7L4 10L7 13L8 12L5.5 9.5L8.5 6.5L10 8L12 6L10 4L8 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="10.5" cy="10.5" r="1.5" fill="currentColor"/>
-          </svg>
-          <span>Coming Soon</span>
+    <article class="legal-page">
+      <header class="legal-hero">
+        <div class="legal-container">
+          <h1>Terms of Service</h1>
+          <p class="legal-hero-desc">These Terms of Service (“Terms”) govern your access to and use of Revo AI, including its website, mobile applications, AI receptionist platform, and related services. By accessing or using Revo AI, you agree to these Terms.</p>
+          <p class="legal-hero-date">Effective Date: July 2026</p>
         </div>
+      </header>
 
-        <h1>Pricing Plans Under Construction</h1>
-        <p>
-          We're crafting flexible pricing plans designed to fit businesses of all sizes.
-          From startups to enterprises, Revo will offer transparent, value-driven options
-          that scale with your needs.
-        </p>
+      <div class="legal-body">
+        <div class="legal-container">
+          <div class="legal-layout">
+            <nav class="legal-toc" aria-label="Table of contents">
+              <h2>Table of Contents</h2>
+              <ol>
+                <li><a href="#section-1">1. Acceptance of Terms</a></li>
+                <li><a href="#section-2">2. Description of Services</a></li>
+                <li><a href="#section-3">3. Eligibility</a></li>
+                <li><a href="#section-4">4. User Accounts</a></li>
+                <li><a href="#section-5">5. Acceptable Use</a></li>
+                <li><a href="#section-6">6. AI Services</a></li>
+                <li><a href="#section-7">7. Call Recording &amp; Consent</a></li>
+                <li><a href="#section-8">8. Third-Party Integrations</a></li>
+                <li><a href="#section-9">9. Fees &amp; Subscription</a></li>
+                <li><a href="#section-10">10. Intellectual Property</a></li>
+                <li><a href="#section-11">11. Service Availability</a></li>
+                <li><a href="#section-12">12. Limitation of Liability</a></li>
+                <li><a href="#section-13">13. Indemnification</a></li>
+                <li><a href="#section-14">14. Termination</a></li>
+                <li><a href="#section-15">15. Governing Law</a></li>
+                <li><a href="#section-16">16. Changes</a></li>
+                <li><a href="#section-17">17. General Provisions</a></li>
+                <li><a href="#section-18">18. Contact</a></li>
+              </ol>
+            </nav>
 
-        <div class="construction-actions">
-          <button class="btn-primary" onclick="window.location.href='index.html'">Back to Home</button>
-          <a href="tel:+18445231919" class="btn-link">Contact Sales</a>
+            <div class="legal-sections">
+          <section class="legal-section" id="section-1">
+            <h2>1. Acceptance of Terms</h2>
+            <p>By creating an account or using Revo AI, you agree to be bound by these Terms and applicable laws.</p>
+          </section>
+
+          <section class="legal-section" id="section-2">
+            <h2>2. Description of Services</h2>
+            <p>Revo AI provides AI-powered business communication including AI call answering, virtual receptionist services, appointment scheduling, lead qualification, call routing, AI-generated summaries, call transcripts, CRM integrations, analytics, and workflow automation.</p>
+          </section>
+
+          <section class="legal-section" id="section-3">
+            <h2>3. Eligibility</h2>
+            <p>You must be at least 18 years old and authorized to act on behalf of your business.</p>
+            <p>If you are entering into these Terms on behalf of a company or other entity, you represent that you have the authority to bind that entity, and references to “you” in these Terms refer to that entity.</p>
+          </section>
+
+          <section class="legal-section" id="section-4">
+            <h2>4. User Accounts</h2>
+            <p>You are responsible for maintaining the confidentiality of your credentials and all activities under your account.</p>
+            <p>When registering for an account, you must provide accurate, current, and complete information about yourself and your business. You may designate employees, contractors, or other authorized users on your account (“Authorized Users”); you are responsible for their actions and for ensuring they comply with these Terms. Account credentials may not be shared, sold, or transferred to any third party. If you suspect unauthorized access to your account, notify Revo AI promptly at legal@revoapp.ai.</p>
+          </section>
+
+          <section class="legal-section" id="section-5">
+            <h2>5. Acceptable Use</h2>
+            <p>You agree not to misuse the Services, violate laws, distribute malware, or interfere with platform security.</p>
+            <p>This includes complying with telemarketing, do-not-call, and consumer protection laws (such as the Telephone Consumer Protection Act) applicable to your use of the Services to contact your customers or prospects.</p>
+          </section>
+
+          <section class="legal-section" id="section-6">
+            <h2>6. AI Services</h2>
+            <p>AI-generated conversations, summaries, and transcripts may contain inaccuracies. Users are responsible for reviewing important communications.</p>
+            <p>Not every call may be answered or handled successfully due to technical, network, or other factors outside Revo AI's control, and the AI may not follow a provided script exactly in every interaction. AI-generated lead and appointment details should be independently verified before being relied upon for important business decisions. Revo AI does not guarantee any specific business outcome, lead conversion rate, customer satisfaction level, or revenue result from use of the Services.</p>
+          </section>
+
+          <section class="legal-section" id="section-7">
+            <h2>7. Call Recording & Consent</h2>
+            <p>Customers are responsible for complying with all applicable call recording, privacy, and consent laws.</p>
+            <p>As between you and Revo AI, you retain ownership of all data and content you provide to or generate through the Services, including scripts, customer and caller lists, call recordings, and call content originated by your callers (“Customer Data”); you grant Revo AI a license to use Customer Data solely to provide, maintain, and improve the Services. Revo AI may use de-identified, aggregated data for analytics and product improvement, provided such data does not identify you or your callers.</p>
+            <p>Call records, transcripts, and summaries are made available through the Revo AI platform during your active subscription and retained for a limited period thereafter; you are responsible for exporting any records you wish to keep before cancellation or before the end of the applicable retention period. If Revo AI confirms a security incident involving unauthorized access to your Customer Data, Revo AI will notify you within a reasonable time after confirmation, consistent with applicable law.</p>
+          </section>
+
+          <section class="legal-section" id="section-8">
+            <h2>8. Third-Party Integrations</h2>
+            <p>Integrations with CRMs, calendars, telephony providers, SMS services, and payment platforms are governed by their own terms.</p>
+            <p>This also includes the underlying telephony, cloud hosting, and messaging infrastructure used to deliver the Services.</p>
+          </section>
+
+          <section class="legal-section" id="section-9">
+            <h2>9. Fees & Subscription</h2>
+            <p>Paid features are subject to subscription fees, renewal terms, and cancellation policies associated with your plan.</p>
+            <p>Unless otherwise stated in your plan, subscriptions renew automatically at the end of each billing period (for example, monthly or annually) until cancelled, and you authorize Revo AI to automatically charge your payment method on file for each renewal and for any usage-based charges. Free trials or promotional pricing convert automatically to standard paid pricing at the end of the trial or promotional period unless cancelled beforehand. Revo AI may modify pricing from time to time; for existing customers, price changes take effect on the next renewal following reasonable advance notice.</p>
+            <p>Invoices and receipts are delivered electronically to the email address on file. If you believe a charge is incorrect, contact billing@revoapp.ai within a reasonable time of the charge date; charges not disputed within that window are deemed accepted. Except as required by law or expressly stated in an order form, fees paid to Revo AI are non-refundable, including for completed billing periods and for calls or interactions already handled by the Services. Where Revo AI agrees that a refund or credit is owed, it will generally be issued as account credit applied to future billing.</p>
+          </section>
+
+          <section class="legal-section" id="section-10">
+            <h2>10. Intellectual Property</h2>
+            <p>All software, trademarks, content, and AI technologies remain the property of Revo AI or its licensors.</p>
+          </section>
+
+          <section class="legal-section" id="section-11">
+            <h2>11. Service Availability</h2>
+            <p>We strive for reliable service but do not guarantee uninterrupted availability.</p>
+            <p>Revo AI may update, modify, or discontinue features of the Services at any time; material reductions in functionality on paid plans will be communicated with reasonable advance notice where practicable. Service interruptions may also result from failures of underlying third-party infrastructure (such as telecommunications, cloud hosting, or internet connectivity) outside Revo AI's control. Neither party will be liable for failure or delay in performance caused by events beyond its reasonable control, including natural disasters, acts of government, labor disputes, or cyberattacks; performance obligations are suspended for the duration of such an event.</p>
+          </section>
+
+          <section class="legal-section" id="section-12">
+            <h2>12. Limitation of Liability</h2>
+            <p>To the fullest extent permitted by law, Revo AI shall not be liable for indirect, incidental, consequential, or special damages.</p>
+            <p>This limitation applies regardless of the theory of liability and even if a remedy fails of its essential purpose.</p>
+          </section>
+
+          <section class="legal-section" id="section-13">
+            <h2>13. Indemnification</h2>
+            <p>You agree to indemnify Revo AI against claims resulting from your misuse of the Services or violation of these Terms.</p>
+            <p>This includes claims arising from the scripts, instructions, or content you provide to Revo AI, or from your callers or customers in connection with your business.</p>
+          </section>
+
+          <section class="legal-section" id="section-14">
+            <h2>14. Termination</h2>
+            <p>Accounts may be suspended or terminated for violations of these Terms. Users may close their accounts at any time.</p>
+            <p>Upon termination, any fees accrued before the termination date remain due and payable. Provisions that by their nature should survive termination — including those relating to fees, data, intellectual property, liability, and indemnification — will continue to apply.</p>
+          </section>
+
+          <section class="legal-section" id="section-15">
+            <h2>15. Governing Law</h2>
+            <p>These Terms are governed by the laws of the State of Delaware, USA, unless otherwise required by law.</p>
+            <p>Before initiating any formal legal proceeding, the parties agree to first attempt to resolve any dispute arising out of or relating to these Terms or the Services informally, by sending written notice to the other party and engaging in good-faith discussions for a reasonable period. Notice to Revo AI should be sent to legal@revoapp.ai.</p>
+            <p>Note: Revo AI may wish to consider whether to add a binding arbitration and class-action waiver provision. This is a significant legal decision and should be made in consultation with counsel before being added to these Terms.</p>
+          </section>
+
+          <section class="legal-section" id="section-16">
+            <h2>16. Changes</h2>
+            <p>We may update these Terms from time to time. Continued use constitutes acceptance of the revised Terms.</p>
+            <p>Revo AI will use reasonable efforts to notify you of material changes by email or through an in-platform notice, generally with reasonable advance notice where practicable. If you do not agree with a material change, your remedy is to stop using the Services and close your account before the change takes effect.</p>
+          </section>
+
+          <section class="legal-section" id="section-17">
+            <h2>17. General Provisions</h2>
+            <p>Severability. If any provision of these Terms is found invalid or unenforceable, the remaining provisions remain in full force and effect.</p>
+            <p>No Waiver. Revo AI's failure to enforce any provision is not a waiver of that provision or of its right to enforce it later.</p>
+            <p>Assignment. You may not assign or transfer these Terms without Revo AI's prior written consent. Revo AI may assign these Terms without restriction, including in connection with a merger, acquisition, or sale of assets.</p>
+            <p>Independent Contractors. The parties are independent contractors. Nothing in these Terms creates a partnership, joint venture, agency, or employment relationship.</p>
+            <p>No Third-Party Beneficiaries. These Terms are for the benefit of you and Revo AI only and do not create rights for any third party.</p>
+            <p>Notices. Notices to you will be sent to the email address on file for your account or posted within the Revo AI platform. Notices to Revo AI should be sent to legal@revoapp.ai.</p>
+            <p>Export Compliance. You agree to comply with all applicable export and re-export control laws and regulations in connection with your use of the Services.</p>
+            <p>Headings. Section headings are included for convenience only and do not affect the interpretation of these Terms.</p>
+          </section>
+
+          <section class="legal-section" id="section-18">
+            <h2>18. Contact</h2>
+            <p>Revo AI</p>
+            <p>Website: https://www.revoapp.ai</p>
+            <p>Email: legal@revoapp.ai</p>
+            <p>Phone: (844) 523-1919</p>
+          </section>
         </div>
-
-        <div class="construction-features">
-          <div class="construction-feature-item">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="8" fill="rgba(15, 90, 215, 0.1)"/>
-              <path d="M16 20H32M16 24H32M16 28H32" stroke="#fa8932" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M20 16V32M24 16V32M28 16V32" stroke="#fa8932" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
-            <h3>Flexible Plans</h3>
-            <p>Options tailored to your business size and call volume</p>
-          </div>
-
-          <div class="construction-feature-item">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="8" fill="rgba(15, 90, 215, 0.1)"/>
-              <circle cx="24" cy="18" r="6" stroke="#fa8932" stroke-width="2.5"/>
-              <circle cx="24" cy="18" r="3" fill="#fa8932"/>
-              <path d="M14 30C14 26 18 23 24 23C30 23 34 26 34 30" stroke="#fa8932" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M12 12L36 36" stroke="#fa8932" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
-            <h3>No Hidden Fees</h3>
-            <p>Transparent pricing with no surprises</p>
-          </div>
-
-          <div class="construction-feature-item">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="8" fill="rgba(15, 90, 215, 0.1)"/>
-              <path d="M16 32L20 24L24 28L28 20L32 32" stroke="#fa8932" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14 34H34" stroke="#fa8932" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
-            <h3>Easy Scaling</h3>
-            <p>Upgrade or downgrade anytime as your business grows</p>
-          </div>
-        </div>
-
-        <div class="construction-newsletter">
-          <p class="newsletter-text">Be the first to know when our pricing plans go live.</p>
-          <form class="newsletter-form-wrapper" onsubmit="event.preventDefault();">
-            <div class="newsletter-input-wrapper">
-              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 4L10 10L17 4M3 4H17V16H3V4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <input type="email" class="newsletter-input" placeholder="Enter your email" required>
-            </div>
-            <button type="submit" class="newsletter-button">Notify Me</button>
-          </form>
         </div>
       </div>
-    </section>
+      </div>
+    </article>
   </main>
 
   <!-- Footer -->
@@ -796,6 +637,9 @@
 
   <!-- JavaScript -->
   <script src="js/navigation.js" defer></script>
+  <script src="js/animations.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script src="js/legal-page.js" defer></script>
 </body>
 </html>
+
