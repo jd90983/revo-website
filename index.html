@@ -53,6 +53,10 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '2435811520564771');
 fbq('track', 'PageView');
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href*="apps.apple.com"]');
+  if (a && window.fbq) fbq('trackCustom', 'AppStoreClick');
+}, true);
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=2435811520564771&ev=PageView&noscript=1"
@@ -439,7 +443,7 @@ src="https://www.facebook.com/tr?id=2435811520564771&ev=PageView&noscript=1"
             <a href="https://apps.apple.com/us/app/revo-ai-receptionist/id6768915591"
                class="btn-secondary-large"
                target="_blank" rel="noopener noreferrer"
-               onclick="if(window.fbq)fbq('trackCustom','AppStoreClick');">Download for iPhone</a>
+              >Download for iPhone</a>
           </div>
         </div>
         <div class="hero-trust">

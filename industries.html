@@ -57,6 +57,10 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '2435811520564771');
 fbq('track', 'PageView');
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('a[href*="apps.apple.com"]');
+  if (a && window.fbq) fbq('trackCustom', 'AppStoreClick');
+}, true);
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=2435811520564771&ev=PageView&noscript=1"
