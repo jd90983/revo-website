@@ -1,6 +1,6 @@
 from pathlib import Path
 
-p = Path(__file__).resolve().parents[1] / "ind.html"
+p = Path(__file__).resolve().parents[1] / "industries.html"
 t = p.read_text(encoding="utf-8")
 needle = (
     "              </div>\n"

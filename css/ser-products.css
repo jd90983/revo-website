@@ -1421,22 +1421,43 @@ html:has(.ser-features-section) body {
   justify-content: flex-start;
 }
 
-.ser-products-section .products-panel-actions .benefits-modern-btn-primary,
-.ser-products-section .products-panel-actions .benefits-modern-btn-secondary {
+.ser-products-section .products-panel-actions .benefits-modern-btn-primary {
   width: auto;
   min-width: 0;
 }
 
-.ser-products-section .products-panel-actions .benefits-modern-btn-link {
-  background: transparent;
-  border: none;
-  padding: 10px 0;
+.ser-products-section .products-panel-actions .benefits-modern-btn-secondary,
+.ser-products-section .products-panel-actions .benefits-modern-btn-secondary.benefits-modern-btn-link {
+  width: 200px;
+  min-width: 200px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0A0B0C !important;
+  background: transparent !important;
+  border: 1px solid rgba(10, 11, 12, 0.15) !important;
+  border-radius: 100px;
+  padding: 10px 24px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
-.ser-products-section .products-panel-actions .benefits-modern-btn-link:hover {
-  background: transparent;
-  opacity: 0.75;
-  transform: none;
+.ser-products-section .products-panel-actions .benefits-modern-btn-secondary.benefits-modern-btn-link svg {
+  display: none;
+}
+
+.ser-products-section .products-panel-actions .benefits-modern-btn-secondary:hover,
+.ser-products-section .products-panel-actions .benefits-modern-btn-secondary.benefits-modern-btn-link:hover {
+  background: rgba(10, 11, 12, 0.05) !important;
+  transform: translateY(-2px);
+  opacity: 1;
 }
 
 @media (max-width: 1023px) {
@@ -2007,29 +2028,35 @@ html:has(.ser-features-section) body {
   transform: none;
 }
 
+.ser-features-section .products-content--tabs .products-panel-actions .benefits-modern-btn-secondary,
 .ser-features-section .products-content--tabs .products-panel-actions .benefits-modern-btn-secondary.benefits-modern-btn-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  padding: 10px 0;
-  background: transparent;
-  border: none;
+  width: 200px;
+  min-width: 200px;
+  padding: 10px 24px;
+  color: #ffffff !important;
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
   border-radius: 100px;
-  transition: opacity 0.25s ease;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .ser-features-section .products-content--tabs .products-panel-actions .benefits-modern-btn-link svg {
-  flex-shrink: 0;
-  width: 24px;
-  height: 24px;
+  display: none;
 }
 
+.ser-features-section .products-content--tabs .products-panel-actions .benefits-modern-btn-secondary:hover,
 .ser-features-section .products-content--tabs .products-panel-actions .benefits-modern-btn-link:hover {
-  background: transparent;
-  border: none;
-  opacity: 0.75;
-  transform: none;
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  transform: translateY(-2px);
+  opacity: 1;
 }
 
 @media (min-width: 1024px) {

@@ -2465,9 +2465,13 @@
     gap: 24px;
   }
 
-  .transform-cta-actions .transform-cta-btn-primary,
-  .transform-cta-actions .transform-cta-btn-secondary {
+  .transform-cta-actions .transform-cta-btn-primary {
     width: 200px;
+  }
+
+  .transform-cta-actions .transform-cta-btn-secondary {
+    width: 100%;
+    max-width: 300px;
   }
 
   /* Show mobile viewer, hide desktop viewer on tablet */
