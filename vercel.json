@@ -2,6 +2,11 @@
   "outputDirectory": ".",
   "redirects": [
     {
+      "source": "/ser.html",
+      "destination": "/services.html",
+      "permanent": true
+    },
+    {
       "source": "/industries.html",
       "destination": "/industries.html",
       "permanent": true

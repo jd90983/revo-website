@@ -26,7 +26,7 @@ CARDS = [
 ]
 
 BUTTON_PATTERN = re.compile(
-    r'(<button type="button" class="products-item(?: active)?" data-product="{product}"[^>]*>)(.*?)(</button>)',
+    r'(<a class="products-item(?: active)?" href="https://apps.apple.com/us/app/revo-ai-receptionist/id6768915591" target="_blank" rel="noopener noreferrer">]*>)(.*?)(</button>)',
     re.DOTALL,
 )
 
@@ -40,7 +40,7 @@ def inner_html(card: dict) -> str:
                       <p>{card["description"]}</p>
                     </div>
                     <div class="products-actions">
-                      <button type="button" class="benefits-modern-btn-secondary">Book a Demo</button>
+                      <a class="benefits-modern-btn-secondary" href="https://apps.apple.com/us/app/revo-ai-receptionist/id6768915591" target="_blank" rel="noopener noreferrer">Download for iPhone</a>
                     </div>
                     <div class="products-item-media">
                       <img src="{card["image"]}" alt="{card["alt"]}" width="600" height="600" loading="lazy" />
@@ -64,5 +64,5 @@ def patch_file(path: Path) -> None:
 
 if __name__ == "__main__":
     root = Path(__file__).resolve().parents[1]
-    for name in ("ser.html", "industries.html"):
+    for name in ("services.html", "industries.html"):
         patch_file(root / name)

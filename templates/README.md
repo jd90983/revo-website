@@ -47,7 +47,7 @@ Make sure to include the shared components CSS in your HTML:
 
 ### get-started-section.html
 The "How to Get Started" section with 4 steps timeline. Used in:
-- `ser.html`
+- `services.html`
 - `industry_locksmith.html`
 
 ### get-started-form-section.html

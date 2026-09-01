@@ -702,7 +702,7 @@
 }
 
 /* Services icon */
-.mobile-menu-nav a[href*="ser.html"]::before {
+.mobile-menu-nav a[href*="services.html"]::before {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10' /%3E%3C/svg%3E");
 }
 
@@ -1324,7 +1324,7 @@ body.mobile-menu-open {
   box-shadow: none;
 }
 
-/* Secondary "Book a Demo" button - Transparent white */
+/* Secondary hero CTA - Transparent white */
 .hero-actions .btn-secondary-large,
 .ser-services-header-actions .btn-secondary-large {
   background: rgba(255, 255, 255, 0.1); /* EXACT: 10% white opacity */
@@ -1337,8 +1337,13 @@ body.mobile-menu-open {
   font-size: 16px;
   line-height: 1.5;
   transition: background-color 0.2s ease;
-  width: 200px;
+  width: auto;
+  min-width: 200px;
   box-sizing: border-box;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-actions .btn-secondary-large:hover,
@@ -3257,7 +3262,7 @@ body.mobile-menu-open {
   box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.3);
 }
 
-/* Button: Book a Demo (Secondary - Glass) */
+/* Button: Download for iPhone (Secondary - Glass) */
 .btn-book-demo {
   display: inline-flex;
   align-items: center;
@@ -7023,9 +7028,14 @@ body.mobile-menu-open {
   justify-content: center;
 }
 
-.transform-cta-actions .transform-cta-btn-primary,
-.transform-cta-actions .transform-cta-btn-secondary {
+.transform-cta-actions .transform-cta-btn-primary {
   width: 200px;
+  box-sizing: border-box;
+}
+
+.transform-cta-actions .transform-cta-btn-secondary {
+  min-width: 200px;
+  width: auto;
   box-sizing: border-box;
 }
 
@@ -7128,6 +7138,11 @@ body.mobile-menu-open {
   cursor: pointer;
   transition: all 0.2s ease;
   text-align: center;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
 }
 
 .transform-cta-btn-secondary:hover {

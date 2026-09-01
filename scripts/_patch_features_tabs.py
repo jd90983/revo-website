@@ -15,13 +15,13 @@ FEATURES_BLOCK = """    <!-- Features Tabs Section -->
                 </div>
               </div>
               <div class="benefits-modern-actions ser-benefits-tabs-header-actions">
-                <button type="button" class="benefits-modern-btn-primary">Get Started</button>
-                <button type="button" class="benefits-modern-btn-secondary benefits-modern-btn-link">
-                  Book a Demo
+                <button class="benefits-modern-btn-primary" type="button">Get Started</button>
+                <a class="benefits-modern-btn-secondary benefits-modern-btn-link" href="https://apps.apple.com/us/app/revo-ai-receptionist/id6768915591" target="_blank" rel="noopener noreferrer">
+                  Download for iPhone
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -38,7 +38,7 @@ FEATURES_BLOCK = """    <!-- Features Tabs Section -->
                       <p>Know exactly what happened on every call.<br />Revo organizes each conversation into clear summaries,<br />helping you spot customer needs and missed opportunities faster.</p>
                     </div>
                     <div class="products-actions">
-                      <button type="button" class="benefits-modern-btn-secondary">Book a Demo</button>
+                      <a class="benefits-modern-btn-secondary" href="https://apps.apple.com/us/app/revo-ai-receptionist/id6768915591" target="_blank" rel="noopener noreferrer">Download for iPhone</a>
                     </div>
                     <div class="products-item-media">
                       <img src="images/services/detailed_call_reports.webp" alt="Detailed Call Reports" width="600" height="600" loading="lazy" />
@@ -53,7 +53,7 @@ FEATURES_BLOCK = """    <!-- Features Tabs Section -->
                       <p>You decide how and when calls get answered. Whether it's right away, after a few rings, or only during certain hours—Revo follows your rules. Your customers always get a smooth, professional response, no matter what.</p>
                     </div>
                     <div class="products-actions">
-                      <button type="button" class="benefits-modern-btn-secondary">Book a Demo</button>
+                      <a class="benefits-modern-btn-secondary" href="https://apps.apple.com/us/app/revo-ai-receptionist/id6768915591" target="_blank" rel="noopener noreferrer">Download for iPhone</a>
                     </div>
                     <div class="products-item-media">
                       <img src="images/services/smart_response_timing.webp" alt="Smart Response Timing" width="600" height="600" loading="lazy" />
@@ -68,7 +68,7 @@ FEATURES_BLOCK = """    <!-- Features Tabs Section -->
                       <p>Not every call deserves your attention. Revo filters out spam and unwanted calls automatically, so your line stays open for real customers. Less noise, more meaningful conversations.</p>
                     </div>
                     <div class="products-actions">
-                      <button type="button" class="benefits-modern-btn-secondary">Book a Demo</button>
+                      <a class="benefits-modern-btn-secondary" href="https://apps.apple.com/us/app/revo-ai-receptionist/id6768915591" target="_blank" rel="noopener noreferrer">Download for iPhone</a>
                     </div>
                     <div class="products-item-media">
                       <img src="images/services/blocked_numbers.webp" alt="Blocked numbers" width="600" height="600" loading="lazy" />
@@ -76,13 +76,13 @@ FEATURES_BLOCK = """    <!-- Features Tabs Section -->
                   </div>
                 </div>
                 <div class="products-panel-actions benefits-modern-actions">
-                  <button type="button" class="benefits-modern-btn-primary">Get Started</button>
-                  <button type="button" class="benefits-modern-btn-secondary benefits-modern-btn-link">
-                    Book a Demo
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <button class="benefits-modern-btn-primary" type="button">Get Started</button>
+                  <a class="benefits-modern-btn-secondary benefits-modern-btn-link" href="https://apps.apple.com/us/app/revo-ai-receptionist/id6768915591" target="_blank" rel="noopener noreferrer">
+                  Download for iPhone
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                       <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
               <div class="products-right">
@@ -106,7 +106,7 @@ FEATURES_BLOCK = FEATURES_BLOCK.replace("</div>", "</div>")
 ROOT = Path(__file__).resolve().parents[1]
 
 MARKERS = {
-    "ser.html": (
+    "services.html": (
         "    <!-- Features Section with Dark Theme",
         "    <!-- Humanize AI Receptionists Section",
         "features-image",
