@@ -64,5 +64,5 @@ def patch_file(path: Path) -> None:
 
 if __name__ == "__main__":
     root = Path(__file__).resolve().parents[1]
-    for name in ("ser.html", "ind.html"):
+    for name in ("ser.html", "industries.html"):
         patch_file(root / name)

@@ -111,7 +111,7 @@ MARKERS = {
         "    <!-- Humanize AI Receptionists Section",
         "features-image",
     ),
-    "ind.html": (
+    "industries.html": (
         "    <!-- Features Section with Dark Theme",
         "    <!-- Intelligent Banner Section",
         "industry-features-image",

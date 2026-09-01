@@ -59,6 +59,11 @@
   white-space: nowrap;
   backdrop-filter: blur(10px); /* Frosted glass effect */
   -webkit-backdrop-filter: blur(10px);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
 }
 
 .btn-secondary:hover,

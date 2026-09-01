@@ -1,3 +1,15 @@
 {
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "redirects": [
+    {
+      "source": "/industries.html",
+      "destination": "/industries.html",
+      "permanent": true
+    },
+    {
+      "source": "/ind",
+      "destination": "/industries.html",
+      "permanent": true
+    }
+  ]
 }
