@@ -68,6 +68,74 @@ async function applyCountryToForm() {
 }
 
 // ============================================
+// MARKETING ATTRIBUTION (UTM params, click IDs)
+// ============================================
+// Captured on every page load and kept for the session, so a visitor who lands
+// on a campaign URL and submits the form from another page is still attributed.
+
+const ATTRIBUTION_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid'];
+const ATTRIBUTION_STORAGE_KEY = 'revo_attribution';
+
+function captureAttribution() {
+  let stored = {};
+  try {
+    stored = JSON.parse(sessionStorage.getItem(ATTRIBUTION_STORAGE_KEY) || '{}');
+  } catch (e) {}
+
+  const params = new URLSearchParams(window.location.search);
+  const fresh = {};
+  ATTRIBUTION_KEYS.forEach(key => {
+    const value = params.get(key);
+    if (value) fresh[key] = value.slice(0, 255);
+  });
+
+  // A new campaign click replaces what's stored; otherwise keep the first touch.
+  if (Object.keys(fresh).length > 0) {
+    try {
+      sessionStorage.setItem(ATTRIBUTION_STORAGE_KEY, JSON.stringify(fresh));
+    } catch (e) {}
+    return fresh;
+  }
+  return stored;
+}
+
+// Human-readable text of the selected <option>, for the CRM
+function selectedLabel(select) {
+  if (!select || select.selectedIndex < 0) return '';
+  const option = select.options[select.selectedIndex];
+  return option ? option.textContent.trim() : '';
+}
+
+// ============================================
+// BOT PROTECTION
+// ============================================
+// Honeypot: a hidden field people never see but bots fill in.
+// Minimum fill time: bots submit instantly, people don't.
+
+const HONEYPOT_FIELD_NAME = 'company_website';
+const MIN_FILL_SECONDS = 3;
+
+function addHoneypot(form) {
+  if (form.querySelector(`[name="${HONEYPOT_FIELD_NAME}"]`)) return;
+  const honeypot = document.createElement('input');
+  honeypot.type = 'text';
+  honeypot.name = HONEYPOT_FIELD_NAME;
+  honeypot.tabIndex = -1;
+  honeypot.autocomplete = 'off';
+  honeypot.setAttribute('aria-hidden', 'true');
+  honeypot.style.cssText = 'position:absolute;left:-9999px;width:1px;height:1px;opacity:0;';
+  form.appendChild(honeypot);
+  form.dataset.loadedAt = String(Date.now());
+}
+
+function looksLikeBot(form) {
+  const honeypot = form.querySelector(`[name="${HONEYPOT_FIELD_NAME}"]`);
+  if (honeypot && honeypot.value !== '') return true;
+  const loadedAt = Number(form.dataset.loadedAt || 0);
+  return loadedAt > 0 && (Date.now() - loadedAt) / 1000 < MIN_FILL_SECONDS;
+}
+
+// ============================================
 // FIELD VALIDATION
 // ============================================
 
@@ -173,6 +241,8 @@ document.addEventListener('DOMContentLoaded', function() {
   initGetStartedForm();
   // Detect country and update phone placeholder
   applyCountryToForm();
+  // Remember campaign parameters from the landing URL for the rest of the session
+  captureAttribution();
 });
 
 // Form submission handler
@@ -185,6 +255,12 @@ function handleFormSubmission(form) {
     email: form.querySelector('#email').value.trim(),
     industry: form.querySelector('#industry').value,
     callsPerWeek: form.querySelector('#callsPerWeek').value,
+    // Marketing attribution (forwarded to the CRM by the API)
+    ...captureAttribution(),
+    page_url: window.location.href,
+    referrer: document.referrer || '',
+    industryLabel: selectedLabel(form.querySelector('#industry')),
+    callsPerWeekLabel: selectedLabel(form.querySelector('#callsPerWeek')),
     // Include detected country info (if available)
     detectedCountry: detectedCountry ? {
       code: detectedCountry.code,
@@ -245,6 +321,13 @@ function handleFormSubmission(form) {
       firstInvalidField.focus();
     }
     showFormMessage(form, 'Please fill in all required fields correctly.', 'error');
+    return false;
+  }
+
+  // Bot gate: pretend to succeed so bots don't learn they were caught
+  if (looksLikeBot(form)) {
+    showFormMessage(form, 'Thank you! Your information has been received. We\'ll contact you soon.', 'success');
+    form.reset();
     return false;
   }
 
@@ -321,6 +404,15 @@ async function sendFormToAPI(formData, form, submitBtn, originalBtnText) {
     // Success - form submitted and saved to database
     showFormMessage(form, 'Thank you! Your information has been received. We\'ll contact you soon.', 'success');
     form.reset();
+
+    // Analytics hook for Google Tag Manager (no-op unless GTM is on the page)
+    if (Array.isArray(window.dataLayer)) {
+      window.dataLayer.push({
+        event: 'quote_form_submitted',
+        form_name: 'Website Quote Request',
+        lead_id: result.leadId || ''
+      });
+    }
     
     // Clear validation states
     form.querySelectorAll('.get-started-form-input-wrapper').forEach(wrapper => {
@@ -396,7 +488,8 @@ function initFormSubmission() {
     }
     
     form.setAttribute('data-submission-initialized', 'true');
-    
+    addHoneypot(form);
+
     form.addEventListener('submit', function(e) {
       e.preventDefault();
       handleFormSubmission(this);

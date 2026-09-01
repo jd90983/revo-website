@@ -47,6 +47,10 @@ const SECURITY_CONFIG = {
   
   // Request size limit (bytes)
   MAX_REQUEST_SIZE: 10240, // 10KB
+
+  // Optional marketing attribution fields (UTM params, click IDs, URLs)
+  MAX_ATTRIBUTION_LENGTH: 255,
+  MAX_URL_LENGTH: 2048,
 };
 
 // ============================================
@@ -116,6 +120,37 @@ function validateCallsPerWeek(callsPerWeek) {
   
   const trimmed = callsPerWeek.trim();
   return SECURITY_CONFIG.ALLOWED_CALLS_PER_WEEK.includes(trimmed) ? trimmed : null;
+}
+
+/**
+ * Sanitize an optional URL (page_url, referrer). Returns '' when unusable.
+ */
+function sanitizeUrl(value) {
+  if (!value || typeof value !== 'string') return '';
+  const trimmed = value.trim().slice(0, SECURITY_CONFIG.MAX_URL_LENGTH);
+  if (!/^https?:\/\//i.test(trimmed)) return '';
+  return trimmed.replace(/[\x00-\x1F\x7F]/g, '');
+}
+
+/**
+ * Sanitize optional marketing attribution sent by the form.
+ * Never rejects a submission: bad values are dropped, not errored.
+ */
+function sanitizeAttribution(formData) {
+  const text = (value) => sanitizeString(value, SECURITY_CONFIG.MAX_ATTRIBUTION_LENGTH);
+  return {
+    utm_source: text(formData.utm_source),
+    utm_medium: text(formData.utm_medium),
+    utm_campaign: text(formData.utm_campaign),
+    utm_term: text(formData.utm_term),
+    utm_content: text(formData.utm_content),
+    gclid: text(formData.gclid),
+    fbclid: text(formData.fbclid),
+    page_url: sanitizeUrl(formData.page_url),
+    referrer: sanitizeUrl(formData.referrer),
+    industryLabel: text(formData.industryLabel),
+    callsPerWeekLabel: text(formData.callsPerWeekLabel)
+  };
 }
 
 // ============================================
@@ -261,7 +296,7 @@ export default async function handler(req, res) {
     // 7. HONEYPOT FIELD CHECK (Bot Detection)
     // ============================================
     // If your form has a honeypot field (hidden field that bots fill), check it here
-    if (formData.website || formData.url || formData.comments) {
+    if (formData.website || formData.url || formData.comments || formData.company_website) {
       // Honeypot field filled = likely bot
       console.warn('Honeypot field detected - possible bot submission');
       // Still return success to bot (don't reveal detection)
@@ -309,6 +344,9 @@ export default async function handler(req, res) {
     if (!sanitizedData.callsPerWeek) {
       return res.status(400).json({ error: 'Invalid calls per week selection' });
     }
+
+    // Optional attribution: validated separately so it can never block a lead
+    const attribution = sanitizeAttribution(formData);
 
     // ============================================
     // 10. INITIALIZE SUPABASE CLIENT
@@ -490,6 +528,7 @@ export default async function handler(req, res) {
     try {
       await sendEmailNotification({
         ...sanitizedData,
+        attribution,
         leadId: lead.id,
         isUpdate
       });
@@ -497,6 +536,25 @@ export default async function handler(req, res) {
       // Log email error but don't fail the request
       console.error('Email notification failed:', emailError);
       // Lead is still saved, so we continue
+    }
+
+    // ============================================
+    // 13b. FORWARD LEAD TO GOHIGHLEVEL CRM
+    // ============================================
+    // Awaited so the serverless function doesn't exit before the request lands.
+    try {
+      await forwardToGoHighLevel({
+        ...sanitizedData,
+        ...attribution,
+        leadId: lead.id,
+        isUpdate,
+        country,
+        city: geoInfo.city,
+        region: geoInfo.region
+      });
+    } catch (crmError) {
+      // Lead is already saved and emailed; CRM sync failure must not fail the request
+      console.error('GoHighLevel forwarding failed:', crmError);
     }
 
     // ============================================
@@ -568,7 +626,7 @@ Business Information:
 - Industry: ${formData.industry}
 - Calls per week: ${formData.callsPerWeek}
 
-${formData.isUpdate ? '⚠️ This is an update to an existing lead' : '✨ New lead'}
+${formatAttributionForEmail(formData.attribution)}${formData.isUpdate ? '⚠️ This is an update to an existing lead' : '✨ New lead'}
 Lead ID: ${formData.leadId}
 
 Submitted: ${new Date().toLocaleString()}
@@ -597,4 +655,93 @@ Source: Website (revoapp.ai)
   }
 
   return await response.json();
+}
+
+/**
+ * Render the attribution block for the notification email (empty if nothing was captured).
+ */
+function formatAttributionForEmail(attribution) {
+  if (!attribution) return '';
+  const lines = [
+    ['Source', attribution.utm_source],
+    ['Medium', attribution.utm_medium],
+    ['Campaign', attribution.utm_campaign],
+    ['Term', attribution.utm_term],
+    ['Content', attribution.utm_content],
+    ['Google click ID', attribution.gclid],
+    ['Facebook click ID', attribution.fbclid],
+    ['Page', attribution.page_url],
+    ['Referrer', attribution.referrer]
+  ].filter(([, value]) => value);
+
+  if (lines.length === 0) return '';
+  return 'Marketing Attribution:\n' + lines.map(([label, value]) => `- ${label}: ${value}`).join('\n') + '\n\n';
+}
+
+// ============================================
+// GOHIGHLEVEL CRM FORWARDING
+// ============================================
+// Posts each saved lead to the "Website Quote Request" workflow's Inbound
+// Webhook trigger in the Revo sub-account. Field names match the mapping
+// marketing set up in that workflow, so keep them stable.
+//
+// Override with GHL_WEBHOOK_URL in Vercel; set it to an empty string to disable.
+
+const DEFAULT_GHL_WEBHOOK_URL = 'https://services.leadconnectorhq.com/hooks/3utcgqOnvWhuhWDOFqw5/webhook-trigger/2549d137-cb01-4ef0-9e2f-3104e926be53';
+const GHL_TIMEOUT_MS = 8000;
+
+async function forwardToGoHighLevel(lead) {
+  const webhookUrl = process.env.GHL_WEBHOOK_URL ?? DEFAULT_GHL_WEBHOOK_URL;
+  if (!webhookUrl) {
+    console.log('GHL_WEBHOOK_URL is empty, skipping CRM forwarding');
+    return;
+  }
+
+  const payload = {
+    firstName: lead.firstName,
+    lastName: lead.lastName,
+    email: lead.email,
+    phone: lead.contactNumber,
+    industry: lead.industryLabel || lead.industry,
+    industry_value: lead.industry,
+    callsPerWeek: lead.callsPerWeekLabel || lead.callsPerWeek,
+    callsPerWeek_value: lead.callsPerWeek,
+    utm_source: lead.utm_source,
+    utm_medium: lead.utm_medium,
+    utm_campaign: lead.utm_campaign,
+    utm_term: lead.utm_term,
+    utm_content: lead.utm_content,
+    gclid: lead.gclid,
+    fbclid: lead.fbclid,
+    page_url: lead.page_url,
+    referrer: lead.referrer,
+    country: lead.country || '',
+    region: lead.region || '',
+    city: lead.city || '',
+    lead_id: lead.leadId,
+    is_update: Boolean(lead.isUpdate),
+    submitted_at: new Date().toISOString(),
+    form_name: 'Website Quote Request',
+    source: 'revoapp.ai'
+  };
+
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), GHL_TIMEOUT_MS);
+
+  try {
+    const response = await fetch(webhookUrl, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload),
+      signal: controller.signal
+    });
+
+    if (!response.ok) {
+      throw new Error(`GoHighLevel webhook returned HTTP ${response.status}`);
+    }
+
+    console.log(`Lead ${lead.leadId} forwarded to GoHighLevel`);
+  } finally {
+    clearTimeout(timer);
+  }
 }
