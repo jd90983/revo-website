@@ -4198,6 +4198,12 @@ body.mobile-menu-open {
   margin: 0 0 var(--space-md) 0;
 }
 
+/* Temporarily hidden — re-enable when newsletter signup is needed */
+.footer-newsletter .newsletter-form,
+.footer-newsletter .newsletter-disclaimer {
+  display: none;
+}
+
 .newsletter-form {
   display: flex;
   gap: 16px;
