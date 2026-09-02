@@ -1,0 +1,103 @@
+# robots.txt — https://www.revoapp.ai/
+# Actualizado: 2026-09-02
+
+# ---------------------------------------------------------------
+# Rastreadores de búsqueda
+# ---------------------------------------------------------------
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Nota para quien mantenga este archivo:
+#
+# /templates/ y /thank-you.html NO se bloquean aquí a propósito.
+#
+# /templates/ contiene los fragmentos que el sitio inyecta en
+# services.html y en las páginas de industria. Bloquearlos impide
+# que Google los descargue al renderizar, y ese contenido
+# desaparecería de las páginas donde sí queremos que cuente.
+#
+# /thank-you.html no debe indexarse, pero bloquearlo aquí impide
+# que Google lea su etiqueta noindex y la URL puede quedar
+# indexada de todos modos.
+#
+# Ambos se resuelven con la cabecera X-Robots-Tag: noindex
+# configurada en vercel.json, no en este archivo.
+
+# ---------------------------------------------------------------
+# Rastreadores de IA — permitidos de forma explícita.
+# Revo quiere ser encontrado y citado por estos sistemas.
+# No cambiar a Disallow sin entender qué se pierde.
+# ---------------------------------------------------------------
+
+# OpenAI — búsqueda dentro de ChatGPT. Este es el que trae
+# tráfico y citaciones hoy.
+User-agent: OAI-SearchBot
+Allow: /
+
+# OpenAI — navegación cuando un usuario pide abrir la página.
+User-agent: ChatGPT-User
+Allow: /
+
+# OpenAI — entrenamiento de modelos.
+User-agent: GPTBot
+Allow: /
+
+# Anthropic — Claude.
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Perplexity.
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google — Gemini y funciones generativas.
+# Nota: bloquear este agente NO saca al sitio de los AI Overviews;
+# eso depende del rastreo normal de Googlebot.
+User-agent: Google-Extended
+Allow: /
+
+# Apple — Siri y funciones de IA de Apple.
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft — Copilot.
+User-agent: Bingbot
+Allow: /
+
+# Meta — entrenamiento y funciones de IA.
+User-agent: meta-externalagent
+Allow: /
+
+# Common Crawl — insumo abierto de muchos modelos.
+User-agent: CCBot
+Allow: /
+
+# Amazon.
+User-agent: Amazonbot
+Allow: /
+
+# You.com.
+User-agent: YouBot
+Allow: /
+
+# Mistral.
+User-agent: MistralAI-User
+Allow: /
+
+# ---------------------------------------------------------------
+# Sitemap
+# ---------------------------------------------------------------
+Sitemap: https://www.revoapp.ai/sitemap.xml
