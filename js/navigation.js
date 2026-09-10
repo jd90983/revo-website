@@ -175,8 +175,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 document.addEventListener('click', (e) => {
   const button = e.target.closest('button');
   
-  // Check if it's a "Get Started" button
-  if (button && button.textContent.trim() === 'Get Started') {
+  // Check if it's a primary CTA that should scroll to the form
+  const ctaLabel = button ? button.textContent.trim() : '';
+  if (button && (ctaLabel === 'Get Started' || ctaLabel === 'Book more jobs')) {
     e.preventDefault();
     e.stopPropagation();
     

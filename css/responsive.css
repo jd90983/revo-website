@@ -94,7 +94,7 @@
   }
 
   .how-feature-title {
-    font-size: 28px;
+    font-size: 18px;
   }
 
   /* Benefits Section */
@@ -752,7 +752,7 @@
   }
 
   .hero-trust .trust-text::before {
-    content: "Trusted by 12,000+ Pros";
+    content: "Trusted by 12,000+ home service businesses";
     font-size: 16px; /* Match original font size */
     line-height: 1.5;
     display: block;
@@ -998,7 +998,7 @@
   }
 
   .how-feature-title {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   /* Benefits Section */
@@ -1631,7 +1631,7 @@
   }
 
   .how-feature-title {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .how-feature-description {

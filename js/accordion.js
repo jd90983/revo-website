@@ -39,7 +39,7 @@ function typewriterEffect(element, text) {
 // Select all accordion items from different FAQ sections
 function initAccordions() {
   const accordionItems = document.querySelectorAll(
-    '.accordion-item, .ind-faq-item, .locksmith-faq-item, .service-faq-item, .ser-faq-item, .home-service-faq-item, .industry-faq-item'
+    '.accordion-item, .ind-faq-item, .locksmith-faq-item, .service-faq-item, .ser-faq-item, .home-service-faq-item, .industry-faq-item, .pricing-faq-item'
   );
 
   accordionItems.forEach(item => {
@@ -50,7 +50,8 @@ function initAccordions() {
                      item.querySelector('.service-faq-question') ||
                      item.querySelector('.ser-faq-question') ||
                      item.querySelector('.home-service-faq-question') ||
-                     item.querySelector('.industry-faq-question');
+                     item.querySelector('.industry-faq-question') ||
+                     item.querySelector('.pricing-faq-question');
     
     // Find answer element (different selectors for different sections)
     const answer = item.querySelector('.accordion-answer') || 
@@ -59,7 +60,8 @@ function initAccordions() {
                    item.querySelector('.service-faq-answer') ||
                    item.querySelector('.ser-faq-answer') ||
                    item.querySelector('.home-service-faq-answer') ||
-                   item.querySelector('.industry-faq-answer');
+                   item.querySelector('.industry-faq-answer') ||
+                   item.querySelector('.pricing-faq-answer');
 
     if (question && answer && !question.dataset.accordionBound) {
       question.dataset.accordionBound = 'true';
@@ -67,9 +69,9 @@ function initAccordions() {
         const isOpen = item.classList.contains('active');
 
         // Close all accordion items in the same section
-        const section = item.closest('.faq-section, .ind-faq-section, .locksmith-section, .service-faq, .ser-faqs, .home-service-section, .industry-section');
+        const section = item.closest('.faq-section, .ind-faq-section, .locksmith-section, .service-faq, .ser-faqs, .home-service-section, .industry-section, .pricing-faq');
         const sectionItems = section ? section.querySelectorAll(
-          '.accordion-item, .ind-faq-item, .locksmith-faq-item, .service-faq-item, .ser-faq-item, .home-service-faq-item, .industry-faq-item'
+          '.accordion-item, .ind-faq-item, .locksmith-faq-item, .service-faq-item, .ser-faq-item, .home-service-faq-item, .industry-faq-item, .pricing-faq-item'
         ) : accordionItems;
 
         sectionItems.forEach(i => {
@@ -80,7 +82,8 @@ function initAccordions() {
                       i.querySelector('.service-faq-question') ||
                       i.querySelector('.ser-faq-question') ||
                       i.querySelector('.home-service-faq-question') ||
-                      i.querySelector('.industry-faq-question');
+                      i.querySelector('.industry-faq-question') ||
+                      i.querySelector('.pricing-faq-question');
           if (btn) {
             btn.setAttribute('aria-expanded', 'false');
           }
@@ -92,7 +95,7 @@ function initAccordions() {
           question.setAttribute('aria-expanded', 'true');
           
           // Typewriter effect for all views (mobile & desktop)
-          const answerText = answer.querySelector('.answer-text, .ser-faq-answer-text, .ind-faq-answer p, .ser-faq-answer p, .home-service-faq-answer p, .locksmith-faq-answer p, .industry-faq-answer p, p');
+          const answerText = answer.querySelector('.answer-text, .ser-faq-answer-text, .ind-faq-answer p, .ser-faq-answer p, .home-service-faq-answer p, .locksmith-faq-answer p, .industry-faq-answer p, .pricing-faq-answer p, p');
           if (answerText) {
             if (!answerText.dataset.originalText) {
               answerText.dataset.originalText = answerText.textContent;
