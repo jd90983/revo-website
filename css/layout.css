@@ -1230,6 +1230,10 @@ body.mobile-menu-open {
   text-align: center;
 }
 
+.hero-kicker {
+  margin-bottom: 16px;
+}
+
 .hero-title {
   font-size: var(--text-h1);
   font-family: var(--font-heading);
@@ -2579,96 +2583,71 @@ body.mobile-menu-open {
   transform: translateY(0);
 }
 
-/* Feature Column */
+/* Feature Column — glass cards, left-aligned like campaign .c1-step */
 .how-feature-column {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 24px;
-  text-align: center;
-  padding: 24px;
+  align-items: flex-start;
+  gap: 0;
+  text-align: left;
+  padding: 32px 28px;
   border-radius: 16px;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   overflow: hidden;
-}
-
-/* Glassmorphism effect on hover */
-.how-feature-column::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 16px;
-  opacity: 0;
-  transition: opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  pointer-events: none;
-  z-index: -1;
-}
-
-.how-feature-column:hover::before {
-  opacity: 1;
+  transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              background 0.3s ease,
+              border-color 0.3s ease;
 }
 
 .how-feature-column:hover {
   transform: translateY(-4px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
 }
 
-/* Glass effect always visible on mobile and tablet (no hover) */
-@media (max-width: 1023px) {
-  .how-feature-column::before {
-    opacity: 1;
-  }
-}
-
-/* Feature Icon */
+/* Feature Icon — orange, left-aligned (matches .c1-num accent) */
 .how-feature-icon {
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
   flex-shrink: 0;
-}
-
-.how-feature-icon path,
-.how-feature-icon circle {
-  fill: #ffffff;
-  stroke: #ffffff;
+  margin-bottom: 16px;
+  /* White SVG → brand orange #FA8932 */
+  filter: brightness(0) saturate(100%) invert(62%) sepia(58%) saturate(1200%) hue-rotate(346deg) brightness(102%) contrast(96%);
 }
 
 /* Feature Content */
 .how-feature-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 24px;
+  align-items: flex-start;
+  gap: 8px;
   width: 100%;
 }
 
 .how-feature-title {
   font-family: var(--font-heading);
   font-weight: var(--font-bold);
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.4;
-  letter-spacing: -0.22px;
+  letter-spacing: -0.18px;
   color: #ffffff;
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 .how-feature-description {
   font-family: var(--font-body);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 1.5;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.78);
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
 /* Actions */

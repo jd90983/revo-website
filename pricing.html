@@ -14,20 +14,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Primary Meta Tags -->
   <title>Pricing | Revo - AI Receptionist</title>
   <meta name="title" content="Pricing | Revo - AI Receptionist">
-  <meta name="description" content="Discover Revo's flexible pricing plans for AI receptionist services.">
+  <meta name="description" content="Revo Launch Offer pricing — Solo, Crew, and Fleet plans with 50% off. AI revenue agent minutes that scale with your business.">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://revo.app/pricing">
   <meta property="og:title" content="Pricing | Revo - AI Receptionist">
-  <meta property="og:description" content="Discover Revo's flexible pricing plans for AI receptionist services.">
+  <meta property="og:description" content="Revo Launch Offer — Solo, Crew, and Fleet plans with 50% off for early customers.">
   <meta property="og:image" content="/images/og-image.jpg">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://revo.app/pricing">
   <meta property="twitter:title" content="Pricing | Revo - AI Receptionist">
-  <meta property="twitter:description" content="Discover Revo's flexible pricing plans.">
+  <meta property="twitter:description" content="Revo Launch Offer — transparent pricing with 50% off launch.">
   <meta property="twitter:image" content="/images/twitter-image.jpg">
 
   <!-- Favicon -->
@@ -45,255 +45,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/ser.css">
+  <link rel="stylesheet" href="css/pricing.css">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend+Deca:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    /* Under Construction Specific Styles */
-    .under-construction {
-      min-height: calc(100vh - 72px - 200px);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: var(--space-3xl) var(--page-padding);
-      background: radial-gradient(circle at 50% 50%, rgba(15, 90, 215, 0.1) 0%, rgba(0, 0, 0, 0) 70%),
-                  linear-gradient(180deg, rgba(0, 0, 0, 0.95) 0%, rgba(34, 35, 36, 1) 100%);
-    }
-
-    .construction-container {
-      max-width: 900px;
-      margin: 0 auto;
-      text-align: center;
-    }
-
-    .construction-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 16px;
-      background: var(--color-primary);
-      border-radius: 100px;
-      font-size: var(--text-small);
-      font-weight: var(--font-medium);
-      color: var(--color-white);
-      margin-bottom: var(--space-lg);
-      font-family: var(--font-body);
-      }
-
-    .construction-badge svg {
-      width: 16px;
-      height: 16px;
-    }
-
-    .construction-container h1 {
-      font-size: 56px;
-      margin-bottom: var(--space-md);
-      color: var(--color-white);
-      font-weight: var(--font-bold);
-    }
-
-    .construction-container p {
-      font-size: var(--text-large);
-      line-height: var(--line-height-relaxed);
-      color: var(--color-white);
-      margin-bottom: var(--space-xl);
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .construction-actions {
-      display: flex;
-      gap: var(--space-md);
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-      margin-bottom: var(--space-2xl);
-    }
-
-    .construction-actions .btn-primary {
-      padding: 10px 24px;
-      font-size: 16px;
-      border-radius: 100px;
-      font-weight: 500;
-    }
-
-    .construction-actions .btn-link {
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid #FFFFFF;
-      color: var(--color-white);
-      font-family: var(--font-body);
-      font-size: 16px;
-      font-weight: var(--font-medium);
-      cursor: pointer;
-      text-decoration: none;
-      transition: background 0.3s ease;
-      padding: 10px 24px;
-      border-radius: 100px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .construction-actions .btn-link:hover {
-      background: rgba(255, 255, 255, 0.1);
-      text-decoration: none;
-    }
-
-    .construction-features {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: var(--space-lg);
-      margin-top: var(--space-2xl);
-      margin-bottom: var(--space-2xl);
-    }
-
-    .construction-feature-item {
-      padding: var(--space-lg);
-      background: rgba(34, 35, 36, 0.8);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: var(--radius-lg);
-      transition: all var(--transition-base);
-    }
-
-    .construction-feature-item:hover {
-      background: rgba(34, 35, 36, 1);
-      transform: translateY(-4px);
-    }
-
-    .construction-feature-item svg {
-      width: 48px;
-      height: 48px;
-      margin: 0 auto var(--space-md);
-      display: block;
-    }
-
-    .construction-feature-item h3 {
-      font-size: 20px;
-      font-weight: var(--font-bold);
-      margin-bottom: var(--space-xs);
-      color: var(--color-white);
-      text-align: center;
-    }
-
-    .construction-feature-item p {
-      font-size: var(--text-small);
-      color: var(--color-gray-light);
-      margin: 0;
-      text-align: center;
-    }
-
-    .construction-newsletter {
-      margin-top: var(--space-2xl);
-      padding-top: var(--space-2xl);
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .newsletter-form-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 12px;
-      margin-bottom: 0;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .newsletter-input-wrapper {
-      position: relative;
-      flex: 1;
-    }
-
-    .newsletter-input-wrapper svg {
-      position: absolute;
-      left: 16px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 20px;
-      height: 20px;
-      color: var(--color-gray-light);
-    }
-
-    .newsletter-input {
-      width: 100%;
-      padding: 12px 16px 12px 48px;
-      background: rgba(34, 35, 36, 0.8);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: var(--radius-md);
-      color: var(--color-white);
-      font-family: var(--font-body);
-      font-size: var(--text-regular);
-      outline: none;
-      transition: all var(--transition-fast);
-    }
-
-    .newsletter-input::placeholder {
-      color: var(--color-gray-light);
-    }
-
-    .newsletter-input:focus {
-      border-color: var(--color-primary);
-      background: rgba(34, 35, 36, 1);
-    }
-
-    .newsletter-button {
-      padding: 12px 24px;
-      background: var(--color-primary);
-      color: var(--color-white);
-      border: none;
-      border-radius: var(--radius-md);
-      font-family: var(--font-body);
-      font-size: var(--text-regular);
-      font-weight: var(--font-medium);
-      cursor: pointer;
-      transition: background var(--transition-fast);
-      white-space: nowrap;
-    }
-
-    .newsletter-button:hover {
-      background: var(--color-primary-dark);
-    }
-
-    .newsletter-text {
-      font-size: var(--text-small);
-      color: var(--color-white);
-      margin-bottom: var(--space-sm);
-      margin-top: 0;
-    }
-
-    @media (max-width: 767px) {
-      .construction-container h1 {
-        font-size: 40px;
-      }
-
-      .construction-features {
-        grid-template-columns: 1fr;
-      }
-
-      .construction-actions {
-        flex-direction: column;
-        gap: var(--space-sm);
-      }
-
-      .construction-actions .btn-primary,
-      .construction-actions .btn-link {
-        width: 100%;
-        text-align: center;
-        padding: 10px 24px;
-      }
-
-      .newsletter-form-wrapper {
-        flex-direction: column;
-      }
-
-      .newsletter-input-wrapper,
-      .newsletter-button {
-        width: 100%;
-      }
-    }
-  </style>
 
 <!-- Meta Pixel Code -->
 <script>
@@ -620,73 +376,406 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- Main Content -->
   <main id="main-content">
-    <section class="under-construction">
-      <div class="construction-container">
-        <div class="construction-badge">
-          <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M8 2L6 4L7.5 5.5L4.5 8.5L2 6L1 7L4 10L7 13L8 12L5.5 9.5L8.5 6.5L10 8L12 6L10 4L8 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="10.5" cy="10.5" r="1.5" fill="currentColor"/>
-          </svg>
-          <span>Coming Soon</span>
+    <section class="pricing-page" aria-labelledby="pricing-heading">
+      <!-- Top half: same wave background as How It Works -->
+      <div class="pricing-bg-how" aria-hidden="true">
+        <div class="background-layer">
+          <video class="how-it-works-spline-viewer" autoplay muted loop playsinline preload="metadata">
+            <source src="https://pub-a31a6b30258b4296b134c12e4ff440c6.r2.dev/how_it_works_background.webm" type="video/webm">
+          </video>
         </div>
+      </div>
 
-        <h1>Pricing Plans Under Construction</h1>
-        <p>
-          We're crafting flexible pricing plans designed to fit businesses of all sizes.
-          From startups to enterprises, Revo will offer transparent, value-driven options
-          that scale with your needs.
-        </p>
+      <div class="pricing-page-container">
+        <header class="pricing-header">
+          <span class="pricing-section-eyebrow">Pricing</span>
+          <h1 id="pricing-heading">
+            <span class="pricing-brand">Revo</span> that grows with your business
+          </h1>
+          <p class="pricing-header-lead">
+            Revenue agent minutes with transparent plans. No hidden fees — just a 24/7 agent that books jobs for your business.
+          </p>
+        </header>
 
-        <div class="construction-actions">
-          <button class="btn-primary" onclick="window.location.href='index.html'">Back to Home</button>
-          <a href="tel:+18445231919" class="btn-link">Contact Sales</a>
-        </div>
-
-        <div class="construction-features">
-          <div class="construction-feature-item">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="8" fill="rgba(15, 90, 215, 0.1)"/>
-              <path d="M16 20H32M16 24H32M16 28H32" stroke="#fa8932" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M20 16V32M24 16V32M28 16V32" stroke="#fa8932" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
-            <h3>Flexible Plans</h3>
-            <p>Options tailored to your business size and call volume</p>
-          </div>
-
-          <div class="construction-feature-item">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="8" fill="rgba(15, 90, 215, 0.1)"/>
-              <circle cx="24" cy="18" r="6" stroke="#fa8932" stroke-width="2.5"/>
-              <circle cx="24" cy="18" r="3" fill="#fa8932"/>
-              <path d="M14 30C14 26 18 23 24 23C30 23 34 26 34 30" stroke="#fa8932" stroke-width="2.5" stroke-linecap="round"/>
-              <path d="M12 12L36 36" stroke="#fa8932" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
-            <h3>No Hidden Fees</h3>
-            <p>Transparent pricing with no surprises</p>
-          </div>
-
-          <div class="construction-feature-item">
-            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect width="48" height="48" rx="8" fill="rgba(15, 90, 215, 0.1)"/>
-              <path d="M16 32L20 24L24 28L28 20L32 32" stroke="#fa8932" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14 34H34" stroke="#fa8932" stroke-width="2.5" stroke-linecap="round"/>
-            </svg>
-            <h3>Easy Scaling</h3>
-            <p>Upgrade or downgrade anytime as your business grows</p>
-          </div>
-        </div>
-
-        <div class="construction-newsletter">
-          <p class="newsletter-text">Be the first to know when our pricing plans go live.</p>
-          <form class="newsletter-form-wrapper" onsubmit="event.preventDefault();">
-            <div class="newsletter-input-wrapper">
-              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 4L10 10L17 4M3 4H17V16H3V4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <input type="email" class="newsletter-input" placeholder="Enter your email" required>
+        <div class="pricing-cards">
+          <!-- Solo -->
+          <article class="pricing-card">
+            <div class="pricing-card-hero">
+              <div class="pricing-card-hero-main">
+                <div class="pricing-card-top">
+                  <h2 class="pricing-card-name">Solo</h2>
+                  <p class="pricing-card-tag">One tech</p>
+                </div>
+                <div class="pricing-card-price-block">
+                  <div class="pricing-card-price">
+                    <span class="pricing-card-amount">$87.50</span>
+                    <span class="pricing-card-period">/mo</span>
+                  </div>
+                  <div class="pricing-card-compare">
+                    <span class="pricing-card-was">$175</span>
+                    <span class="pricing-card-save">50% off launch</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pricing-card-hero-aside">
+                <span class="pricing-card-minutes">100 min</span>
+              </div>
             </div>
-            <button type="submit" class="newsletter-button">Notify Me</button>
-          </form>
+
+            <a class="btn-primary pricing-card-cta" href="index.html#get-started-form-template-container">Get Started</a>
+
+            <ul class="pricing-card-features">
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">100 minutes included</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">24/7 revenue agent</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Books appointments</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Your own script, hours and rules</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">SMS follow-up</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Call dashboard with summaries</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Calls under 20 seconds are free</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">No hidden fees</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature is-off">
+                <span class="pricing-feature-label">Transfers calls to your team</span>
+                <svg class="pricing-feature-icon off" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
+              </li>
+              <li class="pricing-feature is-off">
+                <span class="pricing-feature-label">WhatsApp follow-up</span>
+                <svg class="pricing-feature-icon off" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
+              </li>
+              <li class="pricing-feature is-off">
+                <span class="pricing-feature-label">Connects to your field service software</span>
+                <svg class="pricing-feature-icon off" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
+              </li>
+              <li class="pricing-feature is-off">
+                <span class="pricing-feature-label">Call recordings and transcripts</span>
+                <svg class="pricing-feature-icon off" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
+              </li>
+              <li class="pricing-feature is-off">
+                <span class="pricing-feature-label">Dedicated onboarding</span>
+                <svg class="pricing-feature-icon off" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
+              </li>
+              <li class="pricing-feature is-off">
+                <span class="pricing-feature-label">Trained on your own calls</span>
+                <svg class="pricing-feature-icon off" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
+              </li>
+              <li class="pricing-feature is-off">
+                <span class="pricing-feature-label">Multiple numbers and locations</span>
+                <svg class="pricing-feature-icon off" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
+              </li>
+              <li class="pricing-feature is-off">
+                <span class="pricing-feature-label">24/7 support + account manager</span>
+                <svg class="pricing-feature-icon off" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Crew -->
+          <article class="pricing-card is-popular">
+            <span class="pricing-card-badge">Popular</span>
+            <div class="pricing-card-hero">
+              <div class="pricing-card-hero-main">
+                <div class="pricing-card-top">
+                  <h2 class="pricing-card-name">Crew</h2>
+                  <p class="pricing-card-tag">One crew</p>
+                </div>
+                <div class="pricing-card-price-block">
+                  <div class="pricing-card-price">
+                    <span class="pricing-card-amount">$175</span>
+                    <span class="pricing-card-period">/mo</span>
+                  </div>
+                  <div class="pricing-card-compare">
+                    <span class="pricing-card-was">$350</span>
+                    <span class="pricing-card-save">50% off launch</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pricing-card-hero-aside">
+                <span class="pricing-card-minutes">200 min</span>
+              </div>
+            </div>
+
+            <a class="btn-primary pricing-card-cta" href="index.html#get-started-form-template-container">Get Started</a>
+
+            <ul class="pricing-card-features">
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">200 minutes included</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">24/7 revenue agent</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Books appointments</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Your own script, hours and rules</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">SMS follow-up</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Call dashboard with summaries</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Calls under 20 seconds are free</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">No hidden fees</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Transfers calls to your team <span class="pricing-feature-new">New</span></span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">WhatsApp follow-up</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Connects to your field service software</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Call recordings and transcripts</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Dedicated onboarding</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature is-off">
+                <span class="pricing-feature-label">Trained on your own calls</span>
+                <svg class="pricing-feature-icon off" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
+              </li>
+              <li class="pricing-feature is-off">
+                <span class="pricing-feature-label">Multiple numbers and locations</span>
+                <svg class="pricing-feature-icon off" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
+              </li>
+              <li class="pricing-feature is-off">
+                <span class="pricing-feature-label">24/7 support + account manager</span>
+                <svg class="pricing-feature-icon off" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/></svg>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Fleet -->
+          <article class="pricing-card">
+            <div class="pricing-card-hero">
+              <div class="pricing-card-hero-main">
+                <div class="pricing-card-top">
+                  <h2 class="pricing-card-name">Fleet</h2>
+                  <p class="pricing-card-tag">Multi-location</p>
+                </div>
+                <div class="pricing-card-price-block">
+                  <div class="pricing-card-price">
+                    <span class="pricing-card-amount">$350</span>
+                    <span class="pricing-card-period">/mo</span>
+                  </div>
+                  <div class="pricing-card-compare">
+                    <span class="pricing-card-was">$700</span>
+                    <span class="pricing-card-save">50% off launch</span>
+                  </div>
+                </div>
+              </div>
+              <div class="pricing-card-hero-aside">
+                <span class="pricing-card-minutes">400 min</span>
+              </div>
+            </div>
+
+            <a class="btn-primary pricing-card-cta" href="index.html#get-started-form-template-container">Get Started</a>
+
+            <ul class="pricing-card-features">
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">400 minutes included</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">24/7 revenue agent</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Books appointments</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Your own script, hours and rules</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">SMS follow-up</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Call dashboard with summaries</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Calls under 20 seconds are free</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">No hidden fees</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Transfers calls to your team</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">WhatsApp follow-up</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Connects to your field service software</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Call recordings and transcripts</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Dedicated onboarding</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Trained on your own calls <span class="pricing-feature-new">New</span></span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">Multiple numbers and locations</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+              <li class="pricing-feature">
+                <span class="pricing-feature-label">24/7 support + account manager</span>
+                <svg class="pricing-feature-icon on" viewBox="0 0 18 18" fill="none" aria-hidden="true"><circle cx="9" cy="9" r="8" stroke="currentColor" stroke-width="1.5"/><path d="M5.5 9.2l2.2 2.2 4.8-4.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transform CTA — same section as Industries -->
+    <div id="transform-cta-template-container"></div>
+
+    <section class="ser-faqs animate-in" id="faq" aria-labelledby="pricing-faq-heading">
+      <div class="ser-faq-section-container">
+        <div class="ser-faq-wrapper">
+          <div class="ser-faq-left">
+            <div class="ser-faq-header">
+              <h2 class="ser-faq-title" id="pricing-faq-heading">FAQs</h2>
+              <p class="ser-faq-description">Everything you need to know about Revo Launch Offer pricing.</p>
+            </div>
+          </div>
+          <div class="ser-faq-accordion-list">
+            <div class="ser-faq-item">
+              <div class="ser-faq-question" role="button" tabindex="0" aria-expanded="false">
+                <p class="ser-faq-question-text">What's included in the Launch Offer?</p>
+                <div class="ser-faq-icon">
+                  <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M8 20L16 12L24 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ser-faq-answer">
+                <p class="ser-faq-answer-text">Launch Offer plans include revenue agent minutes, 24/7 answering, appointment booking, your own script and rules, SMS follow-up, call summaries, free calls under 20 seconds, and no hidden fees. Higher tiers add transfers, WhatsApp, software connections, recordings, onboarding, and more.</p>
+              </div>
+            </div>
+            <div class="ser-faq-item">
+              <div class="ser-faq-question" role="button" tabindex="0" aria-expanded="false">
+                <p class="ser-faq-question-text">How does the 50% off launch pricing work?</p>
+                <div class="ser-faq-icon">
+                  <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M8 20L16 12L24 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ser-faq-answer">
+                <p class="ser-faq-answer-text">Early customers lock in Launch Offer rates — Solo at $87.50/mo, Crew at $175/mo, and Fleet at $350/mo — which is 50% off the list price shown on each plan.</p>
+              </div>
+            </div>
+            <div class="ser-faq-item">
+              <div class="ser-faq-question" role="button" tabindex="0" aria-expanded="false">
+                <p class="ser-faq-question-text">What happens if I use all my minutes?</p>
+                <div class="ser-faq-icon">
+                  <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M8 20L16 12L24 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ser-faq-answer">
+                <p class="ser-faq-answer-text">Your plan includes a set number of revenue agent minutes each month. If you need more capacity, you can upgrade to the next plan or talk with our team about adding minutes so you never miss a call.</p>
+              </div>
+            </div>
+            <div class="ser-faq-item">
+              <div class="ser-faq-question" role="button" tabindex="0" aria-expanded="false">
+                <p class="ser-faq-question-text">Can I change plans later?</p>
+                <div class="ser-faq-icon">
+                  <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M8 20L16 12L24 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ser-faq-answer">
+                <p class="ser-faq-answer-text">Yes. You can move between Solo, Crew, and Fleet as your call volume grows. Upgrade or adjust anytime so your pricing stays aligned with your business.</p>
+              </div>
+            </div>
+            <div class="ser-faq-item">
+              <div class="ser-faq-question" role="button" tabindex="0" aria-expanded="false">
+                <p class="ser-faq-question-text">Are calls under 20 seconds really free?</p>
+                <div class="ser-faq-icon">
+                  <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M8 20L16 12L24 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ser-faq-answer">
+                <p class="ser-faq-answer-text">Yes. Short calls under 20 seconds do not count against your included minutes, so hang-ups and quick wrong-number calls don't eat into your plan.</p>
+              </div>
+            </div>
+            <div class="ser-faq-item">
+              <div class="ser-faq-question" role="button" tabindex="0" aria-expanded="false">
+                <p class="ser-faq-question-text">Do you connect to my field service software?</p>
+                <div class="ser-faq-icon">
+                  <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M8 20L16 12L24 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div class="ser-faq-answer">
+                <p class="ser-faq-answer-text">Crew and Fleet include connections to your field service software so bookings and call data sync with your existing workflow. Solo focuses on core answering and booking features.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -820,5 +909,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- JavaScript -->
   <script src="js/navigation.js" defer></script>
   <script src="js/main.js" defer></script>
+  <script src="js/accordion.js" defer></script>
+  <script src="js/template-loader.js" defer></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      loadTemplate('templates/transform-cta-section.html', '#transform-cta-template-container');
+    });
+  </script>
 </body>
 </html>
