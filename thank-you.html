@@ -17,6 +17,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="title" content="Thank You - Revo | We'll Be In Touch Soon">
   <meta name="description" content="Thank you for your interest in Revo. We'll contact you soon to guide you through the next steps to start using our AI receptionist platform.">
 
+  <link rel="canonical" href="https://www.revoapp.ai/thank-you.html">
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://revo.app/thank-you">
@@ -70,6 +71,78 @@ src="https://www.facebook.com/tr?id=2435811520564771&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
+<!-- TikTok Pixel (definition only; fires after ad consent via installRevoTikTokPixel) -->
+<script>
+(function (window, document) {
+  var installed = false;
+
+  window.installRevoTikTokPixel = function () {
+    if (installed) return;
+    installed = true;
+
+    window.TiktokAnalyticsObject = 'ttq';
+
+    var ttq = window.ttq = window.ttq || [];
+
+    ttq.methods = [
+      'page', 'track', 'identify', 'instances', 'debug',
+      'on', 'off', 'once', 'ready', 'alias', 'group',
+      'enableCookie', 'disableCookie', 'holdConsent',
+      'revokeConsent', 'grantConsent'
+    ];
+
+    ttq.setAndDefer = function (target, method) {
+      target[method] = function () {
+        target.push(
+          [method].concat(Array.prototype.slice.call(arguments, 0))
+        );
+      };
+    };
+
+    for (var index = 0; index < ttq.methods.length; index++) {
+      ttq.setAndDefer(ttq, ttq.methods[index]);
+    }
+
+    ttq.instance = function (pixelId) {
+      var instance = ttq._i[pixelId] || [];
+
+      for (var index = 0; index < ttq.methods.length; index++) {
+        ttq.setAndDefer(instance, ttq.methods[index]);
+      }
+
+      return instance;
+    };
+
+    ttq.load = function (pixelId, options) {
+      var source = 'https://analytics.tiktok.com/i18n/pixel/events.js';
+
+      ttq._i = ttq._i || {};
+      ttq._i[pixelId] = [];
+      ttq._i[pixelId]._u = source;
+
+      ttq._t = ttq._t || {};
+      ttq._t[pixelId] = +new Date();
+
+      ttq._o = ttq._o || {};
+      ttq._o[pixelId] = options || {};
+
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = source + '?sdkid=' + pixelId + '&lib=ttq';
+
+      document.head.appendChild(script);
+    };
+
+    ttq.load('DARE3CJC77U88MSO6OQ0');
+    ttq.grantConsent();
+    ttq.page();
+  };
+})(window, document);
+</script>
+<!-- End TikTok Pixel -->
+
+
 <script>fbq('track', 'Lead');</script>
 
 </head>
@@ -88,7 +161,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- Left Section - Logo & Navigation -->
       <div class="navbar-left">
       <div class="navbar-logo">
-        <a href="index.html">
+        <a href="/">
             <img src="images/logo.webp" alt="Revo - AI Receptionist" width="75" height="19">
         </a>
       </div>
@@ -303,7 +376,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="mobile-menu-overlay" id="mobileMenuOverlay">
     <div class="mobile-menu-header">
       <div class="mobile-menu-logo">
-        <a href="index.html">
+        <a href="/">
           <img src="images/logo.webp" alt="Revo" width="75" height="19">
         </a>
       </div>
@@ -390,7 +463,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             Your submission has been received. Our team is currently reviewing your profile to tailor the perfect AI receptionist for your needs and provide more information and guide you through the next steps to start using the Revo platform and service.
           </p>
           <div class="thank-you-hero-actions">
-            <a href="index.html" class="thank-you-hero-btn-primary">Return to Home</a>
+            <a href="/" class="thank-you-hero-btn-primary">Return to Home</a>
             <a href="tel:+18445231919" class="thank-you-hero-btn-secondary">
               <svg class="phone-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
