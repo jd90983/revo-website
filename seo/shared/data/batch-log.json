@@ -8,5 +8,33 @@
     },
     "appliedAt": "2026-10-08",
     "changes": []
+  },
+  {
+    "batchId": "2026-10-08-second-five",
+    "batchHash": "sha256:b153523bf37780852fe736046b6a0ed659ad746fbce5e2c35c2d8d7a9c266bf4",
+    "source": {
+      "kind": "manual",
+      "reference": "Authorized second October 8 batch; Sentinel_31743d7c0fe081918f57addac5d853c0; official Services and Pricing reviewed 2026-10-08"
+    },
+    "appliedAt": "2026-10-08",
+    "changes": [
+      "added bilingual-answering as draft",
+      "added answering-service-cost as draft",
+      "added appointment-booking as draft",
+      "added overflow-answering as draft",
+      "added lead-qualification as draft"
+    ]
+  },
+  {
+    "batchId": "2026-10-08-second-five-offer-clarification",
+    "batchHash": "sha256:224bd0c1ed5a19158306855d72dca3bdab648a43ebfc562cad540eadb83dd9cc",
+    "source": {
+      "kind": "manual",
+      "reference": "Authorized PR46 editorial correction from independent review; neutral Launch Offer terms wording"
+    },
+    "appliedAt": "2026-10-08",
+    "changes": [
+      "updated answering-service-cost; back to draft until re-approved"
+    ]
   }
 ]
