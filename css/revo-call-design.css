@@ -10,3 +10,5 @@ body:has(.revo-approved){margin:0;background:#f5f4f0}.revo-approved.revo-approve
 
 /* SVG decoration avoids platform-dependent arrow glyph fallback. */
 .revo-approved.revo-approved .signals span::before{content:"";display:inline-block;width:1em;height:1em;background:center/contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5 3v9h10m-4-4 4 4-4 4' stroke='%23fa8932' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}
+
+.revo-approved.revo-approved .btn::after{content:"";display:inline-block;width:1em;height:1em;background:center/contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M5 15 15 5M5 5h10v10' stroke='%23111' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")}.revo-approved.revo-approved .related a svg{display:inline-block;vertical-align:middle}.revo-approved.revo-approved .faq details[open] summary::after{content:"−";font-family:Arial,sans-serif}
