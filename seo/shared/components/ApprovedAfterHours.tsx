@@ -39,7 +39,7 @@ const approvedHtml=`<header class="nav">
 <div class="tag">Illustrative workflow</div>
 <div class="sampletitle">Office closed. Next step clear.</div>
 </div>
-<span class="call-symbol">☾</span>
+<span class="call-symbol" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" focusable="false"><path d="M13 3a7 7 0 1 0 4 11A7 7 0 0 1 13 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
 </div>
 <div class="flowstep">
 <b>1</b>
@@ -120,13 +120,13 @@ const approvedHtml=`<header class="nav">
 <h3>Office closed</h3>
 <p>Use your closed-office greeting and approved callback expectation.</p>
 </div>
-<span>→</span>
+<span aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" focusable="false"><path d="M3 10h14m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
 <div>
 <b>WEEKENDS</b>
 <h3>Coverage changes</h3>
 <p>Define who reviews routine requests and caller-reported urgency.</p>
 </div>
-<span>→</span>
+<span aria-hidden="true"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" focusable="false"><path d="M3 10h14m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
 <div>
 <b>HOLIDAYS</b>
 <h3>Plan the exception</h3>
@@ -176,8 +176,8 @@ const approvedHtml=`<header class="nav">
 </div>
 <div class="related">
 <span>Keep exploring</span>
-<a href="/ai-answering-service/overflow-answering">Office-hours backup ↗</a>
-<a href="/ai-answering-service/answering-service-cost">Budget and coverage ↗</a>
+<a href="/ai-answering-service/overflow-answering">Office-hours backup <svg width="12" height="12" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false"><path d="M5 15 15 5M5 5h10v10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a href="/ai-answering-service/answering-service-cost">Budget and coverage <svg width="12" height="12" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false"><path d="M5 15 15 5M5 5h10v10" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 </div>
 </div>
 </section>
