@@ -2,7 +2,7 @@
 import {useRef} from "react";
 import {clickAnalyticsPayload} from "@/lib/funnel-config";
 import {clickRecorder, CONSENT_KEY} from "@/lib/funnel-navigation";
-/* Approved illustrative design; only used on the after-hours public route. */
+/* Final service content; only used on the after-hours public route. */
 const approvedHtml=`<header class="nav">
 <div class="wrap navinner">
 <a href="/" rel="noopener">
@@ -29,43 +29,19 @@ const approvedHtml=`<header class="nav">
 <p>Give callers a useful response when the office is closed. Revo captures their request using your script and rules, with expectations that match your service hours.</p>
 <div class="actions">
 <a class="btn" href="/pricing.html" rel="noopener">Compare plans</a>
-<a class="textlink" href="#example">See the call flow</a>
+<a class="textlink" href="#call-handling">How after-hours handling works</a>
 </div>
 <p class="hero-foot">Phone coverage does not establish technician availability.</p>
 </div>
-<div class="example flow" id="example">
-<div class="sampletop">
-<div>
-<div class="tag">Illustrative workflow</div>
-<div class="sampletitle">Office closed. Next step clear.</div>
-</div>
-<span class="call-symbol" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 20 20" fill="none" focusable="false"><path d="M13 3a7 7 0 1 0 4 11A7 7 0 0 1 13 3Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
-</div>
-<div class="flowstep">
-<b>1</b>
-<span>State the office hours</span>
-</div>
-<div class="connector">
-</div>
-<div class="flowstep">
-<b>2</b>
-<span>Collect the request + callback details</span>
-</div>
-<div class="connector">
-</div>
-<div class="branches">
-<div class="branch">
-<strong>Routine request</strong>
-<span>Office review</span>
-</div>
-<div class="branch">
-<strong>Caller reports urgency</strong>
-<span>Approved escalation policy</span>
-</div>
-</div>
-<div class="end">Explain the next step your team can support</div>
-<p class="example-note">Illustrative workflow. Configure and test before use.</p>
-</div>
+<aside class="service-panel" id="call-handling" aria-label="After-hours call handling">
+<div class="panel-heading"><div class="tag">After-hours call handling</div><h2 class="panel-title">A clear process when the office is closed.</h2></div>
+<ol class="service-flow">
+<li><h3>Set caller expectations.</h3><p>Your script states office hours and the callback expectations your team supports.</p></li>
+<li><h3>Collect the request.</h3><p>Revo captures the requested work and callback details for follow-up.</p></li>
+<li><h3>Follow your handoff rules.</h3><p>Routine requests go to office review. Caller-reported urgency follows your approved escalation policy.</p></li>
+</ol>
+<div class="panel-next-step"><h3>Your team owns the next step.</h3><p>Review the call summary and follow up according to your operating rules. Team transfers depend on your plan and supported setup.</p></div>
+</aside>
 </div>
 </div>
 </section>
