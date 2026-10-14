@@ -8,14 +8,15 @@ import {publicRoutes} from '../../app/tools/routes.mjs';
 import {contentHash,registryErrors} from '../lib/registry-contract.mjs';
 
 const guides=REVIEW_PAGES.filter(p=>p.template==='workflow'&&p.publicationStatus!=='withdrawn');
-test('measured workflow drafts stay out of routes and have no acquisition controls',()=>{
+test('twenty measured guides obey publication approval and have no acquisition controls',()=>{
  assert.equal(guides.length,20);
  assert.equal(new Set(guides.map(page=>page.slug)).size,20);
  assert.ok(!guides.some(page=>['after-hours','industry_plumbing.html'].includes(page.slug)));
  const routes=publicRoutes(REVIEW_PAGES,{navigationLimit:6});
  for(const page of guides){
-  assert.equal(page.publicationStatus,'draft');
-  assert.ok(!routes.includes('/ai-answering-service/'+page.slug));
+  assert.ok(['draft','approved'].includes(page.publicationStatus));
+  assert.equal(routes.includes('/ai-answering-service/'+page.slug),page.publicationStatus==='approved');
+  if(page.publicationStatus==='approved')assert.equal(page.review.contentHash,contentHash(page));
   const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page}));
   assert.equal((html.match(/<main\b/g)||[]).length,1);
   assert.equal((html.match(/<h1\b/g)||[]).length,1);

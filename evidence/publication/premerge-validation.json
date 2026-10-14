@@ -1,0 +1,20 @@
+{
+  "approved_new_guides": 20,
+  "preserved_existing_guides": 10,
+  "withdrawn_prior_drafts": 20,
+  "tests": 18,
+  "fixtures": "passed",
+  "premerge_browser_cases": 40,
+  "premerge_browser_failures": 0,
+  "approved_design_prior_widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "public_routes": 31,
+  "internal_links": 1451,
+  "main_before": "a008a965f549ffd7724a3cf3dd23648ec1175673",
+  "approved_design_commit": "0b015f6",
+  "authorization": "Sentinel_094e822bba208191bfad705faa713739"
+}

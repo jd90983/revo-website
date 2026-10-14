@@ -1,0 +1,5 @@
+{
+  "previous_production_url": "https://revo-website-d0wquj6zv-group-u.vercel.app",
+  "previous_main_sha": "a008a965f549ffd7724a3cf3dd23648ec1175673",
+  "rollback": "Vercel rollback to recorded previous production deployment; revert publication commit on main to keep Git consistent. No DNS change."
+}

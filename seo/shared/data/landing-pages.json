@@ -2360,7 +2360,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14: ai call summary volume 210 KD29; prompt campaign 5412332; source-checked editorial draft"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:9228749346a9548a868bed6f9dde611d30639c2c8e072b5a9c2bdbfb58251ceb",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "business-call-recording",
@@ -2434,7 +2440,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:df863d92ab6c55ba59fa1c82a394efc2a5aeb6b44a2fbddef3db73fed5ed25f9",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "call-transcription",
@@ -2508,7 +2520,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:61e6547514813b50afcf6ca73dd44e79d3c24f252bb87d006ad43fde1232bf66",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "compare/warm-vs-cold-transfer",
@@ -2583,7 +2601,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:98947596b57a114a6b4ec57abb3fd70973a82ba4492867a73121a0683d76b42f",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "phone-answering-script",
@@ -2658,7 +2682,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:c476eed00ffed7b206666af7a2c54821839dd084c161fa38fae87398dd2aa8d3",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "choose-virtual-receptionist",
@@ -2733,7 +2763,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:944785542df1ab22a7e3527fe197b598356ef036bf0bbbceec31b0df73390f3c",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "compare/virtual-receptionist-vs-answering-service",
@@ -2808,7 +2844,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:e28f03b3318ee25bac286384594f42844cbf22b1b486aea24c3b60c817f59387",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "missed-call-text-back",
@@ -2883,7 +2925,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:ec8cdd9208ecd374f72cf945342de85f1398e313c0784916a5a612d52348a247",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "conditional-call-forwarding",
@@ -2959,7 +3007,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:17ef5ed7811dfcefbc22a98b6fa0b3dc4e41664132fc0791cc81ce4179b214dc",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "landline-call-forwarding",
@@ -3034,7 +3088,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:f660d9341e5749fb1f4248bedb1b6075cfa948ed298a422652f4057a951ee78b",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "call-routing",
@@ -3109,7 +3169,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:c844b4be0fa730b16eeaf3bbb3bc0a68f4bebb1f4e43b5ff0b20b8f2ece11cfb",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "call-transfer-language",
@@ -3184,7 +3250,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:5b0f5aee98b0d952ab5572dd44cec6e557009d3fa0ccc801fe01dae59a3fbc89",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "t-mobile-call-forwarding",
@@ -3259,7 +3331,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:7ca3d6b588684651a11a97f967cdde6682e129292cbc39e597e691af91f57d56",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "verizon-call-forwarding",
@@ -3334,7 +3412,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:d91e2d781589ae7696b0bb536d381e8391c5665f31b7ec57255d93d3cd1917e5",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "phone-number-porting",
@@ -3410,7 +3494,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:7370034cf78cbd0f757c4c89904d1470ee056206ef3085901ecea8e359f7a453",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "pay-as-you-go-answering-service",
@@ -3485,7 +3575,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:5f142f44c7226b1c1e0deef3029705cd6b866c8833ef99858a35e417a7de54c8",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "call-screening",
@@ -3561,7 +3657,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:7b7b684f89ac2ed2c7bc022782bc9bb503b368a6d2067a2327f18391f1594c2b",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "turn-off-call-forwarding",
@@ -3636,7 +3738,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:5f8c4921562f032da402a62967568a5af21934e0ad59e5f756ad2d52d3ff6220",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "appointment-reminders",
@@ -3711,7 +3819,13 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:f960107294ab7bfe1573156d877a3f9fbe93c1632f2c8c6d70b9dd46e013513a",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   },
   {
     "slug": "ivr-system-cost",
@@ -3786,6 +3900,12 @@
       "kind": "manual",
       "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit publication approval",
+      "reviewedAt": "2026-10-14",
+      "contentHash": "sha256:d12c85556fce8ccff6231a91d3b2a0259affeeb7dedb23453446168f18a70e75",
+      "note": "Sentinel_094e822bba208191bfad705faa713739: publish all20 following approved HOME-aligned design0b015f6; prior withdrawn drafts excluded."
+    }
   }
 ]

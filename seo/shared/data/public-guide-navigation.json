@@ -48,5 +48,105 @@
     "slug": "lead-qualification",
     "label": "Service intake",
     "template": null
+  },
+  {
+    "slug": "ai-call-summary",
+    "label": "From call to follow-up",
+    "template": "workflow"
+  },
+  {
+    "slug": "business-call-recording",
+    "label": "Business call recording",
+    "template": "workflow"
+  },
+  {
+    "slug": "call-transcription",
+    "label": "Call transcription",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/warm-vs-cold-transfer",
+    "label": "Warm vs cold transfer",
+    "template": "workflow"
+  },
+  {
+    "slug": "phone-answering-script",
+    "label": "Phone answering script",
+    "template": "workflow"
+  },
+  {
+    "slug": "choose-virtual-receptionist",
+    "label": "Choose a receptionist",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/virtual-receptionist-vs-answering-service",
+    "label": "Receptionist vs answering",
+    "template": "workflow"
+  },
+  {
+    "slug": "missed-call-text-back",
+    "label": "Missed-call text-back",
+    "template": "workflow"
+  },
+  {
+    "slug": "conditional-call-forwarding",
+    "label": "Conditional forwarding",
+    "template": "workflow"
+  },
+  {
+    "slug": "landline-call-forwarding",
+    "label": "Landline forwarding",
+    "template": "workflow"
+  },
+  {
+    "slug": "call-routing",
+    "label": "Call routing",
+    "template": "workflow"
+  },
+  {
+    "slug": "call-transfer-language",
+    "label": "Call transfer language",
+    "template": "workflow"
+  },
+  {
+    "slug": "t-mobile-call-forwarding",
+    "label": "T-Mobile forwarding",
+    "template": "workflow"
+  },
+  {
+    "slug": "verizon-call-forwarding",
+    "label": "Verizon forwarding",
+    "template": "workflow"
+  },
+  {
+    "slug": "phone-number-porting",
+    "label": "Phone number porting",
+    "template": "workflow"
+  },
+  {
+    "slug": "pay-as-you-go-answering-service",
+    "label": "Pay-as-you-go answering",
+    "template": "workflow"
+  },
+  {
+    "slug": "call-screening",
+    "label": "Call screening",
+    "template": "workflow"
+  },
+  {
+    "slug": "turn-off-call-forwarding",
+    "label": "Turn off forwarding",
+    "template": "workflow"
+  },
+  {
+    "slug": "appointment-reminders",
+    "label": "Appointment reminders",
+    "template": "workflow"
+  },
+  {
+    "slug": "ivr-system-cost",
+    "label": "IVR system cost",
+    "template": "workflow"
   }
 ]
