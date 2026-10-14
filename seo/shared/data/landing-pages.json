@@ -2898,7 +2898,7 @@
         "title": "Choose the condition rather than forwarding everything.",
         "paragraphs": [
           "Immediate forwarding sends incoming calls to another destination without first trying the original line. Conditional forwarding gives the original line a chance to answer under the selected conditions. A device menu for ordinary forwarding does not necessarily expose every conditional option.",
-          "Forwarding is different from porting: forwarding routes calls while the original service remains in place; porting moves a number between providers. Do not assume an answering service requires a number transfer. Confirm the supported connection method directly with Revo."
+          "Forwarding changes the route while the original phone service remains in place. A provider migration is a separate decision; use the porting guide to review that process. Confirm the supported connection method directly with Revo before changing the existing number arrangement."
         ],
         "items": [
           "Decide which conditions should use the answering destination.",
@@ -2922,7 +2922,7 @@
         "title": "Test the route and keep a provider-specific rollback.",
         "paragraphs": [
           "Test an ordinary answered call and the chosen conditional path with authorized participants. Check the destination, caller experience and no-answer behavior. Verify whether the forwarded call bypasses the original voicemail and whether the receiving service has a supported fallback.",
-          "Keep the provider’s cancellation or reset instructions available. Deactivation codes differ across providers and conditions. After rollback, test that the original phone rings and its intended voicemail works. Do not assume a forwarding change fixes unrelated blocking or device availability settings."
+          "Keep the provider’s cancellation or reset instructions available. Deactivation methods differ across providers and conditions. After rollback, test that the original phone rings and its intended voicemail works. If calls still do not arrive, use the separate deactivation diagnostic guide rather than repeating setup changes."
         ],
         "items": [
           "Test the original answer and conditional route.",
@@ -2949,10 +2949,10 @@
       "https://www.verizon.com/support/knowledge-base-181139/"
     ],
     "related": [
-      "overflow-answering",
+      "phone-number-porting",
+      "turn-off-call-forwarding",
       "t-mobile-call-forwarding",
-      "verizon-call-forwarding",
-      "landline-call-forwarding"
+      "verizon-call-forwarding"
     ],
     "template": "workflow",
     "source": {
@@ -3328,6 +3328,458 @@
       "conditional-call-forwarding",
       "t-mobile-call-forwarding",
       "after-hours"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "phone-number-porting",
+    "title": "Phone number porting vs forwarding for your business",
+    "description": "Review phone number porting for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Phone number porting",
+    "eyebrow": "Phone number porting",
+    "lead": "Plan a provider change separately from answering coverage.",
+    "intro": "Phone number porting moves a number from one carrier to another. Call forwarding routes incoming calls while the original service remains in place. Choose the change you actually need before starting a transfer.",
+    "sections": [
+      {
+        "title": "Check whether a provider change is necessary.",
+        "paragraphs": [
+          "An answering workflow and a phone-provider migration are separate projects. If the goal is to answer calls your team cannot take, ask Revo which connection method supports the existing number. Do not assume that its service requires porting or that Revo is a number-porting provider.",
+          "If you also intend to change carriers, ask the receiving provider whether the number and service are eligible. Check which calling, messaging and voicemail functions need to remain available. Keep that carrier decision separate from the answering script and intake rules."
+        ],
+        "items": [
+          "Define whether the goal is routing or changing provider.",
+          "Check eligibility with the receiving provider.",
+          "List the calling, messaging and voicemail functions to preserve."
+        ]
+      },
+      {
+        "title": "Prepare the authorized transfer information.",
+        "paragraphs": [
+          "A carrier can require account details and a transfer PIN to validate a number transfer. T-Mobile’s official guidance, for example, identifies the account number, billing information and transfer authorization. Requirements vary; obtain the receiving provider’s current list for the business account.",
+          "Have the authorized account owner manage the transfer details. Give required information through the provider’s approved process; do not put transfer PINs in public documents or customer intake scripts. Check the submitted details for accuracy before agreeing to a transfer date."
+        ],
+        "items": [
+          "Confirm who can authorize the number transfer.",
+          "Collect the receiving provider’s required account information.",
+          "Keep transfer credentials within the approved provider process."
+        ]
+      },
+      {
+        "title": "Verify continuity before closing the old arrangement.",
+        "paragraphs": [
+          "T-Mobile instructs customers to keep the old account active until the port completes. Ask the receiving carrier about the transition, status checks and any remaining services on the old account. Do not assume a timing estimate from one carrier applies to every number transfer.",
+          "After the provider confirms completion, test inbound and outbound calls, messaging where used and voicemail. Review forwarding and the supported Revo connection again: a route configured at the old carrier may need a new setup. Confirm the final account status with the carrier rather than treating a successful call as proof that every old service ended."
+        ],
+        "items": [
+          "Confirm completion through the carrier.",
+          "Test the communication functions the business uses.",
+          "Recheck the answering route after migration.",
+          "Review remaining account services and charges."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does using Revo require porting my number?",
+        "a": "Confirm the supported connection for your number directly with Revo. Porting and forwarding are different changes; this guide does not establish a Revo porting service."
+      },
+      {
+        "q": "Should I cancel the old account before the transfer?",
+        "a": "Follow the receiving carrier’s instructions. T-Mobile’s porting guidance says the old account must remain active until its transfer is complete."
+      }
+    ],
+    "takeaway": "Plan a provider change separately from answering coverage.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.t-mobile.com/support/account/transfer-your-phone-number"
+    ],
+    "related": [
+      "conditional-call-forwarding",
+      "landline-call-forwarding",
+      "choose-virtual-receptionist"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "pay-as-you-go-answering-service",
+    "title": "Pay-as-you-go answering service: compare commitments",
+    "description": "Review pay-as-you-go answering for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Pay-as-you-go answering",
+    "eyebrow": "Pay-as-you-go answering",
+    "lead": "Compare the commitment behind the PAYG label.",
+    "intro": "Pay-as-you-go describes how usage is charged, but it does not by itself mean there is no monthly fee or contract. Review the commitment and balance rules before choosing an answering arrangement.",
+    "sections": [
+      {
+        "title": "Ask what remains payable in a quiet month.",
+        "paragraphs": [
+          "A PAYG offer can combine a recurring base fee with usage charges. ReceptionHQ’s published pay-per-call offer is one documented instance of that structure. Other providers can define the label differently, so use the current offer and terms rather than assuming the label means a zero fixed commitment.",
+          "Request the minimum recurring charge, cancellation conditions and any setup commitment. For a prepaid arrangement, also ask whether unused credit expires or can be refunded. These are questions to resolve; they are not claims that every PAYG plan uses credits or expiry."
+        ],
+        "items": [
+          "Identify the recurring minimum, if any.",
+          "Check cancellation and notice requirements.",
+          "For prepaid credit, confirm expiry and refund terms."
+        ]
+      },
+      {
+        "title": "Review changes when call volume varies.",
+        "paragraphs": [
+          "Ask what happens when usage rises, included credit is exhausted or a balance needs replenishing. Confirm whether service continues, pauses or incurs additional charges under the specific agreement. Decide who monitors that state so a billing change does not unexpectedly affect coverage.",
+          "Keep commitment separate from the unit being billed. The existing answering-service cost guide explains per-call and per-minute comparisons. Here the decision is how much obligation and maintenance the arrangement creates during busy and quiet periods, not another explanation of those units."
+        ],
+        "items": [
+          "Confirm the exhausted-balance or usage-limit behavior.",
+          "Assign responsibility for usage and account notifications.",
+          "Review whether plan changes require a new commitment."
+        ]
+      },
+      {
+        "title": "Compare that arrangement with Revo’s published plans.",
+        "paragraphs": [
+          "Revo publishes subscription plans with included usage and plan-specific features. This guide does not identify a Revo PAYG plan. Check the current Pricing page and confirm the applicable commitment directly before comparing it with another provider’s agreement.",
+          "Compare equivalent work: message taking, appointment handling and supported transfers can differ between offers. Use the business’s own call records and the current contracts. Avoid equating a lower minimum payment with lower total cost or adequate coverage for the requests your team receives."
+        ],
+        "items": [
+          "Confirm current Revo subscription terms.",
+          "Compare the same tasks and coverage.",
+          "Use actual usage records rather than an invented savings scenario."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does PAYG always mean no monthly fee?",
+        "a": "No. A documented offer can have a base monthly charge plus usage. Read the specific provider’s current agreement."
+      },
+      {
+        "q": "Does Revo offer PAYG?",
+        "a": "This page compares arrangements; it does not claim Revo has a PAYG plan. Consult the current Revo Pricing page and confirm its subscription terms."
+      }
+    ],
+    "takeaway": "Compare the commitment behind the PAYG label.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.receptionhq.com/service/live-call-answering/pay-per-call-answering/"
+    ],
+    "related": [
+      "answering-service-cost",
+      "choose-virtual-receptionist",
+      "overflow-answering"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "call-screening",
+    "title": "Call screening service: business selection criteria",
+    "description": "Review call screening for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Call screening",
+    "eyebrow": "Call screening",
+    "lead": "Identify the caller without losing a legitimate request.",
+    "intro": "Call screening gives a recipient information before deciding how to handle an incoming call. Evaluate it separately from the intake questions that decide whether your business accepts the requested work.",
+    "sections": [
+      {
+        "title": "Separate caller identification from job qualification.",
+        "paragraphs": [
+          "Some business screening systems ask callers to announce their name before a recipient connects. Vonage documents that approach for its own service. Caller ID, an announced name and a stated reason are useful context, but none alone verifies who a caller is.",
+          "Qualification comes later: service area, requested work and business acceptance rules concern the job, not the caller-identification mechanism. Keep those policies in the qualification guide. Do not reject an otherwise valid service request simply because the caller uses an unfamiliar or withheld number."
+        ],
+        "items": [
+          "Define the identification context needed before connecting.",
+          "Keep identity cues separate from proof of identity.",
+          "Separate screening rules from job-fit questions."
+        ]
+      },
+      {
+        "title": "Test legitimate callers and the fallback.",
+        "paragraphs": [
+          "Evaluate the caller experience as well as the recipient controls. Check how the supported system handles a caller who does not complete a prompt, a number absent from contacts or a recipient who cannot answer. Decide what information should remain available for follow-up.",
+          "Ask the provider what screening, blocking or spam detection actually does and how errors are handled. Do not assume it can identify every unwanted call. Your business needs a way to review legitimate requests that did not connect, rather than treating a rejected connection as a completed intake."
+        ],
+        "items": [
+          "Check incomplete-prompt behavior.",
+          "Test an unavailable recipient.",
+          "Confirm the supported review or callback path.",
+          "Review how incorrect screening decisions can be addressed."
+        ]
+      },
+      {
+        "title": "Compare screening with the Revo answering workflow.",
+        "paragraphs": [
+          "Revo publishes AI answering, intake-related features and summaries. Those descriptions do not establish a native announce-before-connect screening feature or spam-blocking guarantee. Confirm a specific screening capability directly instead of inferring it from answering or transfers.",
+          "If the need is to understand the caller’s request while your team is unavailable, review Revo’s supported conversation and handoff. If it is to filter calls before a person answers, compare the actual screening controls of the phone provider. These can be different layers of the same business phone arrangement."
+        ],
+        "items": [
+          "Identify whether the need is filtering or intake.",
+          "Confirm specific screening controls with the phone provider.",
+          "Review Revo’s supported answering and handoff separately."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is call screening the same as lead qualification?",
+        "a": "No. Screening concerns how to identify and handle the caller before connection. Qualification checks the requested work against the business’s acceptance rules."
+      },
+      {
+        "q": "Does Revo guarantee spam filtering?",
+        "a": "No such guarantee is established here. Confirm any specific screening or blocking capability directly with Revo and the phone provider."
+      }
+    ],
+    "takeaway": "Identify the caller without losing a legitimate request.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.vonage.com/unified-communications/features/call-screening/"
+    ],
+    "related": [
+      "lead-qualification",
+      "call-routing",
+      "choose-virtual-receptionist"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "turn-off-call-forwarding",
+    "title": "Turn off call forwarding and restore incoming calls",
+    "description": "Review turn off forwarding for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Turn off forwarding",
+    "eyebrow": "Turn off forwarding",
+    "lead": "Verify the original route after disabling forwarding.",
+    "intro": "Turning off call forwarding is a rollback task. If calls still fail to reach the original phone, distinguish a forwarding setting from other restrictions before changing additional settings.",
+    "sections": [
+      {
+        "title": "Identify the route you need to undo.",
+        "paragraphs": [
+          "Record the provider, line type and forwarding condition that was enabled. Immediate forwarding, conditional forwarding and phone-system routing can have separate controls. Use the current instructions for that service; a code for another carrier is not a reliable reset.",
+          "For supported Verizon wireless forwarding, the official deactivation instructions specify *73 and the provider’s confirmation steps. The separate Verizon and T-Mobile setup guides cover their documented controls. For a hosted business system or fixed line, use its administrator or provider instructions."
+        ],
+        "items": [
+          "Identify the provider, service class and changed condition.",
+          "Use the matching official deactivation method.",
+          "Keep unrelated routes and account settings unchanged."
+        ]
+      },
+      {
+        "title": "Test ringing and voicemail after the change.",
+        "paragraphs": [
+          "Use an authorized call from another number to check that the original phone receives the call. Then test the intended no-answer and voicemail behavior. A confirmation tone or saved setting does not substitute for checking what the caller actually reaches.",
+          "If the call still reaches an answering destination, record the observed behavior and ask the provider to check the active route. Avoid guessing additional codes or routing a destination back to the starting number. Keep the business’s temporary callback process clear while the provider resolves the configuration."
+        ],
+        "items": [
+          "Test an ordinary incoming call.",
+          "Check no-answer and voicemail behavior.",
+          "Record the unexpected destination for provider support."
+        ]
+      },
+      {
+        "title": "Check restrictions when forwarding is already off.",
+        "paragraphs": [
+          "Verizon’s official guidance tells users who still cannot receive calls to check restrictions such as Do Not Disturb, blocking and apps that limit incoming calls. Review the relevant settings for the device and service without assuming a forwarding reset resolves them.",
+          "If the problem persists, contact the provider with the test result, affected line and time of the test. Do not publish customer call details or transfer credentials. Once the original route works, review any later Revo routing change as a separate authorized configuration and test it again."
+        ],
+        "items": [
+          "Check applicable device and service restrictions.",
+          "Give the provider the relevant test observations.",
+          "Verify the original route before reactivating answering coverage."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is there a universal code to turn forwarding off?",
+        "a": "No. Use the official method for the provider, line type and condition. Verizon’s documented wireless *73 method must not be generalized to every carrier."
+      },
+      {
+        "q": "Why might calls still fail after forwarding is off?",
+        "a": "Other device, account or app restrictions may affect incoming calls. Check applicable settings and contact the provider with the observed test results."
+      }
+    ],
+    "takeaway": "Verify the original route after disabling forwarding.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.verizon.com/support/knowledge-base-17268/"
+    ],
+    "related": [
+      "conditional-call-forwarding",
+      "verizon-call-forwarding",
+      "t-mobile-call-forwarding"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "appointment-reminders",
+    "title": "Automated appointment reminders vs booking confirmation",
+    "description": "Review appointment reminders for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Appointment reminders",
+    "eyebrow": "Appointment reminders",
+    "lead": "Keep reminders aligned with the actual appointment.",
+    "intro": "An automated appointment reminder is a scheduled outbound communication about an existing appointment. It is different from collecting a time request or confirming a booking during an incoming call.",
+    "sections": [
+      {
+        "title": "Use the confirmed appointment as the source.",
+        "paragraphs": [
+          "A reminder should refer to an appointment that actually exists in the business’s scheduling system. Confirm the customer contact, time zone and visit details before scheduling a message. An unaccepted request for a time is not enough to tell a customer a visit is booked.",
+          "Keep the system of record and its owner clear. When an appointment changes or is canceled, the pending reminder must follow that change through the supported workflow. Otherwise a message can describe an obsolete visit even though it was scheduled correctly at first."
+        ],
+        "items": [
+          "Use the confirmed appointment record.",
+          "Check contact details and the time zone.",
+          "Identify who maintains appointment changes."
+        ]
+      },
+      {
+        "title": "Review delivery, cancellation and replies.",
+        "paragraphs": [
+          "A scheduled message and a delivered message are different states. Twilio’s official messaging documentation, for example, describes scheduling and cancellation as distinct controls and documents send-time failures. Confirm the corresponding behavior of the actual system your business uses.",
+          "Decide who handles replies requesting a new time or reporting a problem. Check the provider’s messaging and opt-out requirements before use. Review the content for unnecessary personal details and use authorized tests; do not assume that a reminder proves the customer read it or will attend."
+        ],
+        "items": [
+          "Verify scheduling and delivery status separately.",
+          "Test changed or canceled appointments.",
+          "Assign reply handling and review opt-out behavior."
+        ]
+      },
+      {
+        "title": "Separate this workflow from Revo’s published offer.",
+        "paragraphs": [
+          "Revo’s website lists appointment booking and SMS follow-up. Those labels do not verify a native scheduled outbound appointment-reminder service. Confirm that specific capability and any supported scheduling connection directly before attributing it to Revo.",
+          "Review the incoming booking workflow with Revo and the later reminder workflow with the scheduling or messaging provider. Keep one owner responsible for ensuring the confirmed appointment reaches the supported downstream process. This guide does not claim a particular integration, reminder timing or reduction in missed appointments."
+        ],
+        "items": [
+          "Confirm Revo’s supported booking outcome.",
+          "Verify the reminder capability with the actual provider.",
+          "Assign responsibility for the handoff between workflows."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is SMS follow-up proof of automated reminders?",
+        "a": "No. A follow-up feature does not by itself establish scheduled reminders tied to future appointments. Confirm the exact capability."
+      },
+      {
+        "q": "Does Revo send scheduled appointment reminders?",
+        "a": "This page does not establish that capability. Ask Revo about the current supported setup, and keep reminder scheduling separate from incoming appointment booking."
+      }
+    ],
+    "takeaway": "Keep reminders aligned with the actual appointment.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.twilio.com/docs/messaging/features/message-scheduling"
+    ],
+    "related": [
+      "appointment-booking",
+      "ai-call-summary",
+      "missed-call-text-back"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "ivr-system-cost",
+    "title": "IVR system cost: compare the full operating scope",
+    "description": "Review ivr system cost for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "IVR system cost",
+    "eyebrow": "IVR system cost",
+    "lead": "Compare the menu, maintenance and answering work.",
+    "intro": "An IVR system guides callers through a phone menu using keypad selections or speech. Its cost depends on the service model, usage and work required to maintain the flow, not just a single advertised rate.",
+    "sections": [
+      {
+        "title": "Define what the menu must accomplish.",
+        "paragraphs": [
+          "An IVR can collect a selection and direct the caller toward information or a destination. Start with the decisions your business needs: selecting a department, hearing approved information or reaching an available person. A routing menu is not automatically a complete service-request conversation.",
+          "Write down the fallback for an unrecognized selection, a caller who does not respond and an unavailable destination. Compare offers against those outcomes. Do not assume a provider’s base menu feature includes every speech, intake, booking or human-transfer function you want."
+        ],
+        "items": [
+          "List the caller outcomes required.",
+          "Define invalid-input and no-response fallbacks.",
+          "Check which tasks need conversation rather than a menu."
+        ]
+      },
+      {
+        "title": "Identify both service charges and maintenance work.",
+        "paragraphs": [
+          "Current provider rate sheets can separate calling usage, phone numbers and optional speech features. Twilio’s public US Voice pricing is one documented rate sheet with multiple charge categories. A hosted bundle can use a different model; compare the actual agreement without importing another provider’s rates.",
+          "Add the business’s setup and maintenance responsibilities to the review: recording or editing prompts, updating destinations, checking hours and testing changes. Use quotes and your own usage records. Do not present a universal IVR price or claim a savings figure without the corresponding scope and evidence."
+        ],
+        "items": [
+          "Review current plan and usage charges.",
+          "Check optional features and destination requirements.",
+          "Assign prompt, rule and testing maintenance."
+        ]
+      },
+      {
+        "title": "Compare IVR scope with Revo’s answering offer.",
+        "paragraphs": [
+          "Revo publishes an AI answering service with its own script and rules, booking and summaries. This guide does not describe Revo as an IVR vendor or attribute keypad menus or advanced routing to it. Confirm the supported features and plan directly.",
+          "Compare the work completed for the caller and your team. A menu that selects a destination and a conversation that captures a service request are different outcomes. Review the route, intake details and unavailable-person fallback, then compare current costs for the scope your business actually needs."
+        ],
+        "items": [
+          "Confirm the actual Revo answering workflow.",
+          "Compare equivalent caller and team outcomes.",
+          "Use the current offer and documented operating requirements."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is there one standard IVR system price?",
+        "a": "No. Service models, usage and included features vary. Review current provider terms and the work needed to maintain the system."
+      },
+      {
+        "q": "Is Revo an IVR system?",
+        "a": "This page compares scopes. It does not establish that Revo supplies an IVR phone menu; confirm its supported answering features directly."
+      }
+    ],
+    "takeaway": "Compare the menu, maintenance and answering work.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.twilio.com/en-us/voice/pricing/us"
+    ],
+    "related": [
+      "call-routing",
+      "answering-service-cost",
+      "compare/ai-vs-voicemail"
     ],
     "template": "workflow",
     "source": {

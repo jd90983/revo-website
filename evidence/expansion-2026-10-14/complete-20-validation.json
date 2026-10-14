@@ -1,0 +1,22 @@
+{
+  "new_pages": 20,
+  "existing_approved_pages": 10,
+  "superseded_withdrawn_drafts": 20,
+  "new_publication_approvals": 0,
+  "tests_passed": 18,
+  "normal_build": "pass;10approved/11routes/40unpublishedabsent/448originalfiles",
+  "normal_internal_links": 392,
+  "preview_build": "pass;30guides/31routes/20withdrawnabsent",
+  "preview_internal_links": 1151,
+  "browser_cases": 40,
+  "browser_failures": 0,
+  "semrush": "No changes in this phase; parent reports297keywords/71prompts from another authorized task",
+  "personal_chrome_used": false,
+  "remote_push": false,
+  "pr": null,
+  "merge": false,
+  "production_deploy": false,
+  "visual_review": "pending",
+  "source_exception": "Vonage isolated browser403; official page content read through public web tool, no bypass",
+  "metric_exception": "IVR system cost70/KD15 from2026-10-13export; individual SERP not stored"
+}

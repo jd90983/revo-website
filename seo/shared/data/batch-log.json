@@ -123,5 +123,23 @@
       "added t-mobile-call-forwarding as draft",
       "added verizon-call-forwarding as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-14-complete-twenty-guides",
+    "batchHash": "sha256:a267536433e9648db625ac047f73874d48f35d5fc03b006f6a8f19f7043e3491",
+    "source": {
+      "kind": "manual",
+      "reference": "Six final scoped educational subjects; current official references; publication held for visual review"
+    },
+    "appliedAt": "2026-10-14",
+    "changes": [
+      "added phone-number-porting as draft",
+      "added pay-as-you-go-answering-service as draft",
+      "added call-screening as draft",
+      "added turn-off-call-forwarding as draft",
+      "added appointment-reminders as draft",
+      "added ivr-system-cost as draft",
+      "updated conditional-call-forwarding; back to draft until re-approved"
+    ]
   }
 ]

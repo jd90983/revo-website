@@ -1,0 +1,45 @@
+[
+  {
+    "url": "https://www.t-mobile.com/support/account/transfer-your-phone-number",
+    "status": 200,
+    "title": "Transfer your phone number | T-Mobile Support: Help with Devices, Plans, Billing & More",
+    "final_url": "https://www.t-mobile.com/support/account/transfer-your-phone-number",
+    "method": "isolated Chromium; no personal Chrome profile; public GET-only; no Semrush"
+  },
+  {
+    "url": "https://www.receptionhq.com/service/live-call-answering/pay-per-call-answering/",
+    "status": 200,
+    "title": "Affordable Pay-Per-Call Answering Services | ReceptionHQ",
+    "final_url": "https://www.receptionhq.com/service/live-call-answering/pay-per-call-answering/",
+    "method": "isolated Chromium; no personal Chrome profile; public GET-only; no Semrush"
+  },
+  {
+    "url": "https://www.vonage.com/unified-communications/features/call-screening/",
+    "status": 403,
+    "title": "Just a moment...",
+    "final_url": "https://www.vonage.com/unified-communications/features/call-screening/",
+    "method": "isolated Chromium; no personal Chrome profile; public GET-only; no Semrush",
+    "verification_note": "Isolated browser blocked by site protection; no bypass attempted. Official document content read with public web tool."
+  },
+  {
+    "url": "https://www.verizon.com/support/knowledge-base-17268/",
+    "status": 200,
+    "title": "Turn Call Forwarding Off from Device | Verizon",
+    "final_url": "https://www.verizon.com/support/knowledge-base-17268/",
+    "method": "isolated Chromium; no personal Chrome profile; public GET-only; no Semrush"
+  },
+  {
+    "url": "https://www.twilio.com/docs/messaging/features/message-scheduling",
+    "status": 200,
+    "title": "Message Scheduling | Twilio",
+    "final_url": "https://www.twilio.com/docs/messaging/features/message-scheduling",
+    "method": "isolated Chromium; no personal Chrome profile; public GET-only; no Semrush"
+  },
+  {
+    "url": "https://www.twilio.com/en-us/voice/pricing/us",
+    "status": 200,
+    "title": "Programmable Voice Pricing in United States | Twilio",
+    "final_url": "https://www.twilio.com/en-us/voice/pricing/us",
+    "method": "isolated Chromium; no personal Chrome profile; public GET-only; no Semrush"
+  }
+]
