@@ -30,6 +30,10 @@
   ],
   "rewrites": [
     {
+      "source": "/ai-receptionist-demo",
+      "destination": "/ai-receptionist-demo.html"
+    },
+    {
       "source": "/ai-answering-service/after-hours",
       "destination": "/ai-answering-service/after-hours.html"
     },
