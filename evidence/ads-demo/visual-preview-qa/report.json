@@ -1,0 +1,117 @@
+{
+  "commit": "1e11f38",
+  "browser": "isolated Chromium headless, fresh nonpersistent contexts; no personal Chrome profile",
+  "sourceHashes": {
+    "ai-receptionist-demo.html": "1bb6e7618b013575991e3e89d5b6860affddf3b512807b3a7a9dddb758117be5",
+    "css/revo-demo.css": "5718359176647c806a7d0b29a70e785032f3611d63fa8d8aa940682231eec8d0",
+    "js/revo-demo.js": "59ccf1e28b04194625bdd6781582a999b56325f4af9a2d409e93ac66f07bf884",
+    "css/home-sample-player.css": "63a516cb5662ba138b6b1c1dd17d2972bb6b4689b62613d205d322ceac02ba16",
+    "js/hear-sample.js": "5d2c15d83a978a1b8494d2d2135d10b64e0f7b17eda254de8b03088d0d3d190c",
+    "js/hear-sample-config.js": "91943d9ae6776d44719eea7f03129a803de8509f6823c8811bf41e288f1d5818"
+  },
+  "breakpoints": [
+    {
+      "hero": {
+        "width": 320,
+        "scrollWidth": 320,
+        "imageWidth": 288,
+        "imageHeight": 250.421875,
+        "naturalWidth": 805,
+        "naturalHeight": 700,
+        "gradient": "radial-gradient(at 10% 65%, rgba(250, 137, 50, 0.098), rgba(0, 0, 0, 0) 70%)",
+        "gradientRight": "144px",
+        "h1": "AI receptionist for home service businesses. Stay focused on the job."
+      },
+      "stack": {
+        "navHeight": 73,
+        "iconCenterY": 36.96875,
+        "topElement": "DIV",
+        "navbarAboveIcon": true,
+        "sectionIsolation": "isolate"
+      },
+      "sampleMenuClicks": "Home Services and Locksmith passed",
+      "playPause": "PASS",
+      "navbarCTAClick": "PASS",
+      "calendar": "loaded10min; no booking"
+    },
+    {
+      "hero": {
+        "width": 390,
+        "scrollWidth": 390,
+        "imageWidth": 350,
+        "imageHeight": 304.34375,
+        "naturalWidth": 805,
+        "naturalHeight": 700,
+        "gradient": "radial-gradient(at 10% 65%, rgba(250, 137, 50, 0.098), rgba(0, 0, 0, 0) 70%)",
+        "gradientRight": "175.5px",
+        "h1": "AI receptionist for home service businesses. Stay focused on the job."
+      },
+      "stack": {
+        "navHeight": 73,
+        "iconCenterY": 36.734375,
+        "topElement": "DIV",
+        "navbarAboveIcon": true,
+        "sectionIsolation": "isolate"
+      },
+      "sampleMenuClicks": "Home Services and Locksmith passed",
+      "playPause": "PASS",
+      "navbarCTAClick": "PASS",
+      "calendar": "loaded10min; no booking"
+    },
+    {
+      "hero": {
+        "width": 768,
+        "scrollWidth": 768,
+        "imageWidth": 346,
+        "imageHeight": 300.859375,
+        "naturalWidth": 805,
+        "naturalHeight": 700,
+        "gradient": "radial-gradient(at 10% 65%, rgba(250, 137, 50, 0.098), rgba(0, 0, 0, 0) 70%)",
+        "gradientRight": "345.594px",
+        "h1": "AI receptionist for home service businesses. Stay focused on the job."
+      },
+      "stack": {
+        "navHeight": 77,
+        "iconCenterY": 38.921875,
+        "topElement": "A",
+        "navbarAboveIcon": true,
+        "sectionIsolation": "isolate"
+      },
+      "sampleMenuClicks": "Home Services and Locksmith passed",
+      "playPause": "PASS",
+      "navbarCTAClick": "PASS",
+      "calendar": "loaded10min; no booking"
+    },
+    {
+      "hero": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "imageWidth": 590,
+        "imageHeight": 513.03125,
+        "naturalWidth": 805,
+        "naturalHeight": 700,
+        "gradient": "radial-gradient(at 10% 65%, rgba(250, 137, 50, 0.098), rgba(0, 0, 0, 0) 70%)",
+        "gradientRight": "648px",
+        "h1": "AI receptionist for home service businesses. Stay focused on the job."
+      },
+      "stack": {
+        "navHeight": 89,
+        "iconCenterY": 44.3125,
+        "topElement": "DIV",
+        "navbarAboveIcon": true,
+        "sectionIsolation": "isolate"
+      },
+      "sampleMenuClicks": "Home Services and Locksmith passed",
+      "playPause": "PASS",
+      "navbarCTAClick": "PASS",
+      "calendar": "loaded10min; no booking"
+    }
+  ],
+  "calendarRequests": [],
+  "requestsBlocked": [],
+  "errors": [],
+  "result": "PASS",
+  "sourceHashMatch": true,
+  "htmlAndJSUnchangedFromMain": true,
+  "visualReview": "Desktop and mobile hero screenshots reviewed: larger natural-proportion image, glow on left, black backdrop on image side. Overlap screenshots show sample icons behind sticky header; mobile selector clicks and navbar CTA work."
+}
