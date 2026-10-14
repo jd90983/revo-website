@@ -1556,3 +1556,6 @@
   .rd-page .hear-sample-right-panel{width:100%;min-height:600px;max-height:600px}
   .rd-page .hear-sample-professional-image{object-position:center top}
 }
+/* Show the complete initial summary; retain the HOME scrolling chat during playback. */
+.rd-page .hear-sample-right-panel:has(.hear-sample-summary-card){max-height:none}
+.rd-page .hear-sample-chat:has(.hear-sample-summary-card){flex:0 0 auto;min-height:0;max-height:none;overflow:visible;justify-content:flex-start}
