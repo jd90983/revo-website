@@ -8,7 +8,7 @@ for (const key of ['utm_source','utm_medium','utm_campaign','utm_term','utm_cont
   if (value && value.length <= 200) calendar.searchParams.set(key, value);
 }
 const opener = document.getElementById('load-calendar');
-const fallback = document.querySelector('.ads-calendar-fallback');
+const fallback = document.querySelector('.rd-calendar-fallback');
 opener.href = calendar.href;
 fallback.href = calendar.href;
 opener.addEventListener('click', event => {
