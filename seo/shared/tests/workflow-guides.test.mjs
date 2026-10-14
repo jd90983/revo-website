@@ -7,9 +7,11 @@ import {WorkflowGuideTemplate} from '../components/WorkflowGuideTemplate.tsx';
 import {publicRoutes} from '../../app/tools/routes.mjs';
 import {contentHash,registryErrors} from '../lib/registry-contract.mjs';
 
-const guides=REVIEW_PAGES.filter(p=>p.template==='workflow');
-test('20 new workflow drafts stay out of routes and have no acquisition controls',()=>{
- assert.equal(guides.length,20);
+const guides=REVIEW_PAGES.filter(p=>p.template==='workflow'&&p.publicationStatus!=='withdrawn');
+test('measured workflow drafts stay out of routes and have no acquisition controls',()=>{
+ assert.equal(guides.length,14);
+ assert.equal(new Set(guides.map(page=>page.slug)).size,14);
+ assert.ok(!guides.some(page=>['after-hours','industry_plumbing.html'].includes(page.slug)));
  const routes=publicRoutes(REVIEW_PAGES,{navigationLimit:6});
  for(const page of guides){
   assert.equal(page.publicationStatus,'draft');

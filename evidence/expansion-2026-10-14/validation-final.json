@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-14",
+  "new_pages_created": 14,
+  "additional_topics_needed": 6,
+  "approved_existing": 10,
+  "withdrawn_unsupported_drafts": 20,
+  "committed_new_publication_approvals": 0,
+  "tests": {
+    "passed": 18,
+    "failed": 0
+  },
+  "normal_public_routes": 11,
+  "normal_internal_links_resolved": 392,
+  "preview_public_routes": 25,
+  "preview_internal_links_resolved": 923,
+  "browser_cases": 28,
+  "browser_failures": 0,
+  "fixtures": "pass: add/approve, draft exclusion, index growth, withdrawal cleanup",
+  "chrome_personal": "free; no control tool available for requested Semrush writes",
+  "semrush_changes": 0,
+  "push": false,
+  "pr": null,
+  "remote_deploy": false
+}

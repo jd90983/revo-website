@@ -924,7 +924,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "low-volume-contractor-calls",
@@ -990,7 +995,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "answering-service-fees",
@@ -1056,7 +1066,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "hvac-heat-wave-call-coverage",
@@ -1122,7 +1137,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "roofing-storm-call-intake",
@@ -1189,7 +1209,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "landscaping-spring-call-coverage",
@@ -1255,7 +1280,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "calendar-booking-checklist",
@@ -1321,7 +1351,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "bilingual-intake-testing",
@@ -1387,7 +1422,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "call-recordings-retention",
@@ -1453,7 +1493,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "human-transfer-policy",
@@ -1519,7 +1564,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "field-service-connections",
@@ -1585,7 +1635,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "existing-business-number",
@@ -1651,7 +1706,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "remodeling-lead-intake",
@@ -1717,7 +1777,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "electrical-service-area-screening",
@@ -1783,7 +1848,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "roof-estimate-intake",
@@ -1849,7 +1919,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "lawn-care-request-types",
@@ -1915,7 +1990,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "cleaning-request-types",
@@ -1981,7 +2061,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "plumbing-on-call-policy",
@@ -2047,7 +2132,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "plumbing-intake-checklist",
@@ -2113,7 +2203,12 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
   },
   {
     "slug": "contractor-jobsite-calls",
@@ -2179,6 +2274,1066 @@
       "reference": "Semrush tracked ChatGPT campaign 5412332 read in Chrome 2026-10-14; final operational guidance; SEO demand pending"
     },
     "template": "workflow",
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch.",
+      "at": "2026-10-14",
+      "batchId": "2026-10-14-measured-summary-preview"
+    }
+  },
+  {
+    "slug": "ai-call-summary",
+    "title": "AI call summaries for home service follow-up",
+    "description": "Learn what an AI call summary should capture, how it differs from a transcript and how your team can turn a customer request into a clear next step.",
+    "navigationLabel": "AI call summaries",
+    "eyebrow": "From call to follow-up",
+    "lead": "Give the next person the context they need to respond.",
+    "intro": "An AI call summary is a condensed account of a phone conversation. It can help a service team review a request without replaying the whole call. Its value depends on the details it preserves and the person who checks them before acting.",
+    "sections": [
+      {
+        "title": "Separate a summary from a transcript.",
+        "paragraphs": [
+          "A recording preserves the audio. A transcript converts spoken words into text. A summary selects the main points. These outputs serve different purposes: use a summary for an initial review and the available source material when a detail needs checking.",
+          "Revo’s Services page describes organized call summaries, and its Pricing page lists a call dashboard with summaries. Recordings and transcripts appear as additional features on higher tiers. Confirm the current plan and what material your team can access before relying on it."
+        ],
+        "items": [
+          "Use the summary to identify the request and next step.",
+          "Check an uncertain detail against the available source.",
+          "Keep recording, transcript and summary access separate in your plan review."
+        ]
+      },
+      {
+        "title": "Keep the facts a service team needs.",
+        "paragraphs": [
+          "A useful handoff identifies who called, how to reach them, what service they requested and where the work would take place. Timing matters when the caller states a deadline or availability. Keep the caller’s words separate from a diagnosis, quote or commitment that your team has not made.",
+          "Missing information should remain visible as missing information. An unclear address or callback number needs confirmation; it should not be completed from an assumption. The same applies to urgency: the caller’s description does not establish that your team can attend immediately."
+        ],
+        "items": [
+          "Confirm the callback number and service address.",
+          "Record the requested work and caller-stated timing.",
+          "Distinguish a request from an accepted booking or promised visit.",
+          "Flag incomplete or ambiguous details for follow-up."
+        ]
+      },
+      {
+        "title": "Assign the next action before closing the loop.",
+        "paragraphs": [
+          "A summary does not complete a callback, qualify a job or reserve a calendar slot. Give each request an owner and a next action. The person reviewing it should decide whether to call back, check the service area, review availability or clarify the request.",
+          "Review the supported delivery and dashboard workflow with Revo. Use an authorized test call to check whether your team can find the information and follow up. Keep access limited to the people who need it, and confirm retention and deletion arrangements directly rather than assuming that a feature label defines them."
+        ],
+        "items": [
+          "Name the person responsible for reviewing new requests.",
+          "Verify the summary is available through the supported workflow.",
+          "Confirm consequential details with the caller before making a commitment.",
+          "Review access and retention terms with the provider."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is an AI call summary the same as a transcript?",
+        "a": "No. A transcript represents the spoken conversation in text; a summary selects its main points. When wording or a detail matters, check the available recording or transcript and confirm uncertainty with the caller."
+      },
+      {
+        "q": "Does a summary confirm an appointment?",
+        "a": "A summary can report what was discussed, but it does not by itself establish a completed booking. Check the calendar and the business’s booking rules before confirming a visit."
+      },
+      {
+        "q": "Does Revo include call summaries?",
+        "a": "Revo’s current website lists a call dashboard with summaries. Recordings and transcripts are listed on higher pricing tiers. Check the current plan, access and delivery details directly with Revo."
+      }
+    ],
+    "takeaway": "Turn the request into an owned next step.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.twilio.com/docs/glossary/what-is-call-transcription"
+    ],
+    "related": [
+      "lead-qualification",
+      "appointment-booking",
+      "missed-calls"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14: ai call summary volume 210 KD29; prompt campaign 5412332; source-checked editorial draft"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "business-call-recording",
+    "title": "Business call recording: access, review and retention",
+    "description": "Review business call recording for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Business call recording",
+    "eyebrow": "Business call recording",
+    "lead": "Decide how recordings will support your team.",
+    "intro": "A business call recording preserves conversation audio. Before collecting or reviewing it, define its purpose, the people who need access and how the provider handles retention and deletion.",
+    "sections": [
+      {
+        "title": "Choose the purpose before the setting.",
+        "paragraphs": [
+          "A recording can help a service team check what a caller said or review its own intake process. It is different from a transcript or summary: the audio preserves tone and spoken wording, while text outputs serve other review needs.",
+          "Revo’s Pricing page lists call recordings and transcripts as higher-tier features. That label does not specify a retention period, export method or access policy. Confirm those details for the current plan before incorporating recordings into a business process."
+        ],
+        "items": [
+          "Define the operational reason for reviewing audio.",
+          "Confirm which plan includes recording access.",
+          "Check whether your team needs audio, a transcript or a summary."
+        ]
+      },
+      {
+        "title": "Resolve access and retention explicitly.",
+        "paragraphs": [
+          "Ask who can play, download or delete a recording and how access is removed when a team member leaves. Ask how long audio is retained, whether deletion also covers copies and what happens when the subscription ends. Record the answers in your operating policy.",
+          "Recording requirements depend on the applicable location and circumstances. Review the disclosure and consent process with an appropriate adviser and the provider before activation. A provider feature page is not a determination of which requirements apply to your callers."
+        ],
+        "items": [
+          "Confirm authorized roles and account access.",
+          "Review retention, deletion and export arrangements.",
+          "Check the applicable disclosure and consent process."
+        ]
+      },
+      {
+        "title": "Use audio to check a detail, then close the request.",
+        "paragraphs": [
+          "Give the person reviewing a call a specific question to resolve. If a phone number, location or requested service remains unclear, confirm it with the caller rather than treating the recording as permission to fill in missing facts.",
+          "Keep review focused on the work. Listening to a call does not complete a callback or authorize a quote, diagnosis or visit. Assign the follow-up separately and use the available summary to organize requests that do not need full audio review."
+        ],
+        "items": [
+          "Identify the detail that needs checking.",
+          "Confirm unresolved information directly.",
+          "Assign the next action to a person."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Are recordings included in every Revo plan?",
+        "a": "The published Pricing page shows recordings and transcripts as higher-tier features. Check the current plan and terms directly."
+      },
+      {
+        "q": "How long does Revo keep call recordings?",
+        "a": "The feature label does not establish a retention period. Confirm the current retention and deletion arrangements with Revo."
+      }
+    ],
+    "takeaway": "Decide how recordings will support your team.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.vonage.com/unified-communications/features/vbc-company-call-recording/"
+    ],
+    "related": [
+      "ai-call-summary",
+      "lead-qualification"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "call-transcription",
+    "title": "Call transcription for service-business call review",
+    "description": "Review call transcription for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Call transcription",
+    "eyebrow": "Call transcription",
+    "lead": "Check the words before acting on the request.",
+    "intro": "Call transcription turns spoken audio into written text. A service team can use it to review wording, but accuracy and access need checking before the text becomes part of a customer workflow.",
+    "sections": [
+      {
+        "title": "Know what the text represents.",
+        "paragraphs": [
+          "A transcript attempts to represent the spoken conversation in text. A summary condenses the conversation and may omit wording that is useful for checking a detail. A recording preserves the source audio when that material is available through the supported plan.",
+          "Transcription can be produced from a recording or during a call, depending on the system. Do not infer that Revo offers live transcription from its recordings-and-transcripts pricing label. Confirm how and when its transcripts become available."
+        ],
+        "items": [
+          "Distinguish the transcript from the summary.",
+          "Confirm live versus post-call availability.",
+          "Check the source material available to your team."
+        ]
+      },
+      {
+        "title": "Review the details that drive field work.",
+        "paragraphs": [
+          "Background noise, overlapping speakers and unfamiliar terms can make recognition harder. A readable transcript can still contain an incorrect name, number or address. Treat these as details to verify before contacting a customer or sending a team.",
+          "Keep the caller’s request separate from a technical assessment. A transcript records language; it does not establish that a diagnosis is correct, that a quote was accepted or that a booking was completed. Confirm consequential information through your normal business process."
+        ],
+        "items": [
+          "Check numbers, names and service addresses.",
+          "Flag unclear wording rather than correcting it by guesswork.",
+          "Verify timing and commitments before scheduling."
+        ]
+      },
+      {
+        "title": "Review Revo access and the follow-up process.",
+        "paragraphs": [
+          "Revo’s Pricing page lists recordings and transcripts on higher tiers. Ask which plan provides the text, where it is reviewed and whether supported export or sharing options meet your team’s needs. Confirm retention and deletion separately.",
+          "Use an authorized test call to check the information your team actually uses. Review the result with the person responsible for follow-up. If a transcript is unavailable or unclear, the fallback should be a direct clarification rather than a fabricated customer detail."
+        ],
+        "items": [
+          "Confirm the current transcript feature and plan.",
+          "Test relevant service terms and contact details.",
+          "Assign clarification and follow-up ownership."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a transcript the same as an AI call summary?",
+        "a": "No. A transcript represents spoken wording; a summary selects the main points. Use the output appropriate to the detail you need to review."
+      },
+      {
+        "q": "Can transcription replace checking an address?",
+        "a": "No. Verify an address or callback number that is unclear or consequential before acting."
+      }
+    ],
+    "takeaway": "Check the words before acting on the request.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.twilio.com/docs/glossary/what-is-call-transcription"
+    ],
+    "related": [
+      "business-call-recording",
+      "ai-call-summary"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "compare/warm-vs-cold-transfer",
+    "title": "Warm transfer vs cold transfer for business calls",
+    "description": "Review warm vs cold transfer for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Warm vs cold transfer",
+    "eyebrow": "Warm vs cold transfer",
+    "lead": "Choose a handoff your team can actually receive.",
+    "intro": "A warm transfer includes a briefing to the receiving person before connecting the caller. A cold, or blind, transfer sends the call without that briefing. Choose based on context and availability.",
+    "sections": [
+      {
+        "title": "Decide whether the recipient needs context.",
+        "paragraphs": [
+          "An attended handoff can let the receiving person hear the reason for the call before speaking to the caller. A blind handoff has fewer briefing steps but requires the recipient to establish the context after connection. Neither label defines how much information a system captures.",
+          "For a service business, the useful context may be the request, service address and reason a person is needed. Share the information necessary for that handoff; avoid passing an unverified diagnosis, price or availability commitment as an established fact."
+        ],
+        "items": [
+          "Identify the reason for involving a person.",
+          "Decide what context the recipient needs.",
+          "Keep the caller’s request distinct from business commitments."
+        ]
+      },
+      {
+        "title": "Check recipient availability and fallback.",
+        "paragraphs": [
+          "A transfer destination is useful only when it can receive the call. Define the person or number to try, the permitted hours and what happens when nobody answers. A failed transfer should leave the caller with a clear next step.",
+          "Before placing a caller on hold, explain what will happen and ask whether they can wait. If the recipient is unavailable, return to the supported fallback: capture a callback request or route according to the approved policy. Do not promise an immediate response that the team cannot support."
+        ],
+        "items": [
+          "Check the recipient and available hours.",
+          "Ask before placing the caller on hold.",
+          "Define the no-answer fallback."
+        ]
+      },
+      {
+        "title": "Confirm the supported Revo transfer method.",
+        "paragraphs": [
+          "Revo’s pricing lists transfers to your team on higher tiers. That does not establish whether every transfer is warm, blind or accompanied by a briefing. Confirm the supported method and destination behavior directly with Revo.",
+          "Test the successful handoff and the unavailable-recipient path with authorized participants. Review what the recipient sees or hears and whether the caller needs to repeat important details. Keep this check separate from the rules that decide which callers should be transferred."
+        ],
+        "items": [
+          "Confirm the method and plan with Revo.",
+          "Test an available and unavailable recipient.",
+          "Review caller and recipient context after the handoff."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a warm transfer always better?",
+        "a": "The appropriate method depends on the context needed, recipient availability and the supported system. A briefing is useful only when the recipient can receive it."
+      },
+      {
+        "q": "Does Revo provide warm transfers?",
+        "a": "The website lists transfers on higher tiers. Confirm the exact modality with Revo; the feature label alone does not specify it."
+      }
+    ],
+    "takeaway": "Choose a handoff your team can actually receive.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.vonage.com/resources/articles/warm-transfer/"
+    ],
+    "related": [
+      "call-routing",
+      "call-transfer-language",
+      "overflow-answering"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "phone-answering-script",
+    "title": "Phone call answering script for service businesses",
+    "description": "Review phone answering script for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Phone answering script",
+    "eyebrow": "Phone answering script",
+    "lead": "Use clear words without making unsupported promises.",
+    "intro": "A phone answering script should help a caller explain the request and understand the next step. Keep the language natural, the questions purposeful and the business rules visible to the person answering.",
+    "sections": [
+      {
+        "title": "Open with a clear invitation.",
+        "paragraphs": [
+          "Identify the business and the person or service answering according to the approved greeting. Then use an open question: “How can we help with your service request?” Let the caller describe the reason before selecting the next intake question.",
+          "Avoid a greeting that suggests a technician is already available or a job has been accepted. When office coverage and field availability differ, the script should explain only the coverage and next step that your business has authorized."
+        ],
+        "items": [
+          "Use the approved business greeting.",
+          "Ask: “How can we help with your service request?”",
+          "Let the caller explain before narrowing the questions."
+        ]
+      },
+      {
+        "title": "Collect and confirm actionable details.",
+        "paragraphs": [
+          "For a new service request, ask for contact information, the work location and a short description. Useful wording includes “What is the best number for a callback?” and “What address would the service be for?” Ask only for details relevant to the business’s intake.",
+          "Repeat important information to check understanding. If the request is unclear, say “Could you describe the service you need?” Keep technical questions within the approved script; answering a call does not make the person or system qualified to diagnose the issue."
+        ],
+        "items": [
+          "Ask for a usable callback number.",
+          "Confirm the service address.",
+          "Capture the request without diagnosing it."
+        ]
+      },
+      {
+        "title": "Close with the actual next step.",
+        "paragraphs": [
+          "Use language that matches the outcome: “I will pass your request to the team for follow-up” is appropriate only when that is the supported process. A confirmed booking requires the applicable calendar and booking rules, not simply a statement in the script.",
+          "Revo’s published pricing includes your own script and rules. Review the proposed wording with the people who handle requests, then use authorized calls to test incomplete details, out-of-area requests and unavailable staff. Update the script when your service rules change."
+        ],
+        "items": [
+          "State who owns the next step.",
+          "Separate a callback request from a confirmed appointment.",
+          "Test the wording against your actual business rules."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Should a script sound like a fixed questionnaire?",
+        "a": "Use questions with a clear purpose and let the caller explain. Confirm important details without forcing every request through irrelevant questions."
+      },
+      {
+        "q": "Can Revo use my business’s script?",
+        "a": "The published Pricing page lists your own script and rules. Confirm the supported configuration and review the wording before routing calls."
+      }
+    ],
+    "takeaway": "Use clear words without making unsupported promises.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://help.housecallpro.com/en/articles/9312595-creating-effective-phone-scripts"
+    ],
+    "related": [
+      "lead-qualification",
+      "appointment-booking",
+      "call-transfer-language"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "choose-virtual-receptionist",
+    "title": "How to choose a virtual receptionist service",
+    "description": "Review choose a receptionist for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Choose a receptionist",
+    "eyebrow": "Choose a receptionist",
+    "lead": "Choose from tested requirements, not a feature count.",
+    "intro": "Choosing a virtual receptionist service starts with the calls your business receives and the decisions an answering service may make. Compare vendors against the same operating requirements.",
+    "sections": [
+      {
+        "title": "Write the requirements before comparing vendors.",
+        "paragraphs": [
+          "List the request types, office hours and languages your team needs to cover. Decide which details should be captured and which situations require a person. Keep field availability, prices and job acceptance under the business’s approved rules.",
+          "Use the same requirements for every vendor. A service advertising appointment booking may support a different calendar or confirmation process from the one you need. A transfer feature may have different recipient and no-answer behavior. Ask about the specific workflow rather than assuming the label answers it."
+        ],
+        "items": [
+          "Define request types and hours.",
+          "List language and intake requirements.",
+          "Describe booking and human-handoff boundaries."
+        ]
+      },
+      {
+        "title": "Evaluate the complete operating arrangement.",
+        "paragraphs": [
+          "Compare the billing unit, included usage and additional charges using your own call records. Ask who maintains the script, how configuration changes are handled and what information your team receives after a call. The subscription is only one part of the operating work.",
+          "Review access and data handling as separate decisions. Recordings, transcripts and integrations can vary by plan. Ask for the current terms and supported features; do not treat a competitor’s plan or an old feature list as evidence of another provider’s offer."
+        ],
+        "items": [
+          "Compare like-for-like coverage and usage.",
+          "Confirm setup and ongoing update ownership.",
+          "Check plan-specific access and supported connections."
+        ]
+      },
+      {
+        "title": "Test the requirements before routing customers.",
+        "paragraphs": [
+          "Use authorized calls covering ordinary requests and important exceptions. Check how the service handles an unclear address, an unavailable recipient or a request your company does not accept. Assess whether your team can use the resulting information.",
+          "Revo’s Services and Pricing pages are the starting point for checking its published offer. Review the relevant plan and configuration directly, then compare the test results with your written requirements. Keep a rollback plan for phone routing if the setup is not ready."
+        ],
+        "items": [
+          "Test the actual intake and handoff requirements.",
+          "Review the resulting information with your team.",
+          "Confirm the routing rollback before activation."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What should I compare first?",
+        "a": "Start with the operating requirements: request types, hours, languages, intake and human handoff. Compare pricing once the coverage is comparable."
+      },
+      {
+        "q": "How should I evaluate Revo?",
+        "a": "Check the current Services and Pricing pages, confirm the supported configuration and test your requirements with authorized calls."
+      }
+    ],
+    "takeaway": "Choose from tested requirements, not a feature count.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.mapcommunications.com/blog/how-to-choose-a-virtual-receptionist-company/"
+    ],
+    "related": [
+      "compare/virtual-receptionist-vs-answering-service",
+      "answering-service-cost",
+      "lead-qualification"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "compare/virtual-receptionist-vs-answering-service",
+    "title": "Virtual receptionist vs answering service",
+    "description": "Review receptionist vs answering for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Receptionist vs answering",
+    "eyebrow": "Receptionist vs answering",
+    "lead": "Compare the work included in the service.",
+    "intro": "Virtual receptionist and answering service are overlapping labels. Some providers focus on answering and taking messages; others include reception tasks. Compare the actual scope instead of assuming a fixed definition.",
+    "sections": [
+      {
+        "title": "Separate message taking from reception tasks.",
+        "paragraphs": [
+          "A message-taking service answers and captures information for later follow-up. A broader reception arrangement may also route callers, answer approved questions or manage appointments. Providers can use either label for different combinations of those tasks.",
+          "For a service business, the distinction is the authority and work assigned to the service. Collecting a request is different from qualifying it; requesting a time is different from confirming a booking. Define those outcomes independently of the provider’s marketing category."
+        ],
+        "items": [
+          "List the tasks included in the offer.",
+          "Separate capture, routing and confirmation.",
+          "Identify which decisions remain with your business."
+        ]
+      },
+      {
+        "title": "Compare service scope separately from staffing.",
+        "paragraphs": [
+          "The label virtual receptionist does not by itself tell you whether a call is handled by a person, an AI system or a combination. Service scope and staffing model are separate questions that should be answered directly.",
+          "Ask how the provider handles exceptions and when your team receives a request. If a person must make a decision, define the supported transfer or callback path. Do not assume that a more expansive label includes technical advice, estimates or dispatch authority."
+        ],
+        "items": [
+          "Confirm who or what answers the call.",
+          "Review exception and human-handoff behavior.",
+          "Keep diagnosis, pricing and dispatch authority explicit."
+        ]
+      },
+      {
+        "title": "Match Revo’s published tasks to your needs.",
+        "paragraphs": [
+          "Revo publishes an AI answering offer with intake-related features, appointment booking and summaries. Higher-tier pricing lists additional features such as transfers and recordings. Check the current plan and the configuration for the tasks you need.",
+          "Evaluate the actual caller and team workflow rather than trying to fit the service into one label. Review the script, confirmation boundaries and follow-up ownership. Use the separate AI-versus-live-receptionist guide when the staffing decision itself is the question."
+        ],
+        "items": [
+          "Confirm plan-specific tasks directly.",
+          "Test the supported caller workflow.",
+          "Assign ownership of decisions outside the service scope."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Are these two terms standardized?",
+        "a": "Providers use the terms differently. Compare the included tasks, decision authority and coverage rather than relying on the label."
+      },
+      {
+        "q": "Is a virtual receptionist always a human?",
+        "a": "The term does not establish the staffing model. Ask whether calls are handled by people, AI or a combination."
+      }
+    ],
+    "takeaway": "Compare the work included in the service.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.mapcommunications.com/blog/answering-service-vs-virtual-receptionist-whats-the-difference/"
+    ],
+    "related": [
+      "compare/ai-vs-live-receptionist",
+      "choose-virtual-receptionist",
+      "appointment-booking"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "missed-call-text-back",
+    "title": "Missed-call text-back vs AI answering",
+    "description": "Review missed-call text-back for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Missed-call text-back",
+    "eyebrow": "Missed-call text-back",
+    "lead": "Choose how the conversation should continue.",
+    "intro": "Missed-call text-back sends a message after a call goes unanswered. AI answering handles the incoming conversation. Compare the two workflows by what the caller and your team need to do next.",
+    "sections": [
+      {
+        "title": "Understand the trigger and channel.",
+        "paragraphs": [
+          "A missed-call text-back workflow uses an unanswered call as a trigger for an SMS. The message can invite a reply, but the caller still needs to read it and choose whether to continue in text. Delivery and replies require the supported messaging setup.",
+          "Incoming answering instead handles a conversation while the caller is on the phone. It can collect the request through that conversation. SMS follow-up after an answered call is another workflow; it is not evidence that a provider has an automatic missed-call trigger."
+        ],
+        "items": [
+          "Confirm what event triggers the message.",
+          "Distinguish missed-call SMS from post-call follow-up.",
+          "Decide whether the request needs a live conversation."
+        ]
+      },
+      {
+        "title": "Plan replies, repeats and unavailable staff.",
+        "paragraphs": [
+          "A text creates a second channel that someone or a supported system must manage. Decide who reviews replies, what happens after repeat calls and how the business explains its response availability. Avoid a message suggesting someone is already reviewing the request if that is not true.",
+          "Use approved wording and review the applicable messaging and consent requirements with your provider. Test delivery and the reply workflow using authorized numbers. A sent message alone does not show that a caller replied or that the inquiry reached the right person."
+        ],
+        "items": [
+          "Assign reply ownership and available hours.",
+          "Review repeat-call and duplicate-message behavior.",
+          "Verify delivery and the supported reply path."
+        ]
+      },
+      {
+        "title": "Compare the Revo answering alternative.",
+        "paragraphs": [
+          "Revo’s published offer includes AI answering, call summaries and SMS follow-up. These descriptions do not establish a native automatic missed-call text-back trigger. Confirm a specific trigger with Revo before attributing that capability to it.",
+          "For requests that need service details or clarification, evaluate the supported answering flow and resulting handoff. Use your own call and follow-up records to decide what fits. Do not assume that either a text or an answered call guarantees a booking or recovered revenue."
+        ],
+        "items": [
+          "Review the supported incoming answering flow.",
+          "Confirm any messaging trigger directly.",
+          "Evaluate completed follow-up rather than messages sent."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does Revo automatically text every missed caller?",
+        "a": "The website lists SMS follow-up, which does not by itself verify an automatic missed-call trigger. Confirm that specific capability directly."
+      },
+      {
+        "q": "Does a sent text recover a missed inquiry?",
+        "a": "It creates another contact opportunity. Review whether the caller replied and your team completed the next step; do not equate sending with a recovered booking."
+      }
+    ],
+    "takeaway": "Choose how the conversation should continue.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://help.gohighlevel.com/support/solutions/articles/48001239140-where-and-how-to-configure-the-missed-call-text-back-feature"
+    ],
+    "related": [
+      "missed-calls",
+      "compare/ai-vs-voicemail",
+      "ai-call-summary"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "conditional-call-forwarding",
+    "title": "Conditional call forwarding for business answering",
+    "description": "Review conditional forwarding for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Conditional forwarding",
+    "eyebrow": "Conditional forwarding",
+    "lead": "Route unanswered calls while keeping the first ring.",
+    "intro": "Conditional call forwarding redirects a call when a specified condition occurs, such as no answer, a busy line or an unreachable phone. The supported conditions and activation method depend on the provider and line.",
+    "sections": [
+      {
+        "title": "Choose the condition rather than forwarding everything.",
+        "paragraphs": [
+          "Immediate forwarding sends incoming calls to another destination without first trying the original line. Conditional forwarding gives the original line a chance to answer under the selected conditions. A device menu for ordinary forwarding does not necessarily expose every conditional option.",
+          "Forwarding is different from porting: forwarding routes calls while the original service remains in place; porting moves a number between providers. Do not assume an answering service requires a number transfer. Confirm the supported connection method directly with Revo."
+        ],
+        "items": [
+          "Decide which conditions should use the answering destination.",
+          "Confirm the line type and carrier-supported method.",
+          "Distinguish routing from moving the number."
+        ]
+      },
+      {
+        "title": "Use the instructions for the actual provider.",
+        "paragraphs": [
+          "T-Mobile and Verizon publish different conditional-forwarding instructions. Follow the provider documentation for the line being configured. An iPhone does not make carrier star codes universal, and wireless instructions should not be applied to a landline or hosted phone account.",
+          "For AT&T or another provider, confirm whether the specific service supports the required condition and how to manage it. Record the current configuration before making an authorized change. Obtain the correct answering destination through the supported Revo onboarding process rather than guessing a number."
+        ],
+        "items": [
+          "Check the provider and service class.",
+          "Confirm the supported destination with Revo.",
+          "Record the original routing and voicemail behavior."
+        ]
+      },
+      {
+        "title": "Test the route and keep a provider-specific rollback.",
+        "paragraphs": [
+          "Test an ordinary answered call and the chosen conditional path with authorized participants. Check the destination, caller experience and no-answer behavior. Verify whether the forwarded call bypasses the original voicemail and whether the receiving service has a supported fallback.",
+          "Keep the provider’s cancellation or reset instructions available. Deactivation codes differ across providers and conditions. After rollback, test that the original phone rings and its intended voicemail works. Do not assume a forwarding change fixes unrelated blocking or device availability settings."
+        ],
+        "items": [
+          "Test the original answer and conditional route.",
+          "Check voicemail and unavailable-destination behavior.",
+          "Use the provider-specific reset and retest the original route."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does conditional forwarding change my number?",
+        "a": "It routes incoming calls under supported conditions; it is not the same as porting the number to another provider."
+      },
+      {
+        "q": "Is there one code for all carriers?",
+        "a": "No. Provider, line type and condition matter. Use the official instructions applicable to the service being configured."
+      }
+    ],
+    "takeaway": "Route unanswered calls while keeping the first ring.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.verizon.com/support/knowledge-base-181139/"
+    ],
+    "related": [
+      "overflow-answering",
+      "t-mobile-call-forwarding",
+      "verizon-call-forwarding",
+      "landline-call-forwarding"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "landline-call-forwarding",
+    "title": "Forward landline calls to an answering service",
+    "description": "Review landline forwarding for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Landline forwarding",
+    "eyebrow": "Landline forwarding",
+    "lead": "Check the fixed-line service before changing its route.",
+    "intro": "Forwarding a landline depends on the fixed-line provider and account features. Traditional home phone, business voice and hosted phone services can have different controls, so begin with the actual service type.",
+    "sections": [
+      {
+        "title": "Identify the account and available controls.",
+        "paragraphs": [
+          "Check which provider supplies the number and whether the account is traditional fixed-line, digital voice or a hosted business system. Confirm that call forwarding is available for that service. Instructions for a wireless phone do not establish how a fixed-line account works.",
+          "A business phone system may manage routes through its own administrator settings rather than a handset code. Identify the authorized account owner or administrator before making changes. Confirm whether the goal is to forward every call or only calls not answered by the office."
+        ],
+        "items": [
+          "Identify the provider and service type.",
+          "Confirm the authorized administrator.",
+          "Choose immediate versus supported conditional forwarding."
+        ]
+      },
+      {
+        "title": "Confirm the destination and caller behavior.",
+        "paragraphs": [
+          "Obtain the answering destination through the supported Revo setup. Ask the fixed-line provider about any forwarding restrictions, charges and interaction with voicemail. Do not enter a destination copied from a generic tutorial or apply a wireless activation code to the account.",
+          "Forwarding changes the call route, not the availability of the field team. The receiving script should still match your office hours, accepted work and follow-up rules. Review those details before sending customer calls to the answering service."
+        ],
+        "items": [
+          "Use the destination supplied for your account.",
+          "Check provider restrictions and charges.",
+          "Align the receiving script with business operating rules."
+        ]
+      },
+      {
+        "title": "Test and retain the original configuration.",
+        "paragraphs": [
+          "Document the existing routing and voicemail arrangement. Use the provider’s current instructions to make an authorized change, then test from another number. Check that the intended line rings or forwards as configured and that the caller reaches the expected answering experience.",
+          "If the receiving destination is unavailable, the fallback should remain understandable to the caller. Keep the fixed-line provider’s deactivation instructions available. After any rollback, check the original ring and voicemail path rather than relying only on a confirmation tone or settings screen."
+        ],
+        "items": [
+          "Document the original route.",
+          "Test the destination from another number.",
+          "Keep and verify the provider-specific rollback."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I use mobile forwarding codes on my landline?",
+        "a": "Do not assume that. Follow the fixed-line provider’s instructions for the specific service and account."
+      },
+      {
+        "q": "Will forwarding also confirm service appointments?",
+        "a": "Forwarding only routes calls. Appointment confirmation depends on the answering configuration and your business’s booking rules."
+      }
+    ],
+    "takeaway": "Check the fixed-line service before changing its route.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.centurylink.com/home/help/home-phone/calling-features/use-call-forwarding-to-send-your-calls-to-another-phone.html"
+    ],
+    "related": [
+      "conditional-call-forwarding",
+      "appointment-booking",
+      "after-hours"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "call-routing",
+    "title": "Call routing rules for a home service business",
+    "description": "Review call routing for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Call routing",
+    "eyebrow": "Call routing",
+    "lead": "Give each request a reachable destination.",
+    "intro": "Call routing directs incoming calls according to defined criteria. For a service business, the practical question is which requests should reach which person or answering path, and what happens if that path is unavailable.",
+    "sections": [
+      {
+        "title": "Separate the route from the conversation.",
+        "paragraphs": [
+          "Routing chooses a destination. Intake collects information, and a transfer hands an active call to another recipient. These decisions can work together, but a provider offering one does not automatically offer every advanced routing method.",
+          "Begin with the destinations your team can actually maintain. An office, approved answering path and available on-call recipient need clear roles. Avoid routing a caller to a person simply because a number exists; the destination must be appropriate for the request and current availability."
+        ],
+        "items": [
+          "Identify maintained destinations and owners.",
+          "Separate routing, intake and active-call transfer.",
+          "Check availability before selecting a human destination."
+        ]
+      },
+      {
+        "title": "Write conditions and exceptions plainly.",
+        "paragraphs": [
+          "Define the rules your business needs: office hours, an unanswered line or a request requiring a person. Keep the caller’s stated urgency separate from a verified dispatch decision. Out-of-area or unsupported requests need an honest response rather than a routing promise.",
+          "For each rule, specify a fallback. An unavailable recipient, busy line or closed office should lead to a supported message or callback process. Avoid circular routes between the business phone and answering destination; test the actual path instead of assuming the configuration is safe."
+        ],
+        "items": [
+          "State the condition and intended destination.",
+          "Define the no-answer fallback for each path.",
+          "Check the route does not return to its starting point."
+        ]
+      },
+      {
+        "title": "Match the rules to the supported Revo setup.",
+        "paragraphs": [
+          "Revo publishes answering coverage and higher-tier transfers. Its feature labels do not establish skill-based queues, an ACD or every form of automated routing. Confirm which conditions and destinations the current phone and Revo setup supports.",
+          "Test the supported paths with authorized participants. Review whether the caller receives accurate expectations and the team receives the information needed to respond. Keep routing rules current when hours, staff availability or phone providers change."
+        ],
+        "items": [
+          "Confirm supported rules and plan features.",
+          "Test each destination and unavailable path.",
+          "Update rules when operating availability changes."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does call routing qualify a service request?",
+        "a": "Routing selects a destination. Qualification applies the business’s acceptance rules to information gathered from the caller; it is a separate decision."
+      },
+      {
+        "q": "Does Revo provide advanced ACD routing?",
+        "a": "Do not infer that from answering or transfer labels. Confirm the exact supported routing arrangement directly."
+      }
+    ],
+    "takeaway": "Give each request a reachable destination.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.twilio.com/docs/glossary/what-is-call-routing"
+    ],
+    "related": [
+      "conditional-call-forwarding",
+      "compare/warm-vs-cold-transfer",
+      "lead-qualification"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "call-transfer-language",
+    "title": "Call transfer script and handoff language",
+    "description": "Review call transfer language for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Call transfer language",
+    "eyebrow": "Call transfer language",
+    "lead": "Explain the handoff before moving the call.",
+    "intro": "Call transfer language should tell the caller what will happen and give the recipient useful context. Match the wording to the actual transfer method and the receiving person’s availability.",
+    "sections": [
+      {
+        "title": "Explain the next step and ask about holding.",
+        "paragraphs": [
+          "Before a transfer, state the reason for involving another person. Useful wording is “I can try to connect you with the team for that question. Are you able to hold?” Use it only when trying that connection is supported by the business’s rules.",
+          "A transfer attempt is different from a promise that someone will answer. Avoid telling the caller a technician is ready, a request is urgent enough for dispatch or a quote will be available unless the responsible person has confirmed that commitment."
+        ],
+        "items": [
+          "State the reason for the handoff.",
+          "Ask whether the caller can hold.",
+          "Describe a connection attempt accurately."
+        ]
+      },
+      {
+        "title": "Brief the recipient when the method supports it.",
+        "paragraphs": [
+          "For an attended transfer, provide the request and essential context before connecting the caller. A concise structure is the reason for the call, verified contact details and the decision the caller needs. Do not add guessed facts to make the briefing sound complete.",
+          "A blind transfer may not support a spoken pre-brief. Confirm the available handoff information and avoid saying that the recipient has already been briefed when that is not true. Keep the recipient’s accepted role separate from the general intake script."
+        ],
+        "items": [
+          "Share the request and verified details.",
+          "Explain what decision needs a person.",
+          "Match the wording to the actual transfer method."
+        ]
+      },
+      {
+        "title": "Give an unavailable-recipient response.",
+        "paragraphs": [
+          "If the connection is not completed, explain the supported next step. “The team is unavailable to take the call now. What is the best number for a callback?” is appropriate when a callback request is the actual fallback. State response timing only if the business has authorized it.",
+          "Revo lists transfers on higher tiers. Confirm the supported method, recipient behavior and unavailable fallback directly. Test the wording with authorized participants, including the case where the receiving person cannot answer."
+        ],
+        "items": [
+          "Use the actual no-answer fallback.",
+          "Confirm a callback number if collecting a request.",
+          "Test recipient availability and the resulting caller message."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Should I say the recipient has all the details?",
+        "a": "Only when that briefing or information delivery has actually occurred through the supported process."
+      },
+      {
+        "q": "Can these phrases be used for every transfer?",
+        "a": "Adapt them to the approved business rules, supported transfer method and real fallback. Do not make availability promises the team has not authorized."
+      }
+    ],
+    "takeaway": "Explain the handoff before moving the call.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.virtualpbx.com/blog/general-telephony/warm-transfer-call-scripts/"
+    ],
+    "related": [
+      "compare/warm-vs-cold-transfer",
+      "phone-answering-script",
+      "call-routing"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "t-mobile-call-forwarding",
+    "title": "T-Mobile conditional call forwarding setup",
+    "description": "Review t-mobile forwarding for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "T-Mobile forwarding",
+    "eyebrow": "T-Mobile forwarding",
+    "lead": "Choose the T-Mobile condition you intend to change.",
+    "intro": "T-Mobile’s official short-code documentation distinguishes no-answer, unreachable and busy forwarding. Use the method for the specific condition and confirm that it applies to the business line before changing it.",
+    "sections": [
+      {
+        "title": "Check the line and destination first.",
+        "paragraphs": [
+          "These instructions concern T-Mobile’s documented wireless calling controls. They do not apply automatically to another carrier, a hosted business system or a landline. Confirm the line’s support and the authorized account owner before making a change.",
+          "Obtain the destination through the supported Revo setup and keep the existing conditional route recorded. Conditional forwarding can affect calls that would otherwise reach carrier voicemail. Decide which conditions should use the answering service rather than changing all routes without review."
+        ],
+        "items": [
+          "Confirm the T-Mobile wireless line and support.",
+          "Obtain the correct destination from Revo.",
+          "Record the current conditional and voicemail arrangement."
+        ]
+      },
+      {
+        "title": "Use the documented condition-specific sequence.",
+        "paragraphs": [
+          "T-Mobile documents **61* for no-answer forwarding, **62* for forwarding when not reachable and **67* for forwarding when busy. For these activation sequences, its instructions specify +1 followed by the destination phone number and then #. Enter the actual authorized destination; do not use a sample number.",
+          "The documentation lists ##61#, ##62# and ##67# to turn off those respective settings. It lists ##004# to reset forwarding to its default. Resetting to a default is different from assuming that every forwarding destination is cleared; check the resulting voicemail behavior."
+        ],
+        "items": [
+          "Choose no answer, unreachable or busy deliberately.",
+          "Follow the full current T-Mobile sequence for that condition.",
+          "Keep the matching deactivation or default-reset instruction."
+        ]
+      },
+      {
+        "title": "Verify the result and rollback path.",
+        "paragraphs": [
+          "Use authorized test calls from another number to check the condition you changed and a call answered normally. Confirm the caller reaches the intended service and your team receives the expected information. Check behavior when the destination cannot receive a call.",
+          "If the code is rejected or behavior differs from the intended route, contact T-Mobile rather than substituting another carrier’s code. After deactivation or default reset, retest the original line and voicemail. Check relevant provider charges and restrictions before routing customer traffic."
+        ],
+        "items": [
+          "Test the changed condition and a normal answered call.",
+          "Verify destination and unavailable-path behavior.",
+          "After rollback, retest ringing and voicemail."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does one code activate every T-Mobile condition?",
+        "a": "The official documentation gives separate sequences for no answer, unreachable and busy. Select the intended condition and use its current instructions."
+      },
+      {
+        "q": "Is ##004# the same as disabling one condition?",
+        "a": "It is documented as a default reset. Individual conditions have separate deactivation codes; verify the resulting configuration."
+      }
+    ],
+    "takeaway": "Choose the T-Mobile condition you intend to change.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.t-mobile.com/support/plans-features/self-service-short-codes"
+    ],
+    "related": [
+      "conditional-call-forwarding",
+      "verizon-call-forwarding",
+      "overflow-answering"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "verizon-call-forwarding",
+    "title": "Verizon conditional call forwarding setup",
+    "description": "Review verizon forwarding for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+    "navigationLabel": "Verizon forwarding",
+    "eyebrow": "Verizon forwarding",
+    "lead": "Use the conditional route, then verify its fallback.",
+    "intro": "Verizon’s wireless instructions distinguish immediate forwarding from busy-or-no-answer forwarding. Select the intended behavior and use the current instructions for the line before routing customer calls.",
+    "sections": [
+      {
+        "title": "Confirm wireless support and the receiving number.",
+        "paragraphs": [
+          "Verizon’s published instructions apply to supported wireless forwarding. A Verizon business fixed-line account or a hosted phone system can use different controls. Confirm the line type and support rather than treating the brand name as enough to choose a method.",
+          "Obtain the correct receiving number through Revo’s supported setup. Record the original phone and voicemail behavior, and review any applicable provider charges or restrictions. A forwarded call does not establish your company’s field availability or permission to dispatch."
+        ],
+        "items": [
+          "Confirm the supported Verizon wireless line.",
+          "Get the correct destination for your Revo setup.",
+          "Record the original ring and voicemail path."
+        ]
+      },
+      {
+        "title": "Distinguish *71 from immediate *72 forwarding.",
+        "paragraphs": [
+          "Verizon documents dialing *71 followed by the ten-digit destination for forwarding when the line is busy or there is no answer. Its immediate-forwarding method uses *72 followed by the destination. Use the actual authorized number and follow the current confirmation instructions.",
+          "The official instructions describe listening for the confirmation beep and waiting for the call to end. Verizon documents *73 to turn off forwarding. Do not generalize these codes to another carrier or assume they work from every service area or device arrangement."
+        ],
+        "items": [
+          "Use *71 for the documented busy/no-answer route.",
+          "Keep *72 immediate forwarding separate from conditional setup.",
+          "Retain the *73 rollback instruction and current provider guidance."
+        ]
+      },
+      {
+        "title": "Test the result from another number.",
+        "paragraphs": [
+          "With authorized participants, check a normally answered call and a call that follows the conditional path. Confirm the intended service answers and that the caller receives the correct expectations. Review no-answer behavior at the receiving destination.",
+          "After turning forwarding off, retest the original line and voicemail. If calls still do not reach the phone, review other settings such as blocking or availability with the provider. Do not keep changing forwarding codes to solve an unrelated device or service problem."
+        ],
+        "items": [
+          "Test normal answer and conditional forwarding.",
+          "Check the unavailable-destination path.",
+          "After rollback, verify original ringing and voicemail."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the difference between *71 and *72?",
+        "a": "Verizon documents *71 for busy-or-no-answer forwarding and *72 for immediate forwarding. Confirm applicability to the specific wireless line."
+      },
+      {
+        "q": "How does Verizon document turning forwarding off?",
+        "a": "Its wireless instructions specify *73. Follow the current provider confirmation steps and retest the original route."
+      }
+    ],
+    "takeaway": "Use the conditional route, then verify its fallback.",
+    "pricingVariant": "missed-calls",
+    "sourcePaths": [
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.verizon.com/support/knowledge-base-181139/"
+    ],
+    "related": [
+      "conditional-call-forwarding",
+      "t-mobile-call-forwarding",
+      "after-hours"
+    ],
+    "template": "workflow",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+    },
     "publicationStatus": "draft"
   }
 ]
