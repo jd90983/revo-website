@@ -1,0 +1,17 @@
+{
+  "unit_tests": 18,
+  "typecheck": "passed",
+  "registry": "30 total, 10 approved, 20 draft",
+  "normal_build": "passed; 20 draft routes absent",
+  "normal_verify": "passed; 392 internal links",
+  "preview_build": "passed in disposable local copy; 30 guides, 31 routes",
+  "preview_verify": "passed; 1113 internal links",
+  "fixture_e2e": "passed: approval, draft exclusion, catalog, withdrawal",
+  "visual_cases": 40,
+  "visual_failures": 0,
+  "draft_intro_leaks_in_public_javascript": [],
+  "production_deploy": false,
+  "remote_pr": null,
+  "new_seo_opportunities_publication_ready": 0,
+  "measured_candidate_for_further_selection": 1
+}

@@ -1,0 +1,33 @@
+{
+  "status": "blocked_control_tool_unavailable",
+  "authorized": true,
+  "personal_chrome_occupied": false,
+  "changes_made": false,
+  "last_verified_keyword_count": 277,
+  "last_verified_prompt_count": 53,
+  "live_capacity_recheck": "not performed",
+  "keywords_pending": [
+    "business call recording",
+    "call transcription",
+    "warm transfer vs cold transfer",
+    "phone call answering script",
+    "pay as you go answering service",
+    "how to choose a virtual receptionist service",
+    "virtual receptionist vs answering service difference",
+    "ai call summary",
+    "missed call text back",
+    "conditional call forwarding",
+    "how to forward calls from landline",
+    "call routing",
+    "call screening service",
+    "transfer call script",
+    "phone number porting",
+    "how can i deactivate call forwarding",
+    "conditional call forwarding t mobile",
+    "conditional call forwarding att",
+    "conditional call forwarding verizon",
+    "conditional call forwarding iphone"
+  ],
+  "prompt_additions": "Pending live deduplication of 53 existing prompts and capacity verification; no additions claimed.",
+  "duplicate_keywords": "None matched last observed 277-row tracking list; recheck before adding."
+}

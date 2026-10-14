@@ -1,0 +1,37 @@
+{
+  "rechecked_date": "2026-10-14",
+  "chrome_control_tools_discovered": 0,
+  "tool_search_available": false,
+  "personal_chrome_occupied": false,
+  "semrush_writes": 0,
+  "source_export_rows": 9703,
+  "unique_export_keywords": 6335,
+  "sources": [
+    {
+      "file": "/Users/mac/Documents/Codex/2026-10-13/task-3/revo_keywords/ai-receptionist_all-keywords_us_2026-10-13.csv",
+      "rows": 3233,
+      "sha256": "48a75d0e06a31dae860187fd27cb50c7001f40430a7ded6bb2fe81b27c81b04a",
+      "collected": "2026-10-13",
+      "source": "Prior Semrush Chrome export; not refreshed"
+    },
+    {
+      "file": "/Users/mac/Documents/Codex/2026-10-13/task-3/revo_keywords/answering-service_all-keywords_us_2026-10-13.csv",
+      "rows": 3810,
+      "sha256": "5723163d9bcc0cd3e2c06193d0e1a7ecfb5e658c906edff6d4ffcae7beea9740",
+      "collected": "2026-10-13",
+      "source": "Prior Semrush Chrome export; not refreshed"
+    },
+    {
+      "file": "/Users/mac/Documents/Codex/2026-10-13/task-3/revo_keywords/virtual-receptionist_all-keywords_us_2026-10-13.csv",
+      "rows": 2660,
+      "sha256": "4044c1fc7de13f9ec36b994f95e521a40a72b194102204fd365011e90f933245",
+      "collected": "2026-10-13",
+      "source": "Prior Semrush Chrome export; not refreshed"
+    }
+  ],
+  "candidates_reassessed": 8,
+  "additional_ready_pages": 0,
+  "implemented_pages": 14,
+  "remaining_new_topics_required": 6,
+  "next_step": "Restore authorized Chrome/CUA control for this task or perform the Chrome-only Semrush work from a thread with that control. Recheck tracking counts/capacity before writing; use further Semrush SERP research to validate distinct new subjects."
+}

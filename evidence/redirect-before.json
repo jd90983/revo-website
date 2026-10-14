@@ -1,0 +1,50 @@
+[
+  {
+    "url": "http://revoapp.ai/",
+    "headers": "HTTP/1.0 308 Permanent Redirect\nContent-Type: text/plain\nLocation: https://revoapp.ai/\nRefresh: 0;url=https://revoapp.ai/\nserver: Vercel\n\nHTTP/2 307 \ncache-control: public, max-age=0, must-revalidate\ncontent-type: text/plain\ndate: Wed, 14 Oct 2026 17:23:58 GMT\nlocation: https://www.revoapp.ai/\nserver: Vercel\nstrict-transport-security: max-age=63072000\nx-vercel-id: cle1::hrlt4-1791998638652-ae73caf1539b\n\nHTTP/2 200 \naccept-ranges: bytes\naccess-control-allow-origin: *\nage: 62739\ncache-control: public, max-age=0, must-revalidate\ncontent-disposition: inline\ncontent-type: text/html; charset=utf-8\ndate: Wed, 14 Oct 2026 17:23:58 GMT\netag: \"c3826a502f658c4d9ee1fce6eae3c1da\"\nlast-modified: Tue, 13 Oct 2026 23:58:19 GMT\nserver: Vercel\nstrict-transport-security: max-age=63072000\nx-vercel-cache: HIT\nx-vercel-id: cle1::ggh57-1791998638920-1bd672bdc9bc\ncontent-length: 73847\n\n",
+    "error": "",
+    "exit": 0
+  },
+  {
+    "url": "http://revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo",
+    "headers": "HTTP/1.0 308 Permanent Redirect\nContent-Type: text/plain\nLocation: https://revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo\nRefresh: 0;url=https://revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo\nserver: Vercel\n\nHTTP/2 307 \ncache-control: public, max-age=0, must-revalidate\ncontent-type: text/plain\ndate: Wed, 14 Oct 2026 17:23:59 GMT\nlocation: https://www.revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo\nserver: Vercel\nstrict-transport-security: max-age=63072000\nx-vercel-id: cle1::zn8sw-1791998639480-310fa7e0e592\n\nHTTP/2 200 \naccept-ranges: bytes\naccess-control-allow-origin: *\nage: 63319\ncache-control: public, max-age=0, must-revalidate\ncontent-disposition: inline; filename=\"after-hours.html\"\ncontent-type: text/html; charset=utf-8\ndate: Wed, 14 Oct 2026 17:23:59 GMT\netag: \"6864f149a40d89e7fd91c5f002928e30\"\nlast-modified: Tue, 13 Oct 2026 23:48:40 GMT\nserver: Vercel\nstrict-transport-security: max-age=63072000\nx-vercel-cache: HIT\nx-vercel-id: cle1::lt2dk-1791998639748-a9a221f13c27\ncontent-length: 17502\n\n",
+    "error": "",
+    "exit": 0
+  },
+  {
+    "url": "http://www.revoapp.ai/",
+    "headers": "HTTP/1.0 308 Permanent Redirect\nContent-Type: text/plain\nLocation: https://www.revoapp.ai/\nRefresh: 0;url=https://www.revoapp.ai/\nserver: Vercel\n\nHTTP/2 200 \naccept-ranges: bytes\naccess-control-allow-origin: *\nage: 62741\ncache-control: public, max-age=0, must-revalidate\ncontent-disposition: inline\ncontent-type: text/html; charset=utf-8\ndate: Wed, 14 Oct 2026 17:24:00 GMT\netag: \"c3826a502f658c4d9ee1fce6eae3c1da\"\nlast-modified: Tue, 13 Oct 2026 23:58:19 GMT\nserver: Vercel\nstrict-transport-security: max-age=63072000\nx-vercel-cache: HIT\nx-vercel-id: cle1::fglhj-1791998640224-66248be30d62\ncontent-length: 73847\n\n",
+    "error": "",
+    "exit": 0
+  },
+  {
+    "url": "http://www.revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo",
+    "headers": "HTTP/1.0 308 Permanent Redirect\nContent-Type: text/plain\nLocation: https://www.revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo\nRefresh: 0;url=https://www.revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo\nserver: Vercel\n\nHTTP/2 200 \naccept-ranges: bytes\naccess-control-allow-origin: *\nage: 63320\ncache-control: public, max-age=0, must-revalidate\ncontent-disposition: inline; filename=\"after-hours.html\"\ncontent-type: text/html; charset=utf-8\ndate: Wed, 14 Oct 2026 17:24:00 GMT\netag: \"6864f149a40d89e7fd91c5f002928e30\"\nlast-modified: Tue, 13 Oct 2026 23:48:40 GMT\nserver: Vercel\nstrict-transport-security: max-age=63072000\nx-vercel-cache: HIT\nx-vercel-id: cle1::kvlff-1791998640747-966f3d6ca039\ncontent-length: 17502\n\n",
+    "error": "",
+    "exit": 0
+  },
+  {
+    "url": "https://revoapp.ai/",
+    "headers": "HTTP/2 307 \ncache-control: public, max-age=0, must-revalidate\ncontent-type: text/plain\ndate: Wed, 14 Oct 2026 17:24:00 GMT\nlocation: https://www.revoapp.ai/\nserver: Vercel\nstrict-transport-security: max-age=63072000\nx-vercel-id: cle1::4fcdb-1791998640984-e947dfd1c939\n\nHTTP/2 200 \naccept-ranges: bytes\naccess-control-allow-origin: *\nage: 62742\ncache-control: public, max-age=0, must-revalidate\ncontent-disposition: inline\ncontent-type: text/html; charset=utf-8\ndate: Wed, 14 Oct 2026 17:24:01 GMT\netag: \"c3826a502f658c4d9ee1fce6eae3c1da\"\nlast-modified: Tue, 13 Oct 2026 23:58:19 GMT\nserver: Vercel\nstrict-transport-security: max-age=63072000\nx-vercel-cache: HIT\nx-vercel-id: cle1::4rbwc-1791998641267-5f456328b273\ncontent-length: 73847\n\n",
+    "error": "",
+    "exit": 0
+  },
+  {
+    "url": "https://revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo",
+    "headers": "HTTP/2 307 \ncache-control: public, max-age=0, must-revalidate\ncontent-type: text/plain\ndate: Wed, 14 Oct 2026 17:24:01 GMT\nlocation: https://www.revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo\nserver: Vercel\nstrict-transport-security: max-age=63072000\nx-vercel-id: cle1::nqwwp-1791998641594-fb3376f7d068\n\nHTTP/2 200 \naccept-ranges: bytes\naccess-control-allow-origin: *\nage: 63321\ncache-control: public, max-age=0, must-revalidate\ncontent-disposition: inline; filename=\"after-hours.html\"\ncontent-type: text/html; charset=utf-8\ndate: Wed, 14 Oct 2026 17:24:01 GMT\netag: \"6864f149a40d89e7fd91c5f002928e30\"\nlast-modified: Tue, 13 Oct 2026 23:48:40 GMT\nserver: Vercel\nstrict-transport-security: max-age=63072000\nx-vercel-cache: HIT\nx-vercel-id: cle1::ggh57-1791998641855-9aa5135f4eac\ncontent-length: 17502\n\n",
+    "error": "",
+    "exit": 0
+  },
+  {
+    "url": "https://www.revoapp.ai/",
+    "headers": "HTTP/2 200 \naccept-ranges: bytes\naccess-control-allow-origin: *\nage: 62742\ncache-control: public, max-age=0, must-revalidate\ncontent-disposition: inline\ncontent-type: text/html; charset=utf-8\ndate: Wed, 14 Oct 2026 17:24:02 GMT\netag: \"c3826a502f658c4d9ee1fce6eae3c1da\"\nlast-modified: Tue, 13 Oct 2026 23:58:19 GMT\nserver: Vercel\nstrict-transport-security: max-age=63072000\nx-vercel-cache: HIT\nx-vercel-id: cle1::62wxg-1791998642100-0dd56dba86a1\ncontent-length: 73847\n\n",
+    "error": "",
+    "exit": 0
+  },
+  {
+    "url": "https://www.revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo",
+    "headers": "HTTP/2 200 \naccept-ranges: bytes\naccess-control-allow-origin: *\nage: 63321\ncache-control: public, max-age=0, must-revalidate\ncontent-disposition: inline; filename=\"after-hours.html\"\ncontent-type: text/html; charset=utf-8\ndate: Wed, 14 Oct 2026 17:24:02 GMT\netag: \"6864f149a40d89e7fd91c5f002928e30\"\nlast-modified: Tue, 13 Oct 2026 23:48:40 GMT\nserver: Vercel\nstrict-transport-security: max-age=63072000\nx-vercel-cache: HIT\nx-vercel-id: cle1::62wxg-1791998642435-033cecd0b5a0\ncontent-length: 17502\n\n",
+    "error": "",
+    "exit": 0
+  }
+]

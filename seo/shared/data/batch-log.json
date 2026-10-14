@@ -36,5 +36,110 @@
     "changes": [
       "updated answering-service-cost; back to draft until re-approved"
     ]
+  },
+  {
+    "batchId": "2026-10-14-new-workflow-guides",
+    "batchHash": "sha256:3c4634034df58b11c1487cad9917ae6790cb4aa301c4c4f4a26c0df030922d46",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush Chrome campaigns; primary SEO metrics unverified"
+    },
+    "appliedAt": "2026-10-14",
+    "changes": [
+      "added pricing-models as draft",
+      "added low-volume-contractor-calls as draft",
+      "added answering-service-fees as draft",
+      "added hvac-heat-wave-call-coverage as draft",
+      "added roofing-storm-call-intake as draft",
+      "added landscaping-spring-call-coverage as draft",
+      "added calendar-booking-checklist as draft",
+      "added bilingual-intake-testing as draft",
+      "added call-recordings-retention as draft",
+      "added human-transfer-policy as draft",
+      "added field-service-connections as draft",
+      "added existing-business-number as draft",
+      "added remodeling-lead-intake as draft",
+      "added electrical-service-area-screening as draft",
+      "added roof-estimate-intake as draft",
+      "added lawn-care-request-types as draft",
+      "added cleaning-request-types as draft",
+      "added plumbing-on-call-policy as draft",
+      "added plumbing-intake-checklist as draft",
+      "added contractor-jobsite-calls as draft"
+    ]
+  },
+  {
+    "batchId": "2026-10-14-measured-summary-preview",
+    "batchHash": "sha256:25a680e97b01b04f8684c8352e368c347b0576efaeeb8513d7673e3addab010f",
+    "source": {
+      "kind": "manual",
+      "reference": "Measured Semrush selection and scoped editorial review; publication held"
+    },
+    "appliedAt": "2026-10-14",
+    "changes": [
+      "withdrew pricing-models",
+      "withdrew low-volume-contractor-calls",
+      "withdrew answering-service-fees",
+      "withdrew hvac-heat-wave-call-coverage",
+      "withdrew roofing-storm-call-intake",
+      "withdrew landscaping-spring-call-coverage",
+      "withdrew calendar-booking-checklist",
+      "withdrew bilingual-intake-testing",
+      "withdrew call-recordings-retention",
+      "withdrew human-transfer-policy",
+      "withdrew field-service-connections",
+      "withdrew existing-business-number",
+      "withdrew remodeling-lead-intake",
+      "withdrew electrical-service-area-screening",
+      "withdrew roof-estimate-intake",
+      "withdrew lawn-care-request-types",
+      "withdrew cleaning-request-types",
+      "withdrew plumbing-on-call-policy",
+      "withdrew plumbing-intake-checklist",
+      "withdrew contractor-jobsite-calls",
+      "added ai-call-summary as draft"
+    ]
+  },
+  {
+    "batchId": "2026-10-14-measured-retained-guides",
+    "batchHash": "sha256:8d38ba66f8ee3507c97c7267b2b1b94ec58a736c4baaa3778905c1d2517f8069",
+    "source": {
+      "kind": "manual",
+      "reference": "14 retained measured subjects; this batch adds remaining 13 after representative summary; no publication approval"
+    },
+    "appliedAt": "2026-10-14",
+    "changes": [
+      "added business-call-recording as draft",
+      "added call-transcription as draft",
+      "added compare/warm-vs-cold-transfer as draft",
+      "added phone-answering-script as draft",
+      "added choose-virtual-receptionist as draft",
+      "added compare/virtual-receptionist-vs-answering-service as draft",
+      "added missed-call-text-back as draft",
+      "added conditional-call-forwarding as draft",
+      "added landline-call-forwarding as draft",
+      "added call-routing as draft",
+      "added call-transfer-language as draft",
+      "added t-mobile-call-forwarding as draft",
+      "added verizon-call-forwarding as draft"
+    ]
+  },
+  {
+    "batchId": "2026-10-14-complete-twenty-guides",
+    "batchHash": "sha256:a267536433e9648db625ac047f73874d48f35d5fc03b006f6a8f19f7043e3491",
+    "source": {
+      "kind": "manual",
+      "reference": "Six final scoped educational subjects; current official references; publication held for visual review"
+    },
+    "appliedAt": "2026-10-14",
+    "changes": [
+      "added phone-number-porting as draft",
+      "added pay-as-you-go-answering-service as draft",
+      "added call-screening as draft",
+      "added turn-off-call-forwarding as draft",
+      "added appointment-reminders as draft",
+      "added ivr-system-cost as draft",
+      "updated conditional-call-forwarding; back to draft until re-approved"
+    ]
   }
 ]

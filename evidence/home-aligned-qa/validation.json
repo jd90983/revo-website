@@ -1,0 +1,19 @@
+{
+  "routes_corrected": 20,
+  "browser_cases": 80,
+  "widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "failures": 0,
+  "fonts_actual": "Inter700 / LexendDeca400; loaded local faces verified",
+  "interactions": "Menu, anchors, FAQopen/close, pricingCTA pass at4widths",
+  "tests": 18,
+  "normal_build": "pass;drafts absent",
+  "preview_build": "pass;30guides/31routes",
+  "preview_internal_links": 1451,
+  "production_deploy": false,
+  "visual_authorization": "pending"
+}

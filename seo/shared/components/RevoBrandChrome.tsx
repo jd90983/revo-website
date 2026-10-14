@@ -4,7 +4,9 @@
 import {useEffect, useState} from "react";
 import {FunnelCTA} from "./FunnelCTA";
 import type {PageMode} from "@/lib/review-cohort";
-import {REVIEW_INDEX, REVIEW_PAGES, reviewPath} from "@/lib/review-cohort";
+import publicGuides from "@/data/public-guide-navigation.json";
+const REVIEW_INDEX="/ai-answering-service/review";
+const reviewPath=(slug:string)=>"/ai-answering-service/"+slug;
 
 const links = [["Services", "/services.html"], ["Industry", "/industries.html"], ["Pricing", "/pricing.html"]];
 const logo = "/ai-answering-service/assets/review/logo.webp";
@@ -33,7 +35,7 @@ export function RevoBrandFooter({mode="review"}:{mode?:PageMode}={}) {
   return <footer className="revo-brand-footer"><div className="revo-container">
     <div className="revo-footer-top"><div className="revo-footer-brand"><a href="/" aria-label="Revo home"><img src={logo} width="82" height="21" alt="Revo" /></a><p>AI phone answering for home service businesses.</p></div>
       <nav aria-label="Explore Revo"><h2>Explore</h2>{links.map(([text, url]) => <a key={url} href={url}>{text}</a>)}</nav>
-      <nav aria-label="Call planning"><h2>Call planning</h2>{REVIEW_PAGES.filter(page=>mode === "review" || page.publicationStatus === "approved").map(page => <a key={page.slug} href={reviewPath(page.slug)}>{page.comparison ? `AI vs ${page.comparison.left === "Voicemail" ? "voicemail" : "a receptionist"}` : page.eyebrow}</a>)}</nav>
+      <nav aria-label="Call planning"><h2>Call planning</h2>{publicGuides.map(page => <a key={page.slug} href={reviewPath(page.slug)}>{page.label}</a>)}</nav>
     </div>
     <div className="revo-footer-bottom"><p>© 2026 Revo. All communication rights reserved.</p><nav aria-label="Legal navigation"><a href="/privacy-policy.html">Privacy policy</a><a href="/terms-of-service.html">Terms of service</a>{mode === "public" ? <button onClick={()=>window.dispatchEvent(new Event("revo-consent-open"))}>Cookie settings</button> : null}</nav></div>
   </div></footer>;

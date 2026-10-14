@@ -1,0 +1,11 @@
+# HOME-aligned twenty-guide design correction
+
+All twenty draft routes use one corrected shared template. The reference is the live www.revoapp.ai HOME, captured in isolated Chromium, and its source variables/base/components/layout/responsive styles. The prior after-hours call-design stylesheet is no longer loaded by these twenty guides.
+
+The mismatch was the earlier template overriding headings with Lexend and using its own left-aligned split hero, palette, typography scale and navigation. The corrected template uses HOME Inter700 headings, Lexend Deca body, original logo, fixed72px glass navigation, centered dark hero, white primary/glass secondary buttons,1280px content system and HOME color tokens. Both local font files are preloaded. The decorative poster is a real frame from the existing HOME video, not generated artwork; the25MB video is not included in the guide payload.
+
+H1 words are preserved as accessible continuous text with white and brand-orange spans. Measured conservative ratios across the poster are6.68:1 orange and16.14:1 white; CTA dark text on white is verified by the palette. The initial answer appears directly under the H1; a reading index, semantic editorial sections, native FAQs, visible sources and related guides follow. All content is visible from server render without HOME animation JavaScript. Underlying final content,20routes, canonicals and metadata are unchanged. No claims, testimonials or product capabilities were added.
+
+The native mobile menu, read anchors, FAQ opening/closing and pricing CTA were tested at320/390/768/1440 and pass. Eighteen tests and both normal/preview builds pass. Normal publication remains ten approved guides; twenty new guides remain drafts and twenty earlier drafts remain withdrawn. Preview verification resolves1451internal links. Final80-case font/visibility/overflow/canonical/cookie/FAQ results are in results.json. HOME reference fonts are in home-font-reference.json and contrast calculation is in contrast.json. Current comparison images are recorded locally for direct review; no external artifact upload.
+
+Skill applied: local impeccable-frontend/SKILL.md. No Chrome personal, Semrush, redirect, DNS, Asana, remote push, deployment or merge was used. One representative link is returned for authorization of the lot. Visual approval remains pending.

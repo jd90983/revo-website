@@ -1,0 +1,21 @@
+keyword,volume_us,kd,intent,provisional_url_suffix,serp_status,product_fit
+business call recording,1000,23,Informational,business-call-recording,Top10 checked,Published plan-dependent recordings; no retention or security guarantee
+phone call answering script,260,13,Informational,phone-answering-script,Top10 checked including Housecall Pro,Reviewed inbound language and caller details; reusable wording without invented call records
+warm transfer vs cold transfer,260,19,Commercial,compare/warm-vs-cold-transfer,Top10 checked,Transfer evaluation; Revo transfer modality must be confirmed
+missed call text back,480,18,Informational,missed-call-text-back,Top10 checked,Compare text-back with live call answering; do not claim Revo-native SMS trigger
+virtual receptionist vs answering service difference,50,12,Commercial,compare/virtual-receptionist-vs-answering-service,Top10 checked,Outsourced service scope comparison; separate from AI versus in-house staff
+how to choose a virtual receptionist service,70,14,Informational,choose-virtual-receptionist,Top10 checked,Vendor procurement checklist; distinct from type comparison
+conditional call forwarding,320,11,Informational,conditional-call-forwarding,Top10 checked,Existing-number forwarding prerequisite; merge unconditional synonyms
+pay as you go answering service,210,14,Informational,pay-as-you-go-answering-service,Pending,Billing commitment evaluation; do not claim Revo is PAYG
+ai call summary,210,29,Informational,ai-call-summary,Pending,Published summaries; differentiate summaries from transcripts
+call routing,1600,37,Informational,call-routing,Pending,Destination/condition design; do not claim skills-based ACD
+how does call screening work,70,30,Informational,call-screening,Pending,Caller-purpose screening; not service-area lead qualification
+transfer call script,90,16,Informational,call-transfer-language,Pending,Handoff wording and consent to hold; not supported modality claim
+phone number porting,590,27,Informational,phone-number-porting,Pending,Existing-number choice; explain porting vs forwarding without claiming Revo porting
+how to forward calls from landline,480,14,Informational,landline-call-forwarding,Pending,Carrier-dependent fixed-line setup
+how can i deactivate call forwarding,1900,29,Informational,turn-off-call-forwarding,Pending,Rollback and test original ring/voicemail path
+conditional call forwarding iphone,110,18,Informational,iphone-conditional-call-forwarding,Pending,Device versus carrier distinction; confirm supported setup
+conditional call forwarding t mobile,110,24,Informational,t-mobile-call-forwarding,Pending,Carrier-specific documented setup
+conditional call forwarding att,50,18,Informational,att-call-forwarding,Pending,Carrier-specific documented setup
+conditional call forwarding verizon,140,30,Informational,verizon-call-forwarding,Pending,Carrier-specific documented setup
+automated appointment reminder,260,11,Informational,appointment-reminders,Top10 checked; mixed healthcare SERP,Conditional fit; Revo setup unverified; no outbound promise

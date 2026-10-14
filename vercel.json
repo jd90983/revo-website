@@ -70,6 +70,86 @@
       "destination": "/ai-answering-service/lead-qualification.html"
     },
     {
+      "source": "/ai-answering-service/ai-call-summary",
+      "destination": "/ai-answering-service/ai-call-summary.html"
+    },
+    {
+      "source": "/ai-answering-service/business-call-recording",
+      "destination": "/ai-answering-service/business-call-recording.html"
+    },
+    {
+      "source": "/ai-answering-service/call-transcription",
+      "destination": "/ai-answering-service/call-transcription.html"
+    },
+    {
+      "source": "/ai-answering-service/compare/warm-vs-cold-transfer",
+      "destination": "/ai-answering-service/compare/warm-vs-cold-transfer.html"
+    },
+    {
+      "source": "/ai-answering-service/phone-answering-script",
+      "destination": "/ai-answering-service/phone-answering-script.html"
+    },
+    {
+      "source": "/ai-answering-service/choose-virtual-receptionist",
+      "destination": "/ai-answering-service/choose-virtual-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/compare/virtual-receptionist-vs-answering-service",
+      "destination": "/ai-answering-service/compare/virtual-receptionist-vs-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/missed-call-text-back",
+      "destination": "/ai-answering-service/missed-call-text-back.html"
+    },
+    {
+      "source": "/ai-answering-service/conditional-call-forwarding",
+      "destination": "/ai-answering-service/conditional-call-forwarding.html"
+    },
+    {
+      "source": "/ai-answering-service/landline-call-forwarding",
+      "destination": "/ai-answering-service/landline-call-forwarding.html"
+    },
+    {
+      "source": "/ai-answering-service/call-routing",
+      "destination": "/ai-answering-service/call-routing.html"
+    },
+    {
+      "source": "/ai-answering-service/call-transfer-language",
+      "destination": "/ai-answering-service/call-transfer-language.html"
+    },
+    {
+      "source": "/ai-answering-service/t-mobile-call-forwarding",
+      "destination": "/ai-answering-service/t-mobile-call-forwarding.html"
+    },
+    {
+      "source": "/ai-answering-service/verizon-call-forwarding",
+      "destination": "/ai-answering-service/verizon-call-forwarding.html"
+    },
+    {
+      "source": "/ai-answering-service/phone-number-porting",
+      "destination": "/ai-answering-service/phone-number-porting.html"
+    },
+    {
+      "source": "/ai-answering-service/pay-as-you-go-answering-service",
+      "destination": "/ai-answering-service/pay-as-you-go-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/call-screening",
+      "destination": "/ai-answering-service/call-screening.html"
+    },
+    {
+      "source": "/ai-answering-service/turn-off-call-forwarding",
+      "destination": "/ai-answering-service/turn-off-call-forwarding.html"
+    },
+    {
+      "source": "/ai-answering-service/appointment-reminders",
+      "destination": "/ai-answering-service/appointment-reminders.html"
+    },
+    {
+      "source": "/ai-answering-service/ivr-system-cost",
+      "destination": "/ai-answering-service/ivr-system-cost.html"
+    },
+    {
       "source": "/ai-answering-service",
       "destination": "/ai-answering-service.html"
     }

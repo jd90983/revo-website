@@ -1,0 +1,10 @@
+{
+  "method": "All poster pixels composited with actual CSS rgba(10,11,12,.84), conservative maximum background luminance; WCAG relative luminance ratio",
+  "h1_white_min_ratio": 16.14,
+  "h1_orange_min_ratio": 6.68,
+  "body_white_on_dark_ratio": 19.7,
+  "primary_cta_dark_on_white_ratio": 19.7,
+  "threshold_normal_text": 4.5,
+  "threshold_large_text": 3,
+  "text_preserved_without_color": true
+}

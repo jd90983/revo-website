@@ -1,0 +1,192 @@
+{
+  "batchId": "2026-10-14-measured-summary-preview",
+  "source": {
+    "kind": "manual",
+    "reference": "Measured Semrush selection and scoped editorial review; publication held"
+  },
+  "operations": [
+    {
+      "op": "withdraw",
+      "slug": "pricing-models",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "low-volume-contractor-calls",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "answering-service-fees",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "hvac-heat-wave-call-coverage",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "roofing-storm-call-intake",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "landscaping-spring-call-coverage",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "calendar-booking-checklist",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "bilingual-intake-testing",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "call-recordings-retention",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "human-transfer-policy",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "field-service-connections",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "existing-business-number",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "remodeling-lead-intake",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "electrical-service-area-screening",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "roof-estimate-intake",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "lawn-care-request-types",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "cleaning-request-types",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "plumbing-on-call-policy",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "plumbing-intake-checklist",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "withdraw",
+      "slug": "contractor-jobsite-calls",
+      "reason": "Superseded prompt-led draft; not counted in measured SEO batch."
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "ai-call-summary",
+        "title": "AI call summaries for home service follow-up",
+        "description": "Learn what an AI call summary should capture, how it differs from a transcript and how your team can turn a customer request into a clear next step.",
+        "navigationLabel": "AI call summaries",
+        "eyebrow": "From call to follow-up",
+        "lead": "Give the next person the context they need to respond.",
+        "intro": "An AI call summary is a condensed account of a phone conversation. It can help a service team review a request without replaying the whole call. Its value depends on the details it preserves and the person who checks them before acting.",
+        "sections": [
+          {
+            "title": "Separate a summary from a transcript.",
+            "paragraphs": [
+              "A recording preserves the audio. A transcript converts spoken words into text. A summary selects the main points. These outputs serve different purposes: use a summary for an initial review and the available source material when a detail needs checking.",
+              "Revo\u2019s Services page describes organized call summaries, and its Pricing page lists a call dashboard with summaries. Recordings and transcripts appear as additional features on higher tiers. Confirm the current plan and what material your team can access before relying on it."
+            ],
+            "items": [
+              "Use the summary to identify the request and next step.",
+              "Check an uncertain detail against the available source.",
+              "Keep recording, transcript and summary access separate in your plan review."
+            ]
+          },
+          {
+            "title": "Keep the facts a service team needs.",
+            "paragraphs": [
+              "A useful handoff identifies who called, how to reach them, what service they requested and where the work would take place. Timing matters when the caller states a deadline or availability. Keep the caller\u2019s words separate from a diagnosis, quote or commitment that your team has not made.",
+              "Missing information should remain visible as missing information. An unclear address or callback number needs confirmation; it should not be completed from an assumption. The same applies to urgency: the caller\u2019s description does not establish that your team can attend immediately."
+            ],
+            "items": [
+              "Confirm the callback number and service address.",
+              "Record the requested work and caller-stated timing.",
+              "Distinguish a request from an accepted booking or promised visit.",
+              "Flag incomplete or ambiguous details for follow-up."
+            ]
+          },
+          {
+            "title": "Assign the next action before closing the loop.",
+            "paragraphs": [
+              "A summary does not complete a callback, qualify a job or reserve a calendar slot. Give each request an owner and a next action. The person reviewing it should decide whether to call back, check the service area, review availability or clarify the request.",
+              "Review the supported delivery and dashboard workflow with Revo. Use an authorized test call to check whether your team can find the information and follow up. Keep access limited to the people who need it, and confirm retention and deletion arrangements directly rather than assuming that a feature label defines them."
+            ],
+            "items": [
+              "Name the person responsible for reviewing new requests.",
+              "Verify the summary is available through the supported workflow.",
+              "Confirm consequential details with the caller before making a commitment.",
+              "Review access and retention terms with the provider."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is an AI call summary the same as a transcript?",
+            "a": "No. A transcript represents the spoken conversation in text; a summary selects its main points. When wording or a detail matters, check the available recording or transcript and confirm uncertainty with the caller."
+          },
+          {
+            "q": "Does a summary confirm an appointment?",
+            "a": "A summary can report what was discussed, but it does not by itself establish a completed booking. Check the calendar and the business\u2019s booking rules before confirming a visit."
+          },
+          {
+            "q": "Does Revo include call summaries?",
+            "a": "Revo\u2019s current website lists a call dashboard with summaries. Recordings and transcripts are listed on higher pricing tiers. Check the current plan, access and delivery details directly with Revo."
+          }
+        ],
+        "takeaway": "Turn the request into an owned next step.",
+        "pricingVariant": "missed-calls",
+        "sourcePaths": [
+          "https://www.revoapp.ai/services.html",
+          "https://www.revoapp.ai/pricing.html",
+          "https://www.twilio.com/docs/glossary/what-is-call-transcription"
+        ],
+        "related": [
+          "lead-qualification",
+          "appointment-booking",
+          "missed-calls"
+        ],
+        "template": "workflow",
+        "source": {
+          "kind": "manual",
+          "reference": "Semrush personal Chrome US desktop 2026-10-14: ai call summary volume 210 KD29; prompt campaign 5412332; source-checked editorial draft"
+        }
+      }
+    }
+  ]
+}
