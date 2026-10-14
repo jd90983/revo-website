@@ -1551,3 +1551,8 @@
 /* Match the landing header offset while preserving the HOME component layout. */
 #hear-sample{scroll-margin-top:88px}
 @media(max-width:767px){#hear-sample{scroll-margin-top:72px}}
+/* Keep the HOME summary readable when its two panels stack on tablets. */
+@media(min-width:768px) and (max-width:1023px){
+  .rd-page .hear-sample-right-panel{width:100%;min-height:600px;max-height:600px}
+  .rd-page .hear-sample-professional-image{object-position:center top}
+}
