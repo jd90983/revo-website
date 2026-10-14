@@ -1,0 +1,1561 @@
+/* HOME sample player rules reused from css/layout.css and css/responsive.css. */
+/* ===== HEAR A SAMPLE SECTION ===== */
+
+.rd-page .hear-sample-section {
+  background: #ffffff;
+  width: 100%;
+  padding: var(--section-padding-y) var(--section-padding-x);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rd-page .hear-sample-container {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+/* Section Header */
+.rd-page .hear-sample-header {
+  max-width: 768px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.rd-page .hear-sample-tagline {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0a0b0c;
+  margin: 0;
+}
+
+.rd-page .hear-sample-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1.2;
+  letter-spacing: -0.52px;
+  color: #0a0b0c;
+  margin: 0;
+  text-align: center;
+}
+
+.rd-page .hear-sample-title-highlight {
+  color: var(--color-primary);
+}
+
+.rd-page .hear-sample-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin: 0;
+}
+
+.rd-page .hear-sample-description p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #0a0b0c;
+  margin: 0;
+  text-align: center;
+}
+
+/* Main Card */
+.rd-page .hear-sample-card {
+  background: transparent;
+  border-radius: 24px;
+  box-shadow: 0px 0px 55px 0px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  min-height: 600px; /* Altura mínima, pero puede crecer */
+  display: flex;
+  flex-direction: column;
+  overflow: visible; /* Permitir que se vea todo el contenido */
+  height: auto; /* Altura automática basada en contenido */
+}
+
+/* Hide mobile icons on desktop */
+.rd-page .hear-sample-mobile-icons {
+  display: none;
+}
+
+.rd-page .hear-sample-card-content {
+  display: flex;
+  gap: 30px;
+  flex: 1;
+  align-items: flex-start; /* Alinear al inicio para que ambos paneles se ajusten */
+  min-height: 600px; /* Altura mínima para que coincida con la imagen */
+  overflow: visible; /* Permitir que se vea todo el contenido */
+  height: auto; /* Altura automática basada en el contenido más alto */
+}
+
+/* Left Panel */
+.rd-page .hear-sample-left-panel {
+  width: 500px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.rd-page .hear-sample-image-container {
+  position: relative;
+  width: 500px;
+  min-height: 600px; /* Altura mínima, pero puede crecer */
+  border-radius: 20px;
+  overflow: visible; /* Permitir que se vea todo el contenido */
+  flex-shrink: 0;
+  pointer-events: none;
+}
+
+.rd-page .hear-sample-image-container > * {
+  pointer-events: auto;
+}
+
+.rd-page .hear-sample-professional-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  display: block;
+  pointer-events: none;
+  border-radius: 20px;
+}
+
+.rd-page .hear-sample-professional-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1e293b;
+  text-align: center;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  flex-shrink: 0;
+}
+
+/* Service Icons Menu */
+
+/* Temporarily hide service switcher (Plumbing, Legal, Locksmith, Cyber) – remove .hear-sample-options-disabled from HTML to re-enable */
+.rd-page .hear-sample-service-icons-menu.hear-sample-options-disabled,
+.rd-page .hear-sample-mobile-icons.hear-sample-options-disabled {
+  display: none !important;
+}
+
+.rd-page .hear-sample-service-icons-menu {
+  position: absolute;
+  right: 0;
+  top: 24%;
+  transform: none;
+  width: 68px;
+  height: auto;
+  background: transparent;
+  border-radius: 20px;
+  overflow: visible;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px 2px;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+}
+
+.rd-page .hear-sample-icon-btn {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  padding: 10px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.rd-page .hear-sample-icon-btn:nth-child(1) {
+  /* First button - no special positioning needed */
+}
+
+.rd-page .hear-sample-icon-btn:nth-child(2) {
+  /* Second button - no special positioning needed */
+}
+
+.rd-page .hear-sample-icon-btn:nth-child(3) {
+  /* Third button - no special positioning needed */
+}
+
+.rd-page .hear-sample-icon-btn:nth-child(4) {
+  /* Fourth button - no special positioning needed */
+}
+
+.rd-page .hear-sample-icon-btn:nth-child(5) {
+  /* Fifth button - no special positioning needed */
+}
+
+.rd-page .hear-sample-icon-btn-active {
+  background: #848585;
+  border: 0.5px solid #ffffff;
+  box-shadow: 0px 0px 10px 0px #f4f4f4;
+  padding: 10px;
+}
+
+.rd-page .hear-sample-icon-btn-active .hear-sample-icon-img {
+  filter: brightness(0) invert(1);
+}
+
+.rd-page .hear-sample-icon-btn:hover:not(.hear-sample-icon-btn-active) {
+  background: transparent;
+}
+
+.rd-page .hear-sample-icon-img {
+  width: 25px;
+  height: 25px;
+  display: block;
+  transition: filter 0.2s ease;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* When icon is active, make it white */
+.rd-page .hear-sample-icon-btn-active .hear-sample-icon-img {
+  filter: brightness(0) invert(1);
+}
+
+/* Right Panel */
+.rd-page .hear-sample-right-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding: 0 30px;
+  justify-content: flex-end; /* Alineado hacia abajo */
+  position: relative;
+  min-height: 600px; /* Altura mínima para que coincida con la imagen */
+  max-height: 600px; /* Altura máxima fija para permitir scroll */
+  overflow: hidden; /* Evitar scroll en el panel, solo en el chat */
+}
+
+/* Chat Interface */
+.rd-page .hear-sample-chat {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  overflow-y: auto; /* Scroll vertical activo */
+  overflow-x: hidden;
+  flex: 1 1 0; /* Ocupa espacio disponible pero puede encogerse */
+  min-height: 0; /* Permite que flex funcione correctamente */
+  max-height: calc(100% - 80px); /* Altura máxima: 100% menos espacio del audio player */
+  padding: 0 0 32px 0; /* Espacio inferior para separar del reproductor */
+  margin-bottom: 0; /* Sin margen inferior */
+  position: relative;
+  /* Centrar contenido cuando solo hay la tarjeta de resumen */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  /* Asegurar que el scroll funcione desde el inicio */
+  scroll-behavior: smooth;
+  /* Ocultar scrollbar pero mantener funcionalidad de scroll */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge */
+}
+
+/* Cuando hay mensajes, alinear hacia arriba */
+.rd-page .hear-sample-chat:has(.hear-sample-message) {
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+/* Summary Card */
+.rd-page .hear-sample-summary-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+  border: none;
+  transition: box-shadow 0.3s ease;
+}
+
+.rd-page .hear-sample-summary-card:hover {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.rd-page .hear-sample-summary-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rd-page .hear-sample-summary-section:not(:last-of-type) {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.rd-page .hear-sample-summary-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 1.2px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.rd-page .hear-sample-summary-issue {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #1e293b;
+  margin: 0;
+}
+
+.rd-page .hear-sample-summary-actions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rd-page .hear-sample-summary-actions li {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #475569;
+  padding-left: 20px;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.rd-page .hear-sample-summary-actions li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-primary);
+}
+
+.rd-page .hear-sample-summary-actions li:hover {
+  color: var(--color-primary);
+}
+
+.rd-page .hear-sample-summary-action {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #475569;
+  margin: 0;
+}
+
+.rd-page .hear-sample-summary-why {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #64748b;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  border-left: none;
+  font-style: italic;
+}
+
+.rd-page .hear-sample-chat::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Top/bottom fade overlays disabled to avoid white shader/shadow on chat */
+.rd-page .hear-sample-chat::before {
+  display: none;
+}
+
+.rd-page .hear-sample-chat::after {
+  display: none;
+}
+
+.rd-page .hear-sample-message {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.rd-page .hear-sample-message-agent {
+  align-items: flex-start;
+}
+
+.rd-page .hear-sample-message-client,
+.rd-page .hear-sample-message-customer {
+  align-items: flex-end;
+}
+
+.rd-page .hear-sample-message-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rd-page .hear-sample-chat .hear-sample-message-client .hear-sample-message-header,
+.rd-page .hear-sample-chat .hear-sample-message-customer .hear-sample-message-header {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.rd-page .hear-sample-message-header-right {
+  flex-direction: row-reverse;
+}
+
+.rd-page .hear-sample-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.rd-page .hear-sample-avatar-agent {
+  background: transparent;
+  overflow: hidden;
+  position: relative;
+}
+
+.rd-page .hear-sample-avatar-client {
+  background: transparent;
+  overflow: hidden;
+  position: relative;
+}
+
+.rd-page .hear-sample-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.rd-page .hear-sample-message-author {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #848585;
+}
+
+.rd-page .hear-sample-message-bubble {
+  padding: 12px;
+  border-radius: 16px;
+  max-width: 500px;
+}
+
+/* Revo agent: text-only, no bubble (ChatGPT-style) */
+.rd-page .hear-sample-message-bubble-agent {
+  position: relative;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.rd-page .hear-sample-message-bubble-client,
+.rd-page .hear-sample-message-bubble-customer {
+  background: #F2F2F2;
+  border-radius: 16px;
+  border-top-right-radius: 0;
+}
+
+.rd-page .hear-sample-message-bubble p {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #334155;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+/* Thinking indicator - ChatGPT style dots */
+.rd-page .hear-sample-thinking {
+  opacity: 1;
+}
+
+.rd-page .hear-sample-thinking-dots {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.rd-page .hear-sample-thinking-dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #848585;
+  display: inline-block;
+  animation: thinking-dot 1.4s infinite ease-in-out;
+}
+
+.rd-page .hear-sample-thinking-dots span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.rd-page .hear-sample-thinking-dots span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+@keyframes thinking-dot {
+  0%, 60%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Typing animation - word by word with preview */
+.rd-page .hear-sample-message-bubble p span {
+  display: inline;
+}
+
+/* Word-by-word reveal: each word fades in as agent reaches it */
+.rd-page .hear-sample-typing-word {
+  display: inline;
+}
+
+/* "Generating conversation" line: positioned under current line via JS (top set in hear-sample.js) */
+.rd-page .hear-sample-generating-conversation {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 2px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #64748b;
+  transition: top 0.2s ease;
+  white-space: nowrap;
+}
+
+.rd-page .hear-sample-generating-text {
+  display: inline-block;
+}
+
+.rd-page .hear-sample-generating-spinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  border: 1.5px solid #64748b;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: hear-sample-generating-spin 0.8s linear infinite;
+  vertical-align: middle;
+}
+
+@keyframes hear-sample-generating-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Listening indicator - Lottie animation when client is speaking */
+.rd-page .hear-sample-listening-indicator {
+  opacity: 1;
+}
+
+.rd-page .hear-sample-listening-indicator .hear-sample-message-bubble-agent {
+  background-color: transparent;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rd-page .hear-sample-lottie-animation {
+  width: 60px;
+  height: 60px;
+  display: block;
+  flex-shrink: 0;
+}
+
+/* Active message indicator - Inner stroke */
+.rd-page .hear-sample-message.active .hear-sample-message-bubble {
+  box-shadow: none;
+  transition: background-color 0.3s ease;
+}
+
+.rd-page .hear-sample-message.active .hear-sample-message-bubble-agent {
+  background: transparent;
+}
+
+.rd-page .hear-sample-message.active .hear-sample-message-bubble-client,
+.rd-page .hear-sample-message.active .hear-sample-message-bubble-customer {
+  background: #F2F2F2;
+}
+
+/* Revo Start Notification */
+.rd-page .hear-sample-revo-notification {
+  width: 100%;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.rd-page .hear-sample-message-bubble-notification {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.rd-page .hear-sample-notification-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  line-height: 1;
+  color: #64748b;
+  cursor: pointer;
+  padding: 4px 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.rd-page .hear-sample-notification-close:hover {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.rd-page .hear-sample-notification-header {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+}
+
+.rd-page .hear-sample-notification-icon {
+  width: 40px;
+  height: 40px;
+  min-width: 40px;
+  border-radius: 50%;
+  background: transparent;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.rd-page .hear-sample-notification-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rd-page .hear-sample-notification-header-text {
+  flex: 1;
+  padding-top: 4px;
+}
+
+.rd-page .hear-sample-notification-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #0a0b0c;
+  margin: 0 0 6px 0;
+}
+
+.rd-page .hear-sample-notification-description {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #64748b;
+  margin: 0;
+}
+
+.rd-page .hear-sample-notification-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0;
+  padding-left: 52px;
+}
+
+.rd-page .hear-sample-notification-btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rd-page .hear-sample-notification-btn-primary {
+  background: var(--color-primary);
+  color: #ffffff;
+  border: none;
+}
+
+.rd-page .hear-sample-notification-btn-primary:hover {
+  background: var(--color-primary-dark);
+  transform: translateY(-1px);
+  box-shadow: 0px 4px 12px rgba(250, 137, 50, 0.35);
+}
+
+.rd-page .hear-sample-notification-btn-secondary {
+  background: #ffffff;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+  padding: 10px 20px;
+  text-decoration: none;
+  min-height: 40px;
+}
+
+.rd-page .hear-sample-notification-btn-secondary:hover {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+/* Audio Player — no panel background (inherits card / section) */
+.rd-page .hear-sample-audio-player {
+  margin-top: 16px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.rd-page .hear-sample-play-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  padding: 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  box-shadow: none;
+}
+
+.rd-page .hear-sample-play-button:hover {
+  transform: scale(1.06);
+  opacity: 0.88;
+}
+
+.rd-page .hear-sample-play-button:active {
+  transform: scale(0.96);
+  opacity: 1;
+}
+
+.rd-page .hear-sample-play-button:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* Monochrome SVG → brand orange (#fa8932) */
+.rd-page .hear-sample-play-icon {
+  width: 28px;
+  height: 28px;
+  display: block;
+  margin-left: 3px;
+  filter: brightness(0) saturate(100%) invert(60%) sepia(90%) saturate(2000%) hue-rotate(350deg)
+    brightness(0.97) contrast(1);
+}
+
+.rd-page .hear-sample-progress-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.rd-page .hear-sample-time {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #475569;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Pill track — higher contrast on white (no visible thumb — handle stays for drag/seek) */
+.rd-page .hear-sample-progress-bar {
+  flex: 1;
+  height: 6px;
+  background: #cbd5e1;
+  border-radius: 9999px;
+  position: relative;
+  cursor: pointer;
+  min-width: 0;
+  overflow: hidden;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.12);
+}
+
+.rd-page .hear-sample-progress-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 25%;
+  border-radius: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-strong) 100%);
+}
+
+.rd-page .hear-sample-progress-handle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  cursor: grab;
+  pointer-events: all;
+  opacity: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 10;
+}
+
+.rd-page .hear-sample-progress-handle:hover,
+.rd-page .hear-sample-progress-handle:active {
+  cursor: grabbing;
+  transform: translate(-50%, -50%);
+}
+
+.rd-page .hear-sample-volume-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.rd-page .hear-sample-volume-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+  flex-shrink: 0;
+  object-fit: contain;
+  opacity: 0.8;
+}
+
+.rd-page .hear-sample-volume-slider {
+  width: 88px;
+  height: 6px;
+  background: #cbd5e1;
+  border-radius: 9999px;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+  overflow: hidden;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.12);
+}
+
+.rd-page .hear-sample-volume-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 44%;
+  border-radius: 0;
+  pointer-events: none;
+  background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-primary-strong) 100%);
+}
+
+/* Invisible thumb — same interaction as progress handle */
+.rd-page .hear-sample-volume-handle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  border-radius: 0;
+  cursor: grab;
+  pointer-events: all;
+  opacity: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  touch-action: none;
+  -webkit-tap-highlight-color: transparent;
+  z-index: 10;
+}
+
+.rd-page .hear-sample-volume-handle:hover,
+.rd-page .hear-sample-volume-handle:active {
+  cursor: grabbing;
+  transform: translate(-50%, -50%);
+}
+
+/* CTA Buttons */
+.rd-page .hear-sample-actions {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.rd-page .hear-sample-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 24px;
+  background: #ffffff;
+  background-image: 
+    radial-gradient(circle at 89.6% 17.3%, rgba(205, 175, 250, 0.8) 0%, rgba(205, 175, 250, 0) 60%),
+    radial-gradient(circle at 15.4% 26.4%, rgba(247, 203, 191, 0.8) 0%, rgba(247, 203, 191, 0) 60%),
+    radial-gradient(circle at 72.5% 100%, rgba(129, 169, 248, 0.8) 0%, rgba(129, 169, 248, 0) 60%),
+    radial-gradient(circle at 42.1% 65%, rgba(164, 252, 245, 0.8) 0%, rgba(164, 252, 245, 0) 60%);
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #0a0b0c;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  outline: none;
+  box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.41);
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.rd-page .hear-sample-btn-primary:hover {
+  box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.rd-page .hear-sample-btn-secondary {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #0A0B0C;
+  background: transparent;
+  border: 1px solid rgba(10, 11, 12, 0.15);
+  border-radius: 100px;
+  padding: 10px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 200px;
+  outline: none;
+}
+
+.rd-page .hear-sample-btn-secondary:hover {
+  background: rgba(10, 11, 12, 0.05);
+}
+
+
+/* ===== HEAR A SAMPLE SECTION - RESPONSIVE ===== */
+@media (max-width: 1023px) {
+  .rd-page .hear-sample-section {
+    padding: var(--section-padding-y-tablet) var(--section-padding-x-tablet);
+  }
+
+  .rd-page .hear-sample-container {
+    gap: 64px;
+  }
+
+  .rd-page .hear-sample-title {
+    font-size: 42px;
+    letter-spacing: -0.42px;
+  }
+
+  .rd-page .hear-sample-card-content {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .rd-page .hear-sample-left-panel {
+    width: 100%;
+    height: 400px;
+  }
+
+  .rd-page .hear-sample-image-container {
+    width: 100%;
+    min-height: 400px;
+    height: 400px;
+  }
+
+  .rd-page .hear-sample-right-panel {
+    padding: 0;
+    min-height: auto;
+    max-height: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .rd-page .hear-sample-section {
+    padding: 48px 20px;
+    background: #f8fafc;
+  }
+
+  .rd-page .hear-sample-container {
+    gap: 32px;
+  }
+
+  .rd-page .hear-sample-header {
+    gap: 16px;
+    text-align: center;
+  }
+
+  .rd-page .hear-sample-header .hear-sample-tagline,
+  .rd-page .hear-sample-header .hear-sample-title,
+  .rd-page .hear-sample-header .hear-sample-description,
+  .rd-page .hear-sample-header .hear-sample-description p {
+    text-align: center;
+  }
+
+  .rd-page .hear-sample-description p {
+    max-width: 100%;
+  }
+
+  /* Mobile icons at top of card */
+  .rd-page .hear-sample-mobile-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    padding: 5px 2px;
+    margin-bottom: 16px;
+    border-bottom: none;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .rd-page .hear-sample-mobile-icons .hear-sample-icon-btn {
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    padding: 10px;
+  }
+
+  .rd-page .hear-sample-mobile-icons .hear-sample-icon-btn-active {
+    background: #848585;
+    border: 0.5px solid #ffffff;
+    box-shadow: 0px 0px 10px 0px #f4f4f4;
+  }
+
+  .rd-page .hear-sample-mobile-icons .hear-sample-icon-btn-active img {
+    filter: brightness(0) invert(1);
+  }
+
+  .rd-page .hear-sample-mobile-icons .hear-sample-icon-btn img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .rd-page .hear-sample-mobile-icons .hear-sample-icon-btn:not(.hear-sample-icon-btn-active) img {
+    filter: brightness(0) saturate(100%) invert(55%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(95%) contrast(90%);
+  }
+
+  /* Hide the desktop service icons menu on mobile */
+  .rd-page .hear-sample-service-icons-menu {
+    display: none;
+  }
+
+  .rd-page .hear-sample-tagline {
+    font-size: 14px;
+  }
+
+  .rd-page .hear-sample-title {
+    font-size: 32px;
+    letter-spacing: -0.32px;
+    line-height: 1.2;
+  }
+
+  .rd-page .hear-sample-description {
+    gap: 8px;
+  }
+
+  .rd-page .hear-sample-description p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .rd-page .hear-sample-card {
+    padding: 16px;
+    min-height: 600px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .rd-page .hear-sample-card-content {
+    flex-direction: column;
+    gap: 0;
+    min-height: auto;
+  }
+
+  /* Hide the left panel (image) on mobile */
+  .rd-page .hear-sample-left-panel {
+    display: none;
+  }
+
+  .rd-page .hear-sample-right-panel {
+    width: 100%;
+    padding: 0;
+  }
+
+
+  .rd-page .hear-sample-professional-label {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    white-space: normal;
+    text-align: center;
+    padding-top: 8px;
+  }
+
+  .rd-page .hear-sample-chat {
+    gap: 12px;
+    max-height: 520px;
+    min-height: 400px;
+    min-width: 0;
+    padding-right: 4px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rd-page .hear-sample-chat::before,
+  .rd-page .hear-sample-chat::after {
+    display: none;
+  }
+
+  /* Message bubbles on mobile */
+  .rd-page .hear-sample-message {
+    gap: 6px;
+    width: 100%;
+  }
+
+  /* Agent: avatar left, dialogue right, no "Revo Agent" label, aligned left */
+  .rd-page .hear-sample-message-agent {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: flex-start;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .rd-page .hear-sample-message-agent .hear-sample-message-author {
+    display: none;
+  }
+
+  /* Hide Revo agent avatar (and header row) on mobile only — desktop unchanged */
+  .rd-page .hear-sample-message-agent .hear-sample-message-header {
+    display: none;
+  }
+
+  /* Bubble content-sized; no avatar column on mobile */
+  .rd-page .hear-sample-message-agent .hear-sample-message-bubble {
+    flex: 0 1 auto;
+    min-width: 0;
+    max-width: 90%;
+  }
+
+  .rd-page .hear-sample-message-client {
+    align-items: flex-end;
+  }
+
+  .rd-page .hear-sample-message-header {
+    gap: 6px;
+  }
+
+  .rd-page .hear-sample-message-header-right {
+    flex-direction: row-reverse;
+  }
+
+  .rd-page .hear-sample-avatar {
+    width: 28px;
+    height: 28px;
+  }
+
+  .rd-page .hear-sample-message-author {
+    font-size: 14px;
+  }
+
+  .rd-page .hear-sample-message-bubble {
+    padding: 10px 12px;
+    max-width: 90%;
+  }
+
+  .rd-page .hear-sample-message-bubble-agent {
+    margin-right: auto;
+    background: transparent;
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 12px;
+  }
+
+  /* Align "Generating conversation" with agent dialogue (no left padding on mobile) */
+  .rd-page .hear-sample-message-agent .hear-sample-generating-conversation {
+    left: 0 !important;
+  }
+
+  .rd-page .hear-sample-message-bubble-client {
+    margin-left: auto;
+  }
+
+  .rd-page .hear-sample-message-bubble p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .rd-page .hear-sample-message.active .hear-sample-message-bubble {
+    box-shadow: none;
+  }
+
+  .rd-page .hear-sample-summary-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 14px 14px 16px;
+    gap: 14px;
+    margin: 0;
+    max-width: 100%;
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+  }
+
+  .rd-page .hear-sample-summary-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-width: 0;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .rd-page .hear-sample-summary-section:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .rd-page .hear-sample-summary-label {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 1.3;
+    color: var(--color-primary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .rd-page .hear-sample-summary-issue,
+  .rd-page .hear-sample-summary-why {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: #334155;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+  }
+
+  .rd-page .hear-sample-summary-issue {
+    font-weight: 600;
+  }
+
+  .rd-page .hear-sample-summary-action {
+    font-size: 14px;
+    line-height: 1.55;
+    overflow-wrap: anywhere;
+  }
+
+  .rd-page .hear-sample-summary-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    min-width: 0;
+  }
+
+  .rd-page .hear-sample-summary-actions li {
+    font-size: 13px;
+    padding-left: 18px;
+    margin: 0;
+    line-height: 1.45;
+    color: #334155;
+    position: relative;
+    overflow-wrap: anywhere;
+  }
+
+  .rd-page .hear-sample-summary-actions li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.55em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    flex-shrink: 0;
+  }
+
+  /* Audio player on mobile — stacked row, no panel */
+  .rd-page .hear-sample-audio-player {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 12px;
+    padding: 0;
+  }
+
+  .rd-page .hear-sample-play-button {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+
+  .rd-page .hear-sample-play-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .rd-page .hear-sample-progress-container {
+    width: 100%;
+    order: 2;
+    gap: 8px;
+  }
+
+  .rd-page .hear-sample-time {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .rd-page .hear-sample-progress-bar {
+    flex: 1;
+  }
+
+  .rd-page .hear-sample-volume-control {
+    display: none;
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .rd-page .hear-sample-volume-slider {
+    flex: 1;
+    max-width: 120px;
+  }
+
+  .rd-page .hear-sample-message-bubble {
+    max-width: 100%;
+  }
+
+  .rd-page .hear-sample-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    margin-top: 0;
+    align-items: center;
+  }
+
+  .rd-page .hear-sample-btn-primary,
+  .rd-page .hear-sample-btn-secondary,
+  .benefits-modern-btn-primary,
+  .benefits-modern-btn-secondary {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+    font-size: 15px;
+    padding: 12px 24px;
+  }
+
+  .rd-page .hear-sample-btn-secondary svg {
+    display: none;
+  }
+
+  /* Revo Start Notification - Mobile */
+  .rd-page .hear-sample-message-bubble-notification {
+    padding: 16px 18px;
+    max-width: 300px;
+    box-shadow: none;
+  }
+
+  .rd-page .hear-sample-notification-header {
+    gap: 8px;
+    margin-bottom: 12px;
+  }
+
+  .rd-page .hear-sample-notification-icon {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+  }
+
+  .rd-page .hear-sample-notification-title {
+    font-size: 14px;
+  }
+
+  .rd-page .hear-sample-notification-header {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 12px;
+    align-items: center;
+  }
+
+  .rd-page .hear-sample-notification-icon {
+    order: 1;
+  }
+
+  .rd-page .hear-sample-notification-header-text {
+    display: contents;
+  }
+
+  .rd-page .hear-sample-notification-title {
+    order: 2;
+    flex: 1;
+  }
+
+  .rd-page .hear-sample-notification-description {
+    font-size: 12px;
+    text-align: left;
+    width: 100%;
+    order: 3;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  .rd-page .hear-sample-notification-actions {
+    flex-direction: row;
+    gap: 8px;
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+
+  .rd-page .hear-sample-notification-btn {
+    min-width: auto;
+    font-size: 12px;
+    padding: 6px 12px;
+    min-height: 32px;
+  }
+
+  .rd-page .hear-sample-notification-close {
+    top: 8px;
+    right: 8px;
+    font-size: 20px;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+
+/* Match the landing header offset while preserving the HOME component layout. */
+#hear-sample{scroll-margin-top:88px}
+@media(max-width:767px){#hear-sample{scroll-margin-top:72px}}
+/* Keep the HOME summary readable when its two panels stack on tablets. */
+@media(min-width:768px) and (max-width:1023px){
+  .rd-page .hear-sample-right-panel{width:100%;min-height:600px;max-height:600px}
+  .rd-page .hear-sample-professional-image{object-position:center top}
+}
+/* Show the complete initial summary; retain the HOME scrolling chat during playback. */
+.rd-page .hear-sample-right-panel:has(.hear-sample-summary-card){max-height:none}
+.rd-page .hear-sample-chat:has(.hear-sample-summary-card){flex:0 0 auto;min-height:0;max-height:none;overflow:visible;justify-content:flex-start}

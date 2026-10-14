@@ -19,3 +19,4 @@ seo/app/out/
 seo/app/public/
 seo/app/.release/
 *.tsbuildinfo
+.env*
