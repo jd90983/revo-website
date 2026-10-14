@@ -6,3 +6,5 @@
 /* The shared base hides sections until the homepage animation initializer runs.
    This conversion page renders all content immediately and avoids motion dependencies. */
 .rd-page section{opacity:1!important;transform:none!important}
+/* Give the third-party calendar the full viewport on the narrowest phones. */
+@media(max-width:360px){.rd-book-card:has(iframe){margin-inline:-16px;width:calc(100% + 32px);padding:0;border-radius:0}}
