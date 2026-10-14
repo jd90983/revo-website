@@ -1,12 +1,13 @@
 {
-  "url": "https://revo-website-aepn8c2no-group-u.vercel.app/ai-receptionist-demo",
-  "deployedCommit": "5498eca",
+  "url": "https://revo-website-9pdgjrdof-group-u.vercel.app/ai-receptionist-demo",
+  "deployedCommit": "d09f52e",
+  "ready": true,
   "http200": true,
   "headerNoindex": true,
   "metaNoindex": true,
   "homeServicesH1": true,
-  "renamedClasses": true,
-  "calendar": true,
+  "cssMatchesExactTestedCommit": true,
+  "localExactCommitBrowserQA": "PASS",
   "protectedPreview": true,
-  "remoteVisualPending": true
+  "remoteBrowserQA": "not run; existing Vercel login required; authenticated HTTP verified"
 }
