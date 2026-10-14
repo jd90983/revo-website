@@ -21,3 +21,24 @@ opener.addEventListener('click', event => {
   document.getElementById('calendar-intro').hidden = true;
   frame.focus();
 }, {once:true});
+
+// Keep the HOME player's accessible name synchronized with its existing play/pause icon.
+const homePlayButton = document.querySelector('.hear-sample-play-button');
+if (homePlayButton) {
+  const syncPlayerLabel = () => homePlayButton.setAttribute('aria-label', homePlayButton.querySelector('img')?.alt === 'Pause' ? 'Pause audio' : 'Play audio');
+  syncPlayerLabel();
+  new MutationObserver(syncPlayerLabel).observe(homePlayButton, {childList:true});
+}
+// Adapt the HOME player's end-of-sample prompt to this landing's demo conversion.
+const sampleChat = document.querySelector('.hear-sample-chat');
+if (sampleChat) {
+  new MutationObserver(() => {
+    const prompt = sampleChat.querySelector('.hear-sample-revo-notification');
+    if (!prompt || prompt.dataset.demoAdapted) return;
+    prompt.dataset.demoAdapted = 'true';
+    prompt.querySelector('.hear-sample-notification-description').textContent = 'See how Revo fits your home service business.';
+    const button = prompt.querySelector('.hear-sample-notification-btn-primary');
+    button.textContent = 'Book a demo';
+    button.addEventListener('click', () => document.getElementById('book-demo').scrollIntoView({behavior:'smooth',block:'start'}));
+  }).observe(sampleChat, {childList:true,subtree:true});
+}
