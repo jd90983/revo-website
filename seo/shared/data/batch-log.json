@@ -36,5 +36,36 @@
     "changes": [
       "updated answering-service-cost; back to draft until re-approved"
     ]
+  },
+  {
+    "batchId": "2026-10-14-new-workflow-guides",
+    "batchHash": "sha256:3c4634034df58b11c1487cad9917ae6790cb4aa301c4c4f4a26c0df030922d46",
+    "source": {
+      "kind": "manual",
+      "reference": "Semrush Chrome campaigns; primary SEO metrics unverified"
+    },
+    "appliedAt": "2026-10-14",
+    "changes": [
+      "added pricing-models as draft",
+      "added low-volume-contractor-calls as draft",
+      "added answering-service-fees as draft",
+      "added hvac-heat-wave-call-coverage as draft",
+      "added roofing-storm-call-intake as draft",
+      "added landscaping-spring-call-coverage as draft",
+      "added calendar-booking-checklist as draft",
+      "added bilingual-intake-testing as draft",
+      "added call-recordings-retention as draft",
+      "added human-transfer-policy as draft",
+      "added field-service-connections as draft",
+      "added existing-business-number as draft",
+      "added remodeling-lead-intake as draft",
+      "added electrical-service-area-screening as draft",
+      "added roof-estimate-intake as draft",
+      "added lawn-care-request-types as draft",
+      "added cleaning-request-types as draft",
+      "added plumbing-on-call-policy as draft",
+      "added plumbing-intake-checklist as draft",
+      "added contractor-jobsite-calls as draft"
+    ]
   }
 ]

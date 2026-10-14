@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "after-hours",
+    "label": "After the workday",
+    "template": null
+  },
+  {
+    "slug": "missed-calls",
+    "label": "Call handling",
+    "template": null
+  },
+  {
+    "slug": "compare/ai-vs-voicemail",
+    "label": "AI vs voicemail",
+    "template": null
+  },
+  {
+    "slug": "compare/ai-vs-live-receptionist",
+    "label": "AI vs a receptionist",
+    "template": null
+  },
+  {
+    "slug": "cost-of-missed-calls",
+    "label": "Scenario worksheet",
+    "template": null
+  },
+  {
+    "slug": "bilingual-answering",
+    "label": "English and Spanish",
+    "template": null
+  },
+  {
+    "slug": "answering-service-cost",
+    "label": "Budget and coverage",
+    "template": null
+  },
+  {
+    "slug": "appointment-booking",
+    "label": "Scheduling rules",
+    "template": null
+  },
+  {
+    "slug": "overflow-answering",
+    "label": "Office-hours backup",
+    "template": null
+  },
+  {
+    "slug": "lead-qualification",
+    "label": "Service intake",
+    "template": null
+  }
+]

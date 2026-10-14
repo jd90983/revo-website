@@ -1,0 +1,131 @@
+[
+  {
+    "url": "http://revoapp.ai/",
+    "statuses": [
+      "HTTP/1.0 308 Permanent Redirect",
+      "HTTP/2 308 ",
+      "HTTP/2 200 "
+    ],
+    "locations": [
+      "Location: https://revoapp.ai/",
+      "location: https://www.revoapp.ai/"
+    ],
+    "exit": 0
+  },
+  {
+    "url": "http://revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo",
+    "statuses": [
+      "HTTP/1.0 308 Permanent Redirect",
+      "HTTP/2 308 ",
+      "HTTP/2 200 "
+    ],
+    "locations": [
+      "Location: https://revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo",
+      "location: https://www.revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo"
+    ],
+    "exit": 0
+  },
+  {
+    "url": "http://revoapp.ai/industry_plumbing.html?redirect_test=1",
+    "statuses": [
+      "HTTP/1.0 308 Permanent Redirect",
+      "HTTP/2 308 ",
+      "HTTP/2 200 "
+    ],
+    "locations": [
+      "Location: https://revoapp.ai/industry_plumbing.html?redirect_test=1",
+      "location: https://www.revoapp.ai/industry_plumbing.html?redirect_test=1"
+    ],
+    "exit": 0
+  },
+  {
+    "url": "http://www.revoapp.ai/",
+    "statuses": [
+      "HTTP/1.0 308 Permanent Redirect",
+      "HTTP/2 200 "
+    ],
+    "locations": [
+      "Location: https://www.revoapp.ai/"
+    ],
+    "exit": 0
+  },
+  {
+    "url": "http://www.revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo",
+    "statuses": [
+      "HTTP/1.0 308 Permanent Redirect",
+      "HTTP/2 200 "
+    ],
+    "locations": [
+      "Location: https://www.revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo"
+    ],
+    "exit": 0
+  },
+  {
+    "url": "http://www.revoapp.ai/industry_plumbing.html?redirect_test=1",
+    "statuses": [
+      "HTTP/1.0 308 Permanent Redirect",
+      "HTTP/2 200 "
+    ],
+    "locations": [
+      "Location: https://www.revoapp.ai/industry_plumbing.html?redirect_test=1"
+    ],
+    "exit": 0
+  },
+  {
+    "url": "https://revoapp.ai/",
+    "statuses": [
+      "HTTP/2 308 ",
+      "HTTP/2 200 "
+    ],
+    "locations": [
+      "location: https://www.revoapp.ai/"
+    ],
+    "exit": 0
+  },
+  {
+    "url": "https://revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo",
+    "statuses": [
+      "HTTP/2 308 ",
+      "HTTP/2 200 "
+    ],
+    "locations": [
+      "location: https://www.revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo"
+    ],
+    "exit": 0
+  },
+  {
+    "url": "https://revoapp.ai/industry_plumbing.html?redirect_test=1",
+    "statuses": [
+      "HTTP/2 308 ",
+      "HTTP/2 200 "
+    ],
+    "locations": [
+      "location: https://www.revoapp.ai/industry_plumbing.html?redirect_test=1"
+    ],
+    "exit": 0
+  },
+  {
+    "url": "https://www.revoapp.ai/",
+    "statuses": [
+      "HTTP/2 200 "
+    ],
+    "locations": [],
+    "exit": 0
+  },
+  {
+    "url": "https://www.revoapp.ai/ai-answering-service/after-hours?redirect_test=1&source=seo",
+    "statuses": [
+      "HTTP/2 200 "
+    ],
+    "locations": [],
+    "exit": 0
+  },
+  {
+    "url": "https://www.revoapp.ai/industry_plumbing.html?redirect_test=1",
+    "statuses": [
+      "HTTP/2 200 "
+    ],
+    "locations": [],
+    "exit": 0
+  }
+]

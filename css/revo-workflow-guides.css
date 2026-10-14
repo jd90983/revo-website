@@ -1,0 +1,16 @@
+/* Small content-specific adjustments on the existing approved call-design system. */
+.revo-approved.workflow-guide .hero h1{font-size:clamp(34px,4.2vw,53px);overflow-wrap:break-word}
+.revo-approved.workflow-guide .breadcrumbs a{color:inherit;text-underline-offset:3px}
+.revo-approved.workflow-guide .service-flow a{text-decoration:none}
+.revo-approved.workflow-guide .service-flow a:hover{text-decoration:underline;text-underline-offset:3px}
+.revo-approved.workflow-guide .section-top{align-items:start}
+.revo-approved.workflow-guide .section-top p{font-size:14px;max-width:430px}
+.revo-approved.workflow-guide .editorial-grid h2{font-size:34px;line-height:1.12}
+.revo-approved.workflow-guide .editorial-grid>div>p+p{margin-top:18px}
+.revo-approved.workflow-guide .boundary{margin-top:0;align-self:start}
+.revo-approved.workflow-guide .related{flex-wrap:wrap}
+.revo-approved.workflow-guide .footer nav{display:flex;gap:20px;flex-wrap:wrap}
+.revo-approved.workflow-guide a:focus-visible,.revo-approved.workflow-guide summary:focus-visible{outline:3px solid #ba6b29;outline-offset:5px}
+.revo-approved.workflow-guide [id]{scroll-margin-top:24px}
+@media(max-width:700px){.revo-approved.workflow-guide .wrap{padding-left:22px;padding-right:22px}.revo-approved.workflow-guide .hero-grid,.revo-approved.workflow-guide .editorial-grid,.revo-approved.workflow-guide .faq-grid{grid-template-columns:1fr;gap:30px}.revo-approved.workflow-guide .section-top,.revo-approved.workflow-guide .close-inner{display:block}.revo-approved.workflow-guide .section-top p{margin-top:24px}.revo-approved.workflow-guide .close .btn{margin-top:24px}.revo-approved.workflow-guide .signals{gap:12px;font-size:10px}.revo-approved.workflow-guide .navlinks{gap:12px;margin-left:0}.revo-approved.workflow-guide .navinner{gap:16px}.revo-approved.workflow-guide .nav .btn{display:none}.revo-approved.workflow-guide .section{padding:44px 0}.revo-approved.workflow-guide .close h2{font-size:32px}}
+@media(prefers-reduced-motion:reduce){html:has(.workflow-guide){scroll-behavior:auto}}
