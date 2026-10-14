@@ -1,0 +1,14 @@
+{
+  "url": "https://revo-website-4etd36btc-group-u.vercel.app/ai-receptionist-demo",
+  "branch": "fix/demo-landing-visuals",
+  "commit": "1e11f38",
+  "target": "preview",
+  "status": "READY",
+  "http200": true,
+  "noindex": true,
+  "cssMatchesExactTestedCommit": true,
+  "productionUnchanged": true,
+  "protectedPreview": true,
+  "isolatedQA": "PASS",
+  "personalChromeUsed": false
+}

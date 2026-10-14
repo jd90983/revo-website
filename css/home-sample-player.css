@@ -1559,3 +1559,6 @@
 /* Show the complete initial summary; retain the HOME scrolling chat during playback. */
 .rd-page .hear-sample-right-panel:has(.hear-sample-summary-card){max-height:none}
 .rd-page .hear-sample-chat:has(.hear-sample-summary-card){flex:0 0 auto;min-height:0;max-height:none;overflow:visible;justify-content:flex-start}
+
+/* Keep every player control below the landing's sticky desktop/mobile header. */
+.rd-page .hear-sample-section{position:relative;isolation:isolate;z-index:0}
