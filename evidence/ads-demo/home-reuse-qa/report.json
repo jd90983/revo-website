@@ -1,0 +1,1277 @@
+{
+  "commit": "c757722",
+  "browser": "isolated Chromium headless, fresh nonpersistent contexts; no personal Chrome profile",
+  "sourceHashes": {
+    "ai-receptionist-demo.html": "7cf49693aa4bf0b5285adb1c6cf76406e0f93f85fe494322d5c6042f1fc2f2ef",
+    "css/revo-demo.css": "16636d65c53303c648abbc7db78f15025f2f6bb4a2db0286c20f6b82e3700eb8",
+    "js/revo-demo.js": "59ccf1e28b04194625bdd6781582a999b56325f4af9a2d409e93ac66f07bf884",
+    "css/home-sample-player.css": "564c676f00b890a0d89e465dfe065fc6544d68c842631882b69a20fa9d025f8a",
+    "js/hear-sample.js": "5d2c15d83a978a1b8494d2d2135d10b64e0f7b17eda254de8b03088d0d3d190c",
+    "js/hear-sample-config.js": "91943d9ae6776d44719eea7f03129a803de8509f6823c8811bf41e288f1d5818"
+  },
+  "breakpoints": [
+    {
+      "width": 320,
+      "clientWidth": 320,
+      "scrollWidth": 320,
+      "h1": "AI receptionist for home service businesses. Stay focused on the job.",
+      "h1Count": 1,
+      "fontStatus": "loaded",
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "700"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "loaded",
+          "weight": "400"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "loaded",
+          "weight": "500"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "loaded",
+          "weight": "600"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "700"
+        }
+      ],
+      "h1Font": "Inter, sans-serif",
+      "bodyFont": "\"Lexend Deca\", sans-serif",
+      "h1Color": "rgb(255, 255, 255)",
+      "accent": "rgb(250, 137, 50)",
+      "heroBackground": "rgb(10, 11, 12)",
+      "sectionVisibility": [
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "flex"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        }
+      ],
+      "noOverflow": true,
+      "overflowElements": [],
+      "iframeBeforeClick": 0,
+      "robots": "noindex, follow",
+      "reusedPlayer": {
+        "summarySize": {
+          "top": 555.140625,
+          "bottom": 952.09375,
+          "containerTop": 555.140625,
+          "containerBottom": 984.09375,
+          "overflow": "visible",
+          "fullyVisible": true
+        },
+        "audioBefore": {
+          "src": "http://127.0.0.1:56311/audio/sample-home-services.mp3",
+          "paused": true,
+          "time": 0,
+          "duration": 90.644
+        },
+        "homePlaying": {
+          "playing": true,
+          "button": "Pause audio"
+        },
+        "homePaused": true,
+        "locksmithBefore": {
+          "paused": true,
+          "time": 0,
+          "src": "http://127.0.0.1:56311/audio/sample-locksmith.mp3"
+        },
+        "locksmithPaused": true,
+        "seek": {
+          "time": 45.322,
+          "paused": true
+        },
+        "endPrompt": "\u00d7\nWant to start using Revo?\n\nSee how Revo fits your home service business.\n\nBook a demo\nMaybe later",
+        "existingController": "/js/hear-sample.js",
+        "existingConfiguration": "/js/hear-sample-config.js"
+      },
+      "booking": {
+        "text": "LET\u2019S TALK ABOUT YOUR CALLS\n\nSee where Revo fits your home service business.\n\nBook a 10-minute session with Jorge. Discuss your trade, service requests and how your crew handles calls on-site or after hours.\n\nYour trade\u2019s greeting and service intake needs\nHow your team handles the next step\nThe plan and setup your workflow requires\n\nWant to review plans first? See current pricing and terms.\n\n\u2197\nChoose a time that works for you.\n\nOpen Revo\u2019s booking calendar to view availability and select a session.\n\nOpen booking calendar\n\nThe calendar is provided by LeadConnector. It loads when you choose to open it.\n\nOpen calendar in a new tab \u2197",
+        "top": 71.71875,
+        "buttonVisible": true
+      },
+      "calendar": {
+        "src": "https://api.leadconnectorhq.com/widget/bookings/revo-free-calls-10-minutes?utm_source=google&utm_campaign=home_services",
+        "title": "Book your Revo session with Jorge",
+        "width": 320,
+        "height": 920
+      },
+      "widgetSize": {
+        "width": 320,
+        "scrollWidth": 320,
+        "text": "Revo Free Calls \u2014 Get Started with Jorge\n10 min\nWed, Oct 14, 2026\n\nAmerica/Tijuana (PDT)\nOctober\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember\n2026\n1986\n1987\n1988\n1989\n1990\n1991\n1992\n1993\n1994\n1995\n1996\n1997\n1998\n1999\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029\n2030\n2031\n2032\n2033\n2034\n2035\n2036\n2037\n2038\n2039\n2040\n2041\n2042\n2043\n2044\n2045\n2046\n2047\n2048\n2049\n2050\n2051\n2052\n2053\n2054\n2055\n2056\n2057\n2058\n2059\n2060\n2061\n2062\n2063\n2064\n2065\n2066\nSun\tMon\tTue\tWed\tThu\tFri\tSat\n\n1\n\t\n2\n\t\n3\n\n\n4\n\t\n5\n\t\n6\n\t\n7\n\t\n8\n\t\n9\n\t\n10\n\n\n11\n\t\n12\n\t\n13\n\t\n14\n\t\n15\n\t\n16\n\t\n17\n\n\n18\n\t\n19\n\t\n20\n\t\n21\n\t\n22\n\t\n23\n\t\n24\n\n\n25\n\t\n26\n\t\n27\n\t\n28\n\t\n29\n\t\n30\n\t\n31\n\n\nTime zone\nGMT-07:00 America/Tijuana (PDT)"
+      },
+      "faq": "Does Revo offer missed call text back?\n\nAutomatic missed-call text back is not a verified Revo feature. If SMS follow-up is part of your process, ask the team what is supported. This page describes AI phone answering and call summaries."
+    },
+    {
+      "width": 390,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "h1": "AI receptionist for home service businesses. Stay focused on the job.",
+      "h1Count": 1,
+      "fontStatus": "loaded",
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "700"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "loaded",
+          "weight": "400"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "loaded",
+          "weight": "500"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "loaded",
+          "weight": "600"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "700"
+        }
+      ],
+      "h1Font": "Inter, sans-serif",
+      "bodyFont": "\"Lexend Deca\", sans-serif",
+      "h1Color": "rgb(255, 255, 255)",
+      "accent": "rgb(250, 137, 50)",
+      "heroBackground": "rgb(10, 11, 12)",
+      "sectionVisibility": [
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "flex"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        }
+      ],
+      "noOverflow": true,
+      "overflowElements": [],
+      "iframeBeforeClick": 0,
+      "robots": "noindex, follow",
+      "reusedPlayer": {
+        "summarySize": {
+          "top": 523.984375,
+          "bottom": 899.9375,
+          "containerTop": 523.984375,
+          "containerBottom": 931.9375,
+          "overflow": "visible",
+          "fullyVisible": true
+        },
+        "audioBefore": {
+          "src": "http://127.0.0.1:56311/audio/sample-home-services.mp3",
+          "paused": true,
+          "time": 0,
+          "duration": 90.644
+        },
+        "homePlaying": {
+          "playing": true,
+          "button": "Pause audio"
+        },
+        "homePaused": true,
+        "locksmithBefore": {
+          "paused": true,
+          "time": 0,
+          "src": "http://127.0.0.1:56311/audio/sample-locksmith.mp3"
+        },
+        "locksmithPaused": true,
+        "seek": {
+          "time": 45.322,
+          "paused": true
+        },
+        "endPrompt": "\u00d7\nWant to start using Revo?\n\nSee how Revo fits your home service business.\n\nBook a demo\nMaybe later",
+        "existingController": "/js/hear-sample.js",
+        "existingConfiguration": "/js/hear-sample-config.js"
+      },
+      "booking": {
+        "text": "LET\u2019S TALK ABOUT YOUR CALLS\n\nSee where Revo fits your home service business.\n\nBook a 10-minute session with Jorge. Discuss your trade, service requests and how your crew handles calls on-site or after hours.\n\nYour trade\u2019s greeting and service intake needs\nHow your team handles the next step\nThe plan and setup your workflow requires\n\nWant to review plans first? See current pricing and terms.\n\n\u2197\nChoose a time that works for you.\n\nOpen Revo\u2019s booking calendar to view availability and select a session.\n\nOpen booking calendar\n\nThe calendar is provided by LeadConnector. It loads when you choose to open it.\n\nOpen calendar in a new tab \u2197",
+        "top": 72.375,
+        "buttonVisible": true
+      },
+      "calendar": {
+        "src": "https://api.leadconnectorhq.com/widget/bookings/revo-free-calls-10-minutes?utm_source=google&utm_campaign=home_services",
+        "title": "Book your Revo session with Jorge",
+        "width": 334,
+        "height": 920
+      },
+      "widgetSize": {
+        "width": 334,
+        "scrollWidth": 334,
+        "text": "Revo Free Calls \u2014 Get Started with Jorge\n10 min\nWed, Oct 14, 2026\n\nAmerica/Tijuana (PDT)\nOctober\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember\n2026\n1986\n1987\n1988\n1989\n1990\n1991\n1992\n1993\n1994\n1995\n1996\n1997\n1998\n1999\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029\n2030\n2031\n2032\n2033\n2034\n2035\n2036\n2037\n2038\n2039\n2040\n2041\n2042\n2043\n2044\n2045\n2046\n2047\n2048\n2049\n2050\n2051\n2052\n2053\n2054\n2055\n2056\n2057\n2058\n2059\n2060\n2061\n2062\n2063\n2064\n2065\n2066\nSun\tMon\tTue\tWed\tThu\tFri\tSat\n\n1\n\t\n2\n\t\n3\n\n\n4\n\t\n5\n\t\n6\n\t\n7\n\t\n8\n\t\n9\n\t\n10\n\n\n11\n\t\n12\n\t\n13\n\t\n14\n\t\n15\n\t\n16\n\t\n17\n\n\n18\n\t\n19\n\t\n20\n\t\n21\n\t\n22\n\t\n23\n\t\n24\n\n\n25\n\t\n26\n\t\n27\n\t\n28\n\t\n29\n\t\n30\n\t\n31\n\n\nTime zone\nGMT-07:00 America/Tijuana (PDT)"
+      },
+      "faq": "Does Revo offer missed call text back?\n\nAutomatic missed-call text back is not a verified Revo feature. If SMS follow-up is part of your process, ask the team what is supported. This page describes AI phone answering and call summaries."
+    },
+    {
+      "width": 768,
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "h1": "AI receptionist for home service businesses. Stay focused on the job.",
+      "h1Count": 1,
+      "fontStatus": "loaded",
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "700"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "loaded",
+          "weight": "400"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "loaded",
+          "weight": "500"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "loaded",
+          "weight": "600"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "700"
+        }
+      ],
+      "h1Font": "Inter, sans-serif",
+      "bodyFont": "\"Lexend Deca\", sans-serif",
+      "h1Color": "rgb(255, 255, 255)",
+      "accent": "rgb(250, 137, 50)",
+      "heroBackground": "rgb(10, 11, 12)",
+      "sectionVisibility": [
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "flex"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        }
+      ],
+      "noOverflow": true,
+      "overflowElements": [],
+      "iframeBeforeClick": 0,
+      "robots": "noindex, follow",
+      "reusedPlayer": {
+        "summarySize": {
+          "top": 691.328125,
+          "bottom": 1144.171875,
+          "containerTop": 691.328125,
+          "containerBottom": 1176.171875,
+          "overflow": "visible",
+          "fullyVisible": true
+        },
+        "audioBefore": {
+          "src": "http://127.0.0.1:56311/audio/sample-home-services.mp3",
+          "paused": true,
+          "time": 0,
+          "duration": 90.644
+        },
+        "homePlaying": {
+          "playing": true,
+          "button": "Pause audio"
+        },
+        "homePaused": true,
+        "locksmithBefore": {
+          "paused": true,
+          "time": 0,
+          "src": "http://127.0.0.1:56311/audio/sample-locksmith.mp3"
+        },
+        "locksmithPaused": true,
+        "seek": {
+          "time": 45.322,
+          "paused": true
+        },
+        "endPrompt": "\u00d7\nWant to start using Revo?\n\nSee how Revo fits your home service business.\n\nBook a demo\nMaybe later",
+        "existingController": "/js/hear-sample.js",
+        "existingConfiguration": "/js/hear-sample-config.js"
+      },
+      "booking": {
+        "text": "LET\u2019S TALK ABOUT YOUR CALLS\n\nSee where Revo\nfits your home service business.\n\nBook a 10-minute session with Jorge. Discuss your trade, service requests and how your crew handles calls on-site or after hours.\n\nYour trade\u2019s greeting and service intake needs\nHow your team handles the next step\nThe plan and setup your workflow requires\n\nWant to review plans first? See current pricing and terms.\n\n\u2197\nChoose a time that works for you.\n\nOpen Revo\u2019s booking calendar to view availability and select a session.\n\nOpen booking calendar\n\nThe calendar is provided by LeadConnector. It loads when you choose to open it.\n\nOpen calendar in a new tab \u2197",
+        "top": 75.984375,
+        "buttonVisible": true
+      },
+      "calendar": {
+        "src": "https://api.leadconnectorhq.com/widget/bookings/revo-free-calls-10-minutes?utm_source=google&utm_campaign=home_services",
+        "title": "Book your Revo session with Jorge",
+        "width": 301.328125,
+        "height": 780
+      },
+      "widgetSize": {
+        "width": 301,
+        "scrollWidth": 301,
+        "text": "Revo Free Calls \u2014 Get Started with Jorge\n10 min\nWed, Oct 14, 2026\n\nAmerica/Tijuana (PDT)\nOctober\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember\n2026\n1986\n1987\n1988\n1989\n1990\n1991\n1992\n1993\n1994\n1995\n1996\n1997\n1998\n1999\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029\n2030\n2031\n2032\n2033\n2034\n2035\n2036\n2037\n2038\n2039\n2040\n2041\n2042\n2043\n2044\n2045\n2046\n2047\n2048\n2049\n2050\n2051\n2052\n2053\n2054\n2055\n2056\n2057\n2058\n2059\n2060\n2061\n2062\n2063\n2064\n2065\n2066\nSun\tMon\tTue\tWed\tThu\tFri\tSat\n\n1\n\t\n2\n\t\n3\n\n\n4\n\t\n5\n\t\n6\n\t\n7\n\t\n8\n\t\n9\n\t\n10\n\n\n11\n\t\n12\n\t\n13\n\t\n14\n\t\n15\n\t\n16\n\t\n17\n\n\n18\n\t\n19\n\t\n20\n\t\n21\n\t\n22\n\t\n23\n\t\n24\n\n\n25\n\t\n26\n\t\n27\n\t\n28\n\t\n29\n\t\n30\n\t\n31\n\n\nTime zone\nGMT-07:00 America/Tijuana (PDT)"
+      },
+      "faq": "Does Revo offer missed call text back?\n\nAutomatic missed-call text back is not a verified Revo feature. If SMS follow-up is part of your process, ask the team what is supported. This page describes AI phone answering and call summaries."
+    },
+    {
+      "width": 1440,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "h1": "AI receptionist for home service businesses. Stay focused on the job.",
+      "h1Count": 1,
+      "fontStatus": "loaded",
+      "fonts": [
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "400"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "500"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "600"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Inter",
+          "status": "loaded",
+          "weight": "700"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "400"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "loaded",
+          "weight": "400"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "500"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "loaded",
+          "weight": "500"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "600"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "loaded",
+          "weight": "600"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "700"
+        },
+        {
+          "family": "Lexend Deca",
+          "status": "unloaded",
+          "weight": "700"
+        }
+      ],
+      "h1Font": "Inter, sans-serif",
+      "bodyFont": "\"Lexend Deca\", sans-serif",
+      "h1Color": "rgb(255, 255, 255)",
+      "accent": "rgb(250, 137, 50)",
+      "heroBackground": "rgb(10, 11, 12)",
+      "sectionVisibility": [
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "flex"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        },
+        {
+          "opacity": "1",
+          "display": "block"
+        }
+      ],
+      "noOverflow": true,
+      "overflowElements": [],
+      "iframeBeforeClick": 0,
+      "robots": "noindex, follow",
+      "reusedPlayer": {
+        "summarySize": {
+          "top": 485.3125,
+          "bottom": 938.15625,
+          "containerTop": 485.3125,
+          "containerBottom": 970.15625,
+          "overflow": "visible",
+          "fullyVisible": true
+        },
+        "audioBefore": {
+          "src": "http://127.0.0.1:56311/audio/sample-home-services.mp3",
+          "paused": true,
+          "time": 0,
+          "duration": 90.644
+        },
+        "homePlaying": {
+          "playing": true,
+          "button": "Pause audio"
+        },
+        "homePaused": true,
+        "locksmithBefore": {
+          "paused": true,
+          "time": 0,
+          "src": "http://127.0.0.1:56311/audio/sample-locksmith.mp3"
+        },
+        "locksmithPaused": true,
+        "seek": {
+          "time": 45.322,
+          "paused": true
+        },
+        "endPrompt": "\u00d7\nWant to start using Revo?\n\nSee how Revo fits your home service business.\n\nBook a demo\nMaybe later",
+        "existingController": "/js/hear-sample.js",
+        "existingConfiguration": "/js/hear-sample-config.js"
+      },
+      "booking": {
+        "text": "LET\u2019S TALK ABOUT YOUR CALLS\n\nSee where Revo\nfits your home service business.\n\nBook a 10-minute session with Jorge. Discuss your trade, service requests and how your crew handles calls on-site or after hours.\n\nYour trade\u2019s greeting and service intake needs\nHow your team handles the next step\nThe plan and setup your workflow requires\n\nWant to review plans first? See current pricing and terms.\n\n\u2197\nChoose a time that works for you.\n\nOpen Revo\u2019s booking calendar to view availability and select a session.\n\nOpen booking calendar\n\nThe calendar is provided by LeadConnector. It loads when you choose to open it.\n\nOpen calendar in a new tab \u2197",
+        "top": 88.40625,
+        "buttonVisible": true
+      },
+      "calendar": {
+        "src": "https://api.leadconnectorhq.com/widget/bookings/revo-free-calls-10-minutes?utm_source=google&utm_campaign=home_services",
+        "title": "Book your Revo session with Jorge",
+        "width": 515.28125,
+        "height": 780
+      },
+      "widgetSize": {
+        "width": 515,
+        "scrollWidth": 515,
+        "text": "Revo Free Calls \u2014 Get Started with Jorge\n10 min\nWed, Oct 14, 2026\n\nAmerica/Tijuana (PDT)\nOctober\nJanuary\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember\n2026\n1986\n1987\n1988\n1989\n1990\n1991\n1992\n1993\n1994\n1995\n1996\n1997\n1998\n1999\n2000\n2001\n2002\n2003\n2004\n2005\n2006\n2007\n2008\n2009\n2010\n2011\n2012\n2013\n2014\n2015\n2016\n2017\n2018\n2019\n2020\n2021\n2022\n2023\n2024\n2025\n2026\n2027\n2028\n2029\n2030\n2031\n2032\n2033\n2034\n2035\n2036\n2037\n2038\n2039\n2040\n2041\n2042\n2043\n2044\n2045\n2046\n2047\n2048\n2049\n2050\n2051\n2052\n2053\n2054\n2055\n2056\n2057\n2058\n2059\n2060\n2061\n2062\n2063\n2064\n2065\n2066\nSun\tMon\tTue\tWed\tThu\tFri\tSat\n\n1\n\t\n2\n\t\n3\n\n\n4\n\t\n5\n\t\n6\n\t\n7\n\t\n8\n\t\n9\n\t\n10\n\n\n11\n\t\n12\n\t\n13\n\t\n14\n\t\n15\n\t\n16\n\t\n17\n\n\n18\n\t\n19\n\t\n20\n\t\n21\n\t\n22\n\t\n23\n\t\n24\n\n\n25\n\t\n26\n\t\n27\n\t\n28\n\t\n29\n\t\n30\n\t\n31\n\n\nTime zone\nGMT-07:00 America/Tijuana (PDT)"
+      },
+      "faq": "Does Revo offer missed call text back?\n\nAutomatic missed-call text back is not a verified Revo feature. If SMS follow-up is part of your process, ask the team what is supported. This page describes AI phone answering and call summaries."
+    }
+  ],
+  "calendarRequests": [
+    {
+      "width": 320,
+      "method": "GET",
+      "url": "https://api.leadconnectorhq.com/widget/bookings/revo-free-calls-10-minutes?utm_source=google&utm_campaign=home_services"
+    },
+    {
+      "width": 390,
+      "method": "GET",
+      "url": "https://api.leadconnectorhq.com/widget/bookings/revo-free-calls-10-minutes?utm_source=google&utm_campaign=home_services"
+    },
+    {
+      "width": 768,
+      "method": "GET",
+      "url": "https://api.leadconnectorhq.com/widget/bookings/revo-free-calls-10-minutes?utm_source=google&utm_campaign=home_services"
+    },
+    {
+      "width": 1440,
+      "method": "GET",
+      "url": "https://api.leadconnectorhq.com/widget/bookings/revo-free-calls-10-minutes?utm_source=google&utm_campaign=home_services"
+    }
+  ],
+  "requestsBlocked": [
+    {
+      "method": "POST",
+      "host": "www.google-analytics.com"
+    },
+    {
+      "method": "POST",
+      "host": "www.google.com"
+    },
+    {
+      "method": "POST",
+      "host": "www.google-analytics.com"
+    },
+    {
+      "method": "POST",
+      "host": "www.google.com"
+    },
+    {
+      "method": "POST",
+      "host": "www.google-analytics.com"
+    },
+    {
+      "method": "POST",
+      "host": "www.google.com"
+    },
+    {
+      "method": "POST",
+      "host": "www.google-analytics.com"
+    },
+    {
+      "method": "POST",
+      "host": "www.google.com"
+    }
+  ],
+  "errors": [],
+  "result": "PASS",
+  "sourceHashMatch": true,
+  "homeControllerUnchanged": true,
+  "homeConfigUnchanged": true,
+  "homeImageUnchanged": true,
+  "manualReview": "Hero images and component screenshots reviewed; tablet face visible and full summary readable at all four widths. Existing HOME shape/controls preserved."
+}
