@@ -1,0 +1,9 @@
+keyword,volume_us,kd,intent,metrics_date,closest_existing_owner,decision_reason,new_pages_approved
+answering service per call pricing,720,21,Transactional,2026-10-13,answering-service-cost,Reject separate URL: billing units already explicitly explained; stronger demand does not remove overlap.,0
+ivr system cost,70,15,Informational,2026-10-13,None,Defer: no verified Revo IVR offer; cost intent is a different product category. No saved SERP validation.,0
+contractor phones,30,17,"Informational, Commercial",2026-10-13,Homepage / existing industry pages,Defer: ambiguous phone hardware/system intent; no saved SERP validation.,0
+after hours emergency call service,50,14,Informational,2026-10-13,after-hours,Reject separate URL: current guide already separates answering coverage from urgent availability and handoff.,0
+setup prerecorded phone answering service appointment booking online,210,19,Commercial,2026-10-13,appointment-booking and compare/ai-vs-voicemail,Defer: compound ambiguous intent; existing pages cover booking and prerecorded voicemail comparison. No saved SERP validation.,0
+front desk booking,140,24,Informational,2026-10-13,appointment-booking,Defer: broad booking intent with no established additional business workflow or saved SERP validation.,0
+after hours message service,210,21,Informational,2026-10-13,after-hours and compare/ai-vs-voicemail,Reject separate URL: message capture outside hours already covered.,0
+24/7 contact center outsourcing,50,19,Informational,2026-10-13,after-hours and compare/ai-vs-live-receptionist,Defer: broader contact-center outsourcing scope; no verified Revo contact-center offering or saved SERP validation.,0
