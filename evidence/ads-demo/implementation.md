@@ -21,3 +21,5 @@ Existing build validates registry and route generation, compiles static site, ru
 Final QA limitation: after remote screenshot showed content being hidden despite loaded DOM/CSS, all ads-prefixed classes were renamed to rd-prefixed classes to avoid cosmetic ad-block filters. Local responsive QA applies to the identical styled composition before class renaming. User then forbade Chrome personal; no further personal-browser actions occurred. Final remote visual review remains pending, HTTP checks and project tests are completed.
 
 Final user positioning clarification applied: H1, subtitle, title/description, demo and footer explicitly target home service businesses. Broad small-business search intent is qualified to home-service crews and six trades; Revo is the answering provider, not the field-service company.
+
+Final preview: https://revo-website-aepn8c2no-group-u.vercel.app/ai-receptionist-demo (deployment source commit5498eca, READY). Existing Vercel authentication protection retained. Local full build18tests pass; final remote build also passes18tests and output verification. Final authenticated HTTP verification is recorded in final-preview.json.
