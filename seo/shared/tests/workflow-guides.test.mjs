@@ -22,7 +22,10 @@ test('measured workflow drafts stay out of routes and have no acquisition contro
   assert.ok(!/<form\b|\/api\/|free-test|signup|apps\.apple\.com/.test(html));
   const ids=new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]));
   for(const link of html.matchAll(/href="#([^"]+)"/g))assert.ok(ids.has(link[1]),link[1]);
-  assert.ok(html.includes('/css/revo-call-design.css'));
+  assert.ok(html.includes('/css/layout.css'));
+  assert.ok(html.includes('/css/variables.css'));
+  assert.ok(html.includes('home-guide-title-base'));
+  assert.ok(html.includes('home-guide-title-accent'));
  }
 });
 test('template choice is editorial content covered by the approval hash',()=>{
