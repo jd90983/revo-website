@@ -1,0 +1,12 @@
+{
+  "base": "dfccb8c59726b2f69af7d9430dda92474bef8450",
+  "publication_sha": "0af8c44d1005a0152893e744a2cf665f0f3be954",
+  "protected_paths_unchanged": true,
+  "changed_source_paths": [
+    "css/revo-workflow-guides.css",
+    "seo/shared/data/landing-pages.json",
+    "seo/shared/data/public-guide-navigation.json",
+    "seo/shared/tests/workflow-guides.test.mjs",
+    "vercel.json"
+  ]
+}
