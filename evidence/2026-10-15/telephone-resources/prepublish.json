@@ -1,0 +1,21 @@
+{
+  "tests_passed": 19,
+  "build": "passed",
+  "public_routes": 39,
+  "approved_registry": 38,
+  "withdrawn_absent": 20,
+  "internal_links": 1891,
+  "responsive_cases_new_five": 20,
+  "responsive_failures": 0,
+  "same_daily_lot_total": 8,
+  "already_published": 1,
+  "implemented_unpublished": 7,
+  "shortfall": 12,
+  "prompts_proposed": 15,
+  "prompts_registered": 0,
+  "rejected_new_urls": [
+    "simultaneous-ring",
+    "emergency-dispatch"
+  ],
+  "feature_claims": "No native Revo queue/whisper/hold-hosting/source-attribution/abandonment/response-analytics claimed"
+}

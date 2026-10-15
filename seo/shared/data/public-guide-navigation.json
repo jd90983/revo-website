@@ -163,5 +163,30 @@
     "slug": "servicetitan-answering-service",
     "label": "Software buyer guide",
     "template": "workflow"
+  },
+  {
+    "slug": "call-queue",
+    "label": "Business phone planning",
+    "template": "workflow"
+  },
+  {
+    "slug": "call-whisper",
+    "label": "Before the conversation",
+    "template": "workflow"
+  },
+  {
+    "slug": "on-hold-messages",
+    "label": "Waiting-audio scripts",
+    "template": "workflow"
+  },
+  {
+    "slug": "speed-to-lead",
+    "label": "Response-time worksheet",
+    "template": "workflow"
+  },
+  {
+    "slug": "call-abandonment-rate",
+    "label": "Phone measurement guide",
+    "template": "workflow"
   }
 ]
