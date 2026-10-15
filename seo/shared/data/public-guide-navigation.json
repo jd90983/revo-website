@@ -148,5 +148,10 @@
     "slug": "ivr-system-cost",
     "label": "IVR system cost",
     "template": "workflow"
+  },
+  {
+    "slug": "compare/home-services-ai-receptionists",
+    "label": "Provider comparison",
+    "template": "workflow"
   }
 ]

@@ -141,5 +141,18 @@
       "added ivr-system-cost as draft",
       "updated conditional-call-forwarding; back to draft until re-approved"
     ]
+  },
+  {
+    "batchId": "2026-10-15-named-provider-comparison",
+    "batchHash": "sha256:6d8e94634d0333c32509f1bdb09ff8af8670ea9232fb74841071efb5c64eeb4a",
+    "source": {
+      "kind": "manual",
+      "reference": "Current supplied Semrush UI evidence and materialized Library brief; one validated opportunity,19shortfall; recurring publication authorized"
+    },
+    "appliedAt": "2026-10-15",
+    "changes": [
+      "added provider comparison with fresh publication review",
+      "updated one inbound related link with fresh publication review"
+    ]
   }
 ]

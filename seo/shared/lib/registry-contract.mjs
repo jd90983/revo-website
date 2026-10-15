@@ -93,6 +93,7 @@ export function registryErrors(pages, options = {}) {
     else page.sections.forEach((section, i) => {
       if (!nonEmpty(section?.title)) fail(`section ${i + 1} needs a title`);
       if (!Array.isArray(section?.paragraphs) || !Array.isArray(section?.items) || ![...section.paragraphs, ...section.items].every(nonEmpty) || section.paragraphs.length + section.items.length === 0) fail(`section ${i + 1} needs non-empty paragraphs or items`);
+      if (section.sources !== undefined && (!Array.isArray(section.sources) || section.sources.length>6 || !section.sources.every(source=>nonEmpty(source?.label)&&typeof source?.href==='string'&&/^https:\/\//.test(source.href)))) fail(`section ${i + 1} sources must be labeled HTTPS links (at most 6)`);
     });
     if (!Array.isArray(page.faqs) || !page.faqs.every(faq => nonEmpty(faq?.q) && nonEmpty(faq?.a))) fail('faqs must be a list of { q, a } with text');
     if (page.calculator !== undefined && typeof page.calculator !== 'boolean') fail('calculator must be true or false');
