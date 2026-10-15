@@ -1,0 +1,19 @@
+{
+  "source": "Parent supplied final Chrome verification; no Semrush or prompt writes from this implementation thread",
+  "source_thread_id": "01a14058-2833-70fc-8f4a-6f76b320e0e8",
+  "source_turn_id": "01a140cc-08f2-700b-b9d0-6314868daa29",
+  "date": "2026-10-15",
+  "website_before": 317,
+  "website_after": 319,
+  "keywords_added": [
+    "dynamic number insertion",
+    "call tracking numbers"
+  ],
+  "one_url_for_both_keywords": true,
+  "chatgpt_before": 92,
+  "chatgpt_after": 93,
+  "specific_attribution_prompt_added": 1,
+  "remaining_prompt_slots_reported": 7,
+  "saved_verified_without_uncertain_writes": true,
+  "personal_chrome_released_by_source": true
+}

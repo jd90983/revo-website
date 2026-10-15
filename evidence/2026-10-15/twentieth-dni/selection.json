@@ -19,7 +19,8 @@
   "new_selected": 1,
   "final_total_if_published": 20,
   "extra_secondary_url": false,
-  "suggested_prompt_untracked": "How can a home service business use dynamic number insertion to connect website visits to phone calls without losing the source when calls reach an answering service?",
   "tracking_actions": false,
-  "verified_native_Revo_DNI_or_CallRail_integration": false
+  "verified_native_Revo_DNI_or_CallRail_integration": false,
+  "suggested_prompt_proposal": "How can a home service business use dynamic number insertion to connect website visits to phone calls without losing the source when calls reach an answering service?",
+  "external_tracking_confirmation": "Authorized Chrome task later confirms both keyword phrases and one attribution prompt added; exact mapping to proposal text not asserted here."
 }
