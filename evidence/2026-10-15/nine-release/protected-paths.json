@@ -1,0 +1,11 @@
+{
+  "base": "411875838a47124d7b807c19ab922937faa4834b",
+  "publication_sha": "7b6c29a72a80b54fd61bb1c37f22ef4bc2a231f0",
+  "protected_paths_unchanged": true,
+  "changed_source_paths": [
+    "seo/shared/data/landing-pages.json",
+    "seo/shared/data/public-guide-navigation.json",
+    "seo/shared/tests/workflow-guides.test.mjs",
+    "vercel.json"
+  ]
+}

@@ -1,0 +1,126 @@
+[
+  {
+    "path": "/ai-answering-service/call-disposition",
+    "status": 200,
+    "canonical_ok": true,
+    "title_ok": true,
+    "h1_count": 1,
+    "robots_index_follow": true,
+    "robots_header": null,
+    "form_absent": true,
+    "sitemap_occurrences": 1,
+    "catalog_link": true
+  },
+  {
+    "path": "/ai-answering-service/average-speed-of-answer",
+    "status": 200,
+    "canonical_ok": true,
+    "title_ok": true,
+    "h1_count": 1,
+    "robots_index_follow": true,
+    "robots_header": null,
+    "form_absent": true,
+    "sitemap_occurrences": 1,
+    "catalog_link": true
+  },
+  {
+    "path": "/ai-answering-service/first-call-resolution",
+    "status": 200,
+    "canonical_ok": true,
+    "title_ok": true,
+    "h1_count": 1,
+    "robots_index_follow": true,
+    "robots_header": null,
+    "form_absent": true,
+    "sitemap_occurrences": 1,
+    "catalog_link": true
+  },
+  {
+    "path": "/ai-answering-service/compare/local-vs-toll-free-number",
+    "status": 200,
+    "canonical_ok": true,
+    "title_ok": true,
+    "h1_count": 1,
+    "robots_index_follow": true,
+    "robots_header": null,
+    "form_absent": true,
+    "sitemap_occurrences": 1,
+    "catalog_link": true
+  },
+  {
+    "path": "/ai-answering-service/business-caller-id",
+    "status": 200,
+    "canonical_ok": true,
+    "title_ok": true,
+    "h1_count": 1,
+    "robots_index_follow": true,
+    "robots_header": null,
+    "form_absent": true,
+    "sitemap_occurrences": 1,
+    "catalog_link": true
+  },
+  {
+    "path": "/ai-answering-service/appointment-cancellation-policy",
+    "status": 200,
+    "canonical_ok": true,
+    "title_ok": true,
+    "h1_count": 1,
+    "robots_index_follow": true,
+    "robots_header": null,
+    "form_absent": true,
+    "sitemap_occurrences": 1,
+    "catalog_link": true
+  },
+  {
+    "path": "/ai-answering-service/compare/voip-vs-landline",
+    "status": 200,
+    "canonical_ok": true,
+    "title_ok": true,
+    "h1_count": 1,
+    "robots_index_follow": true,
+    "robots_header": null,
+    "form_absent": true,
+    "sitemap_occurrences": 1,
+    "catalog_link": true
+  },
+  {
+    "path": "/ai-answering-service/voip-jitter",
+    "status": 200,
+    "canonical_ok": true,
+    "title_ok": true,
+    "h1_count": 1,
+    "robots_index_follow": true,
+    "robots_header": null,
+    "form_absent": true,
+    "sitemap_occurrences": 1,
+    "catalog_link": true
+  },
+  {
+    "path": "/ai-answering-service/jobber-answering-service",
+    "status": 200,
+    "canonical_ok": true,
+    "title_ok": true,
+    "h1_count": 1,
+    "robots_index_follow": true,
+    "robots_header": null,
+    "form_absent": true,
+    "sitemap_occurrences": 1,
+    "catalog_link": true
+  },
+  {
+    "path": "/evidence/2026-10-15/nine-resources/selection.json",
+    "status": 404
+  },
+  {
+    "path": "/evidence/2026-10-15/nine-resources/browser-qa/jobber-answering-service-390.png",
+    "status": 404
+  },
+  {
+    "path": "/seo/shared/data/releases.json",
+    "status": 404
+  },
+  {
+    "path": "/.git/config",
+    "status": 404
+  }
+]
