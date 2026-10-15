@@ -1,0 +1,120 @@
+{
+  "daily_lot": "2026-10-15",
+  "new_daily_batch": false,
+  "brief_id": "libfile_d0cf912919a88191a8171ce31e2add5a",
+  "version": 0,
+  "read_verified": true,
+  "brief_sha256": "f2454fde9e695bd72158153aa00b73e6da42495c2cfda2f13406c51e61158ef4",
+  "main_base": "dfccb8c59726b2f69af7d9430dda92474bef8450",
+  "dedupe": "Exact routes absent from complete registry and root57HTML editorial audit; queue owns wait/exit policy; whisper source/context cues; on-hold waiting scripts; speed-to-lead response clocks; abandonment queue denominator. Existing routing, screening, handoff, intake and missed-call guides retain scope.",
+  "rejected": [
+    "simultaneous-ring",
+    "emergency-dispatch"
+  ],
+  "tracking_changed": false,
+  "prompts_registered": 0,
+  "pages": [
+    {
+      "slug": "call-queue",
+      "primary_keyword": "call queue",
+      "volume_us": 720,
+      "kd": 27,
+      "intent": "Informational",
+      "observed_at": "2026-10-15",
+      "origin": "Parent supplied authorized Semrush Chrome UI observation US/Desktop",
+      "suggested_prompts_not_registered": [
+        "How should a small HVAC office set call queue wait limits and overflow rules?",
+        "When is a call queue better than sending callers to an answering service?",
+        "What should happen when nobody is available in a contractor's phone queue?"
+      ],
+      "related": [
+        "call-routing",
+        "overflow-answering",
+        "missed-calls"
+      ],
+      "new_url": "/ai-answering-service/call-queue"
+    },
+    {
+      "slug": "call-whisper",
+      "primary_keyword": "call whisper",
+      "volume_us": 320,
+      "kd": 20,
+      "intent": "Informational",
+      "observed_at": "2026-10-15",
+      "origin": "Parent supplied authorized Semrush Chrome UI observation US/Desktop",
+      "suggested_prompts_not_registered": [
+        "What is a call whisper, and how can a contractor identify the campaign number a caller used?",
+        "Is a call whisper the same as screening or a warm transfer?",
+        "What should a home service office test before adding pre-connect whisper messages?"
+      ],
+      "related": [
+        "call-screening",
+        "compare/warm-vs-cold-transfer",
+        "call-routing"
+      ],
+      "new_url": "/ai-answering-service/call-whisper"
+    },
+    {
+      "slug": "on-hold-messages",
+      "primary_keyword": "on hold messages",
+      "volume_us": 320,
+      "kd": 13,
+      "intent": "Informational",
+      "observed_at": "2026-10-15",
+      "origin": "Parent supplied authorized Semrush Chrome UI observation US/Desktop",
+      "suggested_prompts_not_registered": [
+        "Give me professional on-hold message examples for a plumbing or HVAC office.",
+        "What should callers hear while waiting for a home service business to answer?",
+        "How is an on-hold message different from a voicemail greeting?"
+      ],
+      "related": [
+        "phone-answering-script",
+        "overflow-answering",
+        "call-transfer-language"
+      ],
+      "new_url": "/ai-answering-service/on-hold-messages"
+    },
+    {
+      "slug": "speed-to-lead",
+      "primary_keyword": "speed to lead",
+      "volume_us": 1900,
+      "kd": 35,
+      "intent": "Informational",
+      "observed_at": "2026-10-15",
+      "origin": "Parent supplied authorized Semrush Chrome UI observation US/Desktop",
+      "suggested_prompts_not_registered": [
+        "How should a home service company measure speed to lead?",
+        "Does an automated reply count as a response when measuring lead response time?",
+        "What timestamps should a contractor track from a service inquiry to the first callback?"
+      ],
+      "related": [
+        "lead-qualification",
+        "missed-calls",
+        "ai-call-summary"
+      ],
+      "new_url": "/ai-answering-service/speed-to-lead"
+    },
+    {
+      "slug": "call-abandonment-rate",
+      "primary_keyword": "call abandonment rate",
+      "volume_us": 140,
+      "kd": 24,
+      "intent": "Informational",
+      "observed_at": "2026-10-15",
+      "origin": "Parent supplied authorized Semrush Chrome UI observation US/Desktop",
+      "suggested_prompts_not_registered": [
+        "How do I calculate call abandonment rate for my service-business phone queue?",
+        "Should short abandoned calls be included in a call abandonment report?",
+        "Why is call abandonment rate different from missed calls or lost jobs?"
+      ],
+      "related": [
+        "missed-calls",
+        "cost-of-missed-calls",
+        "call-routing"
+      ],
+      "new_url": "/ai-answering-service/call-abandonment-rate"
+    }
+  ],
+  "daily_total_if_published": 8,
+  "shortfall": 12
+}

@@ -158,6 +158,34 @@
       "destination": "/ai-answering-service/compare/home-services-ai-receptionists.html"
     },
     {
+      "source": "/ai-answering-service/business-voicemail-greeting",
+      "destination": "/ai-answering-service/business-voicemail-greeting.html"
+    },
+    {
+      "source": "/ai-answering-service/servicetitan-answering-service",
+      "destination": "/ai-answering-service/servicetitan-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/call-queue",
+      "destination": "/ai-answering-service/call-queue.html"
+    },
+    {
+      "source": "/ai-answering-service/call-whisper",
+      "destination": "/ai-answering-service/call-whisper.html"
+    },
+    {
+      "source": "/ai-answering-service/on-hold-messages",
+      "destination": "/ai-answering-service/on-hold-messages.html"
+    },
+    {
+      "source": "/ai-answering-service/speed-to-lead",
+      "destination": "/ai-answering-service/speed-to-lead.html"
+    },
+    {
+      "source": "/ai-answering-service/call-abandonment-rate",
+      "destination": "/ai-answering-service/call-abandonment-rate.html"
+    },
+    {
       "source": "/ai-answering-service",
       "destination": "/ai-answering-service.html"
     }

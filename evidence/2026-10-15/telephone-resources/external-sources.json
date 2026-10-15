@@ -1,0 +1,35 @@
+[
+  {
+    "url": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue",
+    "status": 200
+  },
+  {
+    "url": "https://support.callrail.com/hc/en-us/articles/5712112860941-Whisper-message",
+    "error": "<urlopen error [Errno 61] Connection refused>",
+    "verification_note": "Local HTTP connection refused; official page successfully read through web tool on October15, exact URL and recipient-only semantics verified. Not a confirmed local HTTP200."
+  },
+  {
+    "url": "https://www.twilio.com/docs/glossary/call-whisper",
+    "status": 200
+  },
+  {
+    "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065370",
+    "status": 200
+  },
+  {
+    "url": "https://www.leandata.com/blog/speed-to-lead-speed-is-the-key-to-lead-conversion/",
+    "status": 200
+  },
+  {
+    "url": "https://knowledge.hubspot.com/properties/hubspots-default-contact-properties",
+    "status": 200
+  },
+  {
+    "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+    "status": 200
+  },
+  {
+    "url": "https://help.nice-incontact.com/content/metrics/suitemetrics.htm",
+    "status": 200
+  }
+]

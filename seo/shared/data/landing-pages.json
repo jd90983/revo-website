@@ -4100,5 +4100,863 @@
       "contentHash": "sha256:8b1c5977e46a0e1935b3c62621371352e21156796bccf426db6d02e24db8a53a",
       "note": "One dated provider comparison and related inbound link; existing approved HOME design;19-page shortfall documented. Linked update and fresh approval committed atomically to retain approved incoming references."
     }
+  },
+  {
+    "slug": "business-voicemail-greeting",
+    "title": "Business voicemail greetings for home service companies",
+    "description": "Adapt four business voicemail greetings for open hours, after hours, planned closures and unanswered transfers, with recording and callback checks.",
+    "navigationLabel": "Voicemail greeting templates",
+    "eyebrow": "Recorded-message templates",
+    "lead": "Give callers clear words to hear before they leave a message.",
+    "intro": "A business voicemail greeting should tell callers where they have arrived, what information to leave and what happens after the recording. For a home service company, a useful message asks for a callback number and a short description without implying that a job has been accepted.",
+    "sections": [
+      {
+        "title": "Before choosing a template",
+        "paragraphs": [
+          "These four original sample recordings are starting points, not customer recordings or measured results. Replace every bracketed field, remove unsupported options and have the mailbox owner approve the callback wording before recording.",
+          "Write down the name callers should hear, the hours when messages are reviewed, the approved callback expectation and the mailbox owner. Choose a greeting that matches the route callers actually take. A busy-day recording, a closed-office recording and a planned-closure recording should not give contradictory information.",
+          "Ask only for the details needed to start follow-up. A name, callback number, service area or ZIP code, and brief request are usually enough for this sample workflow. Do not ask callers to record payment information, passwords, access codes or other sensitive details."
+        ],
+        "items": []
+      },
+      {
+        "title": "1. During business hours, when the team cannot answer",
+        "paragraphs": [
+          "Original template: “You have reached the [Business name] service team. We are unable to answer this call. After the tone, tell us your name, callback number, service ZIP code and the work you are calling about. Our team reviews messages [review hours] and returns calls [approved callback expectation].”"
+        ],
+        "items": [
+          "Use when: the business is open but the call reaches a monitored mailbox.",
+          "Customize: use the real review schedule; do not substitute “right away” or a made-up response target. If the greeting becomes too long, omit the ZIP-code request and collect it on the callback."
+        ]
+      },
+      {
+        "title": "2. After hours, when the office is closed",
+        "paragraphs": [
+          "Original template: “This is [Business name]. Our office is closed, and our next message-review period begins [day and time, with time zone if needed]. Record your name, the number where we can reach you and a brief service request after the tone. Our callback expectation is [approved wording].”"
+        ],
+        "items": [
+          "Use when: callers reach a mailbox outside office hours.",
+          "Customize: a message-review time is not a technician arrival time. If the business does not monitor voicemail overnight, the recording must not suggest that it does. Do not add an on-call number, menu key or emergency-response promise unless that separate route really exists and has been verified."
+        ]
+      },
+      {
+        "title": "3. A planned closure or holiday",
+        "paragraphs": [
+          "Original template: “You have reached [Business name]. Our office is closed until [reopening date and time]. You can leave your name, callback number and a short description of your request after the tone. We will review messages [actual review period]. For current office hours, visit [short verified website address].”"
+        ],
+        "items": [
+          "Use when: the normal weekly schedule is temporarily different.",
+          "Customize: use the full reopening date, not “tomorrow.” Remove the website sentence if the linked page is not maintained. Set an internal reminder to restore the normal recording when the closure ends."
+        ]
+      },
+      {
+        "title": "4. A transfer ends at a voicemail mailbox",
+        "paragraphs": [
+          "Original template: “This is the [team or person's name] mailbox at [Business name]. The connection could not be completed. Leave your name, callback number and the reason you need this team after the tone. Messages are reviewed [actual review period], with callbacks [approved expectation].”"
+        ],
+        "items": [
+          "Use when: testing confirms that an unanswered transfer reaches this specific mailbox and accepts a recording.",
+          "Customize: do not say the recipient has already read a summary or accepted the request. If the call instead returns to an answering agent, use the existing live transfer-language guide rather than this recorded greeting."
+        ]
+      },
+      {
+        "title": "Check the recording and the mailbox",
+        "paragraphs": [
+          "Read the script aloud at a natural pace in a quiet place. Keep only information the caller needs before leaving a message. Record and replay it to check the business name, numbers and dates are understandable. Avoid treating a particular duration as a universal rule.",
+          "Test from another phone under the actual routing conditions listed here.",
+          "For each test, confirm that the intended recording plays, the caller can leave a message, the message reaches the correct mailbox and its owner can retrieve it. These are proposed checks, not completed Revo tests. A recording alone does not establish message delivery or follow-up.",
+          "Phone-provider settings differ. Nextiva's documentation distinguishes a standard greeting from a busy greeting and describes mailbox notifications. RingCentral's documentation distinguishes a voicemail greeting from the greeting played when a caller first reaches an extension. Check the correct mailbox and route rather than assuming that changing one greeting changes them all."
+        ],
+        "items": [
+          "An unanswered call during open hours.",
+          "A call outside the configured hours.",
+          "The temporary-closure route, if used.",
+          "An unavailable transfer recipient, if the setup supports that path."
+        ],
+        "sources": [
+          {
+            "label": "Nextiva mailbox setup",
+            "href": "https://help.nextiva.com/article/setting-up-nextiva-voicemail"
+          },
+          {
+            "label": "RingCentral greeting guide (2021 PDF)",
+            "href": "https://support.ringcentral.com/content/dam/support/us/en/pdf/get-started/v2/RCMVP_Updating_Your_Voicemail_Greeting_20210611_rsb_fhdl_v3.pdf"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a voicemail greeting the same as a phone answering script?",
+        "a": "No. A voicemail greeting is recorded wording the caller hears before leaving a message. A live answering script supports a conversation and follow-up questions."
+      },
+      {
+        "q": "Should I promise a callback within a specific number of minutes?",
+        "a": "Only use an expectation that the person responsible for callbacks has approved and can maintain. Publishing a time in a recording does not create staffing or availability."
+      },
+      {
+        "q": "Can I offer texting or a booking link in the recording?",
+        "a": "Include only a route that is active, appropriate for the request and monitored. Do not assume the business number accepts texts or that a request form confirms an appointment."
+      },
+      {
+        "q": "Can Revo record or host these voicemail greetings?",
+        "a": "This page does not establish that capability. The examples can be adapted for a voicemail system the business already uses. Confirm any proposed Revo call flow and supported features directly before changing routing."
+      }
+    ],
+    "takeaway": "Match the recording to the mailbox and the callback plan.",
+    "sourcePaths": [
+      "https://www.nextiva.com/blog/business-voicemail-greeting.html",
+      "https://help.nextiva.com/article/setting-up-nextiva-voicemail",
+      "https://support.ringcentral.com/content/dam/support/us/en/pdf/get-started/v2/RCMVP_Updating_Your_Voicemail_Greeting_20210611_rsb_fhdl_v3.pdf"
+    ],
+    "related": [
+      "phone-answering-script",
+      "compare/ai-vs-voicemail",
+      "after-hours",
+      "call-transfer-language"
+    ],
+    "template": "workflow",
+    "pricingVariant": "voicemail",
+    "source": {
+      "kind": "manual",
+      "reference": "October 15 daily-lot continuation, editorially validated Library libfile_2b3325310acc81919ef17d9f818bbfb7 v0; supplied Semrush Chrome US720 KD30 informational; no tracking changes"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:3924fb2dd7b15d8be57381b204761934a5abe77ef49ee336d263bbd3f91e71fa",
+      "note": "Original templates and field notes from validated brief; HOME layout; no Revo voicemail hosting claim."
+    }
+  },
+  {
+    "slug": "servicetitan-answering-service",
+    "title": "ServiceTitan answering services: native AI and integrations",
+    "description": "Review ServiceTitan's native Voice Agent and documented third-party answering options, with checks for booking, capacity and call reporting.",
+    "navigationLabel": "ServiceTitan answering options",
+    "eyebrow": "Software buyer guide",
+    "lead": "Check what happens to the caller and the ServiceTitan record.",
+    "intro": "Published by Revo. Documentation reviewed October 15, 2026. This guide describes published product capabilities, not independently tested performance. A Revo–ServiceTitan integration was not verified for this guide.",
+    "sections": [
+      {
+        "title": "Start with the ServiceTitan workflow you need",
+        "paragraphs": [
+          "An answering service for a ServiceTitan business should be evaluated at two levels: what happens to the caller, and what appears in ServiceTitan afterward. A message sent to the office, a new job created in the platform and a correctly classified phone call are different results.",
+          "Start with the native option as well as external services. ServiceTitan has its own AI Voice Agent. Third-party providers also document connections, but a familiar software logo does not tell you which records a particular package can read or create. The examples below are documented options, not an exhaustive ranking."
+        ],
+        "items": []
+      },
+      {
+        "title": "ServiceTitan's native AI Voice Agent",
+        "paragraphs": [
+          "ServiceTitan's current Basic Phones and Phones Pro FAQ documents new-job booking, appointment changes, configured human escalation and call-outcome records. Its stated audience and package conditions are specific; ask ServiceTitan to confirm eligibility for your account and phone product. Do not assume the feature is included in every subscription.",
+          "Check the applicable capacity requirements, because the published documents describe different contexts. The Basic Phones and Phones Pro FAQ calls Adaptive Capacity configuration optional but highly recommended; the ServiceTitan Max pre-go-live checklist marks it required before enabling Voice Agent job booking. Confirm the applicable rollout with ServiceTitan rather than treating either statement as universal.",
+          "ServiceTitan's capacity documentation explains how availability depends on configured job durations, technician shifts, skills, zones and business units. Review those inputs with the person who owns scheduling; an answering agent is not a substitute for accurate operating rules."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "ServiceTitan Basic Phones / Phones Pro FAQ",
+            "href": "https://help.servicetitan.com/v1/docs/ai-voice-agent-for-basic-phones-and-phones-pro-faq"
+          },
+          {
+            "label": "ServiceTitan Max pre-go-live checklist",
+            "href": "https://help.servicetitan.com/docs/servicetitan-max-pre-go-live-checklist-md-1"
+          },
+          {
+            "label": "ServiceTitan Adaptive Capacity",
+            "href": "https://help.servicetitan.com/docs/configure-adaptive-capacity-in-servicetitan-max"
+          }
+        ]
+      },
+      {
+        "title": "Avoca: documented API booking and capacity access",
+        "paragraphs": [
+          "Avoca's entry in the ServiceTitan Marketplace is marked Certified Application. Its integration FAQ describes API access to AdCap data and booking jobs back into ServiceTitan. That is more specific than a generic promise to send call notes. Ask Avoca to show which actions are enabled for your account, how existing customers are matched and what happens when the requested booking is unavailable. Marketplace status does not by itself prove every possible workflow or a measured performance result."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Avoca ServiceTitan Marketplace listing",
+            "href": "https://marketplace.servicetitan.com/partner/avoca-ai"
+          }
+        ]
+      },
+      {
+        "title": "Dexcomm: live and AI answering with a documented connection",
+        "paragraphs": [
+          "Dexcomm's integration page says its live and AI agents use an API connection to access customer and job information and book jobs in ServiceTitan. It describes either escalating to the business's team or leaving work for later handling according to the agreed on-call process. Confirm the chosen service arrangement, permitted actions and escalation rules in the actual proposal. Those published capabilities do not establish that every caller qualifies for a job or that every request receives immediate field service."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Dexcomm ServiceTitan integration",
+            "href": "https://www.dexcomm.com/servicetitan-answering-service"
+          }
+        ]
+      },
+      {
+        "title": "Check the record, not just the answered call",
+        "paragraphs": [
+          "ServiceTitan documents a case where a third-party answering service handles the caller but the call still appears abandoned. Its July help article describes profile-based call claiming or later reclassification for that workflow. Do not apply that article as a universal setup instruction.",
+          "Contact Center Pro has different handling: its current FAQ says agents cannot interact with core ServiceTitan call bubbles and describes reviewing the Call Journey in Conversation History. Identify whether the business uses Basic Phones, Phones Pro or Contact Center Pro before asking a provider how answered calls, booked jobs and unbooked requests will be recorded. Resolve an unclear classification workflow with ServiceTitan and the provider.",
+          "Routing can also affect visibility. The native Voice Agent FAQ warns that its forwarding number is not intended to be advertised directly to customers because direct calls are not logged in Search. Confirm the supported path from the public business number rather than treating any reachable number as an equivalent integration."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "ServiceTitan externally answered calls",
+            "href": "https://help.servicetitan.com/docs/how-can-i-prevent-answering-service-calls-from-being-marked"
+          },
+          {
+            "label": "ServiceTitan Contact Center Pro FAQ",
+            "href": "https://help.servicetitan.com/docs/contact-center-pro-faq-1"
+          },
+          {
+            "label": "ServiceTitan Basic Phones / Phones Pro FAQ",
+            "href": "https://help.servicetitan.com/v1/docs/ai-voice-agent-for-basic-phones-and-phones-pro-faq"
+          }
+        ]
+      },
+      {
+        "title": "Request a demonstration of these outcomes",
+        "paragraphs": [
+          "Use authorized test data and ask the provider to demonstrate:",
+          "These are proposed acceptance checks, not tests performed by Revo on the listed providers. Inspect the actual account result and confirm the written service scope before routing customer traffic."
+        ],
+        "items": [
+          "An existing customer requests a new job. Identify the customer/location record used and the job record created. Check for an unintended duplicate.",
+          "The requested slot is unavailable. Show the offered next step and who decides whether another time or manual review is appropriate.",
+          "A caller asks to change an appointment. Establish whether the chosen product and configuration can make that change or must hand it to staff.",
+          "No job is booked. Show the call record, classification and follow-up owner in the phone product the business actually uses.",
+          "The connection or human recipient is unavailable. Show the pending request, error visibility and recovery process rather than assuming the caller's message reached the right person."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does ServiceTitan offer its own answering option?",
+        "a": "Yes. Its documentation describes a native AI Voice Agent. Availability, configuration and account requirements should be confirmed for the specific phone product."
+      },
+      {
+        "q": "Does a forwarded call prove there is a ServiceTitan integration?",
+        "a": "No. Forwarding proves a call reaches a destination. Ask separately what customer or job records are accessed or created and how the call is classified."
+      },
+      {
+        "q": "Does Revo have a verified ServiceTitan integration?",
+        "a": "This guide did not verify a named connection. Revo's published plans describe field-service connections in general. Confirm the exact supported software, actions and plan directly; do not infer ServiceTitan compatibility from that category."
+      }
+    ],
+    "takeaway": "Verify the workflow in the phone product you actually use.",
+    "sourcePaths": [
+      "https://help.servicetitan.com/v1/docs/ai-voice-agent-for-basic-phones-and-phones-pro-faq",
+      "https://help.servicetitan.com/docs/configure-adaptive-capacity-in-servicetitan-max",
+      "https://marketplace.servicetitan.com/partner/avoca-ai",
+      "https://www.dexcomm.com/servicetitan-answering-service",
+      "https://help.servicetitan.com/docs/how-can-i-prevent-answering-service-calls-from-being-marked",
+      "https://help.servicetitan.com/docs/contact-center-pro-faq-1",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.revoapp.ai/",
+      "https://help.servicetitan.com/docs/servicetitan-max-pre-go-live-checklist-md-1"
+    ],
+    "related": [
+      "compare/home-services-ai-receptionists",
+      "appointment-booking",
+      "call-routing",
+      "choose-virtual-receptionist"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot continuation; parent editorially validated Library libfile_04d1193a221c8191a3f83d33488faa9b v0; US40 KDunknown intentunknown; no Revo named integration verified"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:1c711498e6691c8978a193ffe29cdc61bd53a16d82759ccaa8203d848d461186",
+      "note": "Neutral buying guide; Revo integration explicitly unverified; product-specific capacity and reporting limitations retained."
+    }
+  },
+  {
+    "slug": "call-queue",
+    "title": "Call queues for home service businesses",
+    "description": "Plan a call queue with clear waiting limits, staffed hours, overflow paths and test cases for your home service office.",
+    "navigationLabel": "Call queues",
+    "eyebrow": "Business phone planning",
+    "lead": "Give waiting callers a defined next step.",
+    "intro": "A call queue keeps incoming callers waiting while a phone system tries to connect them with an available team member. Routing chooses a destination; a queue adds a managed waiting stage. For a home service office, the practical question is whether someone is likely to become available while the caller waits.",
+    "sections": [
+      {
+        "title": "What a call queue does",
+        "paragraphs": [
+          "A queue can fit a staffed office where the team is temporarily busy. If everyone is in the field and nobody is assigned to answer, a waiting line does not create coverage. Compare an honest message-taking or answering path with a queue that cannot deliver a conversation."
+        ],
+        "items": []
+      },
+      {
+        "title": "Write three different exit rules",
+        "paragraphs": [
+          "Treat a full queue, an excessive wait and an unstaffed queue as different events. Microsoft's documentation separates overflow, timeout and no-agent handling. Each needs an intentional outcome; the same fallback need not fit all three.",
+          "Complete this worksheet before changing settings:",
+          "Choose limits your office and provider can support. A provider's default setting is not evidence that it fits your customers."
+        ],
+        "items": [
+          "Staffed period: when does a named office team actually receive queue calls?",
+          "Eligible recipients: which people or devices should be offered the call?",
+          "Waiting limit: how long may a caller remain in this queue?",
+          "Capacity limit: where does a new caller go when the waiting limit by count is reached?",
+          "No-staff rule: what happens when nobody is taking queue calls?",
+          "Caller explanation: what is heard before waiting and when the route changes?",
+          "Follow-up owner: who reviews requests that leave without a conversation?"
+        ],
+        "sources": [
+          {
+            "label": "Microsoft call-queue setup",
+            "href": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue"
+          }
+        ]
+      },
+      {
+        "title": "Distinguish waiting from overflow answering",
+        "paragraphs": [
+          "Imagine two roofing-office staff discussing existing estimates. A third caller might wait if one is expected to finish soon. Alternatively, the business might send that caller to an approved answering path to collect a request. This is an illustrative choice, not a claim that either option increases bookings.",
+          "Write down where the caller goes after a timeout. If the destination collects a callback request, describe that accurately. Do not call it an immediate connection with a technician. If a provider offers queue callbacks, verify eligibility and failure handling before mentioning the option in audio."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test the transitions",
+        "paragraphs": [
+          "Use authorized test callers and an office observer. Record what the caller hears, who is notified and what record remains.",
+          "A test passes when the result matches the written policy, not simply when a phone rings. Recheck after staffing, hours or provider changes."
+        ],
+        "items": [
+          "Call when a designated member is available.",
+          "Call while every designated member is busy.",
+          "Reach the chosen waiting limit and verify the exit route.",
+          "Reach the capacity limit in a controlled test supported by the provider.",
+          "Test with no members available and outside staffed hours.",
+          "Hang up while waiting and inspect the reported outcome."
+        ]
+      },
+      {
+        "title": "Separate the queue and answering responsibilities",
+        "paragraphs": [
+          "If an answering service sits after the queue, confirm which system controls the wait, which controls the transition and where requests arrive. Forwarding a timed-out call to an unavailable destination still leaves an unresolved call. Confirm Revo compatibility and any queue-specific behavior directly."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a call queue the same as overflow answering?",
+        "a": "No. A queue holds callers while trying to reach staff. Overflow answering supplies another answering path. They can work together where supported."
+      },
+      {
+        "q": "What is the right maximum wait?",
+        "a": "Use a limit your staffing and fallback can support. Review actual waits, disconnects and follow-up; this guide supplies no universal target."
+      },
+      {
+        "q": "Does a queue always answer in arrival order?",
+        "a": "Do not assume so. Distribution settings can affect how calls are offered. Ask the provider and test concurrent arrivals."
+      },
+      {
+        "q": "Does Revo provide a native call queue?",
+        "a": "That capability is not verified here. Confirm the exact phone-system and answering arrangement before treating Revo as a queue provider."
+      }
+    ],
+    "takeaway": "Give waiting callers a defined next step.",
+    "sourcePaths": [
+      "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-setup-call-queue"
+    ],
+    "related": [
+      "call-routing",
+      "overflow-answering",
+      "missed-calls"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot continuation; editorially validated Library libfile_d0cf912919a88191a8171ce31e2add5a v0; supplied Semrush Chrome US720 KD27 informational; no native Revo feature inferred"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:4272472c5b6f3929b595fc02fad4d17607c114c524f42e5763a4dcb005d3dd67",
+      "note": "October15 same-lot continuation; distinct educational scope; original examples labeled; no unverified Revo capabilities."
+    }
+  },
+  {
+    "slug": "call-whisper",
+    "title": "Call whisper messages for home service teams",
+    "description": "Learn how pre-connect call whisper messages convey source context, with examples, a mapping checklist and checks before using them with your phone setup.",
+    "navigationLabel": "Call whisper",
+    "eyebrow": "Before the conversation",
+    "lead": "Give the recipient a useful cue before saying hello.",
+    "intro": "A pre-connect call whisper is a brief message delivered to the person answering before the caller joins the conversation. CallRail documents recipient-only whispers that can identify the marketing campaign associated with a call. This guide focuses on that source-and-context use case.",
+    "sections": [
+      {
+        "title": "What a pre-connect whisper means",
+        "paragraphs": [
+          "For a home service office, a cue might identify the number or campaign the caller reached. It should help the office choose an appropriate opening without pretending to know the customer's problem. A call to a drain-cleaning campaign number is still an inquiry until the caller explains the request."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "CallRail whisper messages",
+            "href": "https://support.callrail.com/hc/en-us/articles/5712112860941-Whisper-message"
+          }
+        ]
+      },
+      {
+        "title": "Tie each announcement to a known input",
+        "paragraphs": [
+          "Create a mapping sheet with the source number or verified system field, exact phrase, maintenance owner and condition that requires an update.",
+          "Original examples for a system supporting the required mapping:",
+          "The first three identify how the call arrived. The fourth describes information already collected. Do not treat a campaign label as confirmed intent. “Replacement sale ready to book” would be inappropriate unless that status had actually been established.",
+          "When one number is reused across campaigns, a static phrase cannot reliably distinguish them. Ask what information the tracking or phone provider can establish for that call. Keep the source unknown when it cannot be established."
+        ],
+        "items": [
+          "Dedicated roofing campaign number: “Roofing campaign inquiry.”",
+          "Published maintenance-plan number: “Maintenance plan line.”",
+          "Distinct service-location number: “North office number.”",
+          "Request field already collected in a supported flow: “Caller requests a booking change.”"
+        ]
+      },
+      {
+        "title": "Separate whisper, screening and an attended handoff",
+        "paragraphs": [
+          "Provider terminology overlaps. Twilio describes a pre-connect message that can supply source or purpose information and, in a supported implementation, let the recipient accept or reject the call. A product may therefore group whisper functionality under screening.",
+          "For the office policy, distinguish the jobs:",
+          "Hearing an announcement does not prove an attended handoff occurred. Ask what the feature does rather than relying on its name. Also clarify whether “whisper” means live staff coaching in the product being evaluated; that is different from this pre-connect use."
+        ],
+        "items": [
+          "Source whisper: an announcement supplies a known source or context cue.",
+          "Caller screening: a process helps a recipient decide how to handle the caller.",
+          "Warm transfer: an attended handoff briefs the recipient before joining the caller."
+        ],
+        "sources": [
+          {
+            "label": "Twilio call-whisper glossary",
+            "href": "https://www.twilio.com/docs/glossary/call-whisper"
+          }
+        ]
+      },
+      {
+        "title": "Test both sides of the connection",
+        "paragraphs": [
+          "Have an authorized caller and recipient test the same flow. The recipient should hear the correct cue, know when the caller has joined and begin naturally. The caller should hear the expected ringing or waiting audio.",
+          "Test each source number, missing source data, an unanswered recipient and a destination that reaches voicemail. Inspect the results rather than assuming audio behaves correctly through every forwarding hop. Check that a retired campaign cannot keep producing a misleading label.",
+          "Keep the cue short enough to help without becoming a second intake conversation. Avoid private customer details that could be overheard on speakerphone or left in an unintended mailbox. Test pronunciation of business and location names."
+        ],
+        "items": []
+      },
+      {
+        "title": "Evaluate the phone layer separately",
+        "paragraphs": [
+          "Revo's published answering and handoff categories do not verify native whisper audio or compatibility with a particular tracking provider. Confirm the proposed connection path directly. A source cue does not replace accurate intake or ownership of the next step."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does the caller hear the whisper?",
+        "a": "In CallRail's documented pre-connect implementation, only the recipient hears it. Verify the chosen provider's behavior; similar labels can mean different things."
+      },
+      {
+        "q": "Does the cue prove which ad caused a booking?",
+        "a": "No. A configured source cue is not proof of a booking or revenue attribution. Source, inquiry and business outcome remain separate records."
+      },
+      {
+        "q": "Can it replace a warm transfer?",
+        "a": "It can supply context, but does not prove an attended briefing or acceptance occurred. Compare the actual workflow with the handoff required."
+      }
+    ],
+    "takeaway": "Give the recipient a useful cue before saying hello.",
+    "sourcePaths": [
+      "https://support.callrail.com/hc/en-us/articles/5712112860941-Whisper-message",
+      "https://www.twilio.com/docs/glossary/call-whisper"
+    ],
+    "related": [
+      "call-screening",
+      "compare/warm-vs-cold-transfer",
+      "call-routing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot continuation; editorially validated Library libfile_d0cf912919a88191a8171ce31e2add5a v0; supplied Semrush Chrome US320 KD20 informational; no native Revo feature inferred"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:0022038dfbbc760543ceca6ea188b5afd3fe6191b0673535a0b58ef2340ca26c",
+      "note": "October15 same-lot continuation; distinct educational scope; original examples labeled; no unverified Revo capabilities."
+    }
+  },
+  {
+    "slug": "on-hold-messages",
+    "title": "On-hold messages for home service businesses",
+    "description": "Adapt clear on-hold message examples for service callers, with separate scripts for queue waiting, brief holds and a supported callback option.",
+    "navigationLabel": "On-hold messages",
+    "eyebrow": "Waiting-audio scripts",
+    "lead": "Tell callers what is happening while they wait.",
+    "intro": "Audio before a person answers and audio after a person places a caller on hold have different jobs. Zoom's documentation separates connecting audio from member-initiated hold audio. Check the equivalent distinction with your provider.",
+    "sections": [
+      {
+        "title": "Choose the stage before the words",
+        "paragraphs": [
+          "A queue message may explain that the office is helping other callers. A hold message should not make someone who already explained the problem think the conversation has restarted. Neither should request a voicemail unless the call actually enters a recording step.",
+          "These are original templates. Replace bracketed fields, remove unsupported options and obtain the office owner's approval before recording."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Zoom call-queue audio settings",
+            "href": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065370"
+          }
+        ]
+      },
+      {
+        "title": "1. General office queue",
+        "paragraphs": [
+          "“Thank you for calling [Business]. Our office team is helping other callers. Please stay on the line to speak with us.”",
+          "Use while the system is trying to reach an available office person. It avoids an unsupported queue position or waiting-time promise. Do not use it for a closed office with nobody scheduled to answer."
+        ],
+        "items": []
+      },
+      {
+        "title": "2. Prepare for a service inquiry",
+        "paragraphs": [
+          "“While you wait, please have the service address and a callback number ready. When we connect, tell us briefly what you need help with.”",
+          "Use for new-service inquiries. It prepares information without collecting it into the wrong channel. Do not ask callers to announce access codes, payment information or private details while waiting."
+        ],
+        "items": []
+      },
+      {
+        "title": "3. Existing appointment questions",
+        "paragraphs": [
+          "“Calling about an existing appointment? Please have the appointment date and service address ready so our office can find the request.”",
+          "Use only where the answering team can look up appointments. It does not promise a technician's arrival or an automatic booking change. Those decisions belong in the conversation or a separately verified workflow."
+        ],
+        "items": []
+      },
+      {
+        "title": "4. Brief hold during a conversation",
+        "paragraphs": [
+          "“Thank you for holding. Please stay on the line while we check the information for your request.”",
+          "Use after the team member explains the reason for the hold. If the check takes longer than expected, return with an honest update or the approved alternative rather than leaving the recording to create expectations."
+        ],
+        "items": []
+      },
+      {
+        "title": "5. Supported queue callback option",
+        "paragraphs": [
+          "“If you would prefer a callback, press [verified key] and follow the instructions. Otherwise, please stay on the line.”",
+          "Use only when that option works in the phone system. Confirm which number is called, what happens when callback fails and who owns unresolved requests. A helpful-sounding instruction is not a substitute for a working control."
+        ],
+        "items": []
+      },
+      {
+        "title": "6. Maintained online request alternative",
+        "paragraphs": [
+          "“You can also submit a service request at [short, tested web address]. Please include a callback number. Sending a request does not confirm an appointment.”",
+          "Use only if the form works, someone monitors it and the address is understandable aloud. Explain duplicate handling when a caller has already supplied the same request elsewhere."
+        ],
+        "items": []
+      },
+      {
+        "title": "Remove promises the recording cannot keep",
+        "paragraphs": [
+          "Underline every claim about time, availability, prices, technician arrival and place in line. Keep only statements that remain accurate in the exact flow. Avoid “you are next” or “we will be with you in a moment” when unsupported.",
+          "Listen through the entire repeated sequence on an ordinary phone. Check volume, pronunciation, spacing and whether connection to a person interrupts key instructions. Test the timeout and closed-hours routes. A polished recording does not fix a broken destination.",
+          "Assign an owner and review date. Update audio when hours, addresses or service policies change. Confirm permission to use any uploaded voice recording or music."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Are these voicemail greetings?",
+        "a": "No. These accompany waiting. A voicemail greeting introduces a recording and needs its own instructions."
+      },
+      {
+        "q": "How often should a message repeat?",
+        "a": "Choose a sequence that fits actual waits and supported controls. Listen to a full test call; there is no universal repeat interval in this guide."
+      },
+      {
+        "q": "Can I promise a callback time?",
+        "a": "Only use a window the team approved and can support. Audio should reflect an operating policy rather than create one."
+      },
+      {
+        "q": "Can these be uploaded as Revo hold audio?",
+        "a": "That specific capability is not verified here. Confirm which system controls the audio and what it supports."
+      }
+    ],
+    "takeaway": "Tell callers what is happening while they wait.",
+    "sourcePaths": [
+      "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065370"
+    ],
+    "related": [
+      "phone-answering-script",
+      "overflow-answering",
+      "call-transfer-language"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot continuation; editorially validated Library libfile_d0cf912919a88191a8171ce31e2add5a v0; supplied Semrush Chrome US320 KD13 informational; no native Revo feature inferred"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:e0814bef5f923dc548bbd9b9dc597bebcd4469154cec77bb75a8d8eeefbdaedc",
+      "note": "October15 same-lot continuation; distinct educational scope; original examples labeled; no unverified Revo capabilities."
+    }
+  },
+  {
+    "slug": "speed-to-lead",
+    "title": "Measure speed to lead for home service inquiries",
+    "description": "Define response timestamps, separate acknowledgments from real contact, and review inquiry follow-up without inventing conversion benchmarks.",
+    "navigationLabel": "Speed to lead",
+    "eyebrow": "Response-time worksheet",
+    "lead": "Measure the gap between an inquiry and an owned response.",
+    "intro": "Speed to lead describes how long a business takes to respond after a potential customer expresses interest. LeanData separates processing before assignment from the representative's response after assignment. That helps identify where a request is waiting.",
+    "sections": [
+      {
+        "title": "Define the start and stop events",
+        "paragraphs": [
+          "For a home service business, start with a defined arrival event: a service-request form, recorded inquiry or another incoming request. Then choose what counts as a response. An automatic receipt, attempted callback and two-way conversation are different outcomes. Record them separately rather than letting the fastest event stand in for all three."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "LeanData speed-to-lead guide",
+            "href": "https://www.leandata.com/blog/speed-to-lead-speed-is-the-key-to-lead-conversion/"
+          }
+        ]
+      },
+      {
+        "title": "Use a small timestamp worksheet",
+        "paragraphs": [
+          "For each inquiry, record:",
+          "Use a consistent time zone and leave missing timestamps unknown. A CRM record may be created after the inquiry arrives; check that its creation time represents the event you intend to measure.",
+          "For this worksheet, response-attempt time equals the first relevant attempt timestamp minus the original inquiry timestamp. First-contact time uses the first two-way-contact timestamp instead. Neither calculation establishes whether the customer accepted a job."
+        ],
+        "items": [
+          "Identifier and source channel.",
+          "Original inquiry arrival time.",
+          "Time the request became available to its responsible person.",
+          "Named owner and any reassignment.",
+          "First relevant response-attempt time.",
+          "First two-way-contact time, if contact occurs.",
+          "Current outcome, including whether it is still waiting."
+        ]
+      },
+      {
+        "title": "Worked example",
+        "paragraphs": [
+          "In this fictional example, a homeowner submits a request at 10:00. An automatic receipt goes out at 10:01. The office assigns the request at 10:08, tries a callback at 10:12 and speaks with the homeowner at 10:25.",
+          "These timestamps illustrate the calculation; they are not benchmarks or Revo results. Reporting only the receipt would hide the remaining wait. If no conversation occurred, contact time would remain open, not zero."
+        ],
+        "items": [
+          "Acknowledgment: 1 minute.",
+          "Time to assignment: 8 minutes.",
+          "Assignment to first attempt: 4 minutes.",
+          "Inquiry to first attempt: 12 minutes.",
+          "Inquiry to conversation: 25 minutes."
+        ]
+      },
+      {
+        "title": "Make coverage and ownership visible",
+        "paragraphs": [
+          "Set expectations according to staffing, channel and request type. Keep the original arrival time for an overnight inquiry. If you also calculate staffed-hours response, label it separately and document the calendar. Do not silently remove evenings or weekends from a customer-experience measure.",
+          "Assign one owner and a backup for absence. A useful handoff contains the request, callback details and unresolved questions. Do not delay a simple response solely to complete every qualification field, or let speed pressure create an unapproved price or arrival promise.",
+          "Review the oldest open inquiries as well as typical response times. An average among completed responses can look healthy while unanswered inquiries are excluded. Show the number still waiting, their age and the count missing reliable timestamps."
+        ],
+        "items": []
+      },
+      {
+        "title": "Verify built-in field meanings",
+        "paragraphs": [
+          "A CRM field name may not match this worksheet. HubSpot documents its lead-response property in relation to the current owner's first qualifying engagement. Check triggering events and ownership behavior before comparing it with time from the original inquiry.",
+          "Compare periods using the same definitions and similar coverage. Faster action is a process result. Bookings, completed work and revenue require separate evidence; broad sales statistics are not measured outcomes for your business."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "HubSpot contact-property definitions",
+            "href": "https://knowledge.hubspot.com/properties/hubspots-default-contact-properties"
+          }
+        ]
+      },
+      {
+        "title": "Where answering fits",
+        "paragraphs": [
+          "Revo publishes intake and call summaries. Those categories do not establish built-in speed-to-lead reporting or the office's later callback timing. Confirm available timestamps and handoff details, then measure remaining office work separately."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does an automatic receipt count?",
+        "a": "Measure it as acknowledgment time. Keep it separate from a relevant response attempt and an actual conversation."
+      },
+      {
+        "q": "What is a good target?",
+        "a": "Set a target your team can support for that request type and coverage period, then measure consistently. This guide prescribes no universal home-services benchmark."
+      },
+      {
+        "q": "Do repeat messages restart the clock?",
+        "a": "Decide whether they concern the same inquiry or a new request. Keep the original timestamp for follow-up on the same request and avoid counting duplicate channels as separate opportunities."
+      }
+    ],
+    "takeaway": "Measure the gap between an inquiry and an owned response.",
+    "sourcePaths": [
+      "https://www.leandata.com/blog/speed-to-lead-speed-is-the-key-to-lead-conversion/",
+      "https://knowledge.hubspot.com/properties/hubspots-default-contact-properties"
+    ],
+    "related": [
+      "lead-qualification",
+      "missed-calls",
+      "ai-call-summary"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot continuation; editorially validated Library libfile_d0cf912919a88191a8171ce31e2add5a v0; supplied Semrush Chrome US1900 KD35 informational; no native Revo feature inferred"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:d3527cdf7f29a2835c5901399ad535864fc57c93ca1ccdbc0bde1c2014c166fc",
+      "note": "October15 same-lot continuation; distinct educational scope; original examples labeled; no unverified Revo capabilities."
+    }
+  },
+  {
+    "slug": "call-abandonment-rate",
+    "title": "Call abandonment rate for a service-business queue",
+    "description": "Calculate inbound queue abandonment, check short-call exclusions and compare consistent periods without treating every hang-up as lost revenue.",
+    "navigationLabel": "Call abandonment rate",
+    "eyebrow": "Phone measurement guide",
+    "lead": "Know which calls and which denominator your rate includes.",
+    "intro": "For this guide, abandonment means an inbound caller disconnecting in a queue before speaking with an agent. Amazon Connect documents that definition and excludes contacts queued for callback from abandonment. Other reports may use different event rules, so check the chosen provider's definition.",
+    "sections": [
+      {
+        "title": "Start with an inbound queue definition",
+        "paragraphs": [
+          "A call that never entered the queue, a transfer failure and a disconnect after a conversation should not be silently combined with the same metric. They may deserve attention but answer different operating questions."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Amazon Connect metric definitions",
+            "href": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html"
+          }
+        ]
+      },
+      {
+        "title": "Match numerator and denominator",
+        "paragraphs": [
+          "For a queue-based report:",
+          "Call abandonment rate = abandoned inbound queue calls ÷ inbound calls entering the same queue population × 100.",
+          "Keep period, queue selection and channel consistent. Count call events if the report counts call events. Unique callers, service inquiries and new-job opportunities are different units.",
+          "In a fictional example, 120 calls entered the selected queue and 9 disconnected before connection. The result is 9 ÷ 120 × 100 = 7.5%. This illustrates arithmetic only. It is not an acceptable-rate benchmark, Revo result or count of lost jobs.",
+          "If no calls entered the queue, show not applicable. A zero denominator does not establish a perfect experience. If an export contains all incoming calls rather than queue entrants, obtain the matching queue count or explicitly label the different metric."
+        ],
+        "items": []
+      },
+      {
+        "title": "Show short abandons",
+        "paragraphs": [
+          "Some systems identify callers who disconnect within a configured short-abandon window. NiCE distinguishes short and long abandons using a threshold. Check the threshold and how the selected report uses those records.",
+          "Record total abandons, short abandons and the threshold. If you show an adjusted rate, state its formula beside the unadjusted figure. Removing records from only the numerator is not the same calculation as removing them from both numerator and denominator.",
+          "Do not change thresholds between periods and describe the resulting difference as improvement. Annotate reporting changes. A brief call could reflect a wrong number, changed plans or a confusing opening; duration alone does not reveal the cause."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "NiCE metric definitions",
+            "href": "https://help.nice-incontact.com/content/metrics/suitemetrics.htm"
+          }
+        ]
+      },
+      {
+        "title": "Investigate a pattern before choosing a fix",
+        "paragraphs": [
+          "Separate useful periods such as staffed hours, closed hours and a known demand surge. Inspect queue waits and outcomes. A daily total can conceal a short period with no office coverage. A low overall rate can conceal a broken route used by few callers.",
+          "Review permitted records and run authorized test calls:",
+          "Choose a change that matches the observed issue. Staffing, waiting instructions and exit routes solve different problems. Recheck comparable periods with the same definitions."
+        ],
+        "items": [
+          "Did the caller hear the intended greeting and waiting audio?",
+          "Was an appropriate recipient actually available?",
+          "Did timeout lead to the intended fallback?",
+          "Were callback requests and transfers classified correctly?",
+          "Did repeated attempts belong to one unresolved inquiry?"
+        ]
+      },
+      {
+        "title": "Separate the rate from business outcomes",
+        "paragraphs": [
+          "An abandoned call is not automatically a lost customer. The caller may retry, be an existing customer or have the wrong business. To study inquiries or bookings, connect records to verified outcomes without double-counting attempts.",
+          "Moving callers out of a human queue changes what that queue's rate measures. A lower rate alone does not prove more completed intake or successful follow-up. Review the full path and confirm the data each phone or answering service supplies. Native Revo abandonment reporting is not established here."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is abandonment the same as a missed call?",
+        "a": "Not necessarily. This guide uses an inbound queue definition. A missed-call report can include other unanswered events. Compare documented definitions first."
+      },
+      {
+        "q": "What rate should a small contractor target?",
+        "a": "Start with a consistent baseline, reasons callers leave and the experience the team can support. This guide supplies no universal industry threshold."
+      },
+      {
+        "q": "Should very short hang-ups be excluded?",
+        "a": "Keep raw counts visible. If using an adjusted measure, record its threshold and formula and compare like with like."
+      },
+      {
+        "q": "Can abandoned calls be multiplied by average job value?",
+        "a": "That assumes qualified, unique jobs that would have converted. Use verified outcomes for measurement or clearly labelled assumptions in a separate scenario worksheet."
+      }
+    ],
+    "takeaway": "Know which calls and which denominator your rate includes.",
+    "sourcePaths": [
+      "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "https://help.nice-incontact.com/content/metrics/suitemetrics.htm"
+    ],
+    "related": [
+      "missed-calls",
+      "cost-of-missed-calls",
+      "call-routing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot continuation; editorially validated Library libfile_d0cf912919a88191a8171ce31e2add5a v0; supplied Semrush Chrome US140 KD24 informational; no native Revo feature inferred"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:4b1831fca8cc5ea23c236319ec559aafe2fbcccb3bc6a55400dcab03ca919266",
+      "note": "October15 same-lot continuation; distinct educational scope; original examples labeled; no unverified Revo capabilities."
+    }
   }
 ]
