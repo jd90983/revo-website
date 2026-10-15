@@ -153,5 +153,10 @@
     "slug": "compare/home-services-ai-receptionists",
     "label": "Provider comparison",
     "template": "workflow"
+  },
+  {
+    "slug": "business-voicemail-greeting",
+    "label": "Recorded-message templates",
+    "template": "workflow"
   }
 ]

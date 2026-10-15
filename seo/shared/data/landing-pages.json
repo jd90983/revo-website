@@ -4100,5 +4100,133 @@
       "contentHash": "sha256:8b1c5977e46a0e1935b3c62621371352e21156796bccf426db6d02e24db8a53a",
       "note": "One dated provider comparison and related inbound link; existing approved HOME design;19-page shortfall documented. Linked update and fresh approval committed atomically to retain approved incoming references."
     }
+  },
+  {
+    "slug": "business-voicemail-greeting",
+    "title": "Business voicemail greetings for home service companies",
+    "description": "Adapt four business voicemail greetings for open hours, after hours, planned closures and unanswered transfers, with recording and callback checks.",
+    "navigationLabel": "Voicemail greeting templates",
+    "eyebrow": "Recorded-message templates",
+    "lead": "Give callers clear words to hear before they leave a message.",
+    "intro": "A business voicemail greeting should tell callers where they have arrived, what information to leave and what happens after the recording. For a home service company, a useful message asks for a callback number and a short description without implying that a job has been accepted.",
+    "sections": [
+      {
+        "title": "Before choosing a template",
+        "paragraphs": [
+          "These four original sample recordings are starting points, not customer recordings or measured results. Replace every bracketed field, remove unsupported options and have the mailbox owner approve the callback wording before recording.",
+          "Write down the name callers should hear, the hours when messages are reviewed, the approved callback expectation and the mailbox owner. Choose a greeting that matches the route callers actually take. A busy-day recording, a closed-office recording and a planned-closure recording should not give contradictory information.",
+          "Ask only for the details needed to start follow-up. A name, callback number, service area or ZIP code, and brief request are usually enough for this sample workflow. Do not ask callers to record payment information, passwords, access codes or other sensitive details."
+        ],
+        "items": []
+      },
+      {
+        "title": "1. During business hours, when the team cannot answer",
+        "paragraphs": [
+          "Original template: “You have reached the [Business name] service team. We are unable to answer this call. After the tone, tell us your name, callback number, service ZIP code and the work you are calling about. Our team reviews messages [review hours] and returns calls [approved callback expectation].”"
+        ],
+        "items": [
+          "Use when: the business is open but the call reaches a monitored mailbox.",
+          "Customize: use the real review schedule; do not substitute “right away” or a made-up response target. If the greeting becomes too long, omit the ZIP-code request and collect it on the callback."
+        ]
+      },
+      {
+        "title": "2. After hours, when the office is closed",
+        "paragraphs": [
+          "Original template: “This is [Business name]. Our office is closed, and our next message-review period begins [day and time, with time zone if needed]. Record your name, the number where we can reach you and a brief service request after the tone. Our callback expectation is [approved wording].”"
+        ],
+        "items": [
+          "Use when: callers reach a mailbox outside office hours.",
+          "Customize: a message-review time is not a technician arrival time. If the business does not monitor voicemail overnight, the recording must not suggest that it does. Do not add an on-call number, menu key or emergency-response promise unless that separate route really exists and has been verified."
+        ]
+      },
+      {
+        "title": "3. A planned closure or holiday",
+        "paragraphs": [
+          "Original template: “You have reached [Business name]. Our office is closed until [reopening date and time]. You can leave your name, callback number and a short description of your request after the tone. We will review messages [actual review period]. For current office hours, visit [short verified website address].”"
+        ],
+        "items": [
+          "Use when: the normal weekly schedule is temporarily different.",
+          "Customize: use the full reopening date, not “tomorrow.” Remove the website sentence if the linked page is not maintained. Set an internal reminder to restore the normal recording when the closure ends."
+        ]
+      },
+      {
+        "title": "4. A transfer ends at a voicemail mailbox",
+        "paragraphs": [
+          "Original template: “This is the [team or person's name] mailbox at [Business name]. The connection could not be completed. Leave your name, callback number and the reason you need this team after the tone. Messages are reviewed [actual review period], with callbacks [approved expectation].”"
+        ],
+        "items": [
+          "Use when: testing confirms that an unanswered transfer reaches this specific mailbox and accepts a recording.",
+          "Customize: do not say the recipient has already read a summary or accepted the request. If the call instead returns to an answering agent, use the existing live transfer-language guide rather than this recorded greeting."
+        ]
+      },
+      {
+        "title": "Check the recording and the mailbox",
+        "paragraphs": [
+          "Read the script aloud at a natural pace in a quiet place. Keep only information the caller needs before leaving a message. Record and replay it to check the business name, numbers and dates are understandable. Avoid treating a particular duration as a universal rule.",
+          "Test from another phone under the actual routing conditions listed here.",
+          "For each test, confirm that the intended recording plays, the caller can leave a message, the message reaches the correct mailbox and its owner can retrieve it. These are proposed checks, not completed Revo tests. A recording alone does not establish message delivery or follow-up.",
+          "Phone-provider settings differ. Nextiva's documentation distinguishes a standard greeting from a busy greeting and describes mailbox notifications. RingCentral's documentation distinguishes a voicemail greeting from the greeting played when a caller first reaches an extension. Check the correct mailbox and route rather than assuming that changing one greeting changes them all."
+        ],
+        "items": [
+          "An unanswered call during open hours.",
+          "A call outside the configured hours.",
+          "The temporary-closure route, if used.",
+          "An unavailable transfer recipient, if the setup supports that path."
+        ],
+        "sources": [
+          {
+            "label": "Nextiva mailbox setup",
+            "href": "https://help.nextiva.com/article/setting-up-nextiva-voicemail"
+          },
+          {
+            "label": "RingCentral greeting guide (2021 PDF)",
+            "href": "https://support.ringcentral.com/content/dam/support/us/en/pdf/get-started/v2/RCMVP_Updating_Your_Voicemail_Greeting_20210611_rsb_fhdl_v3.pdf"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a voicemail greeting the same as a phone answering script?",
+        "a": "No. A voicemail greeting is recorded wording the caller hears before leaving a message. A live answering script supports a conversation and follow-up questions."
+      },
+      {
+        "q": "Should I promise a callback within a specific number of minutes?",
+        "a": "Only use an expectation that the person responsible for callbacks has approved and can maintain. Publishing a time in a recording does not create staffing or availability."
+      },
+      {
+        "q": "Can I offer texting or a booking link in the recording?",
+        "a": "Include only a route that is active, appropriate for the request and monitored. Do not assume the business number accepts texts or that a request form confirms an appointment."
+      },
+      {
+        "q": "Can Revo record or host these voicemail greetings?",
+        "a": "This page does not establish that capability. The examples can be adapted for a voicemail system the business already uses. Confirm any proposed Revo call flow and supported features directly before changing routing."
+      }
+    ],
+    "takeaway": "Match the recording to the mailbox and the callback plan.",
+    "sourcePaths": [
+      "https://www.nextiva.com/blog/business-voicemail-greeting.html",
+      "https://help.nextiva.com/article/setting-up-nextiva-voicemail",
+      "https://support.ringcentral.com/content/dam/support/us/en/pdf/get-started/v2/RCMVP_Updating_Your_Voicemail_Greeting_20210611_rsb_fhdl_v3.pdf"
+    ],
+    "related": [
+      "phone-answering-script",
+      "compare/ai-vs-voicemail",
+      "after-hours",
+      "call-transfer-language"
+    ],
+    "template": "workflow",
+    "pricingVariant": "voicemail",
+    "source": {
+      "kind": "manual",
+      "reference": "October 15 daily-lot continuation, editorially validated Library libfile_2b3325310acc81919ef17d9f818bbfb7 v0; supplied Semrush Chrome US720 KD30 informational; no tracking changes"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:3924fb2dd7b15d8be57381b204761934a5abe77ef49ee336d263bbd3f91e71fa",
+      "note": "Original templates and field notes from validated brief; HOME layout; no Revo voicemail hosting claim."
+    }
   }
 ]

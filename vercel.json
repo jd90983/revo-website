@@ -158,6 +158,10 @@
       "destination": "/ai-answering-service/compare/home-services-ai-receptionists.html"
     },
     {
+      "source": "/ai-answering-service/business-voicemail-greeting",
+      "destination": "/ai-answering-service/business-voicemail-greeting.html"
+    },
+    {
       "source": "/ai-answering-service",
       "destination": "/ai-answering-service.html"
     }
