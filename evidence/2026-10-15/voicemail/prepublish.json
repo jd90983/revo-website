@@ -1,0 +1,11 @@
+{
+  "tests_passed": 19,
+  "fixtures": "passed add/draft/catalog/withdrawal",
+  "build": "passed",
+  "internal_links": 1565,
+  "public_routes": 33,
+  "responsive_cases": 4,
+  "responsive_failures": 0,
+  "mobile_repair": "Long PDF citation wraps within references; same HOME design",
+  "external_sources_200": 3
+}
