@@ -230,6 +230,10 @@
       "destination": "/ai-answering-service/call-quality-monitoring.html"
     },
     {
+      "source": "/ai-answering-service/dynamic-number-insertion",
+      "destination": "/ai-answering-service/dynamic-number-insertion.html"
+    },
+    {
       "source": "/ai-answering-service",
       "destination": "/ai-answering-service.html"
     }

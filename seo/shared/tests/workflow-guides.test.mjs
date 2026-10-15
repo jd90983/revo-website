@@ -9,8 +9,8 @@ import {contentHash,registryErrors} from '../lib/registry-contract.mjs';
 
 const guides=REVIEW_PAGES.filter(p=>p.template==='workflow'&&p.publicationStatus!=='withdrawn');
 test('approved workflow guides obey publication approval and have no acquisition controls',()=>{
- assert.equal(guides.length,39);
- assert.equal(new Set(guides.map(page=>page.slug)).size,39);
+ assert.equal(guides.length,40);
+ assert.equal(new Set(guides.map(page=>page.slug)).size,40);
  assert.ok(!guides.some(page=>['after-hours','industry_plumbing.html'].includes(page.slug)));
  const routes=publicRoutes(REVIEW_PAGES,{navigationLimit:6});
  for(const page of guides){

@@ -243,5 +243,10 @@
     "slug": "call-quality-monitoring",
     "label": "Review the service interaction",
     "template": "workflow"
+  },
+  {
+    "slug": "dynamic-number-insertion",
+    "label": "Website-to-call attribution",
+    "template": "workflow"
   }
 ]

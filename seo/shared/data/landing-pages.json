@@ -6456,5 +6456,183 @@
       "contentHash": "sha256:25f05e0848e971f994f8f54dffba3a0562db89c9cf6a58e76fc871a565412f4c",
       "note": "Same complete approved brief; final takeaway split between HOME heading and closing paragraph, no copy removed."
     }
+  },
+  {
+    "slug": "dynamic-number-insertion",
+    "title": "Dynamic number insertion for home service call tracking",
+    "description": "Understand dynamic number insertion and call tracking numbers. Test swaps, call destinations, attribution records, and handoffs without assuming a booking.",
+    "navigationLabel": "Dynamic number insertion",
+    "eyebrow": "Website-to-call attribution",
+    "lead": "Verify the source record and the answering path separately.",
+    "intro": "Dynamic number insertion, or DNI, changes the phone number a visitor sees on a website so a call can be associated with a marketing source or browsing session. For a home service business, the useful question is whether the office can connect an inquiry to the right source without disrupting how customers reach the team.",
+    "sections": [
+      {
+        "title": "Follow the source and the call separately",
+        "paragraphs": [
+          "The number swap, the phone connection, and a booked job are separate events. Test each relevant step rather than treating a new number on the screen as proof that attribution works."
+        ],
+        "items": []
+      },
+      {
+        "title": "Choose source-level or visitor-level tracking",
+        "paragraphs": [
+          "A source-specific tracking number can identify a campaign, such as a mailer or a particular online source. Visitor-level tracking uses a pool of numbers to associate calls with individual website visits. CallRail documents both methods and supports DNI for either; a changing number alone does not prove that visitor-level history is available.",
+          "Choose the detail your office actually needs. A dedicated number on a printed promotion may answer which promotion generated a call. If the question concerns a visitor's path through the website, ask about session-level tracking, what data is available, and how uncertain matches are handled.",
+          "Pool capacity also matters. CallRail warns that an undersized pool can show the same number to multiple visitors and misattribute their activity. Review its sizing guidance against your actual busy periods rather than choosing a number count from an unrelated business.",
+          "Do not distribute a website-pool number as the permanent number on trucks, invoices, or signage without checking its intended use. Google specifically warns that its forwarding numbers can change or be reassigned and must not be used outside its call-reporting and website-call-tracking features. That restriction describes Google's numbers, not every provider's number-ownership terms."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "CallRail tracking methods",
+            "href": "https://support.callrail.com/hc/en-us/articles/5711762422157-Types-of-call-tracking"
+          },
+          {
+            "label": "CallRail pool sizing",
+            "href": "https://support.callrail.com/hc/en-us/articles/5712149058317-How-to-calculate-the-size-of-your-website-pool"
+          },
+          {
+            "label": "Google call reporting",
+            "href": "https://support.google.com/google-ads/answer/2454052?hl=en"
+          }
+        ]
+      },
+      {
+        "title": "Distinguish the number being replaced from the destination",
+        "paragraphs": [
+          "CallRail calls the number its script looks for on a page the swap target. The destination number is where the tracked call is routed. Those roles can coincide, but they answer different configuration questions.",
+          "Write down a simple map before changing anything: visitor source, page number being replaced, displayed tracking number, intended destination, and answering owner. For a multi-location business, identify which office should receive each path. A correctly swapped number that reaches the wrong branch is still a broken customer journey."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "CallRail DNI overview",
+            "href": "https://support.callrail.com/hc/en-us/articles/5711814948877-Dynamic-number-insertion-overview"
+          }
+        ]
+      },
+      {
+        "title": "Check the path from the website to the answering team",
+        "paragraphs": [
+          "Consider a fictional plumbing business testing a tagged estimate-campaign link. Its intended sequence is: the test visitor reaches the landing page, the appropriate number appears, the call reaches the office's approved answering route, and a source record is available for review.",
+          "CallRail documents campaign rules that match landing-page parameters and route calls to an existing business number or call flow. That establishes a supported configuration pattern, not proof that your particular setup works.",
+          "If an answering service receives the call, ask separately where the marketing source remains available. Does the office review the tracking provider's record, receive a supported field, or reconcile records later? Do not assume that forwarding carries every campaign field into the answering system. Use supported record identifiers and timestamps for reconciliation; preserve an unknown source when the match cannot be established."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "CallRail campaign-level tracking",
+            "href": "https://support.callrail.com/hc/en-us/articles/5711422374413-Create-a-number-for-campaign-level-tracking"
+          }
+        ]
+      },
+      {
+        "title": "Separate a phone-link click from an actual call",
+        "paragraphs": [
+          "Google Ads distinguishes website call conversions using a forwarding number from clicks on a phone number on a mobile website. Its mobile-click method measures the click, not the phone call itself. A duration-based conversion also reflects the threshold configured for that action; it is not automatically a qualified inquiry or completed booking.",
+          "Name reports accordingly. Keep clicks, connected calls, service inquiries, and confirmed appointments separate until evidence links them. A customer calling twice about one estimate should not silently become two new jobs."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Google phone-call conversion types",
+            "href": "https://support.google.com/google-ads/answer/6100664?hl=en"
+          }
+        ]
+      },
+      {
+        "title": "Run a controlled acceptance test",
+        "paragraphs": [
+          "Use authorized test URLs or the provider's diagnostic workflow, informed participants, and fictional service details. These are proposed checks, not completed Revo tests.",
+          "If more than one tracking system touches the same number, have the website and advertising owners review the arrangement together. Google's website-call setup documentation flags special considerations for third-party DNI. Do not stack replacement scripts and assume they cooperate.",
+          "Even within one provider, rules can overlap. CallRail documents that source-number rules take precedence over website pools. An existing campaign number can therefore prevent the intended pool from supplying visitor-level tracking. Include rule precedence in the test, not just script installation."
+        ],
+        "items": [
+          "First visit: Use the provider's recommended fresh-session test. Check the source rule and expected number. CallRail warns that an earlier session can affect the number shown during a test.",
+          "Every contact surface: Check the header, footer, relevant landing pages, and mobile call button. Confirm that the displayed digits and the dialed destination follow the intended rule.",
+          "Actual connection: Place an authorized test call and verify the answering destination, not just whether a phone rings somewhere.",
+          "Recorded attribution: Find the test call in the tracking system and compare its source with the controlled test path. Check the meaning of the reported source field rather than assuming first and latest visits are interchangeable.",
+          "Handoff and unavailable recipient: Check where the request goes if the office is busy or closed, and whether the team can still reconcile it with the source record.",
+          "Tracking unavailable: Ask the website owner to test the approved fallback when a swap does not occur. Customers should retain a usable contact route; missing attribution should remain visible."
+        ],
+        "sources": [
+          {
+            "label": "CallRail installation and testing guidance",
+            "href": "https://support.callrail.com/hc/en-us/articles/5711709638541-Installing-the-JavaScript-snippet"
+          },
+          {
+            "label": "Google website call setup",
+            "href": "https://support.google.com/google-ads/answer/6095883?hl=en"
+          },
+          {
+            "label": "CallRail swap precedence",
+            "href": "https://support.callrail.com/hc/en-us/articles/5712121696397-Swap-Precedence-Rules"
+          }
+        ]
+      },
+      {
+        "title": "Review data handling and operational ownership",
+        "paragraphs": [
+          "CallRail documents using cookies to remember a visitor's source. Google asks advertisers to explain collected data and obtain consent where applicable law or its policies require it. Have the responsible privacy owner review the actual implementation; a working script is not a legal-compliance guarantee.,",
+          "Assign owners for the website swap, number routing, advertising report, and office follow-up. Recheck after changes to the website, campaigns, or answering destination. Attribution is useful when its limits are understood and someone can trace a real inquiry through the intended process."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "CallRail DNI overview",
+            "href": "https://support.callrail.com/hc/en-us/articles/5711814948877-Dynamic-number-insertion-overview"
+          },
+          {
+            "label": "Google conversion guidance",
+            "href": "https://support.google.com/google-ads/answer/6100664?hl=en"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a tracking number the same as dynamic number insertion?",
+        "a": "No. A tracking number can be assigned to a fixed source, including an offline promotion. DNI is the website mechanism that replaces a displayed number according to configured rules. Visitor-level tracking adds another requirement: a supported session-matching setup."
+      },
+      {
+        "q": "Does a campaign label prove that the ad caused a booking?",
+        "a": "No. It describes the source associated with the tracked interaction under the provider's rules. A confirmed booking needs its own evidence, and attribution is not a controlled test of advertising causation."
+      },
+      {
+        "q": "Does Revo provide DNI or a verified CallRail integration?",
+        "a": "This guide does not establish either capability. Confirm the current product, plan, supported call path, and available source fields directly before relying on a particular Revo connection."
+      }
+    ],
+    "takeaway": "Verify the source record and the answering path separately.",
+    "sourcePaths": [
+      "https://support.callrail.com/hc/en-us/articles/5711762422157-Types-of-call-tracking",
+      "https://support.callrail.com/hc/en-us/articles/5712149058317-How-to-calculate-the-size-of-your-website-pool",
+      "https://support.google.com/google-ads/answer/2454052?hl=en",
+      "https://support.callrail.com/hc/en-us/articles/5711814948877-Dynamic-number-insertion-overview",
+      "https://support.callrail.com/hc/en-us/articles/5711422374413-Create-a-number-for-campaign-level-tracking",
+      "https://support.google.com/google-ads/answer/6100664?hl=en",
+      "https://support.callrail.com/hc/en-us/articles/5711709638541-Installing-the-JavaScript-snippet",
+      "https://support.google.com/google-ads/answer/6095883?hl=en",
+      "https://support.callrail.com/hc/en-us/articles/5712121696397-Swap-Precedence-Rules"
+    ],
+    "related": [
+      "call-whisper",
+      "call-disposition",
+      "call-routing",
+      "business-caller-id"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "publicationStatus": "approved",
+    "source": {
+      "kind": "manual",
+      "reference": "Twentieth and final October15 selection; complete parent-approved brief supplied directly by coordinating task01a1404b-86a2-7525-8d09-d1f910c6f0fd; US880KD17informational; secondarycalltrackingnumbersUS390KD21samecluster; no tracking actions or native Revo DNI/CallRail integration verified"
+    },
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:9bb888877c234268a52e05fa375c52b26266588cffd26eeb8fc9080caf9216ed",
+      "note": "Twentieth selected page; secondary calltrackingnumbers same URL; full source-backed body, no native Revo DNI/CallRail claim or tracking changes."
+    }
   }
 ]
