@@ -1,0 +1,18 @@
+{
+  "tests": 19,
+  "public_routes": 48,
+  "approved_pages": 47,
+  "withdrawn_absent": 20,
+  "internal_links": 2383,
+  "local_browser_cases": 36,
+  "final_failures": 0,
+  "retry": "One FCR390px client-hydration timeout resolved on isolated retry; history preserved",
+  "atomic_approval_note": "Four mutually linked resources cannot be approved one at a time; final approved records and actual review hashes validated together using unchanged registryErrors; no guard changed",
+  "content_adjustment": "Cancellation source changed to primary16CFR429 after FTCconsumer local404; no fee, notice period or rights determination added. Two headings shortened to fit existing62character contract.",
+  "already_published_today": 8,
+  "implemented_unpublished": 9,
+  "projected_total": 17,
+  "shortfall": 3,
+  "source_limitations": "Some direct external HTTP requests blocked; official pages/briefs readable. No external-all200 claim.",
+  "public_output_internals": false
+}

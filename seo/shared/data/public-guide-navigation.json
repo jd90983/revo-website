@@ -188,5 +188,50 @@
     "slug": "call-abandonment-rate",
     "label": "Phone measurement guide",
     "template": "workflow"
+  },
+  {
+    "slug": "call-disposition",
+    "label": "Consistent call outcomes",
+    "template": "workflow"
+  },
+  {
+    "slug": "average-speed-of-answer",
+    "label": "Measure answered-call waiting",
+    "template": "workflow"
+  },
+  {
+    "slug": "first-call-resolution",
+    "label": "Check whether the request was completed",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/local-vs-toll-free-number",
+    "label": "Choose a business number",
+    "template": "workflow"
+  },
+  {
+    "slug": "business-caller-id",
+    "label": "Outbound callback identity",
+    "template": "workflow"
+  },
+  {
+    "slug": "appointment-cancellation-policy",
+    "label": "Appointment-change operations",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/voip-vs-landline",
+    "label": "Compare phone-service options",
+    "template": "workflow"
+  },
+  {
+    "slug": "voip-jitter",
+    "label": "Business call-quality diagnosis",
+    "template": "workflow"
+  },
+  {
+    "slug": "jobber-answering-service",
+    "label": "Software buyer guide",
+    "template": "workflow"
   }
 ]
