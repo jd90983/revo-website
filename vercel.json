@@ -222,6 +222,14 @@
       "destination": "/ai-answering-service/jobber-answering-service.html"
     },
     {
+      "source": "/ai-answering-service/voicemail-to-email",
+      "destination": "/ai-answering-service/voicemail-to-email.html"
+    },
+    {
+      "source": "/ai-answering-service/call-quality-monitoring",
+      "destination": "/ai-answering-service/call-quality-monitoring.html"
+    },
+    {
       "source": "/ai-answering-service",
       "destination": "/ai-answering-service.html"
     }
