@@ -1,0 +1,47 @@
+[
+  {
+    "url": "https://support.callrail.com/hc/en-us/articles/5711762422157-Types-of-call-tracking",
+    "error": "<urlopen error [Errno 61] Connection refused>",
+    "verification_note": "Local connection refused; exact official documentation successfully read with web tool; not an HTTP200 confirmation from this Mac."
+  },
+  {
+    "url": "https://support.callrail.com/hc/en-us/articles/5712149058317-How-to-calculate-the-size-of-your-website-pool",
+    "error": "<urlopen error [Errno 61] Connection refused>",
+    "verification_note": "Local connection refused; exact official documentation successfully read with web tool; not an HTTP200 confirmation from this Mac."
+  },
+  {
+    "url": "https://support.google.com/google-ads/answer/2454052?hl=en",
+    "status": 200,
+    "final_url": "https://support.google.com/google-ads/answer/2454052?hl=en"
+  },
+  {
+    "url": "https://support.callrail.com/hc/en-us/articles/5711814948877-Dynamic-number-insertion-overview",
+    "error": "<urlopen error [Errno 61] Connection refused>",
+    "verification_note": "Local connection refused; exact official documentation successfully read with web tool; not an HTTP200 confirmation from this Mac."
+  },
+  {
+    "url": "https://support.callrail.com/hc/en-us/articles/5711422374413-Create-a-number-for-campaign-level-tracking",
+    "error": "<urlopen error [Errno 61] Connection refused>",
+    "verification_note": "Local connection refused; exact official documentation successfully read with web tool; not an HTTP200 confirmation from this Mac."
+  },
+  {
+    "url": "https://support.google.com/google-ads/answer/6100664?hl=en",
+    "status": 200,
+    "final_url": "https://support.google.com/google-ads/answer/6100664?hl=en"
+  },
+  {
+    "url": "https://support.callrail.com/hc/en-us/articles/5711709638541-Installing-the-JavaScript-snippet",
+    "error": "<urlopen error [Errno 61] Connection refused>",
+    "verification_note": "Local connection refused; exact official documentation successfully read with web tool; not an HTTP200 confirmation from this Mac."
+  },
+  {
+    "url": "https://support.google.com/google-ads/answer/6095883?hl=en",
+    "status": 200,
+    "final_url": "https://support.google.com/google-ads/answer/6095883?hl=en"
+  },
+  {
+    "url": "https://support.callrail.com/hc/en-us/articles/5712121696397-Swap-Precedence-Rules",
+    "error": "<urlopen error [Errno 61] Connection refused>",
+    "verification_note": "Local connection refused; exact official documentation successfully read with web tool; not an HTTP200 confirmation from this Mac."
+  }
+]

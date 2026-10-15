@@ -1,0 +1,42 @@
+[
+  {
+    "path": "/ai-answering-service/voicemail-to-email",
+    "status": 200,
+    "canonical_ok": true,
+    "title_ok": true,
+    "h1_count": 1,
+    "robots_index_follow": true,
+    "robots_header": null,
+    "form_absent": true,
+    "sitemap_occurrences": 1,
+    "catalog_link": true
+  },
+  {
+    "path": "/ai-answering-service/call-quality-monitoring",
+    "status": 200,
+    "canonical_ok": true,
+    "title_ok": true,
+    "h1_count": 1,
+    "robots_index_follow": true,
+    "robots_header": null,
+    "form_absent": true,
+    "sitemap_occurrences": 1,
+    "catalog_link": true
+  },
+  {
+    "path": "/evidence/2026-10-15/final-two/selection.json",
+    "status": 404
+  },
+  {
+    "path": "/evidence/2026-10-15/final-two/browser-qa/call-quality-monitoring-390.png",
+    "status": 404
+  },
+  {
+    "path": "/seo/shared/data/releases.json",
+    "status": 404
+  },
+  {
+    "path": "/.git/config",
+    "status": 404
+  }
+]

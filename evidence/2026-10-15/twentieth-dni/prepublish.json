@@ -1,0 +1,17 @@
+{
+  "tests_passed": 19,
+  "build": "passed",
+  "approved_registry": 50,
+  "public_routes": 51,
+  "internal_links": 2549,
+  "withdrawn_absent": 20,
+  "responsive_cases": 4,
+  "failures": 0,
+  "new_url_before_merge": 404,
+  "daily_already_published": 19,
+  "final_selected_total": 20,
+  "no_secondary_keyword_url": true,
+  "tracking_scripts_added_to_site": false,
+  "source_access": "Google sources200; CallRail direct requests refused but exact official pages read by web tool",
+  "metadata_adaptation": "Title fits existing62character title/H1 contract; meta description shortened to155characters; complete body preserved."
+}
