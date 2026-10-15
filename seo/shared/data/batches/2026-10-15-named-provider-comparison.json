@@ -1,0 +1,275 @@
+{
+  "batchId": "2026-10-15-named-provider-comparison",
+  "source": {
+    "kind": "manual",
+    "reference": "Current supplied Semrush UI evidence and materialized Library brief; one validated opportunity,19shortfall; recurring publication authorized"
+  },
+  "operations": [
+    {
+      "op": "add",
+      "record": {
+        "slug": "compare/home-services-ai-receptionists",
+        "title": "AI receptionist alternatives for home service businesses",
+        "description": "Compare Revo, Avoca, Goodcall, Sameday and Smith.ai using published booking, transfer, integration and billing details for home service businesses.",
+        "navigationLabel": "Compare AI receptionists",
+        "eyebrow": "Provider comparison",
+        "lead": "Compare the documented workflow, not a ranking.",
+        "intro": "AI receptionist alternatives differ in where they create bookings, who receives a handoff, which software they connect to and how usage is billed. Compare five providers below. Published by Revo; documentation reviewed October 15, 2026. This is a comparison of published offerings, not hands-on performance results. Confirm the selected plan and setup directly with each provider.",
+        "sections": [
+          {
+            "title": "Avoca: job records and CSR handoff",
+            "paragraphs": [
+              "Avoca documents inbound answering and scheduling. Its ServiceTitan integration page describes creating job records with customer details, service information and call notes. That is a named field-service workflow, rather than evidence that every calendar or CRM uses the same integration.",
+              "Its inbound product describes a contextual handoff to a CSR. Separate offerings can include human coverage, so confirm exactly who receives a transferred call and which products are included in the quote. A universal billing unit was not verified in the official pages reviewed; request written pricing and implementation terms."
+            ],
+            "items": [
+              "Booking destination: documented ServiceTitan job records.",
+              "Handoff: CSR workflow; confirm recipient and any vendor-staffed coverage.",
+              "Billing: confirm the unit, implementation charges and contract in the quote.",
+              "Confirm the exact integration operations for your account."
+            ],
+            "sources": [
+              {
+                "label": "Avoca inbound product",
+                "href": "https://www.avoca.ai/inbound"
+              },
+              {
+                "label": "Avoca ServiceTitan integration",
+                "href": "https://www.avoca.ai/integrations/servicetitan"
+              }
+            ]
+          },
+          {
+            "title": "Goodcall: calendar workflows and customer-based billing",
+            "paragraphs": [
+              "Goodcall\u2019s product documentation describes calendar booking, CRM updates, recordings and transcripts, with Google Calendar and HighLevel among its examples. It also describes transferring calls to the business. Check the supported calendar, recipient and fallback; a calendar connection does not prove a native connection to every field-service platform.",
+              "Its pricing defines a unique customer by phone number within the month, rather than using conversation minutes as the billing unit. Allowances and additional-customer terms vary by plan. Confirm the tool allowance and supported operations needed for your workflow instead of comparing that customer allowance directly with another provider\u2019s minutes."
+            ],
+            "items": [
+              "Booking destination: supported calendar or connected workflow; verify yours.",
+              "Handoff: transfer to the business; confirm the unavailable-recipient fallback.",
+              "Billing: distinct customer phone numbers within the month.",
+              "Confirm the selected plan\u2019s tool limits and connection details."
+            ],
+            "sources": [
+              {
+                "label": "Goodcall product",
+                "href": "https://www.goodcall.com/"
+              },
+              {
+                "label": "Goodcall pricing and customer definition",
+                "href": "https://www.goodcall.com/pricing"
+              }
+            ]
+          },
+          {
+            "title": "Revo: answering plans with tier-specific connections",
+            "paragraphs": [
+              "Revo\u2019s published plans include round-the-clock answering, appointment booking, your own script and rules, and a dashboard with call summaries. Crew and Fleet add transfers to your team, field-service software connections, recordings and transcripts. Those additional features are excluded from Solo; do not treat the higher-tier list as a description of every Revo plan.",
+              "The plans include monthly minute allowances. Confirm additional-minute terms and Launch Offer conditions directly. The published field-service connection label does not establish a native connection to a particular named platform or its exact booking actions. Likewise, a transfer feature does not establish a warm-transfer method or vendor-provided live receptionists."
+            ],
+            "items": [
+              "Booking destination: confirm the supported calendar or software action.",
+              "Handoff: team transfers on Crew and Fleet; confirm the method and recipient.",
+              "Billing: monthly minute allowances; check current terms.",
+              "Solo excludes team transfers, field-service connections and recordings/transcripts."
+            ],
+            "sources": [
+              {
+                "label": "Revo current plans and inclusion flags",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          },
+          {
+            "title": "Sameday: field-service scheduling and escalation",
+            "paragraphs": [
+              "Sameday positions its AI CSR around home-service calls, appointment booking and escalation to the business\u2019s people. Its official integration pages document scheduling and customer-data workflows with ServiceTitan and Jobber. Ask the provider to identify the operations available for your specific software account and plan.",
+              "The current pricing page lists starting minute allowances. Use that pricing evidence rather than interpreting conflicting unmetered language in comparison articles as a universal plan promise. Confirm the current overage terms and any language or integration requirements. Escalation to your staff is a different arrangement from a receptionist supplied by the provider."
+            ],
+            "items": [
+              "Booking destination: documented ServiceTitan and Jobber workflows; verify operations.",
+              "Handoff: escalation to the business\u2019s people; confirm the destination.",
+              "Billing: pricing lists starting minute allowances.",
+              "Confirm overages, selected-plan connections and language availability."
+            ],
+            "sources": [
+              {
+                "label": "Sameday AI CSR product",
+                "href": "https://sameday.ai/features/ai-csrs"
+              },
+              {
+                "label": "Sameday ServiceTitan integration",
+                "href": "https://sameday.ai/integration/servicetitan"
+              },
+              {
+                "label": "Sameday Jobber integration",
+                "href": "https://sameday.ai/integration/jobber"
+              },
+              {
+                "label": "Sameday pricing",
+                "href": "https://sameday.ai/pricing"
+              }
+            ]
+          },
+          {
+            "title": "Smith.ai: AI answering and live-agent options",
+            "paragraphs": [
+              "Smith.ai\u2019s AI product documents appointment scheduling, lead qualification, recordings, summaries and context-preserving transfers. Its published scheduling examples include Calendly. Confirm the exact calendar or field-service workflow rather than applying a broad integration count to every package.",
+              "Its AI pricing uses call-based allowances or rates. The product also distinguishes live-agent involvement and hybrid arrangements from routing to your own team. Charges and conditions depend on the type of escalation and chosen arrangement. Request those terms explicitly; access to vendor-staffed reception and a transfer to your employee are not interchangeable features."
+            ],
+            "items": [
+              "Booking destination: supported scheduling connection; confirm the required system.",
+              "Handoff: team transfers and vendor live-agent arrangements are distinct.",
+              "Billing: call-based AI plans; confirm human-involvement conditions.",
+              "Confirm the AI or hybrid package and supported integration operations."
+            ],
+            "sources": [
+              {
+                "label": "Smith.ai AI product and pricing",
+                "href": "https://smith.ai/ai-receptionist"
+              }
+            ]
+          },
+          {
+            "title": "Three differences that change the shortlist",
+            "paragraphs": [
+              "A calendar event, a captured time request and a job record in field-service software are different outputs. Ask each shortlisted provider to show the record it creates and which details reach the person responsible for the work. A software name on a product page is a starting point, not proof of every operation your team needs.",
+              "Compare who answers a handoff and how usage is measured separately. Your employee, a vendor receptionist and an unavailable recipient require different fallbacks. A minute, a call and a distinct-customer allowance are also different units; use your call records and the current written terms rather than treating their included quantities as equivalent."
+            ],
+            "items": [
+              "Booking: identify the actual destination and confirmed outcome.",
+              "Handoff: identify the recipient, hours and no-answer path.",
+              "Billing: compare the written unit and scope using your own records."
+            ]
+          },
+          {
+            "title": "Ask for the same demonstration from each provider",
+            "paragraphs": [
+              "Give each shortlisted provider the same approved business requirements and ask it to demonstrate four situations: a routine estimate request, an existing customer changing a booking, a request outside the service area and a transfer recipient who is unavailable. These are proposed evaluation scenarios, not tests Revo has conducted on the listed providers.",
+              "Record the information captured, the system where it appeared and the next step assigned to your team. Keep service acceptance, diagnosis, estimates and dispatch under your business\u2019s rules. Use the existing selection and booking guides to prepare those requirements; this comparison contributes provider-specific documentation rather than replacing that planning work."
+            ],
+            "items": [
+              "Ask where the estimate request is stored.",
+              "Check the supported handling of an appointment change.",
+              "Review the response to an out-of-area request.",
+              "Check the unavailable-recipient fallback and follow-up owner."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Do all AI receptionists connect to the same field-service software?",
+            "a": "No. Compare the named integration and its documented operations. Verify the exact plan, software account and booking actions with the provider; a general calendar or integration claim is not evidence of every field-service workflow."
+          },
+          {
+            "q": "Does human handoff mean a receptionist supplied by the vendor?",
+            "a": "Not necessarily. A transfer to your team and access to a provider\u2019s live receptionist are different arrangements. Confirm who answers, the fallback and any human-involvement charges."
+          },
+          {
+            "q": "Which alternative is best for my company?",
+            "a": "The documentation supports a shortlist, not a universal winner. Choose against your required booking destination, coverage, handoff and written billing terms, then request a demonstration of your actual requirements."
+          }
+        ],
+        "takeaway": "Choose the plan that supports your actual call workflow.",
+        "pricingVariant": "missed-calls",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing.html",
+          "https://www.avoca.ai/integrations/servicetitan",
+          "https://www.goodcall.com/pricing",
+          "https://sameday.ai/pricing",
+          "https://smith.ai/ai-receptionist"
+        ],
+        "related": [
+          "choose-virtual-receptionist",
+          "answering-service-cost",
+          "appointment-booking",
+          "compare/ai-vs-live-receptionist"
+        ],
+        "template": "workflow",
+        "source": {
+          "kind": "manual",
+          "reference": "Semrush US UI observation supplied2026-10-15: exactkeyword210/KD4/Commercial; Librarylibfile_473d74301ba88191b42db9bea0af2d48v0; official provider documentation read2026-10-15; no controlled GoogleUS top10audit or registered-prompt claim."
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "choose-virtual-receptionist",
+        "title": "How to choose a virtual receptionist service",
+        "description": "Review choose a receptionist for your service business: understand the workflow, check the supported setup and give your team a clear next step.",
+        "navigationLabel": "Choose a receptionist",
+        "eyebrow": "Choose a receptionist",
+        "lead": "Choose from tested requirements, not a feature count.",
+        "intro": "Choosing a virtual receptionist service starts with the calls your business receives and the decisions an answering service may make. Compare vendors against the same operating requirements.",
+        "sections": [
+          {
+            "title": "Write the requirements before comparing vendors.",
+            "paragraphs": [
+              "List the request types, office hours and languages your team needs to cover. Decide which details should be captured and which situations require a person. Keep field availability, prices and job acceptance under the business\u2019s approved rules.",
+              "Use the same requirements for every vendor. A service advertising appointment booking may support a different calendar or confirmation process from the one you need. A transfer feature may have different recipient and no-answer behavior. Ask about the specific workflow rather than assuming the label answers it."
+            ],
+            "items": [
+              "Define request types and hours.",
+              "List language and intake requirements.",
+              "Describe booking and human-handoff boundaries."
+            ]
+          },
+          {
+            "title": "Evaluate the complete operating arrangement.",
+            "paragraphs": [
+              "Compare the billing unit, included usage and additional charges using your own call records. Ask who maintains the script, how configuration changes are handled and what information your team receives after a call. The subscription is only one part of the operating work.",
+              "Review access and data handling as separate decisions. Recordings, transcripts and integrations can vary by plan. Ask for the current terms and supported features; do not treat a competitor\u2019s plan or an old feature list as evidence of another provider\u2019s offer."
+            ],
+            "items": [
+              "Compare like-for-like coverage and usage.",
+              "Confirm setup and ongoing update ownership.",
+              "Check plan-specific access and supported connections."
+            ]
+          },
+          {
+            "title": "Test the requirements before routing customers.",
+            "paragraphs": [
+              "Use authorized calls covering ordinary requests and important exceptions. Check how the service handles an unclear address, an unavailable recipient or a request your company does not accept. Assess whether your team can use the resulting information.",
+              "Revo\u2019s Services and Pricing pages are the starting point for checking its published offer. Review the relevant plan and configuration directly, then compare the test results with your written requirements. Keep a rollback plan for phone routing if the setup is not ready."
+            ],
+            "items": [
+              "Test the actual intake and handoff requirements.",
+              "Review the resulting information with your team.",
+              "Confirm the routing rollback before activation."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "What should I compare first?",
+            "a": "Start with the operating requirements: request types, hours, languages, intake and human handoff. Compare pricing once the coverage is comparable."
+          },
+          {
+            "q": "How should I evaluate Revo?",
+            "a": "Check the current Services and Pricing pages, confirm the supported configuration and test your requirements with authorized calls."
+          }
+        ],
+        "takeaway": "Choose from tested requirements, not a feature count.",
+        "pricingVariant": "missed-calls",
+        "sourcePaths": [
+          "https://www.revoapp.ai/services.html",
+          "https://www.revoapp.ai/pricing.html",
+          "https://www.mapcommunications.com/blog/how-to-choose-a-virtual-receptionist-company/"
+        ],
+        "related": [
+          "compare/virtual-receptionist-vs-answering-service",
+          "answering-service-cost",
+          "lead-qualification",
+          "compare/home-services-ai-receptionists"
+        ],
+        "template": "workflow",
+        "source": {
+          "kind": "manual",
+          "reference": "Semrush personal Chrome US desktop 2026-10-14; exact demand and prompt mapping in evidence/expansion-2026-10-14/editorial-decisions.json; publication held"
+        }
+      }
+    }
+  ]
+}

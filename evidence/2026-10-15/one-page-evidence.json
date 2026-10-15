@@ -1,0 +1,28 @@
+{
+  "new_pages": 1,
+  "target_batch_max": 20,
+  "shortfall": 19,
+  "main_base": "4bc8b38f8599da73a263e6246bd3b940d9d57ea3",
+  "primary_keyword": "ai receptionist for home services alternatives",
+  "volume_us": 210,
+  "kd": 4,
+  "intent": "Commercial",
+  "observation_date": "2026-10-15",
+  "evidence_origin": "Visible Semrush Chrome UI observation supplied by parent; this implementation task did not use personal Chrome",
+  "serp_limit": "Public search and current pages support comparison format; not a controlled GoogleUS top10audit",
+  "brief": {
+    "library_file_id": "libfile_473d74301ba88191b42db9bea0af2d48",
+    "version": 0,
+    "local_path": "/Users/mac/Documents/Codex/2026-10-14/task/brief-2026-10-15/Revo_brief_ai_receptionist_alternatives_2026-10-15.md",
+    "sha256": "d22f795e085670eaa8a25205fa187bc5fdac09d85b67c795d37787f918028e06",
+    "read_verified": true
+  },
+  "url": "https://www.revoapp.ai/ai-answering-service/compare/home-services-ai-receptionists",
+  "differentiation": "Named provider documentation comparison; existing selection checklist, billing guide, staffing and service-category comparisons retain ownership.",
+  "tracking_changed": false,
+  "registered_prompt_confirmed": false,
+  "suggested_prompt_only": "Which AI receptionists for home service businesses can book appointments, connect to my field-service software, and transfer calls to a person?",
+  "rollback_url": "https://revo-website-gwkzt8lei-group-u.vercel.app",
+  "rollback_sha": "4bc8b38f8599da73a263e6246bd3b940d9d57ea3",
+  "special_review": "Solo falseflags for transfers,fieldservice,recordings validated; Sameday minuteallowance sourced to pricing; no vendor ranking or invented tests"
+}

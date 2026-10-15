@@ -1,6 +1,6 @@
 import landingPages from "@/data/landing-pages.json";
 // Shared curated landing registry. Database/AI publication approval is a separate contract.
-export interface ReviewSection { title: string; paragraphs: string[]; items: string[] }
+export interface ReviewSection { title: string; paragraphs: string[]; items: string[]; sources?: {label:string;href:string}[] }
 export type PageMode = "review" | "public";
 export type PricingVariant = "full" | "missed-calls" | "voicemail" | "receptionist" | "worksheet";
 export type PublicationStatus = "draft" | "approved" | "withdrawn";

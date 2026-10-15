@@ -1,0 +1,57 @@
+{
+  "date": "2026-10-15",
+  "remote_main": "4bc8b38f8599da73a263e6246bd3b940d9d57ea3",
+  "open_prs": 0,
+  "batch_2026_10_15_in_registry": false,
+  "remote_branch_named_for_today": false,
+  "approved_guides": 30,
+  "withdrawn_records": 20,
+  "chrome_control_tools_available": 0,
+  "chrome_personal_occupied": false,
+  "semrush_api_or_connector_used": false,
+  "semrush_writes": 0,
+  "current_tracking_counts": "Not rechecked; historical reported299keywords/73prompts",
+  "exports": [
+    {
+      "path": "/Users/mac/Documents/Codex/2026-10-13/task-3/revo_keywords/ai-receptionist_all-keywords_us_2026-10-13.csv",
+      "sha256": "48a75d0e06a31dae860187fd27cb50c7001f40430a7ded6bb2fe81b27c81b04a",
+      "rows": 3233,
+      "collected": "2026-10-13"
+    },
+    {
+      "path": "/Users/mac/Documents/Codex/2026-10-13/task-3/revo_keywords/answering-service_all-keywords_us_2026-10-13.csv",
+      "sha256": "5723163d9bcc0cd3e2c06193d0e1a7ecfb5e658c906edff6d4ffcae7beea9740",
+      "rows": 3810,
+      "collected": "2026-10-13"
+    },
+    {
+      "path": "/Users/mac/Documents/Codex/2026-10-13/task-3/revo_keywords/virtual-receptionist_all-keywords_us_2026-10-13.csv",
+      "sha256": "4044c1fc7de13f9ec36b994f95e521a40a72b194102204fd365011e90f933245",
+      "rows": 2660,
+      "collected": "2026-10-13"
+    }
+  ],
+  "candidate": {
+    "keyword": "ai receptionist for home services alternatives",
+    "volume_us": 210,
+    "kd": 4,
+    "intent": "Commercial",
+    "collected": "2026-10-13",
+    "csv_line": 542,
+    "source_export": "ai-receptionist_all-keywords_us_2026-10-13.csv",
+    "status": "Unvalidated; current SERP missing",
+    "closest_existing_owners": [
+      "choose-virtual-receptionist",
+      "compare/virtual-receptionist-vs-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/ai-vs-voicemail"
+    ],
+    "possible_distinct_scope": "Switching away from an existing answering arrangement: number continuity, existing script/data handover and cutover acceptance; only if current SERP matches switching intent rather than a generic vendor list.",
+    "new_url_if_validated": "/ai-answering-service/switch-answering-service",
+    "prompt_relation": "Existing-number compatibility and provider-choice prompts from earlier evidence; latest73prompts not reread, so no exact current mapping or deduplication claimed."
+  },
+  "new_pages_created": 0,
+  "new_pages_published": 0,
+  "blocking_capability": "Chrome/CUA control is not exposed in current toolset; current Semrush SERP and tracking cannot be verified through the authorized interface.",
+  "next_step": "Restore Chrome/CUA capability in this task or perform Chrome-only research in another authorized thread with that control; no new permission grant is needed. No API, connector or cloud-browser substitute."
+}

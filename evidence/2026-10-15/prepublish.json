@@ -1,0 +1,21 @@
+{
+  "new_pages": 1,
+  "shortfall": 19,
+  "tests": 19,
+  "fixtures": "pass",
+  "approved_guides": 31,
+  "public_routes": 32,
+  "internal_links_resolved": 1510,
+  "qa_widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "qa_failures": 0,
+  "external_official_links": 10,
+  "external_links_http200": 10,
+  "old_landing_PR56_57_preserved": true,
+  "tracking_changes": 0,
+  "personal_chrome_used": false
+}
