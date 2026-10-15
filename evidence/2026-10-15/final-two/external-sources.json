@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://learn.microsoft.com/en-us/microsoftteams/set-up-phone-system-voicemail",
+    "status": 200,
+    "final_url": "https://learn.microsoft.com/en-us/microsoftteams/set-up-phone-system-voicemail"
+  },
+  {
+    "url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0077179",
+    "status": 200,
+    "final_url": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0077179"
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/microsoftteams/manage-shared-voicemail",
+    "status": 200,
+    "final_url": "https://learn.microsoft.com/en-us/microsoftteams/manage-shared-voicemail"
+  },
+  {
+    "url": "https://docs.aws.amazon.com/connect/latest/adminguide/about-scoring-and-weights.html",
+    "status": 200,
+    "final_url": "https://docs.aws.amazon.com/connect/latest/adminguide/about-scoring-and-weights.html"
+  },
+  {
+    "url": "https://docs.aws.amazon.com/connect/latest/adminguide/calibrations-performance-evaluations.html",
+    "status": 200,
+    "final_url": "https://docs.aws.amazon.com/connect/latest/adminguide/calibrations-performance-evaluations.html"
+  },
+  {
+    "url": "https://docs.aws.amazon.com/connect/latest/adminguide/generative-ai-performance-evaluations.html",
+    "status": 200,
+    "final_url": "https://docs.aws.amazon.com/connect/latest/adminguide/generative-ai-performance-evaluations.html"
+  }
+]

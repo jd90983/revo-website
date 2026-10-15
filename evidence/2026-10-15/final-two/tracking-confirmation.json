@@ -1,0 +1,18 @@
+{
+  "source": "Parent supplied final verification by authorized personal Chrome task; this implementation thread performed no tracking writes",
+  "source_thread_id": "01a14058-2833-70fc-8f4a-6f76b320e0e8",
+  "source_turn_id": "01a140bf-5874-70c2-9779-0eead299c2e5",
+  "date": "2026-10-15",
+  "website_before": 315,
+  "website_after": 317,
+  "keywords_added": [
+    "voicemail to email",
+    "call quality monitoring"
+  ],
+  "chatgpt_before": 90,
+  "chatgpt_after": 92,
+  "specific_prompts_added": 2,
+  "duplicate_or_uncertain_writes": false,
+  "personal_chrome_released_by_source": true,
+  "brief_prompt_proposals": "Only two specific prompts confirmed by parent; do not assume all six proposed strings were tracked"
+}

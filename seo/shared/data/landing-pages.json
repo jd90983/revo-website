@@ -6172,5 +6172,289 @@
       "contentHash": "sha256:2aa817a3262ea7b61960cd6b9d36d52c1251e729d7e7d4dad6cb9b59bbfd2cd9",
       "note": "October15 same-lot sequential continuation; distinct original utility; factual source limits and unknown metrics retained; no unverified Revo features."
     }
+  },
+  {
+    "slug": "voicemail-to-email",
+    "title": "Voicemail to email for a home-service office",
+    "description": "Plan voicemail-to-email delivery, shared inbox ownership and fallback checks so a customer message reaches someone responsible for follow-up.",
+    "navigationLabel": "Voicemail to email",
+    "eyebrow": "From mailbox to owned follow-up",
+    "lead": "Receiving an email is the start of handling a voicemail, not the end.",
+    "intro": "Voicemail to email delivers a voicemail notification or its contents to an email destination. What arrives depends on the phone service and its configuration: the message might include an audio attachment, a transcript, a link to a mailbox or a notification that a new message is waiting. Confirm the exact behavior before building your office workflow around it.",
+    "sections": [
+      {
+        "title": "Understand the workflow",
+        "paragraphs": [
+          "Microsoft documents Cloud Voicemail as an email containing an audio attachment in the user's Exchange mailbox, with transcription when enabled. Zoom separately documents notification, audio-file and transcription options, with conditions governing access to attachments. These are examples of vendor-specific behavior, not a universal specification.,"
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Microsoft Cloud Voicemail",
+            "href": "https://learn.microsoft.com/en-us/microsoftteams/set-up-phone-system-voicemail"
+          },
+          {
+            "label": "Zoom voicemail notification options",
+            "href": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0077179"
+          }
+        ]
+      },
+      {
+        "title": "Decide what the email must deliver",
+        "paragraphs": [
+          "Start with the person who will act on the message. A dispatcher at a desk and an owner checking a phone between jobs may need different access arrangements. Write down whether the email provides the message itself or simply directs the recipient somewhere else.",
+          "Check these items with the provider and the person responsible for your email account:",
+          "A transcript is one possible representation of the message. Email delivery is the transport and ownership workflow. An email without text may still contain usable audio; a readable transcript may still have an uncertain callback number. Do not confuse successful delivery with verified message content."
+        ],
+        "items": [
+          "Does the email contain audio, text, a secure link or only an alert?",
+          "Must the recipient sign in to a separate phone account to open the message?",
+          "Which business number, user or shared mailbox generated the voicemail?",
+          "Can an authorized backup access the same source message when the usual owner is away?",
+          "What happens when transcription is missing or an attachment is unavailable?"
+        ]
+      },
+      {
+        "title": "Choose one place to record ownership",
+        "paragraphs": [
+          "Sending copies to several people does not establish who will call the customer. Choose a source of truth for the request, such as your approved shared work queue or office record, and record a named owner there. Define the backup for absences and the point at which an unclaimed message is escalated.",
+          "A practical request record contains:",
+          "Use an explicit claimed or assigned state rather than assuming that an email marked read means someone accepted the work. If two people receive copies, they should consult the same ownership record before responding. Do not count two copies of one voicemail as two new inquiries.",
+          "Microsoft's shared-voicemail documentation illustrates why mailbox design matters: Microsoft 365 Groups can receive messages in a group folder, while distribution lists and mail-enabled security groups can deliver copies into members' individual inboxes. Confirm the behavior of your own arrangement instead of assuming every shared inbox works alike."
+        ],
+        "items": [
+          "A voicemail or request reference and its arrival time",
+          "The business number or mailbox that received it",
+          "The caller's request and callback details, with uncertainty visible",
+          "The person responsible for reviewing and responding",
+          "The next action and the team's approved follow-up window",
+          "The result of the response attempt and anything still outstanding"
+        ],
+        "sources": [
+          {
+            "label": "Microsoft shared voicemail",
+            "href": "https://learn.microsoft.com/en-us/microsoftteams/manage-shared-voicemail"
+          }
+        ]
+      },
+      {
+        "title": "Test the entire path with authorized examples",
+        "paragraphs": [
+          "Use a consenting test caller and fictional customer details. Record the source message and what each intended recipient receives. The test is complete only when someone can find the message, accept the request and record the next action.",
+          "Test these situations:",
+          "These are proposed acceptance tests, not results from a tested Revo configuration. Do not generate real customer messages merely to populate a test."
+        ],
+        "items": [
+          "A normal voicemail during the period when the office reviews messages. Check its source reference, arrival time, intended inbox and usable content.",
+          "A message outside staffed hours. Check which person sees it next and whether the greeting's expectation matches actual coverage.",
+          "The primary reviewer is unavailable. Check that the authorized backup can access the message and visibly take ownership.",
+          "A transcript is missing or contains an unclear number. Check that the reviewer can use authorized source material or obtain clarification rather than guessing.",
+          "Two authorized people receive the same notification. Check that one request is created and the response is coordinated.",
+          "Email is delayed or does not arrive. Check that the office can identify the source voicemail through the provider's supported workflow and notify the responsible administrator."
+        ]
+      },
+      {
+        "title": "Investigate delivery failures in order",
+        "paragraphs": [
+          "First establish whether the phone service captured a voicemail. A missed call without a recorded message is a different event. Then check the supported recipient, notification policy and access to the message. Finally, ask the email administrator to inspect delivery, filtering and mailbox behavior through the approved support process.",
+          "Keep a useful incident record: the test time and time zone, business number, source message reference, expected recipient and what actually arrived. Avoid putting unnecessary customer content into support requests. Do not disable email protections or broadly forward customer messages as a shortcut to troubleshooting.",
+          "An apparently successful email can still leave the operational task unfinished. Review unclaimed and overdue requests independently of delivery alerts. Use a follow-up window your office actually supports; this guide sets no universal response-time target."
+        ],
+        "items": []
+      },
+      {
+        "title": "Account for copies and changing access",
+        "paragraphs": [
+          "Ask which system retains the source voicemail and which email or downloaded copies may also exist. Confirm the business's authorized access, retention and deletion arrangements for each relevant location. Deleting an email should not be assumed to remove the source voicemail or every other copy.",
+          "Review recipients when a team member leaves or changes roles. Prefer the minimum appropriate audience for customer messages. A forwarding list that once matched the office team can become outdated even when notifications continue to arrive successfully.",
+          "A voicemail is handled when the right person can act on it and the action is recorded."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is voicemail to email the same as voicemail transcription?",
+        "a": "No. Transcription converts speech into text. Voicemail to email concerns delivery to an email destination and may include audio, text, a link or only an alert."
+      },
+      {
+        "q": "Does marking the email read complete the callback?",
+        "a": "No. Record who owns the request and whether the response actually occurred. Read status alone is not an outcome."
+      },
+      {
+        "q": "Can I reply to the notification to reach the caller?",
+        "a": "Do not assume so. The sender may be an automated service rather than the customer's email address. Use the verified contact details and your approved response process."
+      },
+      {
+        "q": "Does Revo provide voicemail-to-email delivery?",
+        "a": "This guide does not verify that capability. Confirm the exact message-delivery, recipient, access and plan details with Revo before relying on them."
+      }
+    ],
+    "takeaway": "Test message delivery and follow-up ownership together.",
+    "sourcePaths": [
+      "https://learn.microsoft.com/en-us/microsoftteams/set-up-phone-system-voicemail",
+      "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0077179",
+      "https://learn.microsoft.com/en-us/microsoftteams/manage-shared-voicemail"
+    ],
+    "related": [
+      "business-voicemail-greeting",
+      "call-transcription",
+      "ai-call-summary"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "publicationStatus": "approved",
+    "source": {
+      "kind": "manual",
+      "reference": "Final October15 same-lot selection; complete source-backed brief supplied directly by coordinating parent01a14084-5e16-735e-b276-e76eeab9e0ce; US/Desktop Chrome Semrush observation US480 KD29 Informational; no feature inference or tracking action"
+    },
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:dfb6e7da7a362a6497869561b2d4c177da0b285704dd2fae7d29e60add0630b9",
+      "note": "Same complete approved brief; final takeaway split between short HOME heading and closing paragraph for readability, no copy removed."
+    }
+  },
+  {
+    "slug": "call-quality-monitoring",
+    "title": "Call quality monitoring for a home-service office",
+    "description": "Use a practical call-review rubric for your service office. Check evidence, calibrate reviewers and turn findings into specific process improvements.",
+    "navigationLabel": "Call quality monitoring",
+    "eyebrow": "Review the service interaction",
+    "lead": "Check whether the caller received accurate help and a clear next step.",
+    "intro": "Call quality monitoring can mean reviewing how a customer interaction was handled or inspecting the technical quality of the connection. This guide covers the first: a repeatable office review of accuracy, request handling and follow-up. A clear connection does not by itself establish that the information was correct or the next action was understood.",
+    "sections": [
+      {
+        "title": "Understand the workflow",
+        "paragraphs": [
+          "For a home-service office, useful review questions are concrete. Was the callback number confirmed when needed? Was the caller's preferred time treated as a request or incorrectly promised as a booking? Did an unfinished request reach someone responsible for it? Start with those decisions rather than a vague rating of whether the conversation sounded good."
+        ],
+        "items": []
+      },
+      {
+        "title": "Choose the evidence before the score",
+        "paragraphs": [
+          "Use only material your business is authorized to access and review under its established policies. Do not assume that every plan includes audio, transcripts, exports or live monitoring. If your review process needs new recording or monitoring, resolve the applicable permissions and requirements through the appropriate business review before activating it.",
+          "Record what the reviewer actually had: an authorized recording, a transcript, an office record or an agreed test interaction. Each can support different conclusions. A summary alone may not establish the exact words used. Missing evidence should remain visible rather than being treated as proof that a step happened or failed.",
+          "An office without authorized historical call material can start with controlled practice scenarios involving informed participants and fictional details. Those scenarios test the process; they do not establish how real customer calls performed."
+        ],
+        "items": []
+      },
+      {
+        "title": "Use a rubric tied to observable work",
+        "paragraphs": [
+          "The following is an original example rubric for home-service intake and office requests. Adapt it to your approved business rules. It is not a built-in Revo scorecard or an industry standard.",
+          "For each applicable check, record met, not met or unable to determine, with a short evidence reference. Use not applicable only when the check genuinely does not belong to that request type.",
+          "Keep consequential exceptions visible. If the review identifies an unsupported arrival promise or a missing handoff, record that issue separately instead of letting several routine checks average it away. Your office should define who reviews such exceptions and how customer-facing corrections are handled."
+        ],
+        "items": [
+          "Request understood. Did the interaction identify what the caller wanted without replacing their description with an unsupported diagnosis? Evidence might be a clearly stated request and a relevant confirmation.",
+          "Contact details handled accurately. Were the callback details and location confirmed when the task required them? An uncertain digit or address should be flagged for clarification, not completed by assumption.",
+          "Business rules followed. Did the response stay within the company's approved service area, work types, scheduling authority and available information? Review against the rules in force at the time.",
+          "Commitments stated accurately. Was a request distinguished from a confirmed appointment, quote or promised arrival? Check the authoritative record when the review depends on whether an action succeeded.",
+          "Handoff completed appropriately. When another person was needed, was the next step consistent with the approved process? An attempted transfer is not evidence that a recipient accepted the work.",
+          "Unfinished work had an owner. Did the record identify who would act, what they needed to do and the follow-up expectation the office had approved?",
+          "Closing matched the actual outcome. Did the caller receive a clear explanation of what happened and what remained outstanding? A courteous closing cannot compensate for an inaccurate commitment."
+        ]
+      },
+      {
+        "title": "Separate not applicable from unknown",
+        "paragraphs": [
+          "A caller asking only for published office hours may not need a service-address check. That can be not applicable under your rubric. If an address was necessary but the available record does not show whether it was checked, the result is unable to determine. Those are different findings.",
+          "If you later introduce numeric scoring, document how both states affect the score. Amazon Connect, for example, excludes not-applicable questions and redistributes their weight among remaining questions. That is a specific scoring behavior to understand, not a rule every office must adopt.",
+          "A simple checklist can be more useful than a percentage with unclear assumptions. Retain the evidence and exception counts even if a tool supplies an overall score."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Amazon Connect scoring and weights",
+            "href": "https://docs.aws.amazon.com/connect/latest/adminguide/about-scoring-and-weights.html"
+          }
+        ]
+      },
+      {
+        "title": "Choose a sample that answers your question",
+        "paragraphs": [
+          "Write down the review period, eligible interactions, selection method and exclusions. Include the request types and coverage periods you intend to learn about. A sample selected only because someone complained can help diagnose those complaints, but should not be presented as the typical experience of all callers.",
+          "For a small office, a manageable routine sample can be paired with a separately labeled exception review. Keep the two groups distinguishable. Report how many interactions were reviewed and how much material was unavailable. Do not claim that a few favorable examples prove every call meets the standard.",
+          "Use the same form version when comparing similar periods, or clearly label a change in the rubric. Changing what counts as success can change the reported result without changing the underlying service."
+        ],
+        "items": []
+      },
+      {
+        "title": "Calibrate the reviewers",
+        "paragraphs": [
+          "Have two authorized reviewers independently assess the same suitable interaction or practice scenario using the same rubric. Compare the evidence they used before discussing the overall rating. If they disagree, determine whether the requirement was unclear, the evidence was incomplete or the rule was applied differently.",
+          "Amazon Connect's calibration documentation describes this same-contact, same-form approach to reveal inconsistent interpretation and improve evaluation questions. An office can adopt the review principle without claiming access to that vendor's tools.",
+          "For example, one reviewer may mark appointment confirmed because the caller named a preferred time. Another may require a successful booking record. The remedy is to clarify the evidence rule and apply it consistently. This is a fictional calibration example, not a measured Revo result."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Amazon Connect calibration documentation",
+            "href": "https://docs.aws.amazon.com/connect/latest/adminguide/calibrations-performance-evaluations.html"
+          }
+        ]
+      },
+      {
+        "title": "Turn a finding into a specific change",
+        "paragraphs": [
+          "Choose one observed process problem and assign an owner. If reviewers cannot tell who accepted a callback, improve the ownership field or handoff practice. If the same scheduling limit is repeatedly misunderstood, clarify that rule and test the revised wording with an authorized scenario.",
+          "Record the finding, supporting example, agreed change, responsible person and date for checking it. Then review comparable interactions against the same requirement. A completed coaching conversation or revised script is an action taken; it is not proof that the problem disappeared.",
+          "If software suggests evaluation answers, treat them as claims to verify against the authorized evidence. AWS explicitly notes that its AI-generated evaluations are not perfectly accurate. Do not turn an automated score into an unsupported conclusion about a person or customer outcome.",
+          "Preserve uncertainty instead of forcing every interaction into a confident score."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Amazon Connect generative AI evaluation limitations",
+            "href": "https://docs.aws.amazon.com/connect/latest/adminguide/generative-ai-performance-evaluations.html"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is this the same as checking jitter or dropped audio?",
+        "a": "No. Those checks concern the technical connection. This guide evaluates whether the office handled the request accurately and followed the agreed process. A technical problem may limit the evidence available for a service review."
+      },
+      {
+        "q": "Do we need to record every call to start?",
+        "a": "This guide does not recommend recording every call. Begin with the material and authorized practice scenarios your business can appropriately review. Resolve any new recording or monitoring requirements separately."
+      },
+      {
+        "q": "Is a high score proof that the caller's problem was resolved?",
+        "a": "No. A handling score and a verified customer outcome are different measures. Review whether the particular task was completed using the relevant records and definitions."
+      },
+      {
+        "q": "Does Revo include automatic quality monitoring or scorecards?",
+        "a": "Those features are not verified here. Confirm the current product, plan, access and evaluation workflow directly before treating them as available capabilities."
+      }
+    ],
+    "takeaway": "A useful review has a clear requirement, supporting evidence and an owned improvement.",
+    "sourcePaths": [
+      "https://docs.aws.amazon.com/connect/latest/adminguide/about-scoring-and-weights.html",
+      "https://docs.aws.amazon.com/connect/latest/adminguide/calibrations-performance-evaluations.html",
+      "https://docs.aws.amazon.com/connect/latest/adminguide/generative-ai-performance-evaluations.html"
+    ],
+    "related": [
+      "business-call-recording",
+      "ai-call-summary",
+      "phone-answering-script",
+      "first-call-resolution"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "publicationStatus": "approved",
+    "source": {
+      "kind": "manual",
+      "reference": "Final October15 same-lot selection; complete source-backed brief supplied directly by coordinating parent01a14084-5e16-735e-b276-e76eeab9e0ce; US/Desktop Chrome Semrush observation US260 KD25 Informational and commercial; no feature inference or tracking action"
+    },
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:25f05e0848e971f994f8f54dffba3a0562db89c9cf6a58e76fc871a565412f4c",
+      "note": "Same complete approved brief; final takeaway split between HOME heading and closing paragraph, no copy removed."
+    }
   }
 ]

@@ -233,5 +233,15 @@
     "slug": "jobber-answering-service",
     "label": "Software buyer guide",
     "template": "workflow"
+  },
+  {
+    "slug": "voicemail-to-email",
+    "label": "From mailbox to owned follow-up",
+    "template": "workflow"
+  },
+  {
+    "slug": "call-quality-monitoring",
+    "label": "Review the service interaction",
+    "template": "workflow"
   }
 ]

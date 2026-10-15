@@ -1,0 +1,63 @@
+{
+  "same_daily_lot": "2026-10-15",
+  "base": "a4db5a82aea327722ecda8be43055eae08ed707c",
+  "brief_receipt": "Complete briefs supplied in trusted delegated user message; no Library materialization requested or needed",
+  "copy_sha256": "a9418e7d061db1601777a49efe9516c3c93f7853e285a7d7dcabe81b2a39a7a8",
+  "pages": [
+    {
+      "slug": "voicemail-to-email",
+      "primary_keyword": "voicemail to email",
+      "volume_us": 480,
+      "kd": 29,
+      "intent": "Informational",
+      "date": "2026-10-15",
+      "origin": "Authorized parent supplied Chrome Semrush US/Desktop observation",
+      "new_url": "/ai-answering-service/voicemail-to-email",
+      "related": [
+        "business-voicemail-greeting",
+        "call-transcription",
+        "ai-call-summary"
+      ],
+      "proposed_prompts_not_registered": [
+        "How should a home-service office handle voicemail-to-email messages without duplicate callbacks?",
+        "What should I test before relying on voicemail-to-email delivery for my business?",
+        "What is the difference between voicemail-to-email notifications and voicemail transcription?"
+      ],
+      "external_tracking_confirmation": "Parent confirms one specific prompt added per selected page; exact mapping to these three proposals not supplied."
+    },
+    {
+      "slug": "call-quality-monitoring",
+      "primary_keyword": "call quality monitoring",
+      "volume_us": 260,
+      "kd": 25,
+      "intent": "Informational and commercial",
+      "date": "2026-10-15",
+      "origin": "Authorized parent supplied Chrome Semrush US/Desktop observation",
+      "new_url": "/ai-answering-service/call-quality-monitoring",
+      "related": [
+        "business-call-recording",
+        "ai-call-summary",
+        "phone-answering-script",
+        "first-call-resolution"
+      ],
+      "proposed_prompts_not_registered": [
+        "What should a home-service business include in a call quality monitoring checklist?",
+        "How can two office reviewers score the same customer call consistently?",
+        "How should a small business handle missing evidence and not-applicable questions in call reviews?"
+      ],
+      "external_tracking_confirmation": "Parent confirms one specific prompt added per selected page; exact mapping to these three proposals not supplied."
+    }
+  ],
+  "dedupe": "Both slugs absent from current67records and57rootHTML; voicemail owns delivery/copy ownership; quality owns human service-review rubric, not audio diagnostics or FCR calculation. All related routes approved and publicly verified.",
+  "already_published_today": 17,
+  "new_selected": 2,
+  "final_total_if_published": 19,
+  "shortfall": 1,
+  "rejected_new_urls": [
+    "compare/auto-attendant-vs-ivr",
+    "business-phone-extension",
+    "dropped-calls"
+  ],
+  "personal_chrome_used": false,
+  "tracking_actions_in_this_thread": false
+}

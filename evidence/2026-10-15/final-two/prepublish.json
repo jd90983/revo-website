@@ -1,0 +1,18 @@
+{
+  "tests_passed": 19,
+  "build": "passed",
+  "approved_registry": 49,
+  "public_routes": 50,
+  "internal_links": 2493,
+  "withdrawn_absent": 20,
+  "responsive_cases": 8,
+  "responsive_failures": 0,
+  "external_source_http200": 6,
+  "net_new_404_before_merge": 2,
+  "already_published_today": 17,
+  "new_selected": 2,
+  "projected_total": 19,
+  "shortfall": 1,
+  "third_page": "explicitly rejected; no filler",
+  "tracking_actions": false
+}
