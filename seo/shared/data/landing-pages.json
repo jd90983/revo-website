@@ -6266,7 +6266,8 @@
         "title": "Account for copies and changing access",
         "paragraphs": [
           "Ask which system retains the source voicemail and which email or downloaded copies may also exist. Confirm the business's authorized access, retention and deletion arrangements for each relevant location. Deleting an email should not be assumed to remove the source voicemail or every other copy.",
-          "Review recipients when a team member leaves or changes roles. Prefer the minimum appropriate audience for customer messages. A forwarding list that once matched the office team can become outdated even when notifications continue to arrive successfully."
+          "Review recipients when a team member leaves or changes roles. Prefer the minimum appropriate audience for customer messages. A forwarding list that once matched the office team can become outdated even when notifications continue to arrive successfully.",
+          "A voicemail is handled when the right person can act on it and the action is recorded."
         ],
         "items": []
       }
@@ -6289,7 +6290,7 @@
         "a": "This guide does not verify that capability. Confirm the exact message-delivery, recipient, access and plan details with Revo before relying on them."
       }
     ],
-    "takeaway": "Test message delivery and follow-up ownership together. A voicemail is handled when the right person can act on it and the action is recorded.",
+    "takeaway": "Test message delivery and follow-up ownership together.",
     "sourcePaths": [
       "https://learn.microsoft.com/en-us/microsoftteams/set-up-phone-system-voicemail",
       "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0077179",
@@ -6310,8 +6311,8 @@
     "review": {
       "reviewer": "User recurring publication authorization — parent editorial brief validated",
       "reviewedAt": "2026-10-15",
-      "contentHash": "sha256:a91f22900ab5b55696db9f6bac601a4a810f38fb5315d5fa8d7384f21fc09d73",
-      "note": "Final selected pair for sameOctober15lot; message delivery and owned follow-up only; no native Revo delivery feature claimed."
+      "contentHash": "sha256:dfb6e7da7a362a6497869561b2d4c177da0b285704dd2fae7d29e60add0630b9",
+      "note": "Same complete approved brief; final takeaway split between short HOME heading and closing paragraph for readability, no copy removed."
     }
   },
   {
@@ -6400,7 +6401,8 @@
         "paragraphs": [
           "Choose one observed process problem and assign an owner. If reviewers cannot tell who accepted a callback, improve the ownership field or handoff practice. If the same scheduling limit is repeatedly misunderstood, clarify that rule and test the revised wording with an authorized scenario.",
           "Record the finding, supporting example, agreed change, responsible person and date for checking it. Then review comparable interactions against the same requirement. A completed coaching conversation or revised script is an action taken; it is not proof that the problem disappeared.",
-          "If software suggests evaluation answers, treat them as claims to verify against the authorized evidence. AWS explicitly notes that its AI-generated evaluations are not perfectly accurate. Do not turn an automated score into an unsupported conclusion about a person or customer outcome."
+          "If software suggests evaluation answers, treat them as claims to verify against the authorized evidence. AWS explicitly notes that its AI-generated evaluations are not perfectly accurate. Do not turn an automated score into an unsupported conclusion about a person or customer outcome.",
+          "Preserve uncertainty instead of forcing every interaction into a confident score."
         ],
         "items": [],
         "sources": [
@@ -6429,7 +6431,7 @@
         "a": "Those features are not verified here. Confirm the current product, plan, access and evaluation workflow directly before treating them as available capabilities."
       }
     ],
-    "takeaway": "A useful review has a clear requirement, supporting evidence and an owned improvement. Preserve uncertainty instead of forcing every interaction into a confident score.",
+    "takeaway": "A useful review has a clear requirement, supporting evidence and an owned improvement.",
     "sourcePaths": [
       "https://docs.aws.amazon.com/connect/latest/adminguide/about-scoring-and-weights.html",
       "https://docs.aws.amazon.com/connect/latest/adminguide/calibrations-performance-evaluations.html",
@@ -6451,8 +6453,8 @@
     "review": {
       "reviewer": "User recurring publication authorization — parent editorial brief validated",
       "reviewedAt": "2026-10-15",
-      "contentHash": "sha256:3134b5fd22a4dfbfa59a6baaea4c757639acc65c9f6128a4dc4d3df7a7078351",
-      "note": "Final selected pair; human interaction-review rubric with authorized evidence; no automatic Revo scorecard or monitoring capability claimed."
+      "contentHash": "sha256:25f05e0848e971f994f8f54dffba3a0562db89c9cf6a58e76fc871a565412f4c",
+      "note": "Same complete approved brief; final takeaway split between HOME heading and closing paragraph, no copy removed."
     }
   }
 ]

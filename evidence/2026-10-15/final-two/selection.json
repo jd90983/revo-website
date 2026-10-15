@@ -13,7 +13,6 @@
       "date": "2026-10-15",
       "origin": "Authorized parent supplied Chrome Semrush US/Desktop observation",
       "new_url": "/ai-answering-service/voicemail-to-email",
-      "proposed_prompts_registered": false,
       "related": [
         "business-voicemail-greeting",
         "call-transcription",
@@ -23,7 +22,8 @@
         "How should a home-service office handle voicemail-to-email messages without duplicate callbacks?",
         "What should I test before relying on voicemail-to-email delivery for my business?",
         "What is the difference between voicemail-to-email notifications and voicemail transcription?"
-      ]
+      ],
+      "external_tracking_confirmation": "Parent confirms one specific prompt added per selected page; exact mapping to these three proposals not supplied."
     },
     {
       "slug": "call-quality-monitoring",
@@ -34,7 +34,6 @@
       "date": "2026-10-15",
       "origin": "Authorized parent supplied Chrome Semrush US/Desktop observation",
       "new_url": "/ai-answering-service/call-quality-monitoring",
-      "proposed_prompts_registered": false,
       "related": [
         "business-call-recording",
         "ai-call-summary",
@@ -45,7 +44,8 @@
         "What should a home-service business include in a call quality monitoring checklist?",
         "How can two office reviewers score the same customer call consistently?",
         "How should a small business handle missing evidence and not-applicable questions in call reviews?"
-      ]
+      ],
+      "external_tracking_confirmation": "Parent confirms one specific prompt added per selected page; exact mapping to these three proposals not supplied."
     }
   ],
   "dedupe": "Both slugs absent from current67records and57rootHTML; voicemail owns delivery/copy ownership; quality owns human service-review rubric, not audio diagnostics or FCR calculation. All related routes approved and publicly verified.",
@@ -58,6 +58,6 @@
     "business-phone-extension",
     "dropped-calls"
   ],
-  "tracking_actions": false,
-  "personal_chrome_used": false
+  "personal_chrome_used": false,
+  "tracking_actions_in_this_thread": false
 }
