@@ -1,0 +1,15 @@
+{
+  "published_new_pages": 1,
+  "shortfall": 19,
+  "url": "https://www.revoapp.ai/ai-answering-service/compare/home-services-ai-receptionists",
+  "pr": "https://github.com/jd90983/revo-website/pull/58",
+  "merge_sha": "ed8238cf954c027571ce0d7cc53ad09139dd321f",
+  "deployment_id": "dpl_EVkD4oKAhesQiZorsjv2Sk8MKwXP",
+  "deployment_url": "https://revo-website-823n34680-group-u.vercel.app",
+  "state": "READY",
+  "production_browser_cases": 4,
+  "failures": 0,
+  "rollback": "https://revo-website-gwkzt8lei-group-u.vercel.app",
+  "tracking_changed": false,
+  "personal_chrome_used": false
+}

@@ -13,5 +13,47 @@
       "/ai-answering-service/compare/ai-vs-live-receptionist",
       "/ai-answering-service/cost-of-missed-calls"
     ]
+  },
+  {
+    "sha": "ed8238cf954c027571ce0d7cc53ad09139dd321f",
+    "deploymentId": "dpl_EVkD4oKAhesQiZorsjv2Sk8MKwXP",
+    "publishedAt": "2026-10-15",
+    "batchIds": [
+      "2026-10-15-named-provider-comparison"
+    ],
+    "routes": [
+      "/ai-answering-service/after-hours",
+      "/ai-answering-service/missed-calls",
+      "/ai-answering-service/compare/ai-vs-voicemail",
+      "/ai-answering-service/compare/ai-vs-live-receptionist",
+      "/ai-answering-service/cost-of-missed-calls",
+      "/ai-answering-service/bilingual-answering",
+      "/ai-answering-service/answering-service-cost",
+      "/ai-answering-service/appointment-booking",
+      "/ai-answering-service/overflow-answering",
+      "/ai-answering-service/lead-qualification",
+      "/ai-answering-service/ai-call-summary",
+      "/ai-answering-service/business-call-recording",
+      "/ai-answering-service/call-transcription",
+      "/ai-answering-service/compare/warm-vs-cold-transfer",
+      "/ai-answering-service/phone-answering-script",
+      "/ai-answering-service/choose-virtual-receptionist",
+      "/ai-answering-service/compare/virtual-receptionist-vs-answering-service",
+      "/ai-answering-service/missed-call-text-back",
+      "/ai-answering-service/conditional-call-forwarding",
+      "/ai-answering-service/landline-call-forwarding",
+      "/ai-answering-service/call-routing",
+      "/ai-answering-service/call-transfer-language",
+      "/ai-answering-service/t-mobile-call-forwarding",
+      "/ai-answering-service/verizon-call-forwarding",
+      "/ai-answering-service/phone-number-porting",
+      "/ai-answering-service/pay-as-you-go-answering-service",
+      "/ai-answering-service/call-screening",
+      "/ai-answering-service/turn-off-call-forwarding",
+      "/ai-answering-service/appointment-reminders",
+      "/ai-answering-service/ivr-system-cost",
+      "/ai-answering-service/compare/home-services-ai-receptionists",
+      "/ai-answering-service"
+    ]
   }
 ]
