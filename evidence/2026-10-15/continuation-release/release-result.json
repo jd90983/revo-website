@@ -1,0 +1,31 @@
+{
+  "daily_total_published": 8,
+  "new_in_this_continuation": 7,
+  "shortfall_to_original20": 12,
+  "pr": "https://github.com/jd90983/revo-website/pull/60",
+  "publication_sha": "0af8c44d1005a0152893e744a2cf665f0f3be954",
+  "deployment_id": "dpl_J5KLUydsqZ8DHbvEXAuCoNg1JFqg",
+  "deployment_url": "https://revo-website-pmkbf5e01-group-u.vercel.app",
+  "state": "READY",
+  "urls": [
+    "https://www.revoapp.ai/ai-answering-service/business-voicemail-greeting",
+    "https://www.revoapp.ai/ai-answering-service/servicetitan-answering-service",
+    "https://www.revoapp.ai/ai-answering-service/call-queue",
+    "https://www.revoapp.ai/ai-answering-service/call-whisper",
+    "https://www.revoapp.ai/ai-answering-service/on-hold-messages",
+    "https://www.revoapp.ai/ai-answering-service/speed-to-lead",
+    "https://www.revoapp.ai/ai-answering-service/call-abandonment-rate"
+  ],
+  "tests_passed": 19,
+  "public_routes": 39,
+  "internal_links": 1891,
+  "local_browser_cases": 28,
+  "production_browser_cases": 28,
+  "production_browser_failures": 0,
+  "security": "PR60 success; no annotations or published findings",
+  "public_internal_paths_status": 404,
+  "tracking_changed": false,
+  "personal_chrome_used": false,
+  "rollback_sha": "dfccb8c59726b2f69af7d9430dda92474bef8450",
+  "rollback_deployment": "dpl_BcUXjW1KJjU9EG86oiWrqDjyZ9jZ"
+}
