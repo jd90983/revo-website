@@ -4228,5 +4228,155 @@
       "contentHash": "sha256:3924fb2dd7b15d8be57381b204761934a5abe77ef49ee336d263bbd3f91e71fa",
       "note": "Original templates and field notes from validated brief; HOME layout; no Revo voicemail hosting claim."
     }
+  },
+  {
+    "slug": "servicetitan-answering-service",
+    "title": "ServiceTitan answering services: native AI and integrations",
+    "description": "Review ServiceTitan's native Voice Agent and documented third-party answering options, with checks for booking, capacity and call reporting.",
+    "navigationLabel": "ServiceTitan answering options",
+    "eyebrow": "Software buyer guide",
+    "lead": "Check what happens to the caller and the ServiceTitan record.",
+    "intro": "Published by Revo. Documentation reviewed October 15, 2026. This guide describes published product capabilities, not independently tested performance. A Revo–ServiceTitan integration was not verified for this guide.",
+    "sections": [
+      {
+        "title": "Start with the ServiceTitan workflow you need",
+        "paragraphs": [
+          "An answering service for a ServiceTitan business should be evaluated at two levels: what happens to the caller, and what appears in ServiceTitan afterward. A message sent to the office, a new job created in the platform and a correctly classified phone call are different results.",
+          "Start with the native option as well as external services. ServiceTitan has its own AI Voice Agent. Third-party providers also document connections, but a familiar software logo does not tell you which records a particular package can read or create. The examples below are documented options, not an exhaustive ranking."
+        ],
+        "items": []
+      },
+      {
+        "title": "ServiceTitan's native AI Voice Agent",
+        "paragraphs": [
+          "ServiceTitan's current Basic Phones and Phones Pro FAQ documents new-job booking, appointment changes, configured human escalation and call-outcome records. Its stated audience and package conditions are specific; ask ServiceTitan to confirm eligibility for your account and phone product. Do not assume the feature is included in every subscription.",
+          "Check the applicable capacity requirements, because the published documents describe different contexts. The Basic Phones and Phones Pro FAQ calls Adaptive Capacity configuration optional but highly recommended; the ServiceTitan Max pre-go-live checklist marks it required before enabling Voice Agent job booking. Confirm the applicable rollout with ServiceTitan rather than treating either statement as universal.",
+          "ServiceTitan's capacity documentation explains how availability depends on configured job durations, technician shifts, skills, zones and business units. Review those inputs with the person who owns scheduling; an answering agent is not a substitute for accurate operating rules."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "ServiceTitan Basic Phones / Phones Pro FAQ",
+            "href": "https://help.servicetitan.com/v1/docs/ai-voice-agent-for-basic-phones-and-phones-pro-faq"
+          },
+          {
+            "label": "ServiceTitan Max pre-go-live checklist",
+            "href": "https://help.servicetitan.com/docs/servicetitan-max-pre-go-live-checklist-md-1"
+          },
+          {
+            "label": "ServiceTitan Adaptive Capacity",
+            "href": "https://help.servicetitan.com/docs/configure-adaptive-capacity-in-servicetitan-max"
+          }
+        ]
+      },
+      {
+        "title": "Avoca: documented API booking and capacity access",
+        "paragraphs": [
+          "Avoca's entry in the ServiceTitan Marketplace is marked Certified Application. Its integration FAQ describes API access to AdCap data and booking jobs back into ServiceTitan. That is more specific than a generic promise to send call notes. Ask Avoca to show which actions are enabled for your account, how existing customers are matched and what happens when the requested booking is unavailable. Marketplace status does not by itself prove every possible workflow or a measured performance result."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Avoca ServiceTitan Marketplace listing",
+            "href": "https://marketplace.servicetitan.com/partner/avoca-ai"
+          }
+        ]
+      },
+      {
+        "title": "Dexcomm: live and AI answering with a documented connection",
+        "paragraphs": [
+          "Dexcomm's integration page says its live and AI agents use an API connection to access customer and job information and book jobs in ServiceTitan. It describes either escalating to the business's team or leaving work for later handling according to the agreed on-call process. Confirm the chosen service arrangement, permitted actions and escalation rules in the actual proposal. Those published capabilities do not establish that every caller qualifies for a job or that every request receives immediate field service."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Dexcomm ServiceTitan integration",
+            "href": "https://www.dexcomm.com/servicetitan-answering-service"
+          }
+        ]
+      },
+      {
+        "title": "Check the record, not just the answered call",
+        "paragraphs": [
+          "ServiceTitan documents a case where a third-party answering service handles the caller but the call still appears abandoned. Its July help article describes profile-based call claiming or later reclassification for that workflow. Do not apply that article as a universal setup instruction.",
+          "Contact Center Pro has different handling: its current FAQ says agents cannot interact with core ServiceTitan call bubbles and describes reviewing the Call Journey in Conversation History. Identify whether the business uses Basic Phones, Phones Pro or Contact Center Pro before asking a provider how answered calls, booked jobs and unbooked requests will be recorded. Resolve an unclear classification workflow with ServiceTitan and the provider.",
+          "Routing can also affect visibility. The native Voice Agent FAQ warns that its forwarding number is not intended to be advertised directly to customers because direct calls are not logged in Search. Confirm the supported path from the public business number rather than treating any reachable number as an equivalent integration."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "ServiceTitan externally answered calls",
+            "href": "https://help.servicetitan.com/docs/how-can-i-prevent-answering-service-calls-from-being-marked"
+          },
+          {
+            "label": "ServiceTitan Contact Center Pro FAQ",
+            "href": "https://help.servicetitan.com/docs/contact-center-pro-faq-1"
+          },
+          {
+            "label": "ServiceTitan Basic Phones / Phones Pro FAQ",
+            "href": "https://help.servicetitan.com/v1/docs/ai-voice-agent-for-basic-phones-and-phones-pro-faq"
+          }
+        ]
+      },
+      {
+        "title": "Request a demonstration of these outcomes",
+        "paragraphs": [
+          "Use authorized test data and ask the provider to demonstrate:",
+          "These are proposed acceptance checks, not tests performed by Revo on the listed providers. Inspect the actual account result and confirm the written service scope before routing customer traffic."
+        ],
+        "items": [
+          "An existing customer requests a new job. Identify the customer/location record used and the job record created. Check for an unintended duplicate.",
+          "The requested slot is unavailable. Show the offered next step and who decides whether another time or manual review is appropriate.",
+          "A caller asks to change an appointment. Establish whether the chosen product and configuration can make that change or must hand it to staff.",
+          "No job is booked. Show the call record, classification and follow-up owner in the phone product the business actually uses.",
+          "The connection or human recipient is unavailable. Show the pending request, error visibility and recovery process rather than assuming the caller's message reached the right person."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does ServiceTitan offer its own answering option?",
+        "a": "Yes. Its documentation describes a native AI Voice Agent. Availability, configuration and account requirements should be confirmed for the specific phone product."
+      },
+      {
+        "q": "Does a forwarded call prove there is a ServiceTitan integration?",
+        "a": "No. Forwarding proves a call reaches a destination. Ask separately what customer or job records are accessed or created and how the call is classified."
+      },
+      {
+        "q": "Does Revo have a verified ServiceTitan integration?",
+        "a": "This guide did not verify a named connection. Revo's published plans describe field-service connections in general. Confirm the exact supported software, actions and plan directly; do not infer ServiceTitan compatibility from that category."
+      }
+    ],
+    "takeaway": "Verify the workflow in the phone product you actually use.",
+    "sourcePaths": [
+      "https://help.servicetitan.com/v1/docs/ai-voice-agent-for-basic-phones-and-phones-pro-faq",
+      "https://help.servicetitan.com/docs/configure-adaptive-capacity-in-servicetitan-max",
+      "https://marketplace.servicetitan.com/partner/avoca-ai",
+      "https://www.dexcomm.com/servicetitan-answering-service",
+      "https://help.servicetitan.com/docs/how-can-i-prevent-answering-service-calls-from-being-marked",
+      "https://help.servicetitan.com/docs/contact-center-pro-faq-1",
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.revoapp.ai/",
+      "https://help.servicetitan.com/docs/servicetitan-max-pre-go-live-checklist-md-1"
+    ],
+    "related": [
+      "compare/home-services-ai-receptionists",
+      "appointment-booking",
+      "call-routing",
+      "choose-virtual-receptionist"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot continuation; parent editorially validated Library libfile_04d1193a221c8191a3f83d33488faa9b v0; US40 KDunknown intentunknown; no Revo named integration verified"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:1c711498e6691c8978a193ffe29cdc61bd53a16d82759ccaa8203d848d461186",
+      "note": "Neutral buying guide; Revo integration explicitly unverified; product-specific capacity and reporting limitations retained."
+    }
   }
 ]

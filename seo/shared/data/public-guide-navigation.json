@@ -158,5 +158,10 @@
     "slug": "business-voicemail-greeting",
     "label": "Recorded-message templates",
     "template": "workflow"
+  },
+  {
+    "slug": "servicetitan-answering-service",
+    "label": "Software buyer guide",
+    "template": "workflow"
   }
 ]
