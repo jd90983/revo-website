@@ -1,0 +1,211 @@
+{
+  "daily_lot": "2026-10-15",
+  "sequential_continuation": true,
+  "base": "411875838a47124d7b807c19ab922937faa4834b",
+  "read_verified": true,
+  "pages": [
+    {
+      "slug": "call-disposition",
+      "primary_keyword": "call disposition",
+      "volume_us": 210,
+      "kd": 14,
+      "semrush_intent": "Informational",
+      "observed_at": "2026-10-15",
+      "origin": "Supplied authorized Semrush Chrome UI US/Desktop observation",
+      "brief_id": "libfile_374c35485b648191bb7555134ad3c754",
+      "version": 0,
+      "brief_sha256": "fdfe4d4b6b1e2e26a48ede40d92257fada4f137b4b2bb2dc9f419665f4d1333f",
+      "read_verified": true,
+      "related": [
+        "ai-call-summary",
+        "lead-qualification",
+        "appointment-booking"
+      ],
+      "new_url": "/ai-answering-service/call-disposition",
+      "priority": "approved distinct topic",
+      "prompt_tracking_changed": false
+    },
+    {
+      "slug": "average-speed-of-answer",
+      "primary_keyword": "average speed of answer",
+      "volume_us": 170,
+      "kd": 14,
+      "semrush_intent": "Informational",
+      "observed_at": "2026-10-15",
+      "origin": "Supplied authorized Semrush Chrome UI US/Desktop observation",
+      "brief_id": "libfile_374c35485b648191bb7555134ad3c754",
+      "version": 0,
+      "brief_sha256": "fdfe4d4b6b1e2e26a48ede40d92257fada4f137b4b2bb2dc9f419665f4d1333f",
+      "read_verified": true,
+      "related": [
+        "call-queue",
+        "call-abandonment-rate",
+        "speed-to-lead"
+      ],
+      "new_url": "/ai-answering-service/average-speed-of-answer",
+      "priority": "approved distinct topic",
+      "prompt_tracking_changed": false
+    },
+    {
+      "slug": "first-call-resolution",
+      "primary_keyword": "first call resolution",
+      "volume_us": 1300,
+      "kd": 46,
+      "semrush_intent": "Informational",
+      "observed_at": "2026-10-15",
+      "origin": "Supplied authorized Semrush Chrome UI US/Desktop observation",
+      "brief_id": "libfile_374c35485b648191bb7555134ad3c754",
+      "version": 0,
+      "brief_sha256": "fdfe4d4b6b1e2e26a48ede40d92257fada4f137b4b2bb2dc9f419665f4d1333f",
+      "read_verified": true,
+      "related": [
+        "appointment-booking",
+        "ai-call-summary",
+        "call-disposition"
+      ],
+      "new_url": "/ai-answering-service/first-call-resolution",
+      "priority": "secondary",
+      "prompt_tracking_changed": false
+    },
+    {
+      "slug": "compare/local-vs-toll-free-number",
+      "primary_keyword": "local vs toll free number",
+      "volume_us": 50,
+      "kd": 3,
+      "semrush_intent": "Commercial",
+      "observed_at": "2026-10-15",
+      "origin": "Supplied authorized Semrush Chrome UI US/Desktop observation",
+      "brief_id": "libfile_d3eae02d209c819180cd455138840b35",
+      "version": 0,
+      "brief_sha256": "791fef4b434f386bda670d2cdedd39303d0cdee3d1b8ced0a78b87990da2bd9f",
+      "read_verified": true,
+      "related": [
+        "phone-number-porting",
+        "business-caller-id",
+        "compare/voip-vs-landline",
+        "conditional-call-forwarding"
+      ],
+      "new_url": "/ai-answering-service/compare/local-vs-toll-free-number",
+      "priority": "approved distinct topic",
+      "prompt_tracking_changed": false
+    },
+    {
+      "slug": "business-caller-id",
+      "primary_keyword": "business caller id",
+      "volume_us": 90,
+      "kd": 20,
+      "semrush_intent": "Informational",
+      "observed_at": "2026-10-15",
+      "origin": "Supplied authorized Semrush Chrome UI US/Desktop observation",
+      "brief_id": "libfile_d3eae02d209c819180cd455138840b35",
+      "version": 0,
+      "brief_sha256": "791fef4b434f386bda670d2cdedd39303d0cdee3d1b8ced0a78b87990da2bd9f",
+      "read_verified": true,
+      "related": [
+        "call-screening",
+        "compare/local-vs-toll-free-number",
+        "business-voicemail-greeting"
+      ],
+      "new_url": "/ai-answering-service/business-caller-id",
+      "priority": "approved distinct topic",
+      "prompt_tracking_changed": false
+    },
+    {
+      "slug": "appointment-cancellation-policy",
+      "primary_keyword": "appointment cancellation policy",
+      "volume_us": 70,
+      "kd": 12,
+      "semrush_intent": "Informational",
+      "observed_at": "2026-10-15",
+      "origin": "Supplied authorized Semrush Chrome UI US/Desktop observation",
+      "brief_id": "libfile_d3eae02d209c819180cd455138840b35",
+      "version": 0,
+      "brief_sha256": "791fef4b434f386bda670d2cdedd39303d0cdee3d1b8ced0a78b87990da2bd9f",
+      "read_verified": true,
+      "related": [
+        "appointment-booking",
+        "appointment-reminders",
+        "phone-answering-script"
+      ],
+      "new_url": "/ai-answering-service/appointment-cancellation-policy",
+      "priority": "approved distinct topic",
+      "prompt_tracking_changed": false
+    },
+    {
+      "slug": "compare/voip-vs-landline",
+      "primary_keyword": "voip vs landline",
+      "volume_us": 590,
+      "kd": 27,
+      "semrush_intent": "Commercial",
+      "observed_at": "2026-10-15",
+      "origin": "Supplied authorized Semrush Chrome UI US/Desktop observation",
+      "brief_id": "libfile_d3eae02d209c819180cd455138840b35",
+      "version": 0,
+      "brief_sha256": "791fef4b434f386bda670d2cdedd39303d0cdee3d1b8ced0a78b87990da2bd9f",
+      "read_verified": true,
+      "related": [
+        "phone-number-porting",
+        "compare/local-vs-toll-free-number",
+        "business-caller-id",
+        "voip-jitter"
+      ],
+      "new_url": "/ai-answering-service/compare/voip-vs-landline",
+      "priority": "approved distinct topic",
+      "prompt_tracking_changed": false
+    },
+    {
+      "slug": "voip-jitter",
+      "primary_keyword": "voip jitter",
+      "volume_us": 170,
+      "kd": 19,
+      "semrush_intent": "Informational",
+      "observed_at": "2026-10-15",
+      "origin": "Supplied authorized Semrush Chrome UI US/Desktop observation",
+      "brief_id": "libfile_d3eae02d209c819180cd455138840b35",
+      "version": 0,
+      "brief_sha256": "791fef4b434f386bda670d2cdedd39303d0cdee3d1b8ced0a78b87990da2bd9f",
+      "read_verified": true,
+      "related": [
+        "compare/voip-vs-landline",
+        "call-routing",
+        "ai-call-summary"
+      ],
+      "new_url": "/ai-answering-service/voip-jitter",
+      "priority": "approved distinct topic",
+      "prompt_tracking_changed": false
+    },
+    {
+      "slug": "jobber-answering-service",
+      "primary_keyword": "jobber answering service",
+      "volume_us": 20,
+      "kd": null,
+      "semrush_intent": null,
+      "observed_at": "2026-10-15",
+      "origin": "Supplied authorized Semrush Chrome UI US/Desktop observation",
+      "brief_id": "libfile_d3eae02d209c819180cd455138840b35",
+      "version": 0,
+      "brief_sha256": "791fef4b434f386bda670d2cdedd39303d0cdee3d1b8ced0a78b87990da2bd9f",
+      "read_verified": true,
+      "related": [
+        "servicetitan-answering-service",
+        "compare/home-services-ai-receptionists",
+        "appointment-booking",
+        "choose-virtual-receptionist"
+      ],
+      "new_url": "/ai-answering-service/jobber-answering-service",
+      "priority": "secondary",
+      "prompt_tracking_changed": false
+    }
+  ],
+  "already_published_today": 8,
+  "daily_total_if_published": 17,
+  "shortfall_to_original20": 3,
+  "rejected": [
+    "call-analytics",
+    "business-call-log-template",
+    "business-continuity-phone-system",
+    "simultaneous-ring",
+    "emergency-dispatch"
+  ],
+  "tracking_changed": false
+}

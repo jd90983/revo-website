@@ -4958,5 +4958,1219 @@
       "contentHash": "sha256:4b1831fca8cc5ea23c236319ec559aafe2fbcccb3bc6a55400dcab03ca919266",
       "note": "October15 same-lot continuation; distinct educational scope; original examples labeled; no unverified Revo capabilities."
     }
+  },
+  {
+    "slug": "call-disposition",
+    "title": "Call disposition codes for a home-service office",
+    "description": "Build a practical call disposition codebook for your home-service office. Separate call outcomes, customer requests and follow-up ownership.",
+    "navigationLabel": "Call disposition",
+    "eyebrow": "Consistent call outcomes",
+    "lead": "Give every call an outcome your team can understand and act on.",
+    "intro": "A call disposition is a label for the result of an interaction. NiCE's documentation distinguishes call dispositions from the separate tags and notes that can accompany them. A disposition tells your office what happened; the supporting record explains the details.",
+    "sections": [
+      {
+        "title": "Before you choose the next step",
+        "paragraphs": [
+          "For a home-service business, “answered” rarely supplies enough information. A person might answer an estimate request, confirm an existing appointment, take a message for a scheduler or explain that the requested work is outside the service area. Those calls need different next steps."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "NiCE: interaction results",
+            "href": "https://help.nice-incontact.com/content/agent/cxoneagent/indicateresultofinteractionsincxa.htm"
+          }
+        ]
+      },
+      {
+        "title": "Separate connection, reason and outcome",
+        "paragraphs": [
+          "Use three fields rather than asking one label to carry the whole story:",
+          "A fourth field records any next action, its owner and the agreed follow-up window. Applying a label does not perform that action. “Follow-up required” is useful only when someone can find and accept the work."
+        ],
+        "items": [
+          "Connection result: Was there a conversation, a voicemail or no completed connection? Preserve the phone system's own technical result separately.",
+          "Request reason: Why did the person call? Examples include a new estimate, an existing appointment or a question about an invoice.",
+          "Business outcome: What was actually accomplished by the end of this interaction?"
+        ]
+      },
+      {
+        "title": "Start with an evidence-based codebook",
+        "paragraphs": [
+          "The following is an illustrative office codebook, not a built-in Revo feature or an industry standard. Choose one primary business outcome for the principal request. If a call contains separate requests, keep secondary request records rather than forcing several incompatible outcomes into one field."
+        ],
+        "items": [
+          "Appointment confirmed: Use only when an authorized scheduling step succeeded and the appointment details were confirmed. Save the booking reference and the agreed details. A preferred date alone does not qualify.",
+          "Office question answered: Use when the requested information was supplied from an approved source and no action remains for that question. Record the topic and source. This label does not mean a repair was completed.",
+          "Follow-up required: Use when the principal request still needs a callback, a decision or another person's action. Record the owner, reason and approved window. An attempted transfer without an accepted handoff belongs here when work remains.",
+          "Outside service scope: Use when a documented service, location or other business rule prevents accepting the requested work. Record the applicable rule. If the facts are incomplete, choose review instead of guessing.",
+          "Request withdrawn: Use when the customer explicitly says they no longer want to proceed. Record that statement's context. Silence or a missed callback is not evidence of withdrawal.",
+          "Non-service contact: Use for a verified wrong number, supplier inquiry or another call outside the customer-service workflow. Record an appropriate subtype. A hidden caller ID alone is not evidence of spam.",
+          "Needs review: Use when the result cannot be supported confidently. Record the missing fact and the person who will resolve it. Keep this visible instead of assigning an optimistic result to make a report look complete."
+        ]
+      },
+      {
+        "title": "Work through two ordinary examples",
+        "paragraphs": [
+          "An HVAC caller asks for a Tuesday visit. The office collects the address and preferred time, but a scheduler still needs to check availability. Record the reason as a new appointment request and the outcome as follow-up required. Name the scheduler or queue responsible for the decision. Do not classify the call as a confirmed appointment.",
+          "A plumbing customer asks which date is already booked. The office checks the authorized appointment record, gives the date and confirms that this answers the question. Office question answered may be appropriate. The underlying job remains scheduled, not completed. These examples are fictional and illustrate classification only."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep the codebook stable and review exceptions",
+        "paragraphs": [
+          "Write a short definition, required evidence and next action for each code. Give the codebook a version date. When the meaning changes, document the transition so old and new reports remain interpretable. HubSpot, for example, restricts editing saved outcomes because changing them can affect reporting data; that is a product-specific reminder to plan taxonomy changes carefully.",
+          "Review a sample together before rollout. If two team members assign different outcomes to the same example, improve the definition. Examine needs-review records and follow-up records with no owner. Retain an explicit missing value when information is absent; missing is different from unsuccessful.",
+          "For reporting, distinguish call counts from unique customer requests. Three calls about one estimate are three interactions, not three new leads. Link related records to the same request where your office's approved tools allow it."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "HubSpot: custom call outcomes",
+            "href": "https://knowledge.hubspot.com/calling/create-custom-call-and-meeting-outcomes"
+          }
+        ]
+      },
+      {
+        "title": "Questions to settle before adopting a tool",
+        "paragraphs": [
+          "Can your existing system store the code, evidence and next action separately? Can your team export the definitions alongside the results? Who corrects an inaccurate outcome, and can they preserve why it changed? Check those details in the specific product and plan being considered. This guide does not establish that Revo assigns dispositions, creates tasks or updates a CRM automatically."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a call disposition the same as a call summary?",
+        "a": "No. A disposition is a standardized result label. A summary contains the context needed to understand the conversation. Keep the code short and retain supporting details in the associated record."
+      },
+      {
+        "q": "Should a successful transfer count as a resolved request?",
+        "a": "Only if the actual request was resolved under your definition. Reaching another person and completing the customer's task are different events. Record the handoff separately when further work remains."
+      },
+      {
+        "q": "How many codes should a small office use?",
+        "a": "Use enough to distinguish different decisions and next actions. Add a code when it changes how the office works or reports, rather than creating a separate label for every possible sentence a caller might say."
+      }
+    ],
+    "takeaway": "A useful disposition has a clear definition, supporting evidence and an owner for anything unfinished.",
+    "sourcePaths": [
+      "https://help.nice-incontact.com/content/agent/cxoneagent/indicateresultofinteractionsincxa.htm",
+      "https://knowledge.hubspot.com/calling/create-custom-call-and-meeting-outcomes"
+    ],
+    "related": [
+      "ai-call-summary",
+      "lead-qualification",
+      "appointment-booking"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot sequential continuation; parent validated Library libfile_374c35485b648191bb7555134ad3c754 v0; US210, KD14, Semrush intent Informational; no tracking changes"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:a59726a0739c21f4d16e3aa7183d89a48edb6ba6d09ce9d5d4721369127d1f90",
+      "note": "October15 same-lot sequential continuation; distinct original utility; factual source limits and unknown metrics retained; no unverified Revo features."
+    }
+  },
+  {
+    "slug": "average-speed-of-answer",
+    "title": "Average speed of answer for a home-service office",
+    "description": "Calculate average speed of answer for your service office. Define the clock, weight call volumes correctly and check what the average leaves out.",
+    "navigationLabel": "Average speed of answer",
+    "eyebrow": "Measure answered-call waiting",
+    "lead": "An answer-time average is useful only when you know which calls and seconds it includes.",
+    "intro": "Average speed of answer, often shortened to ASA, describes the average wait before answered calls reach an agent under a defined measurement rule. Amazon Connect calls its corresponding metric average queue answer time and calculates it from eligible answered contacts' queue durations.",
+    "sections": [
+      {
+        "title": "Before you choose the next step",
+        "paragraphs": [
+          "For a home-service office, this can help examine the waiting experience during scheduling hours or a busy intake period. It cannot tell you how quickly a web inquiry receives a callback, whether a booking was completed or what happened to callers who never reached an answer."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "AWS: metric definitions",
+            "href": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html"
+          }
+        ]
+      },
+      {
+        "title": "Define the clock before calculating",
+        "paragraphs": [
+          "Write down the event that starts timing and the event that stops it. For a queue-based ASA worksheet, use queue entry through the defined agent connection event. If a greeting or menu happens before queue entry, it may sit outside that measure. Do not describe queue-only waiting as the entire time from dialing unless your data supports that description.",
+          "Provider definitions matter. Amazon Connect explicitly includes agent and customer whisper time in its queue answer metric because the caller remains queued while those messages run. It also skips records missing required connection or queue-duration data. Another product's similarly named field must be checked against its own documentation.",
+          "For your own worksheet, document how transfers, overflow destinations, callback flows and multiple queue entries are handled. A record can represent an interaction leg rather than a unique original caller. Keep those populations separate unless you have an explicit, consistent way to combine them."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "AWS: average queue answer time",
+            "href": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html"
+          }
+        ]
+      },
+      {
+        "title": "Use an answered-call denominator",
+        "paragraphs": [
+          "For the queue-based definition in this guide:",
+          "ASA in seconds = total eligible answered-call queue wait in seconds ÷ number of eligible answered calls.",
+          "Suppose four answered calls have valid queue waits of 10, 20, 30 and 60 seconds. Their total is 120 seconds. Dividing by four gives an ASA of 30 seconds. These numbers are invented to demonstrate the arithmetic; they are not a target or a Revo result.",
+          "Do not insert a zero for a missing timestamp. Count and disclose unusable records separately. Likewise, a caller who left the queue before an answer does not become an answered call with a zero-second wait. Track that experience in the corresponding abandonment measure.",
+          "If no eligible calls were answered in the period, the average is undefined. Display no eligible answered calls rather than zero seconds, which would suggest immediate answers."
+        ],
+        "items": []
+      },
+      {
+        "title": "Weight periods by their call counts",
+        "paragraphs": [
+          "A common reporting mistake is averaging daily or team averages without their volumes. Consider another fictional example:",
+          "The simple average of 10 and 50 is 30 seconds, but it misrepresents this combined population. Use total wait divided by total eligible answered calls. If you only have averages, multiply each by its eligible count before combining. Do not combine reports whose clock definitions differ."
+        ],
+        "items": [
+          "Morning: two answered calls with a 10-second average, giving 20 total wait seconds.",
+          "Afternoon: eight answered calls with a 50-second average, giving 400 total wait seconds.",
+          "Combined: 420 wait seconds divided by 10 answered calls equals 42 seconds."
+        ]
+      },
+      {
+        "title": "Keep a short measurement worksheet",
+        "paragraphs": [
+          "Record the reporting period and time zone; included business numbers and queues; clock start and stop; eligibility and transfer rules; eligible answered count; total wait seconds; ASA; and excluded or missing-data count.",
+          "Beside the average, show how waits are distributed when the source data permits it. A short list of the longest waits or a clearly labeled percentile can reveal experiences the mean conceals. For a small office, show the sample size prominently. One unusual call can shift an average based on only a few records.",
+          "Review answered-call waiting alongside unanswered and abandoned volume using the same relevant period. An apparently improving ASA is not enough to conclude the whole customer experience improved if other callers stopped waiting before they were answered."
+        ],
+        "items": []
+      },
+      {
+        "title": "Turn a change into a question you can investigate",
+        "paragraphs": [
+          "If the afternoon average rises, check the actual call records and coverage for that period. Were more callers arriving together? Did a destination stop accepting calls? Did the reporting definition or routing path change? Treat these as hypotheses until the records support an explanation.",
+          "Set your own operating goal from the customer experience you intend to offer and the coverage you can maintain. Do not import a universal “good ASA” without matching the population and calculation. Record any process change and compare like-for-like periods afterward."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is ASA the same as speed to lead?",
+        "a": "No. This ASA worksheet measures answered-call queue waiting. Speed to lead measures time from an incoming inquiry to a defined response, which can involve a different channel and a much wider workflow."
+      },
+      {
+        "q": "Does a low ASA prove that callers are receiving useful help?",
+        "a": "No. It measures waiting under a defined clock. Review the outcome and accuracy of the interaction separately."
+      },
+      {
+        "q": "Can I calculate this from an ordinary call log?",
+        "a": "Only if the log contains reliable timestamps or durations for the chosen clock and identifies eligible answered calls. Ring duration, total call duration and queue wait are not automatically interchangeable."
+      }
+    ],
+    "takeaway": "Define the clock, keep the answered-call denominator visible and combine periods using their actual call counts.",
+    "sourcePaths": [
+      "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html"
+    ],
+    "related": [
+      "call-queue",
+      "call-abandonment-rate",
+      "speed-to-lead"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot sequential continuation; parent validated Library libfile_374c35485b648191bb7555134ad3c754 v0; US170, KD14, Semrush intent Informational; no tracking changes"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:da1259d2f58a2e0fecb926913e9a546e1e3651ecd6871cc5ce63049435ab78eb",
+      "note": "October15 same-lot sequential continuation; distinct original utility; factual source limits and unknown metrics retained; no unverified Revo features."
+    }
+  },
+  {
+    "slug": "first-call-resolution",
+    "title": "First call resolution for home-service office requests",
+    "description": "Measure first call resolution for office requests with clear eligibility, evidence and repeat-contact rules. Keep phone outcomes separate from repairs.",
+    "navigationLabel": "First call resolution",
+    "eyebrow": "Check whether the request was completed",
+    "lead": "Measure the office task the customer needed, while keeping field work separate.",
+    "intro": "First call resolution measures whether a customer's issue is resolved during the first phone interaction without another contact about that same issue. The broader term first contact resolution also includes non-phone channels. A common formula divides issues resolved at first contact by eligible first contacts.",
+    "sections": [
+      {
+        "title": "Before you choose the next step",
+        "paragraphs": [
+          "For a home-service business, the practical starting point is a clearly labeled office-request measure. A customer asking for an appointment date needs a different outcome from a customer reporting equipment that needs an on-site inspection. Answering either call does not establish that the underlying repair is complete."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "NiCE: FCR definition and formula",
+            "href": "https://www.nice.com/glossary/what-is-contact-center-first-contact-resolution-fcr"
+          }
+        ]
+      },
+      {
+        "title": "Decide which request your measure describes",
+        "paragraphs": [
+          "Write the eligible office-request categories before measuring the period. Examples might include questions about an existing appointment, permitted scheduling changes and administrative information your team can provide from an approved record.",
+          "Keep the measure's name honest: office-request first call resolution. Show the number and categories of requests outside that scope as well. Do not label this narrow result as the resolution rate for all customer problems or all service jobs.",
+          "A request that is eligible but difficult remains in the denominator. Needing a supervisor's decision or a later callback is an unresolved eligible request, not a convenient reason to exclude it. Change eligibility rules prospectively and record the change so comparisons remain meaningful."
+        ],
+        "items": []
+      },
+      {
+        "title": "Define completion with observable evidence",
+        "paragraphs": [
+          "Use a short rubric agreed by the office. These fictional examples illustrate possible rules:",
+          "For a call with multiple issues, record the issues individually or define a clear whole-call rule before counting. Otherwise a completed administrative question could conceal a second request that remains open."
+        ],
+        "items": [
+          "Appointment-date question: The authorized record was checked, the date was communicated and the customer confirmed that this answered the question. The office question can be complete while the visit itself remains in the future.",
+          "Permitted rescheduling request: The authorized change was actually saved and the replacement details were confirmed. Merely collecting a preferred date is not completion.",
+          "Estimate scheduling request: If a scheduler must call later before a visit can be agreed, the scheduling request is not resolved on the first call. A good intake summary is useful evidence of progress, but not evidence of completion.",
+          "Fault requiring field diagnosis: Track the service journey in the appropriate job process. If the measure is limited to administrative office requests, disclose this exclusion. Do not mark the fault resolved because someone took the call or booked an inspection."
+        ]
+      },
+      {
+        "title": "Check related contact without relying on silence",
+        "paragraphs": [
+          "NiCE notes that organizations use combinations of customer confirmation, repeat-contact windows, disposition codes and interaction or CRM data to determine resolution. Choose a method your office can actually support, and document its limitations.",
+          "For this office worksheet, first check that the intended action or answer is evidenced in the authorized record. Then check whether related follow-up was required within your documented observation window. The absence of another call by itself is not proof that the request was completed.",
+          "Match follow-up to the same issue or request, not just to a phone number. A customer may call from another number; another person may use the same household number for an unrelated question. Preserve ambiguous matches for review rather than silently treating them as resolved.",
+          "If the observation window has not yet finished, mark the request provisional. Report provisional counts separately and compare cohorts that have had the same opportunity for follow-up. Do not make today's new requests look better merely because nobody has had time to call again."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "NiCE: measuring FCR",
+            "href": "https://www.nice.com/glossary/what-is-contact-center-first-contact-resolution-fcr"
+          }
+        ]
+      },
+      {
+        "title": "Calculate a clearly labeled cohort result",
+        "paragraphs": [
+          "For the method described here:",
+          "Office-request FCR = eligible first requests verified as resolved on the first call, with the follow-up check complete ÷ all eligible first requests with the follow-up check complete × 100.",
+          "Suppose a fictional office has 40 eligible first requests in a fully observed cohort. Twenty-eight meet the completion rule and have no related repeat contact that invalidates resolution under the chosen policy. Its office-request FCR is 28 divided by 40, or 70%. This is a calculation example, not an industry benchmark, target or Revo result.",
+          "Show the 40-request denominator with the percentage. Also show the excluded and provisional counts, the request categories, the observation window and the evidence method. Use the same definitions in subsequent periods."
+        ],
+        "items": []
+      },
+      {
+        "title": "Use the result to improve the office process",
+        "paragraphs": [
+          "Review unresolved eligible requests by reason. Was a permitted action waiting for approval? Was the customer asking for a fact the office could not verify? Was an agreed handoff missing an owner? Identify a concrete issue before changing the workflow, then inspect the same type of request after the change.",
+          "Do not reward premature closure or discourage necessary follow-up simply to raise the percentage. NiCE warns that FCR targets can create those incentives. Accuracy, appropriate escalation and the actual customer outcome must remain part of review."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "NiCE: FCR measurement risks",
+            "href": "https://www.nice.com/glossary/what-is-contact-center-first-contact-resolution-fcr"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does transferring the call automatically make first call resolution fail?",
+        "a": "That depends on the documented measurement policy. State whether completing the request through a same-call handoff can qualify. A transfer alone is not evidence of resolution, and a later callback must not be described as first-call completion."
+      },
+      {
+        "q": "Can a booked appointment count if the repair has not happened?",
+        "a": "The scheduling request may qualify if it was actually completed under the office-request definition. The repair does not. Keep those outcomes and their labels separate."
+      },
+      {
+        "q": "Does Revo automatically calculate this metric?",
+        "a": "This guide does not establish that capability. Ask any provider which records, repeat-contact matching, eligibility rules and evidence its report uses before relying on a displayed FCR value."
+      }
+    ],
+    "takeaway": "Count a request as resolved only when the defined task is complete and the evidence supports it. Publish the denominator and limitations with the percentage.",
+    "sourcePaths": [
+      "https://www.nice.com/glossary/what-is-contact-center-first-contact-resolution-fcr"
+    ],
+    "related": [
+      "appointment-booking",
+      "ai-call-summary",
+      "call-disposition"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot sequential continuation; parent validated Library libfile_374c35485b648191bb7555134ad3c754 v0; US1300, KD46, Semrush intent Informational; no tracking changes"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:b7867d328709e6da3b9e18315d9d7f34de4f0081a883c39c9a7cfb6b5b91e21f",
+      "note": "October15 same-lot sequential continuation; distinct original utility; factual source limits and unknown metrics retained; no unverified Revo features."
+    }
+  },
+  {
+    "slug": "compare/local-vs-toll-free-number",
+    "title": "Local vs. Toll-Free Number: What Should Your Customers Call?",
+    "description": "Compare local and toll-free numbers for a home service business. Check calling coverage, costs, texting, callback identity, and ownership before choosing.",
+    "navigationLabel": "Local vs toll-free numbers",
+    "eyebrow": "Choose a business number",
+    "lead": "Choose a number your customers can reach and your team can maintain.",
+    "intro": "A local number can fit a business serving one area. A toll-free number can give several branches a shared contact point. Neither choice, by itself, establishes where your technicians work, how calls are answered, or whether someone can book a visit.",
+    "sections": [
+      {
+        "title": "Before you choose the next step",
+        "paragraphs": [
+          "Start with the customer journey you need: who will call, where they will call from, whether they need to text, and which number your office will use to call back. Keep an established number in the comparison rather than assuming a replacement will improve results."
+        ],
+        "items": []
+      },
+      {
+        "title": "Understand what the number changes",
+        "paragraphs": [
+          "A geographic area code identifies a numbering region; toll-free codes are nongeographic. That distinction concerns the number, not the location of the person answering it. Your website and greeting should still state the areas you actually serve.",
+          "Toll-free means the subscriber receiving the call pays its toll-free call charge rather than the caller. It does not mean the business receives the service at no cost. The subscriber's agreement with its service provider determines the price.,",
+          "The prefixes 800, 888, 877, 866, 855, 844, and 833 are toll-free codes. They are not interchangeable: changing the prefix can reach a different subscriber. Check the entire number before printing signs or updating listings."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Somos numbering-field documentation",
+            "href": "https://support.somos.com/hc/en-us/articles/10425189296788-TFNRegistry-UI-What-are-the-LAD-Fields-their-Descriptions-and-Valid-Values"
+          },
+          {
+            "label": "Somos: why it is called toll-free",
+            "href": "https://support.somos.com/hc/en-us/articles/7878427383316-Why-is-it-called-Toll-Free"
+          },
+          {
+            "label": "Somos: service costs",
+            "href": "https://support.somos.com/hc/en-us/articles/7904315555732-How-Much-does-it-Cost-to-Get-a-Toll-Free-Number-for-my-Business"
+          },
+          {
+            "label": "Somos: toll-free prefixes",
+            "href": "https://support.somos.com/hc/en-us/articles/7878468508436-Is-there-any-difference-between-800-888-877-866-855-844-and-833-TFNs"
+          }
+        ]
+      },
+      {
+        "title": "Match the number to your service footprint",
+        "paragraphs": [
+          "Consider these illustrative situations rather than a universal winner:",
+          "For toll-free service, the provider establishes an area of service. A particular number may not be reachable from a caller's area, depending on its configuration and agreement. Do not assume worldwide availability."
+        ],
+        "items": [
+          "A plumbing company serving one metro area already has a well-used local number. Its first question is whether that number still supports its calls, callbacks, and messages, not whether a new prefix looks more impressive.",
+          "A cleaning business has several branches but wants one main office number. It should compare a shared toll-free contact with its existing branch numbers and decide which location information customers still need.",
+          "A property-management client calls from outside the business's normal region. The company should verify reachability from that caller's location before advertising the number as its only contact."
+        ],
+        "sources": [
+          {
+            "label": "Somos: toll-free calling coverage",
+            "href": "https://support.somos.com/hc/en-us/articles/7878680556564-Why-can-t-I-Get-Through-when-Calling-a-Specific-TFN"
+          }
+        ]
+      },
+      {
+        "title": "Evaluate texting separately",
+        "paragraphs": [
+          "Ask whether the proposed number is enabled for the messages your customers need. A voice-service quote is not enough evidence that business texting is ready.",
+          "Registration paths can differ by number type and provider. For example, Twilio documents A2P 10DLC registration for application messaging to US recipients using local ten-digit numbers, and a separate verification process for toll-free messaging. Those are provider-specific requirements to check, not proof that an answering service has completed them for you.,"
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Twilio A2P 10DLC",
+            "href": "https://www.twilio.com/docs/messaging/compliance/a2p-10dlc"
+          },
+          {
+            "label": "Twilio toll-free verification",
+            "href": "https://www.twilio.com/docs/messaging/compliance/toll-free/api-onboarding"
+          }
+        ]
+      },
+      {
+        "title": "Compare the whole quote",
+        "paragraphs": [
+          "Ask each provider for a written answer to the same questions:",
+          "Use your actual calling pattern when comparing totals. A low headline number price does not answer how an unusually busy month will be billed."
+        ],
+        "items": [
+          "What are the number, usage, messaging, and optional-feature charges?",
+          "From which locations can customers reach this number?",
+          "What number and name should customers see on callbacks?",
+          "Who controls the number, and what is required if the business later changes providers?",
+          "Can the office keep its current number while evaluating the new service?",
+          "Which support team handles a failed call or message?"
+        ]
+      },
+      {
+        "title": "Test before changing public materials",
+        "paragraphs": [
+          "With participating staff, test inbound calls from relevant locations, callbacks from the office, and the messaging workflow you intend to use. Confirm that returning a missed call reaches the correct business. Check the displayed number rather than assuming inbound and outbound identities match.",
+          "Record the result and the person responsible for fixing any gap. Once the choice works, update public contact information consistently. If a transfer is needed, use a separate number-porting plan rather than treating this comparison as migration instructions.",
+          "The best fit is the number your customers can reach and your team can maintain, with costs and limitations understood before it becomes the public contact point."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does toll-free mean free service for the business?",
+        "a": "No. The subscriber receiving the call pays its toll-free call charge. Check the service-provider agreement and the complete quote."
+      },
+      {
+        "q": "Does a local number prove where the answering team is located?",
+        "a": "No. A numbering region does not establish the location of the person answering. State your actual service area clearly."
+      },
+      {
+        "q": "Does a voice number automatically support business texting?",
+        "a": "Check messaging eligibility and the provider-specific setup separately. A voice quote does not establish that texting is ready."
+      }
+    ],
+    "takeaway": "Choose a number your customers can reach and your team can maintain.",
+    "sourcePaths": [
+      "https://support.somos.com/hc/en-us/articles/10425189296788-TFNRegistry-UI-What-are-the-LAD-Fields-their-Descriptions-and-Valid-Values",
+      "https://support.somos.com/hc/en-us/articles/7878427383316-Why-is-it-called-Toll-Free",
+      "https://support.somos.com/hc/en-us/articles/7904315555732-How-Much-does-it-Cost-to-Get-a-Toll-Free-Number-for-my-Business",
+      "https://support.somos.com/hc/en-us/articles/7878468508436-Is-there-any-difference-between-800-888-877-866-855-844-and-833-TFNs",
+      "https://support.somos.com/hc/en-us/articles/7878680556564-Why-can-t-I-Get-Through-when-Calling-a-Specific-TFN",
+      "https://www.twilio.com/docs/messaging/compliance/a2p-10dlc",
+      "https://www.twilio.com/docs/messaging/compliance/toll-free/api-onboarding"
+    ],
+    "related": [
+      "phone-number-porting",
+      "business-caller-id",
+      "compare/voip-vs-landline",
+      "conditional-call-forwarding"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot sequential continuation; parent validated Library libfile_d3eae02d209c819180cd455138840b35 v0; US50, KD3, Semrush intent Commercial; no tracking changes"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:41de7451c4de669b6c7193c1f260d289cc38172f5a77424af5bbfb5d6b3df207",
+      "note": "Atomic approval of mutually linked, editorially validated same-release guides; all standard registry checks retained."
+    }
+  },
+  {
+    "slug": "business-caller-id",
+    "title": "Business Caller ID: What Customers See When You Call Back",
+    "description": "Check what customers see when your business calls back. Separate caller number, CNAM, branded calling, and spam labels with a practical test checklist.",
+    "navigationLabel": "Business caller ID",
+    "eyebrow": "Outbound callback identity",
+    "lead": "Test the number, name and label customers see on a callback.",
+    "intro": "A customer asks for a plumbing estimate, then receives your return call. The number, business name, or warning on their screen may not match what your office expects. Before changing phone settings, identify exactly what is wrong and which line placed the call.",
+    "sections": [
+      {
+        "title": "Before you choose the next step",
+        "paragraphs": [
+          "Business caller ID is not one setting that controls every phone. Treat the displayed number, caller name, branded presentation, and spam label as separate checks. This guide is for expected customer callbacks, not unsolicited calling campaigns."
+        ],
+        "items": []
+      },
+      {
+        "title": "Start with the originating number",
+        "paragraphs": [
+          "List the ways your team calls customers: an office phone, a business app, a technician's work line, or another approved system. Make a test call from each one. Record the number the recipient sees and where a return call goes.",
+          "This catches a basic mismatch before it becomes a naming project. If the wrong number is presented, ask the originating phone provider to verify the authorized outbound identity. If the number is right but the name is wrong, investigate the caller-name path instead. Keep personal employee numbers out of public workflows unless that use is intentional and authorized."
+        ],
+        "items": []
+      },
+      {
+        "title": "Separate a caller name from a branded call",
+        "paragraphs": [
+          "Caller ID Name, or CNAM, associates a name with a calling number. In Twilio's US documentation, display depends on the receiving carrier and the recipient's enabled features. Database coverage and update practices vary, so a correct submission does not guarantee that every customer sees the same name. Twilio's current CNAM rules also limit names to 15 characters. Ask your own provider about its rules rather than treating that as a Revo specification.",
+          "Branded calling can add information such as a business name, logo, or call reason on supported networks and devices. That is a separate product from basic name presentation. For example, Twilio's enhanced US service has carrier and handset coverage limits; it does not promise an identical branded display everywhere.",
+          "Ask which presentation the provider is offering and which customer devices it actually supports. A logo shown in a sales demonstration is not evidence that every household you serve will see it."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Twilio CNAM documentation",
+            "href": "https://www.twilio.com/docs/voice/brand-your-calls-using-cnam"
+          },
+          {
+            "label": "Twilio enhanced branded calling",
+            "href": "https://www.twilio.com/docs/voice/branded-calling/us-enhanced"
+          }
+        ]
+      },
+      {
+        "title": "Treat a spam label as a separate issue",
+        "paragraphs": [
+          "Changing a name is not the same as correcting a spam or scam label. Twilio's Voice Integrity documentation describes submitting numbers to carrier-associated analytics vendors for review. Those vendors may update their labels; registration is not a guaranteed removal.",
+          "If a legitimate callback is mislabeled, collect an example and use the provider's review process. Do not respond by continually rotating numbers or making misleading identity claims. Also review whether staff are calling people who requested contact and whether repeated attempts are appropriate for the customer's request."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Twilio Voice Integrity",
+            "href": "https://www.twilio.com/docs/trust-hub/registrations/voice-integrity"
+          }
+        ]
+      },
+      {
+        "title": "Build a small, controlled test",
+        "paragraphs": [
+          "Ask participating staff or other consenting testers to help. Use more than one receiving carrier where practical, and distinguish a phone that already saved your contact from one that has not.",
+          "For each test, note:",
+          "Use test records and avoid including customer information in support screenshots. A single successful test is useful evidence for that path, not proof of universal coverage."
+        ],
+        "items": [
+          "The originating business line and calling app or device.",
+          "The receiving carrier and device.",
+          "Whether your business was already saved as a contact.",
+          "The date, time, displayed number, exact name, and any warning.",
+          "Whether returning the call reached the correct office workflow."
+        ]
+      },
+      {
+        "title": "Send the right problem to the right provider",
+        "paragraphs": [
+          "If different employees present different numbers, first resolve the approved outbound-line configuration. If the number is consistent but a business name is missing or outdated, ask about the name record and receiving-carrier behavior. If the name is correct but a warning remains, request the separate labeling review.",
+          "Keep one owner for the issue and preserve the provider's response. After an update, repeat the same test conditions so the office can compare the result. Avoid promising customers or staff a fixed propagation time unless the provider has given one for that specific change."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep the callback recognizable in context",
+        "paragraphs": [
+          "The phone display is only one part of a callback. Have staff identify the business and refer to the service request without exposing sensitive details to the wrong person. Make sure a missed callback returns to a useful greeting or staffed line.",
+          "An answering service's inbound coverage does not, by itself, prove that it manages outbound caller names, branded calling, or spam-label reviews. Verify those responsibilities separately. The goal is a consistent, testable callback experience with a clear owner when the display is wrong."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a caller name the same as branded calling?",
+        "a": "No. A caller name and a branded presentation are different checks. Supported carriers, devices and features depend on the provider."
+      },
+      {
+        "q": "Does changing a caller name remove a spam label?",
+        "a": "Not necessarily. Use the separate provider review process for labeling and do not treat registration as guaranteed removal."
+      },
+      {
+        "q": "Is this the same as inbound call screening?",
+        "a": "No. This guide checks the display customers see when your business calls back. Screening concerns how your team handles incoming calls."
+      }
+    ],
+    "takeaway": "Test the number, name and label customers see on a callback.",
+    "sourcePaths": [
+      "https://www.twilio.com/docs/voice/brand-your-calls-using-cnam",
+      "https://www.twilio.com/docs/voice/branded-calling/us-enhanced",
+      "https://www.twilio.com/docs/trust-hub/registrations/voice-integrity"
+    ],
+    "related": [
+      "call-screening",
+      "compare/local-vs-toll-free-number",
+      "business-voicemail-greeting"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot sequential continuation; parent validated Library libfile_d3eae02d209c819180cd455138840b35 v0; US90, KD20, Semrush intent Informational; no tracking changes"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:0a240eaa0aa8bce9fd0ec3af6d561616542cfe8fdf822ddacef9b1e72fc0d609",
+      "note": "Atomic approval of mutually linked, editorially validated same-release guides; all standard registry checks retained."
+    }
+  },
+  {
+    "slug": "appointment-cancellation-policy",
+    "title": "Appointment cancellation policy for home service teams",
+    "description": "Plan a clear appointment cancellation workflow for a home service team. Define notice channels, scheduling updates, exceptions, and payment-review boundaries.",
+    "navigationLabel": "Cancellation planning",
+    "eyebrow": "Appointment-change operations",
+    "lead": "Agree the scheduling process before publishing cancellation terms.",
+    "intro": "An appointment cancellation policy should help a customer tell you that plans changed and help your office update the work schedule correctly. For a home service business, that means thinking about travel, access to the property, visit type, and who owns the next action.",
+    "sections": [
+      {
+        "title": "Before you choose the next step",
+        "paragraphs": [
+          "Use this checklist to prepare your operating decisions before drafting customer-facing terms. It does not set a required notice period, authorize a cancellation charge, or determine anyone's refund rights. Have qualified local counsel review contract and payment provisions before you publish or apply them."
+        ],
+        "items": []
+      },
+      {
+        "title": "Separate a scheduling change from contract rights",
+        "paragraphs": [
+          "Moving a visit on the calendar and canceling an underlying service contract are different questions. The FTC’s Cooling-Off Rule covers certain sales and includes exceptions; its state-law provision preserves qualifying state and local protections. A scheduling policy cannot determine those rights merely by labeling a request late.",
+          "If a customer raises a contract, deposit, or refund question, assign it to the person authorized to review those terms. Staff should not improvise a legal conclusion during an appointment-change call."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Cooling-Off Rule: 16 CFR Part 429",
+            "href": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-429"
+          }
+        ]
+      },
+      {
+        "title": "Define which visit the policy covers",
+        "paragraphs": [
+          "List the services that require different handling. An initial estimate, a recurring cleaning visit, a repair appointment, and a larger installation may involve different preparation and agreements. Avoid putting every visit into one rule simply because one calendar holds them all.",
+          "For each category, record the scheduling owner, the promised arrival window, and any access instructions. Acuity's home-service examples specifically surface arrival windows, property access, and delays as issues to address. Use those as planning questions rather than adopting its example fees or notice periods."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Acuity cancellation-policy guidance",
+            "href": "https://acuityscheduling.com/learn/cancellation-policy-templates"
+          }
+        ]
+      },
+      {
+        "title": "Write down the decisions before writing the policy",
+        "paragraphs": [
+          "Complete this worksheet with your operations lead:",
+          "Square's guidance similarly emphasizes clear notice methods, advance disclosure, exceptions, and records. These are useful operational prompts, not a guarantee that a particular charge is permitted."
+        ],
+        "items": [
+          "Notice channels: Which phone number, email address, or booking link should customers use? Who checks each channel when the office is closed?",
+          "Notice timing: What timestamp and time zone will the team record? If you choose a notice window, how will staff explain it consistently?",
+          "Change type: How will staff distinguish a request to reschedule, a canceled visit, an access problem, and a customer asking to end the broader agreement?",
+          "Calendar authority: Who can change the appointment, and who checks that the technician sees the update?",
+          "Exceptions: Who reviews illness, severe weather, access issues, and other circumstances that do not fit the ordinary process?",
+          "Business-caused changes: What will you communicate when your team is late, unavailable, or unable to perform the agreed work?",
+          "Payment review: Who reviews any proposed fee, deposit treatment, or refund against the agreement and applicable requirements? Leave amounts blank until that review is complete.",
+          "Confirmation: What information tells the customer that the schedule has actually changed?"
+        ],
+        "sources": [
+          {
+            "label": "Square cancellation-policy guidance",
+            "href": "https://squareup.com/us/en/appointments/features/cancellation-policy"
+          }
+        ]
+      },
+      {
+        "title": "Give the office a clear handoff",
+        "paragraphs": [
+          "Track scheduling status separately from any payment question. A practical workflow records when the message arrived, who is updating the calendar, and when the customer received the scheduling confirmation. It can also flag a separate terms question for review.",
+          "For example, an office acknowledgement might say: “We received your request to move Tuesday's visit. Our scheduling team will contact you about another time.” Use that only when it accurately describes your process. It should not suggest that a customer's legal cancellation rights depend on an office acknowledgement.",
+          "Once the calendar changes, tell the assigned technician and remove or update outdated reminders. Keep the original appointment reference so the office can resolve conflicting messages without asking the customer to start over."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test the awkward cases",
+        "paragraphs": [
+          "Before publishing, walk through a few scenarios with the people who answer calls:",
+          "For each case, identify the scheduling action, the customer message, and the person reviewing any separate contract or payment issue. If staff disagree, clarify the process before adding a more forceful sentence to the policy."
+        ],
+        "items": [
+          "A customer leaves a change request after closing, before the next morning's visit.",
+          "A technician reaches a property but cannot obtain the agreed access.",
+          "Your business needs to move the visit because a technician is unavailable.",
+          "A customer requests both a new appointment and a deposit refund.",
+          "A recurring customer wants to stop future visits, not just skip one date."
+        ]
+      },
+      {
+        "title": "Publish only what your team can follow",
+        "paragraphs": [
+          "Keep approved wording consistent across the booking process, confirmation, and staff reference. Make the contact method easy to find. Revisit the workflow when your services, office coverage, or scheduling system changes.",
+          "A useful policy is understandable at the moment a customer's plans change. Its operational value comes from clear ownership and accurate calendar updates, while contract and payment decisions remain subject to the appropriate review."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does this checklist set a cancellation fee or notice period?",
+        "a": "No. It prepares operating decisions. Contract and payment provisions need appropriate review before publication or use."
+      },
+      {
+        "q": "Is changing an appointment the same as canceling a service contract?",
+        "a": "No. Keep the calendar update separate from questions about contract, deposit or refund rights."
+      },
+      {
+        "q": "What should the office record after a change request?",
+        "a": "Record when the message arrived, the scheduling owner, the calendar update and the customer confirmation, with any payment question assigned separately."
+      }
+    ],
+    "takeaway": "Agree the scheduling process before publishing cancellation terms.",
+    "sourcePaths": [
+      "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-429",
+      "https://acuityscheduling.com/learn/cancellation-policy-templates",
+      "https://squareup.com/us/en/appointments/features/cancellation-policy"
+    ],
+    "related": [
+      "appointment-booking",
+      "appointment-reminders",
+      "phone-answering-script"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot sequential continuation; parent validated Library libfile_d3eae02d209c819180cd455138840b35 v0; US70, KD12, Semrush intent Informational; no tracking changes"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:dff3d043ffbb512c66f3b81ac0f2c27b8a8f419d7d02ed08f11cf1d9a9825adb",
+      "note": "Preserves operational legal boundary; replaced locally404 FTC consumer URL with current primary 16CFR429 source, independently read; no fee or enforceability advice."
+    }
+  },
+  {
+    "slug": "compare/voip-vs-landline",
+    "title": "VoIP vs. landline for a home-service business",
+    "description": "Compare VoIP and landline service for your home-service business: team workflows, real costs, equipment, network needs, and questions to ask providers.",
+    "navigationLabel": "VoIP vs landline",
+    "eyebrow": "Compare phone-service options",
+    "lead": "Compare the technology behind the phone and the work it supports.",
+    "intro": "For a plumbing, HVAC, electrical, or other home-service business, the useful question is how the phone system fits the work. Who answers while the owner is on a job? Can the dispatcher handle two callers? What happens when a technician returns a customer’s call?",
+    "sections": [
+      {
+        "title": "Before you choose the next step",
+        "paragraphs": [
+          "Start by identifying your current service, then compare the work each option can support. A familiar desk phone does not tell you whether the connection behind it is a traditional copper line or VoIP."
+        ],
+        "items": []
+      },
+      {
+        "title": "First, find out what “landline” means in your quote",
+        "paragraphs": [
+          "A traditional copper landline, often called POTS, connects a basic telephone to the telephone network over a copper access line. VoIP carries voice using Internet Protocol. It can reach a desk phone, a computer application, a mobile application, or an analog phone connected through suitable equipment.",
+          "A fixed-location service can still use VoIP. For example, AT&T documents a system that takes analog telephone signals and converts them to IP. Keeping an old handset or wall jack therefore does not prove that you still have traditional copper service. Ask the provider to identify the access technology and every powered device between the phone and its network.",
+          "Also ask whether the proposed service uses your general internet connection, a provider-managed connection, or another access arrangement. “Digital phone,” “business line,” and “cloud phone” are not detailed equipment specifications."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "AT&T’s technical brief",
+            "href": "https://www.business.att.com/content/dam/attbusiness/briefs/att-phone-for-business.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Compare the daily workflow",
+        "paragraphs": [
+          "Write down three calls your team handles regularly. A useful example is a homeowner calling for an estimate, a dispatcher checking availability, and a technician returning the call from the field.",
+          "For each proposal, ask the provider to demonstrate:",
+          "Hosted VoIP products can offer apps and centralized call management, but the exact features depend on the product and plan. Traditional business phone plans can also include voicemail, transfers, call waiting, and line hunting. Compare the actual demonstrations rather than assuming one category has every feature and the other has none.,"
+        ],
+        "items": [
+          "Who can answer the main business number and on which devices",
+          "How a caller reaches another employee without repeating the request",
+          "What a second caller experiences while the first call is active",
+          "Which number customers see when employees call back",
+          "How staff find voicemail and know who is responsible for following up",
+          "Who can change users, hours, greetings, and routing"
+        ],
+        "sources": [
+          {
+            "label": "Verizon Business Digital Voice",
+            "href": "https://www.verizon.com/business/products/voice-collaboration/voip/business-digital-voice/"
+          },
+          {
+            "label": "Verizon Preferred Voice",
+            "href": "https://www.verizon.com/business/products/voice-collaboration/voip/business-phone-service-preferred-voice/"
+          }
+        ]
+      },
+      {
+        "title": "Price the complete setup",
+        "paragraphs": [
+          "Request an itemized proposal for your present team and for the next realistic stage of growth. Include service charges, users or lines, simultaneous-call capacity, equipment, installation, taxes, required add-ons, and any internet changes. Ask which items recur and which are one-time costs.",
+          "Then include the work of running it. Will someone maintain an on-site phone system? Who adds an employee or replaces a failed handset? Is support available during your operating hours? What happens to the price after a promotion, and what are the contract and cancellation terms?",
+          "Avoid comparing a basic line price with a fully equipped multi-user package. Use the same staffing and call-handling requirements on both sides. There is no reliable universal savings percentage for a business whose existing bill, equipment, and requirements have not been reviewed."
+        ],
+        "items": []
+      },
+      {
+        "title": "Check dependencies and emergency calling",
+        "paragraphs": [
+          "Traditional line-powered copper service can operate a basic corded phone during a local power failure, provided the telephone network remains available. A cordless base or office phone system may still need electricity. VoIP equipment generally needs power and a working network path; the exact dependencies vary by installation. Confirm those dependencies before buying.",
+          "For a U.S. business, ask how 911 works from each type of endpoint, what physical location is supplied, and how location information is updated when staff move. The FCC distinguishes fixed and non-fixed interconnected VoIP in its emergency-calling framework. Read the provider’s specific emergency-service limitations rather than assuming every app behaves like an office phone."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "FCC backup-power order",
+            "href": "https://docs.fcc.gov/public/attachments/FCC-15-98A1_Rcd.pdf"
+          },
+          {
+            "label": "FCC emergency-calling order",
+            "href": "https://docs.fcc.gov/public/attachments/FCC-19-76A1.pdf"
+          }
+        ]
+      },
+      {
+        "title": "Run a small operational trial",
+        "paragraphs": [
+          "Use a temporary test setup, where available, before changing the main number. Have office and field staff complete the same call scenarios they handle at work. Check intelligibility, transfers, voicemail access, callback identity, and ease of use during a representative busy period.",
+          "Inventory anything else using the old phone connection, such as an alarm, fax machine, gate, or payment terminal. Ask the equipment vendor and the proposed phone provider to confirm compatibility for each device. An ordinary voice-call test does not establish that a specialty device will work.",
+          "Keep a simple decision record: requirement, demonstrated result, remaining question, and person responsible. Choose the service that meets the verified requirements at an acceptable total cost. If your existing line already handles a small, fixed-location workflow well, retaining it may be reasonable. If the work spans a dispatcher, several technicians, and multiple answering locations, give those workflows particular weight when evaluating VoIP."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does a desk phone prove the service is a traditional copper line?",
+        "a": "No. A fixed-location phone can use VoIP. Ask the provider to identify the access technology and powered devices."
+      },
+      {
+        "q": "Is VoIP always cheaper?",
+        "a": "Compare itemized costs for the same staffing and call-handling requirements. This guide establishes no universal savings percentage."
+      },
+      {
+        "q": "Does an ordinary voice-call test establish specialty-device compatibility?",
+        "a": "No. Ask the equipment vendor and phone provider to verify any alarm, fax, gate or other device using the connection."
+      }
+    ],
+    "takeaway": "Compare the technology behind the phone and the work it supports.",
+    "sourcePaths": [
+      "https://www.business.att.com/content/dam/attbusiness/briefs/att-phone-for-business.pdf",
+      "https://www.verizon.com/business/products/voice-collaboration/voip/business-digital-voice/",
+      "https://www.verizon.com/business/products/voice-collaboration/voip/business-phone-service-preferred-voice/",
+      "https://docs.fcc.gov/public/attachments/FCC-15-98A1_Rcd.pdf",
+      "https://docs.fcc.gov/public/attachments/FCC-19-76A1.pdf"
+    ],
+    "related": [
+      "phone-number-porting",
+      "compare/local-vs-toll-free-number",
+      "business-caller-id",
+      "voip-jitter"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot sequential continuation; parent validated Library libfile_d3eae02d209c819180cd455138840b35 v0; US590, KD27, Semrush intent Commercial; no tracking changes"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:c1a45413ada25073662bbb1821f1339fb4a2daefe3416f1897fa480f07044e5d",
+      "note": "Atomic approval of mutually linked, editorially validated same-release guides; all standard registry checks retained."
+    }
+  },
+  {
+    "slug": "voip-jitter",
+    "title": "VoIP jitter: how to diagnose choppy business calls",
+    "description": "Learn what VoIP jitter means, how it differs from delay and packet loss, and how to isolate choppy calls before changing your business network.",
+    "navigationLabel": "VoIP jitter",
+    "eyebrow": "Business call-quality diagnosis",
+    "lead": "Gather call evidence and change one variable at a time.",
+    "intro": "VoIP jitter is variation in the delay of incoming voice packets. A phone conversation needs a reasonably steady stream of audio. If packet timing becomes uneven, the receiving system has to compensate. When it cannot compensate sufficiently, speech can break up.",
+    "sections": [
+      {
+        "title": "Before you choose the next step",
+        "paragraphs": [
+          "For a home-service office, the practical problem is a dispatcher missing an address or a customer repeating a job description. Start by gathering evidence from affected calls. A fast download result alone does not explain what happened to the voice stream."
+        ],
+        "items": []
+      },
+      {
+        "title": "Jitter, delay, and packet loss are different",
+        "paragraphs": [
+          "Think of a call as small pieces of audio traveling through a network:",
+          "A jitter buffer briefly holds incoming audio so it can play at a steadier pace. Increasing buffering can absorb more timing variation, but waiting longer also adds delay. Buffering is a tradeoff rather than a substitute for finding a bad connection.,",
+          "Choppy or robotic audio is a clue, not proof of jitter. Device problems, packet loss, and other network conditions can produce overlapping complaints."
+        ],
+        "items": [
+          "Delay, or latency: how long a piece takes to travel. Round-trip time measures the trip out and back, so it is not the same measurement as one-way delay.",
+          "Jitter: how much packet delay varies. An uneven arrival pattern can be a problem even when the average delay looks modest.",
+          "Packet loss: pieces that fail to arrive. Late packets can also become unusable for playback, even if they eventually reach the device."
+        ],
+        "sources": [
+          {
+            "label": "Cisco’s jitter explanation",
+            "href": "https://www.cisco.com/c/en/us/support/docs/voice/voice-quality/18902-jitter-packet-voice.html"
+          },
+          {
+            "label": "RTP standard",
+            "href": "https://www.rfc-editor.org/rfc/rfc3550"
+          }
+        ]
+      },
+      {
+        "title": "What jitter level is acceptable?",
+        "paragraphs": [
+          "Use your phone provider’s guidance and the definition of the measurement you are viewing. Twilio’s Voice SDK network requirements, for example, list jitter below 30 milliseconds. Microsoft Teams’ Call Quality Dashboard uses average jitter above 30 milliseconds as one poor-stream classification criterion, while explicitly explaining that crossing a threshold does not necessarily mean a person heard poor audio.,",
+          "These are product-specific references. They do not establish a universal boundary at which every phone call fails. Ask whether a report shows an average, maximum, or interval measurement, which direction it covers, and whether the time window includes the actual problem. Keep the caller’s experience alongside the metrics."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Twilio SDK requirements",
+            "href": "https://www.twilio.com/docs/voice/sdks/network-connectivity-requirements"
+          },
+          {
+            "label": "Microsoft’s quality guide",
+            "href": "https://learn.microsoft.com/en-us/microsoftteams/quality-of-experience-review-guide"
+          }
+        ]
+      },
+      {
+        "title": "Capture one useful example",
+        "paragraphs": [
+          "When someone reports a bad call, note:",
+          "Use your provider’s call-quality view or recommended diagnostic test when available. A measurement from an unrelated speed-test server may follow a different path and happen outside the affected time period. Separate incoming and outgoing audio evidence: the two directions can have different problems."
+        ],
+        "items": [
+          "Date, time, time zone, and the provider’s call identifier if available",
+          "Which employee and device were involved",
+          "Whether the connection was Ethernet, office Wi-Fi, or mobile data",
+          "Which person heard the distortion, and approximately when",
+          "Whether other calls were affected at the same time",
+          "Any visible jitter, loss, and delay measurements"
+        ],
+        "sources": [
+          {
+            "label": "Microsoft’s stream-direction guidance",
+            "href": "https://learn.microsoft.com/en-us/microsoftteams/quality-of-experience-review-guide"
+          }
+        ]
+      },
+      {
+        "title": "Change one variable at a time",
+        "paragraphs": [
+          "Start with a repeatable, non-customer test call. Use the same short script, including an address and a callback number, so staff can compare intelligibility.",
+          "These comparisons are diagnostic clues. Repeating them during the conditions that normally produce the problem is more useful than declaring success after one quiet call."
+        ],
+        "items": [
+          "Compare a wired connection. If the affected computer or phone supports Ethernet, repeat the call there. Better results narrow the investigation toward the wireless path, but do not prove which wireless component is responsible.",
+          "Compare busy and quiet periods. Note whether large uploads, backups, or other heavy activity coincide with the problem. Pause only activity you can safely interrupt, then repeat the test. Twilio recommends Ethernet where possible and avoiding large concurrent transfers when investigating jitter.",
+          "Compare devices on the same connection. Try a known-working handset or headset and the provider-supported app version. If only one device has trouble, include that finding before asking for network changes.",
+          "Compare the pattern across callers. Is the problem limited to one employee, one office connection, or calls to particular destinations? Record the pattern without assuming the office, internet provider, or telephone carrier is at fault."
+        ],
+        "sources": [
+          {
+            "label": "Twilio’s network troubleshooting guidance",
+            "href": "https://www.twilio.com/docs/voice/voice-insights/call-summary"
+          }
+        ]
+      },
+      {
+        "title": "Make targeted changes and verify them",
+        "paragraphs": [
+          "Give the evidence to whoever manages your network and phone service. They can check congestion, wireless coverage, equipment performance, and the provider’s network requirements. Quality of Service can prioritize voice on a network you control, but changing a setting on an office router does not control every network a call crosses.",
+          "Have the administrator use provider-specific guidance for QoS, firewall, and jitter-buffer changes. Do not copy a generic port-opening recipe or increase every buffer. Save the prior configuration and change one item at a time.",
+          "After a change, repeat the same tests and review actual call-quality reports during a representative busy period. Keep the issue open if staff still hear distortion. The goal is understandable conversations and evidence of improvement, rather than one green test result."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is jitter the same as latency or packet loss?",
+        "a": "No. Jitter concerns variation in packet delay. Latency concerns travel time, and packet loss concerns missing pieces."
+      },
+      {
+        "q": "Does a fast download test rule out voice problems?",
+        "a": "No. An unrelated test can use a different network path or time window from the affected voice call."
+      },
+      {
+        "q": "Is 30 milliseconds a universal failure threshold?",
+        "a": "No. Check your provider and the measurement definition. The examples in this guide are product-specific and do not replace evidence of what callers heard."
+      }
+    ],
+    "takeaway": "Gather call evidence and change one variable at a time.",
+    "sourcePaths": [
+      "https://www.cisco.com/c/en/us/support/docs/voice/voice-quality/18902-jitter-packet-voice.html",
+      "https://www.rfc-editor.org/rfc/rfc3550",
+      "https://www.twilio.com/docs/voice/sdks/network-connectivity-requirements",
+      "https://learn.microsoft.com/en-us/microsoftteams/quality-of-experience-review-guide",
+      "https://www.twilio.com/docs/voice/voice-insights/call-summary"
+    ],
+    "related": [
+      "compare/voip-vs-landline",
+      "call-routing",
+      "ai-call-summary"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot sequential continuation; parent validated Library libfile_d3eae02d209c819180cd455138840b35 v0; US170, KD19, Semrush intent Informational; no tracking changes"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:827c2d9c17242db07b3a093e163d787c682b68a70a867d71cfa4a1aa7f4377a1",
+      "note": "Atomic approval of mutually linked, editorially validated same-release guides; all standard registry checks retained."
+    }
+  },
+  {
+    "slug": "jobber-answering-service",
+    "title": "Jobber Answering Service: What Happens After the Call?",
+    "description": "Compare Jobber Receptionist with third-party answering services. Check booking forms, client sync, property selection, and the workflow behind each call.",
+    "navigationLabel": "Jobber answering options",
+    "eyebrow": "Software buyer guide",
+    "lead": "Verify the record, property and next step created after a call.",
+    "intro": "Published by Revo. Documentation reviewed October 15, 2026. These are documented workflows, not independently tested provider performance. A Revo–Jobber integration was not verified for this guide.",
+    "sections": [
+      {
+        "title": "Before you choose the next step",
+        "paragraphs": [
+          "Choosing a Jobber answering service starts with a practical question: what should exist in Jobber when the conversation ends? A callback task, a request awaiting review, and a scheduled job require different workflows.",
+          "Start by testing the native option, then compare outside services against the work your office still needs to do. A polished phone conversation is only part of the purchase. The useful outcome is a correct record, at the correct property, with an unambiguous next step."
+        ],
+        "items": []
+      },
+      {
+        "title": "Start with Jobber’s own Receptionist",
+        "paragraphs": [
+          "Jobber offers an AI Receptionist that handles incoming calls and texts, creates requests, and can schedule work. Its scheduling follows your online-booking configuration. A Jobber dedicated phone number is required, although you can forward an existing business number to it. Availability depends on your plan and region.",
+          "That makes the native feature a sensible baseline for a business already using Jobber. Test it with your actual services and escalation instructions before paying for another layer. Evaluate the quality of the completed workflow rather than assuming an external provider will necessarily do more."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Jobber Receptionist documentation",
+            "href": "https://help.getjobber.com/en/articles/receptionistpowered-by-jobber-ai/"
+          }
+        ]
+      },
+      {
+        "title": "Decide whether callers should request, assess, or book",
+        "paragraphs": [
+          "Jobber’s forms distinguish three outcomes:",
+          "A form can contain an assessment-booking question or a job-booking question, but not both. Businesses offering both paths need separate forms.",
+          "Build your call instructions around that distinction. A routine service with a clear duration may be suitable for direct booking. A project requiring an on-site estimate may need the assessment path. When the scope is uncertain, specify who reviews the request and when the customer should expect a reply. Do not let “appointment booked” obscure which commitment was actually made."
+        ],
+        "items": [
+          "A request form collects the work details for your team to review.",
+          "An assessment booking creates a request and schedules an assessment.",
+          "A job booking converts the request and schedules a one-off job."
+        ],
+        "sources": [
+          {
+            "label": "Jobber online booking",
+            "href": "https://help.getjobber.com/en/articles/online-booking/"
+          }
+        ]
+      },
+      {
+        "title": "Compare the documented connection, not the logo",
+        "paragraphs": [
+          "Third-party services can connect to Jobber in different ways, including within the same provider’s offering:",
+          "Ask each seller to demonstrate the exact workflow included in the quote. A provider can offer useful intake without offering every scheduling action your office needs."
+        ],
+        "items": [
+          "Smith.ai documents a booking workflow using your shared Jobber online-booking link. It separately documents receptionists completing public request forms. Confirm which service and instructions apply to your account.,",
+          "PATLive’s help center describes an API connection that adds contacts and leads after calls, plus a separate scheduling-link workflow. Ask whether your proposed package uses one or both.",
+          "AnswerForce describes sending captured caller information into selected Jobber fields through Zapier. Its integration page alone does not establish live calendar booking."
+        ],
+        "sources": [
+          {
+            "label": "Appointment-setting guide",
+            "href": "https://docs.smith.ai/article/0umf8lqdwy-how-to-connect-jobber-to-smith-ai-appointment-setting"
+          },
+          {
+            "label": "request-form guide",
+            "href": "https://docs.smith.ai/article/lzkp8dwz9m-how-to-connect-jobber-request-forms-to-smith-ai"
+          },
+          {
+            "label": "PATLive’s Jobber guide",
+            "href": "https://help.patlive.com/jobber"
+          },
+          {
+            "label": "AnswerForce’s Jobber integration",
+            "href": "https://www.answerforce.com/integrations/jobber"
+          }
+        ]
+      },
+      {
+        "title": "Check the multiple-property limitation",
+        "paragraphs": [
+          "If an answering service uses Jobber’s standard Zapier actions, test customers who have more than one property. Jobber documents that Create Request, Create Quote, and Create Job use the first property created for that client. It also warns that deactivating the team member who connected Zapier disconnects the integration.",
+          "For a property manager calling about a second address, a correctly recognized name is insufficient. Require a demonstration of how that address reaches the right record. If the workflow needs manual correction, make the review step explicit before dispatch. Ask who owns failed-automation alerts and reconnects the account after staffing changes."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Jobber’s Zapier documentation",
+            "href": "https://help.getjobber.com/en/articles/jobber-and-zapier-integration/"
+          }
+        ]
+      },
+      {
+        "title": "Run these calls before committing",
+        "paragraphs": [
+          "Use a controlled trial with test records and agree on the expected result before each call:",
+          "Review the result from your office’s perspective. Count corrections, duplicates, and callbacks still required. Ask for a safe failure demonstration so you can see what happens when a connection is unavailable."
+        ],
+        "items": [
+          "A new customer wants a standard service. Check the name, callback number, property, service, and actual calendar entry.",
+          "An existing customer calls about a second property. Inspect the selected address, not just the call summary.",
+          "A caller requests an estimate for an uncertain scope. Confirm whether the outcome is an assessment or a request awaiting review.",
+          "A caller asks for an unavailable time or an out-of-area job. Check that the response follows your rules without promising a visit.",
+          "An urgent caller needs a person. Test an answered transfer and an unanswered transfer, then verify who receives the next action."
+        ]
+      },
+      {
+        "title": "Choose the workflow you can maintain",
+        "paragraphs": [
+          "Compare total operating cost: the answering service, required Jobber features, any automation subscription, and staff time spent fixing records. Ask about usage charges and who maintains the setup.",
+          "Choose the option that reliably produces your required outcome in the trial. For Jobber users, that decision is more useful than a generic ranking of answering-service brands."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does this guide verify that Revo connects to Jobber?",
+        "a": "No. A Revo–Jobber integration was not verified. The documented options and actions on this page belong to the specific providers cited."
+      },
+      {
+        "q": "Are a request, an assessment and a job booking interchangeable?",
+        "a": "No. Jobber documents different outcomes. Confirm which form and scheduling path your answering workflow actually uses."
+      },
+      {
+        "q": "Does the first-property limitation apply to every Jobber integration?",
+        "a": "The cited limitation is for the standard Jobber Zapier actions. Do not generalize it to custom API implementations or native Jobber Receptionist."
+      }
+    ],
+    "takeaway": "Verify the record, property and next step created after a call.",
+    "sourcePaths": [
+      "https://help.getjobber.com/en/articles/receptionistpowered-by-jobber-ai/",
+      "https://help.getjobber.com/en/articles/online-booking/",
+      "https://docs.smith.ai/article/0umf8lqdwy-how-to-connect-jobber-to-smith-ai-appointment-setting",
+      "https://docs.smith.ai/article/lzkp8dwz9m-how-to-connect-jobber-request-forms-to-smith-ai",
+      "https://help.patlive.com/jobber",
+      "https://www.answerforce.com/integrations/jobber",
+      "https://help.getjobber.com/en/articles/jobber-and-zapier-integration/"
+    ],
+    "related": [
+      "servicetitan-answering-service",
+      "compare/home-services-ai-receptionists",
+      "appointment-booking",
+      "choose-virtual-receptionist"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "source": {
+      "kind": "manual",
+      "reference": "October15 same daily-lot sequential continuation; parent validated Library libfile_d3eae02d209c819180cd455138840b35 v0; US20, KDunknown, Semrush intent None; no tracking changes"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User recurring publication authorization — parent editorial brief validated",
+      "reviewedAt": "2026-10-15",
+      "contentHash": "sha256:2aa817a3262ea7b61960cd6b9d36d52c1251e729d7e7d4dad6cb9b59bbfd2cd9",
+      "note": "October15 same-lot sequential continuation; distinct original utility; factual source limits and unknown metrics retained; no unverified Revo features."
+    }
   }
 ]

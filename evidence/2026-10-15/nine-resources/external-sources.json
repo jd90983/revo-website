@@ -1,0 +1,154 @@
+[
+  {
+    "url": "https://help.nice-incontact.com/content/agent/cxoneagent/indicateresultofinteractionsincxa.htm",
+    "status": 200
+  },
+  {
+    "url": "https://knowledge.hubspot.com/calling/create-custom-call-and-meeting-outcomes",
+    "status": 200
+  },
+  {
+    "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+    "status": 200
+  },
+  {
+    "url": "https://www.nice.com/glossary/what-is-contact-center-first-contact-resolution-fcr",
+    "status": 200
+  },
+  {
+    "url": "https://support.somos.com/hc/en-us/articles/10425189296788-TFNRegistry-UI-What-are-the-LAD-Fields-their-Descriptions-and-Valid-Values",
+    "error": "HTTP Error 403: Forbidden",
+    "evidence_note": "Official source readable via web tool or full parent-validated brief; local HTTP fetch is blocked. Not a confirmed HTTP200."
+  },
+  {
+    "url": "https://support.somos.com/hc/en-us/articles/7878427383316-Why-is-it-called-Toll-Free",
+    "error": "HTTP Error 403: Forbidden",
+    "evidence_note": "Official source readable via web tool or full parent-validated brief; local HTTP fetch is blocked. Not a confirmed HTTP200."
+  },
+  {
+    "url": "https://support.somos.com/hc/en-us/articles/7904315555732-How-Much-does-it-Cost-to-Get-a-Toll-Free-Number-for-my-Business",
+    "error": "HTTP Error 403: Forbidden",
+    "evidence_note": "Official source readable via web tool or full parent-validated brief; local HTTP fetch is blocked. Not a confirmed HTTP200."
+  },
+  {
+    "url": "https://support.somos.com/hc/en-us/articles/7878468508436-Is-there-any-difference-between-800-888-877-866-855-844-and-833-TFNs",
+    "error": "HTTP Error 403: Forbidden",
+    "evidence_note": "Official source readable via web tool or full parent-validated brief; local HTTP fetch is blocked. Not a confirmed HTTP200."
+  },
+  {
+    "url": "https://support.somos.com/hc/en-us/articles/7878680556564-Why-can-t-I-Get-Through-when-Calling-a-Specific-TFN",
+    "error": "HTTP Error 403: Forbidden",
+    "evidence_note": "Official source readable via web tool or full parent-validated brief; local HTTP fetch is blocked. Not a confirmed HTTP200."
+  },
+  {
+    "url": "https://www.twilio.com/docs/messaging/compliance/a2p-10dlc",
+    "status": 200
+  },
+  {
+    "url": "https://www.twilio.com/docs/messaging/compliance/toll-free/api-onboarding",
+    "status": 200
+  },
+  {
+    "url": "https://www.twilio.com/docs/voice/brand-your-calls-using-cnam",
+    "status": 200
+  },
+  {
+    "url": "https://www.twilio.com/docs/voice/branded-calling/us-enhanced",
+    "status": 200
+  },
+  {
+    "url": "https://www.twilio.com/docs/trust-hub/registrations/voice-integrity",
+    "status": 200
+  },
+  {
+    "url": "https://consumer.ftc.gov/articles/buyers-remorse-ftcs-cooling-rule-may-help",
+    "error": "HTTP Error 404: Not Found",
+    "evidence_note": "Replaced in page with current primary eCFR16CFR429, independently read; exact local HTTP returned404."
+  },
+  {
+    "url": "https://acuityscheduling.com/learn/cancellation-policy-templates",
+    "status": 200
+  },
+  {
+    "url": "https://squareup.com/us/en/appointments/features/cancellation-policy",
+    "status": 200
+  },
+  {
+    "url": "https://www.business.att.com/content/dam/attbusiness/briefs/att-phone-for-business.pdf",
+    "status": 200
+  },
+  {
+    "url": "https://www.verizon.com/business/products/voice-collaboration/voip/business-digital-voice/",
+    "status": 200
+  },
+  {
+    "url": "https://www.verizon.com/business/products/voice-collaboration/voip/business-phone-service-preferred-voice/",
+    "status": 200
+  },
+  {
+    "url": "https://docs.fcc.gov/public/attachments/FCC-15-98A1_Rcd.pdf",
+    "status": 200
+  },
+  {
+    "url": "https://docs.fcc.gov/public/attachments/FCC-19-76A1.pdf",
+    "status": 200
+  },
+  {
+    "url": "https://www.cisco.com/c/en/us/support/docs/voice/voice-quality/18902-jitter-packet-voice.html",
+    "error": "HTTP Error 403: Forbidden",
+    "evidence_note": "Official source readable via web tool or full parent-validated brief; local HTTP fetch is blocked. Not a confirmed HTTP200."
+  },
+  {
+    "url": "https://www.rfc-editor.org/rfc/rfc3550",
+    "status": 200
+  },
+  {
+    "url": "https://www.twilio.com/docs/voice/sdks/network-connectivity-requirements",
+    "status": 200
+  },
+  {
+    "url": "https://learn.microsoft.com/en-us/microsoftteams/quality-of-experience-review-guide",
+    "status": 200
+  },
+  {
+    "url": "https://www.twilio.com/docs/voice/voice-insights/call-summary",
+    "status": 200
+  },
+  {
+    "url": "https://help.getjobber.com/en/articles/receptionistpowered-by-jobber-ai/",
+    "error": "HTTP Error 403: Forbidden",
+    "evidence_note": "Official source readable via web tool or full parent-validated brief; local HTTP fetch is blocked. Not a confirmed HTTP200."
+  },
+  {
+    "url": "https://help.getjobber.com/en/articles/online-booking/",
+    "error": "HTTP Error 403: Forbidden",
+    "evidence_note": "Official source readable via web tool or full parent-validated brief; local HTTP fetch is blocked. Not a confirmed HTTP200."
+  },
+  {
+    "url": "https://docs.smith.ai/article/0umf8lqdwy-how-to-connect-jobber-to-smith-ai-appointment-setting",
+    "error": "HTTP Error 403: Forbidden",
+    "evidence_note": "Official source readable via web tool or full parent-validated brief; local HTTP fetch is blocked. Not a confirmed HTTP200."
+  },
+  {
+    "url": "https://docs.smith.ai/article/lzkp8dwz9m-how-to-connect-jobber-request-forms-to-smith-ai",
+    "error": "HTTP Error 403: Forbidden",
+    "evidence_note": "Official source readable via web tool or full parent-validated brief; local HTTP fetch is blocked. Not a confirmed HTTP200."
+  },
+  {
+    "url": "https://help.patlive.com/jobber",
+    "status": 200
+  },
+  {
+    "url": "https://www.answerforce.com/integrations/jobber",
+    "status": 200
+  },
+  {
+    "url": "https://help.getjobber.com/en/articles/jobber-and-zapier-integration/",
+    "error": "HTTP Error 403: Forbidden",
+    "evidence_note": "Official source readable via web tool or full parent-validated brief; local HTTP fetch is blocked. Not a confirmed HTTP200."
+  },
+  {
+    "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-429",
+    "verified_read": "Official web-tool text, current asofOctober13, rules429.0/429.1/429.2; local request redirects to FederalRegister unblock page, so not a content-200 confirmation."
+  }
+]

@@ -186,6 +186,42 @@
       "destination": "/ai-answering-service/call-abandonment-rate.html"
     },
     {
+      "source": "/ai-answering-service/call-disposition",
+      "destination": "/ai-answering-service/call-disposition.html"
+    },
+    {
+      "source": "/ai-answering-service/average-speed-of-answer",
+      "destination": "/ai-answering-service/average-speed-of-answer.html"
+    },
+    {
+      "source": "/ai-answering-service/first-call-resolution",
+      "destination": "/ai-answering-service/first-call-resolution.html"
+    },
+    {
+      "source": "/ai-answering-service/compare/local-vs-toll-free-number",
+      "destination": "/ai-answering-service/compare/local-vs-toll-free-number.html"
+    },
+    {
+      "source": "/ai-answering-service/business-caller-id",
+      "destination": "/ai-answering-service/business-caller-id.html"
+    },
+    {
+      "source": "/ai-answering-service/appointment-cancellation-policy",
+      "destination": "/ai-answering-service/appointment-cancellation-policy.html"
+    },
+    {
+      "source": "/ai-answering-service/compare/voip-vs-landline",
+      "destination": "/ai-answering-service/compare/voip-vs-landline.html"
+    },
+    {
+      "source": "/ai-answering-service/voip-jitter",
+      "destination": "/ai-answering-service/voip-jitter.html"
+    },
+    {
+      "source": "/ai-answering-service/jobber-answering-service",
+      "destination": "/ai-answering-service/jobber-answering-service.html"
+    },
+    {
       "source": "/ai-answering-service",
       "destination": "/ai-answering-service.html"
     }
