@@ -1,0 +1,61 @@
+{
+  "daily_total_new_published": 20,
+  "target": 20,
+  "shortfall": 0,
+  "urls": [
+    "https://www.revoapp.ai/ai-answering-service/compare/home-services-ai-receptionists",
+    "https://www.revoapp.ai/ai-answering-service/business-voicemail-greeting",
+    "https://www.revoapp.ai/ai-answering-service/servicetitan-answering-service",
+    "https://www.revoapp.ai/ai-answering-service/call-queue",
+    "https://www.revoapp.ai/ai-answering-service/call-whisper",
+    "https://www.revoapp.ai/ai-answering-service/on-hold-messages",
+    "https://www.revoapp.ai/ai-answering-service/speed-to-lead",
+    "https://www.revoapp.ai/ai-answering-service/call-abandonment-rate",
+    "https://www.revoapp.ai/ai-answering-service/call-disposition",
+    "https://www.revoapp.ai/ai-answering-service/average-speed-of-answer",
+    "https://www.revoapp.ai/ai-answering-service/first-call-resolution",
+    "https://www.revoapp.ai/ai-answering-service/compare/local-vs-toll-free-number",
+    "https://www.revoapp.ai/ai-answering-service/business-caller-id",
+    "https://www.revoapp.ai/ai-answering-service/appointment-cancellation-policy",
+    "https://www.revoapp.ai/ai-answering-service/compare/voip-vs-landline",
+    "https://www.revoapp.ai/ai-answering-service/voip-jitter",
+    "https://www.revoapp.ai/ai-answering-service/jobber-answering-service",
+    "https://www.revoapp.ai/ai-answering-service/voicemail-to-email",
+    "https://www.revoapp.ai/ai-answering-service/call-quality-monitoring",
+    "https://www.revoapp.ai/ai-answering-service/dynamic-number-insertion"
+  ],
+  "content_prs": [
+    58,
+    60,
+    62,
+    64,
+    65
+  ],
+  "last_content_sha": "3a431d71c902a8c6dbe4c95134cc0f482c518feb",
+  "last_content_deployment_id": "dpl_6UzD1QHTJpWLoZAqYdPurNV6htoh",
+  "last_content_deployment_url": "https://revo-website-4zf8lbl4y-group-u.vercel.app",
+  "state": "READY",
+  "public_http200": 20,
+  "canonical_sitemap_catalog": "passed20of20",
+  "production_responsive_cases_cumulative": 80,
+  "production_responsive_failures": 0,
+  "tests_passed": 19,
+  "fixtures": "requiredCIpassed each content head",
+  "approved_registry": 50,
+  "public_routes": 51,
+  "internal_links": 2549,
+  "withdrawn_absent": 20,
+  "security": "All content PR heads passed CursorSecurity; no published findings or annotations",
+  "internal_files_public": false,
+  "secondary_call_tracking_numbers_url": 404,
+  "tracker_snapshot": {
+    "website_keywords": 319,
+    "chatgpt_prompts": 93,
+    "verified_by": "authorized Chrome task; see tracking-confirmation.json",
+    "writes_from_this_implementation_thread": false
+  },
+  "rollback_before_last_content": {
+    "sha": "24823219f584b441a05058aaf089f39be71d8f14",
+    "deployment_id": "dpl_Gkp1ErdTetAWyb2M2t4NuRQ9Xcoe"
+  }
+}
