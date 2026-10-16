@@ -1,0 +1,849 @@
+{
+  "batchId": "2026-10-16-specialists-1",
+  "source": {
+    "kind": "explicit-user-approved-specialist-content",
+    "reference": "Jorge approved the ordered 50-keyword proposal and requested publication in Revo today; exact keywords and intent boundaries in evidence/2026-10-16/approved-fifty/url-intent-map.csv. Product scope: existing Revo demo and pricing copy; no new metrics or integration claims."
+  },
+  "operations": [
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "window-door-answering-service",
+        "title": "Answering service for window and door companies",
+        "description": "Capture window and door companies inquiries with a clear answering workflow, specific project details and professional follow-up. Review Revo plans and setup.",
+        "navigationLabel": "Window and door companies",
+        "eyebrow": "Window and door companies",
+        "lead": "A window and door inquiry may concern one damaged unit, a planned replacement throughout the home or a question about an installation already underway. Revo can answer with your company greeting and capture the request while your team is measuring, installing or helping another caller.",
+        "intro": "A window and door inquiry may concern one damaged unit, a planned replacement throughout the home or a question about an installation already underway. Revo can answer with your company greeting and capture the request while your team is measuring, installing or helping another caller. Revo uses your greeting, questions, hours and rules to collect the request. Booking and team transfers depend on the selected plan and supported configuration; a time preference alone is not a confirmed appointment.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "Start with the work being requested",
+            "paragraphs": [
+              "Identify whether the caller wants a complete window or door unit replaced, a new opening considered or an existing job reviewed. Ask which part of the home is involved and whether the caller is the person arranging the work. Glass-only repairs belong to a separate glazing workflow; a telephone conversation cannot establish which components need replacing."
+            ],
+            "items": []
+          },
+          {
+            "title": "Separate the next calls",
+            "paragraphs": [],
+            "items": [
+              "New project: collect the type and approximate number of units without selecting a product.",
+              "Existing installation: record the job reference and the customer’s question for the responsible team.",
+              "Service-area inquiry: capture the address and the requested work before promising a visit."
+            ]
+          },
+          {
+            "title": "Information worth collecting",
+            "paragraphs": [],
+            "items": [
+              "Caller name and callback number",
+              "Property address and relationship to the project",
+              "Window, entry door, patio door or another unit",
+              "Replacement, new installation or existing-job question",
+              "Approximate number of units, if the caller knows",
+              "Preferred consultation time and assigned follow-up owner"
+            ]
+          },
+          {
+            "title": "Give the office a usable next step",
+            "paragraphs": [
+              "Send the office a summary that separates product interest from a confirmed scope. A request for a measurement visit should remain a request until the team confirms its availability and any supported booking workflow. Route an existing-job question to its owner rather than creating an unrelated sales lead."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep decisions with the professional",
+            "paragraphs": [
+              "The installer decides dimensions, product suitability, opening alterations and the work needed. Do not ask a caller to remove glazing, inspect a damaged opening or provide entry codes. A preferred visit time does not reserve an installation slot."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does this cover glass repair calls?",
+            "a": "Identify glass-only work and follow your company’s service policy. This page focuses on full window and door projects; residential glazing repair needs its own questions and follow-up."
+          },
+          {
+            "q": "Can the call provide an installation quote?",
+            "a": "Collect the scope as described. Measurements, products, access and site conditions need professional review before your business confirms a price."
+          },
+          {
+            "q": "What should happen to an existing customer’s call?",
+            "a": "Capture the job or appointment reference and the question. Use the approved contact path so the responsible team can review it."
+          }
+        ],
+        "takeaway": "Make the next window and door companies inquiry easier to follow up.",
+        "related": [
+          "appointment-booking",
+          "lead-qualification",
+          "overflow-answering"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "siding-contractor-answering-service",
+        "title": "Answering service for siding contractors",
+        "description": "Capture siding contractors inquiries with a clear answering workflow, specific project details and professional follow-up. Review Revo plans and setup.",
+        "navigationLabel": "Siding contractors",
+        "eyebrow": "Siding contractors",
+        "lead": "Siding callers need a different conversation from roofing or exterior cleaning callers. A replacement project, a small area needing attention and an update on an active installation should reach the office with enough context to make the next decision. Revo can capture those requests under your script and hours.",
+        "intro": "Siding callers need a different conversation from roofing or exterior cleaning callers. A replacement project, a small area needing attention and an update on an active installation should reach the office with enough context to make the next decision. Revo can capture those requests under your script and hours. Revo uses your greeting, questions, hours and rules to collect the request. Booking and team transfers depend on the selected plan and supported configuration; a time preference alone is not a confirmed appointment.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "Start with the work being requested",
+            "paragraphs": [
+              "Ask whether the inquiry concerns exterior cladding installation, replacement or an existing project. Record the part of the building and the material only if the caller already knows it. Keep roof-covering work and washing requests separate, even when your business also offers those services."
+            ],
+            "items": []
+          },
+          {
+            "title": "Separate the next calls",
+            "paragraphs": [],
+            "items": [
+              "Replacement inquiry: collect the project stage and areas of exterior cladding involved.",
+              "Localized concern: record the location and the caller’s observations without assessing damage.",
+              "Active job: identify the project and the person responsible for the next update."
+            ]
+          },
+          {
+            "title": "Information worth collecting",
+            "paragraphs": [],
+            "items": [
+              "Name and reliable callback number",
+              "Service address and property type",
+              "Installation, replacement, repair inquiry or active job",
+              "Material and affected exterior area, if known",
+              "Whether a consultation has already been arranged",
+              "Requested next step and preferred callback period"
+            ]
+          },
+          {
+            "title": "Give the office a usable next step",
+            "paragraphs": [
+              "The office should receive a clear reason for the call, not a promise that the work is accepted. Separate a new estimate request from a customer asking about delivery or a crew visit. The team can then decide who should review the property and which requests fit the business."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep decisions with the professional",
+            "paragraphs": [
+              "Cladding condition, weather protection, material compatibility and installation methods require professional assessment. Do not turn a caller’s description into a structural finding or promise that a repair will prevent water entry."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "How is siding intake different from roofing intake?",
+            "a": "The work category is exterior cladding rather than roof covering. Confirm that distinction before assigning the inquiry, especially when one company serves both trades."
+          },
+          {
+            "q": "Can the assistant identify the siding material?",
+            "a": "Record a material the caller already knows. Identification and compatibility should be checked by the contractor rather than inferred from a telephone description."
+          },
+          {
+            "q": "Can a small repair be accepted on the call?",
+            "a": "Apply the company’s approved service rules and capture the request. Final acceptance, scope and pricing remain with the contractor."
+          }
+        ],
+        "takeaway": "Make the next siding contractors inquiry easier to follow up.",
+        "related": [
+          "appointment-booking",
+          "lead-qualification",
+          "overflow-answering"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "irrigation-answering-service",
+        "title": "Answering service for irrigation companies",
+        "description": "Capture irrigation companies inquiries with a clear answering workflow, specific project details and professional follow-up. Review Revo plans and setup.",
+        "navigationLabel": "Irrigation companies",
+        "eyebrow": "Irrigation companies",
+        "lead": "An irrigation office may hear about a seasonal startup, a zone that is behaving differently or a new installation proposal. Revo can answer and separate those requests while your crew is on site. This workflow concerns irrigation equipment and service, rather than garden design, mowing or general landscaping.",
+        "intro": "An irrigation office may hear about a seasonal startup, a zone that is behaving differently or a new installation proposal. Revo can answer and separate those requests while your crew is on site. This workflow concerns irrigation equipment and service, rather than garden design, mowing or general landscaping. Revo uses your greeting, questions, hours and rules to collect the request. Booking and team transfers depend on the selected plan and supported configuration; a time preference alone is not a confirmed appointment.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "Start with the work being requested",
+            "paragraphs": [
+              "Start with the requested service: seasonal visit, repair inquiry or installation. For an existing system, record the affected zones and controller information only when the caller already has it. The goal is to give a technician useful context without asking the customer to run tests or change settings."
+            ],
+            "items": []
+          },
+          {
+            "title": "Separate the next calls",
+            "paragraphs": [],
+            "items": [
+              "Seasonal service: collect the property and the visit being requested.",
+              "Reported system issue: record which zones are affected and what the caller has observed.",
+              "New installation: capture the project stage and who is arranging a consultation."
+            ]
+          },
+          {
+            "title": "Information worth collecting",
+            "paragraphs": [],
+            "items": [
+              "Caller name and callback number",
+              "Property address and service-area fit",
+              "Seasonal service, repair or installation request",
+              "Affected zones as described by the caller",
+              "Known controller make/model without passwords",
+              "Preferred visit period and existing appointment reference"
+            ]
+          },
+          {
+            "title": "Give the office a usable next step",
+            "paragraphs": [
+              "Keep a maintenance request separate from a system fault report in the call summary. An existing appointment question should go to its assigned owner. Your office decides whether a site visit, further questions or another action is appropriate; a collected time preference is not a confirmed appointment."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep decisions with the professional",
+            "paragraphs": [
+              "Do not diagnose pressure, leaks, electrical faults or controller programming. Do not request login credentials or instruct the caller to open equipment. System changes and any water-use or technical requirements remain for the professional to assess."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Can callers ask for a seasonal startup or shutdown?",
+            "a": "Yes. Capture the requested seasonal service and property details, then follow your business’s approved scheduling process. Do not imply that a requested date has been reserved."
+          },
+          {
+            "q": "Should the caller test each irrigation zone?",
+            "a": "No testing is needed for intake. Record observations the caller already has and leave troubleshooting to the irrigation professional."
+          },
+          {
+            "q": "Does this duplicate a landscaping answering page?",
+            "a": "Its scope is irrigation-system service, zones and controllers. General landscape design, mowing and busy-office overflow remain different request categories."
+          }
+        ],
+        "takeaway": "Make the next irrigation companies inquiry easier to follow up.",
+        "related": [
+          "appointment-booking",
+          "lead-qualification",
+          "overflow-answering"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "insulation-contractor-answering-service",
+        "title": "Answering service for insulation contractors",
+        "description": "Capture insulation contractors inquiries with a clear answering workflow, specific project details and professional follow-up. Review Revo plans and setup.",
+        "navigationLabel": "Insulation contractors",
+        "eyebrow": "Insulation contractors",
+        "lead": "Insulation inquiries often arrive before a contractor has seen the space. A homeowner may be planning work in an attic, coordinating a renovation or asking about an earlier project. Revo can capture the location and the request so your office can arrange an informed follow-up rather than guess at the work.",
+        "intro": "Insulation inquiries often arrive before a contractor has seen the space. A homeowner may be planning work in an attic, coordinating a renovation or asking about an earlier project. Revo can capture the location and the request so your office can arrange an informed follow-up rather than guess at the work. Revo uses your greeting, questions, hours and rules to collect the request. Booking and team transfers depend on the selected plan and supported configuration; a time preference alone is not a confirmed appointment.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "Start with the work being requested",
+            "paragraphs": [
+              "Identify the building area and whether this is a proposed installation, a replacement inquiry or an existing-job question. Ask what stage the wider project has reached. Record any material description as supplied by the caller; the telephone intake should not choose an insulation system or determine what is behind a finished surface."
+            ],
+            "items": []
+          },
+          {
+            "title": "Separate the next calls",
+            "paragraphs": [],
+            "items": [
+              "Planned work: identify the attic, wall, floor or other area being discussed.",
+              "Renovation coordination: capture the project stage and the person arranging the work.",
+              "Existing installation: record the job reference and the customer’s question."
+            ]
+          },
+          {
+            "title": "Information worth collecting",
+            "paragraphs": [],
+            "items": [
+              "Name and callback number",
+              "Property address and building area",
+              "New work, replacement inquiry or existing project",
+              "Approximate area if already known",
+              "Current renovation/access arrangements described by caller",
+              "Preferred consultation period and follow-up owner"
+            ]
+          },
+          {
+            "title": "Give the office a usable next step",
+            "paragraphs": [
+              "Give the office the requested work and project timing as separate facts. The contractor can decide whether a consultation or another review is needed. Do not present a rough area supplied by a caller as a verified measurement, or a request about comfort as a diagnosis of the building."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep decisions with the professional",
+            "paragraphs": [
+              "Material selection, condition assessment, installation requirements and any energy-performance estimate belong to the professional. Do not guarantee lower bills or comfort outcomes. Never request access codes or direct the caller into an unsafe or inaccessible space."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Can the call recommend insulation material?",
+            "a": "No. Record the area, project and any known existing material. Selection requires the contractor’s assessment of the building and work."
+          },
+          {
+            "q": "What if the caller only knows the room location?",
+            "a": "That can still be useful intake. Capture the description without requiring the caller to inspect concealed or difficult-to-access spaces."
+          },
+          {
+            "q": "Can Revo promise energy savings?",
+            "a": "No. The answering workflow collects the inquiry. Any performance estimate needs its own supported assessment and should not be invented during intake."
+          }
+        ],
+        "takeaway": "Make the next insulation contractors inquiry easier to follow up.",
+        "related": [
+          "appointment-booking",
+          "lead-qualification",
+          "overflow-answering"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "deck-builder-answering-service",
+        "title": "Answering service for deck builders",
+        "description": "Capture deck builders inquiries with a clear answering workflow, specific project details and professional follow-up. Review Revo plans and setup.",
+        "navigationLabel": "Deck builders",
+        "eyebrow": "Deck builders",
+        "lead": "A deck project starts with a conversation about the property and the work the customer wants to discuss. Revo can answer while your team is building, preparing an estimate or speaking with another client. Capture the project stage clearly so a new-build inquiry is not confused with cleaning or an update on current work.",
+        "intro": "A deck project starts with a conversation about the property and the work the customer wants to discuss. Revo can answer while your team is building, preparing an estimate or speaking with another client. Capture the project stage clearly so a new-build inquiry is not confused with cleaning or an update on current work. Revo uses your greeting, questions, hours and rules to collect the request. Booking and team transfers depend on the selected plan and supported configuration; a time preference alone is not a confirmed appointment.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "Start with the work being requested",
+            "paragraphs": [
+              "Ask whether the customer is discussing a new deck, changes to an existing deck or an active project with your company. Collect the intended use and location in the customer’s words. A caller’s approximate dimensions may help prepare a consultation, but they do not establish an approved design or safe structural condition."
+            ],
+            "items": []
+          },
+          {
+            "title": "Separate the next calls",
+            "paragraphs": [],
+            "items": [
+              "New deck: collect the location, project stage and who is arranging the consultation.",
+              "Existing deck: record the requested change without judging the structure.",
+              "Active project: capture the job reference and the question for its assigned contact."
+            ]
+          },
+          {
+            "title": "Information worth collecting",
+            "paragraphs": [],
+            "items": [
+              "Caller name and callback number",
+              "Property address and project contact",
+              "New build, alteration or existing-job request",
+              "Approximate size and intended use if known",
+              "Material preference as a preference only",
+              "Requested consultation timing and follow-up responsibility"
+            ]
+          },
+          {
+            "title": "Give the office a usable next step",
+            "paragraphs": [
+              "The follow-up should show which decisions remain open: scope, materials, site review and timing. A request for an estimate visit can be passed to the office using its approved rules. Keep contractor decisions separate from a caller’s preferred design or date, and make an existing project’s owner clear."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep decisions with the professional",
+            "paragraphs": [
+              "Design, load capacity, structural condition, permissions and final pricing require professional review. Do not ask a customer to inspect a raised structure or promise that an alteration is feasible. This is construction intake, not a deck-washing service conversation."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Can a caller get a deck estimate from rough dimensions?",
+            "a": "Record the dimensions as caller-supplied information. The builder determines what measurements, design work and site review are needed before confirming scope or price."
+          },
+          {
+            "q": "Does an existing deck inquiry imply repair work is accepted?",
+            "a": "No. Capture the requested change and follow your company’s service policy. The builder decides whether the project fits and what assessment is required."
+          },
+          {
+            "q": "How should active-project questions be handled?",
+            "a": "Identify the project and the question, then use the agreed contact path. Avoid giving revised completion dates or authorizing changes during intake."
+          }
+        ],
+        "takeaway": "Make the next deck builders inquiry easier to follow up.",
+        "related": [
+          "appointment-booking",
+          "lead-qualification",
+          "overflow-answering"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "well-pump-answering-service",
+        "title": "Answering service for well pump companies",
+        "description": "Capture well pump companies inquiries with a clear answering workflow, specific project details and professional follow-up. Review Revo plans and setup.",
+        "navigationLabel": "Well pump companies",
+        "eyebrow": "Well pump companies",
+        "lead": "A well-pump inquiry is about a property’s water-supply system, not septic wastewater service or a routine fixture appointment. Revo can capture what the caller has observed and whether the request concerns an existing system, planned installation or a current job. Your professional team remains responsible for the technical response.",
+        "intro": "A well-pump inquiry is about a property’s water-supply system, not septic wastewater service or a routine fixture appointment. Revo can capture what the caller has observed and whether the request concerns an existing system, planned installation or a current job. Your professional team remains responsible for the technical response. Revo uses your greeting, questions, hours and rules to collect the request. Booking and team transfers depend on the selected plan and supported configuration; a time preference alone is not a confirmed appointment.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "Start with the work being requested",
+            "paragraphs": [
+              "Identify the property and the type of request before collecting equipment details. If a caller already knows the pump or system information, record it without asking them to access or operate equipment. Keep a report of changed water supply separate from a proposed installation consultation and from a question about previously arranged work."
+            ],
+            "items": []
+          },
+          {
+            "title": "Separate the next calls",
+            "paragraphs": [],
+            "items": [
+              "Existing system concern: record the observed change and when it was noticed.",
+              "Planned installation or replacement: identify the project stage and available equipment information.",
+              "Current job: capture the appointment or job reference for the responsible office contact."
+            ]
+          },
+          {
+            "title": "Information worth collecting",
+            "paragraphs": [],
+            "items": [
+              "Name and dependable callback number",
+              "Property address and authorized contact",
+              "Existing-system concern, installation or current-job question",
+              "Change in water supply as described by caller",
+              "Known equipment details without inspection or testing",
+              "Requested callback period and approved escalation destination"
+            ]
+          },
+          {
+            "title": "Give the office a usable next step",
+            "paragraphs": [
+              "The office needs the observations and the request, with no diagnosis added. A professional can decide what questions or visit are appropriate. If the business has an on-call process, use only its approved rules and fallback; answering a call does not establish that a crew is available to attend."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep decisions with the professional",
+            "paragraphs": [
+              "Do not assess pump condition, electrical faults or water safety. Do not instruct a caller to run a pump, open a panel or inspect a well. Diagnosis, equipment choice and service attendance are decisions for the qualified professional and the business."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is this the same as a septic answering workflow?",
+            "a": "No. This page concerns water supply from a well/pump system. Septic service concerns wastewater; identify the request correctly before assigning a follow-up."
+          },
+          {
+            "q": "Should callers check equipment before giving details?",
+            "a": "No. Use information they already know. Intake should not require testing, opening equipment or entering an unfamiliar area."
+          },
+          {
+            "q": "Can the call guarantee same-day attendance?",
+            "a": "No. Record the request and apply the company’s actual availability policy. Crew attendance must be confirmed by the business."
+          }
+        ],
+        "takeaway": "Make the next well pump companies inquiry easier to follow up.",
+        "related": [
+          "appointment-booking",
+          "lead-qualification",
+          "overflow-answering"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "water-treatment-answering-service",
+        "title": "Answering service for water treatment companies",
+        "description": "Capture water treatment companies inquiries with a clear answering workflow, specific project details and professional follow-up. Review Revo plans and setup.",
+        "navigationLabel": "Water treatment companies",
+        "eyebrow": "Water treatment companies",
+        "lead": "Water-treatment callers may want to discuss new equipment, service an existing filter or softener, or follow up on an installation. Revo can collect those requests while your office is busy. Keep the conversation about the equipment and the next business action, without making a claim about whether the water is safe.",
+        "intro": "Water-treatment callers may want to discuss new equipment, service an existing filter or softener, or follow up on an installation. Revo can collect those requests while your office is busy. Keep the conversation about the equipment and the next business action, without making a claim about whether the water is safe. Revo uses your greeting, questions, hours and rules to collect the request. Booking and team transfers depend on the selected plan and supported configuration; a time preference alone is not a confirmed appointment.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "Start with the work being requested",
+            "paragraphs": [
+              "Separate a new-system consultation from maintenance or an existing-job question. Record the equipment type and model only if the caller already knows them. If the customer mentions a change they have noticed, capture their words without interpreting the cause or presenting a treatment recommendation."
+            ],
+            "items": []
+          },
+          {
+            "title": "Separate the next calls",
+            "paragraphs": [],
+            "items": [
+              "New equipment inquiry: collect the property, requested consultation and project contact.",
+              "Existing filter or softener: record known equipment information and the service being requested.",
+              "Installation follow-up: capture the job reference and question for the assigned team."
+            ]
+          },
+          {
+            "title": "Information worth collecting",
+            "paragraphs": [],
+            "items": [
+              "Name and reliable callback number",
+              "Property address and project/service contact",
+              "Consultation, maintenance or existing-job request",
+              "Filter, softener or other equipment as described",
+              "Known make/model and caller observations",
+              "Requested next step and preferred callback time"
+            ]
+          },
+          {
+            "title": "Give the office a usable next step",
+            "paragraphs": [
+              "The summary should distinguish a sales consultation from a request to service existing equipment. Your team can determine whether an appointment or more information is needed. Caller observations, preferences and equipment details should remain clearly attributed rather than turned into verified measurements or findings."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep decisions with the professional",
+            "paragraphs": [
+              "Do not interpret water-test readings, certify drinking-water safety or select treatment capacity during intake. Do not promise a particular result from a filter or softener. Equipment recommendations and any assessment belong to the professional reviewing the property and requirements."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Can the assistant recommend a filter or softener?",
+            "a": "No. Collect the inquiry and known equipment details. The professional determines what information or assessment is needed before recommending a system."
+          },
+          {
+            "q": "Can a caller report a change in taste or appearance?",
+            "a": "Record the observation as described. The answering conversation should not identify a cause or make a safety statement."
+          },
+          {
+            "q": "Is this a general plumbing appointment page?",
+            "a": "Its focus is water-treatment equipment and related consultation or maintenance requests. Routine fixtures and wastewater services have different intake needs."
+          }
+        ],
+        "takeaway": "Make the next water treatment companies inquiry easier to follow up.",
+        "related": [
+          "appointment-booking",
+          "lead-qualification",
+          "overflow-answering"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "residential-glass-repair-answering-service",
+        "title": "Answering service for residential glass repair companies",
+        "description": "Capture residential glass repair inquiries with a clear answering workflow, specific project details and professional follow-up. Review Revo plans and setup.",
+        "navigationLabel": "Residential glass repair",
+        "eyebrow": "Residential glass repair",
+        "lead": "Residential glass-repair inquiries need a clear description of the opening and the requested work. Revo can answer while your glaziers are on site and capture whether the caller is asking about a pane, an existing repair or work already arranged. This scope is glass repair, rather than window cleaning or full-unit replacement.",
+        "intro": "Residential glass-repair inquiries need a clear description of the opening and the requested work. Revo can answer while your glaziers are on site and capture whether the caller is asking about a pane, an existing repair or work already arranged. This scope is glass repair, rather than window cleaning or full-unit replacement. Revo uses your greeting, questions, hours and rules to collect the request. Booking and team transfers depend on the selected plan and supported configuration; a time preference alone is not a confirmed appointment.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "Start with the work being requested",
+            "paragraphs": [
+              "Identify the residential location and the type of glazing as described by the caller. Ask whether they want a new assessment or an update on a current job. Collect approximate information only when already available; do not ask someone to approach broken glazing, remove material or measure a damaged opening."
+            ],
+            "items": []
+          },
+          {
+            "title": "Separate the next calls",
+            "paragraphs": [],
+            "items": [
+              "New repair request: capture where the glazing is located and the caller’s description.",
+              "Existing appointment: identify the booking or job reference and the question.",
+              "Possible full-unit replacement: note the request so the office can assign the appropriate service."
+            ]
+          },
+          {
+            "title": "Information worth collecting",
+            "paragraphs": [],
+            "items": [
+              "Caller name and callback number",
+              "Residential service address",
+              "Window, door or other glazing location",
+              "Repair request or existing-job question",
+              "Approximate pane information already known by caller",
+              "Preferred callback period and authorized project contact"
+            ]
+          },
+          {
+            "title": "Give the office a usable next step",
+            "paragraphs": [
+              "Keep the requested repair and the caller’s time preference separate in the summary. The office can decide whether a site assessment, a measurement visit or another response is appropriate. Existing customers should receive the approved contact path, without an invented arrival time or assumption that replacement glass is in stock."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep decisions with the professional",
+            "paragraphs": [
+              "Do not decide whether glazing is safe, identify a glass specification from a phone description or promise immediate replacement. Do not request access codes. Material selection, measurements, handling arrangements and attendance remain with the glazier and the business."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Should the caller measure broken glass?",
+            "a": "No. Collect only information already available. Measurements and handling of damaged glazing should be left to the professional."
+          },
+          {
+            "q": "How is this different from window and door installation?",
+            "a": "This page concerns residential glazing repair. Full-unit replacement and installation projects require a separate scope and can be routed according to the business’s services."
+          },
+          {
+            "q": "Can Revo confirm replacement glass is available?",
+            "a": "Only your business can confirm materials and scheduling. Intake should record the request without inventing stock availability or a visit time."
+          }
+        ],
+        "takeaway": "Make the next residential glass repair inquiry easier to follow up.",
+        "related": [
+          "appointment-booking",
+          "lead-qualification",
+          "overflow-answering"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "hardwood-refinishing-answering-service",
+        "title": "Answering service for hardwood refinishing companies",
+        "description": "Revo answers hardwood refinishing companies calls. Capture service requests, useful project details and a clear next step under your business rules.",
+        "navigationLabel": "Hardwood refinishing companies",
+        "eyebrow": "Hardwood refinishing companies",
+        "lead": "A hardwood-refinishing inquiry is about an existing wood floor, its current finish and the work the customer wants to discuss. Revo can capture that context while your crew is working. Separate renewing an existing finish from floor replacement or tile installation so the right person can review the request.",
+        "intro": "A hardwood-refinishing inquiry is about an existing wood floor, its current finish and the work the customer wants to discuss. Revo can capture that context while your crew is working. Separate renewing an existing finish from floor replacement or tile installation so the right person can review the request. Revo uses your greeting, questions, hours and rules to collect the request. Booking and team transfers depend on the selected plan and supported configuration; a time preference alone is not a confirmed appointment.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "Start with the work being requested",
+            "paragraphs": [
+              "Ask whether the caller wants to discuss refinishing, a localized concern or replacement instead. Record solid or engineered wood only when known. Identify the rooms involved and when those spaces could be available for a professional visit; do not infer how the floor can be treated from a telephone description."
+            ],
+            "items": []
+          },
+          {
+            "title": "Separate the next calls",
+            "paragraphs": [],
+            "items": [
+              "Refinishing consultation: collect the existing floor type, rooms and intended work.",
+              "Reported wear or damage: record observations without deciding whether sanding is suitable.",
+              "Existing project: capture the job reference and the question about agreed arrangements."
+            ]
+          },
+          {
+            "title": "Information worth collecting",
+            "paragraphs": [],
+            "items": [
+              "Name and callback number",
+              "Property address and project contact",
+              "Refinishing, localized concern or replacement inquiry",
+              "Solid or engineered wood if already known",
+              "Rooms/approximate area and existing finish if known",
+              "Room availability, preferred consultation time and follow-up owner"
+            ]
+          },
+          {
+            "title": "Give the office a usable next step",
+            "paragraphs": [
+              "Pass the office a request that identifies both the floor and the customer’s scheduling constraints. A room’s availability is planning information, not a promised work period. The refinishing professional decides what inspection is needed and whether the proposed work is appropriate before your company confirms scope and timing."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep decisions with the professional",
+            "paragraphs": [
+              "Do not promise that sanding is possible, select a coating system or guarantee a stain or finish result. Do not give preparation instructions that alter the floor. Assessment of the material, finish, treatment and time out of use belongs to the professional."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does this duplicate the existing tiling page?",
+            "a": "No. The scope here is renewing an existing hardwood finish. Tile and stone installation concern different materials, work and customer questions."
+          },
+          {
+            "q": "What if the caller does not know whether the wood is engineered?",
+            "a": "Record that the material is unknown. Do not infer its construction or refinishing suitability; the professional can review it."
+          },
+          {
+            "q": "Can a requested work date be guaranteed?",
+            "a": "No. Capture room availability and the preferred time. The company confirms the work plan after reviewing the floor and its actual schedule."
+          }
+        ],
+        "takeaway": "Make the next hardwood refinishing companies inquiry easier to follow up.",
+        "related": [
+          "appointment-booking",
+          "lead-qualification",
+          "overflow-answering"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "drywall-contractor-answering-service",
+        "title": "Answering service for drywall contractors",
+        "description": "Capture drywall contractors inquiries with a clear answering workflow, specific project details and professional follow-up. Review Revo plans and setup.",
+        "navigationLabel": "Drywall contractors",
+        "eyebrow": "Drywall contractors",
+        "lead": "Drywall requests range from a localized patch to new panels across a room or a new-build project. Revo can separate those inquiries while your team is installing or finishing. Give the office the work category, location and requested next step rather than a vague message about a wall problem.",
+        "intro": "Drywall requests range from a localized patch to new panels across a room or a new-build project. Revo can separate those inquiries while your team is installing or finishing. Give the office the work category, location and requested next step rather than a vague message about a wall problem. Revo uses your greeting, questions, hours and rules to collect the request. Booking and team transfers depend on the selected plan and supported configuration; a time preference alone is not a confirmed appointment.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "Start with the work being requested",
+            "paragraphs": [
+              "Ask whether the work concerns a patch, replacement panels or new construction, then identify wall or ceiling and the areas involved. Capture surface and texture descriptions only as supplied by the caller. This is a wallboard-project conversation, distinct from a general handyman task list or a painting-only estimate."
+            ],
+            "items": []
+          },
+          {
+            "title": "Separate the next calls",
+            "paragraphs": [],
+            "items": [
+              "Localized patch: identify the wall/ceiling location and approximate affected area.",
+              "Panel or new-build work: collect the rooms, project stage and person coordinating the work.",
+              "Existing job: record the reference and the question for the responsible contact."
+            ]
+          },
+          {
+            "title": "Information worth collecting",
+            "paragraphs": [],
+            "items": [
+              "Name and reliable callback number",
+              "Property address and project contact",
+              "Patch, panels/replacement or new construction",
+              "Wall or ceiling and rooms/areas involved",
+              "Approximate surface area and texture if known",
+              "Preferred estimate period and existing appointment reference"
+            ]
+          },
+          {
+            "title": "Give the office a usable next step",
+            "paragraphs": [
+              "The office should know whether it is reviewing a small repair inquiry or coordinating a larger project. Keep caller-supplied sizes separate from verified measurements. Route a question about existing work to its owner; do not authorize additional work or announce a completion date on the contractor’s behalf."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep decisions with the professional",
+            "paragraphs": [
+              "Do not identify hidden damage, diagnose moisture or structural causes, or promise a texture match. The contractor decides assessment, materials, preparation and finish requirements. A request for a visit or an estimate is not an accepted scope or a confirmed booking."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Can Revo tell whether a patch will be enough?",
+            "a": "No. Record the work requested and the caller’s observations. The drywall professional assesses whether patching, panels or another response is appropriate."
+          },
+          {
+            "q": "Why ask about texture?",
+            "a": "A known texture description can help prepare follow-up. It should remain caller-supplied information, without a promise that the existing finish can be matched."
+          },
+          {
+            "q": "How is this separate from handyman answering?",
+            "a": "The scope is wallboard installation, patching and finishing project intake. Other repair tasks remain with the business’s broader handyman workflow."
+          }
+        ],
+        "takeaway": "Make the next drywall contractors inquiry easier to follow up.",
+        "related": [
+          "appointment-booking",
+          "lead-qualification",
+          "overflow-answering"
+        ]
+      }
+    }
+  ]
+}
