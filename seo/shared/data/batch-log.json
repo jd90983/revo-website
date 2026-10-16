@@ -281,5 +281,26 @@
       "added hardwood-refinishing-answering-service as draft",
       "added drywall-contractor-answering-service as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-16-specialists-2",
+    "batchHash": "sha256:806bd5ad3e164cf6833d1e0d830d868fff200c4aa09499d72a2dcb83054fe1e4",
+    "source": {
+      "kind": "explicit-user-approved-specialist-content",
+      "reference": "Jorge approved the ordered 50-keyword proposal and requested publication in Revo today; exact keywords and intent boundaries in evidence/2026-10-16/approved-fifty/url-intent-map.csv. Product scope: existing Revo demo and pricing copy; no new metrics or integration claims."
+    },
+    "appliedAt": "2026-10-16",
+    "changes": [
+      "added home-inspector-answering-service as draft",
+      "added basement-waterproofing-answering-service as draft",
+      "added paving-contractor-answering-service as draft",
+      "added excavation-contractor-answering-service as draft",
+      "added generator-installation-answering-service as draft",
+      "added countertop-installer-answering-service as draft",
+      "added cabinet-installer-answering-service as draft",
+      "added dumpster-rental-answering-service as draft",
+      "added radon-mitigation-answering-service as draft",
+      "added wildlife-removal-answering-service as draft"
+    ]
   }
 ]

@@ -413,5 +413,55 @@
     "slug": "drywall-contractor-answering-service",
     "label": "Drywall contractors",
     "template": "workflow"
+  },
+  {
+    "slug": "home-inspector-answering-service",
+    "label": "Home inspectors",
+    "template": "workflow"
+  },
+  {
+    "slug": "basement-waterproofing-answering-service",
+    "label": "Basement waterproofing",
+    "template": "workflow"
+  },
+  {
+    "slug": "paving-contractor-answering-service",
+    "label": "Paving contractors",
+    "template": "workflow"
+  },
+  {
+    "slug": "excavation-contractor-answering-service",
+    "label": "Excavation contractors",
+    "template": "workflow"
+  },
+  {
+    "slug": "generator-installation-answering-service",
+    "label": "Generator installation",
+    "template": "workflow"
+  },
+  {
+    "slug": "countertop-installer-answering-service",
+    "label": "Countertop installers",
+    "template": "workflow"
+  },
+  {
+    "slug": "cabinet-installer-answering-service",
+    "label": "Cabinet installers",
+    "template": "workflow"
+  },
+  {
+    "slug": "dumpster-rental-answering-service",
+    "label": "Dumpster rental companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "radon-mitigation-answering-service",
+    "label": "Radon mitigation companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "wildlife-removal-answering-service",
+    "label": "Wildlife removal companies",
+    "template": "workflow"
   }
 ]
