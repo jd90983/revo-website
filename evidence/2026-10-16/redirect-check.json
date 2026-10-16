@@ -1,0 +1,27 @@
+{
+  "home_status": 200,
+  "unique_exact_tag_in_head": true,
+  "sitemap_status": 200,
+  "redirects": [
+    {
+      "url": "http://revoapp.ai/ai-answering-service/dynamic-number-insertion?bing_check=preserved",
+      "status": 308,
+      "location": "https://revoapp.ai/ai-answering-service/dynamic-number-insertion?bing_check=preserved"
+    },
+    {
+      "url": "https://revoapp.ai/ai-answering-service/dynamic-number-insertion?bing_check=preserved",
+      "status": 308,
+      "location": "https://www.revoapp.ai/ai-answering-service/dynamic-number-insertion?bing_check=preserved"
+    },
+    {
+      "url": "http://www.revoapp.ai/ai-answering-service/dynamic-number-insertion?bing_check=preserved",
+      "status": 308,
+      "location": "https://www.revoapp.ai/ai-answering-service/dynamic-number-insertion?bing_check=preserved"
+    },
+    {
+      "url": "https://www.revoapp.ai/ai-answering-service/dynamic-number-insertion?bing_check=preserved",
+      "status": 200,
+      "location": null
+    }
+  ]
+}

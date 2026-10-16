@@ -1,6 +1,6 @@
 {
   "date": "2026-10-16",
-  "status": "same_lot_in_progress_two_export_supported_pages",
+  "status": "two_pages_published_verified",
   "main_sha": "66d1d48d8b3f7a7dfbe7fe47beabf23609343607",
   "open_pull_requests": [],
   "production": {
@@ -54,7 +54,7 @@
     "Appliance repair": 1
   },
   "validated_new_page_candidates": 2,
-  "published_new_pages": 0,
+  "published_new_pages": 2,
   "target_deficit": 18,
   "chrome": {
     "callable_browser_tools": 0,
