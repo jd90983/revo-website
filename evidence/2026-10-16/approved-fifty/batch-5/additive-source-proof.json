@@ -1,0 +1,82 @@
+[
+  {
+    "order": 41,
+    "path": "/industry_hvac.html",
+    "original_sha256": "eddba45277842237b92baf74451f9c077b6d86c54c482ddefcaec98cb1030d59",
+    "expected_expanded_sha256": "b953d32646540565d1b2abc62e5d371fa274ea69a44e65d1508c3023ac8c41a2",
+    "module_sha256": "830cc9b38a77647c9f89f6e3b379119d5e2235ef2df7a9b174ed4a3875b6c04f",
+    "only_additive_before_closing_main_line": true
+  },
+  {
+    "order": 42,
+    "path": "/industry_plumbing.html",
+    "original_sha256": "a62a06740241dd84723506e7f2f151ce44532966206278c754cdc160725b5829",
+    "expected_expanded_sha256": "f77669d7e00885d85c6da48315b56ec73400decbd0e03dc0a9aaded17909aa8b",
+    "module_sha256": "a4ec8965cf11c39bee182952c99e0a32737b32e201061264776e12f61e047581",
+    "only_additive_before_closing_main_line": true
+  },
+  {
+    "order": 43,
+    "path": "/industry_restoration.html",
+    "original_sha256": "f4b6ca7e9ef6e42dbcf463f74075cf07cf35c477679aa846d4e44ddd14bf84f2",
+    "expected_expanded_sha256": "8b2e5a51158a9362f74e9a74d67f1c1a5ccc588ba3613d006117af20c694cd35",
+    "module_sha256": "5c782d9db76a782ebd850c5f384a7ef41bdcac6d1c4961ff23ce4ef234e34949",
+    "only_additive_before_closing_main_line": true
+  },
+  {
+    "order": 44,
+    "path": "/industry_electrical.html",
+    "original_sha256": "6ff559daa9c09a02418f9f620a1999f8979f581aa5dbd3c746277a8801dc1482",
+    "expected_expanded_sha256": "868f00804ba4401e2ec1e1f2a8f4a3025d2b0a58f3a53ffa46767b3910bf1a03",
+    "module_sha256": "7b101912b1a923784cecd39df10c81953d03f86ddb473428a807dca73f626d2b",
+    "only_additive_before_closing_main_line": true
+  },
+  {
+    "order": 45,
+    "path": "/industry_garage_door.html",
+    "original_sha256": "5334abffa134245a118d734e804045f8b90cd51739258b69c2a5a4a5eb3223ad",
+    "expected_expanded_sha256": "1440ba636a2ac36abe0ce0f8149c363b7611e95e0d3e339bde632321299dd941",
+    "module_sha256": "b0fbeef103fd6b2d5152188146b511a4942d3209c719d399f3bb6b70ea3e5861",
+    "only_additive_before_closing_main_line": true
+  },
+  {
+    "order": 46,
+    "path": "/industry_pest_control.html",
+    "original_sha256": "bcbbfb79290c02465d2b7ee28f57972a69ec1c87286e426af4f860fcf7f832ae",
+    "expected_expanded_sha256": "f774dd0b23fccca182880f75e691c0a28b04bcb6fb0060619a8bbc29140f96f0",
+    "module_sha256": "625e50c083293fb27b605d734ab6ee9207d1ebfdd539a3957e51ab942027dfff",
+    "only_additive_before_closing_main_line": true
+  },
+  {
+    "order": 47,
+    "path": "/industry_appliance_repair.html",
+    "original_sha256": "22545ee5b21f3c1c502c5e671f5f11ed742087e5e8b387d9cc80131cb30fdc99",
+    "expected_expanded_sha256": "c1c0127b078e6a09b3759e264bab973c1c9746806661f79fe37b6427e084c0d3",
+    "module_sha256": "ec1fa833d2bc7ef4574905a34dc77aa4b77bba95ea99e34ec67d733a8de3a008",
+    "only_additive_before_closing_main_line": true
+  },
+  {
+    "order": 48,
+    "path": "/industry_painting.html",
+    "original_sha256": "2abc5910dbcbc366eb1428f0dce0c2d78d0ca554b4efd6eaa5f2996bd44fafc8",
+    "expected_expanded_sha256": "df169696b8c8880617412800d4798af70d6cae26111b72670688de6cd1196f7e",
+    "module_sha256": "88a4350a7ef3536453ca25ce528ec63b41b46ed0ddc6ed1f7cadac42dc295027",
+    "only_additive_before_closing_main_line": true
+  },
+  {
+    "order": 49,
+    "path": "/industry_moving.html",
+    "original_sha256": "95501bf49a36d539aa48f156571cb38a505cc466cdafdd21404a2054253ac5e4",
+    "expected_expanded_sha256": "5c4e3faceaf4be5897591cb927935182a8514074292107a06a93aa014159e24d",
+    "module_sha256": "570bb53ff5a330abd2f0dfde401f2a5d79f6f6d4a888131acd43dfdfbcd660fe",
+    "only_additive_before_closing_main_line": true
+  },
+  {
+    "order": 50,
+    "path": "/industry_landscape.html",
+    "original_sha256": "cccd71c3587bc81b14768d3c6f04420471ecf2d000775c14ad53a60bf6128440",
+    "expected_expanded_sha256": "fac25124866e1356afa65b94b4c97250c1300aca956bcd7302fe0edabb6fc53c",
+    "module_sha256": "5403a5ba710df89f21d868ae4b33622107ad552cb5042a89ae79aeecb0a83e05",
+    "only_additive_before_closing_main_line": true
+  }
+]
