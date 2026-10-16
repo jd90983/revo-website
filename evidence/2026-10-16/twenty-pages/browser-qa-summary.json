@@ -1,0 +1,21 @@
+{
+  "distinct_cases": 80,
+  "first_pass_success": 79,
+  "initial_timeout": {
+    "path": "/ai-answering-service/pool-builder-ai-answering",
+    "width": 320,
+    "failure": "page.waitForFunction: Timeout 30000ms exceeded.",
+    "errors": []
+  },
+  "targeted_retries": 3,
+  "retry_failures": 0,
+  "final_unresolved_failures": 0,
+  "reference_module_items_per_successful_case": 2,
+  "personal_chrome_used": false,
+  "viewports": [
+    320,
+    390,
+    768,
+    1440
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "batch": "2026-10-16-twenty-trade-pages",
+  "followup_batches": [
+    "2026-10-16-twenty-trade-sources",
+    "2026-10-16-twenty-trade-reference-list"
+  ],
+  "net_new_pages": 20,
+  "original_registry_records_unchanged": 73,
+  "approved_total": 73,
+  "withdrawn_total": 20,
+  "final_internal_links_checked": 3847,
+  "unit_integration_tests": 19,
+  "fixture_end_to_end": "PASS add, exclude draft, grow index, withdraw",
+  "visual_defect_corrected": "Empty source reference module now lists official Revo demo and current plan references; shared template/CSS unchanged",
+  "authorization": "Jorge explicitly approved final visual review and publication of these 20 prepared pages on 2026-10-16 via delegated transcript.",
+  "rollback_commit": "5b1944efc56617d168b1f32a229cb177b2fdba53",
+  "rollback_deployment": "dpl_Gbm7vFY6fgNX4a1ZGMcPq889Fqrv",
+  "personal_chrome_used": false,
+  "semrush_changed": false,
+  "daily_automation_changed": false,
+  "dns_changed": false,
+  "credentials_changed": false,
+  "responsive_review": {
+    "distinct_cases": 80,
+    "first_pass_success": 79,
+    "initial_timeout": {
+      "path": "/ai-answering-service/pool-builder-ai-answering",
+      "width": 320,
+      "failure": "page.waitForFunction: Timeout 30000ms exceeded.",
+      "errors": []
+    },
+    "targeted_retries": 3,
+    "retry_failures": 0,
+    "final_unresolved_failures": 0,
+    "reference_module_items_per_successful_case": 2,
+    "personal_chrome_used": false,
+    "viewports": [
+      320,
+      390,
+      768,
+      1440
+    ]
+  }
+}
