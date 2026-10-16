@@ -1,0 +1,452 @@
+[
+  {
+    "order": 1,
+    "keyword": "Answering service for window and door companies",
+    "path": "/ai-answering-service/window-door-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_construction.html",
+    "boundary": "Full-unit windows/doors: replacement, installation and existing-job calls; glass-only repair belongs to #8.",
+    "batch": 1
+  },
+  {
+    "order": 2,
+    "keyword": "Answering service for siding contractors",
+    "path": "/ai-answering-service/siding-contractor-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_roofing.html",
+    "boundary": "Exterior cladding inquiries, not roof covering or pressure washing.",
+    "batch": 1
+  },
+  {
+    "order": 3,
+    "keyword": "Answering service for irrigation companies",
+    "path": "/ai-answering-service/irrigation-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_landscape.html",
+    "boundary": "Irrigation-system installation/service requests, not landscape design or mowing.",
+    "batch": 1
+  },
+  {
+    "order": 4,
+    "keyword": "Answering service for insulation contractors",
+    "path": "/ai-answering-service/insulation-contractor-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_building_construction_trades.html",
+    "boundary": "Building insulation intake, not HVAC repair or energy-audit findings.",
+    "batch": 1
+  },
+  {
+    "order": 5,
+    "keyword": "Answering service for deck builders",
+    "path": "/ai-answering-service/deck-builder-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_general_contracting.html",
+    "boundary": "Deck construction/alteration projects, not pressure washing.",
+    "batch": 1
+  },
+  {
+    "order": 6,
+    "keyword": "Answering service for well pump companies",
+    "path": "/ai-answering-service/well-pump-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_plumbing.html",
+    "boundary": "Water-supply well/pump requests, not septic wastewater or generic fixture plumbing.",
+    "batch": 1
+  },
+  {
+    "order": 7,
+    "keyword": "Answering service for water treatment companies",
+    "path": "/ai-answering-service/water-treatment-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_plumbing.html",
+    "boundary": "Treatment equipment installation/service requests, not water safety certification.",
+    "batch": 1
+  },
+  {
+    "order": 8,
+    "keyword": "Answering service for residential glass repair companies",
+    "path": "/ai-answering-service/residential-glass-repair-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_window_cleaning.html",
+    "boundary": "Residential panes/glazing repair intake, not full-unit replacement or cleaning.",
+    "batch": 1
+  },
+  {
+    "order": 9,
+    "keyword": "Answering service for hardwood refinishing companies",
+    "path": "/ai-answering-service/hardwood-refinishing-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_tilling.html",
+    "boundary": "Refinishing existing hardwood, not tile/stone installation in industry_tilling.",
+    "batch": 1
+  },
+  {
+    "order": 10,
+    "keyword": "Answering service for drywall contractors",
+    "path": "/ai-answering-service/drywall-contractor-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_handyman.html",
+    "boundary": "Wallboard installation/repair project intake, not general handyman task lists.",
+    "batch": 1
+  },
+  {
+    "order": 11,
+    "keyword": "Answering service for home inspectors",
+    "path": "/ai-answering-service/home-inspector-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_real_estate_property_management.html",
+    "boundary": "Inspection scheduling/intake, not property-management maintenance.",
+    "batch": 2
+  },
+  {
+    "order": 12,
+    "keyword": "Answering service for basement waterproofing companies",
+    "path": "/ai-answering-service/basement-waterproofing-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/ai-answering-service/foundation-repair-ai-answering",
+    "boundary": "Water-entry prevention proposals, not structural foundation diagnosis or post-loss restoration.",
+    "batch": 2
+  },
+  {
+    "order": 13,
+    "keyword": "Answering service for paving contractors",
+    "path": "/ai-answering-service/paving-contractor-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/ai-answering-service/concrete-masonry-ai-answering",
+    "boundary": "Asphalt/paving job intake, not concrete/masonry installation.",
+    "batch": 2
+  },
+  {
+    "order": 14,
+    "keyword": "Answering service for excavation contractors",
+    "path": "/ai-answering-service/excavation-contractor-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_construction.html",
+    "boundary": "Earthwork project intake, not tree removal or septic repair dispatch.",
+    "batch": 2
+  },
+  {
+    "order": 15,
+    "keyword": "Answering service for generator installation companies",
+    "path": "/ai-answering-service/generator-installation-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_electrical.html",
+    "boundary": "Backup-generator installation inquiries, not electrical call screening.",
+    "batch": 2
+  },
+  {
+    "order": 16,
+    "keyword": "Answering service for countertop installers",
+    "path": "/ai-answering-service/countertop-installer-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/ai-answering-service/remodeling-answering",
+    "boundary": "Countertop measurement/installation requests, not whole-room remodeling.",
+    "batch": 2
+  },
+  {
+    "order": 17,
+    "keyword": "Answering service for cabinet installers",
+    "path": "/ai-answering-service/cabinet-installer-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/ai-answering-service/remodeling-answering",
+    "boundary": "Cabinet supply/installation scope, not countertops or full remodeling projects.",
+    "batch": 2
+  },
+  {
+    "order": 18,
+    "keyword": "Answering service for dumpster rental companies",
+    "path": "/ai-answering-service/dumpster-rental-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_junk_removal.html",
+    "boundary": "Container rental and pickup/dropoff requests, not crew-operated junk hauling.",
+    "batch": 2
+  },
+  {
+    "order": 19,
+    "keyword": "Answering service for radon mitigation companies",
+    "path": "/ai-answering-service/radon-mitigation-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_home_service.html",
+    "boundary": "Radon-professional appointment intake, not health advice or interpretation of readings.",
+    "batch": 2
+  },
+  {
+    "order": 20,
+    "keyword": "Answering service for wildlife removal companies",
+    "path": "/ai-answering-service/wildlife-removal-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_pest_control.html",
+    "boundary": "Animal-entry inspection/exclusion requests, not routine insect pesticide treatments.",
+    "batch": 2
+  },
+  {
+    "order": 21,
+    "keyword": "Answering service for closet companies",
+    "path": "/ai-answering-service/closet-company-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/ai-answering-service/remodeling-answering",
+    "boundary": "Storage/closet design-installation inquiries, not room renovation.",
+    "batch": 3
+  },
+  {
+    "order": 22,
+    "keyword": "Answering service for window treatment companies",
+    "path": "/ai-answering-service/window-treatment-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_home_service.html",
+    "boundary": "Blinds/shades/drapery consultations, not window glazing or tinting.",
+    "batch": 3
+  },
+  {
+    "order": 23,
+    "keyword": "Answering service for awning companies",
+    "path": "/ai-answering-service/awning-company-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_general_contracting.html",
+    "boundary": "Exterior awning project/service inquiries, not pergola/general construction.",
+    "batch": 3
+  },
+  {
+    "order": 24,
+    "keyword": "Answering service for floor coating contractors",
+    "path": "/ai-answering-service/floor-coating-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_tilling.html",
+    "boundary": "Applied floor coating preparation/project intake, not tile installation or hardwood sanding.",
+    "batch": 3
+  },
+  {
+    "order": 25,
+    "keyword": "Answering service for bathtub refinishing companies",
+    "path": "/ai-answering-service/bathtub-refinishing-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_plumbing.html",
+    "boundary": "Surface refinishing inquiries, not plumbing repairs or bathtub replacement.",
+    "batch": 3
+  },
+  {
+    "order": 26,
+    "keyword": "Answering service for home automation companies",
+    "path": "/ai-answering-service/home-automation-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_alarm_security.html",
+    "boundary": "Residential automation-project intake, not alarm-monitoring support.",
+    "batch": 3
+  },
+  {
+    "order": 27,
+    "keyword": "Answering service for home elevator companies",
+    "path": "/ai-answering-service/home-elevator-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_property_maintenance.html",
+    "boundary": "Residential lift/elevator installation/service request intake, not rescue or general property maintenance.",
+    "batch": 3
+  },
+  {
+    "order": 28,
+    "keyword": "Answering service for fireplace installation companies",
+    "path": "/ai-answering-service/fireplace-installation-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_chimney_sweep.html",
+    "boundary": "Fireplace installation/replacement projects, not chimney sweeping/inspection.",
+    "batch": 3
+  },
+  {
+    "order": 29,
+    "keyword": "Answering service for solar panel cleaning companies",
+    "path": "/ai-answering-service/solar-panel-cleaning-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_solar_installation.html",
+    "boundary": "Solar-panel cleaning service requests, not PV installation or electrical diagnostics.",
+    "batch": 3
+  },
+  {
+    "order": 30,
+    "keyword": "Answering service for holiday lighting companies",
+    "path": "/ai-answering-service/holiday-lighting-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_electrical.html",
+    "boundary": "Seasonal temporary lighting project intake, not permanent electrical installation.",
+    "batch": 3
+  },
+  {
+    "order": 31,
+    "keyword": "Answering service for artificial turf installers",
+    "path": "/ai-answering-service/artificial-turf-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_lawn_care.html",
+    "boundary": "Synthetic-turf installation inquiries, not mowing or landscape overflow.",
+    "batch": 4
+  },
+  {
+    "order": 32,
+    "keyword": "Answering service for pond contractors",
+    "path": "/ai-answering-service/pond-contractor-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_landscape.html",
+    "boundary": "Pond construction/maintenance inquiries, not swimming pools or garden design.",
+    "batch": 4
+  },
+  {
+    "order": 33,
+    "keyword": "Answering service for sunroom contractors",
+    "path": "/ai-answering-service/sunroom-contractor-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/ai-answering-service/remodeling-answering",
+    "boundary": "Enclosed sunroom addition inquiries, not generic remodeling.",
+    "batch": 4
+  },
+  {
+    "order": 34,
+    "keyword": "Answering service for shed builders",
+    "path": "/ai-answering-service/shed-builder-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_general_contracting.html",
+    "boundary": "Shed construction/delivery/site requests, not dumpster rental or whole-home building.",
+    "batch": 4
+  },
+  {
+    "order": 35,
+    "keyword": "Answering service for residential window tinting companies",
+    "path": "/ai-answering-service/residential-window-tinting-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_window_cleaning.html",
+    "boundary": "Residential window film inquiries, not auto tinting, glazing repair or blind installation.",
+    "batch": 4
+  },
+  {
+    "order": 36,
+    "keyword": "Answering service for furniture repair companies",
+    "path": "/ai-answering-service/furniture-repair-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_handyman.html",
+    "boundary": "Furniture repair/refinishing assessment requests, not handyman building repair.",
+    "batch": 4
+  },
+  {
+    "order": 37,
+    "keyword": "Answering service for home energy auditors",
+    "path": "/ai-answering-service/home-energy-auditor-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_hvac.html",
+    "boundary": "Home energy assessment appointment intake, not HVAC repair or promised energy savings.",
+    "batch": 4
+  },
+  {
+    "order": 38,
+    "keyword": "Answering service for professional organizers",
+    "path": "/ai-answering-service/professional-organizer-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_maid_cleaning.html",
+    "boundary": "Organizing-project consultations, not cleaning appointments or installed closets.",
+    "batch": 4
+  },
+  {
+    "order": 39,
+    "keyword": "Answering service for pet waste removal companies",
+    "path": "/ai-answering-service/pet-waste-removal-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_maid_cleaning.html",
+    "boundary": "Scheduled pet-waste cleanup requests, not pest-control or general house cleaning.",
+    "batch": 4
+  },
+  {
+    "order": 40,
+    "keyword": "Answering service for home watch companies",
+    "path": "/ai-answering-service/home-watch-answering-service",
+    "action": "new_specialist_url",
+    "closest_existing_owner": "/industry_real_estate_property_management.html",
+    "boundary": "Visits/check-in reporting for unoccupied homes, not tenant/property repair management.",
+    "batch": 4
+  },
+  {
+    "order": 41,
+    "keyword": "HVAC answering service with appointment scheduling",
+    "path": "/industry_hvac.html",
+    "action": "expand_existing_owner",
+    "closest_existing_owner": "/industry_hvac.html",
+    "boundary": "Routine appointment requests during operating hours, separate from after-hours and overflow guides.",
+    "batch": 5
+  },
+  {
+    "order": 42,
+    "keyword": "Plumbing overflow answering service",
+    "path": "/industry_plumbing.html",
+    "action": "expand_existing_owner",
+    "closest_existing_owner": "/industry_plumbing.html",
+    "boundary": "Open-office overflow routing; existing24/7 and scheduling pages retain their distinct focus.",
+    "batch": 5
+  },
+  {
+    "order": 43,
+    "keyword": "Restoration overflow answering service",
+    "path": "/industry_restoration.html",
+    "action": "expand_existing_owner",
+    "closest_existing_owner": "/industry_restoration.html",
+    "boundary": "Open-office capacity overflow; closed-office rules remain owned by restoration-after-hours.",
+    "batch": 5
+  },
+  {
+    "order": 44,
+    "keyword": "After hours answering service for electricians",
+    "path": "/industry_electrical.html",
+    "action": "expand_existing_owner",
+    "closest_existing_owner": "/industry_electrical.html",
+    "boundary": "Closed-office contact policy, distinct from electrical call-screening classification.",
+    "batch": 5
+  },
+  {
+    "order": 45,
+    "keyword": "After hours answering service for garage door companies",
+    "path": "/industry_garage_door.html",
+    "action": "expand_existing_owner",
+    "closest_existing_owner": "/industry_garage_door.html",
+    "boundary": "Closed-office intake and real on-call policy; no emergency visit promises.",
+    "batch": 5
+  },
+  {
+    "order": 46,
+    "keyword": "Pest control overflow answering service",
+    "path": "/industry_pest_control.html",
+    "action": "expand_existing_owner",
+    "closest_existing_owner": "/industry_pest_control.html",
+    "boundary": "Open-office additional-call capture and follow-up, not wildlife-exclusion specialty.",
+    "batch": 5
+  },
+  {
+    "order": 47,
+    "keyword": "Appliance repair overflow answering service",
+    "path": "/industry_appliance_repair.html",
+    "action": "expand_existing_owner",
+    "closest_existing_owner": "/industry_appliance_repair.html",
+    "boundary": "Open-office overflow; no repair diagnosis or coverage decisions.",
+    "batch": 5
+  },
+  {
+    "order": 48,
+    "keyword": "Painting contractor lead qualification service",
+    "path": "/industry_painting.html",
+    "action": "expand_existing_owner",
+    "closest_existing_owner": "/industry_painting.html",
+    "boundary": "Interior/exterior project fit and estimate request ownership.",
+    "batch": 5
+  },
+  {
+    "order": 49,
+    "keyword": "Moving company answering service with lead qualification",
+    "path": "/industry_moving.html",
+    "action": "expand_existing_owner",
+    "closest_existing_owner": "/industry_moving.html",
+    "boundary": "Move scope, access and estimate follow-up, without price guarantees.",
+    "batch": 5
+  },
+  {
+    "order": 50,
+    "keyword": "Landscaping lead qualification service",
+    "path": "/industry_landscape.html",
+    "action": "expand_existing_owner",
+    "closest_existing_owner": "/industry_landscape.html",
+    "boundary": "Project fit and site details; overflow remains owned by current landscape-overflow guide.",
+    "batch": 5
+  }
+]

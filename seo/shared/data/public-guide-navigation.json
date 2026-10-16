@@ -363,5 +363,55 @@
     "slug": "locksmith-overflow-answering",
     "label": "Locksmith overflow",
     "template": "workflow"
+  },
+  {
+    "slug": "window-door-answering-service",
+    "label": "Window and door companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "siding-contractor-answering-service",
+    "label": "Siding contractors",
+    "template": "workflow"
+  },
+  {
+    "slug": "irrigation-answering-service",
+    "label": "Irrigation companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "insulation-contractor-answering-service",
+    "label": "Insulation contractors",
+    "template": "workflow"
+  },
+  {
+    "slug": "deck-builder-answering-service",
+    "label": "Deck builders",
+    "template": "workflow"
+  },
+  {
+    "slug": "well-pump-answering-service",
+    "label": "Well pump companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "water-treatment-answering-service",
+    "label": "Water treatment companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "residential-glass-repair-answering-service",
+    "label": "Residential glass repair",
+    "template": "workflow"
+  },
+  {
+    "slug": "hardwood-refinishing-answering-service",
+    "label": "Hardwood refinishing companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "drywall-contractor-answering-service",
+    "label": "Drywall contractors",
+    "template": "workflow"
   }
 ]

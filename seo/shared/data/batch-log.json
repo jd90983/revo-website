@@ -260,5 +260,26 @@
       "updated cleaning-answering-with-scheduling; back to draft until re-approved",
       "updated locksmith-overflow-answering; back to draft until re-approved"
     ]
+  },
+  {
+    "batchId": "2026-10-16-specialists-1",
+    "batchHash": "sha256:6beee487fd30235c1d66f13c2b9287a78a4591b6df707ab793fb4edabf341da0",
+    "source": {
+      "kind": "explicit-user-approved-specialist-content",
+      "reference": "Jorge approved the ordered 50-keyword proposal and requested publication in Revo today; exact keywords and intent boundaries in evidence/2026-10-16/approved-fifty/url-intent-map.csv. Product scope: existing Revo demo and pricing copy; no new metrics or integration claims."
+    },
+    "appliedAt": "2026-10-16",
+    "changes": [
+      "added window-door-answering-service as draft",
+      "added siding-contractor-answering-service as draft",
+      "added irrigation-answering-service as draft",
+      "added insulation-contractor-answering-service as draft",
+      "added deck-builder-answering-service as draft",
+      "added well-pump-answering-service as draft",
+      "added water-treatment-answering-service as draft",
+      "added residential-glass-repair-answering-service as draft",
+      "added hardwood-refinishing-answering-service as draft",
+      "added drywall-contractor-answering-service as draft"
+    ]
   }
 ]
