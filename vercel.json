@@ -30,6 +30,14 @@
   ],
   "rewrites": [
     {
+      "source": "/free-test-v2",
+      "destination": "https://funnel-sandbox.vercel.app/free-test-v2"
+    },
+    {
+      "source": "/free-test-v2/",
+      "destination": "https://funnel-sandbox.vercel.app/free-test-v2"
+    },
+    {
       "source": "/ai-receptionist-demo",
       "destination": "/ai-receptionist-demo.html"
     },
