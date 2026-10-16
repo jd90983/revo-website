@@ -1,0 +1,22 @@
+{
+  "keyword_order": [
+    41,
+    50
+  ],
+  "expanded_existing_pages": 10,
+  "new_urls": 0,
+  "legacy_urls_added_to_sitemap": 6,
+  "sitemap_expected": 146,
+  "local_responsive_cases": 40,
+  "component_failures": 0,
+  "page_errors_final_local_review": 0,
+  "unit_tests": 19,
+  "internal_links_verified": 6047,
+  "all_existing_html_bytes_preserved_outside_added_modules": true,
+  "CSS_menu_pricing_unchanged": true,
+  "visual_defect_fixed": "Use existing outline CTA on dark legacy pages for readable contrast; plumbing retains its current light-page modules.",
+  "fixture_html_byte_identical_to_final_source_and_build": true,
+  "no_personal_chrome": true,
+  "no_semrush": true,
+  "no_automation_changes": true
+}

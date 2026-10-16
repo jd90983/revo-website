@@ -42,13 +42,13 @@
   </url>
   <url>
     <loc>https://www.revoapp.ai/industry_hvac.html</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.revoapp.ai/industry_plumbing.html</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://www.revoapp.ai/industry_garage_door.html</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -78,7 +78,7 @@
   </url>
   <url>
     <loc>https://www.revoapp.ai/industry_landscape.html</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -165,4 +165,10 @@
     <priority>0.3</priority>
   </url>
 
+  <url><loc>https://www.revoapp.ai/industry_restoration.html</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://www.revoapp.ai/industry_electrical.html</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://www.revoapp.ai/industry_pest_control.html</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://www.revoapp.ai/industry_appliance_repair.html</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://www.revoapp.ai/industry_painting.html</loc><lastmod>2026-10-16</lastmod></url>
+  <url><loc>https://www.revoapp.ai/industry_moving.html</loc><lastmod>2026-10-16</lastmod></url>
 </urlset>

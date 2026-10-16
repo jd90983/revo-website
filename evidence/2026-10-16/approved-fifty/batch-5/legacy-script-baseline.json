@@ -1,0 +1,22 @@
+[
+  {
+    "path": "/baseline-hvac.html",
+    "errors": [],
+    "templateLoader": "function",
+    "assets": [
+      {
+        "status": 200
+      }
+    ]
+  },
+  {
+    "path": "/industry_hvac.html",
+    "errors": [],
+    "templateLoader": "function",
+    "assets": [
+      {
+        "status": 200
+      }
+    ]
+  }
+]
