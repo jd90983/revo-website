@@ -154,5 +154,18 @@
       "added provider comparison with fresh publication review",
       "updated one inbound related link with fresh publication review"
     ]
+  },
+  {
+    "batchId": "2026-10-16-provider-pricing",
+    "batchHash": "sha256:55b410c3bd7383597df314693959c6259a3ee3428e55613b257d69a8f902aafa",
+    "source": {
+      "kind": "manual",
+      "reference": "Verified Semrush US Chrome exports collected 2026-10-13; official provider pages checked 2026-10-16; recurring publication authorized; current Semrush tracking pending session-warning authorization"
+    },
+    "appliedAt": "2026-10-16",
+    "changes": [
+      "added moneypenny-pricing as draft",
+      "added ruby-receptionist-pricing as draft"
+    ]
   }
 ]

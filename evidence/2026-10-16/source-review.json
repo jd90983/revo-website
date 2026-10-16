@@ -1,0 +1,98 @@
+{
+  "reviewed_at": "2026-10-16",
+  "method": "Public official product pages, separate from Semrush historical export; no live campaign access.",
+  "moneypenny": {
+    "pricing": "https://www.moneypenny.com/us/pricing",
+    "people_minutes_monthly_usd": [
+      [
+        50,
+        165,
+        2.28
+      ],
+      [
+        100,
+        265,
+        2.12
+      ],
+      [
+        200,
+        422,
+        1.91
+      ],
+      [
+        500,
+        985,
+        1.67
+      ]
+    ],
+    "columns": [
+      "allowance_minutes",
+      "monthly_usd",
+      "additional_minute_usd"
+    ],
+    "ai_calls_monthly_usd": [
+      [
+        25,
+        69,
+        2.49
+      ],
+      [
+        50,
+        99,
+        2.39
+      ],
+      [
+        100,
+        199,
+        2.19
+      ],
+      [
+        250,
+        435,
+        1.89
+      ]
+    ],
+    "ai_columns": [
+      "allowance_calls",
+      "monthly_usd",
+      "additional_call_usd"
+    ],
+    "billing": "https://www.moneypenny.com/us/resources/blog/moneypenny-pricing-overages-explained-how-answering-service-billing-really-works",
+    "billing_note": "Minute-based30second increments; not generalized to AI call allowances.",
+    "home_services": "https://www.moneypenny.com/us/home-services-answering-services"
+  },
+  "ruby": {
+    "pricing": "https://www.ruby.com/plans-and-pricing/",
+    "receptionist_minutes_monthly_usd": [
+      [
+        50,
+        250
+      ],
+      [
+        100,
+        395
+      ],
+      [
+        200,
+        720
+      ],
+      [
+        500,
+        1725
+      ]
+    ],
+    "billing_limits": "No overage rates or billing increments established by this review; explicit quote questions.",
+    "industry_and_product": "https://www.ruby.com/"
+  },
+  "editorial_limits": [
+    "No provider ranking, performance results, savings promises or affiliation.",
+    "No Revo connections to either vendor asserted.",
+    "Prices explicitly dated and linked to the current official page.",
+    "Generic cost intent remains assigned to answering-service-cost."
+  ],
+  "rollback": {
+    "prior_main_sha": "66d1d48d8b3f7a7dfbe7fe47beabf23609343607",
+    "prior_ready_deployment": "dpl_2XrwMX8MwHLo37RH2PTVqnKNtV6a",
+    "preferred": "Revert the content merge through normal PR/CI; prior production identified for incident rollback."
+  }
+}

@@ -6634,5 +6634,227 @@
       "contentHash": "sha256:9bb888877c234268a52e05fa375c52b26266588cffd26eeb8fc9080caf9216ed",
       "note": "Twentieth selected page; secondary calltrackingnumbers same URL; full source-backed body, no native Revo DNI/CallRail claim or tracking changes."
     }
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "moneypenny-pricing",
+    "title": "Moneypenny pricing for home service answering",
+    "description": "Review Moneypenny US people and AI answering prices, different billing units, minute increments and the questions a home service office should resolve.",
+    "navigationLabel": "Moneypenny pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Separate people-answering minutes from AI-answering calls.",
+    "intro": "Moneypenny pricing has two different billing units on its US price page. Match the product to your call records before choosing an allowance. Published by Revo; official documentation reviewed October 16, 2026. Prices are a dated snapshot, not a quote or an independently tested performance comparison.",
+    "sections": [
+      {
+        "title": "Read the US price card by product",
+        "paragraphs": [
+          "The People Answering card lists $165 per month for 50 minutes, $265 for 100, $422 for 200 and $985 for 500. The corresponding additional-minute rates are $2.28, $2.12, $1.91 and $1.67. These are minute allowances, not counts of customer inquiries.",
+          "The AI Answering card instead lists $69 per month for 25 calls, $99 for 50, $199 for 100 and $435 for 250. Listed additional-call rates are $2.49, $2.39, $2.19 and $1.89 respectively. The card lists human escalation; ask how that affects the quote and usage definition.",
+          "These figures were checked on the US pricing page on October 16, 2026. Read the current card and written terms before purchasing; do not apply the AI call allowance to the people-answering product."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Moneypenny US pricing",
+            "href": "https://www.moneypenny.com/us/pricing"
+          }
+        ]
+      },
+      {
+        "title": "Check the minute calculation before estimating usage",
+        "paragraphs": [
+          "Moneypenny’s billing explanation says its minute-based usage is charged in 30-second increments, including overages. It also describes customizable usage alerts through its client-success team. Confirm those rules for the specific product in your proposal; this minute-based explanation does not define how an AI call is counted.",
+          "For your office, separate total conversation time from billable usage. Export the actual durations of calls you intend to send to the service. Ask the provider to explain rounding and any other included time before using that history to choose a package. A total from your phone log alone may not equal a billed total."
+        ],
+        "items": [
+          "Request the billing increment in writing.",
+          "Ask how transfers, repeat callers and unwanted calls are treated.",
+          "Agree who receives usage alerts and who may change the plan."
+        ],
+        "sources": [
+          {
+            "label": "Moneypenny usage and overage explanation",
+            "href": "https://www.moneypenny.com/us/resources/blog/moneypenny-pricing-overages-explained-how-answering-service-billing-really-works"
+          }
+        ]
+      },
+      {
+        "title": "Price the work your home service office needs",
+        "paragraphs": [
+          "Moneypenny has a dedicated home-services offering. Treat that sector page as a reason to investigate fit, not proof that a particular field-service integration or dispatch action is included in every plan.",
+          "Write your required outcome beside each common call type: an estimate request to review, a booking that must be confirmed, an existing appointment to change, or an urgent request that needs your team. Require the quote to name the product and supported action for each outcome. Capturing an address and creating a correctly assigned job in your software are different deliverables.",
+          "Use the same scope when comparing Revo’s current plans. A provider-supplied person, an AI conversation and a transfer to your employee involve different staffing and fallback arrangements. Do not infer a Revo–Moneypenny integration or assume equal features from a similar monthly allowance."
+        ],
+        "items": [
+          "Identify the destination of captured information.",
+          "Demonstrate the actual scheduling action your office requires.",
+          "Document the no-answer path for an urgent handoff."
+        ],
+        "sources": [
+          {
+            "label": "Moneypenny home-services offering",
+            "href": "https://www.moneypenny.com/us/home-services-answering-services"
+          }
+        ]
+      },
+      {
+        "title": "Keep a decision record before moving the main number",
+        "paragraphs": [
+          "Record the monthly charge, allowance unit, excess-usage rate, relevant billing rules and supported workflow from the same dated proposal. Keep unknown charges visibly unresolved rather than substituting rates from a different product or country.",
+          "Review a normal month and your own busiest representative period using real call history. Decide who monitors consumption and what happens when usage increases. A higher allowance is useful only when it matches the service your callers actually use.",
+          "Before changing the main business number, test the agreed greeting, information capture, handoff and unavailable-recipient behavior. Keep the current answering arrangement available until the new route and return path have been checked. A published price list is a starting point for that decision, not evidence of job conversion or savings."
+        ],
+        "items": [
+          "Confirm the effective start date and cancellation terms.",
+          "Keep product, rates and included actions in one written proposal.",
+          "Assign an owner for usage review and call follow-up."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does Moneypenny price every answering product by the minute?",
+        "a": "No. The US page reviewed lists People Answering plans by minutes and AI Answering plans by calls. Confirm the definition of usage for the chosen product."
+      },
+      {
+        "q": "Are the prices on this page a current offer from Revo?",
+        "a": "No. They are a dated summary of Moneypenny’s published US price card. Request current terms from Moneypenny; Revo’s offer is separate."
+      },
+      {
+        "q": "Does a home-services page verify every software connection?",
+        "a": "No. Require the provider to demonstrate the exact system, record and action included in your proposal."
+      }
+    ],
+    "takeaway": "Choose the billing unit that matches the work.",
+    "sourcePaths": [
+      "https://www.moneypenny.com/us/pricing",
+      "https://www.moneypenny.com/us/resources/blog/moneypenny-pricing-overages-explained-how-answering-service-billing-really-works",
+      "https://www.moneypenny.com/us/home-services-answering-services"
+    ],
+    "related": [
+      "answering-service-cost",
+      "choose-virtual-receptionist",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Verified Semrush US Chrome exports collected 2026-10-13; official provider pages checked 2026-10-16; recurring publication authorized; current Semrush tracking pending session-warning authorization (batch 2026-10-16-provider-pricing)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Recurring user publication authorization; editorial review October16",
+      "reviewedAt": "2026-10-16",
+      "contentHash": "sha256:5f1e66dd63332e0aca52f7f23b9a05e7822cd54b48d6b1406e12976b6a5f235f",
+      "note": "Dated historical US210 KD5; official prices checked; related links corrected during draft review; no unverified Revo claims."
+    }
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "ruby-receptionist-pricing",
+    "title": "Ruby receptionist pricing for home service teams",
+    "description": "Read Ruby’s published receptionist minute plans, separate chat pricing and quote questions for a home service office comparing live answering options.",
+    "navigationLabel": "Ruby receptionist pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Compare receptionist minutes with the work your office delegates.",
+    "intro": "Ruby receptionist pricing is based on monthly receptionist minutes. Separate that allowance from chat services and verify the handling rules for your calls. Published by Revo; official documentation reviewed October 16, 2026. This is a dated buyer guide, not a Ruby quote, affiliation or hands-on service test.",
+    "sections": [
+      {
+        "title": "Start with the receptionist price card",
+        "paragraphs": [
+          "Ruby’s dedicated pricing page lists receptionist plans at $250 per month for 50 minutes, $395 for 100 minutes, $720 for 200 minutes and $1,725 for 500 minutes. The page says the receptionist feature set is shared across those plans and that larger plans are available by consultation.",
+          "The same page separately lists managed-chat plans. A chat allowance is not a receptionist-minute allowance. Confirm which service is in your proposal before comparing the headline monthly cost.",
+          "The pricing page describes optional AI enhancements within its receptionist offering. Do not interpret that wording as a separate, fully autonomous AI answering plan or assume it has the same operating model as Revo. Check the current product and contract directly."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Ruby dedicated plans and pricing page",
+            "href": "https://www.ruby.com/plans-and-pricing/"
+          }
+        ]
+      },
+      {
+        "title": "Reconcile the price source before relying on it",
+        "paragraphs": [
+          "Use the dedicated pricing page as the dated reference for the figures above. Request a written quote for the account, term and services you intend to buy. If a sales page, old article or existing agreement shows a different amount, resolve that discrepancy with the provider rather than combining the lowest numbers from different sources.",
+          "Ask what starts and stops billable receptionist time, the billing increment and the rate after your allowance. Those details are not established by the headline minute counts shown here. Keep them as open quote questions until Ruby answers them for your package.",
+          "Give the office manager the accepted proposal and the process for reviewing usage. A plan should be assessed against your actual incoming call history and delegated tasks, not an assumed number of jobs per minute."
+        ],
+        "items": [
+          "Confirm the quote date and selected receptionist allowance.",
+          "Get excess-minute rates and rounding rules in writing.",
+          "Separate phone answering, chat and any other services."
+        ]
+      },
+      {
+        "title": "Match live answering to the home-service workflow",
+        "paragraphs": [
+          "Ruby’s site identifies home services among the industries it serves and describes live answering, scheduling, intake and outbound calling. Those are product descriptions, not proof that every office’s calendar, dispatch software or call policy is supported without configuration.",
+          "For an estimate request, identify which information the receptionist must capture and where the office will find it. For scheduling, require a demonstration of the actual booking destination. For an existing appointment change, confirm who may alter the record and how the customer receives the next step.",
+          "For a handoff, distinguish a receptionist supplied by the provider from a technician or employee receiving a transfer. Decide what the caller hears when your team cannot answer. Do not count a transfer attempt as a confirmed appointment or dispatch."
+        ],
+        "items": [
+          "Check new-customer and existing-customer handling separately.",
+          "Demonstrate the required calendar or software action.",
+          "Define who reviews unresolved requests after the call."
+        ],
+        "sources": [
+          {
+            "label": "Ruby product and industry overview",
+            "href": "https://www.ruby.com/"
+          }
+        ]
+      },
+      {
+        "title": "Compare the total proposal with your alternatives",
+        "paragraphs": [
+          "Use one requirements list for every seller: coverage hours, languages, intake fields, booking destination, transfer recipient and staff follow-up. Then compare the charges for that scope. Equal minute allowances do not establish equal handling rules or the same completed work.",
+          "When comparing with Revo, review Revo’s current plan inclusions directly. Ruby’s live receptionist offering and Revo’s AI answering service should be compared by the outcomes your business needs, without assuming identical staffing or supported software actions.",
+          "Keep the original phone route and an owner for rollback while you test a new setup. Review the actual captured request, appointment record and handoff outcome before changing the main number. Use your own measured results for a purchasing decision; a price card alone does not establish conversion, customer satisfaction or savings."
+        ],
+        "items": [
+          "Compare the same tasks, coverage and handoff requirements.",
+          "Resolve quote gaps before routing live traffic.",
+          "Assign ownership of usage, corrections and callbacks."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does every Ruby receptionist plan have a different feature tier?",
+        "a": "The dedicated pricing page says the receptionist plans share the same feature set and differ by monthly receptionist minutes. Confirm current account-specific terms."
+      },
+      {
+        "q": "Can I treat chat allowances as phone-answering minutes?",
+        "a": "No. Ruby publishes chat and receptionist services separately. Ask which service and usage unit your proposal includes."
+      },
+      {
+        "q": "Are excess-minute rates and rounding confirmed here?",
+        "a": "No. Obtain those rules from Ruby for your selected plan before forecasting a bill. The listed monthly allowances do not establish every billing condition."
+      }
+    ],
+    "takeaway": "Resolve the quote before changing your call route.",
+    "sourcePaths": [
+      "https://www.ruby.com/plans-and-pricing/",
+      "https://www.ruby.com/"
+    ],
+    "related": [
+      "answering-service-cost",
+      "choose-virtual-receptionist",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Verified Semrush US Chrome exports collected 2026-10-13; official provider pages checked 2026-10-16; recurring publication authorized; current Semrush tracking pending session-warning authorization (batch 2026-10-16-provider-pricing)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Recurring user publication authorization; editorial review October16",
+      "reviewedAt": "2026-10-16",
+      "contentHash": "sha256:fdf3317e68795b7aabc6c9245189c019a0692cb0619696106b38a2d9b1e9a105",
+      "note": "Dated historical US170 KD27; dedicated current official prices checked; related links corrected during draft review; quote gaps explicit."
+    }
   }
 ]

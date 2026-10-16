@@ -248,5 +248,15 @@
     "slug": "dynamic-number-insertion",
     "label": "Website-to-call attribution",
     "template": "workflow"
+  },
+  {
+    "slug": "moneypenny-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "ruby-receptionist-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
   }
 ]
