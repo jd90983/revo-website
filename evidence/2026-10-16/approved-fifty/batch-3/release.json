@@ -1,0 +1,11 @@
+{
+  "pr": 76,
+  "commit": "ae520dd3f16618dae43dfd3b02cf37bf0aea9fec",
+  "deployment": "dpl_9TE5LjKKrXDTZtyDcaNWkCHNFyAW",
+  "state": "READY",
+  "new_live_urls": 10,
+  "cumulative_new_urls": 30,
+  "sitemap_urls": 130,
+  "production_responsive_cases": 40,
+  "production_failures": 0
+}
