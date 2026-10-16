@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-16",
+  "status": "same_lot_in_progress_two_export_supported_pages",
+  "main_sha": "66d1d48d8b3f7a7dfbe7fe47beabf23609343607",
+  "open_pull_requests": [],
+  "production": {
+    "url": "revo-website-ahrzrt5wp-group-u.vercel.app",
+    "state": "READY",
+    "sha": "66d1d48d8b3f7a7dfbe7fe47beabf23609343607"
+  },
+  "live_sitemap_urls": 77,
+  "approved_guides": 50,
+  "withdrawn_records": 20,
+  "existing_guide_hub": 1,
+  "traditional_sitemap_urls": 26,
+  "oct16_existing_batch": false,
+  "source_exports": [
+    {
+      "file": "/Users/mac/Documents/Codex/2026-10-13/task-3/revo_keywords/ai-receptionist_all-keywords_us_2026-10-13.csv",
+      "rows": 3233,
+      "sha256": "48a75d0e06a31dae860187fd27cb50c7001f40430a7ded6bb2fe81b27c81b04a"
+    },
+    {
+      "file": "/Users/mac/Documents/Codex/2026-10-13/task-3/revo_keywords/answering-service_all-keywords_us_2026-10-13.csv",
+      "rows": 3810,
+      "sha256": "5723163d9bcc0cd3e2c06193d0e1a7ecfb5e658c906edff6d4ffcae7beea9740"
+    },
+    {
+      "file": "/Users/mac/Documents/Codex/2026-10-13/task-3/revo_keywords/virtual-receptionist_all-keywords_us_2026-10-13.csv",
+      "rows": 2660,
+      "sha256": "4044c1fc7de13f9ec36b994f95e521a40a72b194102204fd365011e90f933245"
+    }
+  ],
+  "raw_unique_keywords": 6335,
+  "curated_keyword_rows": 2027,
+  "curated_clusters": {
+    "After hours": 708,
+    "Cost and pricing": 480,
+    "Bilingual": 76,
+    "Contractors": 86,
+    "HVAC": 124,
+    "Plumbing": 109,
+    "Overflow": 83,
+    "Roofing": 29,
+    "Booking": 188,
+    "Home services": 45,
+    "Electrical": 21,
+    "Pest control": 19,
+    "Landscaping": 22,
+    "Restoration": 13,
+    "Cleaning": 19,
+    "Garage door": 2,
+    "Locksmith": 2,
+    "Appliance repair": 1
+  },
+  "validated_new_page_candidates": 2,
+  "published_new_pages": 0,
+  "target_deficit": 18,
+  "chrome": {
+    "callable_browser_tools": 0,
+    "personal_chrome_used": false,
+    "tracking_writes": 0,
+    "current_tracking_counts_verified": false,
+    "last_reported_counts_oct15": {
+      "keywords": 319,
+      "prompts": 93,
+      "prompt_slots_remaining": 7
+    }
+  },
+  "blocker": "Current Semrush session-warning authorization pending in parent. Historical exports support two selected pages; current tracking remains pending.",
+  "foreign_changes": "Historical untracked evidence preserved; no tracked website changes."
+}

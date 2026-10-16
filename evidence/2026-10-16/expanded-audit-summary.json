@@ -1,0 +1,25 @@
+{
+  "unique_keywords_screened": 6335,
+  "screen_method": "All6335 parsed with source row provenance and explicit reason; structured intent screen, not a claim of manual SERP review for every row. Read the672 positive-volume measured-KD<=40 keyword shortlist; reviewed residual provider and product-cost families against published guide content. Current SERPs and Semrush campaigns not accessed.",
+  "positive_volume_known_kd_at_most40": 672,
+  "decision_counts": {
+    "no_positive_exported_demand": 4104,
+    "kd_missing": 1378,
+    "existing_or_ambiguous_intent_reviewed": 384,
+    "other_sector": 104,
+    "higher_kd_deferred": 75,
+    "adjacent_product_or_existing_comparison": 107,
+    "local_without_authentic_evidence": 15,
+    "residential_phone_intent": 127,
+    "employment_or_provider_business": 15,
+    "provider_intent_reviewed": 24,
+    "selected": 2
+  },
+  "selected_unique_pages": 2,
+  "deficit_to20": 18,
+  "remaining_opportunities": "No claim that all6335 have no further viable opportunities. Remaining named providers and unknown-KD rows require more research; no generated pages for synonyms.",
+  "tracking": "Pending Semrush active-session authorization; no attempted bypass, API or connector; no writes.",
+  "draft_editorial_correction": "Initial batch related links referenced withdrawn price guides. Corrected draft registry links to approved guides before approval; immutable batch retained as imported. Guards worked and were not modified.",
+  "full_local_screen_sha256": "f25bba1a49ab6cd89f20d5a43b846b99c36ba36196996cdb0db5e7f585faafe9",
+  "full_local_screen_note": "Full6335row audit retained locally; summary committed to avoid republishing entire licensed keyword export."
+}

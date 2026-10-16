@@ -234,6 +234,14 @@
       "destination": "/ai-answering-service/dynamic-number-insertion.html"
     },
     {
+      "source": "/ai-answering-service/moneypenny-pricing",
+      "destination": "/ai-answering-service/moneypenny-pricing.html"
+    },
+    {
+      "source": "/ai-answering-service/ruby-receptionist-pricing",
+      "destination": "/ai-answering-service/ruby-receptionist-pricing.html"
+    },
+    {
       "source": "/ai-answering-service",
       "destination": "/ai-answering-service.html"
     }
