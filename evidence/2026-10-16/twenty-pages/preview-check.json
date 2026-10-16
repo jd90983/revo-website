@@ -1,0 +1,15 @@
+{
+  "deployment": "dpl_CQkiHkEKGDnUSWZzxxQk43RJE86p",
+  "url": "https://revo-website-g8x4lcd5w-group-u.vercel.app",
+  "commit": "2aab2910b0547b040594e9016e405848c217359b",
+  "state": "READY",
+  "environment": "seo-review",
+  "isolation_probe": "SUPABASE_URL=empty SUPABASE_ANON_KEY=empty RESEND_API_KEY=empty GHL_WEBHOOK_URL=empty",
+  "authenticated_get_path": "/ai-answering-service/pool-builder-ai-answering",
+  "status": 200,
+  "correct_canonical": true,
+  "h1_count": 1,
+  "forms": 0,
+  "official_sources_present": true,
+  "access_protection_configuration_changed": false
+}
