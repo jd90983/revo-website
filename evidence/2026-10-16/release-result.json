@@ -1,28 +1,40 @@
 {
   "date": "2026-10-16",
   "batch": "2026-10-16-provider-pricing",
-  "content_pr": "https://github.com/jd90983/revo-website/pull/68",
-  "content_commit": "aa77ec68b0838b4aae2891ac59fcbd0f52b65e02",
-  "production_deployment": "dpl_25kWXqQNoHCzUXebMfL9o1xnEV7Q",
-  "deployment_url": "https://revo-website-dza3s3o9c-group-u.vercel.app",
+  "content_pr": "https://github.com/jd90983/revo-website/pull/70",
+  "content_commit": "5946bc1da68becf60f93f13badada43aefe6e701",
+  "production_deployment": "dpl_HETA8Dn1JGaVnXDLVrHufAXG9ouy",
+  "deployment_url": "https://revo-website-4muy8vhje-group-u.vercel.app",
   "production_state": "READY",
-  "new_pages_published": 2,
-  "deficit_to20": 18,
+  "new_pages_published": 3,
+  "deficit_to20": 17,
   "urls": [
     "https://www.revoapp.ai/ai-answering-service/moneypenny-pricing",
-    "https://www.revoapp.ai/ai-answering-service/ruby-receptionist-pricing"
+    "https://www.revoapp.ai/ai-answering-service/ruby-receptionist-pricing",
+    "https://www.revoapp.ai/ai-answering-service/average-handle-time"
   ],
-  "metrics_date": "2026-10-13",
   "source_review_date": "2026-10-16",
   "ci": "seo-ci and fixtures pass; Cursor Security success,0annotations; scope router success; preview pass. CodeRabbit skipped review.",
-  "local_browser_cases": 8,
-  "production_browser_cases": 8,
+  "local_browser_cases": 12,
+  "production_browser_cases": 12,
   "browser_failures": 0,
-  "sitemap_urls": 79,
-  "approved_guides": 52,
+  "sitemap_urls": 80,
+  "approved_guides": 53,
   "withdrawn_records": 20,
-  "tracking": "Not changed. Semrush active-session warning pending user authorization. Proposed prompts only; count319/93 from Oct15 not reverified.",
+  "tracking": "Managed by separate personal-Chrome executor. No tracking writes or saves confirmed in this implementation. Proposed prompts remain unverified as existing/saved.",
   "rollback_main": "66d1d48d8b3f7a7dfbe7fe47beabf23609343607",
   "rollback_deployment": "dpl_2XrwMX8MwHLo37RH2PTVqnKNtV6a",
-  "personal_chrome_used": false
+  "personal_chrome_used": false,
+  "prior_content_prs": [
+    "https://github.com/jd90983/revo-website/pull/68"
+  ],
+  "same_daily_lot_continuation": true,
+  "latest_local_internal_links_verified": 2707,
+  "latest_content_rollback_main": "e4f9550c224cf6e8ee093ddef28133c3c9c050da",
+  "latest_content_rollback_deployment": "dpl_98mwCaPg7DRFRj53C9mfNR8gexJR",
+  "metrics_observations": {
+    "moneypenny pricing": "2026-10-13",
+    "ruby receptionist pricing": "2026-10-13",
+    "average handle time": "2026-10-16; UI Updated1month; cached metric observation"
+  }
 }
