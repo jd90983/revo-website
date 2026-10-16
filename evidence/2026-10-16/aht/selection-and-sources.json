@@ -1,0 +1,50 @@
+{
+  "keyword": "average handle time",
+  "volume_us": 1000,
+  "kd": 33,
+  "intent": "Informational",
+  "observation_date": "2026-10-16",
+  "database": "US",
+  "device": "Desktop",
+  "semrush_updated_label": "1 month",
+  "metrics_freshness_note": "Current UI observation of cached metrics; no fresh metric refresh claimed.",
+  "semrush_url": "https://www.semrush.com/analytics/keywordoverview/?q=average+handle+time&db=us&fid=13221015",
+  "source_file": "/Users/mac/Documents/Codex/2026-10-16/task/revo-seo-2026-10-16-resumed-research.txt",
+  "source_sha256": "a2181288759d1051f78c2a3c5d2131ac3260bec5ffdf3c8ea04fef68a293e89c",
+  "new_url": "https://www.revoapp.ai/ai-answering-service/average-handle-time",
+  "before_release_status": 404,
+  "same_page_variants": [
+    {
+      "keyword": "average handling time",
+      "volume_us": 210,
+      "kd": 30
+    },
+    {
+      "keyword": "average handle time formula",
+      "volume_us": 90,
+      "kd": 27
+    },
+    {
+      "keyword": "how to reduce average handle time",
+      "volume_us": 70,
+      "kd": 19
+    }
+  ],
+  "variant_intent": "Not separately verified; only head-keyword intention verified.",
+  "proposed_prompt": "How do home service businesses calculate average handle time without rushing callers?",
+  "prompt_status": "Proposed only, not verified as existing or saved.",
+  "non_overlap": {
+    "average-speed-of-answer": "Waiting until answer, while AHT measures handling workload including after-call work.",
+    "first-call-resolution": "Completion outcome, while AHT measures duration and population.",
+    "call-quality-monitoring": "Quality review, while AHT supplies component totals, denominator and workload analysis."
+  },
+  "source_review": {
+    "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+    "date": "2026-10-16",
+    "verified": "Voice handling includes interaction, hold and after-contact work; task pause caveat and missing-record behavior documented."
+  },
+  "same_daily_lot": true,
+  "daily_total_if_published": 3,
+  "remaining_to20": 17,
+  "tracking": "Pending in separate Chrome executor; no writes in this implementation."
+}

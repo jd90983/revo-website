@@ -258,5 +258,10 @@
     "slug": "ruby-receptionist-pricing",
     "label": "Provider pricing review",
     "template": "workflow"
+  },
+  {
+    "slug": "average-handle-time",
+    "label": "Call workload measurement",
+    "template": "workflow"
   }
 ]

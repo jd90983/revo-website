@@ -6856,5 +6856,116 @@
       "contentHash": "sha256:fdf3317e68795b7aabc6c9245189c019a0692cb0619696106b38a2d9b1e9a105",
       "note": "Dated historical US170 KD27; dedicated current official prices checked; related links corrected during draft review; quote gaps explicit."
     }
+  },
+  {
+    "slug": "average-handle-time",
+    "title": "Average handle time for home service calls",
+    "description": "Calculate average handle time from talk, hold and after-call work. Define the denominator and review home-service intake workload without rushing callers.",
+    "navigationLabel": "Average handle time",
+    "eyebrow": "Call workload measurement",
+    "lead": "Measure the work of handling a call, then check its quality.",
+    "intro": "Average handle time (AHT) measures handling workload per eligible interaction. For a home-service office, use it to examine intake, scheduling and handoff work without turning a short conversation into the definition of success. This is an educational measurement guide, not a Revo dashboard specification or an industry performance benchmark.",
+    "sections": [
+      {
+        "title": "Define the handling clock",
+        "paragraphs": [
+          "For a voice-call worksheet, average handle time equals total talk time plus customer hold time plus after-call work, divided by the number of eligible handled calls. Keep every duration in the same unit. Average handling time is another common name for this measure.",
+          "Amazon Connect includes interaction, hold and after-contact work in its AHT definition, with pause duration additionally relevant to tasks. Its calculation skips records with all contributing fields missing. That is a documented platform definition; verify your own phone system’s fields and eligibility rules before comparing reports.",
+          "For your office worksheet, write down what makes a record eligible and what ends its after-call work. Keep missing durations visible. An absent measurement does not establish that the work took no time."
+        ],
+        "items": [
+          "Record the period, time zone and included business numbers.",
+          "Use the same population for the numerator and denominator.",
+          "Separate voice calls from other channels and task types."
+        ],
+        "sources": [
+          {
+            "label": "Amazon Connect metric definitions",
+            "href": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html"
+          }
+        ]
+      },
+      {
+        "title": "Separate AHT from waiting and resolution",
+        "paragraphs": [
+          "ASA concerns waiting before an answer; AHT concerns handling work after connection. A transfer can also produce multiple handling records. Decide whether your report counts handled legs or original calls, and label that choice. A leg-based average should not be presented as the total effort spent on one customer request.",
+          "Resolution is a separate question. A brief conversation may leave an estimate request without an owner, while a longer call may correctly establish the service need and next step. Use the existing ASA and first-call-resolution guides for those measures. This page answers how much handling time the measured population consumed.",
+          "Do not treat the duration of an AI conversation as your office’s complete workload. If staff later review the request, correct information or arrange a callback, record that separate work under a clearly defined process measure. Do not add it to a platform’s AHT field unless its documented definition includes it."
+        ],
+        "items": []
+      },
+      {
+        "title": "Build a calculation from your own call records",
+        "paragraphs": [
+          "For each eligible interaction, collect an identifier, request category, talk duration, hold duration and after-call-work duration. Keep an exclusion or missing-data reason beside incomplete records. Use records your business is authorized to review; this calculation does not require publishing customer details.",
+          "Sum talk, hold and after-call work across the same eligible population, then divide by its handled count. With no eligible calls, the average is undefined rather than zero. If a required component is unavailable, report the partial measure by its actual scope instead of silently calling it a complete AHT.",
+          "When combining reporting groups, add their total handling durations and handled counts first. Do not simply average the groups’ averages when their counts differ. Only combine groups whose clock, units and eligibility rules match. Retain the original totals so the calculation can be checked."
+        ],
+        "items": [
+          "Keep total talk, total hold and total after-call work separately.",
+          "Show the handled count and incomplete-record count.",
+          "Document transfers, repeat contacts and excluded records."
+        ]
+      },
+      {
+        "title": "Find avoidable work in intake and dispatch handoffs",
+        "paragraphs": [
+          "Separate routine estimate requests, appointment changes and urgent handoffs before interpreting a change. Different work can take different amounts of time. A shift toward detailed project inquiries may change the overall average even if the handling process is unchanged.",
+          "For talk time, review whether the approved script asks relevant questions in a clear order. For hold time, investigate what information or available recipient the office was waiting for. For after-call work, inspect whether staff must re-enter details or search for the person responsible for the next step. These are review questions, not assumed causes of a high average.",
+          "Make one defined process change and compare similar periods and request types afterward. Keep confirmations that protect accuracy, such as checking a callback number or distinguishing a preferred visit time from a confirmed appointment. Removing those checks merely to shorten calls can leave your office more work later."
+        ],
+        "items": [
+          "Check intake completeness alongside duration.",
+          "Assign the next action and owner before closing the record.",
+          "Compare like-for-like call categories and coverage periods."
+        ]
+      },
+      {
+        "title": "Use quality guardrails instead of a universal target",
+        "paragraphs": [
+          "There is no target supplied by this guide. Choose an operating goal only after reviewing your own request mix, handling rules and available staffing. Show sample size and, where reliable data permits, the distribution or longest handling times beside the average. A small number of complex requests can change a small office’s result.",
+          "Review incomplete intake, corrections, repeat contacts and unfulfilled handoffs alongside AHT. Shorter handling is useful when the intended work is still completed accurately. An average alone cannot establish customer satisfaction, confirmed bookings or revenue.",
+          "Before relying on a product report, ask which events it times and what records it excludes. Native Revo AHT reporting and a complete export of these components were not verified for this guide. Confirm available data directly, and keep any office worksheet clearly separate from a vendor-provided metric."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is the average handle time formula?",
+        "a": "For the voice-call worksheet here: total talk time plus total customer hold time plus total after-call work, divided by the eligible handled-call count. Match the components and denominator."
+      },
+      {
+        "q": "Is average handle time the same as average speed of answer?",
+        "a": "No. ASA measures waiting before an answer. AHT measures handling workload after connection, including the after-call work defined by the report."
+      },
+      {
+        "q": "Does a lower AHT prove better service?",
+        "a": "No. Check intake accuracy, unfinished work, repeat contacts and handoff outcomes alongside duration. This guide supplies no universal target or performance claim."
+      }
+    ],
+    "takeaway": "Reduce avoidable work without rushing the caller.",
+    "sourcePaths": [
+      "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html"
+    ],
+    "related": [
+      "average-speed-of-answer",
+      "call-quality-monitoring",
+      "first-call-resolution",
+      "call-disposition"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "publicationStatus": "approved",
+    "source": {
+      "kind": "manual",
+      "reference": "October16 same daily-lot sequential continuation after PR68/69; parent Chrome-only Semrush observation2026-10-16 US Desktop, volume1000 KD33 Informational; table Updated1month; proposed prompt not saved; no new batch or tracking writes"
+    },
+    "review": {
+      "reviewer": "Recurring user publication authorization; parent Chrome evidence and editorial review October16",
+      "reviewedAt": "2026-10-16",
+      "contentHash": "sha256:0bae1ff4bb40ac0cd2325518b57d1acbad5529708dbd4878d910f113d74ff35d",
+      "note": "Same Oct16 daily-lot continuation; US1000 KD33; variants one URL; AHT differs from ASA; no invented benchmarks or native reporting claims."
+    }
   }
 ]
