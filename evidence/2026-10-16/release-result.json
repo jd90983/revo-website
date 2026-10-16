@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-16",
+  "batch": "2026-10-16-provider-pricing",
+  "content_pr": "https://github.com/jd90983/revo-website/pull/68",
+  "content_commit": "aa77ec68b0838b4aae2891ac59fcbd0f52b65e02",
+  "production_deployment": "dpl_25kWXqQNoHCzUXebMfL9o1xnEV7Q",
+  "deployment_url": "https://revo-website-dza3s3o9c-group-u.vercel.app",
+  "production_state": "READY",
+  "new_pages_published": 2,
+  "deficit_to20": 18,
+  "urls": [
+    "https://www.revoapp.ai/ai-answering-service/moneypenny-pricing",
+    "https://www.revoapp.ai/ai-answering-service/ruby-receptionist-pricing"
+  ],
+  "metrics_date": "2026-10-13",
+  "source_review_date": "2026-10-16",
+  "ci": "seo-ci and fixtures pass; Cursor Security success,0annotations; scope router success; preview pass. CodeRabbit skipped review.",
+  "local_browser_cases": 8,
+  "production_browser_cases": 8,
+  "browser_failures": 0,
+  "sitemap_urls": 79,
+  "approved_guides": 52,
+  "withdrawn_records": 20,
+  "tracking": "Not changed. Semrush active-session warning pending user authorization. Proposed prompts only; count319/93 from Oct15 not reverified.",
+  "rollback_main": "66d1d48d8b3f7a7dfbe7fe47beabf23609343607",
+  "rollback_deployment": "dpl_2XrwMX8MwHLo37RH2PTVqnKNtV6a",
+  "personal_chrome_used": false
+}
