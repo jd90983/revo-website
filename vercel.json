@@ -242,6 +242,10 @@
       "destination": "/ai-answering-service/ruby-receptionist-pricing.html"
     },
     {
+      "source": "/ai-answering-service/average-handle-time",
+      "destination": "/ai-answering-service/average-handle-time.html"
+    },
+    {
       "source": "/ai-answering-service",
       "destination": "/ai-answering-service.html"
     }
