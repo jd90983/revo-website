@@ -302,5 +302,26 @@
       "added radon-mitigation-answering-service as draft",
       "added wildlife-removal-answering-service as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-16-specialists-3",
+    "batchHash": "sha256:7089720ee144c1b5543e3eb9b6937fccd5eecdf8ea2c39cf74c3104756f86134",
+    "source": {
+      "kind": "explicit-user-approved-specialist-content",
+      "reference": "Jorge approved the ordered 50-keyword proposal and requested publication in Revo today; exact keywords and intent boundaries in evidence/2026-10-16/approved-fifty/url-intent-map.csv. Product scope: existing Revo demo and pricing copy; no new metrics or integration claims."
+    },
+    "appliedAt": "2026-10-16",
+    "changes": [
+      "added closet-company-answering-service as draft",
+      "added window-treatment-answering-service as draft",
+      "added awning-company-answering-service as draft",
+      "added floor-coating-answering-service as draft",
+      "added bathtub-refinishing-answering-service as draft",
+      "added home-automation-answering-service as draft",
+      "added home-elevator-answering-service as draft",
+      "added fireplace-installation-answering-service as draft",
+      "added solar-panel-cleaning-answering-service as draft",
+      "added holiday-lighting-answering-service as draft"
+    ]
   }
 ]
