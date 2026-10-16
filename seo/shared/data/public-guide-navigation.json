@@ -463,5 +463,55 @@
     "slug": "wildlife-removal-answering-service",
     "label": "Wildlife removal companies",
     "template": "workflow"
+  },
+  {
+    "slug": "closet-company-answering-service",
+    "label": "Closet companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "window-treatment-answering-service",
+    "label": "Window treatment companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "awning-company-answering-service",
+    "label": "Awning companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "floor-coating-answering-service",
+    "label": "Floor coating contractors",
+    "template": "workflow"
+  },
+  {
+    "slug": "bathtub-refinishing-answering-service",
+    "label": "Bathtub refinishing companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "home-automation-answering-service",
+    "label": "Home automation companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "home-elevator-answering-service",
+    "label": "Home elevator companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "fireplace-installation-answering-service",
+    "label": "Fireplace installation",
+    "template": "workflow"
+  },
+  {
+    "slug": "solar-panel-cleaning-answering-service",
+    "label": "Solar panel cleaning",
+    "template": "workflow"
+  },
+  {
+    "slug": "holiday-lighting-answering-service",
+    "label": "Holiday lighting companies",
+    "template": "workflow"
   }
 ]
