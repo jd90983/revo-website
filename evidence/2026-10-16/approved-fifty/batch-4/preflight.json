@@ -1,0 +1,18 @@
+{
+  "new_pages": 10,
+  "keyword_order": [
+    31,
+    40
+  ],
+  "local_responsive_distinct_cases": 40,
+  "first_pass": 39,
+  "initial_failure": "artificial turf320px consent hydration timeout; no JS error",
+  "targeted_retry_passes": 3,
+  "unresolved_failures": 0,
+  "unit_tests": 19,
+  "internal_links_verified": 6047,
+  "shared_template_css_menu_pricing_unchanged": true,
+  "personal_chrome_used": false,
+  "semrush_modified": false,
+  "daily_automation_modified": false
+}

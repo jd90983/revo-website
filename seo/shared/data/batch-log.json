@@ -323,5 +323,26 @@
       "added solar-panel-cleaning-answering-service as draft",
       "added holiday-lighting-answering-service as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-16-specialists-4",
+    "batchHash": "sha256:70a5086a4ad745d7b2cabdddd8a50e88fda2b5591e309c17fb9cf09c3b3d7b80",
+    "source": {
+      "kind": "explicit-user-approved-specialist-content",
+      "reference": "Jorge approved the ordered 50-keyword proposal and requested publication in Revo today; exact keywords and intent boundaries in evidence/2026-10-16/approved-fifty/url-intent-map.csv. Product scope: existing Revo demo and pricing copy; no new metrics or integration claims."
+    },
+    "appliedAt": "2026-10-16",
+    "changes": [
+      "added artificial-turf-answering-service as draft",
+      "added pond-contractor-answering-service as draft",
+      "added sunroom-contractor-answering-service as draft",
+      "added shed-builder-answering-service as draft",
+      "added residential-window-tinting-answering-service as draft",
+      "added furniture-repair-answering-service as draft",
+      "added home-energy-auditor-answering-service as draft",
+      "added professional-organizer-answering-service as draft",
+      "added pet-waste-removal-answering-service as draft",
+      "added home-watch-answering-service as draft"
+    ]
   }
 ]

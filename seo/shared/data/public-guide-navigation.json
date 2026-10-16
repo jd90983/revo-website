@@ -513,5 +513,55 @@
     "slug": "holiday-lighting-answering-service",
     "label": "Holiday lighting companies",
     "template": "workflow"
+  },
+  {
+    "slug": "artificial-turf-answering-service",
+    "label": "Artificial turf installers",
+    "template": "workflow"
+  },
+  {
+    "slug": "pond-contractor-answering-service",
+    "label": "Pond contractors",
+    "template": "workflow"
+  },
+  {
+    "slug": "sunroom-contractor-answering-service",
+    "label": "Sunroom contractors",
+    "template": "workflow"
+  },
+  {
+    "slug": "shed-builder-answering-service",
+    "label": "Shed builders",
+    "template": "workflow"
+  },
+  {
+    "slug": "residential-window-tinting-answering-service",
+    "label": "Residential window tinting",
+    "template": "workflow"
+  },
+  {
+    "slug": "furniture-repair-answering-service",
+    "label": "Furniture repair companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "home-energy-auditor-answering-service",
+    "label": "Home energy auditors",
+    "template": "workflow"
+  },
+  {
+    "slug": "professional-organizer-answering-service",
+    "label": "Professional organizers",
+    "template": "workflow"
+  },
+  {
+    "slug": "pet-waste-removal-answering-service",
+    "label": "Pet waste removal companies",
+    "template": "workflow"
+  },
+  {
+    "slug": "home-watch-answering-service",
+    "label": "Home watch companies",
+    "template": "workflow"
   }
 ]
