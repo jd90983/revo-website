@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-16",
+  "approved_topics_completed": 50,
+  "net_new_urls": 40,
+  "expanded_existing_urls": 10,
+  "content_prs": [
+    74,
+    75,
+    76,
+    77,
+    78
+  ],
+  "content_commit": "eebf3fc78aef52198e05d214e0e0fb59914ab359",
+  "content_deployment": "dpl_BSs5sdYA2sJ7wYRJLFNXAy3zw3t7",
+  "deployment_url": "https://revo-website-5mfgp1bdv-group-u.vercel.app",
+  "state": "READY",
+  "sitemap_unique_urls": 146,
+  "approved_guides": 113,
+  "withdrawn_registry_records_preserved": 20,
+  "original_registry_records_unchanged": 93,
+  "HTTP_verified_targets": 50,
+  "responsive_distinct_production_cases": 200,
+  "responsive_failures": 0,
+  "page_errors_final_production": 0,
+  "unit_tests": 19,
+  "fixture_end_to_end": "PASS in all content PR CI runs",
+  "internal_guide_links_verified": 6047,
+  "local_timeout_note": "Batch4 artificial-turf320 consent initialization timeout passed3 targeted retries; no unresolved failure.",
+  "home_pricing_services_industries_byte_identical": true,
+  "original_root_html_preserved_outside10_added_modules": true,
+  "personal_chrome_used": false,
+  "semrush_modified": false,
+  "automation_modified": false,
+  "DNS_access_credentials_modified": false,
+  "rollback_before_entire_proposal": {
+    "commit": "3711e1c3d907c2522f48dc0aa94f54e7d17c3796",
+    "deployment": "dpl_79oNp63yBpPJ9F6pekCj2L4iTcdW"
+  },
+  "rollback_only_expansions": {
+    "commit": "499a2a3e4466452306a11bd972c8b4b80885c98b",
+    "deployment": "dpl_BAX9xa7Sm8JdJo3mv3ZC8Ac3iXJW"
+  }
+}

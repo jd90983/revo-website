@@ -1,0 +1,19 @@
+{
+  "distinct_cases": 200,
+  "failures": 0,
+  "page_errors": 0,
+  "widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "sources": [
+    "evidence/2026-10-16/approved-fifty/batch-1/final-production-qa/results.json",
+    "evidence/2026-10-16/approved-fifty/batch-2/production-qa/results.json",
+    "evidence/2026-10-16/approved-fifty/batch-3/production-qa/results.json",
+    "evidence/2026-10-16/approved-fifty/batch-4/production-qa/results.json",
+    "evidence/2026-10-16/approved-fifty/batch-5/production-qa/results.json"
+  ],
+  "personal_chrome_used": false
+}
