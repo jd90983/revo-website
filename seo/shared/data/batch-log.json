@@ -167,5 +167,98 @@
       "added moneypenny-pricing as draft",
       "added ruby-receptionist-pricing as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-16-twenty-trade-pages",
+    "batchHash": "sha256:2e032efed79a73a043ee5857f7ad9af028900808a5daf307c6223316b7d6efc9",
+    "source": {
+      "kind": "user-authorized-content-drafts",
+      "reference": "20 English drafts delivered 2026-10-16; local implementation only; publication and visual review pending"
+    },
+    "appliedAt": "2026-10-16",
+    "changes": [
+      "added hvac-after-hours-answering as draft",
+      "added plumbing-24-7-answering as draft",
+      "added plumbing-answering-with-scheduling as draft",
+      "added restoration-after-hours-answering as draft",
+      "added roofing-24-7-answering as draft",
+      "added contractors-after-hours-answering as draft",
+      "added tree-service-ai-answering as draft",
+      "added gutter-service-ai-answering as draft",
+      "added concrete-masonry-ai-answering as draft",
+      "added fence-installation-ai-answering as draft",
+      "added septic-service-ai-answering as draft",
+      "added pool-builder-ai-answering as draft",
+      "added foundation-repair-ai-answering as draft",
+      "added hvac-overflow-answering as draft",
+      "added roofing-lead-qualification as draft",
+      "added electrical-contractor-call-screening as draft",
+      "added remodeling-answering as draft",
+      "added landscaping-overflow-answering as draft",
+      "added cleaning-answering-with-scheduling as draft",
+      "added locksmith-overflow-answering as draft"
+    ]
+  },
+  {
+    "batchId": "2026-10-16-twenty-trade-sources",
+    "batchHash": "sha256:98ab4cd4f37dfc8c1334c9e0b51f6d5453a65115b3d70cb4af9d5d1da1716ee0",
+    "source": {
+      "kind": "visual-editorial-review",
+      "reference": "Fix empty source module with existing official Revo capability and current-plan references; Jorge-authorized 20-page release, 2026-10-16"
+    },
+    "appliedAt": "2026-10-16",
+    "changes": [
+      "updated hvac-after-hours-answering; back to draft until re-approved",
+      "updated plumbing-24-7-answering; back to draft until re-approved",
+      "updated plumbing-answering-with-scheduling; back to draft until re-approved",
+      "updated restoration-after-hours-answering; back to draft until re-approved",
+      "updated roofing-24-7-answering; back to draft until re-approved",
+      "updated contractors-after-hours-answering; back to draft until re-approved",
+      "updated tree-service-ai-answering; back to draft until re-approved",
+      "updated gutter-service-ai-answering; back to draft until re-approved",
+      "updated concrete-masonry-ai-answering; back to draft until re-approved",
+      "updated fence-installation-ai-answering; back to draft until re-approved",
+      "updated septic-service-ai-answering; back to draft until re-approved",
+      "updated pool-builder-ai-answering; back to draft until re-approved",
+      "updated foundation-repair-ai-answering; back to draft until re-approved",
+      "updated hvac-overflow-answering; back to draft until re-approved",
+      "updated roofing-lead-qualification; back to draft until re-approved",
+      "updated electrical-contractor-call-screening; back to draft until re-approved",
+      "updated remodeling-answering; back to draft until re-approved",
+      "updated landscaping-overflow-answering; back to draft until re-approved",
+      "updated cleaning-answering-with-scheduling; back to draft until re-approved",
+      "updated locksmith-overflow-answering; back to draft until re-approved"
+    ]
+  },
+  {
+    "batchId": "2026-10-16-twenty-trade-reference-list",
+    "batchHash": "sha256:371c061ef000eb2451c907748c75c8072e5547f30b6452e395bbd27f9fa0902d",
+    "source": {
+      "kind": "visual-editorial-review",
+      "reference": "Populate the shared template bottom reference list with official HTTPS source paths for the authorized 20-page release"
+    },
+    "appliedAt": "2026-10-16",
+    "changes": [
+      "updated hvac-after-hours-answering; back to draft until re-approved",
+      "updated plumbing-24-7-answering; back to draft until re-approved",
+      "updated plumbing-answering-with-scheduling; back to draft until re-approved",
+      "updated restoration-after-hours-answering; back to draft until re-approved",
+      "updated roofing-24-7-answering; back to draft until re-approved",
+      "updated contractors-after-hours-answering; back to draft until re-approved",
+      "updated tree-service-ai-answering; back to draft until re-approved",
+      "updated gutter-service-ai-answering; back to draft until re-approved",
+      "updated concrete-masonry-ai-answering; back to draft until re-approved",
+      "updated fence-installation-ai-answering; back to draft until re-approved",
+      "updated septic-service-ai-answering; back to draft until re-approved",
+      "updated pool-builder-ai-answering; back to draft until re-approved",
+      "updated foundation-repair-ai-answering; back to draft until re-approved",
+      "updated hvac-overflow-answering; back to draft until re-approved",
+      "updated roofing-lead-qualification; back to draft until re-approved",
+      "updated electrical-contractor-call-screening; back to draft until re-approved",
+      "updated remodeling-answering; back to draft until re-approved",
+      "updated landscaping-overflow-answering; back to draft until re-approved",
+      "updated cleaning-answering-with-scheduling; back to draft until re-approved",
+      "updated locksmith-overflow-answering; back to draft until re-approved"
+    ]
   }
 ]

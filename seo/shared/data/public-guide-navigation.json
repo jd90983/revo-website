@@ -263,5 +263,105 @@
     "slug": "average-handle-time",
     "label": "Call workload measurement",
     "template": "workflow"
+  },
+  {
+    "slug": "hvac-after-hours-answering",
+    "label": "HVAC after hours",
+    "template": "workflow"
+  },
+  {
+    "slug": "plumbing-24-7-answering",
+    "label": "Plumbing 24/7",
+    "template": "workflow"
+  },
+  {
+    "slug": "plumbing-answering-with-scheduling",
+    "label": "Plumbing scheduling",
+    "template": "workflow"
+  },
+  {
+    "slug": "restoration-after-hours-answering",
+    "label": "Restoration after hours",
+    "template": "workflow"
+  },
+  {
+    "slug": "roofing-24-7-answering",
+    "label": "Roofing 24/7",
+    "template": "workflow"
+  },
+  {
+    "slug": "contractors-after-hours-answering",
+    "label": "Contractors after hours",
+    "template": "workflow"
+  },
+  {
+    "slug": "tree-service-ai-answering",
+    "label": "Tree service calls",
+    "template": "workflow"
+  },
+  {
+    "slug": "gutter-service-ai-answering",
+    "label": "Gutter service calls",
+    "template": "workflow"
+  },
+  {
+    "slug": "concrete-masonry-ai-answering",
+    "label": "Concrete and masonry calls",
+    "template": "workflow"
+  },
+  {
+    "slug": "fence-installation-ai-answering",
+    "label": "Fence installation calls",
+    "template": "workflow"
+  },
+  {
+    "slug": "septic-service-ai-answering",
+    "label": "Septic service calls",
+    "template": "workflow"
+  },
+  {
+    "slug": "pool-builder-ai-answering",
+    "label": "Pool builder calls",
+    "template": "workflow"
+  },
+  {
+    "slug": "foundation-repair-ai-answering",
+    "label": "Foundation repair calls",
+    "template": "workflow"
+  },
+  {
+    "slug": "hvac-overflow-answering",
+    "label": "HVAC overflow",
+    "template": "workflow"
+  },
+  {
+    "slug": "roofing-lead-qualification",
+    "label": "Roofing qualification",
+    "template": "workflow"
+  },
+  {
+    "slug": "electrical-contractor-call-screening",
+    "label": "Electrical call screening",
+    "template": "workflow"
+  },
+  {
+    "slug": "remodeling-answering",
+    "label": "Remodeling calls",
+    "template": "workflow"
+  },
+  {
+    "slug": "landscaping-overflow-answering",
+    "label": "Landscaping overflow",
+    "template": "workflow"
+  },
+  {
+    "slug": "cleaning-answering-with-scheduling",
+    "label": "Cleaning scheduling",
+    "template": "workflow"
+  },
+  {
+    "slug": "locksmith-overflow-answering",
+    "label": "Locksmith overflow",
+    "template": "workflow"
   }
 ]

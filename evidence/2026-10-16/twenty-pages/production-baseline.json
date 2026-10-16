@@ -1,0 +1,38 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "url": "https://www.revoapp.ai/",
+    "sha256": "3632c13a4d3c5f978f587b780e201de649a7e1139f6a743c50c9a66a15d02696"
+  },
+  {
+    "path": "/pricing.html",
+    "status": 200,
+    "url": "https://www.revoapp.ai/pricing.html",
+    "sha256": "f8f254a9a063190700cf61f0b95800cb1560edb9d37ba5cef08c193ab0721fa0"
+  },
+  {
+    "path": "/services.html",
+    "status": 200,
+    "url": "https://www.revoapp.ai/services.html",
+    "sha256": "e3b1efd886356fc7bd0c025beed9e7f328b30bdef64885f00f44d0a5eddefcfb"
+  },
+  {
+    "path": "/industries.html",
+    "status": 200,
+    "url": "https://www.revoapp.ai/industries.html",
+    "sha256": "11add1e2cf14e12f9792924e51e6b4f3e3822c041d831595cfc4ba90c4292277"
+  },
+  {
+    "path": "/industry_plumbing.html",
+    "status": 200,
+    "url": "https://www.revoapp.ai/industry_plumbing.html",
+    "sha256": "a62a06740241dd84723506e7f2f151ce44532966206278c754cdc160725b5829"
+  },
+  {
+    "path": "/ai-answering-service/after-hours",
+    "status": 200,
+    "url": "https://www.revoapp.ai/ai-answering-service/after-hours",
+    "sha256": "eaf5751469500f0ff8a7b7099bce8f2f5a293736253d68266cbbc826bfa7bd0c"
+  }
+]
