@@ -1,0 +1,73 @@
+{
+  "pages": [
+    {
+      "url": "https://www.revoapp.ai/ai-answering-service/moneypenny-pricing",
+      "status": 200,
+      "title": "Moneypenny pricing for home service answering | Revo",
+      "h1_count": 1,
+      "canonical": [
+        "https://www.revoapp.ai/ai-answering-service/moneypenny-pricing"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "sitemap_occurrences": 1,
+      "hub_link": true,
+      "cta": "/pricing.html",
+      "official_sources_present": true,
+      "forms": 0
+    },
+    {
+      "url": "https://www.revoapp.ai/ai-answering-service/ruby-receptionist-pricing",
+      "status": 200,
+      "title": "Ruby receptionist pricing for home service teams | Revo",
+      "h1_count": 1,
+      "canonical": [
+        "https://www.revoapp.ai/ai-answering-service/ruby-receptionist-pricing"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "sitemap_occurrences": 1,
+      "hub_link": true,
+      "cta": "/pricing.html",
+      "official_sources_present": true,
+      "forms": 0
+    },
+    {
+      "url": "https://www.revoapp.ai/ai-answering-service/average-handle-time",
+      "status": 200,
+      "title": "Average handle time for home service calls | Revo",
+      "h1_count": 1,
+      "canonical": [
+        "https://www.revoapp.ai/ai-answering-service/average-handle-time"
+      ],
+      "robots": [
+        "index, follow"
+      ],
+      "sitemap_occurrences": 1,
+      "hub_link": true,
+      "cta": "/pricing.html",
+      "official_sources_present": true,
+      "forms": 0
+    }
+  ],
+  "sitemap_urls": 80,
+  "home_status": 200,
+  "bing_tag_preserved": true,
+  "internal_evidence_excluded": [
+    {
+      "path": "/evidence/2026-10-16/source-review.json",
+      "status": 404
+    },
+    {
+      "path": "/evidence/2026-10-16/selection.csv",
+      "status": 404
+    },
+    {
+      "path": "/seo/shared/data/batches/2026-10-16-provider-pricing.json",
+      "status": 404
+    }
+  ],
+  "semrush_tracking": "Current tracking managed by separate Chrome executor; no writes here"
+}
