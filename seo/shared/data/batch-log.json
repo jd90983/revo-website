@@ -371,5 +371,84 @@
       "added zoom-ai-receptionist-pricing as draft",
       "added openphone-ai-receptionist-pricing as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-20-temporary-coverage-draft",
+    "batchHash": "sha256:af6ec00425ef3b605b2e561de92226c79cdc54bb777969fb6c398501b48d885c",
+    "source": {
+      "kind": "manual",
+      "reference": "Public official sources reviewed 2026-10-20; limited-period coverage and handback editorial draft for human review."
+    },
+    "appliedAt": "2026-10-20",
+    "changes": [
+      "added temporary-answering-service as draft"
+    ]
+  },
+  {
+    "batchId": "2026-10-20-mobile-app-draft",
+    "batchHash": "sha256:df2d6610f9fdcce21dc7d891e0258f709eb1a22ffcb0a5d60c8e86a9daa029a5",
+    "source": {
+      "kind": "manual",
+      "reference": "Public official sources reviewed 2026-10-20; mobile service-management buying checklist for human review."
+    },
+    "appliedAt": "2026-10-20",
+    "changes": [
+      "added answering-service-app as draft"
+    ]
+  },
+  {
+    "batchId": "2026-10-20-incremental-buyer-drafts",
+    "batchHash": "sha256:747c5d1fd4f19e2009d7651040d7314360db68707437e655015497c806165889",
+    "source": {
+      "kind": "manual",
+      "reference": "Official public sources reviewed 2026-10-20; four distinct home-service buyer decisions drafted for editorial review."
+    },
+    "appliedAt": "2026-10-20",
+    "changes": [
+      "added answering-service-free-trial as draft",
+      "added upfirst-ai-answering-service as draft",
+      "added signpost-answering-service as draft",
+      "added answerforce-answering-service as draft",
+      "updated temporary-answering-service; back to draft until re-approved"
+    ]
+  },
+  {
+    "batchId": "2026-10-20-provider-buyer-drafts",
+    "batchHash": "sha256:e411ff48bf7e6d0f62420b44464e4e345cc1a6d4a23e87db3c23a7218a9c1930",
+    "source": {
+      "kind": "manual",
+      "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review."
+    },
+    "appliedAt": "2026-10-20",
+    "changes": [
+      "added ambs-answering-service as draft",
+      "added contact-one-answering-service as draft",
+      "added call24-answering-service as draft",
+      "added american-answering-service as draft",
+      "added answerone-answering-service as draft",
+      "added anserve-answering-service as draft",
+      "added a-better-answer-answering-service as draft",
+      "added anser-answering-service as draft",
+      "added answering365-answering-service as draft",
+      "added signius-answering-service as draft",
+      "added direct-line-answering-service as draft",
+      "added apello-answering-service as draft",
+      "added tas-united-answering-service as draft",
+      "added xact-answering-service as draft",
+      "added answeringservice-com-pricing as draft",
+      "added callstar-answering-service as draft",
+      "added acena-answering-service as draft",
+      "added customer-elation-answering-service as draft",
+      "added procomm-answering-service as draft",
+      "added the-perfect-answer-answering-service as draft",
+      "added answer-all-answering-service as draft",
+      "added executel-answering-service as draft",
+      "added intouch-answering-service as draft",
+      "added abbott-answering-service as draft",
+      "added telesec-answering-service as draft",
+      "added towne-answering-service as draft",
+      "added answernet-answering-service as draft",
+      "added select-answering-service as draft"
+    ]
   }
 ]

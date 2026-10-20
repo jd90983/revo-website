@@ -1,0 +1,485 @@
+{
+  "batchId": "2026-10-20-incremental-buyer-drafts",
+  "source": {
+    "kind": "manual",
+    "reference": "Official public sources reviewed 2026-10-20; four distinct home-service buyer decisions drafted for editorial review."
+  },
+  "operations": [
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "answering-service-free-trial",
+        "title": "Answering service free trial: a practical acceptance plan",
+        "description": "Answering service free trial: compare the scope, commitments and practical call tests a home service office should resolve before choosing its answering setup.",
+        "navigationLabel": "Answering service free trial",
+        "eyebrow": "Home-service buying guide",
+        "lead": "Separate a demo, a trial and a continuing free tier",
+        "intro": "A free trial is a short evaluation of a service, not proof that the ongoing subscription is free. For a home-service office, the trial should answer whether the configured flow handles the required requests and whether the paid commitment fits the workload. Published by Revo; public sources reviewed October 20, 2026. Examples are editorial evaluation steps, not customer results.",
+        "sections": [
+          {
+            "title": "Separate a demo, a trial and a continuing free tier",
+            "paragraphs": [
+              "A demo lets you inspect a sample. A trial gives temporary access under specific conditions. A continuing free tier can have a recurring allowance and charge for additional usage. Compare those offer types separately rather than treating every free button as the same arrangement.",
+              "Smith.ai\u2019s published AI Free tier lists 25 calls monthly with charges above that allowance. PATLive advertises a 14-day trial for its live service. These examples establish different offer structures, not an endorsement or a promise that they suit every workflow. Recheck the exact offer before signing up."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Smith.ai current AI offer",
+                "href": "https://smith.ai/pricing/ai-receptionist"
+              },
+              {
+                "label": "PATLive current trial and plans",
+                "href": "https://www.patlive.com/pricing/"
+              }
+            ]
+          },
+          {
+            "title": "Set a pass condition before the first call",
+            "paragraphs": [
+              "Write a short acceptance list that reflects your office\u2019s work. For a plumbing team, it might be a new service inquiry captured with a return number, an appointment change handled within the permitted rules and a request outside the service area left for review.",
+              "Test the same requests against every shortlisted service. Record what the caller heard and the resulting message or appointment. A pleasant voice is useful, but it does not by itself prove that the office received the correct task or that a booking was confirmed."
+            ],
+            "items": [
+              "Choose the tasks the agent may complete.",
+              "Record the expected result before testing.",
+              "Include a call that must reach a person or remain a callback request."
+            ]
+          },
+          {
+            "title": "Understand the first bill before connecting real calls",
+            "paragraphs": [
+              "Ask when evaluation access ends, what event starts billing, whether a payment method is required and how extra calls or minutes are charged. Check cancellation notice and the first paid allowance separately. Do not calculate an available daily price by dividing a monthly headline.",
+              "Revo\u2019s Pricing page is the source for its current published plan scope. This guide does not establish a free Revo trial, free recurring tier or special refund. Confirm any current offer through Revo\u2019s official purchase path before relying on it."
+            ],
+            "items": [
+              "Keep a copy of the selected offer and renewal date.",
+              "Decide who may authorize paid continuation.",
+              "Check whether test calls and unwanted calls consume the allowance."
+            ],
+            "sources": [
+              {
+                "label": "Revo current plans",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          },
+          {
+            "title": "End with a go or stop decision",
+            "paragraphs": [
+              "Before the trial ends, compare observed results with the acceptance list and the full commitment. If the service passes, retain the approved script and confirm the paid setup. If it does not, restore and test the business phone route rather than assuming cancellation also removed forwarding.",
+              "Reconcile pending messages and appointments before switching. Give every outstanding customer request an owner, and check records access before closing an account. A trial ends cleanly only when both the provider relationship and the customer follow-up process have a clear next step."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does a free trial mean the service stays free?",
+            "a": "No. A demo, a time-limited trial and a recurring free allowance are different offers. Check the ongoing charge and usage limits."
+          },
+          {
+            "q": "Does this page establish a free Revo offer?",
+            "a": "No. Use the current official Revo purchase path to verify any trial, cancellation or refund terms."
+          },
+          {
+            "q": "What should the trial demonstrate?",
+            "a": "The configured flow should produce the agreed result for realistic inquiries, appointment changes and exceptions, with usable records and clear follow-up ownership."
+          }
+        ],
+        "takeaway": "End with a go or stop decision. Use a representative call and current written terms to make the decision.",
+        "sourcePaths": [
+          "https://smith.ai/pricing/ai-receptionist",
+          "https://www.patlive.com/pricing/",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "related": [
+          "choose-virtual-receptionist",
+          "turn-off-call-forwarding",
+          "answering-service-cost",
+          "appointment-booking"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "upfirst-ai-answering-service",
+        "title": "Upfirst AI answering service: calls, plans and workflow",
+        "description": "Upfirst AI answering: compare the scope, commitments and practical call tests a home service office should resolve before choosing its answering setup.",
+        "navigationLabel": "Upfirst AI answering",
+        "eyebrow": "Home-service buying guide",
+        "lead": "Use the call allowance, not a minute assumption",
+        "intro": "Upfirst is an AI answering option with call-based allowances. A home-service business evaluating it alongside Revo should compare the number of billable conversations, the configured calendar and the way callers reach the team. Published by Revo; public sources reviewed October 20, 2026. Examples are editorial evaluation steps, not customer results.",
+        "sections": [
+          {
+            "title": "Use the call allowance, not a minute assumption",
+            "paragraphs": [
+              "Upfirst\u2019s published monthly Starter plan is $24.95 for 30 calls with $1.50 additional calls. Premium is $59.95 for 90, with $1 extras; Pro is $159.95 for 300, with $0.75 extras. Annual figures are displayed separately. The page lists scheduling and transfers; confirm the exact supported configuration before relying on them.",
+              "These figures are a dated USD snapshot, not an all-in quote. A call allowance cannot be compared directly with handled minutes without stating the workload."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Upfirst official plans",
+                "href": "https://upfirst.ai/pricing"
+              }
+            ]
+          },
+          {
+            "title": "Make returning callers part of the evaluation",
+            "paragraphs": [
+              "For an illustrative garage-door business, test a homeowner asking for an estimate, then the same person calling to change the preferred time. Keep billable call count separate from the number of unique customers and completed appointments.",
+              "Ask what happens to short calls, repeated calls, unwanted calls and transfers in the chosen plan. Use the written definition in your estimate. A business with long project conversations and one with many short scheduling questions may produce very different minute totals at the same call count."
+            ],
+            "items": []
+          },
+          {
+            "title": "Check the calendar result and the handoff",
+            "paragraphs": [
+              "Give the service the appointment types, service area and availability rules your office actually permits. Check the calendar after a test call and verify whether a slot was confirmed or a request was only recorded. A listed calendar connection is not proof that your booking rules are already configured.",
+              "Include a call the office must handle itself. Verify the transfer destination, what information reaches the person and what happens if the person cannot answer. Do not treat phone answering as a promise to dispatch a technician."
+            ],
+            "items": [
+              "Test a new inquiry and an existing appointment change.",
+              "Check the complete message and calendar state.",
+              "Ask who owns follow-up after an unsuccessful handoff."
+            ]
+          },
+          {
+            "title": "Compare Upfirst and Revo against one workload",
+            "paragraphs": [
+              "Revo\u2019s current plans are published in minutes, with some features depending on tier. Use the Pricing page for the relevant offering rather than an old comparison. Keep the same expected calls, durations and required tasks in both proposals.",
+              "Illustrative arithmetic for 45 billable calls on Upfirst Starter gives $47.45 before other applicable charges: $24.95 plus 15 \u00d7 $1.50. That calculation does not establish the cost of the same workload on Revo because the handled minutes and any additional capacity terms still need to be established."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Revo current offering",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is Upfirst\u2019s call allowance a minute bundle?",
+            "a": "No. The reviewed plans use calls. Confirm the billable-call definition and compare the same calls and durations with a minute-based proposal."
+          },
+          {
+            "q": "Does a scheduling feature guarantee a booked field visit?",
+            "a": "No. Test the configured calendar, permitted appointment types and final state. Dispatch and technician availability remain separate decisions."
+          }
+        ],
+        "takeaway": "Compare Upfirst and Revo against one workload. Use a representative call and current written terms to make the decision.",
+        "sourcePaths": [
+          "https://upfirst.ai/pricing",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "related": [
+          "answering-service-cost",
+          "appointment-booking",
+          "compare/home-services-ai-receptionists",
+          "compare/ai-vs-live-receptionist"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "signpost-answering-service",
+        "title": "Signpost answering service: AI, live and suite scope",
+        "description": "Signpost answering: compare the scope, commitments and practical call tests a home service office should resolve before choosing its answering setup.",
+        "navigationLabel": "Signpost answering",
+        "eyebrow": "Home-service buying guide",
+        "lead": "Identify AI Voice, live reception or the broader suite",
+        "intro": "Signpost now presents SignpostAI as a broader business suite with AI Voice and live receptionists. A service company looking for answering alone should distinguish that requirement from replacing other parts of its marketing and back-office setup. Published by Revo; public sources reviewed October 20, 2026. Examples are editorial evaluation steps, not customer results.",
+        "sections": [
+          {
+            "title": "Identify AI Voice, live reception or the broader suite",
+            "paragraphs": [
+              "The current SignpostAI site lists separate AI Voice and Live Receptionist products. Its pricing page describes Foundation with AI Voice and broader review, listings, booking and payment tools; Landmark adds Live Receptionist alongside other products. It lists a six-month agreement but does not show a public dollar price in the reviewed page.",
+              "Request the exact current package and commitment. Do not apply an old live-answering price to the current suite or assume the AI and human services are interchangeable."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "SignpostAI current packages",
+                "href": "https://www.signpost.com/pricing"
+              }
+            ]
+          },
+          {
+            "title": "Keep the answering requirement separate from platform replacement",
+            "paragraphs": [
+              "An electrical office that already has a website, review process and invoicing system may only need missed-call coverage. Another team may be evaluating a broader replacement. Write those two projects separately before comparing a suite quote with a phone-answering subscription.",
+              "List which existing systems would remain, which would be replaced and who would move the data. This is an editorial buying checklist, not a claim that Signpost requires every buyer to replace every system. Confirm the package and optional products in writing."
+            ],
+            "items": []
+          },
+          {
+            "title": "Define when a person handles the conversation",
+            "paragraphs": [
+              "SignpostAI\u2019s official product pages distinguish AI conversation handling from live reception. The AI Voice page describes forwarding judgment calls such as complicated requests to the business or a live receptionist. The live page describes appointment handling and summaries. Check the selected package and actual routing policy before relying on either.",
+              "For an illustrative HVAC office, test a routine request and a disagreement about a previous visit. Decide who should handle the latter and what the caller should hear when that person is unavailable. Do not infer a guaranteed human backup arrangement from the existence of both product pages."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "SignpostAI AI Voice",
+                "href": "https://www.signpost.com/solutions/ai-voice"
+              },
+              {
+                "label": "SignpostAI Live Receptionist",
+                "href": "https://www.signpost.com/solutions/live-receptionist"
+              }
+            ]
+          },
+          {
+            "title": "Compare the full commitment with the work you need",
+            "paragraphs": [
+              "Request allowance, extra usage, renewal, cancellation and migration terms for the actual package. With no verified dollar quote, leave the Signpost total unknown rather than publish a speculative savings percentage.",
+              "Revo\u2019s current Pricing page is the source for its answering plans and feature gates. Compare the same call, calendar and handoff requirements first. Add broader suite tools to the decision only if your business actually needs them, and do not assume Revo provides Signpost\u2019s marketing or payment products."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Revo current plan scope",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is the current Signpost offer only a live answering service?",
+            "a": "The reviewed site presents a broader SignpostAI suite and separate AI Voice and Live Receptionist products. Identify the actual quoted package."
+          },
+          {
+            "q": "What is the verified current dollar price?",
+            "a": "No public dollar amount was verified from the reviewed current pricing page. Obtain a written quote for the exact package and agreement."
+          }
+        ],
+        "takeaway": "Compare the full commitment with the work you need. Use a representative call and current written terms to make the decision.",
+        "sourcePaths": [
+          "https://www.signpost.com/pricing",
+          "https://www.signpost.com/solutions/ai-voice",
+          "https://www.signpost.com/solutions/live-receptionist",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "related": [
+          "compare/home-services-ai-receptionists",
+          "compare/ai-vs-live-receptionist",
+          "servicetitan-answering-service",
+          "answering-service-cost"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "answerforce-answering-service",
+        "title": "AnswerForce answering service: people and toolkit scope",
+        "description": "AnswerForce answering: compare the scope, commitments and practical call tests a home service office should resolve before choosing its answering setup.",
+        "navigationLabel": "AnswerForce answering",
+        "eyebrow": "Home-service buying guide",
+        "lead": "Identify the human service and the required tools",
+        "intro": "AnswerForce presents 24/7 live answering for home and field-service businesses, with tools around the conversations. A buyer comparing it with Revo should decide whether human-first handling is required and which additional tools are actually needed. Published by Revo; public sources reviewed October 20, 2026. Examples are editorial evaluation steps, not customer results.",
+        "sections": [
+          {
+            "title": "Identify the human service and the required tools",
+            "paragraphs": [
+              "The official AnswerForce site describes live answering, appointment scheduling, lead qualification, English/Spanish service, a mobile app and a business phone line. Its See Prices path opens a registration form before showing plans. No current dollar price was verified through that path, and no form was submitted.",
+              "Use the proposal to establish the included scope and billing unit. A toolkit list on a homepage does not prove that every feature has the same allowance or is included in every quote."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "AnswerForce service and toolkit",
+                "href": "https://www.answerforce.com/"
+              },
+              {
+                "label": "AnswerForce pricing entry path",
+                "href": "https://www.answerforce.com/register"
+              }
+            ]
+          },
+          {
+            "title": "Decide what requires a person",
+            "paragraphs": [
+              "For an illustrative remodeling office, distinguish initial project intake from a caller asking for a judgment about a disputed estimate. If a person must answer first, make that an explicit selection criterion rather than treating AI and human handling as identical products.",
+              "Document what the receptionist may confirm and what must return to your staff. Scheduling a site visit is not authority to quote construction work or send a crew. Use the same permitted tasks when evaluating either answering model."
+            ],
+            "items": []
+          },
+          {
+            "title": "Ask how follow-up and connected tools affect the quote",
+            "paragraphs": [
+              "AnswerForce\u2019s homepage describes using plan minutes for callbacks or outbound lead follow-up, as well as notifications and integrations. Ask how that usage is measured and what access the chosen setup requires. Do not infer unlimited outbound work from the presence of a feature.",
+              "If the office already uses a phone number and messaging process, identify whether the proposed business line, mobile interface and integrations are additions or replacements. Test the actual message and calendar record; a logo on an integrations page is not a completed workflow test."
+            ],
+            "items": [
+              "Request the included allowance and additional-usage unit.",
+              "Separate inbound, callback, chat and other quoted tasks.",
+              "Confirm who owns follow-up when the first staff contact is unavailable."
+            ]
+          },
+          {
+            "title": "Compare Revo using the same tasks and limits",
+            "paragraphs": [
+              "Revo\u2019s public Pricing page establishes its current AI offering and plan-dependent features. Use that source rather than estimated historical prices. Leave AnswerForce\u2019s total unknown until a current proposal is available.",
+              "Test a new inquiry, a change to an existing appointment and a request that must reach your own team. Compare the resulting records and workload as well as the first monthly charge. Do not claim a universal cost or quality winner from different service models and incomplete quotes."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Revo current plans",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is AnswerForce presented as human or AI answering?",
+            "a": "The reviewed official site presents live human answering. Confirm the exact product and arrangement in the proposal."
+          },
+          {
+            "q": "Can this guide supply an exact current AnswerForce bill?",
+            "a": "No. Its reviewed pricing path requires details before showing plans. Request the allowance, unit rates and terms for a complete comparison."
+          }
+        ],
+        "takeaway": "Compare Revo using the same tasks and limits. Use a representative call and current written terms to make the decision.",
+        "sourcePaths": [
+          "https://www.answerforce.com/",
+          "https://www.answerforce.com/register",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "related": [
+          "compare/ai-vs-live-receptionist",
+          "answering-service-cost",
+          "servicetitan-answering-service",
+          "choose-virtual-receptionist"
+        ]
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "temporary-answering-service",
+        "title": "Temporary answering service: cover absence and handback",
+        "description": "Plan temporary answering for a home service office: compare short-term commitments, set limited authority and return calls to your team with a tested handback.",
+        "navigationLabel": "Temporary answering",
+        "eyebrow": "Short-term call coverage",
+        "lead": "Plan the start, the limited assignment and the return to your office.",
+        "intro": "A temporary answering service covers a defined period when your usual office cannot answer: a staff absence, a training week or a short seasonal assignment. The buying decision is how to start and end that coverage cleanly, including the billing commitment and ownership of unfinished requests. Published by Revo; official sources reviewed October 20, 2026. The examples below are planning exercises, not customer outcomes.",
+        "sections": [
+          {
+            "title": "Separate a temporary assignment from ongoing overflow",
+            "paragraphs": [
+              "Overflow answers calls your open office cannot take at a particular moment. Temporary coverage has a planned start and end, even if it includes whole days when the office is unstaffed. Decide whether the service should answer all calls during that window or only a defined subset.",
+              "Specialty Answering Service describes limited-period live support, including a one-month commitment. Revo\u2019s public pages describe configurable scripts, hours and answering timing; they do not establish an hourly temporary plan or a subscription pause. Verify the actual minimum commitment and cancellation terms of each proposal before choosing."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "SAS temporary answering scope",
+                "href": "https://www.specialtyansweringservice.net/features/temporary-answering-service/"
+              },
+              {
+                "label": "Revo published service scope",
+                "href": "https://www.revoapp.ai/services.html"
+              }
+            ]
+          },
+          {
+            "title": "Buy the full commitment, not just the days away",
+            "paragraphs": [
+              "A three-day absence can still require a longer billing commitment. Ask for the first charge, recurring period, cancellation notice, setup work and any charges after the planned end. Keep provider subscription cancellation separate from switching phone routing back: completing one does not prove the other happened.",
+              "For a useful comparison, give every provider the same coverage dates, call estimate and allowed tasks. Compare the total commitment for that assignment rather than dividing a monthly headline by thirty and presenting the result as an available daily rate."
+            ],
+            "items": [
+              "Get the start and end of the billing commitment in writing.",
+              "Confirm who may extend coverage if an absence lasts longer.",
+              "Ask how unfinished messages and appointments are handed back."
+            ],
+            "sources": [
+              {
+                "label": "Revo current plans and terms",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          },
+          {
+            "title": "Use a limited script for the absence",
+            "paragraphs": [
+              "For an illustrative plumbing office whose coordinator is away for a week, prepare three paths: new inquiries, existing appointment changes and requests needing the owner\u2019s decision. Identify what the temporary handler may confirm and what must remain a callback request. Do not let the script imply that the absent coordinator or a technician is available.",
+              "Use the current calendar and an approved contact destination. Check plan eligibility before relying on a transfer or software connection. Do not copy a full-time employee\u2019s authority into a temporary script without deciding which decisions the coverage service may make."
+            ],
+            "items": [
+              "State the office\u2019s temporary hours and follow-up expectation.",
+              "Keep estimates, service promises and dispatch decisions with the authorized person.",
+              "Test an appointment change and a request outside the permitted service area."
+            ]
+          },
+          {
+            "title": "Rehearse the return before coverage begins",
+            "paragraphs": [
+              "Assign one person to switch routing back and another to verify a call from an outside phone. Test ordinary ringing, busy behavior and voicemail after the change. The intended return date alone does not prove that the phone carrier has stopped forwarding.",
+              "Before the temporary assignment ends, review pending callbacks and calendar changes. Give each unresolved request an owner. A caller who left a message during the absence should not disappear between the temporary service and the returning office."
+            ],
+            "items": [
+              "Run a test call before the absence and after handback.",
+              "Verify any conditional forwarding rules rather than assuming all forwarding was removed.",
+              "Reconcile open requests and retain records according to your own policy."
+            ]
+          },
+          {
+            "title": "Decide whether Revo fits the assignment",
+            "paragraphs": [
+              "Use Revo\u2019s current Pricing page to confirm the relevant plan and included minutes. A short coverage period does not establish a special short-term rate, pause entitlement or refundable unused allowance. Confirm those terms directly before relying on them.",
+              "Test the configured answering flow with a realistic request and inspect the resulting message or calendar entry. Accept a temporary setup only when the permitted task, follow-up owner and return path are clear. Answering a request is not the same as dispatching a technician."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is temporary answering the same as overflow answering?",
+            "a": "No. Overflow handles moments when an open office cannot take a call. A temporary assignment has a defined coverage period and a planned handback; either model can use forwarding rules."
+          },
+          {
+            "q": "Does Revo advertise a daily temporary plan or subscription pause?",
+            "a": "Neither was verified in the reviewed public materials. Confirm the minimum charge, billing period and cancellation terms instead of converting a monthly price into an assumed daily offer."
+          },
+          {
+            "q": "What should happen when the office returns?",
+            "a": "Restore and test the intended phone route, then assign every pending callback and appointment change. Confirm billing or cancellation separately from the routing change."
+          }
+        ],
+        "takeaway": "Choose temporary coverage with a clear end and a tested return to your office.",
+        "sourcePaths": [
+          "https://www.revoapp.ai/services.html",
+          "https://www.revoapp.ai/pricing.html",
+          "https://www.specialtyansweringservice.net/features/temporary-answering-service/"
+        ],
+        "related": [
+          "overflow-answering",
+          "turn-off-call-forwarding",
+          "choose-virtual-receptionist",
+          "conditional-call-forwarding"
+        ]
+      }
+    }
+  ]
+}

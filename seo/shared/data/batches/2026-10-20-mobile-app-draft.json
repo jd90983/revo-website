@@ -1,0 +1,113 @@
+{
+  "batchId": "2026-10-20-mobile-app-draft",
+  "source": {
+    "kind": "manual",
+    "reference": "Public official sources reviewed 2026-10-20; mobile service-management buying checklist for human review."
+  },
+  "operations": [
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "answering-service-app",
+        "title": "Answering service app: review messages from the jobsite",
+        "description": "Compare an answering service app by message access, staff permissions and changes to call handling. Test the workflow your home service team needs on mobile.",
+        "navigationLabel": "Answering service app",
+        "eyebrow": "Mobile buying checklist",
+        "lead": "Check what the app lets your office do after the call.",
+        "intro": "An answering service app can mean the interface for managing an outsourced receptionist, not an app that automatically picks up calls on your personal phone. For a home-service owner at a jobsite, the useful buying question is whether the mobile workflow supports reviewing requests and handing follow-up back to the office. Published by Revo; public sources reviewed October 20, 2026. The checks below are evaluation steps, not tested customer results.",
+        "sections": [
+          {
+            "title": "Identify which part of the service the app manages",
+            "paragraphs": [
+              "Separate the incoming-call service from the owner’s app. An agent may answer the business line while a mobile interface displays the resulting messages. Installing an app alone does not establish that business calls have been forwarded, that answering is active or that an appointment has been confirmed.",
+              "SAS describes an app used to adjust receptionist call handling and messaging. Revo’s official site links an iPhone app and describes call reports; its Pricing page lists a dashboard with summaries. Those statements do not verify Android availability, offline access, push-notification timing or every mobile control. Test the exact application and subscription you intend to use."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "SAS app and service description",
+                "href": "https://www.specialtyansweringservice.net/"
+              },
+              {
+                "label": "Revo services and iPhone download link",
+                "href": "https://www.revoapp.ai/services.html"
+              },
+              {
+                "label": "Revo current plan scope",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          },
+          {
+            "title": "Start with a request that needs an owner",
+            "paragraphs": [
+              "For an illustrative garage-door team, place a test inquiry while the owner is away from the office. Open the message on the intended phone and check whether it gives the office enough context for a callback. Include an existing appointment change so the team can distinguish it from a new estimate request.",
+              "Decide how one person claims follow-up. If the app does not provide a verified assignment or completion feature, use a documented office process rather than assuming the request has been handled because somebody opened it. A message read on a phone is not proof that the customer received a response."
+            ],
+            "items": [
+              "Check the caller’s return number and requested next step.",
+              "Verify the message’s time and whether an appointment was only requested or confirmed.",
+              "Agree who follows up when both owner and office can see the request."
+            ]
+          },
+          {
+            "title": "Test visibility separately from permission to change calls",
+            "paragraphs": [
+              "Being able to read a message does not establish permission to change a greeting, hours, destination or routing rule. Ask the provider which controls exist in the app, which require an administrator and which require support. Do not assume two apps expose the same controls because both show an inbox.",
+              "Use a test account and an authorized staff member to inspect access. Confirm how access is removed when a person leaves. If the office needs shared access, determine whether the quoted plan supports the required users and devices before making the application part of daily operations."
+            ],
+            "items": [
+              "List who may read records and who may change answering rules.",
+              "Confirm the device and operating-system requirements.",
+              "Check the supported sign-in and access-removal procedure."
+            ]
+          },
+          {
+            "title": "Rehearse a phone or connectivity problem",
+            "paragraphs": [
+              "An owner can lose a phone or have poor reception at a jobsite. Ask how the office will retrieve requests if that happens and which fallback channel is supported. Do not promise offline records or guaranteed delivery without verified product documentation.",
+              "Keep the fallback practical: identify the person who can access the business account, check pending requests and arrange callbacks. Verify the timestamps after reconnecting. Mobile access should support the follow-up process; it should not make one unavailable device the only way the office knows a caller is waiting."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare the complete subscription and workflow",
+            "paragraphs": [
+              "Check the answering plan, included usage and any staff or mobile-access requirements together. A free app download does not establish a free answering subscription. Revo’s current Pricing page is the source for its plan scope; confirm any additional application requirements before committing.",
+              "Use the same test request across shortlisted services. Compare the message your office actually receives, who can act on it and how changes are controlled. This page evaluates mobile management. The underlying agent’s voice, scheduling and transfer behavior still needs its own call test."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is an answering service app the same as automatic call pickup on my phone?",
+            "a": "Not necessarily. A service-management app may display messages or controls while a separate receptionist service answers the business line. Verify the product and routing setup."
+          },
+          {
+            "q": "Does an iPhone download link prove Android or offline support?",
+            "a": "No. Confirm the exact device support and offline behavior from current product documentation or a test; neither should be inferred from an iPhone link."
+          },
+          {
+            "q": "What should the first mobile test prove?",
+            "a": "That the intended staff member can find a realistic request, understand its next step and give follow-up a clear owner. Reading a notification alone does not establish completion."
+          }
+        ],
+        "takeaway": "Choose the app by the follow-up work your team can verify on its own devices.",
+        "sourcePaths": [
+          "https://www.revoapp.ai/services.html",
+          "https://www.revoapp.ai/pricing.html",
+          "https://www.specialtyansweringservice.net/"
+        ],
+        "related": [
+          "ai-call-summary",
+          "choose-virtual-receptionist",
+          "appointment-booking",
+          "business-call-recording"
+        ]
+      }
+    }
+  ]
+}
