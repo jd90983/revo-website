@@ -14433,7 +14433,12 @@
       "kind": "manual",
       "reference": "Official public sources reviewed 2026-10-20; four distinct home-service buyer decisions drafted for editorial review. (batch 2026-10-20-incremental-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:46a2506ea8d5621e934682d0ebaca275d0a102697347d935bdd8700b2c0616aa"
+    }
   },
   {
     "template": "workflow",
@@ -14539,7 +14544,12 @@
       "kind": "manual",
       "reference": "Public official sources reviewed 2026-10-20; mobile service-management buying checklist for human review. (batch 2026-10-20-mobile-app-draft)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:557dfc26cc3dcdafa6134447e337e8eea65a2146503790bea61b86f28175fb7a"
+    }
   },
   {
     "template": "workflow",
@@ -14639,7 +14649,12 @@
       "kind": "manual",
       "reference": "Official public sources reviewed 2026-10-20; four distinct home-service buyer decisions drafted for editorial review. (batch 2026-10-20-incremental-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:86e4dd7f3950adb396edcabbae2a5508dcde0780d6bd5f191bf959b78874a803"
+    }
   },
   {
     "template": "workflow",
@@ -14726,7 +14741,12 @@
       "kind": "manual",
       "reference": "Official public sources reviewed 2026-10-20; four distinct home-service buyer decisions drafted for editorial review. (batch 2026-10-20-incremental-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:46d96b8511a4a531bce654d54bc27927cf214e3bc94936967d4f5a4d70af8017"
+    }
   },
   {
     "template": "workflow",
@@ -14821,7 +14841,12 @@
       "kind": "manual",
       "reference": "Official public sources reviewed 2026-10-20; four distinct home-service buyer decisions drafted for editorial review. (batch 2026-10-20-incremental-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:8453bc91983d4c8d65eaccfdfb8dfbe938b5e8539c2ef4b71ecb68e2aa6ef982"
+    }
   },
   {
     "template": "workflow",
@@ -14913,7 +14938,12 @@
       "kind": "manual",
       "reference": "Official public sources reviewed 2026-10-20; four distinct home-service buyer decisions drafted for editorial review. (batch 2026-10-20-incremental-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:4e1a7bbae351def7797e92ac4d00972463d99bc09b6bbb69c8bba53046cddd84"
+    }
   },
   {
     "template": "workflow",
@@ -15004,7 +15034,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:c3271c0ee99e25ba6c90909d468840e827528f2fb6e2a4747ad27b73760a48de"
+    }
   },
   {
     "template": "workflow",
@@ -15095,7 +15130,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:b8fb53ed38b9b6f98185c1306b1bf3f02bbb6a73b8f978c1055cecba617bacfa"
+    }
   },
   {
     "template": "workflow",
@@ -15185,7 +15225,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:d81132677ce74f7164e9cc49e9513fe8417a1cddb09be0fcedf016d2de5664c3"
+    }
   },
   {
     "template": "workflow",
@@ -15275,7 +15320,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:c806213b9a15eabdd4a315974ba3d37c6d66401cca257013c46fb7e15bf8c467"
+    }
   },
   {
     "template": "workflow",
@@ -15365,7 +15415,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:8d37d769f519c39d72eb42e8d12193fb62104afe7cbc3184769d09cc47b446c9"
+    }
   },
   {
     "template": "workflow",
@@ -15456,7 +15511,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:9996b7c9d3891d5f9f716da2ec82d33513c401a22ff03816d46d8833ca11c3ee"
+    }
   },
   {
     "template": "workflow",
@@ -15546,7 +15606,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:865e76492eb2bf3a701da8a81dd579ed4bb5ecfe7e75b37f151093c7495bdfe9"
+    }
   },
   {
     "template": "workflow",
@@ -15636,7 +15701,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:e7c5ca62e50535fadf5bff44b39511a3d86064f0fa4b26cb14cc3eb44f846daf"
+    }
   },
   {
     "template": "workflow",
@@ -15727,7 +15797,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:f19178b45222668777be1f8b95f91f99fccf4b74d9cbf70d626680e0754abe38"
+    }
   },
   {
     "template": "workflow",
@@ -15818,7 +15893,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:81274088c6683b0de94621db339a7c8cd1d1ac5db4145faf0bd80882bfb2592e"
+    }
   },
   {
     "template": "workflow",
@@ -15908,7 +15988,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:c5f5e82df89a1d1cbb29c5815e1d23dbf33d058986a5088a48330ca4150e02e6"
+    }
   },
   {
     "template": "workflow",
@@ -15999,7 +16084,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:e24d45ee590a5f1d7cf047a5a0155399e88306803f093c117a0806650567d877"
+    }
   },
   {
     "template": "workflow",
@@ -16089,7 +16179,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:d3c35d59de882ceb50586defd96240581f26d12627e1672f3b8882b6374f3fed"
+    }
   },
   {
     "template": "workflow",
@@ -16179,7 +16274,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:da70c8d93541d0ec83ddd000e8e990268072a96d44d6467973eead0956957382"
+    }
   },
   {
     "template": "workflow",
@@ -16269,7 +16369,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:2bd2633f6f31fbe0304484fb148feba1cff01560c5575bab69da8732c7fb013d"
+    }
   },
   {
     "template": "workflow",
@@ -16360,7 +16465,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:45766947009f46fb8f7be23d8200fa48aa50e33a7968d51e0c7a4bb86dc9fb48"
+    }
   },
   {
     "template": "workflow",
@@ -16451,7 +16561,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:20d987482bfb42983e92bee0465bc22dfae9f671056fef18b95a70e9a0b1b521"
+    }
   },
   {
     "template": "workflow",
@@ -16541,7 +16656,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:aa234ee005872eb20f3a71ca65b93ff545c8c493a6e6bd0798bb9cc273f7c42c"
+    }
   },
   {
     "template": "workflow",
@@ -16631,7 +16751,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:ec94a349436c192c97cc35af582d204230a436d2282ed490391415bbf87c20ee"
+    }
   },
   {
     "template": "workflow",
@@ -16721,7 +16846,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:4223cbed938672b94e4dca98ad33fd6175b56c5b5dac86f296febaa33ee2e557"
+    }
   },
   {
     "template": "workflow",
@@ -16811,7 +16941,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:40382bf4e0509b343f6b6e6abe601135abc7db7a0abf30da5da708a26d947bf0"
+    }
   },
   {
     "template": "workflow",
@@ -16901,7 +17036,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:074f29ab60b87e928c0af0cb8054ca8b0c0485e83e9b3aedb1c85b801ebb9763"
+    }
   },
   {
     "template": "workflow",
@@ -16991,7 +17131,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:cd27b70a36f83cfba854dfecaad40f67a9dc3c4bd3a653005632a0a1438f325d"
+    }
   },
   {
     "template": "workflow",
@@ -17081,7 +17226,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:9218a028d571b1ce0c07ed8fdaa2afe676116d02c469222ea8d392bdd50e8014"
+    }
   },
   {
     "template": "workflow",
@@ -17172,7 +17322,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:837d752f7bc40dd7277a85c23d53312695e99cecee10ffbe279bee31625e5095"
+    }
   },
   {
     "template": "workflow",
@@ -17262,7 +17417,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:5c990a2a5430a4884aff6d05573b3dd9101653765362ac0b5e2735cef552c0c2"
+    }
   },
   {
     "template": "workflow",
@@ -17352,7 +17512,12 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:69da5d26a902c5ae56d6c48e848bbebfb7d7142133ee731ce75b0733a541f4ae"
+    }
   },
   {
     "template": "workflow",
@@ -17442,6 +17607,11 @@
       "kind": "manual",
       "reference": "Public official service and pricing pages reviewed 2026-10-20; provider-specific buyer guides for human editorial review. (batch 2026-10-20-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
+      "reviewedAt": "2026-10-20",
+      "contentHash": "sha256:db93aa7ded7c369bb49ad0795d28e087a320661ce9f82202d7df51684cfe13d1"
+    }
   }
 ]
