@@ -344,5 +344,32 @@
       "added pet-waste-removal-answering-service as draft",
       "added home-watch-answering-service as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-20-vendor-pricing-drafts",
+    "batchHash": "sha256:65ee24502462367960bdf5524423568218d07d8b07723272a1df2e677e01a14f",
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review."
+    },
+    "appliedAt": "2026-10-20",
+    "changes": [
+      "added compare/revo-vs-smith-ai as draft",
+      "added compare/revo-vs-answerconnect as draft",
+      "added ringcentral-ai-receptionist-pricing as draft",
+      "added goodcall-pricing as draft",
+      "added rosie-ai-pricing as draft",
+      "added patlive-pricing as draft",
+      "added housecall-pro-answering-cost as draft",
+      "added my-ai-front-desk-pricing as draft",
+      "added answering-service-care-pricing as draft",
+      "added specialty-answering-service-pricing as draft",
+      "added davinci-virtual-receptionist-pricing as draft",
+      "added map-communications-pricing as draft",
+      "added receptionhq-pricing as draft",
+      "added goto-ai-receptionist-pricing as draft",
+      "added zoom-ai-receptionist-pricing as draft",
+      "added openphone-ai-receptionist-pricing as draft"
+    ]
   }
 ]

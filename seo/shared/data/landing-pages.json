@@ -12827,5 +12827,1420 @@
       "contentHash": "sha256:609b50930898680b90c29059276f4574fcd67a9794d817067746def1eca1b7ee",
       "note": "Reviewed trade-specific intake and professional-only decisions. No diagnoses, access credentials, fictional claims or unsupported booking/integration promises. Final responsive review and CI required before normal merge."
     }
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "compare/revo-vs-smith-ai",
+    "title": "Smith.ai pricing: AI calls, human service and Revo",
+    "description": "Review Smith.ai pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "Smith.ai pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Choose the service model before comparing the call allowance.",
+    "intro": "Smith.ai offers separate AI and human receptionist products. A contractor evaluating its pricing needs to identify who will answer, which tasks require a person and how repeat calls affect the monthly allowance. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "The AI Free plan lists 25 calls for $0 monthly, then $3 per extra call. The baseline Pro option is $150 for 75 calls, with $2.50 extra calls; baseline Enterprise is $500 for 300, with $2.17 extras. These are call allowances, not minute bundles. AI scheduling is listed; confirm your calendar and live-escalation terms."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Smith.ai official source 1",
+            "href": "https://smith.ai/pricing/ai-receptionist"
+          },
+          {
+            "label": "Smith.ai official source 2",
+            "href": "https://smith.ai/pricing/receptionists"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "For a remodeling company, a long project inquiry and a short appointment change can each use a call. That makes call count useful, but it does not tell you whether the caller received the right answer. Keep new estimates, existing projects and supplier calls separate when testing. If a human must handle a particular request, confirm the handoff and its billing before selecting the AI tier."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "Illustrative arithmetic: 100 billable calls on baseline AI Pro cost $212.50 before other applicable charges: $150 plus 25 extra calls at $2.50. This is a workload example, not a quote or a forecast. Do not apply this AI calculation to the separately priced human receptionist service."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Obtain separate AI-first and human-first proposals if both are under consideration.",
+          "Ask what counts as a real call and how spam exclusions are applied.",
+          "Test an estimate request, a calendar change and an escalation to a person.",
+          "Check cancellation notice and any longer-term offer separately."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does Smith.ai charge for minutes?",
+        "a": "The AI table reviewed here uses calls. Request the exact billing definition for the product and package you choose."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "Choose the service model before comparing the call allowance. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://smith.ai/pricing/ai-receptionist",
+      "https://smith.ai/pricing/receptionists"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "compare/revo-vs-answerconnect",
+    "title": "AnswerConnect pricing: quote scope and Revo comparison",
+    "description": "Review AnswerConnect pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "AnswerConnect pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Build a human-answering quote around your office workload.",
+    "intro": "AnswerConnect presents live human answering. Its public pricing path leads to a quote form, so an exact current monthly rate cannot be responsibly filled in from an old comparison or a third-party estimate. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "The reviewed official pricing path did not provide a public rate card. Monthly base fees, included time, extra usage, setup and tax treatment remain quote-specific unknowns in this guide. No quote form was submitted. Request written terms before treating a price comparison as complete."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "AnswerConnect official source 1",
+            "href": "https://www.answerconnect.com/"
+          },
+          {
+            "label": "AnswerConnect official source 2",
+            "href": "https://www.answerconnect.com/view-pricing"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "A plumbing office may want a person to clarify a caller’s request while retaining all dispatch decisions internally. Write down where the receptionist’s role ends: collecting information, checking a permitted appointment slot or contacting an on-call person. Human answering alone does not establish technician availability or authorize an emergency visit."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "Build a sample week from your own calls: new inquiries, existing appointments and overnight requests. Ask the provider to mark which activities consume time, including any message work or transfers. Convert that agreed workload into a quote, then repeat it for a busy week. Leave the competing monthly total unknown until the proposal explains the billing unit."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Request base fee, allowance, rounding and extra-usage terms.",
+          "Confirm scheduling scope and any connected software requirements.",
+          "Ask how overnight handoffs and unanswered transfers are handled.",
+          "Compare cancellation, taxes and setup before calculating a total."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is AnswerConnect’s current starting price?",
+        "a": "No exact public starting rate was verified through the reviewed pricing path. Use a current written proposal instead of an estimated figure."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "Build a human-answering quote around your office workload. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://www.answerconnect.com/",
+      "https://www.answerconnect.com/view-pricing"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "ringcentral-ai-receptionist-pricing",
+    "title": "RingCentral AIR pricing: standalone or RingEX add-on",
+    "description": "Review RingCentral AIR pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "RingCentral AIR pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Separate AI answering from the underlying phone subscription.",
+    "intro": "RingCentral AI Receptionist has a standalone purchase path and a RingEX add-on. The right comparison depends on whether your service business already pays for RingEX or needs a separate phone setup. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "The official FAQ lists standalone AIR from $49 monthly and the RingEX add-on from $39, each with 100 minutes. Additional usage is $0.50 per minute, with calls rounded upward in 30-second increments. Extra minute bundles are offered. The add-on headline does not include a separately required RingEX subscription."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "RingCentral AIR official source",
+            "href": "https://www.ringcentral.com/pricing/ai-receptionist.html"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "An HVAC company replacing its office phone system faces a different purchase from an existing RingEX customer adding overflow answering. List the phone seats and numbers you need first. Then verify which calendar and routing rules the AI must use. A feature labeled scheduling should be tested against your actual service duration and available slots."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "Illustrative standalone usage of 180 billed minutes gives $89 before taxes, alternative bundles or other applicable charges: $49 plus 80 × $0.50. Use billed minutes after rounding, not simply the unrounded total in your phone log. Compare the written bundle quote if seasonal usage is consistently above 100 minutes."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Identify standalone or RingEX add-on in the proposal.",
+          "Request the total phone subscription cost when relevant.",
+          "Check how repeated short calls round into billed time.",
+          "Test a booking and a busy-team transfer with your own rules."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can AIR be purchased without RingEX?",
+        "a": "The official pricing page offers a standalone option. Use its price when comparing a business that does not already subscribe to RingEX."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "Separate AI answering from the underlying phone subscription. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://www.ringcentral.com/pricing/ai-receptionist.html"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "goodcall-pricing",
+    "title": "Goodcall pricing: unique callers versus handled minutes",
+    "description": "Review Goodcall pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "Goodcall pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Count distinct customers before counting conversations.",
+    "intro": "Goodcall meters unique customers instead of minutes. This changes the comparison for a home-service office where one homeowner may call several times about a quote, arrival time and follow-up work. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "Starter is $79 monthly for 100 unique customers, then $0.79 each. Growth is $129 for 500, then $0.26; Scale is $299 for 2,000, then $0.15. The published definition counts one phone number once per month and excludes spam and wrong numbers. Approximate call counts shown alongside plans are not the billing allowance."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Goodcall official source",
+            "href": "https://www.goodcall.com/pricing"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "A lawn-care office with recurring customers should examine the number of distinct phone numbers as well as total conversation time. A new estimate campaign can change the distinct-caller count even if average calls stay short. Conversely, repeated appointment questions from the same number may change handled minutes without changing the unique-customer count. Neither metric alone describes the completed work."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "Illustrative Starter usage of 140 billable unique customers totals $110.60 before any other applicable charges: $79 plus 40 × $0.79. Keep this calculation separate from a minute-based model. To compare options, record distinct callers, repeat-call frequency and total handled time for the same month."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Confirm how shared household numbers and repeat callers are counted.",
+          "Check the selected tier’s connected-tool and team-member limits.",
+          "Test the same caller returning to amend a request.",
+          "Review retained call history and who can access it."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Are Goodcall’s approximate calls a hard limit?",
+        "a": "The official billing unit is unique customers. Use the allowance and extra-customer rate rather than treating an illustrative call count as a fixed quota."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "Count distinct customers before counting conversations. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://www.goodcall.com/pricing"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "rosie-ai-pricing",
+    "title": "Rosie AI pricing: booking links and calendar tiers",
+    "description": "Review Rosie AI pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "Rosie AI pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "A texted scheduling link and a confirmed booking are different outcomes.",
+    "intro": "Rosie’s tiers distinguish sending an appointment link from booking directly into a calendar. For a cleaning or repair business, that workflow difference may matter more than the entry monthly fee. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "Monthly Professional is $49 with 250 minutes and appointment-link texts. Scale is $149 with 1,000 minutes, direct calendar booking and live/warm transfers. Growth is $299 with 2,000 minutes and waterfall transfers. Annual billing is a separate selection. A current overage rate was not verified, so above-allowance totals are not calculated here."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Rosie AI official source",
+            "href": "https://heyrosie.com/pricing"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "A cleaning office that only needs to send its online scheduling page can evaluate a different workflow from a team that needs the phone agent to reserve a slot during the call. In either case, check the final calendar state. An invitation to book should not be recorded internally as a confirmed appointment."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "Use an ordinary week and a busy week to test the chosen tier. Include a caller who changes the requested service, an existing booking and a transfer when the first person is unavailable. Record whether the caller received a link, a confirmed slot or a callback request. Compare those outcomes against what your office will actually accept."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Confirm monthly versus annual billing before comparing totals.",
+          "Request the current extra-minute policy in writing.",
+          "Test slot duration and details after a direct booking.",
+          "Check the fallback rule when a transfer is unanswered."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does the entry Rosie plan directly book a calendar slot?",
+        "a": "The reviewed monthly comparison lists appointment-link texts on Professional and direct calendar booking on Scale. Confirm the selected tier and configuration."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "A texted scheduling link and a confirmed booking are different outcomes. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://heyrosie.com/pricing"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "patlive-pricing",
+    "title": "PATLive pricing: live minutes and seasonal overage",
+    "description": "Review PATLive pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "PATLive pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Use the inbound answering table for inbound customer calls.",
+    "intro": "PATLive lists inbound live receptionist plans separately from outbound calling and chat. A home-service business should start with the table that matches the calls it wants answered. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "The inbound pay-as-you-go option lists $49 monthly with no included minutes and $2.99 per minute. The 100-minute plan is $189 with $2.09 additional minutes; the 200-minute plan is $349 with $1.99 extras. Government taxes and fees are additional. These allowances must not be combined with outbound or chat packages."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "PATLive official source",
+            "href": "https://www.patlive.com/pricing/"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "A roofing business may want people to collect project details while its crew handles inspections. Compare a normal month with a storm-driven inquiry period. Decide which callers should reach a receptionist and which should remain with the office. Human coverage is a buying requirement for some teams; it is not evidence that every service request should be handled the same way."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "Illustrative usage of 150 billed minutes on the 100-minute plan is $293.50 before government taxes and fees: $189 plus 50 × $2.09. The larger 200-minute plan’s $349 base is not automatically cheaper for that workload. Ask how transferred time and message work affect billed usage before estimating a full month."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Keep inbound, outbound and chat proposals separate.",
+          "Check how transferred and automated time are billed.",
+          "Request a busy-season estimate using the same workload.",
+          "Confirm service scope, cancellation and applicable extra charges."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does PATLive’s pay-as-you-go base include minutes?",
+        "a": "The reviewed inbound entry option has no included minutes. Usage is additional, and the page states that government taxes and fees are extra."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "Use the inbound answering table for inbound customer calls. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://www.patlive.com/pricing/"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "housecall-pro-answering-cost",
+    "title": "Housecall Pro answering cost: CSR AI versus base plans",
+    "description": "Review Housecall Pro CSR AI pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "Housecall Pro CSR AI pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Price the voice add-on separately from field-service software.",
+    "intro": "For a business already using Housecall Pro, the key question is the incremental cost and workflow of CSR AI voice answering. The price of the underlying business software alone does not answer that question. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "The public software pricing page lists Basic from $59 monthly when billed annually, excluding tax. That is not a verified CSR AI voice price. Official help describes CSR AI as an optional AI Team add-on, while newer marketing describes included chat. No standalone public voice rate was verified for this review."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Housecall Pro CSR AI official source 1",
+            "href": "https://www.housecallpro.com/pricing/"
+          },
+          {
+            "label": "Housecall Pro CSR AI official source 2",
+            "href": "https://help.housecallpro.com/en/articles/9311875-ai-team-overview"
+          },
+          {
+            "label": "Housecall Pro CSR AI official source 3",
+            "href": "https://www.housecallpro.com/features/ai-team/"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "An existing Housecall Pro customer should document the current software plan before asking for the voice addition. A business switching platforms must also account for the base subscription and migration work. Treat chat and phone answering as separate scope items: included website chat does not by itself establish the price of answered phone calls."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "Prepare two quotes for an illustrative HVAC office: retain the current software and add voice handling, or move software and answering together. Give both proposals the same service area, business hours, appointment types and follow-up rules. Ask which requests can create an appointment and which only capture a message. Do not assume Revo connects to Housecall Pro without separate verification."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Request the exact CSR AI voice add-on and usage unit.",
+          "Separate included chat from phone answering.",
+          "Confirm booking permissions and existing customer matching.",
+          "Include software seats, onboarding and cancellation in a switching estimate."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is the Basic software headline the cost of CSR AI voice?",
+        "a": "No voice price was verified from that headline. Obtain an account-specific voice proposal and distinguish it from base software and chat."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "Price the voice add-on separately from field-service software. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://www.housecallpro.com/pricing/",
+      "https://help.housecallpro.com/en/articles/9311875-ai-team-overview",
+      "https://www.housecallpro.com/features/ai-team/"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "my-ai-front-desk-pricing",
+    "title": "My AI Front Desk pricing: voice and shared credits",
+    "description": "Review My AI Front Desk pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "My AI Front Desk pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Budget voice minutes alongside the other uses of the credit pool.",
+    "intro": "My AI Front Desk, also using Frontdesk branding, combines included voice time with a credit system for additional activity. A mixed phone, text and chat workload needs more than a headline minute comparison. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "The pricing page shows $99 monthly or $79 monthly equivalent with annual billing, with 200 voice minutes and a 1,000-credit monthly overage pool. Voice uses 25 credits per minute; auto-reload is $10 per 1,000 credits. Other activity can use that pool, so it is not a guaranteed voice-only allowance."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "My AI Front Desk official source 1",
+            "href": "https://www.myaifrontdesk.com/pricing"
+          },
+          {
+            "label": "My AI Front Desk official source 2",
+            "href": "https://www.myaifrontdesk.com/ai-receptionist"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "A pool-service office may receive short schedule questions by phone and longer text exchanges about access or service details. Model those channels together rather than allocating every credit to voice. Check annual commitment and reload behavior before comparing the annual-equivalent headline with a cancelable monthly alternative."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "For an illustrative busy month, start with the expected voice minutes, then reserve credits for the other channels your office will use. Forty voice-only extra minutes would consume 1,000 credits at the stated conversion, but that arithmetic is not a promise that forty minutes remain after texting or other activity. Review usage alerts before enabling an automatically replenished balance."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Identify monthly or annual billing in the proposal.",
+          "Ask which activities debit the shared pool.",
+          "Confirm auto-reload settings and who can change them.",
+          "Test a caller who switches to text to complete a request."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does the credit pool guarantee extra voice minutes?",
+        "a": "Only a voice-only calculation converts the whole pool to voice time. Other activity may consume the same credits; budget the actual channel mix."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "Budget voice minutes alongside the other uses of the credit pool. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://www.myaifrontdesk.com/pricing",
+      "https://www.myaifrontdesk.com/ai-receptionist"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "answering-service-care-pricing",
+    "title": "Answering Service Care pricing: live and AI scope",
+    "description": "Review Answering Service Care pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "Answering Service Care pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Keep live-minute plans separate from AI escalation charges.",
+    "intro": "Answering Service Care offers live and AI options. A service company comparing them should identify whether people answer first or receive selected escalations, and use the corresponding price card. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "Current live cards list Starter at $40 monthly with zero minutes and $1.75 per minute, Small Business at $179 for 100 minutes, Pro at $329 for 250 and Enterprise at $639 for 500. A $50 setup fee is shown. Lower prose contains conflicting older figures; confirm a written quote rather than mixing those rates with current cards."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Answering Service Care official source",
+            "href": "https://answeringservicecare.com/pricing/"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "An electrical office considering AI with human backup needs an escalation model, not only a live-minute allowance. Define which requests should reach a person and what happens when the office cannot take a transfer. Ask whether appointment setting is available on the selected package. A live plan’s base fee does not establish the cost of an AI-plus-human configuration."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "Use an illustrative week with routine messages, new-job inquiries and a few calls requiring clarification. Ask the provider to price those same requests under live-first and AI-first handling, showing the unit charged at each step. Keep monthly and annual terms separate, especially where escalation rates differ. Do not calculate a blended total until both sets of units are confirmed."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Request the dated card and overage terms for the selected plan.",
+          "Resolve conflicting prose rates in writing.",
+          "Separate AI usage from human escalation time.",
+          "Confirm appointment-setting eligibility and setup charges."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I combine the page’s older prose rates with current plans?",
+        "a": "No. The reviewed page contains conflicting figures. Use a consistent dated proposal for the exact plan rather than blending sections."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "Keep live-minute plans separate from AI escalation charges. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://answeringservicecare.com/pricing/"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "specialty-answering-service-pricing",
+    "title": "Specialty Answering Service pricing: base or bundle",
+    "description": "Review Specialty Answering Service pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "SAS pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Compare a low-volume base fee with the minute bundle you will use.",
+    "intro": "Specialty Answering Service, often shortened to SAS, offers live answering with a base-fee option and minute packages. Seasonal contractors should compare their normal and busy periods separately. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "Economy lists a $44 monthly base plus $1.54 per minute. The 100-minute package is $159 with $1.44 extra minutes; 220 minutes is $269 with $1.44 extras; 500 minutes is $649 with $1.34 extras. The current page states one-second billing increments and month-to-month service without cancellation fees. Older $29 PDFs should not replace the current card."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Specialty Answering Service official source",
+            "href": "https://www.specialtyansweringservice.net/pricing/"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "A small fence contractor may start with only a few forwarded calls but need much more coverage when estimates increase. The smallest base fee is not the smallest bill at every usage level. Keep the tasks consistent when comparing: a callback message is different from a detailed estimate intake or scheduling activity."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "Illustrative arithmetic at 100 billed minutes is $198 on Economy before other applicable fees: $44 plus 100 × $1.54. The 100-minute package’s $159 base is lower for that workload. This compares published usage charges only; confirm feature and add-on eligibility before treating it as an all-in quotation."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Use the current pricing card instead of an old PDF.",
+          "Confirm which tasks are included in the quoted package.",
+          "Ask how messages and transferred calls consume time.",
+          "Check both quiet and busy months before choosing a bundle."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is SAS the same product as an AI receptionist?",
+        "a": "This review concerns Specialty Answering Service’s live-answering pricing. Compare the answering model and task scope as well as the billing unit."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "Compare a low-volume base fee with the minute bundle you will use. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://www.specialtyansweringservice.net/pricing/"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "davinci-virtual-receptionist-pricing",
+    "title": "Davinci Virtual pricing: business hours or Premium",
+    "description": "Review Davinci Virtual pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "Davinci Virtual pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Match the live coverage window and appointment tier to your office.",
+    "intro": "This guide concerns Davinci Virtual live receptionists, not unrelated products named Davinci. For a home-service business, both the live answering hours and the tier needed for appointments affect the comparison. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "Business 50 is $129 monthly and Business 100 is $239; Premium 50 is $249 and Premium 100 is $319. The FAQ lists $95 setup and extra minutes at $1.75 for Business or $2.50 for Premium. Live answering is Monday–Friday, 8 a.m.–8 p.m. Eastern; around-the-clock automation is different coverage. Appointment scheduling is listed under Premium."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Davinci Virtual official source 1",
+            "href": "https://www.davincivirtual.com/live-receptionists"
+          },
+          {
+            "label": "Davinci Virtual official source 2",
+            "href": "https://www.davincivirtual.com/faq/receptionist-services"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "A home inspector taking daytime estimate inquiries may have different needs from a plumbing company receiving overnight calls. Translate Eastern hours into your operating timezone and include weekends in the review. If booking is required, compare the Premium package rather than assuming the Business entry price provides the same workflow."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "For an illustrative western-US office, write out when the live receptionist window overlaps the workday and when automation takes over. Test the handoff at the boundary with an appointment change and an urgent request. Specify what the caller should hear after hours; neither automation nor message capture establishes that a technician is available."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Confirm the time zone and holiday coverage.",
+          "Price Premium when direct appointment work is required.",
+          "Include setup and the correct tier’s extra-minute rate.",
+          "Document the after-hours follow-up expectation."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does 24/7 automation mean 24/7 live receptionists?",
+        "a": "No. The reviewed offer distinguishes its weekday live-answering window from automated coverage outside that window."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "Match the live coverage window and appointment tier to your office. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://www.davincivirtual.com/live-receptionists",
+      "https://www.davincivirtual.com/faq/receptionist-services"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "map-communications-pricing",
+    "title": "MAP Communications pricing: PAYG versus minute plans",
+    "description": "Review MAP Communications pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "MAP Communications pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Compare seasonal workload against the full usage calculation.",
+    "intro": "MAP Communications publishes pay-as-you-go and bundled live-answering prices. A contractor can compare these using billed minutes, while keeping feature scope and any extra fees explicit. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "PAYG lists $49 monthly, no included minutes and $1.37 per minute. Business is $179 for 125 minutes with $1.30 extras; Enterprise is $339 for 250 with $1.28; Premium is $649 for 500 with $1.28. The page lists 24/7 coverage, English/Spanish service and no long-term contracts."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "MAP Communications official source",
+            "href": "https://www.mapcommunications.com/pricing/"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "A tree-service office may have quiet months followed by a burst of inquiries. Compare the same routing policy in both periods: sending every call versus forwarding only when the office is busy creates different workloads. Do not assume a named field-service connection exists without verifying it for the chosen setup."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "Illustrative usage of 100 billed minutes is $186 on PAYG before unverified extras: $49 plus 100 × $1.37. Business has a $179 base covering up to 125 minutes, so its base is lower at that workload. Repeat the calculation for your actual quiet and busy periods, including any proposal-specific tasks or fees."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Ask for the billed-minute definition and rounding.",
+          "Compare an ordinary month with the seasonal peak.",
+          "Verify how language choice and transfers are configured.",
+          "Confirm any software connection rather than inferring it from answering coverage."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is PAYG always the cheapest option for low volume?",
+        "a": "Use the actual usage calculation. At some minute levels a bundle’s base can be lower; the crossover also depends on any additional quoted fees."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "Compare seasonal workload against the full usage calculation. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://www.mapcommunications.com/pricing/"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "receptionhq-pricing",
+    "title": "ReceptionHQ pricing: messages, calls and appointments",
+    "description": "Review ReceptionHQ pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "ReceptionHQ pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "A message-taking fee is not a complete appointment-handling quote.",
+    "intro": "ReceptionHQ’s US product range separates message taking from broader receptionist and appointment tasks. Start with what the office needs completed, then compare the relevant service’s call unit. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "MessageExpress starts at $25 monthly plus $1.99 per call on PAYG. ReceptionistPlus starts at $35; MyAssistant and MyDiary start at $49 each. MyDiary addresses appointment handling. These starting figures are not all-inclusive bills. Additional or after-hours charges require plan-level confirmation; broader availability does not mean every overnight call is US-staffed."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "ReceptionHQ official source 1",
+            "href": "https://www.receptionhq.com/pricing/"
+          },
+          {
+            "label": "ReceptionHQ official source 2",
+            "href": "https://www.receptionhq.com/receptionistplus-service/"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "A window-cleaning office that only wants a callback name and number can evaluate a narrower service than a team needing appointments handled. Define the minimum useful message and whether the caller needs to choose a slot. Compare US pricing and coverage, rather than applying another country’s similar product name or rate."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "For an illustrative message-only month with 20 billable PAYG calls, the stated MessageExpress base and call charges give $64.80 before any other charges: $25 plus 20 × $1.99. That example does not establish the cost of booking appointments. Request a separate MyDiary scope and quote if that is the required outcome."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Choose message taking, receptionist support or appointment handling explicitly.",
+          "Confirm what counts as a billable call.",
+          "Ask for after-hours and transfer charges.",
+          "Check US service coverage and the exact appointment permissions."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does the $25 starting price establish a booking-service bill?",
+        "a": "No. It refers to the reviewed MessageExpress starting option with additional per-call charges. Appointment handling belongs to a different scope."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "A message-taking fee is not a complete appointment-handling quote. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://www.receptionhq.com/pricing/",
+      "https://www.receptionhq.com/receptionistplus-service/"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "goto-ai-receptionist-pricing",
+    "title": "GoTo AI Receptionist pricing: credits and phone seats",
+    "description": "Review GoTo AI Receptionist pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "GoTo AI Receptionist pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Request a quote that explains the AIR credit unit.",
+    "intro": "GoTo’s current Connect pricing organizes AI Receptionist alongside its phone-system packages. Without a published dollar rate and credit conversion, an invented per-minute calculation would obscure the purchase decision. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "The current plan page lists Phone System + AI Receptionist and CX Complete, with 100 AIR credits and additional credits available. Pricing requires sales contact. No dollar total or credit-to-minute conversion was verified. An April 2025 FAQ describes different minute packages, so it should not be used as the current price card."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "GoTo AI Receptionist official source 1",
+            "href": "https://www.goto.com/pricing/connect"
+          },
+          {
+            "label": "GoTo AI Receptionist official source 2",
+            "href": "https://www.goto.com/blog/ai-receptionist-faqs"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "An office replacing several phone seats should budget the phone platform and AI usage together. An existing GoTo customer should ask for the incremental change to the current subscription. Define the routing and languages the business needs in the proposal; a historical English-only FAQ and a current multilingual card should not be merged into one undated specification."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "Give the provider an illustrative week of calls, including short questions, longer estimate inquiries and transfers. Ask it to show the AIR-credit debit for each example and the total phone-seat bill. Keep the estimate blank until the unit conversion is documented. A credit allowance without its consumption rule is not enough to compare a busy month."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Request phone seats, numbers and AIR charges on separate lines.",
+          "Obtain the credit consumption and extra-credit rates.",
+          "Confirm the current language and routing scope.",
+          "Check which product generation the proposal describes."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I turn 100 AIR credits into 100 minutes?",
+        "a": "No verified conversion supports that assumption. Ask GoTo to document the consumption rule before estimating usage."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "Request a quote that explains the AIR credit unit. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://www.goto.com/pricing/connect",
+      "https://www.goto.com/blog/ai-receptionist-faqs"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "zoom-ai-receptionist-pricing",
+    "title": "Zoom AI Receptionist pricing: standalone versus Phone",
+    "description": "Review Zoom AI Receptionist pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "Zoom AI Receptionist pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Identify the offer before using a published Zoom price.",
+    "intro": "Zoom Virtual Agent Receptionist, Zoom Phone AI answering and visitor reception in Zoom Rooms are different buying contexts. A service-business phone comparison must identify the specific product and purchase path. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "The July 9, 2026 standalone announcement states a starting price of $29.99 monthly for 100 minutes, or $24.99 monthly with annual billing. Other official pages describe included Zoom Phone AI answering or a per-minute add-on. These statements do not establish one universal current rate. Current overage, taxes and bundle applicability remain unverified here."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Zoom AI Receptionist official source 1",
+            "href": "https://news.zoom.com/standalone-zoom-virtual-agent-receptionist/"
+          },
+          {
+            "label": "Zoom AI Receptionist official source 2",
+            "href": "https://www.zoom.com/en/discover/phone/ai-answering-service/"
+          },
+          {
+            "label": "Zoom AI Receptionist official source 3",
+            "href": "https://www.zoom.com/en/blog/ai-receptionist-use-cases/"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "A standalone office line and an existing Zoom Phone deployment should receive different proposals. Ask which licenses are required and whether the quoted allowance belongs to the standalone product or the phone bundle. Do not mistake a visitor kiosk for a customer-call answering service simply because both are called receptionist products."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "For an illustrative service office, prepare a standalone route and an existing-Zoom-Phone route. Use the same call mix, booking requirement and fallback number in both. Ask the provider to explain the applicable allowance and what happens above it. Keep extra-usage dollar totals unknown until the current terms resolve the purchase path."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Name the exact product and standalone or bundled offer.",
+          "Confirm monthly versus annual commitment.",
+          "Request the applicable allowance and excess-usage policy.",
+          "Test phone intake and handoff rather than a visitor-kiosk workflow."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is one Zoom receptionist price valid for every purchase path?",
+        "a": "No. The official statements reviewed describe different offers. Confirm the exact standalone or Zoom Phone arrangement before comparing totals."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "Identify the offer before using a published Zoom price. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://news.zoom.com/standalone-zoom-virtual-agent-receptionist/",
+      "https://www.zoom.com/en/discover/phone/ai-answering-service/",
+      "https://www.zoom.com/en/blog/ai-receptionist-use-cases/"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "openphone-ai-receptionist-pricing",
+    "title": "OpenPhone AI pricing today: Quo Sona calls and base plan",
+    "description": "Review Quo Sona pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "navigationLabel": "Quo Sona pricing",
+    "eyebrow": "Provider pricing review",
+    "lead": "Add the required phone subscription to the Sona allowance.",
+    "intro": "OpenPhone changed its name to Quo in September 2025. Buyers searching for the earlier AI receptionist should evaluate the current Sona offer on Quo, rather than treating the 2025 launch package as today’s price. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "sections": [
+      {
+        "title": "Read the published offer in its own billing unit",
+        "paragraphs": [
+          "Current Sona pricing lists 10 calls included on Quo plans. Paid tiers are $25 for 40 calls, $49 for 100, $99 for 250 and $199 for 600, with respective overages of $0.75, $0.65, $0.55 and $0.45 per call. Paid Quo service is required; Sona is not standalone. The underlying seat price must be verified before calculating a combined bill."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Quo Sona official source 1",
+            "href": "https://www.quo.com/sona"
+          },
+          {
+            "label": "Quo Sona official source 2",
+            "href": "https://www.quo.com/blog/next-chapter/"
+          }
+        ]
+      },
+      {
+        "title": "Match the service to your office decision",
+        "paragraphs": [
+          "A garage-door office using its phone system for both staff conversations and overflow answering needs to separate those activities. Decide which incoming calls reach Sona, which stay with the team and how repeated callers are counted. A message captured by the agent should not be treated as proof that a field-service appointment was created."
+        ],
+        "items": []
+      },
+      {
+        "title": "Work through a home-service example",
+        "paragraphs": [
+          "Illustrative Sona-only usage of 120 billable calls on the $49/100-call tier is $62: $49 plus 20 × $0.65. The required Quo subscription and any other charges are additional. This is not a complete phone-system quote. Compare the full seat-and-agent proposal before changing an existing number or call flow."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve these points before choosing",
+        "paragraphs": [
+          "Use the same requested tasks in every proposal. A rate card describes an offer; a representative call test shows whether the configured flow does the work your office needs."
+        ],
+        "items": [
+          "Use current Quo/Sona terms instead of the old OpenPhone launch table.",
+          "Add the required base subscription to the estimate.",
+          "Confirm the billable-call definition and overflow routing.",
+          "Test what happens when the office takes back an AI-handled call."
+        ]
+      },
+      {
+        "title": "Compare with Revo using the same workload",
+        "paragraphs": [
+          "Review Revo’s current plans and included minutes through the Pricing link. Compare the required answering, booking and team-handoff workflow with that exact plan, rather than assuming every feature is included in its entry tier. Record calls, handled minutes and required tasks together before comparing differently metered services.",
+          "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can I buy Sona as a standalone answering subscription?",
+        "a": "The reviewed offer requires paid Quo service. Compare the combined phone and AI cost rather than the Sona add-on alone."
+      },
+      {
+        "q": "What should a home-service office test?",
+        "a": "Use a representative customer inquiry and verify the resulting message or appointment, routing behavior and billable usage. Do not equate answering a call with dispatching a technician."
+      }
+    ],
+    "takeaway": "Add the required phone subscription to the Sona allowance. Use the current written terms and a representative call flow before selecting a package.",
+    "sourcePaths": [
+      "https://www.quo.com/sona",
+      "https://www.quo.com/blog/next-chapter/"
+    ],
+    "related": [
+      "answering-service-cost",
+      "pay-as-you-go-answering-service",
+      "compare/ai-vs-live-receptionist",
+      "compare/home-services-ai-receptionists"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public official provider sources reviewed 2026-10-20; 16 vendor-pricing editorial drafts for human review. (batch 2026-10-20-vendor-pricing-drafts)"
+    },
+    "publicationStatus": "draft"
   }
 ]
