@@ -455,7 +455,7 @@
 }
 
 .pricing-feature.is-off {
-  color: rgba(255, 255, 255, 0.28);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .pricing-feature-label {
@@ -670,4 +670,13 @@
     padding: 10px 0;
     font-size: 12.5px;
   }
+}
+
+.pricing-feature.is-off .pricing-feature-label {
+  flex-wrap: wrap;
+}
+
+.pricing-feature-status {
+  font-size: 11px;
+  font-weight: var(--font-medium);
 }

@@ -2939,6 +2939,9 @@ body.mobile-menu-open {
 /* ===== AI PERFORMANCE SECTION - DARK THEME ===== */
 
 .ai-performance-section {
+  /* These existing statistics must remain visible without JavaScript. */
+  opacity: 1;
+  transform: none;
   position: relative;
   width: 100%;
   background-color: #0a0b0c;
@@ -3022,11 +3025,10 @@ body.mobile-menu-open {
   width: 100%;
 }
 
-/* Individual performance stat items animation */
+/* Keep existing statistics visible before JavaScript runs or when it is disabled. */
 .performance-stats-row .performance-stat-item {
-  /* Entrance animation */
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94),
               transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
