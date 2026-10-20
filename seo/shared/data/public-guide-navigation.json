@@ -563,5 +563,85 @@
     "slug": "home-watch-answering-service",
     "label": "Home watch companies",
     "template": "workflow"
+  },
+  {
+    "slug": "compare/revo-vs-smith-ai",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/revo-vs-answerconnect",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "ringcentral-ai-receptionist-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "goodcall-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "rosie-ai-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "patlive-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "housecall-pro-answering-cost",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "my-ai-front-desk-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "answering-service-care-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "specialty-answering-service-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "davinci-virtual-receptionist-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "map-communications-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "receptionhq-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "goto-ai-receptionist-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "zoom-ai-receptionist-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
+  },
+  {
+    "slug": "openphone-ai-receptionist-pricing",
+    "label": "Provider pricing review",
+    "template": "workflow"
   }
 ]
