@@ -1,0 +1,119 @@
+{
+  "batchId": "2026-10-20-temporary-coverage-draft",
+  "source": {
+    "kind": "manual",
+    "reference": "Public official sources reviewed 2026-10-20; limited-period coverage and handback editorial draft for human review."
+  },
+  "operations": [
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "temporary-answering-service",
+        "title": "Temporary answering service: cover absence and handback",
+        "description": "Plan temporary answering for a home service office: compare short-term commitments, set limited authority and return calls to your team with a tested handback.",
+        "navigationLabel": "Temporary answering",
+        "eyebrow": "Short-term call coverage",
+        "lead": "Plan the start, the limited assignment and the return to your office.",
+        "intro": "A temporary answering service covers a defined period when your usual office cannot answer: a staff absence, a training week or a short seasonal assignment. The buying decision is how to start and end that coverage cleanly, including the billing commitment and ownership of unfinished requests. Published by Revo; official sources reviewed October 20, 2026. The examples below are planning exercises, not customer outcomes.",
+        "sections": [
+          {
+            "title": "Separate a temporary assignment from ongoing overflow",
+            "paragraphs": [
+              "Overflow answers calls your open office cannot take at a particular moment. Temporary coverage has a planned start and end, even if it includes whole days when the office is unstaffed. Decide whether the service should answer all calls during that window or only a defined subset.",
+              "Specialty Answering Service describes limited-period live support, including a one-month commitment. Revo’s public pages describe configurable scripts, hours and answering timing; they do not establish an hourly temporary plan or a subscription pause. Verify the actual minimum commitment and cancellation terms of each proposal before choosing."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "SAS temporary answering scope",
+                "href": "https://www.specialtyansweringservice.net/features/temporary-answering-service/"
+              },
+              {
+                "label": "Revo published service scope",
+                "href": "https://www.revoapp.ai/services.html"
+              }
+            ]
+          },
+          {
+            "title": "Buy the full commitment, not just the days away",
+            "paragraphs": [
+              "A three-day absence can still require a longer billing commitment. Ask for the first charge, recurring period, cancellation notice, setup work and any charges after the planned end. Keep provider subscription cancellation separate from switching phone routing back: completing one does not prove the other happened.",
+              "For a useful comparison, give every provider the same coverage dates, call estimate and allowed tasks. Compare the total commitment for that assignment rather than dividing a monthly headline by thirty and presenting the result as an available daily rate."
+            ],
+            "items": [
+              "Get the start and end of the billing commitment in writing.",
+              "Confirm who may extend coverage if an absence lasts longer.",
+              "Ask how unfinished messages and appointments are handed back."
+            ],
+            "sources": [
+              {
+                "label": "Revo current plans and terms",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          },
+          {
+            "title": "Use a limited script for the absence",
+            "paragraphs": [
+              "For an illustrative plumbing office whose coordinator is away for a week, prepare three paths: new inquiries, existing appointment changes and requests needing the owner’s decision. Identify what the temporary handler may confirm and what must remain a callback request. Do not let the script imply that the absent coordinator or a technician is available.",
+              "Use the current calendar and an approved contact destination. Check plan eligibility before relying on a transfer or software connection. Do not copy a full-time employee’s authority into a temporary script without deciding which decisions the coverage service may make."
+            ],
+            "items": [
+              "State the office’s temporary hours and follow-up expectation.",
+              "Keep estimates, service promises and dispatch decisions with the authorized person.",
+              "Test an appointment change and a request outside the permitted service area."
+            ]
+          },
+          {
+            "title": "Rehearse the return before coverage begins",
+            "paragraphs": [
+              "Assign one person to switch routing back and another to verify a call from an outside phone. Test ordinary ringing, busy behavior and voicemail after the change. The intended return date alone does not prove that the phone carrier has stopped forwarding.",
+              "Before the temporary assignment ends, review pending callbacks and calendar changes. Give each unresolved request an owner. A caller who left a message during the absence should not disappear between the temporary service and the returning office."
+            ],
+            "items": [
+              "Run a test call before the absence and after handback.",
+              "Verify any conditional forwarding rules rather than assuming all forwarding was removed.",
+              "Reconcile open requests and retain records according to your own policy."
+            ]
+          },
+          {
+            "title": "Decide whether Revo fits the assignment",
+            "paragraphs": [
+              "Use Revo’s current Pricing page to confirm the relevant plan and included minutes. A short coverage period does not establish a special short-term rate, pause entitlement or refundable unused allowance. Confirm those terms directly before relying on them.",
+              "Test the configured answering flow with a realistic request and inspect the resulting message or calendar entry. Accept a temporary setup only when the permitted task, follow-up owner and return path are clear. Answering a request is not the same as dispatching a technician."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is temporary answering the same as overflow answering?",
+            "a": "No. Overflow handles moments when an open office cannot take a call. A temporary assignment has a defined coverage period and a planned handback; either model can use forwarding rules."
+          },
+          {
+            "q": "Does Revo advertise a daily temporary plan or subscription pause?",
+            "a": "Neither was verified in the reviewed public materials. Confirm the minimum charge, billing period and cancellation terms instead of converting a monthly price into an assumed daily offer."
+          },
+          {
+            "q": "What should happen when the office returns?",
+            "a": "Restore and test the intended phone route, then assign every pending callback and appointment change. Confirm billing or cancellation separately from the routing change."
+          }
+        ],
+        "takeaway": "Choose temporary coverage with a clear end and a tested return to your office.",
+        "sourcePaths": [
+          "https://www.revoapp.ai/services.html",
+          "https://www.revoapp.ai/pricing.html",
+          "https://www.specialtyansweringservice.net/features/temporary-answering-service/"
+        ],
+        "related": [
+          "overflow-answering",
+          "turn-off-call-forwarding",
+          "choose-virtual-receptionist",
+          "existing-business-number"
+        ]
+      }
+    }
+  ]
+}
