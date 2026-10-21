@@ -59,3 +59,20 @@ test('crawl configuration resolves the duplicate without blocking fragment retri
  assert.ok(config.redirects.some(r=>r.source==='/index.html'&&r.destination==='/'&&r.permanent===true));
  for(const path of ['/templates/:path*','/thank-you.html'])assert.ok(config.headers.some(r=>r.source===path&&r.headers.some(h=>h.key==='X-Robots-Tag'&&h.value==='noindex')));
 });
+
+test('provider comparisons keep existing intent owners and distinguish billing units',()=>{
+ for(const slug of ['compare/revo-vs-sameday','compare/revo-vs-avoca','compare/revo-vs-smith-ai']){
+  const p=page(slug);assert.equal(p.publicationStatus,'approved');
+  const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page:p,mode:'public',acquisitionEnabled:false}));
+  assert.equal(p.overviewTable.rows.length,5);assert.ok(html.includes('<caption>'));
+  for(const s of p.overviewTable.sources)assert.ok(html.includes(s.href));
+  const schema=guideStructuredData(p);assert.equal(schema['@graph'][0].dateModified,p.editorialDate);
+  assert.deepEqual(schema['@graph'][1].mainEntity.map(q=>q.name),p.faqs.map(f=>f.q));
+ }
+ const smith=JSON.stringify(page('compare/revo-vs-smith-ai').overviewTable);
+ assert.ok(smith.includes('minutes')&&smith.includes('calls')&&smith.includes('$2.50')&&smith.includes('$2.17'));
+ const avoca=page('compare/revo-vs-avoca').overviewTable.rows;
+ assert.ok(avoca.every(r=>!r[2].includes('$')),'unknown competitor quote must not become an invented price');
+ for(const slug of ['ruby-receptionist-pricing','goodcall-pricing','rosie-ai-pricing'])assert.equal(page(slug).publicationStatus,'approved');
+ for(const slug of ['compare/revo-vs-ruby','compare/revo-vs-goodcall','compare/revo-vs-rosie'])assert.equal(page(slug),undefined,'do not duplicate an existing buying-intent owner');
+});

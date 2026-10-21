@@ -813,5 +813,15 @@
     "slug": "select-answering-service",
     "label": "Provider buying guide",
     "template": "workflow"
+  },
+  {
+    "slug": "compare/revo-vs-sameday",
+    "label": "Provider comparison",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/revo-vs-avoca",
+    "label": "Provider comparison",
+    "template": "workflow"
   }
 ]

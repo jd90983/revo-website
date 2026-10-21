@@ -691,6 +691,14 @@
       "destination": "/ai-answering-service/select-answering-service.html"
     },
     {
+      "source": "/ai-answering-service/compare/revo-vs-sameday",
+      "destination": "/ai-answering-service/compare/revo-vs-sameday.html"
+    },
+    {
+      "source": "/ai-answering-service/compare/revo-vs-avoca",
+      "destination": "/ai-answering-service/compare/revo-vs-avoca.html"
+    },
+    {
       "source": "/ai-answering-service",
       "destination": "/ai-answering-service.html"
     }
