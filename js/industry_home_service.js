@@ -122,7 +122,8 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
     }
 
-    console.log('Home-service counter animation initialized, found', statNumbers.length, 'stat numbers');
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches ||
+        !('IntersectionObserver' in window)) return;
 
     // Animation configuration
     const duration = 2000; // 2 seconds for the count animation
@@ -134,6 +135,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to animate a single counter
     const animateCounter = (element) => {
+      const value = element.querySelector('.performance-stat-value') || element;
       const target = parseInt(element.dataset.target, 10);
       console.log('Animating home-service counter to', target);
       let frame = 0;
@@ -143,11 +145,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const progress = easeOutQuad(frame / totalFrames);
         const currentValue = Math.round(target * progress);
 
-        element.textContent = currentValue + '%';
+        value.textContent = currentValue + '%';
 
         if (frame === totalFrames) {
           clearInterval(counter);
-          element.textContent = target + '%';
+          value.textContent = target + '%';
         }
       }, frameDuration);
     };

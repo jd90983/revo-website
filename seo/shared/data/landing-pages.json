@@ -5,7 +5,7 @@
     "description": "Plan a clear after-hours call flow: capture the request, set expectations and decide how your team follows up.",
     "eyebrow": "After the workday",
     "lead": "Your business hours can end without ending the conversation.",
-    "intro": "A caller outside office hours may need information, want to request a visit or report an urgent issue. A useful answering flow makes the next step clear without promising that a technician is available.",
+    "intro": "After-hours answering captures a caller’s request while your office is closed and gives the next step your team can support. Set separate rules for routine work, caller-reported urgency and an unavailable on-call contact. Phone coverage does not establish field-service availability.",
     "sourcePaths": [
       "features/24-7-answering",
       "problems/after-hours-calls",
@@ -46,20 +46,31 @@
           "Review routine and urgent example calls with your team.",
           "Confirm the next step is described correctly before routing real callers."
         ]
+      },
+      {
+        "title": "Illustrative calls to test before forwarding your number.",
+        "paragraphs": [
+          "Routine estimate, unavailable on-call contact and holiday follow-up are proposed test scenarios, not customer recordings or evidence of Revo results. For each case, record the request, the approved next step and the person responsible for follow-up."
+        ],
+        "items": [
+          "Routine estimate: capture work type, service area and callback details.",
+          "Unavailable on-call contact: follow the pre-agreed fallback without implying dispatch.",
+          "Holiday request: give the actual next review window and leave appointment confirmation to the supported process."
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "Does answering after hours mean a technician is available?",
-        "a": "No. Phone coverage and field-service availability are separate. Your service hours and escalation rules must set the expectation."
+        "q": "Does after-hours answering mean a technician is available?",
+        "a": "Your business sets field-service availability. The answering flow should communicate those limits clearly."
       },
       {
-        "q": "Can I use one flow for nights, weekends and holidays?",
-        "a": "You can propose a shared policy, but review each period and the people responsible for follow-up before using it."
+        "q": "What if the on-call contact cannot answer?",
+        "a": "Agree and test the fallback. Tell the caller the next step your team has approved rather than promising an immediate response."
       },
       {
-        "q": "What should the caller be told about a callback?",
-        "a": "Use a window your team has approved. Do not give a response-time guarantee that your operation cannot support."
+        "q": "Is this the same as overflow answering?",
+        "a": "Overflow backs up an open office during busy periods. After-hours follows your closed-office policy."
       }
     ],
     "takeaway": "One after-hours page covers the commercial intent previously split between after-hours and 24/7 material.",
@@ -71,11 +82,12 @@
       "reference": "jd90983/revo-website#43"
     },
     "review": {
-      "reviewer": "jalberto-commits",
-      "reviewedAt": "2026-10-07",
-      "contentHash": "sha256:85b8d44e6a0bb33de54e7c1309ddc71be9447036a9b417394b27af7c79becca5",
-      "note": "Editorial review in #43; published through #44 after Preview verification"
-    }
+      "reviewer": "Codex — user-delegated local editorial review",
+      "reviewedAt": "2026-10-21",
+      "contentHash": "sha256:3e6744c12144db4d5255363e1ad154401bb0538a2627da5b593d9c86e5af9477",
+      "note": "Substantive editorial update; existing route and plan terms retained; primary-source documentation and illustrative arithmetic checked."
+    },
+    "editorialDate": "2026-10-21"
   },
   {
     "slug": "missed-calls",
@@ -356,13 +368,14 @@
   },
   {
     "slug": "cost-of-missed-calls",
-    "title": "Explore the potential value of unanswered inquiries",
-    "description": "Use an editable scenario worksheet to explore potential job value, separating assumptions from actual revenue and profit.",
+    "title": "Cost of missed calls: calculate potential job value",
+    "description": "Estimate missed-call opportunity value with a transparent formula, a labeled $1,500 monthly example and your own call records; not a revenue forecast.",
     "eyebrow": "Scenario worksheet",
-    "lead": "Put your assumptions on the page.",
-    "intro": "An unanswered call is not automatically a lost job. This worksheet helps you explore a scenario using numbers you choose. It is not a forecast, a measurement of lost revenue or a claim about results from Revo.",
+    "lead": "Estimate potential job value with three clear inputs.",
+    "intro": "Illustrative monthly scenario: 10 unanswered qualified inquiries × 30% assumed booking probability × $500 assumed average job value = $1,500 potential gross job value. These inputs are examples, not measured losses or Revo results. Replace them with your own records; a missed call is not automatically a lost job.",
     "sourcePaths": [
-      "pricing/cost-of-missed-calls"
+      "pricing/cost-of-missed-calls",
+      "https://www.revoapp.ai/pricing.html"
     ],
     "calculator": true,
     "sections": [
@@ -373,6 +386,18 @@
           "The formula is unanswered qualified inquiries × assumed booking probability × assumed average job value for one chosen period. It estimates potential gross job value under those assumptions; it is not cash collected or profit."
         ],
         "items": []
+      },
+      {
+        "title": "Work through the example and test the assumptions.",
+        "paragraphs": [
+          "The example uses 10 × 0.30 × $500 = $1,500 for one month. Holding the inquiry count and job value fixed, a 10% booking assumption gives $500 and a 50% assumption gives $2,500. That is sensitivity to an assumption, not an observed range of business losses.",
+          "Start a simple call log with the period, new-service inquiry count, unanswered count, callback outcome and job value when known. Review duplicate callers and jobs your crew could not accept. Keep the worksheet separate from the revenue your accounts actually record."
+        ],
+        "items": [
+          "Label the period before entering values.",
+          "Record how each input was obtained and which values remain assumptions.",
+          "Review callbacks and completed work before calling any figure a measured loss."
+        ]
       },
       {
         "title": "Read the result as a scenario.",
@@ -414,11 +439,43 @@
       "reference": "jd90983/revo-website#43"
     },
     "review": {
-      "reviewer": "jalberto-commits",
-      "reviewedAt": "2026-10-07",
-      "contentHash": "sha256:1f19bab11ebffe0109c2077443bbf7f8cf4e36ea4a0071311210dc926c501dc9",
-      "note": "Editorial review in #43; published through #44 after Preview verification"
-    }
+      "reviewer": "Codex — user-delegated local editorial review",
+      "reviewedAt": "2026-10-21",
+      "contentHash": "sha256:b1d05c79b3c7c3be12951358f9c7aa957613f2305cc7defca3893c6e47363d27",
+      "note": "Substantive editorial update; existing route and plan terms retained; primary-source documentation and illustrative arithmetic checked."
+    },
+    "overviewTable": {
+      "caption": "Illustrative monthly scenario — assumptions, not customer results",
+      "columns": [
+        "Input",
+        "Illustrative value",
+        "What to use for your business"
+      ],
+      "rows": [
+        [
+          "Unanswered qualified inquiries",
+          "10 in one month",
+          "Deduplicated new service inquiries, excluding spam and existing-job calls"
+        ],
+        [
+          "Assumed booking probability",
+          "30%",
+          "Your own supported estimate for that same period"
+        ],
+        [
+          "Assumed average job value",
+          "$500",
+          "Your job records; gross value before labor, materials and other costs"
+        ],
+        [
+          "Potential gross job value",
+          "$1,500 = 10 × 0.30 × $500",
+          "An opportunity scenario, not measured lost revenue or profit"
+        ]
+      ],
+      "sources": []
+    },
+    "editorialDate": "2026-10-21"
   },
   {
     "slug": "bilingual-answering",
@@ -512,12 +569,13 @@
     "description": "Compare answering service billing models, estimate monthly minutes and review plan limits alongside Revo’s official pricing.",
     "navigationLabel": "Answering service cost",
     "eyebrow": "Budget and coverage",
-    "lead": "Budget for the conversation and the work after it.",
-    "intro": "Answering service cost depends on the billing model, included usage and the responsibilities covered. Start with your call records and a current written offer rather than an assumed saving or a missed-call revenue estimate.",
+    "lead": "Start with a published price and its billing unit.",
+    "intro": "Revo’s published Launch Offer runs from $87.50/month for Solo with 100 minutes to $350/month for Fleet with 400 minutes; Crew is $175 for 200 minutes. Other services bill by receptionist minutes, distinct customers or a custom quote. Compare the plan’s work and billing rules before treating prices as equivalent.",
     "sections": [
       {
         "title": "Compare the billing model before the headline price.",
         "paragraphs": [
+          "The table is a dated selection of public offers, not a market-wide average or a lowest-price ranking. Revo’s figures are its published Launch Offer, not a change to eligibility or rate duration. Use each provider’s current written terms for setup, tax, usage and cancellation details.",
           "Providers can quote a monthly subscription with included minutes, a per-minute rate, a per-call package or a staffing arrangement. These are comparison categories, not claims about a particular competitor.",
           "Ask what counts as billable time, how rounding works and whether transfers, short calls or follow-up use the allowance. Request the current terms for additional usage; do not infer an overage rate by dividing the monthly fee by included minutes."
         ],
@@ -580,7 +638,10 @@
     "sourcePaths": [
       "https://www.revoapp.ai/services.html",
       "https://www.revoapp.ai/pricing.html",
-      "seo/shared/lib/official-pricing.ts"
+      "seo/shared/lib/official-pricing.ts",
+      "https://www.goodcall.com/pricing",
+      "https://www.ruby.com/plans-and-pricing/",
+      "https://sameday.ai/pricing"
     ],
     "source": {
       "kind": "manual",
@@ -588,11 +649,65 @@
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Codex, user-delegated editorial correction for PR46",
-      "reviewedAt": "2026-10-08",
-      "contentHash": "sha256:00071a0ff36b99e995e3446f2923e723ef6845e6df64c925b6ff075d0e853fed",
-      "note": "User authorized the neutral Launch Offer clarification recommended by independent editorial review; atomic update/reapproval preserves related guides and existing approvals."
-    }
+      "reviewer": "Codex — user-delegated local editorial review",
+      "reviewedAt": "2026-10-21",
+      "contentHash": "sha256:c7dde1826beef1002e5d8da5237c647df0e60ac5ceb504df8d6ebe2a43b5e171",
+      "note": "Substantive editorial update; existing route and plan terms retained; primary-source documentation and illustrative arithmetic checked."
+    },
+    "overviewTable": {
+      "caption": "Selected published starting offers, checked 2026-10-21; different service models and units",
+      "columns": [
+        "Provider / offer",
+        "Monthly price",
+        "Included allowance",
+        "Comparison limit"
+      ],
+      "rows": [
+        [
+          "Revo Solo Launch Offer",
+          "$87.50",
+          "100 minutes",
+          "AI answering; Solo excludes team transfers and field-service connections"
+        ],
+        [
+          "Goodcall Starter",
+          "$79",
+          "100 unique customers",
+          "Customer phone numbers are the unit; not conversation minutes"
+        ],
+        [
+          "Ruby receptionist plan",
+          "$250",
+          "50 receptionist minutes",
+          "Live answering; chat is a separate service"
+        ],
+        [
+          "Sameday Launch",
+          "Starts at $449",
+          "Starts with 500 minutes",
+          "Confirm selected software, locations and additional-usage terms"
+        ]
+      ],
+      "sources": [
+        {
+          "label": "Revo official pricing",
+          "href": "https://www.revoapp.ai/pricing.html"
+        },
+        {
+          "label": "Goodcall official pricing",
+          "href": "https://www.goodcall.com/pricing"
+        },
+        {
+          "label": "Ruby official pricing",
+          "href": "https://www.ruby.com/plans-and-pricing/"
+        },
+        {
+          "label": "Sameday official pricing",
+          "href": "https://sameday.ai/pricing"
+        }
+      ]
+    },
+    "editorialDate": "2026-10-21"
   },
   {
     "slug": "appointment-booking",
@@ -3912,11 +4027,11 @@
   {
     "slug": "compare/home-services-ai-receptionists",
     "title": "AI receptionist alternatives for home service businesses",
-    "description": "Compare Revo, Avoca, Goodcall, Sameday and Smith.ai using published booking, transfer, integration and billing details for home service businesses.",
+    "description": "Compare seven AI and live receptionist options by published prices, billing units, booking destinations and handoff limits for home service teams.",
     "navigationLabel": "Compare AI receptionists",
     "eyebrow": "Provider comparison",
-    "lead": "Compare the documented workflow, not a ranking.",
-    "intro": "AI receptionist alternatives differ in where they create bookings, who receives a handoff, which software they connect to and how usage is billed. Compare five providers below. Published by Revo; documentation reviewed October 15, 2026. This is a comparison of published offerings, not hands-on performance results. Confirm the selected plan and setup directly with each provider.",
+    "lead": "Choose by booking destination, handoff and the work you need.",
+    "intro": "Choose an answering service by the booking record it creates, who receives a handoff and how usage is billed. Revo, Avoca, Goodcall, Sameday, Smith.ai, Ruby and Rosie cover different needs. Published by Revo; primary-source documentation checked October 21, 2026. This is a documented shortlist, not a performance ranking or hands-on test.",
     "sections": [
       {
         "title": "Avoca: job records and CSR handoff",
@@ -4018,6 +4133,7 @@
         "title": "Smith.ai: AI answering and live-agent options",
         "paragraphs": [
           "Smith.ai’s AI product documents appointment scheduling, lead qualification, recordings, summaries and context-preserving transfers. Its published scheduling examples include Calendly. Confirm the exact calendar or field-service workflow rather than applying a broad integration count to every package.",
+          "Smith.ai’s current AI product page lists a Free plan at $0 per month with 25 calls per month and $3 per additional call on that plan. Its FAQ says overages are off by default and require authorization. Paid AI plans and staffed add-ons have separate terms; this is not the $300 human-first receptionist package.",
           "Its AI pricing uses call-based allowances or rates. The product also distinguishes live-agent involvement and hybrid arrangements from routing to your own team. Charges and conditions depend on the type of escalation and chosen arrangement. Request those terms explicitly; access to vendor-staffed reception and a transfer to your employee are not interchangeable features."
         ],
         "items": [
@@ -4030,6 +4146,40 @@
           {
             "label": "Smith.ai AI product and pricing",
             "href": "https://smith.ai/ai-receptionist"
+          }
+        ]
+      },
+      {
+        "title": "Ruby: live receptionist minutes rather than an AI-only plan",
+        "paragraphs": [
+          "Ruby’s published receptionist offer begins at $250 per month for 50 minutes. Its dedicated pricing page separates receptionist plans from managed chat and says receptionist plans share the feature set. A live receptionist conversation is a different service model from an AI-only answer.",
+          "Ruby may fit better when your requirement is a person handling intake and scheduling. Ask it to demonstrate your booking destination and clarify the work, coverage and billing rules in your proposal. A 50-minute allowance does not establish how many jobs will be booked."
+        ],
+        "items": [
+          "Choose the live or AI operating model deliberately.",
+          "Keep receptionist minutes separate from chat allowances."
+        ],
+        "sources": [
+          {
+            "label": "Ruby receptionist plans",
+            "href": "https://www.ruby.com/plans-and-pricing/"
+          }
+        ]
+      },
+      {
+        "title": "Rosie: message taking with higher-tier booking and transfers",
+        "paragraphs": [
+          "Rosie’s pricing page lists Professional at $49 per month with 250 minutes and appointment links sent by text. Scale is $149 with 1,000 minutes and lists direct calendar booking, warm transfers and live transfers. Growth is $299 with 2,000 minutes and adds a sequence of transfer destinations.",
+          "Professional may fit a message-taking workflow that sends a booking link. If direct calendar booking or a team transfer is required, compare the applicable higher plan and confirm the supported calendar and no-answer behavior. Sending a link is not the same output as a confirmed calendar booking."
+        ],
+        "items": [
+          "Keep Professional’s texted link separate from direct calendar booking.",
+          "Check the transfer destination, fallback and selected plan."
+        ],
+        "sources": [
+          {
+            "label": "Rosie plans and tier boundaries",
+            "href": "https://heyrosie.com/pricing"
           }
         ]
       },
@@ -4057,6 +4207,18 @@
           "Review the response to an out-of-area request.",
           "Check the unavailable-recipient fallback and follow-up owner."
         ]
+      },
+      {
+        "title": "Use the same buying method, including reasons to choose another option.",
+        "paragraphs": [
+          "Build the shortlist from requirements before comparing the monthly amount. If a human must conduct every conversation, evaluate Ruby’s live receptionist service or Smith.ai’s applicable staffed arrangement. If a named ServiceTitan job workflow is essential, examine the documented Avoca and Sameday operations. Those are requirement-based choices, not claims that another option performs worse.",
+          "For Revo, confirm the selected plan and supported booking action first. Solo’s price does not buy Crew/Fleet features. Give every finalist the same sample request and unavailable-contact case, then compare the records and quote supplied. This page reports published documentation; it does not report test scores, booking rates or customer outcomes."
+        ],
+        "items": [
+          "Record the date, source and billing unit for each quote.",
+          "List any required operation that remains unverified.",
+          "Choose only after the demonstration and written scope resolve those gaps."
+        ]
       }
     ],
     "faqs": [
@@ -4080,7 +4242,10 @@
       "https://www.avoca.ai/integrations/servicetitan",
       "https://www.goodcall.com/pricing",
       "https://sameday.ai/pricing",
-      "https://smith.ai/ai-receptionist"
+      "https://smith.ai/ai-receptionist",
+      "https://www.ruby.com/plans-and-pricing/",
+      "https://heyrosie.com/pricing",
+      "https://www.avoca.ai/inbound"
     ],
     "related": [
       "choose-virtual-receptionist",
@@ -4095,11 +4260,95 @@
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "User recurring publication authorization — evidence reviewed",
-      "reviewedAt": "2026-10-15",
-      "contentHash": "sha256:8b1c5977e46a0e1935b3c62621371352e21156796bccf426db6d02e24db8a53a",
-      "note": "One dated provider comparison and related inbound link; existing approved HOME design;19-page shortfall documented. Linked update and fresh approval committed atomically to retain approved incoming references."
-    }
+      "reviewer": "Codex — user-delegated local editorial review",
+      "reviewedAt": "2026-10-21",
+      "contentHash": "sha256:74de90c2e6c9f17bee326327869eb4f15a22557abaaf6967f9f5397da8affa3b",
+      "note": "Substantive editorial update; existing route and plan terms retained; primary-source documentation and illustrative arithmetic checked."
+    },
+    "overviewTable": {
+      "caption": "Seven options for home services — published starting offers checked 2026-10-21; editorial fit, not a performance ranking",
+      "columns": [
+        "Provider",
+        "Published starting offer",
+        "Billing unit / workflow",
+        "When to shortlist"
+      ],
+      "rows": [
+        [
+          "Avoca",
+          "Request a quote; no price verified on the reviewed product page",
+          "Named ServiceTitan job-record workflow; confirm current package",
+          "A ServiceTitan-specific intake and CSR workflow is a requirement"
+        ],
+        [
+          "Goodcall",
+          "$79/month Starter",
+          "100 unique customers; calendar/tool limits vary by plan",
+          "Your records support comparing distinct customers rather than minutes"
+        ],
+        [
+          "Revo",
+          "$87.50/month Solo Launch Offer",
+          "100 minutes; team transfers and field-service connections require Crew/Fleet",
+          "You want the published minute plans and can confirm the supported setup"
+        ],
+        [
+          "Sameday",
+          "Launch starts at $449/month",
+          "Starts with 500 minutes; named field-service scheduling",
+          "You need its documented home-service software workflow"
+        ],
+        [
+          "Smith.ai",
+          "$0/month Free; paid plans separately",
+          "25 AI calls/month; review overage opt-in and staffed add-on terms",
+          "Vendor live-agent involvement is a requirement to evaluate"
+        ],
+        [
+          "Ruby",
+          "$250/month",
+          "50 live-receptionist minutes; chat is separate",
+          "You want a person to handle the reception conversation"
+        ],
+        [
+          "Rosie",
+          "$49/month Professional",
+          "250 minutes; booking links by text; direct booking/transfers on Scale",
+          "You need the published message-taking plan or can evaluate the higher-tier workflow"
+        ]
+      ],
+      "sources": [
+        {
+          "label": "Revo official pricing",
+          "href": "https://www.revoapp.ai/pricing.html"
+        },
+        {
+          "label": "Ruby official pricing",
+          "href": "https://www.ruby.com/plans-and-pricing/"
+        },
+        {
+          "label": "Sameday official pricing",
+          "href": "https://sameday.ai/pricing"
+        },
+        {
+          "label": "Goodcall official pricing",
+          "href": "https://www.goodcall.com/pricing"
+        },
+        {
+          "label": "Rosie official pricing",
+          "href": "https://heyrosie.com/pricing"
+        },
+        {
+          "label": "Avoca official product",
+          "href": "https://www.avoca.ai/inbound"
+        },
+        {
+          "label": "Smith.ai official product",
+          "href": "https://smith.ai/ai-receptionist"
+        }
+      ]
+    },
+    "editorialDate": "2026-10-21"
   },
   {
     "slug": "business-voicemail-greeting",
@@ -6758,7 +7007,7 @@
     "navigationLabel": "Ruby receptionist pricing",
     "eyebrow": "Provider pricing review",
     "lead": "Compare receptionist minutes with the work your office delegates.",
-    "intro": "Ruby receptionist pricing is based on monthly receptionist minutes. Separate that allowance from chat services and verify the handling rules for your calls. Published by Revo; official documentation reviewed October 16, 2026. This is a dated buyer guide, not a Ruby quote, affiliation or hands-on service test.",
+    "intro": "Ruby lists receptionist plans at $250/month for 50 minutes, $395 for 100, $720 for 200 and $1,725 for 500. These are live-receptionist minute plans; chat is separate. Published by Revo; official pricing checked October 21, 2026. Confirm your quote and excess-minute terms directly with Ruby.",
     "sections": [
       {
         "title": "Start with the receptionist price card",
@@ -6851,11 +7100,48 @@
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Recurring user publication authorization; editorial review October16",
-      "reviewedAt": "2026-10-16",
-      "contentHash": "sha256:fdf3317e68795b7aabc6c9245189c019a0692cb0619696106b38a2d9b1e9a105",
-      "note": "Dated historical US170 KD27; dedicated current official prices checked; related links corrected during draft review; quote gaps explicit."
-    }
+      "reviewer": "Codex — user-delegated local editorial review",
+      "reviewedAt": "2026-10-21",
+      "contentHash": "sha256:1e28555e120935137166b5bb820bc3cf916d87ec42162ec25701606877dcf32c",
+      "note": "Substantive editorial update; existing route and plan terms retained; primary-source documentation and illustrative arithmetic checked."
+    },
+    "overviewTable": {
+      "caption": "Ruby published receptionist plans — checked 2026-10-21; chat is separate",
+      "columns": [
+        "Monthly receptionist minutes",
+        "Published monthly price",
+        "Confirm in the proposal"
+      ],
+      "rows": [
+        [
+          "50",
+          "$250",
+          "Billable-time definition, rounding and excess-minute rate"
+        ],
+        [
+          "100",
+          "$395",
+          "Same receptionist feature set; confirm the account scope"
+        ],
+        [
+          "200",
+          "$720",
+          "Usage review and the work delegated to receptionists"
+        ],
+        [
+          "500",
+          "$1,725",
+          "Current agreement; larger plans by consultation"
+        ]
+      ],
+      "sources": [
+        {
+          "label": "Ruby official pricing",
+          "href": "https://www.ruby.com/plans-and-pricing/"
+        }
+      ]
+    },
+    "editorialDate": "2026-10-21"
   },
   {
     "slug": "average-handle-time",

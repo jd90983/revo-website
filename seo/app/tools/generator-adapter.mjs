@@ -9,7 +9,7 @@
 // generator's schema fails loudly here instead of publishing partial pages.
 
 const REQUIRED = ['slug', 'title', 'description', 'eyebrow', 'lead', 'intro', 'takeaway', 'navigationLabel', 'pricingVariant', 'sourcePaths', 'sections', 'faqs'];
-const OPTIONAL = ['calculator', 'comparison', 'related', 'image'];
+const OPTIONAL = ['calculator', 'comparison', 'related', 'image', 'editorialDate', 'overviewTable'];
 
 const pick = (row, path) => String(path).split('.').reduce((value, key) => (value == null ? undefined : value[key]), row);
 
