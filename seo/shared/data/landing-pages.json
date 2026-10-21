@@ -13123,7 +13123,7 @@
     "navigationLabel": "Smith.ai pricing",
     "eyebrow": "Provider pricing review",
     "lead": "Choose the service model before comparing the call allowance.",
-    "intro": "Smith.ai offers separate AI and human receptionist products. A contractor evaluating its pricing needs to identify who will answer, which tasks require a person and how repeat calls affect the monthly allowance. Published by Revo. Official sources reviewed October 20, 2026; prices are dated US snapshots, not binding quotes or performance tests.",
+    "intro": "Smith.ai bills its AI plans by calls; Revo publishes monthly minute allowances. Smith.ai Free lists 25 calls for $0, while Revo Solo lists $87.50 for 100 minutes in its Launch Offer. These are different units and scopes. Published by Revo; official pricing checked October 21, 2026. Compare the required workflow, not a guessed cost per job.",
     "sections": [
       {
         "title": "Read the published offer in its own billing unit",
@@ -13175,6 +13175,32 @@
           "For a practical shortlist, test a new inquiry, an appointment change and a request that needs a person. Check the final calendar or message, the handoff result and the usage charged. These are suggested evaluation steps, not customer results or a claim that either provider will complete every request."
         ],
         "items": []
+      },
+      {
+        "title": "When one operating model fits better",
+        "paragraphs": [
+          "Smith.ai belongs on the shortlist when its AI call allowance or separately agreed human involvement fits your intake requirements. A human-first package should be evaluated when your requirement is a person conducting the conversation, rather than treating it as the same AI plan.",
+          "Revo belongs on the shortlist when its published minute plans and confirmed setup fit the required answering and handoff work. Crew/Fleet features should not be attributed to Solo. Neither an included call nor an included minute guarantees a booked job."
+        ],
+        "items": [
+          "Record both calls and durations from your own workload.",
+          "Separate transfer to your employee from vendor-staffed coverage.",
+          "Check a written quote and actual booking record before deciding."
+        ],
+        "sources": [
+          {
+            "label": "Revo plans",
+            "href": "https://www.revoapp.ai/pricing.html"
+          },
+          {
+            "label": "Smith.ai AI pricing",
+            "href": "https://smith.ai/pricing/ai-receptionist"
+          },
+          {
+            "label": "Smith.ai human-first pricing",
+            "href": "https://smith.ai/pricing/receptionists"
+          }
+        ]
       }
     ],
     "faqs": [
@@ -13190,7 +13216,8 @@
     "takeaway": "Choose the service model before comparing the call allowance. Use the current written terms and a representative call flow before selecting a package.",
     "sourcePaths": [
       "https://smith.ai/pricing/ai-receptionist",
-      "https://smith.ai/pricing/receptionists"
+      "https://smith.ai/pricing/receptionists",
+      "https://www.revoapp.ai/pricing.html"
     ],
     "related": [
       "answering-service-cost",
@@ -13204,9 +13231,60 @@
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
-      "reviewedAt": "2026-10-20",
-      "contentHash": "sha256:64b2ad3370a0c7961b63ec89155449823771f229e9f1398f25ad91f7f172cfeb"
+      "reviewer": "Codex — user-delegated editorial review",
+      "reviewedAt": "2026-10-21",
+      "contentHash": "sha256:253ba73c815e26e5d051b2803c11355cea1d09aa3c400c8ed7b899cd5514e826",
+      "note": "Expanded the existing comparison owner using current official sources; no duplicate provider URL."
+    },
+    "editorialDate": "2026-10-21",
+    "overviewTable": {
+      "caption": "Smith.ai and Revo — published documentation checked 2026-10-21",
+      "columns": [
+        "Decision",
+        "Revo",
+        "Smith.ai"
+      ],
+      "rows": [
+        [
+          "Entry plan",
+          "Solo Launch Offer $87.50/month; 100 minutes",
+          "AI Free $0/month; 25 calls, then $3 per extra call"
+        ],
+        [
+          "Other AI allowances",
+          "Crew $175/200 minutes; Fleet $350/400 minutes",
+          "Baseline Pro $150/75 calls; Enterprise $500/300 calls"
+        ],
+        [
+          "Team transfers / staffing",
+          "Crew/Fleet list team transfers; Solo excludes them",
+          "AI escalation and human-first service are different arrangements"
+        ],
+        [
+          "Booking destination",
+          "Confirm supported calendar/field-service action; Solo excludes field-service connections",
+          "Pricing lists AI scheduling; confirm calendar and escalation terms"
+        ],
+        [
+          "Additional usage",
+          "Ask for the current applicable minute terms; no rate inferred here",
+          "Baseline extra-call rates shown in dedicated pricing: Pro $2.50, Enterprise $2.17"
+        ]
+      ],
+      "sources": [
+        {
+          "label": "Revo plans",
+          "href": "https://www.revoapp.ai/pricing.html"
+        },
+        {
+          "label": "Smith.ai AI pricing",
+          "href": "https://smith.ai/pricing/ai-receptionist"
+        },
+        {
+          "label": "Smith.ai human-first pricing",
+          "href": "https://smith.ai/pricing/receptionists"
+        }
+      ]
     }
   },
   {
@@ -17898,6 +17976,346 @@
       "reviewer": "Jorge (explicit publication approval 2026-10-20)",
       "reviewedAt": "2026-10-20",
       "contentHash": "sha256:db93aa7ded7c369bb49ad0795d28e087a320661ce9f82202d7df51684cfe13d1"
+    }
+  },
+  {
+    "slug": "compare/revo-vs-sameday",
+    "title": "Revo vs Sameday: minutes, booking and team handoff",
+    "description": "Compare Revo and Sameday by published minute plans, booking destinations, team handoff and the setup questions a home service office needs to resolve.",
+    "navigationLabel": "Revo vs Sameday",
+    "eyebrow": "Provider comparison",
+    "lead": "Compare the workflow you need and the terms you can verify.",
+    "intro": "Revo and Sameday both offer AI call answering for home service teams, but their published entry plans cover different allowances and workflows. Revo Solo is $87.50/month with 100 minutes in its Launch Offer; Sameday Launch starts at $449 with 500 minutes. Published by Revo; official documentation checked October 21, 2026. These are different packages, not a savings or performance claim.",
+    "template": "workflow",
+    "pricingVariant": "missed-calls",
+    "editorialDate": "2026-10-21",
+    "overviewTable": {
+      "caption": "Published documentation checked 2026-10-21 — not a hands-on performance test",
+      "columns": [
+        "Decision",
+        "Revo",
+        "Sameday"
+      ],
+      "rows": [
+        [
+          "Published entry offer",
+          "Solo Launch Offer: $87.50/month; 100 minutes",
+          "Launch starts at $449/month; starts with 500 minutes"
+        ],
+        [
+          "Other published tiers",
+          "Crew $175/200 minutes; Fleet $350/400 minutes",
+          "Scale starts at $789/1,000 minutes; Enterprise is custom"
+        ],
+        [
+          "Booking destination",
+          "Confirm the supported calendar or field-service operation; no named native CRM is established here",
+          "Official ServiceTitan page documents scheduling directly into ServiceTitan"
+        ],
+        [
+          "Team handoff",
+          "Crew/Fleet list team transfers; Solo excludes them",
+          "Confirm transfer availability, recipient, hours and fallback in the selected package"
+        ],
+        [
+          "What the price does not establish",
+          "Overage rate, guaranteed visits or a native ServiceTitan connection",
+          "Account-specific overages, exact integration operations or technician availability"
+        ]
+      ],
+      "sources": [
+        {
+          "label": "Revo current plans",
+          "href": "https://www.revoapp.ai/pricing.html"
+        },
+        {
+          "label": "Sameday plans",
+          "href": "https://sameday.ai/pricing"
+        },
+        {
+          "label": "Sameday ServiceTitan workflow",
+          "href": "https://sameday.ai/integration/servicetitan"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Compare the allowance and scope before comparing the price",
+        "paragraphs": [
+          "Revo’s published offer lists Solo at $87.50 for 100 minutes, Crew at $175 for 200 and Fleet at $350 for 400. These are its existing Launch Offer prices, not new eligibility or duration terms. Crew and Fleet add transfers, field-service connections, recordings and transcripts; those are excluded from Solo.",
+          "Sameday lists Launch starting at $449 for 500 minutes and Scale starting at $789 for 1,000. Enterprise pricing is custom. Starting allowances and prices do not define your overage bill or every supported operation. Request those terms for the actual account."
+        ],
+        "items": [
+          "Use one month of call counts and handled durations for both offers.",
+          "Keep setup, excess usage and supported software scope as separate quote questions."
+        ],
+        "sources": [
+          {
+            "label": "Revo current plans",
+            "href": "https://www.revoapp.ai/pricing.html"
+          },
+          {
+            "label": "Sameday plans",
+            "href": "https://sameday.ai/pricing"
+          }
+        ]
+      },
+      {
+        "title": "A named job record can matter more than an allowance",
+        "paragraphs": [
+          "If your office requires a record in ServiceTitan, inspect Sameday’s documented workflow and ask for a demonstration in your account. Its integration page describes appointment scheduling inside that platform.",
+          "Revo’s current plans use the broader label “Connects to your field service software” on Crew and Fleet. That label alone does not establish a native ServiceTitan integration. Ask Revo to identify the supported destination and booking action before making it a requirement in a purchase decision."
+        ],
+        "items": [
+          "Ask where the record appears and which fields reach the office.",
+          "Keep a captured time preference separate from a confirmed booking."
+        ],
+        "sources": [
+          {
+            "label": "Revo current plans",
+            "href": "https://www.revoapp.ai/pricing.html"
+          },
+          {
+            "label": "Sameday ServiceTitan workflow",
+            "href": "https://sameday.ai/integration/servicetitan"
+          }
+        ]
+      },
+      {
+        "title": "When each option belongs on the shortlist",
+        "paragraphs": [
+          "Sameday belongs on a shortlist when its documented home-service software workflow is a required part of the job and your team can confirm the account-specific operations. Revo belongs on a shortlist when its published minute plans and supported setup fit your office’s intake and handoff requirements.",
+          "This is an editorial fit assessment based on public documentation. It does not establish that either provider books more jobs, responds faster, has better voices or costs less for the same workload."
+        ],
+        "items": [
+          "If a person must handle every call, evaluate a live receptionist service separately.",
+          "If the required integration remains unverified, resolve it before forwarding calls."
+        ]
+      },
+      {
+        "title": "Give both providers the same acceptance test",
+        "paragraphs": [
+          "Use three illustrative situations: a new estimate request, a customer changing an existing visit, and a handoff recipient who does not answer. Record the information captured, the actual booking or message destination and who owns follow-up. These are proposed tests, not tests Revo has conducted on Sameday.",
+          "Use your real service area, hours and availability rules. Neither a phone answer nor a transfer attempt establishes that a technician is available. Keep the current phone route and an owner for rollback while your team checks the new configuration."
+        ],
+        "items": [
+          "Confirm the record, not just what the voice says.",
+          "Review the written billing unit and excess-usage terms.",
+          "Approve the unavailable-contact fallback before live routing."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does Revo publish a native ServiceTitan integration here?",
+        "a": "No. Revo’s field-service connection label is broader. Confirm the named platform and exact supported action directly before relying on it."
+      },
+      {
+        "q": "Are the entry plans equivalent because both include minutes?",
+        "a": "No. The published allowances and feature scope differ. Compare your workload, required operations and written additional-usage terms."
+      },
+      {
+        "q": "Is this a tested ranking of the two services?",
+        "a": "No. It is a dated comparison of public documentation with proposed evaluation scenarios. No booking-rate, savings or customer-result claim is made."
+      }
+    ],
+    "takeaway": "Choose the documented workflow that fits your office.",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing.html",
+      "https://sameday.ai/pricing",
+      "https://sameday.ai/integration/servicetitan"
+    ],
+    "related": [
+      "compare/home-services-ai-receptionists",
+      "answering-service-cost",
+      "appointment-booking"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider documentation checked 2026-10-21; requirement-based editorial comparison, not tested customer outcomes."
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Codex — user-delegated local review",
+      "reviewedAt": "2026-10-21",
+      "contentHash": "sha256:f736b7f80272b0d29778e274918a003f26d5d7aaf6dab33e1ff16691580a3b90"
+    }
+  },
+  {
+    "slug": "compare/revo-vs-avoca",
+    "title": "Revo vs Avoca: intake, ServiceTitan and quote scope",
+    "description": "Compare Revo and Avoca by documented intake, ServiceTitan job records, CSR handoff and what must be confirmed in each plan or written quote.",
+    "navigationLabel": "Revo vs Avoca",
+    "eyebrow": "Provider comparison",
+    "lead": "Compare the workflow you need and the terms you can verify.",
+    "intro": "Revo publishes minute plans; Avoca documents an inbound AI workflow connected to ServiceTitan. Choose by the job record your office needs, the handoff recipient and the written scope. No Avoca price was verified in the official product pages reviewed. Published by Revo; documentation checked October 21, 2026. This is not a performance ranking.",
+    "template": "workflow",
+    "pricingVariant": "missed-calls",
+    "editorialDate": "2026-10-21",
+    "overviewTable": {
+      "caption": "Published documentation checked 2026-10-21 — not a hands-on performance test",
+      "columns": [
+        "Decision",
+        "Revo",
+        "Avoca"
+      ],
+      "rows": [
+        [
+          "Price evidence",
+          "Solo $87.50/100 minutes, Crew $175/200, Fleet $350/400 in the Launch Offer",
+          "No amount verified in the reviewed official pages; request the quote"
+        ],
+        [
+          "Booking record",
+          "Confirm supported booking destination and actions for the selected setup",
+          "Official ServiceTitan page describes job records with customer, appointment and service details"
+        ],
+        [
+          "Handoff recipient",
+          "Crew/Fleet list transfers to your team; no supplied receptionist is established",
+          "Inbound product describes briefing your CSR; clarify staffing and scope in the quote"
+        ],
+        [
+          "Integration limit",
+          "Field-service connections excluded from Solo; no named native ServiceTitan claim here",
+          "Confirm the operations supported in your ServiceTitan account"
+        ],
+        [
+          "Purchase decision",
+          "Match minute allowance, tier and actual office workflow",
+          "Obtain billing unit, implementation scope and contract terms in writing"
+        ]
+      ],
+      "sources": [
+        {
+          "label": "Revo current plans",
+          "href": "https://www.revoapp.ai/pricing.html"
+        },
+        {
+          "label": "Avoca inbound product",
+          "href": "https://www.avoca.ai/inbound"
+        },
+        {
+          "label": "Avoca ServiceTitan workflow",
+          "href": "https://www.avoca.ai/integrations/servicetitan"
+        }
+      ]
+    },
+    "sections": [
+      {
+        "title": "Keep a public minute plan separate from a custom quote",
+        "paragraphs": [
+          "Revo’s current Launch Offer lists Solo at $87.50/month for 100 minutes, Crew at $175 for 200 and Fleet at $350 for 400. Team transfers and field-service connections are excluded from Solo and listed in Crew/Fleet. This page does not alter the offer terms.",
+          "The Avoca inbound and ServiceTitan pages reviewed did not establish a current price, universal billing unit or setup fee. This is a gap in the reviewed evidence, not a claim that Avoca never publishes prices. Ask Avoca for a proposal covering your required operations. Do not replace the missing quote with a third-party estimate."
+        ],
+        "items": [
+          "List base fee, billing unit, setup and additional usage separately.",
+          "Use the same required tasks in both proposals."
+        ],
+        "sources": [
+          {
+            "label": "Revo current plans",
+            "href": "https://www.revoapp.ai/pricing.html"
+          },
+          {
+            "label": "Avoca inbound product",
+            "href": "https://www.avoca.ai/inbound"
+          }
+        ]
+      },
+      {
+        "title": "What Avoca documents about ServiceTitan",
+        "paragraphs": [
+          "Avoca’s official integration page says it sends booked-job information into ServiceTitan, including customer details, appointment times, service information and conversation notes. Its inbound page describes recognizing customer context and briefing a CSR when a human is needed.",
+          "These are the provider’s published descriptions, not a tested result for your office. Confirm the software account, records and actions available in your package. A briefing to your CSR should not be described as access to a receptionist supplied by the vendor without an explicit staffed-service agreement."
+        ],
+        "items": [
+          "Inspect the created job record and duplicate-customer handling.",
+          "Identify the person receiving a handoff and the no-answer path."
+        ],
+        "sources": [
+          {
+            "label": "Avoca inbound product",
+            "href": "https://www.avoca.ai/inbound"
+          },
+          {
+            "label": "Avoca ServiceTitan workflow",
+            "href": "https://www.avoca.ai/integrations/servicetitan"
+          }
+        ]
+      },
+      {
+        "title": "What Revo needs to confirm for the same workflow",
+        "paragraphs": [
+          "Revo’s published plans describe answering, appointment booking, your own script and rules, and call summaries. Crew and Fleet add team transfers and field-service connections. The general software-connection label does not prove a particular native CRM or every booking operation.",
+          "Ask Revo to identify where the request is stored and whether the supported setup creates a confirmed booking or only captures a preferred time. Require the same demonstration you ask from Avoca rather than assuming two products use identical software actions."
+        ],
+        "items": [
+          "Do not buy Solo expecting higher-tier transfers or software connections.",
+          "Keep technician availability and service acceptance under your office rules."
+        ],
+        "sources": [
+          {
+            "label": "Revo current plans",
+            "href": "https://www.revoapp.ai/pricing.html"
+          }
+        ]
+      },
+      {
+        "title": "When Avoca or Revo may fit your office",
+        "paragraphs": [
+          "Avoca may fit when a documented ServiceTitan job-record workflow and contextual CSR handoff are central requirements, subject to the proposal and an account demonstration. Revo may fit when its published minute plans, tier boundaries and confirmed supported setup match the work your office needs.",
+          "There is no verified cost comparison without Avoca’s quote and your workload. This page makes no claims about relative conversion, speed, reliability, revenue or savings. If either seller cannot demonstrate a required action, keep that requirement unresolved."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test the handoff and the record before routing calls",
+        "paragraphs": [
+          "Illustrative tests: a new customer requesting an estimate, a returning customer with an appointment reference, and a transfer recipient who is unavailable. Give both providers the same required fields and approved fallback. Check what reached the office and which person owns the next step.",
+          "The request, calendar preference and confirmed job are separate states. Do not treat a captured message as dispatch or a successful appointment. Retain an owner for correcting records and reverting the phone route while the setup is checked."
+        ],
+        "items": [
+          "Use a written acceptance checklist for the actual package.",
+          "Confirm hours, service area and appointment-change permissions.",
+          "Review the complete proposal before a purchase decision."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What is Avoca’s price in this comparison?",
+        "a": "No current amount was verified in the official pages reviewed. Obtain Avoca’s written quote; a missing verified price is not a zero price."
+      },
+      {
+        "q": "Does a CSR handoff mean vendor-staffed live reception?",
+        "a": "Not automatically. Identify who receives the call and whether any supplied human coverage is explicitly part of the proposal."
+      },
+      {
+        "q": "Does Revo’s software label establish a native ServiceTitan connection?",
+        "a": "No. Confirm the named platform, selected tier and supported booking actions directly. Solo excludes field-service connections."
+      }
+    ],
+    "takeaway": "Choose the documented workflow that fits your office.",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing.html",
+      "https://www.avoca.ai/inbound",
+      "https://www.avoca.ai/integrations/servicetitan"
+    ],
+    "related": [
+      "compare/home-services-ai-receptionists",
+      "answering-service-cost",
+      "appointment-booking"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider documentation checked 2026-10-21; requirement-based editorial comparison, not tested customer outcomes."
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Codex — user-delegated local review",
+      "reviewedAt": "2026-10-21",
+      "contentHash": "sha256:63993a1e62ea423f6bf5511377bfb14ac8a7e78de7d8f8e9c7e50e2c6e2335cd"
     }
   }
 ]
