@@ -26,6 +26,11 @@
       "source": "/ind.html",
       "destination": "/industries.html",
       "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
     }
   ],
   "rewrites": [
@@ -688,6 +693,26 @@
     {
       "source": "/ai-answering-service",
       "destination": "/ai-answering-service.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/templates/:path*",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
+    },
+    {
+      "source": "/thank-you.html",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
+        }
+      ]
     }
   ]
 }

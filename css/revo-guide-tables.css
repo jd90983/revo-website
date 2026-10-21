@@ -1,0 +1,12 @@
+/* Editorial data tables remain readable without scripts and scroll within the page. */
+.guide-data { min-width: 0; max-width: 100%; color: inherit; }
+.guide-data-scroll { max-width: 100%; overflow-x: auto; border: 1px solid #718096; border-radius: 12px; }
+.guide-data table { width: 100%; min-width: 680px; border-collapse: collapse; font-size: 15px; line-height: 1.55; }
+.guide-data caption { text-align: left; padding: 18px; font-weight: 600; }
+.guide-data th, .guide-data td { padding: 15px; text-align: left; vertical-align: top; font-weight: 400; border-top: 1px solid #718096; }
+.guide-data thead th { font-weight: 700; }
+.guide-data tbody th { font-weight: 600; min-width: 120px; }
+.guide-data nav ul { display: flex; flex-wrap: wrap; gap: 12px 24px; padding: 18px 0; list-style: none; }
+.guide-data a { text-decoration: underline; color: inherit; }
+.guide-data-scroll:focus-visible { outline: 3px solid #fa8932; outline-offset: 4px; }
+.guide-updated { padding-top: 24px; padding-bottom: 16px; font-size: 14px; }

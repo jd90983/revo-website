@@ -18,7 +18,9 @@
     "calculator": "calculator",
     "comparison": "comparison",
     "related": "related",
-    "image": "image"
+    "image": "image",
+    "editorialDate": "editorialDate",
+    "overviewTable": "overviewTable"
   },
   "defaults": {}
 }

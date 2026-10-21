@@ -87,6 +87,12 @@ export function registryErrors(pages, options = {}) {
     if (!isText(page.description, LIMITS.description)) fail(`description must be ${LIMITS.description[0]}-${LIMITS.description[1]} characters, without outer spaces`);
     if (!isText(page.navigationLabel, LIMITS.navigationLabel)) fail(`navigationLabel must be ${LIMITS.navigationLabel[0]}-${LIMITS.navigationLabel[1]} characters`);
     if (!isText(page.eyebrow, LIMITS.eyebrow)) fail(`eyebrow must be ${LIMITS.eyebrow[0]}-${LIMITS.eyebrow[1]} characters`);
+    if (page.editorialDate !== undefined && (typeof page.editorialDate !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(page.editorialDate) || !Number.isFinite(Date.parse(page.editorialDate)) || new Date(page.editorialDate).toISOString().slice(0,10) !== page.editorialDate)) fail('editorialDate must be a real YYYY-MM-DD content update date');
+    if (page.overviewTable !== undefined) {
+      const table = page.overviewTable;
+      if (!table || !nonEmpty(table.caption) || !Array.isArray(table.columns) || table.columns.length < 2 || table.columns.length > 6 || !table.columns.every(nonEmpty) || !Array.isArray(table.rows) || !table.rows.length || table.rows.length > 20 || !table.rows.every(row => Array.isArray(row) && row.length === table.columns.length && row.every(nonEmpty))) fail('overviewTable needs a caption, 2–6 columns and 1–20 complete text rows');
+      if (table?.sources !== undefined && (!Array.isArray(table.sources) || table.sources.length > 8 || !table.sources.every(source => nonEmpty(source?.label) && typeof source?.href === 'string' && /^https:\/\//.test(source.href)))) fail('overviewTable sources must be labeled HTTPS links (at most 8)');
+    }
     for (const field of ['lead', 'intro', 'takeaway']) if (!nonEmpty(page[field])) fail(`${field} is required`);
     if (!Array.isArray(page.sourcePaths) || page.sourcePaths.length === 0 || !page.sourcePaths.every(nonEmpty)) fail('sourcePaths must list where the content came from');
     if (!Array.isArray(page.sections) || page.sections.length === 0) fail('sections must contain at least one section');

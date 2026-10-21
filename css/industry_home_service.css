@@ -2914,3 +2914,6 @@ main#main-content > section {
 }
 
 
+
+/* HVAC's existing figures remain visible without client-side entrance classes. */
+.home-service-impact-section:has(.performance-stat-value) { opacity: 1; transform: none; }
