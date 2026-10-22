@@ -1,0 +1,99 @@
+{
+  "batchId": "2026-10-22-answeramerica-billing-discrepancy",
+  "source": {
+    "kind": "manual",
+    "reference": "Second independent editorial review: both official AnswerAmerica sources checked 2026-10-22; attribute conflicting call-exclusion claims without choosing precedence. Draft remains unapproved."
+  },
+  "operations": [
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "answer-america-service",
+        "title": "AnswerAmerica: prepaid credits and chargeable call types",
+        "description": "Review AnswerAmerica’s prepaid call credits, minimum funding and conflicting public statements about wrong-number and automated-call charges.",
+        "navigationLabel": "AnswerAmerica",
+        "eyebrow": "Provider buying guide",
+        "lead": "AnswerAmerica prices credits per call rather than minute. A low-volume buyer must also consider minimum funding, call types and account inactivity.",
+        "intro": "AnswerAmerica prices credits per call rather than minute. A low-volume buyer must also consider minimum funding, call types and account inactivity. Published by Revo. Official information checked October 22, 2026.",
+        "sections": [
+          {
+            "title": "Purchase size and call usage are separate numbers",
+            "paragraphs": [
+              "The pricing page shows $1.47 per call, falling to $1.14 on larger packages, with a $50 minimum credit purchase and no monthly service fee. It also lists a minimum call-volume condition of one call per month. Do not assume the lowest package rate applies to a $50 purchase."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Official source reviewed October 22, 2026",
+                "href": "https://answeramerica.com/price-page/"
+              }
+            ]
+          },
+          {
+            "title": "The price page and terms disagree about excluded calls",
+            "paragraphs": [
+              "The pricing page labels Wrong Numbers/Hoax Calls and Automated Messages/Fax Tones as free. Section 5.7 of the terms instead says all calls use one credit, including hangups, wrong numbers and marketing calls, under a rule dated March 1, 2026. The pages therefore conflict at least on wrong numbers; the broad all-calls wording also leaves the advertised automated-call exclusion unresolved.",
+              "Do not assume that the price-page exclusions apply or that the dated terms silently settle the discrepancy. Ask AnswerAmerica to confirm in writing which call types consume credits for the proposed account, the applicable effective date and how disputed charges are handled. Use that confirmation before estimating a fencing office’s non-sales call costs."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "AnswerAmerica pricing exclusions, reviewed October 22, 2026",
+                "href": "https://answeramerica.com/price-page/"
+              },
+              {
+                "label": "AnswerAmerica terms §5.7, reviewed October 22, 2026",
+                "href": "https://answeramerica.com/terms-conditions/"
+              }
+            ]
+          },
+          {
+            "title": "The balance is an operational control",
+            "paragraphs": [
+              "The terms describe advance payment, optional minimum-balance funding and an account ending at zero balance or after more than 30 days without traffic. Name the office role that monitors credits and the destination callers reach if service stops. Funding automation does not resolve the conflicting call exclusions or establish the treatment of disputed credits.",
+              "Separately verify what the answering staff may do with a fence-estimate inquiry. A call credit establishes a billing event; it does not establish technical qualification, a visit or a booked job."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Official source reviewed October 22, 2026",
+                "href": "https://answeramerica.com/price-page/"
+              },
+              {
+                "label": "Official source reviewed October 22, 2026",
+                "href": "https://answeramerica.com/terms-conditions/"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does every call use a credit?",
+            "a": "The public sources disagree. The price page marks wrong-number/hoax calls and automated messages/fax tones free, while terms §5.7 says all calls use a credit and explicitly includes wrong numbers. Obtain written confirmation of the rule applicable to the account before budgeting."
+          },
+          {
+            "q": "Is occasional use free of inactivity conditions?",
+            "a": "No. The published pricing and terms include activity-related conditions that a very low-volume office should resolve."
+          }
+        ],
+        "takeaway": "Compare AnswerAmerica’s funded per-call model only after the provider resolves its conflicting call exclusions in writing.",
+        "sourcePaths": [
+          "https://answeramerica.com/price-page/",
+          "https://answeramerica.com/terms-conditions/"
+        ],
+        "related": [
+          "choose-virtual-receptionist",
+          "answering-service-cost",
+          "call-quality-monitoring",
+          "compare/ai-vs-live-receptionist"
+        ],
+        "source": {
+          "kind": "manual",
+          "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+        }
+      }
+    }
+  ]
+}

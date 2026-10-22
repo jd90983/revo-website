@@ -570,5 +570,17 @@
     "changes": [
       "withdrew special-interest-answering-service"
     ]
+  },
+  {
+    "batchId": "2026-10-22-answeramerica-billing-discrepancy",
+    "batchHash": "sha256:8717665ab185088111e8d78640bcc3d54780a0f2297b7f943b79f17bb589428a",
+    "source": {
+      "kind": "manual",
+      "reference": "Second independent editorial review: both official AnswerAmerica sources checked 2026-10-22; attribute conflicting call-exclusion claims without choosing precedence. Draft remains unapproved."
+    },
+    "appliedAt": "2026-10-22",
+    "changes": [
+      "updated answer-america-service; back to draft until re-approved"
+    ]
   }
 ]
