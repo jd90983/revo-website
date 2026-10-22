@@ -20502,5 +20502,1344 @@
       "at": "2026-10-22",
       "batchId": "2026-10-22-substantive-provider-revision"
     }
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "call-forwarding-troubleshooting",
+    "title": "Call forwarding troubleshooting: trace the failed route",
+    "navigationLabel": "Call forwarding troubleshooting",
+    "description": "Trace a failed forwarded business call from the original number to the destination, voicemail and fallback with a controlled diagnostic worksheet.",
+    "eyebrow": "Find the failed call path",
+    "lead": "Check each leg before changing the forwarding rule.",
+    "intro": "A customer calls the business number, but the office hears that the call never arrived. First separate the incoming number, the forwarding rule and the destination. The diagnostic sequence below is a proposed office procedure for an existing setup, rather than a universal carrier activation guide.",
+    "sections": [
+      {
+        "title": "Record the failure before changing settings.",
+        "paragraphs": [
+          "Write down the original business number, its exact carrier product, the intended destination and the rule that should apply. An all-calls rule and a no-answer rule produce different results. Record the current configuration and the provider-specific reversal procedure before editing either one.",
+          "Use an authorized test caller outside the route. Note the time, the number dialed, whether the original line rang, whether the destination rang and the final sound or greeting. Keep the result precise: a busy signal, another voicemail greeting and silence are different observations."
+        ],
+        "items": [
+          "Keep customer traffic on the existing approved route while planning the test.",
+          "Avoid changing the rule, destination and voicemail together."
+        ],
+        "sources": []
+      },
+      {
+        "title": "Compare a direct destination call with the forwarded call.",
+        "paragraphs": [
+          "Call the destination directly, then call the original business number under the same planned conditions. If the direct destination call also fails, investigate that endpoint before assuming the forwarding rule is broken. If the direct call succeeds but the forwarded call fails, give the originating provider the paired observations.",
+          "AT&T’s wireless guidance states that forwarding overrides wireless voicemail and that a busy forwarding destination produces a busy signal for the caller. The article is dated April 2, 2025. Those are documented behaviors for that wireless service, not rules for every business phone product."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "AT&T wireless forwarding behavior — reviewed October 22, 2026",
+            "href": "https://www.att.com/support/article/wireless/KM1011513/"
+          }
+        ]
+      },
+      {
+        "title": "Check the condition and the final voicemail separately.",
+        "paragraphs": [
+          "Test only the states that your configured service supports: an available original line, an unanswered original line and a busy original line. Keep the destination available for this part. Then, with provider guidance, test what happens when the destination is unavailable. Record which system supplied any voicemail greeting.",
+          "For AT&T Phone for Business, the documentation separately lists no-answer and busy forwarding. Its voicemail troubleshooting directs customers to check both settings when calls do not reach the voice mailbox. That page was last updated December 7, 2022. Use the instructions for the actual account product; a matching carrier name is not enough.",
+          "If the same greeting or route repeats, map the destination’s own forwarding and fallback rules with its administrator. Look for a path that returns to the original business number. Record each number and rule in order before changing anything. Remove a circular route only through the authorized owner, then repeat the same test to confirm that the caller reaches a final destination."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "AT&T Phone for Business forwarding and voicemail checks — reviewed October 22, 2026",
+            "href": "https://www.att.com/support/smallbusiness/article/smb-local-long-distance/KM1181691/"
+          }
+        ]
+      },
+      {
+        "title": "Escalate with a reproducible case and retest one change.",
+        "paragraphs": [
+          "Give the responsible provider the test time and time zone, originating test number, called business number, destination, expected route and observed result. Share logs through its approved support channel. Remove customer information from screenshots that is unnecessary for the case.",
+          "Agree on one change, record who made it and repeat the same test. A successful call to an available destination does not establish the busy or unanswered result. Restore the approved configuration if the change does not help, using the product-specific instructions already recorded. Close the issue only after the business’s required paths have been checked."
+        ],
+        "items": [
+          "Keep the support case reference beside the test record.",
+          "Assign an owner to confirm the business greeting and callback path."
+        ],
+        "sources": []
+      }
+    ],
+    "overviewTable": {
+      "caption": "Proposed diagnostic worksheet — observations to collect, not universal carrier behavior",
+      "columns": [
+        "Observed result",
+        "Next controlled comparison",
+        "Evidence to retain"
+      ],
+      "rows": [
+        [
+          "Destination fails when called directly",
+          "Check the destination endpoint before changing the original forwarding rule",
+          "Direct-call time and result"
+        ],
+        [
+          "Direct destination works; forwarded call fails",
+          "Compare the active rule and exact product with the originating provider",
+          "Paired call times and configured destination"
+        ],
+        [
+          "A voicemail answers unexpectedly",
+          "Identify the greeting and test the relevant busy/no-answer state",
+          "Whose mailbox answered and under which state"
+        ],
+        [
+          "Available destination works; unavailable destination fails",
+          "Review the documented fallback with the responsible provider",
+          "Endpoint state, caller experience and agreed next action"
+        ],
+        [
+          "Greeting or route repeats",
+          "Trace destination forwarding and fallback for a return to the entry number",
+          "Ordered route map and repeated greeting timestamps"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Should I try activation codes from another carrier guide?",
+        "a": "Use the instructions for the exact service on the account. Similar feature names do not establish that the codes or voicemail behavior match."
+      },
+      {
+        "q": "Does a successful direct call prove forwarding works?",
+        "a": "It checks the destination at that moment. Repeat the call through the original business number and test the conditions the office intends to rely on."
+      },
+      {
+        "q": "Which information helps support reproduce the problem?",
+        "a": "Provide the exact product, active rule, test time and time zone, originating and destination numbers, and the caller’s observed result through the provider’s approved support channel."
+      }
+    ],
+    "takeaway": "Preserve the current configuration, isolate the failing leg and verify each required caller outcome after a change.",
+    "sourcePaths": [
+      "https://www.att.com/support/article/wireless/KM1011513/",
+      "https://www.att.com/support/smallbusiness/article/smb-local-long-distance/KM1181691/"
+    ],
+    "related": [
+      "conditional-call-forwarding",
+      "landline-call-forwarding",
+      "turn-off-call-forwarding"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "disaster-recovery-answering-service",
+    "title": "Disaster recovery answering: plan the phone outage path",
+    "navigationLabel": "Phone outage recovery",
+    "description": "Plan answering coverage during an office phone outage: identify the trigger, independent destination, access owner and checks before returning calls.",
+    "eyebrow": "Continuity during a phone outage",
+    "lead": "A backup number needs a working route and an available owner.",
+    "intro": "An answering service can be part of a phone continuity plan, but writing down its number does not establish that calls will reach it during an outage. Map the failure that should trigger the backup, the destination’s dependencies and the procedure for restoring normal coverage. This guide proposes an operating worksheet; it does not establish a provider’s recovery guarantee.",
+    "sections": [
+      {
+        "title": "Name the failure that the backup must handle.",
+        "paragraphs": [
+          "Separate an unanswered desk phone from a local power failure, loss of office internet and a carrier incident. For each scenario, ask the carrier what it can detect, which route remains available and whether an administrator must act. Do not assume that a rule configured on a local device still runs after that device loses power.",
+          "AT&T Phone for Business documents Safe Call Forwarding for network outages or power outages when battery backup is exhausted. It lists that separately from busy and no-answer forwarding. The page was last updated December 7, 2022 and was reviewed here on October 22, 2026. Confirm availability and behavior for your own account rather than applying those conditions to another product."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "AT&T Phone for Business Safe Call Forwarding — reviewed October 22, 2026",
+            "href": "https://www.att.com/support/smallbusiness/article/smb-local-long-distance/KM1181691/"
+          }
+        ]
+      },
+      {
+        "title": "Map the backup destination’s dependencies.",
+        "paragraphs": [
+          "For a proposed answering destination, list how its staff receive calls and how your office receives their records. Then consider the dependencies shared with the failed site. A second handset at the same powerless office may not solve the intended problem. Ask the provider to describe which parts of its delivery depend on your office connection.",
+          "Keep phone coverage separate from field-service availability. During an outage, a receptionist may be able to collect a request while your staff cannot access the schedule. Prepare an approved temporary message that states the actual next step without confirming a visit, diagnosis or response time the team cannot support.",
+          "Separate three responsibilities in the plan: the carrier routes the published number during a supported fault; the answering provider maintains its own service under its applicable continuity terms; your business decides who can receive and act on requests. Ask the answering provider for its own incident communication, alternate delivery and restoration process. AT&T’s forwarding documentation does not establish that provider’s continuity or any disaster-recovery capability of Revo."
+        ],
+        "items": [
+          "Record the destination and an alternate contact method.",
+          "Identify who can read requests when the normal office tools are unavailable."
+        ],
+        "sources": []
+      },
+      {
+        "title": "Prepare activation authority and a limited test.",
+        "paragraphs": [
+          "Name a primary administrator and backup who are already authorized on the carrier and answering accounts. Record where approved instructions can be found without storing passwords in the runbook. Ask whether a routing change requires support, an online account or another channel that might be unavailable during the incident.",
+          "Agree a test window with the relevant providers and use consenting test callers. Prefer a provider-supported simulation over disconnecting live office equipment. Record whether the backup activated, which greeting played, whether the request arrived and who acknowledged it. The test should check the proposed failure path, not just a normal call to the backup number."
+        ],
+        "items": [
+          "Document the expected trigger and the observed result.",
+          "Give every captured test request an owner."
+        ],
+        "sources": []
+      },
+      {
+        "title": "Define recovery and reconcile requests.",
+        "paragraphs": [
+          "Before an incident, decide who authorizes a return to the normal route and what evidence that person needs. Ask the carrier whether restoration is automatic or manual and whether the backup settings remain configured afterward. Keep the temporary message accurate until the office can support its normal workflow.",
+          "After the route returns, make an inbound test and confirm that the intended greeting, mailbox and request delivery work. Reconcile requests captured during the interruption so a caller does not disappear between two inboxes or receive duplicate callbacks. Record unresolved requests, responsible staff and the next review time."
+        ],
+        "items": [
+          "Retain the incident start, routing change and restoration times.",
+          "Update the runbook when a test exposes an unavailable account or dependency."
+        ],
+        "sources": []
+      }
+    ],
+    "overviewTable": {
+      "caption": "Proposed continuity map — complete with the carrier and answering provider before relying on the route",
+      "columns": [
+        "Failure scenario",
+        "Dependency to verify",
+        "Recovery decision"
+      ],
+      "rows": [
+        [
+          "Office power unavailable",
+          "Where the forwarding rule runs and which endpoints need local power",
+          "Who confirms the office can receive calls again"
+        ],
+        [
+          "Office internet unavailable",
+          "Whether the backup route and request delivery use that same connection",
+          "How the office retrieves requests until access returns"
+        ],
+        [
+          "Original phone service disrupted",
+          "What routing remains possible within the affected carrier service",
+          "Who confirms the original number is reachable"
+        ],
+        [
+          "Backup contact unavailable",
+          "Approved alternate destination and who monitors it",
+          "How pending requests move back without being lost"
+        ],
+        [
+          "Answering provider service interrupted",
+          "Provider continuity terms, incident notices and alternate delivery independent of carrier forwarding",
+          "Business decision owner, approved escalation contact and request reconciliation"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Is busy or no-answer forwarding the same as outage recovery?",
+        "a": "It can be a different trigger. Confirm what the exact carrier product detects and test the failure scenario that the continuity plan is intended to cover."
+      },
+      {
+        "q": "Does an answering subscription establish a recovery-time guarantee?",
+        "a": "A subscription or coverage label alone does not establish that guarantee. Ask for the applicable routing responsibilities, availability terms and incident process in writing."
+      },
+      {
+        "q": "Should we unplug the office connection to test the plan?",
+        "a": "Agree the method and timing with the relevant providers first. A supported simulation with test callers may establish the needed observations without disrupting customer calls."
+      }
+    ],
+    "takeaway": "An outage plan is usable when the trigger, destination, access authority and return to normal coverage have each been checked.",
+    "sourcePaths": [
+      "https://www.att.com/support/smallbusiness/article/smb-local-long-distance/KM1181691/"
+    ],
+    "related": [
+      "conditional-call-forwarding",
+      "after-hours",
+      "call-forwarding-troubleshooting"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "multi-location-answering-service-pricing",
+    "title": "Multi-location answering costs: accounts and billing",
+    "navigationLabel": "Multi-location answering costs",
+    "description": "Compare answering quotes for several service locations: separate account access, usage pools, branch charges, scripts and billing responsibilities.",
+    "eyebrow": "Compare the quote across branches",
+    "lead": "One login does not necessarily mean one plan or a shared usage allowance.",
+    "intro": "A home-service business adding a second branch needs to know which charges repeat and which resources are genuinely shared. Start with the account structure, then compare the same branch roster and call workload across quotes. A dashboard that displays several locations does not by itself establish pooled minutes, shared customer records or consolidated billing.",
+    "sections": [
+      {
+        "title": "Ask what a location means in the quoted plan.",
+        "paragraphs": [
+          "Give each provider the same list of branches, brands, inbound numbers and people who own the accounts. Ask whether its unit is a physical office, a telephone number, a business identity or a separately configured account. A second office using the same public number can be a different setup from two brands with separate greetings.",
+          "Build the quote around the work each branch needs: message taking, approved intake questions, appointment requests or transfer attempts. State which parts are common and which differ. This is a proposed purchasing worksheet; it does not imply that an answering provider supports every requested workflow.",
+          "For overlapping service areas, record the assignment rule for a request that either branch could serve. Specify the time zone for branch hours, the calendar or office responsible for a booking decision, and the exception contact when the normal branch cannot accept work. Give the quote reviewer one branch matrix containing these fields; do not allow the provider to infer a location from an area code alone."
+        ],
+        "items": [
+          "List every public number and the branch or brand it represents.",
+          "Mark distinct greetings, service areas, hours and request recipients."
+        ],
+        "sources": []
+      },
+      {
+        "title": "Separate shared administration from shared data and billing.",
+        "paragraphs": [
+          "AnswerConnect’s Multiple Locations help article provides a useful concrete distinction: linked accounts retain their own data, settings and billing. Each account owner must approve access. The documented feature supports switching on desktop; mobile switching is not yet available. These published details were reviewed October 22, 2026.",
+          "Use that distinction when evaluating any proposal. Ask which staff can see or change each branch, how access is revoked and whether adding an administrator also changes billing responsibility. Do not treat account linking as permission to combine customer records or a promise to share an allowance."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "AnswerConnect Multiple Locations account structure — reviewed October 22, 2026",
+            "href": "https://www.answerconnect.com/help-center/getting-started/how-to-manage-multiple-accounts-with-a-single-login/"
+          }
+        ]
+      },
+      {
+        "title": "Compare a total quote and each branch’s exposure.",
+        "paragraphs": [
+          "Request the recurring amount for the complete roster, then identify included usage, the unit measured and the overage rule. Ask whether unused allowance at one branch can offset another branch’s usage. If the answer is no, keep separate branch calculations even when the invoice or login is centralized.",
+          "Use your own recent call records to prepare a normal operating period and a busier period with the same assumptions for every bidder. Show each branch separately before totaling them. Add quoted setup, number, workflow-change and transfer-related charges only when the proposal identifies them; leave an unanswered charge as unresolved rather than treating it as free."
+        ],
+        "items": [
+          "Record the billing period alongside each amount.",
+          "Request written treatment of adding, pausing or removing a branch."
+        ],
+        "sources": []
+      },
+      {
+        "title": "Check the branch assignment before accepting the cost.",
+        "paragraphs": [
+          "A lower combined quote is not useful if requests reach the wrong office. With the provider’s permission, test calls for each branch, a shared service-area boundary and an unavailable branch contact. Check the greeting, captured location, recipient and next step against the agreed configuration.",
+          "Assign someone to reconcile the first billing period against the accepted branch roster and configuration. Investigate unexpected duplicated charges or usage assignments using the provider’s definitions. Keep commercial and access changes together: when a branch is sold or closed, identify who approves billing changes, removes user access and handles outstanding requests."
+        ],
+        "items": [
+          "Name a billing owner and an operational owner for every branch.",
+          "Retest the affected call paths after a location or brand change."
+        ],
+        "sources": []
+      }
+    ],
+    "overviewTable": {
+      "caption": "Proposed multi-location quote worksheet — fill from written quotes, not assumed package terms",
+      "columns": [
+        "Quote field",
+        "Question for the provider",
+        "Record for each branch or shared account"
+      ],
+      "rows": [
+        [
+          "Recurring charge",
+          "Which charge repeats for another location, number or brand?",
+          "Amount, billing period and charged unit"
+        ],
+        [
+          "Included usage",
+          "Is the allowance separate or shared, and what is measured?",
+          "Allowance, unit and pool membership"
+        ],
+        [
+          "Overage",
+          "Can unused allowance offset another branch’s usage?",
+          "Rate and branch allocation rule"
+        ],
+        [
+          "Setup and changes",
+          "What is charged to add a greeting, workflow, number or branch?",
+          "Quoted charge and approval owner"
+        ],
+        [
+          "Account access",
+          "Who can view or edit each branch, and how is access removed?",
+          "Authorized roles and account owners"
+        ],
+        [
+          "Exit or closure",
+          "What happens to billing, numbers and pending requests?",
+          "Notice process and responsible person"
+        ],
+        [
+          "Branch exceptions",
+          "Who owns an overlapping area, closed branch or unavailable calendar?",
+          "Service-area rule, time zone, calendar owner and fallback recipient"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Does one login mean that every branch shares minutes?",
+        "a": "No such conclusion follows from shared access. Ask whether allowances are pooled and obtain the billing rule for the exact proposed accounts."
+      },
+      {
+        "q": "Does AnswerConnect merge accounts when it links locations?",
+        "a": "Its published Multiple Locations article says accounts retain separate data, settings and billing. Confirm the applicable arrangement directly when obtaining a quote."
+      },
+      {
+        "q": "Should we compare only the total monthly amount?",
+        "a": "Compare the complete quoted cost, the billing period and each branch’s usage exposure. A combined total can hide repeated charges or separate overage rules."
+      }
+    ],
+    "takeaway": "Compare the same branch roster and workload, and record separately what is shared in access, operations and billing.",
+    "sourcePaths": [
+      "https://www.answerconnect.com/help-center/getting-started/how-to-manage-multiple-accounts-with-a-single-login/"
+    ],
+    "related": [
+      "answering-service-cost",
+      "compare/revo-vs-answerconnect",
+      "answering-service-contract-checklist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "call-center-service-level",
+    "title": "Call center service level: threshold and denominator",
+    "navigationLabel": "Call service level",
+    "description": "Define a call service level your home-service office can audit: queue entry, answer threshold, abandoned calls, flowouts and reporting intervals.",
+    "eyebrow": "Answer-time measurement",
+    "lead": "A percentage within a threshold answers a different question from an average wait.",
+    "intro": "Your office may receive an average answer-time report and still need to know how many callers waited beyond its target. A call center service level measures the share answered within a defined time. Before comparing two answering arrangements, agree on the clock, the denominator and the reporting period. This guide provides a measurement specification, not a recommended universal target or a Revo performance claim.",
+    "overviewTable": {
+      "caption": "Service-level specification: complete before comparing reports",
+      "columns": [
+        "Field",
+        "Decision to record",
+        "Audit evidence"
+      ],
+      "rows": [
+        [
+          "Population",
+          "Which number, queue, hours and caller types are included?",
+          "Report filters and coverage schedule"
+        ],
+        [
+          "Clock",
+          "Queue-entry timestamp to connected-answer timestamp",
+          "Event definitions and sample records"
+        ],
+        [
+          "Threshold",
+          "Chosen target in seconds; equality rule",
+          "Approved operating requirement"
+        ],
+        [
+          "Denominator",
+          "Treatment of abandons, short abandons and flowouts",
+          "Configured inclusion options"
+        ],
+        [
+          "Aggregation",
+          "Same interval, timezone and calculation version",
+          "Counts alongside the percentage"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "title": "Write a calculation that another person can reproduce",
+        "paragraphs": [
+          "Genesys defines service level using conversations answered within a time target divided by conversations included in the calculation. Its queue timer runs from queue entry until answer, and an answer at the target counts as within it. Its configurable inclusion rules address abandoned calls, short abandons and flowouts. Those product definitions are useful evidence, but another platform may use a different clock or population.",
+          "For your evaluation, write: qualifying answers within the chosen threshold ÷ eligible interactions under the agreed rules × 100. Keep both counts with the result. If a report starts its timer after a menu but another starts when the number is dialed, the percentages describe different experiences. Record any time before the queue separately rather than silently treating it as zero."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Genesys service-level definitions; reviewed October 22, 2026",
+            "href": "https://help.genesys.cloud/glossary/service-level/"
+          }
+        ]
+      },
+      {
+        "title": "Decide what an unanswered interaction does to the denominator",
+        "paragraphs": [
+          "Create an explicit rule for a caller who disconnects, including a short disconnect, and for a call removed by a workflow before an agent answers. An exclusion changes the percentage even when the underlying calls have not changed. Show excluded counts next to included counts so the office can see how much traffic the result omits.",
+          "Use an event ledger with interaction ID, queue entry, answer time if any, exit reason and inclusion decision. Check one record of each outcome against the report configuration. Keep a rule change dated: two months calculated with different exclusions should not appear as a continuous improvement trend without an explanation."
+        ],
+        "items": [
+          "Document the short-abandon threshold separately from the answer-time target.",
+          "Record whether a transfer enters a new measurement population.",
+          "Retain the reason for every excluded interaction, rather than deleting the event."
+        ]
+      },
+      {
+        "title": "Compare like intervals instead of averaging percentages",
+        "paragraphs": [
+          "A small weekday interval and a busy evening interval should not receive equal weight simply because each has one percentage. For a combined result, add the qualifying-answer counts and eligible-interaction counts, then calculate the ratio. Only combine records using compatible definitions. A period with no eligible calls has no observed service level; show it as not applicable rather than perfect performance.",
+          "For a home-service office, split reporting by staffed coverage and after-hours responsibility when those arrangements differ. Choose a target from the actual callback and staffing requirement, then examine the associated workload. A threshold on a dashboard does not create additional available staff, prove appointment completion or establish a contractual commitment."
+        ],
+        "items": []
+      },
+      {
+        "title": "Use service level alongside the measures it cannot replace",
+        "paragraphs": [
+          "Average speed of answer describes an average; service level describes a fraction within a boundary. Abandonment describes callers who leave before an answer. None establishes whether the office collected the correct address, confirmed an appointment or reached an authorized on-call person. Keep those outcomes in their own records.",
+          "Before accepting a vendor report, ask for the event definitions, inclusion settings, period boundaries and counts behind its percentage. Compare a small authorized sample with the call log. Label missing timestamps as a measurement gap. Do not assume an AI answering plan publishes or guarantees the same metric as a staffed queue."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is 80 percent in 20 seconds the required target?",
+        "a": "This guide does not prescribe that target. Choose an answer-time requirement for your operation and document the population and exclusions before using any percentage."
+      },
+      {
+        "q": "Can two services with the same average answer time have different service levels?",
+        "a": "Yes. An average does not show how many individual waits fall on either side of your threshold. Compare the underlying counts and compatible timestamps."
+      },
+      {
+        "q": "Does an excluded short abandon disappear from call records?",
+        "a": "It should remain visible in the event ledger and excluded count. Exclusion from this calculation does not mean the call never occurred."
+      }
+    ],
+    "takeaway": "A useful service-level report includes its threshold, eligible population, exclusion rules and counts, so your office can reproduce the percentage.",
+    "sourcePaths": [
+      "https://help.genesys.cloud/glossary/service-level/"
+    ],
+    "related": [
+      "average-speed-of-answer",
+      "call-abandonment-rate",
+      "call-quality-monitoring",
+      "first-call-resolution"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "compare/ring-group-vs-call-queue",
+    "title": "Ring group vs call queue: choose ringing and waiting rules",
+    "navigationLabel": "Ring group vs queue",
+    "description": "Compare ring groups and call queues for a home-service office: who rings, what happens when everyone is busy, wait limits and the unanswered exit.",
+    "eyebrow": "Office phone configuration",
+    "lead": "Choose who should ring and what waiting callers should experience as separate decisions.",
+    "intro": "A ring group identifies people or extensions that can answer a shared number. A queue manages callers waiting for someone to become available. They can work together: Google Voice documents call queuing as a setting for a ring group. The practical comparison is the behavior your office needs when people are available, busy or absent, rather than a claim that every product makes you buy one mechanism instead of the other.",
+    "overviewTable": {
+      "caption": "Specify each behavior instead of relying on a feature name",
+      "columns": [
+        "Office condition",
+        "Ringing decision",
+        "Waiting or exit decision"
+      ],
+      "rows": [
+        [
+          "People available",
+          "Simultaneous or ordered attempts, supported by your product",
+          "Identify the connected answer and stop other attempts"
+        ],
+        [
+          "Everyone busy",
+          "Decide which members remain eligible",
+          "Hold in a supported queue or use the approved fallback"
+        ],
+        [
+          "Member unavailable",
+          "Respect availability and supported endpoint rules",
+          "Continue to another eligible member or the exit"
+        ],
+        [
+          "Queue full or wait expired",
+          "Do not restart the same route indefinitely",
+          "Use the configured announcement and next action"
+        ],
+        [
+          "Office closed",
+          "Apply the correct hours and timezone",
+          "Use a closed-hours path instead of unattended waiting"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "title": "Check whether the product combines the mechanisms",
+        "paragraphs": [
+          "Google calls ring groups hunt groups as well. Its documentation says group calls use members' primary Voice numbers, not the mobile numbers linked to those accounts. Check the actual endpoint behavior before assuming that an office ring group reaches technicians' mobile phones.",
+          "For Voice ring groups, Google also documents a queuing option: callers can wait when members are busy. Administrators configure capacity, maximum wait, announcements, wrap-up time and the action after the wait expires. The published limits are 50 queued callers and 30 minutes of waiting. These are Google product limits, not a recommended office setting or Revo capacity."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Google ring-group endpoint rules; reviewed October 22, 2026",
+            "href": "https://knowledge.workspace.google.com/admin/voice/edit-ring-groups"
+          },
+          {
+            "label": "Google ring-group queuing controls; reviewed October 22, 2026",
+            "href": "https://knowledge.workspace.google.com/admin/voice/set-up-call-queuing-for-a-ring-group"
+          }
+        ]
+      },
+      {
+        "title": "Design for the busy state, not only the first successful call",
+        "paragraphs": [
+          "For a small service office, simultaneous ringing may give several available coordinators a chance to pick up one inquiry. An ordered attempt may assign a primary coordinator first. Neither choice tells you what a second caller experiences while the first conversation continues. Record that second-call behavior separately.",
+          "A queue can preserve a waiting opportunity, but it needs a reachable answer destination and a deliberate exit. Specify the maximum waiting population, maximum wait, any member wrap-up interval and the action for a full queue. Decide whether your office should collect a callback request or use an answering destination rather than leave callers waiting; verify that the selected system supports the chosen action."
+        ],
+        "items": []
+      },
+      {
+        "title": "Run an authorized acceptance check with a small call sequence",
+        "paragraphs": [
+          "Use test numbers and a staff-approved window. First call with one member available and record which endpoint rings and who connects. Then keep that conversation active and place another authorized call to inspect the busy-state behavior. Test an unavailable member and the closed-hours setting without changing real customer coverage.",
+          "For the queue, use a deliberately short test wait or a separate test configuration approved by the administrator. Record the announcement and the resulting destination when that wait expires. Verify that the fallback does not send the call back to the same entry point. Restore the production settings and compare them with the saved configuration. Do not flood a live number to discover its capacity."
+        ],
+        "items": [
+          "One call, eligible member available: record ringing and connection.",
+          "Second call while members are occupied: record hold, busy signal or fallback.",
+          "No available members and office closed: record the actual exit.",
+          "Approved timeout test: record the destination and check for a repeated route."
+        ]
+      },
+      {
+        "title": "Keep staffing and caller outcomes outside the feature label",
+        "paragraphs": [
+          "A group with many members can still have nobody available. A queue with generous limits can still produce unanswered requests. Assign an office owner to check member availability, hours and fallback details whenever staffing changes. Review waiting and abandoned-call records alongside completed handoffs.",
+          "If callers need intake, appointment decisions or an answering service after the office route fails, define that as additional work. A ringing pattern and a waiting mechanism do not establish that the request was understood or a booking was confirmed. Verify any connection to Revo or another service for the specific account before treating it as supported."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Are a ring group and a queue mutually exclusive?",
+        "a": "No. Google Voice is a documented example where queuing can be enabled for a ring group. Compare your product's supported controls and behavior, not only its labels."
+      },
+      {
+        "q": "Does simultaneous ringing mean multiple callers can be answered at once?",
+        "a": "No. Several destinations ringing for one caller and capacity for several separate calls are different questions. Confirm and test each requirement independently."
+      },
+      {
+        "q": "Will a Google Voice ring group call a member's linked mobile number?",
+        "a": "Google's ring-group documentation says it calls the member's primary Voice number and does not forward group calls to linked mobile numbers. Check the current endpoint setup before relying on mobile coverage."
+      }
+    ],
+    "takeaway": "Specify ringing, busy-state waiting, member availability and the final exit together; then verify each state with an authorized test.",
+    "sourcePaths": [
+      "https://knowledge.workspace.google.com/admin/voice/edit-ring-groups",
+      "https://knowledge.workspace.google.com/admin/voice/set-up-call-queuing-for-a-ring-group"
+    ],
+    "related": [
+      "call-routing",
+      "call-queue",
+      "overflow-answering",
+      "call-abandonment-rate"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "answering-service-conversion-rate-comparison",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "title": "Answering service conversion rates: compare actual outcomes",
+    "navigationLabel": "Compare conversion rates",
+    "description": "Compare answering services using deduplicated inquiries, confirmed appointments and equal observation windows. Keep calls, leads and completed jobs separate.",
+    "eyebrow": "Buying with your own evidence",
+    "lead": "Compare the same outcome across the same kind of inquiry.",
+    "intro": "One provider reports calls answered. Another reports leads captured. Your office counts confirmed appointments. Those measures describe different events. A useful answering service conversion rate comparison starts with a written definition of the result, then follows actual service inquiries to that result.",
+    "sections": [
+      {
+        "title": "Define the event before calculating a rate.",
+        "paragraphs": [
+          "For a home service office, use a sequence that can be checked in business records: service request received, request accepted as eligible, appointment confirmed, and job completed. A message saying a customer wants Tuesday is a request; a dated appointment accepted in your scheduling record is a different event. An appointment does not prove that work was completed.",
+          "Choose the question first. Confirmed appointments divided by eligible new inquiries measures booking within a screened group. Confirmed appointments divided by all new inquiries also includes demand you could not serve. Both can be useful, but their labels and denominators must remain visible. Neither is a universal provider conversion rate.",
+          "Google Ads documents call conversions based on a configured minimum call length. A call passing that threshold is a duration-qualified advertising event; it does not establish that an appointment or job was booked. Keep that event separate from a confirmed appointment linked to your scheduling record."
+        ],
+        "items": [
+          "Write the numerator: which recorded event qualifies as a success?",
+          "Write the denominator: all new inquiries or only those meeting documented acceptance rules?",
+          "Define exclusions before inspecting which service appears to win."
+        ],
+        "sources": [
+          {
+            "label": "Google call-conversion duration rules; reviewed October 22, 2026",
+            "href": "https://support.google.com/google-ads/answer/6100664?hl=en"
+          }
+        ]
+      },
+      {
+        "title": "Build one record per service inquiry, not per phone call.",
+        "paragraphs": [
+          "A homeowner may call twice about the same broken furnace, leave a message and later confirm a visit. Keep those contacts linked to one inquiry. Count a separate new job request separately when the records support that distinction. Do not assume one telephone number always equals one person, household or job.",
+          "Create a small audit sheet with an internal inquiry ID, first-contact date, answering provider, source, requested service, eligibility decision and reason, confirmation date, job status and evidence reference. Use the information your office is authorized to review. Mark unresolved matches or missing outcomes as unknown; do not silently turn them into a loss or a booking."
+        ],
+        "items": [
+          "Deduplication rule: repeated contact about the same requested work stays in one inquiry.",
+          "Existing-job updates, vendors, spam and new requests receive separate classifications.",
+          "Record who resolved uncertain matches and why."
+        ],
+        "sources": []
+      },
+      {
+        "title": "Give each group the same time to reach the outcome.",
+        "paragraphs": [
+          "Choose a first-contact period and an observation window before calculating results. For example, a business could inspect inquiries received during a defined four-week period and allow each inquiry fourteen days to reach a confirmed appointment. That is an illustrative study design, not a recommended universal window. Choose a window that fits your own booking cycle.",
+          "Compare like groups: requested work, service area, source, staffed versus after-hours coverage and appointment availability. A booked calendar or different service mix can change results independently of who answered. If groups differ, show separate rows rather than presenting a causal claim about the answering provider.",
+          "Keep marketing credit separate from operational outcome. CallRail documents several attribution models that assign credit to different touchpoints. Switching that model can change reported lead totals without creating another confirmed appointment. Preserve the attribution setting when comparing exported reports."
+        ],
+        "items": [
+          "Wait until both groups have completed the declared observation window.",
+          "Show numerator and denominator beside the percentage, including small samples.",
+          "Report unresolved outcomes and unmatched records separately."
+        ],
+        "sources": [
+          {
+            "label": "CallRail attribution modeling; reviewed October 22, 2026",
+            "href": "https://support.callrail.com/hc/en-us/articles/5711811606541-Attribution-modeling"
+          }
+        ]
+      },
+      {
+        "title": "Use the comparison to locate the next operational question.",
+        "paragraphs": [
+          "If eligible requests do not become appointments, inspect the documented reason: no suitable slot, customer declined, follow-up pending or outcome unknown. Keep a requested callback separate from a completed callback and a confirmed booking. This makes the comparison useful to the office without awarding a provider credit for work that happened later elsewhere.",
+          "Produce a dated table with the inquiry period, observation cutoff, definitions, exclusions, counts and limitations. A before-and-after comparison is observational: seasonality, marketing, staffing and availability may also have changed. Use it to decide what to investigate or test next, not to claim guaranteed improvement or estimate unobserved revenue."
+        ],
+        "items": [
+          "Reconcile a sample of counted bookings against scheduling records.",
+          "Retain the same definitions when repeating the review.",
+          "Assign an owner to pending follow-up and data corrections."
+        ],
+        "sources": []
+      }
+    ],
+    "overviewTable": {
+      "caption": "Comparison worksheet — enter observed counts, not estimates",
+      "columns": [
+        "Measure",
+        "Definition to freeze",
+        "Record to check"
+      ],
+      "rows": [
+        [
+          "New service inquiries",
+          "Deduplicated requests first received in the declared period",
+          "Inquiry log with linked repeat contacts"
+        ],
+        [
+          "Eligible inquiries",
+          "Requests meeting the same written work, area and acceptance rules",
+          "Eligibility decision and reason"
+        ],
+        [
+          "Confirmed appointments",
+          "Appointments recorded as confirmed within each inquiry’s observation window",
+          "Scheduling record and confirmation date"
+        ],
+        [
+          "Booking rate among eligible inquiries",
+          "Confirmed appointments ÷ eligible inquiries × 100",
+          "Show both counts and the resulting percentage"
+        ],
+        [
+          "Inquiry-to-booking rate",
+          "Confirmed appointments ÷ all new service inquiries × 100",
+          "Label separately from the eligible-inquiry rate"
+        ],
+        [
+          "Completed jobs",
+          "Work documented as completed; separate from booking",
+          "Job record and its own stated observation cutoff"
+        ],
+        [
+          "Unknown outcomes",
+          "Unmatched, pending or missing evidence",
+          "Show count and reason; disclose handling in each rate"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Can I compare a provider’s lead-capture rate with my booking rate?",
+        "a": "Only after reconciling the definitions. Capturing contact information and confirming an appointment are different outcomes; use the same event and denominator for a direct comparison."
+      },
+      {
+        "q": "Should repeat calls count as more opportunities?",
+        "a": "Repeated contacts about the same requested work belong to the same inquiry under the stated deduplication rule. A genuinely separate request can be another inquiry when your records establish it."
+      },
+      {
+        "q": "Does a higher observed booking rate prove the answering service caused it?",
+        "a": "No. Differences in demand, eligibility, appointment availability and follow-up can affect the result. Report the comparison and its limitations without treating an observational difference as proof of causation."
+      }
+    ],
+    "takeaway": "Define the inquiry, verify the outcome and compare equal observation windows.",
+    "sourcePaths": [
+      "https://support.callrail.com/hc/en-us/articles/5711811606541-Attribution-modeling",
+      "https://support.google.com/google-ads/answer/6100664?hl=en"
+    ],
+    "related": [
+      "call-disposition",
+      "dynamic-number-insertion",
+      "appointment-booking"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "google-voice-auto-attendant-cost",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "title": "Google Voice auto attendant cost: choose the account model",
+    "navigationLabel": "Google Voice auto attendant cost",
+    "description": "Compare Google Voice auto attendant eligibility, standalone and Workspace pricing, introductory offers and the staffing work that remains after a phone menu.",
+    "eyebrow": "Google Voice buying guide",
+    "lead": "Choose the account model before multiplying a monthly price.",
+    "intro": "A solo contractor and an office with several licensed users need different Google Voice cost calculations. Google currently offers an auto attendant in Standard standalone as well as eligible Workspace editions. Check which account and subscription you are buying before treating a price card as your total phone budget.",
+    "sections": [
+      {
+        "title": "Separate a personal standalone account from an organization.",
+        "paragraphs": [
+          "Google’s subscription comparison, reviewed October 22, 2026, lists Basic at $0, standalone Starter at $10 per month and standalone Standard at $20 per month. These US single-user options use a personal Gmail account. Basic and Starter do not include auto attendants; standalone Standard does.",
+          "For an organization, Voice is an add-on to a paid Google Workspace subscription. The published Voice charges are Starter $10, Standard $20 and Premier $30 per licensed user per month. Auto attendants are included in Standard and Premier, not Starter. Workspace subscription charges are additional."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Google Voice subscription comparison; reviewed October 22, 2026",
+            "href": "https://support.google.com/voice/answer/9249103?hl=en"
+          }
+        ]
+      },
+      {
+        "title": "Keep introductory pricing separate from ongoing cost.",
+        "paragraphs": [
+          "On October 22, 2026, Google’s product page displayed standalone Standard at $10 per month for six months, returning to $20 monthly afterward. This introductory offer is different from the Workspace Standard rate of $20 per user per month. Confirm offer eligibility and checkout terms for the account you will actually use.",
+          "For budgeting, keep an introductory line and a normal recurring line. The examples below assume exactly one standalone subscriber or exactly three licensed Workspace Voice users. They calculate Voice subscription charges only; they exclude Workspace, taxes, applicable calling charges, equipment and implementation work. They are not quotes for your business."
+        ],
+        "items": [
+          "Standalone Standard example: 1 subscription × $10 = $10 monthly during the displayed six-month offer; 1 × $20 = $20 monthly afterward.",
+          "Workspace Standard example: assumed 3 licensed users × $20 = $60 monthly for the Voice add-on.",
+          "Replace the assumed user count with the licenses your actual deployment requires."
+        ],
+        "sources": [
+          {
+            "label": "Google Voice current product pricing; reviewed October 22, 2026",
+            "href": "https://workspace.google.com/products/voice/"
+          }
+        ]
+      },
+      {
+        "title": "Assign the menu setup and maintenance work.",
+        "paragraphs": [
+          "Google’s organization setup guide applies to Voice Standard and Premier and requires the Google Voice Admin role. It describes greetings, caller choices, business hours and destinations. This is organization administration guidance; do not assume its Admin console procedure is the standalone account setup.",
+          "For a plumbing office, write the intended paths before setup: existing appointment, new service request and office information. Name who maintains the prompts and who answers each destination. Test the closed-office path and the unavailable-recipient outcome with authorized participants. A correctly played menu is not evidence that somebody received or acted on the request."
+        ],
+        "items": [
+          "Document the hours and time zone that the menu represents.",
+          "List each option, destination and responsible staff member.",
+          "Schedule a recheck when staffing, hours or destination numbers change."
+        ],
+        "sources": [
+          {
+            "label": "Google organization auto attendant setup; reviewed October 22, 2026",
+            "href": "https://knowledge.workspace.google.com/admin/voice/set-up-a-voice-automated-attendant-for-your-organization"
+          }
+        ]
+      },
+      {
+        "title": "Budget for the conversation after the menu.",
+        "paragraphs": [
+          "A menu offers choices and routes the call. Do not treat the auto attendant label as proof that it can discuss a repair, apply your acceptance rules or confirm an appointment conversationally. Decide who performs those tasks after the route: office staff, an approved answering arrangement or a separate supported workflow.",
+          "Before buying, follow one realistic request end to end. Ask where an unanswered call ends, who receives the resulting record and who confirms the next step with the customer. Add your own staff time for editing, checking and following up to the budget. Compare that complete operating scope with any alternative rather than comparing a menu subscription with a fully staffed conversation."
+        ],
+        "items": [
+          "Required outcome: information, connection, captured request or confirmed appointment?",
+          "Available recipient: who can actually take the routed call during advertised hours?",
+          "Fallback: what is recorded when no recipient answers, and who reviews it?"
+        ],
+        "sources": []
+      }
+    ],
+    "overviewTable": {
+      "caption": "Published auto-attendant-eligible Google Voice subscriptions reviewed October 22, 2026; Workspace and other costs excluded",
+      "columns": [
+        "Subscription",
+        "Published Voice charge",
+        "Auto attendant / account boundary"
+      ],
+      "rows": [
+        [
+          "Standard standalone",
+          "$20/month regular; displayed offer $10/month for first 6 months",
+          "Auto attendant; one personal-account user"
+        ],
+        [
+          "Standard Workspace add-on",
+          "$20/user/month",
+          "Auto attendant; paid Workspace required"
+        ],
+        [
+          "Premier Workspace add-on",
+          "$30/user/month",
+          "Auto attendant; paid Workspace required"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Do all Google Voice auto attendants require Google Workspace?",
+        "a": "No. Google lists auto attendants for its single-user Standard standalone plan. Organization deployments use eligible Voice add-ons with paid Workspace; confirm the appropriate account model."
+      },
+      {
+        "q": "Is the $10 Standard offer the ongoing Workspace Standard price?",
+        "a": "No. The October 22, 2026 product page showed a six-month standalone Standard offer that returns to $20 monthly. Workspace Standard was listed separately at $20 per licensed user per month."
+      },
+      {
+        "q": "Does the auto attendant itself confirm service appointments?",
+        "a": "The documented feature plays messages and routes callers through options. Do not assume it performs a service-request conversation or booking; identify the supported destination and person or workflow responsible for confirmation."
+      }
+    ],
+    "takeaway": "Price the correct subscription, its renewal rate and the work after routing.",
+    "sourcePaths": [
+      "https://support.google.com/voice/answer/9249103?hl=en",
+      "https://workspace.google.com/products/voice/",
+      "https://knowledge.workspace.google.com/admin/voice/set-up-a-voice-automated-attendant-for-your-organization"
+    ],
+    "related": [
+      "ivr-system-cost",
+      "call-routing",
+      "call-queue"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "simultaneous-call-capacity",
+    "title": "Simultaneous call capacity: check the complete path",
+    "navigationLabel": "Concurrent call capacity",
+    "description": "Check concurrent calls across your carrier, phone system and answering provider. Separate active conversations, ringing patterns and burst limits.",
+    "eyebrow": "Capacity for separate conversations",
+    "lead": "Several phones ringing for one caller is different from handling several callers at once.",
+    "intro": "For a home-service office, simultaneous call capacity means the number of separate calls a particular setup can sustain at the same time. It is not the number of extensions that ring for one caller, and it is not a monthly allowance of answering minutes. Trace the entire path before relying on a capacity claim: the published number, carrier, phone system, answering destination and any transfer back to your office.",
+    "overviewTable": {
+      "caption": "Capacity acceptance matrix: obtain the limit and observed outcome for each leg",
+      "columns": [
+        "Layer",
+        "Question to resolve",
+        "Evidence to keep"
+      ],
+      "rows": [
+        [
+          "Published number and carrier",
+          "How many overlapping inbound calls does this exact service admit?",
+          "Product, account scope and carrier confirmation"
+        ],
+        [
+          "Phone system or trunk",
+          "Which channel, session, license or account limit applies?",
+          "Current configuration and applicable limits"
+        ],
+        [
+          "Answering destination",
+          "Does a separate simultaneous caller connect, wait, overflow or receive busy?",
+          "Provider terms and a controlled observation"
+        ],
+        [
+          "Transfer back to office",
+          "Can another call reach the receiving endpoint while it is occupied?",
+          "Transfer type and destination behavior"
+        ],
+        [
+          "Burst arrival",
+          "Is admission limited by call starts per second as well as active calls?",
+          "Direction-specific rate limit and allowed test plan"
+        ],
+        [
+          "Beyond the agreed capacity",
+          "What is the next caller's final path?",
+          "Queue, rejection or fallback record with owner"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "title": "Keep three different quantities separate",
+        "paragraphs": [
+          "Concurrent calls are calls overlapping in time. Simultaneous ringing describes attempts to reach several destinations for a single caller. Calls per second, often called CPS, describes how quickly new calls can start or be admitted in a specified direction. A system can have room for ongoing conversations while applying a separate limit to new call attempts.",
+          "Twilio's Elastic SIP Trunking documentation illustrates the distinction: it lists concurrent calls separately from origination and termination CPS. Its stated allowances depend on carrier support, and it warns that new accounts without an approved Business Profile have limited concurrency. These are Twilio SIP trunking terms, not a Revo limit or proof that an entire business call path is unlimited."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Twilio Elastic SIP Trunking scale and account qualifications; reviewed October 22, 2026",
+            "href": "https://www.twilio.com/docs/sip-trunking/scale-and-limits"
+          }
+        ]
+      },
+      {
+        "title": "Locate the restriction instead of multiplying plan minutes",
+        "paragraphs": [
+          "Draw one row for each service in the route. Ask whether its limit applies per number, account, trunk, licensed user or answering team. Record direction as well: an inbound call and a transfer that creates an outbound leg may face different controls. If the provider uses channels or sessions, ask how those units relate to a held or transferred call in your configuration.",
+          "A monthly minute allowance describes billed usage, not the number of simultaneous conversations your business can receive. Likewise, several purchased numbers do not prove independent capacity if they share an account restriction. Leave an undocumented limit unresolved in the matrix instead of assuming it is absent."
+        ],
+        "items": [
+          "Identify the actual carrier and product behind the advertised number.",
+          "Record shared limits as shared; do not allocate the same capacity independently to each branch.",
+          "Ask what happens to a caller who arrives while all permitted capacity is occupied."
+        ]
+      },
+      {
+        "title": "Agree a small acceptance sequence before making test calls",
+        "paragraphs": [
+          "Choose the overlap your office needs from its own demand records and obtain the providers' permission for the test method. Use consenting participants, known test numbers and a staff-approved window. Do not flood the production number or discover a limit by repeatedly increasing traffic without authorization.",
+          "Keep the first test conversation connected, then place a separate authorized call to the published number. Record whether it connects independently, waits, reaches a fallback or fails. Repeat only up to the agreed scope. Where transfers are part of the required flow, include that leg in the approved test and record whether it changes the experience of another caller. A successful test establishes an observation at that load and time, not an unlimited-capacity guarantee."
+        ],
+        "items": [
+          "Retain call IDs or timestamps, direction, overlap and outcome for each test.",
+          "Record active calls separately from held calls and ringing attempts.",
+          "Have the provider confirm whether a separate burst-rate test is necessary and supported."
+        ]
+      },
+      {
+        "title": "Accept the overflow outcome as part of capacity",
+        "paragraphs": [
+          "A capacity plan needs an agreed result for the next caller, not only a successful result below the limit. Specify whether that caller waits, hears an announcement, reaches another destination or is rejected. Identify who monitors unanswered requests and who can change the account's capacity when requirements change.",
+          "Recheck the matrix after changing the carrier, account, phone system, transfer destination or branch structure. Keep a provider's published limit, the account's configured limit and your observed acceptance result in separate fields. None alone establishes the others. Do not infer Revo concurrency, burst capacity or a service-level guarantee from this guide."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does ringing five phones mean we can answer five simultaneous callers?",
+        "a": "No. Five destinations can be ringing for one call. Ask separately how many distinct overlapping calls the full setup can admit and handle."
+      },
+      {
+        "q": "Do more monthly minutes increase simultaneous capacity?",
+        "a": "Not necessarily. The minute allowance and concurrency limit measure different things. Obtain the account-specific capacity rule instead of deriving it from a usage plan."
+      },
+      {
+        "q": "Can an unlimited concurrency statement still have qualifications?",
+        "a": "Yes. Twilio's SIP trunking documentation, for example, distinguishes CPS and concurrency and states carrier and new-account qualifications. Read the scope and check every other service in the route."
+      }
+    ],
+    "takeaway": "Document concurrent capacity, arrival-rate limits and the overflow outcome across the full route, then verify the agreed operating requirement with an authorized test.",
+    "sourcePaths": [
+      "https://www.twilio.com/docs/sip-trunking/scale-and-limits"
+    ],
+    "related": [
+      "compare/ring-group-vs-call-queue",
+      "call-queue",
+      "overflow-answering",
+      "call-routing"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "appointment-waitlist",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "title": "Appointment waitlist: fill an opening without double booking",
+    "navigationLabel": "Appointment waitlist",
+    "description": "Manage an appointment waitlist with customer permission, service-fit checks, offer deadlines and a final calendar check before confirming an open slot.",
+    "eyebrow": "Filling an earlier opening",
+    "lead": "Keep a request for an opening separate from a confirmed visit.",
+    "intro": "A customer wants an earlier service appointment, but the calendar has no suitable opening. A waitlist records permission to contact that customer if a compatible slot becomes available. It does not reserve a visit, establish an arrival time or replace the appointment already on the calendar.",
+    "sections": [
+      {
+        "title": "Choose a managed list or a verified scheduling feature.",
+        "paragraphs": [
+          "A small office can maintain a controlled list or use an external request form, with one person responsible for reviewing new entries. A form submission alone does not check the service area, match a technician or reserve time. Document who turns a submitted request into a reviewed entry.",
+          "YouCanBookMe’s official help article, reviewed October 22, 2026, says it does not provide a waitlist after a booking page becomes fully booked. It suggests linking a web document or Google Form so customers can join a list the business manages. That workaround is not automatic slot matching or automatic promotion into an appointment.",
+          "If you buy another scheduling product with waitlist functions, verify its matching rules, holds and confirmation behavior separately. This guide describes an office process; it does not establish a native Revo waitlist feature or an integration with any named scheduler."
+        ],
+        "items": [
+          "Choose the system of record and limit access to the staff who need it.",
+          "Assign an owner and a backup for reviewing requests and outstanding offers.",
+          "State plainly on the form that joining does not guarantee an opening."
+        ],
+        "sources": [
+          {
+            "label": "YouCanBookMe waitlist guidance; reviewed October 22, 2026",
+            "href": "https://support.youcanbook.me/hc/en-us/articles/17321349308311-Add-a-waiting-list-to-your-booking-page"
+          }
+        ]
+      },
+      {
+        "title": "Collect permission and the conditions that make a slot useful.",
+        "paragraphs": [
+          "Ask whether the customer wants contact about an earlier opening, which approved contact method to use and when the request should expire. Record the response rather than assuming that an ordinary booking permits every kind of waitlist contact. Provide a way to withdraw the request.",
+          "Check the work type, service location, required appointment duration and acceptable days or time windows against your office’s scheduling rules. A spare hour is not a suitable opening when the work requires a longer visit or a technician who will be elsewhere. Keep uncertain requests for staff review rather than promising a fit.",
+          "For a customer who already has a later appointment, link the waitlist entry to that booking. Keep it in place unless the customer accepts a replacement and the office completes the change. For a customer without a booking, say that the waitlist is still only a request."
+        ],
+        "items": [
+          "Entry fields: internal request ID, contact permission and method, work type, service area, availability windows and expiry date.",
+          "Priority rule: a declared order among compatible requests, with any approved exception documented.",
+          "Separate urgent or safety-related concerns from an ordinary earlier-appointment request; use the business’s established response process."
+        ],
+        "sources": []
+      },
+      {
+        "title": "Offer one compatible slot through a controlled process.",
+        "paragraphs": [
+          "When an opening appears, recheck the actual calendar, technician availability, travel constraints and service fit. Select the next compatible entry under the declared priority rule. An older request for a different day need not be a match for this particular slot; record the reason it was skipped.",
+          "Send a specific offer through the agreed channel: proposed date and time or arrival window, what visit it covers, how to accept and the response deadline with time zone. State whether the slot is being held and until when. If the scheduler cannot hold it, explain that availability must be rechecked before confirmation.",
+          "Use one active offer per slot unless your scheduling system has a verified method to prevent conflicting acceptances. A customer’s acceptance starts the final booking check; it is not proof that the calendar was updated. If the deadline passes or the customer declines, close that offer before moving to the next person. For delivery failures or unclear replies, use the agreed alternative contact method or staff review rather than assuming acceptance."
+        ],
+        "items": [
+          "Offer record: slot, selected request, sent time, deadline, hold status and staff owner.",
+          "Before contacting the next entry, resolve any current hold or outstanding acceptance.",
+          "Do not offer the same opening independently from several staff inboxes."
+        ],
+        "sources": []
+      },
+      {
+        "title": "Confirm the calendar change and close the loop.",
+        "paragraphs": [
+          "After acceptance, the office checks availability again and records the appointment in the authoritative schedule. Only then send the confirmation. If replacing an existing appointment, complete the change as one controlled workflow and verify that the customer has the intended booking rather than two conflicting appointments.",
+          "If the slot is no longer available, explain the outcome and ask whether the customer wants to remain on the list. Keep an unanswered offer, an expired offer and a declined offer as different statuses. Remove or close entries when the customer withdraws, the request expires or a suitable appointment is confirmed.",
+          "Review open entries and offers at a defined office interval. The useful control is reconciliation: every active offer has an owner, every confirmed waitlist placement has a calendar record, and expired requests are no longer contacted as though they were current."
+        ],
+        "items": [
+          "Check the customer, work, location and appointment details before confirmation.",
+          "Record the confirmation reference and close or update the linked waitlist entry.",
+          "Review stale requests, undelivered offers and any acceptance awaiting a calendar decision."
+        ],
+        "sources": []
+      }
+    ],
+    "overviewTable": {
+      "caption": "Suggested office statuses — adapt these to your actual scheduling system",
+      "columns": [
+        "State",
+        "What it means",
+        "Next control"
+      ],
+      "rows": [
+        [
+          "Request received",
+          "Customer asked to join; fit and permission may still need review",
+          "Check eligibility, availability preferences and contact permission"
+        ],
+        [
+          "Active request",
+          "Reviewed entry awaiting a compatible opening",
+          "Apply the declared priority rule when a matching slot appears"
+        ],
+        [
+          "Offer outstanding",
+          "A particular opening was offered with a stated deadline",
+          "Track owner, hold status, response and expiry; avoid conflicting offers"
+        ],
+        [
+          "Offer expired or declined",
+          "This offer ended without a completed booking",
+          "Release any hold; close the offer before selecting another request"
+        ],
+        [
+          "Acceptance received",
+          "Customer agreed to the proposed slot",
+          "Recheck the schedule; do not call it confirmed yet"
+        ],
+        [
+          "Appointment confirmed",
+          "The office recorded the appointment and sent confirmation",
+          "Link the schedule record; resolve any replaced appointment and close the entry"
+        ],
+        [
+          "Request closed",
+          "Withdrawn, expired or no longer needed",
+          "Stop using the entry for new offers"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Does joining an appointment waitlist reserve a time?",
+        "a": "No. It records a request for a compatible opening. An offer, customer acceptance and the office’s completed calendar confirmation are separate steps."
+      },
+      {
+        "q": "Does YouCanBookMe automatically fill a cancelled appointment from a waitlist?",
+        "a": "The official help article reviewed October 22, 2026 describes linking to an external document or form for a list the business manages. It does not establish automatic matching or booking from that list."
+      },
+      {
+        "q": "Should I cancel a customer’s later appointment when they join?",
+        "a": "Joining alone is not an accepted replacement. Keep the existing appointment until the customer accepts a suitable offer and the office completes and confirms the intended schedule change."
+      }
+    ],
+    "takeaway": "Obtain permission, match the opening and confirm the schedule before promising a visit.",
+    "sourcePaths": [
+      "https://support.youcanbook.me/hc/en-us/articles/17321349308311-Add-a-waiting-list-to-your-booking-page"
+    ],
+    "related": [
+      "appointment-booking",
+      "appointment-cancellation-policy"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "call-and-text-forwarding",
+    "title": "Call and text forwarding: verify each channel",
+    "navigationLabel": "Call and text forwarding",
+    "description": "Check voice routing, incoming SMS, email copies and reply identity separately before moving or forwarding a home-service business number.",
+    "eyebrow": "Number compatibility and migration",
+    "lead": "Verify where calls and texts go before relying on a forwarded number.",
+    "intro": "A business number can receive a voice call and a text message through different configurations. Before forwarding or moving the number, map the destination for each channel and the method used to reply. A working forwarded call does not establish that customer texts arrive at the same phone, or that a reply uses the business number.",
+    "sections": [
+      {
+        "title": "Specify the channel and the action you need.",
+        "paragraphs": [
+          "For each public number, record the current provider, the proposed change and the required result. Distinguish keeping the number with its current provider and forwarding voice calls from transferring the number to another provider. Ask the providers which voice and messaging arrangements the exact number can use before scheduling a change.",
+          "Use precise language in a quote: receiving an SMS in an app, receiving an email copy and relaying an SMS to another mobile number are different requirements. If staff must reply from the business number, ask which approved app or service sends that reply. Do not infer the answer from a feature called “text forwarding.”"
+        ],
+        "items": [
+          "Identify whether the number is local or toll-free.",
+          "List required voice, SMS and any picture-message behavior separately."
+        ],
+        "sources": []
+      },
+      {
+        "title": "Use the NumberBarn example to separate forwarding from notification.",
+        "paragraphs": [
+          "NumberBarn’s features page describes forwarding calls to another phone number. Its Text Messaging Overview, updated October 7, 2026, separately describes an email notification that copies incoming texts to up to two email addresses. The email-setting instructions identify the receiving email addresses. These documents demonstrate separate channel controls; an email copy is not documentation of SMS relay to another mobile number or of replying by email.",
+          "The use restriction matters for a business. NumberBarn describes its own messaging as personal P2P messaging. Its business-messaging instructions instead point to String, with separate eligibility and registration requirements. The example therefore explains a configuration distinction; it is not a recommendation to use personal messaging for customer communications."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "NumberBarn forwarding features — reviewed October 22, 2026",
+            "href": "https://www.numberbarn.com/features"
+          },
+          {
+            "label": "NumberBarn text overview and supported use — reviewed October 22, 2026",
+            "href": "https://help.numberbarn.com/hc/en-us/articles/33836390823447-Text-Messaging-Overview"
+          },
+          {
+            "label": "NumberBarn email notification settings — reviewed October 22, 2026",
+            "href": "https://help.numberbarn.com/hc/en-us/articles/41125002162711-Manage-Email-Notifications-for-Text-Messages"
+          },
+          {
+            "label": "NumberBarn business messaging with String — reviewed October 22, 2026",
+            "href": "https://help.numberbarn.com/hc/en-us/articles/28112198386071-Activate-Business-Text-Messaging-with-String"
+          }
+        ]
+      },
+      {
+        "title": "Get compatibility answers before a migration.",
+        "paragraphs": [
+          "Ask the proposed provider to confirm support for this exact number and business use, where incoming messages will be stored, what happens to the current messaging setup and which product staff will use afterward. Record any activation or registration dependency separately from the voice-routing change. Leave an unanswered requirement unresolved rather than marking the number ready.",
+          "Prepare a small acceptance record for both providers: the number, each requested change, the responsible account administrator and the order in which changes are expected. Ask what can be reversed and what requires support. Decide how the office will notice a failed channel during the transition instead of treating a successful voice test as completion."
+        ],
+        "items": [
+          "Confirm local or toll-free support with the proposed messaging provider.",
+          "Record the agreed handling of existing messages and access before changing service."
+        ],
+        "sources": []
+      },
+      {
+        "title": "Test delivery and return identity independently.",
+        "paragraphs": [
+          "Use consenting testers and clearly labeled test messages. After the approved configuration change, place a voice call to the public number, send a new text to that same number and check the expected receiving system. If an email copy is configured, check that copy separately. Then send a reply through the approved business-messaging tool and record the number the tester sees.",
+          "Keep the observations by channel: original number dialed or texted, destination reached, reply method and displayed return number. A delivered email cannot establish that a mobile SMS relay works. A reply from an employee’s personal number cannot establish business-number reply support. If a required result fails, pause acceptance of that channel and use the documented provider escalation or reversal process."
+        ],
+        "items": [
+          "Use the same public number in each acceptance test.",
+          "Confirm the normal voice greeting still works after a messaging change."
+        ],
+        "sources": []
+      }
+    ],
+    "overviewTable": {
+      "caption": "Proposed channel acceptance worksheet — verify each result for the exact number and configuration",
+      "columns": [
+        "Channel or action",
+        "Expected destination",
+        "Reply or return number to verify",
+        "Acceptance test"
+      ],
+      "rows": [
+        [
+          "Voice call forwarding",
+          "Configured phone or answering destination",
+          "Check the approved outbound callback method separately",
+          "Call the public number and record the endpoint and greeting"
+        ],
+        [
+          "Incoming SMS",
+          "Approved messaging app or service for that number",
+          "Send a test reply through the approved tool; record the displayed number",
+          "Text the public number and locate the message in the expected system"
+        ],
+        [
+          "Email copy of an incoming text",
+          "Configured email address or addresses",
+          "Email delivery alone does not establish SMS reply capability",
+          "Confirm the copy arrives; test business-number replies separately"
+        ],
+        [
+          "SMS relay to another mobile, if required",
+          "Mobile number explicitly supported by the proposed service",
+          "Ask whether replies are supported and which number is displayed",
+          "Verify relay and reply independently; do not substitute an email test"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Does forwarding voice calls also forward customer texts?",
+        "a": "Verify messaging separately for the exact number and service. Voice-call delivery does not establish where incoming SMS is received or how staff can reply."
+      },
+      {
+        "q": "Is an emailed copy of a text the same as SMS forwarding to a mobile?",
+        "a": "No. The receiving channel is email. A copy does not establish delivery as an SMS to another number, or an ability to send a business-number reply from that email."
+      },
+      {
+        "q": "Can NumberBarn’s personal texting example be used as evidence of business SMS support?",
+        "a": "No. Its documented personal P2P messaging and its separate business-messaging route have different requirements. Confirm the applicable business product and number eligibility directly."
+      },
+      {
+        "q": "What should we check after moving messaging to another service?",
+        "a": "Test a new incoming text, its destination and an approved business-number reply. Also repeat a voice call to confirm that the required voice route still works."
+      }
+    ],
+    "takeaway": "Accept a number change only after voice delivery, incoming messaging and the required reply identity have each passed their own test.",
+    "sourcePaths": [
+      "https://www.numberbarn.com/features",
+      "https://help.numberbarn.com/hc/en-us/articles/33836390823447-Text-Messaging-Overview",
+      "https://help.numberbarn.com/hc/en-us/articles/41125002162711-Manage-Email-Notifications-for-Text-Messages",
+      "https://help.numberbarn.com/hc/en-us/articles/28112198386071-Activate-Business-Text-Messaging-with-String"
+    ],
+    "related": [
+      "landline-call-forwarding",
+      "phone-number-porting",
+      "sms-answering-service"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
+    },
+    "publicationStatus": "draft"
   }
 ]

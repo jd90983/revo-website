@@ -582,5 +582,26 @@
     "changes": [
       "updated answer-america-service; back to draft until re-approved"
     ]
+  },
+  {
+    "batchId": "2026-10-22-ten-distinct-operating-decisions",
+    "batchHash": "sha256:fa68b7a42d09b37d4a7de63f642855fa48b85e8b22085a0f857cf2a62855fbf3",
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review."
+    },
+    "appliedAt": "2026-10-22",
+    "changes": [
+      "added call-forwarding-troubleshooting as draft",
+      "added disaster-recovery-answering-service as draft",
+      "added multi-location-answering-service-pricing as draft",
+      "added call-center-service-level as draft",
+      "added compare/ring-group-vs-call-queue as draft",
+      "added answering-service-conversion-rate-comparison as draft",
+      "added google-voice-auto-attendant-cost as draft",
+      "added simultaneous-call-capacity as draft",
+      "added appointment-waitlist as draft",
+      "added call-and-text-forwarding as draft"
+    ]
   }
 ]
