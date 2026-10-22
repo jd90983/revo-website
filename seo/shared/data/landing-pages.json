@@ -18317,5 +18317,1905 @@
       "reviewedAt": "2026-10-21",
       "contentHash": "sha256:63993a1e62ea423f6bf5511377bfb14ac8a7e78de7d8f8e9c7e50e2c6e2335cd"
     }
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "outsourced-switchboard",
+    "title": "Outsourced switchboard services: plan the main line",
+    "navigationLabel": "Outsourced switchboard",
+    "description": "Evaluate an outsourced switchboard for your home-service main number: directory ownership, transfer destinations and the work left with your office.",
+    "eyebrow": "Home-service buying guide",
+    "lead": "Evaluate an outsourced switchboard for your home-service main number: directory ownership, transfer destinations and the work left with your office.",
+    "intro": "Evaluate an outsourced switchboard for your home-service main number: directory ownership, transfer destinations and the work left with your office. Published by Revo. The scenarios below are planning examples, not measured customer results.",
+    "sections": [
+      {
+        "title": "Buy responsibility for the main number",
+        "paragraphs": [
+          "An outsourced switchboard combines answering with directing calls on behalf of an organization. ComXo describes an operator-led service with optional system integration. That establishes a service category, not a Revo capability or a recommendation that a particular provider fits a US contractor. Obtain US coverage, hours and an account-specific proposal before treating any offer as available."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Primary source reviewed October 22, 2026",
+            "href": "https://comxo.com/outsourced-switchboard-services/"
+          }
+        ]
+      },
+      {
+        "title": "Build a directory that a person can maintain",
+        "paragraphs": [
+          "For a plumbing business, the first destination may be estimates, an existing-job coordinator or the owner. Give each destination an approved label, coverage hours, a backup and a person responsible for updating it. Avoid a directory that consists only of personal mobile numbers: the operator also needs to know when each destination should be used.",
+          "Record what happens when someone is on leave. A correct transfer to an unattended extension is still an unfinished customer request. Keep the directory version with the answering instructions so the office can trace which rules were in use."
+        ],
+        "items": []
+      },
+      {
+        "title": "Distinguish connection from completed work",
+        "paragraphs": [
+          "Use an illustrative request such as a homeowner asking to change an installation date. The switchboard may identify the scheduling team and connect the call. It has not necessarily changed the appointment. Decide whether the operator should stay on the line for a handoff, take a message after a failed attempt or send the request into an owned work queue.",
+          "For supplier and employee calls, use separate rules. A supplier asking about an invoice should not take the same path as a homeowner reporting a problem with an active job. These are your business decisions, not evidence that a transfer service supplies technical advice."
+        ],
+        "items": []
+      },
+      {
+        "title": "Evaluate the arrangement before changing the main line",
+        "paragraphs": [
+          "Ask a candidate to explain directory updates, transfer attempts, unanswered destinations, concurrent calls and reporting. Compare a scripted dry run across an ordinary request, an unknown employee name and an unavailable destination. Retain the observed result and the unresolved responsibility for each case.",
+          "Revo’s answering offer does not establish an outsourced human switchboard. Confirm the required configuration against Services and Pricing."
+        ],
+        "items": [
+          "Identify who owns the directory and its update deadline.",
+          "Separate successful connections from messages awaiting action.",
+          "Document the fallback when the office cannot receive a transfer."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a switchboard the same as a phone menu?",
+        "a": "An operator-led service supplies people to identify and connect calls. A phone menu supplies configured choices; its destinations still need coverage."
+      },
+      {
+        "q": "Does a switchboard schedule a job?",
+        "a": "Only where the agreed service authorizes and supports that action. Connecting a caller to scheduling is a different result."
+      }
+    ],
+    "takeaway": "Choose a switchboard by the main-line responsibilities it accepts and the fallback your office can support.",
+    "sourcePaths": [
+      "https://comxo.com/outsourced-switchboard-services/"
+    ],
+    "related": [
+      "call-routing",
+      "compare/warm-vs-cold-transfer",
+      "call-queue",
+      "choose-virtual-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "email-answering-service",
+    "title": "Email answering service: manage homeowner requests",
+    "navigationLabel": "Email answering",
+    "description": "Decide when an email answering service fits a home-service inbox, with clear reply authority, attachment handling and ownership of unresolved requests.",
+    "eyebrow": "Home-service buying guide",
+    "lead": "Decide when an email answering service fits a home-service inbox, with clear reply authority, attachment handling and ownership of unresolved requests.",
+    "intro": "Decide when an email answering service fits a home-service inbox, with clear reply authority, attachment handling and ownership of unresolved requests. Published by Revo. The scenarios below are planning examples, not measured customer results.",
+    "sections": [
+      {
+        "title": "Treat the inbox as a separate service channel",
+        "paragraphs": [
+          "An email answering service handles incoming email on a business’s behalf. SupportYourApp describes a staffed email response offering and says its quote depends on coverage and staffing requirements. That is evidence for the category, not a guarantee of a response time, business outcome or Revo feature."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Primary source reviewed October 22, 2026",
+            "href": "https://supportyourapp.com/email-answering-service/"
+          }
+        ]
+      },
+      {
+        "title": "Define the boundary between a reply and a decision",
+        "paragraphs": [
+          "A remodeling office may receive a plan attachment, a question about an estimate and a request to approve a material substitution in the same thread. The inbox team can acknowledge receipt and route the documents under approved instructions. Approval of scope, price or materials belongs to the person authorized to make that decision.",
+          "Create a short classification with a destination for each type of request. Existing projects should keep their project reference. New inquiries should have a named follow-up owner. A sent acknowledgment is evidence of a reply, not evidence that someone reviewed a drawing or accepted the work."
+        ],
+        "items": []
+      },
+      {
+        "title": "Make attachments and duplicate contacts visible",
+        "paragraphs": [
+          "Choose where documents will be stored and which roles may open them. Ask the service how it handles unreadable attachments, inaccessible links and threads that arrive from a different address. Do not ask homeowners to put payment credentials or unnecessary identity documents into an ordinary support thread.",
+          "If a homeowner calls about the same estimate after emailing, connect those two contacts in your approved record. Without that step, two staff members may promise different next actions. A shared subject line alone is not a reliable project identifier."
+        ],
+        "items": []
+      },
+      {
+        "title": "Set a practical acceptance test for inbox coverage",
+        "paragraphs": [
+          "Use fictional threads: a simple hours question, a missing attachment, a proposed change order and a follow-up on an unresolved request. Check the classification, response authority and internal handoff. Keep receipt time, first useful reply and final owner separate; an automatic reply should not count as a resolved inquiry.",
+          "Revo’s published voice offer does not verify managed email answering. Assess inbox coverage separately from phone coverage."
+        ],
+        "items": [
+          "Specify monitored addresses and coverage windows.",
+          "List replies that require a draft approval.",
+          "Assign a person to aging threads and handoff failures."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does answering a call also cover the email inbox?",
+        "a": "No. Include addresses, access and response responsibilities explicitly in the service scope."
+      },
+      {
+        "q": "Should an email service approve an estimate?",
+        "a": "Only an authorized person should approve the business commitment. Receipt, routing and acknowledgment can be assigned separately."
+      }
+    ],
+    "takeaway": "Add email coverage when it resolves an owned inbox workload, with a clear limit on what a reply can commit.",
+    "sourcePaths": [
+      "https://supportyourapp.com/email-answering-service/"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "lead-qualification",
+      "speed-to-lead",
+      "appointment-booking"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "live-chat-answering-service",
+    "title": "Live chat answering service for home-service websites",
+    "navigationLabel": "Live chat answering",
+    "description": "Evaluate live chat answering for a home-service website: define staffed hours, conversation ownership and the handoff when a visitor leaves the page.",
+    "eyebrow": "Home-service buying guide",
+    "lead": "Evaluate live chat answering for a home-service website: define staffed hours, conversation ownership and the handoff when a visitor leaves the page.",
+    "intro": "Evaluate live chat answering for a home-service website: define staffed hours, conversation ownership and the handoff when a visitor leaves the page. Published by Revo. The scenarios below are planning examples, not measured customer results.",
+    "sections": [
+      {
+        "title": "Separate the chat window from the answering work",
+        "paragraphs": [
+          "A live chat widget supplies a place to type. An answering service supplies handling of the conversation. Contact One describes managed website chat and lists home services among its intended users. Its marketing claims do not establish your conversion rate, a guaranteed response time or a Revo chat feature."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Primary source reviewed October 22, 2026",
+            "href": "https://contactonecallcenter.com/service/live-chat-support/"
+          }
+        ]
+      },
+      {
+        "title": "Design for a visitor who has not called",
+        "paragraphs": [
+          "Consider a homeowner looking at a gutter repair page and asking whether the business works on a two-story property. The chat handler needs approved service information and a way to collect the request for office follow-up. It should not infer that an appointment exists because the visitor supplied an address.",
+          "Define what happens if the visitor closes the browser. Decide whether the business may use an agreed contact method for follow-up and who owns it. Keep a conversation that ended without contact information distinct from one that produced a reachable inquiry."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep website chat distinct from texting",
+        "paragraphs": [
+          "A website session and a text conversation can have different identities and histories. If you move from chat to a callback, carry the customer’s stated request and the permitted next step into your approved record. Do not require the customer to repeat every detail, but do not treat a matching first name as proof that two conversations belong together.",
+          "For a message that needs the field team, give the office a concise handoff: request type, property context, unanswered question and owner. Do not promise an arrival time or a technical diagnosis merely to finish the chat."
+        ],
+        "items": []
+      },
+      {
+        "title": "Check the entire conversation path",
+        "paragraphs": [
+          "Review a staffed-hours chat, a closed-hours visit, a disconnected session and a question outside the supplied knowledge. Verify that the visible message matches the actual coverage. Measure useful handled inquiries separately from widget opens or automatic greetings.",
+          "Revo’s phone answering does not verify a website chat service. Confirm channel-specific coverage before combining proposals."
+        ],
+        "items": [
+          "Identify who maintains answers when services change.",
+          "Specify whether agents answer, qualify, book or only relay.",
+          "Give missed chats an owner and a visible next action."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is live chat the same as an SMS answering service?",
+        "a": "No. Website chat begins in a web session. SMS begins with a text-capable number; moving between them requires supported identity and handoff arrangements."
+      },
+      {
+        "q": "Will adding chat guarantee more jobs?",
+        "a": "No. Evaluate the quality and follow-up of actual inquiries. A widget installation is not proof of booked work."
+      }
+    ],
+    "takeaway": "Buy a handled conversation and a dependable handoff, rather than counting a chat widget as coverage.",
+    "sourcePaths": [
+      "https://contactonecallcenter.com/service/live-chat-support/"
+    ],
+    "related": [
+      "lead-qualification",
+      "speed-to-lead",
+      "appointment-booking",
+      "choose-virtual-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "sms-answering-service",
+    "title": "SMS answering service: who handles the next reply?",
+    "navigationLabel": "SMS answering",
+    "description": "Assess two-way SMS answering for home-service inquiries, separating incoming text coverage from notifications, missed-call messages and phone.",
+    "eyebrow": "Home-service buying guide",
+    "lead": "Assess two-way SMS answering for home-service inquiries, separating incoming text coverage from notifications, missed-call messages and phone conversations.",
+    "intro": "Assess two-way SMS answering for home-service inquiries, separating incoming text coverage from notifications, missed-call messages and phone conversations. Published by Revo. The scenarios below are planning examples, not measured customer results.",
+    "sections": [
+      {
+        "title": "Start with the customer’s incoming text",
+        "paragraphs": [
+          "Two-way SMS answering covers a written exchange, not just a notification. Answering Service Care describes live handling of customer texts as a separate service. Its description supports that distinction; it does not establish delivery guarantees, universal number compatibility or a native Revo SMS inbox."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Primary source reviewed October 22, 2026",
+            "href": "https://answeringservicecare.com/services/live-sms-answering/"
+          }
+        ]
+      },
+      {
+        "title": "Give the second message an owner",
+        "paragraphs": [
+          "An electrician may receive a text asking whether an appointment can move to Friday. An automated acknowledgment can confirm receipt, but the next reply may ask which window is available. Assign who reads that reply, what schedule information they can use and how they report a final decision to the office.",
+          "Separate the customer’s proposed time from an accepted appointment. Where the handler cannot update the calendar, the useful outcome is a clearly assigned scheduling request. Do not let a friendly text imply that a crew has been committed."
+        ],
+        "items": []
+      },
+      {
+        "title": "Check number access and thread continuity",
+        "paragraphs": [
+          "Ask whether the existing business number can support the proposed messaging arrangement and what changes are required. Voice forwarding alone does not prove that incoming texts reach the answering team. Review how a thread follows a customer who later calls, how staff take over and who can see earlier messages.",
+          "If the service supports images or links, decide how those are reviewed and stored. A customer’s photo can document what they sent; it should not authorize an unqualified handler to assess safety, diagnose equipment or promise a price."
+        ],
+        "items": []
+      },
+      {
+        "title": "Verify coverage with a conversational test",
+        "paragraphs": [
+          "Use a fictional multi-message exchange with a delayed reply, a schedule question and a request outside the approved script. Check who is assigned at each stage and what happens after coverage ends. Discuss required messaging rules with the service owner before enabling a live channel.",
+          "Revo lists SMS follow-up; that alone does not verify two-way inbound SMS answering."
+        ],
+        "items": [
+          "Document hours for reading replies, not only sending messages.",
+          "Identify which actions need office approval.",
+          "Keep missed-call automation separate from incoming text coverage."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does a missed-call text prove that replies are handled?",
+        "a": "No. Confirm who receives the reply and how it becomes an assigned conversation."
+      },
+      {
+        "q": "Does call forwarding forward text messages too?",
+        "a": "Do not assume so. Verify the voice and messaging arrangements separately with the responsible providers."
+      }
+    ],
+    "takeaway": "An SMS service is useful when someone owns the conversation after the first outgoing message.",
+    "sourcePaths": [
+      "https://answeringservicecare.com/services/live-sms-answering/"
+    ],
+    "related": [
+      "missed-call-text-back",
+      "appointment-booking",
+      "call-routing",
+      "choose-virtual-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "selective-call-forwarding",
+    "title": "Selective call forwarding: route a defined caller list",
+    "navigationLabel": "Selective call forwarding",
+    "description": "Understand selective call forwarding before using it on a home-service line: caller lists, unmatched calls and a test plan for the exact phone service.",
+    "eyebrow": "Home-service buying guide",
+    "lead": "Understand selective call forwarding before using it on a home-service line: caller lists, unmatched calls and a test plan for the exact phone service.",
+    "intro": "Understand selective call forwarding before using it on a home-service line: caller lists, unmatched calls and a test plan for the exact phone service. Published by Revo. The scenarios below are planning examples, not measured customer results.",
+    "sections": [
+      {
+        "title": "Separate caller-list selection from no-answer rules",
+        "paragraphs": [
+          "Selective forwarding uses a configured caller list rather than simply waiting for a busy or unanswered line. AT&T documents Select Call Forwarding for its local home phone service. Its instructions are product-specific: availability, charges and compatibility vary. Do not apply its star code to an unrelated wireless, hosted or business line."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Primary source reviewed October 22, 2026",
+            "href": "https://www.att.com/support/article/home-phone/KM1066814/"
+          }
+        ]
+      },
+      {
+        "title": "Decide what should happen outside the list",
+        "paragraphs": [
+          "Suppose a small repair office wants a known property manager’s calls to reach its coordinator while ordinary inquiries still reach the main office. Record the list owner, the intended destination and the path for everyone else. This is a planning example, not a recommendation to bypass your existing customer-handling policy.",
+          "A caller-list rule is not an urgency assessment. A new customer may have an important request from an unfamiliar number. Decide how the ordinary answering path handles that request instead of expecting selective forwarding to classify it."
+        ],
+        "items": []
+      },
+      {
+        "title": "Plan for identity and list changes",
+        "paragraphs": [
+          "A customer can call from a different phone, and staff can replace a device. Ask the phone provider how its feature matches numbers and treats unavailable caller identity. Keep list changes in the same operating notes as staff coverage changes. Avoid treating a displayed number as proof of who is speaking.",
+          "Assign a backup for the selected destination. If it belongs to a coordinator who is away, forwarding to that number can simply move the unanswered call. The important test result is what the caller reaches at the end of the route."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test the exact service before relying on it",
+        "paragraphs": [
+          "With authorized test numbers, compare a listed caller, an unlisted caller, a caller with unavailable identity and an unavailable destination. Record which endpoint rang and which greeting was heard. Confirm how to remove the list rule without unintentionally changing separate busy or no-answer settings.",
+          "Revo’s answering and transfer labels do not establish carrier-level selective forwarding support."
+        ],
+        "items": [
+          "Identify the exact carrier product and feature name.",
+          "Document the unmatched-call route.",
+          "Retest after changing the caller list or destination."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is selective forwarding the same as conditional forwarding?",
+        "a": "The conditions differ. Caller-list selection depends on the configured matching rule; busy and no-answer forwarding depend on the line state."
+      },
+      {
+        "q": "Can I use one activation code on every carrier?",
+        "a": "No. Follow the documentation for the exact product and confirm the configuration with its provider."
+      }
+    ],
+    "takeaway": "Use caller-list forwarding only when the unmatched path and unavailable destination are understood and tested.",
+    "sourcePaths": [
+      "https://www.att.com/support/article/home-phone/KM1066814/"
+    ],
+    "related": [
+      "conditional-call-forwarding",
+      "landline-call-forwarding",
+      "business-caller-id",
+      "turn-off-call-forwarding"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "call-forwarding-cost",
+    "title": "Call forwarding cost: separate carrier and service bills",
+    "navigationLabel": "Call forwarding cost",
+    "description": "Check call forwarding cost for a home-service number by separating carrier usage, destination charges and the answering service’s own billing rules.",
+    "eyebrow": "Home-service buying guide",
+    "lead": "Check call forwarding cost for a home-service number by separating carrier usage, destination charges and the answering service’s own billing rules.",
+    "intro": "Check call forwarding cost for a home-service number by separating carrier usage, destination charges and the answering service’s own billing rules. Published by Revo. The scenarios below are planning examples, not measured customer results.",
+    "sections": [
+      {
+        "title": "There is no universal forwarded-call rate",
+        "paragraphs": [
+          "AT&T’s wireless support page says forwarded calls are billed for their duration and that long-distance or roaming charges may apply. Those statements concern that provider’s wireless service. They do not establish the price of forwarding on another plan, a landline or a hosted business system."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Primary source reviewed October 22, 2026",
+            "href": "https://www.att.com/support/article/wireless/KM1011513/"
+          }
+        ]
+      },
+      {
+        "title": "Put the two suppliers on separate lines",
+        "paragraphs": [
+          "A roofing office may keep its advertised number with a carrier while sending unanswered calls to an answering service. Ask the carrier about the forwarded portion and the answering provider about its own billable usage. An included allowance at one supplier does not prove that the other supplier charges nothing.",
+          "Keep setup charges, recurring features and usage in separate worksheet fields. If the answering service later transfers the caller, ask how that event is counted too. Do not assume a transferred conversation is free merely because the initial forwarding feature was included."
+        ],
+        "items": []
+      },
+      {
+        "title": "Use your records rather than a guessed average",
+        "paragraphs": [
+          "Collect a representative period of call detail, the portion actually forwarded and the relevant destinations. The office should check whether the plan uses an included allowance, metered usage or a different rule. Avoid adding both the carrier’s full call duration and another overlapping measure into one invented minute count.",
+          "As a hypothetical worksheet, 80 chargeable forwarded minutes at an assumed $0.05 rate would be $4 before any other charges. The rate and minutes are invented to demonstrate multiplication, not a current offer or forecast. Replace both with confirmed terms and your own measured usage."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve the unanswered billing questions first",
+        "paragraphs": [
+          "Ask for the current plan documentation and a worked example using your proposed destination. Identify who bills each event, what counts against an allowance and whether destination or location changes affect the rule. Recheck the first invoice against the call records after an authorized setup.",
+          "Revo’s plan price does not establish your carrier’s forwarding charges."
+        ],
+        "items": [
+          "Carrier recurring feature charge, if any.",
+          "Carrier usage and destination rules.",
+          "Answering-service allowance, usage unit and transfer treatment."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does free activation mean every forwarded call is free?",
+        "a": "No. Feature activation and usage can have different billing terms."
+      },
+      {
+        "q": "Can I calculate cost from the number of calls alone?",
+        "a": "Only if the relevant supplier bills by call and the rules are known. Duration-based charges need the applicable chargeable duration."
+      }
+    ],
+    "takeaway": "A forwarding quote is complete only when the carrier and answering-service bills are both understood.",
+    "sourcePaths": [
+      "https://www.att.com/support/article/wireless/KM1011513/"
+    ],
+    "related": [
+      "answering-service-cost",
+      "landline-call-forwarding",
+      "conditional-call-forwarding",
+      "pay-as-you-go-answering-service"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "compare/auto-attendant-vs-receptionist",
+    "title": "Auto attendant vs virtual receptionist for home services",
+    "navigationLabel": "Auto attendant vs receptionist",
+    "description": "Compare an auto attendant with a virtual receptionist by the work the caller needs completed: choosing a destination, explaining a request or reaching.",
+    "eyebrow": "Home-service buying guide",
+    "lead": "Compare an auto attendant with a virtual receptionist by the work the caller needs completed: choosing a destination, explaining a request or reaching staff.",
+    "intro": "Compare an auto attendant with a virtual receptionist by the work the caller needs completed: choosing a destination, explaining a request or reaching staff. Published by Revo. The scenarios below are planning examples, not measured customer results.",
+    "sections": [
+      {
+        "title": "Compare an interaction, not just an answering label",
+        "paragraphs": [
+          "Microsoft documents an auto attendant as directing callers through configured menu input to people, queues or other destinations. That describes a menu-based routing role. A receptionist conversation can instead gather a request under the business’s instructions. Neither label alone proves that a job was booked or a problem resolved."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Primary source reviewed October 22, 2026",
+            "href": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-plan-overview"
+          }
+        ]
+      },
+      {
+        "title": "Use a request that does not fit a neat department",
+        "paragraphs": [
+          "Imagine a homeowner who says the previous repair is still causing trouble and asks whether someone can return. A short menu can offer a route for existing customers. Someone at the destination still needs to understand the request, connect it with the prior job and decide the next action.",
+          "A conversational service may collect those details before handoff if its setup supports that work. Evaluate the exact result: caller reached a person, request recorded, callback assigned or appointment confirmed. These outcomes are not interchangeable."
+        ],
+        "items": []
+      },
+      {
+        "title": "Account for staff who receive the call",
+        "paragraphs": [
+          "A well-written menu can still send a caller to a team that is unavailable. Draw the path for a wrong selection, no selection, an unanswered destination and a closed office. Keep the fallback short enough that a caller is not repeatedly sent through the same choices.",
+          "For a business with a staffed scheduling desk, routing may be sufficient for some calls. For an owner working in the field, another route to the owner’s unanswered phone may leave the original problem unsolved. Choose based on who can act after the route completes."
+        ],
+        "items": []
+      },
+      {
+        "title": "Evaluate a combined arrangement only where supported",
+        "paragraphs": [
+          "A menu and an answering service can serve different parts of one call path, but compatibility must be confirmed. Ask who owns the greeting, hours, destination changes and failure handling. Review a normal request and an exception without assuming that one system has access to another system’s calendar.",
+          "Revo’s answering offer does not establish a native configurable phone menu."
+        ],
+        "items": [
+          "Menu selection is a routing event.",
+          "Request capture is an intake result.",
+          "An accepted booking needs supported scheduling authority."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does an auto attendant require keypad input?",
+        "a": "Not always. Some systems accept configured spoken choices. Check the exact product rather than assuming a free-form receptionist conversation."
+      },
+      {
+        "q": "Which option is better for a small contractor?",
+        "a": "Use the caller tasks and actual staffing. A menu can organize destinations; conversational handling may help gather requests when staff cannot answer."
+      }
+    ],
+    "takeaway": "Choose the arrangement that completes the caller’s next useful step and has a supported fallback.",
+    "sourcePaths": [
+      "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-plan-overview"
+    ],
+    "related": [
+      "ivr-system-cost",
+      "call-routing",
+      "call-queue",
+      "compare/virtual-receptionist-vs-answering-service"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "answering-service-contract-checklist",
+    "title": "Answering service contract: an office handoff checklist",
+    "navigationLabel": "Service agreement checklist",
+    "description": "Organize an answering service agreement for a home-service office: connect the agreed scope, billing documents, operating owner and exit handoff.",
+    "eyebrow": "Home-service buying guide",
+    "lead": "Organize an answering service agreement for a home-service office: connect the agreed scope, billing documents, operating owner and exit handoff.",
+    "intro": "Organize an answering service agreement for a home-service office: connect the agreed scope, billing documents, operating owner and exit handoff. Published by Revo. The scenarios below are planning examples, not measured customer results.",
+    "sections": [
+      {
+        "title": "Translate the proposal into documents the office can use",
+        "paragraphs": [
+          "An answering-service proposal can describe useful features while leaving the operating team without a clear instruction set. Ambs’ published buyer guidance identifies billing definitions, renewal and exit terms as areas to review. Treat that as a prompt to inspect your own documents, not as a statement of law or a substitute for qualified review."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Primary source reviewed October 22, 2026",
+            "href": "https://www.ambscallcenter.com/blog/answering-service-contracts-explained"
+          }
+        ]
+      },
+      {
+        "title": "Give each business promise a document and an owner",
+        "paragraphs": [
+          "For a cleaning company, the advertised service might include booking inquiries. Establish whether the final scope permits the handler to reserve a slot, request a callback or only collect preferred dates. Keep the approved instruction beside the agreement and record which office role can authorize changes.",
+          "Create a simple handoff record containing the final service description, applicable price sheet, coverage hours and support contact. If a proposal and final document describe different actions, resolve the discrepancy with the supplier before using the service with customers."
+        ],
+        "items": []
+      },
+      {
+        "title": "Prepare the people who will check the bills",
+        "paragraphs": [
+          "Ask the account owner and bookkeeping team to identify the applicable usage unit and the records needed to reconcile it. They should know where agreed changes are stored and who raises a billing question. The purpose is an operational check, not a conclusion about whether any particular clause is enforceable.",
+          "Keep renewal, cancellation and data-return questions for the person authorized to review the agreement. Do not replace the actual terms with assumptions such as “monthly billing means cancellation is immediate.” Record the confirmed process and any unresolved question for qualified review."
+        ],
+        "items": []
+      },
+      {
+        "title": "Decide what a complete exit handoff requires",
+        "paragraphs": [
+          "Before starting, list the information the office would need if it later changed providers: current greeting, routing instructions, business-number arrangements, unresolved customer requests and authorized access. Ask what can be returned, when and in which usable format. Do not send customer records to an unapproved destination to test that process.",
+          "Read Revo’s current terms and plan details for any Revo-specific commitment."
+        ],
+        "items": [
+          "Assign one agreement owner and a separate day-to-day contact.",
+          "Keep the final scope and current instructions together.",
+          "Escalate legal interpretation to a qualified adviser."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is this a template agreement?",
+        "a": "No. It is an operational checklist for assembling and handing off your own documents."
+      },
+      {
+        "q": "Does month-to-month billing establish the notice rules?",
+        "a": "No. Check the applicable agreement and get qualified review where interpretation is needed."
+      }
+    ],
+    "takeaway": "Make the agreed service understandable to the people who operate, reconcile and eventually change it.",
+    "sourcePaths": [
+      "https://www.ambscallcenter.com/blog/answering-service-contracts-explained"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "phone-number-porting",
+      "call-quality-monitoring"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "switch-answering-service",
+    "title": "Switch answering service: a controlled office cutover",
+    "navigationLabel": "Switch answering service",
+    "description": "Plan a home-service answering-provider change with a number inventory, an owned cutover window and a clear route for requests already in progress.",
+    "eyebrow": "Home-service buying guide",
+    "lead": "Plan a home-service answering-provider change with a number inventory, an owned cutover window and a clear route for requests already in progress.",
+    "intro": "Plan a home-service answering-provider change with a number inventory, an owned cutover window and a clear route for requests already in progress. Published by Revo. The scenarios below are planning examples, not measured customer results.",
+    "sections": [
+      {
+        "title": "Separate changing handlers from moving a number",
+        "paragraphs": [
+          "Changing an answering provider may involve updating a forwarding destination, changing an advertised number or porting a number. These are different operations. Ambs’ transition guidance highlights the need to identify which number customers already use. Confirm ownership and portability for your actual arrangement rather than assuming every supplied number can move."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Primary source reviewed October 22, 2026",
+            "href": "https://www.ambscallcenter.com/blog/how-to-switch-answering-service"
+          }
+        ]
+      },
+      {
+        "title": "Inventory the ways customers reach the office",
+        "paragraphs": [
+          "For an HVAC business, inspect the number printed on the van, the website contact number, directory listings and any separate campaign numbers. Record the current endpoint and the responsible account owner for each. A change to the main line may leave a second advertised number reaching the old provider.",
+          "Keep the current arrangement available in your internal notes. The person performing an authorized change needs a known previous destination and a contact who can restore it if the new path fails. This guide does not authorize changing account settings or customer-facing listings."
+        ],
+        "items": []
+      },
+      {
+        "title": "Make the handoff about active work too",
+        "paragraphs": [
+          "Before the cutover, assign pending estimate requests, return-visit questions and promised callbacks. A successful test call does not transfer those obligations. Give the new handler the approved current script and escalation contacts without transferring unrelated customer information or outdated instructions.",
+          "Choose an owner who can make a go-or-revert decision during the cutover window. Keep the dispatch or scheduling team informed about where new requests will appear. Do not cancel the old arrangement simply because a new login has been created."
+        ],
+        "items": []
+      },
+      {
+        "title": "Verify the endpoint and the resulting office task",
+        "paragraphs": [
+          "When the change is authorized, test known routes and confirm the greeting, unavailable-staff fallback and delivery of the resulting request. Compare the first period of call records with the office’s received work. A connected test call and a correctly assigned customer request are two separate checks.",
+          "Confirm Revo’s supported onboarding and number arrangement before planning a Revo cutover."
+        ],
+        "items": [
+          "List every advertised or forwarded number.",
+          "Assign pending work before moving new calls.",
+          "Retain a documented fallback and a person authorized to use it."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do I have to port my number to change answering providers?",
+        "a": "Not necessarily. The current number arrangement determines whether a forwarding update, port or another change is needed."
+      },
+      {
+        "q": "What should happen to open customer requests?",
+        "a": "Assign them explicitly during the handoff. They do not move automatically when a phone destination changes."
+      }
+    ],
+    "takeaway": "A provider switch is complete when the correct number path and the office’s outstanding work both have owners.",
+    "sourcePaths": [
+      "https://www.ambscallcenter.com/blog/how-to-switch-answering-service"
+    ],
+    "related": [
+      "phone-number-porting",
+      "turn-off-call-forwarding",
+      "conditional-call-forwarding",
+      "call-quality-monitoring"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "dedicated-vs-shared-answering",
+    "title": "Dedicated vs shared answering service: choose staffing",
+    "navigationLabel": "Dedicated vs shared answering",
+    "description": "Compare dedicated and shared answering teams for a home-service office using task complexity, coverage hours and responsibility for training updates.",
+    "eyebrow": "Home-service buying guide",
+    "lead": "Compare dedicated and shared answering teams for a home-service office using task complexity, coverage hours and responsibility for training updates.",
+    "intro": "Compare dedicated and shared answering teams for a home-service office using task complexity, coverage hours and responsibility for training updates. Published by Revo. The scenarios below are planning examples, not measured customer results.",
+    "sections": [
+      {
+        "title": "Ask what dedicated means in the actual offer",
+        "paragraphs": [
+          "Telelink distinguishes staff trained across several accounts from dedicated support and also describes mixed arrangements. The label therefore needs clarification: who works on your account, when, and what happens outside those hours? A named contact does not, by itself, establish an exclusive team."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Primary source reviewed October 22, 2026",
+            "href": "https://www.answering.telelink.ca/site/news/2021/08/03/answering-service-department-types"
+          }
+        ]
+      },
+      {
+        "title": "Classify the work before comparing staffing",
+        "paragraphs": [
+          "A property-maintenance office might need straightforward new-request intake alongside detailed updates on active work orders. The first task can use a concise instruction set. The second may require authorized access, project context and decisions that should remain with the office.",
+          "List the requests that can be completed from approved instructions and those that require internal judgment. Dedicated staffing does not grant permission to make a decision; shared staffing does not automatically prevent good handling of a well-defined request. Review what the actual team can do."
+        ],
+        "items": []
+      },
+      {
+        "title": "Include quiet periods and absence coverage",
+        "paragraphs": [
+          "Ask how coverage is purchased and how the service deals with breaks, absence and bursts of simultaneous calls. Use your own demand by period, not only a monthly total. A plan that fits a steady weekday workload may have a different arrangement for evenings or sudden surges.",
+          "For a mixed model, specify the handoff between teams. A caller should not receive one promise during the dedicated shift and another after hours. Keep one approved instruction version and identify who can update it across both groups."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare training accountability rather than labels",
+        "paragraphs": [
+          "Give candidates a fictional request that depends on a recent rule change, an unknown project question and an unavailable office contact. Ask how training updates reach the people who may answer tomorrow. Record which actions were completed, which were escalated and what access was actually required.",
+          "Revo’s AI answering offer does not establish a dedicated human staffing plan."
+        ],
+        "items": [
+          "Define exclusive staffing separately from a named account contact.",
+          "Document coverage outside the primary team’s hours.",
+          "Assign an owner for instruction changes and acceptance checks."
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does dedicated mean the same person answers every call?",
+        "a": "Do not assume that. Ask how the provider defines the team, shifts and absence cover."
+      },
+      {
+        "q": "Is shared answering always unsuitable for complex calls?",
+        "a": "Assess the permitted tasks, training and access. Some complex decisions should stay with your office regardless of the staffing label."
+      }
+    ],
+    "takeaway": "Buy the coverage and task accountability your office needs, with the staffing model defined in writing.",
+    "sourcePaths": [
+      "https://www.answering.telelink.ca/site/news/2021/08/03/answering-service-department-types"
+    ],
+    "related": [
+      "compare/ai-vs-live-receptionist",
+      "choose-virtual-receptionist",
+      "overflow-answering",
+      "call-quality-monitoring"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "responsive-answering-service",
+    "title": "Responsive Answering: review an HVAC call workflow",
+    "description": "Evaluate Responsive Answering Service for an HVAC office by separating answered inquiries, scheduling authority and the next action assigned to your team.",
+    "navigationLabel": "Responsive Answering Service",
+    "eyebrow": "Provider buying guide",
+    "lead": "Evaluate Responsive Answering Service for an HVAC office by separating answered inquiries, scheduling authority and the next action assigned to your team.",
+    "intro": "Evaluate Responsive Answering Service for an HVAC office by separating answered inquiries, scheduling authority and the next action assigned to your team. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "Responsive publishes an HVAC-specific live answering page and describes coverage outside ordinary office hours. Its site also lists appointment scheduling and message delivery. Those are stated service categories, not proof of an account-specific calendar connection, an arrival commitment or a business outcome."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Responsive Answering Service official information reviewed October 22, 2026",
+            "href": "https://responsiveanswering.com/industries/hvac-answering-service/"
+          }
+        ]
+      },
+      {
+        "title": "Separate a new service request from a return visit",
+        "paragraphs": [
+          "For an illustrative HVAC office, a new caller asking about a tune-up and an existing customer reporting an unresolved repair should produce different records. Give the answering team the fields needed to identify the property and any existing job reference. Leave assessment of the equipment and acceptance of warranty work with the authorized office or technician.",
+          "Ask how a callback request reaches the person handling return visits. A message that arrives in a general inbox can be correctly delivered yet remain unassigned. Specify the office owner and the point at which the handler should stop trying a transfer and use the agreed fallback."
+        ],
+        "items": []
+      },
+      {
+        "title": "Price the chosen workflow, not the headline",
+        "paragraphs": [
+          "Request the written allowance and billing unit for HVAC calls, including transfers, message delivery and any scheduling work. Ask how the proposal treats a repeat caller on an existing issue. Do not turn a starting-price advertisement into an all-inclusive quote for your expected workload."
+        ],
+        "items": []
+      },
+      {
+        "title": "Review two different HVAC conversations",
+        "paragraphs": [
+          "Use fictional tune-up and return-visit requests in a supervised review. Compare the resulting office records, the information passed to the technician and any promise made to the caller. Review the unresolved request as well as the successful one. A completed conversation is not a completed repair.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What should an HVAC buyer verify first?",
+        "a": "Confirm which requests the handler may schedule and which must return to the office, then test how that distinction appears in the delivered record."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate Responsive Answering Service for your office.",
+    "sourcePaths": [
+      "https://responsiveanswering.com/industries/hvac-answering-service/"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "always-answer-service",
+    "title": "Always Answer: choose live coverage and message handling",
+    "description": "Review Always Answer’s live answering arrangement for a home-service business, including forwarding, instructions and the handoff after a call ends.",
+    "navigationLabel": "Always Answer",
+    "eyebrow": "Provider buying guide",
+    "lead": "Review Always Answer’s live answering arrangement for a home-service business, including forwarding, instructions and the handoff after a call ends.",
+    "intro": "Review Always Answer’s live answering arrangement for a home-service business, including forwarding, instructions and the handoff after a call ends. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "Always Answer’s live-answering page describes giving a business a number to forward calls to, answering in its business name and delivering a message through a selected channel. The page distinguishes live answering from other offerings such as appointment scheduling and dispatch. Confirm the particular combination in the proposal."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Always Answer official information reviewed October 22, 2026",
+            "href": "https://alwaysanswer.com/live-answering/"
+          }
+        ]
+      },
+      {
+        "title": "Write the work assigned to the person answering",
+        "paragraphs": [
+          "A sole-owner handyman may want a caller’s project description, address and preferred callback period without authorizing an estimate or visit. Give the handler a clear stopping point. If a customer asks whether the owner can attend tomorrow, a collected preference should remain a request until the office accepts it.",
+          "Decide whether calls should forward all day, only outside office hours or after an unanswered ring sequence. Document the destination and current greeting with the account owner. A live answering plan does not automatically establish how the carrier will route the business’s number."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep the service bundle visible",
+        "paragraphs": [
+          "Ask which actions are included in live answering and which require an additional service or setup. Obtain the usage unit, recurring charge, additional-use treatment and any trial conditions in writing. Do not compare a message-taking proposal with a booking proposal as if the work were identical."
+        ],
+        "items": []
+      },
+      {
+        "title": "Check the message after the conversation",
+        "paragraphs": [
+          "Review a fictional small repair inquiry and a call the business does not accept. Check the greeting, intake boundaries, delivery destination and callback owner. Have the office explain how it would find the request later, rather than treating a delivery notification as proof that someone acted.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does live answering necessarily include booking?",
+        "a": "No. Verify the selected service scope and the supported booking action; the provider lists several service categories separately."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate Always Answer for your office.",
+    "sourcePaths": [
+      "https://alwaysanswer.com/live-answering/"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "call-experts-answering-service",
+    "title": "Call Experts: review home-service on-call handoffs",
+    "description": "Assess Call Experts for home-service calls by testing the on-call calendar, appointment handoff and the result when a technician cannot receive a transfer.",
+    "navigationLabel": "Call Experts",
+    "eyebrow": "Provider buying guide",
+    "lead": "Assess Call Experts for home-service calls by testing the on-call calendar, appointment handoff and the result when a technician cannot receive a transfer.",
+    "intro": "Assess Call Experts for home-service calls by testing the on-call calendar, appointment handoff and the result when a technician cannot receive a transfer. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "Call Experts’ home-services page names plumbing, electrical and HVAC businesses. It describes message taking, transfers, appointment handling and managed or self-service on-call calendars. Integration labels on a website do not prove that the exact workflow in your account will be configured or that a technician has accepted a job."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Call Experts official information reviewed October 22, 2026",
+            "href": "https://callexperts.com/industry-solutions/home-services/"
+          }
+        ]
+      },
+      {
+        "title": "Make the current on-call entry actionable",
+        "paragraphs": [
+          "For a plumbing company, an on-call calendar should identify a current contact and an approved fallback. Give the office a named owner for updates when shifts change. Keep the schedule version with the instructions so an unanswered transfer can be traced to the rule used at that time.",
+          "A handler’s attempt to notify a technician is not the same as a technician acknowledging the request. Define what evidence the office needs to distinguish those two states. Retain technical triage, hazard assessment and promises about attendance with authorized people."
+        ],
+        "items": []
+      },
+      {
+        "title": "Match integration scope with the written proposal",
+        "paragraphs": [
+          "Ask whether the quoted setup includes the particular scheduling or customer-record system the office uses. Identify what data is read, what action is written and how a failed write is reported. Include on-call updates and transfer handling in the account-specific billing discussion."
+        ],
+        "items": []
+      },
+      {
+        "title": "Walk through an unanswered technician case",
+        "paragraphs": [
+          "Use a fictional existing-customer request while the primary contact is marked unavailable. Examine which fallback is tried, what the caller is told and who owns the resulting task. This distinguishes a configured call path from an unsupported promise that every request will produce an immediate visit.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does an integration name guarantee an appointment was created?",
+        "a": "No. Verify the exact permitted calendar action and inspect the resulting record, including the failure path."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate Call Experts for your office.",
+    "sourcePaths": [
+      "https://callexperts.com/industry-solutions/home-services/"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "pcmsi-answering-service",
+    "title": "PCMSI: evaluate plan matching and service-call intake",
+    "description": "Evaluate PCMSI for a home-service office with attention to usage-based plan matching, the call record and the instructions that staff must maintain.",
+    "navigationLabel": "PCMSI",
+    "eyebrow": "Provider buying guide",
+    "lead": "Evaluate PCMSI for a home-service office with attention to usage-based plan matching, the call record and the instructions that staff must maintain.",
+    "intro": "Evaluate PCMSI for a home-service office with attention to usage-based plan matching, the call record and the instructions that staff must maintain. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "PCMSI describes nationwide live answering with US-based operators and lists HVAC, plumbing and other service businesses. Its homepage says it reviews usage to place accounts into a pricing package. Treat that as a published program description: obtain the actual package rules and applicable service scope before comparing costs."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "PCMSI official information reviewed October 22, 2026",
+            "href": "https://pcmsi.com/"
+          }
+        ]
+      },
+      {
+        "title": "Turn the current intake sheet into a review case",
+        "paragraphs": [
+          "An appliance-repair office can supply a fictional request with an appliance type, property address and callback number. Decide which fields help the office assess the request and which questions the answering team should leave to qualified staff. A detailed note should not imply the company services an unsupported brand or has accepted the job.",
+          "Ask how the script changes when a caller already has a scheduled visit. The handler should preserve that context without creating a second unrelated lead. Have the office show how it locates the existing work and records the required follow-up."
+        ],
+        "items": []
+      },
+      {
+        "title": "Understand a package change before relying on it",
+        "paragraphs": [
+          "Request the measurement period, usage unit and timing of any plan review. Ask who confirms the selected package, which fees remain outside it and how the office can reconcile the invoice. A lowest-rate or best-package label is not enough to establish the total for your account."
+        ],
+        "items": []
+      },
+      {
+        "title": "Check what the office receives and can audit",
+        "paragraphs": [
+          "Review both a new repair inquiry and an appointment-change request. Inspect the delivered fields, duplicate handling and invoice-related call record. Keep the work completed by the handler separate from a technical decision that still belongs to the repair office.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "How should an office evaluate automatic plan matching?",
+        "a": "Ask for the documented measurement and change rules, then compare the applied package with its own call and invoice records."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate PCMSI for your office.",
+    "sourcePaths": [
+      "https://pcmsi.com/"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "tasco-answering-service",
+    "title": "TASCO answering: review coverage and message routing",
+    "description": "Review TASCO Message Centers for home-service calls by checking service availability, customized instructions and routing of messages to the right office role.",
+    "navigationLabel": "TASCO Message Centers",
+    "eyebrow": "Provider buying guide",
+    "lead": "Review TASCO Message Centers for home-service calls by checking service availability, customized instructions and routing of messages to the right office role.",
+    "intro": "Review TASCO Message Centers for home-service calls by checking service availability, customized instructions and routing of messages to the right office role. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "TASCO describes a regional message-center and contact-center service, with its stated service area extending from the mid-Atlantic through the Midwest and Carolinas. Its homepage discusses tailoring messages and routing to client needs. That description should not be generalized into universal geographic or integration availability."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "TASCO Message Centers official information reviewed October 22, 2026",
+            "href": "https://tascomessages.com/"
+          }
+        ]
+      },
+      {
+        "title": "Check coverage before designing the call plan",
+        "paragraphs": [
+          "A contractor evaluating TASCO should confirm service for the actual business location and the hours requiring coverage. List every number involved, the team that normally answers and the period the answering service would handle. Keep this account scope separate from the cities or regions used in search results.",
+          "For a deck builder, a new estimate request may go to the owner while a question about an active installation should reach the project coordinator. Write the distinction in the call instructions. Routing should not give the handler authority to amend the scope or authorize materials."
+        ],
+        "items": []
+      },
+      {
+        "title": "Ask which customized work is included",
+        "paragraphs": [
+          "Have the written proposal identify initial script preparation, later instruction changes, message delivery and usage. Ask whether separate phone numbers or routing groups affect the charge. A customized service label does not establish an unlimited amount of configuration work."
+        ],
+        "items": []
+      },
+      {
+        "title": "Review a routing change and its effective time",
+        "paragraphs": [
+          "Use a fictional project inquiry before and after a planned coordinator change. Check which destination receives the message and how the office can establish that the new instructions were active. Review the fallback for an unavailable recipient instead of checking only the normal path.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does TASCO’s regional description establish service everywhere?",
+        "a": "No. Confirm the location and coverage terms for the specific account before planning a change to the business number."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate TASCO Message Centers for your office.",
+    "sourcePaths": [
+      "https://tascomessages.com/"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "advanced-answering-service",
+    "title": "Advanced Answering: review trade scheduling authority",
+    "description": "Assess Advanced Answering Service for a trade office by defining which appointments can be handled and how requests return to authorized staff.",
+    "navigationLabel": "Advanced Answering Service",
+    "eyebrow": "Provider buying guide",
+    "lead": "Assess Advanced Answering Service for a trade office by defining which appointments can be handled and how requests return to authorized staff.",
+    "intro": "Assess Advanced Answering Service for a trade office by defining which appointments can be handled and how requests return to authorized staff. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "Advanced Answering Service describes nationwide live answering and explicitly lists trades and home services, including plumbing, electrical and HVAC. Its site names appointment scheduling and dispatch-related handling. Those labels do not establish your account’s specific schedule access, field availability or permission to commit a crew."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Advanced Answering Service official information reviewed October 22, 2026",
+            "href": "https://www.advancedansweringservice.com/"
+          }
+        ]
+      },
+      {
+        "title": "Define the difference between a request and a slot",
+        "paragraphs": [
+          "An electrical contractor may accept estimate appointments only for a limited service area and only after the office reviews the work type. Give the answering team the approved questions and the point where staff must decide. Do not allow an unavailable calendar slot to become a verbal promise merely to complete intake.",
+          "For an existing job, preserve the customer’s description and job reference without diagnosing the issue. Where the office authorizes scheduling, identify the exact event that confirms the reservation. Where it does not, the result should be an owned request with clear follow-up."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare the configured service rather than a category",
+        "paragraphs": [
+          "Obtain the written price for the selected answering, scheduling and notification arrangement. Ask about script changes, usage allowances and the treatment of transfer attempts. Keep any medical or other industry claims separate from the scope relevant to your home-service office."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test the appointment the office cannot accept",
+        "paragraphs": [
+          "Review a fictional request outside the approved area or permitted work types. Inspect the response, the internal task and any commitment recorded. A useful evaluation includes a declined or escalated request as well as an ordinary accepted one.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does a scheduling service label prove access to our calendar?",
+        "a": "No. Confirm the specific access, permitted actions and failure handling before treating scheduling as part of the working account."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate Advanced Answering Service for your office.",
+    "sourcePaths": [
+      "https://www.advancedansweringservice.com/"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "central-messaging-answering-service",
+    "title": "Central Messaging: review message delivery and check-in",
+    "description": "Evaluate Central Messaging for home-service message taking by checking delivery destinations, on-call instructions and the office’s responsibility after.",
+    "navigationLabel": "Central Messaging",
+    "eyebrow": "Provider buying guide",
+    "lead": "Evaluate Central Messaging for home-service message taking by checking delivery destinations, on-call instructions and the office’s responsibility after receipt.",
+    "intro": "Evaluate Central Messaging for home-service message taking by checking delivery destinations, on-call instructions and the office’s responsibility after receipt. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "Central Messaging’s official pages describe live answering, message delivery to cell phones or pagers and on-call schedule capabilities. Its FAQ says it can serve businesses across the US. Confirm the current service and supported delivery methods for your account rather than treating an older page as an account-specific commitment."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Central Messaging official information reviewed October 22, 2026",
+            "href": "https://phonemessagingservice.com/answering_service_faq.html"
+          }
+        ]
+      },
+      {
+        "title": "Assign the message before choosing its destination",
+        "paragraphs": [
+          "A small garage-door business might send new estimate inquiries to the owner but route questions about a booked visit to its scheduler. Identify the responsible role before choosing text, email or another delivery method. A notification sent to a personal device can be delivered successfully while its owner is off duty.",
+          "Write a rule for an unanswered or unacknowledged message. Specify who checks pending requests and how another staff member takes over. Do not treat the existence of an on-call schedule as evidence that someone has accepted a customer’s request."
+        ],
+        "items": []
+      },
+      {
+        "title": "Clarify the message and call units",
+        "paragraphs": [
+          "Ask for the current plan documents, the definition of a chargeable interaction and any charges for notification or additional attempts. Confirm how the office can retrieve the underlying record and compare it with an invoice. Do not infer today’s price from a referral credit or an old promotion."
+        ],
+        "items": []
+      },
+      {
+        "title": "Follow one request from caller to office",
+        "paragraphs": [
+          "Use a fictional booked-visit question and trace the greeting, recorded details, delivery recipient and final owner. Review a second case when the intended recipient is away. The important outcome is an assigned next action, not merely a notification appearing on a phone.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a delivered message the same as an acknowledged request?",
+        "a": "No. Define who confirms receipt and who follows up with the customer when a message still needs office action."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate Central Messaging for your office.",
+    "sourcePaths": [
+      "https://phonemessagingservice.com/answering_service_faq.html"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "special-interest-answering-service",
+    "title": "Special Interest Answering: check small-office scope",
+    "description": "Review Special Interest Answering Service for a small home-service office, keeping message taking, appointment handling and order processing distinct.",
+    "navigationLabel": "Special Interest Answering",
+    "eyebrow": "Provider buying guide",
+    "lead": "Review Special Interest Answering Service for a small home-service office, keeping message taking, appointment handling and order processing distinct.",
+    "intro": "Review Special Interest Answering Service for a small home-service office, keeping message taking, appointment handling and order processing distinct. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "The 247answering.com site identifies Special Interest Answering Service and describes live answering, appointment handling and web-based order processing. Those are separate business tasks. Its general small-business offer does not establish that an operator can price a repair, assess a job or reserve a particular field-service slot."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Special Interest Answering Service official information reviewed October 22, 2026",
+            "href": "https://www.247answering.com/"
+          }
+        ]
+      },
+      {
+        "title": "Specify the transaction the office actually needs",
+        "paragraphs": [
+          "A lawn-service owner may want a new maintenance inquiry recorded while retaining decisions about property suitability and recurring work. A caller requesting a one-time cleanup should not automatically be entered as a recurring customer. Give the answering team the permitted categories and the office role that makes the final decision.",
+          "If a proposal includes appointment handling, define whether the outcome is a requested time, a reserved consultation or an accepted service visit. Do not let an order-processing label expand into authority to accept work or payment that the office has not approved."
+        ],
+        "items": []
+      },
+      {
+        "title": "Confirm the applicable plan instead of copying a headline",
+        "paragraphs": [
+          "Request the current allowance, additional-use rules and the services attached to the quoted plan. Ask how repeat contacts and notification work are treated. Verify any guarantee or promotional condition in the actual terms; it is not a substitute for a complete service description."
+        ],
+        "items": []
+      },
+      {
+        "title": "Review a one-time request and a recurring inquiry",
+        "paragraphs": [
+          "Use two fictional lawn-service calls with different intended work. Inspect how the handler distinguishes them and what the owner receives. Look for a useful record without an invented quote, accepted contract or promised crew visit.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can a general order-processing offer be treated as job acceptance?",
+        "a": "No. Define the specific action and authority for your home-service business in the agreed scope."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate Special Interest Answering Service for your office.",
+    "sourcePaths": [
+      "https://www.247answering.com/"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "business-connections-answering-service",
+    "title": "Business Connections: review contractor estimate limits",
+    "description": "Evaluate Business Connections for contractor calls with particular attention to estimate instructions, warm transfers and the work retained by your office.",
+    "navigationLabel": "Business Connections",
+    "eyebrow": "Provider buying guide",
+    "lead": "Evaluate Business Connections for contractor calls with particular attention to estimate instructions, warm transfers and the work retained by your office.",
+    "intro": "Evaluate Business Connections for contractor calls with particular attention to estimate instructions, warm transfers and the work retained by your office. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "Business Connections’ industry page lists roofing, flooring, plumbing and HVAC answering. For roofing, it says callers can receive basic estimates under client instructions. That is a provider’s stated option, not evidence that any repair price can be determined by phone or that Revo supplies the same arrangement."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Business Connections official information reviewed October 22, 2026",
+            "href": "https://bcanswer.com/industries/"
+          }
+        ]
+      },
+      {
+        "title": "Draw a precise boundary around estimate information",
+        "paragraphs": [
+          "A roofer might authorize an explanation of how an inspection is arranged while requiring a qualified person to assess the roof and issue the estimate. Write which information may be stated and which needs review. If any fixed amount is approved, keep its scope and exceptions beside the instruction.",
+          "For an existing project, a call about an additional repair should not become an accepted change order. Have the handler identify the project and route the request to the authorized person. The customer should hear the actual next step rather than an improvised commitment."
+        ],
+        "items": []
+      },
+      {
+        "title": "Include transfer and message responsibilities in the quote",
+        "paragraphs": [
+          "The provider’s homepage describes warm transfers and text or email message delivery. Ask how those actions are configured and billed for your account, including unsuccessful transfers. Compare the written answering scope with the same tasks in a Revo proposal rather than assuming equal authority."
+        ],
+        "items": []
+      },
+      {
+        "title": "Review the question that cannot be quoted",
+        "paragraphs": [
+          "Use a fictional roof inquiry that lacks the information needed for a price. Check whether the handler records the request, explains the inspection process and keeps the estimate with qualified staff. Review what happens if the owner cannot receive the transfer.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Should a roofing caller always receive an estimate during intake?",
+        "a": "No. Only provide information the business has authorized and can support. Assessment and a binding scope may require qualified review."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate Business Connections for your office.",
+    "sourcePaths": [
+      "https://bcanswer.com/industries/"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "focus-answering-service",
+    "title": "Focus Answering: review contractor escalation protocols",
+    "description": "Review Focus Answering Service for a home-service office by separating intake, vendor contact and the acknowledgment needed before staff treat a request.",
+    "navigationLabel": "Focus Answering Service",
+    "eyebrow": "Provider buying guide",
+    "lead": "Review Focus Answering Service for a home-service office by separating intake, vendor contact and the acknowledgment needed before staff treat a request as assigned.",
+    "intro": "Review Focus Answering Service for a home-service office by separating intake, vendor contact and the acknowledgment needed before staff treat a request as assigned. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "Focus lists phone answering, after-hours dispatch, vendor dispatch and software integration, alongside contractor industries. It describes contacting vendors under client instructions. These claims identify options to evaluate; they do not establish an emergency response guarantee, a specific integration or a verified result for your account."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Focus Answering Service official information reviewed October 22, 2026",
+            "href": "https://focustele.com/"
+          }
+        ]
+      },
+      {
+        "title": "Define what contacting a vendor accomplishes",
+        "paragraphs": [
+          "A property-maintenance contractor might need a subcontractor contacted about an approved job. Record the job reference, permitted information and person who can authorize additional work. Sending a message to a vendor is not evidence that the vendor accepted the assignment or agreed to attend.",
+          "Specify the acknowledgment the office needs and who reviews an unanswered contact. Keep the escalation list current when vendor coverage changes. A handler should not improvise an alternative contractor or authorize a fee simply because the first destination is unavailable."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare dispatch actions and answering usage separately",
+        "paragraphs": [
+          "Ask how the written quote counts incoming calls, outgoing attempts, message delivery and any integration work. Identify the records that show each attempted and completed handoff. Published uptime or savings claims should not be converted into contractual terms without confirmation."
+        ],
+        "items": []
+      },
+      {
+        "title": "Inspect an unacknowledged vendor request",
+        "paragraphs": [
+          "Use a fictional maintenance request with no response from the first approved vendor. Review the fallback, the office record and the statement made to the caller. The request should remain visibly unresolved until an authorized recipient accepts the next action.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does a vendor contact mean a technician is on the way?",
+        "a": "No. Keep attempted notification, acknowledged assignment and attendance commitments as separate states."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate Focus Answering Service for your office.",
+    "sourcePaths": [
+      "https://focustele.com/"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "golden-voice-answering-service",
+    "title": "A Golden Voice: review answering and secretarial scope",
+    "description": "Assess A Golden Voice Answering Service for a home-service office, distinguishing ordinary call coverage from reminder, vacation and secretarial assignments.",
+    "navigationLabel": "A Golden Voice Answering Service",
+    "eyebrow": "Provider buying guide",
+    "lead": "Assess A Golden Voice Answering Service for a home-service office, distinguishing ordinary call coverage from reminder, vacation and secretarial assignments.",
+    "intro": "Assess A Golden Voice Answering Service for a home-service office, distinguishing ordinary call coverage from reminder, vacation and secretarial assignments. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "A Golden Voice’s homepage describes answering and secretarial services, including reminder and vacation answering. Its listed activities span several kinds of support. Treat each as a proposed service to scope separately; the list does not prove that every task is included in an ordinary answering plan."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "A Golden Voice Answering Service official information reviewed October 22, 2026",
+            "href": "https://www.agoldenvoice.com/"
+          }
+        ]
+      },
+      {
+        "title": "Choose the limited assignment first",
+        "paragraphs": [
+          "A painter taking a short absence may need estimate inquiries collected without allowing anyone to commit a start date. Write the temporary greeting, the information to record and the person who handles active-project calls during the absence. Keep a clear date for returning ordinary calls to the office.",
+          "If reminders are part of the discussion, distinguish notifying a customer from rescheduling a visit or collecting a reply. The office needs to know who owns a returned call and what can be changed. Avoid assuming that a broad secretarial offering includes access to project or billing systems."
+        ],
+        "items": []
+      },
+      {
+        "title": "Ask for a quote tied to the actual assignment",
+        "paragraphs": [
+          "Confirm the service period, minimum commitment, usage unit and which additional tasks are included. Ask whether temporary coverage changes the normal setup or cancellation process. Do not adopt a price-matching statement as proof that a proposal is cheaper or equivalent."
+        ],
+        "items": []
+      },
+      {
+        "title": "Check the return from temporary coverage",
+        "paragraphs": [
+          "Use a fictional estimate inquiry during the absence and an active-project call that requires the backup owner. Review the messages and plan how outstanding requests are returned when the painter resumes work. A handback should cover open requests as well as the phone route.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does vacation answering include every secretarial task?",
+        "a": "Do not assume so. Specify the exact coverage and permitted actions in the account proposal."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate A Golden Voice Answering Service for your office.",
+    "sourcePaths": [
+      "https://www.agoldenvoice.com/"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "answer-america-service",
+    "title": "AnswerAmerica: review prepaid call credits and balance",
+    "description": "Evaluate AnswerAmerica’s prepaid answering model for a home-service office, focusing on chargeable calls, account balance and the scope of message taking.",
+    "navigationLabel": "AnswerAmerica",
+    "eyebrow": "Provider buying guide",
+    "lead": "Evaluate AnswerAmerica’s prepaid answering model for a home-service office, focusing on chargeable calls, account balance and the scope of message taking.",
+    "intro": "Evaluate AnswerAmerica’s prepaid answering model for a home-service office, focusing on chargeable calls, account balance and the scope of message taking. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "AnswerAmerica’s terms describe advance payment and optional balance-triggered payments. They also state that calls including hangups, wrong numbers and marketing calls consume a credit under the stated March 2026 rule. Read the current terms with the applicable price page; a no-monthly-minimum headline is not a complete usage budget."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "AnswerAmerica official information reviewed October 22, 2026",
+            "href": "https://answeramerica.com/terms-conditions/"
+          }
+        ]
+      },
+      {
+        "title": "Estimate credits from the calls that would be charged",
+        "paragraphs": [
+          "A small fencing contractor may receive new estimates, existing-customer calls and unrelated marketing calls on the same number. Review the actual mix before projecting prepaid usage. A business should not use only completed sales inquiries as the denominator when the service’s chargeable-call definition is broader.",
+          "Keep responsibility for the balance with a named account owner. Ask what the caller reaches if service cannot continue and what alerts the office receives. Do not assume a payment automation removes the need to monitor the service or reconcile a disputed interaction."
+        ],
+        "items": []
+      },
+      {
+        "title": "Reconcile the plan, terms and funding rule",
+        "paragraphs": [
+          "Ask for the current credit price, any quantity conditions and the treatment of remaining funds. Confirm how optional automatic funding is configured before deciding whether to use it. This guide does not interpret refund or cancellation rights; unresolved agreement questions need qualified review."
+        ],
+        "items": []
+      },
+      {
+        "title": "Check the message-taking scope independently of credits",
+        "paragraphs": [
+          "Use a fictional fence-estimate inquiry to review which details are gathered and how the owner receives them. Determine whether the selected service only relays the request or supports another agreed action. A per-call price does not establish appointment booking or technical qualification.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do only useful sales calls consume credits?",
+        "a": "The cited terms explicitly include several other call types. Confirm the current chargeable-call definition before calculating a budget."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate AnswerAmerica for your office.",
+    "sourcePaths": [
+      "https://answeramerica.com/terms-conditions/"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "comstock-answering-service",
+    "title": "Comstock Answering: review routing and ad-response work",
+    "description": "Review Comstock Answering Service for a home-service business by distinguishing agent answering, written routing records and advertising-response assignments.",
+    "navigationLabel": "Comstock Answering Service",
+    "eyebrow": "Provider buying guide",
+    "lead": "Review Comstock Answering Service for a home-service business by distinguishing agent answering, written routing records and advertising-response assignments.",
+    "intro": "Review Comstock Answering Service for a home-service business by distinguishing agent answering, written routing records and advertising-response assignments. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "Comstock’s services page describes agent answering, appointment scheduling, virtual reception and ad-response handling. It says virtual reception can connect callers while providing written routing documentation. These are published descriptions, not evidence of a tested connection to your customer database or of a campaign’s financial return."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Comstock Answering Service official information reviewed October 22, 2026",
+            "href": "https://comstockansweringservice.com/services/"
+          }
+        ]
+      },
+      {
+        "title": "Decide what a campaign inquiry should produce",
+        "paragraphs": [
+          "An insulation installer running a seasonal advertisement may need the offer mentioned by the caller, the property area and a callback request. Record the source information without treating the caller’s response as an accepted project. The office should retain authority over eligibility, assessment and pricing.",
+          "If campaign calls use a separate number, identify the account owner and the relationship to the ordinary office line. Ask how an existing customer who calls that number is handled. Campaign tracking should not erase the customer’s active-project context."
+        ],
+        "items": []
+      },
+      {
+        "title": "Scope any database or scheduling work",
+        "paragraphs": [
+          "The provider also lists web-based order entry and other specialized services. Do not infer that they are included in basic agent answering. Request the configured tasks, usage rules, reporting format and any setup work in writing. Verify proposed data access before relying on a generic integration statement."
+        ],
+        "items": []
+      },
+      {
+        "title": "Inspect the routing record after a campaign call",
+        "paragraphs": [
+          "Use a fictional inquiry about the advertisement and a separate active-job question. Check whether the resulting routing document contains the intended source and request, and whether each reaches an office owner. Avoid treating a completed transfer as evidence that the inquiry became a booked job.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does ad-response handling establish a campaign’s ROI?",
+        "a": "No. It can collect inquiries and source details. Revenue and attribution require separate evidence and definitions."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate Comstock Answering Service for your office.",
+    "sourcePaths": [
+      "https://comstockansweringservice.com/services/"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "a-quality-answering-service",
+    "title": "A Quality Answering: define customized call processing",
+    "description": "Evaluate A Quality Answering Service by turning customized call processing into a written home-service intake plan with clear decisions and destinations.",
+    "navigationLabel": "A Quality Answering Service",
+    "eyebrow": "Provider buying guide",
+    "lead": "Evaluate A Quality Answering Service by turning customized call processing into a written home-service intake plan with clear decisions and destinations.",
+    "intro": "Evaluate A Quality Answering Service by turning customized call processing into a written home-service intake plan with clear decisions and destinations. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "A Quality Answering Service describes customized call processing for service companies and states a nationwide service area. Its homepage presents live receptionist coverage. It does not supply enough detail to establish every account’s pricing, calendar access or supported integration; those remain questions for a specific proposal."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "A Quality Answering Service official information reviewed October 22, 2026",
+            "href": "https://www.a-qualityansweringservice.com/"
+          }
+        ]
+      },
+      {
+        "title": "Replace the word customized with concrete instructions",
+        "paragraphs": [
+          "A window-cleaning business might accept residential requests while referring commercial building work to another team. Give the handler an approved distinction and a destination for uncertain cases. The instruction should say what to record and what to tell the caller, without asking an operator to invent an estimate.",
+          "Specify how existing customers are identified and how changes to service scope reach the answering team. A custom greeting does not establish a custom acceptance process. Keep one dated instruction set that both the office and provider can recognize."
+        ],
+        "items": []
+      },
+      {
+        "title": "Resolve what the public page leaves open",
+        "paragraphs": [
+          "Request the current pricing structure, included work, charges for additional usage and the process for changing instructions. Ask what account records are available to the office and whether message delivery or transfers add separate steps or costs. Do not infer these terms from a claim of cost effectiveness."
+        ],
+        "items": []
+      },
+      {
+        "title": "Review an inquiry outside the ordinary script",
+        "paragraphs": [
+          "Use a fictional request that mixes residential and commercial work. The handler should capture the uncertainty, use the approved next step and preserve the office’s decision authority. Inspect what the office actually receives rather than evaluating only the opening greeting.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does customized call processing prove calendar integration?",
+        "a": "No. Ask for the exact supported action, system and failure process in the account scope."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate A Quality Answering Service for your office.",
+    "sourcePaths": [
+      "https://www.a-qualityansweringservice.com/"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "action-telephone-answering-service",
+    "title": "Action Telephone: review overflow and patching choices",
+    "description": "Assess Action Telephone Exchange for a home-service office by reviewing overflow conditions, patching instructions and the record left after a transfer attempt.",
+    "navigationLabel": "Action Telephone Exchange",
+    "eyebrow": "Provider buying guide",
+    "lead": "Assess Action Telephone Exchange for a home-service office by reviewing overflow conditions, patching instructions and the record left after a transfer attempt.",
+    "intro": "Assess Action Telephone Exchange for a home-service office by reviewing overflow conditions, patching instructions and the record left after a transfer attempt. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "sections": [
+      {
+        "title": "What the public offer establishes",
+        "paragraphs": [
+          "Action Telephone’s services page describes overflow answering for unanswered or busy calls, patching on request and several message-delivery methods. Its broader services include medical and commercial offerings. Use the overflow and message-handling description for evaluation; do not infer home-service scheduling or technical dispatch from unrelated service categories."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Action Telephone Exchange official information reviewed October 22, 2026",
+            "href": "https://www.actiontelephone.com/services.html"
+          }
+        ]
+      },
+      {
+        "title": "Identify the point where the office stops ringing",
+        "paragraphs": [
+          "A repair contractor may want staff to answer first and send only unanswered calls onward. Document which phone system applies that condition and which endpoint is used. A provider’s overflow description does not verify the ring threshold or busy behavior of the contractor’s existing carrier plan.",
+          "For a customer asking about a delayed visit, define whether the handler should patch the caller through or collect a callback request. An attempted connection can fail while the original caller still needs an answer. Specify the fallback and the office role responsible for following up."
+        ],
+        "items": []
+      },
+      {
+        "title": "Clarify patching and delivery as account actions",
+        "paragraphs": [
+          "Ask how the proposal treats answered calls, patch attempts and message delivery, and which records show the result. If caller-number presentation matters, verify it on the exact arrangement rather than promising universal identity masking from a website description."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare busy, no-answer and failed-patch paths",
+        "paragraphs": [
+          "Use authorized fictional cases for each path and record what the caller reaches. Inspect the resulting message and who receives it when the intended office contact cannot answer. The acceptance decision should depend on these distinct outcomes, not merely on hearing a professional greeting.",
+          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does an overflow plan set my carrier’s forwarding rule automatically?",
+        "a": "Do not assume so. Confirm which system applies the condition and test the exact number arrangement before moving customer calls."
+      },
+      {
+        "q": "Is this a provider endorsement or performance test?",
+        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+      }
+    ],
+    "takeaway": "Use the documented scope and the observed handoff to evaluate Action Telephone Exchange for your office.",
+    "sourcePaths": [
+      "https://www.actiontelephone.com/services.html"
+    ],
+    "related": [
+      "choose-virtual-receptionist",
+      "answering-service-cost",
+      "call-quality-monitoring",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+    },
+    "publicationStatus": "draft"
   }
 ]

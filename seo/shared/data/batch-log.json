@@ -450,5 +450,52 @@
       "added answernet-answering-service as draft",
       "added select-answering-service as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-22-distinct-buyer-drafts",
+    "batchHash": "sha256:59b590ba82937461f4d014012604377f1a365a74fd47132e254706d47ec56951",
+    "source": {
+      "kind": "manual",
+      "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review."
+    },
+    "appliedAt": "2026-10-22",
+    "changes": [
+      "added outsourced-switchboard as draft",
+      "added email-answering-service as draft",
+      "added live-chat-answering-service as draft",
+      "added sms-answering-service as draft",
+      "added selective-call-forwarding as draft",
+      "added call-forwarding-cost as draft",
+      "added compare/auto-attendant-vs-receptionist as draft",
+      "added answering-service-contract-checklist as draft",
+      "added switch-answering-service as draft",
+      "added dedicated-vs-shared-answering as draft"
+    ]
+  },
+  {
+    "batchId": "2026-10-22-provider-buyer-drafts",
+    "batchHash": "sha256:f5ee53f66b3a0bfbdc1d08baef81c2160d134ffa00eb1e67b55d9914925f1914",
+    "source": {
+      "kind": "manual",
+      "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review."
+    },
+    "appliedAt": "2026-10-22",
+    "changes": [
+      "added responsive-answering-service as draft",
+      "added always-answer-service as draft",
+      "added call-experts-answering-service as draft",
+      "added pcmsi-answering-service as draft",
+      "added tasco-answering-service as draft",
+      "added advanced-answering-service as draft",
+      "added central-messaging-answering-service as draft",
+      "added special-interest-answering-service as draft",
+      "added business-connections-answering-service as draft",
+      "added focus-answering-service as draft",
+      "added golden-voice-answering-service as draft",
+      "added answer-america-service as draft",
+      "added comstock-answering-service as draft",
+      "added a-quality-answering-service as draft",
+      "added action-telephone-answering-service as draft"
+    ]
   }
 ]
