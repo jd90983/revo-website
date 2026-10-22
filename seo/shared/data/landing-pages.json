@@ -18479,7 +18479,13 @@
       "kind": "manual",
       "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:41810dc9bb5d3ef1b6d63bfcb757143244205952ba078aea1208c70fb04d04a2",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -18558,7 +18564,13 @@
       "kind": "manual",
       "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:0189680660273b5b9f11dc5b44991739f06714492f0840f2cb90047a57087edb",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -18638,7 +18650,13 @@
       "kind": "manual",
       "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:bb77fde2ac8723a6e1d387d40801004d9c55c805fa49af857248046fb78eb9c8",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -18717,7 +18735,13 @@
       "kind": "manual",
       "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:28fd7c32c4a9b0822be4f607d842921c579ab01ab538065521fb9f61859b9018",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -18837,7 +18861,13 @@
         ]
       ]
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:1038ee804188ce3842b8df916f653debd78d8cf79a25d2abe4f76c21580b1d22",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -19046,7 +19076,13 @@
         ]
       ]
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:8ef624101bcdbfb15dc28d3df5a709480f20c31664a6386be9a1484a38ad1b79",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -19125,7 +19161,13 @@
       "kind": "manual",
       "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:79654460a30d8cfafef3554c53169e850850f47281728702a878ee4f28566f7c",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -19204,7 +19246,13 @@
       "kind": "manual",
       "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:2477462e9d03c522540db86ba215610bb01b3afdd2ebc4cf6833ef8a405d4e06",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -19283,7 +19331,13 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:612126f93df5c564b380a7c00057c7b5937030878003d7d88a1563156a516950",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -19493,7 +19547,13 @@
         }
       ]
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:46226e36f41b8528f0e702527ce87bdbcb5a853bb3cefe74608373ab7ce1de18",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -19574,7 +19634,13 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:c578311408dc0d2e95bc2d5a231c717293dd5938d92e93d098486e495416e8dd",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -19732,7 +19798,13 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:2543b176702b8f94a28c14437d613d9501f6d19947ceb9bb9d990a98498ccc6c",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -20016,7 +20088,13 @@
         }
       ]
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:46d3fa3956c42af282e730083acf517a685c7910cdfeb424df0b99b9bf3ae225",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -20097,7 +20175,13 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:db02bbb9e52bc2a90a8207fb22311329b7a4978f2b60965ffcab0d58d2ac46ec",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -20264,7 +20348,13 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:9fffb550fe00a950257fe95904c0513ad9ac46b9cd4d35b9dbd3d2900bbde8d4",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -20631,7 +20721,13 @@
       "kind": "manual",
       "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:394aa86e85c83868c009d963015f04bea8882ded4c5dd6388b9e98e7b3a1a684",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -20758,7 +20854,13 @@
       "kind": "manual",
       "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:44f544cf09e283e97727569b375a85d17c6d9662256d1b58fbcaa5fc1d366dce",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -20895,7 +20997,13 @@
       "kind": "manual",
       "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:4aa5649ad68e8a56311fc0101f968b70cb1ee46ccec93baea0cbec9371b09cba",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -21014,7 +21122,13 @@
       "kind": "manual",
       "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:fe7fefe8ac403f1294f297dcc4f65c0e268835905dc348b2dc3ff571ffe120f4",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -21139,7 +21253,13 @@
       "kind": "manual",
       "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:54ee1420b0cc23e2d651cea54ec2314afa9860e4dd0b79332bc1055c5821787c",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "slug": "answering-service-conversion-rate-comparison",
@@ -21290,7 +21410,13 @@
       "kind": "manual",
       "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:a9b1933d970aeb5a82369de185b09c6889c9ae07bc1e424b21228052fbf0f707",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "slug": "google-voice-auto-attendant-cost",
@@ -21421,7 +21547,13 @@
       "kind": "manual",
       "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:72748b0285517196846628e9d239fdd841feed8e207fa187c487d097574a0816",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -21549,7 +21681,13 @@
       "kind": "manual",
       "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:485a420d99e87c4b2916d2dae07153ed06a08c3cef7cbf5570851b104b390bb1",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "slug": "appointment-waitlist",
@@ -21695,7 +21833,13 @@
       "kind": "manual",
       "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:cf4d057e527494b88b262d38fe670db0e7a9f27545d1de8bdc9d728e237ed255",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   },
   {
     "template": "workflow",
@@ -21840,6 +21984,12 @@
       "kind": "manual",
       "reference": "Public primary documentation reviewed 2026-10-22; ten distinct operating and buying decisions prepared as drafts for human editorial review. (batch 2026-10-22-ten-distinct-operating-decisions)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-22",
+      "contentHash": "sha256:2d7fec145780cad96fb394a7f6d63e504d8602813b71a1ab7e69c2dc17f84c91",
+      "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
+    }
   }
 ]
