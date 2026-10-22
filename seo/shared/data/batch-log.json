@@ -497,5 +497,78 @@
       "added a-quality-answering-service as draft",
       "added action-telephone-answering-service as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-22-editorial-metadata-corrections",
+    "batchHash": "sha256:fffd438c297fa95ab34d863ad0d644b07d2a5de387ec55564b900acc7d6c8ad8",
+    "source": {
+      "kind": "manual",
+      "reference": "Independent editorial QA: replace four incomplete descriptions with complete sentences; drafts remain unapproved."
+    },
+    "appliedAt": "2026-10-22",
+    "changes": [
+      "updated sms-answering-service; back to draft until re-approved",
+      "updated central-messaging-answering-service; back to draft until re-approved",
+      "updated compare/auto-attendant-vs-receptionist; back to draft until re-approved",
+      "updated focus-answering-service; back to draft until re-approved"
+    ]
+  },
+  {
+    "batchId": "2026-10-22-substantive-provider-revision",
+    "batchHash": "sha256:0f716d6697b2c842af96e8c1046d437f54f49f9f702e93c2bbf7ae995be75e03",
+    "source": {
+      "kind": "manual",
+      "reference": "Independent editorial QA correction: replace generic provider checklists with source-specific models and limitations; exclude insufficiently supported drafts. No approval recorded."
+    },
+    "appliedAt": "2026-10-22",
+    "changes": [
+      "updated responsive-answering-service; back to draft until re-approved",
+      "updated always-answer-service; back to draft until re-approved",
+      "updated call-experts-answering-service; back to draft until re-approved",
+      "updated pcmsi-answering-service; back to draft until re-approved",
+      "updated advanced-answering-service; back to draft until re-approved",
+      "updated focus-answering-service; back to draft until re-approved",
+      "updated business-connections-answering-service; back to draft until re-approved",
+      "updated answer-america-service; back to draft until re-approved",
+      "updated central-messaging-answering-service; back to draft until re-approved",
+      "withdrew action-telephone-answering-service",
+      "withdrew tasco-answering-service",
+      "withdrew golden-voice-answering-service",
+      "withdrew comstock-answering-service",
+      "withdrew a-quality-answering-service"
+    ]
+  },
+  {
+    "batchId": "2026-10-22-independent-qa-resolution",
+    "batchHash": "sha256:a31b2cadb4be064e9dfe08eeccf3897392ebd5bc75ab3e90ddc6e48cb5171006",
+    "source": {
+      "kind": "manual",
+      "reference": "Independent QA: replace assumed forwarding arithmetic with a worksheet, add operational and provider-specific decision matrices, clarify inbound SMS and exclude four overlapping or insufficient drafts. No human approval."
+    },
+    "appliedAt": "2026-10-22",
+    "changes": [
+      "updated call-forwarding-cost; back to draft until re-approved",
+      "updated answering-service-contract-checklist; back to draft until re-approved",
+      "updated sms-answering-service; back to draft until re-approved",
+      "updated call-experts-answering-service; back to draft until re-approved",
+      "updated business-connections-answering-service; back to draft until re-approved",
+      "updated focus-answering-service; back to draft until re-approved",
+      "withdrew outsourced-switchboard",
+      "withdrew compare/auto-attendant-vs-receptionist",
+      "withdrew always-answer-service",
+      "withdrew central-messaging-answering-service"
+    ]
+  },
+  {
+    "batchId": "2026-10-22-special-interest-evidence-hold",
+    "batchHash": "sha256:cb38ccb12e004393a35bed2ff86afe364283a4a6f7bc4ab3ae112f0835bd1555",
+    "source": {
+      "kind": "manual",
+      "reference": "Independent editorial review reports four-week versus monthly billing conflict; current linked signup observation did not reproduce four-week wording. Exclude pending exact source reconciliation; never published."
+    },
+    "appliedAt": "2026-10-22",
+    "changes": [
+      "withdrew special-interest-answering-service"
+    ]
   }
 ]

@@ -18395,7 +18395,12 @@
       "kind": "manual",
       "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Never published. Independent semantic review found overlap with existing call-routing; reviewed ComXo material does not establish a distinct US home-service buying guide.",
+      "at": "2026-10-22",
+      "batchId": "2026-10-22-independent-qa-resolution"
+    }
   },
   {
     "template": "workflow",
@@ -18561,7 +18566,7 @@
     "slug": "sms-answering-service",
     "title": "SMS answering service: who handles the next reply?",
     "navigationLabel": "SMS answering",
-    "description": "Assess two-way SMS answering for home-service inquiries, separating incoming text coverage from notifications, missed-call messages and phone.",
+    "description": "Compare two-way SMS answering with missed-call texts and phone answering. Define who handles incoming replies for your home-service business.",
     "eyebrow": "Home-service buying guide",
     "lead": "Assess two-way SMS answering for home-service inquiries, separating incoming text coverage from notifications, missed-call messages and phone conversations.",
     "intro": "Assess two-way SMS answering for home-service inquiries, separating incoming text coverage from notifications, missed-call messages and phone conversations. Published by Revo. The scenarios below are planning examples, not measured customer results.",
@@ -18569,7 +18574,8 @@
       {
         "title": "Start with the customer’s incoming text",
         "paragraphs": [
-          "Two-way SMS answering covers a written exchange, not just a notification. Answering Service Care describes live handling of customer texts as a separate service. Its description supports that distinction; it does not establish delivery guarantees, universal number compatibility or a native Revo SMS inbox."
+          "Two-way SMS answering covers a written exchange, not just a notification. Answering Service Care describes live handling of customer texts as a separate service. Its description supports that distinction; it does not establish delivery guarantees, universal number compatibility or a native Revo SMS inbox.",
+          "The trigger is different from missed-call text-back: this workflow begins when a customer sends a text to the business. It needs an owner for the incoming message and later replies even if no phone call occurred. A missed-call automation begins with an unanswered voice call and may only send an initial message."
         ],
         "items": [],
         "sources": [
@@ -18610,8 +18616,8 @@
     ],
     "faqs": [
       {
-        "q": "Does a missed-call text prove that replies are handled?",
-        "a": "No. Confirm who receives the reply and how it becomes an assigned conversation."
+        "q": "How is inbound SMS answering different from missed-call text-back?",
+        "a": "Inbound answering owns a text conversation that can begin without a phone call. Missed-call text-back is triggered by an unanswered voice call; confirm separately who handles replies."
       },
       {
         "q": "Does call forwarding forward text messages too?",
@@ -18746,12 +18752,18 @@
         "items": []
       },
       {
-        "title": "Use your records rather than a guessed average",
+        "title": "Build a worksheet without assumed rates",
         "paragraphs": [
-          "Collect a representative period of call detail, the portion actually forwarded and the relevant destinations. The office should check whether the plan uses an included allowance, metered usage or a different rule. Avoid adding both the carrier’s full call duration and another overlapping measure into one invented minute count.",
-          "As a hypothetical worksheet, 80 chargeable forwarded minutes at an assumed $0.05 rate would be $4 before any other charges. The rate and minutes are invented to demonstrate multiplication, not a current offer or forecast. Replace both with confirmed terms and your own measured usage."
+          "Create one row per supplier and charge type. Enter the confirmed period, allowance, unit and rate from the applicable plan. Leave an unknown field blank until the account owner obtains the terms; do not substitute a market average or a made-up forwarding rate.",
+          "Add a recurring carrier feature charge once per applicable period. Calculate only the carrier usage that is actually chargeable under that plan, accounting for any included allowance. Add destination-dependent charges only when the documented destination rule applies. Separately calculate answering-service usage and any transfer charges, checking that the same event is not counted twice."
         ],
-        "items": []
+        "items": [
+          "Carrier recurring feature: billing period, confirmed fee, account owner.",
+          "Carrier forwarded usage: chargeable units, allowance, rate and measurement source.",
+          "Destination: local, long-distance, international or roaming rule that actually applies.",
+          "Answering service: base, allowance, usage unit, rate and invoice period.",
+          "Transfers: responsible supplier, chargeable event, rate and potential overlap."
+        ]
       },
       {
         "title": "Resolve the unanswered billing questions first",
@@ -18790,6 +18802,41 @@
       "kind": "manual",
       "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
     },
+    "overviewTable": {
+      "caption": "Forwarding cost worksheet: fill from the actual plans",
+      "columns": [
+        "Charge",
+        "Inputs to record",
+        "Evidence"
+      ],
+      "rows": [
+        [
+          "Carrier feature",
+          "Period and recurring fee",
+          "Current carrier plan"
+        ],
+        [
+          "Forwarded usage",
+          "Chargeable units, allowance and rate",
+          "Carrier detail and terms"
+        ],
+        [
+          "Destination",
+          "Applicable destination rule",
+          "Carrier destination terms"
+        ],
+        [
+          "Answering",
+          "Base, allowance and usage",
+          "Answering proposal and records"
+        ],
+        [
+          "Transfer",
+          "Event, supplier and rate",
+          "Transfer terms and event log"
+        ]
+      ]
+    },
     "publicationStatus": "draft"
   },
   {
@@ -18798,7 +18845,7 @@
     "slug": "compare/auto-attendant-vs-receptionist",
     "title": "Auto attendant vs virtual receptionist for home services",
     "navigationLabel": "Auto attendant vs receptionist",
-    "description": "Compare an auto attendant with a virtual receptionist by the work the caller needs completed: choosing a destination, explaining a request or reaching.",
+    "description": "Compare auto attendants and virtual receptionists for home-service calls: menu routing, request capture, staffing and fallback responsibilities.",
     "eyebrow": "Home-service buying guide",
     "lead": "Compare an auto attendant with a virtual receptionist by the work the caller needs completed: choosing a destination, explaining a request or reaching staff.",
     "intro": "Compare an auto attendant with a virtual receptionist by the work the caller needs completed: choosing a destination, explaining a request or reaching staff. Published by Revo. The scenarios below are planning examples, not measured customer results.",
@@ -18869,7 +18916,12 @@
       "kind": "manual",
       "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Never published. Independent review found insufficient distinction from existing IVR/routing owners; no new standalone route justified in this task.",
+      "at": "2026-10-22",
+      "batchId": "2026-10-22-independent-qa-resolution"
+    }
   },
   {
     "template": "workflow",
@@ -18885,7 +18937,8 @@
       {
         "title": "Translate the proposal into documents the office can use",
         "paragraphs": [
-          "An answering-service proposal can describe useful features while leaving the operating team without a clear instruction set. Ambs’ published buyer guidance identifies billing definitions, renewal and exit terms as areas to review. Treat that as a prompt to inspect your own documents, not as a statement of law or a substitute for qualified review."
+          "An answering-service proposal can describe useful features while leaving the operating team without a clear instruction set. Ambs’ published buyer guidance identifies billing definitions, renewal and exit terms as areas to review. Treat that as a prompt to inspect your own documents, not as a statement of law or a substitute for qualified review.",
+          "Complete the fields below from the final documents. Where a term needs interpretation, record the question and send it to the authorized agreement reviewer. The table organizes operations; it does not prescribe legal terms or decide enforceability."
         ],
         "items": [],
         "sources": [
@@ -18947,6 +19000,51 @@
     "source": {
       "kind": "manual",
       "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
+    },
+    "overviewTable": {
+      "caption": "Operational agreement handoff: completed fields, not contract language",
+      "columns": [
+        "Field",
+        "Record in the office handoff",
+        "Responsible role"
+      ],
+      "rows": [
+        [
+          "Scope",
+          "Included actions, limits, coverage hours and approved instructions",
+          "Service owner"
+        ],
+        [
+          "Billing unit and period",
+          "Unit, allowance, rounding, recurring period and rate sheet version",
+          "Billing owner"
+        ],
+        [
+          "Changes",
+          "Who may request changes, approval path and effective version",
+          "Account administrator"
+        ],
+        [
+          "Renewal and notice",
+          "Exact applicable dates, process and unresolved interpretation",
+          "Agreement owner"
+        ],
+        [
+          "Exit",
+          "Number control, stop date, access removal and open-request handback",
+          "Transition owner"
+        ],
+        [
+          "Returned records",
+          "Data scope, usable format, delivery date and approved recipient",
+          "Records owner"
+        ],
+        [
+          "Responsibility",
+          "Named primary owner, backup and support contact",
+          "Office manager"
+        ]
+      ]
     },
     "publicationStatus": "draft"
   },
@@ -19112,63 +19210,68 @@
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "responsive-answering-service",
-    "title": "Responsive Answering: review an HVAC call workflow",
-    "description": "Evaluate Responsive Answering Service for an HVAC office by separating answered inquiries, scheduling authority and the next action assigned to your team.",
+    "title": "Responsive Answering: minute plans and rounding",
+    "description": "Compare Responsive Answering’s minute allowances, whole-minute rounding, setup fee and published rates for a home-service office.",
     "navigationLabel": "Responsive Answering Service",
     "eyebrow": "Provider buying guide",
-    "lead": "Evaluate Responsive Answering Service for an HVAC office by separating answered inquiries, scheduling authority and the next action assigned to your team.",
-    "intro": "Evaluate Responsive Answering Service for an HVAC office by separating answered inquiries, scheduling authority and the next action assigned to your team. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "lead": "Responsive’s $29 starting plan includes no minutes. Evaluate its actual rate curve and rounding rule before budgeting short service calls.",
+    "intro": "Responsive’s $29 starting plan includes no minutes. Evaluate its actual rate curve and rounding rule before budgeting short service calls. Published by Revo. Official information checked October 22, 2026.",
     "sections": [
       {
-        "title": "What the public offer establishes",
+        "title": "The allowance changes the meaning of the starting price",
         "paragraphs": [
-          "Responsive publishes an HVAC-specific live answering page and describes coverage outside ordinary office hours. Its site also lists appointment scheduling and message delivery. Those are stated service categories, not proof of an account-specific calendar connection, an arrival commitment or a business outcome."
+          "The published Basic plan is $29/month with zero included minutes and $1.25 per minute. Standard is $149 with 125 minutes and $1.20 overage; Premium is $299 with 250 and $1.18 overage; Elite is $549 with 500 and $1.15 overage. Each lists a $75 setup and education fee. These are dated published rates, not an account quote."
         ],
         "items": [],
         "sources": [
           {
-            "label": "Responsive Answering Service official information reviewed October 22, 2026",
-            "href": "https://responsiveanswering.com/industries/hvac-answering-service/"
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://responsiveanswering.com/answering-service-pricing/"
           }
         ]
       },
       {
-        "title": "Separate a new service request from a return visit",
+        "title": "Short calls can consume a full billable minute",
         "paragraphs": [
-          "For an illustrative HVAC office, a new caller asking about a tune-up and an existing customer reporting an unresolved repair should produce different records. Give the answering team the fields needed to identify the property and any existing job reference. Leave assessment of the equipment and acceptance of warranty work with the authorized office or technician.",
-          "Ask how a callback request reaches the person handling return visits. A message that arrives in a general inbox can be correctly delivered yet remain unassigned. Specify the office owner and the point at which the handler should stop trying a transfer and use the agreed fallback."
+          "The pricing FAQ defines billable time as activity on the account and says activity rounds up to the next whole minute. It gives a 23-second example billed as one minute. A home-service office with many brief appointment confirmations therefore needs chargeable activity records, not just total connected talk time.",
+          "For an illustrative 100 billable minutes, Basic is $154 and Standard is $149 before setup and other applicable charges. The larger base fee is $5 cheaper in that limited scenario. This calculation assumes those published rules apply; it does not estimate your actual call mix."
         ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://responsiveanswering.com/answering-service-pricing/"
+          }
+        ]
       },
       {
-        "title": "Price the chosen workflow, not the headline",
+        "title": "Check the arithmetic as well as the plan",
         "paragraphs": [
-          "Request the written allowance and billing unit for HVAC calls, including transfers, message delivery and any scheduling work. Ask how the proposal treats a repeat caller on an existing issue. Do not turn a starting-price advertisement into an all-inclusive quote for your expected workload."
+          "The same page’s 300-minute Premium example prints a total that does not match its formula. Using its stated inputs gives $299 + 50 × $1.18 = $358, not the printed $350.18. Treat the rate table and your written proposal as inputs to an independent calculation.",
+          "For an HVAC office, review how administrative work, unsuccessful transfers and rounding appear on the invoice. A confirmed appointment, a transfer attempt and an account update may have different operating value even when all consume billable activity."
         ],
-        "items": []
-      },
-      {
-        "title": "Review two different HVAC conversations",
-        "paragraphs": [
-          "Use fictional tune-up and return-visit requests in a supervised review. Compare the resulting office records, the information passed to the technician and any promise made to the caller. Review the unresolved request as well as the successful one. A completed conversation is not a completed repair.",
-          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
-        ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://responsiveanswering.com/answering-service-pricing/"
+          }
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "What should an HVAC buyer verify first?",
-        "a": "Confirm which requests the handler may schedule and which must return to the office, then test how that distinction appears in the delivered record."
+        "q": "Does $29 include an allowance?",
+        "a": "No. The reviewed Basic table shows zero included minutes."
       },
       {
-        "q": "Is this a provider endorsement or performance test?",
-        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+        "q": "What matters for very short calls?",
+        "a": "The FAQ rounds account activity up to whole minutes. Reconcile the provider’s billable activity with your own records."
       }
     ],
-    "takeaway": "Use the documented scope and the observed handoff to evaluate Responsive Answering Service for your office.",
+    "takeaway": "Responsive is most usefully compared on rounded billable activity, allowance and setup—not its $29 headline alone.",
     "sourcePaths": [
-      "https://responsiveanswering.com/industries/hvac-answering-service/"
+      "https://responsiveanswering.com/answering-service-pricing/"
     ],
     "related": [
       "choose-virtual-receptionist",
@@ -19186,62 +19289,73 @@
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "always-answer-service",
-    "title": "Always Answer: choose live coverage and message handling",
-    "description": "Review Always Answer’s live answering arrangement for a home-service business, including forwarding, instructions and the handoff after a call ends.",
+    "title": "Always Answer: minute billing and forwarding workflow",
+    "description": "Review Always Answer’s stated minute billing, assigned forwarding number, upfront greeting and message-delivery workflow for contractor calls.",
     "navigationLabel": "Always Answer",
     "eyebrow": "Provider buying guide",
-    "lead": "Review Always Answer’s live answering arrangement for a home-service business, including forwarding, instructions and the handoff after a call ends.",
-    "intro": "Review Always Answer’s live answering arrangement for a home-service business, including forwarding, instructions and the handoff after a call ends. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "lead": "Always Answer describes minute-based live answering with an assigned forwarding number and several ways to handle and deliver a call.",
+    "intro": "Always Answer describes minute-based live answering with an assigned forwarding number and several ways to handle and deliver a call. Published by Revo. Official information checked October 22, 2026.",
     "sections": [
       {
-        "title": "What the public offer establishes",
+        "title": "Distinguish the live service from the price request",
         "paragraphs": [
-          "Always Answer’s live-answering page describes giving a business a number to forward calls to, answering in its business name and delivering a message through a selected channel. The page distinguishes live answering from other offerings such as appointment scheduling and dispatch. Confirm the particular combination in the proposal."
+          "Always Answer’s homepage describes paying for the minutes agents spend on calls. Its pricing entry point requests contact rather than displaying a usable rate table in the page reviewed. No form was submitted, so this evaluation supplies no invented base fee or minute rate."
         ],
         "items": [],
         "sources": [
           {
-            "label": "Always Answer official information reviewed October 22, 2026",
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://alwaysanswer.com/"
+          },
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://alwaysanswer.com/get-pricing/"
+          }
+        ]
+      },
+      {
+        "title": "The assigned number is part of the operating model",
+        "paragraphs": [
+          "The live-answering description says the business receives a number to forward calls to, agents answer with the company name and instructions, and the resulting message is delivered through a selected channel. Forwarding that existing line and advertising the assigned number directly have different exit implications; establish number control before changing listings.",
+          "For a contractor keeping its familiar office number, the relevant setup is the carrier-to-service route and the office’s message destination. A human answering in the business name does not by itself establish scheduling access."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
             "href": "https://alwaysanswer.com/live-answering/"
           }
         ]
       },
       {
-        "title": "Write the work assigned to the person answering",
+        "title": "An upfront greeting can change which calls reach an agent",
         "paragraphs": [
-          "A sole-owner handyman may want a caller’s project description, address and preferred callback period without authorizing an estimate or visit. Give the handler a clear stopping point. If a customer asks whether the owner can attend tomorrow, a collected preference should remain a request until the office accepts it.",
-          "Decide whether calls should forward all day, only outside office hours or after an unanswered ring sequence. Document the destination and current greeting with the account owner. A live answering plan does not automatically establish how the carrier will route the business’s number."
+          "The homepage describes an automated upfront greeting as a screening option, as well as message recaps, transfers and reporting. That makes the greeting an operating choice to evaluate, not merely a branding detail.",
+          "Compare an ordinary estimate inquiry and a caller who cannot use the greeting’s expected path. Check what reaches a live agent and which activity becomes chargeable. Obtain the rate and service boundaries for that configuration before comparing it with a different provider’s direct-to-agent proposal."
         ],
-        "items": []
-      },
-      {
-        "title": "Keep the service bundle visible",
-        "paragraphs": [
-          "Ask which actions are included in live answering and which require an additional service or setup. Obtain the usage unit, recurring charge, additional-use treatment and any trial conditions in writing. Do not compare a message-taking proposal with a booking proposal as if the work were identical."
-        ],
-        "items": []
-      },
-      {
-        "title": "Check the message after the conversation",
-        "paragraphs": [
-          "Review a fictional small repair inquiry and a call the business does not accept. Check the greeting, intake boundaries, delivery destination and callback owner. Have the office explain how it would find the request later, rather than treating a delivery notification as proof that someone acted.",
-          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
-        ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://alwaysanswer.com/"
+          }
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "Does live answering necessarily include booking?",
-        "a": "No. Verify the selected service scope and the supported booking action; the provider lists several service categories separately."
+        "q": "Is there a verified public dollar rate here?",
+        "a": "No. The reviewed pricing entry point did not expose a rate table; the stated billing model is minute based."
       },
       {
-        "q": "Is this a provider endorsement or performance test?",
-        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+        "q": "What should stay under the contractor’s control?",
+        "a": "The advertised number arrangement, approved greeting and destination of the resulting requests need explicit ownership."
       }
     ],
-    "takeaway": "Use the documented scope and the observed handoff to evaluate Always Answer for your office.",
+    "takeaway": "The meaningful Always Answer comparison is a configured forwarding-and-greeting path priced in agent minutes.",
     "sourcePaths": [
+      "https://alwaysanswer.com/",
+      "https://alwaysanswer.com/get-pricing/",
       "https://alwaysanswer.com/live-answering/"
     ],
     "related": [
@@ -19254,69 +19368,85 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Never published. Named-provider evidence still does not support enough distinct evaluative value beyond greeting, forwarding and message handling; hold rather than fill quota.",
+      "at": "2026-10-22",
+      "batchId": "2026-10-22-independent-qa-resolution"
+    }
   },
   {
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "call-experts-answering-service",
-    "title": "Call Experts: review home-service on-call handoffs",
-    "description": "Assess Call Experts for home-service calls by testing the on-call calendar, appointment handoff and the result when a technician cannot receive a transfer.",
+    "title": "Call Experts: website access vs ServiceTitan API",
+    "description": "Compare Call Experts’ website-based and API-based ServiceTitan arrangements, job-entry scope and on-call handoffs for home-service offices.",
     "navigationLabel": "Call Experts",
     "eyebrow": "Provider buying guide",
-    "lead": "Assess Call Experts for home-service calls by testing the on-call calendar, appointment handoff and the result when a technician cannot receive a transfer.",
-    "intro": "Assess Call Experts for home-service calls by testing the on-call calendar, appointment handoff and the result when a technician cannot receive a transfer. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "lead": "Call Experts distinguishes website-based scheduling access from an advanced ServiceTitan API connection. Those are materially different implementation choices.",
+    "intro": "Call Experts distinguishes website-based scheduling access from an advanced ServiceTitan API connection. Those are materially different implementation choices. Published by Revo. Official information checked October 22, 2026.",
     "sections": [
       {
-        "title": "What the public offer establishes",
+        "title": "Two access paths are described, not one universal integration",
         "paragraphs": [
-          "Call Experts’ home-services page names plumbing, electrical and HVAC businesses. It describes message taking, transfers, appointment handling and managed or self-service on-call calendars. Integration labels on a website do not prove that the exact workflow in your account will be configured or that a technician has accepted a job."
+          "The ServiceTitan page says website access is sufficient for many businesses, while high call volume or more sophisticated protocols may use an advanced API connection. It describes real-time appointment booking and job input, and names an unassigned queue for overflow booking. These are the supplier’s published descriptions, not independently tested account behavior."
         ],
         "items": [],
         "sources": [
           {
-            "label": "Call Experts official information reviewed October 22, 2026",
-            "href": "https://callexperts.com/industry-solutions/home-services/"
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://callexperts.com/integrations/servicetitan/"
           }
         ]
       },
       {
-        "title": "Make the current on-call entry actionable",
+        "title": "Decide where an overflow job enters the office workflow",
         "paragraphs": [
-          "For a plumbing company, an on-call calendar should identify a current contact and an approved fallback. Give the office a named owner for updates when shifts change. Keep the schedule version with the instructions so an unanswered transfer can be traced to the rule used at that time.",
-          "A handler’s attempt to notify a technician is not the same as a technician acknowledging the request. Define what evidence the office needs to distinguish those two states. Retain technical triage, hazard assessment and promises about attendance with authorized people."
+          "An HVAC office can use the distinction to ask whether an overflow request becomes an unassigned record or an appointment already assigned to a crew. A created record still needs the office’s service-area, job-type and availability rules. The operator’s access path should match those rules rather than silently bypass them.",
+          "Separate the permissions needed to look up a customer, enter a job and change an existing visit. Website access can require different onboarding and failure handling from an API connection. Confirm what is included in the proposed implementation."
         ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://callexperts.com/integrations/servicetitan/"
+          }
+        ]
       },
       {
-        "title": "Match integration scope with the written proposal",
+        "title": "On-call calendars are a second responsibility",
         "paragraphs": [
-          "Ask whether the quoted setup includes the particular scheduling or customer-record system the office uses. Identify what data is read, what action is written and how a failed write is reported. Include on-call updates and transfer handling in the account-specific billing discussion."
+          "The home-services page explicitly offers self-service and managed on-call calendars. For self-service, establish which office user updates coverage and when the change becomes active. For managed service, establish how changes are submitted and acknowledged. These are buyer acceptance criteria, not a claim that either configuration was tested. Transfers and notification attempts remain distinct from a technician accepting work.",
+          "The pricing entry point asks for business details before sending prices; no form was submitted. Compare a written proposal that identifies both the integration method and on-call responsibility. A logo on the integrations menu is not a complete scope or quote."
         ],
-        "items": []
-      },
-      {
-        "title": "Walk through an unanswered technician case",
-        "paragraphs": [
-          "Use a fictional existing-customer request while the primary contact is marked unavailable. Examine which fallback is tried, what the caller is told and who owns the resulting task. This distinguishes a configured call path from an unsupported promise that every request will produce an immediate visit.",
-          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
-        ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://callexperts.com/industry-solutions/home-services/"
+          },
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://callexperts.com/register/"
+          }
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "Does an integration name guarantee an appointment was created?",
-        "a": "No. Verify the exact permitted calendar action and inspect the resulting record, including the failure path."
+        "q": "Does every Call Experts account use the same ServiceTitan connection?",
+        "a": "The supplier describes website-based and advanced API paths. Confirm which is proposed for the account."
       },
       {
-        "q": "Is this a provider endorsement or performance test?",
-        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+        "q": "What is the critical overflow question?",
+        "a": "Establish whether the created job is unassigned or actually scheduled, and who completes the next decision."
       }
     ],
-    "takeaway": "Use the documented scope and the observed handoff to evaluate Call Experts for your office.",
+    "takeaway": "Evaluate Call Experts on the specific access path and resulting job state, then price that implementation.",
     "sourcePaths": [
-      "https://callexperts.com/industry-solutions/home-services/"
+      "https://callexperts.com/integrations/servicetitan/",
+      "https://callexperts.com/industry-solutions/home-services/",
+      "https://callexperts.com/register/"
     ],
     "related": [
       "choose-virtual-receptionist",
@@ -19328,69 +19458,111 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
+    "overviewTable": {
+      "caption": "Published Call Experts options and distinct implementation decisions",
+      "columns": [
+        "Published option",
+        "What the office must establish"
+      ],
+      "rows": [
+        [
+          "Self-service on-call calendar",
+          "Authorized editor, effective time and coverage for staff absence"
+        ],
+        [
+          "Managed on-call calendar",
+          "Submission owner, acknowledgment and update procedure"
+        ],
+        [
+          "Website-based ServiceTitan access",
+          "Permissions, allowed job types and failed-entry handling"
+        ],
+        [
+          "Advanced API connection",
+          "Configured actions, setup scope and failed-write handling"
+        ]
+      ],
+      "sources": [
+        {
+          "label": "Call Experts home-service options",
+          "href": "https://callexperts.com/industry-solutions/home-services/"
+        },
+        {
+          "label": "Call Experts ServiceTitan access paths",
+          "href": "https://callexperts.com/integrations/servicetitan/"
+        }
+      ]
+    },
     "publicationStatus": "draft"
   },
   {
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "pcmsi-answering-service",
-    "title": "PCMSI: evaluate plan matching and service-call intake",
-    "description": "Evaluate PCMSI for a home-service office with attention to usage-based plan matching, the call record and the instructions that staff must maintain.",
+    "title": "PCMSI: monthly cycles and operator activity charges",
+    "description": "Review PCMSI’s $25 starting fee, $1.35 usage rate, 12 yearly billing cycles and operator access to a home-service CRM.",
     "navigationLabel": "PCMSI",
     "eyebrow": "Provider buying guide",
-    "lead": "Evaluate PCMSI for a home-service office with attention to usage-based plan matching, the call record and the instructions that staff must maintain.",
-    "intro": "Evaluate PCMSI for a home-service office with attention to usage-based plan matching, the call record and the instructions that staff must maintain. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "lead": "PCMSI combines a published $25 monthly starting fee with chargeable operator activity and a stated monthly plan-review policy.",
+    "intro": "PCMSI combines a published $25 monthly starting fee with chargeable operator activity and a stated monthly plan-review policy. Published by Revo. Official information checked October 22, 2026.",
     "sections": [
       {
-        "title": "What the public offer establishes",
+        "title": "The starting offer is not an included-minute bundle",
         "paragraphs": [
-          "PCMSI describes nationwide live answering with US-based operators and lists HVAC, plumbing and other service businesses. Its homepage says it reviews usage to place accounts into a pricing package. Treat that as a published program description: obtain the actual package rules and applicable service scope before comparing costs."
+          "The reviewed offer states $25/month, no setup fee and $1.35 per minute for usage. Its description says usage can include web access, CRM work, order taking, scheduling, FAQ handling and escalation. Confirm the applicable offer before treating its starting fee as a total bill."
         ],
         "items": [],
         "sources": [
           {
-            "label": "PCMSI official information reviewed October 22, 2026",
-            "href": "https://pcmsi.com/"
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://pcmsi.com/lets-talk/"
           }
         ]
       },
       {
-        "title": "Turn the current intake sheet into a review case",
+        "title": "Calendar months differ from four-week periods",
         "paragraphs": [
-          "An appliance-repair office can supply a fictional request with an appliance type, property address and callback number. Decide which fields help the office assess the request and which questions the answering team should leave to qualified staff. A detailed note should not imply the company services an unsupported brand or has accepted the job.",
-          "Ask how the script changes when a caller already has a scheduled visit. The handler should preserve that context without creating a second unrelated lead. Have the office show how it locates the existing work and records the required follow-up."
+          "PCMSI’s FAQ says contracts and billing are month to month, with 12 bills per year rather than 28-day billing. It also says there is no extra charge based on the number of on-call employees and no after-hours/weekend/holiday surcharge. Confirm these stated terms in the account agreement.",
+          "The same FAQ describes operators using one screen for a client system and another for instructions. That describes a human access workflow; it should not be relabeled as a native API integration."
         ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://pcmsi.com/answering-service-questions/"
+          }
+        ]
       },
       {
-        "title": "Understand a package change before relying on it",
+        "title": "A broader billable task can still be useful work",
         "paragraphs": [
-          "Request the measurement period, usage unit and timing of any plan review. Ask who confirms the selected package, which fees remain outside it and how the office can reconcile the invoice. A lowest-rate or best-package label is not enough to establish the total for your account."
+          "For an appliance-repair office, a longer interaction might include entering the request in the existing CRM instead of sending a message that someone must re-enter. Compare the chargeable operator work with the task left for staff. Do not rank the service only by average talk duration.",
+          "PCMSI describes reviewing monthly usage and adjusting the pricing package under its Best Rate Guarantee. Before relying on it, obtain the applicable package choices and how the adjustment is shown on the invoice. The program does not establish a numerical savings result for your business."
         ],
-        "items": []
-      },
-      {
-        "title": "Check what the office receives and can audit",
-        "paragraphs": [
-          "Review both a new repair inquiry and an appointment-change request. Inspect the delivered fields, duplicate handling and invoice-related call record. Keep the work completed by the handler separate from a technical decision that still belongs to the repair office.",
-          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
-        ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://pcmsi.com/answering-service-best-rates/"
+          }
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "How should an office evaluate automatic plan matching?",
-        "a": "Ask for the documented measurement and change rules, then compare the applied package with its own call and invoice records."
+        "q": "Is the $25 fee the complete usage price?",
+        "a": "No. The reviewed offer separately states a per-minute usage rate."
       },
       {
-        "q": "Is this a provider endorsement or performance test?",
-        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+        "q": "Is operator access to a CRM an API integration?",
+        "a": "Not necessarily. The FAQ specifically describes operators following instructions while using the client’s system."
       }
     ],
-    "takeaway": "Use the documented scope and the observed handoff to evaluate PCMSI for your office.",
+    "takeaway": "Compare PCMSI’s monthly billing and chargeable operator tasks with the actual work its staff would complete.",
     "sourcePaths": [
-      "https://pcmsi.com/"
+      "https://pcmsi.com/lets-talk/",
+      "https://pcmsi.com/answering-service-questions/",
+      "https://pcmsi.com/answering-service-best-rates/"
     ],
     "related": [
       "choose-virtual-receptionist",
@@ -19476,69 +19648,79 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Never published. Current source evidence does not support a sufficiently specific independent evaluation beyond the generic checklist; hold for substantive service/terms documentation.",
+      "at": "2026-10-22",
+      "batchId": "2026-10-22-substantive-provider-revision"
+    }
   },
   {
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "advanced-answering-service",
-    "title": "Advanced Answering: review trade scheduling authority",
-    "description": "Assess Advanced Answering Service for a trade office by defining which appointments can be handled and how requests return to authorized staff.",
+    "title": "Advanced Answering: plan thresholds and extra fees",
+    "description": "Compare Advanced Answering’s published allowances and overage rates, with explicit holiday and extended-storage fee questions for trade offices.",
     "navigationLabel": "Advanced Answering Service",
     "eyebrow": "Provider buying guide",
-    "lead": "Assess Advanced Answering Service for a trade office by defining which appointments can be handled and how requests return to authorized staff.",
-    "intro": "Assess Advanced Answering Service for a trade office by defining which appointments can be handled and how requests return to authorized staff. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "lead": "Advanced Answering publishes five minute-based plans and separately warns that holiday coverage and extended data storage may carry additional fees.",
+    "intro": "Advanced Answering publishes five minute-based plans and separately warns that holiday coverage and extended data storage may carry additional fees. Published by Revo. Official information checked October 22, 2026.",
     "sections": [
       {
-        "title": "What the public offer establishes",
+        "title": "Read the current plan table",
         "paragraphs": [
-          "Advanced Answering Service describes nationwide live answering and explicitly lists trades and home services, including plumbing, electrical and HVAC. Its site names appointment scheduling and dispatch-related handling. Those labels do not establish your account’s specific schedule access, field availability or permission to commit a crew."
+          "The reviewed table lists $65/month plus $1.75 per minute for low volume; $170 with 100 minutes and $1.80 overage; $320 with 200 and $1.80 overage; $825 with 500 and $1.70 overage; and $1,550 with 1,000 and $1.60 overage. These are published snapshots, not a negotiated quote."
         ],
         "items": [],
         "sources": [
           {
-            "label": "Advanced Answering Service official information reviewed October 22, 2026",
-            "href": "https://www.advancedansweringservice.com/"
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://www.advancedansweringservice.com/pricing"
           }
         ]
       },
       {
-        "title": "Define the difference between a request and a slot",
+        "title": "More included minutes are not automatically the cheaper choice",
         "paragraphs": [
-          "An electrical contractor may accept estimate appointments only for a limited service area and only after the office reviews the work type. Give the answering team the approved questions and the point where staff must decide. Do not allow an unavailable calendar slot to become a verbal promise merely to complete intake.",
-          "For an existing job, preserve the customer’s description and job reference without diagnosing the issue. Where the office authorizes scheduling, identify the exact event that confirms the reservation. Where it does not, the result should be an owned request with clear follow-up."
+          "Using that table for an illustrative 300 billable minutes gives $590 on low volume, $530 on the 100-minute plan, $500 on the 200-minute plan and $825 on the 500-minute plan. This calculation excludes unconfirmed extra fees and assumes identical chargeable minutes across plans.",
+          "The office should compare the complete range at its own usage level, including overage, instead of choosing the smallest plan with no overage. A hypothetical minute total is a cost illustration, not a prediction of HVAC demand or a guarantee of savings."
         ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://www.advancedansweringservice.com/pricing"
+          }
+        ]
       },
       {
-        "title": "Compare the configured service rather than a category",
+        "title": "Holiday answering and long retention need separate confirmation",
         "paragraphs": [
-          "Obtain the written price for the selected answering, scheduling and notification arrangement. Ask about script changes, usage allowances and the treatment of transfer attempts. Keep any medical or other industry claims separate from the scope relevant to your home-service office."
+          "The page explicitly identifies possible fees for holiday coverage and extended data storage, to be agreed during contracting. Its broader annual-cost comparison also uses figures that should not replace the current monthly table. Do not convert a general no-hidden-fees statement into a promise that these extras cost nothing.",
+          "For a trade office, specify which holidays need coverage and how long the relevant records must remain available. Obtain the actual fee, storage scope and chargeable-minute definition with the chosen plan."
         ],
-        "items": []
-      },
-      {
-        "title": "Test the appointment the office cannot accept",
-        "paragraphs": [
-          "Review a fictional request outside the approved area or permitted work types. Inspect the response, the internal task and any commitment recorded. A useful evaluation includes a declined or escalated request as well as an ordinary accepted one.",
-          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
-        ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://www.advancedansweringservice.com/pricing"
+          }
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "Does a scheduling service label prove access to our calendar?",
-        "a": "No. Confirm the specific access, permitted actions and failure handling before treating scheduling as part of the working account."
+        "q": "Are holidays necessarily included at no additional charge?",
+        "a": "No. The current pricing page explicitly says holiday coverage may incur an agreed extra fee."
       },
       {
-        "q": "Is this a provider endorsement or performance test?",
-        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+        "q": "Should I choose the first plan whose allowance exceeds expected use?",
+        "a": "Compare base plus overage across the available plans. The lowest-cost plan can have some overage."
       }
     ],
-    "takeaway": "Use the documented scope and the observed handoff to evaluate Advanced Answering Service for your office.",
+    "takeaway": "Advanced Answering has enough published detail for a plan calculation, provided extra holiday and storage terms remain explicit.",
     "sourcePaths": [
-      "https://www.advancedansweringservice.com/"
+      "https://www.advancedansweringservice.com/pricing"
     ],
     "related": [
       "choose-virtual-receptionist",
@@ -19556,63 +19738,74 @@
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "central-messaging-answering-service",
-    "title": "Central Messaging: review message delivery and check-in",
-    "description": "Evaluate Central Messaging for home-service message taking by checking delivery destinations, on-call instructions and the office’s responsibility after.",
+    "title": "Central Messaging: callback fields and delivery timing",
+    "description": "Review Central Messaging’s separate callback and captured Caller ID fields, message-delivery timing and on-call update process.",
     "navigationLabel": "Central Messaging",
     "eyebrow": "Provider buying guide",
-    "lead": "Evaluate Central Messaging for home-service message taking by checking delivery destinations, on-call instructions and the office’s responsibility after receipt.",
-    "intro": "Evaluate Central Messaging for home-service message taking by checking delivery destinations, on-call instructions and the office’s responsibility after receipt. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "lead": "Central Messaging documents details about callback numbers and message delivery that matter when the office must act on the record.",
+    "intro": "Central Messaging documents details about callback numbers and message delivery that matter when the office must act on the record. Published by Revo. Official information checked October 22, 2026.",
     "sections": [
       {
-        "title": "What the public offer establishes",
+        "title": "Two numbers in a message mean different things",
         "paragraphs": [
-          "Central Messaging’s official pages describe live answering, message delivery to cell phones or pagers and on-call schedule capabilities. Its FAQ says it can serve businesses across the US. Confirm the current service and supported delivery methods for your account rather than treating an older page as an account-specific commitment."
+          "The FAQ says the first number in a delivered text or email is the callback number verbally supplied by the caller; the second, shown with the area code in parentheses, is captured Caller ID. A repair office should preserve the distinction instead of selecting whichever number appears first in a database import.",
+          "A homeowner may call from a shared phone and request a different callback number. Those are two separate observations, not a verified identity match. The office still needs its ordinary process for deciding whom to contact and what information may be discussed."
         ],
         "items": [],
         "sources": [
           {
-            "label": "Central Messaging official information reviewed October 22, 2026",
-            "href": "https://phonemessagingservice.com/answering_service_faq.html"
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://www.phonemessagingservice.com/answering_service_faq.html"
           }
         ]
       },
       {
-        "title": "Assign the message before choosing its destination",
+        "title": "Delivery timing can be immediate, scheduled or requested",
         "paragraphs": [
-          "A small garage-door business might send new estimate inquiries to the owner but route questions about a booked visit to its scheduler. Identify the responsible role before choosing text, email or another delivery method. A notification sent to a personal device can be delivered successfully while its owner is off duty.",
-          "Write a rule for an unanswered or unacknowledged message. Specify who checks pending requests and how another staff member takes over. Do not treat the existence of an on-call schedule as evidence that someone has accepted a customer’s request."
+          "The services page describes fax or email delivery as immediate, scheduled or on demand, and says on-call schedules may be provided by fax, email or phone. It also describes an automated greeting with an operator-revert option. These are distinct configuration choices rather than proof that every message is delivered and acknowledged instantly.",
+          "For a garage-door office, immediate delivery may be chosen for active-visit questions while another reviewed category is grouped for later processing. The fallback should preserve a callback owner when the recipient is away."
         ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://phonemessagingservice.com/answering_services.html"
+          }
+        ]
       },
       {
-        "title": "Clarify the message and call units",
+        "title": "What the reviewed pages do not establish",
         "paragraphs": [
-          "Ask for the current plan documents, the definition of a chargeable interaction and any charges for notification or additional attempts. Confirm how the office can retrieve the underlying record and compare it with an invoice. Do not infer today’s price from a referral credit or an old promotion."
+          "These pages do not provide a usable current price table in the material reviewed. No dollar rate is assigned here. Confirm the proposed delivery configuration, usage unit and account access before comparing cost.",
+          "The FAQ also contains carrier-style forwarding instructions. Do not apply them indiscriminately: setup must follow the actual line’s carrier documentation. The service’s explanation of a message record is useful without treating its old setup instructions as universal."
         ],
-        "items": []
-      },
-      {
-        "title": "Follow one request from caller to office",
-        "paragraphs": [
-          "Use a fictional booked-visit question and trace the greeting, recorded details, delivery recipient and final owner. Review a second case when the intended recipient is away. The important outcome is an assigned next action, not merely a notification appearing on a phone.",
-          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
-        ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://www.phonemessagingservice.com/answering_service_faq.html"
+          },
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://phonemessagingservice.com/answering_services.html"
+          }
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "Is a delivered message the same as an acknowledged request?",
-        "a": "No. Define who confirms receipt and who follows up with the customer when a message still needs office action."
+        "q": "Are the two numbers in a message duplicates?",
+        "a": "Not necessarily. The FAQ distinguishes a caller-supplied callback number from captured Caller ID."
       },
       {
-        "q": "Is this a provider endorsement or performance test?",
-        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+        "q": "Is all delivery necessarily immediate?",
+        "a": "No. The services page describes immediate, scheduled and on-demand options."
       }
     ],
-    "takeaway": "Use the documented scope and the observed handoff to evaluate Central Messaging for your office.",
+    "takeaway": "Evaluate Central Messaging on how its record and delivery choices support an actual callback, then obtain current pricing.",
     "sourcePaths": [
-      "https://phonemessagingservice.com/answering_service_faq.html"
+      "https://www.phonemessagingservice.com/answering_service_faq.html",
+      "https://phonemessagingservice.com/answering_services.html"
     ],
     "related": [
       "choose-virtual-receptionist",
@@ -19624,7 +19817,12 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Never published. Current FAQ and service text verified, including callback/Caller ID fields, but independent review is needed to establish standalone intent/value beyond existing routing and ownership guides.",
+      "at": "2026-10-22",
+      "batchId": "2026-10-22-independent-qa-resolution"
+    }
   },
   {
     "template": "workflow",
@@ -19698,68 +19896,83 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Never published. HOLD: reviewer reports four-week signup billing, while direct browser reading of the currently linked signup on 2026-10-22 shows monthly/month-to-month cards only. Need exact discrepant source or screenshot before writing the billing comparison or requesting human approval.",
+      "at": "2026-10-22",
+      "batchId": "2026-10-22-special-interest-evidence-hold"
+    }
   },
   {
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "business-connections-answering-service",
-    "title": "Business Connections: review contractor estimate limits",
-    "description": "Evaluate Business Connections for contractor calls with particular attention to estimate instructions, warm transfers and the work retained by your office.",
+    "title": "Business Connections: a zero-minute plan and estimates",
+    "description": "Evaluate Business Connections’ $49 base with zero included minutes, $1.37 usage rate and limits on contractor estimate instructions.",
     "navigationLabel": "Business Connections",
     "eyebrow": "Provider buying guide",
-    "lead": "Evaluate Business Connections for contractor calls with particular attention to estimate instructions, warm transfers and the work retained by your office.",
-    "intro": "Evaluate Business Connections for contractor calls with particular attention to estimate instructions, warm transfers and the work retained by your office. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "lead": "Business Connections publishes a zero-minute starting allowance and offers contractor-specific handling. Those two details should be evaluated together.",
+    "intro": "Business Connections publishes a zero-minute starting allowance and offers contractor-specific handling. Those two details should be evaluated together. Published by Revo. Official information checked October 22, 2026.",
     "sections": [
       {
-        "title": "What the public offer establishes",
+        "title": "The base fee is for access, not an allowance",
         "paragraphs": [
-          "Business Connections’ industry page lists roofing, flooring, plumbing and HVAC answering. For roofing, it says callers can receive basic estimates under client instructions. That is a provider’s stated option, not evidence that any repair price can be determined by phone or that Revo supplies the same arrangement."
+          "The pricing page lists $49/month with zero included minutes, then $1.37 per minute, with no deposit or setup fee. An illustrative 100 chargeable minutes would therefore be $186 before any other applicable charges. Confirm the time measurement and current terms before using that number as a budget."
         ],
         "items": [],
         "sources": [
           {
-            "label": "Business Connections official information reviewed October 22, 2026",
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://bcanswer.com/pricing/"
+          }
+        ]
+      },
+      {
+        "title": "A roofing estimate option needs a bounded instruction",
+        "paragraphs": [
+          "The industry page lists roofing, flooring, plumbing and HVAC. Its roofing description says callers can receive basic estimates under the client’s instructions. That is more specific than message taking, but it is not authority to diagnose damage or invent a roof price.",
+          "For a roofing office, distinguish an approved explanation of inspection pricing from a quotation for the work. The instructions should identify amounts that may be stated, their scope, and requests that require a qualified estimator. Leave change orders and uncertain site conditions with authorized staff."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
             "href": "https://bcanswer.com/industries/"
           }
         ]
       },
       {
-        "title": "Draw a precise boundary around estimate information",
+        "title": "Compare what the minute actually buys",
         "paragraphs": [
-          "A roofer might authorize an explanation of how an inspection is arranged while requiring a qualified person to assess the roof and issue the estimate. Write which information may be stated and which needs review. If any fixed amount is approved, keep its scope and exceptions beside the instruction.",
-          "For an existing project, a call about an additional repair should not become an accepted change order. Have the handler identify the project and route the request to the authorized person. The customer should hear the actual next step rather than an improvised commitment."
+          "The relevant question is whether chargeable handling completes a permitted step or leaves the same office work pending. Record the difference between collected estimate details, an appointment request and an accepted booking. Do not assume the published starting plan includes every action on an industry page.",
+          "Request the configured task list alongside the rate. This lets the office compare its actual intake and estimator workload rather than comparing the $49 base with another provider’s included-minute package."
         ],
-        "items": []
-      },
-      {
-        "title": "Include transfer and message responsibilities in the quote",
-        "paragraphs": [
-          "The provider’s homepage describes warm transfers and text or email message delivery. Ask how those actions are configured and billed for your account, including unsuccessful transfers. Compare the written answering scope with the same tasks in a Revo proposal rather than assuming equal authority."
-        ],
-        "items": []
-      },
-      {
-        "title": "Review the question that cannot be quoted",
-        "paragraphs": [
-          "Use a fictional roof inquiry that lacks the information needed for a price. Check whether the handler records the request, explains the inspection process and keeps the estimate with qualified staff. Review what happens if the owner cannot receive the transfer.",
-          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
-        ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://bcanswer.com/pricing/"
+          },
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://bcanswer.com/industries/"
+          }
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "Should a roofing caller always receive an estimate during intake?",
-        "a": "No. Only provide information the business has authorized and can support. Assessment and a binding scope may require qualified review."
+        "q": "Does the $49 base include talk minutes?",
+        "a": "The reviewed pricing table explicitly lists zero included minutes."
       },
       {
-        "q": "Is this a provider endorsement or performance test?",
-        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+        "q": "Can the handler quote any roofing job?",
+        "a": "The page only supports client-instructed basic estimates. Define the authorized scope and escalate anything requiring assessment."
       }
     ],
-    "takeaway": "Use the documented scope and the observed handoff to evaluate Business Connections for your office.",
+    "takeaway": "Compare Business Connections as a zero-allowance usage plan with explicitly bounded contractor instructions.",
     "sourcePaths": [
+      "https://bcanswer.com/pricing/",
       "https://bcanswer.com/industries/"
     ],
     "related": [
@@ -19772,68 +19985,106 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
+    "overviewTable": {
+      "caption": "Boundaries for the provider’s client-instructed basic-estimate option",
+      "columns": [
+        "Caller asks for",
+        "Permitted information to define",
+        "Decision retained by the business"
+      ],
+      "rows": [
+        [
+          "Inspection charge",
+          "Exact authorized amount, scope and exceptions",
+          "Any exception or unsupported amount"
+        ],
+        [
+          "Likely project cost",
+          "Approved limited explanation, if any",
+          "Assessment and a binding work estimate"
+        ],
+        [
+          "Extra work on an active job",
+          "Record the request and existing job reference",
+          "Change-order scope, price and acceptance"
+        ]
+      ],
+      "sources": [
+        {
+          "label": "Business Connections roofing basic-estimate option",
+          "href": "https://bcanswer.com/industries/"
+        }
+      ]
+    },
     "publicationStatus": "draft"
   },
   {
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "focus-answering-service",
-    "title": "Focus Answering: review contractor escalation protocols",
-    "description": "Review Focus Answering Service for a home-service office by separating intake, vendor contact and the acknowledgment needed before staff treat a request.",
+    "title": "Focus Answering: 28-day billing and agent work time",
+    "description": "Review Focus Answering’s 28-day billing periods, published sample plans and agent-work definition before comparing contractor coverage costs.",
     "navigationLabel": "Focus Answering Service",
     "eyebrow": "Provider buying guide",
-    "lead": "Review Focus Answering Service for a home-service office by separating intake, vendor contact and the acknowledgment needed before staff treat a request as assigned.",
-    "intro": "Review Focus Answering Service for a home-service office by separating intake, vendor contact and the acknowledgment needed before staff treat a request as assigned. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "lead": "Focus’s pricing page uses 28-day billing periods and agent work time. Its sample plans should not be compared directly with calendar-month offers.",
+    "intro": "Focus’s pricing page uses 28-day billing periods and agent work time. Its sample plans should not be compared directly with calendar-month offers. Published by Revo. Official information checked October 22, 2026.",
     "sections": [
       {
-        "title": "What the public offer establishes",
+        "title": "The samples have different service scope",
         "paragraphs": [
-          "Focus lists phone answering, after-hours dispatch, vendor dispatch and software integration, alongside contractor industries. It describes contacting vendors under client instructions. These claims identify options to evaluate; they do not establish an emergency response guarantee, a specific integration or a verified result for your account."
+          "Focus publishes a low-volume message-taking/text-delivery sample of $79 for 50 minutes, then $1.61 per additional minute. Its higher-complexity example is $870 for 500 minutes, then $1.71, aimed at appointment booking or caller-information collection. They are examples for different service needs, not proof that one configuration costs only more per minute."
         ],
         "items": [],
         "sources": [
           {
-            "label": "Focus Answering Service official information reviewed October 22, 2026",
-            "href": "https://focustele.com/"
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://focustele.com/pricing/"
           }
         ]
       },
       {
-        "title": "Define what contacting a vendor accomplishes",
+        "title": "Put the billing period into the comparison",
         "paragraphs": [
-          "A property-maintenance contractor might need a subcontractor contacted about an approved job. Record the job reference, permitted information and person who can authorize additional work. Sending a message to a vendor is not evidence that the vendor accepted the assignment or agreed to attend.",
-          "Specify the acknowledgment the office needs and who reviews an unanswered contact. Keep the escalation list current when vendor coverage changes. A handler should not improvise an alternative contractor or authorize a fee simply because the first destination is unavailable."
+          "The page states a standard 28-day period. Thirteen such periods span 364 days. At an unchanged $79 base, 13 periods would total $1,027 before usage and other applicable charges; 12 charges would total $948. This illustrates the calendar difference, not an annual quote or a claim about the final billing date.",
+          "Ask what work counts toward minutes: the page describes agent time covering the answer, detailed message and dispatch of information. A talk-time report alone may not contain all that work."
         ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://focustele.com/pricing/"
+          }
+        ]
       },
       {
-        "title": "Compare dispatch actions and answering usage separately",
+        "title": "Vendor contact is distinct from accepted field work",
         "paragraphs": [
-          "Ask how the written quote counts incoming calls, outgoing attempts, message delivery and any integration work. Identify the records that show each attempted and completed handoff. Published uptime or savings claims should not be converted into contractual terms without confirmation."
+          "Focus separately describes vendor dispatch under client instructions and software integration. A property-maintenance office should distinguish attempting vendor contact from receiving an accepted assignment. Pricing should identify the agent work involved in that configured process.",
+          "Compare an agreed handoff that enters a useful task with a basic message-only service, using the same period and activity definition. The published sample cannot establish which integration or acknowledgment behavior your account will have.",
+          "For an office-defined vendor handoff, record the original request, authorized vendor, attempted contact and the response. Keep “attempted” until the vendor explicitly accepts the next action under your rules. If no acknowledgment arrives, return the unresolved task to the office’s escalation owner. This is a proposed acceptance flow, not verified Focus account behavior."
         ],
-        "items": []
-      },
-      {
-        "title": "Inspect an unacknowledged vendor request",
-        "paragraphs": [
-          "Use a fictional maintenance request with no response from the first approved vendor. Review the fallback, the office record and the statement made to the caller. The request should remain visibly unresolved until an authorized recipient accepts the next action.",
-          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
-        ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://focustele.com/"
+          }
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "Does a vendor contact mean a technician is on the way?",
-        "a": "No. Keep attempted notification, acknowledged assignment and attendance commitments as separate states."
+        "q": "Is a Focus billing period the same as a calendar month?",
+        "a": "The reviewed page says 28 days."
       },
       {
-        "q": "Is this a provider endorsement or performance test?",
-        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+        "q": "Are its two samples just different minute allowances?",
+        "a": "No. The page associates them with different complexity and task scope; obtain a quote for the actual configuration."
       }
     ],
-    "takeaway": "Use the documented scope and the observed handoff to evaluate Focus Answering Service for your office.",
+    "takeaway": "Focus’s meaningful comparison requires period, agent work and service complexity to be held constant.",
     "sourcePaths": [
+      "https://focustele.com/pricing/",
       "https://focustele.com/"
     ],
     "related": [
@@ -19920,68 +20171,83 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Never published. Thin public service detail and inconsistent Golden Touch/Golden Voice naming require identity and service-scope clarification before an independent buying guide.",
+      "at": "2026-10-22",
+      "batchId": "2026-10-22-substantive-provider-revision"
+    }
   },
   {
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "answer-america-service",
-    "title": "AnswerAmerica: review prepaid call credits and balance",
-    "description": "Evaluate AnswerAmerica’s prepaid answering model for a home-service office, focusing on chargeable calls, account balance and the scope of message taking.",
+    "title": "AnswerAmerica: prepaid credits and chargeable call types",
+    "description": "Review AnswerAmerica’s $1.47 call credits, $50 minimum purchase, chargeable hangups and inactivity terms for a low-volume home-service office.",
     "navigationLabel": "AnswerAmerica",
     "eyebrow": "Provider buying guide",
-    "lead": "Evaluate AnswerAmerica’s prepaid answering model for a home-service office, focusing on chargeable calls, account balance and the scope of message taking.",
-    "intro": "Evaluate AnswerAmerica’s prepaid answering model for a home-service office, focusing on chargeable calls, account balance and the scope of message taking. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+    "lead": "AnswerAmerica prices credits per call rather than minute. A low-volume buyer must also consider minimum funding, call types and account inactivity.",
+    "intro": "AnswerAmerica prices credits per call rather than minute. A low-volume buyer must also consider minimum funding, call types and account inactivity. Published by Revo. Official information checked October 22, 2026.",
     "sections": [
       {
-        "title": "What the public offer establishes",
+        "title": "Purchase size and call usage are separate numbers",
         "paragraphs": [
-          "AnswerAmerica’s terms describe advance payment and optional balance-triggered payments. They also state that calls including hangups, wrong numbers and marketing calls consume a credit under the stated March 2026 rule. Read the current terms with the applicable price page; a no-monthly-minimum headline is not a complete usage budget."
+          "The pricing page shows $1.47 per call, falling to $1.14 on larger packages, with a $50 minimum credit purchase and no monthly service fee. It also lists a minimum call-volume condition of one call per month. Do not assume the lowest package rate applies to a $50 purchase."
         ],
         "items": [],
         "sources": [
           {
-            "label": "AnswerAmerica official information reviewed October 22, 2026",
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://answeramerica.com/price-page/"
+          }
+        ]
+      },
+      {
+        "title": "Not every chargeable call is a potential job",
+        "paragraphs": [
+          "The terms state that all calls consume one credit, including hangups, wrong numbers and marketing calls under the stated March 2026 rule. They describe advance payment, optional minimum-balance funding and a contract ending at zero balance or after more than 30 days without call traffic. Resolve applicability and current terms before subscribing.",
+          "For a fencing contractor, classify actual incoming contacts before estimating credits. A budget based only on usable estimate inquiries would miss chargeable non-sales contacts. Per-call billing is not interchangeable with a competitor’s minute bundle."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
             "href": "https://answeramerica.com/terms-conditions/"
           }
         ]
       },
       {
-        "title": "Estimate credits from the calls that would be charged",
+        "title": "The balance is an operational control",
         "paragraphs": [
-          "A small fencing contractor may receive new estimates, existing-customer calls and unrelated marketing calls on the same number. Review the actual mix before projecting prepaid usage. A business should not use only completed sales inquiries as the denominator when the service’s chargeable-call definition is broader.",
-          "Keep responsibility for the balance with a named account owner. Ask what the caller reaches if service cannot continue and what alerts the office receives. Do not assume a payment automation removes the need to monitor the service or reconcile a disputed interaction."
+          "Name the office role that monitors credits and the destination callers reach if service stops. Optional automatic funding can reduce manual top-ups, but it does not explain disputes, inactivity treatment or what data the business can retrieve.",
+          "Separately verify what the answering staff may do with a fence-estimate inquiry. A call credit establishes a billing event; it does not establish technical qualification, a visit or a booked job."
         ],
-        "items": []
-      },
-      {
-        "title": "Reconcile the plan, terms and funding rule",
-        "paragraphs": [
-          "Ask for the current credit price, any quantity conditions and the treatment of remaining funds. Confirm how optional automatic funding is configured before deciding whether to use it. This guide does not interpret refund or cancellation rights; unresolved agreement questions need qualified review."
-        ],
-        "items": []
-      },
-      {
-        "title": "Check the message-taking scope independently of credits",
-        "paragraphs": [
-          "Use a fictional fence-estimate inquiry to review which details are gathered and how the owner receives them. Determine whether the selected service only relays the request or supports another agreed action. A per-call price does not establish appointment booking or technical qualification.",
-          "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
-        ],
-        "items": []
+        "items": [],
+        "sources": [
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://answeramerica.com/price-page/"
+          },
+          {
+            "label": "Official source reviewed October 22, 2026",
+            "href": "https://answeramerica.com/terms-conditions/"
+          }
+        ]
       }
     ],
     "faqs": [
       {
-        "q": "Do only useful sales calls consume credits?",
-        "a": "The cited terms explicitly include several other call types. Confirm the current chargeable-call definition before calculating a budget."
+        "q": "Does every call use a credit?",
+        "a": "The reviewed terms explicitly include hangups, wrong numbers and marketing calls."
       },
       {
-        "q": "Is this a provider endorsement or performance test?",
-        "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+        "q": "Is occasional use free of inactivity conditions?",
+        "a": "No. The published pricing and terms include activity-related conditions that a very low-volume office should resolve."
       }
     ],
-    "takeaway": "Use the documented scope and the observed handoff to evaluate AnswerAmerica for your office.",
+    "takeaway": "AnswerAmerica should be assessed as a funded per-call service with explicit activity and balance responsibilities.",
     "sourcePaths": [
+      "https://answeramerica.com/price-page/",
       "https://answeramerica.com/terms-conditions/"
     ],
     "related": [
@@ -20068,7 +20334,12 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Never published. Service-category list and starting headline lack sufficient current billing and implementation detail for the proposed standalone evaluation.",
+      "at": "2026-10-22",
+      "batchId": "2026-10-22-substantive-provider-revision"
+    }
   },
   {
     "template": "workflow",
@@ -20142,7 +20413,12 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Never published. Reviewed public description is too generic to support a differentiated evaluation; no sufficient current model/terms evidence.",
+      "at": "2026-10-22",
+      "batchId": "2026-10-22-substantive-provider-revision"
+    }
   },
   {
     "template": "workflow",
@@ -20216,6 +20492,11 @@
       "kind": "manual",
       "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "withdrawn",
+    "withdrawal": {
+      "reason": "Never published. Query action answering service does not uniquely identify Action Telephone Exchange; entity and intent attribution unverified.",
+      "at": "2026-10-22",
+      "batchId": "2026-10-22-substantive-provider-revision"
+    }
   }
 ]
