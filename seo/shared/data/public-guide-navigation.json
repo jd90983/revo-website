@@ -823,5 +823,130 @@
     "slug": "compare/revo-vs-avoca",
     "label": "Provider comparison",
     "template": "workflow"
+  },
+  {
+    "slug": "email-answering-service",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "live-chat-answering-service",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "sms-answering-service",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "selective-call-forwarding",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "call-forwarding-cost",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "answering-service-contract-checklist",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "switch-answering-service",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "dedicated-vs-shared-answering",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "responsive-answering-service",
+    "label": "Provider buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "call-experts-answering-service",
+    "label": "Provider buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "pcmsi-answering-service",
+    "label": "Provider buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "advanced-answering-service",
+    "label": "Provider buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "business-connections-answering-service",
+    "label": "Provider buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "focus-answering-service",
+    "label": "Provider buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "answer-america-service",
+    "label": "Provider buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "call-forwarding-troubleshooting",
+    "label": "Find the failed call path",
+    "template": "workflow"
+  },
+  {
+    "slug": "disaster-recovery-answering-service",
+    "label": "Continuity during a phone outage",
+    "template": "workflow"
+  },
+  {
+    "slug": "multi-location-answering-service-pricing",
+    "label": "Compare the quote across branches",
+    "template": "workflow"
+  },
+  {
+    "slug": "call-center-service-level",
+    "label": "Answer-time measurement",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/ring-group-vs-call-queue",
+    "label": "Office phone configuration",
+    "template": "workflow"
+  },
+  {
+    "slug": "answering-service-conversion-rate-comparison",
+    "label": "Buying with your own evidence",
+    "template": "workflow"
+  },
+  {
+    "slug": "google-voice-auto-attendant-cost",
+    "label": "Google Voice buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "simultaneous-call-capacity",
+    "label": "Capacity for separate conversations",
+    "template": "workflow"
+  },
+  {
+    "slug": "appointment-waitlist",
+    "label": "Filling an earlier opening",
+    "template": "workflow"
+  },
+  {
+    "slug": "call-and-text-forwarding",
+    "label": "Number compatibility and migration",
+    "template": "workflow"
   }
 ]

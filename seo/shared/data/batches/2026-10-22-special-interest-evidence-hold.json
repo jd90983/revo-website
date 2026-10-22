@@ -1,0 +1,14 @@
+{
+  "batchId": "2026-10-22-special-interest-evidence-hold",
+  "source": {
+    "kind": "manual",
+    "reference": "Independent editorial review reports four-week versus monthly billing conflict; current linked signup observation did not reproduce four-week wording. Exclude pending exact source reconciliation; never published."
+  },
+  "operations": [
+    {
+      "op": "withdraw",
+      "slug": "special-interest-answering-service",
+      "reason": "Never published. HOLD: reviewer reports four-week signup billing, while direct browser reading of the currently linked signup on 2026-10-22 shows monthly/month-to-month cards only. Need exact discrepant source or screenshot before writing the billing comparison or requesting human approval."
+    }
+  ]
+}

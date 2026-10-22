@@ -1,0 +1,323 @@
+{
+  "batchId": "2026-10-22-editorial-metadata-corrections",
+  "source": {
+    "kind": "manual",
+    "reference": "Independent editorial QA: replace four incomplete descriptions with complete sentences; drafts remain unapproved."
+  },
+  "operations": [
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "sms-answering-service",
+        "title": "SMS answering service: who handles the next reply?",
+        "navigationLabel": "SMS answering",
+        "description": "Compare two-way SMS answering with missed-call texts and phone answering. Define who handles incoming replies for your home-service business.",
+        "eyebrow": "Home-service buying guide",
+        "lead": "Assess two-way SMS answering for home-service inquiries, separating incoming text coverage from notifications, missed-call messages and phone conversations.",
+        "intro": "Assess two-way SMS answering for home-service inquiries, separating incoming text coverage from notifications, missed-call messages and phone conversations. Published by Revo. The scenarios below are planning examples, not measured customer results.",
+        "sections": [
+          {
+            "title": "Start with the customer’s incoming text",
+            "paragraphs": [
+              "Two-way SMS answering covers a written exchange, not just a notification. Answering Service Care describes live handling of customer texts as a separate service. Its description supports that distinction; it does not establish delivery guarantees, universal number compatibility or a native Revo SMS inbox."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Primary source reviewed October 22, 2026",
+                "href": "https://answeringservicecare.com/services/live-sms-answering/"
+              }
+            ]
+          },
+          {
+            "title": "Give the second message an owner",
+            "paragraphs": [
+              "An electrician may receive a text asking whether an appointment can move to Friday. An automated acknowledgment can confirm receipt, but the next reply may ask which window is available. Assign who reads that reply, what schedule information they can use and how they report a final decision to the office.",
+              "Separate the customer’s proposed time from an accepted appointment. Where the handler cannot update the calendar, the useful outcome is a clearly assigned scheduling request. Do not let a friendly text imply that a crew has been committed."
+            ],
+            "items": []
+          },
+          {
+            "title": "Check number access and thread continuity",
+            "paragraphs": [
+              "Ask whether the existing business number can support the proposed messaging arrangement and what changes are required. Voice forwarding alone does not prove that incoming texts reach the answering team. Review how a thread follows a customer who later calls, how staff take over and who can see earlier messages.",
+              "If the service supports images or links, decide how those are reviewed and stored. A customer’s photo can document what they sent; it should not authorize an unqualified handler to assess safety, diagnose equipment or promise a price."
+            ],
+            "items": []
+          },
+          {
+            "title": "Verify coverage with a conversational test",
+            "paragraphs": [
+              "Use a fictional multi-message exchange with a delayed reply, a schedule question and a request outside the approved script. Check who is assigned at each stage and what happens after coverage ends. Discuss required messaging rules with the service owner before enabling a live channel.",
+              "Revo lists SMS follow-up; that alone does not verify two-way inbound SMS answering."
+            ],
+            "items": [
+              "Document hours for reading replies, not only sending messages.",
+              "Identify which actions need office approval.",
+              "Keep missed-call automation separate from incoming text coverage."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does a missed-call text prove that replies are handled?",
+            "a": "No. Confirm who receives the reply and how it becomes an assigned conversation."
+          },
+          {
+            "q": "Does call forwarding forward text messages too?",
+            "a": "Do not assume so. Verify the voice and messaging arrangements separately with the responsible providers."
+          }
+        ],
+        "takeaway": "An SMS service is useful when someone owns the conversation after the first outgoing message.",
+        "sourcePaths": [
+          "https://answeringservicecare.com/services/live-sms-answering/"
+        ],
+        "related": [
+          "missed-call-text-back",
+          "appointment-booking",
+          "call-routing",
+          "choose-virtual-receptionist"
+        ],
+        "source": {
+          "kind": "manual",
+          "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "central-messaging-answering-service",
+        "title": "Central Messaging: review message delivery and check-in",
+        "description": "Review Central Messaging’s delivery options, on-call instructions and billing questions for a home-service office.",
+        "navigationLabel": "Central Messaging",
+        "eyebrow": "Provider buying guide",
+        "lead": "Evaluate Central Messaging for home-service message taking by checking delivery destinations, on-call instructions and the office’s responsibility after receipt.",
+        "intro": "Evaluate Central Messaging for home-service message taking by checking delivery destinations, on-call instructions and the office’s responsibility after receipt. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+        "sections": [
+          {
+            "title": "What the public offer establishes",
+            "paragraphs": [
+              "Central Messaging’s official pages describe live answering, message delivery to cell phones or pagers and on-call schedule capabilities. Its FAQ says it can serve businesses across the US. Confirm the current service and supported delivery methods for your account rather than treating an older page as an account-specific commitment."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Central Messaging official information reviewed October 22, 2026",
+                "href": "https://phonemessagingservice.com/answering_service_faq.html"
+              }
+            ]
+          },
+          {
+            "title": "Assign the message before choosing its destination",
+            "paragraphs": [
+              "A small garage-door business might send new estimate inquiries to the owner but route questions about a booked visit to its scheduler. Identify the responsible role before choosing text, email or another delivery method. A notification sent to a personal device can be delivered successfully while its owner is off duty.",
+              "Write a rule for an unanswered or unacknowledged message. Specify who checks pending requests and how another staff member takes over. Do not treat the existence of an on-call schedule as evidence that someone has accepted a customer’s request."
+            ],
+            "items": []
+          },
+          {
+            "title": "Clarify the message and call units",
+            "paragraphs": [
+              "Ask for the current plan documents, the definition of a chargeable interaction and any charges for notification or additional attempts. Confirm how the office can retrieve the underlying record and compare it with an invoice. Do not infer today’s price from a referral credit or an old promotion."
+            ],
+            "items": []
+          },
+          {
+            "title": "Follow one request from caller to office",
+            "paragraphs": [
+              "Use a fictional booked-visit question and trace the greeting, recorded details, delivery recipient and final owner. Review a second case when the intended recipient is away. The important outcome is an assigned next action, not merely a notification appearing on a phone.",
+              "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is a delivered message the same as an acknowledged request?",
+            "a": "No. Define who confirms receipt and who follows up with the customer when a message still needs office action."
+          },
+          {
+            "q": "Is this a provider endorsement or performance test?",
+            "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+          }
+        ],
+        "takeaway": "Use the documented scope and the observed handoff to evaluate Central Messaging for your office.",
+        "sourcePaths": [
+          "https://phonemessagingservice.com/answering_service_faq.html"
+        ],
+        "related": [
+          "choose-virtual-receptionist",
+          "answering-service-cost",
+          "call-quality-monitoring",
+          "compare/ai-vs-live-receptionist"
+        ],
+        "source": {
+          "kind": "manual",
+          "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "compare/auto-attendant-vs-receptionist",
+        "title": "Auto attendant vs virtual receptionist for home services",
+        "navigationLabel": "Auto attendant vs receptionist",
+        "description": "Compare auto attendants and virtual receptionists for home-service calls: menu routing, request capture, staffing and fallback responsibilities.",
+        "eyebrow": "Home-service buying guide",
+        "lead": "Compare an auto attendant with a virtual receptionist by the work the caller needs completed: choosing a destination, explaining a request or reaching staff.",
+        "intro": "Compare an auto attendant with a virtual receptionist by the work the caller needs completed: choosing a destination, explaining a request or reaching staff. Published by Revo. The scenarios below are planning examples, not measured customer results.",
+        "sections": [
+          {
+            "title": "Compare an interaction, not just an answering label",
+            "paragraphs": [
+              "Microsoft documents an auto attendant as directing callers through configured menu input to people, queues or other destinations. That describes a menu-based routing role. A receptionist conversation can instead gather a request under the business’s instructions. Neither label alone proves that a job was booked or a problem resolved."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Primary source reviewed October 22, 2026",
+                "href": "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-plan-overview"
+              }
+            ]
+          },
+          {
+            "title": "Use a request that does not fit a neat department",
+            "paragraphs": [
+              "Imagine a homeowner who says the previous repair is still causing trouble and asks whether someone can return. A short menu can offer a route for existing customers. Someone at the destination still needs to understand the request, connect it with the prior job and decide the next action.",
+              "A conversational service may collect those details before handoff if its setup supports that work. Evaluate the exact result: caller reached a person, request recorded, callback assigned or appointment confirmed. These outcomes are not interchangeable."
+            ],
+            "items": []
+          },
+          {
+            "title": "Account for staff who receive the call",
+            "paragraphs": [
+              "A well-written menu can still send a caller to a team that is unavailable. Draw the path for a wrong selection, no selection, an unanswered destination and a closed office. Keep the fallback short enough that a caller is not repeatedly sent through the same choices.",
+              "For a business with a staffed scheduling desk, routing may be sufficient for some calls. For an owner working in the field, another route to the owner’s unanswered phone may leave the original problem unsolved. Choose based on who can act after the route completes."
+            ],
+            "items": []
+          },
+          {
+            "title": "Evaluate a combined arrangement only where supported",
+            "paragraphs": [
+              "A menu and an answering service can serve different parts of one call path, but compatibility must be confirmed. Ask who owns the greeting, hours, destination changes and failure handling. Review a normal request and an exception without assuming that one system has access to another system’s calendar.",
+              "Revo’s answering offer does not establish a native configurable phone menu."
+            ],
+            "items": [
+              "Menu selection is a routing event.",
+              "Request capture is an intake result.",
+              "An accepted booking needs supported scheduling authority."
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does an auto attendant require keypad input?",
+            "a": "Not always. Some systems accept configured spoken choices. Check the exact product rather than assuming a free-form receptionist conversation."
+          },
+          {
+            "q": "Which option is better for a small contractor?",
+            "a": "Use the caller tasks and actual staffing. A menu can organize destinations; conversational handling may help gather requests when staff cannot answer."
+          }
+        ],
+        "takeaway": "Choose the arrangement that completes the caller’s next useful step and has a supported fallback.",
+        "sourcePaths": [
+          "https://learn.microsoft.com/en-us/microsoftteams/aa-cq-plan-overview"
+        ],
+        "related": [
+          "ivr-system-cost",
+          "call-routing",
+          "call-queue",
+          "compare/virtual-receptionist-vs-answering-service"
+        ],
+        "source": {
+          "kind": "manual",
+          "reference": "Primary public documentation reviewed 2026-10-22; ten distinct buyer and operating decisions drafted for human editorial review. (batch 2026-10-22-distinct-buyer-drafts)"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "focus-answering-service",
+        "title": "Focus Answering: review contractor escalation protocols",
+        "description": "Evaluate Focus Answering Service for contractor calls, vendor notifications and acknowledgment of requests that still need staff action.",
+        "navigationLabel": "Focus Answering Service",
+        "eyebrow": "Provider buying guide",
+        "lead": "Review Focus Answering Service for a home-service office by separating intake, vendor contact and the acknowledgment needed before staff treat a request as assigned.",
+        "intro": "Review Focus Answering Service for a home-service office by separating intake, vendor contact and the acknowledgment needed before staff treat a request as assigned. Published by Revo. Primary public sources reviewed October 22, 2026. Scenarios are illustrative, not customer results or hands-on provider tests.",
+        "sections": [
+          {
+            "title": "What the public offer establishes",
+            "paragraphs": [
+              "Focus lists phone answering, after-hours dispatch, vendor dispatch and software integration, alongside contractor industries. It describes contacting vendors under client instructions. These claims identify options to evaluate; they do not establish an emergency response guarantee, a specific integration or a verified result for your account."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Focus Answering Service official information reviewed October 22, 2026",
+                "href": "https://focustele.com/"
+              }
+            ]
+          },
+          {
+            "title": "Define what contacting a vendor accomplishes",
+            "paragraphs": [
+              "A property-maintenance contractor might need a subcontractor contacted about an approved job. Record the job reference, permitted information and person who can authorize additional work. Sending a message to a vendor is not evidence that the vendor accepted the assignment or agreed to attend.",
+              "Specify the acknowledgment the office needs and who reviews an unanswered contact. Keep the escalation list current when vendor coverage changes. A handler should not improvise an alternative contractor or authorize a fee simply because the first destination is unavailable."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare dispatch actions and answering usage separately",
+            "paragraphs": [
+              "Ask how the written quote counts incoming calls, outgoing attempts, message delivery and any integration work. Identify the records that show each attempted and completed handoff. Published uptime or savings claims should not be converted into contractual terms without confirmation."
+            ],
+            "items": []
+          },
+          {
+            "title": "Inspect an unacknowledged vendor request",
+            "paragraphs": [
+              "Use a fictional maintenance request with no response from the first approved vendor. Review the fallback, the office record and the statement made to the caller. The request should remain visibly unresolved until an authorized recipient accepts the next action.",
+              "Compare the agreed work with Revo’s current Services and Pricing. Confirm the exact setup before assuming the two offers cover the same responsibilities."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does a vendor contact mean a technician is on the way?",
+            "a": "No. Keep attempted notification, acknowledged assignment and attendance commitments as separate states."
+          },
+          {
+            "q": "Is this a provider endorsement or performance test?",
+            "a": "No. It separates the reviewed public description from the account-specific questions a home-service buyer needs to resolve."
+          }
+        ],
+        "takeaway": "Use the documented scope and the observed handoff to evaluate Focus Answering Service for your office.",
+        "sourcePaths": [
+          "https://focustele.com/"
+        ],
+        "related": [
+          "choose-virtual-receptionist",
+          "answering-service-cost",
+          "call-quality-monitoring",
+          "compare/ai-vs-live-receptionist"
+        ],
+        "source": {
+          "kind": "manual",
+          "reference": "Official provider information reviewed 2026-10-22; fifteen distinct named-provider buying guides drafted for human editorial review. (batch 2026-10-22-provider-buyer-drafts)"
+        }
+      }
+    }
+  ]
+}
