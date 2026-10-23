@@ -1,0 +1,202 @@
+{
+  "batchId": "2026-10-23-reception-document-wording",
+  "source": {
+    "kind": "manual",
+    "reference": "Clarify service enrollment document wording during draft validation; primary sources unchanged."
+  },
+  "operations": [
+    {
+      "op": "update",
+      "record": {
+        "slug": "reception247-answering-service",
+        "template": "workflow",
+        "pricingVariant": "full",
+        "title": "Reception247: plans, rounded minutes and contractor intake",
+        "navigationLabel": "Reception247",
+        "description": "Review Reception247 Answer Pro and Total Assistant Pro plans, per-call minute rounding, transfer fees and published contractor scheduling support.",
+        "eyebrow": "Reception247 buying guide",
+        "lead": "Choose the task first, then reconcile rounded minutes and transfers.",
+        "intro": "Reception247 publishes two US plan families with different tasks and minute allowances. A contractor evaluating the service should separate message collection from transferring a caller or writing into a scheduling system. This guide reviews public sources as of October 23, 2026; it is not an account test.",
+        "sections": [
+          {
+            "title": "Choose message intake or the additional assistant tasks.",
+            "paragraphs": [
+              "The US pricing page describes Answer Pro as collecting caller details and a reason for calling, with portal messages and email or text delivery. Total Assistant Pro adds transfers, scheduling/calendar integration and CRM/custom forms. Its listed transfer charge is $0.25 per transferred call.",
+              "For your office, define what the receptionist may finish. Receiving an estimate request can end with a message for follow-up. Confirming a visit requires authority over the schedule and a usable appointment slot. Put those outcomes in separate acceptance tests rather than assuming that every captured request is a booking."
+            ],
+            "items": [
+              "Message test: can the office identify the caller’s request and follow-up details?",
+              "Transfer test: what happens when the approved recipient does not answer?",
+              "Scheduling test: does the agreed workflow create the intended calendar record?"
+            ],
+            "sources": [
+              {
+                "label": "Reception247 US pricing; reviewed October 23, 2026",
+                "href": "https://www.reception247.com/en-US/pricing"
+              }
+            ]
+          },
+          {
+            "title": "Check the bill using rounded calls, not aggregate seconds.",
+            "paragraphs": [
+              "Reception247’s terms measure receptionist minutes as time spent handling calls, including contacting staff during a transfer. They exclude after-call administration such as writing an emailed note. Incoming and outgoing calls are each rounded upward to a whole minute. The terms also state that displayed pricing assumes autopay enrollment.",
+              "Illustrative reconciliation only: suppose there are two separate calls, each lasting 40 seconds, with no additional handling time. Each rounds to one minute, producing two billable minutes from 80 seconds of conversation. Adding seconds first and rounding the combined duration would not follow the published per-call rule.",
+              "If both illustrative minutes fall within the plan allowance, they consume two included minutes. If the full allowance was already used before these calls, two Answer Pro 25-minute-plan overage minutes would cost 2 × $1.69 = $3.38. On a Total Assistant Pro plan, one transferred call would add the listed $0.25 transfer charge if applicable; any additional agent handling time must also be reconciled. These are declared examples, not actual usage or a complete invoice."
+            ],
+            "items": [
+              "Compare individual call records with rounded billable minutes.",
+              "Identify which minutes remain included and which are excess.",
+              "Reconcile transferred-call count separately from handling duration."
+            ],
+            "sources": [
+              {
+                "label": "Reception247 billing terms; reviewed October 23, 2026",
+                "href": "https://www.reception247.com/en-US/terms"
+              },
+              {
+                "label": "Reception247 rates and transfer charge; reviewed October 23, 2026",
+                "href": "https://www.reception247.com/en-US/pricing"
+              }
+            ]
+          },
+          {
+            "title": "Verify the contractor workflow in the actual account.",
+            "paragraphs": [
+              "The contractor page advertises appointment handling, tailored scripts, custom information collection and familiarity with ServiceTitan, Housecall Pro and Workiz. The pricing page names Calendly, HubSpot and Salesforce as examples in the higher plan family. These are published scope statements, not evidence that a particular customer account or workflow has been configured and tested.",
+              "Bring one representative request and the office’s actual rules to onboarding. Specify whether the receptionist should collect information, request a callback, propose a time or create a confirmed appointment. Check the destination record and notification against that instruction. A familiar software name does not identify which fields, permissions or actions are supported.",
+              "For a requested transfer, the FAQ describes voicemail as an option when staff are unavailable. Confirm the chosen fallback for your account and identify who reviews the resulting message. Do not tell callers that an attempted connection guarantees a conversation with the contractor."
+            ],
+            "items": [
+              "Scheduling: verify work type, duration, service area and the permitted calendar action.",
+              "CRM/forms: verify required fields and where the submitted record appears.",
+              "Unavailable staff: verify the message destination and follow-up owner."
+            ],
+            "sources": [
+              {
+                "label": "Reception247 contractor service; reviewed October 23, 2026",
+                "href": "https://www.reception247.com/en-US/service-contractors-answering-service"
+              },
+              {
+                "label": "Reception247 FAQ; reviewed October 23, 2026",
+                "href": "https://www.reception247.com/en-US/faq"
+              }
+            ]
+          },
+          {
+            "title": "Leave onboarding with a scope and billing decision.",
+            "paragraphs": [
+              "The FAQ describes typical setup as the same day or within 24 hours, with complex needs handled separately. Treat that as the provider’s general description, not a guaranteed ready-to-route deadline for a custom scheduling or CRM arrangement.",
+              "The pricing page advertises monthly plan changes or cancellation without penalty or fees. Its linked Terms of Use separately refer to Terms and Conditions of Supply for service-specific provisions. Obtain the applicable enrollment and supply documents before relying on a complete billing or cancellation arrangement; the website terms are not necessarily the whole service agreement.",
+              "Finish with a written selection: plan family, included minutes, excess-minute rate, transfer charging, approved tasks and tested fallback. Review actual rounded usage after launch before changing allowances. A cheaper base subscription can describe a different task scope rather than the same service at a lower total cost."
+            ],
+            "items": [
+              "Retain the applicable plan and billing documents with their review date.",
+              "Record any unresolved setup, calendar or CRM question explicitly.",
+              "Route customer calls only after the agreed outcomes are verified."
+            ],
+            "sources": [
+              {
+                "label": "Reception247 setup FAQ; reviewed October 23, 2026",
+                "href": "https://www.reception247.com/en-US/faq"
+              },
+              {
+                "label": "Reception247 monthly-plan description; reviewed October 23, 2026",
+                "href": "https://www.reception247.com/en-US/pricing"
+              },
+              {
+                "label": "Reception247 website and supply terms distinction; reviewed October 23, 2026",
+                "href": "https://www.reception247.com/en-US/terms"
+              }
+            ]
+          }
+        ],
+        "overviewTable": {
+          "caption": "Published US plans reviewed October 23, 2026; billable minutes are rounded per call",
+          "columns": [
+            "Plan family",
+            "Monthly price",
+            "Included minutes",
+            "Additional minute",
+            "Transferred call"
+          ],
+          "rows": [
+            [
+              "Answer Pro",
+              "$39",
+              "25",
+              "$1.69",
+              "Not listed as an Answer Pro feature"
+            ],
+            [
+              "Answer Pro",
+              "$75",
+              "50",
+              "$1.65",
+              "Not listed as an Answer Pro feature"
+            ],
+            [
+              "Answer Pro",
+              "$289",
+              "200",
+              "$1.55",
+              "Not listed as an Answer Pro feature"
+            ],
+            [
+              "Total Assistant Pro",
+              "$99",
+              "50",
+              "$1.99",
+              "$0.25"
+            ],
+            [
+              "Total Assistant Pro",
+              "$349",
+              "200",
+              "$1.85",
+              "$0.25"
+            ],
+            [
+              "Total Assistant Pro",
+              "$499",
+              "300",
+              "$1.75",
+              "$0.25"
+            ]
+          ],
+          "sources": [
+            {
+              "label": "Reception247 US pricing; reviewed October 23, 2026",
+              "href": "https://www.reception247.com/en-US/pricing"
+            }
+          ]
+        },
+        "faqs": [
+          {
+            "q": "How do two separate 40-second calls affect the minute allowance?",
+            "a": "Under the published per-call rounding rule, each uses one billable minute: two minutes total. That is an illustration with no additional handling time, not a customer invoice."
+          },
+          {
+            "q": "Does the contractor page prove my scheduling integration works?",
+            "a": "No. It publishes supported service categories and software familiarity. Verify the agreed action, permissions and resulting record in your configured workflow before relying on it."
+          },
+          {
+            "q": "Are transfer time and the per-transfer charge the same thing?",
+            "a": "No. The terms count agent handling time, including contacting staff during a transfer, as receptionist minutes. Total Assistant Pro pricing separately lists $0.25 per transferred call; confirm how the account applies both items."
+          }
+        ],
+        "takeaway": "Match the plan to the task and verify the bill at the individual-call level.",
+        "sourcePaths": [
+          "https://www.reception247.com/en-US/pricing",
+          "https://www.reception247.com/en-US/terms",
+          "https://www.reception247.com/en-US/service-contractors-answering-service",
+          "https://www.reception247.com/en-US/faq"
+        ],
+        "related": [
+          "answering-service-cost",
+          "appointment-booking",
+          "compare/warm-vs-cold-transfer"
+        ]
+      }
+    }
+  ]
+}

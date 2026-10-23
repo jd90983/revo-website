@@ -603,5 +603,123 @@
       "added appointment-waitlist as draft",
       "added call-and-text-forwarding as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-23-four-distinct-drafts",
+    "batchHash": "sha256:534a087e8e817eceb7ec08a52d507cae9f888e9004b79f45d8cbe5f4d86f7322",
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-23; four distinct guides prepared as drafts for human editorial review."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "added vonage-virtual-receptionist-setup as draft",
+      "added 8x8-virtual-receptionist as draft",
+      "added reception247-answering-service as draft",
+      "added customer-service-call-log as draft"
+    ]
+  },
+  {
+    "batchId": "2026-10-23-reception-document-wording",
+    "batchHash": "sha256:abafde7e52705726d8be2a91899159b19639af5a225f75a67770bf000b5b00c0",
+    "source": {
+      "kind": "manual",
+      "reference": "Clarify service enrollment document wording during draft validation; primary sources unchanged."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "updated reception247-answering-service; back to draft until re-approved"
+    ]
+  },
+  {
+    "batchId": "2026-10-23-editorial-procedure-and-ledger",
+    "batchHash": "sha256:fc9446dcdd477e4cf381e1afef7ac66d4f4b9ea9d50fac5d4dc57f4b2e4c79dc",
+    "source": {
+      "kind": "manual",
+      "reference": "Editorial corrections: verified Vonage setup sequence; original call ledger with separate technical/business outcomes and reproducible latest-action projection. No human approval recorded."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "updated vonage-virtual-receptionist-setup; back to draft until re-approved",
+      "updated customer-service-call-log; back to draft until re-approved"
+    ]
+  },
+  {
+    "batchId": "2026-10-23-sameday-four-distinct-expansion",
+    "batchHash": "sha256:bbcbfcbae391ac48d9b6c86c2a87cf9a6e7b57ff157aa7d0d20c513489742431",
+    "source": {
+      "kind": "manual",
+      "reference": "Primary provider documentation checked 2026-10-23; four differentiated service-comparison and coverage-planning drafts. Demand evidence retained privately; no human approval recorded."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "added compare/pest-control-answering-services as draft",
+      "added compare/lead-qualification-receptionists as draft",
+      "added compare/hvac-plumbing-ai-answering as draft",
+      "added plan-24-7-phone-coverage as draft"
+    ]
+  },
+  {
+    "batchId": "2026-10-23-coverage-future-review-times",
+    "batchHash": "sha256:4d2e18f48f295d4f1d2a1a2c357e530853dd4cea6f56403f0c97051441babfa6",
+    "source": {
+      "kind": "manual",
+      "reference": "Editorial correction: interval-common review times use first weekday08/12/18 review at or after interval end; CSV regression test added. No approval recorded."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "updated plan-24-7-phone-coverage; back to draft until re-approved"
+    ]
+  },
+  {
+    "batchId": "2026-10-23-servicetitan-confirm-permission",
+    "batchHash": "sha256:bad0339bd70c6c78bd7f3a93317f7db4712975530537a93a172ca9064fd884d8",
+    "source": {
+      "kind": "manual",
+      "reference": "Factual table correction verified against ServiceTitan Basic Phones/Phones Pro FAQ: reschedule permission governs confirmation; cancellation separate. No approval recorded."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "updated compare/hvac-plumbing-ai-answering; back to draft until re-approved"
+    ]
+  },
+  {
+    "batchId": "2026-10-23-approved-additional-nine",
+    "batchHash": "sha256:1395947ce0c54581548bcef6f8ac5bcd55e974f8e78d95f4cff500b0686c2d4b",
+    "source": {
+      "kind": "manual",
+      "reference": "Nine public articles and three original companion resources reviewed and approved by Jorge on2026-10-23. Exact public copy SHA256 preserved; structured rendering only."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "added compare/24-7-live-receptionist-services as draft",
+      "added compare/receptionist-appointment-management as draft",
+      "added compare/contractor-on-call-answering-services as draft",
+      "added centralized-scheduling-integration as draft",
+      "added google-local-services-ads-answering as draft",
+      "added answering-service-payment-collection as draft",
+      "added ai-receptionist-knowledge-base as draft",
+      "added ai-for-home-services-workflows as draft",
+      "added compare/build-vs-buy-ai-receptionist as draft"
+    ]
+  },
+  {
+    "batchId": "2026-10-23-approved-final-eight",
+    "batchHash": "sha256:3c6ab9b999bd0540160dcb4823b373ec734e498adf2dae5d39d7a016d9eb203c",
+    "source": {
+      "kind": "manual",
+      "reference": "Eight public articles and four original companion resources approved by Jorge at2026-10-23T19:52:45Z; bundle was created before approval and retains its original pending provenance. Exact public copy SHA256 preserved; structured rendering only."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "added breezy-ai-receptionist as draft",
+      "added netic-for-contractors as draft",
+      "added skipcalls-ai-receptionist-pricing as draft",
+      "added ooma-receptionist-options as draft",
+      "added callers-ai-pricing as draft",
+      "added my-receptionist-pricing as draft",
+      "added gohighlevel-ai-receptionist-pricing as draft",
+      "added lower-answering-service-cost as draft"
+    ]
   }
 ]

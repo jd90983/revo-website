@@ -1,0 +1,294 @@
+{
+  "batchId": "2026-10-23-editorial-procedure-and-ledger",
+  "source": {
+    "kind": "manual",
+    "reference": "Editorial corrections: verified Vonage setup sequence; original call ledger with separate technical/business outcomes and reproducible latest-action projection. No human approval recorded."
+  },
+  "operations": [
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "vonage-virtual-receptionist-setup",
+        "title": "Vonage virtual receptionist setup: menus and exceptions",
+        "navigationLabel": "Vonage receptionist setup",
+        "description": "Set up a Vonage virtual receptionist with the right administrator, no-input action and schedule priority, then test the actual caller path.",
+        "eyebrow": "Vonage Business Communications setup",
+        "lead": "Configure the menu, its schedule and the caller who presses nothing.",
+        "intro": "Vonage calls this feature a Virtual Receptionist: an automated menu that routes calls using configured schedules. This guide concerns that menu system, not a conversational AI service that collects a home-service request. The setup below combines documented controls with a proposed acceptance test for an office administrator.",
+        "sections": [
+          {
+            "title": "Create the receptionist and save its general settings.",
+            "paragraphs": [
+              "An authorized Super User or Account Administrator uses the Admin Portal, not the mobile app. In Virtual Receptionist, select Add New. Complete General Settings: name, extension, applicable location, associated telephone number and No Caller Input Handling; click Save.",
+              "Before editing an existing setup, record which public business number should reach this menu and how it currently behaves. Have the authorized administrator confirm the selected account and receptionist. Do not create a second menu merely because an employee cannot find the first one in the mobile app."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Vonage Virtual Receptionist: access and general settings — reviewed October 23, 2026",
+                "href": "https://businesssupport.vonage.com/articles/answer/Virtual-Receptionist-1110"
+              }
+            ]
+          },
+          {
+            "title": "Choose the no-input result before polishing the greeting.",
+            "paragraphs": [
+              "For no input, set the wait, repeats and final action. Outside-line forwarding is documented at $0.03/minute, with international rates applicable.",
+              "For a proposed repair-office menu, write the action beside each announced key. Then write the outcome for a caller who makes no selection. Read the recording against that map: if it promises that the office will receive a message, the configured result must actually reach the intended mailbox. A greeting alone does not create that delivery path."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Vonage no-input and call-flow controls — reviewed October 23, 2026",
+                "href": "https://businesssupport.vonage.com/articles/answer/Virtual-Receptionist-1110"
+              }
+            ]
+          },
+          {
+            "title": "Add the schedule and call flow, then finish and save.",
+            "paragraphs": [
+              "Under Schedules and Call Flows, select Add New. Name the schedule; choose All Day or Specify Hours and Dates, recurrence and ending. Select Next or Call Flow. Apply an available shared flow, or name a new flow, choose Live Operator settings, routing behavior and greeting. Click Done. If applicable, edit After Hours Schedule through its three-dot menu and configure that flow; click Save. Controls verified October 23, 2026 against the article updated April 15, 2026.",
+              "Use one concrete exception to check the design. Suppose an office closes for a team meeting while its normal weekday hours remain open. Identify the exception schedule, its intended end and the flow it should select. If an operator-first attempt is used, observe whether the menu resumes when that person does not answer. These are proposed tests, not evidence that any particular account is already configured."
+            ],
+            "items": [
+              "General settings alone leave an incomplete receptionist inactive.",
+              "Always in Front overrides other schedules.",
+              "Keep Try Live Operator First shorter than voicemail interception."
+            ],
+            "sources": [
+              {
+                "label": "Vonage schedules and operator-first behavior — reviewed October 23, 2026",
+                "href": "https://businesssupport.vonage.com/articles/answer/Virtual-Receptionist-1110"
+              }
+            ]
+          },
+          {
+            "title": "Accept the changed route with a short call record.",
+            "paragraphs": [
+              "Choose a provider-supported test method and an agreed window. With consenting test callers, call the associated business number and record the expected schedule, greeting, key selected and final endpoint. Include a call with no input and an unanswered operator-first attempt if that option is enabled.",
+              "Have the administrator compare the result with the saved design before directing customer traffic to a new route. Preserve the previous settings and the account-specific restoration instructions. After an exception ends, confirm that the normal flow resumes and that no temporary announcement remains in the caller path."
+            ],
+            "items": [
+              "Record the receptionist and schedule names in the test notes.",
+              "Treat an unanswered destination separately from a menu selection that worked."
+            ],
+            "sources": []
+          }
+        ],
+        "overviewTable": {
+          "caption": "Proposed Vonage acceptance record — use authorized test callers and the exact account configuration",
+          "columns": [
+            "Case",
+            "Expected behavior to write down",
+            "Observation needed"
+          ],
+          "rows": [
+            [
+              "Public number called",
+              "Correct Virtual Receptionist and normal schedule",
+              "Greeting and final endpoint"
+            ],
+            [
+              "Caller presses an announced key",
+              "Destination listed in the approved menu map",
+              "Actual extension, mailbox or outside number reached"
+            ],
+            [
+              "Caller gives no input",
+              "Configured wait, repeats and final action",
+              "Result after the final permitted attempt"
+            ],
+            [
+              "Operator-first destination does not answer",
+              "Configured attempt ends and the intended flow continues",
+              "Whether another feature intercepted the call"
+            ],
+            [
+              "Temporary schedule ends",
+              "Normal schedule and call flow resume",
+              "Normal greeting and route restored"
+            ]
+          ]
+        },
+        "faqs": [
+          {
+            "q": "Can an employee edit the Virtual Receptionist from the Vonage mobile app?",
+            "a": "Use the portal workflow above with the authorized account administrator; this guide does not provide mobile editing instructions."
+          },
+          {
+            "q": "Does the name Virtual Receptionist mean it collects service requests conversationally?",
+            "a": "This documented feature is an automated menu and routing system. A separate service’s ability to collect a request should be evaluated separately."
+          },
+          {
+            "q": "Why test a caller who presses nothing?",
+            "a": "That caller follows the configured no-input path. Testing only a successful menu selection leaves that outcome unchecked."
+          }
+        ],
+        "takeaway": "Accept the Vonage setup when the called number, no-input action, schedule exception and operator-first outcome match the approved design.",
+        "sourcePaths": [
+          "https://businesssupport.vonage.com/articles/answer/Virtual-Receptionist-1110"
+        ],
+        "related": [
+          "call-routing",
+          "after-hours",
+          "call-forwarding-troubleshooting"
+        ]
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "customer-service-call-log",
+        "title": "Customer service call log: template and worked reconciliation",
+        "navigationLabel": "Call log template",
+        "description": "Use a blank call log template and a worked example to reconcile call events, repeat contacts, request ownership and the action still waiting for your office.",
+        "eyebrow": "One row per call event",
+        "lead": "Keep the telephone event and the service request as separate records.",
+        "intro": "A useful call log preserves each call while showing which calls belong to the same request. Use the blank CSV and fictional worked example below to create an event ledger your office can reconcile. Four calls can represent two requests, one new inquiry and one existing-job question. This original template does not establish a Revo export, integration or booking feature.",
+        "overviewTable": {
+          "caption": "Worked example: fictional records from the downloadable event ledger",
+          "columns": [
+            "Event / time",
+            "Request",
+            "Direction and purpose",
+            "Observed result",
+            "Next action"
+          ],
+          "rows": [
+            [
+              "EX-E01 /09:00",
+              "EX-R01",
+              "Inbound; new service inquiry",
+              "Request received",
+              "EX-A01 open snapshot"
+            ],
+            [
+              "EX-E02 /09:10",
+              "EX-R01",
+              "Outbound about the same request",
+              "No answer",
+              "EX-A01 later open snapshot"
+            ],
+            [
+              "EX-E03 /09:20",
+              "EX-R01",
+              "Inbound reply about the same request",
+              "Confirmed in fictional calendar CAL01",
+              "EX-A01 closed by EX-E03; CAL01 evidence"
+            ],
+            [
+              "EX-E04 /09:25",
+              "EX-R02",
+              "Inbound; question about existing job EX-J02",
+              "Follow-up pending",
+              "EX-A02 open; coordinator due 10:00"
+            ]
+          ]
+        },
+        "sections": [
+          {
+            "title": "Copy the blank ledger without inventing customer records",
+            "paragraphs": [
+              "Download the header-only CSV. Keep one row per telephone event with event_id and request_id; timestamps and timezone; direction and authorized customer/job references; request_type; connection_result; request_outcome; and action snapshots: action_id, action_state, action_updated_at, closed_by_event_id, next_action, action_owner, due_at and evidence_reference. Use references instead of copying unnecessary personal details.",
+              "event_id identifies the particular call; request_id links related contacts about the same work. A repeated phone number alone is insufficient evidence of a shared request. When the relationship is uncertain, retain the call event with an unresolved request reference and send it for office review. Do not merge it merely to make the counts look tidy.",
+              "Record timestamps with an offset and the operating time zone. due_at belongs to the next action; it is not the call time. Leave job_reference empty if no job exists yet. The worked example uses the local time zone America/Tijuana and deliberately fictional EX-prefixed identifiers."
+            ],
+            "items": [
+              "Keep stable event IDs from the source system where available; document any assigned substitute IDs.",
+              "connection_result records technical connection (connected or no_answer here); request_outcome records the business result (such as appointment_confirmed). Neither substitutes for action_state.",
+              "Use the authoritative scheduler or job record to confirm a result; a note saying booking requested is insufficient."
+            ],
+            "sources": [
+              {
+                "label": "Download blank call-log CSV; original Revo worksheet",
+                "href": "https://www.revoapp.ai/ai-answering-service/assets/templates/call-log-blank-2cfced3f7bd5.csv"
+              },
+              {
+                "label": "Download fictional worked-example CSV",
+                "href": "https://www.revoapp.ai/ai-answering-service/assets/templates/call-log-worked-example-917eda685b68.csv"
+              }
+            ]
+          },
+          {
+            "title": "Reconcile four events into two requests",
+            "paragraphs": [
+              "EX-E01 opens EX-A01 for EX-R01. EX-E02 records no_answer and a later open snapshot of EX-A01, not another lead. EX-E03 records connected and appointment_confirmed, supported by fictional calendar CAL01. Its EX-A01 snapshot is closed and names EX-E03 in closed_by_event_id. Earlier open snapshots remain unchanged as history. This scheduling closure does not establish completed field work.",
+              "EX-E04 belongs to EX-R02 and an existing job, EX-J02. The call was answered, but the customer’s job question still needs a coordinator. Answered therefore does not mean resolved. Keep that next action assigned to the Example coordinator, with its own due time.",
+              "The resulting reconciliation is four distinct call events, two service requests, one new-service inquiry, one confirmed appointment and one existing-job question awaiting follow-up. These are counts from the fictional file, not customer results, a conversion benchmark or a causal comparison of services.",
+              "Reconstruct the current action list by deduplicating identical event_id rows; flag conflicting versions for review. Group snapshots by action_id and select the greatest action_updated_at after parsing its offset. If equal timestamps disagree, stop for review rather than selecting arbitrarily. Keep only latest snapshots with action_state open. Never sum historical open snapshots. A later reopening requires an appended snapshot with a later timestamp and evidence; preserve the prior events."
+            ],
+            "items": [
+              "Check event IDs first: importing the same EX-E02 twice must not create a fifth real call.",
+              "Check request links second: three contacts about EX-R01 remain three events attached to one request.",
+              "Latest EX-A01 snapshot: EX-E03, closed, no due action. Latest EX-A02 snapshot: EX-E04, open, Example coordinator due 10:00. Exactly one action remains open."
+            ]
+          },
+          {
+            "title": "Check the source view before copying a report",
+            "paragraphs": [
+              "Housecall Pro’s July 16, 2026 Call Log Guide distinguishes missed, answered inbound, outbound and voicemail views. It says its emailed CSV export follows the current view and applied filters and is limited to 5,000 calls. Those documented product rules were reviewed October 23, 2026. They do not describe every provider’s export or a Revo capability.",
+              "A filtered export can be correct and still omit the events needed for reconciliation. Record the selected view, date range, time zone, filters and export time beside the saved file. Compare a small known set with the source log. If the system creates separate transfer legs, ask what each identifier represents before deciding whether two rows are duplicate events.",
+              "Import original source data into a preserved copy before mapping it into this template. Keep a stable import reference. Correct a mistaken request link with a dated explanation rather than erasing the original telephone event. This preserves the difference between a data correction and a call that did not occur."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Housecall Pro Call Log Guide; reviewed October 23, 2026",
+                "href": "https://help.housecallpro.com/en/articles/8345671-voice-overview-page-call-log-guide"
+              }
+            ]
+          },
+          {
+            "title": "Close the office action with evidence, not a cleared badge",
+            "paragraphs": [
+              "Reconstruct the latest snapshot per action_id before reviewing due actions. Preserve every historical event. For a closed action, closed_by_event_id identifies its closing event and evidence_reference identifies the supporting record. Earlier owners and due times remain history, not current assignments.",
+              "A read or played message is not, on its own, a completed customer response. Housecall Pro’s guide says viewing missed-call details or playing a voicemail affects its badge count. That is a useful example of why an interface notification and the underlying office task need separate checks.",
+              "Use the blank CSV as an operating template, not a replacement for the authoritative customer, job or calendar system. Before storing real records, apply your business’s existing access and retention arrangements. Reconcile the next-action list with those source systems at the review interval your office actually uses."
+            ],
+            "items": [
+              "Pending inquiry: identify the person responsible and the next permitted action.",
+              "Completed scheduling action: link to the actual confirmation record.",
+              "Existing-job question: preserve the job reference and the unresolved request even after the call ends."
+            ],
+            "sources": [
+              {
+                "label": "Housecall Pro badge behavior; reviewed October 23, 2026",
+                "href": "https://help.housecallpro.com/en/articles/8345671-voice-overview-page-call-log-guide"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Why keep both an event ID and a request ID?",
+            "a": "An event ID distinguishes each call. A request ID links related contacts about the same work. In the example, three different events link to EX-R01 without becoming three new inquiries."
+          },
+          {
+            "q": "What is the outstanding action after the four example calls?",
+            "a": "The latest EX-A01 snapshot is EX-E03 (closed); the latest EX-A02 snapshot is EX-E04 (open). Only EX-A02 remains due, assigned to the Example coordinator. Earlier open EX-A01 snapshots remain history. Field work completion is not established."
+          },
+          {
+            "q": "Does the template import directly into Revo or Housecall Pro?",
+            "a": "No integration is asserted. This is a neutral CSV ledger. Map only fields supported by your authorized source system and preserve the original export."
+          }
+        ],
+        "takeaway": "Preserve every real call event, link it to the right request and close only the action supported by an office record.",
+        "sourcePaths": [
+          "https://help.housecallpro.com/en/articles/8345671-voice-overview-page-call-log-guide",
+          "Original blank template CSV sha256:2cfced3f7bd56537ffd4c891b88ed4289376e6d5ddcfefad35d0bfff8514ba3a",
+          "Original fictional worked example CSV sha256:917eda685b68cfeadb06588e42c0d09144a9be776c5c40dfbad2f22f67aa8fb6"
+        ],
+        "related": [
+          "call-disposition",
+          "ai-call-summary",
+          "first-call-resolution",
+          "answering-service-conversion-rate-comparison"
+        ]
+      }
+    }
+  ]
+}

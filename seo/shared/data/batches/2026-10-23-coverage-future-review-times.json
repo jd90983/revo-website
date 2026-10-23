@@ -1,0 +1,169 @@
+{
+  "batchId": "2026-10-23-coverage-future-review-times",
+  "source": {
+    "kind": "manual",
+    "reference": "Editorial correction: interval-common review times use first weekday08/12/18 review at or after interval end; CSV regression test added. No approval recorded."
+  },
+  "operations": [
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "plan-24-7-phone-coverage",
+        "title": "Plan 24/7 phone coverage: shifts, peaks and backup owners",
+        "navigationLabel": "Plan 24/7 phone coverage",
+        "description": "Build a weekly phone-coverage plan with time windows, peak triggers, absence backups and accountable follow-up, using a blank CSV and fictional week.",
+        "eyebrow": "A weekly coverage operating plan",
+        "lead": "Account for every interval and test the person or service expected to answer.",
+        "intro": "Planning 24/7 phone coverage requires an assignment for every time window, a response to peaks and an owner when someone is absent. Use the downloadable templates to turn those decisions into a weekly plan. The example is fictional and all its rows are planned, not verified. It is not a recommended headcount or proof of any provider’s uptime.",
+        "sections": [
+          {
+            "title": "Measure demand by interval before assigning the week",
+            "paragraphs": [
+              "Collect your own call arrivals and handling time by interval, including simultaneous demand, unanswered calls and work performed after the conversation. Separate new requests from existing-customer work. A monthly total cannot show whether a quiet night and a short morning burst need different handling.",
+              "Amazon Connect’s documentation distinguishes forecasting contact volume and handle time, capacity planning and individual scheduling. Its time-zone documentation also distinguishes forecast/download time zones. Those product concepts inform the planning questions here; neither Amazon scheduling nor workforce automation is asserted as a Revo feature.",
+              "Use one explicit operating time zone and dates in your worksheet. Choose interval lengths that expose your observed peaks. The example uses four six-hour blocks only to illustrate the assignment ledger; split those blocks where your records show a peak, break, training session or change of owner. The grid is not a staffing calculation."
+            ],
+            "items": [
+              "Record the source period, interval, time zone and omitted call types alongside the demand data.",
+              "Confirm team availability rather than deriving staffing solely from answered-call averages."
+            ],
+            "sources": [
+              {
+                "label": "Amazon Connect forecasting, capacity and scheduling concepts",
+                "href": "https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html"
+              },
+              {
+                "label": "Amazon Connect forecast and download time zones",
+                "href": "https://docs.aws.amazon.com/connect/latest/adminguide/set-forecast-timezone.html"
+              }
+            ]
+          },
+          {
+            "title": "Fill the coverage ledger and keep verification separate",
+            "paragraphs": [
+              "The blank CSV contains headers only. The fictional example contains 28 rows for October 26–November 1, 2026 in America/Phoenix, using start-inclusive/end-exclusive hours from 0 to 24. It assigns example roles, never real employees or contact information. Four rows cover each calendar day; the hours add to 168 for that seven-day example, which does not claim the same total for every time zone or daylight-saving week.",
+              "Each row identifies the primary answerer, a backup, the unavailable-primary rule, an office-defined peak trigger and peak owner, an authorized urgent-escalation role, the routine-review time and owner, and verification evidence/status. The next routine-review time concerns office follow-up; it is not the time that calls begin to be answered. In this fictional policy, office reviews occur Monday–Friday at 08:00, 12:00 and 18:00. routine_review_at is the first such review at or after the end of the entire row interval, not the review following only its first call. Thus weekday 00–06 goes to 08:00 that same day; 06–12 goes to 12:00; 12–18 goes to 18:00; and overnight/weekend work waits until the next applicable review. Adjust that stated policy to your actual team before use.",
+              "Check that each day starts at 0, ends at 24 and has no overlap or gap. Then confirm the named roles correspond to contracted or scheduled coverage. Keep status planned_not_verified until an authorized test and evidence support a verified state. A filled cell alone does not prove someone will answer."
+            ],
+            "items": [
+              "Replace every EX-role with a confirmed responsibility before operational use.",
+              "Do not fill an unknown backup with the primary person under a different label.",
+              "Keep field-service escalation separate from the service or person answering the phone.",
+              "Require routine_review_at to be at least the interval end for every row; then confirm it is the first available review under the declared policy."
+            ],
+            "sources": [
+              {
+                "label": "Download blank coverage CSV; original worksheet",
+                "href": "https://www.revoapp.ai/ai-answering-service/assets/templates/phone-coverage-blank-33941c68850d.csv"
+              },
+              {
+                "label": "Download fictional seven-day example",
+                "href": "https://www.revoapp.ai/ai-answering-service/assets/templates/phone-coverage-fictional-week-c201501d111c.csv"
+              }
+            ]
+          },
+          {
+            "title": "Resolve a peak and an absence in the same interval",
+            "paragraphs": [
+              "Worked planning example: Tuesday’s 12–18 block names the office as primary. A team training session from 13–14 means that label is insufficient. Split it into 12–13, 13–14 and 14–18. For 13–14, name the confirmed backup as primary, its separate fallback, the same business instruction version and the office person who will review resulting requests. Keep the original plan as a dated prior version.",
+              "Now suppose observed arrivals show a burst during 14–15. Split that interval again if needed. Define the trigger from the system you actually use, such as an agreed queue condition or unavailable primary, and identify who activates extra coverage and who returns the normal route. Do not assume software removes concurrent-call limits or that an on-call technician can simultaneously answer every overflow call.",
+              "If no backup is confirmed, mark that interval unresolved and do not describe the plan as reliable 24/7 coverage. Change the assignment or the public expectation before relying on it. This example concerns responsibility and switching, not employment-law advice or a prescribed shift pattern.",
+              "The revised-example CSV implements those Tuesday splits: 12–13, 13–14, 14–15 and 15–18 replace the original 12–18 row. It has 31 rows, still covering 168 hours without overlaps. The training interval names a replacement primary and a different secondary backup. All rows remain planned_not_verified; role acceptance and tests are still required. Each split row uses the first scheduled office review at or after its own end; the training and peak rows therefore point to Tuesday 18:00 in this example."
+            ],
+            "items": [
+              "Primary absent: replace the interval assignment, confirm fallback and record acceptance.",
+              "Peak active: record the trigger, activation owner, capacity evidence and return-to-normal step.",
+              "Routine backlog: confirm a review owner and time even when the answering layer remains available."
+            ],
+            "sources": [
+              {
+                "label": "Download revised fictional week: training and peak intervals",
+                "href": "https://www.revoapp.ai/ai-answering-service/assets/templates/phone-coverage-fictional-exceptions-4423558c34ff.csv"
+              }
+            ]
+          },
+          {
+            "title": "Accept coverage at handoffs, not only during normal hours",
+            "paragraphs": [
+              "Use consenting test callers in an approved window; this article reports no calls actually placed. Test just before and after a handoff, an unavailable primary, an unavailable escalation contact, and an office-defined peak condition through a provider-supported method. Record expected answerer, actual endpoint, business instruction version, result and evidence reference.",
+              "Have the next owner acknowledge the handoff and inspect the first pending request. Where a provider answers continuously, test the change in business instructions and recipients as well as the connection. Phone answering, acceptance by an on-call employee and the next routine office review are three different responsibilities.",
+              "Review the plan when demand or availability changes. Keep a version, effective date, decision owner and restoration instructions so a temporary absence route does not become permanent by accident. The worksheet is neutral; it does not implement routing, schedule employees or establish a Revo integration."
+            ],
+            "items": [
+              "Treat planned, tested and unresolved intervals as different statuses.",
+              "Check business and provider schedules against holidays and the selected time zone.",
+              "Do not claim a coverage test measures long-term uptime or search-engine indexing."
+            ],
+            "sources": []
+          }
+        ],
+        "overviewTable": {
+          "caption": "Decisions the weekly plan must make — original operating worksheet, not recommended staffing",
+          "columns": [
+            "Situation",
+            "Assignment to record",
+            "Evidence before relying on it"
+          ],
+          "rows": [
+            [
+              "Normal interval",
+              "Primary answerer plus independent backup",
+              "Schedule/contract and authorized route test"
+            ],
+            [
+              "Office training or absence",
+              "Replacement interval owner and fallback",
+              "Acceptance by replacement; saved effective period"
+            ],
+            [
+              "Observed peak",
+              "Activation trigger, extra-capacity owner, restoration step",
+              "Provider-supported capacity evidence and test"
+            ],
+            [
+              "Urgent request",
+              "Authorized escalation role and unavailable-contact path",
+              "Recipient/fallback test; no implied dispatch"
+            ],
+            [
+              "Routine follow-up",
+              "Office review time and named owner",
+              "Acknowledged pending-request handoff"
+            ]
+          ]
+        },
+        "faqs": [
+          {
+            "q": "Does 168 hours mean one employee can cover the week?",
+            "a": "No. It is the duration of the fictional seven-day grid in America/Phoenix. The role assignments do not calculate headcount, shift suitability or simultaneous capacity."
+          },
+          {
+            "q": "Is a filled weekly grid proof of 24/7 coverage?",
+            "a": "No. Confirm the underlying schedules, provider scope, independent backups and route tests. The example deliberately remains planned_not_verified."
+          },
+          {
+            "q": "How is this different from an after-hours script?",
+            "a": "It assigns coverage across the full week, including open-office peaks, absences and changes of owner. The separate after-hours guide helps define what callers are told when the office is closed."
+          }
+        ],
+        "related": [
+          "after-hours",
+          "overflow-answering",
+          "dedicated-vs-shared-answering",
+          "simultaneous-call-capacity"
+        ],
+        "sourcePaths": [
+          "https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html",
+          "https://docs.aws.amazon.com/connect/latest/adminguide/set-forecast-timezone.html",
+          "Original blank coverage template sha256:33941c68850d62d2c966ff7d1daf8b26878efc9f5c1c81cf3a2fd854a5956930",
+          "Original fictional seven-day coverage example sha256:c201501d111cc9055ff7f2b6e2b74f33057ac6429fc90466a5f73cdd376aed34",
+          "Original fictional revised week with training and peak sha256:4423558c34ff5cb550bfa999826b9e60e930c73cb0f8d753851bf6ae4b9422a1"
+        ],
+        "takeaway": "Publish the coverage promise only after each interval has a confirmed answerer, a fallback and tested handoff ownership.",
+        "editorialDate": "2026-10-23"
+      }
+    }
+  ]
+}

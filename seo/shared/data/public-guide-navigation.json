@@ -948,5 +948,130 @@
     "slug": "call-and-text-forwarding",
     "label": "Number compatibility and migration",
     "template": "workflow"
+  },
+  {
+    "slug": "vonage-virtual-receptionist-setup",
+    "label": "Vonage Business Communications setup",
+    "template": "workflow"
+  },
+  {
+    "slug": "8x8-virtual-receptionist",
+    "label": "Identify the 8x8 feature first",
+    "template": "workflow"
+  },
+  {
+    "slug": "reception247-answering-service",
+    "label": "Reception247 buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "customer-service-call-log",
+    "label": "One row per call event",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/pest-control-answering-services",
+    "label": "Pest-control service shortlist",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/lead-qualification-receptionists",
+    "label": "Compare the qualification handoff",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/hvac-plumbing-ai-answering",
+    "label": "HVAC and plumbing buying matrix",
+    "template": "workflow"
+  },
+  {
+    "slug": "plan-24-7-phone-coverage",
+    "label": "A weekly coverage operating plan",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/24-7-live-receptionist-services",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/receptionist-appointment-management",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/contractor-on-call-answering-services",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "centralized-scheduling-integration",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "google-local-services-ads-answering",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "answering-service-payment-collection",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "ai-receptionist-knowledge-base",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "ai-for-home-services-workflows",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/build-vs-buy-ai-receptionist",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "breezy-ai-receptionist",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "netic-for-contractors",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "skipcalls-ai-receptionist-pricing",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "ooma-receptionist-options",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "callers-ai-pricing",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "my-receptionist-pricing",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "gohighlevel-ai-receptionist-pricing",
+    "label": "Home-service operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "lower-answering-service-cost",
+    "label": "Home-service operating guide",
+    "template": "workflow"
   }
 ]

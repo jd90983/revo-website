@@ -1,0 +1,217 @@
+{
+  "batchId": "2026-10-23-servicetitan-confirm-permission",
+  "source": {
+    "kind": "manual",
+    "reference": "Factual table correction verified against ServiceTitan Basic Phones/Phones Pro FAQ: reschedule permission governs confirmation; cancellation separate. No approval recorded."
+  },
+  "operations": [
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "compare/hvac-plumbing-ai-answering",
+        "title": "AI answering for HVAC and plumbing: feature comparison",
+        "navigationLabel": "Compare HVAC/plumbing AI",
+        "description": "Compare AI answering for HVAC and plumbing by job permissions, booking records, existing appointments and the route for urgent or unbooked calls.",
+        "eyebrow": "HVAC and plumbing buying matrix",
+        "lead": "Compare what gets booked, what gets changed and what still needs your dispatcher.",
+        "intro": "Compare ServiceTitan AI Voice Agent, Avoca, Sameday and Rosie against the call operations an HVAC or plumbing office must control. The matrix separates documented functions from account-specific questions. Published by Revo; sources checked October 23, 2026. It is not a test ranking, technical diagnosis guide or guarantee that a technician will be dispatched.",
+        "sections": [
+          {
+            "title": "ServiceTitan Voice Agent: permission and job-type controls",
+            "paragraphs": [
+              "ServiceTitan’s Basic Phones/Phones Pro setup guide, updated October 22, marks the feature Early Access for specific accounts. Booking, rescheduling and cancellation require both the overall capability and the applicable job-type toggle. This is a concrete control to check when plumbing repairs may be booked but installation estimates follow a different policy.",
+              "Its FAQ describes unbooked-call follow-up tags and email summaries. The same FAQ still lists a launch limitation on adding notes, summaries or transcripts to booked job records. Ask the provider to reconcile that limitation for your account rather than assuming a call summary is attached to every booked job. The setup guide directs configuration of Adaptive Capacity; confirm readiness and account eligibility before comparing it as an available option."
+            ],
+            "items": [
+              "Demonstrate an enabled repair job type and a disabled install type.",
+              "Verify reschedule/cancel permission separately from new booking permission."
+            ],
+            "sources": [
+              {
+                "label": "ServiceTitan configuration and eligibility",
+                "href": "https://help.servicetitan.com/docs/configure-your-voice-agent-settings-in-servicetitan"
+              },
+              {
+                "label": "ServiceTitan FAQ and current documented limitations",
+                "href": "https://help.servicetitan.com/docs/ai-voice-agent-for-basic-phones-and-phones-pro-faq"
+              }
+            ]
+          },
+          {
+            "title": "Avoca: compare the job record and CSR handoff",
+            "paragraphs": [
+              "Avoca’s ServiceTitan page describes sending customer details, appointment times, service information, booking source and conversation notes to ServiceTitan. Its inbound page describes contextual escalation to a CSR. Neither description establishes that every account has the same permissions to change or cancel an existing appointment.",
+              "For an HVAC/plumbing evaluation, request the exact record produced for a repair, maintenance visit and estimate. Then ask for an appointment-change case and an integration write failure. Require the proposed scope to identify whether the service changes the record, captures a request or escalates it. A transcript saying “booked” is insufficient if the job did not arrive in the authoritative system."
+            ],
+            "items": [
+              "Check the service type, address and appointment on the actual returned job record.",
+              "Identify the receiving CSR and the fallback when that person is unavailable."
+            ],
+            "sources": [
+              {
+                "label": "Avoca ServiceTitan record contents",
+                "href": "https://www.avoca.ai/integrations/servicetitan"
+              },
+              {
+                "label": "Avoca inbound and contextual handoff",
+                "href": "https://www.avoca.ai/inbound"
+              }
+            ]
+          },
+          {
+            "title": "Sameday: distinguish trade workflow from confirmed field availability",
+            "paragraphs": [
+              "Sameday’s plumbing page describes applying a business’s urgency rules and routing calls to an on-call plumber. Its HVAC page describes service versus maintenance and install workflows. The ServiceTitan integration page documents customer-data synchronization, scheduling/service information and on-call notification.",
+              "Treat those as documented workflow claims to validate with your configured service area, job types and calendar. A water-damage caller may need plumbing intake, restoration or an escalation outside your offered work. Have the business specify that boundary. Do not require the agent to diagnose the cause or treat an urgent label as proof that a qualified technician has accepted the job."
+            ],
+            "items": [
+              "Request the exact trade/job-type mapping and the booking response.",
+              "Show what the caller hears when the requested time is unavailable."
+            ],
+            "sources": [
+              {
+                "label": "Sameday plumbing workflow",
+                "href": "https://sameday.ai/industries/plumbing-industry"
+              },
+              {
+                "label": "Sameday HVAC workflow",
+                "href": "https://sameday.ai/industries/hvac"
+              },
+              {
+                "label": "Sameday ServiceTitan integration",
+                "href": "https://sameday.ai/integration/servicetitan"
+              }
+            ]
+          },
+          {
+            "title": "Rosie: a calendar workflow is a separate buying option",
+            "paragraphs": [
+              "Rosie’s Professional plan sends an appointment link; Scale lists direct calendar booking and warm/live transfers. Growth adds multiple transfer destinations. Those published tier boundaries matter if the office expects an urgent request to reach a person rather than receive a booking link.",
+              "The reviewed pricing evidence does not establish a native ServiceTitan job write or the permission structure above. A supported calendar may be sufficient for estimate requests while the dispatcher creates the final job. If your office needs a service-board record during the call, do not mark a calendar event as equivalent without demonstrating the intervening workflow."
+            ],
+            "items": [
+              "Compare the selected plan and supported calendar, not only the term appointment booking.",
+              "Verify transfer behavior against an unavailable recipient and the selected tier."
+            ],
+            "sources": [
+              {
+                "label": "Rosie scheduling and transfer tier boundaries",
+                "href": "https://heyrosie.com/pricing"
+              }
+            ]
+          },
+          {
+            "title": "Run four call cases against the matrix",
+            "paragraphs": [
+              "These are original proposed acceptance cases, not measured provider results. First, request routine maintenance where availability exists: inspect the stored service type and appointment. Second, change an existing plumbing appointment: verify that the original record changes rather than a duplicate job being created.",
+              "Third, report water entering a room but request work outside the contractor’s scope. Check that the caller’s words and unsupported-work boundary reach the authorized office contact without an invented diagnosis or arrival promise. Fourth, request a fully booked same-day window while the escalation recipient is unavailable. Record the unbooked request, attempted contact, fallback and next owner.",
+              "For each finalist, mark an operation documented, demonstrated on the proposed setup or unverified. Confirm who may accept a job and which hours the field team actually serves. These answering products are not interchangeable with a dispatch commitment; no capabilities of the listed providers are attributed to Revo."
+            ],
+            "items": [
+              "Keep requested time, offered slot and confirmed booking as separate states.",
+              "Ask where unbooked requests are reviewed and who owns them.",
+              "Obtain the current account scope, billing unit and implementation requirements in writing."
+            ],
+            "sources": []
+          }
+        ],
+        "overviewTable": {
+          "caption": "Documented operations for an HVAC/plumbing shortlist — confirm the exact account and configuration",
+          "columns": [
+            "Service",
+            "New job / appointment",
+            "Existing-job changes",
+            "Record evidence",
+            "Escalation / limit"
+          ],
+          "rows": [
+            [
+              "ServiceTitan Voice Agent",
+              "Capabilities plus job-type permission; eligibility applies",
+              "Reschedule permission also governs confirmation; cancellation is separate",
+              "Call records and follow-up; clarify booked-job notes limitation",
+              "Configured rules; Basic Phones/Phones Pro scope"
+            ],
+            [
+              "Avoca",
+              "Documented ServiceTitan booking",
+              "Specific change/cancel scope not established here",
+              "Customer, time, service, source and notes documented",
+              "Contextual CSR handoff; verify no-answer fallback"
+            ],
+            [
+              "Sameday",
+              "Documented trade scheduling and ServiceTitan sync",
+              "Verify the exact operation for the existing job",
+              "Customer and service/scheduling information documented",
+              "On-call routing/notification; field acceptance still required"
+            ],
+            [
+              "Rosie",
+              "Link on Professional; direct calendar on Scale",
+              "Verify supported calendar actions",
+              "Confirm calendar versus service-board record",
+              "Transfers on Scale; waterfall on Growth"
+            ]
+          ],
+          "sources": [
+            {
+              "label": "ServiceTitan settings",
+              "href": "https://help.servicetitan.com/docs/configure-your-voice-agent-settings-in-servicetitan"
+            },
+            {
+              "label": "ServiceTitan FAQ",
+              "href": "https://help.servicetitan.com/docs/ai-voice-agent-for-basic-phones-and-phones-pro-faq"
+            },
+            {
+              "label": "Avoca record",
+              "href": "https://www.avoca.ai/integrations/servicetitan"
+            },
+            {
+              "label": "Sameday integration",
+              "href": "https://sameday.ai/integration/servicetitan"
+            },
+            {
+              "label": "Rosie tiers",
+              "href": "https://heyrosie.com/pricing"
+            }
+          ]
+        },
+        "faqs": [
+          {
+            "q": "Does booking mean a plumber or HVAC technician is dispatched?",
+            "a": "No. Compare the booking record, assignment process and technician acceptance separately. An answering product’s routing claim does not establish field availability."
+          },
+          {
+            "q": "Can an AI call decide the cause of water damage?",
+            "a": "This comparison does not recommend technical diagnosis. Preserve the reported issue and apply the business’s approved service and escalation boundaries."
+          },
+          {
+            "q": "Why compare a calendar product with ServiceTitan booking?",
+            "a": "They may serve different office processes. The matrix makes the output difference explicit so a calendar event is not mistaken for a service-board job."
+          }
+        ],
+        "related": [
+          "plumbing-answering-with-scheduling",
+          "hvac-after-hours-answering",
+          "appointment-booking",
+          "compare/home-services-ai-receptionists"
+        ],
+        "sourcePaths": [
+          "https://help.servicetitan.com/docs/configure-your-voice-agent-settings-in-servicetitan",
+          "https://help.servicetitan.com/docs/ai-voice-agent-for-basic-phones-and-phones-pro-faq",
+          "https://www.avoca.ai/integrations/servicetitan",
+          "https://www.avoca.ai/inbound",
+          "https://sameday.ai/integration/servicetitan",
+          "https://sameday.ai/industries/plumbing-industry",
+          "https://sameday.ai/industries/hvac",
+          "https://heyrosie.com/pricing"
+        ],
+        "takeaway": "Choose against permitted job actions and the resulting record, then verify the exception path.",
+        "editorialDate": "2026-10-23"
+      }
+    }
+  ]
+}

@@ -76,3 +76,11 @@ test('provider comparisons keep existing intent owners and distinguish billing u
  for(const slug of ['ruby-receptionist-pricing','goodcall-pricing','rosie-ai-pricing'])assert.equal(page(slug).publicationStatus,'approved');
  for(const slug of ['compare/revo-vs-ruby','compare/revo-vs-goodcall','compare/revo-vs-rosie'])assert.equal(page(slug),undefined,'do not duplicate an existing buying-intent owner');
 });
+
+test('articles without supplied FAQs do not publish an empty FAQ claim',()=>{
+ for(const p of REVIEW_PAGES.filter(p=>p.markdownArticle)){
+  assert.equal(p.faqs.length,0);const schema=guideStructuredData(p);
+  assert.equal(schema['@type'],'WebPage');assert.ok(!JSON.stringify(schema).includes('FAQPage'));
+  assert.equal(schema.url,'https://www.revoapp.ai/ai-answering-service/'+p.slug);
+ }
+});

@@ -1,0 +1,694 @@
+{
+  "batchId": "2026-10-23-sameday-four-distinct-expansion",
+  "source": {
+    "kind": "manual",
+    "reference": "Primary provider documentation checked 2026-10-23; four differentiated service-comparison and coverage-planning drafts. Demand evidence retained privately; no human approval recorded."
+  },
+  "operations": [
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "compare/pest-control-answering-services",
+        "title": "Best answering services for pest control: compare the work",
+        "navigationLabel": "Compare pest control services",
+        "description": "Compare pest-control answering services by recurring accounts, treatment booking, pest-software access and the exceptions your office must handle.",
+        "eyebrow": "Pest-control service shortlist",
+        "lead": "Choose for an initial treatment, an existing plan and the record each call leaves.",
+        "intro": "For a pest-control company, the best answering service depends on whether it must sell an approved plan, change an existing treatment or only capture a request. This shortlist compares Slingshot, Sameday and Rosie using their own documentation checked October 23, 2026. Published by Revo; no controlled performance tests or universal ranking are claimed.",
+        "sections": [
+          {
+            "title": "Slingshot: pest-trained service across new and existing accounts",
+            "paragraphs": [
+              "Slingshot describes pest-trained agents supported by AI, with sales, scheduling, payment collection and customer support. It names Voice for Pest, PestRoutes, PestPac, ServSuite and Briostack. Its FAQ includes existing-customer calls and outbound payment or rescheduling work; communications and recordings are visible in Central Inbox. Pricing is customized per minute; its stated average onboarding is two to three weeks.",
+              "Shortlist this documented model when your office wants a person to handle account work as well as new inquiries. Before buying, separate permission to collect a payment from permission to change a plan or waive a fee. Ask it to demonstrate your actual software, account permissions and audit trail; the named list does not prove every action in every account."
+            ],
+            "items": [
+              "Quote scope: new sales versus existing-account support, outbound work and minute treatment.",
+              "Demonstration: an existing customer requests a repeat visit under a plan; show the account record and the approval boundary."
+            ],
+            "sources": [
+              {
+                "label": "Slingshot pest-control service and detailed FAQ",
+                "href": "https://getslingshot.com/pest-control/"
+              }
+            ]
+          },
+          {
+            "title": "Sameday: AI treatment and recurring-service workflows",
+            "paragraphs": [
+              "Sameday’s pest-control page describes AI intake by pest and property type, treatment scheduling and recurring-plan offers. It also describes changing an existing recurring appointment and writing the change back to the CRM. These are vendor-described workflows, not observations from our test calls.",
+              "Shortlist it when the desired output is a treatment or recurring-service update in supported software. Ask which operations are enabled for your pest platform and plan. Have it distinguish a first treatment, an inspection and an existing-plan visit: those can require different durations, eligibility and approval. Do not accept a generic calendar event as proof that the correct recurring service was updated."
+            ],
+            "items": [
+              "Verify allowed plan language, service types, area and route availability.",
+              "Request the before-and-after account record for a reschedule, including a failed-write fallback."
+            ],
+            "sources": [
+              {
+                "label": "Sameday pest-control workflows",
+                "href": "https://sameday.ai/industries/pest-control"
+              }
+            ]
+          },
+          {
+            "title": "Rosie: separate message taking from higher-tier scheduling",
+            "paragraphs": [
+              "Rosie has a dedicated pest-control offer. Its pricing distinguishes Professional’s texted appointment link from Scale’s direct calendar booking and warm/live transfers; Growth adds waterfall transfers. The page also lists call summaries, transcripts, recordings and email/text notifications across plans.",
+              "Shortlist this when a documented message or supported calendar workflow meets the requirement. The reviewed pest page does not establish a specific native pest-management integration or recurring-plan amendment. If either is essential, ask for a demonstration and written scope before treating it as included. A transfer attempt also does not establish that an on-call employee accepted the request."
+            ],
+            "items": [
+              "Ask whether a caller receives a link or a confirmed appointment on the selected plan.",
+              "Keep a treatment-specific question pending for the office when it is outside approved instructions."
+            ],
+            "sources": [
+              {
+                "label": "Rosie pest-control offer",
+                "href": "https://heyrosie.com/industries/pest-control"
+              },
+              {
+                "label": "Rosie plan boundaries",
+                "href": "https://heyrosie.com/pricing"
+              }
+            ]
+          },
+          {
+            "title": "Use pest-specific evidence to make the selection",
+            "paragraphs": [
+              "The following is an original proposed evaluation, not a test conducted on these services. Give each finalist the same fictional business rules and compare the delivered records, not its sales language. Supply no real payment or customer data.",
+              "Case A: a new caller describes an unidentified pest at a property outside the service area. Look for the original description, the area decision and an appropriate next step; do not require an automated species identification. Case B: an existing quarterly customer wants a date change. Check the customer match and whether the actual recurring visit changes without creating a second initial treatment.",
+              "Case C: a customer asks whether a repeat visit is included in a plan. The service should use your authorized policy or leave the decision for your office, rather than inventing a warranty. Case D: an urgent-sounding call reaches an unavailable contact. Record the attempted destination, fallback and owner; a transfer is not a treatment commitment."
+            ],
+            "items": [
+              "Mark each required operation demonstrated, documented only or unverified.",
+              "Choose from the finalists that satisfy mandatory account and treatment rules; do not award a winner using undocumented booking-rate claims.",
+              "Confirm billing units, existing-account tasks, setup and exit terms in the written proposal."
+            ],
+            "sources": []
+          }
+        ],
+        "overviewTable": {
+          "caption": "Documented pest-control shortlist — requirement-based choices, not test scores",
+          "columns": [
+            "Service",
+            "Distinct documented work",
+            "Best reason to shortlist",
+            "Must resolve before purchase"
+          ],
+          "rows": [
+            [
+              "Slingshot",
+              "Pest-trained agents; named pest software; existing-account and payment work",
+              "You need staffed account service alongside new sales",
+              "Exact software actions, authorization and per-minute quote"
+            ],
+            [
+              "Sameday",
+              "AI pest/property intake, treatments and recurring reschedules",
+              "You require a supported pest-service record update",
+              "Platform operations, plan amendments and failed-write handling"
+            ],
+            [
+              "Rosie",
+              "Pest answering; plan-specific message, calendar and transfer features",
+              "Message taking or the supported calendar workflow is sufficient",
+              "Specific pest software and recurring-account changes are unverified"
+            ]
+          ],
+          "sources": [
+            {
+              "label": "Slingshot",
+              "href": "https://getslingshot.com/pest-control/"
+            },
+            {
+              "label": "Sameday",
+              "href": "https://sameday.ai/industries/pest-control"
+            },
+            {
+              "label": "Rosie plans",
+              "href": "https://heyrosie.com/pricing"
+            }
+          ]
+        },
+        "faqs": [
+          {
+            "q": "Is this a ranked performance test?",
+            "a": "No. These are documented options organized by the work required. Vendor claims about answering or booking rates were not independently tested."
+          },
+          {
+            "q": "Which option should handle a plan or treatment dispute?",
+            "a": "Confirm the permitted account actions and escalation route. An answering service should not invent an entitlement, treatment recommendation or fee waiver."
+          }
+        ],
+        "related": [
+          "choose-virtual-receptionist",
+          "appointment-booking",
+          "after-hours",
+          "compare/home-services-ai-receptionists"
+        ],
+        "sourcePaths": [
+          "https://getslingshot.com/pest-control/",
+          "https://sameday.ai/industries/pest-control",
+          "https://heyrosie.com/industries/pest-control",
+          "https://heyrosie.com/pricing"
+        ],
+        "takeaway": "Choose the service whose demonstrated account and treatment actions match your pest-control operation.",
+        "editorialDate": "2026-10-23"
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "compare/lead-qualification-receptionists",
+        "title": "Virtual reception services for lead qualification: compare",
+        "navigationLabel": "Compare lead qualification",
+        "description": "Compare receptionist services by qualification rules, rejected and uncertain inquiries, delivered records and the evidence your office needs to act.",
+        "eyebrow": "Compare the qualification handoff",
+        "lead": "Buy a decision trail and usable handoff, not a qualified-lead label.",
+        "intro": "This comparison examines Smith.ai, AnswerConnect and Ruby by how documented screening becomes an office handoff. It covers rule design, delivery and uncertain answers, rather than repeating an intake question list. Published by Revo; official sources checked October 23, 2026. No qualified-lead yield or conversion improvement was measured.",
+        "sections": [
+          {
+            "title": "Smith.ai: explicit screening decisions and a separate intake stage",
+            "paragraphs": [
+              "Smith.ai’s current screening page describes custom criteria, AI-first intake and human escalation for complex situations, with dashboard notes, summaries and call metadata. Its dated March 26, 2025 product announcement describes up to three yes/no qualification questions in addition to location/service screening, with a disqualifying answer ending the call. Confirm current package limits; the older announcement is evidence of that documented design, not a universal limit on all intake today.",
+              "This is a useful candidate when the business wants explicit decision gates. Ask it to show the actual rule order and the record for a rejected caller, not only a successful intake. A vague answer such as “I think the property is in your area” must have a reviewed handling rule; do not silently convert uncertainty into a negative answer. Confirm the human handoff scope and terms for your chosen AI or staffed package."
+            ],
+            "items": [
+              "Request: applied rule version, answer captured, screening decision and exception reason.",
+              "Keep qualification gates separate from the longer intake questions asked after a caller passes."
+            ],
+            "sources": [
+              {
+                "label": "Smith.ai current screening offer",
+                "href": "https://smith.ai/features/lead-screening-intake-service"
+              },
+              {
+                "label": "Dated yes/no qualification announcement",
+                "href": "https://smith.ai/blog/yes-no-custom-qualification-for-ai-receptionist"
+              }
+            ]
+          },
+          {
+            "title": "AnswerConnect: live scripted scoring against your criteria",
+            "paragraphs": [
+              "AnswerConnect’s inbound-sales service describes a team using a scripting tool to score leads against client criteria and customize scripts during setup. Its small-business explanation says receptionists screen using your criteria and send the details afterward. Those descriptions establish a staffed screening model, not a particular home-service scoring formula or a guaranteed qualified lead.",
+              "Shortlist it if a person working from your scoring policy is important. Supply the score inputs, mandatory disqualifiers and the treatment of missing answers. Ask for the exact delivered fields and destination, including the record for an inquiry that fails the score. The reviewed pages do not specify a portable rule-version audit field or your CRM mapping; treat those as demonstration requirements."
+            ],
+            "items": [
+              "Separate mandatory service-area exclusion from a preference such as requested timing.",
+              "Require an unscored or needs-review path when a required answer is unavailable."
+            ],
+            "sources": [
+              {
+                "label": "AnswerConnect inbound sales and scripting",
+                "href": "https://www.answerconnect.com/services/answering-services/inbound-sales"
+              },
+              {
+                "label": "AnswerConnect screening and delivery description",
+                "href": "https://www.answerconnect.com/blog/answerconnect-services/small-business-live-answering-service/"
+              }
+            ]
+          },
+          {
+            "title": "Ruby: configurable information collection with live reception",
+            "paragraphs": [
+              "Ruby documents live receptionists, call handling instructions that can be updated, lead capture and notifications through email, text or its app. Its plan page says the information collected can be customized. These sources do not establish a specific numerical scoring engine or the same automatic rejection behavior as the Smith.ai announcement.",
+              "Shortlist Ruby when live collection and an accountable office decision are more important than a published scoring mechanism. Ask what the receptionist may decide and what remains a message for your team. Demonstrate a caller who changes an answer, an existing customer misidentified as a new prospect and a request needing a specialist; confirm the resulting notification contains the uncertainty rather than an unsupported qualified label."
+            ],
+            "items": [
+              "Confirm the actual questions and call handling update process.",
+              "Request a sample delivered message and prove that the responsible person can retrieve it."
+            ],
+            "sources": [
+              {
+                "label": "Ruby live reception and delivery",
+                "href": "https://www.ruby.com/solutions/live-virtual-receptionists/"
+              },
+              {
+                "label": "Ruby customizable information collection",
+                "href": "https://www.ruby.com/plans-and-pricing/"
+              }
+            ]
+          },
+          {
+            "title": "Compare the same evidence packet from every finalist",
+            "paragraphs": [
+              "Use this original fictional acceptance case: the business serves residential properties in its approved ZIP list and offers plumbing repairs but not restoration work. The caller reports water damage, cannot yet confirm the service address and asks for a repair visit. The correct business decision is not supplied by a vendor’s qualified label: preserve the missing address, the requested work and the boundary between plumbing and restoration for office review.",
+              "Ask each finalist for one example that passes all mandatory rules, one clearly outside the service area and the uncertain example above. Compare the original answers, applied rule version, decision with reason, unresolved field, delivery destination and named follow-up owner. A CRM contact created without those details is a different deliverable from a reviewable screening record.",
+              "Repeat the uncertain case after a documented rule change and check that the new version governs it. This is a proposed evaluation protocol, not a claim that any listed provider already exports every field. Confirm what is included, requires configuration or is unavailable before selecting a plan."
+            ],
+            "items": [
+              "Do not count existing-customer service calls as new qualified prospects.",
+              "Ask how rejected and uncertain inquiries remain available for review.",
+              "A screening decision does not promise a booking, completed job or revenue."
+            ],
+            "sources": []
+          }
+        ],
+        "overviewTable": {
+          "caption": "Qualification service comparison — published mechanisms and unresolved buying requirements",
+          "columns": [
+            "Service",
+            "Documented mechanism",
+            "Documented handoff",
+            "Critical item to demonstrate"
+          ],
+          "rows": [
+            [
+              "Smith.ai",
+              "Custom screening; dated yes/no gate design; AI with human support",
+              "Dashboard notes, summaries and call metadata",
+              "Current limits, rejection record and unknown-answer path"
+            ],
+            [
+              "AnswerConnect",
+              "Live scripted scoring against client criteria",
+              "Screened details sent afterward",
+              "Score inputs, missing-answer treatment and delivery mapping"
+            ],
+            [
+              "Ruby",
+              "Live collection and configurable call instructions",
+              "Email, text or app notifications",
+              "Decision authority and complete uncertain-case message"
+            ]
+          ],
+          "sources": [
+            {
+              "label": "Smith.ai",
+              "href": "https://smith.ai/features/lead-screening-intake-service"
+            },
+            {
+              "label": "AnswerConnect",
+              "href": "https://www.answerconnect.com/services/answering-services/inbound-sales"
+            },
+            {
+              "label": "Ruby",
+              "href": "https://www.ruby.com/solutions/live-virtual-receptionists/"
+            }
+          ]
+        },
+        "faqs": [
+          {
+            "q": "Does qualified mean the caller will buy?",
+            "a": "No. It describes a screening decision under the chosen rules. Availability, follow-up and the customer’s decision remain separate."
+          },
+          {
+            "q": "How should missing answers affect a score?",
+            "a": "Define that with your business before setup. Preserve an unknown value and a needs-review path rather than assuming missing means no."
+          },
+          {
+            "q": "Are all compared services automatic lead-scoring products?",
+            "a": "No. The comparison distinguishes explicit gates, live scripted scoring and configurable live collection. Verify the exact mechanism and output in the proposed package."
+          }
+        ],
+        "related": [
+          "lead-qualification",
+          "choose-virtual-receptionist",
+          "call-quality-monitoring",
+          "answering-service-conversion-rate-comparison"
+        ],
+        "sourcePaths": [
+          "https://smith.ai/features/lead-screening-intake-service",
+          "https://smith.ai/blog/yes-no-custom-qualification-for-ai-receptionist",
+          "https://www.answerconnect.com/services/answering-services/inbound-sales",
+          "https://www.answerconnect.com/blog/answerconnect-services/small-business-live-answering-service/",
+          "https://www.ruby.com/solutions/live-virtual-receptionists/",
+          "https://www.ruby.com/plans-and-pricing/"
+        ],
+        "takeaway": "Select the service that delivers a reviewable decision and assigns the next action under your rules.",
+        "editorialDate": "2026-10-23"
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "compare/hvac-plumbing-ai-answering",
+        "title": "AI answering for HVAC and plumbing: feature comparison",
+        "navigationLabel": "Compare HVAC/plumbing AI",
+        "description": "Compare AI answering for HVAC and plumbing by job permissions, booking records, existing appointments and the route for urgent or unbooked calls.",
+        "eyebrow": "HVAC and plumbing buying matrix",
+        "lead": "Compare what gets booked, what gets changed and what still needs your dispatcher.",
+        "intro": "Compare ServiceTitan AI Voice Agent, Avoca, Sameday and Rosie against the call operations an HVAC or plumbing office must control. The matrix separates documented functions from account-specific questions. Published by Revo; sources checked October 23, 2026. It is not a test ranking, technical diagnosis guide or guarantee that a technician will be dispatched.",
+        "sections": [
+          {
+            "title": "ServiceTitan Voice Agent: permission and job-type controls",
+            "paragraphs": [
+              "ServiceTitan’s Basic Phones/Phones Pro setup guide, updated October 22, marks the feature Early Access for specific accounts. Booking, rescheduling and cancellation require both the overall capability and the applicable job-type toggle. This is a concrete control to check when plumbing repairs may be booked but installation estimates follow a different policy.",
+              "Its FAQ describes unbooked-call follow-up tags and email summaries. The same FAQ still lists a launch limitation on adding notes, summaries or transcripts to booked job records. Ask the provider to reconcile that limitation for your account rather than assuming a call summary is attached to every booked job. The setup guide directs configuration of Adaptive Capacity; confirm readiness and account eligibility before comparing it as an available option."
+            ],
+            "items": [
+              "Demonstrate an enabled repair job type and a disabled install type.",
+              "Verify reschedule/cancel permission separately from new booking permission."
+            ],
+            "sources": [
+              {
+                "label": "ServiceTitan configuration and eligibility",
+                "href": "https://help.servicetitan.com/docs/configure-your-voice-agent-settings-in-servicetitan"
+              },
+              {
+                "label": "ServiceTitan FAQ and current documented limitations",
+                "href": "https://help.servicetitan.com/docs/ai-voice-agent-for-basic-phones-and-phones-pro-faq"
+              }
+            ]
+          },
+          {
+            "title": "Avoca: compare the job record and CSR handoff",
+            "paragraphs": [
+              "Avoca’s ServiceTitan page describes sending customer details, appointment times, service information, booking source and conversation notes to ServiceTitan. Its inbound page describes contextual escalation to a CSR. Neither description establishes that every account has the same permissions to change or cancel an existing appointment.",
+              "For an HVAC/plumbing evaluation, request the exact record produced for a repair, maintenance visit and estimate. Then ask for an appointment-change case and an integration write failure. Require the proposed scope to identify whether the service changes the record, captures a request or escalates it. A transcript saying “booked” is insufficient if the job did not arrive in the authoritative system."
+            ],
+            "items": [
+              "Check the service type, address and appointment on the actual returned job record.",
+              "Identify the receiving CSR and the fallback when that person is unavailable."
+            ],
+            "sources": [
+              {
+                "label": "Avoca ServiceTitan record contents",
+                "href": "https://www.avoca.ai/integrations/servicetitan"
+              },
+              {
+                "label": "Avoca inbound and contextual handoff",
+                "href": "https://www.avoca.ai/inbound"
+              }
+            ]
+          },
+          {
+            "title": "Sameday: distinguish trade workflow from confirmed field availability",
+            "paragraphs": [
+              "Sameday’s plumbing page describes applying a business’s urgency rules and routing calls to an on-call plumber. Its HVAC page describes service versus maintenance and install workflows. The ServiceTitan integration page documents customer-data synchronization, scheduling/service information and on-call notification.",
+              "Treat those as documented workflow claims to validate with your configured service area, job types and calendar. A water-damage caller may need plumbing intake, restoration or an escalation outside your offered work. Have the business specify that boundary. Do not require the agent to diagnose the cause or treat an urgent label as proof that a qualified technician has accepted the job."
+            ],
+            "items": [
+              "Request the exact trade/job-type mapping and the booking response.",
+              "Show what the caller hears when the requested time is unavailable."
+            ],
+            "sources": [
+              {
+                "label": "Sameday plumbing workflow",
+                "href": "https://sameday.ai/industries/plumbing-industry"
+              },
+              {
+                "label": "Sameday HVAC workflow",
+                "href": "https://sameday.ai/industries/hvac"
+              },
+              {
+                "label": "Sameday ServiceTitan integration",
+                "href": "https://sameday.ai/integration/servicetitan"
+              }
+            ]
+          },
+          {
+            "title": "Rosie: a calendar workflow is a separate buying option",
+            "paragraphs": [
+              "Rosie’s Professional plan sends an appointment link; Scale lists direct calendar booking and warm/live transfers. Growth adds multiple transfer destinations. Those published tier boundaries matter if the office expects an urgent request to reach a person rather than receive a booking link.",
+              "The reviewed pricing evidence does not establish a native ServiceTitan job write or the permission structure above. A supported calendar may be sufficient for estimate requests while the dispatcher creates the final job. If your office needs a service-board record during the call, do not mark a calendar event as equivalent without demonstrating the intervening workflow."
+            ],
+            "items": [
+              "Compare the selected plan and supported calendar, not only the term appointment booking.",
+              "Verify transfer behavior against an unavailable recipient and the selected tier."
+            ],
+            "sources": [
+              {
+                "label": "Rosie scheduling and transfer tier boundaries",
+                "href": "https://heyrosie.com/pricing"
+              }
+            ]
+          },
+          {
+            "title": "Run four call cases against the matrix",
+            "paragraphs": [
+              "These are original proposed acceptance cases, not measured provider results. First, request routine maintenance where availability exists: inspect the stored service type and appointment. Second, change an existing plumbing appointment: verify that the original record changes rather than a duplicate job being created.",
+              "Third, report water entering a room but request work outside the contractor’s scope. Check that the caller’s words and unsupported-work boundary reach the authorized office contact without an invented diagnosis or arrival promise. Fourth, request a fully booked same-day window while the escalation recipient is unavailable. Record the unbooked request, attempted contact, fallback and next owner.",
+              "For each finalist, mark an operation documented, demonstrated on the proposed setup or unverified. Confirm who may accept a job and which hours the field team actually serves. These answering products are not interchangeable with a dispatch commitment; no capabilities of the listed providers are attributed to Revo."
+            ],
+            "items": [
+              "Keep requested time, offered slot and confirmed booking as separate states.",
+              "Ask where unbooked requests are reviewed and who owns them.",
+              "Obtain the current account scope, billing unit and implementation requirements in writing."
+            ],
+            "sources": []
+          }
+        ],
+        "overviewTable": {
+          "caption": "Documented operations for an HVAC/plumbing shortlist — confirm the exact account and configuration",
+          "columns": [
+            "Service",
+            "New job / appointment",
+            "Existing-job changes",
+            "Record evidence",
+            "Escalation / limit"
+          ],
+          "rows": [
+            [
+              "ServiceTitan Voice Agent",
+              "Capabilities plus job-type permission; eligibility applies",
+              "Separate confirm/reschedule/cancel controls",
+              "Call records and follow-up; clarify booked-job notes limitation",
+              "Configured rules; Basic Phones/Phones Pro scope"
+            ],
+            [
+              "Avoca",
+              "Documented ServiceTitan booking",
+              "Specific change/cancel scope not established here",
+              "Customer, time, service, source and notes documented",
+              "Contextual CSR handoff; verify no-answer fallback"
+            ],
+            [
+              "Sameday",
+              "Documented trade scheduling and ServiceTitan sync",
+              "Verify the exact operation for the existing job",
+              "Customer and service/scheduling information documented",
+              "On-call routing/notification; field acceptance still required"
+            ],
+            [
+              "Rosie",
+              "Link on Professional; direct calendar on Scale",
+              "Verify supported calendar actions",
+              "Confirm calendar versus service-board record",
+              "Transfers on Scale; waterfall on Growth"
+            ]
+          ],
+          "sources": [
+            {
+              "label": "ServiceTitan settings",
+              "href": "https://help.servicetitan.com/docs/configure-your-voice-agent-settings-in-servicetitan"
+            },
+            {
+              "label": "ServiceTitan FAQ",
+              "href": "https://help.servicetitan.com/docs/ai-voice-agent-for-basic-phones-and-phones-pro-faq"
+            },
+            {
+              "label": "Avoca record",
+              "href": "https://www.avoca.ai/integrations/servicetitan"
+            },
+            {
+              "label": "Sameday integration",
+              "href": "https://sameday.ai/integration/servicetitan"
+            },
+            {
+              "label": "Rosie tiers",
+              "href": "https://heyrosie.com/pricing"
+            }
+          ]
+        },
+        "faqs": [
+          {
+            "q": "Does booking mean a plumber or HVAC technician is dispatched?",
+            "a": "No. Compare the booking record, assignment process and technician acceptance separately. An answering product’s routing claim does not establish field availability."
+          },
+          {
+            "q": "Can an AI call decide the cause of water damage?",
+            "a": "This comparison does not recommend technical diagnosis. Preserve the reported issue and apply the business’s approved service and escalation boundaries."
+          },
+          {
+            "q": "Why compare a calendar product with ServiceTitan booking?",
+            "a": "They may serve different office processes. The matrix makes the output difference explicit so a calendar event is not mistaken for a service-board job."
+          }
+        ],
+        "related": [
+          "plumbing-answering-with-scheduling",
+          "hvac-after-hours-answering",
+          "appointment-booking",
+          "compare/home-services-ai-receptionists"
+        ],
+        "sourcePaths": [
+          "https://help.servicetitan.com/docs/configure-your-voice-agent-settings-in-servicetitan",
+          "https://help.servicetitan.com/docs/ai-voice-agent-for-basic-phones-and-phones-pro-faq",
+          "https://www.avoca.ai/integrations/servicetitan",
+          "https://www.avoca.ai/inbound",
+          "https://sameday.ai/integration/servicetitan",
+          "https://sameday.ai/industries/plumbing-industry",
+          "https://sameday.ai/industries/hvac",
+          "https://heyrosie.com/pricing"
+        ],
+        "takeaway": "Choose against permitted job actions and the resulting record, then verify the exception path.",
+        "editorialDate": "2026-10-23"
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "plan-24-7-phone-coverage",
+        "title": "Plan 24/7 phone coverage: shifts, peaks and backup owners",
+        "navigationLabel": "Plan 24/7 phone coverage",
+        "description": "Build a weekly phone-coverage plan with time windows, peak triggers, absence backups and accountable follow-up, using a blank CSV and fictional week.",
+        "eyebrow": "A weekly coverage operating plan",
+        "lead": "Account for every interval and test the person or service expected to answer.",
+        "intro": "Planning 24/7 phone coverage requires an assignment for every time window, a response to peaks and an owner when someone is absent. Use the downloadable templates to turn those decisions into a weekly plan. The example is fictional and all its rows are planned, not verified. It is not a recommended headcount or proof of any provider’s uptime.",
+        "sections": [
+          {
+            "title": "Measure demand by interval before assigning the week",
+            "paragraphs": [
+              "Collect your own call arrivals and handling time by interval, including simultaneous demand, unanswered calls and work performed after the conversation. Separate new requests from existing-customer work. A monthly total cannot show whether a quiet night and a short morning burst need different handling.",
+              "Amazon Connect’s documentation distinguishes forecasting contact volume and handle time, capacity planning and individual scheduling. Its time-zone documentation also distinguishes forecast/download time zones. Those product concepts inform the planning questions here; neither Amazon scheduling nor workforce automation is asserted as a Revo feature.",
+              "Use one explicit operating time zone and dates in your worksheet. Choose interval lengths that expose your observed peaks. The example uses four six-hour blocks only to illustrate the assignment ledger; split those blocks where your records show a peak, break, training session or change of owner. The grid is not a staffing calculation."
+            ],
+            "items": [
+              "Record the source period, interval, time zone and omitted call types alongside the demand data.",
+              "Confirm team availability rather than deriving staffing solely from answered-call averages."
+            ],
+            "sources": [
+              {
+                "label": "Amazon Connect forecasting, capacity and scheduling concepts",
+                "href": "https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html"
+              },
+              {
+                "label": "Amazon Connect forecast and download time zones",
+                "href": "https://docs.aws.amazon.com/connect/latest/adminguide/set-forecast-timezone.html"
+              }
+            ]
+          },
+          {
+            "title": "Fill the coverage ledger and keep verification separate",
+            "paragraphs": [
+              "The blank CSV contains headers only. The fictional example contains 28 rows for October 26–November 1, 2026 in America/Phoenix, using start-inclusive/end-exclusive hours from 0 to 24. It assigns example roles, never real employees or contact information. Four rows cover each calendar day; the hours add to 168 for that seven-day example, which does not claim the same total for every time zone or daylight-saving week.",
+              "Each row identifies the primary answerer, a backup, the unavailable-primary rule, an office-defined peak trigger and peak owner, an authorized urgent-escalation role, the routine-review time and owner, and verification evidence/status. The next routine-review time concerns office follow-up; it is not the time that calls begin to be answered.",
+              "Check that each day starts at 0, ends at 24 and has no overlap or gap. Then confirm the named roles correspond to contracted or scheduled coverage. Keep status planned_not_verified until an authorized test and evidence support a verified state. A filled cell alone does not prove someone will answer."
+            ],
+            "items": [
+              "Replace every EX-role with a confirmed responsibility before operational use.",
+              "Do not fill an unknown backup with the primary person under a different label.",
+              "Keep field-service escalation separate from the service or person answering the phone."
+            ],
+            "sources": [
+              {
+                "label": "Download blank coverage CSV; original worksheet",
+                "href": "https://www.revoapp.ai/ai-answering-service/assets/templates/phone-coverage-blank-33941c68850d.csv"
+              },
+              {
+                "label": "Download fictional seven-day example",
+                "href": "https://www.revoapp.ai/ai-answering-service/assets/templates/phone-coverage-fictional-week-1c7cddaa6597.csv"
+              }
+            ]
+          },
+          {
+            "title": "Resolve a peak and an absence in the same interval",
+            "paragraphs": [
+              "Worked planning example: Tuesday’s 12–18 block names the office as primary. A team training session from 13–14 means that label is insufficient. Split it into 12–13, 13–14 and 14–18. For 13–14, name the confirmed backup as primary, its separate fallback, the same business instruction version and the office person who will review resulting requests. Keep the original plan as a dated prior version.",
+              "Now suppose observed arrivals show a burst during 14–15. Split that interval again if needed. Define the trigger from the system you actually use, such as an agreed queue condition or unavailable primary, and identify who activates extra coverage and who returns the normal route. Do not assume software removes concurrent-call limits or that an on-call technician can simultaneously answer every overflow call.",
+              "If no backup is confirmed, mark that interval unresolved and do not describe the plan as reliable 24/7 coverage. Change the assignment or the public expectation before relying on it. This example concerns responsibility and switching, not employment-law advice or a prescribed shift pattern.",
+              "The revised-example CSV implements those Tuesday splits: 12–13, 13–14, 14–15 and 15–18 replace the original 12–18 row. It has 31 rows, still covering 168 hours without overlaps. The training interval names a replacement primary and a different secondary backup. All rows remain planned_not_verified; role acceptance and tests are still required."
+            ],
+            "items": [
+              "Primary absent: replace the interval assignment, confirm fallback and record acceptance.",
+              "Peak active: record the trigger, activation owner, capacity evidence and return-to-normal step.",
+              "Routine backlog: confirm a review owner and time even when the answering layer remains available."
+            ],
+            "sources": [
+              {
+                "label": "Download revised fictional week: training and peak intervals",
+                "href": "https://www.revoapp.ai/ai-answering-service/assets/templates/phone-coverage-fictional-exceptions-186d94edfb4f.csv"
+              }
+            ]
+          },
+          {
+            "title": "Accept coverage at handoffs, not only during normal hours",
+            "paragraphs": [
+              "Use consenting test callers in an approved window; this article reports no calls actually placed. Test just before and after a handoff, an unavailable primary, an unavailable escalation contact, and an office-defined peak condition through a provider-supported method. Record expected answerer, actual endpoint, business instruction version, result and evidence reference.",
+              "Have the next owner acknowledge the handoff and inspect the first pending request. Where a provider answers continuously, test the change in business instructions and recipients as well as the connection. Phone answering, acceptance by an on-call employee and the next routine office review are three different responsibilities.",
+              "Review the plan when demand or availability changes. Keep a version, effective date, decision owner and restoration instructions so a temporary absence route does not become permanent by accident. The worksheet is neutral; it does not implement routing, schedule employees or establish a Revo integration."
+            ],
+            "items": [
+              "Treat planned, tested and unresolved intervals as different statuses.",
+              "Check business and provider schedules against holidays and the selected time zone.",
+              "Do not claim a coverage test measures long-term uptime or search-engine indexing."
+            ],
+            "sources": []
+          }
+        ],
+        "overviewTable": {
+          "caption": "Decisions the weekly plan must make — original operating worksheet, not recommended staffing",
+          "columns": [
+            "Situation",
+            "Assignment to record",
+            "Evidence before relying on it"
+          ],
+          "rows": [
+            [
+              "Normal interval",
+              "Primary answerer plus independent backup",
+              "Schedule/contract and authorized route test"
+            ],
+            [
+              "Office training or absence",
+              "Replacement interval owner and fallback",
+              "Acceptance by replacement; saved effective period"
+            ],
+            [
+              "Observed peak",
+              "Activation trigger, extra-capacity owner, restoration step",
+              "Provider-supported capacity evidence and test"
+            ],
+            [
+              "Urgent request",
+              "Authorized escalation role and unavailable-contact path",
+              "Recipient/fallback test; no implied dispatch"
+            ],
+            [
+              "Routine follow-up",
+              "Office review time and named owner",
+              "Acknowledged pending-request handoff"
+            ]
+          ]
+        },
+        "faqs": [
+          {
+            "q": "Does 168 hours mean one employee can cover the week?",
+            "a": "No. It is the duration of the fictional seven-day grid in America/Phoenix. The role assignments do not calculate headcount, shift suitability or simultaneous capacity."
+          },
+          {
+            "q": "Is a filled weekly grid proof of 24/7 coverage?",
+            "a": "No. Confirm the underlying schedules, provider scope, independent backups and route tests. The example deliberately remains planned_not_verified."
+          },
+          {
+            "q": "How is this different from an after-hours script?",
+            "a": "It assigns coverage across the full week, including open-office peaks, absences and changes of owner. The separate after-hours guide helps define what callers are told when the office is closed."
+          }
+        ],
+        "related": [
+          "after-hours",
+          "overflow-answering",
+          "dedicated-vs-shared-answering",
+          "simultaneous-call-capacity"
+        ],
+        "sourcePaths": [
+          "https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html",
+          "https://docs.aws.amazon.com/connect/latest/adminguide/set-forecast-timezone.html",
+          "Original blank coverage template sha256:33941c68850d62d2c966ff7d1daf8b26878efc9f5c1c81cf3a2fd854a5956930",
+          "Original fictional seven-day coverage example sha256:1c7cddaa6597f2d40ad5ae1564fd7bf6c2369f8cebc0f35a86fcf11df9a1a404",
+          "Original fictional revised week with training and peak sha256:186d94edfb4f7a94770f62b9b9d41f5aba90e00e7d3ece8e3d7377b3a5ac6678"
+        ],
+        "takeaway": "Publish the coverage promise only after each interval has a confirmed answerer, a fallback and tested handoff ownership.",
+        "editorialDate": "2026-10-23"
+      }
+    }
+  ]
+}
