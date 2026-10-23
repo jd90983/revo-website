@@ -658,5 +658,29 @@
       "added compare/hvac-plumbing-ai-answering as draft",
       "added plan-24-7-phone-coverage as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-23-coverage-future-review-times",
+    "batchHash": "sha256:4d2e18f48f295d4f1d2a1a2c357e530853dd4cea6f56403f0c97051441babfa6",
+    "source": {
+      "kind": "manual",
+      "reference": "Editorial correction: interval-common review times use first weekday08/12/18 review at or after interval end; CSV regression test added. No approval recorded."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "updated plan-24-7-phone-coverage; back to draft until re-approved"
+    ]
+  },
+  {
+    "batchId": "2026-10-23-servicetitan-confirm-permission",
+    "batchHash": "sha256:bad0339bd70c6c78bd7f3a93317f7db4712975530537a93a172ca9064fd884d8",
+    "source": {
+      "kind": "manual",
+      "reference": "Factual table correction verified against ServiceTitan Basic Phones/Phones Pro FAQ: reschedule permission governs confirmation; cancellation separate. No approval recorded."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "updated compare/hvac-plumbing-ai-answering; back to draft until re-approved"
+    ]
   }
 ]

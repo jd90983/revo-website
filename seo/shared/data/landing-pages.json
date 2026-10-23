@@ -23071,7 +23071,7 @@
         [
           "ServiceTitan Voice Agent",
           "Capabilities plus job-type permission; eligibility applies",
-          "Separate confirm/reschedule/cancel controls",
+          "Reschedule permission also governs confirmation; cancellation is separate",
           "Call records and follow-up; clarify booked-job notes limitation",
           "Configured rules; Basic Phones/Phones Pro scope"
         ],
@@ -23154,7 +23154,7 @@
     "editorialDate": "2026-10-23",
     "source": {
       "kind": "manual",
-      "reference": "Primary provider documentation checked 2026-10-23; four differentiated service-comparison and coverage-planning drafts. Demand evidence retained privately; no human approval recorded. (batch 2026-10-23-sameday-four-distinct-expansion)"
+      "reference": "Factual table correction verified against ServiceTitan Basic Phones/Phones Pro FAQ: reschedule permission governs confirmation; cancellation separate. No approval recorded. (batch 2026-10-23-servicetitan-confirm-permission)"
     },
     "publicationStatus": "draft"
   },
@@ -23195,13 +23195,14 @@
         "title": "Fill the coverage ledger and keep verification separate",
         "paragraphs": [
           "The blank CSV contains headers only. The fictional example contains 28 rows for October 26–November 1, 2026 in America/Phoenix, using start-inclusive/end-exclusive hours from 0 to 24. It assigns example roles, never real employees or contact information. Four rows cover each calendar day; the hours add to 168 for that seven-day example, which does not claim the same total for every time zone or daylight-saving week.",
-          "Each row identifies the primary answerer, a backup, the unavailable-primary rule, an office-defined peak trigger and peak owner, an authorized urgent-escalation role, the routine-review time and owner, and verification evidence/status. The next routine-review time concerns office follow-up; it is not the time that calls begin to be answered.",
+          "Each row identifies the primary answerer, a backup, the unavailable-primary rule, an office-defined peak trigger and peak owner, an authorized urgent-escalation role, the routine-review time and owner, and verification evidence/status. The next routine-review time concerns office follow-up; it is not the time that calls begin to be answered. In this fictional policy, office reviews occur Monday–Friday at 08:00, 12:00 and 18:00. routine_review_at is the first such review at or after the end of the entire row interval, not the review following only its first call. Thus weekday 00–06 goes to 08:00 that same day; 06–12 goes to 12:00; 12–18 goes to 18:00; and overnight/weekend work waits until the next applicable review. Adjust that stated policy to your actual team before use.",
           "Check that each day starts at 0, ends at 24 and has no overlap or gap. Then confirm the named roles correspond to contracted or scheduled coverage. Keep status planned_not_verified until an authorized test and evidence support a verified state. A filled cell alone does not prove someone will answer."
         ],
         "items": [
           "Replace every EX-role with a confirmed responsibility before operational use.",
           "Do not fill an unknown backup with the primary person under a different label.",
-          "Keep field-service escalation separate from the service or person answering the phone."
+          "Keep field-service escalation separate from the service or person answering the phone.",
+          "Require routine_review_at to be at least the interval end for every row; then confirm it is the first available review under the declared policy."
         ],
         "sources": [
           {
@@ -23210,7 +23211,7 @@
           },
           {
             "label": "Download fictional seven-day example",
-            "href": "https://www.revoapp.ai/ai-answering-service/assets/templates/phone-coverage-fictional-week-1c7cddaa6597.csv"
+            "href": "https://www.revoapp.ai/ai-answering-service/assets/templates/phone-coverage-fictional-week-c201501d111c.csv"
           }
         ]
       },
@@ -23220,7 +23221,7 @@
           "Worked planning example: Tuesday’s 12–18 block names the office as primary. A team training session from 13–14 means that label is insufficient. Split it into 12–13, 13–14 and 14–18. For 13–14, name the confirmed backup as primary, its separate fallback, the same business instruction version and the office person who will review resulting requests. Keep the original plan as a dated prior version.",
           "Now suppose observed arrivals show a burst during 14–15. Split that interval again if needed. Define the trigger from the system you actually use, such as an agreed queue condition or unavailable primary, and identify who activates extra coverage and who returns the normal route. Do not assume software removes concurrent-call limits or that an on-call technician can simultaneously answer every overflow call.",
           "If no backup is confirmed, mark that interval unresolved and do not describe the plan as reliable 24/7 coverage. Change the assignment or the public expectation before relying on it. This example concerns responsibility and switching, not employment-law advice or a prescribed shift pattern.",
-          "The revised-example CSV implements those Tuesday splits: 12–13, 13–14, 14–15 and 15–18 replace the original 12–18 row. It has 31 rows, still covering 168 hours without overlaps. The training interval names a replacement primary and a different secondary backup. All rows remain planned_not_verified; role acceptance and tests are still required."
+          "The revised-example CSV implements those Tuesday splits: 12–13, 13–14, 14–15 and 15–18 replace the original 12–18 row. It has 31 rows, still covering 168 hours without overlaps. The training interval names a replacement primary and a different secondary backup. All rows remain planned_not_verified; role acceptance and tests are still required. Each split row uses the first scheduled office review at or after its own end; the training and peak rows therefore point to Tuesday 18:00 in this example."
         ],
         "items": [
           "Primary absent: replace the interval assignment, confirm fallback and record acceptance.",
@@ -23230,7 +23231,7 @@
         "sources": [
           {
             "label": "Download revised fictional week: training and peak intervals",
-            "href": "https://www.revoapp.ai/ai-answering-service/assets/templates/phone-coverage-fictional-exceptions-186d94edfb4f.csv"
+            "href": "https://www.revoapp.ai/ai-answering-service/assets/templates/phone-coverage-fictional-exceptions-4423558c34ff.csv"
           }
         ]
       },
@@ -23308,14 +23309,14 @@
       "https://docs.aws.amazon.com/connect/latest/adminguide/forecasting-capacity-planning-scheduling.html",
       "https://docs.aws.amazon.com/connect/latest/adminguide/set-forecast-timezone.html",
       "Original blank coverage template sha256:33941c68850d62d2c966ff7d1daf8b26878efc9f5c1c81cf3a2fd854a5956930",
-      "Original fictional seven-day coverage example sha256:1c7cddaa6597f2d40ad5ae1564fd7bf6c2369f8cebc0f35a86fcf11df9a1a404",
-      "Original fictional revised week with training and peak sha256:186d94edfb4f7a94770f62b9b9d41f5aba90e00e7d3ece8e3d7377b3a5ac6678"
+      "Original fictional seven-day coverage example sha256:c201501d111cc9055ff7f2b6e2b74f33057ac6429fc90466a5f73cdd376aed34",
+      "Original fictional revised week with training and peak sha256:4423558c34ff5cb550bfa999826b9e60e930c73cb0f8d753851bf6ae4b9422a1"
     ],
     "takeaway": "Publish the coverage promise only after each interval has a confirmed answerer, a fallback and tested handoff ownership.",
     "editorialDate": "2026-10-23",
     "source": {
       "kind": "manual",
-      "reference": "Primary provider documentation checked 2026-10-23; four differentiated service-comparison and coverage-planning drafts. Demand evidence retained privately; no human approval recorded. (batch 2026-10-23-sameday-four-distinct-expansion)"
+      "reference": "Editorial correction: interval-common review times use first weekday08/12/18 review at or after interval end; CSV regression test added. No approval recorded. (batch 2026-10-23-coverage-future-review-times)"
     },
     "publicationStatus": "draft"
   }
