@@ -141,7 +141,7 @@ test('publication boundary permits only exact approved public resources and Goog
  assert.equal(hasAcquisitionLink('<form action="/anything"></form>'),true);
  const bytes=Buffer.from('Approved public worksheet\n'),sha=createHash('sha256').update(bytes).digest('hex'),path='ai-answering-service/assets/templates/worksheet-'+sha.slice(0,12)+'.md',manifest=[{path,sha256:sha}];
  await verifyPublicAssetBoundary([path],async()=>bytes,manifest);
- for(const forbidden of ['notes/private.md','seo/shared/data/research.md','api/leads.js','.env','.env.local','credentials.pem','backup.sql'])await assert.rejects(verifyPublicAssetBoundary([path,forbidden],async()=>bytes,manifest),/Internal source/);
+ for(const forbidden of ['notes/private.md','notes/private.py','seo/shared/data/research.md','api/leads.js','.env','.env.local','credentials.pem','backup.sql'])await assert.rejects(verifyPublicAssetBoundary([path,forbidden],async()=>bytes,manifest),/Internal source/);
  await assert.rejects(verifyPublicAssetBoundary([path],async()=>Buffer.from('Changed'),manifest),/hash mismatch/);
  await assert.rejects(verifyPublicAssetBoundary([],async()=>bytes,manifest),/Missing/);
  await assert.rejects(verifyPublicAssetBoundary(['notes/private.md'],async()=>bytes,[{path:'notes/private.md',sha256:sha}]),/Invalid/);

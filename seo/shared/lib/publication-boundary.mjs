@@ -27,7 +27,7 @@ export async function verifyPublicAssetBoundary(files,readBytes,manifest){
   allowed.set(asset.path,asset.sha256);
  }
  for(const path of files){
-  if(sensitivePublicPath(path)||(/\.md$/i.test(path)&&!allowed.has(path)))throw Error('Internal source leaked into static output: '+path);
+  if(sensitivePublicPath(path)||(/\.(?:md|py)$/i.test(path)&&!allowed.has(path)))throw Error('Internal source leaked into static output: '+path);
   if(allowed.has(path)&&createHash('sha256').update(await readBytes(path)).digest('hex')!==allowed.get(path))throw Error('Public companion asset hash mismatch: '+path);
  }
  for(const path of allowed.keys())if(!files.includes(path))throw Error('Missing approved public companion asset: '+path);
