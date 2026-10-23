@@ -86,3 +86,26 @@ test('coverage example reviews follow every call in their interval and the decla
   for(const intervals of byDay.values()){let end=0;for(const [start,stop]of intervals.sort((a,b)=>a[0]-b[0])){assert.equal(start,end);assert.ok(stop>start);end=stop;}assert.equal(end,24);}
  }
 });
+
+test('worksheet downloads stay on the current deployment without changing reviewed source data',async()=>{
+ const {readFile}=await import('node:fs/promises');const {createHash}=await import('node:crypto');
+ let downloads=0;
+ for(const slug of ['customer-service-call-log','plan-24-7-phone-coverage']){
+  const page=guides.find(p=>p.slug===slug);const before=contentHash(page);
+  const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page}));
+  for(const s of page.sections.flatMap(s=>s.sources??[]).filter(s=>s.href.endsWith('.csv'))){
+   const url=new URL(s.href);assert.ok(html.includes(`href="${url.pathname}"`));assert.ok(!html.includes(`href="${s.href}"`));
+   const bytes=await readFile(new URL('../public'+url.pathname,import.meta.url));
+   const hash=createHash('sha256').update(bytes).digest('hex');
+   assert.ok(url.pathname.endsWith('-'+hash.slice(0,12)+'.csv'));assert.ok(page.sourcePaths.some(p=>p.includes(hash)));
+   assert.equal(new URL(url.pathname,'https://preview.example.test').origin,'https://preview.example.test');downloads++;
+  }
+  assert.equal(contentHash(page),before);assert.equal(page.review.contentHash,before);
+ }
+ assert.equal(downloads,5);
+ const original=guides.find(p=>p.slug==='customer-service-call-log');
+ const links=['https://supplier.example/ai-answering-service/assets/templates/file.csv','https://www.revoapp.ai/pricing.html','https://www.revoapp.ai.evil.example/ai-answering-service/assets/templates/file.csv'];
+ const probe={...original,sections:[{...original.sections[0],sources:links.map(href=>({href,label:'External reference'}))}]};
+ const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page:probe}));
+ for(const href of links)assert.ok(html.includes(`href="${href}"`));
+});
