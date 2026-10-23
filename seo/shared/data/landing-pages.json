@@ -21991,5 +21991,634 @@
       "contentHash": "sha256:2d7fec145780cad96fb394a7f6d63e504d8602813b71a1ab7e69c2dc17f84c91",
       "note": "Human editorial approval by Jorge, recorded by Codex as operator. Exact reviewed content cohort: Library version 3."
     }
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "vonage-virtual-receptionist-setup",
+    "title": "Vonage virtual receptionist setup: menus and exceptions",
+    "navigationLabel": "Vonage receptionist setup",
+    "description": "Set up a Vonage virtual receptionist with the right administrator, no-input action and schedule priority, then test the actual caller path.",
+    "eyebrow": "Vonage Business Communications setup",
+    "lead": "Configure the menu, its schedule and the caller who presses nothing.",
+    "intro": "Vonage calls this feature a Virtual Receptionist: an automated menu that routes calls using configured schedules. This guide concerns that menu system, not a conversational AI service that collects a home-service request. The setup below combines documented controls with a proposed acceptance test for an office administrator.",
+    "sections": [
+      {
+        "title": "Start with the authorized administrator and called number.",
+        "paragraphs": [
+          "Vonage’s support article, updated April 15, 2026, says only a Super User or Account Administrator can create or change Virtual Receptionists in the Admin Portal. The mobile app cannot make those changes. General settings associate a dialing number with the receptionist.",
+          "Before editing an existing setup, record which public business number should reach this menu and how it currently behaves. Have the authorized administrator confirm the selected account and receptionist. Do not create a second menu merely because an employee cannot find the first one in the mobile app."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Vonage Virtual Receptionist: access and general settings — reviewed October 23, 2026",
+            "href": "https://businesssupport.vonage.com/articles/answer/Virtual-Receptionist-1110"
+          }
+        ]
+      },
+      {
+        "title": "Choose the no-input result before polishing the greeting.",
+        "paragraphs": [
+          "The documented No Caller Input Handling controls set a wait, repeat count and final action: disconnect, another extension’s voicemail or another extension. The menu also supports external-number forwarding; the article lists a $0.03-per-minute charge for outside-line forwarding and says international rates apply. Confirm applicable account terms before choosing that route.",
+          "For a proposed repair-office menu, write the action beside each announced key. Then write the outcome for a caller who makes no selection. Read the recording against that map: if it promises that the office will receive a message, the configured result must actually reach the intended mailbox. A greeting alone does not create that delivery path."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Vonage no-input and call-flow controls — reviewed October 23, 2026",
+            "href": "https://businesssupport.vonage.com/articles/answer/Virtual-Receptionist-1110"
+          }
+        ]
+      },
+      {
+        "title": "Resolve schedule priority and the live-operator timer.",
+        "paragraphs": [
+          "Vonage separates schedules from call flows. Specified hours require an after-hours flow; Always in Front gives a schedule precedence. Try Live Operator First rings a selected extension before continuing. Its ring interval should finish before voicemail or other features intercept the attempt.",
+          "Use one concrete exception to check the design. Suppose an office closes for a team meeting while its normal weekday hours remain open. Identify the exception schedule, its intended end and the flow it should select. If an operator-first attempt is used, observe whether the menu resumes when that person does not answer. These are proposed tests, not evidence that any particular account is already configured."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Vonage schedules and operator-first behavior — reviewed October 23, 2026",
+            "href": "https://businesssupport.vonage.com/articles/answer/Virtual-Receptionist-1110"
+          }
+        ]
+      },
+      {
+        "title": "Accept the changed route with a short call record.",
+        "paragraphs": [
+          "Choose a provider-supported test method and an agreed window. With consenting test callers, call the associated business number and record the expected schedule, greeting, key selected and final endpoint. Include a call with no input and an unanswered operator-first attempt if that option is enabled.",
+          "Have the administrator compare the result with the saved design before directing customer traffic to a new route. Preserve the previous settings and the account-specific restoration instructions. After an exception ends, confirm that the normal flow resumes and that no temporary announcement remains in the caller path."
+        ],
+        "items": [
+          "Record the receptionist and schedule names in the test notes.",
+          "Treat an unanswered destination separately from a menu selection that worked."
+        ],
+        "sources": []
+      }
+    ],
+    "overviewTable": {
+      "caption": "Proposed Vonage acceptance record — use authorized test callers and the exact account configuration",
+      "columns": [
+        "Case",
+        "Expected behavior to write down",
+        "Observation needed"
+      ],
+      "rows": [
+        [
+          "Public number called",
+          "Correct Virtual Receptionist and normal schedule",
+          "Greeting and final endpoint"
+        ],
+        [
+          "Caller presses an announced key",
+          "Destination listed in the approved menu map",
+          "Actual extension, mailbox or outside number reached"
+        ],
+        [
+          "Caller gives no input",
+          "Configured wait, repeats and final action",
+          "Result after the final permitted attempt"
+        ],
+        [
+          "Operator-first destination does not answer",
+          "Configured attempt ends and the intended flow continues",
+          "Whether another feature intercepted the call"
+        ],
+        [
+          "Temporary schedule ends",
+          "Normal schedule and call flow resume",
+          "Normal greeting and route restored"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Can an employee edit the Virtual Receptionist from the Vonage mobile app?",
+        "a": "The cited Vonage article says creation and modification require a Super User or Account Administrator using the Admin Portal."
+      },
+      {
+        "q": "Does the name Virtual Receptionist mean it collects service requests conversationally?",
+        "a": "This documented feature is an automated menu and routing system. A separate service’s ability to collect a request should be evaluated separately."
+      },
+      {
+        "q": "Why test a caller who presses nothing?",
+        "a": "That caller follows the configured no-input path. Testing only a successful menu selection leaves that outcome unchecked."
+      }
+    ],
+    "takeaway": "Accept the Vonage setup when the called number, no-input action, schedule exception and operator-first outcome match the approved design.",
+    "sourcePaths": [
+      "https://businesssupport.vonage.com/articles/answer/Virtual-Receptionist-1110"
+    ],
+    "related": [
+      "call-routing",
+      "after-hours",
+      "call-forwarding-troubleshooting"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-23; four distinct guides prepared as drafts for human editorial review. (batch 2026-10-23-four-distinct-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "8x8-virtual-receptionist",
+    "title": "8x8 virtual receptionist: Auto Attendant or Power Keys?",
+    "navigationLabel": "8x8 receptionist terminology",
+    "description": "Distinguish 8x8 Auto Attendant from legacy Power Keys, then check destinations, site, time zone and holiday rules for the current menu setup.",
+    "eyebrow": "Identify the 8x8 feature first",
+    "lead": "Find the right administration guide before changing the caller menu.",
+    "intro": "The phrase 8x8 virtual receptionist has more than one documented meaning. Current Auto Attendant documentation uses it for a caller menu; older Account Manager documentation says Power Keys was formerly called Virtual Receptionist. This guide separates those meanings, then covers the current Auto Attendant menu and schedule. It is not a guide to conversational AI intake.",
+    "sections": [
+      {
+        "title": "Identify a caller menu or an operator’s phone keys.",
+        "paragraphs": [
+          "The older Power Keys guide describes an add-on for handling calls and monitoring extensions through phone line keys, including line appearances, busy lamp fields and speed dials. Its configuration belongs to Account Manager and enabled extensions. That is different from the current Auto Attendant guide, which describes callers choosing a route from a menu.",
+          "If the task concerns buttons on a receptionist’s desk phone, stop before following the menu procedure below and identify the account product and applicable Power Keys documentation. The older guide is evidence of terminology, not confirmation that a particular device, add-on or migration path remains available today. If the task concerns the greeting and keypad choices callers hear, proceed with the current Auto Attendant scope."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "8x8 older Account Manager Power Keys terminology — reviewed October 23, 2026",
+            "href": "https://docs-alt.8x8.com/8x8WebHelp/8x8Account_Manager/Content/Power%20Keys/PowerKeys.htm"
+          },
+          {
+            "label": "8x8 current Auto Attendant scope — reviewed October 23, 2026",
+            "href": "https://help.8x8.com/docs/set-up-an-auto-attendant-in-8x8-admin-console"
+          }
+        ]
+      },
+      {
+        "title": "Prepare the destinations and select the correct Site.",
+        "paragraphs": [
+          "The setup guide, updated September 11, 2026, lists user profiles, Ring Groups, Call Queues and extension forwarding rules as prerequisites where required. Creation starts in Admin Console under Auto Attendants. A Site must be selected before menu rules can be created.",
+          "For the office’s proposed menu, identify the exact destination object for each key before recording the prompt. For example, an existing-customer choice could point to an agreed office destination while new inquiries use another approved path. Record the selected object name and intended recipient so an administrator can distinguish a similarly named object at another site. This example does not establish how an existing account is configured."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "8x8 Auto Attendant prerequisites and Site requirement — reviewed October 23, 2026",
+            "href": "https://help.8x8.com/docs/set-up-an-auto-attendant-in-8x8-admin-console"
+          }
+        ]
+      },
+      {
+        "title": "Set the time zone, then resolve the holiday exception.",
+        "paragraphs": [
+          "The Auto Attendant profile includes its time zone, and the weekly hours follow that selection. The separate holiday guide says holiday schedules override standard business hours on the selected dates. Holiday exceptions can specify open or closed status; holiday handling can reuse the weekday open menu or define a custom menu.",
+          "Before saving a closure, write the date, intended local hours and destination beside the greeting. Consider a service office open for limited hours on a normally full workday: the exception must identify both the limited open period and the closed result. Compare the Holiday Open Hours and Holiday Closed Hours menus instead of assuming that changing the recording changes the route. Keep the announcement consistent with actual office coverage."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "8x8 Auto Attendant time-zone setting — reviewed October 23, 2026",
+            "href": "https://help.8x8.com/docs/set-up-an-auto-attendant-in-8x8-admin-console"
+          },
+          {
+            "label": "8x8 holiday precedence and call-handling menus — reviewed October 23, 2026",
+            "href": "https://help.8x8.com/docs/set-up-a-holiday-schedule-for-an-auto-attendant-in-8x8-admin-console"
+          }
+        ]
+      },
+      {
+        "title": "Test the schedule result through the public number.",
+        "paragraphs": [
+          "Arrange a supported test method and window with the authorized administrator; use consenting test callers. For each case in the worksheet, record the business number called, test time and time zone, active menu, key selection and destination reached. A successful call to a Ring Group directly does not check whether the public number selected the correct holiday menu.",
+          "Keep the previous configuration and its approved restoration procedure available. After the exception has ended, confirm that the normal weekday behavior returns. If the greeting is correct but the recipient is wrong, investigate the menu action and destination object separately. If the recipient is correct but the wrong hours apply, review the time zone and exception date before editing destinations."
+        ],
+        "items": [
+          "Compare the observed greeting and endpoint with the intended state.",
+          "Preserve the test record with the Site and Auto Attendant names."
+        ],
+        "sources": []
+      }
+    ],
+    "overviewTable": {
+      "caption": "Proposed current Auto Attendant acceptance worksheet — not a Power Keys compatibility guide",
+      "columns": [
+        "Scheduled state",
+        "Greeting and rule to identify",
+        "Destination check",
+        "Time evidence"
+      ],
+      "rows": [
+        [
+          "Normal weekday open",
+          "Approved weekday open menu",
+          "Each announced key reaches its named object",
+          "Test time and Auto Attendant time zone"
+        ],
+        [
+          "Normal weekday closed",
+          "Approved closed-hours result",
+          "Caller reaches the intended closed-office endpoint",
+          "Test time outside the configured open interval"
+        ],
+        [
+          "Holiday with limited open hours",
+          "Holiday Open Hours menu or chosen weekday-menu reuse",
+          "Holiday-open selections reach the approved recipients",
+          "Selected holiday date and limited local interval"
+        ],
+        [
+          "Holiday closed period",
+          "Holiday Closed Hours menu",
+          "Closed-period path matches the announcement",
+          "Selected holiday date and closed interval"
+        ],
+        [
+          "Exception finished",
+          "Normal weekday menu restored",
+          "Usual destinations reached again",
+          "Date and time after the exception"
+        ]
+      ]
+    },
+    "faqs": [
+      {
+        "q": "Does 8x8 virtual receptionist always mean Auto Attendant?",
+        "a": "No. The older Power Keys documentation uses Virtual Receptionist as a former name for a phone-key call-handling add-on. Identify the account product and the task before selecting instructions."
+      },
+      {
+        "q": "Does this guide establish which phones support Power Keys today?",
+        "a": "No. The older page explains the terminology. Verify current device, account and add-on compatibility with 8x8 before planning a Power Keys configuration."
+      },
+      {
+        "q": "Why can I not create the Auto Attendant menu rules?",
+        "a": "The cited current setup guide requires a Site to be selected before menu rules can be created. Have the authorized administrator check that field and the intended account configuration."
+      },
+      {
+        "q": "Will normal weekly hours take priority on a configured holiday?",
+        "a": "The holiday guide says holiday schedules override standard business hours on the selected dates. Verify the date, time zone and the holiday open and closed handling before relying on it."
+      }
+    ],
+    "takeaway": "Identify Auto Attendant versus Power Keys first, then verify the Site, destination objects and time-based menu actually selected by a test call.",
+    "sourcePaths": [
+      "https://help.8x8.com/docs/set-up-an-auto-attendant-in-8x8-admin-console",
+      "https://help.8x8.com/docs/set-up-a-holiday-schedule-for-an-auto-attendant-in-8x8-admin-console",
+      "https://docs-alt.8x8.com/8x8WebHelp/8x8Account_Manager/Content/Power%20Keys/PowerKeys.htm"
+    ],
+    "related": [
+      "call-routing",
+      "compare/ring-group-vs-call-queue",
+      "after-hours"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-23; four distinct guides prepared as drafts for human editorial review. (batch 2026-10-23-four-distinct-drafts)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "reception247-answering-service",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "title": "Reception247: plans, rounded minutes and contractor intake",
+    "navigationLabel": "Reception247",
+    "description": "Review Reception247 Answer Pro and Total Assistant Pro plans, per-call minute rounding, transfer fees and published contractor scheduling support.",
+    "eyebrow": "Reception247 buying guide",
+    "lead": "Choose the task first, then reconcile rounded minutes and transfers.",
+    "intro": "Reception247 publishes two US plan families with different tasks and minute allowances. A contractor evaluating the service should separate message collection from transferring a caller or writing into a scheduling system. This guide reviews public sources as of October 23, 2026; it is not an account test.",
+    "sections": [
+      {
+        "title": "Choose message intake or the additional assistant tasks.",
+        "paragraphs": [
+          "The US pricing page describes Answer Pro as collecting caller details and a reason for calling, with portal messages and email or text delivery. Total Assistant Pro adds transfers, scheduling/calendar integration and CRM/custom forms. Its listed transfer charge is $0.25 per transferred call.",
+          "For your office, define what the receptionist may finish. Receiving an estimate request can end with a message for follow-up. Confirming a visit requires authority over the schedule and a usable appointment slot. Put those outcomes in separate acceptance tests rather than assuming that every captured request is a booking."
+        ],
+        "items": [
+          "Message test: can the office identify the caller’s request and follow-up details?",
+          "Transfer test: what happens when the approved recipient does not answer?",
+          "Scheduling test: does the agreed workflow create the intended calendar record?"
+        ],
+        "sources": [
+          {
+            "label": "Reception247 US pricing; reviewed October 23, 2026",
+            "href": "https://www.reception247.com/en-US/pricing"
+          }
+        ]
+      },
+      {
+        "title": "Check the bill using rounded calls, not aggregate seconds.",
+        "paragraphs": [
+          "Reception247’s terms measure receptionist minutes as time spent handling calls, including contacting staff during a transfer. They exclude after-call administration such as writing an emailed note. Incoming and outgoing calls are each rounded upward to a whole minute. The terms also state that displayed pricing assumes autopay enrollment.",
+          "Illustrative reconciliation only: suppose there are two separate calls, each lasting 40 seconds, with no additional handling time. Each rounds to one minute, producing two billable minutes from 80 seconds of conversation. Adding seconds first and rounding the combined duration would not follow the published per-call rule.",
+          "If both illustrative minutes fall within the plan allowance, they consume two included minutes. If the full allowance was already used before these calls, two Answer Pro 25-minute-plan overage minutes would cost 2 × $1.69 = $3.38. On a Total Assistant Pro plan, one transferred call would add the listed $0.25 transfer charge if applicable; any additional agent handling time must also be reconciled. These are declared examples, not actual usage or a complete invoice."
+        ],
+        "items": [
+          "Compare individual call records with rounded billable minutes.",
+          "Identify which minutes remain included and which are excess.",
+          "Reconcile transferred-call count separately from handling duration."
+        ],
+        "sources": [
+          {
+            "label": "Reception247 billing terms; reviewed October 23, 2026",
+            "href": "https://www.reception247.com/en-US/terms"
+          },
+          {
+            "label": "Reception247 rates and transfer charge; reviewed October 23, 2026",
+            "href": "https://www.reception247.com/en-US/pricing"
+          }
+        ]
+      },
+      {
+        "title": "Verify the contractor workflow in the actual account.",
+        "paragraphs": [
+          "The contractor page advertises appointment handling, tailored scripts, custom information collection and familiarity with ServiceTitan, Housecall Pro and Workiz. The pricing page names Calendly, HubSpot and Salesforce as examples in the higher plan family. These are published scope statements, not evidence that a particular customer account or workflow has been configured and tested.",
+          "Bring one representative request and the office’s actual rules to onboarding. Specify whether the receptionist should collect information, request a callback, propose a time or create a confirmed appointment. Check the destination record and notification against that instruction. A familiar software name does not identify which fields, permissions or actions are supported.",
+          "For a requested transfer, the FAQ describes voicemail as an option when staff are unavailable. Confirm the chosen fallback for your account and identify who reviews the resulting message. Do not tell callers that an attempted connection guarantees a conversation with the contractor."
+        ],
+        "items": [
+          "Scheduling: verify work type, duration, service area and the permitted calendar action.",
+          "CRM/forms: verify required fields and where the submitted record appears.",
+          "Unavailable staff: verify the message destination and follow-up owner."
+        ],
+        "sources": [
+          {
+            "label": "Reception247 contractor service; reviewed October 23, 2026",
+            "href": "https://www.reception247.com/en-US/service-contractors-answering-service"
+          },
+          {
+            "label": "Reception247 FAQ; reviewed October 23, 2026",
+            "href": "https://www.reception247.com/en-US/faq"
+          }
+        ]
+      },
+      {
+        "title": "Leave onboarding with a scope and billing decision.",
+        "paragraphs": [
+          "The FAQ describes typical setup as the same day or within 24 hours, with complex needs handled separately. Treat that as the provider’s general description, not a guaranteed ready-to-route deadline for a custom scheduling or CRM arrangement.",
+          "The pricing page advertises monthly plan changes or cancellation without penalty or fees. Its linked Terms of Use separately refer to Terms and Conditions of Supply for service-specific provisions. Obtain the applicable enrollment and supply documents before relying on a complete billing or cancellation arrangement; the website terms are not necessarily the whole service agreement.",
+          "Finish with a written selection: plan family, included minutes, excess-minute rate, transfer charging, approved tasks and tested fallback. Review actual rounded usage after launch before changing allowances. A cheaper base subscription can describe a different task scope rather than the same service at a lower total cost."
+        ],
+        "items": [
+          "Retain the applicable plan and billing documents with their review date.",
+          "Record any unresolved setup, calendar or CRM question explicitly.",
+          "Route customer calls only after the agreed outcomes are verified."
+        ],
+        "sources": [
+          {
+            "label": "Reception247 setup FAQ; reviewed October 23, 2026",
+            "href": "https://www.reception247.com/en-US/faq"
+          },
+          {
+            "label": "Reception247 monthly-plan description; reviewed October 23, 2026",
+            "href": "https://www.reception247.com/en-US/pricing"
+          },
+          {
+            "label": "Reception247 website and supply terms distinction; reviewed October 23, 2026",
+            "href": "https://www.reception247.com/en-US/terms"
+          }
+        ]
+      }
+    ],
+    "overviewTable": {
+      "caption": "Published US plans reviewed October 23, 2026; billable minutes are rounded per call",
+      "columns": [
+        "Plan family",
+        "Monthly price",
+        "Included minutes",
+        "Additional minute",
+        "Transferred call"
+      ],
+      "rows": [
+        [
+          "Answer Pro",
+          "$39",
+          "25",
+          "$1.69",
+          "Not listed as an Answer Pro feature"
+        ],
+        [
+          "Answer Pro",
+          "$75",
+          "50",
+          "$1.65",
+          "Not listed as an Answer Pro feature"
+        ],
+        [
+          "Answer Pro",
+          "$289",
+          "200",
+          "$1.55",
+          "Not listed as an Answer Pro feature"
+        ],
+        [
+          "Total Assistant Pro",
+          "$99",
+          "50",
+          "$1.99",
+          "$0.25"
+        ],
+        [
+          "Total Assistant Pro",
+          "$349",
+          "200",
+          "$1.85",
+          "$0.25"
+        ],
+        [
+          "Total Assistant Pro",
+          "$499",
+          "300",
+          "$1.75",
+          "$0.25"
+        ]
+      ],
+      "sources": [
+        {
+          "label": "Reception247 US pricing; reviewed October 23, 2026",
+          "href": "https://www.reception247.com/en-US/pricing"
+        }
+      ]
+    },
+    "faqs": [
+      {
+        "q": "How do two separate 40-second calls affect the minute allowance?",
+        "a": "Under the published per-call rounding rule, each uses one billable minute: two minutes total. That is an illustration with no additional handling time, not a customer invoice."
+      },
+      {
+        "q": "Does the contractor page prove my scheduling integration works?",
+        "a": "No. It publishes supported service categories and software familiarity. Verify the agreed action, permissions and resulting record in your configured workflow before relying on it."
+      },
+      {
+        "q": "Are transfer time and the per-transfer charge the same thing?",
+        "a": "No. The terms count agent handling time, including contacting staff during a transfer, as receptionist minutes. Total Assistant Pro pricing separately lists $0.25 per transferred call; confirm how the account applies both items."
+      }
+    ],
+    "takeaway": "Match the plan to the task and verify the bill at the individual-call level.",
+    "sourcePaths": [
+      "https://www.reception247.com/en-US/pricing",
+      "https://www.reception247.com/en-US/terms",
+      "https://www.reception247.com/en-US/service-contractors-answering-service",
+      "https://www.reception247.com/en-US/faq"
+    ],
+    "related": [
+      "answering-service-cost",
+      "appointment-booking",
+      "compare/warm-vs-cold-transfer"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Clarify service enrollment document wording during draft validation; primary sources unchanged. (batch 2026-10-23-reception-document-wording)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "customer-service-call-log",
+    "title": "Customer service call log: template and worked reconciliation",
+    "navigationLabel": "Call log template",
+    "description": "Use a blank call log template and a worked example to reconcile call events, repeat contacts, request ownership and the action still waiting for your office.",
+    "eyebrow": "One row per call event",
+    "lead": "Keep the telephone event and the service request as separate records.",
+    "intro": "A useful call log preserves each call while showing which calls belong to the same request. Use the blank CSV and fictional worked example below to create an event ledger your office can reconcile. Four calls can represent two requests, one new inquiry and one existing-job question. This original template does not establish a Revo export, integration or booking feature.",
+    "overviewTable": {
+      "caption": "Worked example: fictional records from the downloadable event ledger",
+      "columns": [
+        "Event / time",
+        "Request",
+        "Direction and purpose",
+        "Observed result",
+        "Next action"
+      ],
+      "rows": [
+        [
+          "EX-E01 /09:00",
+          "EX-R01",
+          "Inbound; new service inquiry",
+          "Request received",
+          "Office callback required"
+        ],
+        [
+          "EX-E02 /09:10",
+          "EX-R01",
+          "Outbound about the same request",
+          "No answer",
+          "Keep the scheduling request open"
+        ],
+        [
+          "EX-E03 /09:20",
+          "EX-R01",
+          "Inbound reply about the same request",
+          "Confirmed in fictional calendar CAL01",
+          "Close this scheduling action; job completion not established"
+        ],
+        [
+          "EX-E04 /09:25",
+          "EX-R02",
+          "Inbound; question about existing job EX-J02",
+          "Follow-up pending",
+          "Example coordinator checks job and replies"
+        ]
+      ]
+    },
+    "sections": [
+      {
+        "title": "Copy the blank ledger without inventing customer records",
+        "paragraphs": [
+          "Download the blank CSV, which contains column headers only. Keep one row per telephone event: event_id, request_id, occurred_at, timezone, direction, customer_reference, job_reference, request_type, contact_result, next_action, action_owner, due_at and evidence_reference. Use references to authorized customer or job records instead of copying unnecessary personal details into another file.",
+          "event_id identifies the particular call; request_id links related contacts about the same work. A repeated phone number alone is insufficient evidence of a shared request. When the relationship is uncertain, retain the call event with an unresolved request reference and send it for office review. Do not merge it merely to make the counts look tidy.",
+          "Record timestamps with an offset and the operating time zone. due_at belongs to the next action; it is not the call time. Leave job_reference empty if no job exists yet. The worked example uses the local time zone America/Tijuana and deliberately fictional EX-prefixed identifiers."
+        ],
+        "items": [
+          "Keep stable event IDs from the source system where available; document any assigned substitute IDs.",
+          "Keep contact_result separate from request_type and the next action.",
+          "Use the authoritative scheduler or job record to confirm a result; a note saying booking requested is insufficient."
+        ],
+        "sources": [
+          {
+            "label": "Download blank call-log CSV; original Revo worksheet",
+            "href": "https://www.revoapp.ai/ai-answering-service/assets/templates/call-log-blank-dac09b17d339.csv"
+          },
+          {
+            "label": "Download fictional worked-example CSV",
+            "href": "https://www.revoapp.ai/ai-answering-service/assets/templates/call-log-worked-example-3616532099c2.csv"
+          }
+        ]
+      },
+      {
+        "title": "Reconcile four events into two requests",
+        "paragraphs": [
+          "Start with EX-R01. EX-E01 creates a new service inquiry and an office callback action. EX-E02 is an unsuccessful outbound attempt about that inquiry; preserve it as another event, not another lead and not a completed callback. EX-E03 is the customer’s reply. In this fictional example only, calendar reference CAL01 supports a confirmed appointment. Close the scheduling action after checking that reference. It does not establish completed work.",
+          "EX-E04 belongs to EX-R02 and an existing job, EX-J02. The call was answered, but the customer’s job question still needs a coordinator. Answered therefore does not mean resolved. Keep that next action assigned to the Example coordinator, with its own due time.",
+          "The resulting reconciliation is four distinct call events, two service requests, one new-service inquiry, one confirmed appointment and one existing-job question awaiting follow-up. These are counts from the fictional file, not customer results, a conversion benchmark or a causal comparison of services."
+        ],
+        "items": [
+          "Check event IDs first: importing the same EX-E02 twice must not create a fifth real call.",
+          "Check request links second: three contacts about EX-R01 remain three events attached to one request.",
+          "Check outstanding work last: EX-R02 remains open even though its telephone call was answered."
+        ]
+      },
+      {
+        "title": "Check the source view before copying a report",
+        "paragraphs": [
+          "Housecall Pro’s July 16, 2026 Call Log Guide distinguishes missed, answered inbound, outbound and voicemail views. It says its emailed CSV export follows the current view and applied filters and is limited to 5,000 calls. Those documented product rules were reviewed October 23, 2026. They do not describe every provider’s export or a Revo capability.",
+          "A filtered export can be correct and still omit the events needed for reconciliation. Record the selected view, date range, time zone, filters and export time beside the saved file. Compare a small known set with the source log. If the system creates separate transfer legs, ask what each identifier represents before deciding whether two rows are duplicate events.",
+          "Import original source data into a preserved copy before mapping it into this template. Keep a stable import reference. Correct a mistaken request link with a dated explanation rather than erasing the original telephone event. This preserves the difference between a data correction and a call that did not occur."
+        ],
+        "items": [],
+        "sources": [
+          {
+            "label": "Housecall Pro Call Log Guide; reviewed October 23, 2026",
+            "href": "https://help.housecallpro.com/en/articles/8345671-voice-overview-page-call-log-guide"
+          }
+        ]
+      },
+      {
+        "title": "Close the office action with evidence, not a cleared badge",
+        "paragraphs": [
+          "The log is a record of calls and links to operational work. Review unresolved references, actions without owners and due actions separately from completed events. A second staff member should be able to follow the evidence_reference to understand why the action was marked complete.",
+          "A read or played message is not, on its own, a completed customer response. Housecall Pro’s guide says viewing missed-call details or playing a voicemail affects its badge count. That is a useful example of why an interface notification and the underlying office task need separate checks.",
+          "Use the blank CSV as an operating template, not a replacement for the authoritative customer, job or calendar system. Before storing real records, apply your business’s existing access and retention arrangements. Reconcile the next-action list with those source systems at the review interval your office actually uses."
+        ],
+        "items": [
+          "Pending inquiry: identify the person responsible and the next permitted action.",
+          "Completed scheduling action: link to the actual confirmation record.",
+          "Existing-job question: preserve the job reference and the unresolved request even after the call ends."
+        ],
+        "sources": [
+          {
+            "label": "Housecall Pro badge behavior; reviewed October 23, 2026",
+            "href": "https://help.housecallpro.com/en/articles/8345671-voice-overview-page-call-log-guide"
+          }
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Why keep both an event ID and a request ID?",
+        "a": "An event ID distinguishes each call. A request ID links related contacts about the same work. In the example, three different events link to EX-R01 without becoming three new inquiries."
+      },
+      {
+        "q": "What is the outstanding action after the four example calls?",
+        "a": "EX-R02 needs the Example coordinator to check the existing job and reply. EX-R01 has a confirmed scheduling record in the fictional example; completed field work is not established."
+      },
+      {
+        "q": "Does the template import directly into Revo or Housecall Pro?",
+        "a": "No integration is asserted. This is a neutral CSV ledger. Map only fields supported by your authorized source system and preserve the original export."
+      }
+    ],
+    "takeaway": "Preserve every real call event, link it to the right request and close only the action supported by an office record.",
+    "sourcePaths": [
+      "https://help.housecallpro.com/en/articles/8345671-voice-overview-page-call-log-guide",
+      "Original blank CSV sha256:dac09b17d339cd20bf6ea6a756c93c5697ef8291c115ec865080c4698d075c3c",
+      "Original fictional example CSV sha256:3616532099c271941c006d96c1dfe7c5ee9369d5fb0b5868fc7e0188b4b9b714"
+    ],
+    "related": [
+      "call-disposition",
+      "ai-call-summary",
+      "first-call-resolution",
+      "answering-service-conversion-rate-comparison"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-23; four distinct guides prepared as drafts for human editorial review. (batch 2026-10-23-four-distinct-drafts)"
+    },
+    "publicationStatus": "draft"
   }
 ]

@@ -603,5 +603,32 @@
       "added appointment-waitlist as draft",
       "added call-and-text-forwarding as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-23-four-distinct-drafts",
+    "batchHash": "sha256:534a087e8e817eceb7ec08a52d507cae9f888e9004b79f45d8cbe5f4d86f7322",
+    "source": {
+      "kind": "manual",
+      "reference": "Public primary documentation reviewed 2026-10-23; four distinct guides prepared as drafts for human editorial review."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "added vonage-virtual-receptionist-setup as draft",
+      "added 8x8-virtual-receptionist as draft",
+      "added reception247-answering-service as draft",
+      "added customer-service-call-log as draft"
+    ]
+  },
+  {
+    "batchId": "2026-10-23-reception-document-wording",
+    "batchHash": "sha256:abafde7e52705726d8be2a91899159b19639af5a225f75a67770bf000b5b00c0",
+    "source": {
+      "kind": "manual",
+      "reference": "Clarify service enrollment document wording during draft validation; primary sources unchanged."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "updated reception247-answering-service; back to draft until re-approved"
+    ]
   }
 ]
