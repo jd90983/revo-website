@@ -630,5 +630,18 @@
     "changes": [
       "updated reception247-answering-service; back to draft until re-approved"
     ]
+  },
+  {
+    "batchId": "2026-10-23-editorial-procedure-and-ledger",
+    "batchHash": "sha256:fc9446dcdd477e4cf381e1afef7ac66d4f4b9ea9d50fac5d4dc57f4b2e4c79dc",
+    "source": {
+      "kind": "manual",
+      "reference": "Editorial corrections: verified Vonage setup sequence; original call ledger with separate technical/business outcomes and reproducible latest-action projection. No human approval recorded."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "updated vonage-virtual-receptionist-setup; back to draft until re-approved",
+      "updated customer-service-call-log; back to draft until re-approved"
+    ]
   }
 ]
