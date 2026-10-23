@@ -41,7 +41,10 @@ const contentDates=new Map(pages.filter(page=>page.editorialDate).map(page=>[lan
 for(const route of routes){const url=origin+route;const date=contentDates.get(route);if(!sitemap.includes('<loc>'+url+'</loc>'))sitemap=sitemap.replace('</urlset>',`  <url><loc>${url}</loc>${date?'<lastmod>'+date+'</lastmod>':''}</url>\n</urlset>`);}
 await writeFile(sitemapPath,sitemap);
 const indexPath=join(stage,'index.html');let index=await readFile(indexPath,'utf8');if(index.includes('data-revo-call-planning'))throw Error('Unexpected preexisting generated nav');const pos=index.lastIndexOf('</footer>');if(pos<0)throw Error('Homepage footer missing');const escape=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');const nav='<nav data-revo-call-planning aria-label="Call planning" style="padding:24px 0;display:flex;gap:20px;flex-wrap:wrap">'+homeNavigation(registry,config).map(link=>`<a href="${link.href}">${escape(link.label)}</a>`).join('')+'</nav>';await writeFile(indexPath,index.slice(0,pos)+nav+index.slice(pos));
-const all=await walk(stage);if(all.some(f=>/\.(sql|md|env)$/i.test(f)||relative(stage,f).startsWith('api/')||relative(stage,f).startsWith('seo/')))throw Error('Internal source leaked into static output');
+const all=await walk(stage);
+const {verifyPublicAssetBoundary}=await import(pathToFileURL(join(shared,'lib/publication-boundary.mjs')));
+const publicCompanions=JSON.parse(await readFile(join(shared,'data/public-companion-assets.json'),'utf8'));
+await verifyPublicAssetBoundary(all.map(f=>relative(stage,f)),path=>readFile(join(stage,path)),publicCompanions);
 for(const route of routes){const body=await readFile(join(stage,route.slice(1)+'.html'),'utf8');if(!body.includes('index, follow')||!body.includes(origin+route)||body.includes('Private editorial review')||body.includes('simulated receipt')||body.includes('<form'))throw Error('Public route invariant failed');}
 const hashes={};for(const f of all)hashes[relative(stage,f)]=createHash('sha256').update(await readFile(f)).digest('hex');
 for(const f of originals){const now=createHash('sha256').update(await readFile(join(website,f))).digest('hex');if(now!==originalHashes[f])throw Error('Source changed during build');}

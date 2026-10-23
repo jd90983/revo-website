@@ -1,0 +1,233 @@
+{
+  "schema_version": 1,
+  "fictional": true,
+  "prepared_at": "2026-10-23",
+  "currency": "USD",
+  "money_storage": "integer cents",
+  "duration_storage": "integer seconds",
+  "disclaimer": "All contracts, records, authorizations, businesses and amounts invented for editorial demonstration. No real account or customer invoice. Models are not observed results.",
+  "tax_cents": null,
+  "tax_inclusive_total_cents": null,
+  "rounding_and_eligibility": {
+    "eligible_activity_types": [
+      "incoming_call",
+      "callback_work",
+      "account_update",
+      "transfer_attempt"
+    ],
+    "round_up_increment_seconds": 30,
+    "rounding_level": "each eligible activity before summing",
+    "allowance_application": "once per calendar month, after summed rounded usage",
+    "no_rollover": true,
+    "no_proration": true,
+    "other_usage_surcharges": "none in fictional model",
+    "partial_excess_minutes": "proportional per-minute charge"
+  },
+  "plans": {
+    "A": {
+      "id": "FICTIONAL-A-v1",
+      "base_cents_per_calendar_month": 4000,
+      "included_minutes": 10,
+      "excess_rate_cents_per_minute": 200,
+      "report_included": false,
+      "report_addon_cents_per_calendar_month": 800
+    },
+    "B": {
+      "id": "FICTIONAL-B-v1",
+      "base_cents_per_calendar_month": 5200,
+      "included_minutes": 25,
+      "excess_rate_cents_per_minute": 150,
+      "report_included": true,
+      "report_addon_cents_per_calendar_month": 0,
+      "bundled_report_removal_credit_cents": 0
+    }
+  },
+  "incomplete_audit": {
+    "business": "Cedar Example Plumbing (fictional)",
+    "invoice_id": "INV-SEP",
+    "period_start_inclusive": "2026-09-01",
+    "period_end_exclusive": "2026-10-01",
+    "timezone": "UTC",
+    "invoice_issue_date": "2026-10-01",
+    "plan": "A",
+    "activity_export_id": "AUDIT-8",
+    "activity_export_complete": false,
+    "records": [
+      {
+        "id": "A01",
+        "type": "incoming_call",
+        "raw_seconds": 89,
+        "expected_billable_seconds": 90
+      },
+      {
+        "id": "A02",
+        "type": "incoming_call",
+        "raw_seconds": 181,
+        "expected_billable_seconds": 210
+      },
+      {
+        "id": "A03",
+        "type": "callback_work",
+        "raw_seconds": 31,
+        "expected_billable_seconds": 60
+      },
+      {
+        "id": "A04",
+        "type": "account_update",
+        "raw_seconds": 61,
+        "expected_billable_seconds": 90
+      },
+      {
+        "id": "A05",
+        "type": "transfer_attempt",
+        "raw_seconds": 46,
+        "expected_billable_seconds": 60
+      },
+      {
+        "id": "A06",
+        "type": "incoming_call",
+        "raw_seconds": 119,
+        "expected_billable_seconds": 120
+      },
+      {
+        "id": "A07",
+        "type": "account_update",
+        "raw_seconds": 91,
+        "expected_billable_seconds": 120
+      },
+      {
+        "id": "A08",
+        "type": "incoming_call",
+        "raw_seconds": 59,
+        "expected_billable_seconds": 60
+      }
+    ],
+    "invoice_reported_billable_seconds": 900,
+    "one_time_setup_cents": 1200,
+    "one_time_credit_cents": -500,
+    "invoice_lines": [
+      {
+        "id": "base",
+        "invoiced_cents": 4000,
+        "evidence": "FICTIONAL-A-v1"
+      },
+      {
+        "id": "usage",
+        "invoiced_cents": 1000,
+        "evidence": "invoice quantity; activity incomplete"
+      },
+      {
+        "id": "report",
+        "invoiced_cents": 800,
+        "evidence": "ADDON-1 fictional authorization"
+      },
+      {
+        "id": "setup",
+        "invoiced_cents": 1200,
+        "evidence": "SETUP-1 fictional authorization"
+      },
+      {
+        "id": "credit",
+        "invoiced_cents": -500,
+        "evidence": "CREDIT-1 fictional note"
+      }
+    ],
+    "variance_status": "unexplained_pending_activity_evidence",
+    "provider_response": null,
+    "corrected_invoice": null,
+    "credit_due_cents": null,
+    "supported_partial_subtotal_is_amount_owed": false
+  },
+  "one_time_bridge": {
+    "quantity_basis": "unverified invoice-reported 15 minutes, used only as a constant arithmetic assumption",
+    "later_period_usage_seconds": 900,
+    "later_period_setup_cents": 0,
+    "later_period_credit_cents": 0,
+    "observed_next_invoice_cents": null,
+    "recurring_improvement_claimed": false
+  },
+  "complete_synthetic_scenario": {
+    "id": "PLAN-20",
+    "period": "one hypothetical calendar month, separate from INV-SEP",
+    "activity_export_complete": true,
+    "records": [
+      {
+        "id": "S01",
+        "type": "incoming_call",
+        "raw_seconds": 89,
+        "expected_billable_seconds": 90
+      },
+      {
+        "id": "S02",
+        "type": "incoming_call",
+        "raw_seconds": 181,
+        "expected_billable_seconds": 210
+      },
+      {
+        "id": "S03",
+        "type": "callback_work",
+        "raw_seconds": 31,
+        "expected_billable_seconds": 60
+      },
+      {
+        "id": "S04",
+        "type": "account_update",
+        "raw_seconds": 61,
+        "expected_billable_seconds": 90
+      },
+      {
+        "id": "S05",
+        "type": "transfer_attempt",
+        "raw_seconds": 46,
+        "expected_billable_seconds": 60
+      },
+      {
+        "id": "S06",
+        "type": "incoming_call",
+        "raw_seconds": 119,
+        "expected_billable_seconds": 120
+      },
+      {
+        "id": "S07",
+        "type": "account_update",
+        "raw_seconds": 91,
+        "expected_billable_seconds": 120
+      },
+      {
+        "id": "S08",
+        "type": "incoming_call",
+        "raw_seconds": 59,
+        "expected_billable_seconds": 60
+      },
+      {
+        "id": "S09",
+        "type": "incoming_call",
+        "raw_seconds": 181,
+        "expected_billable_seconds": 210
+      },
+      {
+        "id": "S10",
+        "type": "incoming_call",
+        "raw_seconds": 179,
+        "expected_billable_seconds": 180
+      }
+    ],
+    "same_workload_both_plans": true,
+    "same_rounding_and_eligibility": true,
+    "same_required_coverage_and_tasks": "assumed for fictional model only; must verify in actual quotes",
+    "same_report_function": "assumed for model",
+    "switching_fee_cents": 0,
+    "switching_fee_status": "fictional assumption, not an actual quote",
+    "scenario_not_missing_audit_evidence": true
+  },
+  "verification": {
+    "selected_action": null,
+    "approval_status": "not_requested",
+    "implementation_status": "not_started",
+    "effective_date": null,
+    "next_actual_invoice_cents": null,
+    "actual_next_period_usage_seconds": null,
+    "observed_recurring_reduction_cents": null,
+    "quality_checks_status": "not_run"
+  }
+}

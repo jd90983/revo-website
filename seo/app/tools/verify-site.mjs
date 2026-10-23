@@ -52,7 +52,8 @@ for (const source of (await walk(join(website, 'images'))).filter(file => /\.(pn
   assert.ok(actual.includes(file), 'Original image missing from release: ' + file);
   assert.equal(await sha256(join(output, file)), await sha256(source), 'Original image changed: ' + file);
 }
-assert.ok(!actual.some(file => /\.(sql|md|env)$/i.test(file) || file.startsWith('api/') || file.startsWith('seo/')), 'Internal source leaked into the public output');
+const {verifyPublicAssetBoundary,hasAcquisitionLink}=await import(pathToFileURL(join(shared,'lib/publication-boundary.mjs')));
+await verifyPublicAssetBoundary(actual,path=>readFile(join(output,path)),JSON.parse(await readFile(join(shared,'data/public-companion-assets.json'),'utf8')));
 
 // 3. Every public route: indexable, canonical on production, content-only.
 for (const route of routes) {
@@ -60,7 +61,7 @@ for (const route of routes) {
   assert.ok(body.includes('index, follow'), 'Not indexable: ' + route);
   assert.ok(body.includes(`rel="canonical" href="${origin}${route}"`), 'Wrong canonical: ' + route);
   assert.ok(!body.includes('<form'), 'Form on ' + route);
-  if (config.acquisitionEnabled !== true) assert.ok(!/href="[^"]*(?:free-test|signup|apps\.apple\.com|\/api\/)/i.test(body), 'Acquisition link on ' + route);
+  if (config.acquisitionEnabled !== true) assert.ok(!hasAcquisitionLink(body), 'Acquisition link on ' + route);
   assert.ok(!body.includes('Private editorial review'), 'Review-only text on ' + route);
 }
 

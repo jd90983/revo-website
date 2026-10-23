@@ -831,6 +831,74 @@
       "destination": "/ai-answering-service/plan-24-7-phone-coverage.html"
     },
     {
+      "source": "/ai-answering-service/compare/24-7-live-receptionist-services",
+      "destination": "/ai-answering-service/compare/24-7-live-receptionist-services.html"
+    },
+    {
+      "source": "/ai-answering-service/compare/receptionist-appointment-management",
+      "destination": "/ai-answering-service/compare/receptionist-appointment-management.html"
+    },
+    {
+      "source": "/ai-answering-service/compare/contractor-on-call-answering-services",
+      "destination": "/ai-answering-service/compare/contractor-on-call-answering-services.html"
+    },
+    {
+      "source": "/ai-answering-service/centralized-scheduling-integration",
+      "destination": "/ai-answering-service/centralized-scheduling-integration.html"
+    },
+    {
+      "source": "/ai-answering-service/google-local-services-ads-answering",
+      "destination": "/ai-answering-service/google-local-services-ads-answering.html"
+    },
+    {
+      "source": "/ai-answering-service/answering-service-payment-collection",
+      "destination": "/ai-answering-service/answering-service-payment-collection.html"
+    },
+    {
+      "source": "/ai-answering-service/ai-receptionist-knowledge-base",
+      "destination": "/ai-answering-service/ai-receptionist-knowledge-base.html"
+    },
+    {
+      "source": "/ai-answering-service/ai-for-home-services-workflows",
+      "destination": "/ai-answering-service/ai-for-home-services-workflows.html"
+    },
+    {
+      "source": "/ai-answering-service/compare/build-vs-buy-ai-receptionist",
+      "destination": "/ai-answering-service/compare/build-vs-buy-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/breezy-ai-receptionist",
+      "destination": "/ai-answering-service/breezy-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/netic-for-contractors",
+      "destination": "/ai-answering-service/netic-for-contractors.html"
+    },
+    {
+      "source": "/ai-answering-service/skipcalls-ai-receptionist-pricing",
+      "destination": "/ai-answering-service/skipcalls-ai-receptionist-pricing.html"
+    },
+    {
+      "source": "/ai-answering-service/ooma-receptionist-options",
+      "destination": "/ai-answering-service/ooma-receptionist-options.html"
+    },
+    {
+      "source": "/ai-answering-service/callers-ai-pricing",
+      "destination": "/ai-answering-service/callers-ai-pricing.html"
+    },
+    {
+      "source": "/ai-answering-service/my-receptionist-pricing",
+      "destination": "/ai-answering-service/my-receptionist-pricing.html"
+    },
+    {
+      "source": "/ai-answering-service/gohighlevel-ai-receptionist-pricing",
+      "destination": "/ai-answering-service/gohighlevel-ai-receptionist-pricing.html"
+    },
+    {
+      "source": "/ai-answering-service/lower-answering-service-cost",
+      "destination": "/ai-answering-service/lower-answering-service-cost.html"
+    },
+    {
       "source": "/ai-answering-service",
       "destination": "/ai-answering-service.html"
     }
@@ -851,6 +919,97 @@
         {
           "key": "X-Robots-Tag",
           "value": "noindex"
+        }
+      ]
+    },
+    {
+      "source": "/ai-answering-service/assets/templates/centralized-scheduling-contract-8717b267fe8a.csv",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/csv; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"centralized-scheduling-contract-8717b267fe8a.csv\""
+        }
+      ]
+    },
+    {
+      "source": "/ai-answering-service/assets/templates/centralized-scheduling-fixtures-b2a16a8cf906.py",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"centralized-scheduling-fixtures-b2a16a8cf906.py\""
+        }
+      ]
+    },
+    {
+      "source": "/ai-answering-service/assets/templates/workflow-choice-worksheet-9cf69423045e.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"workflow-choice-worksheet-9cf69423045e.md\""
+        }
+      ]
+    },
+    {
+      "source": "/ai-answering-service/assets/templates/quote-reconciliation-worksheet-4c77a3b36b24.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"quote-reconciliation-worksheet-4c77a3b36b24.md\""
+        }
+      ]
+    },
+    {
+      "source": "/ai-answering-service/assets/templates/worked_examples-9e25e52547e7.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"worked_examples-9e25e52547e7.json\""
+        }
+      ]
+    },
+    {
+      "source": "/ai-answering-service/assets/templates/bill-to-action-ledger-0acfc2530b40.md",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/plain; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"bill-to-action-ledger-0acfc2530b40.md\""
+        }
+      ]
+    },
+    {
+      "source": "/ai-answering-service/assets/templates/worked-example-17b396589ff0.json",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "attachment; filename=\"worked-example-17b396589ff0.json\""
         }
       ]
     }

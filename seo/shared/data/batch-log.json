@@ -702,5 +702,24 @@
       "added ai-for-home-services-workflows as draft",
       "added compare/build-vs-buy-ai-receptionist as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-23-approved-final-eight",
+    "batchHash": "sha256:3c6ab9b999bd0540160dcb4823b373ec734e498adf2dae5d39d7a016d9eb203c",
+    "source": {
+      "kind": "manual",
+      "reference": "Eight public articles and four original companion resources approved by Jorge at2026-10-23T19:52:45Z; bundle was created before approval and retains its original pending provenance. Exact public copy SHA256 preserved; structured rendering only."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "added breezy-ai-receptionist as draft",
+      "added netic-for-contractors as draft",
+      "added skipcalls-ai-receptionist-pricing as draft",
+      "added ooma-receptionist-options as draft",
+      "added callers-ai-pricing as draft",
+      "added my-receptionist-pricing as draft",
+      "added gohighlevel-ai-receptionist-pricing as draft",
+      "added lower-answering-service-cost as draft"
+    ]
   }
 ]

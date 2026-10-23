@@ -1,0 +1,40 @@
+{
+  "status": "fictional_examples_not_customer_results",
+  "currency": "USD",
+  "rate_document_checked_date": "2026-10-23",
+  "example_a": {
+    "purpose": "Calculate excess shared Voice AI units, not dollars",
+    "fictional_usage_minutes": {
+      "inbound": 80,
+      "outbound": 15,
+      "widget": 10
+    },
+    "documented_allowance_minutes": 100,
+    "documented_allowance_source": "https://help.gohighlevel.com/support/solutions/articles/155000006652-ai-product",
+    "assumption": "One enabled Growth location, one allowance; no cross-location pooling assumed",
+    "expected_total_minutes": 105,
+    "expected_excess_minutes": 5,
+    "ai_usage_charge_usd": null,
+    "phone_charge_usd": null,
+    "complete_invoice_total_usd": null,
+    "unresolved": ["Selected model and configuration", "Applicable usage rates", "Phone charges", "Actual account terms"]
+  },
+  "example_b": {
+    "purpose": "Avoid counting a component twice in a fictional agency bundle",
+    "fictional_monthly_package_usd": 180,
+    "package_includes": ["Platform access", "Selected AI subscription"],
+    "additional_platform_charge_usd": 0,
+    "additional_ai_subscription_charge_usd": 0,
+    "zero_meaning": "No additional charge under this explicitly fictional inclusive quote; not zero underlying supplier cost",
+    "phone_charge_usd": null,
+    "additional_usage_charge_usd": null,
+    "separate_support_charge_usd": null,
+    "expected_known_recurring_subtotal_usd": 180,
+    "complete_invoice_total_usd": null,
+    "actual_provider_offer": false,
+    "unresolved": ["Phone charges", "Any separately applicable additional usage", "Any separately applicable support"]
+  },
+  "account_operations_performed": false,
+  "calls_performed": false,
+  "purchase_authorized": false
+}

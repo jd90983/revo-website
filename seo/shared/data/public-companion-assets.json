@@ -1,0 +1,30 @@
+[
+  {
+    "path": "ai-answering-service/assets/templates/centralized-scheduling-contract-8717b267fe8a.csv",
+    "sha256": "8717b267fe8aa372e4cff6e701434ee740cdfd418270a8d6ee176fb328816cfd"
+  },
+  {
+    "path": "ai-answering-service/assets/templates/centralized-scheduling-fixtures-b2a16a8cf906.py",
+    "sha256": "b2a16a8cf9061fa5dea9c0c7f239180a5c628afdba4c6e066d401574c8b80277"
+  },
+  {
+    "path": "ai-answering-service/assets/templates/workflow-choice-worksheet-9cf69423045e.md",
+    "sha256": "9cf69423045e31c4a9f62856961a11e4b985d3787a2889763e3655444ca58e39"
+  },
+  {
+    "path": "ai-answering-service/assets/templates/quote-reconciliation-worksheet-4c77a3b36b24.md",
+    "sha256": "4c77a3b36b24deae9c7e6910e09f7f5085dccbd2be2b7fb7ac89bc26b98f2550"
+  },
+  {
+    "path": "ai-answering-service/assets/templates/worked_examples-9e25e52547e7.json",
+    "sha256": "9e25e52547e7d0e20e24591e1865b83ee89bb9183655e8f6cd39095aa88db71e"
+  },
+  {
+    "path": "ai-answering-service/assets/templates/bill-to-action-ledger-0acfc2530b40.md",
+    "sha256": "0acfc2530b404271f35cc9d9abc383995a67eda33c0e2dcaf3587455eb0d3765"
+  },
+  {
+    "path": "ai-answering-service/assets/templates/worked-example-17b396589ff0.json",
+    "sha256": "17b396589ff036325762825ee5dd6012a8ca35728f2ce52d647eb9946020fc64"
+  }
+]

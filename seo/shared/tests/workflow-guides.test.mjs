@@ -1,3 +1,4 @@
+import {hasAcquisitionLink,verifyPublicAssetBoundary} from '../lib/publication-boundary.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import React from 'react';
@@ -20,7 +21,7 @@ test('approved workflow guides obey publication approval and have no acquisition
   const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page}));
   assert.equal((html.match(/<main\b/g)||[]).length,1);
   assert.equal((html.match(/<h1\b/g)||[]).length,1);
-  assert.ok(!/<form\b|\/api\/|free-test|signup|apps\.apple\.com/.test(html));
+  assert.ok(!hasAcquisitionLink(html));
   const ids=new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]));
   for(const link of html.matchAll(/href="#([^"]+)"/g))assert.ok(ids.has(link[1]),link[1]);
   assert.ok(html.includes('/css/layout.css'));
@@ -112,7 +113,7 @@ test('worksheet downloads stay on the current deployment without changing review
 
 test('approved Markdown transfers retain exact copy, semantic tables, code and local companion resources',async()=>{
  const {createHash}=await import('node:crypto');const {readFile}=await import('node:fs/promises');
- const articles=guides.filter(p=>p.markdownArticle);assert.equal(articles.length,9);
+ const articles=guides.filter(p=>p.markdownArticle);assert.equal(articles.length,17);
  let tables=0,codes=0,resources=0;
  for(const page of articles){
   const article=page.markdownArticle;
@@ -130,5 +131,30 @@ test('approved Markdown transfers retain exact copy, semantic tables, code and l
   const changed={...page,markdownArticle:{...article,content:article.content+'\nChanged'}};
   assert.notEqual(contentHash(changed),contentHash(page));
  }
- assert.ok(tables>=5);assert.ok(codes>=1);assert.equal(resources,3);
+ assert.ok(tables>=5);assert.ok(codes>=1);assert.equal(resources,7);
+});
+
+test('publication boundary permits only exact approved public resources and Google documentation',async()=>{
+ const {createHash}=await import('node:crypto');
+ assert.equal(hasAcquisitionLink('<a href="https://developers.google.com/workspace/calendar/api/auth">Official documentation</a>'),false);
+ for(const href of ['/api/leads','https://www.revoapp.ai/api/leads','https://other.example/api/auth','https://developers.google.com.evil.example/workspace/calendar/api/auth','https://developers.google.com/workspace/calendar/api/unapproved','/free-test','https://example.test/signup'])assert.equal(hasAcquisitionLink(`<a href="${href}">Blocked</a>`),true,href);
+ assert.equal(hasAcquisitionLink('<form action="/anything"></form>'),true);
+ const bytes=Buffer.from('Approved public worksheet\n'),sha=createHash('sha256').update(bytes).digest('hex'),path='ai-answering-service/assets/templates/worksheet-'+sha.slice(0,12)+'.md',manifest=[{path,sha256:sha}];
+ await verifyPublicAssetBoundary([path],async()=>bytes,manifest);
+ for(const forbidden of ['notes/private.md','seo/shared/data/research.md','api/leads.js','.env','.env.local','credentials.pem','backup.sql'])await assert.rejects(verifyPublicAssetBoundary([path,forbidden],async()=>bytes,manifest),/Internal source/);
+ await assert.rejects(verifyPublicAssetBoundary([path],async()=>Buffer.from('Changed'),manifest),/hash mismatch/);
+ await assert.rejects(verifyPublicAssetBoundary([],async()=>bytes,manifest),/Missing/);
+ await assert.rejects(verifyPublicAssetBoundary(['notes/private.md'],async()=>bytes,[{path:'notes/private.md',sha256:sha}]),/Invalid/);
+});
+
+test('public companion downloads have scoped attachment headers and safe content types',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const manifest=JSON.parse(await readFile(new URL('../data/public-companion-assets.json',import.meta.url),'utf8'));
+ const vercel=JSON.parse(await readFile(new URL('../../../vercel.json',import.meta.url),'utf8'));
+ for(const a of manifest){
+  const rule=vercel.headers.find(h=>h.source==='/'+a.path);assert.ok(rule,a.path);
+  const headers=Object.fromEntries(rule.headers.map(h=>[h.key.toLowerCase(),h.value]));
+  assert.ok(headers['content-disposition'].startsWith('attachment;'));
+  assert.match(headers['content-type'],/^(text\/(plain|csv)|application\/json); charset=utf-8$/);
+ }
 });
