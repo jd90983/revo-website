@@ -158,3 +158,18 @@ test('public companion downloads have scoped attachment headers and safe content
   assert.match(headers['content-type'],/^(text\/(plain|csv)|application\/json); charset=utf-8$/);
  }
 });
+
+test('Markdown decision maps and code blocks have explicit AA text contrast',async()=>{
+ const {readFile}=await import('node:fs/promises');
+ const css=await readFile(new URL('../../../css/revo-markdown-guides.css',import.meta.url),'utf8');
+ const rule=css.match(/\.home-guide-markdown pre\{([^}]+)\}/)?.[1];assert.ok(rule);
+ const fg=rule.match(/(?:^|;)color:(#[a-f0-9]{6})(?:;|$)/)?.[1],bg=rule.match(/(?:^|;)background:(#[a-f0-9]{6})(?:;|$)/)?.[1];assert.ok(fg&&bg,'Both foreground and background must be explicit');
+ const luminance=hex=>{
+  const c=[1,3,5].map(i=>parseInt(hex.slice(i,i+2),16)/255).map(v=>v<=0.04045?v/12.92:((v+0.055)/1.055)**2.4);
+  return c[0]*0.2126+c[1]*0.7152+c[2]*0.0722;
+ };
+ const a=luminance(fg),b=luminance(bg);assert.ok((Math.max(a,b)+0.05)/(Math.min(a,b)+0.05)>=4.5);
+ assert.match(css,/\.home-guide-markdown pre code\{color:inherit\}/);
+ const breezy=guides.find(p=>p.slug==='breezy-ai-receptionist');const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page:breezy}));
+ assert.ok(html.includes('<pre><code class="language-text">Where should the office manage the customer record?'));
+});
