@@ -643,5 +643,20 @@
       "updated vonage-virtual-receptionist-setup; back to draft until re-approved",
       "updated customer-service-call-log; back to draft until re-approved"
     ]
+  },
+  {
+    "batchId": "2026-10-23-sameday-four-distinct-expansion",
+    "batchHash": "sha256:bbcbfcbae391ac48d9b6c86c2a87cf9a6e7b57ff157aa7d0d20c513489742431",
+    "source": {
+      "kind": "manual",
+      "reference": "Primary provider documentation checked 2026-10-23; four differentiated service-comparison and coverage-planning drafts. Demand evidence retained privately; no human approval recorded."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "added compare/pest-control-answering-services as draft",
+      "added compare/lead-qualification-receptionists as draft",
+      "added compare/hvac-plumbing-ai-answering as draft",
+      "added plan-24-7-phone-coverage as draft"
+    ]
   }
 ]
