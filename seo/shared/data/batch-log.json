@@ -682,5 +682,25 @@
     "changes": [
       "updated compare/hvac-plumbing-ai-answering; back to draft until re-approved"
     ]
+  },
+  {
+    "batchId": "2026-10-23-approved-additional-nine",
+    "batchHash": "sha256:1395947ce0c54581548bcef6f8ac5bcd55e974f8e78d95f4cff500b0686c2d4b",
+    "source": {
+      "kind": "manual",
+      "reference": "Nine public articles and three original companion resources reviewed and approved by Jorge on2026-10-23. Exact public copy SHA256 preserved; structured rendering only."
+    },
+    "appliedAt": "2026-10-23",
+    "changes": [
+      "added compare/24-7-live-receptionist-services as draft",
+      "added compare/receptionist-appointment-management as draft",
+      "added compare/contractor-on-call-answering-services as draft",
+      "added centralized-scheduling-integration as draft",
+      "added google-local-services-ads-answering as draft",
+      "added answering-service-payment-collection as draft",
+      "added ai-receptionist-knowledge-base as draft",
+      "added ai-for-home-services-workflows as draft",
+      "added compare/build-vs-buy-ai-receptionist as draft"
+    ]
   }
 ]

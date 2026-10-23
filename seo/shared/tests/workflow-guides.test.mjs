@@ -109,3 +109,26 @@ test('worksheet downloads stay on the current deployment without changing review
  const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page:probe}));
  for(const href of links)assert.ok(html.includes(`href="${href}"`));
 });
+
+test('approved Markdown transfers retain exact copy, semantic tables, code and local companion resources',async()=>{
+ const {createHash}=await import('node:crypto');const {readFile}=await import('node:fs/promises');
+ const articles=guides.filter(p=>p.markdownArticle);assert.equal(articles.length,9);
+ let tables=0,codes=0,resources=0;
+ for(const page of articles){
+  const article=page.markdownArticle;
+  assert.equal(createHash('sha256').update(article.content).digest('hex'),article.sha256);
+  const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page}));
+  assert.equal((html.match(/<h1\b/g)||[]).length,1);
+  const h1=article.content.split('\n')[0].slice(2);
+  assert.ok(html.includes(h1.split(' ').slice(0,-3).join(' ')));
+  if(article.content.includes('|---')){assert.ok(html.includes('<table>'));assert.ok(html.includes('scope="col"'));assert.ok(html.includes('tabindex="0"'));tables++;}
+  if(article.content.includes('```')){assert.ok(html.includes('<pre>'));codes++;}
+  for(const a of article.assets){
+   assert.ok(html.includes(`href="${a.href}"`));const bytes=await readFile(new URL('../public'+a.href,import.meta.url));
+   assert.equal(createHash('sha256').update(bytes).digest('hex'),a.sha256);resources++;
+  }
+  const changed={...page,markdownArticle:{...article,content:article.content+'\nChanged'}};
+  assert.notEqual(contentHash(changed),contentHash(page));
+ }
+ assert.ok(tables>=5);assert.ok(codes>=1);assert.equal(resources,3);
+});

@@ -1,0 +1,14 @@
+field,source_of_truth,example,validation,expected_write,exception_owner
+request_id,intake operation ledger,req-001,immutable across retries,operation ledger only,integration lead
+customer_id,customer system,cust-001,unique authorized match,reference on destination,office scheduler
+location_id,service-location system,loc-001,belongs to customer,reference on destination,office scheduler
+branch_id,approved routing map,branch-east,maps to permitted calendar,branch reference,branch administrator
+calendar_id,destination configuration,cal-east,exact authorized branch mapping,target resource,integration lead
+time_zone,branch configuration,America/New_York,local time and offset agree,event time zone,office scheduler
+start,caller-approved request,2026-11-02T09:00:00-05:00,round-trip local time is identical,event start,office scheduler
+end,approved duration rule,2026-11-02T10:00:00-05:00,after start and approved duration,event end,office scheduler
+record_id,destination or supported ID allocator,event-001,stable reconciliation reference,one intended record,integration lead
+expected_version,last authoritative read,v1,matches current version before edit,conditional change,integration lead
+permissions,authorized access configuration,event read and write,operation allowed on target calendar,no permission escalation,account administrator
+operation,caller-approved operation,create,create or change or cancel,only intended mutation,office scheduler
+exception_owner,approved operations roster,office-scheduler-east,assigned before testing,exception queue record,operations manager
