@@ -22124,7 +22124,13 @@
       "kind": "manual",
       "reference": "Editorial corrections: verified Vonage setup sequence; original call ledger with separate technical/business outcomes and reproducible latest-action projection. No human approval recorded. (batch 2026-10-23-editorial-procedure-and-ledger)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-23",
+      "contentHash": "sha256:baadd9bab4a142c51cf32b4cdcdf43c2c29a38177f4c32115a900ace4037f339",
+      "note": "Human editorial approval by Jorge on 2026-10-23, recorded by Codex as operator. Exact reviewed cohort: Library PDF version1 and JSON version4; source content commit41ce8046859ec535fa665a0852fd437c97dd6e03. Publication remains conditional on CI and visual QA."
+    }
   },
   {
     "template": "workflow",
@@ -22274,7 +22280,13 @@
       "kind": "manual",
       "reference": "Public primary documentation reviewed 2026-10-23; four distinct guides prepared as drafts for human editorial review. (batch 2026-10-23-four-distinct-drafts)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-23",
+      "contentHash": "sha256:c1771e5554fa44f684e78c86d992857b4b57a71fca66d6aa9f06629c5f8c8d75",
+      "note": "Human editorial approval by Jorge on 2026-10-23, recorded by Codex as operator. Exact reviewed cohort: Library PDF version1 and JSON version4; source content commit41ce8046859ec535fa665a0852fd437c97dd6e03. Publication remains conditional on CI and visual QA."
+    }
   },
   {
     "slug": "reception247-answering-service",
@@ -22469,7 +22481,13 @@
       "kind": "manual",
       "reference": "Clarify service enrollment document wording during draft validation; primary sources unchanged. (batch 2026-10-23-reception-document-wording)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-23",
+      "contentHash": "sha256:5143c83f0f5d9421d5df4be42de0aff5df8b8cfec7386de4a5613f7f32e8de95",
+      "note": "Human editorial approval by Jorge on 2026-10-23, recorded by Codex as operator. Exact reviewed cohort: Library PDF version1 and JSON version4; source content commit41ce8046859ec535fa665a0852fd437c97dd6e03. Publication remains conditional on CI and visual QA."
+    }
   },
   {
     "template": "workflow",
@@ -22624,7 +22642,13 @@
       "kind": "manual",
       "reference": "Editorial corrections: verified Vonage setup sequence; original call ledger with separate technical/business outcomes and reproducible latest-action projection. No human approval recorded. (batch 2026-10-23-editorial-procedure-and-ledger)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-23",
+      "contentHash": "sha256:aa11866ba6fdc36d6c0686bd832abf59e1bae618fbb0b79b42490643ab5d234a",
+      "note": "Human editorial approval by Jorge on 2026-10-23, recorded by Codex as operator. Exact reviewed cohort: Library PDF version1 and JSON version4; source content commit41ce8046859ec535fa665a0852fd437c97dd6e03. Publication remains conditional on CI and visual QA."
+    }
   },
   {
     "template": "workflow",
@@ -22778,7 +22802,13 @@
       "kind": "manual",
       "reference": "Primary provider documentation checked 2026-10-23; four differentiated service-comparison and coverage-planning drafts. Demand evidence retained privately; no human approval recorded. (batch 2026-10-23-sameday-four-distinct-expansion)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-23",
+      "contentHash": "sha256:6d44cb7995f8bdba2d190142a59376b3549e6d1bb1f879a9c0f0ed55dafc53ee",
+      "note": "Human editorial approval by Jorge on 2026-10-23, recorded by Codex as operator. Exact reviewed cohort: Library PDF version1 and JSON version4; source content commit41ce8046859ec535fa665a0852fd437c97dd6e03. Publication remains conditional on CI and visual QA."
+    }
   },
   {
     "template": "workflow",
@@ -22946,7 +22976,13 @@
       "kind": "manual",
       "reference": "Primary provider documentation checked 2026-10-23; four differentiated service-comparison and coverage-planning drafts. Demand evidence retained privately; no human approval recorded. (batch 2026-10-23-sameday-four-distinct-expansion)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-23",
+      "contentHash": "sha256:30b4438a2ada49037f8fb5350f49f50a567c49f7f836029d34b2ef200d5f1a7e",
+      "note": "Human editorial approval by Jorge on 2026-10-23, recorded by Codex as operator. Exact reviewed cohort: Library PDF version1 and JSON version4; source content commit41ce8046859ec535fa665a0852fd437c97dd6e03. Publication remains conditional on CI and visual QA."
+    }
   },
   {
     "template": "workflow",
@@ -23156,7 +23192,13 @@
       "kind": "manual",
       "reference": "Factual table correction verified against ServiceTitan Basic Phones/Phones Pro FAQ: reschedule permission governs confirmation; cancellation separate. No approval recorded. (batch 2026-10-23-servicetitan-confirm-permission)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-23",
+      "contentHash": "sha256:8d0b212ce147ce4c7190af3c6bfca68073a82f23f49be7d2292244bc75a20426",
+      "note": "Human editorial approval by Jorge on 2026-10-23, recorded by Codex as operator. Exact reviewed cohort: Library PDF version1 and JSON version4; source content commit41ce8046859ec535fa665a0852fd437c97dd6e03. Publication remains conditional on CI and visual QA."
+    }
   },
   {
     "template": "workflow",
@@ -23318,6 +23360,12 @@
       "kind": "manual",
       "reference": "Editorial correction: interval-common review times use first weekday08/12/18 review at or after interval end; CSV regression test added. No approval recorded. (batch 2026-10-23-coverage-future-review-times)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge",
+      "reviewedAt": "2026-10-23",
+      "contentHash": "sha256:cb3f2a21254a92702fd6900868d88b84dc918900229513cc2469f981daa9f832",
+      "note": "Human editorial approval by Jorge on 2026-10-23, recorded by Codex as operator. Exact reviewed cohort: Library PDF version1 and JSON version4; source content commit41ce8046859ec535fa665a0852fd437c97dd6e03. Publication remains conditional on CI and visual QA."
+    }
   }
 ]

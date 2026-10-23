@@ -948,5 +948,45 @@
     "slug": "call-and-text-forwarding",
     "label": "Number compatibility and migration",
     "template": "workflow"
+  },
+  {
+    "slug": "vonage-virtual-receptionist-setup",
+    "label": "Vonage Business Communications setup",
+    "template": "workflow"
+  },
+  {
+    "slug": "8x8-virtual-receptionist",
+    "label": "Identify the 8x8 feature first",
+    "template": "workflow"
+  },
+  {
+    "slug": "reception247-answering-service",
+    "label": "Reception247 buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "customer-service-call-log",
+    "label": "One row per call event",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/pest-control-answering-services",
+    "label": "Pest-control service shortlist",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/lead-qualification-receptionists",
+    "label": "Compare the qualification handoff",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/hvac-plumbing-ai-answering",
+    "label": "HVAC and plumbing buying matrix",
+    "template": "workflow"
+  },
+  {
+    "slug": "plan-24-7-phone-coverage",
+    "label": "A weekly coverage operating plan",
+    "template": "workflow"
   }
 ]
