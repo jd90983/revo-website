@@ -252,5 +252,48 @@
   "approvedSourceCommit": "7622927707d6d7258e2ba883b16633671c4d436f",
   "approvalEvidence": "Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC",
   "activePullRequest": 97,
-  "publicationHold": "No merge or production before 2026-10-27 local UTC-07. Reuse PR97 and this active daily batch. Two corrected hashes still need approval."
+  "publicationHold": "No merge or production before 2026-10-27 local UTC-07. Reuse PR97 and this active daily batch. Two corrected hashes still need approval.",
+  "previewQA": {
+    "testedCommit": "83dba3635263a992f24e53e617191fd2cbe61c9f",
+    "deployment": "dpl_DuwhPxH8xBixrnXxS3Y7Bxs7xcsW",
+    "desktopViewport": [
+      1280,
+      900
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "passedSlugs": [
+      "small-business-crm-selection",
+      "discovery-call-service-business",
+      "sales-closing-techniques-service-business",
+      "hvac-inventory-management",
+      "voice-of-customer-examples",
+      "bad-customer-service-examples",
+      "what-is-a-service-call",
+      "sales-performance-dashboard",
+      "inbound-vs-outbound-calls",
+      "small-business-technology-priorities",
+      "service-business-sales-playbook",
+      "service-business-email-pitch-examples",
+      "outreach-marketing-service-business",
+      "equipment-rental-scheduling-software",
+      "window-cleaning-software",
+      "appliance-repair-dispatch-software",
+      "lead-vs-prospect",
+      "integrated-marketing-service-business",
+      "phone-number-spoofing-business",
+      "service-business-kpis",
+      "service-business-sales-deck",
+      "ask-customer-for-payment",
+      "landscape-crm-software"
+    ],
+    "visualCoverage": "All23 hero/CTA/navigation views on both sizes; shared body, source/footer and expanded FAQ inspected on representative email page. 46 DOM checks: no horizontal document overflow, no forms. GET only; no lead submissions.",
+    "checkedAtUTC": "2026-10-26T21:13:40.439151+00:00",
+    "pendingSlugs": [
+      "septic-scheduling-software",
+      "free-scheduling-software-small-business"
+    ]
+  }
 }

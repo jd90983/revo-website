@@ -1275,11 +1275,6 @@
     "template": "workflow"
   },
   {
-    "slug": "septic-scheduling-software",
-    "label": "Service-business operating guide",
-    "template": "workflow"
-  },
-  {
     "slug": "appliance-repair-dispatch-software",
     "label": "Service-business operating guide",
     "template": "workflow"
@@ -1291,6 +1286,31 @@
   },
   {
     "slug": "integrated-marketing-service-business",
+    "label": "Service-business operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "phone-number-spoofing-business",
+    "label": "Service-business operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "service-business-kpis",
+    "label": "Service-business operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "service-business-sales-deck",
+    "label": "Service-business operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "ask-customer-for-payment",
+    "label": "Service-business operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "landscape-crm-software",
     "label": "Service-business operating guide",
     "template": "workflow"
   }
