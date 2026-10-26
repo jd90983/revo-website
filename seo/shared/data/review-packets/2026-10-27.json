@@ -3,7 +3,7 @@
   "actualCreationDateLocal": "2026-10-26",
   "plannedPublicationDateLocal": "2026-10-27",
   "timezoneOffset": "UTC-07",
-  "approvalStatus": "All25 exact hashes approved by user; final two-page Preview QA pending; publication held until Oct27 UTC-07",
+  "approvalStatus": "All25 exact hashes approved by user; desktop/mobile Preview QA complete; ready for planned Oct27 publication subject to fresh protected checks",
   "batchFileSHA256": "9c7d0823e8cd9b9cbd21758bb67ac9dc0fb5aa93202a665f1e782a175084b7f3",
   "pages": [
     {
@@ -301,10 +301,27 @@
     ],
     "visualCoverage": "All23 hero/CTA/navigation views on both sizes; shared body, source/footer and expanded FAQ inspected on representative email page. 46 DOM checks: no horizontal document overflow, no forms. GET only; no lead submissions.",
     "checkedAtUTC": "2026-10-26T21:13:40.439151+00:00",
-    "pendingSlugs": [
+    "pendingSlugs": []
+  },
+  "correctionApprovalEvidence": "Sentinel_ee26c83f30708191a8b43d0740330007, 2026-10-26 21:17 UTC",
+  "finalCorrectionQA": {
+    "testedCommit": "df913e88cdfa27b751ba591b2bd062b7826dd9d3",
+    "deployment": "dpl_2oTnCBnwU9tx5ZgAjeE9fATEWvbh",
+    "desktopViewport": [
+      1280,
+      900
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "passedSlugs": [
       "septic-scheduling-software",
       "free-scheduling-software-small-business"
-    ]
+    ],
+    "checks": "Both hero/CTA views and corrected text inspected; mobile expanded FAQ works; corrected appointment-booking link opened approved target. Four DOM checks: no horizontal overflow, no forms. GET only.",
+    "checkedAtUTC": "2026-10-26T21:21:42.399448+00:00"
   },
-  "correctionApprovalEvidence": "Sentinel_ee26c83f30708191a8b43d0740330007, 2026-10-26 21:17 UTC"
+  "readyCount": 25,
+  "readyPullRequest": 97
 }
