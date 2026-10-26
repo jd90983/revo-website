@@ -1275,6 +1275,11 @@
     "template": "workflow"
   },
   {
+    "slug": "septic-scheduling-software",
+    "label": "Service-business operating guide",
+    "template": "workflow"
+  },
+  {
     "slug": "appliance-repair-dispatch-software",
     "label": "Service-business operating guide",
     "template": "workflow"
@@ -1286,6 +1291,11 @@
   },
   {
     "slug": "integrated-marketing-service-business",
+    "label": "Service-business operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "free-scheduling-software-small-business",
     "label": "Service-business operating guide",
     "template": "workflow"
   },

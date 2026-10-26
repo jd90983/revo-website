@@ -28050,7 +28050,13 @@
       "kind": "manual",
       "reference": "Two bounded reference corrections within active Oct27 PR97: published septic guide wording; replace withdrawn calendar reference with approved appointment-booking. Human approval pending for these two changed hashes; remaining23 exact user-approved records unchanged. (batch 2026-10-27-editorial-reference-corrections)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit exact-content correction approval",
+      "reviewedAt": "2026-10-26",
+      "contentHash": "sha256:54f2767f7b31066b2d8d5642cb2b55023a0ac8e9ef348549428d3c167e5886a0",
+      "note": "User Sentinel_ee26c83f30708191a8b43d0740330007, 2026-10-26 21:17 UTC: si. Approved two exact corrections in version 81eb91df72fb1cc876c55d6d76ad84a1f18bbf4f requested by Sentinel_738f3c765e508191b4fcbcb319a26c6a. Recorded by executor, not executor editorial review. No merge or production before Oct27 local UTC-07."
+    }
   },
   {
     "slug": "appliance-repair-dispatch-software",
@@ -28345,7 +28351,13 @@
       "kind": "manual",
       "reference": "Two bounded reference corrections within active Oct27 PR97: published septic guide wording; replace withdrawn calendar reference with approved appointment-booking. Human approval pending for these two changed hashes; remaining23 exact user-approved records unchanged. (batch 2026-10-27-editorial-reference-corrections)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit exact-content correction approval",
+      "reviewedAt": "2026-10-26",
+      "contentHash": "sha256:97f6ed25baa1f576c3805673b6caf9044c2805c8f7eabdcfed636a4addc2efc9",
+      "note": "User Sentinel_ee26c83f30708191a8b43d0740330007, 2026-10-26 21:17 UTC: si. Approved two exact corrections in version 81eb91df72fb1cc876c55d6d76ad84a1f18bbf4f requested by Sentinel_738f3c765e508191b4fcbcb319a26c6a. Recorded by executor, not executor editorial review. No merge or production before Oct27 local UTC-07."
+    }
   },
   {
     "slug": "phone-number-spoofing-business",
