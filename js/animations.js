@@ -541,7 +541,7 @@ if (document.readyState === 'loading') {
 // Exclude .hear-sample-section and all its children
 const initIndividualContentAnimations = () => {
   // Only run on index.html
-  if (!window.location.pathname.includes('/') && window.location.pathname !== '/') {
+  if (!window.location.pathname.includes('index.html') && window.location.pathname !== '/') {
     return;
   }
 
