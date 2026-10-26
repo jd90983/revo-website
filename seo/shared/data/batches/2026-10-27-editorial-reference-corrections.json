@@ -1,0 +1,143 @@
+{
+  "batchId": "2026-10-27-editorial-reference-corrections",
+  "source": {
+    "kind": "manual",
+    "reference": "Two bounded reference corrections within active Oct27 PR97: published septic guide wording; replace withdrawn calendar reference with approved appointment-booking. Human approval pending for these two changed hashes; remaining23 exact user-approved records unchanged."
+  },
+  "operations": [
+    {
+      "op": "update",
+      "record": {
+        "slug": "septic-scheduling-software",
+        "title": "Septic scheduling software: check readiness before dispatch",
+        "description": "Septic scheduling software should help the office see whether the business’s prerequisites for a visit have been met. A requested day is only one part of.",
+        "navigationLabel": "Septic scheduling software",
+        "eyebrow": "Service-business operating guide",
+        "intro": "Septic scheduling software should help the office see whether the business’s prerequisites for a visit have been met. A requested day is only one part of planning the work.",
+        "lead": "Septic scheduling software should help the office see whether the business’s prerequisites for a visit have been met. A requested day is only one part of planning the work.",
+        "template": "workflow",
+        "pricingVariant": "full",
+        "sections": [
+          {
+            "title": "Write the business’s readiness checklist",
+            "paragraphs": [
+              "For a fictional job, identify the service property, request type, authorized contact, known access information and questions the responsible specialist must resolve. Use the business’s actual requirements rather than a universal list.",
+              "A customer’s description should remain a description. This article gives no diagnosis, system-entry, pumping, disposal or site-safety instructions. Route those decisions to the authorized specialist."
+            ],
+            "items": []
+          },
+          {
+            "title": "Demonstrate an unresolved prerequisite",
+            "paragraphs": [
+              "Introduce a job where an access question remains unanswered. Ask the vendor to show how that issue is recorded, who owns it and how the dispatcher recognizes it before confirming a visit.",
+              "Then resolve the fictional issue through the authorized role and inspect whether the readiness record changes. A note saying “check access” is different from evidence that the check was completed."
+            ],
+            "items": []
+          },
+          {
+            "title": "Follow one job dependency",
+            "paragraphs": [
+              "If the actual business requires a preceding assessment or another approved step, represent that dependency in the trial. Change the preceding step and inspect the later appointment. Do not assume the software recalculates every dependent visit.",
+              "Compare the planned team, required resources and customer message with the authoritative record. Test a correction and an exception, not just an uncomplicated calendar entry."
+            ],
+            "items": []
+          },
+          {
+            "title": "Check what reaches the customer and field team",
+            "paragraphs": [
+              "Give each role only the information it is authorized to use. If the office moves a visit, verify the new record and separately verify how the customer would be informed in the supported workflow.",
+              "This is a readiness and dependency evaluation, distinct from the published septic-answering guide. Revo’s published answering offer does not establish septic operations software, technical assessment or a connection to a particular scheduler."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does a preferred date establish readiness?",
+            "a": "No. Inspect the business’s prerequisites and supported confirmation process."
+          },
+          {
+            "q": "Should software choose the technical next step?",
+            "a": "Keep technical and safety decisions with the responsible authorized specialist."
+          }
+        ],
+        "takeaway": "Confirm the prerequisites as well as the calendar opening.",
+        "related": [
+          "septic-service-ai-answering"
+        ],
+        "sourcePaths": [
+          "https://www.goodcall.com/appointment-scheduling-software/septic-tank",
+          "https://www.revoapp.ai/services.html",
+          "https://www.revoapp.ai/pricing.html"
+        ]
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "free-scheduling-software-small-business",
+        "title": "Free scheduling software: compare the limits and exit",
+        "description": "Free scheduling software for a small business is useful only when its supported scope fits the work. Compare the actual free-plan terms, required.",
+        "navigationLabel": "Free scheduling software",
+        "eyebrow": "Service-business operating guide",
+        "intro": "Free scheduling software for a small business is useful only when its supported scope fits the work. Compare the actual free-plan terms, required administration and exit path before treating the subscription price as the whole decision.",
+        "lead": "Free scheduling software for a small business is useful only when its supported scope fits the work. Compare the actual free-plan terms, required administration and exit path before treating the subscription price as the whole decision.",
+        "template": "workflow",
+        "pricingVariant": "full",
+        "sections": [
+          {
+            "title": "List the minimum job the tool must do",
+            "paragraphs": [
+              "Write down users, calendars, locations, request types and the records your office needs. Distinguish a customer request from a confirmed appointment. Avoid choosing a product merely because its booking page looks simple.",
+              "Use a fictional ordinary appointment and an exception. Ask whether each is supported within the actual free offering, requires manual work or needs a paid capability. This page makes no current vendor or plan comparison."
+            ],
+            "items": []
+          },
+          {
+            "title": "Read limits as operating constraints",
+            "paragraphs": [
+              "Record the provider’s documented limits on the relevant features, access, usage and retention. Include the date and proposal or terms reference. Do not assume a past review or another company’s account represents the current free tier.",
+              "If the office needs several coordinators or resources, inspect those exact requirements. A tool that supports one calendar may still be unsuitable for the business’s intended workflow."
+            ],
+            "items": []
+          },
+          {
+            "title": "Count the manual work left behind",
+            "paragraphs": [
+              "Test a correction, cancellation and staff absence. Note every step someone must repeat elsewhere. Decide who owns those steps before the tool is used for real requests.",
+              "A free subscription can still require setup, training and administration. This worksheet supplies no cost estimate; it makes the remaining work visible so the business can evaluate it using its own facts."
+            ],
+            "items": []
+          },
+          {
+            "title": "Test an export and a controlled exit",
+            "paragraphs": [
+              "Ask what records can be exported and in what supported format. Inspect a fictional exported record for the fields the office actually needs. Identify who would own migration and outstanding appointments.",
+              "The appointment-booking guide addresses booking correctness. This page evaluates free-plan suitability and exit. Revo’s Services and Pricing do not establish a free scheduling product or a connection to one."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does free mean unlimited?",
+            "a": "Read the exact current terms and verify the requirements your business needs."
+          },
+          {
+            "q": "What should be tested before adopting a free plan?",
+            "a": "An ordinary appointment, a correction, an exception and the export of needed records."
+          }
+        ],
+        "takeaway": "Compare the supported work and the work left to your office.",
+        "related": [
+          "appointment-booking"
+        ],
+        "sourcePaths": [
+          "https://smith.ai/blog/the-best-calendaring-software-for-small-businesses-free-and-paid",
+          "https://www.revoapp.ai/services.html",
+          "https://www.revoapp.ai/pricing.html"
+        ]
+      }
+    }
+  ]
+}
