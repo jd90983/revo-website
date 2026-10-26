@@ -1,0 +1,166 @@
+{
+  "batchId": "2026-10-26-two-page-supplement",
+  "source": {
+    "kind": "manual",
+    "reference": "Two net-new informational intents supplement the completed eighteen-page October26 daily target. Original copy; exact CSV evidence and full-corpus dedup retained privately. Human exact-content review pending; no approval inferred from the eighteen-page approval."
+  },
+  "operations": [
+    {
+      "op": "add",
+      "record": {
+        "slug": "how-to-leave-a-voicemail",
+        "title": "How to leave a voicemail: clear business-call messages",
+        "description": "Learn how to leave a useful voicemail with three original business-call templates. State the purpose, callback number and next step clearly.",
+        "navigationLabel": "How to leave a voicemail",
+        "eyebrow": "Service-business office guide",
+        "lead": "A useful voicemail tells the recipient who called, why the call matters and how to respond. For a service business returning an inquiry, keep the message specific enough to recognize without recording unnecessary customer details. Prepare the next action before you start speaking.",
+        "intro": "A useful voicemail tells the recipient who called, why the call matters and how to respond. For a service business returning an inquiry, keep the message specific enough to recognize without recording unnecessary customer details. Prepare the next action before you start speaking.",
+        "sections": [
+          {
+            "title": "Build the message around four details",
+            "paragraphs": [
+              "Use this original order: your name and business; the reason for calling; the requested next step; and a callback number. Speak the number clearly and repeat it when useful. Do not rely on caller ID to provide a usable return number.",
+              "If the greeting does not identify the intended recipient, keep the message general. Avoid leaving a service address, payment detail, access code or disputed account information on an uncertain mailbox. A request to return a business call can be enough."
+            ],
+            "items": []
+          },
+          {
+            "title": "1. Return a new service inquiry",
+            "paragraphs": [
+              "Original template: “Hello [name, if appropriate]. This is [your name] with [business]. I am returning your inquiry about [brief, non-sensitive service description]. Please call our office at [number] so we can discuss the next step. Again, this is [name] at [number].”",
+              "Replace the bracketed fields before use. Do not say an appointment is booked if the customer only requested a time. If the inquiry cannot be identified confidently, omit its details and ask the recipient to contact the office."
+            ],
+            "items": []
+          },
+          {
+            "title": "2. Ask for a decision on a proposed visit",
+            "paragraphs": [
+              "Original template: “Hello, this is [name] from [business]. I am calling about the visit arrangement we discussed. We still need your confirmation before it is finalized. Please contact [office or role] at [number]. Thank you.”",
+              "Use this only when confirmation really is pending. A voicemail is not proof that the customer received or accepted a proposed time. Keep the request open in the office process until the authorized confirmation occurs. Do not reserve capacity indefinitely unless that is the business’s actual rule."
+            ],
+            "items": []
+          },
+          {
+            "title": "3. Follow up on an unanswered office question",
+            "paragraphs": [
+              "Original template: “Hello, this is [name] with [business]. I am following up on your question for our office. Please return my call at [number] and ask for [role or reference, when appropriate]. Again, the number is [number].”",
+              "Keep sensitive answers for an appropriate verified conversation. If another person now owns the question, use the contact route that person has approved. Do not leave conflicting numbers or an unsupported promise that a technician will attend."
+            ],
+            "items": []
+          },
+          {
+            "title": "Check the result without assuming delivery",
+            "paragraphs": [
+              "Practice the message with fictional details. Ask a colleague to identify the business, purpose and callback number from one playback. If the number is unclear, slow down or group the digits naturally rather than adding more explanation.",
+              "After an actual authorized call, record that a voicemail was left, the request reference and the next responsible person. Separate message left from customer reached, response received and appointment confirmed. Follow the company’s contact-preference and follow-up process; repeated messages do not establish consent or completion.",
+              "This guide covers the message a caller leaves. The separate business-voicemail-greeting guide covers the recording a business plays to incoming callers. Revo’s Services and Pricing pages describe its answering offer; these templates do not establish outbound calling, voicemail-drop automation or delivery tracking as Revo features."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "How long should a voicemail be?",
+            "a": "Keep the details needed to recognize the call and respond. This guide does not prescribe a universal duration; test whether the purpose and number are understandable."
+          },
+          {
+            "q": "Does leaving a voicemail confirm an appointment?",
+            "a": "No. A recorded message is not evidence that the customer accepted a proposed appointment."
+          }
+        ],
+        "takeaway": "Use the examples with your own office process and confirm the next action before making a commitment.",
+        "pricingVariant": "full",
+        "template": "workflow",
+        "related": [
+          "business-voicemail-greeting",
+          "customer-service-call-log",
+          "phone-answering-script"
+        ],
+        "sourcePaths": [
+          "https://smith.ai/blog/how-to-leave-a-voicemail",
+          "https://www.revoapp.ai/services.html",
+          "https://www.revoapp.ai/pricing.html"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "landscape-scheduling-software",
+        "title": "Landscape scheduling software: jobs, crews and changes",
+        "description": "Evaluate landscape scheduling software with an original crew-and-job worksheet. Test travel, recurring work, weather changes and customer communication.",
+        "navigationLabel": "Landscape scheduling software",
+        "eyebrow": "Service-business office guide",
+        "lead": "Landscape scheduling software should help your business place the right work on the right team’s schedule. A customer appointment, a crew assignment and a route are related but different records. Compare tools against an actual operating problem before choosing a long feature list.",
+        "intro": "Landscape scheduling software should help your business place the right work on the right team’s schedule. A customer appointment, a crew assignment and a route are related but different records. Compare tools against an actual operating problem before choosing a long feature list.",
+        "sections": [
+          {
+            "title": "Separate the schedule objects",
+            "paragraphs": [
+              "Write down the customer, service property, job, visit, assigned team and required equipment for a fictional working day. A recurring maintenance agreement may produce many visits. A one-time installation may require several days and different resources. Do not assume one calendar entry represents every part of the work.",
+              "Use an original selection worksheet with these columns: task; authoritative record; required resource; scheduling constraint; person allowed to change it; and customer message. Mark unknown behavior for demonstration rather than treating a feature label as proof."
+            ],
+            "items": []
+          },
+          {
+            "title": "Test a day with travel and equipment constraints",
+            "paragraphs": [
+              "Fictional example: Team A has two maintenance visits and Team B has an installation. A shared piece of equipment is available to only one team at a time. Ask the vendor to demonstrate assignments and changes using invented properties and travel allowances chosen by your business.",
+              "Inspect whether the proposed tool exposes a resource conflict, merely permits a warning or allows a dispatcher to override it. Record the observed result. This is a test design, not a claim that a named product calculates routes, travel times or equipment availability automatically.",
+              "A customer-facing opening can be misleading when the crew cannot reach the property or lacks the needed resource. Evaluate the capacity your operation actually uses, not only empty time on a calendar."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare recurring work and weather changes",
+            "paragraphs": [
+              "Use three separate cases: move one maintenance visit; change the future cadence; and postpone a day of work because the authorized manager decided conditions require it. Inspect which visits move and which stay unchanged. A one-visit change should not silently rewrite the entire service agreement.",
+              "For a weather-related change, ask how the office identifies affected customers, assigns the revised work and tracks questions that remain unanswered. A moved job does not prove that the customer was informed. Do not assume a weather feed, route optimizer or notification system is included without seeing it in the proposed package."
+            ],
+            "items": []
+          },
+          {
+            "title": "Check office-to-field ownership",
+            "paragraphs": [
+              "Define who accepts a new inquiry, who estimates the work, who confirms the visit and who assigns the crew. Ask what field staff can see and update, including what happens when a device has no connection. Require a demonstration before depending on offline access or synchronization.",
+              "Compare the same fictional job through creation, crew reassignment and cancellation. Record the final property, visit, resource assignment and unresolved action. Obtain current package limits and commercial terms directly; this article does not supply product rankings or unverified prices."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep answering and dispatch as separate purchases",
+            "paragraphs": [
+              "An answering arrangement may collect a request or perform a supported booking action. That does not establish crew scheduling, route planning, equipment allocation or weather-based rescheduling. Decide which system and office role own each of those tasks.",
+              "Revo’s existing landscaping-answering guide covers receiving calls while the office is busy. Services and Pricing explain the answering offer. This selection worksheet does not claim Revo is landscape management software or connects to a named scheduling platform. Use it to define the handoff a proposed answering setup must respect."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is landscape scheduling just appointment booking?",
+            "a": "No. Crew, property, equipment and travel constraints may remain after a customer appointment is created. Define which records your operation needs."
+          },
+          {
+            "q": "Should a weather change move every future recurring visit?",
+            "a": "Only if that is the authorized intended change. Test a single occurrence and a series change separately."
+          }
+        ],
+        "takeaway": "Use the examples with your own office process and confirm the next action before making a commitment.",
+        "pricingVariant": "full",
+        "template": "workflow",
+        "related": [
+          "landscaping-overflow-answering",
+          "appointment-booking",
+          "centralized-scheduling-integration",
+          "recurring-cleaning-call-changes"
+        ],
+        "sourcePaths": [
+          "https://smith.ai/blog/the-10-best-scheduling-apps-for-landscaping-gardening-businesses-free-and-paid-tools-to-shape-up-your-job-management",
+          "https://www.revoapp.ai/services.html",
+          "https://www.revoapp.ai/pricing.html"
+        ]
+      }
+    }
+  ]
+}
