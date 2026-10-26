@@ -38,6 +38,11 @@ export function withSeoRewrites(vercel, pages, config) {
   const others = (vercel.rewrites ?? []).filter(rewrite => !isSeoRewrite(rewrite));
   const rewrites = [...others, ...seoRewrites(pages, config)];
   const next = { ...vercel };
+  const oldSeo = redirect => (isSeoRewrite(redirect) || redirect.source === SEO_PREFIX + '.html') && String(redirect.source).endsWith('.html');
+  next.redirects = [
+    ...publicRoutes(pages, config).map(route => ({source: route + '.html', destination: (config.publicOrigin ?? 'https://www.revoapp.ai') + route, permanent: true})),
+    ...(vercel.redirects ?? []).filter(redirect => !oldSeo(redirect)),
+  ];
   if (rewrites.length) next.rewrites = rewrites;
   else delete next.rewrites;
   return next;
@@ -56,3 +61,6 @@ export function homeNavigation(pages, config) {
 }
 
 export const serializeVercel = vercel => JSON.stringify(vercel, null, 2) + '\n';
+
+export const currentSeoRedirects = vercel => (vercel.redirects ?? []).filter(r => (isSeoRewrite(r) || r.source === SEO_PREFIX + '.html') && String(r.source).endsWith('.html'));
+export const seoRedirects = (pages, config) => publicRoutes(pages, config).map(route => ({source: route + '.html', destination: (config.publicOrigin ?? 'https://www.revoapp.ai') + route, permanent: true}));

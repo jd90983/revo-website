@@ -350,7 +350,7 @@
           );
           form.reset();
           setTimeout(function () {
-            window.location.href = "thank-you.html";
+            window.location.href = "thank-you";
           }, 1500);
         })
         .catch(function (error) {

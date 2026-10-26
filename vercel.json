@@ -2,6 +2,1561 @@
   "outputDirectory": ".seo-dist",
   "redirects": [
     {
+      "source": "/ai-answering-service/after-hours.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/after-hours",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/missed-calls.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/missed-calls",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/ai-vs-voicemail.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/ai-vs-voicemail",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/ai-vs-live-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/ai-vs-live-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/cost-of-missed-calls.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/cost-of-missed-calls",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/bilingual-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/bilingual-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answering-service-cost.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answering-service-cost",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/appointment-booking.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/appointment-booking",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/overflow-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/overflow-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/lead-qualification.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/lead-qualification",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/ai-call-summary.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/ai-call-summary",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/business-call-recording.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/business-call-recording",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call-transcription.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call-transcription",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/warm-vs-cold-transfer.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/warm-vs-cold-transfer",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/phone-answering-script.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/phone-answering-script",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/choose-virtual-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/choose-virtual-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/virtual-receptionist-vs-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/virtual-receptionist-vs-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/missed-call-text-back.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/missed-call-text-back",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/conditional-call-forwarding.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/conditional-call-forwarding",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/landline-call-forwarding.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/landline-call-forwarding",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call-routing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call-routing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call-transfer-language.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call-transfer-language",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/t-mobile-call-forwarding.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/t-mobile-call-forwarding",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/verizon-call-forwarding.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/verizon-call-forwarding",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/phone-number-porting.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/phone-number-porting",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/pay-as-you-go-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/pay-as-you-go-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call-screening.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call-screening",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/turn-off-call-forwarding.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/turn-off-call-forwarding",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/appointment-reminders.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/appointment-reminders",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/ivr-system-cost.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/ivr-system-cost",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/home-services-ai-receptionists.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/home-services-ai-receptionists",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/business-voicemail-greeting.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/business-voicemail-greeting",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/servicetitan-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/servicetitan-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call-queue.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call-queue",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call-whisper.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call-whisper",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/on-hold-messages.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/on-hold-messages",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/speed-to-lead.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/speed-to-lead",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call-abandonment-rate.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call-abandonment-rate",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call-disposition.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call-disposition",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/average-speed-of-answer.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/average-speed-of-answer",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/first-call-resolution.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/first-call-resolution",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/local-vs-toll-free-number.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/local-vs-toll-free-number",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/business-caller-id.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/business-caller-id",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/appointment-cancellation-policy.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/appointment-cancellation-policy",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/voip-vs-landline.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/voip-vs-landline",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/voip-jitter.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/voip-jitter",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/jobber-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/jobber-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/voicemail-to-email.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/voicemail-to-email",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call-quality-monitoring.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call-quality-monitoring",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/dynamic-number-insertion.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/dynamic-number-insertion",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/moneypenny-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/moneypenny-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/ruby-receptionist-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/ruby-receptionist-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/average-handle-time.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/average-handle-time",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/hvac-after-hours-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/hvac-after-hours-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/plumbing-24-7-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/plumbing-24-7-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/plumbing-answering-with-scheduling.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/plumbing-answering-with-scheduling",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/restoration-after-hours-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/restoration-after-hours-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/roofing-24-7-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/roofing-24-7-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/contractors-after-hours-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/contractors-after-hours-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/tree-service-ai-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/tree-service-ai-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/gutter-service-ai-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/gutter-service-ai-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/concrete-masonry-ai-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/concrete-masonry-ai-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/fence-installation-ai-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/fence-installation-ai-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/septic-service-ai-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/septic-service-ai-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/pool-builder-ai-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/pool-builder-ai-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/foundation-repair-ai-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/foundation-repair-ai-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/hvac-overflow-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/hvac-overflow-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/roofing-lead-qualification.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/roofing-lead-qualification",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/electrical-contractor-call-screening.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/electrical-contractor-call-screening",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/remodeling-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/remodeling-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/landscaping-overflow-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/landscaping-overflow-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/cleaning-answering-with-scheduling.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/cleaning-answering-with-scheduling",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/locksmith-overflow-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/locksmith-overflow-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/window-door-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/window-door-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/siding-contractor-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/siding-contractor-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/irrigation-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/irrigation-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/insulation-contractor-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/insulation-contractor-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/deck-builder-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/deck-builder-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/well-pump-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/well-pump-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/water-treatment-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/water-treatment-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/residential-glass-repair-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/residential-glass-repair-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/hardwood-refinishing-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/hardwood-refinishing-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/drywall-contractor-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/drywall-contractor-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/home-inspector-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/home-inspector-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/basement-waterproofing-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/basement-waterproofing-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/paving-contractor-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/paving-contractor-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/excavation-contractor-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/excavation-contractor-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/generator-installation-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/generator-installation-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/countertop-installer-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/countertop-installer-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/cabinet-installer-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/cabinet-installer-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/dumpster-rental-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/dumpster-rental-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/radon-mitigation-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/radon-mitigation-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/wildlife-removal-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/wildlife-removal-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/closet-company-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/closet-company-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/window-treatment-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/window-treatment-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/awning-company-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/awning-company-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/floor-coating-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/floor-coating-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/bathtub-refinishing-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/bathtub-refinishing-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/home-automation-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/home-automation-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/home-elevator-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/home-elevator-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/fireplace-installation-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/fireplace-installation-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/solar-panel-cleaning-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/solar-panel-cleaning-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/holiday-lighting-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/holiday-lighting-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/artificial-turf-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/artificial-turf-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/pond-contractor-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/pond-contractor-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/sunroom-contractor-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/sunroom-contractor-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/shed-builder-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/shed-builder-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/residential-window-tinting-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/residential-window-tinting-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/furniture-repair-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/furniture-repair-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/home-energy-auditor-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/home-energy-auditor-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/professional-organizer-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/professional-organizer-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/pet-waste-removal-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/pet-waste-removal-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/home-watch-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/home-watch-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/revo-vs-smith-ai.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/revo-vs-smith-ai",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/revo-vs-answerconnect.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/revo-vs-answerconnect",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/ringcentral-ai-receptionist-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/ringcentral-ai-receptionist-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/goodcall-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/goodcall-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/rosie-ai-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/rosie-ai-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/patlive-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/patlive-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/housecall-pro-answering-cost.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/housecall-pro-answering-cost",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/my-ai-front-desk-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/my-ai-front-desk-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answering-service-care-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answering-service-care-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/specialty-answering-service-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/specialty-answering-service-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/davinci-virtual-receptionist-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/davinci-virtual-receptionist-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/map-communications-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/map-communications-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/receptionhq-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/receptionhq-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/goto-ai-receptionist-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/goto-ai-receptionist-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/zoom-ai-receptionist-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/zoom-ai-receptionist-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/openphone-ai-receptionist-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/openphone-ai-receptionist-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/temporary-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/temporary-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answering-service-app.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answering-service-app",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answering-service-free-trial.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answering-service-free-trial",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/upfirst-ai-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/upfirst-ai-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/signpost-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/signpost-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answerforce-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answerforce-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/ambs-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/ambs-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/contact-one-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/contact-one-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call24-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call24-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/american-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/american-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answerone-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answerone-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/anserve-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/anserve-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/a-better-answer-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/a-better-answer-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/anser-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/anser-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answering365-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answering365-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/signius-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/signius-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/direct-line-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/direct-line-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/apello-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/apello-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/tas-united-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/tas-united-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/xact-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/xact-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answeringservice-com-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answeringservice-com-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/callstar-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/callstar-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/acena-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/acena-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/customer-elation-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/customer-elation-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/procomm-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/procomm-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/the-perfect-answer-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/the-perfect-answer-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answer-all-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answer-all-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/executel-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/executel-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/intouch-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/intouch-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/abbott-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/abbott-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/telesec-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/telesec-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/towne-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/towne-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answernet-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answernet-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/select-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/select-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/revo-vs-sameday.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/revo-vs-sameday",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/revo-vs-avoca.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/revo-vs-avoca",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/email-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/email-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/live-chat-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/live-chat-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/sms-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/sms-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/selective-call-forwarding.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/selective-call-forwarding",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call-forwarding-cost.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call-forwarding-cost",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answering-service-contract-checklist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answering-service-contract-checklist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/switch-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/switch-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/dedicated-vs-shared-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/dedicated-vs-shared-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/responsive-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/responsive-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call-experts-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call-experts-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/pcmsi-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/pcmsi-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/advanced-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/advanced-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/business-connections-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/business-connections-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/focus-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/focus-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answer-america-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answer-america-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call-forwarding-troubleshooting.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call-forwarding-troubleshooting",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/disaster-recovery-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/disaster-recovery-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/multi-location-answering-service-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/multi-location-answering-service-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call-center-service-level.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call-center-service-level",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/ring-group-vs-call-queue.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/ring-group-vs-call-queue",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answering-service-conversion-rate-comparison.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answering-service-conversion-rate-comparison",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/google-voice-auto-attendant-cost.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/google-voice-auto-attendant-cost",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/simultaneous-call-capacity.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/simultaneous-call-capacity",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/appointment-waitlist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/appointment-waitlist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/call-and-text-forwarding.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/call-and-text-forwarding",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/vonage-virtual-receptionist-setup.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/vonage-virtual-receptionist-setup",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/8x8-virtual-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/8x8-virtual-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/reception247-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/reception247-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/customer-service-call-log.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/customer-service-call-log",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/pest-control-answering-services.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/pest-control-answering-services",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/lead-qualification-receptionists.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/lead-qualification-receptionists",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/hvac-plumbing-ai-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/hvac-plumbing-ai-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/plan-24-7-phone-coverage.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/plan-24-7-phone-coverage",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/24-7-live-receptionist-services.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/24-7-live-receptionist-services",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/receptionist-appointment-management.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/receptionist-appointment-management",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/contractor-on-call-answering-services.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/contractor-on-call-answering-services",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/centralized-scheduling-integration.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/centralized-scheduling-integration",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/google-local-services-ads-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/google-local-services-ads-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answering-service-payment-collection.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answering-service-payment-collection",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/ai-receptionist-knowledge-base.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/ai-receptionist-knowledge-base",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/ai-for-home-services-workflows.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/ai-for-home-services-workflows",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/build-vs-buy-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/build-vs-buy-ai-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/breezy-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/breezy-ai-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/netic-for-contractors.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/netic-for-contractors",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/skipcalls-ai-receptionist-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/skipcalls-ai-receptionist-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/ooma-receptionist-options.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/ooma-receptionist-options",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/callers-ai-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/callers-ai-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/my-receptionist-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/my-receptionist-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/gohighlevel-ai-receptionist-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/gohighlevel-ai-receptionist-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/lower-answering-service-cost.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/lower-answering-service-cost",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/workiz-genius-answering.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/workiz-genius-answering",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/fieldedge-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/fieldedge-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/fieldpulse-operator-ai.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/fieldpulse-operator-ai",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/dispatch-fee-phone-script.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/dispatch-fee-phone-script",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/recurring-cleaning-call-changes.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/recurring-cleaning-call-changes",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/restoration-project-update-calls.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/restoration-project-update-calls",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/hvac-lead-generation.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/hvac-lead-generation",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/customer-service-survey-questions.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/customer-service-survey-questions",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/difficult-customers-on-the-phone.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/difficult-customers-on-the-phone",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/hvac-business-plan.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/hvac-business-plan",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/get-clients-cleaning-business.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/get-clients-cleaning-business",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/nato-phonetic-alphabet-phone.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/nato-phonetic-alphabet-phone",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/empathy-statements-customer-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/empathy-statements-customer-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/what-is-a-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/what-is-a-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/building-rapport-with-customers.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/building-rapport-with-customers",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/customer-trust-service-business.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/customer-trust-service-business",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/proactive-customer-care.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/proactive-customer-care",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/phone-etiquette-training.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/phone-etiquette-training",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/how-to-leave-a-voicemail.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/how-to-leave-a-voicemail",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/landscape-scheduling-software.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/landscape-scheduling-software",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/customer-service-outsourcing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/customer-service-outsourcing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/communication-platform-for-business.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/communication-platform-for-business",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/hvac-ppc-marketing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/hvac-ppc-marketing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/on-call-scheduling-software.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/on-call-scheduling-software",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/visual-voicemail-android.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/visual-voicemail-android",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/industry_pest_control.html",
+      "destination": "https://www.revoapp.ai/industry_pest_control",
+      "permanent": true
+    },
+    {
+      "source": "/industry_home_service.html",
+      "destination": "https://www.revoapp.ai/industry_home_service",
+      "permanent": true
+    },
+    {
+      "source": "/industry_towing.html",
+      "destination": "https://www.revoapp.ai/industry_towing",
+      "permanent": true
+    },
+    {
+      "source": "/industry_it_technology_communications.html",
+      "destination": "https://www.revoapp.ai/industry_it_technology_communications",
+      "permanent": true
+    },
+    {
+      "source": "/industries.html",
+      "destination": "https://www.revoapp.ai/industries",
+      "permanent": true
+    },
+    {
+      "source": "/industry_pressure_washing.html",
+      "destination": "https://www.revoapp.ai/industry_pressure_washing",
+      "permanent": true
+    },
+    {
+      "source": "/industry_air_duct_cleaning.html",
+      "destination": "https://www.revoapp.ai/industry_air_duct_cleaning",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "https://www.revoapp.ai/",
+      "permanent": true
+    },
+    {
+      "source": "/industry_hvac.html",
+      "destination": "https://www.revoapp.ai/industry_hvac",
+      "permanent": true
+    },
+    {
+      "source": "/industry_chimney_sweep.html",
+      "destination": "https://www.revoapp.ai/industry_chimney_sweep",
+      "permanent": true
+    },
+    {
+      "source": "/industry_small_business.html",
+      "destination": "https://www.revoapp.ai/industry_small_business",
+      "permanent": true
+    },
+    {
+      "source": "/ai-receptionist-demo.html",
+      "destination": "https://www.revoapp.ai/ai-receptionist-demo",
+      "permanent": true
+    },
+    {
+      "source": "/privacy-policy.html",
+      "destination": "https://www.revoapp.ai/privacy-policy",
+      "permanent": true
+    },
+    {
+      "source": "/industry_construction.html",
+      "destination": "https://www.revoapp.ai/industry_construction",
+      "permanent": true
+    },
+    {
+      "source": "/pricing.html",
+      "destination": "https://www.revoapp.ai/pricing",
+      "permanent": true
+    },
+    {
+      "source": "/industry_electrical.html",
+      "destination": "https://www.revoapp.ai/industry_electrical",
+      "permanent": true
+    },
+    {
+      "source": "/industry_general_contracting.html",
+      "destination": "https://www.revoapp.ai/industry_general_contracting",
+      "permanent": true
+    },
+    {
+      "source": "/industry_appliance_repair.html",
+      "destination": "https://www.revoapp.ai/industry_appliance_repair",
+      "permanent": true
+    },
+    {
+      "source": "/industry_retail_ecommerce.html",
+      "destination": "https://www.revoapp.ai/industry_retail_ecommerce",
+      "permanent": true
+    },
+    {
+      "source": "/industry_lawn_care.html",
+      "destination": "https://www.revoapp.ai/industry_lawn_care",
+      "permanent": true
+    },
+    {
+      "source": "/industry_moving.html",
+      "destination": "https://www.revoapp.ai/industry_moving",
+      "permanent": true
+    },
+    {
+      "source": "/industry_maid_cleaning.html",
+      "destination": "https://www.revoapp.ai/industry_maid_cleaning",
+      "permanent": true
+    },
+    {
+      "source": "/benefits-temp.html",
+      "destination": "https://www.revoapp.ai/benefits-temp",
+      "permanent": true
+    },
+    {
+      "source": "/industry_landscape.html",
+      "destination": "https://www.revoapp.ai/industry_landscape",
+      "permanent": true
+    },
+    {
+      "source": "/industry_tourism_travel_hospitality.html",
+      "destination": "https://www.revoapp.ai/industry_tourism_travel_hospitality",
+      "permanent": true
+    },
+    {
+      "source": "/industry_carpet_cleaning.html",
+      "destination": "https://www.revoapp.ai/industry_carpet_cleaning",
+      "permanent": true
+    },
+    {
+      "source": "/industry_window_cleaning.html",
+      "destination": "https://www.revoapp.ai/industry_window_cleaning",
+      "permanent": true
+    },
+    {
+      "source": "/industry_junk_removal.html",
+      "destination": "https://www.revoapp.ai/industry_junk_removal",
+      "permanent": true
+    },
+    {
+      "source": "/industry_pool_services.html",
+      "destination": "https://www.revoapp.ai/industry_pool_services",
+      "permanent": true
+    },
+    {
+      "source": "/industry_garage_door.html",
+      "destination": "https://www.revoapp.ai/industry_garage_door",
+      "permanent": true
+    },
+    {
+      "source": "/industry_solar_installation.html",
+      "destination": "https://www.revoapp.ai/industry_solar_installation",
+      "permanent": true
+    },
+    {
+      "source": "/industry_computer_repair.html",
+      "destination": "https://www.revoapp.ai/industry_computer_repair",
+      "permanent": true
+    },
+    {
+      "source": "/industry_marketing_media_advertising.html",
+      "destination": "https://www.revoapp.ai/industry_marketing_media_advertising",
+      "permanent": true
+    },
+    {
+      "source": "/industry_tilling.html",
+      "destination": "https://www.revoapp.ai/industry_tilling",
+      "permanent": true
+    },
+    {
+      "source": "/industry_roofing.html",
+      "destination": "https://www.revoapp.ai/industry_roofing",
+      "permanent": true
+    },
+    {
+      "source": "/industry_franchises.html",
+      "destination": "https://www.revoapp.ai/industry_franchises",
+      "permanent": true
+    },
+    {
+      "source": "/industry_alarm_security.html",
+      "destination": "https://www.revoapp.ai/industry_alarm_security",
+      "permanent": true
+    },
+    {
+      "source": "/industry_healthcare_medical.html",
+      "destination": "https://www.revoapp.ai/industry_healthcare_medical",
+      "permanent": true
+    },
+    {
+      "source": "/terms-of-service.html",
+      "destination": "https://www.revoapp.ai/terms-of-service",
+      "permanent": true
+    },
+    {
+      "source": "/industry_plumbing.html",
+      "destination": "https://www.revoapp.ai/industry_plumbing",
+      "permanent": true
+    },
+    {
+      "source": "/industry_corporate_government.html",
+      "destination": "https://www.revoapp.ai/industry_corporate_government",
+      "permanent": true
+    },
+    {
+      "source": "/download.html",
+      "destination": "https://www.revoapp.ai/download",
+      "permanent": true
+    },
+    {
+      "source": "/industry_building_construction_trades.html",
+      "destination": "https://www.revoapp.ai/industry_building_construction_trades",
+      "permanent": true
+    },
+    {
+      "source": "/industry_handyman.html",
+      "destination": "https://www.revoapp.ai/industry_handyman",
+      "permanent": true
+    },
+    {
+      "source": "/services.html",
+      "destination": "https://www.revoapp.ai/services",
+      "permanent": true
+    },
+    {
+      "source": "/revo-landing-page-campaign-1.html",
+      "destination": "https://www.revoapp.ai/revo-landing-page-campaign-1",
+      "permanent": true
+    },
+    {
+      "source": "/industry_legal.html",
+      "destination": "https://www.revoapp.ai/industry_legal",
+      "permanent": true
+    },
+    {
+      "source": "/industry_restoration.html",
+      "destination": "https://www.revoapp.ai/industry_restoration",
+      "permanent": true
+    },
+    {
+      "source": "/hear-a-sample-call.html",
+      "destination": "https://www.revoapp.ai/hear-a-sample-call",
+      "permanent": true
+    },
+    {
+      "source": "/industry_locksmith.html",
+      "destination": "https://www.revoapp.ai/industry_locksmith",
+      "permanent": true
+    },
+    {
+      "source": "/industry_snow_removal.html",
+      "destination": "https://www.revoapp.ai/industry_snow_removal",
+      "permanent": true
+    },
+    {
+      "source": "/industry_financial_service.html",
+      "destination": "https://www.revoapp.ai/industry_financial_service",
+      "permanent": true
+    },
+    {
+      "source": "/download-copy.html",
+      "destination": "https://www.revoapp.ai/download-copy",
+      "permanent": true
+    },
+    {
+      "source": "/thank-you.html",
+      "destination": "https://www.revoapp.ai/thank-you",
+      "permanent": true
+    },
+    {
+      "source": "/industry_property_maintenance.html",
+      "destination": "https://www.revoapp.ai/industry_property_maintenance",
+      "permanent": true
+    },
+    {
+      "source": "/industry_real_estate_property_management.html",
+      "destination": "https://www.revoapp.ai/industry_real_estate_property_management",
+      "permanent": true
+    },
+    {
+      "source": "/industry_painting.html",
+      "destination": "https://www.revoapp.ai/industry_painting",
+      "permanent": true
+    },
+    {
+      "source": "/templates/ser-benefits.html",
+      "destination": "https://www.revoapp.ai/templates/ser-benefits",
+      "permanent": true
+    },
+    {
+      "source": "/templates/ser-features.html",
+      "destination": "https://www.revoapp.ai/templates/ser-features",
+      "permanent": true
+    },
+    {
+      "source": "/templates/experience-power-section.html",
+      "destination": "https://www.revoapp.ai/templates/experience-power-section",
+      "permanent": true
+    },
+    {
+      "source": "/templates/get-started-section.html",
+      "destination": "https://www.revoapp.ai/templates/get-started-section",
+      "permanent": true
+    },
+    {
+      "source": "/templates/get-started-form-section.html",
+      "destination": "https://www.revoapp.ai/templates/get-started-form-section",
+      "permanent": true
+    },
+    {
+      "source": "/templates/transform-cta-section.html",
+      "destination": "https://www.revoapp.ai/templates/transform-cta-section",
+      "permanent": true
+    },
+    {
+      "source": "/templates/sticky-features-section.html",
+      "destination": "https://www.revoapp.ai/templates/sticky-features-section",
+      "permanent": true
+    },
+    {
+      "source": "/templates/sticky-products-section.html",
+      "destination": "https://www.revoapp.ai/templates/sticky-products-section",
+      "permanent": true
+    },
+    {
+      "source": "/templates/intelligent-banner-section.html",
+      "destination": "https://www.revoapp.ai/templates/intelligent-banner-section",
+      "permanent": true
+    },
+    {
+      "source": "/snippets/footer-links.html",
+      "destination": "https://www.revoapp.ai/snippets/footer-links",
+      "permanent": true
+    },
+    {
+      "source": "/ser.html",
+      "destination": "https://www.revoapp.ai/services",
+      "permanent": true
+    },
+    {
+      "source": "/ind.html",
+      "destination": "https://www.revoapp.ai/industries",
+      "permanent": true
+    },
+    {
+      "source": "/ind",
+      "destination": "https://www.revoapp.ai/industries",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
@@ -11,29 +1566,269 @@
       ],
       "destination": "https://www.revoapp.ai/:path*",
       "permanent": true
-    },
-    {
-      "source": "/ser.html",
-      "destination": "/services.html",
-      "permanent": true
-    },
-    {
-      "source": "/ind",
-      "destination": "/industries.html",
-      "permanent": true
-    },
-    {
-      "source": "/ind.html",
-      "destination": "/industries.html",
-      "permanent": true
-    },
-    {
-      "source": "/index.html",
-      "destination": "/",
-      "permanent": true
     }
   ],
   "rewrites": [
+    {
+      "source": "/industry_pest_control",
+      "destination": "/industry_pest_control.html"
+    },
+    {
+      "source": "/industry_home_service",
+      "destination": "/industry_home_service.html"
+    },
+    {
+      "source": "/industry_towing",
+      "destination": "/industry_towing.html"
+    },
+    {
+      "source": "/industry_it_technology_communications",
+      "destination": "/industry_it_technology_communications.html"
+    },
+    {
+      "source": "/industries",
+      "destination": "/industries.html"
+    },
+    {
+      "source": "/industry_pressure_washing",
+      "destination": "/industry_pressure_washing.html"
+    },
+    {
+      "source": "/industry_air_duct_cleaning",
+      "destination": "/industry_air_duct_cleaning.html"
+    },
+    {
+      "source": "/industry_hvac",
+      "destination": "/industry_hvac.html"
+    },
+    {
+      "source": "/industry_chimney_sweep",
+      "destination": "/industry_chimney_sweep.html"
+    },
+    {
+      "source": "/industry_small_business",
+      "destination": "/industry_small_business.html"
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy.html"
+    },
+    {
+      "source": "/industry_construction",
+      "destination": "/industry_construction.html"
+    },
+    {
+      "source": "/pricing",
+      "destination": "/pricing.html"
+    },
+    {
+      "source": "/industry_electrical",
+      "destination": "/industry_electrical.html"
+    },
+    {
+      "source": "/industry_general_contracting",
+      "destination": "/industry_general_contracting.html"
+    },
+    {
+      "source": "/industry_appliance_repair",
+      "destination": "/industry_appliance_repair.html"
+    },
+    {
+      "source": "/industry_retail_ecommerce",
+      "destination": "/industry_retail_ecommerce.html"
+    },
+    {
+      "source": "/industry_lawn_care",
+      "destination": "/industry_lawn_care.html"
+    },
+    {
+      "source": "/industry_moving",
+      "destination": "/industry_moving.html"
+    },
+    {
+      "source": "/industry_maid_cleaning",
+      "destination": "/industry_maid_cleaning.html"
+    },
+    {
+      "source": "/benefits-temp",
+      "destination": "/benefits-temp.html"
+    },
+    {
+      "source": "/industry_landscape",
+      "destination": "/industry_landscape.html"
+    },
+    {
+      "source": "/industry_tourism_travel_hospitality",
+      "destination": "/industry_tourism_travel_hospitality.html"
+    },
+    {
+      "source": "/industry_carpet_cleaning",
+      "destination": "/industry_carpet_cleaning.html"
+    },
+    {
+      "source": "/industry_window_cleaning",
+      "destination": "/industry_window_cleaning.html"
+    },
+    {
+      "source": "/industry_junk_removal",
+      "destination": "/industry_junk_removal.html"
+    },
+    {
+      "source": "/industry_pool_services",
+      "destination": "/industry_pool_services.html"
+    },
+    {
+      "source": "/industry_garage_door",
+      "destination": "/industry_garage_door.html"
+    },
+    {
+      "source": "/industry_solar_installation",
+      "destination": "/industry_solar_installation.html"
+    },
+    {
+      "source": "/industry_computer_repair",
+      "destination": "/industry_computer_repair.html"
+    },
+    {
+      "source": "/industry_marketing_media_advertising",
+      "destination": "/industry_marketing_media_advertising.html"
+    },
+    {
+      "source": "/industry_tilling",
+      "destination": "/industry_tilling.html"
+    },
+    {
+      "source": "/industry_roofing",
+      "destination": "/industry_roofing.html"
+    },
+    {
+      "source": "/industry_franchises",
+      "destination": "/industry_franchises.html"
+    },
+    {
+      "source": "/industry_alarm_security",
+      "destination": "/industry_alarm_security.html"
+    },
+    {
+      "source": "/industry_healthcare_medical",
+      "destination": "/industry_healthcare_medical.html"
+    },
+    {
+      "source": "/terms-of-service",
+      "destination": "/terms-of-service.html"
+    },
+    {
+      "source": "/industry_plumbing",
+      "destination": "/industry_plumbing.html"
+    },
+    {
+      "source": "/industry_corporate_government",
+      "destination": "/industry_corporate_government.html"
+    },
+    {
+      "source": "/download",
+      "destination": "/download.html"
+    },
+    {
+      "source": "/industry_building_construction_trades",
+      "destination": "/industry_building_construction_trades.html"
+    },
+    {
+      "source": "/industry_handyman",
+      "destination": "/industry_handyman.html"
+    },
+    {
+      "source": "/services",
+      "destination": "/services.html"
+    },
+    {
+      "source": "/revo-landing-page-campaign-1",
+      "destination": "/revo-landing-page-campaign-1.html"
+    },
+    {
+      "source": "/industry_legal",
+      "destination": "/industry_legal.html"
+    },
+    {
+      "source": "/industry_restoration",
+      "destination": "/industry_restoration.html"
+    },
+    {
+      "source": "/hear-a-sample-call",
+      "destination": "/hear-a-sample-call.html"
+    },
+    {
+      "source": "/industry_locksmith",
+      "destination": "/industry_locksmith.html"
+    },
+    {
+      "source": "/industry_snow_removal",
+      "destination": "/industry_snow_removal.html"
+    },
+    {
+      "source": "/industry_financial_service",
+      "destination": "/industry_financial_service.html"
+    },
+    {
+      "source": "/download-copy",
+      "destination": "/download-copy.html"
+    },
+    {
+      "source": "/thank-you",
+      "destination": "/thank-you.html"
+    },
+    {
+      "source": "/industry_property_maintenance",
+      "destination": "/industry_property_maintenance.html"
+    },
+    {
+      "source": "/industry_real_estate_property_management",
+      "destination": "/industry_real_estate_property_management.html"
+    },
+    {
+      "source": "/industry_painting",
+      "destination": "/industry_painting.html"
+    },
+    {
+      "source": "/templates/ser-benefits",
+      "destination": "/templates/ser-benefits.html"
+    },
+    {
+      "source": "/templates/ser-features",
+      "destination": "/templates/ser-features.html"
+    },
+    {
+      "source": "/templates/experience-power-section",
+      "destination": "/templates/experience-power-section.html"
+    },
+    {
+      "source": "/templates/get-started-section",
+      "destination": "/templates/get-started-section.html"
+    },
+    {
+      "source": "/templates/get-started-form-section",
+      "destination": "/templates/get-started-form-section.html"
+    },
+    {
+      "source": "/templates/transform-cta-section",
+      "destination": "/templates/transform-cta-section.html"
+    },
+    {
+      "source": "/templates/sticky-features-section",
+      "destination": "/templates/sticky-features-section.html"
+    },
+    {
+      "source": "/templates/sticky-products-section",
+      "destination": "/templates/sticky-products-section.html"
+    },
+    {
+      "source": "/templates/intelligent-banner-section",
+      "destination": "/templates/intelligent-banner-section.html"
+    },
+    {
+      "source": "/snippets/footer-links",
+      "destination": "/snippets/footer-links.html"
+    },
     {
       "source": "/ai-receptionist-demo",
       "destination": "/ai-receptionist-demo.html"
@@ -1110,6 +2905,15 @@
         {
           "key": "Content-Disposition",
           "value": "attachment; filename=\"worked-example-17b396589ff0.json\""
+        }
+      ]
+    },
+    {
+      "source": "/thank-you",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex"
         }
       ]
     }
