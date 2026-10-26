@@ -738,5 +738,28 @@
       "added recurring-cleaning-call-changes as draft",
       "added restoration-project-update-calls as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-26-commercial-review-addendum",
+    "batchHash": "sha256:2367bf3d94e6fa7614ced9406a34cd1f1c6f948037d1eeabe60a68d727f2d38c",
+    "source": {
+      "kind": "manual",
+      "reference": "Immutable twelve-record addendum to the SAME October 26 daily lot and PR, following the user traffic-and-brand criterion. Preserves the already applied six-record base batch. Original editorial content; research retained privately; exact human review pending."
+    },
+    "appliedAt": "2026-10-26",
+    "changes": [
+      "added hvac-lead-generation as draft",
+      "added customer-service-survey-questions as draft",
+      "added difficult-customers-on-the-phone as draft",
+      "added hvac-business-plan as draft",
+      "added get-clients-cleaning-business as draft",
+      "added nato-phonetic-alphabet-phone as draft",
+      "added empathy-statements-customer-service as draft",
+      "added what-is-a-receptionist as draft",
+      "added building-rapport-with-customers as draft",
+      "added customer-trust-service-business as draft",
+      "added proactive-customer-care as draft",
+      "added phone-etiquette-training as draft"
+    ]
   }
 ]

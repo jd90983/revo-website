@@ -2,7 +2,7 @@
   "dailyLot": "2026-10-26",
   "baseBatchId": "2026-10-26-commercial-review",
   "status": "pending-exact-human-review",
-  "note": "Six records are already draft in the registry. Twelve additional records are staged here. This packet does not approve or publish anything and is not an applied batch. The existing applied batch hash is preserved.",
+  "note": "All eighteen records are draft in the registry. The twelve-record immutable addendum belongs to the SAME daily lot, branch and PR; the six-record base batch hash is unchanged. This packet does not approve or publish anything.",
   "records": [
     {
       "template": "workflow",
@@ -1382,5 +1382,6 @@
       "contentHash": "sha256:f95d14fed7021c748a3ca0f13593e758ffc09b28d3881857b7d79c8657588056",
       "review": null
     }
-  ]
+  ],
+  "addendumBatchId": "2026-10-26-commercial-review-addendum"
 }
