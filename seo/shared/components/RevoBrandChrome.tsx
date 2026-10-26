@@ -8,7 +8,7 @@ import publicGuides from "@/data/public-guide-navigation.json";
 const REVIEW_INDEX="/ai-answering-service/review";
 const reviewPath=(slug:string)=>"/ai-answering-service/"+slug;
 
-const links = [["Services", "/services.html"], ["Industry", "/industries.html"], ["Pricing", "/pricing.html"]];
+const links = [["Services", "/services"], ["Industry", "/industries"], ["Pricing", "/pricing"]];
 const logo = "/ai-answering-service/assets/review/logo.webp";
 
 export function RevoBrandHeader({mode="review",acquisitionEnabled=false}:{mode?:PageMode;acquisitionEnabled?:boolean}={}) {
@@ -37,6 +37,6 @@ export function RevoBrandFooter({mode="review"}:{mode?:PageMode}={}) {
       <nav aria-label="Explore Revo"><h2>Explore</h2>{links.map(([text, url]) => <a key={url} href={url}>{text}</a>)}</nav>
       <nav aria-label="Call planning"><h2>Call planning</h2>{publicGuides.map(page => <a key={page.slug} href={reviewPath(page.slug)}>{page.label}</a>)}</nav>
     </div>
-    <div className="revo-footer-bottom"><p>© 2026 Revo. All communication rights reserved.</p><nav aria-label="Legal navigation"><a href="/privacy-policy.html">Privacy policy</a><a href="/terms-of-service.html">Terms of service</a>{mode === "public" ? <button onClick={()=>window.dispatchEvent(new Event("revo-consent-open"))}>Cookie settings</button> : null}</nav></div>
+    <div className="revo-footer-bottom"><p>© 2026 Revo. All communication rights reserved.</p><nav aria-label="Legal navigation"><a href="/privacy-policy">Privacy policy</a><a href="/terms-of-service">Terms of service</a>{mode === "public" ? <button onClick={()=>window.dispatchEvent(new Event("revo-consent-open"))}>Cookie settings</button> : null}</nav></div>
   </div></footer>;
 }

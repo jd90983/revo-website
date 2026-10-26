@@ -143,7 +143,8 @@ test('routes, sitemap set and navigation come from the approved records only', (
 
   const vercel = { outputDirectory: '.seo-dist', redirects: [{ source: '/a', destination: '/b', permanent: true }], rewrites: [{ source: '/other', destination: '/x.html' }, { source: '/ai-answering-service/stale', destination: '/ai-answering-service/stale.html' }] };
   const next = withSeoRewrites(vercel, sixApproved, CONFIG);
-  assert.deepEqual(next.redirects, vercel.redirects, 'redirects preserved');
+  assert.deepEqual(next.redirects.slice(-vercel.redirects.length), vercel.redirects, 'non-SEO redirects preserved');
+  assert.equal(next.redirects.length, publicRoutes(sixApproved, CONFIG).length + vercel.redirects.length);
   assert.deepEqual(next.rewrites[0], { source: '/other', destination: '/x.html' }, 'non-SEO rewrites preserved');
   assert.deepEqual(next.rewrites.slice(1), seoRewrites(sixApproved, CONFIG), 'SEO rewrites regenerated');
   assert.ok(!next.rewrites.some(r => r.source.endsWith('/stale')), 'stale rewrite removed');

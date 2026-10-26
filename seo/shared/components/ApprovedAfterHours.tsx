@@ -9,11 +9,11 @@ const approvedHtml=`<header class="nav">
 <img class="logo" src="/images/revo-call-design/revo-logo.webp" alt="Revo">
 </a>
 <nav class="navlinks" aria-label="Main navigation">
-<a href="/services.html">Services</a>
-<a href="/industries.html">Industry</a>
-<a href="/pricing.html">Pricing</a>
+<a href="/services">Services</a>
+<a href="/industries">Industry</a>
+<a href="/pricing">Pricing</a>
 </nav>
-<a class="btn light" href="/pricing.html" rel="noopener">Compare plans</a>
+<a class="btn light" href="/pricing" rel="noopener">Compare plans</a>
 </div>
 </header>
 <main id="revo-main">
@@ -28,7 +28,7 @@ const approvedHtml=`<header class="nav">
 <span class="orange">After-hours answering service</span> with a clear next step.</h1>
 <p>Give callers a useful response when the office is closed. Revo captures their request using your script and rules, with expectations that match your service hours.</p>
 <div class="actions">
-<a class="btn" href="/pricing.html" rel="noopener">Compare plans</a>
+<a class="btn" href="/pricing" rel="noopener">Compare plans</a>
 <a class="textlink" href="#call-handling">How after-hours handling works</a>
 </div>
 <p class="hero-foot">Phone coverage does not establish technician availability.</p>
@@ -115,7 +115,7 @@ const approvedHtml=`<header class="nav">
 </div>
 </div>
 </section>
-<section class="section" id="after-hours-test-scenarios"><div class="wrap"><div class="section-top"><div><div class="eyebrow">Illustrative script tests</div><h2>Test the request.<br>Test the fallback.</h2></div><p>Updated <time datetime="2026-10-21">2026-10-21</time> · Published by Revo. These are proposed evaluation scenarios, not customer calls or evidence of results.</p></div><div class="cards"><article class="card"><h3>A routine estimate</h3><p>Collect the work requested, service ZIP and callback details. Give the next office review window. Use only the booking process your business has configured.</p></article><article class="card"><h3>The on-call contact is unavailable</h3><p>Capture the caller’s description and follow the approved fallback. Do not turn an unanswered transfer into a promise that a technician is coming.</p></article><article class="card"><h3>A holiday appointment change</h3><p>Record the existing booking reference and requested change. Give the actual next review window and keep the original booking until a supported process confirms the change.</p></article></div><div class="boundary"><strong>Review the handoff as well as the greeting.</strong><p>For each script test, record the request captured, where it appears, who owns follow-up and the no-answer path. Confirm actual hours, coverage and selected-plan transfer support on <a href="/pricing.html">Revo’s pricing page</a> before forwarding real calls.</p></div></div></section>
+<section class="section" id="after-hours-test-scenarios"><div class="wrap"><div class="section-top"><div><div class="eyebrow">Illustrative script tests</div><h2>Test the request.<br>Test the fallback.</h2></div><p>Updated <time datetime="2026-10-21">2026-10-21</time> · Published by Revo. These are proposed evaluation scenarios, not customer calls or evidence of results.</p></div><div class="cards"><article class="card"><h3>A routine estimate</h3><p>Collect the work requested, service ZIP and callback details. Give the next office review window. Use only the booking process your business has configured.</p></article><article class="card"><h3>The on-call contact is unavailable</h3><p>Capture the caller’s description and follow the approved fallback. Do not turn an unanswered transfer into a promise that a technician is coming.</p></article><article class="card"><h3>A holiday appointment change</h3><p>Record the existing booking reference and requested change. Give the actual next review window and keep the original booking until a supported process confirms the change.</p></article></div><div class="boundary"><strong>Review the handoff as well as the greeting.</strong><p>For each script test, record the request captured, where it appears, who owns follow-up and the no-answer path. Confirm actual hours, coverage and selected-plan transfer support on <a href="/pricing">Revo’s pricing page</a> before forwarding real calls.</p></div></div></section>
 <section class="section">
 <div class="wrap faq-grid" id="faq">
 <div>
@@ -149,7 +149,7 @@ const approvedHtml=`<header class="nav">
 <h2>Make the closed-office<br>experience clear.</h2>
 <p>Compare plan features and the practical details of your after-hours handoff.</p>
 </div>
-<a class="btn" href="/pricing.html" rel="noopener">Compare plans</a>
+<a class="btn" href="/pricing" rel="noopener">Compare plans</a>
 </div>
 <div class="related">
 <span>Keep exploring</span>
@@ -163,25 +163,25 @@ const approvedHtml=`<header class="nav">
 <div class="wrap footer-inner">
 <img class="logo" src="/images/revo-call-design/revo-logo.webp" alt="Revo">
 <span>AI phone answering for home service businesses.</span>
-<a href="/privacy-policy.html">Privacy</a>
-<a href="/terms-of-service.html">Terms</a>
+<a href="/privacy-policy">Privacy</a>
+<a href="/terms-of-service">Terms</a>
 <button type="button" data-cookie-settings>Cookie settings</button>
 </div>
 </footer>
 <div class="floating">
-<a class="btn" href="/pricing.html" rel="noopener">Compare plans</a>
+<a class="btn" href="/pricing" rel="noopener">Compare plans</a>
 </div>`;
 export function ApprovedAfterHours({availableSlugs}:{availableSlugs:string[]}){
  let html=approvedHtml;
- for(const slug of ["overflow-answering","answering-service-cost"]){if(!availableSlugs.includes(slug))html=html.replace("/ai-answering-service/"+slug,slug==="overflow-answering"?"/services.html":"/pricing.html");}
+ for(const slug of ["overflow-answering","answering-service-cost"]){if(!availableSlugs.includes(slug))html=html.replace("/ai-answering-service/"+slug,slug==="overflow-answering"?"/services":"/pricing");}
 
  const recorder=useRef(clickRecorder((event,payload)=>window.gtag?.(event,payload)));
  const handleClick=(event:React.MouseEvent<HTMLDivElement>)=>{
   const target=(event.target as Element).closest("a,button");
   if(target?.hasAttribute("data-cookie-settings")){window.dispatchEvent(new Event("revo-consent-open"));return;}
-  if(target?.getAttribute("href")!=="/pricing.html")return;
+  if(target?.getAttribute("href")!=="/pricing")return;
   try{if(localStorage.getItem(CONSENT_KEY)!=="granted"||(navigator as Navigator & {globalPrivacyControl?:boolean}).globalPrivacyControl)return;}catch{return;}
   const placement=target.closest("header")?"after-hours-header":target.closest(".floating")?"after-hours-mobile":target.closest(".hero")?"after-hours-hero":"after-hours-footer";
-  recorder.current(event.nativeEvent,placement,clickAnalyticsPayload(window.location.href,placement,"https://www.revoapp.ai/pricing.html"),Date.now());
+  recorder.current(event.nativeEvent,placement,clickAnalyticsPayload(window.location.href,placement,"https://www.revoapp.ai/pricing"),Date.now());
  };
  return <><link rel="stylesheet" href="/css/revo-call-design.css"/><div className="revo-approved after" onClick={handleClick} dangerouslySetInnerHTML={{__html:html}}/></>;}

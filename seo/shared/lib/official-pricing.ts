@@ -1,7 +1,7 @@
 // Exact public pricing snapshot, 2026-10-06. User requested source replication.
 // Not checkout configuration or a claim about measured customer outcomes.
 export const OFFICIAL_PRICING = {
-  "source": "https://www.revoapp.ai/pricing.html",
+  "source": "https://www.revoapp.ai/pricing",
   "eyebrow": "Pricing",
   "heading": "Revo that grows with your business",
   "lead": "Revenue agent minutes with transparent plans. No hidden fees — just a 24/7 agent that books jobs for your business.",
@@ -98,7 +98,7 @@ export const OFFICIAL_PRICING = {
         }
       ],
       "cta": "Get Started",
-      "originalHref": "index.html#get-started-form-template-container"
+      "originalHref": "/#get-started-form-template-container"
     },
     {
       "name": "Crew",
@@ -192,7 +192,7 @@ export const OFFICIAL_PRICING = {
         }
       ],
       "cta": "Get Started",
-      "originalHref": "index.html#get-started-form-template-container"
+      "originalHref": "/#get-started-form-template-container"
     },
     {
       "name": "Fleet",
@@ -286,7 +286,7 @@ export const OFFICIAL_PRICING = {
         }
       ],
       "cta": "Get Started",
-      "originalHref": "index.html#get-started-form-template-container"
+      "originalHref": "/#get-started-form-template-container"
     }
   ]
 } as const;

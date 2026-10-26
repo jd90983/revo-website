@@ -20,7 +20,7 @@ export function relatedPagesFor(page:ReviewPage, mode:PageMode = "public"):Revie
  return picked.slice(0, RELATED_LIMIT);
 }
 export const CURRENT_REVIEW_PLANS = [{"name": "Solo", "launch": 87.5, "list": 175, "minutes": 100}, {"name": "Crew", "launch": 175, "list": 350, "minutes": 200}, {"name": "Fleet", "launch": 350, "list": 700, "minutes": 400}];
-export const REVIEW_PRICE_SOURCE = "https://www.revoapp.ai/pricing.html";
+export const REVIEW_PRICE_SOURCE = "https://www.revoapp.ai/pricing";
 export function scenarioValue(inquiries:number,probability:number,value:number) {
  if (![inquiries,probability,value].every(Number.isFinite) || inquiries<0 || !Number.isInteger(inquiries) || probability<0 || probability>100 || value<0) throw new Error("Invalid scenario inputs");
  const result=inquiries*(probability/100)*value;

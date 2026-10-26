@@ -17,7 +17,7 @@ const output = resolve(website, option('--output', config.outputDirectory));
 
 const { readRegistry, landingPath, approvedPages } = await import(pathToFileURL(join(shared, 'lib/landing-registry.mjs')));
 const { LIMITS } = await import(pathToFileURL(join(shared, 'lib/registry-contract.mjs')));
-const { publicRoutes, homeNavigation, seoRewrites, currentSeoRewrites } = await import(pathToFileURL(join(app, 'tools/routes.mjs')));
+const { publicRoutes, homeNavigation, seoRewrites, currentSeoRewrites, seoRedirects, currentSeoRedirects } = await import(pathToFileURL(join(app, 'tools/routes.mjs')));
 
 const registry = readRegistry(pathToFileURL(shared + '/'), { websiteRoot: website });
 const pages = approvedPages(registry);
@@ -126,6 +126,16 @@ for (const route of routes) {
       if (target !== null) assert.ok(target.includes(`id="${decodeURIComponent(url.hash.slice(1))}"`), `Missing anchor ${url.hash} for link on ${route}: ${href}`);
     }
     checkedLinks += 1;
+  }
+}
+
+assert.deepEqual(currentSeoRedirects(vercel), seoRedirects(registry, config), 'SEO HTML redirects drifted');
+assert.ok(locs.every(loc => !new URL(loc).pathname.endsWith('.html')), 'HTML URL in sitemap');
+for (const file of actual.filter(file => file.endsWith('.html'))) {
+  const body = await readFile(join(output, file), 'utf8');
+  for (const [, raw] of body.matchAll(/(?:href|action)="([^"]+)"/g)) {
+    const url = new URL(raw.replaceAll('&amp;', '&'), origin + (file === 'index.html' ? '/' : '/' + file.slice(0, -5)));
+    if (['www.revoapp.ai','revoapp.ai'].includes(url.hostname)) assert.ok(!url.pathname.endsWith('.html'), `HTML navigation on ${file}: ${raw}`);
   }
 }
 

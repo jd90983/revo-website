@@ -1,3 +1,4 @@
+import {publicUrl} from '../lib/public-url';
 import type {GuideTable as GuideTableData} from '@/lib/review-cohort';
 
 /** A server-rendered, scrollable table; source links remain adjacent on small screens. */
@@ -9,6 +10,6 @@ export function GuideTable({table}:{table:GuideTableData}) {
         <tbody>{table.rows.map(row=><tr key={row[0]}>{row.map((cell,index)=>index===0?<th scope="row" key={index}>{cell}</th>:<td key={index}>{cell}</td>)}</tr>)}</tbody>
       </table>
     </div>
-    {table.sources?.length?<nav aria-label="Table sources"><ul>{table.sources.map(source=><li key={source.href}><a href={source.href}>{source.label}</a></li>)}</ul></nav>:null}
+    {table.sources?.length?<nav aria-label="Table sources"><ul>{table.sources.map(source=><li key={source.href}><a href={publicUrl(source.href)}>{source.label}</a></li>)}</ul></nav>:null}
   </div></>;
 }
