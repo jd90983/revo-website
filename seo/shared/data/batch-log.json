@@ -761,5 +761,18 @@
       "added proactive-customer-care as draft",
       "added phone-etiquette-training as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-26-two-page-supplement",
+    "batchHash": "sha256:084c6b154a68ef4ce2337f7449ac6fa3020e966a8be197863f6b8f4aca50e5f0",
+    "source": {
+      "kind": "manual",
+      "reference": "Two net-new informational intents supplement the completed eighteen-page October26 daily target. Original copy; exact CSV evidence and full-corpus dedup retained privately. Human exact-content review pending; no approval inferred from the eighteen-page approval."
+    },
+    "appliedAt": "2026-10-26",
+    "changes": [
+      "added how-to-leave-a-voicemail as draft",
+      "added landscape-scheduling-software as draft"
+    ]
   }
 ]
