@@ -26853,5 +26853,1736 @@
       "contentHash": "sha256:c8829dee5081aed47835e1cbc313b63a9358ec93133a62a028ca72c91e45c79e",
       "note": "User message Sentinel_2a2283db489c81919fe69560879b0ec2, 2026-10-26 19:59 UTC: si; approved exact five-page package at 8006953a97f81613073ad437b78be469e7d75bab, requested in assistant message Sentinel_24dcaa836b108191a637575ad60be67f. Recorded by executor; not executor editorial approval."
     }
+  },
+  {
+    "slug": "small-business-crm-selection",
+    "title": "Small business CRM: test the records behind the relationship",
+    "description": "A small business CRM should help your office understand who a customer is, what work they are considering and what needs attention next. Start with those.",
+    "navigationLabel": "Small business CRM",
+    "eyebrow": "Service-business operating guide",
+    "intro": "A small business CRM should help your office understand who a customer is, what work they are considering and what needs attention next. Start with those records before comparing product names.",
+    "lead": "A small business CRM should help your office understand who a customer is, what work they are considering and what needs attention next. Start with those records before comparing product names.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Separate customer, property and opportunity",
+        "paragraphs": [
+          "A customer is not always one person at one address. A property manager may discuss work at several properties; a homeowner may request two unrelated estimates. Sketch these relationships before a software demonstration.",
+          "Use a fictional customer, two service properties and two opportunities. Ask the vendor to show how the office finds the right property without copying the entire customer record. Verify how an authorized user corrects an incorrect relationship."
+        ],
+        "items": []
+      },
+      {
+        "title": "Follow one opportunity to a decision",
+        "paragraphs": [
+          "An opportunity represents possible work, not a completed job. Give your test opportunity a requested service, owner, next action and evidence supporting its status. Inspect where an estimate version and the customer’s decision belong.",
+          "Then introduce a second inquiry from the same customer. Can the office see that one estimate was accepted while the other remains undecided? A customer-level label such as active should not erase that distinction."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test work left for the office",
+        "paragraphs": [
+          "Have the assigned coordinator become unavailable in the fictional case. Demonstrate reassignment, the unresolved-action list and a correction to the contact information. Ask what users can export if the business changes tools.",
+          "Compare access roles, supported imports, administration and the actual commercial proposal. These are evaluation requirements, not features guaranteed in every CRM. Keep a list of tasks that still require manual office work."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep CRM records and answering scope distinct",
+        "paragraphs": [
+          "A communication platform organizes interactions; a CRM can organize customer relationships and opportunities. Determine which system owns each record instead of assuming the two labels describe the same purchase.",
+          "Revo’s Services and Pricing pages describe its answering offer. Confirm any named software connection and supported data flow directly. This guide does not establish a Revo CRM or automatic synchronization with a product in your shortlist."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Should every call create a new opportunity?",
+        "a": "No. Identify whether it concerns new potential work or an existing request before creating another record."
+      },
+      {
+        "q": "What should a CRM trial demonstrate?",
+        "a": "Use the same fictional relationship, opportunity and correction cases with every finalist, then inspect the resulting records."
+      }
+    ],
+    "takeaway": "Choose around the relationships your office must maintain.",
+    "related": [
+      "communication-platform-for-business"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/top-ten-crm-platforms",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "discovery-call-service-business",
+    "title": "What is a discovery call? A service-business conversation",
+    "description": "A discovery call is an exploratory conversation to understand a potential customer’s situation and decide on a sensible next step. For a service business,.",
+    "navigationLabel": "What is a discovery call? A serv",
+    "eyebrow": "Service-business operating guide",
+    "intro": "A discovery call is an exploratory conversation to understand a potential customer’s situation and decide on a sensible next step. For a service business, it can precede a scoped estimate or consultation.",
+    "lead": "A discovery call is an exploratory conversation to understand a potential customer’s situation and decide on a sensible next step. For a service business, it can precede a scoped estimate or consultation.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Set a purpose both people understand",
+        "paragraphs": [
+          "Open with the reason for the conversation and ask what the customer hopes to decide. A discovery conversation about a renovation differs from an urgent request for an available repair visit. Use the appropriate intake route when the caller needs immediate scheduling information.",
+          "Original opening: “I’d like to understand the project and what you need from an estimate. We can then decide whether a site assessment is the right next step.” Adapt that wording to the business’s actual service."
+        ],
+        "items": []
+      },
+      {
+        "title": "Explore the situation without inventing a solution",
+        "paragraphs": [
+          "Ask what prompted the inquiry, what outcome matters and what constraints the customer already knows. Let the customer distinguish a preference from a firm requirement. Summarize the situation before asking another question.",
+          "For a fictional remodeling inquiry, a desired completion date is useful context. It does not establish that the business can meet it. Record access, decision participants and questions for the estimator without presenting an uninspected property as a priced project."
+        ],
+        "items": []
+      },
+      {
+        "title": "Decide the next step explicitly",
+        "paragraphs": [
+          "Possible outcomes include an assessment, a request for missing information, a later discussion or an honest explanation that the work is outside scope. Do not treat every completed discovery call as a qualified opportunity or a booked job.",
+          "Close with an owner and a supported action: “Our estimator will review these notes before we offer an assessment time.” If the customer must provide something, specify what it is and how the office will recognize receipt."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep a short discovery note",
+        "paragraphs": [
+          "Use five fields: situation; desired outcome; constraints; unresolved questions; agreed next action. Preserve the customer’s words when the meaning is uncertain. Review the note before handing it to another colleague.",
+          "The lead-qualification guide addresses service and area fit. This guide concerns an exploratory discussion. Evaluate Revo only for the answering and intake scope published on Services and Pricing; do not assume it independently performs project consulting."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a discovery call an estimate?",
+        "a": "Not by itself. It can identify the information or assessment needed before an authorized estimate."
+      },
+      {
+        "q": "Must the conversation end in a sale?",
+        "a": "No. A clear, appropriate next step is a useful result even when the project is not ready."
+      }
+    ],
+    "takeaway": "Finish discovery with a shared understanding and an owned next step.",
+    "related": [
+      "lead-qualification"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/what-is-a-discovery-call",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "sales-closing-techniques-service-business",
+    "title": "Sales closing techniques for service estimates",
+    "description": "Sales closing techniques should help a customer decide whether an offered service fits their needs. For a service estimate, clarity about scope and.",
+    "navigationLabel": "Sales closing techniques for ser",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Sales closing techniques should help a customer decide whether an offered service fits their needs. For a service estimate, clarity about scope and remaining questions is more useful than pressure.",
+    "lead": "Sales closing techniques should help a customer decide whether an offered service fits their needs. For a service estimate, clarity about scope and remaining questions is more useful than pressure.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Confirm what the customer is deciding",
+        "paragraphs": [
+          "Refer to the actual estimate version and the work it describes. Ask whether the customer is deciding on scope, timing, the provider or an unresolved condition. A general “Are you ready?” can hide several different decisions.",
+          "Original question: “Does this version cover the work you want us to consider, or is there a scope question we should resolve first?” Refer technical or commercial changes to the authorized person."
+        ],
+        "items": []
+      },
+      {
+        "title": "Use a summary close without changing the offer",
+        "paragraphs": [
+          "Briefly summarize the agreed need and the corresponding scope. State exclusions or conditions that matter to the decision. Invite a correction rather than treating silence as acceptance.",
+          "Fictional wording: “This proposal covers the listed rooms and preparation work. The additional area is excluded. Is that the scope you want to proceed with?” This is an example of structure, not a statement of any company’s terms."
+        ],
+        "items": []
+      },
+      {
+        "title": "Offer a real next step, not artificial urgency",
+        "paragraphs": [
+          "When the customer is ready, explain the supported acceptance process. When they are unsure, ask which question remains and who can answer it. Do not invent a deadline, discount, slot or consequence to obtain a decision.",
+          "If there are genuinely different options, explain their scope differences using the approved proposal. Avoid presenting an option as cheaper, faster or available unless the responsible business owner has confirmed it."
+        ],
+        "items": []
+      },
+      {
+        "title": "Record acceptance separately from a visit",
+        "paragraphs": [
+          "An expression of interest, accepted scope, deposit status and confirmed appointment are different facts. Record only what the actual evidence supports and identify the next owner.",
+          "The intake team can collect a request while an estimator or coordinator owns the decision process. Revo’s published answering scope does not establish authority to negotiate estimates, change terms or commit field capacity. Check Services and Pricing for the supported offer."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What if the customer says they need more time?",
+        "a": "Ask whether a specific unanswered question would help, and agree on any further contact rather than forcing a decision."
+      },
+      {
+        "q": "Does accepting an estimate confirm the appointment?",
+        "a": "Only when the business’s supported scheduling process separately confirms it."
+      }
+    ],
+    "takeaway": "Close with an informed decision and an accurate record of its status.",
+    "related": [
+      "lead-qualification"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/sales-techniques-to-close-a-sale",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "hvac-inventory-management",
+    "title": "HVAC inventory management: connect parts to job readiness",
+    "description": "HVAC inventory management concerns what parts are held, where they are, what is reserved and what still needs replenishment. Connect those facts to job.",
+    "navigationLabel": "HVAC inventory management",
+    "eyebrow": "Service-business operating guide",
+    "intro": "HVAC inventory management concerns what parts are held, where they are, what is reserved and what still needs replenishment. Connect those facts to job readiness before promising a return visit.",
+    "lead": "HVAC inventory management concerns what parts are held, where they are, what is reserved and what still needs replenishment. Connect those facts to job readiness before promising a return visit.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Distinguish stock from a job reservation",
+        "paragraphs": [
+          "An item counted in a storeroom is not necessarily available for another job. Use an original worksheet with item reference, storage location, counted quantity, reserved quantity, job reference and the person who last checked it.",
+          "Keep the technician’s identification of a needed part separate from a customer’s description of a symptom. This guide is an office inventory exercise, not diagnostic, compatibility or installation advice."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test a part-dependent return visit",
+        "paragraphs": [
+          "Fictional case: an authorized technician identifies a part and the office plans a return visit. Record whether the item is on hand, reserved, ordered or received using the business’s documented states. Do not turn an estimated delivery into an observed receipt.",
+          "Ask a proposed system to demonstrate two jobs requesting the same remaining unit. Inspect who resolves the conflict and what changes in the job record. A calendar opening does not establish material readiness."
+        ],
+        "items": []
+      },
+      {
+        "title": "Reconcile a movement and a correction",
+        "paragraphs": [
+          "Follow a fictional transfer from storage to a vehicle and then to a job. Check who records the movement and how the office corrects an incorrect quantity without losing the reason.",
+          "Define who investigates a mismatch and when a count is repeated. Choose replenishment rules from the business’s actual usage, supplier terms and service requirements. This worksheet supplies no universal stock level or purchasing recommendation."
+        ],
+        "items": []
+      },
+      {
+        "title": "Give customer contact an accurate readiness status",
+        "paragraphs": [
+          "Use wording that matches the record: “The office is checking the part and return-visit availability” differs from “Your repair is booked.” The responsible coordinator should own unresolved supply and scheduling questions.",
+          "Compare inventory tools on the demonstrated workflow and actual terms. Revo’s Services and Pricing pages describe answering; they do not establish inventory management, part ordering or a connection to a particular stock system."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a purchase order proof the part is ready?",
+        "a": "No. Keep ordering, receipt, reservation and job use as distinct evidenced events."
+      },
+      {
+        "q": "Can the receptionist identify the replacement part?",
+        "a": "Route technical identification and compatibility decisions to the authorized technician or responsible specialist."
+      }
+    ],
+    "takeaway": "Check material readiness and visit availability as separate facts.",
+    "related": [
+      "landscape-scheduling-software"
+    ],
+    "sourcePaths": [
+      "https://www.avoca.ai/blog/hvac-inventory-management-tracking-parts-consumables",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "voice-of-customer-examples",
+    "title": "Voice of customer examples: turn comments into useful evidence",
+    "description": "Voice of customer work brings customer language into business decisions. For a service office, a useful example preserves what the customer said, the.",
+    "navigationLabel": "Voice of customer examples",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Voice of customer work brings customer language into business decisions. For a service office, a useful example preserves what the customer said, the context and the evidence behind a proposed improvement.",
+    "lead": "Voice of customer work brings customer language into business decisions. For a service office, a useful example preserves what the customer said, the context and the evidence behind a proposed improvement.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Keep a comment and its interpretation separate",
+        "paragraphs": [
+          "Use an original comment card: authorized source reference; customer wording; stage of service; observed issue; interpretation; proposed action; owner. Use only information the business is authorized to review and retain.",
+          "Fictional comment: “I could not tell whether Tuesday was booked.” Observed issue: the customer was uncertain about status. Possible interpretation: confirmation wording needs review. That interpretation still needs comparison with the actual request and message."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare three different kinds of comment",
+        "paragraphs": [
+          "“I had to repeat the property address” may point to a handoff or record problem. “The technician explained the options clearly” may identify useful behavior worth preserving. “I expected the visit to include the repair” may reveal an offer or scope misunderstanding.",
+          "These examples are invented. They are not Revo testimonials, measured outcomes or evidence that the same cause explains every similar statement. Check the underlying interaction before assigning a cause."
+        ],
+        "items": []
+      },
+      {
+        "title": "Look for a pattern without overstating frequency",
+        "paragraphs": [
+          "Group related observations while preserving their individual references. Note the period, the channels reviewed and how those comments were selected. Three selected comments are not a representative satisfaction score.",
+          "Do not merge every request for faster service into one category. Unclear status, actual delay and an unavailable requested date can require different changes. Keep an unknown cause open rather than forcing a convenient label."
+        ],
+        "items": []
+      },
+      {
+        "title": "Turn one finding into a bounded improvement",
+        "paragraphs": [
+          "Choose one action and a way to inspect the result. For confirmation ambiguity, revise an approved phrase and review later interactions for the same misunderstanding. A wording change does not prove that all customer effort fell.",
+          "The survey guide helps design questions. This guide interprets qualitative comments. Revo’s answering offer can be assessed through Services and Pricing; no automatic feedback analysis or sentiment feature is established here."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Are these examples real customer quotes?",
+        "a": "No. Every quoted scenario on this page is fictional and intended for practice."
+      },
+      {
+        "q": "Can comments replace a survey score?",
+        "a": "They answer different questions. Preserve the collection method and avoid treating selected comments as a population measure."
+      }
+    ],
+    "takeaway": "Keep the customer’s language, the interpretation and the action traceable.",
+    "related": [
+      "customer-service-survey-questions"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/voice-of-customer-examples-from-walmart-slack-uber",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "bad-customer-service-examples",
+    "title": "Bad customer service examples: find the process failure",
+    "description": "Bad customer service can result from an unclear promise, a lost handoff or an inaccurate record. These fictional examples help a service business examine.",
+    "navigationLabel": "Bad customer service examples",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Bad customer service can result from an unclear promise, a lost handoff or an inaccurate record. These fictional examples help a service business examine its own behavior instead of blaming the caller.",
+    "lead": "Bad customer service can result from an unclear promise, a lost handoff or an inaccurate record. These fictional examples help a service business examine its own behavior instead of blaming the caller.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Example one: a request described as a booking",
+        "paragraphs": [
+          "A customer asks for Friday and the office says “You’re all set” before availability is confirmed. The customer reasonably believes a visit is booked. The failure is the status communicated, even if the original request was captured correctly.",
+          "Better wording: “I have recorded Friday as your requested day. The coordinator will confirm availability.” Inspect the later record and confirmation rather than assuming a wording fix completed the booking."
+        ],
+        "items": []
+      },
+      {
+        "title": "Example two: a handoff with no owner",
+        "paragraphs": [
+          "A customer asks about unfinished work. One colleague says the message was passed on, while another assumes somebody else will respond. The request remains open because nobody accepted responsibility.",
+          "Improve the handoff with a named role, unresolved question and visible next action. A notification sent to several people is evidence of a message, not evidence that anyone owns the response."
+        ],
+        "items": []
+      },
+      {
+        "title": "Example three: repeating an incorrect detail",
+        "paragraphs": [
+          "A customer corrects the service property, but the office reads the original address back later. An apology alone does not repair the record. Correct the authoritative location, inspect dependent notes and identify any affected appointment.",
+          "Use fictional data to practice this correction. Ask the customer to confirm the corrected detail through the approved process without unnecessarily repeating private information across channels."
+        ],
+        "items": []
+      },
+      {
+        "title": "Review a failure fairly",
+        "paragraphs": [
+          "Separate the customer’s expectation, the actual promise, the record and the observed outcome. Assign a process improvement that can be checked. Avoid using a single complaint to infer an employee’s intent or general performance.",
+          "The difficult-call guide addresses how staff handle tense conversations. This page examines failures by the business. Revo’s Services and Pricing pages define its answering scope; this article makes no claim that software prevents every mistake."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a complaint always proof of a process failure?",
+        "a": "Investigate the facts and expectation first. Preserve uncertainty when the underlying evidence is incomplete."
+      },
+      {
+        "q": "What makes an improvement concrete?",
+        "a": "Name the record, wording or ownership change and inspect whether it was actually applied."
+      }
+    ],
+    "takeaway": "Fix the evidenced failure, not a guessed cause.",
+    "related": [
+      "difficult-customers-on-the-phone"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/bad-customer-service-examples-15-scenarios-and-strategies",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "what-is-a-service-call",
+    "title": "What is a service call? Separate the visit from the work",
+    "description": "A service call is a contact or visit concerning a service need, depending on the business’s usage. When arranging field work, explain exactly what the.",
+    "navigationLabel": "What is a service call? Separate",
+    "eyebrow": "Service-business operating guide",
+    "intro": "A service call is a contact or visit concerning a service need, depending on the business’s usage. When arranging field work, explain exactly what the proposed visit includes and what still needs approval.",
+    "lead": "A service call is a contact or visit concerning a service need, depending on the business’s usage. When arranging field work, explain exactly what the proposed visit includes and what still needs approval.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Ask what the business means by the term",
+        "paragraphs": [
+          "A phone request, an assessment visit and a repair appointment are different events. A customer may use service call to mean any of them. Clarify the requested outcome before discussing a time.",
+          "Original question: “Are you asking about arranging an assessment, checking an existing appointment or following up on work already done?” Use the categories your business actually supports."
+        ],
+        "items": []
+      },
+      {
+        "title": "Explain the visit scope",
+        "paragraphs": [
+          "State the approved purpose and any documented conditions of the visit. An assessment does not by itself promise that a repair will be completed that day. A customer’s description does not establish a diagnosis.",
+          "If an approved visit or diagnostic fee applies, explain it using the business’s current wording and terms. Do not infer a total repair price or how a fee will be credited. The dispatch-fee guide addresses that conversation in more detail."
+        ],
+        "items": []
+      },
+      {
+        "title": "Collect the details that make the next step possible",
+        "paragraphs": [
+          "Record the service property, requested work in the customer’s words, contact route and relevant access information. Keep preferences separate from confirmed arrangements. Send technical questions to the authorized person.",
+          "Fictional note: “Customer requests assessment of an intermittent problem; weekday morning preferred; coordinator to check availability.” That note is useful without pretending that a visit has been confirmed."
+        ],
+        "items": []
+      },
+      {
+        "title": "Close with the actual status",
+        "paragraphs": [
+          "Tell the customer whether a request was collected, a visit confirmed or a question assigned for review. Name the supported next step and any information still needed. Never present an unanswered request as completed work.",
+          "Revo’s published Services and Pricing describe answering and intake. Confirm the plan and setup for booking or transfers separately; the term service call does not establish technical diagnosis or field-service capability."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does a service call always include a repair?",
+        "a": "No universal scope applies. Confirm what the business’s offered visit includes before relying on that expectation."
+      },
+      {
+        "q": "Is requesting a day the same as booking it?",
+        "a": "No. A requested date requires the supported availability and confirmation process."
+      }
+    ],
+    "takeaway": "Explain the visit the customer is actually arranging.",
+    "related": [
+      "dispatch-fee-phone-script"
+    ],
+    "sourcePaths": [
+      "https://www.goodcall.com/business-productivity-ai/servetel",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "sales-performance-dashboard",
+    "title": "Sales performance dashboard: follow estimates to decisions",
+    "description": "A sales performance dashboard should show what happened to potential work over a defined period. For a service business, separate inquiries, estimates,.",
+    "navigationLabel": "Sales performance dashboard",
+    "eyebrow": "Service-business operating guide",
+    "intro": "A sales performance dashboard should show what happened to potential work over a defined period. For a service business, separate inquiries, estimates, decisions and completed jobs before calculating a rate.",
+    "lead": "A sales performance dashboard should show what happened to potential work over a defined period. For a service business, separate inquiries, estimates, decisions and completed jobs before calculating a rate.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Define the cohort before the chart",
+        "paragraphs": [
+          "Choose a population such as estimates issued in one calendar month. Record the inclusion rule and observation date. An estimate issued late in the month may still be undecided when the report is reviewed.",
+          "Use an original dashboard ledger with opportunity reference, issued estimate version, issue date, decision state, decision evidence and next owner. Do not place repeat calls in the opportunity count."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep open work visible",
+        "paragraphs": [
+          "Show accepted, declined, withdrawn and unresolved estimates using the business’s defined statuses. Preserve unknown outcomes rather than silently assigning them to lost. Identify estimates that were replaced by another version.",
+          "A simple illustrative rate is accepted estimates divided by estimates in the explicitly stated eligible cohort. Label the denominator and the handling of open cases. The example is a reporting design, not an industry benchmark."
+        ],
+        "items": []
+      },
+      {
+        "title": "Separate the decision from later fulfillment",
+        "paragraphs": [
+          "Accepted work may still need scheduling, materials or another authorized step. A completed appointment does not necessarily establish completed work or collected payment. Let the relevant system supply the evidence for each event.",
+          "Compare the same cohort after an appropriate observation period. If the offer, service area or available capacity changed, record that context before explaining why the result moved."
+        ],
+        "items": []
+      },
+      {
+        "title": "Make the dashboard support an action",
+        "paragraphs": [
+          "Add an unresolved-estimates list with an owner and a supported next action. A chart that looks healthy while old requests have no owner does not solve the office’s follow-up problem.",
+          "This page concerns estimate decisions; the lead-generation guide concerns acquisition. Revo’s Services and Pricing do not establish a sales dashboard, revenue attribution or automatic opportunity updates."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Should repeat calls increase the lead count?",
+        "a": "Keep contact events separate from distinct inquiries or opportunities according to the documented counting rule."
+      },
+      {
+        "q": "Can an accepted estimate be reported as revenue?",
+        "a": "Use the responsible financial record and business reporting rules; acceptance alone does not establish revenue or payment."
+      }
+    ],
+    "takeaway": "Show the denominator and the unresolved work behind the chart.",
+    "related": [
+      "hvac-lead-generation"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/10-best-sales-performance-dashboards-for-small-business",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "inbound-vs-outbound-calls",
+    "title": "Inbound vs outbound calls: direction is only the first label",
+    "description": "An inbound call arrives at the business; an outbound call is placed by it. Direction alone does not explain the purpose, authorization or owner of the.",
+    "navigationLabel": "Inbound vs outbound calls",
+    "eyebrow": "Service-business operating guide",
+    "intro": "An inbound call arrives at the business; an outbound call is placed by it. Direction alone does not explain the purpose, authorization or owner of the customer request.",
+    "lead": "An inbound call arrives at the business; an outbound call is placed by it. Direction alone does not explain the purpose, authorization or owner of the customer request.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Label direction and purpose separately",
+        "paragraphs": [
+          "An inbound caller might seek a new estimate, change a visit or ask about completed work. An outbound call might be an expected return call about that same request. Neither direction tells you whether the customer is new.",
+          "Use two fields: call direction and request purpose. Keep a separate request reference so an incoming inquiry and the later return call remain connected without being counted as two opportunities."
+        ],
+        "items": []
+      },
+      {
+        "title": "Plan an expected callback",
+        "paragraphs": [
+          "Fictional case: a customer asks the office to return a call about an estimate. Give the responsible colleague the request reference, the unresolved question and the approved contact details. Check what they can actually answer.",
+          "Original opening: “This is the service office returning your request about the estimate. Is this a suitable time to discuss the question you left?” Do not disclose job details before following the business’s identity-check process."
+        ],
+        "items": []
+      },
+      {
+        "title": "Record the result, including no contact",
+        "paragraphs": [
+          "Distinguish customer reached, message left, incorrect contact detail and unresolved attempt. A dialed number does not show that the person received an answer. If another attempt is appropriate, assign its owner through the business’s approved process.",
+          "This is an office record model for expected customer contact, not a cold-calling plan or permission to automate outreach. Have the responsible owner review any proposed outbound program separately."
+        ],
+        "items": []
+      },
+      {
+        "title": "Evaluate the actual answering offer",
+        "paragraphs": [
+          "A service that receives calls does not automatically place callbacks or run campaigns. Ask about the precise purchased scope, supported channels and records. Keep incoming coverage and outgoing work in separate comparison rows.",
+          "Revo’s Services and Pricing define its published answering offer. This guide does not establish outbound dialing, campaign automation or a callback feature."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is an outbound call always a sales call?",
+        "a": "No. It can concern an existing service request or another authorized purpose."
+      },
+      {
+        "q": "Does call direction determine whether a lead is qualified?",
+        "a": "No. Qualification depends on the business’s criteria and supporting information."
+      }
+    ],
+    "takeaway": "Record why the contact happened as well as its direction.",
+    "related": [
+      "phone-answering-script"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/inbound-vs-outbound-calls",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "small-business-technology-priorities",
+    "title": "Small business technology: choose the next operational tool",
+    "description": "Small business technology decisions are easier when each proposed tool has a clear job and owner. A service office can prioritize a troublesome workflow.",
+    "navigationLabel": "Small business technology",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Small business technology decisions are easier when each proposed tool has a clear job and owner. A service office can prioritize a troublesome workflow before buying a larger stack of disconnected products.",
+    "lead": "Small business technology decisions are easier when each proposed tool has a clear job and owner. A service office can prioritize a troublesome workflow before buying a larger stack of disconnected products.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Map one recurring problem",
+        "paragraphs": [
+          "Choose a specific problem such as lost estimate follow-up, duplicated customer details or unclear visit status. Record where the work starts, the record used, the current owner and the observed failure.",
+          "Avoid defining the problem as “we need AI” or “we need an app.” Those are possible tool categories. A useful problem statement describes work the team needs to complete and the evidence that it currently struggles."
+        ],
+        "items": []
+      },
+      {
+        "title": "Check the dependency beneath the tool",
+        "paragraphs": [
+          "A reminder tool depends on a trustworthy appointment record. A dashboard depends on a consistent counting rule. A shared inbox depends on customer and request matching. Identify the prerequisite before adding automation.",
+          "Use a simple dependency card: required input; authoritative source; permitted action; output record; exception owner. If a prerequisite is missing, improving that record may be the better first project."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare administration and exit work",
+        "paragraphs": [
+          "List setup, staff training, access management, ongoing instructions and exports. Ask who maintains each one. A low subscription price does not establish how much work the office must do.",
+          "Demonstrate an ordinary case, a correction and a staff absence with fictional data. Ask what the business can retain if the tool is replaced. Record limitations from the actual proposal instead of assuming a category label guarantees them."
+        ],
+        "items": []
+      },
+      {
+        "title": "Choose a bounded first use",
+        "paragraphs": [
+          "Select one workflow and an observable completion condition. Have the responsible person verify that it works before expanding to more channels or records. Keep unresolved questions in an owned list.",
+          "The AI-workflow guide addresses specific automation boundaries. This page is a prioritization worksheet for the wider office toolkit. Revo should be assessed only for the answering scope published on Services and Pricing."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Should a small business replace every tool at once?",
+        "a": "Use the actual dependencies and operating needs to decide. This worksheet favors an inspectable scope rather than assuming a full replacement is necessary."
+      },
+      {
+        "q": "What belongs in a trial?",
+        "a": "An ordinary request, a correction and an exception that the office must resolve."
+      }
+    ],
+    "takeaway": "Choose a tool for a defined job with a person responsible for it.",
+    "related": [
+      "ai-for-home-services-workflows"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/best-small-businesses-technology-solutions",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "service-business-sales-playbook",
+    "title": "Sales playbook template for a service-business team",
+    "description": "A sales playbook is an internal reference for how a team handles recurring selling situations. Use this original template to coach decisions, keep.",
+    "navigationLabel": "Sales playbook template for a se",
+    "eyebrow": "Service-business operating guide",
+    "intro": "A sales playbook is an internal reference for how a team handles recurring selling situations. Use this original template to coach decisions, keep instructions current and make exceptions visible.",
+    "lead": "A sales playbook is an internal reference for how a team handles recurring selling situations. Use this original template to coach decisions, keep instructions current and make exceptions visible.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Build a short reference your team can use",
+        "paragraphs": [
+          "Start with six headings: customer situations; supported offer; discovery questions; approved evidence; exception owners; practice cases. Link to authoritative service and commercial documents rather than copying terms into several competing versions.",
+          "Add a document owner and effective date. The playbook should help an employee find the right instruction during preparation or coaching. It need not prescribe every sentence of a conversation."
+        ],
+        "items": []
+      },
+      {
+        "title": "Write one situation card",
+        "paragraphs": [
+          "Fictional situation: a customer compares two estimate scopes. The card identifies the two current versions, the differences the salesperson may explain, the questions requiring an estimator and the evidence needed for the next step.",
+          "Include a “do not assume” line: requested timing is not confirmed capacity. Include an escalation role when a customer asks for an unapproved change. This makes the reference more useful than a collection of persuasive phrases."
+        ],
+        "items": []
+      },
+      {
+        "title": "Attach practice and feedback",
+        "paragraphs": [
+          "Create a fictional case in which the customer changes a requirement halfway through the discussion. Ask the salesperson to identify the change, stop using the superseded scope and refer the revision correctly.",
+          "Give feedback on observable behavior: the correct version referenced, the unresolved issue recorded and the next owner named. Avoid ranking staff with an invented performance score or treating a practice call as measured customer behavior."
+        ],
+        "items": []
+      },
+      {
+        "title": "Review the playbook when the offer changes",
+        "paragraphs": [
+          "Assign someone to replace obsolete references and identify affected situation cards. Record what changed and which team members need the revised instruction. A training session does not establish that an old shared document was removed.",
+          "A phone script supplies wording; this playbook supplies internal decisions and coaching references. Revo’s Services and Pricing describe answering. No sales-training product or autonomous negotiation capability is implied."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is this a customer-facing proposal?",
+        "a": "No. It is an internal operating and coaching reference; the sales deck is a separate customer-facing document."
+      },
+      {
+        "q": "Must every employee use identical wording?",
+        "a": "Keep required facts and boundaries consistent while allowing wording that fits the customer’s actual question."
+      }
+    ],
+    "takeaway": "Keep the playbook short, owned and connected to the current offer.",
+    "related": [
+      "phone-answering-script"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/documents/sales-playbook-template",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "service-business-email-pitch-examples",
+    "title": "Email pitching examples for service-business introductions",
+    "description": "A useful email pitch explains why a service is relevant to the recipient and offers a proportionate next step. These original fictional examples are.",
+    "navigationLabel": "Email pitching examples for serv",
+    "eyebrow": "Service-business operating guide",
+    "intro": "A useful email pitch explains why a service is relevant to the recipient and offers a proportionate next step. These original fictional examples are writing exercises, not messages sent to real people.",
+    "lead": "A useful email pitch explains why a service is relevant to the recipient and offers a proportionate next step. These original fictional examples are writing exercises, not messages sent to real people.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Example one: a relevant business introduction",
+        "paragraphs": [
+          "Subject: Exterior-cleaning scope for your property team",
+          "“Hello [Name], we provide [verified service] in [actual service area]. If your team is reviewing that work for [relevant property type], I can share a short scope outline. Would that be useful? [Name and accurate business contact]”",
+          "The bracketed details must be true before use. Do not imply an existing relationship, a property inspection or knowledge of the recipient’s buying plans that you do not have."
+        ],
+        "items": []
+      },
+      {
+        "title": "Example two: the proposal the customer requested",
+        "paragraphs": [
+          "Subject: Requested scope outline for [project reference]",
+          "“Hello [Name], following your request, here is the outline for [agreed topic]. It describes [included scope] and the questions we still need to resolve: [questions]. If this matches your request, the next step is [supported action].”",
+          "A requested proposal can be more specific than a first introduction. Reference the actual request and current document version; avoid calling an unapproved scope final."
+        ],
+        "items": []
+      },
+      {
+        "title": "Example three: a useful reintroduction",
+        "paragraphs": [
+          "Subject: Update to our [verified service] scope",
+          "“Hello [Name], we previously discussed [accurate context]. Our current offer now includes [verified change]. If that is relevant to your team, I can send the current details. If not, no action is needed.”",
+          "An invented update is not a reason to contact someone. Have the responsible owner review the recipient, relevance, authorization and applicable sending requirements before any actual outreach."
+        ],
+        "items": []
+      },
+      {
+        "title": "Edit for one clear decision",
+        "paragraphs": [
+          "Remove unsupported superlatives, made-up results and several competing requests. Check that the sender can fulfill the proposed next step. If a customer asks a question, route the response to someone who owns it.",
+          "This page supplies wording examples, not a campaign configuration or legal sending guidance. The email-answering guide discusses handling messages; Revo’s Services and Pricing do not establish email outreach or campaign management."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Were these emails sent?",
+        "a": "No. All names, project references and situations are fictional placeholders."
+      },
+      {
+        "q": "Should every pitch request a meeting?",
+        "a": "Choose a next step proportionate to the recipient’s context; a requested outline may be more useful than an immediate meeting."
+      }
+    ],
+    "takeaway": "Use a truthful reason for contact and one achievable next step.",
+    "related": [
+      "email-answering-service"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/sales-pitch-examples",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "outreach-marketing-service-business",
+    "title": "Outreach marketing: choose the audience before the message",
+    "description": "Outreach marketing begins with a deliberate effort to reach a relevant audience. A service business needs a clear reason that its offer matters to that.",
+    "navigationLabel": "Outreach marketing",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Outreach marketing begins with a deliberate effort to reach a relevant audience. A service business needs a clear reason that its offer matters to that audience before choosing a message or channel.",
+    "lead": "Outreach marketing begins with a deliberate effort to reach a relevant audience. A service business needs a clear reason that its offer matters to that audience before choosing a message or channel.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Describe an audience and a real need",
+        "paragraphs": [
+          "For a fictional property-maintenance company, “local businesses” is too broad to shape a useful message. A more specific planning audience might be managers responsible for a type of property the company actually services.",
+          "Record the service need, the business’s supported geography, the relevant decision role and the evidence behind the match. Do not treat a purchased list or guessed job title as proof of need or permission to contact someone."
+        ],
+        "items": []
+      },
+      {
+        "title": "Match an offer to the audience",
+        "paragraphs": [
+          "Choose one real offer such as a scope outline, an informational resource or an assessment process the business supports. Explain what the recipient can learn or decide from it.",
+          "Avoid turning the offer into an unsupported claim about savings or immediate availability. If an inquiry arrives, the office needs a route for determining fit and answering questions about the offered scope."
+        ],
+        "items": []
+      },
+      {
+        "title": "Plan the response before outreach",
+        "paragraphs": [
+          "Write down where replies would arrive, who would own them and how the office would recognize a request already received through another channel. A marketing response is a contact event, not automatically a new opportunity.",
+          "Before any real activity, the responsible owner must review the source of contacts, recipient expectations and applicable channel requirements. This article does not create a list, send messages or provide a ready-to-launch campaign."
+        ],
+        "items": []
+      },
+      {
+        "title": "Review useful responses, not just activity",
+        "paragraphs": [
+          "Use a documented observation period and distinguish messages attempted, responses, relevant inquiries and later decisions. Preserve unknown attribution. A busy inbox can still contain many questions outside the offer.",
+          "The cleaning-client guide considers a particular business’s acquisition channels. This page is an audience-and-offer planning exercise. Revo’s Services and Pricing describe answering; no outreach execution or lead-purchase service is established."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does finding a contact mean the business should send a message?",
+        "a": "No. Relevance and the responsible owner’s review of the intended contact still matter."
+      },
+      {
+        "q": "What should be ready before an inquiry arrives?",
+        "a": "An accurate offer, a supported response route and a named owner for questions."
+      }
+    ],
+    "takeaway": "Choose a relevant audience and prepare to handle its questions.",
+    "related": [
+      "get-clients-cleaning-business"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/outreach-marketing",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "equipment-rental-scheduling-software",
+    "title": "Equipment rental scheduling software: test the return boundary",
+    "description": "Equipment rental scheduling software should be evaluated around the asset being rented, not only the customer’s requested dates. A return, inspection or.",
+    "navigationLabel": "Equipment rental scheduling soft",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Equipment rental scheduling software should be evaluated around the asset being rented, not only the customer’s requested dates. A return, inspection or turnaround delay can affect the next reservation.",
+    "lead": "Equipment rental scheduling software should be evaluated around the asset being rented, not only the customer’s requested dates. A return, inspection or turnaround delay can affect the next reservation.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Identify the asset and the interval",
+        "paragraphs": [
+          "Use a fictional equipment item with a unique reference, availability location, reservation interval and readiness status. Keep a request for a category of equipment separate from an assigned physical unit.",
+          "Ask a vendor to demonstrate whether the business can reserve a category first and assign a unit later, if that is required. This is a selection question, not a capability guaranteed by every rental product."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test a late return before the next pickup",
+        "paragraphs": [
+          "Fictional case: Unit A is due back before a later reservation. Introduce a late return and inspect how the office sees the affected reservation. Ask what happens when a substitute unit is considered.",
+          "Keep possession, return reported, return observed and ready for the next rental as distinct facts in your test ledger. A customer saying the item is on its way is not an observed return."
+        ],
+        "items": []
+      },
+      {
+        "title": "Allow for the business’s readiness work",
+        "paragraphs": [
+          "Identify who checks condition, required preparation and availability location. Use the actual business’s approved requirements; this article provides no inspection or equipment-safety instructions.",
+          "Test a correction to the return time and a unit that remains unavailable. Inspect who can change readiness and whether the next coordinator can see the reason. Demonstrate the required behavior before relying on a feature label."
+        ],
+        "items": []
+      },
+      {
+        "title": "Match the customer message to the record",
+        "paragraphs": [
+          "A provisional reservation and a confirmed ready unit are different promises. The office should state only the supported status and own unresolved substitutions or timing questions.",
+          "The landscape scheduling guide deals with teams and visits. This page concerns serialized assets and return boundaries. Revo’s published answering scope does not establish rental stock control, equipment inspection or a rental-software connection."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is an empty calendar interval enough to promise an asset?",
+        "a": "Check the actual unit, location and readiness requirements as well as the interval."
+      },
+      {
+        "q": "Does a reported return make equipment available?",
+        "a": "Use the business’s observed return and approved readiness process."
+      }
+    ],
+    "takeaway": "Test availability at the asset boundary, including the work between rentals.",
+    "related": [
+      "landscape-scheduling-software"
+    ],
+    "sourcePaths": [
+      "https://www.goodcall.com/appointment-scheduling-software/equipment-rental",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "window-cleaning-software",
+    "title": "Window cleaning software: keep the quoted scope identifiable",
+    "description": "Window cleaning software can be evaluated by following a property’s quoted scope into the work record. A count or scope change should remain visible to.",
+    "navigationLabel": "Window cleaning software",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Window cleaning software can be evaluated by following a property’s quoted scope into the work record. A count or scope change should remain visible to the office, crew and customer.",
+    "lead": "Window cleaning software can be evaluated by following a property’s quoted scope into the work record. A count or scope change should remain visible to the office, crew and customer.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Create a scope record before a calendar entry",
+        "paragraphs": [
+          "Use a fictional property, service areas, the business’s chosen counting method, access notes and included work. Identify who is authorized to assess the property and approve the scope.",
+          "A caller’s approximate count is intake information, not a verified measure or a final price. Keep photographs or other material only through the business’s approved collection and access process."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test a revised quote",
+        "paragraphs": [
+          "Fictional case: the customer adds an area after receiving a quote. Ask a proposed system to preserve the original version, identify the revision and show which version the customer is considering.",
+          "Inspect what the crew would see after the change. A revised amount with an old work description can create a disagreement even if the appointment time stayed the same. Test the record relationship rather than assuming an estimate feature handles it."
+        ],
+        "items": []
+      },
+      {
+        "title": "Give access questions an owner",
+        "paragraphs": [
+          "Separate known access information from questions requiring an assessment. If the actual business requires additional preparation or a different team, have its authorized person decide before the office promises a visit.",
+          "This guide supplies no height, equipment or cleaning-safety advice. The software-review task is to preserve the approved decision and make unresolved requirements visible to the responsible role."
+        ],
+        "items": []
+      },
+      {
+        "title": "Review completion against the accepted scope",
+        "paragraphs": [
+          "Ask how the team records completed areas, an approved change and unfinished work. A closed visit should not silently erase a remaining customer question. Compare demonstrated records, exports, administration and actual commercial terms.",
+          "The existing window-cleaning industry page concerns answering. This page evaluates scope versions and work evidence. Revo’s Services and Pricing do not establish estimating software, measurement or a named window-cleaning integration."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can a caller’s window count be treated as final?",
+        "a": "Only the business’s authorized assessment and quoting process can establish the scope it offers."
+      },
+      {
+        "q": "What is the most useful software trial case?",
+        "a": "A scope revision after a quote, followed through to the crew’s current work record."
+      }
+    ],
+    "takeaway": "Keep the accepted scope and the crew’s instructions aligned.",
+    "related": [
+      "lead-qualification",
+      "phone-answering-script"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/10-best-apps-software-for-window-cleaners",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "septic-scheduling-software",
+    "title": "Septic scheduling software: check readiness before dispatch",
+    "description": "Septic scheduling software should help the office see whether the business’s prerequisites for a visit have been met. A requested day is only one part of.",
+    "navigationLabel": "Septic scheduling software",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Septic scheduling software should help the office see whether the business’s prerequisites for a visit have been met. A requested day is only one part of planning the work.",
+    "lead": "Septic scheduling software should help the office see whether the business’s prerequisites for a visit have been met. A requested day is only one part of planning the work.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Write the business’s readiness checklist",
+        "paragraphs": [
+          "For a fictional job, identify the service property, request type, authorized contact, known access information and questions the responsible specialist must resolve. Use the business’s actual requirements rather than a universal list.",
+          "A customer’s description should remain a description. This article gives no diagnosis, system-entry, pumping, disposal or site-safety instructions. Route those decisions to the authorized specialist."
+        ],
+        "items": []
+      },
+      {
+        "title": "Demonstrate an unresolved prerequisite",
+        "paragraphs": [
+          "Introduce a job where an access question remains unanswered. Ask the vendor to show how that issue is recorded, who owns it and how the dispatcher recognizes it before confirming a visit.",
+          "Then resolve the fictional issue through the authorized role and inspect whether the readiness record changes. A note saying “check access” is different from evidence that the check was completed."
+        ],
+        "items": []
+      },
+      {
+        "title": "Follow one job dependency",
+        "paragraphs": [
+          "If the actual business requires a preceding assessment or another approved step, represent that dependency in the trial. Change the preceding step and inspect the later appointment. Do not assume the software recalculates every dependent visit.",
+          "Compare the planned team, required resources and customer message with the authoritative record. Test a correction and an exception, not just an uncomplicated calendar entry."
+        ],
+        "items": []
+      },
+      {
+        "title": "Check what reaches the customer and field team",
+        "paragraphs": [
+          "Give each role only the information it is authorized to use. If the office moves a visit, verify the new record and separately verify how the customer would be informed in the supported workflow.",
+          "This is a readiness and dependency evaluation, distinct from the retired septic-answering draft. Revo’s published answering offer does not establish septic operations software, technical assessment or a connection to a particular scheduler."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does a preferred date establish readiness?",
+        "a": "No. Inspect the business’s prerequisites and supported confirmation process."
+      },
+      {
+        "q": "Should software choose the technical next step?",
+        "a": "Keep technical and safety decisions with the responsible authorized specialist."
+      }
+    ],
+    "takeaway": "Confirm the prerequisites as well as the calendar opening.",
+    "related": [
+      "septic-service-ai-answering"
+    ],
+    "sourcePaths": [
+      "https://www.goodcall.com/appointment-scheduling-software/septic-tank",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "appliance-repair-dispatch-software",
+    "title": "Appliance repair dispatch software: track the return visit",
+    "description": "Appliance repair dispatch software can be tested by following an initial visit into a part-dependent return. Preserve equipment identity and the.",
+    "navigationLabel": "Appliance repair dispatch softwa",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Appliance repair dispatch software can be tested by following an initial visit into a part-dependent return. Preserve equipment identity and the technician’s findings instead of treating every visit as unrelated work.",
+    "lead": "Appliance repair dispatch software can be tested by following an initial visit into a part-dependent return. Preserve equipment identity and the technician’s findings instead of treating every visit as unrelated work.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Separate reported identity from verified identity",
+        "paragraphs": [
+          "A customer may provide a model or serial reference during intake. Record its source and whether the responsible technician has checked it. A transcription error should not silently become the basis for ordering a part.",
+          "Use fictional equipment references in the demonstration. This is an office-record exercise, not appliance diagnosis, compatibility, repair or safety guidance."
+        ],
+        "items": []
+      },
+      {
+        "title": "Link the initial visit and the return",
+        "paragraphs": [
+          "Fictional case: an authorized technician records that further work depends on a part. Ask the proposed tool to show the original request, the first visit, the evidenced finding and the later visit as related but distinct records.",
+          "Change the expected part availability. Inspect who reviews the return appointment and what the next dispatcher sees. An order placed is not the same as a part received and reserved for this job."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test a corrected reference",
+        "paragraphs": [
+          "Have the technician correct the fictional equipment reference before the return is finalized. Inspect which work notes, part request and customer communication require review. Verify the actual supported correction behavior.",
+          "Do not assume every product propagates changes, preserves history or blocks an inconsistent dispatch. Record demonstrated limitations and the manual office controls still needed."
+        ],
+        "items": []
+      },
+      {
+        "title": "Make the customer update accurate",
+        "paragraphs": [
+          "The office can explain the actual status without promising completion: “The team is checking the part and return-visit availability.” Use the business’s approved wording and owner for unresolved questions.",
+          "The appliance-repair industry page describes answering. This guide evaluates equipment identity and linked return visits. Revo’s Services and Pricing do not establish dispatch software, parts management or technical repair capabilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a part order enough to confirm the return visit?",
+        "a": "Verify receipt or other required readiness evidence and the actual scheduling process separately."
+      },
+      {
+        "q": "Can each visit have its own record?",
+        "a": "Yes, while retaining the relationship to the request and equipment according to the system the business selects."
+      }
+    ],
+    "takeaway": "Keep the equipment, finding, part status and return visit connected.",
+    "related": [
+      "lead-qualification",
+      "phone-answering-script"
+    ],
+    "sourcePaths": [
+      "https://www.goodcall.com/appointment-scheduling-software/appliance-repair",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "lead-vs-prospect",
+    "title": "Lead vs prospect: define the evidence behind the label",
+    "description": "Lead and prospect are business-defined labels for potential customers. A service office benefits from stating what each label means and what evidence.",
+    "navigationLabel": "Lead vs prospect",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Lead and prospect are business-defined labels for potential customers. A service office benefits from stating what each label means and what evidence permits a change, rather than treating the words as universal statuses.",
+    "lead": "Lead and prospect are business-defined labels for potential customers. A service office benefits from stating what each label means and what evidence permits a change, rather than treating the words as universal statuses.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Write a small lifecycle dictionary",
+        "paragraphs": [
+          "For an original example, define lead as a recorded inquiry and prospect as an inquiry selected for an estimate discussion after the business’s stated checks. Your business may use different terms. Publish the definitions internally before applying them.",
+          "A contact record, an opportunity and a customer relationship can each have different statuses. Avoid calling every person in the address book a lead simply because the software allows that label."
+        ],
+        "items": []
+      },
+      {
+        "title": "Separate fit from intent to proceed",
+        "paragraphs": [
+          "Service and area fit answer whether the business can consider the work. Interest in an estimate answers a different question. Record each with its evidence rather than compressing both into a confident prospect label.",
+          "Fictional case: a caller is in area and requests a supported service but is researching for a later project. That can be a valid inquiry without being ready for the same next step as a customer requesting an assessment now."
+        ],
+        "items": []
+      },
+      {
+        "title": "Record a transition and a reversal",
+        "paragraphs": [
+          "Use a transition card: prior label; new label; evidence; date; authorized owner; next action. Test what happens when the customer corrects the property or changes the project scope.",
+          "Do not keep the old label merely to preserve a dashboard result. A changed fact can require review. Preserve the reason for a correction instead of counting the corrected record as a new opportunity."
+        ],
+        "items": []
+      },
+      {
+        "title": "Connect labels to useful work",
+        "paragraphs": [
+          "Each label should help someone choose a supported action. If two labels always produce identical work and reporting, consider whether the distinction is useful. Keep unknown or unresolved information visible.",
+          "The qualification guide supplies intake dimensions. This page defines lifecycle language and transitions. Revo’s Services and Pricing do not establish a native CRM lifecycle or automatic lead scoring."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is prospect always a later stage than lead?",
+        "a": "Terminology varies. Define and use your business’s own consistent lifecycle."
+      },
+      {
+        "q": "Does an answered call prove a qualified lead?",
+        "a": "No. Keep call handling, inquiry creation and qualification evidence separate."
+      }
+    ],
+    "takeaway": "Use labels to explain evidence and the next action.",
+    "related": [
+      "lead-qualification"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/lead-vs-prospect",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "integrated-marketing-service-business",
+    "title": "What is integrated marketing? Align the service offer",
+    "description": "Integrated marketing coordinates messages and channels around a consistent offer and customer experience. For a service business, the practical test is.",
+    "navigationLabel": "What is integrated marketing? Al",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Integrated marketing coordinates messages and channels around a consistent offer and customer experience. For a service business, the practical test is whether an ad, a website and the office describe compatible next steps.",
+    "lead": "Integrated marketing coordinates messages and channels around a consistent offer and customer experience. For a service business, the practical test is whether an ad, a website and the office describe compatible next steps.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Choose one offer to align",
+        "paragraphs": [
+          "Write a short offer brief: intended audience, actual service, supported area, exclusions, contact route and next decision. Use the authoritative commercial and service information.",
+          "A fictional assessment offer should remain an assessment wherever it appears. A shortened message should not turn it into a guaranteed repair or a confirmed same-day visit."
+        ],
+        "items": []
+      },
+      {
+        "title": "Trace three customer entry points",
+        "paragraphs": [
+          "Review a fictional search message, a website page and a partner’s approved description. Ask what a reasonable customer would believe each promises. Compare that expectation with what the office can actually deliver.",
+          "Use an original consistency table with entry point, stated offer, implied timing, destination and unresolved mismatch. Record a mismatch for correction by the responsible owner; do not silently rewrite campaigns or partner material."
+        ],
+        "items": []
+      },
+      {
+        "title": "Prepare the office for the same questions",
+        "paragraphs": [
+          "Provide the answering team with the current offer reference and the questions it may explain. Identify who handles an exception or requested variation. A campaign can be internally consistent while the office still uses old instructions.",
+          "When an offer changes, identify every affected message and instruction. Confirm each authorized update individually rather than treating one edited web page as proof of complete alignment."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep strategy distinct from the platform",
+        "paragraphs": [
+          "A shared communication tool can help people see interactions, but purchasing it does not itself align an offer. The business still needs an owner, authoritative wording and a review process.",
+          "This guide concerns message consistency, not a software purchase or a channel-attribution claim. Revo’s Services and Pricing define its answering scope; this article does not establish marketing management or campaign execution."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does integrated marketing mean identical wording everywhere?",
+        "a": "No. Wording can fit the channel while preserving the same accurate offer and next step."
+      },
+      {
+        "q": "Is a unified inbox an integrated marketing strategy?",
+        "a": "It is a possible communication tool. The strategy still requires a consistent offer and accountable decisions."
+      }
+    ],
+    "takeaway": "Align what the customer is promised with what the office can deliver.",
+    "related": [
+      "communication-platform-for-business"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/the-essentials-only-guide-to-integrated-marketing-communications",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "free-scheduling-software-small-business",
+    "title": "Free scheduling software: compare the limits and exit",
+    "description": "Free scheduling software for a small business is useful only when its supported scope fits the work. Compare the actual free-plan terms, required.",
+    "navigationLabel": "Free scheduling software",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Free scheduling software for a small business is useful only when its supported scope fits the work. Compare the actual free-plan terms, required administration and exit path before treating the subscription price as the whole decision.",
+    "lead": "Free scheduling software for a small business is useful only when its supported scope fits the work. Compare the actual free-plan terms, required administration and exit path before treating the subscription price as the whole decision.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "List the minimum job the tool must do",
+        "paragraphs": [
+          "Write down users, calendars, locations, request types and the records your office needs. Distinguish a customer request from a confirmed appointment. Avoid choosing a product merely because its booking page looks simple.",
+          "Use a fictional ordinary appointment and an exception. Ask whether each is supported within the actual free offering, requires manual work or needs a paid capability. This page makes no current vendor or plan comparison."
+        ],
+        "items": []
+      },
+      {
+        "title": "Read limits as operating constraints",
+        "paragraphs": [
+          "Record the provider’s documented limits on the relevant features, access, usage and retention. Include the date and proposal or terms reference. Do not assume a past review or another company’s account represents the current free tier.",
+          "If the office needs several coordinators or resources, inspect those exact requirements. A tool that supports one calendar may still be unsuitable for the business’s intended workflow."
+        ],
+        "items": []
+      },
+      {
+        "title": "Count the manual work left behind",
+        "paragraphs": [
+          "Test a correction, cancellation and staff absence. Note every step someone must repeat elsewhere. Decide who owns those steps before the tool is used for real requests.",
+          "A free subscription can still require setup, training and administration. This worksheet supplies no cost estimate; it makes the remaining work visible so the business can evaluate it using its own facts."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test an export and a controlled exit",
+        "paragraphs": [
+          "Ask what records can be exported and in what supported format. Inspect a fictional exported record for the fields the office actually needs. Identify who would own migration and outstanding appointments.",
+          "The calendar checklist addresses booking correctness. This page evaluates free-plan suitability and exit. Revo’s Services and Pricing do not establish a free scheduling product or a connection to one."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does free mean unlimited?",
+        "a": "Read the exact current terms and verify the requirements your business needs."
+      },
+      {
+        "q": "What should be tested before adopting a free plan?",
+        "a": "An ordinary appointment, a correction, an exception and the export of needed records."
+      }
+    ],
+    "takeaway": "Compare the supported work and the work left to your office.",
+    "related": [
+      "calendar-booking-checklist"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/the-best-calendaring-software-for-small-businesses-free-and-paid",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "phone-number-spoofing-business",
+    "title": "Phone number spoofing: handle reports about your business",
+    "description": "Phone number spoofing can make a displayed number an unreliable indication of who placed a call. A service business needs a careful response when someone.",
+    "navigationLabel": "Phone number spoofing",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Phone number spoofing can make a displayed number an unreliable indication of who placed a call. A service business needs a careful response when someone reports a call that appears to have used its number.",
+    "lead": "Phone number spoofing can make a displayed number an unreliable indication of who placed a call. A service business needs a careful response when someone reports a call that appears to have used its number.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Distinguish the report from a confirmed cause",
+        "paragraphs": [
+          "The FCC describes caller ID spoofing as falsifying transmitted caller-ID information to disguise identity. A report about an unfamiliar call should be investigated without assuming it proves your telephone account was used.",
+          "Likewise, a spam label on a legitimate outgoing call is a different issue from someone impersonating your number. Preserve the reported facts and ask the responsible provider to help assess the actual situation."
+        ],
+        "items": []
+      },
+      {
+        "title": "Collect a bounded incident note",
+        "paragraphs": [
+          "Use an original incident card with report time, displayed business number, reported call time, general claim made and the employee who received the report. Collect only information the business is authorized to retain.",
+          "Do not ask the reporter for passwords, payment details or identity documents to “prove” a suspicious call. Avoid recording unnecessary personal details in a shared office note. An incomplete report can remain incomplete while it is reviewed."
+        ],
+        "items": []
+      },
+      {
+        "title": "Give a calm response without a guessed explanation",
+        "paragraphs": [
+          "Fictional wording: “Thank you for reporting this. We will pass the details to the person responsible for our phone service. Please use the contact information published on our official website if you need to reach our office.”",
+          "Do not promise that changing a caller name will stop impersonation or claim that a particular person caused it. Follow the actual phone provider’s support process and the FCC’s current consumer guidance where applicable."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep normal callback work separate",
+        "paragraphs": [
+          "A reported incident should not silently change call routing, credentials or published numbers. Have the authorized business owner decide any operational action after the relevant checks. Review open customer requests through their ordinary records.",
+          "The business-caller-ID guide concerns legitimate outbound presentation. This page concerns reported impersonation. Revo’s Services and Pricing do not establish spoofing prevention, caller authentication or fraud investigation capabilities."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does a displayed business number prove the business called?",
+        "a": "No. The FCC warns that caller-ID information can be falsified; verify through an established official contact route."
+      },
+      {
+        "q": "Is a spam label the same problem as number impersonation?",
+        "a": "They are different issues. Document the observed problem before asking the provider for help."
+      }
+    ],
+    "takeaway": "Preserve the report and verify through established official routes.",
+    "related": [
+      "business-caller-id"
+    ],
+    "sourcePaths": [
+      "https://www.fcc.gov/consumers/guides/spoofing",
+      "https://docs.smith.ai/article/spsv3ydenx-spoofed-phone-numbers",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "service-business-kpis",
+    "title": "Business KPIs: make a service-office measure interpretable",
+    "description": "Business KPIs are selected measures used to assess progress toward a defined operating goal. A service office should state the population, event and.",
+    "navigationLabel": "Business KPIs",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Business KPIs are selected measures used to assess progress toward a defined operating goal. A service office should state the population, event and observation period before treating a number as useful evidence.",
+    "lead": "Business KPIs are selected measures used to assess progress toward a defined operating goal. A service office should state the population, event and observation period before treating a number as useful evidence.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Start with an operational question",
+        "paragraphs": [
+          "Choose a question such as “Which unresolved customer requests are getting older?” rather than a broad goal such as “improve service.” Identify the record that can answer it and who maintains that record.",
+          "Use an original measure card: question; included population; event counted; time window; exclusions; source; owner; action when reviewed. If a field is missing, label that limitation instead of filling it with a favorable assumption."
+        ],
+        "items": []
+      },
+      {
+        "title": "Example one: unresolved-request age",
+        "paragraphs": [
+          "For each open request, calculate elapsed time from the business’s defined start event to the observation time. Decide how reopened requests and waiting-for-customer periods are represented. Keep the definition consistent.",
+          "Inspect the oldest requests with their owners and reasons. An average can hide one very old request. This is a proposed office measure, not a response-time target or an industry service-level benchmark."
+        ],
+        "items": []
+      },
+      {
+        "title": "Example two: correction and rework",
+        "paragraphs": [
+          "Count requests requiring a correction under a documented rule, such as a property detail corrected after handoff. State the eligible population and avoid counting several notes about one correction as several affected requests.",
+          "Review the underlying evidence before assigning a cause. A correction can reflect new customer information rather than an avoidable mistake. Keep the measure useful for process improvement instead of inventing a staff ranking."
+        ],
+        "items": []
+      },
+      {
+        "title": "Connect review to an owned action",
+        "paragraphs": [
+          "Select a bounded action such as clarifying one status phrase or changing who reviews incomplete requests. Record when it was applied and what later evidence will be inspected. A changed KPI does not by itself prove the action caused it.",
+          "The sales dashboard follows estimate decisions; call monitoring reviews interactions. This page defines wider office measures. Revo’s Services and Pricing do not establish custom KPI reporting or automatic attribution."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Should every available number become a KPI?",
+        "a": "Select measures that answer a defined question and support a decision someone owns."
+      },
+      {
+        "q": "Can two teams compare a rate with different denominators?",
+        "a": "Explain and reconcile the definitions before interpreting the comparison."
+      }
+    ],
+    "takeaway": "Keep the definition beside the number and the owner beside the action.",
+    "related": [
+      "call-quality-monitoring"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/understanding-key-performance-indicators-kpis-and-using-them-to-fast-track-business-growth",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "service-business-sales-deck",
+    "title": "Sales deck for a service proposal: make the scope visible",
+    "description": "A sales deck is a customer-facing presentation supporting a sales discussion. For a service proposal, it should help the customer understand the offered.",
+    "navigationLabel": "Sales deck for a service proposa",
+    "eyebrow": "Service-business operating guide",
+    "intro": "A sales deck is a customer-facing presentation supporting a sales discussion. For a service proposal, it should help the customer understand the offered work and the decision being requested.",
+    "lead": "A sales deck is a customer-facing presentation supporting a sales discussion. For a service proposal, it should help the customer understand the offered work and the decision being requested.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Give each page a decision job",
+        "paragraphs": [
+          "Use this original outline: customer’s stated need; proposed scope; exclusions and unresolved questions; evidence supporting the approach; proposed next step. Use only sections relevant to the actual proposal.",
+          "The deck should not hide important terms in an attractive summary. Link to the authoritative estimate and its current version. A presentation is not a substitute for the documents the business actually uses to define the offer."
+        ],
+        "items": []
+      },
+      {
+        "title": "Show the scope before the benefits",
+        "paragraphs": [
+          "For a fictional property-service proposal, identify which locations and activities are included. State any requirement that must be resolved before work can be confirmed. Avoid implying an inspection took place if the scope is still based on customer-supplied information.",
+          "Describe benefits as reasons the proposed scope addresses the stated need. Do not add invented customer quotes, savings percentages, guarantees or photographs presented as completed work."
+        ],
+        "items": []
+      },
+      {
+        "title": "Make comparisons fair",
+        "paragraphs": [
+          "If the proposal contains options, use the same comparison dimensions for each: included work, exclusions, dependencies and supported next step. Check that the comparison matches the current estimate.",
+          "Invite a scope question rather than pushing the customer through a slide sequence. When a question requires an authorized estimator, record it and pause that decision. Do not improvise a new commercial offer in the presentation."
+        ],
+        "items": []
+      },
+      {
+        "title": "Close with the document and the decision",
+        "paragraphs": [
+          "Name the estimate version and the actual action the customer can take next. Distinguish discussing an option, accepting scope and confirming a visit. Record which questions remain open.",
+          "The sales playbook is an internal coaching reference; this deck is for the customer. Revo’s Services and Pricing describe answering, not proposal design, sales presentation software or authority to negotiate work."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a sales deck an estimate?",
+        "a": "It can explain an offer, but the business’s authoritative estimate and terms remain the source for the proposed scope."
+      },
+      {
+        "q": "Should every proposal use a long presentation?",
+        "a": "Use only enough structure to make the customer’s decision clear."
+      }
+    ],
+    "takeaway": "Let the presentation clarify the offer rather than enlarge it.",
+    "related": [
+      "sales-closing-techniques-service-business"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/15-best-examples-of-simple-effective-sales-decks-for-demos",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "ask-customer-for-payment",
+    "title": "How to ask a customer for payment: a clear invoice message",
+    "description": "Asking a customer for payment starts with an accurate invoice and a clear explanation of the requested action. Use the business’s authorized amount, terms.",
+    "navigationLabel": "How to ask a customer for paymen",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Asking a customer for payment starts with an accurate invoice and a clear explanation of the requested action. Use the business’s authorized amount, terms and payment route without inventing pressure or consequences.",
+    "lead": "Asking a customer for payment starts with an accurate invoice and a clear explanation of the requested action. Use the business’s authorized amount, terms and payment route without inventing pressure or consequences.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Check the reference before writing",
+        "paragraphs": [
+          "Verify the invoice reference, intended recipient, current status and the business’s approved contact process. A pending or unclear payment status should be investigated before a message claims that nothing was paid.",
+          "Keep an unresolved question about work quality, scope or the amount visible to its responsible owner. This guide concerns ordinary business wording, not debt-collection, legal or financial advice."
+        ],
+        "items": []
+      },
+      {
+        "title": "Example one: a routine invoice message",
+        "paragraphs": [
+          "Original fictional wording: “Hello [Name], invoice [reference] for [accurate service description] is ready for review. The amount and payment terms are shown on the invoice. You can use [authorized payment route]. Please contact [office role] if a detail needs clarification.”",
+          "Replace every placeholder with verified information. Do not place card numbers, security codes or passwords in an ordinary message or ask the customer to send them back."
+        ],
+        "items": []
+      },
+      {
+        "title": "Example two: a status clarification",
+        "paragraphs": [
+          "Original fictional wording: “Hello [Name], our office is checking the status of invoice [reference]. If you have already paid, please let [authorized office role] know through [approved route] so we can reconcile the record. If you have an invoice question, we can direct it to the responsible person.”",
+          "Use this structure only when it matches the actual status. Do not request sensitive payment information as proof. An office reply saying paid still requires reconciliation in the appropriate record."
+        ],
+        "items": []
+      },
+      {
+        "title": "Give questions and payment different owners",
+        "paragraphs": [
+          "A customer may ask for an invoice correction rather than a different way to pay. Route the question to the person authorized to resolve it. Never invent a fee, deadline, threat or remedy outside the business’s actual terms.",
+          "The payment-collection guide compares handling and processing workflows. This page supplies ordinary request wording. Revo’s Services and Pricing do not establish invoicing, collection campaigns or payment-processing capability."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Should the message repeat every payment detail?",
+        "a": "Refer to the authoritative invoice and approved payment route; keep unnecessary sensitive details out of ordinary correspondence."
+      },
+      {
+        "q": "Does sending a request prove payment?",
+        "a": "No. Verify status in the responsible payment or financial record."
+      }
+    ],
+    "takeaway": "Ask clearly, preserve questions and reconcile the actual record.",
+    "related": [
+      "answering-service-payment-collection"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/how-to-get-clients-to-pay-on-time-tips-to-ask-for-money-on-deposits-invoices-and-late-bills",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "slug": "landscape-crm-software",
+    "title": "Landscape CRM software: connect contacts and properties",
+    "description": "Landscape CRM software should be evaluated around the relationship between customers, properties and proposed work. A service calendar alone may not.",
+    "navigationLabel": "Landscape CRM software",
+    "eyebrow": "Service-business operating guide",
+    "intro": "Landscape CRM software should be evaluated around the relationship between customers, properties and proposed work. A service calendar alone may not explain who can discuss or approve a quote at each property.",
+    "lead": "Landscape CRM software should be evaluated around the relationship between customers, properties and proposed work. A service calendar alone may not explain who can discuss or approve a quote at each property.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "sections": [
+      {
+        "title": "Model one customer with several properties",
+        "paragraphs": [
+          "Use a fictional management company with two properties and different site contacts. Identify the business’s authorized commercial contact separately from a person providing access information. Do not infer decision authority from a shared email domain.",
+          "Ask a vendor to demonstrate the customer, property and contact relationships. Then change one site contact and inspect whether the other property remains correct. These are proposed tests, not promised features of every CRM."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep seasonal opportunities separate",
+        "paragraphs": [
+          "Create a fictional recurring-maintenance relationship and a separate enhancement inquiry. Both concern the same property but need different scope, estimate history and next actions.",
+          "Ask how the office identifies an old proposal versus the current one. A previous season’s accepted scope should not automatically become authorization for different work. Inspect the records the actual product supports rather than assuming a pipeline label resolves this."
+        ],
+        "items": []
+      },
+      {
+        "title": "Follow a handoff to the estimator",
+        "paragraphs": [
+          "Give the estimator the property reference, current scope question, relevant authorized contact and prior proposal reference. Test a correction to the contact’s role before a decision is recorded.",
+          "Check how the office recognizes unresolved questions and reassigns ownership when a colleague is away. Compare exports and administration using fictional records before choosing a tool. Do not upload real customer data merely for a demonstration."
+        ],
+        "items": []
+      },
+      {
+        "title": "Separate relationship management from scheduling",
+        "paragraphs": [
+          "The landscape scheduling guide evaluates crews, visits, travel and weather changes. This page evaluates customer relationships, authority and proposal history. The two purchases may interact, but the business needs to identify which record each owns.",
+          "Revo’s Services and Pricing describe answering. Confirm any named connection directly; this page does not establish a native landscape CRM, contact-authority verification or automatic opportunity synchronization."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is a property contact always the person who approves work?",
+        "a": "No. Establish roles through the business’s actual customer relationship and approval process."
+      },
+      {
+        "q": "Should a new seasonal inquiry overwrite the old opportunity?",
+        "a": "Preserve enough history and separation to identify the actual scope and decision being discussed."
+      }
+    ],
+    "takeaway": "Keep the property, contact role and proposed work distinguishable.",
+    "related": [
+      "landscape-scheduling-software"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/top-10-crms-for-landscaping-gardening-businesses-free-and-paid-solutions-to-streamline-customer-and-job-management",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending. (batch 2026-10-27-service-business-guides)"
+    },
+    "publicationStatus": "draft"
   }
 ]
