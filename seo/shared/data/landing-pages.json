@@ -26531,7 +26531,13 @@
       "kind": "manual",
       "reference": "Five additional net-new informational resources completing the user-requested October26 goal25 after the prior20 were published. Exact CSV evidence and semantic dedup retained privately. No human approval inferred; exact-content review pending. (batch 2026-10-26-five-page-supplement)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit exact-content approval",
+      "reviewedAt": "2026-10-26",
+      "contentHash": "sha256:cba1ad323211ce493321e540182a3df760aa87c515bd8b8f6cd5a192bf304036",
+      "note": "User message Sentinel_2a2283db489c81919fe69560879b0ec2, 2026-10-26 19:59 UTC: si; approved exact five-page package at 8006953a97f81613073ad437b78be469e7d75bab, requested in assistant message Sentinel_24dcaa836b108191a637575ad60be67f. Recorded by executor; not executor editorial approval."
+    }
   },
   {
     "slug": "communication-platform-for-business",
@@ -26604,7 +26610,13 @@
       "kind": "manual",
       "reference": "Five additional net-new informational resources completing the user-requested October26 goal25 after the prior20 were published. Exact CSV evidence and semantic dedup retained privately. No human approval inferred; exact-content review pending. (batch 2026-10-26-five-page-supplement)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit exact-content approval",
+      "reviewedAt": "2026-10-26",
+      "contentHash": "sha256:1682759f840b03914f796f8b7bdebd02ca60f2db9203b09ce6bc36c5746f1f77",
+      "note": "User message Sentinel_2a2283db489c81919fe69560879b0ec2, 2026-10-26 19:59 UTC: si; approved exact five-page package at 8006953a97f81613073ad437b78be469e7d75bab, requested in assistant message Sentinel_24dcaa836b108191a637575ad60be67f. Recorded by executor; not executor editorial approval."
+    }
   },
   {
     "slug": "hvac-ppc-marketing",
@@ -26677,7 +26689,13 @@
       "kind": "manual",
       "reference": "Five additional net-new informational resources completing the user-requested October26 goal25 after the prior20 were published. Exact CSV evidence and semantic dedup retained privately. No human approval inferred; exact-content review pending. (batch 2026-10-26-five-page-supplement)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit exact-content approval",
+      "reviewedAt": "2026-10-26",
+      "contentHash": "sha256:4ebd5425d8755dacda0fe53dff2b2640e2736bda482f92cf10a91081bdd82508",
+      "note": "User message Sentinel_2a2283db489c81919fe69560879b0ec2, 2026-10-26 19:59 UTC: si; approved exact five-page package at 8006953a97f81613073ad437b78be469e7d75bab, requested in assistant message Sentinel_24dcaa836b108191a637575ad60be67f. Recorded by executor; not executor editorial approval."
+    }
   },
   {
     "slug": "on-call-scheduling-software",
@@ -26750,7 +26768,13 @@
       "kind": "manual",
       "reference": "Five additional net-new informational resources completing the user-requested October26 goal25 after the prior20 were published. Exact CSV evidence and semantic dedup retained privately. No human approval inferred; exact-content review pending. (batch 2026-10-26-five-page-supplement)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit exact-content approval",
+      "reviewedAt": "2026-10-26",
+      "contentHash": "sha256:5500ad73aa346d27ce20452768e25725b783e8b8ef261914e84ba94e5a19b6a6",
+      "note": "User message Sentinel_2a2283db489c81919fe69560879b0ec2, 2026-10-26 19:59 UTC: si; approved exact five-page package at 8006953a97f81613073ad437b78be469e7d75bab, requested in assistant message Sentinel_24dcaa836b108191a637575ad60be67f. Recorded by executor; not executor editorial approval."
+    }
   },
   {
     "slug": "visual-voicemail-android",
@@ -26822,6 +26846,12 @@
       "kind": "manual",
       "reference": "Five additional net-new informational resources completing the user-requested October26 goal25 after the prior20 were published. Exact CSV evidence and semantic dedup retained privately. No human approval inferred; exact-content review pending. (batch 2026-10-26-five-page-supplement)"
     },
-    "publicationStatus": "draft"
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit exact-content approval",
+      "reviewedAt": "2026-10-26",
+      "contentHash": "sha256:c8829dee5081aed47835e1cbc313b63a9358ec93133a62a028ca72c91e45c79e",
+      "note": "User message Sentinel_2a2283db489c81919fe69560879b0ec2, 2026-10-26 19:59 UTC: si; approved exact five-page package at 8006953a97f81613073ad437b78be469e7d75bab, requested in assistant message Sentinel_24dcaa836b108191a637575ad60be67f. Recorded by executor; not executor editorial approval."
+    }
   }
 ]
