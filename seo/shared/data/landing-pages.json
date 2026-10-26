@@ -24869,5 +24869,456 @@
       "contentHash": "sha256:12eff6c4163ef7240909c6cd3e61c984d943073c7850738a216636c61b40c623",
       "note": "Human approval by Jorge, recorded by Codex as operator. Nine-article cohort approved2026-10-23T19:42:15Z; final-eight cohort approved2026-10-23T19:52:45Z. Exact public Markdown and companion SHA256 retained; metadata and structured rendering bound to this content hash. Final-eight transfer pending label predates approval. Publication conditional on CI and authenticated visual QA."
     }
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "workiz-genius-answering",
+    "title": "Workiz Genius Answering: transfers and the fallback",
+    "navigationLabel": "Workiz Genius Answering",
+    "description": "Compare Workiz Genius Answering with a separate answering service by transfer control, record boundaries and unavailable-team handling.",
+    "eyebrow": "Home-service buyer guide",
+    "lead": "For a service business already using Workiz, choosing AI answering means choosing where the conversation and its records live. Genius Answering is built into Workiz. A separate answering service may use a different phone path and handoff. Compare the point where a person takes over, especially when the requested team member cannot answer.",
+    "intro": "For a service business already using Workiz, choosing AI answering means choosing where the conversation and its records live. Genius Answering is built into Workiz. A separate answering service may use a different phone path and handoff. Compare the point where a person takes over, especially when the requested team member cannot answer.",
+    "sections": [
+      {
+        "title": "Start with the Workiz workflow you want to retain",
+        "paragraphs": [
+          "Workiz describes Genius Answering as an embedded product that can handle calls and booking tasks. Its settings documentation says new appointments can be saved as jobs or leads. Before comparing it with another provider, decide which result your office requires. A lead awaiting review and an accepted job are different outcomes.",
+          "Ask Workiz to demonstrate the proposed configuration with a fictional service request. Record where the customer, service location and requested work appear. If you want to retain Workiz as your operating system, compare the complete office handoff rather than only how natural the opening conversation sounds."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare validated and automatic transfers",
+        "paragraphs": [
+          "Workiz documents an optional validation step before transferring. With validation enabled, the receiving person hears the request and can accept or decline. Without it, the requested person is connected automatically when they answer, without that briefing. Confirm the setting in the proposed account rather than assuming every transfer is attended.",
+          "Use three fictional calls in the demonstration: a request for the owner, a request for a named employee and a general request for a person. Decide which recipients should be offered each call. A transfer rule must not imply that the owner or a technician is always available."
+        ],
+        "items": []
+      },
+      {
+        "title": "Inspect what happens after an external transfer",
+        "paragraphs": [
+          "Workiz warns that a call transferred to an external number cannot reenter its original flow. It says transcription is available up to the transfer, while an unanswered external call can reach that number’s voicemail. A call log is therefore not proof that the office retains the complete later conversation or voicemail.",
+          "This is the most useful exception test for an owner whose destination is a personal mobile. Arrange an authorized test where that recipient does not answer. Inspect the caller’s experience and where the unresolved message can be accessed. Do not accept a successful ringing test as evidence of a working no-answer process.",
+          "Write an original handoff card with five fields: reason for involving a person; requested destination; whether acceptance is required; record available after transfer; and owner of an unanswered request. Fill observed outcomes only after the demonstration."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare a separate answering service on the same boundary",
+        "paragraphs": [
+          "If Revo is on your shortlist, ask it to demonstrate the exact answering, booking and transfer actions available in your proposed plan. Its general field-service connection label does not establish a Workiz integration, a particular transfer mode or continued recording after the handoff. Leave those requirements unresolved until confirmed.",
+          "Compare three deliverables in each proposal: the request or job record, the person receiving an exception and the no-answer outcome. Also obtain the relevant phone prerequisites, usage unit and service terms directly. This guide does not reproduce an unverified price or claim one provider produces better results.",
+          "Use the existing Revo Services and Pricing pages to scope the answering offer. Choose the setup whose demonstrated handoff matches the way your office works; keep software migration and customer-call routing as separate decisions."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does this guide establish that Revo integrates with Workiz?",
+        "a": "No. Confirm the named platform, supported actions and plan directly. A general integration feature is insufficient evidence."
+      },
+      {
+        "q": "Is an external transfer the same as keeping the caller in Workiz?",
+        "a": "Workiz documents a record boundary when a call leaves its flow. Test the destination and no-answer outcome before relying on it."
+      }
+    ],
+    "takeaway": "Review the proposed answering workflow against your own operating rules before routing customer calls.",
+    "related": [
+      "compare/warm-vs-cold-transfer",
+      "call-transfer-language",
+      "centralized-scheduling-integration"
+    ],
+    "sourcePaths": [
+      "https://www.workiz.com/features/genius-answering/",
+      "https://help.workiz.com/hc/en-us/articles/38484381491857-Transferring-Genius-Answering-calls-to-your-team",
+      "https://help.workiz.com/hc/en-us/articles/28907946434321-Customizing-your-Genius-Answering-settings",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Six differentiated commercial editorial proposals for October 26 review. Keyword export evidence and full-body dedup retained privately. Four exploratory generic reserves excluded. No human approval recorded. (batch 2026-10-26-commercial-review)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "fieldedge-answering-service",
+    "title": "FieldEdge answering: a lead or a confirmed booking?",
+    "navigationLabel": "FieldEdge answering",
+    "description": "Evaluate FieldEdge answering by the record actually created. Separate a lead awaiting CSR confirmation from a confirmed appointment.",
+    "eyebrow": "Home-service buyer guide",
+    "lead": "A FieldEdge answering service can capture an inquiry without creating the appointment your customer thinks was booked. Before choosing a provider, establish the exact record it creates, who confirms the visit and what the caller hears while that confirmation remains pending. The word integration does not answer those questions.",
+    "intro": "A FieldEdge answering service can capture an inquiry without creating the appointment your customer thinks was booked. Before choosing a provider, establish the exact record it creates, who confirms the visit and what the caller hears while that confirmation remains pending. The word integration does not answer those questions.",
+    "sections": [
+      {
+        "title": "Resolve the difference in published descriptions",
+        "paragraphs": [
+          "FieldEdge’s September 15, 2026 announcement describes a direct Free2Grow integration and automatic appointment booking. Free2Grow’s more specific FieldEdge page describes recognizing returning callers, collecting request details and creating a lead for CSRs to confirm. It also describes seeing later lead-to-job or quote changes.",
+          "Those descriptions do not establish one universal behavior for every account. Ask both companies which workflow applies to your proposed configuration today. Treat the difference as an unresolved scope question, not proof of a malfunction or a reason to silently pick the more expansive claim."
+        ],
+        "items": []
+      },
+      {
+        "title": "Decide what a caller may be told",
+        "paragraphs": [
+          "Your office should write two approved outcomes. For a lead-only path, the message can say the request is awaiting office confirmation. For a supported booking path, confirmation requires the authoritative appointment or job to exist with the correct customer, location and time.",
+          "Ask the provider to show the created record during a demonstration. Read the type and status rather than relying on a calendar-shaped screen or a verbal assurance. If staff must review availability before converting the lead, include that work in the proposal’s operating scope."
+        ],
+        "items": []
+      },
+      {
+        "title": "Use a lead-to-job evidence card",
+        "paragraphs": [
+          "Fictional case: an existing customer calls about a repair at a second property. Record the caller match, selected service address, request reference, created record type, assigned CSR and next action. Then ask the authorized CSR to accept or decline the request through the proposed workflow.",
+          "Inspect what the answering system learns after the change. If the lead becomes a quote rather than a job, check that no appointment confirmation is sent. If the office declines the request, identify who tells the customer and which pending work remains. Do not infer this from a general claim about synchronization.",
+          "Keep a simple state ledger: request received; lead created; office decision pending; accepted job or quote; customer informed; exception owner. These are proposed review states, not documented FieldEdge API statuses. A record that cannot be reconciled stays pending for its owner."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare direct integration with an office handoff",
+        "paragraphs": [
+          "A separate answering service can still be useful when your office wants approved intake and a clear callback request. Compare that actual scope with direct software actions rather than calling every path an integration. The important purchasing question is which work the office retains.",
+          "Revo’s Services and Pricing pages describe its general answering offer and plan boundaries. This article does not establish a Revo–FieldEdge connector. Ask Revo whether the proposed setup captures a request, writes a particular record or supports confirmed booking; require the corresponding evidence.",
+          "Use the same fictional second-property request for every finalist. Select only after the record, customer wording and remaining CSR work agree. Do not compare prices as if lead capture and completed booking were identical services."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does direct integration always mean automatic booking?",
+        "a": "No. Confirm the record type, confirmation responsibility and current configuration. The reviewed FieldEdge and Free2Grow descriptions differ in scope."
+      },
+      {
+        "q": "Can a lead be described as a confirmed appointment?",
+        "a": "Only when the separate booking action has actually completed and its details have been verified. A lead awaiting CSR review should remain a request."
+      }
+    ],
+    "takeaway": "Review the proposed answering workflow against your own operating rules before routing customer calls.",
+    "related": [
+      "centralized-scheduling-integration",
+      "lead-qualification",
+      "appointment-booking"
+    ],
+    "sourcePaths": [
+      "https://fieldedge.com/news/fieldedge-announces-integration-with-free2grow-to-help-contractors-grow-revenue/",
+      "https://www.free-2-grow.com/integrations-single/field-edge",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Six differentiated commercial editorial proposals for October 26 review. Keyword export evidence and full-body dedup retained privately. Four exploratory generic reserves excluded. No human approval recorded. (batch 2026-10-26-commercial-review)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "fieldpulse-operator-ai",
+    "title": "FieldPulse Operator AI: phone and chat ownership",
+    "navigationLabel": "FieldPulse Operator AI",
+    "description": "Compare FieldPulse Operator AI, Chat AI and separate answering by channel, booking responsibility and requests that cross from chat to phone.",
+    "eyebrow": "Home-service buyer guide",
+    "lead": "A FieldPulse business choosing customer-response tools needs to separate the incoming phone conversation from website chat. Operator AI and Chat AI are different parts of FieldPulse’s offer. Decide which channel needs coverage, which system owns the resulting job and who handles a request that moves between channels.",
+    "intro": "A FieldPulse business choosing customer-response tools needs to separate the incoming phone conversation from website chat. Operator AI and Chat AI are different parts of FieldPulse’s offer. Decide which channel needs coverage, which system owns the resulting job and who handles a request that moves between channels.",
+    "sections": [
+      {
+        "title": "Separate phone answering from website chat",
+        "paragraphs": [
+          "FieldPulse describes Operator AI as its phone agent for inbound calls, with booking inside FieldPulse. Its Field Intelligence and Chat AI pages separately describe the website conversation product. Confirm which products are enabled in the proposed account.",
+          "A buyer should therefore ask which product is included in the proposed package. Do not treat a website chatbot demonstration as proof that phone calls are covered, or assume phone answering automatically includes chat. Obtain the channel, account and enabled capabilities in writing."
+        ],
+        "items": []
+      },
+      {
+        "title": "Give one request one accountable owner",
+        "paragraphs": [
+          "Fictional case: a homeowner starts a web chat, then calls because they need to explain the request. Before testing any product, decide how staff will identify whether those interactions concern the same customer, property and requested work. A matching first name alone is insufficient.",
+          "Ask the provider to demonstrate the proposed cross-channel path. Inspect the customer and job records after the chat and after the call. If the flow creates two requests, identify who reconciles them. If the caller changes the service address, ensure the change is reviewed rather than silently applied to an unrelated record."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test three different outcomes",
+        "paragraphs": [
+          "First, test a supported service at a time the actual configuration can book. Inspect the resulting job and the customer wording. Second, request a service the company does not offer. The expected result should follow your approved exclusion, not invent a new service to complete the booking.",
+          "Third, move from a chat to a call about an existing request. Record the original reference, later interaction, resulting job count and next owner. These are proposed acceptance cases, not tests already run against FieldPulse.",
+          "Keep the outcome ledger short: channel received; request identified; permitted action; resulting record; customer told; unresolved owner. A chat-to-phone transition is not proof of a successful job creation. Confirm each event separately in the actual account."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare an independent answering option fairly",
+        "paragraphs": [
+          "If the need is phone coverage while your office retains scheduling control, ask a separate answering provider to demonstrate that narrower handoff. If the need is native FieldPulse booking across phone and chat, ask FieldPulse to show the exact workflow and inclusions. The two proposals may leave different work with your team.",
+          "Revo should be evaluated against its published answering plans and a verified proposed setup. This article does not claim a Revo–FieldPulse integration, native Chat AI service or automatic reconciliation of cross-channel requests. Do not assume those capabilities from a general software-connection label.",
+          "Use Revo’s existing Services and Pricing pages for the commercial starting point. Choose by the channels and records your office actually needs, with exceptions assigned before customer calls are routed."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is Operator AI the same product as Chat AI?",
+        "a": "FieldPulse documents them separately for phone and website-chat interactions. Confirm the exact enabled products and package with FieldPulse."
+      },
+      {
+        "q": "Does this comparison prove that Revo writes jobs into FieldPulse?",
+        "a": "No. A named connection and its supported actions require separate verification in the proposed setup."
+      }
+    ],
+    "takeaway": "Review the proposed answering workflow against your own operating rules before routing customer calls.",
+    "related": [
+      "live-chat-answering-service",
+      "appointment-booking",
+      "centralized-scheduling-integration"
+    ],
+    "sourcePaths": [
+      "https://www.fieldpulse.com/features/field-intelligence",
+      "https://www.fieldpulse.com/features/operator-ai",
+      "https://help.fieldpulse.com/add-ons/ai/operator-ai",
+      "https://www.fieldpulse.com/features/chat-ai",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Six differentiated commercial editorial proposals for October 26 review. Keyword export evidence and full-body dedup retained privately. Four exploratory generic reserves excluded. No human approval recorded. (batch 2026-10-26-commercial-review)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "dispatch-fee-phone-script",
+    "title": "Dispatch fee phone script: explain the visit charge",
+    "navigationLabel": "Dispatch fee phone script",
+    "description": "Write a dispatch-fee script that separates the visit charge from repair pricing and preserves approved credits, waivers and exceptions.",
+    "eyebrow": "Home-service buyer guide",
+    "lead": "When a homeowner asks what a service visit costs, the receptionist needs your approved fee policy before offering a time. A dispatch or diagnostic charge may differ from the repair price. Explain what the stated charge covers, whether any credit applies and which questions need an authorized employee. This guide supplies original wording, not a recommended fee.",
+    "intro": "When a homeowner asks what a service visit costs, the receptionist needs your approved fee policy before offering a time. A dispatch or diagnostic charge may differ from the repair price. Explain what the stated charge covers, whether any credit applies and which questions need an authorized employee. This guide supplies original wording, not a recommended fee.",
+    "sections": [
+      {
+        "title": "Prepare a fee card before writing the script",
+        "paragraphs": [
+          "For each applicable service type, record the approved charge, what it covers, whether it changes by time or location, and any documented credit or waiver. Identify who maintains the policy and its effective date. An unanswered field should send the request to review; it should not be filled from another contractor’s price.",
+          "ServiceTitan’s Voice Agent release documentation describes customizable dispatch-fee messages tied to job types. It illustrates why a general fee sentence may be insufficient. That is evidence about ServiceTitan’s feature, not proof that Revo offers the same configuration controls."
+        ],
+        "items": []
+      },
+      {
+        "title": "Use wording that matches the approved policy",
+        "paragraphs": [
+          "Standard visit: “For [approved service type], the [visit or diagnostic] charge is [approved amount]. It covers [approved scope]. Repair work is [your approved explanation of separate quoting]. Would you like me to explain the next booking step?”",
+          "Credit toward work: “Your visit charge is [approved amount]. Under our current policy, [precise credit condition]. The team will explain and obtain approval for any separate repair work.” Use this only when the credit condition is current and applies to the request.",
+          "Unverified exception: “I do not want to give you an incorrect charge. I can record your question for [authorized role] to confirm before the visit is accepted.” These are original templates. Bracketed fields are instructions for the business to replace, never words to publish in a live script."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep three different objections separate",
+        "paragraphs": [
+          "“Is that the total repair price?” calls for the approved distinction between the visit and later work. It does not authorize the receptionist to diagnose the fault or invent a repair estimate. “Does my membership waive it?” requires the business’s actual eligibility check. “The last person quoted something else” requires a review of the earlier statement.",
+          "Build one fictional case for each objection. Give the evaluator an approved fee card and expected escalation owner. The script passes only when it states the applicable policy without adding a guarantee. A polite conversation that promises an unverified waiver fails the test.",
+          "Also test a request outside the fee card’s scope. For example, a business may have different rules for an estimate visit and a repair diagnostic. The correct result can be an office review rather than a quoted amount."
+        ],
+        "items": []
+      },
+      {
+        "title": "Choose answering around policy control",
+        "paragraphs": [
+          "When evaluating a receptionist, ask how approved wording is maintained, who can change it and what happens when the policy does not answer the caller’s question. Test a current rule, a changed rule and an excluded request. Keep the dated fee card as the comparison input for every provider.",
+          "Revo’s published offer includes your own script and rules, subject to the selected plan and supported setup. Confirm how the proposed configuration handles fee information and exceptions. This article does not promise dynamic pricebook access, membership verification, payment collection or repair quoting.",
+          "Use the existing Revo Services and Pricing pages to scope the offer. The buying decision is whether the answering process can explain your policy accurately and hand uncertainty back to the office before an unsupported promise is made."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "What amount should a contractor charge?",
+        "a": "This guide does not recommend an amount. Use the business’s approved fee policy and quote process."
+      },
+      {
+        "q": "Does a fee script confirm the repair price?",
+        "a": "No. State the approved scope of the visit charge and keep any separate repair proposal under the business’s actual authorization process."
+      }
+    ],
+    "takeaway": "Review the proposed answering workflow against your own operating rules before routing customer calls.",
+    "related": [
+      "phone-answering-script",
+      "ai-receptionist-knowledge-base",
+      "appointment-booking"
+    ],
+    "sourcePaths": [
+      "https://help.servicetitan.com/release-hub/docs/customize-dispatch-fee-message-to-align-with-your-business-needs",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Six differentiated commercial editorial proposals for October 26 review. Keyword export evidence and full-body dedup retained privately. Four exploratory generic reserves excluded. No human approval recorded. (batch 2026-10-26-commercial-review)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "recurring-cleaning-call-changes",
+    "title": "Recurring cleaning calls: change a visit or the series",
+    "navigationLabel": "Recurring cleaning calls",
+    "description": "Design cleaning-call intake for one skipped visit, a series change or a crew request without silently changing future appointments.",
+    "eyebrow": "Home-service buyer guide",
+    "lead": "“Skip next week” and “stop future cleanings” describe different requests. A cleaning business choosing answering and scheduling support needs to preserve that difference. Define whether the caller wants to change one visit, the future series or the assigned team, then confirm only the action your actual setup can complete.",
+    "intro": "“Skip next week” and “stop future cleanings” describe different requests. A cleaning business choosing answering and scheduling support needs to preserve that difference. Define whether the caller wants to change one visit, the future series or the assigned team, then confirm only the action your actual setup can complete.",
+    "sections": [
+      {
+        "title": "Ask which part of the schedule should change",
+        "paragraphs": [
+          "Begin with the existing customer and service address through the business’s approved identification process. Ask for the affected date, then clarify whether the request concerns that occurrence only or future visits as well. Do not assume a one-time skip cancels the continuing service.",
+          "Jobber’s documentation distinguishes jobs from visits and describes visit-specific edits separately from changes that update future visits. That makes it a useful example of why the object being changed matters. It does not establish that every cleaning platform uses the same controls or that Revo connects to Jobber."
+        ],
+        "items": []
+      },
+      {
+        "title": "Use a three-case call card",
+        "paragraphs": [
+          "One occurrence: “Do you want to skip [date] only and keep the later visits unchanged?” Record the stated scope and proposed next step. If your system cannot verify the later visits, leave the change for the scheduling owner rather than claiming they remain intact.",
+          "Future series: “From which date should the new frequency or schedule begin?” Capture the effective date and requested cadence. An open slot next Tuesday does not establish capacity for every future Tuesday.",
+          "Crew preference: “Is this a request about the team for one visit or for future service?” Record the preference without promising a named employee. Availability, staffing and assignment remain with the person authorized to manage the cleaning team."
+        ],
+        "items": []
+      },
+      {
+        "title": "Inspect the affected and unaffected records",
+        "paragraphs": [
+          "Fictional example: visits are planned for November 3, 10 and 17. The customer asks to skip November 10 only. The acceptance check should inspect November 10 and also confirm the intended states of November 3 and 17. Those invented dates illustrate scope, not an actual customer schedule.",
+          "A series-change test needs a different expected result. If the customer requests a new cadence beginning November 10, write the intended future schedule before the demonstration. Review which visits changed and whether pending reminders still match the result. Refer to the system’s documented reminder behavior; do not assume it updates automatically.",
+          "Keep a change ledger with the request reference, original visit or series reference, scope, effective date, expected affected records, observed result and unresolved owner. Do not put customer access codes or unnecessary private details into a review worksheet."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare capture-only with supported schedule changes",
+        "paragraphs": [
+          "Some answering arrangements collect the change for an office scheduler. Others may perform specified actions in a supported destination. Compare those scopes honestly. A clear request with a named owner can be appropriate when the office wants to retain control over future capacity.",
+          "Revo’s published cleaning-answering guide already distinguishes recurring and one-time work. This page adds a series-scope acceptance task for choosing the supported workflow. It does not establish native recurring-job editing, crew assignment or a connection to any named cleaning platform.",
+          "Review the proposed setup through Revo’s existing Services and Pricing pages. Before allowing confirmations, test one skipped visit, one future-series change and one unavailable crew preference against your own policy."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does skipping a visit cancel the recurring service?",
+        "a": "Not unless that is the customer’s verified request and the business’s supported action. Preserve the requested scope explicitly."
+      },
+      {
+        "q": "Can the receptionist promise the usual cleaning team?",
+        "a": "Only if the actual staffing workflow authorizes and verifies that commitment. Otherwise capture a preference for the scheduler."
+      }
+    ],
+    "takeaway": "Review the proposed answering workflow against your own operating rules before routing customer calls.",
+    "related": [
+      "cleaning-answering-with-scheduling",
+      "appointment-cancellation-policy",
+      "appointment-reminders",
+      "centralized-scheduling-integration"
+    ],
+    "sourcePaths": [
+      "https://help.getjobber.com/en/articles/visits/",
+      "https://help.getjobber.com/en/articles/create-a-recurring-job/",
+      "https://help.getjobber.com/en/articles/schedule-overview-new-schedule/",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Six differentiated commercial editorial proposals for October 26 review. Keyword export evidence and full-body dedup retained privately. Four exploratory generic reserves excluded. No human approval recorded. (batch 2026-10-26-commercial-review)"
+    },
+    "publicationStatus": "draft"
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "restoration-project-update-calls",
+    "title": "Restoration project calls: route updates to an owner",
+    "navigationLabel": "Restoration project calls",
+    "description": "Choose restoration answering by how existing-project questions reach an accountable owner without inventing job status or crew arrival.",
+    "eyebrow": "Home-service buyer guide",
+    "lead": "A caller asking about a restoration job already underway needs a different response from someone reporting a new loss. When comparing communication platforms and answering services, test whether an existing-project request reaches the person responsible for the answer. A new message is not itself a project-status update.",
+    "intro": "A caller asking about a restoration job already underway needs a different response from someone reporting a new loss. When comparing communication platforms and answering services, test whether an existing-project request reaches the person responsible for the answer. A new message is not itself a project-status update.",
+    "sections": [
+      {
+        "title": "Separate four reasons for calling",
+        "paragraphs": [
+          "Use a short request taxonomy: a new damage inquiry; a question about an existing project; a request to change a planned visit; or a question about a document or charge. The business should approve the responsible role for each. Do not route every call containing a damage description as a new loss.",
+          "Avoca has a restoration-specific AI CSR page, while restoration software vendors describe project and field-documentation tools. Those are different product categories. A communications feature does not establish that an answering system can read every project record or explain an insurer’s decision. Ask the proposed provider which records and actions are actually available."
+        ],
+        "items": []
+      },
+      {
+        "title": "Choose capture-only or verified record access",
+        "paragraphs": [
+          "In a capture-only arrangement, the receptionist records the project reference supplied by the caller, the service location, the question and the callback details needed by the owner. The response should accurately say the team must review the question. It must not turn the caller’s statement into an official job status.",
+          "If a provider proposes reading project information, ask which field is authoritative, when it was updated, who may receive it and which questions still require staff. A note about yesterday’s plan is not proof that a crew will arrive today. The office must approve the permitted explanation and access boundaries."
+        ],
+        "items": []
+      },
+      {
+        "title": "Track a request through ownership and response",
+        "paragraphs": [
+          "Use an original request ledger with six fields: request reference; existing project reference; caller’s stated question; responsible role; office review deadline or policy; and evidence that the response was completed. Leave the last field blank until the authorized person actually responds.",
+          "Fictional test A: a property owner asks when a worker will return. Test whether the request reaches the designated project role without an invented arrival time. Test B: a caller disputes a project status already mentioned by someone else. Keep the discrepancy visible for review rather than choosing whichever statement sounds more plausible.",
+          "Test C: the normal project contact is unavailable. Check the approved backup and how the office recognizes the unresolved request. The call should not disappear merely because a transfer attempt occurred. These are proposed evaluations, not measured provider results or a guaranteed response schedule."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep the Revo buying decision inside the answering scope",
+        "paragraphs": [
+          "The existing after-hours restoration page covers first-call information and a permitted next step. This guide focuses on the ongoing project-question queue: ownership, unanswered requests and evidence of a later response. It is not a project-management software comparison or an instruction to assess damage over the phone.",
+          "Revo’s published answering, scripts and summaries can be considered within a confirmed proposed setup. Ask what the office receives, which transfer options the selected plan supports and who owns follow-up. This page does not claim Revo reads restoration project systems, updates claims, verifies coverage, controls crews or supplies live field status.",
+          "Use the existing Services and Pricing pages to scope that offer. Choose an answering arrangement that keeps project questions visible to their owners; evaluate any additional project-record access as a separate, evidenced requirement."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Can an answering service confirm a crew arrival from a call message?",
+        "a": "A call message alone is insufficient. Confirm arrival information through the business’s authoritative scheduling or field process."
+      },
+      {
+        "q": "Is this another new-loss intake page?",
+        "a": "No. It evaluates how questions about work already underway are assigned, tracked and answered by the responsible office role."
+      }
+    ],
+    "takeaway": "Review the proposed answering workflow against your own operating rules before routing customer calls.",
+    "related": [
+      "restoration-after-hours-answering",
+      "ai-call-summary",
+      "call-transfer-language",
+      "ai-receptionist-knowledge-base"
+    ],
+    "sourcePaths": [
+      "https://www.avoca.ai/industries/restoration-services",
+      "https://www.getencircle.com/solutions/reports/",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Six differentiated commercial editorial proposals for October 26 review. Keyword export evidence and full-body dedup retained privately. Four exploratory generic reserves excluded. No human approval recorded. (batch 2026-10-26-commercial-review)"
+    },
+    "publicationStatus": "draft"
   }
 ]

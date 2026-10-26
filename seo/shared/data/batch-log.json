@@ -721,5 +721,22 @@
       "added gohighlevel-ai-receptionist-pricing as draft",
       "added lower-answering-service-cost as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-26-commercial-review",
+    "batchHash": "sha256:d97593e3efa7c32007c609aa0546f91a9e0fb02f46cb2cf7eb2f14f623906fee",
+    "source": {
+      "kind": "manual",
+      "reference": "Six differentiated commercial editorial proposals for October 26 review. Keyword export evidence and full-body dedup retained privately. Four exploratory generic reserves excluded. No human approval recorded."
+    },
+    "appliedAt": "2026-10-26",
+    "changes": [
+      "added workiz-genius-answering as draft",
+      "added fieldedge-answering-service as draft",
+      "added fieldpulse-operator-ai as draft",
+      "added dispatch-fee-phone-script as draft",
+      "added recurring-cleaning-call-changes as draft",
+      "added restoration-project-update-calls as draft"
+    ]
   }
 ]
