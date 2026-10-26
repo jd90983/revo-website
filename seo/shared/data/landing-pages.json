@@ -26460,5 +26460,398 @@
       "contentHash": "sha256:7af10d4e5c1b02d9ef52fd187bf3ae566613cda4010931ee69ab42b78e13d8f6",
       "note": "User message Sentinel_edeaf2b3279081919ab32c65b6ef698b, 2026-10-26 18:35 UTC: si; responding to Sentinel_9d143de378888191b77f9db4c94ccb05 for exact two-page supplement commit755667160c372ae6d4bd53efc90d6f54370887dd."
     }
+  },
+  {
+    "slug": "customer-service-outsourcing",
+    "title": "Customer service outsourcing: define the work you hand over",
+    "description": "Plan customer service outsourcing with a task-and-authority matrix. Compare intake, ongoing support and office decisions without assuming identical scope.",
+    "navigationLabel": "Customer service outsourcing",
+    "eyebrow": "Service-business operating guide",
+    "lead": "Customer service outsourcing transfers defined customer-facing work to an outside provider. A service business might need help receiving inquiries, answering routine questions or managing follow-up on existing jobs. Those scopes leave different responsibilities with the office. Describe the work before comparing providers.",
+    "intro": "Customer service outsourcing transfers defined customer-facing work to an outside provider. A service business might need help receiving inquiries, answering routine questions or managing follow-up on existing jobs. Those scopes leave different responsibilities with the office. Describe the work before comparing providers.",
+    "sections": [
+      {
+        "title": "Start with tasks, not a broad service label",
+        "paragraphs": [
+          "Create an original scope matrix with request type, information needed, permitted action, completion evidence and retained office owner. Use separate rows for a new inquiry, a visit change, a question about completed work and a disputed charge. A provider that receives all four calls may be authorized to resolve only some of them.",
+          "For each row, distinguish collecting a request from answering it and from changing a business record. If an authorized employee must decide the remedy, the outsourced team needs a handoff and a way to recognize unfinished work. It does not need an invented promise that every issue can be resolved immediately."
+        ],
+        "items": []
+      },
+      {
+        "title": "Choose the boundary between reception and ongoing support",
+        "paragraphs": [
+          "Reception can identify the caller’s request and direct it to the right next step. Ongoing support may involve repeated contact, research in job records and coordination across departments. Ask which part the proposed service actually owns, during which hours and through which channels.",
+          "Fictional example: a homeowner asks why a follow-up visit has not been scheduled. Intake alone can capture that question. A broader support arrangement might investigate and obtain an authorized scheduling decision. Compare the work left with your coordinator, not just the fact that someone answered the phone."
+        ],
+        "items": []
+      },
+      {
+        "title": "Agree how instructions and exceptions are maintained",
+        "paragraphs": [
+          "Identify the business owner who approves instructions and the provider contact who applies them. Record the effective version and what happens while an update is unresolved. A provider should not have to choose between contradictory service-area or fee instructions.",
+          "Test an ordinary request, an excluded request and a question the instructions do not answer. Ask to see the resulting note or supported record and the named exception owner. Use fictional details. Access to sensitive account information or authority to change records must follow the actual approved arrangement, not a demonstration account’s capabilities."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare the full handoff and commercial scope",
+        "paragraphs": [
+          "Obtain the usage unit, coverage, setup work and exclusions directly from each provider. Check whether follow-up work, channel changes and supervisor involvement are included or separately scoped. This article supplies no price estimates or service-level benchmarks.",
+          "Keep a retained-work column in the comparison: office decisions, field coordination, customer corrections and unresolved requests. A low quoted answering cost does not establish the cost of an entire support function. The dedicated-versus-shared guide addresses staffing; this guide addresses the work and authority being purchased.",
+          "Revo’s Services and Pricing pages describe its answering offer. Evaluate that supported scope directly. This resource does not claim Revo operates a complete outsourced support department, investigates every job dispute or takes authority over refunds and field operations."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is customer service outsourcing the same as an answering service?",
+        "a": "An answering service may handle a defined part of customer contact. Compare the actual tasks, authority and follow-up ownership rather than assuming the labels mean the same thing."
+      },
+      {
+        "q": "Who should decide exceptions?",
+        "a": "Name the authorized business role for each exception and the supported handoff. An external team should not invent a remedy outside its scope."
+      }
+    ],
+    "takeaway": "Choose the scope your office can maintain, and test it with fictional requests before relying on it.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "related": [
+      "dedicated-vs-shared-answering",
+      "customer-elation-answering-service",
+      "answering-service-contract-checklist"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/customer-service-outsourcing-when-why-and-how",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Five additional net-new informational resources completing the user-requested October26 goal25 after the prior20 were published. Exact CSV evidence and semantic dedup retained privately. No human approval inferred; exact-content review pending. (batch 2026-10-26-five-page-supplement)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit exact-content approval",
+      "reviewedAt": "2026-10-26",
+      "contentHash": "sha256:cba1ad323211ce493321e540182a3df760aa87c515bd8b8f6cd5a192bf304036",
+      "note": "User message Sentinel_2a2283db489c81919fe69560879b0ec2, 2026-10-26 19:59 UTC: si; approved exact five-page package at 8006953a97f81613073ad437b78be469e7d75bab, requested in assistant message Sentinel_24dcaa836b108191a637575ad60be67f. Recorded by executor; not executor editorial approval."
+    }
+  },
+  {
+    "slug": "communication-platform-for-business",
+    "title": "Communication platform for business: follow one request",
+    "description": "Evaluate a business communication platform by tracing one customer request across phone, text and email, with clear identity, ownership and status.",
+    "navigationLabel": "Communication platform for busin",
+    "eyebrow": "Service-business operating guide",
+    "lead": "A communication platform for a business should help the team understand a customer’s request and who is acting on it. Adding phone, text and email to one screen is only a starting point. Test whether the office can follow the same work across channels without confusing separate people, properties or questions.",
+    "intro": "A communication platform for a business should help the team understand a customer’s request and who is acting on it. Adding phone, text and email to one screen is only a starting point. Test whether the office can follow the same work across channels without confusing separate people, properties or questions.",
+    "sections": [
+      {
+        "title": "Define the request record behind the conversation",
+        "paragraphs": [
+          "Use an original evaluation card with customer reference, service property, request reference, channel event, current owner, business outcome and next action. Keep the event and the request separate: a phone call and a later email can concern one request, while two calls from one household can concern different work.",
+          "Ask how a proposed platform links conversations and how staff correct a mistaken match. A shared phone number or matching first name is insufficient on its own. Do not require staff to merge uncertain records simply to make the inbox look tidy."
+        ],
+        "items": []
+      },
+      {
+        "title": "Walk through a three-channel example",
+        "paragraphs": [
+          "Fictional case: a customer phones about an estimate, emails a clarification and then texts to ask whether the office has received it. Give each interaction its own event reference and retain one request reference only when the relationship has been established.",
+          "Ask the vendor to show what the person answering the text can actually see. Can they distinguish an estimate request from a confirmed visit? Can they identify which question remains unanswered? A visible transcript is useful context, but it does not prove that an appointment was saved or an office decision made."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test ownership, handback and a correction",
+        "paragraphs": [
+          "Assign the request to one office role, then have that person become unavailable in the fictional scenario. Inspect the backup process and how the team recognizes the unfinished action. A notification sent to several people is not the same as one person accepting responsibility.",
+          "Next, correct the service property or split an unrelated question into a separate request. Observe what happens to existing conversation links and assignments. These are proposed acceptance tests, not claims that every platform supports reassignment history, record splitting or automatic identity reconciliation."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare communication tools with answering labor",
+        "paragraphs": [
+          "A platform supplies supported communication and record controls. A managed answering arrangement supplies specified handling work. A business may buy either or both, but should compare them separately. Record the channels, user access, retention controls, export needs and ongoing administration in each proposal.",
+          "The existing email, SMS and live-chat guides discuss handling within those channels. This guide evaluates the common request and ownership model across them. Revo’s Services and Pricing pages define its answering offer; this article does not establish a Revo unified inbox, native email or chat support, or a named platform connection.",
+          "Before choosing, repeat the same three-channel scenario with every finalist and inspect the final unresolved-work list. Select around the records and handoffs your office needs, not the number of channel icons on a sales page."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does one inbox mean every message belongs to one customer record?",
+        "a": "No. Verify the supported matching rules and correction process. One household or shared number can be associated with different requests."
+      },
+      {
+        "q": "Does a communication platform replace the people answering?",
+        "a": "It depends on the purchased scope. Communication software and the work of handling customer requests are separate comparison items."
+      }
+    ],
+    "takeaway": "Choose the scope your office can maintain, and test it with fictional requests before relying on it.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "related": [
+      "email-answering-service",
+      "sms-answering-service",
+      "live-chat-answering-service",
+      "customer-service-call-log"
+    ],
+    "sourcePaths": [
+      "https://smith.ai/blog/communication-platforms-for-business",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Five additional net-new informational resources completing the user-requested October26 goal25 after the prior20 were published. Exact CSV evidence and semantic dedup retained privately. No human approval inferred; exact-content review pending. (batch 2026-10-26-five-page-supplement)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit exact-content approval",
+      "reviewedAt": "2026-10-26",
+      "contentHash": "sha256:1682759f840b03914f796f8b7bdebd02ca60f2db9203b09ce6bc36c5746f1f77",
+      "note": "User message Sentinel_2a2283db489c81919fe69560879b0ec2, 2026-10-26 19:59 UTC: si; approved exact five-page package at 8006953a97f81613073ad437b78be469e7d75bab, requested in assistant message Sentinel_24dcaa836b108191a637575ad60be67f. Recorded by executor; not executor editorial approval."
+    }
+  },
+  {
+    "slug": "hvac-ppc-marketing",
+    "title": "HVAC PPC marketing: map the search to the office handoff",
+    "description": "Plan HVAC PPC marketing with a search-intent worksheet. Match the service, landing-page promise and inquiry measurement before evaluating a campaign.",
+    "navigationLabel": "HVAC PPC marketing",
+    "eyebrow": "Service-business operating guide",
+    "lead": "HVAC PPC marketing needs a clear connection between the search, the advertised service and the next step the business can deliver. Use this planning worksheet to evaluate a proposed paid-search campaign. It does not create a campaign, recommend spending or promise leads.",
+    "intro": "HVAC PPC marketing needs a clear connection between the search, the advertised service and the next step the business can deliver. Use this planning worksheet to evaluate a proposed paid-search campaign. It does not create a campaign, recommend spending or promise leads.",
+    "sections": [
+      {
+        "title": "Group searches by the work the business wants",
+        "paragraphs": [
+          "Begin with approved services and the actual service area. Separate a request for repair from a replacement consultation or maintenance inquiry when those lead to different office decisions. Also identify searches that concern employment, training or technical research rather than buying your service.",
+          "Create an original intent worksheet with example query, intended service, customer need, destination page, excluded interpretation and office owner. The queries are planning examples, not a keyword-volume report. Use actual search data when evaluating a live account; do not assign demand to invented phrases."
+        ],
+        "items": []
+      },
+      {
+        "title": "Make the ad and landing-page promise agree",
+        "paragraphs": [
+          "For a repair inquiry, the destination should explain the applicable service and the supported contact step. Do not promise a confirmed arrival, a repair price or a service area that the office cannot support. A replacement consultation should not silently become a promise to install equipment on a requested date.",
+          "Review one complete path: example search, proposed message, destination page and phone or form instructions. If the office needs to review a request before confirming it, that status should remain consistent throughout. This resource does not change any existing Revo landing page, funnel or checkout."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep exclusions and geography visible in the brief",
+        "paragraphs": [
+          "Ask the person managing advertising to explain how the proposed setup handles irrelevant searches, locations the business does not serve and ambiguous service terms. Record the desired exclusion and require verification in the actual platform before assuming it is active.",
+          "For a fictional heating-repair offer, a job-seeking query and a do-it-yourself parts query may have different intent from a service request. Do not mechanically exclude every research phrase; some customers research before purchasing. Have the responsible marketer review the evidence and the company’s offer rather than treating this article as a ready-made campaign configuration."
+        ],
+        "items": []
+      },
+      {
+        "title": "Measure inquiries before claiming jobs or revenue",
+        "paragraphs": [
+          "Use a stable reference to distinguish a new inquiry from repeat contacts. Record the reported or evidenced source, requested service, service-area fit, appointment outcome and office follow-up. Preserve unknown attribution as unknown. A call is not automatically a qualified lead, and a booking is not completed work.",
+          "Compare periods with a stated observation window and note changes in capacity or offer. This worksheet does not establish causation, a conversion benchmark or a return-on-ad-spend target. The business should approve its own financial assumptions and any campaign decisions.",
+          "The HVAC lead-generation guide compares acquisition channels; the Local Services Ads guide covers a different product’s phone route and lead records. This page is the paid-search planning brief linking intent, message and office outcome. Revo can be evaluated for its published answering scope through Services and Pricing, not assumed to manage PPC or supply complete ad attribution."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is this a campaign setup guide with a recommended budget?",
+        "a": "No. It is an original planning and review worksheet. Current platform setup and spending decisions belong to the authorized campaign owner."
+      },
+      {
+        "q": "Should every advertising call count as a new lead?",
+        "a": "Keep contact events and distinct inquiries separate. Apply a documented qualification rule and verify later appointments or jobs independently."
+      }
+    ],
+    "takeaway": "Choose the scope your office can maintain, and test it with fictional requests before relying on it.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "related": [
+      "hvac-lead-generation",
+      "google-local-services-ads-answering",
+      "lead-qualification",
+      "speed-to-lead"
+    ],
+    "sourcePaths": [
+      "https://www.avoca.ai/blog/hvac-contractor-marketing-strategies-generating-leads",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Five additional net-new informational resources completing the user-requested October26 goal25 after the prior20 were published. Exact CSV evidence and semantic dedup retained privately. No human approval inferred; exact-content review pending. (batch 2026-10-26-five-page-supplement)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit exact-content approval",
+      "reviewedAt": "2026-10-26",
+      "contentHash": "sha256:4ebd5425d8755dacda0fe53dff2b2640e2736bda482f92cf10a91081bdd82508",
+      "note": "User message Sentinel_2a2283db489c81919fe69560879b0ec2, 2026-10-26 19:59 UTC: si; approved exact five-page package at 8006953a97f81613073ad437b78be469e7d75bab, requested in assistant message Sentinel_24dcaa836b108191a637575ad60be67f. Recorded by executor; not executor editorial approval."
+    }
+  },
+  {
+    "slug": "on-call-scheduling-software",
+    "title": "On call scheduling software: test overrides and handoffs",
+    "description": "Evaluate on call scheduling software with dated roster, shift-swap and temporary-override tests. Verify the effective recipient and unanswered fallback.",
+    "navigationLabel": "On call scheduling software",
+    "eyebrow": "Service-business operating guide",
+    "lead": "On call scheduling software should make it possible to identify who is responsible at a particular time. A planned roster is useful, but a shift swap or temporary exception can change the effective recipient. Test those changes before connecting a schedule to customer-call routing.",
+    "intro": "On call scheduling software should make it possible to identify who is responsible at a particular time. A planned roster is useful, but a shift swap or temporary exception can change the effective recipient. Test those changes before connecting a schedule to customer-call routing.",
+    "sections": [
+      {
+        "title": "Separate the planned roster from the effective assignment",
+        "paragraphs": [
+          "Use an original software-review ledger with time interval, operating time zone, planned person or role, accepted replacement, temporary override, effective recipient and backup owner. Keep the planned value and the current result visible rather than overwriting the history in your review notes.",
+          "The existing coverage planner helps build a week of responsibilities. This guide evaluates how software represents and changes those responsibilities. It does not calculate staffing or recommend working hours."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test a shift swap with an explicit effective time",
+        "paragraphs": [
+          "Fictional case: the approved roster assigns Role A until 6 p.m. and Role B afterward. A change is requested for 4 p.m. Ask the vendor to demonstrate when the replacement becomes effective, who must accept it and how an unaccepted request is represented.",
+          "Inspect the effective recipient before the change, during its intended interval and after it ends. A request to swap a shift should not be mistaken for an accepted assignment. These are proposed review states, not documented statuses of a named product."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test an override that expires",
+        "paragraphs": [
+          "Create a fictional temporary override covering a defined interval. Check its start, end and time zone, and inspect what takes precedence when it overlaps the planned roster. Ask what the office sees if two changes conflict. Do not assume an override automatically expires or restores the intended owner until that behavior is demonstrated.",
+          "Include a boundary case around a local clock change when relevant to the business. Use explicit dates and offsets in the test rather than assuming every day has the same local-clock pattern. The scheduler’s display and the system receiving its output must refer to the same intended interval."
+        ],
+        "items": []
+      },
+      {
+        "title": "Check the destination, acknowledgment and fallback separately",
+        "paragraphs": [
+          "A schedule can identify a role while a separate phone system selects the number to ring. Ask where that mapping lives and who maintains it. Test the effective assignment and the actual supported call destination as separate checks.",
+          "If the recipient does not answer, inspect the approved backup and how unfinished work remains visible. A delivered notification or ringing phone is not proof that the assigned person accepted the customer request. Keep schedule ownership and request acknowledgment as separate pieces of evidence.",
+          "Compare supported change history, access roles, exports, administration and commercial terms directly with each vendor. This guide makes no claim about a particular product’s rota, alerting or integration capabilities. Revo’s Services and Pricing pages describe its answering offer; they do not establish native roster management or a connection to an on-call scheduling tool."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Is an on-call roster the same as call routing?",
+        "a": "No. A roster defines responsibility; another system may map the effective role to a reachable destination. Verify both."
+      },
+      {
+        "q": "Does requesting a shift swap change the active recipient?",
+        "a": "Only if the actual system’s authorized workflow completes that change. Test proposed, accepted and effective states separately."
+      }
+    ],
+    "takeaway": "Choose the scope your office can maintain, and test it with fictional requests before relying on it.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "related": [
+      "plan-24-7-phone-coverage",
+      "compare/contractor-on-call-answering-services",
+      "call-routing",
+      "call-transfer-language"
+    ],
+    "sourcePaths": [
+      "https://www.goodcall.com/appointment-scheduling-software/dialpad",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Five additional net-new informational resources completing the user-requested October26 goal25 after the prior20 were published. Exact CSV evidence and semantic dedup retained privately. No human approval inferred; exact-content review pending. (batch 2026-10-26-five-page-supplement)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit exact-content approval",
+      "reviewedAt": "2026-10-26",
+      "contentHash": "sha256:5500ad73aa346d27ce20452768e25725b783e8b8ef261914e84ba94e5a19b6a6",
+      "note": "User message Sentinel_2a2283db489c81919fe69560879b0ec2, 2026-10-26 19:59 UTC: si; approved exact five-page package at 8006953a97f81613073ad437b78be469e7d75bab, requested in assistant message Sentinel_24dcaa836b108191a637575ad60be67f. Recorded by executor; not executor editorial approval."
+    }
+  },
+  {
+    "slug": "visual-voicemail-android",
+    "title": "What is visual voicemail on Android? A work-phone guide",
+    "description": "Understand visual voicemail on Android, then check message playback, notifications and transcription separately on the actual work-phone setup.",
+    "navigationLabel": "What is visual voicemail on Andr",
+    "eyebrow": "Service-business operating guide",
+    "lead": "Visual voicemail presents voicemail messages in a visual interface so the user can choose a recording to review. On a work phone, the useful question is whether the intended mailbox and its messages are available to the person responsible for callbacks. Confirm the actual device, carrier and application instead of assuming every Android phone behaves identically.",
+    "intro": "Visual voicemail presents voicemail messages in a visual interface so the user can choose a recording to review. On a work phone, the useful question is whether the intended mailbox and its messages are available to the person responsible for callbacks. Confirm the actual device, carrier and application instead of assuming every Android phone behaves identically.",
+    "sections": [
+      {
+        "title": "Separate the message list from other features",
+        "paragraphs": [
+          "A visual message list, a notification and a text transcription serve different purposes. A notification can announce a message without containing its full contents. A transcript can help someone scan a request, but the business should not treat an uncertain spelling, number or proposed appointment as a verified fact.",
+          "Check what your actual setup provides: playable audio, displayed caller information, timestamps, transcription if offered and a route back to the correct mailbox. This article does not guarantee those options on every carrier, phone or plan."
+        ],
+        "items": []
+      },
+      {
+        "title": "Identify the mailbox before changing a setting",
+        "paragraphs": [
+          "Write down which number the customer called, which mailbox received the message and which authorized person should retrieve it. A personal mobile mailbox and a business telephone-system mailbox can be different destinations. Forwarding a call to a phone does not establish where an unanswered call’s voicemail will be stored.",
+          "Use the documentation and support route for the actual carrier, phone application and business phone service. This guide avoids universal menu instructions because the relevant controls and service availability can differ. Do not add accounts, change credentials or alter forwarding merely to imitate a screen from another device."
+        ],
+        "items": []
+      },
+      {
+        "title": "Run a small work-phone check",
+        "paragraphs": [
+          "With informed participants and fictional details, leave a test message through the intended business route. Check that the correct mailbox receives it and that the responsible person can play it. Compare the displayed time and callback number with the test. If transcription is available, compare its key details with the audio.",
+          "Then test a notification independently. A message visible after manually opening an app does not demonstrate that a notification arrived promptly. Record the observed result and any unresolved question for the actual provider. Do not infer that every future message will behave the same way from one test."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep callback ownership outside the message list",
+        "paragraphs": [
+          "After reviewing an authorized message, record the request and the next owner through the office’s approved process. Read or played is not the same as customer contacted or request resolved. Avoid deleting a message simply to mark work complete when the business still needs its record.",
+          "The voicemail-to-email guide addresses delivery into an inbox; the voicemail-composition guide addresses what the caller says. This resource explains reviewing a visual mailbox on an Android work phone. Revo’s Services and Pricing pages describe its published answering offer; this article does not establish an Android Revo app, carrier voicemail integration or automatic callback tracking."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Does visual voicemail always include a transcript?",
+        "a": "Do not assume it. Confirm the exact phone, carrier, application and plan, and distinguish text transcription from playable audio."
+      },
+      {
+        "q": "Does opening a message mean the office has followed up?",
+        "a": "No. Message review and customer follow-up are different actions with different evidence."
+      }
+    ],
+    "takeaway": "Choose the scope your office can maintain, and test it with fictional requests before relying on it.",
+    "template": "workflow",
+    "pricingVariant": "full",
+    "related": [
+      "voicemail-to-email",
+      "business-voicemail-greeting",
+      "how-to-leave-a-voicemail",
+      "answering-service-app"
+    ],
+    "sourcePaths": [
+      "https://www.goodcall.com/voice-ai/what-is-visual-voicemail",
+      "https://www.revoapp.ai/services.html",
+      "https://www.revoapp.ai/pricing.html"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Five additional net-new informational resources completing the user-requested October26 goal25 after the prior20 were published. Exact CSV evidence and semantic dedup retained privately. No human approval inferred; exact-content review pending. (batch 2026-10-26-five-page-supplement)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User — explicit exact-content approval",
+      "reviewedAt": "2026-10-26",
+      "contentHash": "sha256:c8829dee5081aed47835e1cbc313b63a9358ec93133a62a028ca72c91e45c79e",
+      "note": "User message Sentinel_2a2283db489c81919fe69560879b0ec2, 2026-10-26 19:59 UTC: si; approved exact five-page package at 8006953a97f81613073ad437b78be469e7d75bab, requested in assistant message Sentinel_24dcaa836b108191a637575ad60be67f. Recorded by executor; not executor editorial approval."
+    }
   }
 ]
