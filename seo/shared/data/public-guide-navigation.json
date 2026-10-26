@@ -1173,5 +1173,30 @@
     "slug": "landscape-scheduling-software",
     "label": "Service-business office guide",
     "template": "workflow"
+  },
+  {
+    "slug": "customer-service-outsourcing",
+    "label": "Service-business operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "communication-platform-for-business",
+    "label": "Service-business operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "hvac-ppc-marketing",
+    "label": "Service-business operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "on-call-scheduling-software",
+    "label": "Service-business operating guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "visual-voicemail-android",
+    "label": "Service-business operating guide",
+    "template": "workflow"
   }
 ]
