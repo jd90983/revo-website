@@ -6,6 +6,8 @@
 // Typewriter effect with fade-in per character (ChatGPT/Gemini style) for mobile
 function typewriterEffect(element, text) {
   if (!text) return;
+  // Keep verification and other inline links usable when an answer opens.
+  if (element.querySelector('a')) return;
   
   element.innerHTML = '';
   element.style.opacity = '1';
