@@ -774,5 +774,21 @@
       "added how-to-leave-a-voicemail as draft",
       "added landscape-scheduling-software as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-26-five-page-supplement",
+    "batchHash": "sha256:4100800683fc33aa7c60458fe264e80925322e0e5a562c099b0a05ea127916fb",
+    "source": {
+      "kind": "manual",
+      "reference": "Five additional net-new informational resources completing the user-requested October26 goal25 after the prior20 were published. Exact CSV evidence and semantic dedup retained privately. No human approval inferred; exact-content review pending."
+    },
+    "appliedAt": "2026-10-26",
+    "changes": [
+      "added customer-service-outsourcing as draft",
+      "added communication-platform-for-business as draft",
+      "added hvac-ppc-marketing as draft",
+      "added on-call-scheduling-software as draft",
+      "added visual-voicemail-android as draft"
+    ]
   }
 ]
