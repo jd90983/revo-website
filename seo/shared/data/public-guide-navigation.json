@@ -1073,5 +1073,95 @@
     "slug": "lower-answering-service-cost",
     "label": "Home-service operating guide",
     "template": "workflow"
+  },
+  {
+    "slug": "workiz-genius-answering",
+    "label": "Home-service buyer guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "fieldedge-answering-service",
+    "label": "Home-service buyer guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "fieldpulse-operator-ai",
+    "label": "Home-service buyer guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "dispatch-fee-phone-script",
+    "label": "Home-service buyer guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "recurring-cleaning-call-changes",
+    "label": "Home-service buyer guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "restoration-project-update-calls",
+    "label": "Home-service buyer guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "hvac-lead-generation",
+    "label": "Service-business office guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "customer-service-survey-questions",
+    "label": "Service-business office guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "difficult-customers-on-the-phone",
+    "label": "Service-business office guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "hvac-business-plan",
+    "label": "Service-business office guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "get-clients-cleaning-business",
+    "label": "Service-business office guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "nato-phonetic-alphabet-phone",
+    "label": "Service-business office guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "empathy-statements-customer-service",
+    "label": "Service-business office guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "what-is-a-receptionist",
+    "label": "Service-business office guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "building-rapport-with-customers",
+    "label": "Service-business office guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "customer-trust-service-business",
+    "label": "Service-business office guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "proactive-customer-care",
+    "label": "Service-business office guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "phone-etiquette-training",
+    "label": "Service-business office guide",
+    "template": "workflow"
   }
 ]
