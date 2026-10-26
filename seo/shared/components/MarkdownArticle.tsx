@@ -1,3 +1,4 @@
+import {publicUrl} from '../lib/public-url';
 import Markdown, {defaultUrlTransform} from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import type {ReviewPage} from '@/lib/review-cohort';
@@ -6,7 +7,8 @@ export const articleHeading=(page:ReviewPage)=>page.markdownArticle?.content.spl
 export function MarkdownArticle({page}:{page:ReviewPage}){
  const article=page.markdownArticle!;
  const preface=article.content.slice(article.content.indexOf('\n')+1).split(/^## /m)[0].replace(page.intro,'').trim();
- const transform=(url:string)=>{
+ const transform=(raw:string)=>{
+  const url=publicUrl(raw);
   const asset=article.assets.find(a=>a.reference===url);
   if(asset)return asset.href;
   if(url.startsWith('https://www.revoapp.ai/ai-answering-service/'))return new URL(url).pathname+new URL(url).search+new URL(url).hash;

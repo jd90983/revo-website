@@ -1,3 +1,4 @@
+import {publicUrl} from '../lib/public-url.ts';
 import {hasAcquisitionLink,verifyPublicAssetBoundary} from '../lib/publication-boundary.mjs';
 import test from 'node:test';
 import assert from 'node:assert/strict';
@@ -108,7 +109,7 @@ test('worksheet downloads stay on the current deployment without changing review
  const links=['https://supplier.example/ai-answering-service/assets/templates/file.csv','https://www.revoapp.ai/pricing.html','https://www.revoapp.ai.evil.example/ai-answering-service/assets/templates/file.csv'];
  const probe={...original,sections:[{...original.sections[0],sources:links.map(href=>({href,label:'External reference'}))}]};
  const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page:probe}));
- for(const href of links)assert.ok(html.includes(`href="${href}"`));
+ for(const href of links)assert.ok(html.includes(`href="${publicUrl(href)}"`));
 });
 
 test('approved Markdown transfers retain exact copy, semantic tables, code and local companion resources',async()=>{

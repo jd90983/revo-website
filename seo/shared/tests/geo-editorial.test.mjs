@@ -1,3 +1,4 @@
+import {publicUrl} from '../lib/public-url.ts';
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFileSync} from 'node:fs';
@@ -56,7 +57,7 @@ test('cost scenarios identify assumptions and keep gross value separate from res
 
 test('crawl configuration resolves the duplicate without blocking fragment retrieval',()=>{
  const config=JSON.parse(readFileSync(new URL('../../../vercel.json',import.meta.url),'utf8'));
- assert.ok(config.redirects.some(r=>r.source==='/index.html'&&r.destination==='/'&&r.permanent===true));
+ assert.ok(config.redirects.some(r=>r.source==='/index.html'&&r.destination==='https://www.revoapp.ai/'&&r.permanent===true));
  for(const path of ['/templates/:path*','/thank-you.html'])assert.ok(config.headers.some(r=>r.source===path&&r.headers.some(h=>h.key==='X-Robots-Tag'&&h.value==='noindex')));
 });
 
@@ -65,7 +66,7 @@ test('provider comparisons keep existing intent owners and distinguish billing u
   const p=page(slug);assert.equal(p.publicationStatus,'approved');
   const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page:p,mode:'public',acquisitionEnabled:false}));
   assert.equal(p.overviewTable.rows.length,5);assert.ok(html.includes('<caption>'));
-  for(const s of p.overviewTable.sources)assert.ok(html.includes(s.href));
+  for(const s of p.overviewTable.sources)assert.ok(html.includes(publicUrl(s.href)));
   const schema=guideStructuredData(p);assert.equal(schema['@graph'][0].dateModified,p.editorialDate);
   assert.deepEqual(schema['@graph'][1].mainEntity.map(q=>q.name),p.faqs.map(f=>f.q));
  }

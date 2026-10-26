@@ -421,7 +421,7 @@ async function sendFormToAPI(formData, form, submitBtn, originalBtnText) {
 
     // Redirect to thank-you page after a short delay
     setTimeout(() => {
-      window.location.href = 'thank-you.html';
+      window.location.href = 'thank-you';
     }, 1500); // 1.5 second delay to show success message
 
   } catch (error) {

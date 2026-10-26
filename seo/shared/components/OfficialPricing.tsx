@@ -1,3 +1,4 @@
+import {publicUrl} from '../lib/public-url';
 /* Replicates pricing.html's plan block. Only heading levels and CTA actions differ. */
 import Link from "next/link";
 import {OFFICIAL_PRICING} from "@/lib/official-pricing";
@@ -35,6 +36,6 @@ export function PricingSummary({context}: {context: PricingContext}) {
   return <section id="plans" data-pricing-variant={context} className="pricing-page revo-official-pricing revo-pricing revo-pricing-summary" aria-labelledby="revo-pricing-summary-heading"><div className="pricing-page-container">
     <header className="pricing-header"><span className="pricing-section-eyebrow">Pricing</span><h2 className="pricing-heading" id="revo-pricing-summary-heading">{copy.title}</h2><p className="pricing-header-lead">{copy.note}</p></header>
     <div className="pricing-cards">{OFFICIAL_PRICING.plans.map(plan => <article className={"pricing-card" + (plan.popular ? " is-popular" : "")} key={plan.name}>{plan.popular ? <span className="pricing-card-badge">Popular</span> : null}<div className="pricing-card-hero"><div className="pricing-card-hero-main"><h3 className="pricing-card-name">{plan.name}</h3><p className="pricing-card-tag">{plan.tag}</p><div className="pricing-card-price-block"><div className="pricing-card-price"><span className="pricing-card-amount">{plan.amount}</span><span className="pricing-card-period">{plan.period}</span></div><div className="pricing-card-compare"><span className="pricing-card-was">{plan.was}</span><span className="pricing-card-save">{plan.save}</span></div></div></div><span className="pricing-card-minutes">{plan.minutes}</span></div></article>)}</div>
-    <div className="revo-summary-links"><a className="btn-primary" href={OFFICIAL_PRICING.source}>View official plans and terms <span aria-hidden="true">↗</span></a><Link href="/ai-answering-service/after-hours#plans" prefetch={false}>Compare all plan features</Link></div>
+    <div className="revo-summary-links"><a className="btn-primary" href={publicUrl(OFFICIAL_PRICING.source)}>View official plans and terms <span aria-hidden="true">↗</span></a><Link href="/ai-answering-service/after-hours#plans" prefetch={false}>Compare all plan features</Link></div>
   </div></section>;
 }

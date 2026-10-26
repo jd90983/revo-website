@@ -78,3 +78,13 @@ In Vercel, use **Instant Rollback** to the previous production deployment. The r
 After an Instant Rollback, Vercel stops assigning production domains to new deployments until the rollback is undone. Check that the next merge reaches www.revoapp.ai, and promote it if it does not.
 
 The first release (#44, commit `ccaf022`, deployment `dpl_9afD8wBeKWWZXN47DRL4vptu3miY`) replaced `dpl_8LoNEotLoTmH6j7chCGr5DLarfos` (commit `0df203c`).
+
+## Extensionless public URLs
+
+Public HTML files stay in place. `vercel.json` contains explicit permanent redirects from their historical `.html` addresses to the final `https://www.revoapp.ai` URL, before the apex-host redirect, and extensionless rewrites to the same files. Do not enable `cleanUrls`: the static export and verifier require physical `.html` destinations.
+
+`seo/shared/data/public-html-routes.json` records the legacy aliases, including templates and snippets. Template loaders use their extensionless URLs; their response bodies and `noindex` headers remain available. `/thank-you` retains `X-Robots-Tag: noindex`. Sitemap membership and dates are preserved.
+
+`npm run seo:routes` also generates the `.html` redirects for every approved guide and the guide index, so future batches retain the same contract. `publicUrl` normalizes historical Revo navigation references during rendering; reviewed registry records and their content hashes remain unchanged. External references and companion asset URLs remain unchanged.
+
+Before merging a routing release, verify HTTP redirects and extensionless responses on its authenticated `seo-review` Preview, plus navigation, template loading and downloads on desktop and mobile using GET only. Do not submit leads or checkout transactions. After merging, verify the production deployment and domain before recording the release. Roll back using the previous READY deployment and revert the migration merge as described above.

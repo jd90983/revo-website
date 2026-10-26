@@ -10,7 +10,7 @@ import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import { readRegistry } from '../../shared/lib/landing-registry.mjs';
-import { currentSeoRewrites, seoRewrites, serializeVercel, withSeoRewrites } from './routes.mjs';
+import { currentSeoRedirects, seoRedirects, currentSeoRewrites, seoRewrites, serializeVercel, withSeoRewrites } from './routes.mjs';
 
 const app = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const config = JSON.parse(readFileSync(join(app, 'site.config.json'), 'utf8'));
@@ -24,7 +24,8 @@ const after = serializeVercel(withSeoRewrites(JSON.parse(before), pages, config)
 
 // Drift is judged on the routes themselves, not on whitespace: the build host may
 // re-serialize vercel.json, and what matters is the SEO rewrites it carries.
-const drift = JSON.stringify(currentSeoRewrites(JSON.parse(before))) !== JSON.stringify(seoRewrites(pages, config));
+const redirectDrift = JSON.stringify(currentSeoRedirects(JSON.parse(before))) !== JSON.stringify(seoRedirects(pages, config));
+const drift = redirectDrift || JSON.stringify(currentSeoRewrites(JSON.parse(before))) !== JSON.stringify(seoRewrites(pages, config));
 
 if (process.argv.includes('--check')) {
   if (drift) {
