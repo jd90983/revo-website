@@ -762,3 +762,69 @@ if (document.readyState === 'loading') {
 } else {
   initRevoVoiceTechnology();
 }
+
+/* Benefits modern feature: View more / View less */
+function initBenefitsModernViewMore() {
+  const columns = document.querySelectorAll('.benefits-modern-feature-column');
+  if (!columns.length) return;
+
+  function syncToggle(column) {
+    const description = column.querySelector('.benefits-modern-feature-description');
+    const body = column.querySelector('.benefits-modern-feature-body');
+    const toggle = column.querySelector('.benefits-modern-view-toggle');
+    if (!description || !toggle) return;
+
+    const wasExpanded = column.classList.contains('is-expanded');
+    if (wasExpanded) {
+      column.classList.remove('is-expanded');
+    }
+
+    const hasExtraContent = Boolean(body && body.children.length > 1);
+    const isClamped = description.scrollHeight > description.clientHeight + 1;
+    const needsToggle = isClamped || hasExtraContent;
+
+    if (wasExpanded) {
+      column.classList.add('is-expanded');
+    }
+
+    if (!needsToggle) {
+      toggle.hidden = true;
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.textContent = 'View more';
+      column.classList.remove('is-expanded');
+      return;
+    }
+
+    toggle.hidden = false;
+    const expanded = column.classList.contains('is-expanded');
+    toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+    toggle.textContent = expanded ? 'View less' : 'View more';
+  }
+
+  columns.forEach((column) => {
+    const toggle = column.querySelector('.benefits-modern-view-toggle');
+    if (!toggle) return;
+
+    toggle.addEventListener('click', () => {
+      const expanded = column.classList.toggle('is-expanded');
+      toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      toggle.textContent = expanded ? 'View less' : 'View more';
+    });
+
+    syncToggle(column);
+  });
+
+  let resizeTimer = null;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      columns.forEach(syncToggle);
+    }, 150);
+  });
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initBenefitsModernViewMore);
+} else {
+  initBenefitsModernViewMore();
+}

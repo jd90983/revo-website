@@ -4896,7 +4896,7 @@ body.mobile-menu-open {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-height: 320px;
+  min-height: 0;
   justify-content: flex-start;
   /* Entrance animation */
   opacity: 0;
@@ -4932,7 +4932,7 @@ body.mobile-menu-open {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  min-height: 320px;
+  min-height: 0;
   justify-content: flex-start;
 }
 
@@ -4953,6 +4953,10 @@ body.mobile-menu-open {
   margin: 0 0 24px 0;
 }
 
+.benefits-modern-feature-body {
+  width: 100%;
+}
+
 .benefits-modern-feature-description {
   font-family: 'Lexend Deca', sans-serif;
   font-weight: 400;
@@ -4960,6 +4964,61 @@ body.mobile-menu-open {
   line-height: 1.5;
   color: #0A0B0C;
   margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+}
+
+.benefits-modern-feature-column.is-expanded .benefits-modern-feature-description {
+  display: block;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  overflow: visible;
+}
+
+.benefits-modern-feature-body .review-source {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #0A0B0C;
+  margin: 12px 0 0;
+  display: none;
+}
+
+.benefits-modern-feature-column.is-expanded .benefits-modern-feature-body .review-source {
+  display: block;
+}
+
+.benefits-modern-view-toggle {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #0A0B0C;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(10, 11, 12, 0.35);
+  padding: 0 0 1px;
+  margin-top: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.benefits-modern-view-toggle:hover {
+  border-bottom-color: #0A0B0C;
+}
+
+.benefits-modern-view-toggle:focus-visible {
+  outline: 2px solid #0A0B0C;
+  outline-offset: 4px;
+}
+
+.benefits-modern-view-toggle[hidden] {
+  display: none;
 }
 
 /* CTA Buttons */
