@@ -1682,6 +1682,17 @@
       "permanent": true
     },
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "revoapp.ai"
+        }
+      ],
+      "destination": "https://www.revoapp.ai/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
