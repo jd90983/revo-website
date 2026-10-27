@@ -1,0 +1,327 @@
+{
+  "batchId": "2026-10-27-service-business-guides",
+  "actualCreationDateLocal": "2026-10-26",
+  "plannedPublicationDateLocal": "2026-10-27",
+  "timezoneOffset": "UTC-07",
+  "approvalStatus": "All25 exact hashes approved by user; desktop/mobile Preview QA complete; ready for planned Oct27 publication subject to fresh protected checks",
+  "batchFileSHA256": "9c7d0823e8cd9b9cbd21758bb67ac9dc0fb5aa93202a665f1e782a175084b7f3",
+  "pages": [
+    {
+      "slug": "small-business-crm-selection",
+      "contentHash": "sha256:e5870ed7d8a2f1e221fe5f1393c7b39c4162845cceb812ed78244c45e87cf72d",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:e5870ed7d8a2f1e221fe5f1393c7b39c4162845cceb812ed78244c45e87cf72d",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "discovery-call-service-business",
+      "contentHash": "sha256:9e6e80f9a1f18d1d8d2d86d241899fee80a8d0d6c070511ebe6bf6deadbe508d",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:9e6e80f9a1f18d1d8d2d86d241899fee80a8d0d6c070511ebe6bf6deadbe508d",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "sales-closing-techniques-service-business",
+      "contentHash": "sha256:5db4fc2732d75d585a579b6322397b45ad1a5f3c84c2bbe0abe15d96c9ddf4db",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:5db4fc2732d75d585a579b6322397b45ad1a5f3c84c2bbe0abe15d96c9ddf4db",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "hvac-inventory-management",
+      "contentHash": "sha256:4c96622454e673df326e538e3d31be9f9fb9ad8515b21a61f5332b06dc129d4c",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:4c96622454e673df326e538e3d31be9f9fb9ad8515b21a61f5332b06dc129d4c",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "voice-of-customer-examples",
+      "contentHash": "sha256:080831b5c4f470b651cd68004aa15d62c00d07a61d344448f18b44f9e032702e",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:080831b5c4f470b651cd68004aa15d62c00d07a61d344448f18b44f9e032702e",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "bad-customer-service-examples",
+      "contentHash": "sha256:e99b7d7dd884c1263ec668cb3d7258b65697d141218263b97504559bdbc6ed2a",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:e99b7d7dd884c1263ec668cb3d7258b65697d141218263b97504559bdbc6ed2a",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "what-is-a-service-call",
+      "contentHash": "sha256:37714786ed6d62a431cbdd153fcd458487a7a808c0ed39841772cee45df32bf9",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:37714786ed6d62a431cbdd153fcd458487a7a808c0ed39841772cee45df32bf9",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "sales-performance-dashboard",
+      "contentHash": "sha256:8be70c6d37095c600a7f6552a63d2464d86680950eb4587bedacc1800a3d5ab7",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:8be70c6d37095c600a7f6552a63d2464d86680950eb4587bedacc1800a3d5ab7",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "inbound-vs-outbound-calls",
+      "contentHash": "sha256:3ff714eb5074067d28d905009d308ac6e57ed3d89656b0950eb5c8cd1f43af57",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:3ff714eb5074067d28d905009d308ac6e57ed3d89656b0950eb5c8cd1f43af57",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "small-business-technology-priorities",
+      "contentHash": "sha256:4390869c42e5b3bac27e268214c7eb6a7bb300460db7b5d904ccaa5cad37518a",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:4390869c42e5b3bac27e268214c7eb6a7bb300460db7b5d904ccaa5cad37518a",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "service-business-sales-playbook",
+      "contentHash": "sha256:b6c1101bbb518e52a25aeb793d4a302ce20cb1c2bee7428687518d1f8a85d3c3",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:b6c1101bbb518e52a25aeb793d4a302ce20cb1c2bee7428687518d1f8a85d3c3",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "service-business-email-pitch-examples",
+      "contentHash": "sha256:ea0b72b530460d09c5cc6f721b90644de70379050efc88b12797930f6998b1bb",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:ea0b72b530460d09c5cc6f721b90644de70379050efc88b12797930f6998b1bb",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "outreach-marketing-service-business",
+      "contentHash": "sha256:2b0f7514567728797a1fc993dad08bb6a75a557cc54c16d2e2a34ccd0184af8e",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:2b0f7514567728797a1fc993dad08bb6a75a557cc54c16d2e2a34ccd0184af8e",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "equipment-rental-scheduling-software",
+      "contentHash": "sha256:3a23a59f77bea498345dafd7c6003f090ba418e326789dae54297380e8e1c141",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:3a23a59f77bea498345dafd7c6003f090ba418e326789dae54297380e8e1c141",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "window-cleaning-software",
+      "contentHash": "sha256:720ea50440897358ad52db3909edf7e3612ae2874530486c4c8d63baca48ffe3",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:720ea50440897358ad52db3909edf7e3612ae2874530486c4c8d63baca48ffe3",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "septic-scheduling-software",
+      "contentHash": "sha256:54f2767f7b31066b2d8d5642cb2b55023a0ac8e9ef348549428d3c167e5886a0",
+      "review": {
+        "reviewer": "User — explicit exact-content correction approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:54f2767f7b31066b2d8d5642cb2b55023a0ac8e9ef348549428d3c167e5886a0",
+        "note": "User Sentinel_ee26c83f30708191a8b43d0740330007, 2026-10-26 21:17 UTC: si. Approved two exact corrections in version 81eb91df72fb1cc876c55d6d76ad84a1f18bbf4f requested by Sentinel_738f3c765e508191b4fcbcb319a26c6a. Recorded by executor, not executor editorial review. No merge or production before Oct27 local UTC-07."
+      },
+      "originalUserApprovedHash": "sha256:b1b69d3b2ecf0e36c281ab59012109a42fc8981a5723abb543d2eb3d12629e9a"
+    },
+    {
+      "slug": "appliance-repair-dispatch-software",
+      "contentHash": "sha256:e620c7360ac0b1c8cbb6bf38c34193996c8d47e3074ad739bebbd3ec4b6df29a",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:e620c7360ac0b1c8cbb6bf38c34193996c8d47e3074ad739bebbd3ec4b6df29a",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "lead-vs-prospect",
+      "contentHash": "sha256:60d214fccc8b8114795e81d0303111d771a005dc138b6bb43f38acb60c43203b",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:60d214fccc8b8114795e81d0303111d771a005dc138b6bb43f38acb60c43203b",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "integrated-marketing-service-business",
+      "contentHash": "sha256:ae1478294bec4ec4e262e4a18e9f8a48cf4256ff3135f5169df5428a6a2699a0",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:ae1478294bec4ec4e262e4a18e9f8a48cf4256ff3135f5169df5428a6a2699a0",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Approved exact 25-text package 7622927707d6d7258e2ba883b16633671c4d436f requested in assistant Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Planned publication Oct27 UTC-07; no merge or production Oct26."
+      }
+    },
+    {
+      "slug": "free-scheduling-software-small-business",
+      "contentHash": "sha256:97f6ed25baa1f576c3805673b6caf9044c2805c8f7eabdcfed636a4addc2efc9",
+      "review": {
+        "reviewer": "User — explicit exact-content correction approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:97f6ed25baa1f576c3805673b6caf9044c2805c8f7eabdcfed636a4addc2efc9",
+        "note": "User Sentinel_ee26c83f30708191a8b43d0740330007, 2026-10-26 21:17 UTC: si. Approved two exact corrections in version 81eb91df72fb1cc876c55d6d76ad84a1f18bbf4f requested by Sentinel_738f3c765e508191b4fcbcb319a26c6a. Recorded by executor, not executor editorial review. No merge or production before Oct27 local UTC-07."
+      },
+      "originalUserApprovedHash": "sha256:b852d49c2c8ec483b1a85e2e01af1bfb499f7cecb735454bf4fe1ad9e06266f8"
+    },
+    {
+      "slug": "phone-number-spoofing-business",
+      "contentHash": "sha256:2fe1a6db54ef7bf9dc955cf1a4af91ccb95edb33009b27f563f2b79bc467c13b",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:2fe1a6db54ef7bf9dc955cf1a4af91ccb95edb33009b27f563f2b79bc467c13b",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Exact package 7622927707d6d7258e2ba883b16633671c4d436f approved in response to Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Publication held until Oct27 UTC-07."
+      }
+    },
+    {
+      "slug": "service-business-kpis",
+      "contentHash": "sha256:d5faf5c83200e1066ceb4f3023870e7be95a435f8a86b4edc48ffaa8a99ba29e",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:d5faf5c83200e1066ceb4f3023870e7be95a435f8a86b4edc48ffaa8a99ba29e",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Exact package 7622927707d6d7258e2ba883b16633671c4d436f approved in response to Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Publication held until Oct27 UTC-07."
+      }
+    },
+    {
+      "slug": "service-business-sales-deck",
+      "contentHash": "sha256:079c7cd66ba0aef66a4d0c24dd5a4bcbf128a2bccb5899af61c8aa8ab3946e94",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:079c7cd66ba0aef66a4d0c24dd5a4bcbf128a2bccb5899af61c8aa8ab3946e94",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Exact package 7622927707d6d7258e2ba883b16633671c4d436f approved in response to Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Publication held until Oct27 UTC-07."
+      }
+    },
+    {
+      "slug": "ask-customer-for-payment",
+      "contentHash": "sha256:811e317fbfd7d15e39c7d1032ee4befcc7e99756d849a663c3755f61007be931",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:811e317fbfd7d15e39c7d1032ee4befcc7e99756d849a663c3755f61007be931",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Exact package 7622927707d6d7258e2ba883b16633671c4d436f approved in response to Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Publication held until Oct27 UTC-07."
+      }
+    },
+    {
+      "slug": "landscape-crm-software",
+      "contentHash": "sha256:137476cfbbd567bb4dc3d863927f8fb5a674d05193219aeb3a9d722187f242c8",
+      "review": {
+        "reviewer": "User — explicit exact-content approval",
+        "reviewedAt": "2026-10-26",
+        "contentHash": "sha256:137476cfbbd567bb4dc3d863927f8fb5a674d05193219aeb3a9d722187f242c8",
+        "note": "User Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC: si. Exact package 7622927707d6d7258e2ba883b16633671c4d436f approved in response to Sentinel_ab719dfe4994819194acf7fc03144adf. Recorded by executor, not executor editorial review. Publication held until Oct27 UTC-07."
+      }
+    }
+  ],
+  "approvedSourceCommit": "7622927707d6d7258e2ba883b16633671c4d436f",
+  "approvalEvidence": "Sentinel_13d76f0ed5848191861fd7abcab919bd, 2026-10-26 21:04 UTC",
+  "activePullRequest": 97,
+  "publicationHold": "No merge, automerge or production before 2026-10-27 local UTC-07. Active approved daily batch; reuse PR97, do not create a duplicate.",
+  "previewQA": {
+    "testedCommit": "83dba3635263a992f24e53e617191fd2cbe61c9f",
+    "deployment": "dpl_DuwhPxH8xBixrnXxS3Y7Bxs7xcsW",
+    "desktopViewport": [
+      1280,
+      900
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "passedSlugs": [
+      "small-business-crm-selection",
+      "discovery-call-service-business",
+      "sales-closing-techniques-service-business",
+      "hvac-inventory-management",
+      "voice-of-customer-examples",
+      "bad-customer-service-examples",
+      "what-is-a-service-call",
+      "sales-performance-dashboard",
+      "inbound-vs-outbound-calls",
+      "small-business-technology-priorities",
+      "service-business-sales-playbook",
+      "service-business-email-pitch-examples",
+      "outreach-marketing-service-business",
+      "equipment-rental-scheduling-software",
+      "window-cleaning-software",
+      "appliance-repair-dispatch-software",
+      "lead-vs-prospect",
+      "integrated-marketing-service-business",
+      "phone-number-spoofing-business",
+      "service-business-kpis",
+      "service-business-sales-deck",
+      "ask-customer-for-payment",
+      "landscape-crm-software"
+    ],
+    "visualCoverage": "All23 hero/CTA/navigation views on both sizes; shared body, source/footer and expanded FAQ inspected on representative email page. 46 DOM checks: no horizontal document overflow, no forms. GET only; no lead submissions.",
+    "checkedAtUTC": "2026-10-26T21:13:40.439151+00:00",
+    "pendingSlugs": []
+  },
+  "correctionApprovalEvidence": "Sentinel_ee26c83f30708191a8b43d0740330007, 2026-10-26 21:17 UTC",
+  "finalCorrectionQA": {
+    "testedCommit": "df913e88cdfa27b751ba591b2bd062b7826dd9d3",
+    "deployment": "dpl_2oTnCBnwU9tx5ZgAjeE9fATEWvbh",
+    "desktopViewport": [
+      1280,
+      900
+    ],
+    "mobileViewport": [
+      390,
+      844
+    ],
+    "passedSlugs": [
+      "septic-scheduling-software",
+      "free-scheduling-software-small-business"
+    ],
+    "checks": "Both hero/CTA views and corrected text inspected; mobile expanded FAQ works; corrected appointment-booking link opened approved target. Four DOM checks: no horizontal overflow, no forms. GET only.",
+    "checkedAtUTC": "2026-10-26T21:21:42.399448+00:00"
+  },
+  "readyCount": 25,
+  "readyPullRequest": 97
+}

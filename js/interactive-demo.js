@@ -7,6 +7,12 @@
   var toast=document.getElementById('rv-toast');
   var deleteModal=document.getElementById('rv-delete-modal');
   var history=['dashboard'];
+  var modalOpener=null;
+  if(deleteModal) deleteModal.addEventListener('keydown',function(e){
+    var buttons=Array.from(deleteModal.querySelectorAll('button'));
+    if(e.key==='Escape'){e.preventDefault();closeDeleteModal();}
+    else if(e.key==='Tab'){e.preventDefault();var i=buttons.indexOf(document.activeElement);buttons[(i+(e.shiftKey?-1:1)+buttons.length)%buttons.length].focus();}
+  });
   var TAB_SCREENS={dashboard:1,calls:1,settings:1};
 
   /* ----- fictional call data ----- */
@@ -38,7 +44,9 @@
 
   function openDeleteModal(){
     if(!deleteModal) return;
+    modalOpener=document.activeElement;
     deleteModal.hidden=false;
+    deleteModal.querySelector('button').focus();
     app.classList.add('is-modal-open');
     // Next frame so CSS can transition from the closed state
     requestAnimationFrame(function(){
@@ -50,6 +58,7 @@
   function closeDeleteModal(){
     if(!deleteModal || deleteModal.hidden) return;
     deleteModal.classList.remove('is-open');
+    if(modalOpener && modalOpener.isConnected) modalOpener.focus();
     app.classList.remove('is-modal-open');
     var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     window.setTimeout(function(){
@@ -146,6 +155,8 @@
     demoSelect.setAttribute('aria-expanded','true');
     demoSelectMenu.hidden=false;
     if(demoText) demoText.classList.add('is-select-open');
+    var selected=demoSelectMenu.querySelector('[aria-selected="true"]') || demoSelectMenu.querySelector('[role="option"]');
+    if(selected) selected.focus();
   }
   if(demoSelect && demoSelectMenu){
     demoSelect.addEventListener('click',function(e){
@@ -162,13 +173,24 @@
         demoSelect.classList.add('has-value');
         closeDemoSelect();
         goToDemoScreen(opt.getAttribute('data-go'), opt.getAttribute('data-arg'));
+        demoSelect.focus();
       });
+    });
+    demoSelectMenu.addEventListener('keydown',function(e){
+      var options=Array.from(demoSelectMenu.querySelectorAll('[role="option"]'));
+      var i=options.indexOf(document.activeElement);
+      if(e.key==='ArrowDown'||e.key==='ArrowUp'||e.key==='Home'||e.key==='End'){
+        e.preventDefault();
+        var next=e.key==='Home'?0:e.key==='End'?options.length-1:(i+(e.key==='ArrowDown'?1:-1)+options.length)%options.length;
+        options[next].focus();
+      } else if(e.key==='Enter'||e.key===' '){e.preventDefault();if(i>=0)options[i].click();}
+      else if(e.key==='Tab')closeDemoSelect();
     });
     document.addEventListener('click',function(e){
       if(!e.target.closest('.rv-demo__select-wrap')) closeDemoSelect();
     });
     document.addEventListener('keydown',function(e){
-      if(e.key==='Escape') closeDemoSelect();
+      if(e.key==='Escape' && demoSelect.getAttribute('aria-expanded')==='true'){closeDemoSelect();demoSelect.focus();}
     });
   }
 
@@ -188,7 +210,7 @@
 
     function armIdle(){ clearTimeout(idleT); if(userTook)return; idleT=setTimeout(startTour,5000); }
     function startTour(){
-      if(userTook||touring)return; touring=true;
+      if(reduce||userTook||touring)return; touring=true;
       cursor.classList.add('is-on'); badge.classList.add('is-on');
       tap(tabs('calls'),function(){ wait(2400,function(){
         tap(tabs('settings'),function(){ wait(2400,function(){
@@ -220,13 +242,13 @@
       app.addEventListener('pointerup',function(){ cursor.classList.remove('is-tap'); });
     }
     ['pointerdown','keydown','wheel','touchstart'].forEach(function(ev){ app.addEventListener(ev,takeOver,{passive:true,capture:true}); });
-    document.querySelectorAll('#explore-app .rv-demo__try button').forEach(function(b){ b.addEventListener('pointerdown',takeOver); });
-    if(demoSelect){ demoSelect.addEventListener('pointerdown',takeOver); }
+    document.querySelectorAll('#explore-app .rv-demo__try button').forEach(function(b){ b.addEventListener('pointerdown',takeOver); b.addEventListener('keydown',takeOver); });
+    if(demoSelect){ demoSelect.addEventListener('pointerdown',takeOver); demoSelect.addEventListener('keydown',takeOver); }
     if(demoSelectMenu){ demoSelectMenu.addEventListener('pointerdown',takeOver); }
 
     function enter(){
       wrap.classList.add('is-in');
-      wait(reduce?0:900,function(){ showHint(); armIdle(); });
+      if(!reduce) wait(900,function(){ showHint(); armIdle(); });
     }
     if('IntersectionObserver' in window){
       var io=new IntersectionObserver(function(es){ if(es[0].isIntersecting){ io.disconnect(); enter(); } },{threshold:.15});

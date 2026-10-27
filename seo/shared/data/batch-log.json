@@ -790,5 +790,54 @@
       "added on-call-scheduling-software as draft",
       "added visual-voicemail-android as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-27-service-business-guides",
+    "batchHash": "sha256:50969520983136cc4a7fef9a94be7a843e22fd4462a8da783099452d85ec98cf",
+    "source": {
+      "kind": "manual",
+      "reference": "Original English service-business guides; prepared 2026-10-26 for planned 2026-10-27 UTC-07 batch. Research remains private; exact human review pending."
+    },
+    "appliedAt": "2026-10-26",
+    "changes": [
+      "added small-business-crm-selection as draft",
+      "added discovery-call-service-business as draft",
+      "added sales-closing-techniques-service-business as draft",
+      "added hvac-inventory-management as draft",
+      "added voice-of-customer-examples as draft",
+      "added bad-customer-service-examples as draft",
+      "added what-is-a-service-call as draft",
+      "added sales-performance-dashboard as draft",
+      "added inbound-vs-outbound-calls as draft",
+      "added small-business-technology-priorities as draft",
+      "added service-business-sales-playbook as draft",
+      "added service-business-email-pitch-examples as draft",
+      "added outreach-marketing-service-business as draft",
+      "added equipment-rental-scheduling-software as draft",
+      "added window-cleaning-software as draft",
+      "added septic-scheduling-software as draft",
+      "added appliance-repair-dispatch-software as draft",
+      "added lead-vs-prospect as draft",
+      "added integrated-marketing-service-business as draft",
+      "added free-scheduling-software-small-business as draft",
+      "added phone-number-spoofing-business as draft",
+      "added service-business-kpis as draft",
+      "added service-business-sales-deck as draft",
+      "added ask-customer-for-payment as draft",
+      "added landscape-crm-software as draft"
+    ]
+  },
+  {
+    "batchId": "2026-10-27-editorial-reference-corrections",
+    "batchHash": "sha256:49ae6e0949ab51af6d21f4ecd790655d7b89494b3d0949871cbc2f026ceba976",
+    "source": {
+      "kind": "manual",
+      "reference": "Two bounded reference corrections within active Oct27 PR97: published septic guide wording; replace withdrawn calendar reference with approved appointment-booking. Human approval pending for these two changed hashes; remaining23 exact user-approved records unchanged."
+    },
+    "appliedAt": "2026-10-26",
+    "changes": [
+      "updated septic-scheduling-software; back to draft until re-approved",
+      "updated free-scheduling-software-small-business; back to draft until re-approved"
+    ]
   }
 ]
