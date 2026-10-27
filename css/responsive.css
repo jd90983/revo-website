@@ -577,6 +577,13 @@
 
 /* ===== MOBILE (max-width: 767px) ===== */
 @media (max-width: 767px) {
+  /* Kill horizontal page shift that pushes the mobile menu CTA off-center */
+  html,
+  body {
+    overflow-x: clip;
+    max-width: 100%;
+  }
+
   /* Navigation */
   .navbar-container {
     padding: 0 20px;
