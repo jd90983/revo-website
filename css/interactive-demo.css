@@ -194,7 +194,7 @@
 @media (prefers-reduced-motion:reduce){.rv-cursor{transition:none}}
 /* header */
 .rv-head{display:flex;align-items:center;gap:12px;padding:14px 16px 10px}
-.rv-head h1{font-size:22px;font-weight:700;flex:1}
+.rv-head h3{font-size:22px;font-weight:700;flex:1}
 .rv-head .rv-icon-btn{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:var(--bg)}
 .rv-head .rv-icon-btn svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 .rv-dup{font-size:11px;color:#ddd;background:#2a2a2a;border-radius:8px;padding:6px 10px}
