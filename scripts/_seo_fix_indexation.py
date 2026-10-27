@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import glob
-import os
+import posixpath
 import re
 from collections import defaultdict
 from pathlib import Path
@@ -70,14 +70,24 @@ def fix_index_links(text: str) -> str:
 
 
 def build_existing_map() -> dict[str, str]:
-    """Map lowercase basename -> actual basename for case-sensitive fix."""
+    """Map lowercase site path -> actual site path for case-sensitive fix."""
     m = {}
-    for p in ROOT.glob("*.html"):
-        m[p.name.lower()] = p.name
+    for p in ROOT.rglob("*.html"):
+        if p.is_file():
+            target = "/" + p.relative_to(ROOT).as_posix()
+            m[target.lower()] = target
     return m
 
 
-def fix_broken_html_hrefs(text: str, existing: dict[str, str]) -> tuple[str, list[str]]:
+def resolve_html_target(path_only: str, source: Path) -> str:
+    """Resolve a site path relative to its source page, including dot segments."""
+    source_dir = "/" + source.parent.relative_to(ROOT).as_posix()
+    return posixpath.normpath(posixpath.join(source_dir, path_only))
+
+
+def fix_broken_html_hrefs(
+    text: str, existing: dict[str, str], source: Path
+) -> tuple[str, list[str]]:
     """Fix hrefs that point to missing/wrong-case .html files.
 
     Important: do NOT use Path.exists() for validation — Windows is
@@ -94,29 +104,25 @@ def fix_broken_html_hrefs(text: str, existing: dict[str, str]) -> tuple[str, lis
         if path_only.startswith(("http://", "https://", "//")):
             return match.group(0)
 
-        base = os.path.basename(path_only)
+        target = resolve_html_target(path_only, source)
+        candidate = target
 
         # Special: ind.html -> industries.html
-        if base.lower() == "ind.html":
-            new_href = href.replace(path_only, "industries.html", 1)
-            fixes.append(f"{href} -> {new_href}")
-            return f"href={quote}{new_href}{quote}"
+        if posixpath.basename(target).lower() == "ind.html":
+            candidate = posixpath.join(posixpath.dirname(target), "industries.html")
 
-        correct = existing.get(base.lower())
+        correct = existing.get(candidate.lower())
         # Title Case with spaces: "industry_Air Duct Cleaning.html"
         if not correct:
-            normalized = base.lower().replace(" ", "_")
+            normalized = posixpath.join(
+                posixpath.dirname(candidate), posixpath.basename(candidate).replace(" ", "_")
+            ).lower()
             correct = existing.get(normalized)
 
-        if correct and correct != base:
-            if "?" in href:
-                suffix = "?" + href.split("?", 1)[1]
-            elif "#" in href:
-                suffix = "#" + href.split("#", 1)[1]
-            else:
-                suffix = ""
-            dirpart = os.path.dirname(path_only)
-            new_path = f"{dirpart}/{correct}" if dirpart else correct
+        if correct and correct != target:
+            suffix = href[len(path_only) :]
+            source_dir = "/" + source.parent.relative_to(ROOT).as_posix()
+            new_path = correct if path_only.startswith("/") else posixpath.relpath(correct, source_dir)
             new_href = new_path + suffix
             fixes.append(f"{href} -> {new_href}")
             return f"href={quote}{new_href}{quote}"
@@ -138,7 +144,7 @@ def process_pages() -> None:
         url = canonical_url(path.name)
         text = insert_canonical(text, url)
         text = fix_index_links(text)
-        text, fixes = fix_broken_html_hrefs(text, existing)
+        text, fixes = fix_broken_html_hrefs(text, existing, path)
         if fixes:
             all_fixes[path.name].extend(fixes)
 
@@ -166,22 +172,25 @@ def audit_broken() -> None:
             continue
         text = path.read_text(encoding="utf-8", errors="replace")
         for href in re.findall(r'href=["\']([^"\']+)["\']', text):
-            if href.startswith(("http://", "https://", "mailto:", "tel:", "javascript:", "data:", "#")):
+            if href.startswith(("http://", "https://", "//", "mailto:", "tel:", "javascript:", "data:", "#")):
                 continue
-            path_only = href.split("?")[0].split("#")[0].lstrip("./")
+            path_only = href.split("?")[0].split("#")[0]
             if not path_only.endswith(".html"):
                 continue
-            base = os.path.basename(path_only)
-            correct = existing.get(base.lower())
+            target = resolve_html_target(path_only, path)
+            correct = existing.get(target.lower())
             if correct is None:
                 # also try space->underscore
-                correct = existing.get(base.lower().replace(" ", "_"))
+                normalized = posixpath.join(
+                    posixpath.dirname(target), posixpath.basename(target).replace(" ", "_")
+                ).lower()
+                correct = existing.get(normalized)
                 if correct is None:
-                    broken[path_only].append(path.name)
-                elif correct != base:
-                    broken[path_only + " (case)"].append(path.name)
-            elif correct != base:
-                broken[path_only + " (case)"].append(path.name)
+                    broken[target].append(path.relative_to(ROOT).as_posix())
+                elif correct != target:
+                    broken[target + " (case)"].append(path.relative_to(ROOT).as_posix())
+            elif correct != target:
+                broken[target + " (case)"].append(path.relative_to(ROOT).as_posix())
 
     print("\nRemaining broken/case-mismatched HTML targets:")
     if not broken:

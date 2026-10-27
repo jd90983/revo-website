@@ -2,7 +2,7 @@
 """Verify SEO acceptance criteria locally (pre-deploy)."""
 from __future__ import annotations
 
-import os
+import posixpath
 import re
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -36,22 +36,22 @@ def main() -> int:
             errors.append(f"index.html href still in {p.name}")
 
     # 3. Case-sensitive internal HTML link audit
-    existing = {f.name.lower(): f.name for f in ROOT.glob("*.html")}
+    existing = {"/" + f.relative_to(ROOT).as_posix() for f in ROOT.rglob("*.html") if f.is_file()}
     broken = defaultdict(list)
     for p in list(ROOT.glob("*.html")) + list((ROOT / "templates").glob("*.html")) + list(
         (ROOT / "snippets").glob("*.html")
     ):
         text = p.read_text(encoding="utf-8", errors="replace")
         for href in re.findall(r'href=["\']([^"\']+)["\']', text):
-            if href.startswith(("http://", "https://", "mailto:", "tel:", "javascript:", "data:", "#")):
+            if href.startswith(("http://", "https://", "//", "mailto:", "tel:", "javascript:", "data:", "#")):
                 continue
-            path_only = href.split("?")[0].split("#")[0].lstrip("./")
+            path_only = href.split("?")[0].split("#")[0]
             if not path_only.endswith(".html"):
                 continue
-            base = os.path.basename(path_only)
-            correct = existing.get(base.lower()) or existing.get(base.lower().replace(" ", "_"))
-            if correct is None or correct != base:
-                broken[path_only].append(p.name)
+            source_dir = "/" + p.parent.relative_to(ROOT).as_posix()
+            target = posixpath.normpath(posixpath.join(source_dir, path_only))
+            if target not in existing:
+                broken[target].append(p.relative_to(ROOT).as_posix())
     if broken:
         for t, srcs in sorted(broken.items()):
             errors.append(f"broken/case href {t} from {srcs[0]}")
