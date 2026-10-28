@@ -925,5 +925,19 @@
       "added propane-answering-service as draft",
       "added compare/virtual-receptionist-vs-virtual-assistant as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-28-hybrid-horizon-conversational-approved-continuation",
+    "batchHash": "sha256:885000aa1f2e30ad36f507301eb8056fb3c590d81643089df446cf2a3ec4647c",
+    "source": {
+      "kind": "manual",
+      "reference": "Approved immutable add-only continuation after18pages published October28. Jorge exact acceptance Sentinel_0b494c8cfff08191a6a4b0603255223f permits these three texts for implementation/testing, not future PR integration. Separate documentation-only PR115 remains untouched; no guards altered."
+    },
+    "appliedAt": "2026-10-28",
+    "changes": [
+      "added compare/ai-only-vs-hybrid-answering-service as draft",
+      "added horizon-answering-service as draft",
+      "added conversational-receptionists as draft"
+    ]
   }
 ]
