@@ -1428,5 +1428,20 @@
     "slug": "conversational-receptionists",
     "label": "Home-service answering decisions",
     "template": "workflow"
+  },
+  {
+    "slug": "franchise-answering-service-approval",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "continental-message-solutions",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "zanus-ai-receptionist",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
   }
 ]
