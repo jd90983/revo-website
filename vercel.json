@@ -1327,6 +1327,41 @@
       "permanent": true
     },
     {
+      "source": "/ai-answering-service/abby-connect-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/abby-connect-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answerfirst-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answerfirst-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/gabbyville-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/gabbyville-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/nexa-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/nexa-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/phonely-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/phonely-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/broccoli-ai-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/broccoli-ai-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/posh-virtual-receptionist-reviews.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/posh-virtual-receptionist-reviews",
+      "permanent": true
+    },
+    {
       "source": "/ai-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service",
       "permanent": true
@@ -3028,6 +3063,34 @@
     {
       "source": "/ai-answering-service/landscape-crm-software",
       "destination": "/ai-answering-service/landscape-crm-software.html"
+    },
+    {
+      "source": "/ai-answering-service/abby-connect-pricing",
+      "destination": "/ai-answering-service/abby-connect-pricing.html"
+    },
+    {
+      "source": "/ai-answering-service/answerfirst-pricing",
+      "destination": "/ai-answering-service/answerfirst-pricing.html"
+    },
+    {
+      "source": "/ai-answering-service/gabbyville-pricing",
+      "destination": "/ai-answering-service/gabbyville-pricing.html"
+    },
+    {
+      "source": "/ai-answering-service/nexa-answering-service",
+      "destination": "/ai-answering-service/nexa-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/phonely-pricing",
+      "destination": "/ai-answering-service/phonely-pricing.html"
+    },
+    {
+      "source": "/ai-answering-service/broccoli-ai-pricing",
+      "destination": "/ai-answering-service/broccoli-ai-pricing.html"
+    },
+    {
+      "source": "/ai-answering-service/posh-virtual-receptionist-reviews",
+      "destination": "/ai-answering-service/posh-virtual-receptionist-reviews.html"
     },
     {
       "source": "/ai-answering-service",

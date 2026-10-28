@@ -1,0 +1,624 @@
+{
+  "batchId": "2026-10-28-revenue-first",
+  "source": {
+    "kind": "manual",
+    "reference": "Original seven-article copy created October 27, 2026; planned October 28 publication. Exact editorial package Library libfile_96958ced7ae08191bba313a54f88d196 version 0 SHA256 72374b626410b821c056b5419fbaf7de7b3a45e4359902a29abaf64f77f5d9b5 accepted by Jorge in user message Sentinel_d603890ee12081918a9737a721ec4fb8, October 28, 2026. This records copy acceptance only, not formal PR approval. Private keyword research excluded."
+  },
+  "operations": [
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "abby-connect-pricing",
+        "title": "Abby Connect pricing: calculate Human + AI usage",
+        "description": "Read Abby Connect pricing in Abby Minutes, calculate a fictional Human + AI workload, and check overage, rounding and service fit before choosing a plan.",
+        "navigationLabel": "abby connect pricing",
+        "eyebrow": "Home-service answering decisions",
+        "intro": "Abby Connect pricing starts at $164 per month for 50 Abby Minutes. The important comparison is how your intended mix of human and AI answering consumes that allowance. Revo, a competing AI answering provider, prepared this documentary review from official pages checked October 27, 2026. We did not test Abby, score its service or obtain a business-specific quote.",
+        "lead": "Abby Connect pricing starts at $164 per month for 50 Abby Minutes. The important comparison is how your intended mix of human and AI answering consumes that allowance. Revo, a competing AI answering provider, prepared this documentary review from official pages checked October 27, 2026. We did not test Abby, score its service or obtain a business-specific quote.",
+        "sections": [
+          {
+            "title": "Read the monthly allowance in the right unit",
+            "paragraphs": [
+              "Abby offers human receptionists, AI answering or a combination. Its current monthly plans are shown below. These are dated published prices, not a promise about your final invoice. The pricing page describes month-to-month service; do not treat these amounts as an annual prepayment offer or assume an unpublished annual discount.\n\n| Plan | Monthly subscription | Included Abby Minutes |\n| --- | --- | --- |\n| Starter | $164 | 50 |\n| Essential | $329 | 100 |\n| Professional | $599 | 200 |\n| Growth | $1,380 | 500 |\n\nSources checked October 27, 2026: [Abby: current pricing](https://www.abby.com/pricing/)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Calculate the mix before estimating overage",
+            "paragraphs": [
+              "One measured human minute consumes one Abby Minute; one measured AI minute consumes half. A call using both is split by the portion each handles. This gives an office a meaningful option when some calls require people and others can follow an AI workflow.\n\nFor the following original example, assume the times are already billable measured minutes after the applicable timing rules. They are fictional workloads, not observed customer performance.\n\n| Fictional monthly workload | Calculation | Abby Minutes consumed |\n| --- | --- | --- |\n| 30 human minutes + 40 AI minutes | 30 + (40 ÷ 2) | 50 |\n| 10 human minutes + 80 AI minutes | 10 + (80 ÷ 2) | 50 |\n| 45 human minutes + 30 AI minutes | 45 + (30 ÷ 2) | 60 |\n\nSources checked October 27, 2026: [Abby: terms and conditions](https://www.abby.com/resources/terms-and-conditions/), [Abby: Human + AI receptionist](https://www.abby.com/human-ai-receptionist/)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Use the published overage rate, not base-price division",
+            "paragraphs": [
+              "Abby’s terms list overage at $3.29 per Abby Minute for Starter and Essential, $2.99 for Professional and $2.76 for Growth. Dividing a subscription price by its allowance is not the contractual overage calculation.\n\nUnder the fictional 60-Abby-Minute Starter case above, 10 extra units at $3.29 add $32.90 to $164, giving $196.90 before taxes or other applicable charges. That arithmetic does not establish your call mix, every billable activity or an invoice quote.\n\nSources checked October 27, 2026: [Abby: terms and conditions](https://www.abby.com/resources/terms-and-conditions/)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Check how recorded time becomes measured time",
+            "paragraphs": [
+              "The terms include ring, talk and transfer time, exclude potential hold time, and describe two rounding steps: each included component goes up to a whole second; their total then goes up to a 30-second mark. Raw conversation duration therefore is not enough to recreate usage.\n\nAsk Abby to explain a sample usage record for your proposed arrangement. Have the example identify which part was human, which was AI, the included timing components and the resulting units. If a busy-month forecast approaches a plan boundary, request both a normal-month and a peak-month estimate using the same assumptions.\n\nSources checked October 27, 2026: [Abby: terms and conditions](https://www.abby.com/resources/terms-and-conditions/)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Decide where human handling is worth purchasing",
+            "paragraphs": [
+              "Start with the work rather than assuming every minute is interchangeable. A contractor might want a person to handle an existing-customer exception while using AI for a straightforward new request. Write which decisions staff may make and which must return to your office.\n\nUse three fictional demonstration cases: an ordinary service inquiry, a request that does not fit the instructions and an unavailable destination. Ask the provider to show the supported handoff and the record the office receives. These are proposed checks, not tests we performed. A lower unit total is not proof of a better customer outcome."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare Revo separately and request the complete offer",
+            "paragraphs": [
+              "Revo’s current Pricing page displays a Solo launch offer of $87.50 per month with 100 included revenue-agent minutes, against a $175 list price. That is a different service and billing description, not 100 Abby Minutes or a human-receptionist entitlement. This snapshot establishes no Revo human network or named software integration.\n\nBefore choosing either provider, record answering scope, escalation ownership, the definition of usage, applicable additional charges and the written billing terms. Ask whether taxes are included in the quoted total and how a trial becomes paid service. Compare the offer that fits your workflow; this article makes no savings or performance claim.\n\nSources checked October 27, 2026: [Revo: current Pricing](https://www.revoapp.ai/pricing)."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does 50 Abby Minutes always mean 50 minutes of conversation?",
+            "a": "No. The unit conversion depends on human versus AI handling, and the terms define measured time and rounding. Use the resulting billable units rather than raw talk duration."
+          },
+          {
+            "q": "Is Abby an AI-only service?",
+            "a": "No. Its current offer lets customers choose human, AI or mixed handling. Decide which arrangement your office actually needs."
+          },
+          {
+            "q": "Are the examples complete quotes?",
+            "a": "No. They use fictional measured usage and dated published rates. Obtain the applicable offer and confirm taxes, additional charges and operating scope directly."
+          }
+        ],
+        "takeaway": "Review Revo’s current answering plans",
+        "sourcePaths": [
+          "https://www.abby.com/pricing/",
+          "https://www.abby.com/resources/terms-and-conditions/",
+          "https://www.abby.com/human-ai-receptionist/",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "markdownArticle": {
+          "content": "# Abby Connect pricing: calculate Human + AI usage\n\nAbby Connect pricing starts at $164 per month for 50 Abby Minutes. The important comparison is how your intended mix of human and AI answering consumes that allowance. Revo, a competing AI answering provider, prepared this documentary review from official pages checked October 27, 2026. We did not test Abby, score its service or obtain a business-specific quote.\n\n## Read the monthly allowance in the right unit\n\nAbby offers human receptionists, AI answering or a combination. Its current monthly plans are shown below. These are dated published prices, not a promise about your final invoice. The pricing page describes month-to-month service; do not treat these amounts as an annual prepayment offer or assume an unpublished annual discount.\n\n| Plan | Monthly subscription | Included Abby Minutes |\n| --- | --- | --- |\n| Starter | $164 | 50 |\n| Essential | $329 | 100 |\n| Professional | $599 | 200 |\n| Growth | $1,380 | 500 |\n\nSources checked October 27, 2026: [Abby: current pricing](https://www.abby.com/pricing/).\n\n## Calculate the mix before estimating overage\n\nOne measured human minute consumes one Abby Minute; one measured AI minute consumes half. A call using both is split by the portion each handles. This gives an office a meaningful option when some calls require people and others can follow an AI workflow.\n\nFor the following original example, assume the times are already billable measured minutes after the applicable timing rules. They are fictional workloads, not observed customer performance.\n\n| Fictional monthly workload | Calculation | Abby Minutes consumed |\n| --- | --- | --- |\n| 30 human minutes + 40 AI minutes | 30 + (40 ÷ 2) | 50 |\n| 10 human minutes + 80 AI minutes | 10 + (80 ÷ 2) | 50 |\n| 45 human minutes + 30 AI minutes | 45 + (30 ÷ 2) | 60 |\n\nSources checked October 27, 2026: [Abby: terms and conditions](https://www.abby.com/resources/terms-and-conditions/), [Abby: Human + AI receptionist](https://www.abby.com/human-ai-receptionist/).\n\n## Use the published overage rate, not base-price division\n\nAbby’s terms list overage at $3.29 per Abby Minute for Starter and Essential, $2.99 for Professional and $2.76 for Growth. Dividing a subscription price by its allowance is not the contractual overage calculation.\n\nUnder the fictional 60-Abby-Minute Starter case above, 10 extra units at $3.29 add $32.90 to $164, giving $196.90 before taxes or other applicable charges. That arithmetic does not establish your call mix, every billable activity or an invoice quote.\n\nSources checked October 27, 2026: [Abby: terms and conditions](https://www.abby.com/resources/terms-and-conditions/).\n\n## Check how recorded time becomes measured time\n\nThe terms include ring, talk and transfer time, exclude potential hold time, and describe two rounding steps: each included component goes up to a whole second; their total then goes up to a 30-second mark. Raw conversation duration therefore is not enough to recreate usage.\n\nAsk Abby to explain a sample usage record for your proposed arrangement. Have the example identify which part was human, which was AI, the included timing components and the resulting units. If a busy-month forecast approaches a plan boundary, request both a normal-month and a peak-month estimate using the same assumptions.\n\nSources checked October 27, 2026: [Abby: terms and conditions](https://www.abby.com/resources/terms-and-conditions/).\n\n## Decide where human handling is worth purchasing\n\nStart with the work rather than assuming every minute is interchangeable. A contractor might want a person to handle an existing-customer exception while using AI for a straightforward new request. Write which decisions staff may make and which must return to your office.\n\nUse three fictional demonstration cases: an ordinary service inquiry, a request that does not fit the instructions and an unavailable destination. Ask the provider to show the supported handoff and the record the office receives. These are proposed checks, not tests we performed. A lower unit total is not proof of a better customer outcome.\n\n## Compare Revo separately and request the complete offer\n\nRevo’s current Pricing page displays a Solo launch offer of $87.50 per month with 100 included revenue-agent minutes, against a $175 list price. That is a different service and billing description, not 100 Abby Minutes or a human-receptionist entitlement. This snapshot establishes no Revo human network or named software integration.\n\nBefore choosing either provider, record answering scope, escalation ownership, the definition of usage, applicable additional charges and the written billing terms. Ask whether taxes are included in the quoted total and how a trial becomes paid service. Compare the offer that fits your workflow; this article makes no savings or performance claim.\n\nSources checked October 27, 2026: [Revo: current Pricing](https://www.revoapp.ai/pricing).",
+          "sha256": "7aafdf138b21baa79a2229bfbc3d2ffd46667bf0a77d68b6579e67e4d8d93166",
+          "assets": []
+        },
+        "editorialDate": "2026-10-27",
+        "related": [],
+        "source": {
+          "kind": "manual",
+          "reference": "Original revenue-first Oct28 proposal createdOct27; documentary source review, no human editorial approval and no publication."
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "answerfirst-pricing",
+        "title": "AnswerFirst pricing: understand seconds and usage rates",
+        "description": "Review AnswerFirst’s monthly base, per-minute range and one-second billing. See conditional budget arithmetic and questions to settle in a written quote.",
+        "navigationLabel": "answerfirst pricing",
+        "eyebrow": "Home-service answering decisions",
+        "intro": "AnswerFirst pricing combines a $30 monthly base with published rates of $1.60–$1.95 per minute according to usage. Its live answering model and one-second measurement deserve a different review from a prepaid minute bundle. Revo, a competing provider, checked the official pages on October 27, 2026; this is a documentary comparison, not a service test, rating or customer quote.",
+        "lead": "AnswerFirst pricing combines a $30 monthly base with published rates of $1.60–$1.95 per minute according to usage. Its live answering model and one-second measurement deserve a different review from a prepaid minute bundle. Revo, a competing provider, checked the official pages on October 27, 2026; this is a documentary comparison, not a service test, rating or customer quote.",
+        "sections": [
+          {
+            "title": "Separate the base charge from the usage charge",
+            "paragraphs": [
+              "The pricing page presents pay-as-you-go live answering, without a minimum usage commitment to a minute plan, and states that qualifying rates decrease automatically as usage grows. “No overage fees” does not make the variable usage charge disappear.\n\nTreat a budget as a base component plus billable activity under the applicable rate schedule, then any other applicable charges. Ask for the actual schedule before assigning a rate to a forecast. The reviewed public page does not disclose numerical bracket thresholds or establish whether a qualifying rate applies to all usage or to separate bands.\n\nSources checked October 27, 2026: [AnswerFirst: current pricing](https://answerfirst.com/pricing/)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Use seconds correctly in a conditional calculation",
+            "paragraphs": [
+              "AnswerFirst advertises one-second billing rather than rounding calls up to a full minute. The published price range is dollars per minute, not dollars per second. Preserve that distinction when building a worksheet.\n\nOriginal fictional case: suppose 120 calls each produce exactly 75 billable seconds. That is 9,000 seconds, or 150 minutes. If the applicable offer used a single rate for those minutes, the following arithmetic would result. Neither endpoint is a verified bracket for 150 minutes.\n\n| Hypothetical rate applied to the same 150 minutes | Usage arithmetic | Plus $30 base |\n| --- | --- | --- |\n| $1.60 per minute | 150 × $1.60 = $240 | $270 |\n| $1.95 per minute | 150 × $1.95 = $292.50 | $322.50 |\n\nSources checked October 27, 2026: [AnswerFirst: service-industry answering](https://answerfirst.com/service-providers/)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Resolve the written terms before calling that a quote",
+            "paragraphs": [
+              "The arithmetic excludes taxes, supplemental services and other applicable charges. It also assumes the billable seconds are known. It is not a predicted invoice or a claim that every answered call produces only conversation-time charges.\n\nThe pricing FAQ says complex customization can attract a one-time fee; one forwarding number is included and additional forwarding numbers are listed at $3 monthly each. Separately, the terms refer to the Service Plan and Rate Schedule, setup and supplemental fees, applicable taxes and surcharges, and one-second usage subject to plan minimums.\n\nHave the provider reconcile the public offer with the specific proposal you would accept. Record the answer rather than selecting whichever wording gives the lowest spreadsheet total. This review did not submit a lead form to obtain the detailed pricing packet.\n\nSources checked October 27, 2026: [AnswerFirst: current pricing](https://answerfirst.com/pricing/), [AnswerFirst: terms of service](https://answerfirst.com/terms-of-service/)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Ask these questions about the rate function",
+            "paragraphs": [
+              "For a seasonal home-service office, a low-volume month and a storm-driven spike can be materially different workloads. Give the provider both scenarios using the same call-handling instructions, then request an itemized explanation.\n\n- Which usage levels trigger each rate, and which billing period determines qualification?\n- Does one qualifying rate apply to all usage, or are charges calculated across bands?\n- Which activities start and stop the billable clock, including transfers and after-call work?\n- Do any minimums, setup items or supplemental charges apply to this exact account?\n- How are taxes and surcharges shown, and what written terms govern cancellation and the final bill?\n\nSources checked October 27, 2026: [AnswerFirst: terms of service](https://answerfirst.com/terms-of-service/)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Evaluate the people and the handoff, not only the timer",
+            "paragraphs": [
+              "AnswerFirst explicitly offers live, U.S.-based receptionists for home-service businesses. For an owner who wants people answering, that is a relevant service distinction—not a reason to compare its minute directly with an AI allowance as though the purchases were identical.\n\nPrepare an original demonstration brief with a normal inquiry, a caller changing an existing request and a failed attempt to reach your staff. Define the desired outcome for each: information captured, request assigned or supported appointment confirmed. Ask to inspect the resulting office record. These are suggested evaluation cases, not calls we placed or outcomes we observed.\n\nSources checked October 27, 2026: [AnswerFirst: service-industry answering](https://answerfirst.com/service-providers/), [AnswerFirst: live virtual receptionists](https://answerfirst.com/virtual-receptionist/)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Put Revo on a separate, explicit line",
+            "paragraphs": [
+              "Revo currently lists the Crew launch offer at $175 monthly for 200 revenue-agent minutes, against a $350 list price. Its over-allowance FAQ directs customers to upgrade or discuss additional minutes; it does not publish a per-minute excess rate to fill into this comparison.\n\nIf you want an AI answering option, use the current Revo Pricing page to confirm scope and capacity. If live receptionists are a requirement, do not assume Revo supplies that human service. Choose after the provider has explained the workflow and complete bill, not from an unsupported claim of equivalence or savings.\n\nSources checked October 27, 2026: [Revo: current Pricing](https://www.revoapp.ai/pricing)."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does “no overage fees” mean the monthly bill stops at $30?",
+            "a": "No. The offer has a monthly base and usage charges. Confirm the applicable rate schedule and any additional items in the proposal."
+          },
+          {
+            "q": "Is the published rate $1.60–$1.95 per second?",
+            "a": "No. It is per minute, with usage measured in one-second increments. A spreadsheet must convert seconds to minutes before applying a per-minute rate."
+          },
+          {
+            "q": "Can I determine my exact rate from the public range?",
+            "a": "The reviewed page does not publish bracket thresholds or the complete calculation function. Request the rate schedule and an itemized scenario for your account."
+          }
+        ],
+        "takeaway": "Compare Revo’s current AI answering plans",
+        "sourcePaths": [
+          "https://answerfirst.com/pricing/",
+          "https://answerfirst.com/terms-of-service/",
+          "https://answerfirst.com/service-providers/",
+          "https://answerfirst.com/virtual-receptionist/",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "markdownArticle": {
+          "content": "# AnswerFirst pricing: understand seconds and usage rates\n\nAnswerFirst pricing combines a $30 monthly base with published rates of $1.60–$1.95 per minute according to usage. Its live answering model and one-second measurement deserve a different review from a prepaid minute bundle. Revo, a competing provider, checked the official pages on October 27, 2026; this is a documentary comparison, not a service test, rating or customer quote.\n\n## Separate the base charge from the usage charge\n\nThe pricing page presents pay-as-you-go live answering, without a minimum usage commitment to a minute plan, and states that qualifying rates decrease automatically as usage grows. “No overage fees” does not make the variable usage charge disappear.\n\nTreat a budget as a base component plus billable activity under the applicable rate schedule, then any other applicable charges. Ask for the actual schedule before assigning a rate to a forecast. The reviewed public page does not disclose numerical bracket thresholds or establish whether a qualifying rate applies to all usage or to separate bands.\n\nSources checked October 27, 2026: [AnswerFirst: current pricing](https://answerfirst.com/pricing/).\n\n## Use seconds correctly in a conditional calculation\n\nAnswerFirst advertises one-second billing rather than rounding calls up to a full minute. The published price range is dollars per minute, not dollars per second. Preserve that distinction when building a worksheet.\n\nOriginal fictional case: suppose 120 calls each produce exactly 75 billable seconds. That is 9,000 seconds, or 150 minutes. If the applicable offer used a single rate for those minutes, the following arithmetic would result. Neither endpoint is a verified bracket for 150 minutes.\n\n| Hypothetical rate applied to the same 150 minutes | Usage arithmetic | Plus $30 base |\n| --- | --- | --- |\n| $1.60 per minute | 150 × $1.60 = $240 | $270 |\n| $1.95 per minute | 150 × $1.95 = $292.50 | $322.50 |\n\nSources checked October 27, 2026: [AnswerFirst: service-industry answering](https://answerfirst.com/service-providers/).\n\n## Resolve the written terms before calling that a quote\n\nThe arithmetic excludes taxes, supplemental services and other applicable charges. It also assumes the billable seconds are known. It is not a predicted invoice or a claim that every answered call produces only conversation-time charges.\n\nThe pricing FAQ says complex customization can attract a one-time fee; one forwarding number is included and additional forwarding numbers are listed at $3 monthly each. Separately, the terms refer to the Service Plan and Rate Schedule, setup and supplemental fees, applicable taxes and surcharges, and one-second usage subject to plan minimums.\n\nHave the provider reconcile the public offer with the specific proposal you would accept. Record the answer rather than selecting whichever wording gives the lowest spreadsheet total. This review did not submit a lead form to obtain the detailed pricing packet.\n\nSources checked October 27, 2026: [AnswerFirst: current pricing](https://answerfirst.com/pricing/), [AnswerFirst: terms of service](https://answerfirst.com/terms-of-service/).\n\n## Ask these questions about the rate function\n\nFor a seasonal home-service office, a low-volume month and a storm-driven spike can be materially different workloads. Give the provider both scenarios using the same call-handling instructions, then request an itemized explanation.\n\n- Which usage levels trigger each rate, and which billing period determines qualification?\n- Does one qualifying rate apply to all usage, or are charges calculated across bands?\n- Which activities start and stop the billable clock, including transfers and after-call work?\n- Do any minimums, setup items or supplemental charges apply to this exact account?\n- How are taxes and surcharges shown, and what written terms govern cancellation and the final bill?\n\nSources checked October 27, 2026: [AnswerFirst: terms of service](https://answerfirst.com/terms-of-service/).\n\n## Evaluate the people and the handoff, not only the timer\n\nAnswerFirst explicitly offers live, U.S.-based receptionists for home-service businesses. For an owner who wants people answering, that is a relevant service distinction—not a reason to compare its minute directly with an AI allowance as though the purchases were identical.\n\nPrepare an original demonstration brief with a normal inquiry, a caller changing an existing request and a failed attempt to reach your staff. Define the desired outcome for each: information captured, request assigned or supported appointment confirmed. Ask to inspect the resulting office record. These are suggested evaluation cases, not calls we placed or outcomes we observed.\n\nSources checked October 27, 2026: [AnswerFirst: service-industry answering](https://answerfirst.com/service-providers/), [AnswerFirst: live virtual receptionists](https://answerfirst.com/virtual-receptionist/).\n\n## Put Revo on a separate, explicit line\n\nRevo currently lists the Crew launch offer at $175 monthly for 200 revenue-agent minutes, against a $350 list price. Its over-allowance FAQ directs customers to upgrade or discuss additional minutes; it does not publish a per-minute excess rate to fill into this comparison.\n\nIf you want an AI answering option, use the current Revo Pricing page to confirm scope and capacity. If live receptionists are a requirement, do not assume Revo supplies that human service. Choose after the provider has explained the workflow and complete bill, not from an unsupported claim of equivalence or savings.\n\nSources checked October 27, 2026: [Revo: current Pricing](https://www.revoapp.ai/pricing).",
+          "sha256": "0df49ad4ad5ffe88d54f25a428b883abefa2259fd6dab34b7c86a50b9ef6bc45",
+          "assets": []
+        },
+        "editorialDate": "2026-10-27",
+        "related": [],
+        "source": {
+          "kind": "manual",
+          "reference": "Original revenue-first Oct28 proposal createdOct27; documentary source review, no human editorial approval and no publication."
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "gabbyville-pricing",
+        "title": "Gabbyville pricing: budget by calls, then confirm scope",
+        "description": "Check Gabbyville’s published per-call pricing with original cost examples, scope questions and a clear separation between live and hybrid answering.",
+        "navigationLabel": "gabbyville pricing",
+        "eyebrow": "Home-service answering decisions",
+        "intro": "Gabbyville’s published entry plan is priced by calls, not by an allowance of conversation minutes. For a contractor comparing answering services, the useful question is which calls count and what work the selected plan authorizes. A low call count and a short average call are different facts.",
+        "lead": "Gabbyville’s published entry plan is priced by calls, not by an allowance of conversation minutes. For a contractor comparing answering services, the useful question is which calls count and what work the selected plan authorizes. A low call count and a short average call are different facts.",
+        "sections": [
+          {
+            "title": "Read the current price card in its own units",
+            "paragraphs": [
+              "On October 27, 2026, Gabbyville’s official pricing page listed Solo at $399 per month with 50 calls included and additional calls at $7 each. It describes per-call billing without a minute cap. The same page lists Boutique at $749 for 100 calls. These are dated published figures, not a tailored quote. [Gabbyville pricing](https://www.gabbyville.com/pricing/)\n\nTreat a call allowance as a billing unit, not a count of new customers. An existing customer can call twice about the same job. A transferred conversation, repeated caller or very short connection may also raise a counting question. Obtain the supplier’s written definition instead of deciding from the price-card heading."
+            ],
+            "items": []
+          },
+          {
+            "title": "Use these original cost examples",
+            "paragraphs": [
+              "For the published Solo figures, the illustrative base calculation is $399 + $7 × calls above 50. The following fictional monthly counts assume every listed call is billable once and no other charge applies:\n\n- 50 calls: $399 + (0 × $7) = $399.\n- 75 calls: $399 + (25 × $7) = $574.\n- 100 calls: $399 + (50 × $7) = $749."
+            ],
+            "items": []
+          },
+          {
+            "title": "A matching total does not make two plans identical",
+            "paragraphs": [
+              "At 100 calls, that Solo calculation equals the published Boutique base price. It does not establish that the plans provide the same workflow. Compare permitted intake, routing and handoff before choosing between them. The arithmetic does not include taxes, a negotiated arrangement or any charge not established in the example.\n\nBuild two columns from your own records: the calls you expect the service to handle in an ordinary month and the calls in a plausible busy month. Keep durations as a separate column for comparison with minute-based alternatives. Do not turn an included-minute allowance from another supplier into the same number of included calls."
+            ],
+            "items": []
+          },
+          {
+            "title": "Identify the live or hybrid arrangement explicitly",
+            "paragraphs": [
+              "Gabbyville markets its price-card offering as live U.S.-based reception, and separately publishes an AI-plus-live hybrid service. Its hybrid page describes AI answering with scheduling and transfers. Ask which arrangement the proposal covers, when a person receives the call and which tasks that person performs. A brand name alone does not answer those questions. [Gabbyville hybrid offering](https://www.gabbyville.com/hybrid-ai-live-receptionist/)\n\nThis distinction matters when a customer asks something beyond the approved script. Write the fallback your business wants: collect the unresolved question, reach an authorized employee or follow another agreed path. Do not describe an AI escalation as a guaranteed staffed handoff until the specific arrangement is confirmed."
+            ],
+            "items": []
+          },
+          {
+            "title": "Prepare a contractor call-count and scope card",
+            "paragraphs": [
+              "Gabbyville’s home-services page specifically addresses plumbing, HVAC, electrical and other service trades. Its published examples include intake and appointment handling. That audience fit does not settle the authority you give an answering provider. [Gabbyville home services](https://www.gabbyville.com/home-services/)\n\nUse this original card for a proposal review. Record a written answer or mark the item unresolved; an empty field is not an included feature.\n\n- Counting: definition of a billable call, treatment of repeats, short calls, transfers and failed connections.\n- Hours: intended coverage and the destination when an escalation recipient is unavailable.\n- Intake: required callback details, service address and requested work; who decides job acceptance.\n- Booking: permitted appointment types and the record that proves confirmation.\n- Commercial terms: plan, included calls, additional-call rate, other charges and change or cancellation process.\n- Record handoff: what the office receives, where it finds unresolved requests and who maintains the instructions."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare Revo only for the inbound work you need",
+            "paragraphs": [
+              "Revo is an AI receptionist offer. Its current plans publish 24/7 answering, the business’s own script and rules, booking and call summaries. Crew and Fleet list transfers to the customer’s team; this is not a claim that Revo supplies a network of live receptionists. [Revo plans](/pricing)\n\nA useful comparison follows the same fictional incoming request through both proposed setups: capture the request, explain whether a visit is merely requested or confirmed, and show the office’s next action. Compare the documented scope and billing units. This guide establishes no savings, service-quality ranking or functional equivalence between every Gabbyville and Revo feature.\n\nReview Revo’s current plans for your inbound answering needs. Confirm your script, booking rules, required handoff and plan scope before routing calls."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does no minute cap mean unlimited calls?",
+            "a": "No. Gabbyville’s published model describes a call allowance and an additional-call rate. Confirm which events count as calls."
+          },
+          {
+            "q": "Are these prices for the separate hybrid offer?",
+            "a": "The figures above come from Gabbyville’s published call-plan price card. Do not assign them to a different configuration without written confirmation."
+          }
+        ],
+        "takeaway": "Compare Revo plans",
+        "sourcePaths": [
+          "https://www.gabbyville.com/pricing/",
+          "https://www.gabbyville.com/hybrid-ai-live-receptionist/",
+          "https://www.gabbyville.com/home-services/",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "markdownArticle": {
+          "content": "# Gabbyville pricing: budget by calls, then confirm scope\n\nGabbyville’s published entry plan is priced by calls, not by an allowance of conversation minutes. For a contractor comparing answering services, the useful question is which calls count and what work the selected plan authorizes. A low call count and a short average call are different facts.\n\nPublished by Revo, a competing AI receptionist provider. This is a documentary buying guide based on official sources checked October 27, 2026, not a hands-on test, customer testimonial or quality rating.\n\n## Read the current price card in its own units\n\nOn October 27, 2026, Gabbyville’s official pricing page listed Solo at $399 per month with 50 calls included and additional calls at $7 each. It describes per-call billing without a minute cap. The same page lists Boutique at $749 for 100 calls. These are dated published figures, not a tailored quote. [Gabbyville pricing](https://www.gabbyville.com/pricing/)\n\nTreat a call allowance as a billing unit, not a count of new customers. An existing customer can call twice about the same job. A transferred conversation, repeated caller or very short connection may also raise a counting question. Obtain the supplier’s written definition instead of deciding from the price-card heading.\n\n## Use these original cost examples\n\nFor the published Solo figures, the illustrative base calculation is $399 + $7 × calls above 50. The following fictional monthly counts assume every listed call is billable once and no other charge applies:\n\n- 50 calls: $399 + (0 × $7) = $399.\n- 75 calls: $399 + (25 × $7) = $574.\n- 100 calls: $399 + (50 × $7) = $749.\n\n## A matching total does not make two plans identical\n\nAt 100 calls, that Solo calculation equals the published Boutique base price. It does not establish that the plans provide the same workflow. Compare permitted intake, routing and handoff before choosing between them. The arithmetic does not include taxes, a negotiated arrangement or any charge not established in the example.\n\nBuild two columns from your own records: the calls you expect the service to handle in an ordinary month and the calls in a plausible busy month. Keep durations as a separate column for comparison with minute-based alternatives. Do not turn an included-minute allowance from another supplier into the same number of included calls.\n\n## Identify the live or hybrid arrangement explicitly\n\nGabbyville markets its price-card offering as live U.S.-based reception, and separately publishes an AI-plus-live hybrid service. Its hybrid page describes AI answering with scheduling and transfers. Ask which arrangement the proposal covers, when a person receives the call and which tasks that person performs. A brand name alone does not answer those questions. [Gabbyville hybrid offering](https://www.gabbyville.com/hybrid-ai-live-receptionist/)\n\nThis distinction matters when a customer asks something beyond the approved script. Write the fallback your business wants: collect the unresolved question, reach an authorized employee or follow another agreed path. Do not describe an AI escalation as a guaranteed staffed handoff until the specific arrangement is confirmed.\n\n## Prepare a contractor call-count and scope card\n\nGabbyville’s home-services page specifically addresses plumbing, HVAC, electrical and other service trades. Its published examples include intake and appointment handling. That audience fit does not settle the authority you give an answering provider. [Gabbyville home services](https://www.gabbyville.com/home-services/)\n\nUse this original card for a proposal review. Record a written answer or mark the item unresolved; an empty field is not an included feature.\n\n- Counting: definition of a billable call, treatment of repeats, short calls, transfers and failed connections.\n- Hours: intended coverage and the destination when an escalation recipient is unavailable.\n- Intake: required callback details, service address and requested work; who decides job acceptance.\n- Booking: permitted appointment types and the record that proves confirmation.\n- Commercial terms: plan, included calls, additional-call rate, other charges and change or cancellation process.\n- Record handoff: what the office receives, where it finds unresolved requests and who maintains the instructions.\n\n## Compare Revo only for the inbound work you need\n\nRevo is an AI receptionist offer. Its current plans publish 24/7 answering, the business’s own script and rules, booking and call summaries. Crew and Fleet list transfers to the customer’s team; this is not a claim that Revo supplies a network of live receptionists. [Revo plans](/pricing)\n\nA useful comparison follows the same fictional incoming request through both proposed setups: capture the request, explain whether a visit is merely requested or confirmed, and show the office’s next action. Compare the documented scope and billing units. This guide establishes no savings, service-quality ranking or functional equivalence between every Gabbyville and Revo feature.\n\nReview Revo’s current plans for your inbound answering needs. Confirm your script, booking rules, required handoff and plan scope before routing calls.",
+          "sha256": "d289596621240cc08c69d7aecca3f5560988d83d7dd521aad1378d67bcab8672",
+          "assets": []
+        },
+        "editorialDate": "2026-10-27",
+        "related": [],
+        "source": {
+          "kind": "manual",
+          "reference": "Original revenue-first Oct28 proposal createdOct27; documentary source review, no human editorial approval and no publication."
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "nexa-answering-service",
+        "title": "Nexa answering service: compare plans and quote scope",
+        "description": "Evaluate Nexa’s answering plans with a reusable quote worksheet covering voice minutes, receptionist work, billing rules and the inbound tasks you need.",
+        "navigationLabel": "nexa answering service",
+        "eyebrow": "Home-service answering decisions",
+        "intro": "Nexa publishes receptionist plans with minute allowances, but the public plan labels do not supply a complete dollar quote. A useful buying review therefore needs two records: what the receptionist is authorized to do and how that work becomes a charge. Use the worksheet below to make those answers comparable.",
+        "lead": "Nexa publishes receptionist plans with minute allowances, but the public plan labels do not supply a complete dollar quote. A useful buying review therefore needs two records: what the receptionist is authorized to do and how that work becomes a charge. Use the worksheet below to make those answers comparable.",
+        "sections": [
+          {
+            "title": "Establish what the plan page actually tells you",
+            "paragraphs": [
+              "Nexa’s official plans page lists Nexa 100, Nexa 300 and Nexa 500 with 100, 300 and 500 Voice Minutes respectively. It describes live coverage, scripting, appointment handling and other services, but a current dollar tariff was not established from the page reviewed October 27, 2026. Do not fill that gap with a price from an old comparison. [Nexa plans](https://www.nexa.com/plans/)\n\nThe same page defines receptionist work broadly enough to include post-call tasks. That makes a raw count of telephone talk minutes an incomplete proposal input. Start by asking what the quoted allowance covers and which work is billed separately. A plan’s number is an allowance label, not a dollar price or a promise of completed jobs."
+            ],
+            "items": []
+          },
+          {
+            "title": "Copy this request-for-proposal worksheet",
+            "paragraphs": [
+              "Use one version of this original worksheet for each supplier. Write “not supplied” when a value or rule is missing. Keep the supplier’s written response with the effective date rather than replacing it with an assumption.\n\n- Scope: incoming call types, coverage hours, required questions and excluded work.\n- Authority: who accepts jobs, confirms appointments and approves changes.\n- Allowance: included units, reset period and whether unused allowance carries forward.\n- Usage definition: conversation, hold, transfer, outbound ringing, post-call work and other account activity.\n- Rates: recurring base, overage, setup and any separately quoted service or system charges.\n- Configuration: live/AI handling, escalation destination and availability of the business’s own staff.\n- Commercial controls: term, cancellation process, rate-change process and record access."
+            ],
+            "items": []
+          },
+          {
+            "title": "Ask Nexa to price the work, not just the conversation",
+            "paragraphs": [
+              "Nexa’s published terms describe whole-minute rounding for time-based billing, work beyond talk time and possible service-plan-dependent charges. They also permit conversational AI support, with an opt-out process described in the terms. Confirm the applicable configuration and charges in the actual proposal rather than assuming that a live plan label settles every call path. [Nexa terms, updated March 2026](https://www.nexa.com/legal/terms-conditions/)\n\nPrepare three fictional events for the supplier to calculate: a new service inquiry ending in a message, an appointment request requiring scheduling work, and an attempted transfer to an unavailable employee. Supply the same assumed durations and actions to every supplier. Request a breakdown identifying the billable unit and any work added after disconnection.\n\nDo not submit real customer information for this exercise. The request is for documented sample billing, not a test lead or permission to contact a customer. An unexplained total leaves the comparison unresolved even if the headline rate looks attractive."
+            ],
+            "items": []
+          },
+          {
+            "title": "Build ordinary-month and busy-month estimates",
+            "paragraphs": [
+              "After receiving the written rates, create one worksheet for normal activity and another for a plausible busy period. Keep the workload assumptions fixed while comparing suppliers. Separate the first-period cost, including any setup charge, from ongoing recurring cost.\n\nFor a proposal explicitly using a base fee plus flat minute overage, a conditional calculation is: quoted base + max(billable minutes − included minutes, 0) × quoted overage rate + other quoted recurring charges. This is a worksheet structure, not a statement that every Nexa arrangement uses only these components.\n\nFictional example: a documented billing calculation produces 340 billable minutes against a 300-minute allowance. That leaves 40 excess minutes. Multiply by the actual quoted overage rate; leave the dollar result blank until the rate and additional charges are supplied. Do not use 340 raw talk minutes if the contract meters a broader workload."
+            ],
+            "items": []
+          },
+          {
+            "title": "Follow one home-service request to its owner",
+            "paragraphs": [
+              "The proposal should show what happens when a homeowner reports a service need, asks for an appointment and then requests a person. Ask for the resulting office record: request details, appointment status, unresolved question and next owner. A natural greeting does not prove that the handoff worked.\n\nIdentify who maintains the script, who changes hours and what happens when the employee receiving transfers cannot answer. If a named software connection is part of the offer, require its precise data flow and responsibilities to be demonstrated. A logo or a broad integration label does not prove your proposed workflow."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare the relevant Revo scope without assuming parity",
+            "paragraphs": [
+              "Revo’s current pricing describes AI answering, own-script rules, appointment booking and summaries. Transfers to the customer’s own team are listed on Crew and Fleet. Revo is a competing publisher here; these features do not establish a staffed receptionist network, Nexa’s broader outbound services or identical software access. [Revo plans](/pricing)\n\nChoose based on the work your office needs completed and the written terms that price it. A supplier with more services is not automatically a better fit, and an allowance with fewer units is not automatically cheaper. Keep any unanswered requirement visible before making the procurement decision.\n\nReview Revo’s current plans for your inbound answering needs. Confirm your script, booking rules, required handoff and plan scope before routing calls."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "What does Nexa 100 cost?",
+            "a": "A current dollar tariff was not verified from the public plans page. Nexa 100 identifies 100 Voice Minutes; obtain the applicable written price and billing rules."
+          },
+          {
+            "q": "Does the live plan description rule out any AI handling?",
+            "a": "Do not assume that. Nexa’s published terms address AI-agent use and an opt-out process; confirm the configuration in the proposed service plan."
+          }
+        ],
+        "takeaway": "Compare Revo plans",
+        "sourcePaths": [
+          "https://www.nexa.com/plans/",
+          "https://www.nexa.com/legal/terms-conditions/",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "markdownArticle": {
+          "content": "# Nexa answering service: compare plans and quote scope\n\nNexa publishes receptionist plans with minute allowances, but the public plan labels do not supply a complete dollar quote. A useful buying review therefore needs two records: what the receptionist is authorized to do and how that work becomes a charge. Use the worksheet below to make those answers comparable.\n\nPublished by Revo, a competing AI receptionist provider. This is a documentary buying guide based on official sources checked October 27, 2026, not a hands-on test, customer testimonial or quality rating.\n\n## Establish what the plan page actually tells you\n\nNexa’s official plans page lists Nexa 100, Nexa 300 and Nexa 500 with 100, 300 and 500 Voice Minutes respectively. It describes live coverage, scripting, appointment handling and other services, but a current dollar tariff was not established from the page reviewed October 27, 2026. Do not fill that gap with a price from an old comparison. [Nexa plans](https://www.nexa.com/plans/)\n\nThe same page defines receptionist work broadly enough to include post-call tasks. That makes a raw count of telephone talk minutes an incomplete proposal input. Start by asking what the quoted allowance covers and which work is billed separately. A plan’s number is an allowance label, not a dollar price or a promise of completed jobs.\n\n## Copy this request-for-proposal worksheet\n\nUse one version of this original worksheet for each supplier. Write “not supplied” when a value or rule is missing. Keep the supplier’s written response with the effective date rather than replacing it with an assumption.\n\n- Scope: incoming call types, coverage hours, required questions and excluded work.\n- Authority: who accepts jobs, confirms appointments and approves changes.\n- Allowance: included units, reset period and whether unused allowance carries forward.\n- Usage definition: conversation, hold, transfer, outbound ringing, post-call work and other account activity.\n- Rates: recurring base, overage, setup and any separately quoted service or system charges.\n- Configuration: live/AI handling, escalation destination and availability of the business’s own staff.\n- Commercial controls: term, cancellation process, rate-change process and record access.\n\n## Ask Nexa to price the work, not just the conversation\n\nNexa’s published terms describe whole-minute rounding for time-based billing, work beyond talk time and possible service-plan-dependent charges. They also permit conversational AI support, with an opt-out process described in the terms. Confirm the applicable configuration and charges in the actual proposal rather than assuming that a live plan label settles every call path. [Nexa terms, updated March 2026](https://www.nexa.com/legal/terms-conditions/)\n\nPrepare three fictional events for the supplier to calculate: a new service inquiry ending in a message, an appointment request requiring scheduling work, and an attempted transfer to an unavailable employee. Supply the same assumed durations and actions to every supplier. Request a breakdown identifying the billable unit and any work added after disconnection.\n\nDo not submit real customer information for this exercise. The request is for documented sample billing, not a test lead or permission to contact a customer. An unexplained total leaves the comparison unresolved even if the headline rate looks attractive.\n\n## Build ordinary-month and busy-month estimates\n\nAfter receiving the written rates, create one worksheet for normal activity and another for a plausible busy period. Keep the workload assumptions fixed while comparing suppliers. Separate the first-period cost, including any setup charge, from ongoing recurring cost.\n\nFor a proposal explicitly using a base fee plus flat minute overage, a conditional calculation is: quoted base + max(billable minutes − included minutes, 0) × quoted overage rate + other quoted recurring charges. This is a worksheet structure, not a statement that every Nexa arrangement uses only these components.\n\nFictional example: a documented billing calculation produces 340 billable minutes against a 300-minute allowance. That leaves 40 excess minutes. Multiply by the actual quoted overage rate; leave the dollar result blank until the rate and additional charges are supplied. Do not use 340 raw talk minutes if the contract meters a broader workload.\n\n## Follow one home-service request to its owner\n\nThe proposal should show what happens when a homeowner reports a service need, asks for an appointment and then requests a person. Ask for the resulting office record: request details, appointment status, unresolved question and next owner. A natural greeting does not prove that the handoff worked.\n\nIdentify who maintains the script, who changes hours and what happens when the employee receiving transfers cannot answer. If a named software connection is part of the offer, require its precise data flow and responsibilities to be demonstrated. A logo or a broad integration label does not prove your proposed workflow.\n\n## Compare the relevant Revo scope without assuming parity\n\nRevo’s current pricing describes AI answering, own-script rules, appointment booking and summaries. Transfers to the customer’s own team are listed on Crew and Fleet. Revo is a competing publisher here; these features do not establish a staffed receptionist network, Nexa’s broader outbound services or identical software access. [Revo plans](/pricing)\n\nChoose based on the work your office needs completed and the written terms that price it. A supplier with more services is not automatically a better fit, and an allowance with fewer units is not automatically cheaper. Keep any unanswered requirement visible before making the procurement decision.\n\nReview Revo’s current plans for your inbound answering needs. Confirm your script, booking rules, required handoff and plan scope before routing calls.",
+          "sha256": "8f3b41c988a011b287e32573442b173f713049587624874f7e76ac145b687761",
+          "assets": []
+        },
+        "editorialDate": "2026-10-27",
+        "related": [],
+        "source": {
+          "kind": "manual",
+          "reference": "Original revenue-first Oct28 proposal createdOct27; documentary source review, no human editorial approval and no publication."
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "phonely-pricing",
+        "title": "Phonely pricing: resolve the plan before comparing",
+        "description": "Review Phonely’s monthly and annual price labels, conflicting minute allowances, transfer charges and setup responsibilities before comparing an offer.",
+        "navigationLabel": "phonely pricing",
+        "eyebrow": "Home-service answering decisions",
+        "intro": "Phonely pricing involves more than choosing a monthly price. Its official pricing page currently shows conflicting included-minute allowances. Before comparing it with another answering option, establish the offer, billing cycle, allowance and setup work that would actually apply to your account.",
+        "lead": "Phonely pricing involves more than choosing a monthly price. Its official pricing page currently shows conflicting included-minute allowances. Before comparing it with another answering option, establish the offer, billing cycle, allowance and setup work that would actually apply to your account.",
+        "sections": [
+          {
+            "title": "The public minute allowance needs reconciliation",
+            "paragraphs": [
+              "On October 27, the [pricing cards](https://www.phonely.ai/pricing) displayed Starter 200 and Professional 650 minutes; the comparison displayed 250 and 750 under both cycles. These observations do not establish two confirmed offers from which a buyer can freely choose.\n\nWe have not established which allowance controls a purchase. Do not silently choose the higher figure, assume the lower figure is safer, or label either section a typo. Ask which dated offer governs the account and preserve its allowance in the written proposal. Until that is settled, an effective cost per included minute or a workload-based savings comparison would rest on an unsupported input."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep the billing cycle attached to every rate",
+            "paragraphs": [
+              "The cards listed monthly Starter at $50 and Professional at $150; annual monthly equivalents were $33 and $100, respectively, billed annually. An annual monthly equivalent is not the same payment arrangement as a monthly subscription. Confirm the amount due, term, renewal and applicable charges before treating that label as your invoice.\n\nThe comparison section also displayed Starter overage at $0.25 per minute for monthly billing and $0.35 for annual billing. Pro displayed $0.30 in both. Different cycle-specific labels are not automatically an error, but they cannot be swapped in a calculation. The page’s approximate call counts should not be treated as guaranteed call allowances."
+            ],
+            "items": []
+          },
+          {
+            "title": "Check the work around the AI conversation",
+            "paragraphs": [
+              "Phonely’s FAQ says a transfer can leave a billable telephony connection active, with exceptions for certain arrangements. Have the provider identify the method and rate for your proposed configuration; do not assume the AI conversation ending also ends every billable leg.\n\nFor a contractor, test the proposed result as well as the billing definition. A caller may request an estimate, ask about an existing visit or need a staff member. Determine which information is recorded, which action is authorized and who receives an unresolved request. Keep a requested time separate from an appointment actually confirmed by the supported system."
+            ],
+            "items": []
+          },
+          {
+            "title": "Decide who builds and maintains the agent",
+            "paragraphs": [
+              "Buildout labels differ: Free/Starter self-serve, Pro priority support, Enterprise full buildout. The FAQ assigns team-built configuration to Enterprise. Those labels do not establish that every subscription comes with a fully managed setup.\n\nPhonely’s [official documentation](https://docs.phonely.ai/get-started/introduction) describes visual call design, routing and connections to business tools. Ask who will configure those parts for your business, test changes and maintain them when service rules change. Priority support should be defined in the proposal rather than assumed to mean that someone else owns the whole implementation."
+            ],
+            "items": []
+          },
+          {
+            "title": "Use this offer-reconciliation worksheet",
+            "paragraphs": [
+              "Copy the following fields into your comparison notes. Complete them from the applicable offer and a supported demonstration. An unanswered field stays unknown; it is not a zero-cost feature or an included service.\n\n- Offer identity: date reviewed, plan name, billing cycle and document that governs the purchase.\n- Allowance: confirmed included minutes, provider answer to the card/table discrepancy and reset rules.\n- Usage: excess-minute rate, rounding and whether the proposed transfer keeps a billable connection active.\n- Setup: builder, test owner, support scope, required connected tools and responsibility for future changes.\n- Task acceptance: service request captured, authorized booking result, unavailable-recipient fallback and follow-up owner.\n- Commercial decision: unresolved questions, approved scope and the person responsible for confirming the final offer."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare the inbound task, not every platform feature",
+            "paragraphs": [
+              "If your need is inbound answering for home services, compare that defined task with Revo’s current [Services](/services) and [Pricing](/pricing). A minute plan and a software platform can bundle different responsibilities. Do not infer that Revo supplies Phonely’s flow builder, arbitrary API actions, outbound campaigns or managed Enterprise buildout.\n\nThe useful decision is whether the supported arrangement handles your incoming request accurately at a cost you can establish. If an essential allowance or configuration responsibility remains unresolved, the comparison is not ready for a definitive price ranking.\n\nIf your requirement is inbound answering for a home-service business, review Revo’s current plans against the specific call-handling work you need. Confirm plan eligibility, connection and handoff before changing your live phone setup."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does Starter include 200 or 250 minutes?",
+            "a": "The reviewed cards and comparison disagree. This article does not select one as the purchased entitlement; obtain the applicable written offer."
+          },
+          {
+            "q": "Is the annual monthly equivalent charged every month?",
+            "a": "It is labeled as billed annually. Confirm the actual payment obligation and terms rather than reading the monthly equivalent as monthly billing."
+          },
+          {
+            "q": "Can this review establish that Revo is cheaper?",
+            "a": "No. A fair calculation needs confirmed allowances, usage, charges and equivalent required work. Those inputs are not all established here."
+          }
+        ],
+        "takeaway": "Review Revo plans",
+        "sourcePaths": [
+          "https://www.phonely.ai/pricing",
+          "https://docs.phonely.ai/get-started/introduction",
+          "https://www.phonely.ai/terms-of-service",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "markdownArticle": {
+          "content": "# Phonely pricing: resolve the plan before comparing\n\nPhonely pricing involves more than choosing a monthly price. Its official pricing page currently shows conflicting included-minute allowances. Before comparing it with another answering option, establish the offer, billing cycle, allowance and setup work that would actually apply to your account.\n\nPublished by Revo, a competing AI answering provider. This is a documentary review of official sources checked October 27, 2026, not a hands-on product trial or an endorsement.\n\n## The public minute allowance needs reconciliation\n\nOn October 27, the [pricing cards](https://www.phonely.ai/pricing) displayed Starter 200 and Professional 650 minutes; the comparison displayed 250 and 750 under both cycles. These observations do not establish two confirmed offers from which a buyer can freely choose.\n\nWe have not established which allowance controls a purchase. Do not silently choose the higher figure, assume the lower figure is safer, or label either section a typo. Ask which dated offer governs the account and preserve its allowance in the written proposal. Until that is settled, an effective cost per included minute or a workload-based savings comparison would rest on an unsupported input.\n\n## Keep the billing cycle attached to every rate\n\nThe cards listed monthly Starter at $50 and Professional at $150; annual monthly equivalents were $33 and $100, respectively, billed annually. An annual monthly equivalent is not the same payment arrangement as a monthly subscription. Confirm the amount due, term, renewal and applicable charges before treating that label as your invoice.\n\nThe comparison section also displayed Starter overage at $0.25 per minute for monthly billing and $0.35 for annual billing. Pro displayed $0.30 in both. Different cycle-specific labels are not automatically an error, but they cannot be swapped in a calculation. The page’s approximate call counts should not be treated as guaranteed call allowances.\n\n## Check the work around the AI conversation\n\nPhonely’s FAQ says a transfer can leave a billable telephony connection active, with exceptions for certain arrangements. Have the provider identify the method and rate for your proposed configuration; do not assume the AI conversation ending also ends every billable leg.\n\nFor a contractor, test the proposed result as well as the billing definition. A caller may request an estimate, ask about an existing visit or need a staff member. Determine which information is recorded, which action is authorized and who receives an unresolved request. Keep a requested time separate from an appointment actually confirmed by the supported system.\n\n## Decide who builds and maintains the agent\n\nBuildout labels differ: Free/Starter self-serve, Pro priority support, Enterprise full buildout. The FAQ assigns team-built configuration to Enterprise. Those labels do not establish that every subscription comes with a fully managed setup.\n\nPhonely’s [official documentation](https://docs.phonely.ai/get-started/introduction) describes visual call design, routing and connections to business tools. Ask who will configure those parts for your business, test changes and maintain them when service rules change. Priority support should be defined in the proposal rather than assumed to mean that someone else owns the whole implementation.\n\n## Use this offer-reconciliation worksheet\n\nCopy the following fields into your comparison notes. Complete them from the applicable offer and a supported demonstration. An unanswered field stays unknown; it is not a zero-cost feature or an included service.\n\n- Offer identity: date reviewed, plan name, billing cycle and document that governs the purchase.\n- Allowance: confirmed included minutes, provider answer to the card/table discrepancy and reset rules.\n- Usage: excess-minute rate, rounding and whether the proposed transfer keeps a billable connection active.\n- Setup: builder, test owner, support scope, required connected tools and responsibility for future changes.\n- Task acceptance: service request captured, authorized booking result, unavailable-recipient fallback and follow-up owner.\n- Commercial decision: unresolved questions, approved scope and the person responsible for confirming the final offer.\n\n## Compare the inbound task, not every platform feature\n\nIf your need is inbound answering for home services, compare that defined task with Revo’s current [Services](/services) and [Pricing](/pricing). A minute plan and a software platform can bundle different responsibilities. Do not infer that Revo supplies Phonely’s flow builder, arbitrary API actions, outbound campaigns or managed Enterprise buildout.\n\nThe useful decision is whether the supported arrangement handles your incoming request accurately at a cost you can establish. If an essential allowance or configuration responsibility remains unresolved, the comparison is not ready for a definitive price ranking.\n\nIf your requirement is inbound answering for a home-service business, review Revo’s current plans against the specific call-handling work you need. Confirm plan eligibility, connection and handoff before changing your live phone setup.",
+          "sha256": "d87864e9b834ed7c3540e6d74b036a3cd226ba258b0478d0f5a87f348eb9abb6",
+          "assets": []
+        },
+        "editorialDate": "2026-10-27",
+        "related": [],
+        "source": {
+          "kind": "manual",
+          "reference": "Original revenue-first Oct28 proposal createdOct27; documentary source review, no human editorial approval and no publication."
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "broccoli-ai-pricing",
+        "title": "Broccoli AI pricing: define the quote scope",
+        "description": "Prepare a Broccoli AI quote comparison around inbound answering, booking, outbound, lead sources and administration without inventing a public tariff.",
+        "navigationLabel": "broccoli ai pricing",
+        "eyebrow": "Home-service answering decisions",
+        "intro": "We did not find a numerical tariff on the Broccoli homepage or demo page reviewed October 27, 2026. That does not prevent a useful buying decision. Start by identifying the work in the proposed offer, then attach the actual price and billing terms to that scope instead of borrowing an unverified figure from another website.",
+        "lead": "We did not find a numerical tariff on the Broccoli homepage or demo page reviewed October 27, 2026. That does not prevent a useful buying decision. Start by identifying the work in the proposed offer, then attach the actual price and billing terms to that scope instead of borrowing an unverified figure from another website.",
+        "sections": [
+          {
+            "title": "Separate inbound answering from the broader platform",
+            "paragraphs": [
+              "Broccoli’s [official homepage](https://www.broccoli.com/) names Inbound, Outbound, Speed to Lead, QA & Coaching, and AI Chat & Scheduling. It presents a home-service platform rather than one undifferentiated answering task. The [demo page](https://www.broccoli.com/demo) offers a route to see that platform; it does not establish a universal price for those components.\n\nAsk which of those named areas your proposal actually includes. Do not assume they are separately priced, all bundled, or available under one fixed starting amount. A buyer needing only inbound coverage has a different comparison from a business purchasing outbound work, coaching and website conversations as well."
+            ],
+            "items": []
+          },
+          {
+            "title": "Make the booking demonstration specific to your office",
+            "paragraphs": [
+              "The official site illustrates an inbound job booking associated with ServiceTitan. That is a vendor presentation, not proof of compatibility with your account, job types or booking rules. Ask the proposed provider to demonstrate the exact authorized action in an approved test environment.\n\nUse a fictional request with a defined service, area and requested time. Then add an unavailable slot or a request that does not fit the business’s accepted work. Inspect what becomes a lead record, what becomes a confirmed booking and what remains with a staff owner. A natural conversation alone does not establish that the field-service record is correct.\n\nPut the required software account, supported action and configuration owner in the quote notes. If any connection or authority is unresolved, record it as an open condition of the purchase instead of treating the demo illustration as acceptance evidence."
+            ],
+            "items": []
+          },
+          {
+            "title": "Ask what the additional work includes",
+            "paragraphs": [
+              "For outbound and follow-up, identify the source of the work, trigger, retry limits and stop condition. Ask how attempts, connected conversations and any required staff work are measured. This is a question about the proposed service, not authorization to contact customers or a promise that a campaign meets every applicable requirement.\n\nFor speed-to-lead, identify the actual lead sources and records involved. Ask what happens when source details are missing or the same person contacts the business twice. A recognizable marketing-channel logo is not a completed reconciliation test.\n\nFor QA & Coaching, distinguish reviewing a conversation from assigning an unresolved case to a person who can act. For AI Chat & Scheduling, identify the channel, record and authorized calendar action separately from the telephone workflow. Request the scope and cost treatment of each requirement; do not invent extra fees or assume they are included."
+            ],
+            "items": []
+          },
+          {
+            "title": "Use this module-and-quote worksheet",
+            "paragraphs": [
+              "Create one row for each required task. The fields below form an original worksheet you can reuse with the provider and your office. “Not required” is useful: it prevents a broad platform proposal from being compared with a narrower service as though both purchases were identical.\n\n- Required task: [incoming request / supported booking / outbound follow-up / source response / call review / website conversation].\n- Proposed scope: [named Broccoli module or written offer reference; included, excluded or unresolved].\n- Authorized action: [record to create or change, applicable business rule and responsible owner].\n- Acceptance evidence: [approved test case, observed result and unresolved exception].\n- Implementation: [setup owner, prerequisites, staff work and future change responsibility].\n- Commercial terms: [billing unit, allowance, recurring amount, one-time amount and excess-usage rule from the actual offer].\n- Final decision: [required condition, person confirming it and date of the written answer]."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep implementation and ongoing ownership visible",
+            "paragraphs": [
+              "Ask who maintains the script, business knowledge, staff destinations and service rules after launch. If several locations or teams are involved, identify who approves changes and how an unavailable recipient is handled. A corrected operating rule should not depend on an informal promise that nobody owns.\n\nHave the provider identify any relevant implementation work, recurring administration or usage conditions in writing. These are questions to resolve, not verified fee categories. We have not established a universal minimum, contract length, setup charge or onboarding duration for a Broccoli purchase."
+            ],
+            "items": []
+          },
+          {
+            "title": "Use a narrower comparison when that is the real need",
+            "paragraphs": [
+              "Revo’s published [Services](/services) and [Pricing](/pricing) are relevant when the requirement is its supported inbound-answering, booking and handoff work. They do not establish an equivalent to Broccoli’s entire platform, outbound operation, QA/coaching or field-service actions.\n\nCompare the required incoming-call outcome first. If the broader modules are necessary, keep them in a separate scope rather than declaring a phone-only offer a complete substitute. Without an applicable Broccoli price and matched responsibilities, this review cannot responsibly calculate a savings percentage or call either option the cheaper purchase.\n\nIf your requirement is inbound answering for a home-service business, review Revo’s current plans against the specific call-handling work you need. Confirm plan eligibility, connection and handoff before changing your live phone setup."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does Broccoli publish a fixed starting price?",
+            "a": "No numerical tariff was present on the homepage and demo page reviewed here. That is a limited source finding, not proof that no public price exists elsewhere."
+          },
+          {
+            "q": "Can I assume every named module is included?",
+            "a": "No. Match the required work to the written offer. The website’s product names do not establish bundle or billing terms."
+          },
+          {
+            "q": "Are the website’s booking and revenue figures independent results?",
+            "a": "They are vendor claims, not measurements established by this review. No such figures are used to predict your results."
+          }
+        ],
+        "takeaway": "Review Revo plans",
+        "sourcePaths": [
+          "https://www.broccoli.com/",
+          "https://www.broccoli.com/demo",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "markdownArticle": {
+          "content": "# Broccoli AI pricing: define the quote scope\n\nWe did not find a numerical tariff on the Broccoli homepage or demo page reviewed October 27, 2026. That does not prevent a useful buying decision. Start by identifying the work in the proposed offer, then attach the actual price and billing terms to that scope instead of borrowing an unverified figure from another website.\n\nPublished by Revo, a competing AI answering provider. This is a documentary review of official sources checked October 27, 2026, not a hands-on product trial or an endorsement.\n\n## Separate inbound answering from the broader platform\n\nBroccoli’s [official homepage](https://www.broccoli.com/) names Inbound, Outbound, Speed to Lead, QA & Coaching, and AI Chat & Scheduling. It presents a home-service platform rather than one undifferentiated answering task. The [demo page](https://www.broccoli.com/demo) offers a route to see that platform; it does not establish a universal price for those components.\n\nAsk which of those named areas your proposal actually includes. Do not assume they are separately priced, all bundled, or available under one fixed starting amount. A buyer needing only inbound coverage has a different comparison from a business purchasing outbound work, coaching and website conversations as well.\n\n## Make the booking demonstration specific to your office\n\nThe official site illustrates an inbound job booking associated with ServiceTitan. That is a vendor presentation, not proof of compatibility with your account, job types or booking rules. Ask the proposed provider to demonstrate the exact authorized action in an approved test environment.\n\nUse a fictional request with a defined service, area and requested time. Then add an unavailable slot or a request that does not fit the business’s accepted work. Inspect what becomes a lead record, what becomes a confirmed booking and what remains with a staff owner. A natural conversation alone does not establish that the field-service record is correct.\n\nPut the required software account, supported action and configuration owner in the quote notes. If any connection or authority is unresolved, record it as an open condition of the purchase instead of treating the demo illustration as acceptance evidence.\n\n## Ask what the additional work includes\n\nFor outbound and follow-up, identify the source of the work, trigger, retry limits and stop condition. Ask how attempts, connected conversations and any required staff work are measured. This is a question about the proposed service, not authorization to contact customers or a promise that a campaign meets every applicable requirement.\n\nFor speed-to-lead, identify the actual lead sources and records involved. Ask what happens when source details are missing or the same person contacts the business twice. A recognizable marketing-channel logo is not a completed reconciliation test.\n\nFor QA & Coaching, distinguish reviewing a conversation from assigning an unresolved case to a person who can act. For AI Chat & Scheduling, identify the channel, record and authorized calendar action separately from the telephone workflow. Request the scope and cost treatment of each requirement; do not invent extra fees or assume they are included.\n\n## Use this module-and-quote worksheet\n\nCreate one row for each required task. The fields below form an original worksheet you can reuse with the provider and your office. “Not required” is useful: it prevents a broad platform proposal from being compared with a narrower service as though both purchases were identical.\n\n- Required task: [incoming request / supported booking / outbound follow-up / source response / call review / website conversation].\n- Proposed scope: [named Broccoli module or written offer reference; included, excluded or unresolved].\n- Authorized action: [record to create or change, applicable business rule and responsible owner].\n- Acceptance evidence: [approved test case, observed result and unresolved exception].\n- Implementation: [setup owner, prerequisites, staff work and future change responsibility].\n- Commercial terms: [billing unit, allowance, recurring amount, one-time amount and excess-usage rule from the actual offer].\n- Final decision: [required condition, person confirming it and date of the written answer].\n\n## Keep implementation and ongoing ownership visible\n\nAsk who maintains the script, business knowledge, staff destinations and service rules after launch. If several locations or teams are involved, identify who approves changes and how an unavailable recipient is handled. A corrected operating rule should not depend on an informal promise that nobody owns.\n\nHave the provider identify any relevant implementation work, recurring administration or usage conditions in writing. These are questions to resolve, not verified fee categories. We have not established a universal minimum, contract length, setup charge or onboarding duration for a Broccoli purchase.\n\n## Use a narrower comparison when that is the real need\n\nRevo’s published [Services](/services) and [Pricing](/pricing) are relevant when the requirement is its supported inbound-answering, booking and handoff work. They do not establish an equivalent to Broccoli’s entire platform, outbound operation, QA/coaching or field-service actions.\n\nCompare the required incoming-call outcome first. If the broader modules are necessary, keep them in a separate scope rather than declaring a phone-only offer a complete substitute. Without an applicable Broccoli price and matched responsibilities, this review cannot responsibly calculate a savings percentage or call either option the cheaper purchase.\n\nIf your requirement is inbound answering for a home-service business, review Revo’s current plans against the specific call-handling work you need. Confirm plan eligibility, connection and handoff before changing your live phone setup.",
+          "sha256": "d951965232ea410221b643a6b2cc46b832acf962d28083a75d15fff5e2e81967",
+          "assets": []
+        },
+        "editorialDate": "2026-10-27",
+        "related": [],
+        "source": {
+          "kind": "manual",
+          "reference": "Original revenue-first Oct28 proposal createdOct27; documentary source review, no human editorial approval and no publication."
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "posh-virtual-receptionist-reviews",
+        "title": "Posh Virtual Receptionist Reviews: A Buyer’s Checklist",
+        "description": "Review Posh’s AI and live answering options, attributed customer feedback, billing questions and a practical checklist for home-service buyers.",
+        "navigationLabel": "Posh receptionist reviews",
+        "eyebrow": "Home-service answering decisions",
+        "intro": "Looking at Posh virtual receptionist reviews? Separate the current offer, the experience reported by an individual customer and the workflow your business needs before choosing an answering service.",
+        "lead": "Looking at Posh virtual receptionist reviews? Separate the current offer, the experience reported by an individual customer and the workflow your business needs before choosing an answering service.",
+        "sections": [
+          {
+            "title": "How this review was prepared",
+            "paragraphs": [
+              "Revo publishes this review and sells a competing AI answering service. We reviewed public Posh product information and selected customer reports on Trustpilot on October 27, 2026. We did not purchase Posh, place test calls or independently verify reviewers’ experiences. This is a documentary buying guide, without a Revo-assigned score or claim to independent product testing.\n\nThe useful question is whether the service can handle your particular calls at an acceptable cost. A favorable review from another business cannot settle your service-area rules, scheduling requirements or escalation instructions."
+            ],
+            "items": []
+          },
+          {
+            "title": "What Posh currently offers",
+            "paragraphs": [
+              "[Posh’s current AI page](https://posh.com/ai/) describes a combination of AI answering and live receptionists. Callers can move from AI to a human, with transfer rules configured during setup. The page specifically discusses home-service lead qualification and human handling of escalations. Those are vendor descriptions, not performance results established by our review.\n\nThat distinction matters when comparing providers. Confirm who receives an escalated call: your employee, a provider’s receptionist or another destination. Do not treat those arrangements as interchangeable. If a human answering team is essential, request an explicit explanation of its availability and responsibilities."
+            ],
+            "items": []
+          },
+          {
+            "title": "What selected customers reported",
+            "paragraphs": [
+              "The [Posh Trustpilot profile](https://www.trustpilot.com/review/posh.com) supplies identifiable examples, rather than proof of typical results. Rocky Mountain Exteriors, in a review posted June 6, 2025 about a May 24 experience, reported helpful after-hours handling and account support. The Professor Law Firm reported smooth setup on September 14, 2026; its legal-office context differs from a contractor’s dispatch workflow.\n\nThere is criticism too. Posh Event Center’s April 12, 2026 review, describing an October 25, 2025 experience, reported unexpectedly high costs and more calls reaching the business than anticipated, while valuing human answering. Posh replied that transfer attempts could relate to setup. That explanation is the vendor’s response, not an independently established cause.\n\nTrustpilot labels these reports Verified. We have not authenticated them ourselves. These selected accounts are not a representative sample or a customer consensus, and older live-service experiences do not prove the quality of today’s AI offering."
+            ],
+            "items": []
+          },
+          {
+            "title": "Read the billing units before comparing monthly prices",
+            "paragraphs": [
+              "Posh’s AI page describes plans with a shared allowance of AI and live receptionist minutes, followed by different overage rates for each. Its billing explanation also includes immediate follow-up tasks. A call that uses AI and then a human can incur both types of overage after the allowance is exhausted. Check the current terms directly before buying.\n\nBuild a scenario from your own records instead of comparing starting prices alone. Use a typical month and a busy month. Write down answered-call minutes, minutes transferred to humans, follow-up work and any other quoted charges. Ask the provider to calculate both scenarios in writing and explain how usage appears on the invoice."
+            ],
+            "items": []
+          },
+          {
+            "title": "Use this call-handling worksheet in your evaluation",
+            "paragraphs": [
+              "Copy these five scenarios into your evaluation notes. For each, record the expected action, actual result, minutes used and correction needed:\n\n1. **New customer outside your service area.** Supply a ZIP code you do not serve. The expected result is an accurate explanation and your chosen next step, without an unsupported appointment promise.\n2. **Routine appointment request.** Give a real type of job but use a fictional caller. Record whether the result is a message, appointment request or confirmed booking, and what makes that status clear.\n3. **Existing customer asking for an update.** Specify what information the answering service may access and what must go to your office. Check that it does not guess an arrival time.\n4. **Caller requesting a person.** Document the handoff destination, hours, information passed along and fallback when nobody answers. Include the cost of that path.\n5. **Urgent-sounding request after hours.** Use a hypothetical scenario agreed with the provider. Check your escalation instructions and fallback; do not assume an answering service replaces emergency services.\n\nUse the same scenarios for every shortlisted service. Arrange a demonstration or controlled evaluation with permission, rather than sending fake emergencies through a live customer queue. Keep personal customer information out of evaluation material."
+            ],
+            "items": []
+          },
+          {
+            "title": "Questions to settle before you choose",
+            "paragraphs": [
+              "Ask who maintains your instructions and how quickly changes take effect. Establish how you report an incorrect message or transfer and how the provider confirms the correction. Request the cancellation terms and treatment of unused allowances. Decide which failures would stop the evaluation: an appointment promised without authorization, an incorrect service-area decision or an escalation sent to the wrong person.\n\nPosh merits consideration when you want to evaluate a documented AI-plus-human model. Your decision should rest on the agreed call flow, observed evaluation results and written costs. If you are also considering Revo, compare its documented plan scope separately; this guide does not establish equivalent human staffing or transfer arrangements.\n\nReview its published scope alongside your other options."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Do Posh reviews establish how its AI receptionist performs?",
+            "a": "Not by themselves. A report may concern live answering, onboarding or an older configuration. Ask which service was used and evaluate the current call flow against your own requirements."
+          },
+          {
+            "q": "What should a home-service business compare first?",
+            "a": "Start with intake accuracy, booking authority and escalation destination. Then price the same typical and busy-month scenarios across providers."
+          }
+        ],
+        "takeaway": "Compare Revo plans",
+        "sourcePaths": [
+          "https://posh.com/ai/",
+          "https://www.trustpilot.com/review/posh.com"
+        ],
+        "markdownArticle": {
+          "content": "# Posh Virtual Receptionist Reviews: A Buyer’s Checklist\n\nLooking at Posh virtual receptionist reviews? Separate the current offer, the experience reported by an individual customer and the workflow your business needs before choosing an answering service.\n\n## How this review was prepared\n\nRevo publishes this review and sells a competing AI answering service. We reviewed public Posh product information and selected customer reports on Trustpilot on October 27, 2026. We did not purchase Posh, place test calls or independently verify reviewers’ experiences. This is a documentary buying guide, without a Revo-assigned score or claim to independent product testing.\n\nThe useful question is whether the service can handle your particular calls at an acceptable cost. A favorable review from another business cannot settle your service-area rules, scheduling requirements or escalation instructions.\n\n## What Posh currently offers\n\n[Posh’s current AI page](https://posh.com/ai/) describes a combination of AI answering and live receptionists. Callers can move from AI to a human, with transfer rules configured during setup. The page specifically discusses home-service lead qualification and human handling of escalations. Those are vendor descriptions, not performance results established by our review.\n\nThat distinction matters when comparing providers. Confirm who receives an escalated call: your employee, a provider’s receptionist or another destination. Do not treat those arrangements as interchangeable. If a human answering team is essential, request an explicit explanation of its availability and responsibilities.\n\n## What selected customers reported\n\nThe [Posh Trustpilot profile](https://www.trustpilot.com/review/posh.com) supplies identifiable examples, rather than proof of typical results. Rocky Mountain Exteriors, in a review posted June 6, 2025 about a May 24 experience, reported helpful after-hours handling and account support. The Professor Law Firm reported smooth setup on September 14, 2026; its legal-office context differs from a contractor’s dispatch workflow.\n\nThere is criticism too. Posh Event Center’s April 12, 2026 review, describing an October 25, 2025 experience, reported unexpectedly high costs and more calls reaching the business than anticipated, while valuing human answering. Posh replied that transfer attempts could relate to setup. That explanation is the vendor’s response, not an independently established cause.\n\nTrustpilot labels these reports Verified. We have not authenticated them ourselves. These selected accounts are not a representative sample or a customer consensus, and older live-service experiences do not prove the quality of today’s AI offering.\n\n## Read the billing units before comparing monthly prices\n\nPosh’s AI page describes plans with a shared allowance of AI and live receptionist minutes, followed by different overage rates for each. Its billing explanation also includes immediate follow-up tasks. A call that uses AI and then a human can incur both types of overage after the allowance is exhausted. Check the current terms directly before buying.\n\nBuild a scenario from your own records instead of comparing starting prices alone. Use a typical month and a busy month. Write down answered-call minutes, minutes transferred to humans, follow-up work and any other quoted charges. Ask the provider to calculate both scenarios in writing and explain how usage appears on the invoice.\n\n## Use this call-handling worksheet in your evaluation\n\nCopy these five scenarios into your evaluation notes. For each, record the expected action, actual result, minutes used and correction needed:\n\n1. **New customer outside your service area.** Supply a ZIP code you do not serve. The expected result is an accurate explanation and your chosen next step, without an unsupported appointment promise.\n2. **Routine appointment request.** Give a real type of job but use a fictional caller. Record whether the result is a message, appointment request or confirmed booking, and what makes that status clear.\n3. **Existing customer asking for an update.** Specify what information the answering service may access and what must go to your office. Check that it does not guess an arrival time.\n4. **Caller requesting a person.** Document the handoff destination, hours, information passed along and fallback when nobody answers. Include the cost of that path.\n5. **Urgent-sounding request after hours.** Use a hypothetical scenario agreed with the provider. Check your escalation instructions and fallback; do not assume an answering service replaces emergency services.\n\nUse the same scenarios for every shortlisted service. Arrange a demonstration or controlled evaluation with permission, rather than sending fake emergencies through a live customer queue. Keep personal customer information out of evaluation material.\n\n## Questions to settle before you choose\n\nAsk who maintains your instructions and how quickly changes take effect. Establish how you report an incorrect message or transfer and how the provider confirms the correction. Request the cancellation terms and treatment of unused allowances. Decide which failures would stop the evaluation: an appointment promised without authorization, an incorrect service-area decision or an escalation sent to the wrong person.\n\nPosh merits consideration when you want to evaluate a documented AI-plus-human model. Your decision should rest on the agreed call flow, observed evaluation results and written costs. If you are also considering Revo, compare its documented plan scope separately; this guide does not establish equivalent human staffing or transfer arrangements.\n\nReview its published scope alongside your other options.",
+          "sha256": "504f48c5c5fe1ea3936af096a7e4db1de35df5b4dad0f192b5d29f670465117f",
+          "assets": []
+        },
+        "editorialDate": "2026-10-27",
+        "related": [],
+        "source": {
+          "kind": "manual",
+          "reference": "Original revenue-first Oct28 proposal createdOct27; documentary source review, no human editorial approval and no publication."
+        }
+      }
+    }
+  ]
+}

@@ -1323,5 +1323,40 @@
     "slug": "landscape-crm-software",
     "label": "Service-business operating guide",
     "template": "workflow"
+  },
+  {
+    "slug": "abby-connect-pricing",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "answerfirst-pricing",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "gabbyville-pricing",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "nexa-answering-service",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "phonely-pricing",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "broccoli-ai-pricing",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "posh-virtual-receptionist-reviews",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
   }
 ]

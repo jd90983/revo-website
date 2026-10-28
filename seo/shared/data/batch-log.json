@@ -839,5 +839,23 @@
       "updated septic-scheduling-software; back to draft until re-approved",
       "updated free-scheduling-software-small-business; back to draft until re-approved"
     ]
+  },
+  {
+    "batchId": "2026-10-28-revenue-first",
+    "batchHash": "sha256:c9784283fbc2901c34156c7c9675880dfba8781d7e6c68d195072ff18e65f95e",
+    "source": {
+      "kind": "manual",
+      "reference": "Original seven-article copy created October 27, 2026; planned October 28 publication. Exact editorial package Library libfile_96958ced7ae08191bba313a54f88d196 version 0 SHA256 72374b626410b821c056b5419fbaf7de7b3a45e4359902a29abaf64f77f5d9b5 accepted by Jorge in user message Sentinel_d603890ee12081918a9737a721ec4fb8, October 28, 2026. This records copy acceptance only, not formal PR approval. Private keyword research excluded."
+    },
+    "appliedAt": "2026-10-28",
+    "changes": [
+      "added abby-connect-pricing as draft",
+      "added answerfirst-pricing as draft",
+      "added gabbyville-pricing as draft",
+      "added nexa-answering-service as draft",
+      "added phonely-pricing as draft",
+      "added broccoli-ai-pricing as draft",
+      "added posh-virtual-receptionist-reviews as draft"
+    ]
   }
 ]
