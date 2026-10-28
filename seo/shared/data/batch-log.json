@@ -912,5 +912,18 @@
     "changes": [
       "updated ai-receptionist-return-on-investment; back to draft until re-approved"
     ]
+  },
+  {
+    "batchId": "2026-10-28-propane-va-approved-continuation",
+    "batchHash": "sha256:8545867a0db525ed3b9f73ee17d33202d84462f387d30ea9e143711adbb2b1db",
+    "source": {
+      "kind": "manual",
+      "reference": "Explicit approved add-only continuation after 16 pages published October 28. Completed batches and hashes preserved; no guards changed. Jorge exact acceptance Sentinel_8ab2fab4554c8191a4c0d479e3b9b8bb covers these two texts for implementation and testing only."
+    },
+    "appliedAt": "2026-10-28",
+    "changes": [
+      "added propane-answering-service as draft",
+      "added compare/virtual-receptionist-vs-virtual-assistant as draft"
+    ]
   }
 ]
