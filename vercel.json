@@ -1447,6 +1447,11 @@
       "permanent": true
     },
     {
+      "source": "/ai-answering-service/answering-specialists-inc.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answering-specialists-inc",
+      "permanent": true
+    },
+    {
       "source": "/ai-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service",
       "permanent": true
@@ -3244,6 +3249,10 @@
     {
       "source": "/ai-answering-service/zanus-ai-receptionist",
       "destination": "/ai-answering-service/zanus-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/answering-specialists-inc",
+      "destination": "/ai-answering-service/answering-specialists-inc.html"
     },
     {
       "source": "/ai-answering-service",

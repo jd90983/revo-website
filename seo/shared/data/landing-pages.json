@@ -30797,5 +30797,86 @@
       "contentHash": "sha256:8080e55d9cac1c854633a4b9bd2a2fe50e0950434105213e41c64562b6308489",
       "note": "Sentinel_58932ce3d3f0819197a6ad6104ab649a; implementation/testing only; no PR approval"
     }
+  },
+  {
+    "template": "workflow",
+    "pricingVariant": "full",
+    "slug": "answering-specialists-inc",
+    "title": "Answering Specialists Inc.: match tasks to billing units",
+    "description": "Evaluate Answering Specialists for home-service calls: separate the reception package, extra message fields and work billed by minute before choosing.",
+    "navigationLabel": "Answering Specialists Inc.",
+    "eyebrow": "Home-service answering decisions",
+    "lead": "A residential service office considering Answering Specialists Inc. should separate a short message from a longer office task before comparing the offer. A price per answered call does not establish the cost of collecting extra project details, entering a service ticket or arranging an appointment.",
+    "intro": "A residential service office considering Answering Specialists Inc. should separate a short message from a longer office task before comparing the offer. A price per answered call does not establish the cost of collecting extra project details, entering a service ticket or arranging an appointment.",
+    "sections": [
+      {
+        "title": "Confirm the supplier and the service being quoted",
+        "paragraphs": [
+          "The [official Answering Specialists website](https://answeringspecialists.com/) identifies Answering Specialists Inc. and advertises live, US-based reception. Its [services page](https://answeringspecialists.com/services) explicitly includes HVAC, plumbing, electrical and construction businesses among its audiences. Employment listings for answering specialists do not establish the supplier's current purchase terms.\n\nBegin with a fictional ordinary residential inquiry: the caller gives a name, callback number, service address and a description of the work. Ask the supplier to show which parts belong to the selected reception package and which require additional services. Do not infer that a headline answering price covers all office administration."
+        ],
+        "items": []
+      },
+      {
+        "title": "Separate the entry plan from the prepaid-call package",
+        "paragraphs": [
+          "The [pricing page](https://answeringspecialists.com/pricing) lists Lite at $35 per month with 25 calls and name, number and message only. It describes Lite as an exception without add-ons or rollover. The Basic starting package is displayed at $80 with 50 prepaid calls; the page's calculation includes a $25 base fee. Do not add that base fee a second time to the displayed package total.\n\nThose are published starting figures, not a complete quote. The same page distinguishes additional message fields from complex tasks charged by time. It also uses different descriptions of rollover duration. Obtain the applicable account terms rather than resolving those differences in your own forecast."
+        ],
+        "items": []
+      },
+      {
+        "title": "Complete this task-to-charge worksheet",
+        "paragraphs": [
+          "Give the supplier your required outcome in the first column and request its written classification in the second. Leave unknown charges unresolved.\n\n| Required office outcome | Classification to obtain | Evidence needed before buying |\n| --- | --- | --- |\n| Name, number and ordinary message | Selected reception package | Included call definition and any exclusions |\n| Service address and project information | Included message or additional field | Which fields change the charge and when |\n| Customer requests an appointment | Message capture or scheduling work | Whether a time is requested or a booking is confirmed |\n| Office receives a new service ticket | Message delivery or ticket creation | Supported destination, permitted action and charge unit |\n| A caller needs another language | Supported language handling or translation | Applicable arrangement and any separate cost |\n| A quiet period leaves prepaid calls unused | Applicable rollover rule | Expiry date and effect of changing packages |\n| A call exceeds routine intake | Retained office task or separately quoted work | Authorized next step and follow-up owner |\n\nFor example, receiving an email that says “please book Tuesday” is different from entering a confirmed appointment. Ask to see the actual resulting record. Do not price the two outcomes as equivalent simply because both begin with an answered call."
+        ],
+        "items": []
+      },
+      {
+        "title": "Request a worked quote without inventing the total",
+        "paragraphs": [
+          "Use your own expected mix of ordinary messages and supported additional tasks. Ask the supplier to classify a sample call that collects an address and then requests scheduling. Which charges apply, and which do not? If a minimum applies to complex services, confirm whether it is shared across selected tasks or applies separately. The public wording alone does not settle every combination.\n\nKeep the package commitment, usage increments, setup charges and any additional work visible in the written offer. Have the supplier state the rollover expiry date for that account. This worksheet is an evaluation resource, not a prediction of the invoice or a promise of savings.\n\nThe general [answering-service cost guide](/ai-answering-service/answering-service-cost) explains common billing models. Here the decision is narrower: which Answering Specialists task belongs to which quoted unit, and whether that task is necessary for your office."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare Revo using the reception outcome you need",
+        "paragraphs": [
+          "Revo publishes AI answering, business-script intake, supported appointment booking and call summaries. Team transfers depend on the selected plan and supported configuration. Review [current Revo plans](/pricing) against the intake and follow-up your office can retain.\n\nThis guide does not establish that Revo supplies Answering Specialists' human receptionists, live translation, ticket creation or back-office services. If a contracted human or a particular system write is mandatory, verify that requirement directly. Compare demonstrated outcomes and retained work without treating different functions or billing units as interchangeable."
+        ],
+        "items": []
+      },
+      {
+        "title": "Questions before choosing",
+        "paragraphs": [
+          "### Does a per-call headline cover every additional task?\n\nNot by itself. Obtain the classification of each required field and action in the selected offer.\n\n### Is Lite the same workflow as a larger package at a smaller allowance?\n\nDo not assume that. Its published scope and add-on restrictions need to fit the actual information your office requires.\n\n### Can I treat every search result about the company as a customer review?\n\nNo. Employment information and customer purchasing evidence serve different purposes. This guide evaluates public product documents and makes no customer-satisfaction rating.\n\n[Review Revo's current plans](/pricing) with the completed worksheet and compare the supported reception result before choosing."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Compare the supported answering workflow.",
+    "related": [],
+    "sourcePaths": [
+      "https://answeringspecialists.com/",
+      "https://answeringspecialists.com/pricing",
+      "https://answeringspecialists.com/services",
+      "Approved exact public copy SHA256:dd327caf55cef4424645bb512e10e49aeeff16fb366cf9599875b3a8bae2874e"
+    ],
+    "markdownArticle": {
+      "content": "# Answering Specialists Inc.: map each reception task to its billing unit\n\nA residential service office considering Answering Specialists Inc. should separate a short message from a longer office task before comparing the offer. A price per answered call does not establish the cost of collecting extra project details, entering a service ticket or arranging an appointment.\n\nPublished by Revo, a competing AI answering provider. This documentary guide uses Answering Specialists' public pages reviewed October 28, 2026. It is not a customer review, a performance test or a claim that either service completes every task described below.\n\n## Confirm the supplier and the service being quoted\n\nThe [official Answering Specialists website](https://answeringspecialists.com/) identifies Answering Specialists Inc. and advertises live, US-based reception. Its [services page](https://answeringspecialists.com/services) explicitly includes HVAC, plumbing, electrical and construction businesses among its audiences. Employment listings for answering specialists do not establish the supplier's current purchase terms.\n\nBegin with a fictional ordinary residential inquiry: the caller gives a name, callback number, service address and a description of the work. Ask the supplier to show which parts belong to the selected reception package and which require additional services. Do not infer that a headline answering price covers all office administration.\n\n## Separate the entry plan from the prepaid-call package\n\nThe [pricing page](https://answeringspecialists.com/pricing) lists Lite at $35 per month with 25 calls and name, number and message only. It describes Lite as an exception without add-ons or rollover. The Basic starting package is displayed at $80 with 50 prepaid calls; the page's calculation includes a $25 base fee. Do not add that base fee a second time to the displayed package total.\n\nThose are published starting figures, not a complete quote. The same page distinguishes additional message fields from complex tasks charged by time. It also uses different descriptions of rollover duration. Obtain the applicable account terms rather than resolving those differences in your own forecast.\n\n## Complete this task-to-charge worksheet\n\nGive the supplier your required outcome in the first column and request its written classification in the second. Leave unknown charges unresolved.\n\n| Required office outcome | Classification to obtain | Evidence needed before buying |\n| --- | --- | --- |\n| Name, number and ordinary message | Selected reception package | Included call definition and any exclusions |\n| Service address and project information | Included message or additional field | Which fields change the charge and when |\n| Customer requests an appointment | Message capture or scheduling work | Whether a time is requested or a booking is confirmed |\n| Office receives a new service ticket | Message delivery or ticket creation | Supported destination, permitted action and charge unit |\n| A caller needs another language | Supported language handling or translation | Applicable arrangement and any separate cost |\n| A quiet period leaves prepaid calls unused | Applicable rollover rule | Expiry date and effect of changing packages |\n| A call exceeds routine intake | Retained office task or separately quoted work | Authorized next step and follow-up owner |\n\nFor example, receiving an email that says “please book Tuesday” is different from entering a confirmed appointment. Ask to see the actual resulting record. Do not price the two outcomes as equivalent simply because both begin with an answered call.\n\n## Request a worked quote without inventing the total\n\nUse your own expected mix of ordinary messages and supported additional tasks. Ask the supplier to classify a sample call that collects an address and then requests scheduling. Which charges apply, and which do not? If a minimum applies to complex services, confirm whether it is shared across selected tasks or applies separately. The public wording alone does not settle every combination.\n\nKeep the package commitment, usage increments, setup charges and any additional work visible in the written offer. Have the supplier state the rollover expiry date for that account. This worksheet is an evaluation resource, not a prediction of the invoice or a promise of savings.\n\nThe general [answering-service cost guide](/ai-answering-service/answering-service-cost) explains common billing models. Here the decision is narrower: which Answering Specialists task belongs to which quoted unit, and whether that task is necessary for your office.\n\n## Compare Revo using the reception outcome you need\n\nRevo publishes AI answering, business-script intake, supported appointment booking and call summaries. Team transfers depend on the selected plan and supported configuration. Review [current Revo plans](/pricing) against the intake and follow-up your office can retain.\n\nThis guide does not establish that Revo supplies Answering Specialists' human receptionists, live translation, ticket creation or back-office services. If a contracted human or a particular system write is mandatory, verify that requirement directly. Compare demonstrated outcomes and retained work without treating different functions or billing units as interchangeable.\n\n## Questions before choosing\n\n### Does a per-call headline cover every additional task?\n\nNot by itself. Obtain the classification of each required field and action in the selected offer.\n\n### Is Lite the same workflow as a larger package at a smaller allowance?\n\nDo not assume that. Its published scope and add-on restrictions need to fit the actual information your office requires.\n\n### Can I treat every search result about the company as a customer review?\n\nNo. Employment information and customer purchasing evidence serve different purposes. This guide evaluates public product documents and makes no customer-satisfaction rating.\n\n[Review Revo's current plans](/pricing) with the completed worksheet and compare the supported reception result before choosing.\n",
+      "sha256": "dd327caf55cef4424645bb512e10e49aeeff16fb366cf9599875b3a8bae2874e",
+      "assets": []
+    },
+    "editorialDate": "2026-10-28",
+    "source": {
+      "kind": "manual",
+      "reference": "Copy created October 28, 2026 America/Tijuana. Jorge accepted the exact Answering Specialists text for implementation/testing in Sentinel_76295401cc5481918dcca2497d0c620e at 2026-10-28 21:58:14 UTC, directly answering grouped request Sentinel_e765c14be0f88191b5571e99e00b4641. Approved PDF libfile_b3ae5ba0c7b48191aa74ca349a3df453 v0; exact public body SHA256 dd327caf55cef4424645bb512e10e49aeeff16fb366cf9599875b3a8bae2874e. Acceptance is reported by parent, not performed by Codex. Specific authorization for this future PR integration/publication remains required. Add-only immutable continuation after24 published pages; no guards changed."
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge — exact editorial acceptance reported by parent",
+      "reviewedAt": "2026-10-28",
+      "contentHash": "sha256:7d43ff9c7f75bacf4645dfcac868acd7046a3622c7524e87fd0919d5687c6d90",
+      "note": "Sentinel_76295401cc5481918dcca2497d0c620e: implementation/testing acceptance; specific future PR integration pending"
+    }
   }
 ]
