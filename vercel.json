@@ -1362,6 +1362,41 @@
       "permanent": true
     },
     {
+      "source": "/ai-answering-service/dialzara-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/dialzara-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/bookipi-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/bookipi-ai-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/zyratalk-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/zyratalk-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/unlimited-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/unlimited-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/interior-design-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/interior-design-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/residential-architect-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/residential-architect-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/flooring-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/flooring-answering-service",
+      "permanent": true
+    },
+    {
       "source": "/ai-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service",
       "permanent": true
@@ -3091,6 +3126,34 @@
     {
       "source": "/ai-answering-service/posh-virtual-receptionist-reviews",
       "destination": "/ai-answering-service/posh-virtual-receptionist-reviews.html"
+    },
+    {
+      "source": "/ai-answering-service/dialzara-pricing",
+      "destination": "/ai-answering-service/dialzara-pricing.html"
+    },
+    {
+      "source": "/ai-answering-service/bookipi-ai-receptionist",
+      "destination": "/ai-answering-service/bookipi-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/zyratalk-pricing",
+      "destination": "/ai-answering-service/zyratalk-pricing.html"
+    },
+    {
+      "source": "/ai-answering-service/unlimited-answering-service",
+      "destination": "/ai-answering-service/unlimited-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/interior-design-receptionist",
+      "destination": "/ai-answering-service/interior-design-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/residential-architect-receptionist",
+      "destination": "/ai-answering-service/residential-architect-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/flooring-answering-service",
+      "destination": "/ai-answering-service/flooring-answering-service.html"
     },
     {
       "source": "/ai-answering-service",

@@ -1,0 +1,588 @@
+{
+  "batchId": "2026-10-28-revenue-first-approved-supplement",
+  "copyAcceptedBy": "Jorge",
+  "userMessage": "Sentinel_b80f492bd3d4819187018ce1d27e6d05",
+  "acceptedAtUTC": "2026-10-28T18:01:33Z",
+  "actualCreationDateLocal": "2026-10-28",
+  "timezone": "America/Tijuana",
+  "PRPublicationApproval": "pending specific confirmation on the resulting PR",
+  "records": [
+    {
+      "template": "workflow",
+      "pricingVariant": "full",
+      "slug": "dialzara-pricing",
+      "title": "Dialzara pricing: choose the handoff and setup model",
+      "description": "Review Dialzara’s inbound plans by talk minutes, warm-transfer requirements and prompt ownership. Keep initial setup distinct from ongoing management.",
+      "navigationLabel": "dialzara pricing",
+      "eyebrow": "Home-service answering decisions",
+      "lead": "Published by Revo, a competing AI receptionist provider. This documentary buying guide uses official information checked October 28, 2026. We have not tested these products or measured their service quality.",
+      "intro": "Published by Revo, a competing AI receptionist provider. This documentary buying guide uses official information checked October 28, 2026. We have not tested these products or measured their service quality.",
+      "sections": [
+        {
+          "title": "Read the inbound price ladder first",
+          "paragraphs": [
+            "On October 28, 2026, Dialzara’s official inbound pricing showed Business Lite at $29 for 60 talk minutes, Pro at $99 for 220, Plus at $199 for 500, and Elite at $349 for 1,000. Published overage rates were $0.48, $0.45, $0.40 and $0.35 per minute respectively. These are dated listed rates, not a custom quote. [Dialzara pricing](https://dialzara.com/pricing)\n\nKeep a second column for required functions. A plan with enough minutes can still be unsuitable if the call must follow a handoff that the plan does not include. Identify which requests should end in a message, which may become a confirmed booking and which need your team’s decision."
+          ],
+          "items": []
+        },
+        {
+          "title": "Choose a transfer path before estimating the bill",
+          "paragraphs": [
+            "The published table includes blind transfers across the inbound plans and warm transfers from Pro upward. It also places after-hours rules, English/Spanish support and Google/Outlook calendar sync on Pro and higher. Confirm the exact behavior in your proposed setup rather than treating all transfers or calendar labels as interchangeable.\n\nOriginal scenario: a homeowner describes a new repair request, then asks to speak with the office about an unresolved prior visit. Write down what information your employee needs before accepting the handoff. Define the result when the recipient is unavailable: record a callback request, use another authorized destination or follow a different approved instruction. A transferred call is not evidence that someone accepted the work."
+          ],
+          "items": []
+        },
+        {
+          "title": "Assign prompt ownership after launch",
+          "paragraphs": [
+            "Lite, Pro and Plus list self-editable prompts. Elite lists initial prompt setup, while the separately quoted Done for You offer lists ongoing prompt work. Initial setup and continuing maintenance are different purchases; ask what each arrangement actually covers.\n\nUse this original ownership card. It should remain usable when the employee who first configured the service is absent.\n\n- Business owner: approves service area, job types, hours and commercial boundaries.\n- Instruction editor: makes an authorized change and records which version is active.\n- Test reviewer: checks the revised instruction with fictional requests before normal use.\n- Handoff owner: maintains the destination and its unavailable-recipient fallback.\n- Exception owner: reviews an unresolved answer and decides whether to change the script.\n- Provider responsibility: identifies which setup or ongoing tasks are included in the written proposal."
+          ],
+          "items": []
+        },
+        {
+          "title": "Use minutes without inventing a rounding rule",
+          "paragraphs": [
+            "An original Pro illustration uses 250 billable talk minutes in a month: $99 + (30 × $0.45) = $112.50 before any other applicable charge. This assumes the supplier’s actual billing record establishes those 250 minutes under the proposed terms. It does not estimate call duration from a job count or assume how partial minutes are rounded.\n\nPrepare an ordinary period and a busy period from your office’s own observations. Preserve call count, duration and unresolved handoffs separately. More minutes do not establish more qualified inquiries, and a smaller bill does not establish a better customer result."
+          ],
+          "items": []
+        },
+        {
+          "title": "Keep connections and add-ons within their stated scope",
+          "paragraphs": [
+            "Dialzara describes third-party connections through Zapier/Make, with different levels by plan. Do not turn that label into a claim of native support for a particular field-service system. Ask what record moves, what triggers the action, who owns the connection and how an error reaches a person.\n\nOutbound voice, AI SMS and website chat have separate commercial arrangements. Budget only the channels you intend to buy and confirm their own units and charges. A bundled notification after an incoming call is not the same purchase as an AI agent conducting an SMS conversation. This guide does not add those services to an inbound quote automatically."
+          ],
+          "items": []
+        },
+        {
+          "title": "Compare the supported answering task with Revo",
+          "paragraphs": [
+            "Revo’s current offer describes AI inbound answering, the business’s own script and rules, appointment booking and summaries. Eligible plans include transfers to the customer’s own team. This does not establish a staffed live-agent service, a particular warm-transfer implementation or a named native software integration. [Revo plans](/pricing)\n\nUse the same request and unavailable-recipient case when evaluating the two proposals. Inspect who receives the information and who changes the instructions after a mistake. Choose a documented workflow with an owner, then compare its applicable billing units. Neither a price table nor this article demonstrates service quality, savings or a guarantee that every request becomes a booked job."
+          ],
+          "items": []
+        },
+        {
+          "title": "Questions",
+          "paragraphs": [
+            "### Does Elite’s initial prompt setup mean someone maintains every later change?\n\nDo not assume that. Initial configuration and ongoing management have different descriptions; obtain the proposed responsibility split.\n\n### Can I compare two plans solely by included minutes?\n\nNo. Confirm the transfer, language, scheduling and maintenance requirements first, then compare the documented usage costs.\n\nCompare Revo’s current plans for the inbound work your business needs. Confirm the supported script, booking rules and handoff before changing your phone route.\n\n[Compare Revo plans](/pricing)"
+          ],
+          "items": []
+        }
+      ],
+      "faqs": [],
+      "takeaway": "Compare the supported answering workflow.",
+      "related": [],
+      "sourcePaths": [
+        "https://dialzara.com/pricing",
+        "Approved public copy SHA256:210c63a472ee2e2e98d1ddd5a45f102cb8c9e01837d140044c5071dcd65f6ddf"
+      ],
+      "markdownArticle": {
+        "content": "# Dialzara pricing: choose the handoff and setup model\n\nPublished by Revo, a competing AI receptionist provider. This documentary buying guide uses official information checked October 28, 2026. We have not tested these products or measured their service quality.\n\nDialzara’s monthly price is only part of the purchase. A home-service office also needs to decide who maintains the AI’s instructions and what happens when a caller needs a person. Compare those responsibilities before choosing a plan from the minute allowance alone.\n\n## Read the inbound price ladder first\n\nOn October 28, 2026, Dialzara’s official inbound pricing showed Business Lite at $29 for 60 talk minutes, Pro at $99 for 220, Plus at $199 for 500, and Elite at $349 for 1,000. Published overage rates were $0.48, $0.45, $0.40 and $0.35 per minute respectively. These are dated listed rates, not a custom quote. [Dialzara pricing](https://dialzara.com/pricing)\n\nKeep a second column for required functions. A plan with enough minutes can still be unsuitable if the call must follow a handoff that the plan does not include. Identify which requests should end in a message, which may become a confirmed booking and which need your team’s decision.\n\n## Choose a transfer path before estimating the bill\n\nThe published table includes blind transfers across the inbound plans and warm transfers from Pro upward. It also places after-hours rules, English/Spanish support and Google/Outlook calendar sync on Pro and higher. Confirm the exact behavior in your proposed setup rather than treating all transfers or calendar labels as interchangeable.\n\nOriginal scenario: a homeowner describes a new repair request, then asks to speak with the office about an unresolved prior visit. Write down what information your employee needs before accepting the handoff. Define the result when the recipient is unavailable: record a callback request, use another authorized destination or follow a different approved instruction. A transferred call is not evidence that someone accepted the work.\n\n## Assign prompt ownership after launch\n\nLite, Pro and Plus list self-editable prompts. Elite lists initial prompt setup, while the separately quoted Done for You offer lists ongoing prompt work. Initial setup and continuing maintenance are different purchases; ask what each arrangement actually covers.\n\nUse this original ownership card. It should remain usable when the employee who first configured the service is absent.\n\n- Business owner: approves service area, job types, hours and commercial boundaries.\n- Instruction editor: makes an authorized change and records which version is active.\n- Test reviewer: checks the revised instruction with fictional requests before normal use.\n- Handoff owner: maintains the destination and its unavailable-recipient fallback.\n- Exception owner: reviews an unresolved answer and decides whether to change the script.\n- Provider responsibility: identifies which setup or ongoing tasks are included in the written proposal.\n\n## Use minutes without inventing a rounding rule\n\nAn original Pro illustration uses 250 billable talk minutes in a month: $99 + (30 × $0.45) = $112.50 before any other applicable charge. This assumes the supplier’s actual billing record establishes those 250 minutes under the proposed terms. It does not estimate call duration from a job count or assume how partial minutes are rounded.\n\nPrepare an ordinary period and a busy period from your office’s own observations. Preserve call count, duration and unresolved handoffs separately. More minutes do not establish more qualified inquiries, and a smaller bill does not establish a better customer result.\n\n## Keep connections and add-ons within their stated scope\n\nDialzara describes third-party connections through Zapier/Make, with different levels by plan. Do not turn that label into a claim of native support for a particular field-service system. Ask what record moves, what triggers the action, who owns the connection and how an error reaches a person.\n\nOutbound voice, AI SMS and website chat have separate commercial arrangements. Budget only the channels you intend to buy and confirm their own units and charges. A bundled notification after an incoming call is not the same purchase as an AI agent conducting an SMS conversation. This guide does not add those services to an inbound quote automatically.\n\n## Compare the supported answering task with Revo\n\nRevo’s current offer describes AI inbound answering, the business’s own script and rules, appointment booking and summaries. Eligible plans include transfers to the customer’s own team. This does not establish a staffed live-agent service, a particular warm-transfer implementation or a named native software integration. [Revo plans](/pricing)\n\nUse the same request and unavailable-recipient case when evaluating the two proposals. Inspect who receives the information and who changes the instructions after a mistake. Choose a documented workflow with an owner, then compare its applicable billing units. Neither a price table nor this article demonstrates service quality, savings or a guarantee that every request becomes a booked job.\n\n## Questions\n\n### Does Elite’s initial prompt setup mean someone maintains every later change?\n\nDo not assume that. Initial configuration and ongoing management have different descriptions; obtain the proposed responsibility split.\n\n### Can I compare two plans solely by included minutes?\n\nNo. Confirm the transfer, language, scheduling and maintenance requirements first, then compare the documented usage costs.\n\nCompare Revo’s current plans for the inbound work your business needs. Confirm the supported script, booking rules and handoff before changing your phone route.\n\n[Compare Revo plans](/pricing)",
+        "sha256": "bd0d6807dc7dfe1abda43e59214d0b26cdaf79d5bccb968f6169658eba669578",
+        "assets": []
+      },
+      "editorialDate": "2026-10-28",
+      "source": {
+        "kind": "manual",
+        "reference": "Original copy created October 28, 2026, America/Tijuana. Exact copy accepted by Jorge in user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC), responding to the specific seven-text approval request. Source package SHA256 a33873c8fd924d14749798a48757229babb3ee92eec6b6c6543cf825cbba9db1. Copy acceptance permits implementation and technical review, not approval of the future PR. Extension of the October 28 revenue-first cohort; private research excluded."
+      },
+      "publicationStatus": "approved",
+      "review": {
+        "reviewer": "Jorge — exact seven-text acceptance, user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC)",
+        "reviewedAt": "2026-10-28",
+        "contentHash": "sha256:e3978837e3941b74896e060ab3de7d4697d4dbdd13ba1423939635efa4c4fd97"
+      }
+    },
+    {
+      "template": "workflow",
+      "pricingVariant": "full",
+      "slug": "bookipi-ai-receptionist",
+      "title": "Bookipi AI Receptionist: check the add-on and call units",
+      "description": "Evaluate Bookipi AI Receptionist separately from its suite plans. Check the published price discrepancy, incoming-call units and scheduling workflow.",
+      "navigationLabel": "bookipi ai receptionist",
+      "eyebrow": "Home-service answering decisions",
+      "lead": "Published by Revo, a competing AI receptionist provider. This documentary buying guide uses official information checked October 28, 2026. We have not tested these products or measured their service quality.",
+      "intro": "Published by Revo, a competing AI receptionist provider. This documentary buying guide uses official information checked October 28, 2026. We have not tested these products or measured their service quality.",
+      "sections": [
+        {
+          "title": "Separate the receptionist from the suite subscription",
+          "paragraphs": [
+            "Bookipi’s pricing page lists AI Receptionist under add-ons, apart from Free, Starter and Professional. It shows US$199 per month, no yearly plan, and availability in the United States, United Kingdom and Australia. A suite plan’s document allowance does not establish an included receptionist subscription. [Bookipi pricing](https://bookipi.com/pricing/)\n\nBuild a short purchase list for the jobs you intend the software to do. Put incoming answering, invoicing, website tools and other proposed products on separate lines. Mark a requirement included only when the applicable subscription explicitly establishes it. A shared brand or login is not proof that every paid feature comes together."
+          ],
+          "items": []
+        },
+        {
+          "title": "Keep the published price discrepancy visible",
+          "paragraphs": [
+            "The separate receptionist FAQ states US$199.99 per month and 500 incoming calls, while the pricing card states US$199. The two figures were both visible in official sources reviewed October 28, 2026. Preserve that discrepancy and ask Bookipi to confirm the applicable current amount, currency and charges before committing. Do not silently substitute one figure for the other. [Bookipi AI Receptionist FAQ](https://bookipi.com/guides/bookipi-ai-receptionist-faqs/)\n\nA discrepancy log only needs a source link, observation date, conflicting statement and written answer. Keep the answer with the quote so the office can explain the assumption used in its budget. This guide is not a checkout quote and supplies no conclusion about which page takes precedence."
+          ],
+          "items": []
+        },
+        {
+          "title": "Request a call-unit example before budgeting by calls",
+          "paragraphs": [
+            "The FAQ describes calls from 15 seconds to 4 minutes as one unit and calls below 15 seconds as not counted. Its longer-call wording refers both to additional minutes and to four-minute increments. Those descriptions do not provide a sufficiently clear basis for an independent long-call calculation.\n\nUse this original request: “Please show how a ten-second, two-minute, five-minute and eight-minute incoming call affects our allowance. State the treatment at the exact time boundaries and after the allowance is used. Please distinguish a physical call from the usage units charged.”\n\nRecord the returned calculation beside each duration. Do not assume 500 physical calls always mean 500 billable units. A repeat caller also remains a repeat contact, not another customer or job. Keep the usage reconciliation and customer-outcome records separate."
+          ],
+          "items": []
+        },
+        {
+          "title": "Check whether scheduling is enabled or details are recorded",
+          "paragraphs": [
+            "The FAQ distinguishes enabled scheduling, which adds appointments to Bookipi Scheduler, from disabled scheduling, which records appointment details without scheduling them. Confirm the intended setting and resulting record; a conversation about a possible time is not by itself a confirmed visit.\n\nThe official product page describes a dashboard with call information and a path for messages requiring follow-up. Use that as a demonstration target rather than proof that any proposed workflow has been tested. [Bookipi AI Receptionist](https://bookipi.com/ai-receptionist/)\n\nOriginal fictional case: a homeowner requests a visit but then changes the service location. Ask where the corrected address appears and whether an appointment remains requested or confirmed. Have the office identify the authoritative record and the person who must resolve any mismatch before a crew is committed."
+          ],
+          "items": []
+        },
+        {
+          "title": "Run a small operational decision worksheet",
+          "paragraphs": [
+            "Complete the following original worksheet with verified answers before changing your business number’s route. Unknown is a useful status; it should not become an assumed feature.\n\n- Purchase: receptionist subscription, selected region, confirmed price and separate suite products required.\n- Metering: short-call boundary, long-call examples, allowance reset and treatment after allowance exhaustion.\n- Call handling: approved service scope, questions, business hours and instructions for unsupported requests.\n- Scheduling: enabled or disabled, appointment types and where the confirmed record is found.\n- Office work: who checks messages, corrects business information and acts on unresolved requests.\n- Acceptance: written answers, proposed test case and the authorized person deciding whether the workflow is ready."
+          ],
+          "items": []
+        },
+        {
+          "title": "Compare only the Revo function you actually need",
+          "paragraphs": [
+            "Revo’s current pricing describes AI answering, own-script rules, booking and summaries. Transfers to the customer’s own team are listed on eligible plans. Those descriptions do not establish a Bookipi connection, equivalent suite tools or an identical call-unit model. [Revo plans](/pricing)\n\nCompare the request the office receives, the appointment evidence and the work still requiring a person. Then compare the applicable subscription and metering rules. A larger published call allowance cannot establish lower cost until its unit definition is clear. This guide claims no hands-on reliability result, star rating or guaranteed customer outcome."
+          ],
+          "items": []
+        },
+        {
+          "title": "Questions",
+          "paragraphs": [
+            "### Is Bookipi AI Receptionist included because the suite has a free plan?\n\nNo. The pricing page presents the receptionist as an add-on. Confirm its subscription separately from document and other suite features.\n\n### Should I budget $199 or $199.99?\n\nKeep both dated published figures visible and obtain Bookipi’s current written confirmation rather than treating this article as a quote.\n\nCompare Revo’s current plans for the inbound work your business needs. Confirm the supported script, booking rules and handoff before changing your phone route.\n\n[Compare Revo plans](/pricing)"
+          ],
+          "items": []
+        }
+      ],
+      "faqs": [],
+      "takeaway": "Compare the supported answering workflow.",
+      "related": [],
+      "sourcePaths": [
+        "https://bookipi.com/pricing/",
+        "https://bookipi.com/guides/bookipi-ai-receptionist-faqs/",
+        "https://bookipi.com/ai-receptionist/",
+        "Approved public copy SHA256:593c1b4d4adf3640798224779a74df67cf4a80c2764e178fd1737e4cad7f92c4"
+      ],
+      "markdownArticle": {
+        "content": "# Bookipi AI Receptionist: check the add-on and call units\n\nPublished by Revo, a competing AI receptionist provider. This documentary buying guide uses official information checked October 28, 2026. We have not tested these products or measured their service quality.\n\nBookipi combines several business tools under one brand. Its AI Receptionist has its own subscription and usage questions. Before comparing it with another answering service, establish which add-on you are buying, how the supplier counts a handled call and where an appointment or unresolved request actually goes.\n\n## Separate the receptionist from the suite subscription\n\nBookipi’s pricing page lists AI Receptionist under add-ons, apart from Free, Starter and Professional. It shows US$199 per month, no yearly plan, and availability in the United States, United Kingdom and Australia. A suite plan’s document allowance does not establish an included receptionist subscription. [Bookipi pricing](https://bookipi.com/pricing/)\n\nBuild a short purchase list for the jobs you intend the software to do. Put incoming answering, invoicing, website tools and other proposed products on separate lines. Mark a requirement included only when the applicable subscription explicitly establishes it. A shared brand or login is not proof that every paid feature comes together.\n\n## Keep the published price discrepancy visible\n\nThe separate receptionist FAQ states US$199.99 per month and 500 incoming calls, while the pricing card states US$199. The two figures were both visible in official sources reviewed October 28, 2026. Preserve that discrepancy and ask Bookipi to confirm the applicable current amount, currency and charges before committing. Do not silently substitute one figure for the other. [Bookipi AI Receptionist FAQ](https://bookipi.com/guides/bookipi-ai-receptionist-faqs/)\n\nA discrepancy log only needs a source link, observation date, conflicting statement and written answer. Keep the answer with the quote so the office can explain the assumption used in its budget. This guide is not a checkout quote and supplies no conclusion about which page takes precedence.\n\n## Request a call-unit example before budgeting by calls\n\nThe FAQ describes calls from 15 seconds to 4 minutes as one unit and calls below 15 seconds as not counted. Its longer-call wording refers both to additional minutes and to four-minute increments. Those descriptions do not provide a sufficiently clear basis for an independent long-call calculation.\n\nUse this original request: “Please show how a ten-second, two-minute, five-minute and eight-minute incoming call affects our allowance. State the treatment at the exact time boundaries and after the allowance is used. Please distinguish a physical call from the usage units charged.”\n\nRecord the returned calculation beside each duration. Do not assume 500 physical calls always mean 500 billable units. A repeat caller also remains a repeat contact, not another customer or job. Keep the usage reconciliation and customer-outcome records separate.\n\n## Check whether scheduling is enabled or details are recorded\n\nThe FAQ distinguishes enabled scheduling, which adds appointments to Bookipi Scheduler, from disabled scheduling, which records appointment details without scheduling them. Confirm the intended setting and resulting record; a conversation about a possible time is not by itself a confirmed visit.\n\nThe official product page describes a dashboard with call information and a path for messages requiring follow-up. Use that as a demonstration target rather than proof that any proposed workflow has been tested. [Bookipi AI Receptionist](https://bookipi.com/ai-receptionist/)\n\nOriginal fictional case: a homeowner requests a visit but then changes the service location. Ask where the corrected address appears and whether an appointment remains requested or confirmed. Have the office identify the authoritative record and the person who must resolve any mismatch before a crew is committed.\n\n## Run a small operational decision worksheet\n\nComplete the following original worksheet with verified answers before changing your business number’s route. Unknown is a useful status; it should not become an assumed feature.\n\n- Purchase: receptionist subscription, selected region, confirmed price and separate suite products required.\n- Metering: short-call boundary, long-call examples, allowance reset and treatment after allowance exhaustion.\n- Call handling: approved service scope, questions, business hours and instructions for unsupported requests.\n- Scheduling: enabled or disabled, appointment types and where the confirmed record is found.\n- Office work: who checks messages, corrects business information and acts on unresolved requests.\n- Acceptance: written answers, proposed test case and the authorized person deciding whether the workflow is ready.\n\n## Compare only the Revo function you actually need\n\nRevo’s current pricing describes AI answering, own-script rules, booking and summaries. Transfers to the customer’s own team are listed on eligible plans. Those descriptions do not establish a Bookipi connection, equivalent suite tools or an identical call-unit model. [Revo plans](/pricing)\n\nCompare the request the office receives, the appointment evidence and the work still requiring a person. Then compare the applicable subscription and metering rules. A larger published call allowance cannot establish lower cost until its unit definition is clear. This guide claims no hands-on reliability result, star rating or guaranteed customer outcome.\n\n## Questions\n\n### Is Bookipi AI Receptionist included because the suite has a free plan?\n\nNo. The pricing page presents the receptionist as an add-on. Confirm its subscription separately from document and other suite features.\n\n### Should I budget $199 or $199.99?\n\nKeep both dated published figures visible and obtain Bookipi’s current written confirmation rather than treating this article as a quote.\n\nCompare Revo’s current plans for the inbound work your business needs. Confirm the supported script, booking rules and handoff before changing your phone route.\n\n[Compare Revo plans](/pricing)",
+        "sha256": "00ce9fb1f791a7f5cb88a30c5e3de74eac6c00c3b2bafbd1618ccafc0d149ba2",
+        "assets": []
+      },
+      "editorialDate": "2026-10-28",
+      "source": {
+        "kind": "manual",
+        "reference": "Original copy created October 28, 2026, America/Tijuana. Exact copy accepted by Jorge in user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC), responding to the specific seven-text approval request. Source package SHA256 a33873c8fd924d14749798a48757229babb3ee92eec6b6c6543cf825cbba9db1. Copy acceptance permits implementation and technical review, not approval of the future PR. Extension of the October 28 revenue-first cohort; private research excluded."
+      },
+      "publicationStatus": "approved",
+      "review": {
+        "reviewer": "Jorge — exact seven-text acceptance, user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC)",
+        "reviewedAt": "2026-10-28",
+        "contentHash": "sha256:74ea82e95697a57e6bcd62a2a49dd922e10dd301534b07fc27d5d3d54972a57b"
+      }
+    },
+    {
+      "template": "workflow",
+      "pricingVariant": "full",
+      "slug": "zyratalk-pricing",
+      "title": "ZyraTalk pricing: define the quote and setup route",
+      "description": "ZyraTalk uses custom pricing. Separate your inbound answering needs from chat, outbound modules and the Invoice Simple setup route before comparing quotes.",
+      "navigationLabel": "zyratalk pricing",
+      "eyebrow": "Home-service answering decisions",
+      "lead": "ZyraTalk’s current FAQ says pricing is customized to the business; it does not publish a numerical rate there. For a home-service buyer, the useful next step is to define which communication tasks and setup route the quote covers. Revo, a competing AI answering provider, reviewed the official sources on October 28, 2026. We did not test ZyraTalk or obtain a private quote.",
+      "intro": "ZyraTalk’s current FAQ says pricing is customized to the business; it does not publish a numerical rate there. For a home-service buyer, the useful next step is to define which communication tasks and setup route the quote covers. Revo, a competing AI answering provider, reviewed the official sources on October 28, 2026. We did not test ZyraTalk or obtain a private quote.",
+      "sections": [
+        {
+          "title": "Start with the purchase you actually need",
+          "paragraphs": [
+            "ZyraTalk by EverPro presents a platform spanning inbound AI calls, webchat, outbound calling and outbound SMS. Its website also describes connections to field-service and CRM software. Those descriptions make it worth asking about a broader communications workflow, not treating the product as only a telephone greeting.\n\nDo not turn the feature list into an assumption that every function is included in one price. Ask which tasks are available in the proposal, how usage is measured, who configures them and what remains outside scope. A demo request is not a price commitment, and an older third-party starting price is not a substitute for the current offer."
+          ],
+          "items": []
+        },
+        {
+          "title": "Clarify the Invoice Simple route before comparing offers",
+          "paragraphs": [
+            "Invoice Simple’s official help article documents an AI Receptionist entry under Tools. Its setup collects business details and then directs the user to the ZyraTalk platform to configure the assistant. The article describes answering client calls, appointment-related help and basic business questions.\n\nThat establishes a documented entry point, not the complete commercial agreement. If you already use Invoice Simple, ask whether your proposed service is purchased through that route or separately. Confirm account ownership, the billing party, which subscription is required and which support team owns an issue after the handoff. The setup article does not establish a price or prove that every capability on ZyraTalk’s main website is included."
+          ],
+          "items": []
+        },
+        {
+          "title": "Take this scope sheet into the quote conversation",
+          "paragraphs": [
+            "Use the same sheet for each offer you receive. Mark an item unnecessary when it is outside your first purchase rather than allowing it to disappear inside a broad platform description.\n\n| Quote item | Decision to document |\n| --- | --- |\n| Inbound phone coverage | Number, answering periods, permitted intake and booking actions |\n| Webchat | Whether required, where deployed and who receives exceptions |\n| Outbound phone and SMS | Whether requested at all; specific tasks and operating ownership |\n| Software connection | Exact product/account, fields, direction and booking authority |\n| Usage and charges | Billable unit, allowance if any, excess usage and other applicable charges |\n| Account and support | Purchase route, billing party, configuration owner and exit process |"
+          ],
+          "items": []
+        },
+        {
+          "title": "Try a fictional buyer case without inventing a price",
+          "paragraphs": [
+            "Consider a fictional HVAC office that uses Invoice Simple and initially wants evening calls answered, service details captured and appointment requests handled under its rules. The office does not need outbound campaigns or webchat in this first stage.\n\nThe buyer asks whether ZyraTalk can quote that defined scope through the documented Invoice Simple route, then requests the corresponding account and support terms. If an offer includes more functions, the office asks which are optional, which are part of the package and how the total would change under the provider’s actual commercial rules.\n\nNo dollar total can be responsibly calculated from that case without the quote. Nor does the example establish that modules can be purchased separately. Its purpose is to prevent an inbound requirement from being compared with an unexplained multi-channel package."
+          ],
+          "items": []
+        },
+        {
+          "title": "Require evidence at the booking and exception boundary",
+          "paragraphs": [
+            "For a demonstration, supply fictional requests and write the expected result first. Ask the provider to show an ordinary inquiry, a requested time that is unavailable and a customer asking to change existing work. Inspect the resulting record and which person owns the next action.\n\nIf a software connection is proposed, distinguish a captured time preference from a confirmed appointment in the authoritative schedule. Ask what happens when the destination cannot accept an update. These are suggested checks, not tests we performed, and they do not authorize messages, campaigns or changes to a live customer account."
+          ],
+          "items": []
+        },
+        {
+          "title": "Compare Revo on the same inbound requirement",
+          "paragraphs": [
+            "Revo’s Pricing page describes AI answering plans with the business’s script and rules, booking and SMS follow-up; transfers to the customer’s team are listed for Crew and Fleet. Use that published scope as a separate comparison line.\n\nDo not infer a Revo connection to Invoice Simple or another named field-service platform, an outsourced human answering network or outbound phone campaigns. If the main requirement is a wider communications ecosystem, evaluate that scope directly with the supplier. If the need is inbound coverage, compare the supported handling, capacity, handoff and written charges for that specific task."
+          ],
+          "items": []
+        },
+        {
+          "title": "Questions",
+          "paragraphs": [
+            "### What is ZyraTalk’s current starting price?\n\nThe reviewed official FAQ gives custom pricing rather than a numerical starting rate. Request the offer for your business and retain its scope and billing assumptions.\n\n### Does the Invoice Simple setup article establish what I will pay?\n\nNo. It documents a setup path into ZyraTalk, not the complete price, required subscription or inclusion of every advertised module.\n\n### Is Revo presented here as an equivalent multi-channel package?\n\nNo. This comparison keeps the documented inbound requirement separate from any broader platform purchase and does not claim identical functions or integrations.\n\n[Review Revo’s current answering plans](/pricing)"
+          ],
+          "items": []
+        }
+      ],
+      "faqs": [],
+      "takeaway": "Compare the supported answering workflow.",
+      "related": [],
+      "sourcePaths": [
+        "https://www.zyratalk.com/",
+        "https://help.invoicesimple.com/en/articles/15696405-how-do-i-set-up-an-ai-receptionist-with-zyratalk",
+        "https://help.invoicesimple.com/en/collections/19676195-ai-receptionist-with-zyratalk",
+        "https://www.revoapp.ai/pricing",
+        "Approved public copy SHA256:112b21193f42907cb97c318263f0df9e3ac7b284d431e0b3e94d3f6cc03231e7"
+      ],
+      "markdownArticle": {
+        "content": "# ZyraTalk pricing: define the quote and setup route\n\nZyraTalk’s current FAQ says pricing is customized to the business; it does not publish a numerical rate there. For a home-service buyer, the useful next step is to define which communication tasks and setup route the quote covers. Revo, a competing AI answering provider, reviewed the official sources on October 28, 2026. We did not test ZyraTalk or obtain a private quote.\n\n## Start with the purchase you actually need\n\nZyraTalk by EverPro presents a platform spanning inbound AI calls, webchat, outbound calling and outbound SMS. Its website also describes connections to field-service and CRM software. Those descriptions make it worth asking about a broader communications workflow, not treating the product as only a telephone greeting.\n\nDo not turn the feature list into an assumption that every function is included in one price. Ask which tasks are available in the proposal, how usage is measured, who configures them and what remains outside scope. A demo request is not a price commitment, and an older third-party starting price is not a substitute for the current offer.\n\n## Clarify the Invoice Simple route before comparing offers\n\nInvoice Simple’s official help article documents an AI Receptionist entry under Tools. Its setup collects business details and then directs the user to the ZyraTalk platform to configure the assistant. The article describes answering client calls, appointment-related help and basic business questions.\n\nThat establishes a documented entry point, not the complete commercial agreement. If you already use Invoice Simple, ask whether your proposed service is purchased through that route or separately. Confirm account ownership, the billing party, which subscription is required and which support team owns an issue after the handoff. The setup article does not establish a price or prove that every capability on ZyraTalk’s main website is included.\n\n## Take this scope sheet into the quote conversation\n\nUse the same sheet for each offer you receive. Mark an item unnecessary when it is outside your first purchase rather than allowing it to disappear inside a broad platform description.\n\n| Quote item | Decision to document |\n| --- | --- |\n| Inbound phone coverage | Number, answering periods, permitted intake and booking actions |\n| Webchat | Whether required, where deployed and who receives exceptions |\n| Outbound phone and SMS | Whether requested at all; specific tasks and operating ownership |\n| Software connection | Exact product/account, fields, direction and booking authority |\n| Usage and charges | Billable unit, allowance if any, excess usage and other applicable charges |\n| Account and support | Purchase route, billing party, configuration owner and exit process |\n\n## Try a fictional buyer case without inventing a price\n\nConsider a fictional HVAC office that uses Invoice Simple and initially wants evening calls answered, service details captured and appointment requests handled under its rules. The office does not need outbound campaigns or webchat in this first stage.\n\nThe buyer asks whether ZyraTalk can quote that defined scope through the documented Invoice Simple route, then requests the corresponding account and support terms. If an offer includes more functions, the office asks which are optional, which are part of the package and how the total would change under the provider’s actual commercial rules.\n\nNo dollar total can be responsibly calculated from that case without the quote. Nor does the example establish that modules can be purchased separately. Its purpose is to prevent an inbound requirement from being compared with an unexplained multi-channel package.\n\n## Require evidence at the booking and exception boundary\n\nFor a demonstration, supply fictional requests and write the expected result first. Ask the provider to show an ordinary inquiry, a requested time that is unavailable and a customer asking to change existing work. Inspect the resulting record and which person owns the next action.\n\nIf a software connection is proposed, distinguish a captured time preference from a confirmed appointment in the authoritative schedule. Ask what happens when the destination cannot accept an update. These are suggested checks, not tests we performed, and they do not authorize messages, campaigns or changes to a live customer account.\n\n## Compare Revo on the same inbound requirement\n\nRevo’s Pricing page describes AI answering plans with the business’s script and rules, booking and SMS follow-up; transfers to the customer’s team are listed for Crew and Fleet. Use that published scope as a separate comparison line.\n\nDo not infer a Revo connection to Invoice Simple or another named field-service platform, an outsourced human answering network or outbound phone campaigns. If the main requirement is a wider communications ecosystem, evaluate that scope directly with the supplier. If the need is inbound coverage, compare the supported handling, capacity, handoff and written charges for that specific task.\n\n## Questions\n\n### What is ZyraTalk’s current starting price?\n\nThe reviewed official FAQ gives custom pricing rather than a numerical starting rate. Request the offer for your business and retain its scope and billing assumptions.\n\n### Does the Invoice Simple setup article establish what I will pay?\n\nNo. It documents a setup path into ZyraTalk, not the complete price, required subscription or inclusion of every advertised module.\n\n### Is Revo presented here as an equivalent multi-channel package?\n\nNo. This comparison keeps the documented inbound requirement separate from any broader platform purchase and does not claim identical functions or integrations.\n\n[Review Revo’s current answering plans](/pricing)",
+        "sha256": "6da99c60c2ff48cd40b2098872840853e22c985bad53d4129711f0a31afc6235",
+        "assets": []
+      },
+      "editorialDate": "2026-10-28",
+      "source": {
+        "kind": "manual",
+        "reference": "Original copy created October 28, 2026, America/Tijuana. Exact copy accepted by Jorge in user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC), responding to the specific seven-text approval request. Source package SHA256 a33873c8fd924d14749798a48757229babb3ee92eec6b6c6543cf825cbba9db1. Copy acceptance permits implementation and technical review, not approval of the future PR. Extension of the October 28 revenue-first cohort; private research excluded."
+      },
+      "publicationStatus": "approved",
+      "review": {
+        "reviewer": "Jorge — exact accepted copy and source appendix, user Sentinel_b80f492bd3d4819187018ce1d27e6d05; mechanical source links only",
+        "reviewedAt": "2026-10-28",
+        "contentHash": "sha256:59048667d65ea5185b0757c560aba15a1993dc0d9e4c5b7a3c595770b245f787"
+      }
+    },
+    {
+      "template": "workflow",
+      "pricingVariant": "full",
+      "slug": "unlimited-answering-service",
+      "title": "Unlimited Answering Service: What Does Unlimited Cover?",
+      "description": "Compare unlimited answering offers by calls, minutes, fair use, concurrent calls and excluded work before choosing coverage for your service business.",
+      "navigationLabel": "unlimited answering service",
+      "eyebrow": "Home-service answering decisions",
+      "lead": "An unlimited answering service can sound like the end of usage planning. Before choosing one, ask which quantity is unlimited and which work the agreement actually includes. Unlimited calls, unlimited conversation minutes and unlimited users describe different offers. None, by itself, establishes unlimited simultaneous calls or an unlimited range of office tasks.",
+      "intro": "An unlimited answering service can sound like the end of usage planning. Before choosing one, ask which quantity is unlimited and which work the agreement actually includes. Unlimited calls, unlimited conversation minutes and unlimited users describe different offers. None, by itself, establishes unlimited simultaneous calls or an unlimited range of office tasks.",
+      "sections": [
+        {
+          "title": "Ask the provider to complete this scope card",
+          "paragraphs": [
+            "Use one card for each offer. Leave an unanswered item marked unknown rather than treating it as included.\n\n| Item | What to record in the quote |\n|---|---|\n| Unlimited quantity | Calls, minutes, users or another expressly defined unit |\n| Included work | Answering, intake, booking, transfers and any separately charged activity |\n| Eligibility | Covered numbers, locations, callers, hours and permitted business use |\n| Fair use | Thresholds, prohibited activity, review process and possible service changes |\n| Concurrent calls | Documented account capacity and the next caller's outcome |\n| Outside scope | Extra charges, restricted tasks and the office work that remains |\n| Evidence | Current terms, date, selected plan and person confirming unresolved details |\n\nThis card is a purchasing worksheet, not a description of a particular provider's terms. An offer may have no limit in one row and a material restriction in another."
+          ],
+          "items": []
+        },
+        {
+          "title": "Read unlimited in the context of the service model",
+          "paragraphs": [
+            "Specialty Answering Service uses the phrase unlimited answering service in its description of dedicated virtual agents. That establishes that the provider markets an arrangement using the term; it does not establish that every SAS product, task or account has no restrictions. Read the selected offer and its agreement instead of carrying that phrase across the provider's entire catalog. [SAS virtual assistants](https://www.specialtyansweringservice.net/virtual-office/virtual-assistants/)\n\nAn allowance-based AI receptionist, a shared human answering team and a dedicated staffing arrangement can allocate work differently. Ask who answers, what happens when that person or system cannot complete a request, and who maintains the instructions. Do not assume the same service merely because two offers use the word answering."
+          ],
+          "items": []
+        },
+        {
+          "title": "Separate a busy month from a busy moment",
+          "paragraphs": [
+            "A monthly usage promise concerns the period's total activity. Concurrency concerns calls that overlap. For example, two homeowners might call while another conversation is still underway. Ask what happens to each caller and to a transfer back to your office. Unlimited monthly usage does not answer those questions.\n\nUse the [simultaneous-call capacity guide](/ai-answering-service/simultaneous-call-capacity) for the separate capacity review. Do not conduct a load test without the providers' authorization. A successful demonstration at an agreed load is an observation, not proof of limitless capacity."
+          ],
+          "items": []
+        },
+        {
+          "title": "Compare the work that stays with your office",
+          "paragraphs": [
+            "Use three fictional requests in a provider-approved demonstration: a new customer asking for an appointment, an existing customer requesting a change, and a caller needing a person who is unavailable. Ask the provider to show the resulting record and the next responsible person. No real customer information is needed.\n\nIf a booking cannot be confirmed, the result should remain a request for review. If a transfer fails, identify the agreed fallback. An unlimited conversation allowance cannot substitute for a usable next step. For the billing comparison itself, use the [answering-service cost guide](/ai-answering-service/answering-service-cost); for minimum commitments and usage charging, see [pay-as-you-go answering](/ai-answering-service/pay-as-you-go-answering-service)."
+          ],
+          "items": []
+        },
+        {
+          "title": "Where Revo fits",
+          "paragraphs": [
+            "Revo's published plans use included minutes: Solo 100, Crew 200 and Fleet 400. They are not presented here as unlimited plans. Its pricing page lists 24/7 answering, your script, hours and rules, appointment booking and call summaries. Team transfers are listed for Crew and Fleet, not Solo. Confirm the supported booking and handoff configuration for your business. [Current Revo plans](https://www.revoapp.ai/pricing)\n\nChoose on required scope and documented terms. A business with predictable usage may prefer an allowance; another may need to investigate a different arrangement. This guide does not establish which is cheaper or better for your calls."
+          ],
+          "items": []
+        },
+        {
+          "title": "Questions before you buy",
+          "paragraphs": [
+            "**Does unlimited mean no extra charges?** Not by itself. Ask which activities, numbers and services are included and obtain the terms for everything outside that scope.\n\n**Does unlimited mean every caller connects immediately?** No conclusion about simultaneous capacity follows from a monthly usage label. Resolve capacity and fallback separately.\n\n**Is Revo unlimited?** Revo publishes plans with included minutes. Review the current offer and applicable usage terms instead of assuming unlimited use or calculating an extra-minute rate from the subscription price.\n\n**Next step:** [Review Revo's plans](https://www.revoapp.ai/pricing) and bring the completed scope card to a coverage discussion. Ask which of your required call tasks the selected setup can demonstrate."
+          ],
+          "items": []
+        }
+      ],
+      "faqs": [],
+      "takeaway": "Compare the supported answering workflow.",
+      "related": [],
+      "sourcePaths": [
+        "https://www.specialtyansweringservice.net/virtual-office/virtual-assistants/",
+        "https://www.revoapp.ai/pricing",
+        "Approved public copy SHA256:45ee1a1cc437729ecc961b49bb801191b0af0e3e555dee018b65d8bc5fb83307"
+      ],
+      "markdownArticle": {
+        "content": "# Unlimited answering service: identify the limit behind the label\n\nAn unlimited answering service can sound like the end of usage planning. Before choosing one, ask which quantity is unlimited and which work the agreement actually includes. Unlimited calls, unlimited conversation minutes and unlimited users describe different offers. None, by itself, establishes unlimited simultaneous calls or an unlimited range of office tasks.\n\nFor a US home-service business, the purchase decision starts with the calls you need handled: new inquiries, existing-customer questions, booking requests and transfers back to your team. Compare the written scope against that work before comparing the headline price.\n\nPublished by Revo, an AI receptionist provider. This is a documentary buying guide, not a test of vendor performance or a claim that Revo offers unlimited usage.\n\n## Ask the provider to complete this scope card\n\nUse one card for each offer. Leave an unanswered item marked unknown rather than treating it as included.\n\n| Item | What to record in the quote |\n|---|---|\n| Unlimited quantity | Calls, minutes, users or another expressly defined unit |\n| Included work | Answering, intake, booking, transfers and any separately charged activity |\n| Eligibility | Covered numbers, locations, callers, hours and permitted business use |\n| Fair use | Thresholds, prohibited activity, review process and possible service changes |\n| Concurrent calls | Documented account capacity and the next caller's outcome |\n| Outside scope | Extra charges, restricted tasks and the office work that remains |\n| Evidence | Current terms, date, selected plan and person confirming unresolved details |\n\nThis card is a purchasing worksheet, not a description of a particular provider's terms. An offer may have no limit in one row and a material restriction in another.\n\n## Read unlimited in the context of the service model\n\nSpecialty Answering Service uses the phrase unlimited answering service in its description of dedicated virtual agents. That establishes that the provider markets an arrangement using the term; it does not establish that every SAS product, task or account has no restrictions. Read the selected offer and its agreement instead of carrying that phrase across the provider's entire catalog. [SAS virtual assistants](https://www.specialtyansweringservice.net/virtual-office/virtual-assistants/)\n\nAn allowance-based AI receptionist, a shared human answering team and a dedicated staffing arrangement can allocate work differently. Ask who answers, what happens when that person or system cannot complete a request, and who maintains the instructions. Do not assume the same service merely because two offers use the word answering.\n\n## Separate a busy month from a busy moment\n\nA monthly usage promise concerns the period's total activity. Concurrency concerns calls that overlap. For example, two homeowners might call while another conversation is still underway. Ask what happens to each caller and to a transfer back to your office. Unlimited monthly usage does not answer those questions.\n\nUse the [simultaneous-call capacity guide](/ai-answering-service/simultaneous-call-capacity) for the separate capacity review. Do not conduct a load test without the providers' authorization. A successful demonstration at an agreed load is an observation, not proof of limitless capacity.\n\n## Compare the work that stays with your office\n\nUse three fictional requests in a provider-approved demonstration: a new customer asking for an appointment, an existing customer requesting a change, and a caller needing a person who is unavailable. Ask the provider to show the resulting record and the next responsible person. No real customer information is needed.\n\nIf a booking cannot be confirmed, the result should remain a request for review. If a transfer fails, identify the agreed fallback. An unlimited conversation allowance cannot substitute for a usable next step. For the billing comparison itself, use the [answering-service cost guide](/ai-answering-service/answering-service-cost); for minimum commitments and usage charging, see [pay-as-you-go answering](/ai-answering-service/pay-as-you-go-answering-service).\n\n## Where Revo fits\n\nRevo's published plans use included minutes: Solo 100, Crew 200 and Fleet 400. They are not presented here as unlimited plans. Its pricing page lists 24/7 answering, your script, hours and rules, appointment booking and call summaries. Team transfers are listed for Crew and Fleet, not Solo. Confirm the supported booking and handoff configuration for your business. [Current Revo plans](https://www.revoapp.ai/pricing)\n\nChoose on required scope and documented terms. A business with predictable usage may prefer an allowance; another may need to investigate a different arrangement. This guide does not establish which is cheaper or better for your calls.\n\n## Questions before you buy\n\n**Does unlimited mean no extra charges?** Not by itself. Ask which activities, numbers and services are included and obtain the terms for everything outside that scope.\n\n**Does unlimited mean every caller connects immediately?** No conclusion about simultaneous capacity follows from a monthly usage label. Resolve capacity and fallback separately.\n\n**Is Revo unlimited?** Revo publishes plans with included minutes. Review the current offer and applicable usage terms instead of assuming unlimited use or calculating an extra-minute rate from the subscription price.\n\n**Next step:** [Review Revo's plans](https://www.revoapp.ai/pricing) and bring the completed scope card to a coverage discussion. Ask which of your required call tasks the selected setup can demonstrate.",
+        "sha256": "c1a01070ca3971b8771e995ad6ffe24181cef392571276769e74207116fb365c",
+        "assets": []
+      },
+      "editorialDate": "2026-10-28",
+      "source": {
+        "kind": "manual",
+        "reference": "Original copy created October 28, 2026, America/Tijuana. Exact copy accepted by Jorge in user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC), responding to the specific seven-text approval request. Source package SHA256 8eed81c1bf48fedd095ad852dea6f50d9d34fb98146ee117eb3c3dd9f3e44f1d. Copy acceptance permits implementation and technical review, not approval of the future PR. Extension of the October 28 revenue-first cohort; private research excluded."
+      },
+      "publicationStatus": "approved",
+      "review": {
+        "reviewer": "Jorge — exact seven-text acceptance, user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC)",
+        "reviewedAt": "2026-10-28",
+        "contentHash": "sha256:b7639bfb50a12d2f46c1d53a8c76d4788f50185abd0ba70e7d96f4927a2e41e5"
+      }
+    },
+    {
+      "template": "workflow",
+      "pricingVariant": "full",
+      "slug": "interior-design-receptionist",
+      "title": "AI Receptionist for Residential Interior Design Practices",
+      "description": "Plan call answering for a US residential interior-design studio: consultation inquiries, client selections and vendor messages with clear office ownership.",
+      "navigationLabel": "Residential interior design",
+      "eyebrow": "Home-service answering decisions",
+      "lead": "A prospective client asking about a design consultation should not enter the same phone workflow as a supplier calling about a delivery. For a US residential interior-design practice, useful answering begins by identifying the relationship and the decision the caller needs from your studio.",
+      "intro": "A prospective client asking about a design consultation should not enter the same phone workflow as a supplier calling about a delivery. For a US residential interior-design practice, useful answering begins by identifying the relationship and the decision the caller needs from your studio.",
+      "sections": [
+        {
+          "title": "Give three kinds of studio call different destinations",
+          "paragraphs": [
+            "Use this proposed reception map to prepare a coverage discussion. These are instructions your practice would supply, not a claim that Revo includes a design-project management system.\n\n| Caller and purpose | Approved context to capture | Studio owner and boundary |\n|---|---|---|\n| Prospective residential client | Property location, requested design service, project stage, callback details and consultation preference | Consultation coordinator reviews fit; no acceptance of the engagement |\n| Existing client discussing a selection | Client name, project reference, item or room as described, and the question | Assigned designer reviews; no approval of a substitution or specification |\n| Vendor or delivery contact | Company, project or order reference supplied by caller, reason for calling and callback number | Purchasing or logistics owner follows up; no order modification or delivery guarantee |\n\nDo not collect payment-card details, door codes or unrelated personal information simply to complete an intake form. Ask only for the context the authorized studio recipient needs. A caller's reference is information to verify, not proof of identity or authority."
+          ],
+          "items": []
+        },
+        {
+          "title": "Make consultation intake about the services you actually accept",
+          "paragraphs": [
+            "Before activating a new-client flow, write down the residential services your studio offers, the geographic area it serves and which consultation types are available. If your practice wants to ask about a stated budget or timing, approve the wording and the response when the caller is unsure. A budget answer is not a fee quote or a promise that a particular design can be delivered for that amount.\n\nA supported booking configuration may reserve an approved consultation slot. Otherwise, capture the preferred time and identify who will confirm it. Do not describe a requested meeting as confirmed. Keep detailed design discovery and engagement decisions with your team."
+          ],
+          "items": []
+        },
+        {
+          "title": "Keep selections and purchasing decisions out of reception",
+          "paragraphs": [
+            "Consider a fictional existing client asking whether a different fabric can replace the approved selection. The answering flow can record the item as described, the project reference and the request for a designer's callback. It should not say that the alternative is equivalent, available or approved.\n\nFor a vendor asking to move a delivery, collect the proposed change and route the message to the office owner. Do not confirm access, receiving capacity, installation readiness or a revised purchase order. These boundaries make the service useful as reception without presenting it as procurement software."
+          ],
+          "items": []
+        },
+        {
+          "title": "Evaluate the arrangement before buying",
+          "paragraphs": [
+            "Ask for an authorized demonstration with three fictional calls corresponding to the reception map. Check whether each summary distinguishes a new inquiry, a client decision and a vendor message, and whether the correct office recipient owns the next step. A successful greeting alone does not demonstrate that distinction.\n\nTeam transfers are listed on Revo Crew and Fleet; Solo excludes them. Your receiving team still needs an unavailable-person fallback. Do not assume a native connection to design, purchasing or project-management software. Confirm the exact supported calendar and delivery workflow before relying on it.\n\nThere are other service models to consider. Smith.ai's interior-design page describes AI and live receptionist arrangements, including consultation handling. That is evidence of its published offering, not a Revo feature or a performance comparison. If you need a person to conduct a nuanced design conversation, evaluate that requirement explicitly. [Smith.ai interior-design reception](https://smith.ai/industries/interior-designers-answering-service)"
+          ],
+          "items": []
+        },
+        {
+          "title": "Reception for a studio, not remodeling administration",
+          "paragraphs": [
+            "This workflow separates consultation intake, client selection questions and vendor messages. For a contractor collecting construction scope, estimate questions and change requests, use the separate [remodeling answering guide](/ai-answering-service/remodeling-answering). Neither workflow authorizes reception to approve professional work or a project change."
+          ],
+          "items": []
+        },
+        {
+          "title": "Questions from residential studios",
+          "paragraphs": [
+            "**Can Revo recommend finishes or approve a selection?** This proposed setup is for answering and intake. Design recommendations and approvals remain with your authorized studio team.\n\n**Can it update an order or verify stock?** This page establishes no purchasing-system connection or order authority. Capture the question for the person who can verify and act on it.\n\n**Can it book a consultation?** Revo lists appointment booking. Confirm the supported calendar, consultation type and rules; otherwise use a request-and-confirm workflow.\n\n**Next step:** [Review Revo's plans](https://www.revoapp.ai/pricing). Bring your three call categories, approved questions and office recipients so the team can assess the supported setup for your residential practice."
+          ],
+          "items": []
+        }
+      ],
+      "faqs": [],
+      "takeaway": "Compare the supported answering workflow.",
+      "related": [],
+      "sourcePaths": [
+        "https://www.revoapp.ai/pricing",
+        "https://smith.ai/industries/interior-designers-answering-service",
+        "Approved public copy SHA256:25efcbc3add8373e21186e166bff26800ff87c30fa2e6c08821ae2607ed15c4f"
+      ],
+      "markdownArticle": {
+        "content": "# AI receptionist for residential interior design practices\n\nA prospective client asking about a design consultation should not enter the same phone workflow as a supplier calling about a delivery. For a US residential interior-design practice, useful answering begins by identifying the relationship and the decision the caller needs from your studio.\n\nRevo offers AI answering with your script, hours and rules, call summaries and appointment booking through a supported setup. Use it for approved intake and next steps while your designers meet clients or work away from the phone. It does not replace your designer, purchasing coordinator or project records. [Review the current plans](https://www.revoapp.ai/pricing).\n\n## Give three kinds of studio call different destinations\n\nUse this proposed reception map to prepare a coverage discussion. These are instructions your practice would supply, not a claim that Revo includes a design-project management system.\n\n| Caller and purpose | Approved context to capture | Studio owner and boundary |\n|---|---|---|\n| Prospective residential client | Property location, requested design service, project stage, callback details and consultation preference | Consultation coordinator reviews fit; no acceptance of the engagement |\n| Existing client discussing a selection | Client name, project reference, item or room as described, and the question | Assigned designer reviews; no approval of a substitution or specification |\n| Vendor or delivery contact | Company, project or order reference supplied by caller, reason for calling and callback number | Purchasing or logistics owner follows up; no order modification or delivery guarantee |\n\nDo not collect payment-card details, door codes or unrelated personal information simply to complete an intake form. Ask only for the context the authorized studio recipient needs. A caller's reference is information to verify, not proof of identity or authority.\n\n## Make consultation intake about the services you actually accept\n\nBefore activating a new-client flow, write down the residential services your studio offers, the geographic area it serves and which consultation types are available. If your practice wants to ask about a stated budget or timing, approve the wording and the response when the caller is unsure. A budget answer is not a fee quote or a promise that a particular design can be delivered for that amount.\n\nA supported booking configuration may reserve an approved consultation slot. Otherwise, capture the preferred time and identify who will confirm it. Do not describe a requested meeting as confirmed. Keep detailed design discovery and engagement decisions with your team.\n\n## Keep selections and purchasing decisions out of reception\n\nConsider a fictional existing client asking whether a different fabric can replace the approved selection. The answering flow can record the item as described, the project reference and the request for a designer's callback. It should not say that the alternative is equivalent, available or approved.\n\nFor a vendor asking to move a delivery, collect the proposed change and route the message to the office owner. Do not confirm access, receiving capacity, installation readiness or a revised purchase order. These boundaries make the service useful as reception without presenting it as procurement software.\n\n## Evaluate the arrangement before buying\n\nAsk for an authorized demonstration with three fictional calls corresponding to the reception map. Check whether each summary distinguishes a new inquiry, a client decision and a vendor message, and whether the correct office recipient owns the next step. A successful greeting alone does not demonstrate that distinction.\n\nTeam transfers are listed on Revo Crew and Fleet; Solo excludes them. Your receiving team still needs an unavailable-person fallback. Do not assume a native connection to design, purchasing or project-management software. Confirm the exact supported calendar and delivery workflow before relying on it.\n\nThere are other service models to consider. Smith.ai's interior-design page describes AI and live receptionist arrangements, including consultation handling. That is evidence of its published offering, not a Revo feature or a performance comparison. If you need a person to conduct a nuanced design conversation, evaluate that requirement explicitly. [Smith.ai interior-design reception](https://smith.ai/industries/interior-designers-answering-service)\n\n## Reception for a studio, not remodeling administration\n\nThis workflow separates consultation intake, client selection questions and vendor messages. For a contractor collecting construction scope, estimate questions and change requests, use the separate [remodeling answering guide](/ai-answering-service/remodeling-answering). Neither workflow authorizes reception to approve professional work or a project change.\n\n## Questions from residential studios\n\n**Can Revo recommend finishes or approve a selection?** This proposed setup is for answering and intake. Design recommendations and approvals remain with your authorized studio team.\n\n**Can it update an order or verify stock?** This page establishes no purchasing-system connection or order authority. Capture the question for the person who can verify and act on it.\n\n**Can it book a consultation?** Revo lists appointment booking. Confirm the supported calendar, consultation type and rules; otherwise use a request-and-confirm workflow.\n\n**Next step:** [Review Revo's plans](https://www.revoapp.ai/pricing). Bring your three call categories, approved questions and office recipients so the team can assess the supported setup for your residential practice.",
+        "sha256": "d4debe58253aaf7b2593b549172d62462ff01150c8bda40198144ae280296e8d",
+        "assets": []
+      },
+      "editorialDate": "2026-10-28",
+      "source": {
+        "kind": "manual",
+        "reference": "Original copy created October 28, 2026, America/Tijuana. Exact copy accepted by Jorge in user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC), responding to the specific seven-text approval request. Source package SHA256 8eed81c1bf48fedd095ad852dea6f50d9d34fb98146ee117eb3c3dd9f3e44f1d. Copy acceptance permits implementation and technical review, not approval of the future PR. Extension of the October 28 revenue-first cohort; private research excluded."
+      },
+      "publicationStatus": "approved",
+      "review": {
+        "reviewer": "Jorge — exact seven-text acceptance, user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC)",
+        "reviewedAt": "2026-10-28",
+        "contentHash": "sha256:88b347feca7896123d12ee47c995379377a78d3169dc20052de7e3befdd23c83"
+      }
+    },
+    {
+      "template": "workflow",
+      "pricingVariant": "full",
+      "slug": "residential-architect-receptionist",
+      "title": "AI Receptionist for US Residential Architecture Practices",
+      "description": "Separate new residential architecture inquiries from active-project technical requests. Plan approved intake, consultation booking and staff handoffs with Revo.",
+      "navigationLabel": "ai receptionist for architects",
+      "eyebrow": "Home-service answering decisions",
+      "lead": "Your practice may receive a prospective homeowner's call while the project architect is reviewing drawings with another client. Later, a contractor may call about a question on an active project. Both need a clear next step, but they do not need the same conversation.",
+      "intro": "Your practice may receive a prospective homeowner's call while the project architect is reviewing drawings with another client. Later, a contractor may call about a question on an active project. Both need a clear next step, but they do not need the same conversation.",
+      "sections": [
+        {
+          "title": "Separate a prospective commission from an active-project question",
+          "paragraphs": [
+            "A new inquiry concerns whether the practice should discuss an engagement. An active-project call concerns work already assigned to particular people. Do not send both into an undifferentiated sales appointment queue.\n\nPrepare this office-owned routing register before evaluating coverage. The register is a reusable planning resource, not a built-in product feature.\n\n| Call category | Minimum useful context | Responsible next step |\n|---|---|---|\n| New residential commission | Caller role, property location, requested service, project stage and callback details | Practice coordinator reviews service fit and consultation availability |\n| Current client question | Client name, project reference supplied by caller and the question in their words | Assigned project team reviews; no new design commitment |\n| Contractor technical request | Company, project reference, drawing or document reference if supplied, and callback details | Responsible architect reviews through the practice's approved project process |\n| Agency or consultant contact | Organization, project reference, purpose and requested recipient | Office confirms the appropriate professional recipient |\n\nA reference number does not authenticate a caller. Do not disclose project documents or client details on that basis. Your practice must decide how staff verify identity before sharing information or taking action."
+          ],
+          "items": []
+        },
+        {
+          "title": "Let consultation booking follow practice rules",
+          "paragraphs": [
+            "List the residential project types and locations your practice considers. Decide what reception may say about the initial consultation, which questions belong in intake and who can accept an engagement. A caller's stated timeline is a preference, not evidence that the practice can meet it.\n\nRevo's pricing page lists appointment booking alongside your script, hours and rules. Booking still requires a supported configuration and approved appointment type. If a slot cannot be confirmed, record the preference for office follow-up. Do not promise an architect's attendance, a fee proposal, a permit outcome or a project start date. [Current Revo plans](https://www.revoapp.ai/pricing)"
+          ],
+          "items": []
+        },
+        {
+          "title": "Treat a technical call as a request for professional review",
+          "paragraphs": [
+            "In a fictional demonstration, a contractor asks whether a wall opening can move from the position shown on a drawing. Reception can capture the caller's words and the supplied project and drawing references. It must not interpret the drawing, approve the change or tell the contractor to proceed.\n\nA phone message also should not be described as a completed formal request for information. Ask your practice how such requests must be submitted and who records and answers them. Reception can explain your approved submission instruction; this page does not establish an automatic connection to that process or its software.\n\nIf a caller reports a safety concern, use the practice's approved safety wording and escalation instruction. AI reception should not diagnose a condition, determine structural safety or promise an immediate professional response. The practice needs a fallback when its designated recipient is unavailable."
+          ],
+          "items": []
+        },
+        {
+          "title": "Test professional boundaries as well as message capture",
+          "paragraphs": [
+            "Use fictional information in an authorized provider demonstration. Include a new homeowner inquiry, a current client's request and a contractor's technical question. For each, inspect the summary, office recipient and stated next step. Check that the service does not turn a question into approval or claim that an unanswered transfer reached the architect.\n\nRevo lists team transfers for Crew and Fleet, while Solo excludes them. That is a transfer to your team, not access to an outsourced architect or a human receptionist network. Confirm calendar support, message delivery and any necessary software workflow directly; no architecture-platform integration is established here.\n\nSmith.ai also publishes an architect receptionist offering with AI and live arrangements. Its description can inform the service models you evaluate, but its staffing, payment and software claims are not Revo capabilities. [Smith.ai architect reception](https://smith.ai/industries/architects-answering-service)"
+          ],
+          "items": []
+        },
+        {
+          "title": "Choose reception rather than technical delegation",
+          "paragraphs": [
+            "The buying question is whether routine intake and routing can be handled while your team retains professional decisions. If the required work is plan interpretation, substantive consultant coordination or formal project administration, evaluate those professional resources separately. The [remodeling answering guide](/ai-answering-service/remodeling-answering) covers contractor estimate and construction-scope intake; this page instead organizes the architecture practice's commission and professional-review boundaries."
+          ],
+          "items": []
+        },
+        {
+          "title": "Questions before choosing coverage",
+          "paragraphs": [
+            "**Can reception answer code or zoning questions?** This workflow does not authorize that. Capture the request for qualified review using your practice's approved process.\n\n**Does taking a technical message satisfy a formal project submission?** Do not assume so. Use the practice's documented submission requirements and confirm receipt through the responsible team.\n\n**Does a transfer guarantee an architect is available?** No. Define an unavailable-recipient fallback and avoid promising a response time the practice has not approved.\n\n**Next step:** [Review Revo's plans](https://www.revoapp.ai/pricing) and discuss your residential practice's intake categories, consultation rules and handoff boundaries. Ask for a demonstration of the specific supported workflow before buying."
+          ],
+          "items": []
+        }
+      ],
+      "faqs": [],
+      "takeaway": "Compare the supported answering workflow.",
+      "related": [],
+      "sourcePaths": [
+        "https://www.revoapp.ai/pricing",
+        "https://smith.ai/industries/architects-answering-service",
+        "Approved public copy SHA256:a110362381a6a5f6fba2814011e35ea729f8fcb592443371e9c4539723ae02d4"
+      ],
+      "markdownArticle": {
+        "content": "# AI receptionist for US residential architecture practices\n\nYour practice may receive a prospective homeowner's call while the project architect is reviewing drawings with another client. Later, a contractor may call about a question on an active project. Both need a clear next step, but they do not need the same conversation.\n\nAn AI receptionist can help with approved front-office intake without taking on architectural decisions. This proposed Revo workflow is limited to US residential architecture practices: identify why the person is calling, collect the context your office approves and pass the request to the responsible person. It is not architectural advice, project administration software or a substitute for licensed professional judgment.\n\n## Separate a prospective commission from an active-project question\n\nA new inquiry concerns whether the practice should discuss an engagement. An active-project call concerns work already assigned to particular people. Do not send both into an undifferentiated sales appointment queue.\n\nPrepare this office-owned routing register before evaluating coverage. The register is a reusable planning resource, not a built-in product feature.\n\n| Call category | Minimum useful context | Responsible next step |\n|---|---|---|\n| New residential commission | Caller role, property location, requested service, project stage and callback details | Practice coordinator reviews service fit and consultation availability |\n| Current client question | Client name, project reference supplied by caller and the question in their words | Assigned project team reviews; no new design commitment |\n| Contractor technical request | Company, project reference, drawing or document reference if supplied, and callback details | Responsible architect reviews through the practice's approved project process |\n| Agency or consultant contact | Organization, project reference, purpose and requested recipient | Office confirms the appropriate professional recipient |\n\nA reference number does not authenticate a caller. Do not disclose project documents or client details on that basis. Your practice must decide how staff verify identity before sharing information or taking action.\n\n## Let consultation booking follow practice rules\n\nList the residential project types and locations your practice considers. Decide what reception may say about the initial consultation, which questions belong in intake and who can accept an engagement. A caller's stated timeline is a preference, not evidence that the practice can meet it.\n\nRevo's pricing page lists appointment booking alongside your script, hours and rules. Booking still requires a supported configuration and approved appointment type. If a slot cannot be confirmed, record the preference for office follow-up. Do not promise an architect's attendance, a fee proposal, a permit outcome or a project start date. [Current Revo plans](https://www.revoapp.ai/pricing)\n\n## Treat a technical call as a request for professional review\n\nIn a fictional demonstration, a contractor asks whether a wall opening can move from the position shown on a drawing. Reception can capture the caller's words and the supplied project and drawing references. It must not interpret the drawing, approve the change or tell the contractor to proceed.\n\nA phone message also should not be described as a completed formal request for information. Ask your practice how such requests must be submitted and who records and answers them. Reception can explain your approved submission instruction; this page does not establish an automatic connection to that process or its software.\n\nIf a caller reports a safety concern, use the practice's approved safety wording and escalation instruction. AI reception should not diagnose a condition, determine structural safety or promise an immediate professional response. The practice needs a fallback when its designated recipient is unavailable.\n\n## Test professional boundaries as well as message capture\n\nUse fictional information in an authorized provider demonstration. Include a new homeowner inquiry, a current client's request and a contractor's technical question. For each, inspect the summary, office recipient and stated next step. Check that the service does not turn a question into approval or claim that an unanswered transfer reached the architect.\n\nRevo lists team transfers for Crew and Fleet, while Solo excludes them. That is a transfer to your team, not access to an outsourced architect or a human receptionist network. Confirm calendar support, message delivery and any necessary software workflow directly; no architecture-platform integration is established here.\n\nSmith.ai also publishes an architect receptionist offering with AI and live arrangements. Its description can inform the service models you evaluate, but its staffing, payment and software claims are not Revo capabilities. [Smith.ai architect reception](https://smith.ai/industries/architects-answering-service)\n\n## Choose reception rather than technical delegation\n\nThe buying question is whether routine intake and routing can be handled while your team retains professional decisions. If the required work is plan interpretation, substantive consultant coordination or formal project administration, evaluate those professional resources separately. The [remodeling answering guide](/ai-answering-service/remodeling-answering) covers contractor estimate and construction-scope intake; this page instead organizes the architecture practice's commission and professional-review boundaries.\n\n## Questions before choosing coverage\n\n**Can reception answer code or zoning questions?** This workflow does not authorize that. Capture the request for qualified review using your practice's approved process.\n\n**Does taking a technical message satisfy a formal project submission?** Do not assume so. Use the practice's documented submission requirements and confirm receipt through the responsible team.\n\n**Does a transfer guarantee an architect is available?** No. Define an unavailable-recipient fallback and avoid promising a response time the practice has not approved.\n\n**Next step:** [Review Revo's plans](https://www.revoapp.ai/pricing) and discuss your residential practice's intake categories, consultation rules and handoff boundaries. Ask for a demonstration of the specific supported workflow before buying.",
+        "sha256": "021008e76355b269bb9487fd6e3fe1cc1dedd3f98511742a72d8919b0c70f2e8",
+        "assets": []
+      },
+      "editorialDate": "2026-10-28",
+      "source": {
+        "kind": "manual",
+        "reference": "Original copy created October 28, 2026, America/Tijuana. Exact copy accepted by Jorge in user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC), responding to the specific seven-text approval request. Source package SHA256 8eed81c1bf48fedd095ad852dea6f50d9d34fb98146ee117eb3c3dd9f3e44f1d. Copy acceptance permits implementation and technical review, not approval of the future PR. Extension of the October 28 revenue-first cohort; private research excluded."
+      },
+      "publicationStatus": "approved",
+      "review": {
+        "reviewer": "Jorge — exact seven-text acceptance, user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC)",
+        "reviewedAt": "2026-10-28",
+        "contentHash": "sha256:b094165d779f8d1ef1cdc51c44748b8aea545305244949039a4e5778daa6d95e"
+      }
+    },
+    {
+      "template": "workflow",
+      "pricingVariant": "full",
+      "slug": "flooring-answering-service",
+      "title": "Flooring answering service for residential installers",
+      "description": "Capture flooring installation inquiries and measurement requests. Separate new projects, existing estimates and material questions for your office.",
+      "navigationLabel": "flooring answering service",
+      "eyebrow": "Home-service answering decisions",
+      "lead": "A homeowner asking about new flooring may be ready for a measurement visit, still choosing materials or calling about an estimate your office already issued. Those are different next steps. A flooring answering service should help your office identify the request without turning a phone conversation into a verified measurement, installation quote or confirmed job.",
+      "intro": "A homeowner asking about new flooring may be ready for a measurement visit, still choosing materials or calling about an estimate your office already issued. Those are different next steps. A flooring answering service should help your office identify the request without turning a phone conversation into a verified measurement, installation quote or confirmed job.",
+      "sections": [
+        {
+          "title": "Separate the measurement request from the installation commitment",
+          "paragraphs": [
+            "Before using an answering service, decide whether the next appointment is a site measurement, an office or showroom consultation, or a follow-up discussion about an existing estimate. An opening in one appointment type does not establish availability for another.\n\nAsk the caller which rooms or areas they want to discuss, whether this concerns new installation or replacement, and whether they have selected or purchased material. Record the answers as the caller's description. Dimensions or square footage supplied by the homeowner remain unverified until your business completes its own measurement process.\n\nDo not convert those dimensions into an order quantity, waste allowance, material recommendation or labor price. A reception flow also cannot determine whether the existing surface or subfloor is suitable for installation. Your estimator or installer must review those questions."
+          ],
+          "items": []
+        },
+        {
+          "title": "Use this measurement-request and follow-up register",
+          "paragraphs": [
+            "Copy this proposed register into your office's approved process. It is a planning resource, not a claim that Revo supplies a flooring estimating system or these exact form fields.\n\n| Record | What reception can capture under your instructions | Office check before committing |\n|---|---|---|\n| Contact and property | Name, callback number, property location and caller's role | Service area and who may authorize a visit |\n| Requested appointment | Measurement, material consultation or estimate follow-up | Correct appointment type and responsible person |\n| Areas involved | Rooms or areas as described by the caller | Actual site scope and professional measurements |\n| Measurement status | Not measured, caller-provided dimensions or prior professional visit | Identify the source; do not label caller dimensions verified |\n| Material status | Undecided, selected or already purchased, as stated | Product suitability, quantities and responsibility for supply |\n| Existing work | Estimate reference or current-job reference if supplied | Locate the correct office record before discussing changes |\n| Visit context | Occupied home, requested access discussion and preferred period | Authorized access arrangement and practical visit requirements |\n| Next owner | Estimator, material adviser or current-project coordinator | Named person accepts follow-up; request versus confirmed appointment recorded |\n\nAsk only for information the office needs. Do not request entry codes, payment-card details or unrelated household information to complete a preliminary request. A project reference alone does not prove that a caller is authorized to change the work."
+          ],
+          "items": []
+        },
+        {
+          "title": "Give an existing estimate a different next step",
+          "paragraphs": [
+            "A caller who already has a quote should not automatically receive another initial measurement appointment. Capture the reference and the question: are they asking to discuss the material, understand the proposed work, revisit the timing or request a change? The office should locate the applicable estimate and decide whether a new visit is necessary.\n\nSimilarly, a current installation customer's question belongs with the project owner. Reception can record the requested change but should not accept extra rooms, approve a substitution, change the contract price or promise a revised completion date. A clear message is useful even when the required answer must come from your team."
+          ],
+          "items": []
+        },
+        {
+          "title": "Evaluate answering coverage with three fictional calls",
+          "paragraphs": [
+            "Ask for an authorized demonstration before routing customer calls. Use a homeowner who has not chosen material, another who supplies approximate dimensions and a third who already has an estimate. Inspect whether the resulting summaries preserve those distinctions and identify the appropriate office recipient.\n\nWhere a supported booking setup confirms an approved measurement slot, verify the appointment type and next step. Otherwise, capture the preference for staff confirmation. Do not tell a caller an installation is scheduled merely because a measurement visit has been requested.\n\nRevo's pricing page lists appointment booking, summaries and your own script, hours and rules. It lists team transfers for Crew and Fleet; Solo excludes them. Confirm the exact calendar, message delivery and unavailable-recipient fallback for your configuration. No native flooring-estimating or order-management connection is established by this page.\n\nOther models are available. SMA Support publishes a flooring-contractor offering that includes phone answering and broader office support. That describes its scope, not proof that Revo performs its back-office, accounting or insurance work. Compare the answering tasks you actually need instead of treating all outsourced services as equivalent. [SMA flooring services](https://www.smasupport.us/back-office-outsourcing-bpo-services-contractors-served/flooring/)"
+          ],
+          "items": []
+        },
+        {
+          "title": "Choose the guide that matches the work",
+          "paragraphs": [
+            "This page concerns installation or replacement intake and the preparation of a measurement request. For renewal of an existing wood finish, see [hardwood-refinishing answering](/ai-answering-service/hardwood-refinishing-answering-service). For a coating applied to an existing surface, see [floor-coating answering](/ai-answering-service/floor-coating-answering-service). Keep those service boundaries in your greeting and approved questions."
+          ],
+          "items": []
+        },
+        {
+          "title": "Questions before choosing coverage",
+          "paragraphs": [
+            "**Can reception estimate the flooring quantity from room dimensions?** This workflow records caller-supplied information. It does not calculate an order or replace the installer's measurement and material review.\n\n**Can it confirm a measurement appointment?** Only through a supported booking configuration using your approved appointment type and availability. Otherwise the office confirms the request.\n\n**Can an existing customer approve a material change by phone?** Reception can capture the request. Your office must verify authority and accept any change through its approved process.\n\n**Next step:** [Review Revo's plans](https://www.revoapp.ai/pricing) and bring your measurement appointment types, intake questions and office recipients. Ask the team to demonstrate the supported answering and handoff workflow before you buy."
+          ],
+          "items": []
+        }
+      ],
+      "faqs": [],
+      "takeaway": "Compare the supported answering workflow.",
+      "related": [],
+      "sourcePaths": [
+        "https://www.revoapp.ai/pricing",
+        "https://www.smasupport.us/back-office-outsourcing-bpo-services-contractors-served/flooring/",
+        "Approved public copy SHA256:7f82e3cdf861132175542c37236d2ab19f4123ed933f6dbd2c4a76c4a0bcfc0f"
+      ],
+      "markdownArticle": {
+        "content": "# Flooring answering service for residential installers\n\nA homeowner asking about new flooring may be ready for a measurement visit, still choosing materials or calling about an estimate your office already issued. Those are different next steps. A flooring answering service should help your office identify the request without turning a phone conversation into a verified measurement, installation quote or confirmed job.\n\nFor US residential flooring installers, Revo offers AI answering with your script, hours and rules, call summaries and appointment booking through a supported setup. Define the installation work you accept and the information your estimator needs while your crew is working. Technical decisions and job commitments stay with your authorized team. [Review current Revo plans](https://www.revoapp.ai/pricing).\n\n## Separate the measurement request from the installation commitment\n\nBefore using an answering service, decide whether the next appointment is a site measurement, an office or showroom consultation, or a follow-up discussion about an existing estimate. An opening in one appointment type does not establish availability for another.\n\nAsk the caller which rooms or areas they want to discuss, whether this concerns new installation or replacement, and whether they have selected or purchased material. Record the answers as the caller's description. Dimensions or square footage supplied by the homeowner remain unverified until your business completes its own measurement process.\n\nDo not convert those dimensions into an order quantity, waste allowance, material recommendation or labor price. A reception flow also cannot determine whether the existing surface or subfloor is suitable for installation. Your estimator or installer must review those questions.\n\n## Use this measurement-request and follow-up register\n\nCopy this proposed register into your office's approved process. It is a planning resource, not a claim that Revo supplies a flooring estimating system or these exact form fields.\n\n| Record | What reception can capture under your instructions | Office check before committing |\n|---|---|---|\n| Contact and property | Name, callback number, property location and caller's role | Service area and who may authorize a visit |\n| Requested appointment | Measurement, material consultation or estimate follow-up | Correct appointment type and responsible person |\n| Areas involved | Rooms or areas as described by the caller | Actual site scope and professional measurements |\n| Measurement status | Not measured, caller-provided dimensions or prior professional visit | Identify the source; do not label caller dimensions verified |\n| Material status | Undecided, selected or already purchased, as stated | Product suitability, quantities and responsibility for supply |\n| Existing work | Estimate reference or current-job reference if supplied | Locate the correct office record before discussing changes |\n| Visit context | Occupied home, requested access discussion and preferred period | Authorized access arrangement and practical visit requirements |\n| Next owner | Estimator, material adviser or current-project coordinator | Named person accepts follow-up; request versus confirmed appointment recorded |\n\nAsk only for information the office needs. Do not request entry codes, payment-card details or unrelated household information to complete a preliminary request. A project reference alone does not prove that a caller is authorized to change the work.\n\n## Give an existing estimate a different next step\n\nA caller who already has a quote should not automatically receive another initial measurement appointment. Capture the reference and the question: are they asking to discuss the material, understand the proposed work, revisit the timing or request a change? The office should locate the applicable estimate and decide whether a new visit is necessary.\n\nSimilarly, a current installation customer's question belongs with the project owner. Reception can record the requested change but should not accept extra rooms, approve a substitution, change the contract price or promise a revised completion date. A clear message is useful even when the required answer must come from your team.\n\n## Evaluate answering coverage with three fictional calls\n\nAsk for an authorized demonstration before routing customer calls. Use a homeowner who has not chosen material, another who supplies approximate dimensions and a third who already has an estimate. Inspect whether the resulting summaries preserve those distinctions and identify the appropriate office recipient.\n\nWhere a supported booking setup confirms an approved measurement slot, verify the appointment type and next step. Otherwise, capture the preference for staff confirmation. Do not tell a caller an installation is scheduled merely because a measurement visit has been requested.\n\nRevo's pricing page lists appointment booking, summaries and your own script, hours and rules. It lists team transfers for Crew and Fleet; Solo excludes them. Confirm the exact calendar, message delivery and unavailable-recipient fallback for your configuration. No native flooring-estimating or order-management connection is established by this page.\n\nOther models are available. SMA Support publishes a flooring-contractor offering that includes phone answering and broader office support. That describes its scope, not proof that Revo performs its back-office, accounting or insurance work. Compare the answering tasks you actually need instead of treating all outsourced services as equivalent. [SMA flooring services](https://www.smasupport.us/back-office-outsourcing-bpo-services-contractors-served/flooring/)\n\n## Choose the guide that matches the work\n\nThis page concerns installation or replacement intake and the preparation of a measurement request. For renewal of an existing wood finish, see [hardwood-refinishing answering](/ai-answering-service/hardwood-refinishing-answering-service). For a coating applied to an existing surface, see [floor-coating answering](/ai-answering-service/floor-coating-answering-service). Keep those service boundaries in your greeting and approved questions.\n\n## Questions before choosing coverage\n\n**Can reception estimate the flooring quantity from room dimensions?** This workflow records caller-supplied information. It does not calculate an order or replace the installer's measurement and material review.\n\n**Can it confirm a measurement appointment?** Only through a supported booking configuration using your approved appointment type and availability. Otherwise the office confirms the request.\n\n**Can an existing customer approve a material change by phone?** Reception can capture the request. Your office must verify authority and accept any change through its approved process.\n\n**Next step:** [Review Revo's plans](https://www.revoapp.ai/pricing) and bring your measurement appointment types, intake questions and office recipients. Ask the team to demonstrate the supported answering and handoff workflow before you buy.",
+        "sha256": "85776db427132838c4bea8fc3f6f303ed7642a526afddc698f0f2f15a82cb481",
+        "assets": []
+      },
+      "editorialDate": "2026-10-28",
+      "source": {
+        "kind": "manual",
+        "reference": "Original copy created October 28, 2026, America/Tijuana. Exact copy accepted by Jorge in user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC), responding to the specific seven-text approval request. Source package SHA256 5c9d9c9ce80ca2901bfdc63b213b9dc133fa10a1675f9e6f376be343a6c6a9b4. Copy acceptance permits implementation and technical review, not approval of the future PR. Extension of the October 28 revenue-first cohort; private research excluded."
+      },
+      "publicationStatus": "approved",
+      "review": {
+        "reviewer": "Jorge — exact seven-text acceptance, user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC)",
+        "reviewedAt": "2026-10-28",
+        "contentHash": "sha256:20c92cf983bd95b46718d44e5542b650281e3c3d51af6790765cd2d3f4cc8efe"
+      }
+    }
+  ],
+  "technicalNote": "ZyraTalk source module links restored from same accepted source appendix; exact public body and metadata unchanged."
+}
