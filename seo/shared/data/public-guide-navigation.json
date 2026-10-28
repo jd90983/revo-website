@@ -1443,5 +1443,10 @@
     "slug": "zanus-ai-receptionist",
     "label": "Home-service answering decisions",
     "template": "workflow"
+  },
+  {
+    "slug": "answering-specialists-inc",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
   }
 ]
