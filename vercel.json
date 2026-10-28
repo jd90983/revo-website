@@ -1397,6 +1397,16 @@
       "permanent": true
     },
     {
+      "source": "/ai-answering-service/ai-receptionist-return-on-investment.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/ai-receptionist-return-on-investment",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/m1-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/m1-ai-receptionist",
+      "permanent": true
+    },
+    {
       "source": "/ai-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service",
       "permanent": true
@@ -3154,6 +3164,14 @@
     {
       "source": "/ai-answering-service/flooring-answering-service",
       "destination": "/ai-answering-service/flooring-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/ai-receptionist-return-on-investment",
+      "destination": "/ai-answering-service/ai-receptionist-return-on-investment.html"
+    },
+    {
+      "source": "/ai-answering-service/m1-ai-receptionist",
+      "destination": "/ai-answering-service/m1-ai-receptionist.html"
     },
     {
       "source": "/ai-answering-service",
