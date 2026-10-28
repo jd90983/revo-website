@@ -1358,5 +1358,40 @@
     "slug": "posh-virtual-receptionist-reviews",
     "label": "Home-service answering decisions",
     "template": "workflow"
+  },
+  {
+    "slug": "dialzara-pricing",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "bookipi-ai-receptionist",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "zyratalk-pricing",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "unlimited-answering-service",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "interior-design-receptionist",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "residential-architect-receptionist",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "flooring-answering-service",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
   }
 ]
