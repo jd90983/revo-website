@@ -900,5 +900,17 @@
       "added ai-receptionist-return-on-investment as draft",
       "added m1-ai-receptionist as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-28-roi-source-reference",
+    "batchHash": "sha256:34236e2c436afb45bb855cac08039872ebf567d2d96b2ab237783457a04ae15d",
+    "source": {
+      "kind": "manual",
+      "reference": "Mechanical reference completion during Preview QA: the already approved ROI copy links /pricing and its accepted source appendix names official Revo Pricing. Add that exact source to the source list to avoid an empty Sources heading. No approved body/title/meta change. Same human acceptance Sentinel_9c1c15e9a52081919694be62fea19404; PR integration still pending."
+    },
+    "appliedAt": "2026-10-28",
+    "changes": [
+      "updated ai-receptionist-return-on-investment; back to draft until re-approved"
+    ]
   }
 ]

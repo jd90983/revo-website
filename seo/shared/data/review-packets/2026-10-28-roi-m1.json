@@ -78,6 +78,7 @@
         "answering-service-cost"
       ],
       "sourcePaths": [
+        "https://www.revoapp.ai/pricing",
         "Approved exact copy SHA256:1f41f5e3236713dfcb99cdedec8bd425d56fa20a05440ee05f9c202be727bf0b"
       ],
       "markdownArticle": {
@@ -92,9 +93,9 @@
       },
       "publicationStatus": "approved",
       "review": {
-        "reviewer": "Jorge — exact copy accepted in Sentinel_9c1c15e9a52081919694be62fea19404; recorded by Codex",
+        "reviewer": "Jorge — accepted ROI text and Pricing source; Sentinel_9c1c15e9a52081919694be62fea19404; mechanical reference recorded by Codex",
         "reviewedAt": "2026-10-28",
-        "contentHash": "sha256:ebe03826699ea92e0fd5ee6dcc38baa98096be5e511cc96fb0a0ee961c1daf96"
+        "contentHash": "sha256:6b2c23a7f9c2c4f0abcfd253eccede1558570df96180f4e7d4e3e9f32c97193a"
       }
     },
     {
@@ -181,5 +182,6 @@
         "contentHash": "sha256:3c425e10a57bd13ca67d5bbba2f3c880dd7fc772ffa08d320d986f1a9848858a"
       }
     }
-  ]
+  ],
+  "mechanicalReferenceNote": "Added already accepted /pricing reference to ROI source list; no public body, SEO title or meta changed."
 }
