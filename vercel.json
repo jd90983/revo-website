@@ -1417,6 +1417,21 @@
       "permanent": true
     },
     {
+      "source": "/ai-answering-service/compare/ai-only-vs-hybrid-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/ai-only-vs-hybrid-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/horizon-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/horizon-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/conversational-receptionists.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/conversational-receptionists",
+      "permanent": true
+    },
+    {
       "source": "/ai-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service",
       "permanent": true
@@ -3190,6 +3205,18 @@
     {
       "source": "/ai-answering-service/compare/virtual-receptionist-vs-virtual-assistant",
       "destination": "/ai-answering-service/compare/virtual-receptionist-vs-virtual-assistant.html"
+    },
+    {
+      "source": "/ai-answering-service/compare/ai-only-vs-hybrid-answering-service",
+      "destination": "/ai-answering-service/compare/ai-only-vs-hybrid-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/horizon-answering-service",
+      "destination": "/ai-answering-service/horizon-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/conversational-receptionists",
+      "destination": "/ai-answering-service/conversational-receptionists.html"
     },
     {
       "source": "/ai-answering-service",

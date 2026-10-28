@@ -1413,5 +1413,20 @@
     "slug": "compare/virtual-receptionist-vs-virtual-assistant",
     "label": "Home-service answering decisions",
     "template": "workflow"
+  },
+  {
+    "slug": "compare/ai-only-vs-hybrid-answering-service",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "horizon-answering-service",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "conversational-receptionists",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
   }
 ]

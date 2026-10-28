@@ -1,0 +1,241 @@
+{
+  "batchId": "2026-10-28-hybrid-horizon-conversational-approved-continuation",
+  "source": {
+    "kind": "manual",
+    "reference": "Approved immutable add-only continuation after18pages published October28. Jorge exact acceptance Sentinel_0b494c8cfff08191a6a4b0603255223f permits these three texts for implementation/testing, not future PR integration. Separate documentation-only PR115 remains untouched; no guards altered."
+  },
+  "operations": [
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "compare/ai-only-vs-hybrid-answering-service",
+        "title": "AI-only vs hybrid answering: who provides the human backup?",
+        "description": "Compare AI-only and hybrid answering services by who supplies human backup, what happens when nobody answers and how the full call is billed.",
+        "navigationLabel": "AI-only vs hybrid answering",
+        "eyebrow": "Home-service answering decisions",
+        "lead": "For a home-service business, the useful difference between AI-only and hybrid answering is who has agreed to take responsibility when the automated conversation reaches its limit. An AI service that transfers a caller to your electrician, dispatcher or office manager has not necessarily supplied an additional receptionist. Your team may still be the backup.",
+        "intro": "For a home-service business, the useful difference between AI-only and hybrid answering is who has agreed to take responsibility when the automated conversation reaches its limit. An AI service that transfers a caller to your electrician, dispatcher or office manager has not necessarily supplied an additional receptionist. Your team may still be the backup.",
+        "sections": [
+          {
+            "title": "Separate the three arrangements in the proposal",
+            "paragraphs": [
+              "An AI-only offer may capture routine requests and leave unresolved work for your staff. A supported transfer can connect a caller to the people you nominate. A vendor-staffed hybrid offer adds a different commitment: the supplier provides its own human handling under specified terms.\n\nSmith.ai's [AI-versus-real answering article](https://smith.ai/blog/ai-vs-real-answering-services-which-one-is-better) describes a hybrid model as AI with human backup. That establishes a category to investigate, not a universal definition or proof of the coverage included in any particular subscription. Do not adopt a supplier's savings or performance claims as your own expected result.\n\nAsk who employs or contracts the person expected to receive the call. Then ask which request types that person can handle. Being available to take a message is different from having authority to change a customer's appointment, revise an estimate or resolve a dispute."
+            ],
+            "items": []
+          },
+          {
+            "title": "Copy this human-backup responsibility ledger",
+            "paragraphs": [
+              "Complete one column for each written offer. An unanswered field is an unresolved purchasing requirement.\n\n| Decision | AI with transfer to your team | Supplier-provided human fallback |\n| --- | --- | --- |\n| Who receives the call beyond the AI flow? | Name your office role or other approved recipient | Identify the supplier's contracted agent arrangement |\n| When is that person available? | Your staffing schedule and absence cover | Hours and exclusions confirmed for the specific offer |\n| What may the person decide? | Your employee's actual authority | The supplier agent's agreed task and decision limits |\n| What happens when nobody accepts? | Your supported no-answer outcome and follow-up owner | The supplier's stated queue, alternate route or unresolved-call outcome |\n| What information accompanies the call? | The demonstrated transfer or message context | The demonstrated context received by the agent |\n| Which work remains with your office? | Unresolved requests and business decisions | Anything the supplier has not explicitly accepted |\n\nKeep a human name or role attached to follow-up. A message delivered, a transfer attempted and a request resolved are different outcomes."
+            ],
+            "items": []
+          },
+          {
+            "title": "Test an unavailable office, not just a successful transfer",
+            "paragraphs": [
+              "Use a fictional ordinary caller asking to change the scope of an existing job. In one case, your designated office recipient is available. In another, the recipient is unavailable. Have the supplier show the resulting caller outcome and record using its supported evaluation process.\n\nFor a vendor-staffed hybrid proposal, ask the supplier to demonstrate the same unavailable-recipient case and identify what its own agent can do next. Do not substitute a sales demonstration of your employee answering for evidence of supplier-provided backup. Keep emergency response and technical advice outside this routine evaluation.\n\nThe [warm-versus-cold transfer guide](/ai-answering-service/compare/warm-vs-cold-transfer) addresses connection behavior. This ledger addresses who supplies the additional labor and accepts the unresolved work. A warmer transfer does not by itself create that staffing commitment."
+            ],
+            "items": []
+          },
+          {
+            "title": "Price the complete path through one call",
+            "paragraphs": [
+              "Ask for a fictional billing walkthrough using the actual offer: a call spends time with AI, then with a supplier agent, and then reaches your employee. Which portions count as calls or minutes? Does a transfer create another billable event? Are agent time, waiting, messages or other actions included or separately charged?\n\nRecord the quoted units and charges rather than inventing a universal hybrid premium. An offer may bill the stages differently. Also record retained office work; paying for supplier backup does not automatically eliminate review, callbacks or commercial decisions. Do not count an employee's salary as avoided unless that expense actually changes."
+            ],
+            "items": []
+          },
+          {
+            "title": "Evaluate Revo on its supported answering scope",
+            "paragraphs": [
+              "Revo publishes AI answering, intake, appointment booking and call summaries; transfers and other features depend on the plan and supported configuration. Review [current Revo plans](/pricing) when your requirement is a supported incoming-call flow with responsibilities your office can retain.\n\nThis guide does not claim Revo supplies outsourced human receptionists. If contracted live-agent fallback is essential, verify that requirement directly with the providers you consider. Compare the [AI-versus-live handling models](/ai-answering-service/compare/ai-vs-live-receptionist) separately from the ownership of the backup work."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Is AI with a transfer button always a hybrid answering service?\n\nNo universal label settles that question. Verify whether the receiving person belongs to your team or is supplied under the vendor's contract.\n\n### Does a human fallback guarantee the request will be resolved?\n\nNo. Confirm the agent's availability, authority and supported outcome when the request remains outside scope.\n\n### Should I compare only the subscription price?\n\nCompare the entire quoted handling path and retained office work. Keep different units and separately charged stages visible.\n\n[Compare Revo's answering plans](/pricing) with the completed responsibility ledger before choosing the arrangement."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Compare the supported answering workflow.",
+        "related": [],
+        "sourcePaths": [
+          "https://smith.ai/blog/ai-vs-real-answering-services-which-one-is-better",
+          "https://www.revoapp.ai/pricing",
+          "Approved exact public copy SHA256:498d2257db35d30d7f706e91dc42793fcc004048a4a0c429ee370225390fd123"
+        ],
+        "markdownArticle": {
+          "content": "# AI-only vs hybrid answering service: who provides the human backup?\n\nFor a home-service business, the useful difference between AI-only and hybrid answering is who has agreed to take responsibility when the automated conversation reaches its limit. An AI service that transfers a caller to your electrician, dispatcher or office manager has not necessarily supplied an additional receptionist. Your team may still be the backup.\n\nPublished by Revo, a competing AI answering provider. This guide compares purchasing arrangements. It does not establish a provider-staffed live-agent network for Revo or promise that a human is available whenever a transfer is attempted.\n\n## Separate the three arrangements in the proposal\n\nAn AI-only offer may capture routine requests and leave unresolved work for your staff. A supported transfer can connect a caller to the people you nominate. A vendor-staffed hybrid offer adds a different commitment: the supplier provides its own human handling under specified terms.\n\nSmith.ai's [AI-versus-real answering article](https://smith.ai/blog/ai-vs-real-answering-services-which-one-is-better) describes a hybrid model as AI with human backup. That establishes a category to investigate, not a universal definition or proof of the coverage included in any particular subscription. Do not adopt a supplier's savings or performance claims as your own expected result.\n\nAsk who employs or contracts the person expected to receive the call. Then ask which request types that person can handle. Being available to take a message is different from having authority to change a customer's appointment, revise an estimate or resolve a dispute.\n\n## Copy this human-backup responsibility ledger\n\nComplete one column for each written offer. An unanswered field is an unresolved purchasing requirement.\n\n| Decision | AI with transfer to your team | Supplier-provided human fallback |\n| --- | --- | --- |\n| Who receives the call beyond the AI flow? | Name your office role or other approved recipient | Identify the supplier's contracted agent arrangement |\n| When is that person available? | Your staffing schedule and absence cover | Hours and exclusions confirmed for the specific offer |\n| What may the person decide? | Your employee's actual authority | The supplier agent's agreed task and decision limits |\n| What happens when nobody accepts? | Your supported no-answer outcome and follow-up owner | The supplier's stated queue, alternate route or unresolved-call outcome |\n| What information accompanies the call? | The demonstrated transfer or message context | The demonstrated context received by the agent |\n| Which work remains with your office? | Unresolved requests and business decisions | Anything the supplier has not explicitly accepted |\n\nKeep a human name or role attached to follow-up. A message delivered, a transfer attempted and a request resolved are different outcomes.\n\n## Test an unavailable office, not just a successful transfer\n\nUse a fictional ordinary caller asking to change the scope of an existing job. In one case, your designated office recipient is available. In another, the recipient is unavailable. Have the supplier show the resulting caller outcome and record using its supported evaluation process.\n\nFor a vendor-staffed hybrid proposal, ask the supplier to demonstrate the same unavailable-recipient case and identify what its own agent can do next. Do not substitute a sales demonstration of your employee answering for evidence of supplier-provided backup. Keep emergency response and technical advice outside this routine evaluation.\n\nThe [warm-versus-cold transfer guide](/ai-answering-service/compare/warm-vs-cold-transfer) addresses connection behavior. This ledger addresses who supplies the additional labor and accepts the unresolved work. A warmer transfer does not by itself create that staffing commitment.\n\n## Price the complete path through one call\n\nAsk for a fictional billing walkthrough using the actual offer: a call spends time with AI, then with a supplier agent, and then reaches your employee. Which portions count as calls or minutes? Does a transfer create another billable event? Are agent time, waiting, messages or other actions included or separately charged?\n\nRecord the quoted units and charges rather than inventing a universal hybrid premium. An offer may bill the stages differently. Also record retained office work; paying for supplier backup does not automatically eliminate review, callbacks or commercial decisions. Do not count an employee's salary as avoided unless that expense actually changes.\n\n## Evaluate Revo on its supported answering scope\n\nRevo publishes AI answering, intake, appointment booking and call summaries; transfers and other features depend on the plan and supported configuration. Review [current Revo plans](/pricing) when your requirement is a supported incoming-call flow with responsibilities your office can retain.\n\nThis guide does not claim Revo supplies outsourced human receptionists. If contracted live-agent fallback is essential, verify that requirement directly with the providers you consider. Compare the [AI-versus-live handling models](/ai-answering-service/compare/ai-vs-live-receptionist) separately from the ownership of the backup work.\n\n## Frequently asked questions\n\n### Is AI with a transfer button always a hybrid answering service?\n\nNo universal label settles that question. Verify whether the receiving person belongs to your team or is supplied under the vendor's contract.\n\n### Does a human fallback guarantee the request will be resolved?\n\nNo. Confirm the agent's availability, authority and supported outcome when the request remains outside scope.\n\n### Should I compare only the subscription price?\n\nCompare the entire quoted handling path and retained office work. Keep different units and separately charged stages visible.\n\n[Compare Revo's answering plans](/pricing) with the completed responsibility ledger before choosing the arrangement.\n",
+          "sha256": "498d2257db35d30d7f706e91dc42793fcc004048a4a0c429ee370225390fd123",
+          "assets": []
+        },
+        "editorialDate": "2026-10-28",
+        "source": {
+          "kind": "manual",
+          "reference": "Copy created October 28, 2026, America/Tijuana. Jorge accepted these exact three texts for implementation and testing in Sentinel_0b494c8cfff08191a6a4b0603255223f at 2026-10-28 20:49:42 UTC, responding to Sentinel_0b07d2e3b1408191a230452d05232a20. Approved PDF libfile_3b9926b13e70819190bc8461c7867137 v0 SHA256 3774c03158c3e162f0d2bd8f11c2028ebf34df016b9e37e59206d06f4a1a5a70; parent confirms original full bodies including newline. Acceptance covers implementation and technical review, not approval of any future PR. Add-only continuation of the October28 cohort; completed batches and guards preserved. Research and conditional selection metadata excluded."
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "horizon-answering-service",
+        "title": "Horizon Answering Service: evaluate a contractor quote",
+        "description": "Evaluate Horizon Answering Service for a contractor office. Separate live coverage, message delivery and escalation responsibilities in the actual quote.",
+        "navigationLabel": "Horizon answering service",
+        "eyebrow": "Home-service answering decisions",
+        "lead": "A contractor considering Horizon Answering Service should identify what the proposed live coverage actually delivers to the office. Receiving a call, delivering a message and obtaining a response from the responsible employee are separate steps. A useful quote names each step rather than leaving the entire job under a broad promise of coverage.",
+        "intro": "A contractor considering Horizon Answering Service should identify what the proposed live coverage actually delivers to the office. Receiving a call, delivering a message and obtaining a response from the responsible employee are separate steps. A useful quote names each step rather than leaving the entire job under a broad promise of coverage.",
+        "sections": [
+          {
+            "title": "Start with Horizon's contractor offer",
+            "paragraphs": [
+              "Horizon has a dedicated [trades answering page](https://horizonansweringservice.com/trades-answering-service/) listing contractors and residential service trades. It advertises live coverage around the clock and describes collecting information and delivering it according to client preferences. Its [homepage](https://horizonansweringservice.com/) identifies answering teams in Montana and Washington.\n\nThose statements identify an offer worth evaluating. They do not establish your own service territory, field availability or authority to dispatch a crew. An agent's operating location and the location where your business accepts jobs are different facts. Keep both explicit in the proposed setup."
+            ],
+            "items": []
+          },
+          {
+            "title": "Build a coverage map for the actual office",
+            "paragraphs": [
+              "Copy the map below into your quote review. Complete the evidence column with the supplier's applicable instructions and demonstrated behavior.\n\n| Office requirement | Evidence to obtain | Responsibility to keep explicit |\n| --- | --- | --- |\n| New residential inquiry | Included hours, accepted request details and resulting record | Who confirms service fit and next steps |\n| Existing-job question | Reference information and destination for the question | Who knows the actual job status |\n| Employee needs a message | Delivery channel and information included | Who reads it and owns follow-up |\n| A request needs escalation | The agreed recipient and contact sequence | Who acknowledges receipt and makes the business decision |\n| Usual recipient unavailable | The documented alternate outcome | Who reviews unresolved work |\n| Your office changes its hours | The update method and effective schedule | Who maintains and verifies the instructions |\n\nA channel preference does not prove acknowledgement. If the proposal says a message can be delivered by email or text, ask what establishes that someone has accepted responsibility. Avoid treating an unopened notification as a confirmed response."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep technical and commercial commitments with authorized people",
+            "paragraphs": [
+              "Use a fictional caller who asks for a specific arrival time and mentions a change to an existing job. Ask what the answering agent is authorized to say and what record your office receives. The result should preserve an unanswered request when current availability or job details have not been verified.\n\nDo not infer repair diagnosis, safety assessment, a confirmed dispatch or a binding estimate from a general answering-service description. A contractor may need a specialist process for certain calls. Verify that process separately rather than expecting an ordinary reception quote to establish it."
+            ],
+            "items": []
+          },
+          {
+            "title": "Obtain one current written price and scope",
+            "paragraphs": [
+              "Horizon's public pages do not present one consistent starting amount across the pages reviewed. This guide therefore does not choose a starting rate, combine figures from different pages or calculate savings from them. Obtain a current written proposal for your business and retain the date and included work.\n\nAsk which unit is billed, which usage is included, how additional usage is charged and whether any required setup or other service changes the total. Confirm the offer that applies to your account. The [answering-service contract checklist](/ai-answering-service/answering-service-contract-checklist) covers general commitment and exit questions; the coverage map here identifies the Horizon workflow your quote needs to describe."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare the office handoff with Revo's narrower offer",
+            "paragraphs": [
+              "Revo publishes AI answering, intake, appointment booking and call summaries. Team transfers and other features depend on the selected plan and supported configuration. Review [current Revo plans](/pricing) if the requirement is a supported automated answering flow and an office-owned handoff.\n\nThis is not a claim that Revo supplies Horizon's live agents, portal or any other Horizon function. If human reception is a requirement, assess the applicable human offer on its own terms. If routine intake is sufficient, compare the exact information and outcome your office needs instead of assuming both arrangements include the same labor."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Does Horizon's local-agent description establish my service area?\n\nNo. Ask the provider to use your approved service-area instructions. The location of an answering team is not your business's job-acceptance policy.\n\n### Which starting price should I use from Horizon's website?\n\nUse a current written offer for your account. This guide does not resolve the different starting figures on the reviewed public pages.\n\n### Is message delivery the same as a confirmed dispatch?\n\nNo. Define the responsible recipient, acknowledgement process and authorized decision separately.\n\n[Review Revo's current plans](/pricing) alongside the completed coverage map and the supplier's written quote."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Compare the supported answering workflow.",
+        "related": [],
+        "sourcePaths": [
+          "https://horizonansweringservice.com/",
+          "https://horizonansweringservice.com/trades-answering-service/",
+          "https://horizonansweringservice.com/the-horizon-difference/",
+          "https://www.revoapp.ai/pricing",
+          "Approved exact public copy SHA256:f927e533f43a5c5930eb7bb253f9ee29e92d92fb522bcbbd16ca045589a57940"
+        ],
+        "markdownArticle": {
+          "content": "# Horizon Answering Service: evaluate the contractor coverage in your quote\n\nA contractor considering Horizon Answering Service should identify what the proposed live coverage actually delivers to the office. Receiving a call, delivering a message and obtaining a response from the responsible employee are separate steps. A useful quote names each step rather than leaving the entire job under a broad promise of coverage.\n\nPublished by Revo, a competing AI answering provider. This documentary guide uses Horizon's public pages reviewed October 28, 2026. It is not a hands-on service test, a customer review score or a guarantee of either provider's performance.\n\n## Start with Horizon's contractor offer\n\nHorizon has a dedicated [trades answering page](https://horizonansweringservice.com/trades-answering-service/) listing contractors and residential service trades. It advertises live coverage around the clock and describes collecting information and delivering it according to client preferences. Its [homepage](https://horizonansweringservice.com/) identifies answering teams in Montana and Washington.\n\nThose statements identify an offer worth evaluating. They do not establish your own service territory, field availability or authority to dispatch a crew. An agent's operating location and the location where your business accepts jobs are different facts. Keep both explicit in the proposed setup.\n\n## Build a coverage map for the actual office\n\nCopy the map below into your quote review. Complete the evidence column with the supplier's applicable instructions and demonstrated behavior.\n\n| Office requirement | Evidence to obtain | Responsibility to keep explicit |\n| --- | --- | --- |\n| New residential inquiry | Included hours, accepted request details and resulting record | Who confirms service fit and next steps |\n| Existing-job question | Reference information and destination for the question | Who knows the actual job status |\n| Employee needs a message | Delivery channel and information included | Who reads it and owns follow-up |\n| A request needs escalation | The agreed recipient and contact sequence | Who acknowledges receipt and makes the business decision |\n| Usual recipient unavailable | The documented alternate outcome | Who reviews unresolved work |\n| Your office changes its hours | The update method and effective schedule | Who maintains and verifies the instructions |\n\nA channel preference does not prove acknowledgement. If the proposal says a message can be delivered by email or text, ask what establishes that someone has accepted responsibility. Avoid treating an unopened notification as a confirmed response.\n\n## Keep technical and commercial commitments with authorized people\n\nUse a fictional caller who asks for a specific arrival time and mentions a change to an existing job. Ask what the answering agent is authorized to say and what record your office receives. The result should preserve an unanswered request when current availability or job details have not been verified.\n\nDo not infer repair diagnosis, safety assessment, a confirmed dispatch or a binding estimate from a general answering-service description. A contractor may need a specialist process for certain calls. Verify that process separately rather than expecting an ordinary reception quote to establish it.\n\n## Obtain one current written price and scope\n\nHorizon's public pages do not present one consistent starting amount across the pages reviewed. This guide therefore does not choose a starting rate, combine figures from different pages or calculate savings from them. Obtain a current written proposal for your business and retain the date and included work.\n\nAsk which unit is billed, which usage is included, how additional usage is charged and whether any required setup or other service changes the total. Confirm the offer that applies to your account. The [answering-service contract checklist](/ai-answering-service/answering-service-contract-checklist) covers general commitment and exit questions; the coverage map here identifies the Horizon workflow your quote needs to describe.\n\n## Compare the office handoff with Revo's narrower offer\n\nRevo publishes AI answering, intake, appointment booking and call summaries. Team transfers and other features depend on the selected plan and supported configuration. Review [current Revo plans](/pricing) if the requirement is a supported automated answering flow and an office-owned handoff.\n\nThis is not a claim that Revo supplies Horizon's live agents, portal or any other Horizon function. If human reception is a requirement, assess the applicable human offer on its own terms. If routine intake is sufficient, compare the exact information and outcome your office needs instead of assuming both arrangements include the same labor.\n\n## Frequently asked questions\n\n### Does Horizon's local-agent description establish my service area?\n\nNo. Ask the provider to use your approved service-area instructions. The location of an answering team is not your business's job-acceptance policy.\n\n### Which starting price should I use from Horizon's website?\n\nUse a current written offer for your account. This guide does not resolve the different starting figures on the reviewed public pages.\n\n### Is message delivery the same as a confirmed dispatch?\n\nNo. Define the responsible recipient, acknowledgement process and authorized decision separately.\n\n[Review Revo's current plans](/pricing) alongside the completed coverage map and the supplier's written quote.\n",
+          "sha256": "f927e533f43a5c5930eb7bb253f9ee29e92d92fb522bcbbd16ca045589a57940",
+          "assets": []
+        },
+        "editorialDate": "2026-10-28",
+        "source": {
+          "kind": "manual",
+          "reference": "Copy created October 28, 2026, America/Tijuana. Jorge accepted these exact three texts for implementation and testing in Sentinel_0b494c8cfff08191a6a4b0603255223f at 2026-10-28 20:49:42 UTC, responding to Sentinel_0b07d2e3b1408191a230452d05232a20. Approved PDF libfile_3b9926b13e70819190bc8461c7867137 v0 SHA256 3774c03158c3e162f0d2bd8f11c2028ebf34df016b9e37e59206d06f4a1a5a70; parent confirms original full bodies including newline. Acceptance covers implementation and technical review, not approval of any future PR. Add-only continuation of the October28 cohort; completed batches and guards preserved. Research and conditional selection metadata excluded."
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "conversational-receptionists",
+        "title": "Conversational Receptionists: live hours vs automation",
+        "description": "Evaluate Conversational Receptionists by separating its live-answering hours from automated coverage, booking scope and the written offer for your account.",
+        "navigationLabel": "Conversational Receptionists",
+        "eyebrow": "Home-service answering decisions",
+        "lead": "When evaluating Conversational Receptionists, first separate the named supplier from the general phrase conversational answering. The provider offers live reception and an automated service, and those descriptions should not be combined into an assumption of continuous human answering.",
+        "intro": "When evaluating Conversational Receptionists, first separate the named supplier from the general phrase conversational answering. The provider offers live reception and an automated service, and those descriptions should not be combined into an assumption of continuous human answering.",
+        "sections": [
+          {
+            "title": "Confirm which Conversational service you are considering",
+            "paragraphs": [
+              "[Conversational's homepage](https://conversational.com/) presents live reception alongside Auto Reception. Its [FAQ](https://conversational.com/faq/) states live availability Monday through Friday, 7am to 8pm EST, and describes automated coverage outside those hours. These are the supplier's published descriptions, not a guarantee for a particular account.\n\nAsk for the current schedule in writing using the supplier's exact time-zone definition, including daylight-saving treatment and holidays. Do not silently translate an EST label into every business's local clock. A roofing office that wants a person to answer a Saturday inquiry needs to evaluate that request specifically rather than rely on a broad availability phrase."
+            ],
+            "items": []
+          },
+          {
+            "title": "Complete this live-versus-automated coverage grid",
+            "paragraphs": [
+              "Write the desired result for each window, then have the provider identify the service that performs it.\n\n| Caller window or request | Required result | Evidence to obtain |\n| --- | --- | --- |\n| Your ordinary weekday office hours | Live reception, automated intake or office handling as specified | Exact service and applicable hours |\n| Your office closed but within supplier live hours | The agreed handling arrangement | Confirmation that forwarding and account instructions support it |\n| Outside supplier live hours | The stated automated or other supported outcome | What the caller hears and which information reaches staff |\n| A holiday or time-zone change | Coverage matching the agreed schedule | Written exception and effective time |\n| Appointment-related inquiry | A supported booking or request record | Exact tool, access and confirmation responsibility |\n| Office recipient unavailable | A documented unresolved-call outcome | Message, voicemail or other supported behavior and follow-up owner |\n\nDo not fill a blank cell with the word covered. State what happens to the caller and which person or system receives the resulting work. An automated message can be useful without being described as a human conversation."
+            ],
+            "items": []
+          },
+          {
+            "title": "Verify booking access as a separate requirement",
+            "paragraphs": [
+              "Conversational's FAQ describes booking through remotely accessible scheduling software. That is a published capability statement to verify against the actual system and task you use. It does not establish that every calendar, permission model or appointment type will work without configuration.\n\nFor a fictional service inquiry, distinguish a preferred day from a confirmed appointment. Ask the provider to demonstrate the permitted action and the resulting office record. Determine who maintains available times, service duration, accepted work and any decision the receptionist must leave to your staff. Do not grant unnecessary access merely to make a general feature label fit."
+            ],
+            "items": []
+          },
+          {
+            "title": "Reconcile the account offer before using a comparison table",
+            "paragraphs": [
+              "The reviewed public material contains different price presentations and trial or money-back wording. This guide does not combine those statements into one offer, repeat competitors' old prices from a comparison table or calculate savings from them.\n\nObtain the current plan, included usage, additional charges, booking terms and applicable introductory conditions for your own account. Keep trial access, a billed month with a possible refund and a continuing subscription distinct. Use the purchase terms that actually apply instead of assuming a promotional phrase has the same meaning in every page or signup route."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare Revo against the coverage you actually need",
+            "paragraphs": [
+              "Revo publishes AI answering, intake, appointment booking and call summaries; team transfers and other features depend on the plan and supported configuration. Review [current Revo plans](/pricing) when considering a supported AI incoming-call workflow.\n\nThis does not establish that Revo supplies Conversational's live receptionists, automated menu product or scheduling-software access. If your buying requirement is a person during a particular window, verify that human arrangement. If supported automated reception is sufficient, compare the resulting intake and office handoff on their actual scope."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Does automated coverage establish 24/7 live reception?\n\nNo. Obtain the hours and handling model for each window separately.\n\n### Should I convert the published EST hours into my local schedule myself?\n\nHave the supplier confirm the current time-zone and daylight-saving treatment in the applicable schedule before relying on a conversion.\n\n### Does a vendor comparison table establish today's offer?\n\nNo. Verify the applicable plan and terms directly, especially when different public pages present different figures or introductory wording.\n\n[Review Revo's current answering plans](/pricing) with your completed coverage grid, keeping human and automated responsibilities separate."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Compare the supported answering workflow.",
+        "related": [],
+        "sourcePaths": [
+          "https://conversational.com/",
+          "https://conversational.com/faq/",
+          "https://conversational.com/compare-our-services/",
+          "https://www.revoapp.ai/pricing",
+          "Approved exact public copy SHA256:9868e449236ddc2c6c1569ad18ae7675e3ed38bc6344a8d94be96f490bd120ce"
+        ],
+        "markdownArticle": {
+          "content": "# Conversational Receptionists: distinguish live hours from automated coverage\n\nWhen evaluating Conversational Receptionists, first separate the named supplier from the general phrase conversational answering. The provider offers live reception and an automated service, and those descriptions should not be combined into an assumption of continuous human answering.\n\nPublished by Revo, a competing AI answering provider. This documentary guide examines public Conversational LLC pages reviewed October 28, 2026. It is not a service test, a customer rating or proof that one provider performs better than another.\n\n## Confirm which Conversational service you are considering\n\n[Conversational's homepage](https://conversational.com/) presents live reception alongside Auto Reception. Its [FAQ](https://conversational.com/faq/) states live availability Monday through Friday, 7am to 8pm EST, and describes automated coverage outside those hours. These are the supplier's published descriptions, not a guarantee for a particular account.\n\nAsk for the current schedule in writing using the supplier's exact time-zone definition, including daylight-saving treatment and holidays. Do not silently translate an EST label into every business's local clock. A roofing office that wants a person to answer a Saturday inquiry needs to evaluate that request specifically rather than rely on a broad availability phrase.\n\n## Complete this live-versus-automated coverage grid\n\nWrite the desired result for each window, then have the provider identify the service that performs it.\n\n| Caller window or request | Required result | Evidence to obtain |\n| --- | --- | --- |\n| Your ordinary weekday office hours | Live reception, automated intake or office handling as specified | Exact service and applicable hours |\n| Your office closed but within supplier live hours | The agreed handling arrangement | Confirmation that forwarding and account instructions support it |\n| Outside supplier live hours | The stated automated or other supported outcome | What the caller hears and which information reaches staff |\n| A holiday or time-zone change | Coverage matching the agreed schedule | Written exception and effective time |\n| Appointment-related inquiry | A supported booking or request record | Exact tool, access and confirmation responsibility |\n| Office recipient unavailable | A documented unresolved-call outcome | Message, voicemail or other supported behavior and follow-up owner |\n\nDo not fill a blank cell with the word covered. State what happens to the caller and which person or system receives the resulting work. An automated message can be useful without being described as a human conversation.\n\n## Verify booking access as a separate requirement\n\nConversational's FAQ describes booking through remotely accessible scheduling software. That is a published capability statement to verify against the actual system and task you use. It does not establish that every calendar, permission model or appointment type will work without configuration.\n\nFor a fictional service inquiry, distinguish a preferred day from a confirmed appointment. Ask the provider to demonstrate the permitted action and the resulting office record. Determine who maintains available times, service duration, accepted work and any decision the receptionist must leave to your staff. Do not grant unnecessary access merely to make a general feature label fit.\n\n## Reconcile the account offer before using a comparison table\n\nThe reviewed public material contains different price presentations and trial or money-back wording. This guide does not combine those statements into one offer, repeat competitors' old prices from a comparison table or calculate savings from them.\n\nObtain the current plan, included usage, additional charges, booking terms and applicable introductory conditions for your own account. Keep trial access, a billed month with a possible refund and a continuing subscription distinct. Use the purchase terms that actually apply instead of assuming a promotional phrase has the same meaning in every page or signup route.\n\n## Compare Revo against the coverage you actually need\n\nRevo publishes AI answering, intake, appointment booking and call summaries; team transfers and other features depend on the plan and supported configuration. Review [current Revo plans](/pricing) when considering a supported AI incoming-call workflow.\n\nThis does not establish that Revo supplies Conversational's live receptionists, automated menu product or scheduling-software access. If your buying requirement is a person during a particular window, verify that human arrangement. If supported automated reception is sufficient, compare the resulting intake and office handoff on their actual scope.\n\n## Frequently asked questions\n\n### Does automated coverage establish 24/7 live reception?\n\nNo. Obtain the hours and handling model for each window separately.\n\n### Should I convert the published EST hours into my local schedule myself?\n\nHave the supplier confirm the current time-zone and daylight-saving treatment in the applicable schedule before relying on a conversion.\n\n### Does a vendor comparison table establish today's offer?\n\nNo. Verify the applicable plan and terms directly, especially when different public pages present different figures or introductory wording.\n\n[Review Revo's current answering plans](/pricing) with your completed coverage grid, keeping human and automated responsibilities separate.\n",
+          "sha256": "9868e449236ddc2c6c1569ad18ae7675e3ed38bc6344a8d94be96f490bd120ce",
+          "assets": []
+        },
+        "editorialDate": "2026-10-28",
+        "source": {
+          "kind": "manual",
+          "reference": "Copy created October 28, 2026, America/Tijuana. Jorge accepted these exact three texts for implementation and testing in Sentinel_0b494c8cfff08191a6a4b0603255223f at 2026-10-28 20:49:42 UTC, responding to Sentinel_0b07d2e3b1408191a230452d05232a20. Approved PDF libfile_3b9926b13e70819190bc8461c7867137 v0 SHA256 3774c03158c3e162f0d2bd8f11c2028ebf34df016b9e37e59206d06f4a1a5a70; parent confirms original full bodies including newline. Acceptance covers implementation and technical review, not approval of any future PR. Add-only continuation of the October28 cohort; completed batches and guards preserved. Research and conditional selection metadata excluded."
+        }
+      }
+    }
+  ]
+}
