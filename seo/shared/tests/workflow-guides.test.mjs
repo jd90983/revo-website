@@ -114,7 +114,7 @@ test('worksheet downloads stay on the current deployment without changing review
 
 test('approved Markdown transfers retain exact copy, semantic tables, code and local companion resources',async()=>{
  const {createHash}=await import('node:crypto');const {readFile}=await import('node:fs/promises');
- const articles=guides.filter(p=>p.markdownArticle);assert.equal(articles.length,17);
+ const articles=guides.filter(p=>p.markdownArticle);assert.ok(articles.length>=17,'retain the original Markdown cohort while validating reviewed additions');
  let tables=0,codes=0,resources=0;
  for(const page of articles){
   const article=page.markdownArticle;

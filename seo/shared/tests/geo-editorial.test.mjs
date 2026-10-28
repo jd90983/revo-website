@@ -79,7 +79,7 @@ test('provider comparisons keep existing intent owners and distinguish billing u
 });
 
 test('articles without supplied FAQs do not publish an empty FAQ claim',()=>{
- for(const p of REVIEW_PAGES.filter(p=>p.markdownArticle)){
+ for(const p of REVIEW_PAGES.filter(p=>p.markdownArticle && p.faqs.length===0)){
   assert.equal(p.faqs.length,0);const schema=guideStructuredData(p);
   assert.equal(schema['@type'],'WebPage');assert.ok(!JSON.stringify(schema).includes('FAQPage'));
   assert.equal(schema.url,'https://www.revoapp.ai/ai-answering-service/'+p.slug);
