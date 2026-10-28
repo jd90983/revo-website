@@ -1,0 +1,94 @@
+{
+  "batchId": "2026-10-28-supplement-source-links",
+  "source": {
+    "kind": "manual",
+    "reference": "Mechanical source module completion from the same accepted ZyraTalk review appendix; exact public body and metadata unchanged. User copy acceptance Sentinel_b80f492bd3d4819187018ce1d27e6d05. No new research or product claims."
+  },
+  "operations": [
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "zyratalk-pricing",
+        "title": "ZyraTalk pricing: define the quote and setup route",
+        "description": "ZyraTalk uses custom pricing. Separate your inbound answering needs from chat, outbound modules and the Invoice Simple setup route before comparing quotes.",
+        "navigationLabel": "zyratalk pricing",
+        "eyebrow": "Home-service answering decisions",
+        "lead": "ZyraTalk’s current FAQ says pricing is customized to the business; it does not publish a numerical rate there. For a home-service buyer, the useful next step is to define which communication tasks and setup route the quote covers. Revo, a competing AI answering provider, reviewed the official sources on October 28, 2026. We did not test ZyraTalk or obtain a private quote.",
+        "intro": "ZyraTalk’s current FAQ says pricing is customized to the business; it does not publish a numerical rate there. For a home-service buyer, the useful next step is to define which communication tasks and setup route the quote covers. Revo, a competing AI answering provider, reviewed the official sources on October 28, 2026. We did not test ZyraTalk or obtain a private quote.",
+        "sections": [
+          {
+            "title": "Start with the purchase you actually need",
+            "paragraphs": [
+              "ZyraTalk by EverPro presents a platform spanning inbound AI calls, webchat, outbound calling and outbound SMS. Its website also describes connections to field-service and CRM software. Those descriptions make it worth asking about a broader communications workflow, not treating the product as only a telephone greeting.\n\nDo not turn the feature list into an assumption that every function is included in one price. Ask which tasks are available in the proposal, how usage is measured, who configures them and what remains outside scope. A demo request is not a price commitment, and an older third-party starting price is not a substitute for the current offer."
+            ],
+            "items": []
+          },
+          {
+            "title": "Clarify the Invoice Simple route before comparing offers",
+            "paragraphs": [
+              "Invoice Simple’s official help article documents an AI Receptionist entry under Tools. Its setup collects business details and then directs the user to the ZyraTalk platform to configure the assistant. The article describes answering client calls, appointment-related help and basic business questions.\n\nThat establishes a documented entry point, not the complete commercial agreement. If you already use Invoice Simple, ask whether your proposed service is purchased through that route or separately. Confirm account ownership, the billing party, which subscription is required and which support team owns an issue after the handoff. The setup article does not establish a price or prove that every capability on ZyraTalk’s main website is included."
+            ],
+            "items": []
+          },
+          {
+            "title": "Take this scope sheet into the quote conversation",
+            "paragraphs": [
+              "Use the same sheet for each offer you receive. Mark an item unnecessary when it is outside your first purchase rather than allowing it to disappear inside a broad platform description.\n\n| Quote item | Decision to document |\n| --- | --- |\n| Inbound phone coverage | Number, answering periods, permitted intake and booking actions |\n| Webchat | Whether required, where deployed and who receives exceptions |\n| Outbound phone and SMS | Whether requested at all; specific tasks and operating ownership |\n| Software connection | Exact product/account, fields, direction and booking authority |\n| Usage and charges | Billable unit, allowance if any, excess usage and other applicable charges |\n| Account and support | Purchase route, billing party, configuration owner and exit process |"
+            ],
+            "items": []
+          },
+          {
+            "title": "Try a fictional buyer case without inventing a price",
+            "paragraphs": [
+              "Consider a fictional HVAC office that uses Invoice Simple and initially wants evening calls answered, service details captured and appointment requests handled under its rules. The office does not need outbound campaigns or webchat in this first stage.\n\nThe buyer asks whether ZyraTalk can quote that defined scope through the documented Invoice Simple route, then requests the corresponding account and support terms. If an offer includes more functions, the office asks which are optional, which are part of the package and how the total would change under the provider’s actual commercial rules.\n\nNo dollar total can be responsibly calculated from that case without the quote. Nor does the example establish that modules can be purchased separately. Its purpose is to prevent an inbound requirement from being compared with an unexplained multi-channel package."
+            ],
+            "items": []
+          },
+          {
+            "title": "Require evidence at the booking and exception boundary",
+            "paragraphs": [
+              "For a demonstration, supply fictional requests and write the expected result first. Ask the provider to show an ordinary inquiry, a requested time that is unavailable and a customer asking to change existing work. Inspect the resulting record and which person owns the next action.\n\nIf a software connection is proposed, distinguish a captured time preference from a confirmed appointment in the authoritative schedule. Ask what happens when the destination cannot accept an update. These are suggested checks, not tests we performed, and they do not authorize messages, campaigns or changes to a live customer account."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare Revo on the same inbound requirement",
+            "paragraphs": [
+              "Revo’s Pricing page describes AI answering plans with the business’s script and rules, booking and SMS follow-up; transfers to the customer’s team are listed for Crew and Fleet. Use that published scope as a separate comparison line.\n\nDo not infer a Revo connection to Invoice Simple or another named field-service platform, an outsourced human answering network or outbound phone campaigns. If the main requirement is a wider communications ecosystem, evaluate that scope directly with the supplier. If the need is inbound coverage, compare the supported handling, capacity, handoff and written charges for that specific task."
+            ],
+            "items": []
+          },
+          {
+            "title": "Questions",
+            "paragraphs": [
+              "### What is ZyraTalk’s current starting price?\n\nThe reviewed official FAQ gives custom pricing rather than a numerical starting rate. Request the offer for your business and retain its scope and billing assumptions.\n\n### Does the Invoice Simple setup article establish what I will pay?\n\nNo. It documents a setup path into ZyraTalk, not the complete price, required subscription or inclusion of every advertised module.\n\n### Is Revo presented here as an equivalent multi-channel package?\n\nNo. This comparison keeps the documented inbound requirement separate from any broader platform purchase and does not claim identical functions or integrations.\n\n[Review Revo’s current answering plans](/pricing)"
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Compare the supported answering workflow.",
+        "related": [],
+        "sourcePaths": [
+          "https://www.zyratalk.com/",
+          "https://help.invoicesimple.com/en/articles/15696405-how-do-i-set-up-an-ai-receptionist-with-zyratalk",
+          "https://help.invoicesimple.com/en/collections/19676195-ai-receptionist-with-zyratalk",
+          "https://www.revoapp.ai/pricing",
+          "Approved public copy SHA256:112b21193f42907cb97c318263f0df9e3ac7b284d431e0b3e94d3f6cc03231e7"
+        ],
+        "markdownArticle": {
+          "content": "# ZyraTalk pricing: define the quote and setup route\n\nZyraTalk’s current FAQ says pricing is customized to the business; it does not publish a numerical rate there. For a home-service buyer, the useful next step is to define which communication tasks and setup route the quote covers. Revo, a competing AI answering provider, reviewed the official sources on October 28, 2026. We did not test ZyraTalk or obtain a private quote.\n\n## Start with the purchase you actually need\n\nZyraTalk by EverPro presents a platform spanning inbound AI calls, webchat, outbound calling and outbound SMS. Its website also describes connections to field-service and CRM software. Those descriptions make it worth asking about a broader communications workflow, not treating the product as only a telephone greeting.\n\nDo not turn the feature list into an assumption that every function is included in one price. Ask which tasks are available in the proposal, how usage is measured, who configures them and what remains outside scope. A demo request is not a price commitment, and an older third-party starting price is not a substitute for the current offer.\n\n## Clarify the Invoice Simple route before comparing offers\n\nInvoice Simple’s official help article documents an AI Receptionist entry under Tools. Its setup collects business details and then directs the user to the ZyraTalk platform to configure the assistant. The article describes answering client calls, appointment-related help and basic business questions.\n\nThat establishes a documented entry point, not the complete commercial agreement. If you already use Invoice Simple, ask whether your proposed service is purchased through that route or separately. Confirm account ownership, the billing party, which subscription is required and which support team owns an issue after the handoff. The setup article does not establish a price or prove that every capability on ZyraTalk’s main website is included.\n\n## Take this scope sheet into the quote conversation\n\nUse the same sheet for each offer you receive. Mark an item unnecessary when it is outside your first purchase rather than allowing it to disappear inside a broad platform description.\n\n| Quote item | Decision to document |\n| --- | --- |\n| Inbound phone coverage | Number, answering periods, permitted intake and booking actions |\n| Webchat | Whether required, where deployed and who receives exceptions |\n| Outbound phone and SMS | Whether requested at all; specific tasks and operating ownership |\n| Software connection | Exact product/account, fields, direction and booking authority |\n| Usage and charges | Billable unit, allowance if any, excess usage and other applicable charges |\n| Account and support | Purchase route, billing party, configuration owner and exit process |\n\n## Try a fictional buyer case without inventing a price\n\nConsider a fictional HVAC office that uses Invoice Simple and initially wants evening calls answered, service details captured and appointment requests handled under its rules. The office does not need outbound campaigns or webchat in this first stage.\n\nThe buyer asks whether ZyraTalk can quote that defined scope through the documented Invoice Simple route, then requests the corresponding account and support terms. If an offer includes more functions, the office asks which are optional, which are part of the package and how the total would change under the provider’s actual commercial rules.\n\nNo dollar total can be responsibly calculated from that case without the quote. Nor does the example establish that modules can be purchased separately. Its purpose is to prevent an inbound requirement from being compared with an unexplained multi-channel package.\n\n## Require evidence at the booking and exception boundary\n\nFor a demonstration, supply fictional requests and write the expected result first. Ask the provider to show an ordinary inquiry, a requested time that is unavailable and a customer asking to change existing work. Inspect the resulting record and which person owns the next action.\n\nIf a software connection is proposed, distinguish a captured time preference from a confirmed appointment in the authoritative schedule. Ask what happens when the destination cannot accept an update. These are suggested checks, not tests we performed, and they do not authorize messages, campaigns or changes to a live customer account.\n\n## Compare Revo on the same inbound requirement\n\nRevo’s Pricing page describes AI answering plans with the business’s script and rules, booking and SMS follow-up; transfers to the customer’s team are listed for Crew and Fleet. Use that published scope as a separate comparison line.\n\nDo not infer a Revo connection to Invoice Simple or another named field-service platform, an outsourced human answering network or outbound phone campaigns. If the main requirement is a wider communications ecosystem, evaluate that scope directly with the supplier. If the need is inbound coverage, compare the supported handling, capacity, handoff and written charges for that specific task.\n\n## Questions\n\n### What is ZyraTalk’s current starting price?\n\nThe reviewed official FAQ gives custom pricing rather than a numerical starting rate. Request the offer for your business and retain its scope and billing assumptions.\n\n### Does the Invoice Simple setup article establish what I will pay?\n\nNo. It documents a setup path into ZyraTalk, not the complete price, required subscription or inclusion of every advertised module.\n\n### Is Revo presented here as an equivalent multi-channel package?\n\nNo. This comparison keeps the documented inbound requirement separate from any broader platform purchase and does not claim identical functions or integrations.\n\n[Review Revo’s current answering plans](/pricing)",
+          "sha256": "6da99c60c2ff48cd40b2098872840853e22c985bad53d4129711f0a31afc6235",
+          "assets": []
+        },
+        "editorialDate": "2026-10-28",
+        "source": {
+          "kind": "manual",
+          "reference": "Original copy created October 28, 2026, America/Tijuana. Exact copy accepted by Jorge in user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC), responding to the specific seven-text approval request. Source package SHA256 a33873c8fd924d14749798a48757229babb3ee92eec6b6c6543cf825cbba9db1. Copy acceptance permits implementation and technical review, not approval of the future PR. Extension of the October 28 revenue-first cohort; private research excluded."
+        }
+      }
+    }
+  ]
+}

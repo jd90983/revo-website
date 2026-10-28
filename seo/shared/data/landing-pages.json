@@ -29615,6 +29615,10 @@
     "takeaway": "Compare the supported answering workflow.",
     "related": [],
     "sourcePaths": [
+      "https://www.zyratalk.com/",
+      "https://help.invoicesimple.com/en/articles/15696405-how-do-i-set-up-an-ai-receptionist-with-zyratalk",
+      "https://help.invoicesimple.com/en/collections/19676195-ai-receptionist-with-zyratalk",
+      "https://www.revoapp.ai/pricing",
       "Approved public copy SHA256:112b21193f42907cb97c318263f0df9e3ac7b284d431e0b3e94d3f6cc03231e7"
     ],
     "markdownArticle": {
@@ -29629,9 +29633,9 @@
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge — exact seven-text acceptance, user Sentinel_b80f492bd3d4819187018ce1d27e6d05 (2026-10-28 18:01 UTC)",
+      "reviewer": "Jorge — exact accepted copy and source appendix, user Sentinel_b80f492bd3d4819187018ce1d27e6d05; mechanical source links only",
       "reviewedAt": "2026-10-28",
-      "contentHash": "sha256:d7a5ced5a9470f1554d5c62b7b42d292c871e75f0d0e9e2408196bd01b8421fc"
+      "contentHash": "sha256:59048667d65ea5185b0757c560aba15a1993dc0d9e4c5b7a3c595770b245f787"
     }
   },
   {

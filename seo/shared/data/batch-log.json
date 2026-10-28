@@ -875,5 +875,17 @@
       "added residential-architect-receptionist as draft",
       "added flooring-answering-service as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-28-supplement-source-links",
+    "batchHash": "sha256:daeece7a3cd0c1d2df91cad704412e962193581c363d021f01790c5d9c548300",
+    "source": {
+      "kind": "manual",
+      "reference": "Mechanical source module completion from the same accepted ZyraTalk review appendix; exact public body and metadata unchanged. User copy acceptance Sentinel_b80f492bd3d4819187018ce1d27e6d05. No new research or product claims."
+    },
+    "appliedAt": "2026-10-28",
+    "changes": [
+      "updated zyratalk-pricing; back to draft until re-approved"
+    ]
   }
 ]
