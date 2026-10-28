@@ -1393,5 +1393,15 @@
     "slug": "flooring-answering-service",
     "label": "Home-service answering decisions",
     "template": "workflow"
+  },
+  {
+    "slug": "ai-receptionist-return-on-investment",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "m1-ai-receptionist",
+    "label": "Home-service answering decisions",
+    "template": "workflow"
   }
 ]

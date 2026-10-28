@@ -1,0 +1,95 @@
+{
+  "batchId": "2026-10-28-roi-source-reference",
+  "source": {
+    "kind": "manual",
+    "reference": "Mechanical reference completion during Preview QA: the already approved ROI copy links /pricing and its accepted source appendix names official Revo Pricing. Add that exact source to the source list to avoid an empty Sources heading. No approved body/title/meta change. Same human acceptance Sentinel_9c1c15e9a52081919694be62fea19404; PR integration still pending."
+  },
+  "operations": [
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "ai-receptionist-return-on-investment",
+        "title": "AI receptionist return on investment: a net-value worksheet",
+        "description": "Evaluate an AI receptionist using incremental job contribution, full service costs and a baseline. Use a worksheet without assuming every call becomes revenue.",
+        "navigationLabel": "AI receptionist ROI",
+        "eyebrow": "Home-service answering decisions",
+        "lead": "An AI receptionist return-on-investment calculation should answer a purchasing question: does the additional value your business can reasonably attribute to the service exceed its full cost? Answered calls, appointment requests and gross job value are useful observations, but none is the final return. Start with a defined alternative, the work you can actually accept and the costs that change with the decision.",
+        "intro": "An AI receptionist return-on-investment calculation should answer a purchasing question: does the additional value your business can reasonably attribute to the service exceed its full cost? Answered calls, appointment requests and gross job value are useful observations, but none is the final return. Start with a defined alternative, the work you can actually accept and the costs that change with the decision.",
+        "sections": [
+          {
+            "title": "Choose the alternative you are comparing",
+            "paragraphs": [
+              "Write the decision at the top of the sheet: for example, adding answering coverage to the current office process. Describe what happens without the purchase, including callbacks your team already makes. A customer who would have booked after a callback is not automatically an additional job created by the new service.\n\nUse one evaluation window and allow the same time for inquiries to become completed work. Keep a second column for assumptions when you do not yet have an observed comparison. A forecast can support a decision, but labeling an assumed lift as measured performance makes the result less useful."
+            ],
+            "items": []
+          },
+          {
+            "title": "Use contribution from additional work, not the entire invoice",
+            "paragraphs": [
+              "For each additional completed job in your scenario, subtract the job costs that increase because you accept that work. These may include parts, consumables, incremental labor, subcontracting, travel and payment charges. Use the costs applicable to your operation rather than a generic margin benchmark.\n\nThe amount left is contribution toward service costs and the rest of the business. It is not the same as company net profit. Do not subtract the same job expense again as an answering-service expense. If an extra booking displaces another job your crew would otherwise have completed, account for the displaced contribution too. A full calendar can make additional inquiries valuable for selection without producing additional completed work."
+            ],
+            "items": []
+          },
+          {
+            "title": "Copy this decision worksheet",
+            "paragraphs": [
+              "Fill in amounts for the same period. Retain the source or assumption beside each entry. Leave an unknown value unresolved rather than replacing it with an industry average.\n\n| Entry | What belongs here | Your amount and evidence |\n| --- | --- | --- |\n| A. Additional completed-job contribution | Contribution from incremental completed work, after its incremental job costs and any displaced contribution | ______ |\n| B. Avoided cash expense | An expense that actually disappears because of this decision | ______ |\n| C. Recurring service expense | Subscription, expected billable usage and required recurring add-ons | ______ |\n| D. Retained operating expense | Additional paid time or external expense for review, corrections and handoff that is not already in A | ______ |\n| E. One-time launch expense | Setup charges and additional paid implementation work | ______ |\n| F. Recurring net benefit | A + B − C − D | ______ |\n| G. First-period net benefit | F − E | ______ |\n| H. First-period decision return | G ÷ (C + D + E) × 100, only when the denominator is positive | ______ |\n\nThis worksheet defines its return denominator explicitly so two options can be compared consistently. It does not measure a company's total profitability. If the denominator is zero, report the amounts separately; do not display an infinite percentage."
+            ],
+            "items": []
+          },
+          {
+            "title": "Check the arithmetic with a fictional case",
+            "paragraphs": [
+              "Suppose additional completed work contributes $600 after its incremental job costs. The business avoids no cash expense. Subscription and usage cost $200 for the period, additional paid operating work costs $100, and launch work costs $300 once. These are fictional inputs, not Revo prices or typical outcomes.\n\nRecurring net benefit is $600 − $200 − $100 = $300. First-period net benefit is $300 − $300 = $0. The defined first-period return is $0 ÷ $600 = 0%. The $600 contribution is therefore not a $600 return after implementation costs.\n\nIf the same recurring assumptions held, the $300 launch expense would take one period of positive $300 recurring net benefit to recover. That is a scenario, not a promised payback date. A zero or negative recurring net benefit does not yield a finite positive payback period under those assumptions."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep time savings and cash savings separate",
+            "paragraphs": [
+              "Owner time released from answering calls can matter even when payroll does not change. Record those hours and the work you intend to do with them. Do not automatically add an hourly valuation to avoided payroll and also count the contribution from jobs performed in the same hours. That would count one benefit twice.\n\nRun a lower-demand case as well as your expected case. Reduce additional completed work, increase paid usage or allow more office review. Ask whether the purchase remains affordable when the upside is smaller. Keep service quality and follow-up ownership alongside the calculation; a positive spreadsheet result does not establish that the answering workflow is suitable."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare the supported Revo scope before entering a price",
+            "paragraphs": [
+              "Use [Revo's current pricing](/pricing) for the actual plan and included usage, and confirm the setup needed for your business. Revo publishes AI answering, intake, appointment booking and summaries; team transfers and other features depend on the plan and supported configuration. A qualified inquiry is not a completed job, and booking does not establish dispatch or collected revenue.\n\nUse the [cost-of-missed-calls worksheet](/ai-answering-service/cost-of-missed-calls) when you need a gross opportunity scenario. Use the [conversion comparison guide](/ai-answering-service/answering-service-conversion-rate-comparison) to define comparable inquiry cohorts. Bring those inputs here only after deciding which outcomes and costs belong in the purchase decision."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Is every answered call additional revenue?\n\nNo. Calls may be duplicates, existing-customer questions or inquiries that your office would have recovered anyway. Separate answered calls from incremental completed work.\n\n### Can I count the owner's released time?\n\nRecord it separately unless it produces an identifiable cash saving or additional contribution. Avoid counting both the time valuation and the value created during those same hours.\n\n### Is the calculated return guaranteed?\n\nNo. The result depends on the baseline, attribution, capacity and cost inputs you supply. Keep forecast assumptions separate from observed records and update the decision when evidence changes.\n\n### What should I do if I cannot estimate additional completed jobs?\n\nLeave the benefit unknown. Compare the service's affordability and supported workflow, then define what evidence a limited evaluation would need to collect. Do not invent a conversion lift to make the purchase look attractive.\n\nReview [Revo's plans and included usage](/pricing), then complete the worksheet with your own operating records before choosing coverage."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Compare the supported answering workflow.",
+        "related": [
+          "cost-of-missed-calls",
+          "answering-service-conversion-rate-comparison",
+          "answering-service-cost"
+        ],
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing",
+          "Approved exact copy SHA256:1f41f5e3236713dfcb99cdedec8bd425d56fa20a05440ee05f9c202be727bf0b"
+        ],
+        "markdownArticle": {
+          "content": "# AI receptionist return on investment: work from net value\n\nAn AI receptionist return-on-investment calculation should answer a purchasing question: does the additional value your business can reasonably attribute to the service exceed its full cost? Answered calls, appointment requests and gross job value are useful observations, but none is the final return. Start with a defined alternative, the work you can actually accept and the costs that change with the decision.\n\nPublished by Revo, a provider of AI answering services. This is a planning worksheet, not a claim about customer results or a guarantee of savings.\n\n## Choose the alternative you are comparing\n\nWrite the decision at the top of the sheet: for example, adding answering coverage to the current office process. Describe what happens without the purchase, including callbacks your team already makes. A customer who would have booked after a callback is not automatically an additional job created by the new service.\n\nUse one evaluation window and allow the same time for inquiries to become completed work. Keep a second column for assumptions when you do not yet have an observed comparison. A forecast can support a decision, but labeling an assumed lift as measured performance makes the result less useful.\n\n## Use contribution from additional work, not the entire invoice\n\nFor each additional completed job in your scenario, subtract the job costs that increase because you accept that work. These may include parts, consumables, incremental labor, subcontracting, travel and payment charges. Use the costs applicable to your operation rather than a generic margin benchmark.\n\nThe amount left is contribution toward service costs and the rest of the business. It is not the same as company net profit. Do not subtract the same job expense again as an answering-service expense. If an extra booking displaces another job your crew would otherwise have completed, account for the displaced contribution too. A full calendar can make additional inquiries valuable for selection without producing additional completed work.\n\n## Copy this decision worksheet\n\nFill in amounts for the same period. Retain the source or assumption beside each entry. Leave an unknown value unresolved rather than replacing it with an industry average.\n\n| Entry | What belongs here | Your amount and evidence |\n| --- | --- | --- |\n| A. Additional completed-job contribution | Contribution from incremental completed work, after its incremental job costs and any displaced contribution | ______ |\n| B. Avoided cash expense | An expense that actually disappears because of this decision | ______ |\n| C. Recurring service expense | Subscription, expected billable usage and required recurring add-ons | ______ |\n| D. Retained operating expense | Additional paid time or external expense for review, corrections and handoff that is not already in A | ______ |\n| E. One-time launch expense | Setup charges and additional paid implementation work | ______ |\n| F. Recurring net benefit | A + B − C − D | ______ |\n| G. First-period net benefit | F − E | ______ |\n| H. First-period decision return | G ÷ (C + D + E) × 100, only when the denominator is positive | ______ |\n\nThis worksheet defines its return denominator explicitly so two options can be compared consistently. It does not measure a company's total profitability. If the denominator is zero, report the amounts separately; do not display an infinite percentage.\n\n## Check the arithmetic with a fictional case\n\nSuppose additional completed work contributes $600 after its incremental job costs. The business avoids no cash expense. Subscription and usage cost $200 for the period, additional paid operating work costs $100, and launch work costs $300 once. These are fictional inputs, not Revo prices or typical outcomes.\n\nRecurring net benefit is $600 − $200 − $100 = $300. First-period net benefit is $300 − $300 = $0. The defined first-period return is $0 ÷ $600 = 0%. The $600 contribution is therefore not a $600 return after implementation costs.\n\nIf the same recurring assumptions held, the $300 launch expense would take one period of positive $300 recurring net benefit to recover. That is a scenario, not a promised payback date. A zero or negative recurring net benefit does not yield a finite positive payback period under those assumptions.\n\n## Keep time savings and cash savings separate\n\nOwner time released from answering calls can matter even when payroll does not change. Record those hours and the work you intend to do with them. Do not automatically add an hourly valuation to avoided payroll and also count the contribution from jobs performed in the same hours. That would count one benefit twice.\n\nRun a lower-demand case as well as your expected case. Reduce additional completed work, increase paid usage or allow more office review. Ask whether the purchase remains affordable when the upside is smaller. Keep service quality and follow-up ownership alongside the calculation; a positive spreadsheet result does not establish that the answering workflow is suitable.\n\n## Compare the supported Revo scope before entering a price\n\nUse [Revo's current pricing](/pricing) for the actual plan and included usage, and confirm the setup needed for your business. Revo publishes AI answering, intake, appointment booking and summaries; team transfers and other features depend on the plan and supported configuration. A qualified inquiry is not a completed job, and booking does not establish dispatch or collected revenue.\n\nUse the [cost-of-missed-calls worksheet](/ai-answering-service/cost-of-missed-calls) when you need a gross opportunity scenario. Use the [conversion comparison guide](/ai-answering-service/answering-service-conversion-rate-comparison) to define comparable inquiry cohorts. Bring those inputs here only after deciding which outcomes and costs belong in the purchase decision.\n\n## Frequently asked questions\n\n### Is every answered call additional revenue?\n\nNo. Calls may be duplicates, existing-customer questions or inquiries that your office would have recovered anyway. Separate answered calls from incremental completed work.\n\n### Can I count the owner's released time?\n\nRecord it separately unless it produces an identifiable cash saving or additional contribution. Avoid counting both the time valuation and the value created during those same hours.\n\n### Is the calculated return guaranteed?\n\nNo. The result depends on the baseline, attribution, capacity and cost inputs you supply. Keep forecast assumptions separate from observed records and update the decision when evidence changes.\n\n### What should I do if I cannot estimate additional completed jobs?\n\nLeave the benefit unknown. Compare the service's affordability and supported workflow, then define what evidence a limited evaluation would need to collect. Do not invent a conversion lift to make the purchase look attractive.\n\nReview [Revo's plans and included usage](/pricing), then complete the worksheet with your own operating records before choosing coverage.\n",
+          "sha256": "1f41f5e3236713dfcb99cdedec8bd425d56fa20a05440ee05f9c202be727bf0b",
+          "assets": []
+        },
+        "editorialDate": "2026-10-28",
+        "source": {
+          "kind": "manual",
+          "reference": "Copy created 2026-10-28 America/Tijuana. Jorge accepted these exact two texts in Sentinel_9c1c15e9a52081919694be62fea19404 at 2026-10-28 19:08:31 UTC, responding to Sentinel_87b84ebf8f5081919e2f78f95ff810b6. Source package SHA256 43f39a43f4aac26bb2ee4b437e4c4d8386121d4590b9f15c9d137c5e05e0db34. User PDF libfile_d75aa67100fc8191a4a9e9553e5eccc5 v0 SHA256 7303474b89d5014b69f6edf5b2850b0895fa27cab1cc3c53fb81d20bbc543daf, parent confirms full-copy equivalence to these exact messages. Permission covers implementation and testing, not future PR integration. Private research excluded."
+        }
+      }
+    }
+  ]
+}
