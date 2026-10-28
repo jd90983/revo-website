@@ -1407,6 +1407,16 @@
       "permanent": true
     },
     {
+      "source": "/ai-answering-service/propane-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/propane-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/virtual-receptionist-vs-virtual-assistant.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/virtual-receptionist-vs-virtual-assistant",
+      "permanent": true
+    },
+    {
       "source": "/ai-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service",
       "permanent": true
@@ -3172,6 +3182,14 @@
     {
       "source": "/ai-answering-service/m1-ai-receptionist",
       "destination": "/ai-answering-service/m1-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/propane-answering-service",
+      "destination": "/ai-answering-service/propane-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/compare/virtual-receptionist-vs-virtual-assistant",
+      "destination": "/ai-answering-service/compare/virtual-receptionist-vs-virtual-assistant.html"
     },
     {
       "source": "/ai-answering-service",
