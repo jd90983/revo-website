@@ -1432,6 +1432,21 @@
       "permanent": true
     },
     {
+      "source": "/ai-answering-service/franchise-answering-service-approval.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/franchise-answering-service-approval",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/continental-message-solutions.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/continental-message-solutions",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/zanus-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/zanus-ai-receptionist",
+      "permanent": true
+    },
+    {
       "source": "/ai-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service",
       "permanent": true
@@ -3217,6 +3232,18 @@
     {
       "source": "/ai-answering-service/conversational-receptionists",
       "destination": "/ai-answering-service/conversational-receptionists.html"
+    },
+    {
+      "source": "/ai-answering-service/franchise-answering-service-approval",
+      "destination": "/ai-answering-service/franchise-answering-service-approval.html"
+    },
+    {
+      "source": "/ai-answering-service/continental-message-solutions",
+      "destination": "/ai-answering-service/continental-message-solutions.html"
+    },
+    {
+      "source": "/ai-answering-service/zanus-ai-receptionist",
+      "destination": "/ai-answering-service/zanus-ai-receptionist.html"
     },
     {
       "source": "/ai-answering-service",
