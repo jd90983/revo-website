@@ -870,6 +870,11 @@
     "template": "workflow"
   },
   {
+    "slug": "always-answer-service",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
     "slug": "call-experts-answering-service",
     "label": "Provider buying guide",
     "template": "workflow"
@@ -1447,6 +1452,86 @@
   {
     "slug": "answering-specialists-inc",
     "label": "Home-service answering decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "ai-receptionist-under-100",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/in-house-receptionist-vs-answering-service",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "answering-service-onboarding",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/customizable-ai-receptionists",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/per-call-vs-per-minute-answering-service",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "no-contract-answering-service",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/residential-property-management-answering-services",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "callrail-voice-assist",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "xbert-ai-receptionist",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "3cx-ai-receptionist",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "dialpad-ai-receptionist",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "nextphone-ai-receptionist",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "servicem8-phone-agent",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "aircall-ai-voice-agent",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "justcall-ai-receptionist",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "telassist-answering-service",
+    "label": "Reception buying decisions",
     "template": "workflow"
   }
 ]
