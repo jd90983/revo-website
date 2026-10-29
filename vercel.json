@@ -1956,6 +1956,10 @@
   ],
   "rewrites": [
     {
+      "source": "/sms-consent",
+      "destination": "/sms-consent.html"
+    },
+    {
       "source": "/industry_pest_control",
       "destination": "/industry_pest_control.html"
     },
