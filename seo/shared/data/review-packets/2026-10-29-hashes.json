@@ -5,7 +5,7 @@
     "message": "Sentinel_5d3fa9239e808191a48d33b05cd25911",
     "at": "2026-10-29T16:16:54Z",
     "packetSHA256": "890b8fda4a51e3dec0b76d3c1927ab3be09125f9329a818d8512c46760f21321",
-    "scope": "Exact copy only; independent review and specific PR authorization pending"
+    "scope": "Original exact copy approved; two subsequent corrections separately recorded."
   },
   "pages": [
     {
@@ -42,8 +42,8 @@
       "slug": "compare/customizable-ai-receptionists",
       "url": "https://www.revoapp.ai/ai-answering-service/compare/customizable-ai-receptionists",
       "title": "Customizable AI receptionists: compare instruction controls",
-      "contentHash": "sha256:ae61bd0d61eca0862abad8aa07ae8fac762be022830d9d355fd2cffc05159c2e",
-      "bodySHA256": "fec49a783d6f7dbf6fac4afab90513b6a72462017de24dfa3af92edbf39af0bd",
+      "contentHash": "sha256:ea6f593a6d89b41571a05a53395874571d909dea92bf1f40e1fb98890caf3f17",
+      "bodySHA256": "e921aea4555e639b9c65a77c6230b8b9e863375fe2e5893e1205666e1e85e4db",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
       "status": "approved copy; draft PR, not production"
@@ -172,11 +172,18 @@
       "slug": "telassist-answering-service",
       "url": "https://www.revoapp.ai/ai-answering-service/telassist-answering-service",
       "title": "TelAssist answering service: compare base and minute plans",
-      "contentHash": "sha256:bcc842bc2d1cf127d19c40815c913c20de0c53998ea69e09277077949015b365",
-      "bodySHA256": "7f0b667ba8d7385d45f6e3fd7a7816edbd35a375adc654d3864817f71899f6ea",
+      "contentHash": "sha256:067cc8fed90aa23dd036623bbe5935c9f342057f175d416b19e311c476b8aaf9",
+      "bodySHA256": "d0dec5bb0579b8d4a72fce4f7cf43aa6bbf57f9969c747e7c838bfc8c6caeae1",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
       "status": "approved copy; draft PR, not production"
     }
-  ]
+  ],
+  "correctionApproval": {
+    "reviewer": "Jorge (user)",
+    "message": "Sentinel_01101821f7b8819195d3eeddf967f63b",
+    "at": "2026-10-29T16:36:17Z",
+    "packetSHA256": "791317c5ae65d746daf55bd9f7e2330b59b17059ba5ecea0d4da1efbb0b585e0",
+    "scope": "Two exact copy corrections and specific PR 121 integration approved by user; recorded by Codex."
+  }
 }
