@@ -872,6 +872,11 @@
       "permanent": true
     },
     {
+      "source": "/ai-answering-service/always-answer-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/always-answer-service",
+      "permanent": true
+    },
+    {
       "source": "/ai-answering-service/call-experts-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service/call-experts-answering-service",
       "permanent": true
@@ -1449,6 +1454,86 @@
     {
       "source": "/ai-answering-service/answering-specialists-inc.html",
       "destination": "https://www.revoapp.ai/ai-answering-service/answering-specialists-inc",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/ai-receptionist-under-100.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/ai-receptionist-under-100",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/in-house-receptionist-vs-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/in-house-receptionist-vs-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/answering-service-onboarding.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answering-service-onboarding",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/customizable-ai-receptionists.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/customizable-ai-receptionists",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/per-call-vs-per-minute-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/per-call-vs-per-minute-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/no-contract-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/no-contract-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/compare/residential-property-management-answering-services.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/compare/residential-property-management-answering-services",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/callrail-voice-assist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/callrail-voice-assist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/xbert-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/xbert-ai-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/3cx-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/3cx-ai-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/dialpad-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/dialpad-ai-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/nextphone-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/nextphone-ai-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/servicem8-phone-agent.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/servicem8-phone-agent",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/aircall-ai-voice-agent.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/aircall-ai-voice-agent",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/justcall-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/justcall-ai-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/telassist-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/telassist-answering-service",
       "permanent": true
     },
     {
@@ -2791,6 +2876,10 @@
       "destination": "/ai-answering-service/responsive-answering-service.html"
     },
     {
+      "source": "/ai-answering-service/always-answer-service",
+      "destination": "/ai-answering-service/always-answer-service.html"
+    },
+    {
       "source": "/ai-answering-service/call-experts-answering-service",
       "destination": "/ai-answering-service/call-experts-answering-service.html"
     },
@@ -3253,6 +3342,70 @@
     {
       "source": "/ai-answering-service/answering-specialists-inc",
       "destination": "/ai-answering-service/answering-specialists-inc.html"
+    },
+    {
+      "source": "/ai-answering-service/ai-receptionist-under-100",
+      "destination": "/ai-answering-service/ai-receptionist-under-100.html"
+    },
+    {
+      "source": "/ai-answering-service/compare/in-house-receptionist-vs-answering-service",
+      "destination": "/ai-answering-service/compare/in-house-receptionist-vs-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/answering-service-onboarding",
+      "destination": "/ai-answering-service/answering-service-onboarding.html"
+    },
+    {
+      "source": "/ai-answering-service/compare/customizable-ai-receptionists",
+      "destination": "/ai-answering-service/compare/customizable-ai-receptionists.html"
+    },
+    {
+      "source": "/ai-answering-service/compare/per-call-vs-per-minute-answering-service",
+      "destination": "/ai-answering-service/compare/per-call-vs-per-minute-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/no-contract-answering-service",
+      "destination": "/ai-answering-service/no-contract-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/compare/residential-property-management-answering-services",
+      "destination": "/ai-answering-service/compare/residential-property-management-answering-services.html"
+    },
+    {
+      "source": "/ai-answering-service/callrail-voice-assist",
+      "destination": "/ai-answering-service/callrail-voice-assist.html"
+    },
+    {
+      "source": "/ai-answering-service/xbert-ai-receptionist",
+      "destination": "/ai-answering-service/xbert-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/3cx-ai-receptionist",
+      "destination": "/ai-answering-service/3cx-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/dialpad-ai-receptionist",
+      "destination": "/ai-answering-service/dialpad-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/nextphone-ai-receptionist",
+      "destination": "/ai-answering-service/nextphone-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/servicem8-phone-agent",
+      "destination": "/ai-answering-service/servicem8-phone-agent.html"
+    },
+    {
+      "source": "/ai-answering-service/aircall-ai-voice-agent",
+      "destination": "/ai-answering-service/aircall-ai-voice-agent.html"
+    },
+    {
+      "source": "/ai-answering-service/justcall-ai-receptionist",
+      "destination": "/ai-answering-service/justcall-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/telassist-answering-service",
+      "destination": "/ai-answering-service/telassist-answering-service.html"
     },
     {
       "source": "/ai-answering-service",

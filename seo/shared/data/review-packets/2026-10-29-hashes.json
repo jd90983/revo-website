@@ -1,6 +1,12 @@
 {
   "batchId": "2026-10-29-buyer-guides",
-  "editorialApproval": "pending: no exact-copy human approval recorded",
+  "editorialApproval": {
+    "reviewer": "Jorge (user)",
+    "message": "Sentinel_5d3fa9239e808191a48d33b05cd25911",
+    "at": "2026-10-29T16:16:54Z",
+    "packetSHA256": "890b8fda4a51e3dec0b76d3c1927ab3be09125f9329a818d8512c46760f21321",
+    "scope": "Exact copy only; independent review and specific PR authorization pending"
+  },
   "pages": [
     {
       "slug": "ai-receptionist-under-100",
@@ -10,7 +16,7 @@
       "bodySHA256": "2a51183887e3acd9d86996fc677e3d95ef079c55c8478a38eb237a7438adf934",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "compare/in-house-receptionist-vs-answering-service",
@@ -20,7 +26,7 @@
       "bodySHA256": "6c5adfe44c99aa383583060307b718418f0fd507522e368d527e24d7ad477605",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "answering-service-onboarding",
@@ -30,7 +36,7 @@
       "bodySHA256": "49fa55777bd06ae9c295ccc87e7e84ab5341177d13b472ab12bf3b6fa4d3d470",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "compare/customizable-ai-receptionists",
@@ -40,7 +46,7 @@
       "bodySHA256": "fec49a783d6f7dbf6fac4afab90513b6a72462017de24dfa3af92edbf39af0bd",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "compare/per-call-vs-per-minute-answering-service",
@@ -50,7 +56,7 @@
       "bodySHA256": "97cf05ee841a2b90877b8cbe694b6853dd814e033629c6beadc271387704fdd0",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "no-contract-answering-service",
@@ -60,7 +66,7 @@
       "bodySHA256": "96c87908a7bc1bf296d69082912d72bf7e0807f223666c13784c6d8385285255",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "compare/residential-property-management-answering-services",
@@ -70,7 +76,7 @@
       "bodySHA256": "4a0a9de63a88c1b8a79f20e6f9f2161a0f9cc603e223011b25aaee5465e78aa5",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "callrail-voice-assist",
@@ -80,7 +86,7 @@
       "bodySHA256": "21f70125177abf69649331f35a599272caf7c0446aa758be655ef7e6cec20d9f",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "xbert-ai-receptionist",
@@ -90,7 +96,7 @@
       "bodySHA256": "0f3a77c458492f16b8febbe38dec516433331599b7b230a4077d1ab932d56e28",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "3cx-ai-receptionist",
@@ -100,7 +106,7 @@
       "bodySHA256": "ef11b6c260161a3a2bed7ea237676b0d5f3c7a9e65337f60a9b31e2ad5ae4474",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "dialpad-ai-receptionist",
@@ -110,7 +116,7 @@
       "bodySHA256": "f254848ac7bfa3378b0bab6b4507d7ac64ac2f5b2b9e2fe07830504229424c5d",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "always-answer-service",
@@ -120,7 +126,7 @@
       "bodySHA256": "ba7b8cf26fd7b20d48a30c77463c2efcf70d7cb7e7eb8ccceeefe1054597d0be",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-22",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "nextphone-ai-receptionist",
@@ -130,7 +136,7 @@
       "bodySHA256": "2f412a62b2403a0303198977785b190ac605a146c15107772090df52d767fbd4",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "servicem8-phone-agent",
@@ -140,7 +146,7 @@
       "bodySHA256": "796d221f270106493bff40e2e44b282235315670bf66d312de8d429990c6730f",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "aircall-ai-voice-agent",
@@ -150,7 +156,7 @@
       "bodySHA256": "ec12ee3d0622284286b518119b63d66f3b7ee76ba9774334c2a6ee58281cace8",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "justcall-ai-receptionist",
@@ -160,7 +166,7 @@
       "bodySHA256": "e919e9d6c85a3693ec4a107d18a596b856a36a7b7f62fd47a555cc8d0c87ac44",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     },
     {
       "slug": "telassist-answering-service",
@@ -170,7 +176,7 @@
       "bodySHA256": "7f0b667ba8d7385d45f6e3fd7a7816edbd35a375adc654d3864817f71899f6ea",
       "copyCreatedAt": "2026-10-29",
       "recordCreatedAt": "2026-10-29",
-      "status": "draft; exact-copy human approval pending"
+      "status": "approved copy; draft PR, not production"
     }
   ]
 }
