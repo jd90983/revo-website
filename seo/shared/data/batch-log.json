@@ -965,5 +965,33 @@
     "changes": [
       "added answering-specialists-inc as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-29-buyer-guides",
+    "batchHash": "sha256:d1dc79a46158632766f25bc0b3afdf6b5ad9a1e06f13fe4a435a65aa4704b6fc",
+    "source": {
+      "kind": "manual",
+      "reference": "Seventeen selected reception buying guides; exact-copy human review pending. Public sources checked 2026-10-29. Always Answer reuses its never-published withdrawn record originally created 2026-10-22."
+    },
+    "appliedAt": "2026-10-29",
+    "changes": [
+      "added ai-receptionist-under-100 as draft",
+      "added compare/in-house-receptionist-vs-answering-service as draft",
+      "added answering-service-onboarding as draft",
+      "added compare/customizable-ai-receptionists as draft",
+      "added compare/per-call-vs-per-minute-answering-service as draft",
+      "added no-contract-answering-service as draft",
+      "added compare/residential-property-management-answering-services as draft",
+      "added callrail-voice-assist as draft",
+      "added xbert-ai-receptionist as draft",
+      "added 3cx-ai-receptionist as draft",
+      "added dialpad-ai-receptionist as draft",
+      "updated always-answer-service; back to draft until re-approved",
+      "added nextphone-ai-receptionist as draft",
+      "added servicem8-phone-agent as draft",
+      "added aircall-ai-voice-agent as draft",
+      "added justcall-ai-receptionist as draft",
+      "added telassist-answering-service as draft"
+    ]
   }
 ]

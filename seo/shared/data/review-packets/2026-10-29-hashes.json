@@ -1,0 +1,176 @@
+{
+  "batchId": "2026-10-29-buyer-guides",
+  "editorialApproval": "pending: no exact-copy human approval recorded",
+  "pages": [
+    {
+      "slug": "ai-receptionist-under-100",
+      "url": "https://www.revoapp.ai/ai-answering-service/ai-receptionist-under-100",
+      "title": "AI receptionists under $100: compare the actual task",
+      "contentHash": "sha256:9da110c0218b2642d329867b2cd24734086a966fb4abe0e2376db1aae9649e78",
+      "bodySHA256": "2a51183887e3acd9d86996fc677e3d95ef079c55c8478a38eb237a7438adf934",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "compare/in-house-receptionist-vs-answering-service",
+      "url": "https://www.revoapp.ai/ai-answering-service/compare/in-house-receptionist-vs-answering-service",
+      "title": "In-house receptionist vs answering service: who owns the work?",
+      "contentHash": "sha256:88b48bd0eaee07e09c19d9cd1a5fd43e741726c3b5c89fe7458ddb17a9cd215e",
+      "bodySHA256": "6c5adfe44c99aa383583060307b718418f0fd507522e368d527e24d7ad477605",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "answering-service-onboarding",
+      "url": "https://www.revoapp.ai/ai-answering-service/answering-service-onboarding",
+      "title": "Answering-service onboarding: compare first-launch readiness",
+      "contentHash": "sha256:edb090e838bcbc6e4aa85b776a26dbdc1cdbd6f438d774ff7e337dcce61034eb",
+      "bodySHA256": "49fa55777bd06ae9c295ccc87e7e84ab5341177d13b472ab12bf3b6fa4d3d470",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "compare/customizable-ai-receptionists",
+      "url": "https://www.revoapp.ai/ai-answering-service/compare/customizable-ai-receptionists",
+      "title": "Customizable AI receptionists: compare instruction controls",
+      "contentHash": "sha256:ae61bd0d61eca0862abad8aa07ae8fac762be022830d9d355fd2cffc05159c2e",
+      "bodySHA256": "fec49a783d6f7dbf6fac4afab90513b6a72462017de24dfa3af92edbf39af0bd",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "compare/per-call-vs-per-minute-answering-service",
+      "url": "https://www.revoapp.ai/ai-answering-service/compare/per-call-vs-per-minute-answering-service",
+      "title": "Per-call vs per-minute answering: compare one workload",
+      "contentHash": "sha256:796a35980f00dd88bba93fd3165aa84a6712af6051336847968bb79473da7bfc",
+      "bodySHA256": "97cf05ee841a2b90877b8cbe694b6853dd814e033629c6beadc271387704fdd0",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "no-contract-answering-service",
+      "url": "https://www.revoapp.ai/ai-answering-service/no-contract-answering-service",
+      "title": "No-contract answering services: compare the exit terms",
+      "contentHash": "sha256:e436fdd072e3071b35ca3d1768e106c66bfd143aeaa6f6c6089fc0000a09c54d",
+      "bodySHA256": "96c87908a7bc1bf296d69082912d72bf7e0807f223666c13784c6d8385285255",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "compare/residential-property-management-answering-services",
+      "url": "https://www.revoapp.ai/ai-answering-service/compare/residential-property-management-answering-services",
+      "title": "Residential property management answering: supplier shortlist",
+      "contentHash": "sha256:b18dcb71853f9061f5ecd1baf622c6574e46709398058aa1c9a81a666adc8bbe",
+      "bodySHA256": "4a0a9de63a88c1b8a79f20e6f9f2161a0f9cc603e223011b25aaee5465e78aa5",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "callrail-voice-assist",
+      "url": "https://www.revoapp.ai/ai-answering-service/callrail-voice-assist",
+      "title": "CallRail Voice Assist: compare the complete reception package",
+      "contentHash": "sha256:1580d615759f8ef476a1e64a95a57347bb001cb68937cc26f8e52be59c042404",
+      "bodySHA256": "21f70125177abf69649331f35a599272caf7c0446aa758be655ef7e6cec20d9f",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "xbert-ai-receptionist",
+      "url": "https://www.revoapp.ai/ai-answering-service/xbert-ai-receptionist",
+      "title": "XBert AI receptionist: understand conversations and handoffs",
+      "contentHash": "sha256:14a6cf8f5ebec0ba79cc1c851a3d815003ae2a3479a911a9e16344b7dd45a445",
+      "bodySHA256": "0f3a77c458492f16b8febbe38dec516433331599b7b230a4077d1ab932d56e28",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "3cx-ai-receptionist",
+      "url": "https://www.revoapp.ai/ai-answering-service/3cx-ai-receptionist",
+      "title": "3CX AI receptionist: native PBX or managed reception?",
+      "contentHash": "sha256:61270f2ca3c268da19c95b72f9a6039f9697f9a7f6d631e6c9df14fa6c3621c6",
+      "bodySHA256": "ef11b6c260161a3a2bed7ea237676b0d5f3c7a9e65337f60a9b31e2ad5ae4474",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "dialpad-ai-receptionist",
+      "url": "https://www.revoapp.ai/ai-answering-service/dialpad-ai-receptionist",
+      "title": "Dialpad AI receptionist: select the inbound product",
+      "contentHash": "sha256:699421f236a9a7b5838ec83f222286910afbe7f6f48d24fcbc981b187d5fd865",
+      "bodySHA256": "f254848ac7bfa3378b0bab6b4507d7ac64ac2f5b2b9e2fe07830504229424c5d",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "always-answer-service",
+      "url": "https://www.revoapp.ai/ai-answering-service/always-answer-service",
+      "title": "Always Answer: compare Callie AI and live reception",
+      "contentHash": "sha256:4507802a753882724714f3072520f8a51323f672abdea51b0ec8f8ceb3a7ef2e",
+      "bodySHA256": "ba7b8cf26fd7b20d48a30c77463c2efcf70d7cb7e7eb8ccceeefe1054597d0be",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-22",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "nextphone-ai-receptionist",
+      "url": "https://www.revoapp.ai/ai-answering-service/nextphone-ai-receptionist",
+      "title": "NextPhone AI receptionist: choose setup and workflow scope",
+      "contentHash": "sha256:229e2aa16506a98271efb883a790e0e459672d477f4dcc2d90441274acd10fb1",
+      "bodySHA256": "2f412a62b2403a0303198977785b190ac605a146c15107772090df52d767fbd4",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "servicem8-phone-agent",
+      "url": "https://www.revoapp.ai/ai-answering-service/servicem8-phone-agent",
+      "title": "ServiceM8 Phone Agent: check the US account and outcome",
+      "contentHash": "sha256:c7ad49d433e7ef7d6231fa132e8be37bcfbefa31cfd2c0a6b4ab933e947ae381",
+      "bodySHA256": "796d221f270106493bff40e2e44b282235315670bf66d312de8d429990c6730f",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "aircall-ai-voice-agent",
+      "url": "https://www.revoapp.ai/ai-answering-service/aircall-ai-voice-agent",
+      "title": "Aircall AI Voice Agent: compare the reception package",
+      "contentHash": "sha256:4040f177ae4b711d45cc09624f56e0ffe494df150eed5146a6a1d1823b0f0843",
+      "bodySHA256": "ec12ee3d0622284286b518119b63d66f3b7ee76ba9774334c2a6ee58281cace8",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "justcall-ai-receptionist",
+      "url": "https://www.revoapp.ai/ai-answering-service/justcall-ai-receptionist",
+      "title": "JustCall AI receptionist: evaluate inbound plan scope",
+      "contentHash": "sha256:fe402a31e43d09f370f93a4e274c1488db850491a90d42e24d981dbba367bd5f",
+      "bodySHA256": "e919e9d6c85a3693ec4a107d18a596b856a36a7b7f62fd47a555cc8d0c87ac44",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    },
+    {
+      "slug": "telassist-answering-service",
+      "url": "https://www.revoapp.ai/ai-answering-service/telassist-answering-service",
+      "title": "TelAssist answering service: compare base and minute plans",
+      "contentHash": "sha256:bcc842bc2d1cf127d19c40815c913c20de0c53998ea69e09277077949015b365",
+      "bodySHA256": "7f0b667ba8d7385d45f6e3fd7a7816edbd35a375adc654d3864817f71899f6ea",
+      "copyCreatedAt": "2026-10-29",
+      "recordCreatedAt": "2026-10-29",
+      "status": "draft; exact-copy human approval pending"
+    }
+  ]
+}
