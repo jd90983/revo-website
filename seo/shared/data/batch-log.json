@@ -993,5 +993,24 @@
       "added justcall-ai-receptionist as draft",
       "added telassist-answering-service as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-29-eight-approved-buyer-continuation",
+    "batchHash": "sha256:87097bf808c0e328a02ac4a1ddd936a68d1ec5c4d814b8b6e5eb3c08ba2d1389",
+    "source": {
+      "kind": "manual",
+      "reference": "Eight additional buyer guides created October 29, 2026. Exact copy accepted by Jorge on October 29 for implementation, SEO branch push and draft PR. Human acceptance recorded by Codex as operator, not an independent human review. Immutable add-only continuation after the seventeen completed guides; no publication or future PR approval implied."
+    },
+    "appliedAt": "2026-10-29",
+    "changes": [
+      "added compare/appliance-repair-answering-services as draft",
+      "added compare/garage-door-answering-services as draft",
+      "added jills-office-answering-service as draft",
+      "added compare/ai-receptionist-voice-experience as draft",
+      "added compare/home-inspector-answering-services as draft",
+      "added compare/moving-company-answering-services as draft",
+      "added allo-ai-receptionist as draft",
+      "added answering-service-money-back-guarantee as draft"
+    ]
   }
 ]

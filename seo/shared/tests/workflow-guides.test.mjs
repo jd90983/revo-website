@@ -122,7 +122,9 @@ test('approved Markdown transfers retain exact copy, semantic tables, code and l
   const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page}));
   assert.equal((html.match(/<h1\b/g)||[]).length,1);
   const h1=article.content.split('\n')[0].slice(2);
-  assert.ok(html.includes(h1.split(' ').slice(0,-3).join(' ')));
+  const actualHeading=html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/)?.[1].replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim();
+  const expectedHeading=renderToStaticMarkup(React.createElement('span',null,h1)).replace(/^<span>|<\/span>$/g,'');
+  assert.equal(actualHeading,expectedHeading,page.slug);
   if(article.content.includes('|---')){assert.ok(html.includes('<table>'));assert.ok(html.includes('scope="col"'));assert.ok(html.includes('tabindex="0"'));tables++;}
   if(article.content.includes('```')){assert.ok(html.includes('<pre>'));codes++;}
   for(const a of article.assets){

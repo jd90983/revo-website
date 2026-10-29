@@ -1533,5 +1533,45 @@
     "slug": "telassist-answering-service",
     "label": "Reception buying decisions",
     "template": "workflow"
+  },
+  {
+    "slug": "compare/appliance-repair-answering-services",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/garage-door-answering-services",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "jills-office-answering-service",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/ai-receptionist-voice-experience",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/home-inspector-answering-services",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "compare/moving-company-answering-services",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "allo-ai-receptionist",
+    "label": "Reception buying decisions",
+    "template": "workflow"
+  },
+  {
+    "slug": "answering-service-money-back-guarantee",
+    "label": "Reception buying decisions",
+    "template": "workflow"
   }
 ]
