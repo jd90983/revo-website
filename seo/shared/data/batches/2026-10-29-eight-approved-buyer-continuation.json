@@ -1,0 +1,439 @@
+{
+  "batchId": "2026-10-29-eight-approved-buyer-continuation",
+  "source": {
+    "kind": "manual",
+    "reference": "Eight additional buyer guides created October 29, 2026. Exact copy accepted by Jorge on October 29 for implementation, SEO branch push and draft PR. Human acceptance recorded by Codex as operator, not an independent human review. Immutable add-only continuation after the seventeen completed guides; no publication or future PR approval implied."
+  },
+  "operations": [
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "compare/appliance-repair-answering-services",
+        "title": "Appliance Repair Answering Services: Compare the Booking Fit",
+        "description": "Compare specialized AI and live answering for appliance repair: appliance details, warranty questions, booking destinations and the full billing period.",
+        "navigationLabel": "Appliance provider comparison",
+        "eyebrow": "Reception buying decisions",
+        "lead": "An appliance repair business can receive a new repair request, a parts-related return visit and a warranty question within the same hour. Choose an answering provider by the record and authority each call requires. A service that collects a name is different from one that creates a supported booking in your actual system.",
+        "intro": "An appliance repair business can receive a new repair request, a parts-related return visit and a warranty question within the same hour. Choose an answering provider by the record and authority each call requires. A service that collects a name is different from one that creates a supported booking in your actual system.",
+        "sections": [
+          {
+            "title": "Compare specialized AI and live handling",
+            "paragraphs": [
+              "| Published offer | Relevant evidence | Resolve before purchase |\n| --- | --- | --- |\n| [FixCall](https://www.fixcall.ai/appliance-repair-answering-service) | Describes appliance-specific AI intake, including brand, model or serial details, and named field-service connections | Which connection and booking action work with your account; how warranty and return-visit requests are represented |\n| [Call Center Plus](https://callcenterplus.com/wp/services/message-taking/call-center-for-appliance-repair-services/) | Describes live appliance-repair intake, a web-based calendar, message delivery and contacting technicians | Whether the calendar is your operational schedule; what a technician response confirms; the included operator time |\n| [Revo](/pricing) | Publishes AI reception plans and business-specific instructions | The selected plan's supported booking or transfer configuration; do not infer a native Rossware or ServiceWorks connection |\n\nAn integration logo does not establish which fields are written, how duplicates are handled or whether a requested appointment becomes confirmed. Ask to see the resulting record using fictional information."
+            ],
+            "items": []
+          },
+          {
+            "title": "Give each supplier the same three cases",
+            "paragraphs": [
+              "Use this worksheet before selecting a plan. These are purchase tests, not assertions that every product supports them.\n\n| Fictional call | Required distinction | Evidence to request |\n| --- | --- | --- |\n| A refrigerator stopped cooling; the caller knows the brand but not the model | Missing equipment details must not become invented information | The message shows the known brand and marks model information unavailable |\n| A customer is waiting for a part from an earlier visit | Existing work must not silently become a second new-job booking | The request reaches the existing-job owner with the caller's reference |\n| A caller asks whether a repair is covered | A warranty inquiry is not authorization or a coverage decision | The handler records the question and follows your approved next step |\n\nKeep diagnosis, equipment safety and warranty decisions with the responsible professional. Do not ask callers to dismantle equipment or supply account passwords during a demonstration."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare the bill over a matching period",
+            "paragraphs": [
+              "Call Center Plus describes billing every four weeks; that produces a different annual pattern from twelve calendar-month invoices. FixCall describes monthly plans selected by call volume. Request the complete rate sheet, included work, excess-use rules and setup charges rather than comparing only the headline.\n\nYour comparison record should contain: subscription period, included unit, calls that consume it, additional charges, booking destination and the person responsible for unresolved requests."
+            ],
+            "items": []
+          },
+          {
+            "title": "Questions before choosing",
+            "paragraphs": [
+              "### Does taking appliance details prove direct booking?\nNo. Inspect the final calendar or job record and ask which account configuration supports that action.\n\n### Can an answering service approve a warranty repair?\nDo not assume so. Your approved process should identify who makes that decision and how the request reaches them.\n\n[Review Revo's current plans](/pricing) if AI reception fits your required call handling. Confirm the actual booking and transfer setup before choosing a plan."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Choose the supported reception workflow.",
+        "related": [],
+        "sourcePaths": [
+          "https://www.fixcall.ai/appliance-repair-answering-service",
+          "https://callcenterplus.com/wp/services/message-taking/call-center-for-appliance-repair-services/",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "editorialDate": "2026-10-29",
+        "markdownArticle": {
+          "content": "# Appliance repair answering services: compare what reaches your office\n\nAn appliance repair business can receive a new repair request, a parts-related return visit and a warranty question within the same hour. Choose an answering provider by the record and authority each call requires. A service that collects a name is different from one that creates a supported booking in your actual system.\n\nPublished by Revo, a competing provider. This is a comparison of public documentation, not a hands-on performance ranking.\n\n## Compare specialized AI and live handling\n\n| Published offer | Relevant evidence | Resolve before purchase |\n| --- | --- | --- |\n| [FixCall](https://www.fixcall.ai/appliance-repair-answering-service) | Describes appliance-specific AI intake, including brand, model or serial details, and named field-service connections | Which connection and booking action work with your account; how warranty and return-visit requests are represented |\n| [Call Center Plus](https://callcenterplus.com/wp/services/message-taking/call-center-for-appliance-repair-services/) | Describes live appliance-repair intake, a web-based calendar, message delivery and contacting technicians | Whether the calendar is your operational schedule; what a technician response confirms; the included operator time |\n| [Revo](/pricing) | Publishes AI reception plans and business-specific instructions | The selected plan's supported booking or transfer configuration; do not infer a native Rossware or ServiceWorks connection |\n\nAn integration logo does not establish which fields are written, how duplicates are handled or whether a requested appointment becomes confirmed. Ask to see the resulting record using fictional information.\n\n## Give each supplier the same three cases\n\nUse this worksheet before selecting a plan. These are purchase tests, not assertions that every product supports them.\n\n| Fictional call | Required distinction | Evidence to request |\n| --- | --- | --- |\n| A refrigerator stopped cooling; the caller knows the brand but not the model | Missing equipment details must not become invented information | The message shows the known brand and marks model information unavailable |\n| A customer is waiting for a part from an earlier visit | Existing work must not silently become a second new-job booking | The request reaches the existing-job owner with the caller's reference |\n| A caller asks whether a repair is covered | A warranty inquiry is not authorization or a coverage decision | The handler records the question and follows your approved next step |\n\nKeep diagnosis, equipment safety and warranty decisions with the responsible professional. Do not ask callers to dismantle equipment or supply account passwords during a demonstration.\n\n## Compare the bill over a matching period\n\nCall Center Plus describes billing every four weeks; that produces a different annual pattern from twelve calendar-month invoices. FixCall describes monthly plans selected by call volume. Request the complete rate sheet, included work, excess-use rules and setup charges rather than comparing only the headline.\n\nYour comparison record should contain: subscription period, included unit, calls that consume it, additional charges, booking destination and the person responsible for unresolved requests.\n\n## Questions before choosing\n\n### Does taking appliance details prove direct booking?\nNo. Inspect the final calendar or job record and ask which account configuration supports that action.\n\n### Can an answering service approve a warranty repair?\nDo not assume so. Your approved process should identify who makes that decision and how the request reaches them.\n\n[Review Revo's current plans](/pricing) if AI reception fits your required call handling. Confirm the actual booking and transfer setup before choosing a plan.\n",
+          "sha256": "9236b8cc48f0dfdfb7b329085739a12565e01fec6fac66dc94a9680feb5e61f4",
+          "assets": []
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "compare/garage-door-answering-services",
+        "title": "Garage Door Answering Services: Compare Plans and Booking",
+        "description": "Compare garage door answering providers by repair versus installation requests, service-fee instructions, booking scope and technician acceptance.",
+        "navigationLabel": "Garage door provider comparison",
+        "eyebrow": "Reception buying decisions",
+        "lead": "A repair inquiry and an installation estimate need different next steps. Before buying a garage door answering service, decide which requests may be scheduled, which need an office callback and what the handler may say about a service visit charge.",
+        "intro": "A repair inquiry and an installation estimate need different next steps. Before buying a garage door answering service, decide which requests may be scheduled, which need an office callback and what the handler may say about a service visit charge.",
+        "sections": [
+          {
+            "title": "Look beyond an appointment-scheduling label",
+            "paragraphs": [
+              "[Jill's Office's garage door guide](https://jillsoffice.com/garage-door-answering-service-jills-office/) distinguishes scheduling under Complete from acceptance-text and escalation functions under Advance. That distinction matters: an entry on a schedule is not, by itself, proof that a technician accepted responsibility.\n\n[AnswerForce's garage door offer](https://www.answerforce.com/industries/garage-door) describes live answering and appointment support. Ask what the chosen plan writes into your actual system and how a request outside the approved booking rules is returned to the office.\n\n[Revo's current plans](/pricing) are the source for its published AI reception scope. Confirm supported booking and team transfers for the selected configuration. Do not infer an external live-agent team, automated technician acceptance or a particular field-service integration."
+            ],
+            "items": []
+          },
+          {
+            "title": "Use a garage door buying worksheet",
+            "paragraphs": [
+              "| Decision | Ask the supplier | Record before signing up |\n| --- | --- | --- |\n| Repair versus installation | Can these requests reach different approved destinations? | The booking or callback destination for each request |\n| Visit charge | Can the handler state the exact approved visit-charge wording without quoting an unseen repair? | Your current charge, approved explanation and exceptions owner |\n| Existing appointment | How does the handler identify a caller asking about an earlier job? | The record reference and office handoff |\n| Technician acceptance | Does the plan collect a response, escalate, or only notify? | The named feature and what its response actually establishes |\n| Booking system | Is this a direct entry, a calendar link or a request for staff review? | The supported product, account requirements and final record |\n\nDo not copy a fee from a provider's example into your own instructions. Your business must supply its current authorized charge and decide what the visit includes."
+            ],
+            "items": []
+          },
+          {
+            "title": "Request one demonstration with two outcomes",
+            "paragraphs": [
+              "Use fictional details for a repair inquiry and an installation-estimate request. Have the supplier show what the caller hears and where each resulting task appears. Then ask what happens if no approved slot is available. A useful answer identifies the fallback owner without inventing a confirmed visit.\n\nKeep mechanical diagnosis and safety instructions outside this comparison. An answering plan does not establish that a handler can assess a damaged door or authorize a repair."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Is scheduling the same as dispatch acceptance?\nNo. Ask which action the plan performs and what evidence shows that your team accepted the request.\n\n### Should the cheapest plan win?\nOnly after it satisfies the required request types. Compare the complete billing period and any separate charges for the booking or escalation functions you need.\n\n[Compare Revo's current plans](/pricing) and confirm the reception workflow your garage door office needs."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Choose the supported reception workflow.",
+        "related": [],
+        "sourcePaths": [
+          "https://jillsoffice.com/garage-door-answering-service-jills-office/",
+          "https://www.answerforce.com/industries/garage-door",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "editorialDate": "2026-10-29",
+        "markdownArticle": {
+          "content": "# Garage door answering services: choose the plan that fits the request\n\nA repair inquiry and an installation estimate need different next steps. Before buying a garage door answering service, decide which requests may be scheduled, which need an office callback and what the handler may say about a service visit charge.\n\nPublished by Revo, a competing provider. The comparison below uses supplier documentation; it does not claim measured response times or tested rankings.\n\n## Look beyond an appointment-scheduling label\n\n[Jill's Office's garage door guide](https://jillsoffice.com/garage-door-answering-service-jills-office/) distinguishes scheduling under Complete from acceptance-text and escalation functions under Advance. That distinction matters: an entry on a schedule is not, by itself, proof that a technician accepted responsibility.\n\n[AnswerForce's garage door offer](https://www.answerforce.com/industries/garage-door) describes live answering and appointment support. Ask what the chosen plan writes into your actual system and how a request outside the approved booking rules is returned to the office.\n\n[Revo's current plans](/pricing) are the source for its published AI reception scope. Confirm supported booking and team transfers for the selected configuration. Do not infer an external live-agent team, automated technician acceptance or a particular field-service integration.\n\n## Use a garage door buying worksheet\n\n| Decision | Ask the supplier | Record before signing up |\n| --- | --- | --- |\n| Repair versus installation | Can these requests reach different approved destinations? | The booking or callback destination for each request |\n| Visit charge | Can the handler state the exact approved visit-charge wording without quoting an unseen repair? | Your current charge, approved explanation and exceptions owner |\n| Existing appointment | How does the handler identify a caller asking about an earlier job? | The record reference and office handoff |\n| Technician acceptance | Does the plan collect a response, escalate, or only notify? | The named feature and what its response actually establishes |\n| Booking system | Is this a direct entry, a calendar link or a request for staff review? | The supported product, account requirements and final record |\n\nDo not copy a fee from a provider's example into your own instructions. Your business must supply its current authorized charge and decide what the visit includes.\n\n## Request one demonstration with two outcomes\n\nUse fictional details for a repair inquiry and an installation-estimate request. Have the supplier show what the caller hears and where each resulting task appears. Then ask what happens if no approved slot is available. A useful answer identifies the fallback owner without inventing a confirmed visit.\n\nKeep mechanical diagnosis and safety instructions outside this comparison. An answering plan does not establish that a handler can assess a damaged door or authorize a repair.\n\n## Frequently asked questions\n\n### Is scheduling the same as dispatch acceptance?\nNo. Ask which action the plan performs and what evidence shows that your team accepted the request.\n\n### Should the cheapest plan win?\nOnly after it satisfies the required request types. Compare the complete billing period and any separate charges for the booking or escalation functions you need.\n\n[Compare Revo's current plans](/pricing) and confirm the reception workflow your garage door office needs.\n",
+          "sha256": "32e2490a54741ca466503d7c9ba7f6994d561b5500b17d9d7991c7636dd5ae72",
+          "assets": []
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "jills-office-answering-service",
+        "title": "Jill's Office Answering Service: Weekly and Annual Costs",
+        "description": "Understand Jill's Office account fees, weekly minute brackets, annual commitments and optional AI overflow before comparing reception plans.",
+        "navigationLabel": "Jill’s Office weekly pricing",
+        "eyebrow": "Reception buying decisions",
+        "lead": "Jill's Office is a live answering option for service businesses. Its pricing deserves a weekly calculation: the account fee, usage brackets and annual commitment are separate parts of the purchase.",
+        "intro": "Jill's Office is a live answering option for service businesses. Its pricing deserves a weekly calculation: the account fee, usage brackets and annual commitment are separate parts of the purchase.",
+        "sections": [
+          {
+            "title": "Start with the current billing structure",
+            "paragraphs": [
+              "[Jill's Office pricing](https://jillsoffice.com/pricing/) lists weekly account fees of $39 for Receptionist, $59 for Complete and $89 for Advance. Usage is additional. The page distinguishes a weekly offer with a setup charge from an annual account fee paid upfront, with different minute rates and no setup fee under that annual offer.\n\nDo not read the account fee as the complete answering bill. The supplier describes tiered weekly usage: different portions of the same week's minutes can carry different rates. It also states that the usage ranges reset weekly."
+            ],
+            "items": []
+          },
+          {
+            "title": "Work through a matching example",
+            "paragraphs": [
+              "The pricing page's Receptionist and Complete weekly table charges the first 49 minutes at $2.00 and the following range at $1.80. For a fictional 100-minute week, the published calculation is:\n\n49 × $2.00 + 51 × $1.80 = $189.80 in usage.\n\nFor Receptionist, adding the published $39 weekly account fee gives $228.80 before any applicable setup charge, tax or other item. This is a planning example, not a quote or customer result. Do not apply these particular brackets to Advance or the annual offer.\n\nUse the same weekly workload when comparing alternatives. Four weeks is not a calendar month, and a monthly provider's included allowance may reset differently."
+            ],
+            "items": []
+          },
+          {
+            "title": "Separate commitment from coverage",
+            "paragraphs": [
+              "The pricing page says annual account fees are non-refundable even though cancellation is available. Confirm what cancellation stops, what remains paid and when the account fee begins. [Jill's Office terms](https://jillsoffice.com/terms-of-service/) also matter for the first billing period; do not assume usage starts only after every onboarding task is complete.\n\n| Purchase question | Evidence to retain |\n| --- | --- |\n| Which plan includes the required booking or escalation work? | Selected feature scope and system requirements |\n| How are minutes divided across weekly brackets? | Rate table and a calculation for your own workload |\n| Is AI Assist part of the purchase? | Its optional overflow rate and the charge when a person takes over |\n| What does an annual payment commit? | Upfront account fee, non-refundability and cancellation terms |"
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo belongs in the comparison",
+            "paragraphs": [
+              "Revo offers AI reception, rather than Jill's live-receptionist staffing model. Compare [current Revo plans](/pricing) against the actual calls, allowed actions and billing unit you need. Do not assume either provider duplicates every function of the other.\n\n### Is $39 per week the complete Jill's Office price?\nNo. The published structure adds usage and may add setup or other applicable charges.\n\n### Does optional AI overflow make every call an AI call?\nNo. Ask when the optional service answers and how usage changes when the caller reaches a person."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Choose the supported reception workflow.",
+        "related": [],
+        "sourcePaths": [
+          "https://jillsoffice.com/pricing/",
+          "https://jillsoffice.com/terms-of-service/",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "editorialDate": "2026-10-29",
+        "markdownArticle": {
+          "content": "# Jill's Office: compare the weekly bill and the annual commitment\n\nJill's Office is a live answering option for service businesses. Its pricing deserves a weekly calculation: the account fee, usage brackets and annual commitment are separate parts of the purchase.\n\nPublished by Revo, a competing provider. This guide reviews public pricing, not customer reviews or our own use of the service. Recheck the selected offer before purchase.\n\n## Start with the current billing structure\n\n[Jill's Office pricing](https://jillsoffice.com/pricing/) lists weekly account fees of $39 for Receptionist, $59 for Complete and $89 for Advance. Usage is additional. The page distinguishes a weekly offer with a setup charge from an annual account fee paid upfront, with different minute rates and no setup fee under that annual offer.\n\nDo not read the account fee as the complete answering bill. The supplier describes tiered weekly usage: different portions of the same week's minutes can carry different rates. It also states that the usage ranges reset weekly.\n\n## Work through a matching example\n\nThe pricing page's Receptionist and Complete weekly table charges the first 49 minutes at $2.00 and the following range at $1.80. For a fictional 100-minute week, the published calculation is:\n\n49 × $2.00 + 51 × $1.80 = $189.80 in usage.\n\nFor Receptionist, adding the published $39 weekly account fee gives $228.80 before any applicable setup charge, tax or other item. This is a planning example, not a quote or customer result. Do not apply these particular brackets to Advance or the annual offer.\n\nUse the same weekly workload when comparing alternatives. Four weeks is not a calendar month, and a monthly provider's included allowance may reset differently.\n\n## Separate commitment from coverage\n\nThe pricing page says annual account fees are non-refundable even though cancellation is available. Confirm what cancellation stops, what remains paid and when the account fee begins. [Jill's Office terms](https://jillsoffice.com/terms-of-service/) also matter for the first billing period; do not assume usage starts only after every onboarding task is complete.\n\n| Purchase question | Evidence to retain |\n| --- | --- |\n| Which plan includes the required booking or escalation work? | Selected feature scope and system requirements |\n| How are minutes divided across weekly brackets? | Rate table and a calculation for your own workload |\n| Is AI Assist part of the purchase? | Its optional overflow rate and the charge when a person takes over |\n| What does an annual payment commit? | Upfront account fee, non-refundability and cancellation terms |\n\n## Where Revo belongs in the comparison\n\nRevo offers AI reception, rather than Jill's live-receptionist staffing model. Compare [current Revo plans](/pricing) against the actual calls, allowed actions and billing unit you need. Do not assume either provider duplicates every function of the other.\n\n### Is $39 per week the complete Jill's Office price?\nNo. The published structure adds usage and may add setup or other applicable charges.\n\n### Does optional AI overflow make every call an AI call?\nNo. Ask when the optional service answers and how usage changes when the caller reaches a person.\n",
+          "sha256": "8235519e709e0b1a793d641e261b9144c17dcc414ffdbe7ec3854ff76d518fcf",
+          "assets": []
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "compare/ai-receptionist-voice-experience",
+        "title": "Choosing an AI Receptionist Voice: A Buyer Audition Sheet",
+        "description": "Evaluate an AI receptionist's voice with a practical audition for names, callback numbers, addresses and conversation recovery before buying.",
+        "navigationLabel": "AI receptionist voice audition",
+        "eyebrow": "Reception buying decisions",
+        "lead": "The best AI voice for handling virtual reception tasks must be understandable in the calls your business actually receives. A polished greeting is only the beginning. Before buying, listen to how the configured receptionist handles a corrected number, an unfamiliar street name and a caller who changes their request.",
+        "intro": "The best AI voice for handling virtual reception tasks must be understandable in the calls your business actually receives. A polished greeting is only the beginning. Before buying, listen to how the configured receptionist handles a corrected number, an unfamiliar street name and a caller who changes their request.",
+        "sections": [
+          {
+            "title": "Separate a voice option from a completed reception task",
+            "paragraphs": [
+              "[RingCentral AI Receptionist](https://www.ringcentral.com/ai-receptionist.html) documents multiple professional voice options and provides demonstrations. [Allo's AI receptionist page](https://www.withallo.com/product/ai-receptionist) identifies ElevenLabs voices and includes demonstration clips. These establish published options and examples, not that one voice will outperform another for your callers.\n\nA voice engine alone is not a complete answering service. Check the actual reception product, its supported business instructions and the resulting message or appointment. Do not buy a developer tool expecting a configured front desk unless that service is explicitly included."
+            ],
+            "items": []
+          },
+          {
+            "title": "Bring this audition sheet",
+            "paragraphs": [
+              "Use fictional details and the same request for every supplier. Ask permission to use the supplier's demonstration environment; do not place fabricated jobs into a real business account.\n\n| Test | What to listen for | What to inspect afterward |\n| --- | --- | --- |\n| A corrected callback number | The correction is acknowledged without leaving the caller unsure which number was retained | The final summary contains the corrected fictional number |\n| An unfamiliar street name | The handler asks for clarification instead of confidently substituting another address | The uncertainty is resolved or clearly recorded |\n| A change from repair to estimate request | The response follows the corrected purpose | The final task reflects the request the caller actually made |\n| A question outside the approved information | The response explains the next step without inventing an answer | The unresolved question reaches its owner |\n\nMark each result as observed, unclear or not supported. Keep your notes about intelligibility separate from whether the correct task reached the office. Do not report a latency score or accuracy percentage unless you actually measured it using a defined method."
+            ],
+            "items": []
+          },
+          {
+            "title": "Ask what you are allowed to change",
+            "paragraphs": [
+              "Confirm which voices the selected account includes, which languages are supported and who can change the selection. Do not infer voice cloning, a custom accent or an unrestricted voice editor from a personalized greeting. If a specific voice or language is mandatory, obtain evidence before buying.\n\nRevo's published business instructions do not establish custom voice selection. [Hear the available Revo sample](/hear-a-sample-call) and [review current plans](/pricing), then confirm the supported configuration rather than assuming a feature from another provider's documentation.\n\n### Does a natural voice prove correct booking?\nNo. Inspect the resulting booking or request separately.\n\n### Can a recorded demo establish performance for my office?\nIt can illustrate a flow. It does not establish how your configured account will handle every caller or condition."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Choose the supported reception workflow.",
+        "related": [],
+        "sourcePaths": [
+          "https://www.ringcentral.com/ai-receptionist.html",
+          "https://www.withallo.com/product/ai-receptionist",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "editorialDate": "2026-10-29",
+        "markdownArticle": {
+          "content": "# Choose an AI receptionist voice by auditioning the whole conversation\n\nThe best AI voice for handling virtual reception tasks must be understandable in the calls your business actually receives. A polished greeting is only the beginning. Before buying, listen to how the configured receptionist handles a corrected number, an unfamiliar street name and a caller who changes their request.\n\nPublished by Revo, a competing provider. This is an audition method, not a tested voice ranking or a claim that Revo offers custom voices.\n\n## Separate a voice option from a completed reception task\n\n[RingCentral AI Receptionist](https://www.ringcentral.com/ai-receptionist.html) documents multiple professional voice options and provides demonstrations. [Allo's AI receptionist page](https://www.withallo.com/product/ai-receptionist) identifies ElevenLabs voices and includes demonstration clips. These establish published options and examples, not that one voice will outperform another for your callers.\n\nA voice engine alone is not a complete answering service. Check the actual reception product, its supported business instructions and the resulting message or appointment. Do not buy a developer tool expecting a configured front desk unless that service is explicitly included.\n\n## Bring this audition sheet\n\nUse fictional details and the same request for every supplier. Ask permission to use the supplier's demonstration environment; do not place fabricated jobs into a real business account.\n\n| Test | What to listen for | What to inspect afterward |\n| --- | --- | --- |\n| A corrected callback number | The correction is acknowledged without leaving the caller unsure which number was retained | The final summary contains the corrected fictional number |\n| An unfamiliar street name | The handler asks for clarification instead of confidently substituting another address | The uncertainty is resolved or clearly recorded |\n| A change from repair to estimate request | The response follows the corrected purpose | The final task reflects the request the caller actually made |\n| A question outside the approved information | The response explains the next step without inventing an answer | The unresolved question reaches its owner |\n\nMark each result as observed, unclear or not supported. Keep your notes about intelligibility separate from whether the correct task reached the office. Do not report a latency score or accuracy percentage unless you actually measured it using a defined method.\n\n## Ask what you are allowed to change\n\nConfirm which voices the selected account includes, which languages are supported and who can change the selection. Do not infer voice cloning, a custom accent or an unrestricted voice editor from a personalized greeting. If a specific voice or language is mandatory, obtain evidence before buying.\n\nRevo's published business instructions do not establish custom voice selection. [Hear the available Revo sample](/hear-a-sample-call) and [review current plans](/pricing), then confirm the supported configuration rather than assuming a feature from another provider's documentation.\n\n### Does a natural voice prove correct booking?\nNo. Inspect the resulting booking or request separately.\n\n### Can a recorded demo establish performance for my office?\nIt can illustrate a flow. It does not establish how your configured account will handle every caller or condition.\n",
+          "sha256": "e4404178b6c8a393be2c9b02c76a8f0c922e5c6fb67223a964a0c9cd6d9a0a7a",
+          "assets": []
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "compare/home-inspector-answering-services",
+        "title": "Home Inspector Answering Services: Compare Booking Scope",
+        "description": "Compare specialized live and AI reception for home inspectors by scheduling authority, transaction deadlines, ancillary requests and the final booking record.",
+        "navigationLabel": "Inspector provider comparison",
+        "eyebrow": "Reception buying decisions",
+        "lead": "A home inspector buying phone coverage needs more than a friendly greeting. Decide whether the supplier will collect an inquiry, reserve an inspection within approved rules or provide a broader office service. Those are different purchases.",
+        "intro": "A home inspector buying phone coverage needs more than a friendly greeting. Decide whether the supplier will collect an inquiry, reserve an inspection within approved rules or provide a broader office service. Those are different purchases.",
+        "sections": [
+          {
+            "title": "Compare the service being offered",
+            "paragraphs": [
+              "| Supplier documentation | Purchase model to investigate | Question for your account |\n| --- | --- | --- |\n| [America's Call Center](https://www.americascallcenter.com/more-than-a-call-center-how-acc-enables-growth-for-home-inspection-businesses/) describes specialized home-inspection scheduling and logistics support | An industry-focused live office service with work beyond answering | Which quoting, ancillary-service and appointment tasks are included in the selected offer? |\n| [PATLive's home-inspector offer](https://www.patlive.com/industries/home-inspectors/) describes live answering, inspection booking and lead capture | A live reception service | What system receives the booking, and which availability and service rules can the agents apply? |\n| [Revo](/pricing) publishes AI reception plans | AI handling of approved information and requests | Which selected plan and supported configuration satisfy the required booking or transfer action? |\n\nDo not infer a native connection to ISN, Spectora or another inspection platform from general scheduling language. Ask the provider to identify the connection and show the actual result for your account."
+            ],
+            "items": []
+          },
+          {
+            "title": "Decide who can commit the appointment",
+            "paragraphs": [
+              "Complete this purchase record before comparing prices:\n\n| Responsibility | Your authorized rule | Supplier evidence required |\n| --- | --- | --- |\n| Property and service eligibility | Which properties and inspection categories the office accepts | How exceptions are returned without a promise of service |\n| Availability | Which slots the supplier may reserve | The calendar or system of record and confirmation process |\n| Transaction deadline | How a caller-supplied closing date is recorded | A deadline remains a request unless your business confirms a suitable appointment |\n| Ancillary services | Which approved options may be discussed | The exact permitted explanation and responsible decision-maker |\n| Existing report | Who handles questions about findings | A professional handoff rather than an unsupported interpretation |\n\nThe worksheet compares supplier responsibility. Our [home-inspector reception workflow](/ai-answering-service/home-inspector-answering-service) explains the intake information itself."
+            ],
+            "items": []
+          },
+          {
+            "title": "Price the same division of work",
+            "paragraphs": [
+              "Request a quote for answering alone and identify any separate booking, appointment or office-service charges. Ask whether existing-customer calls and unsuccessful booking attempts consume the allowance. A lower answering fee may represent less administrative work, rather than a lower price for the same service.\n\n### Can the receptionist interpret an inspection report?\nThat question belongs with the qualified professional. The reception service should preserve the question and route it appropriately.\n\n### Does an industry-specific provider automatically support my software?\nNo. Verify the selected connection and the final record before purchase.\n\n[Review Revo's current plans](/pricing) if AI reception fits the responsibilities you want to delegate. Confirm any booking requirement explicitly."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Choose the supported reception workflow.",
+        "related": [],
+        "sourcePaths": [
+          "https://www.americascallcenter.com/more-than-a-call-center-how-acc-enables-growth-for-home-inspection-businesses/",
+          "https://www.patlive.com/industries/home-inspectors/",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "editorialDate": "2026-10-29",
+        "markdownArticle": {
+          "content": "# Home inspector answering services: compare the booking responsibility\n\nA home inspector buying phone coverage needs more than a friendly greeting. Decide whether the supplier will collect an inquiry, reserve an inspection within approved rules or provide a broader office service. Those are different purchases.\n\nPublished by Revo, a competing provider. This documentary comparison does not evaluate inspection quality or claim hands-on tests of the suppliers.\n\n## Compare the service being offered\n\n| Supplier documentation | Purchase model to investigate | Question for your account |\n| --- | --- | --- |\n| [America's Call Center](https://www.americascallcenter.com/more-than-a-call-center-how-acc-enables-growth-for-home-inspection-businesses/) describes specialized home-inspection scheduling and logistics support | An industry-focused live office service with work beyond answering | Which quoting, ancillary-service and appointment tasks are included in the selected offer? |\n| [PATLive's home-inspector offer](https://www.patlive.com/industries/home-inspectors/) describes live answering, inspection booking and lead capture | A live reception service | What system receives the booking, and which availability and service rules can the agents apply? |\n| [Revo](/pricing) publishes AI reception plans | AI handling of approved information and requests | Which selected plan and supported configuration satisfy the required booking or transfer action? |\n\nDo not infer a native connection to ISN, Spectora or another inspection platform from general scheduling language. Ask the provider to identify the connection and show the actual result for your account.\n\n## Decide who can commit the appointment\n\nComplete this purchase record before comparing prices:\n\n| Responsibility | Your authorized rule | Supplier evidence required |\n| --- | --- | --- |\n| Property and service eligibility | Which properties and inspection categories the office accepts | How exceptions are returned without a promise of service |\n| Availability | Which slots the supplier may reserve | The calendar or system of record and confirmation process |\n| Transaction deadline | How a caller-supplied closing date is recorded | A deadline remains a request unless your business confirms a suitable appointment |\n| Ancillary services | Which approved options may be discussed | The exact permitted explanation and responsible decision-maker |\n| Existing report | Who handles questions about findings | A professional handoff rather than an unsupported interpretation |\n\nThe worksheet compares supplier responsibility. Our [home-inspector reception workflow](/ai-answering-service/home-inspector-answering-service) explains the intake information itself.\n\n## Price the same division of work\n\nRequest a quote for answering alone and identify any separate booking, appointment or office-service charges. Ask whether existing-customer calls and unsuccessful booking attempts consume the allowance. A lower answering fee may represent less administrative work, rather than a lower price for the same service.\n\n### Can the receptionist interpret an inspection report?\nThat question belongs with the qualified professional. The reception service should preserve the question and route it appropriately.\n\n### Does an industry-specific provider automatically support my software?\nNo. Verify the selected connection and the final record before purchase.\n\n[Review Revo's current plans](/pricing) if AI reception fits the responsibilities you want to delegate. Confirm any booking requirement explicitly.\n",
+          "sha256": "620b140d7b168c3e7257f107f33d05379a3551c384c96ff7f1b6ea8e05168185",
+          "assets": []
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "compare/moving-company-answering-services",
+        "title": "Moving Company Answering Services: Quote or Booking?",
+        "description": "Choose moving-company answering by the authority to collect quote details, arrange a survey, reserve a move or handle an existing-job inquiry.",
+        "navigationLabel": "Moving provider comparison",
+        "eyebrow": "Reception buying decisions",
+        "lead": "Before choosing an answering service for a residential moving company, identify what the handler may commit. Collecting origin and destination details is different from arranging a survey, issuing an authorized estimate or reserving a moving crew.",
+        "intro": "Before choosing an answering service for a residential moving company, identify what the handler may commit. Collecting origin and destination details is different from arranging a survey, issuing an authorized estimate or reserving a moving crew.",
+        "sections": [
+          {
+            "title": "Compare the authority behind the offer",
+            "paragraphs": [
+              "[MAP Communications' moving-company service](https://www.mapcommunications.com/industries/transportation/movers/) describes live answering, appointments, questions and quotes. That public scope is a starting point for a discussion about what your account authorizes; it does not establish the terms or authority for your particular estimate.\n\n[Callbook's moving-company page](https://getcallbook.com/industries/moving) describes AI intake of moving details and arranging the next step. Ask whether the selected setup creates an estimate appointment, a request for review or a confirmed move. Do not treat those outcomes as interchangeable.\n\n[Revo's current plans](/pricing) establish its AI reception offer. Confirm supported booking and transfers for your configuration. This guide does not establish a moving-estimate engine, crew allocation, deposit collection or binding-price authority for Revo."
+            ],
+            "items": []
+          },
+          {
+            "title": "Put five decisions into the quote request",
+            "paragraphs": [
+              "| Caller task | What the answering supplier may need to do | What remains with your moving office |\n| --- | --- | --- |\n| A new residential move | Collect the relevant addresses, preferred date and caller-supplied scope | Decide eligibility, survey needs and the estimate process |\n| A requested survey | Offer only the authorized appointment path | Confirm the survey resource and any exception |\n| A price question | State only an approved explanation | Create or approve the actual estimate where required |\n| A change to an existing move | Identify the job and preserve the requested change | Approve crew, date, inventory or price changes |\n| An arrival inquiry | Relay the current authorized information or request a callback | Confirm actual crew location or arrival information |\n\nUse fictional information in a demonstration. The supplier should show the final record for a survey request and an existing-job change. Ask how it prevents a new sales inquiry from overwriting an existing booking."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare the cost for the responsibility delegated",
+            "paragraphs": [
+              "Request a complete quote identifying the billing unit, included work, setup cost and charges for transfers or scheduling. If one offer includes staffed estimate coordination and another only captures a request, label that difference before comparing totals.\n\nOur [moving-industry page](/industry_moving) concerns Revo's reception use case. This buying guide concerns the authority and service scope you are purchasing from a supplier.\n\n### Does appointment support mean the move is confirmed?\nNo. Identify whether the appointment is a survey, an estimate discussion or a reserved move, and who may confirm it.\n\n### Can reception give an arrival guarantee?\nOnly use information and authority your business has actually approved. An answering service is not evidence of live crew tracking.\n\n[Compare Revo's current plans](/pricing) against the reception responsibilities your moving office needs."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Choose the supported reception workflow.",
+        "related": [],
+        "sourcePaths": [
+          "https://www.mapcommunications.com/industries/transportation/movers/",
+          "https://getcallbook.com/industries/moving",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "editorialDate": "2026-10-29",
+        "markdownArticle": {
+          "content": "# Moving company answering services: distinguish a quote lead from a booked move\n\nBefore choosing an answering service for a residential moving company, identify what the handler may commit. Collecting origin and destination details is different from arranging a survey, issuing an authorized estimate or reserving a moving crew.\n\nPublished by Revo, a competing provider. This guide compares documented scope and purchase questions, not measured supplier performance.\n\n## Compare the authority behind the offer\n\n[MAP Communications' moving-company service](https://www.mapcommunications.com/industries/transportation/movers/) describes live answering, appointments, questions and quotes. That public scope is a starting point for a discussion about what your account authorizes; it does not establish the terms or authority for your particular estimate.\n\n[Callbook's moving-company page](https://getcallbook.com/industries/moving) describes AI intake of moving details and arranging the next step. Ask whether the selected setup creates an estimate appointment, a request for review or a confirmed move. Do not treat those outcomes as interchangeable.\n\n[Revo's current plans](/pricing) establish its AI reception offer. Confirm supported booking and transfers for your configuration. This guide does not establish a moving-estimate engine, crew allocation, deposit collection or binding-price authority for Revo.\n\n## Put five decisions into the quote request\n\n| Caller task | What the answering supplier may need to do | What remains with your moving office |\n| --- | --- | --- |\n| A new residential move | Collect the relevant addresses, preferred date and caller-supplied scope | Decide eligibility, survey needs and the estimate process |\n| A requested survey | Offer only the authorized appointment path | Confirm the survey resource and any exception |\n| A price question | State only an approved explanation | Create or approve the actual estimate where required |\n| A change to an existing move | Identify the job and preserve the requested change | Approve crew, date, inventory or price changes |\n| An arrival inquiry | Relay the current authorized information or request a callback | Confirm actual crew location or arrival information |\n\nUse fictional information in a demonstration. The supplier should show the final record for a survey request and an existing-job change. Ask how it prevents a new sales inquiry from overwriting an existing booking.\n\n## Compare the cost for the responsibility delegated\n\nRequest a complete quote identifying the billing unit, included work, setup cost and charges for transfers or scheduling. If one offer includes staffed estimate coordination and another only captures a request, label that difference before comparing totals.\n\nOur [moving-industry page](/industry_moving) concerns Revo's reception use case. This buying guide concerns the authority and service scope you are purchasing from a supplier.\n\n### Does appointment support mean the move is confirmed?\nNo. Identify whether the appointment is a survey, an estimate discussion or a reserved move, and who may confirm it.\n\n### Can reception give an arrival guarantee?\nOnly use information and authority your business has actually approved. An answering service is not evidence of live crew tracking.\n\n[Compare Revo's current plans](/pricing) against the reception responsibilities your moving office needs.\n",
+          "sha256": "1d78a89d6b3f0ed1b3d9dc083cb7f933f3b1d6ba05f59ec2eb42c6292db905f3",
+          "assets": []
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "allo-ai-receptionist",
+        "title": "Allo AI Receptionist: Identify the Offer Before Comparing",
+        "description": "Distinguish Allo's software offer from ALLO Communications, then check the AI receptionist seat, phone service, billing and supported booking setup.",
+        "navigationLabel": "Allo AI receptionist offers",
+        "eyebrow": "Reception buying decisions",
+        "lead": "The name matters in this search. The software business at withallo.com and the telecommunications business at allocommunications.com are different supplier identities. Before comparing an Allo AI receptionist offer, record the actual website, seller and product you intend to buy.",
+        "intro": "The name matters in this search. The software business at withallo.com and the telecommunications business at allocommunications.com are different supplier identities. Before comparing an Allo AI receptionist offer, record the actual website, seller and product you intend to buy.",
+        "sections": [
+          {
+            "title": "Start with the software offer's published scope",
+            "paragraphs": [
+              "[Allo's AI receptionist page](https://www.withallo.com/product/ai-receptionist) describes an AI agent within its business-phone environment. It documents calendar booking, transfers and CRM write-ups, and presents demonstration clips. The page states that the receptionist takes its own Business seat at $32 per user per month, billed yearly.\n\nTreat that as the page's stated offer, not a complete account quote. Read [Allo pricing](https://www.withallo.com/pricing) and ask the supplier to reconcile the AI agent, required human-user seats, phone numbers and any additional usage or account charges. Do not transfer a price from one Allo website to the other.\n\nALLO Communications also advertises an [AI receptionist offering](https://www.allocommunications.com/business/ai-receptionist/). If that is your intended supplier, obtain its own service eligibility and written quote. A software seat price from withallo.com does not establish the telecommunications company's rate or availability."
+            ],
+            "items": []
+          },
+          {
+            "title": "Use an identity and total-cost record",
+            "paragraphs": [
+              "| Field | Record before purchase |\n| --- | --- |\n| Seller | Website, legal supplier on the offer and support destination |\n| Product | AI agent, phone-system account, telecommunications service or a combination |\n| Required seats | AI-agent seat and any separate account or user requirement |\n| Billing | Monthly equivalent versus annual amount payable; renewal terms |\n| Number arrangement | Existing-number use, additional numbers and supported routing |\n| Booking result | Calendar or CRM destination, required connection and account permissions |\n\nAsk the supplier to show one fictional new-service request and one transfer that cannot reach the intended person. Record the completed action and the fallback. A demonstration clip illustrates an example; it does not verify your configured account."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare reception separately from the phone workspace",
+            "paragraphs": [
+              "Revo's published offer is AI reception. Do not assume it replaces an entire phone workspace, supplies telecommunications access or provides an Allo integration. Compare [current Revo plans](/pricing) only after separating those requirements from the reception tasks.\n\n### Does the same name establish the same company or plan?\nNo. Verify the actual supplier and purchase documents.\n\n### Is a per-seat headline the whole account cost?\nNot necessarily. Obtain the required seats, number arrangement, usage and billing commitment together before comparing alternatives."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Choose the supported reception workflow.",
+        "related": [],
+        "sourcePaths": [
+          "https://www.withallo.com/product/ai-receptionist",
+          "https://www.withallo.com/pricing",
+          "https://www.allocommunications.com/business/ai-receptionist/",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "editorialDate": "2026-10-29",
+        "markdownArticle": {
+          "content": "# Allo AI receptionist: identify the offer before comparing the price\n\nThe name matters in this search. The software business at withallo.com and the telecommunications business at allocommunications.com are different supplier identities. Before comparing an Allo AI receptionist offer, record the actual website, seller and product you intend to buy.\n\nPublished by Revo, a competing provider. This guide reviews public documentation and does not imply a relationship between the two suppliers or an integration with Revo.\n\n## Start with the software offer's published scope\n\n[Allo's AI receptionist page](https://www.withallo.com/product/ai-receptionist) describes an AI agent within its business-phone environment. It documents calendar booking, transfers and CRM write-ups, and presents demonstration clips. The page states that the receptionist takes its own Business seat at $32 per user per month, billed yearly.\n\nTreat that as the page's stated offer, not a complete account quote. Read [Allo pricing](https://www.withallo.com/pricing) and ask the supplier to reconcile the AI agent, required human-user seats, phone numbers and any additional usage or account charges. Do not transfer a price from one Allo website to the other.\n\nALLO Communications also advertises an [AI receptionist offering](https://www.allocommunications.com/business/ai-receptionist/). If that is your intended supplier, obtain its own service eligibility and written quote. A software seat price from withallo.com does not establish the telecommunications company's rate or availability.\n\n## Use an identity and total-cost record\n\n| Field | Record before purchase |\n| --- | --- |\n| Seller | Website, legal supplier on the offer and support destination |\n| Product | AI agent, phone-system account, telecommunications service or a combination |\n| Required seats | AI-agent seat and any separate account or user requirement |\n| Billing | Monthly equivalent versus annual amount payable; renewal terms |\n| Number arrangement | Existing-number use, additional numbers and supported routing |\n| Booking result | Calendar or CRM destination, required connection and account permissions |\n\nAsk the supplier to show one fictional new-service request and one transfer that cannot reach the intended person. Record the completed action and the fallback. A demonstration clip illustrates an example; it does not verify your configured account.\n\n## Compare reception separately from the phone workspace\n\nRevo's published offer is AI reception. Do not assume it replaces an entire phone workspace, supplies telecommunications access or provides an Allo integration. Compare [current Revo plans](/pricing) only after separating those requirements from the reception tasks.\n\n### Does the same name establish the same company or plan?\nNo. Verify the actual supplier and purchase documents.\n\n### Is a per-seat headline the whole account cost?\nNot necessarily. Obtain the required seats, number arrangement, usage and billing commitment together before comparing alternatives.\n",
+          "sha256": "768f55885de475528c61669a180de88229b4a1a74c1eaaa589925fb11ffcd69c",
+          "assets": []
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "answering-service-money-back-guarantee",
+        "title": "Answering Service Money-Back Guarantees: What Is at Risk?",
+        "description": "Compare an answering service money-back guarantee by eligibility, refund cap, excluded charges, deadline and request process before paying.",
+        "navigationLabel": "Money-back guarantees",
+        "eyebrow": "Reception buying decisions",
+        "lead": "A money-back guarantee can reduce a purchase risk, but its headline does not tell you which charges are refundable. Before paying an answering provider, identify the exact offer, the covered amount and the process for requesting a refund.",
+        "intro": "A money-back guarantee can reduce a purchase risk, but its headline does not tell you which charges are refundable. Before paying an answering provider, identify the exact offer, the covered amount and the process for requesting a refund.",
+        "sections": [
+          {
+            "title": "Separate four different promises",
+            "paragraphs": [
+              "A free trial concerns access before or during a defined evaluation. Cancellation concerns ending future service. A service credit reduces a later charge under stated conditions. A refund returns an eligible payment. None automatically establishes the others.\n\n[Phone.com's AI receptionist page](https://www.phone.com/ai-receptionist/) advertises a 30-day money-back guarantee while describing its AI product as an add-on to a phone plan. Ask which purchase and charges the applicable policy covers rather than assuming the add-on and the whole account have identical treatment.\n\n[Smith.ai's published guarantee FAQ](https://smithaivoiceassistant.freshdesk.com/support/solutions/articles/151000200042-smith-ai-money-back-guarantee-faq) discusses eligibility, a refund cap and excluded overage charges. Its named plans and timing language need reconciliation with the offer you are buying. Do not apply an older help article to a different current plan without written confirmation."
+            ],
+            "items": []
+          },
+          {
+            "title": "Complete a refundable-budget worksheet",
+            "paragraphs": [
+              "| Question | Record from the applicable offer |\n| --- | --- |\n| Who qualifies? | New-account requirement, selected product and any excluded plan |\n| When does the clock start? | Purchase, activation or another event explicitly stated in the policy |\n| What payment is covered? | Subscription, setup, add-ons and usage listed separately |\n| Is there a cap? | The maximum refundable amount and how it applies |\n| What remains excluded? | Overage, taxes or other charges only where the policy actually says so |\n| How is the request made? | Required destination, deadline, information and confirmation |\n\nFor a fictional purchase, suppose $150 is paid and the confirmed policy covers $100 while excluding $50 of usage. The maximum refund in that example is $100, not $150. This illustrates the worksheet; it is not a supplier's policy or a customer outcome."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep the purchase decision separate from the refund request",
+            "paragraphs": [
+              "Use the written scope to decide whether the exposure is acceptable before connecting business calls. Retain the selected offer and a dated record of any clarification. If the pricing page and policy conflict, ask the supplier to resolve the conflict rather than combining favorable sentences from each.\n\nOur [free-trial acceptance guide](/ai-answering-service/answering-service-free-trial) covers evaluating call handling. This worksheet covers money already paid and the portion the applicable policy may return.\n\n### Does cancellation guarantee a refund?\nNo. Check the actual refund conditions separately.\n\n### Does this establish a Revo money-back guarantee?\nNo. [Review Revo's current plans](/pricing) and applicable terms. Do not buy on the assumption that a competitor's guarantee also applies to Revo."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Choose the supported reception workflow.",
+        "related": [],
+        "sourcePaths": [
+          "https://www.phone.com/ai-receptionist/",
+          "https://smithaivoiceassistant.freshdesk.com/support/solutions/articles/151000200042-smith-ai-money-back-guarantee-faq",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "editorialDate": "2026-10-29",
+        "markdownArticle": {
+          "content": "# Answering service money-back guarantees: compare what can actually be returned\n\nA money-back guarantee can reduce a purchase risk, but its headline does not tell you which charges are refundable. Before paying an answering provider, identify the exact offer, the covered amount and the process for requesting a refund.\n\nPublished by Revo, a competing provider. This is a buying worksheet, not legal advice or a promise of a Revo refund. If a money-back guarantee is a mandatory requirement, obtain applicable written terms before choosing any provider.\n\n## Separate four different promises\n\nA free trial concerns access before or during a defined evaluation. Cancellation concerns ending future service. A service credit reduces a later charge under stated conditions. A refund returns an eligible payment. None automatically establishes the others.\n\n[Phone.com's AI receptionist page](https://www.phone.com/ai-receptionist/) advertises a 30-day money-back guarantee while describing its AI product as an add-on to a phone plan. Ask which purchase and charges the applicable policy covers rather than assuming the add-on and the whole account have identical treatment.\n\n[Smith.ai's published guarantee FAQ](https://smithaivoiceassistant.freshdesk.com/support/solutions/articles/151000200042-smith-ai-money-back-guarantee-faq) discusses eligibility, a refund cap and excluded overage charges. Its named plans and timing language need reconciliation with the offer you are buying. Do not apply an older help article to a different current plan without written confirmation.\n\n## Complete a refundable-budget worksheet\n\n| Question | Record from the applicable offer |\n| --- | --- |\n| Who qualifies? | New-account requirement, selected product and any excluded plan |\n| When does the clock start? | Purchase, activation or another event explicitly stated in the policy |\n| What payment is covered? | Subscription, setup, add-ons and usage listed separately |\n| Is there a cap? | The maximum refundable amount and how it applies |\n| What remains excluded? | Overage, taxes or other charges only where the policy actually says so |\n| How is the request made? | Required destination, deadline, information and confirmation |\n\nFor a fictional purchase, suppose $150 is paid and the confirmed policy covers $100 while excluding $50 of usage. The maximum refund in that example is $100, not $150. This illustrates the worksheet; it is not a supplier's policy or a customer outcome.\n\n## Keep the purchase decision separate from the refund request\n\nUse the written scope to decide whether the exposure is acceptable before connecting business calls. Retain the selected offer and a dated record of any clarification. If the pricing page and policy conflict, ask the supplier to resolve the conflict rather than combining favorable sentences from each.\n\nOur [free-trial acceptance guide](/ai-answering-service/answering-service-free-trial) covers evaluating call handling. This worksheet covers money already paid and the portion the applicable policy may return.\n\n### Does cancellation guarantee a refund?\nNo. Check the actual refund conditions separately.\n\n### Does this establish a Revo money-back guarantee?\nNo. [Review Revo's current plans](/pricing) and applicable terms. Do not buy on the assumption that a competitor's guarantee also applies to Revo.\n",
+          "sha256": "564a4b70f690b51d124d2d1931732839aa7e7931d4e75884bc0c980cdcd3ea7c",
+          "assets": []
+        }
+      }
+    }
+  ]
+}
