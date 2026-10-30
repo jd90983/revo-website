@@ -1070,5 +1070,28 @@
       "added answerphone-of-america as draft",
       "added answer-midwest as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-30-twelve-provider-guides",
+    "batchHash": "sha256:73d7ef7543784c5528df640881f4ea9eb127fb2d89eec6815667bec83b92091f",
+    "source": {
+      "kind": "manual",
+      "reference": "Single add-only October 30 continuation of twelve delivered and accepted manuscripts; separate from eleven already verified publications."
+    },
+    "appliedAt": "2026-10-30",
+    "changes": [
+      "added answerquick-answering-service as draft",
+      "added allendale-answering-service as draft",
+      "added cbsi-answering-service as draft",
+      "added community-answering-service as draft",
+      "added kelleys-answering-service as draft",
+      "added suite-1000-answering-service as draft",
+      "added ability-answering-service as draft",
+      "added answer-kc as draft",
+      "added southwest-answering-service as draft",
+      "added keystone-answering-service as draft",
+      "added tcb-answering-service as draft",
+      "added compare/barbaras-answering-service as draft"
+    ]
   }
 ]
