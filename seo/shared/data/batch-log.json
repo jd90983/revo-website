@@ -1053,5 +1053,22 @@
       "added ding-a-ling-answering-service as draft",
       "added ai-receptionist-setup-cost as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-30-six-buying-guides",
+    "batchHash": "sha256:ae2b1042dc4daa2a313901c86b51b3b2e2fdf608968ac563faeeac2252005217",
+    "source": {
+      "kind": "manual",
+      "reference": "Explicitly authorized October 30 continuation of six exact accepted buying guides; immutable add-only batch."
+    },
+    "appliedAt": "2026-10-30",
+    "changes": [
+      "added compare/ai-receptionist-call-summaries as draft",
+      "added business-number-and-answering-service as draft",
+      "added southern-answering-service as draft",
+      "added answerusa-answering-service as draft",
+      "added answerphone-of-america as draft",
+      "added answer-midwest as draft"
+    ]
   }
 ]
