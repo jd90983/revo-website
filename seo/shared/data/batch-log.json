@@ -1040,5 +1040,18 @@
       "updated go-answer-answering-service; back to draft until re-approved",
       "updated centratel-answering-service; back to draft until re-approved"
     ]
+  },
+  {
+    "batchId": "2026-10-30-setup-ding-supplement",
+    "batchHash": "sha256:a8cc7459ddc64199f1c6d866bdf268048815f812c1b518ba1d6b5dfbda372306",
+    "source": {
+      "kind": "manual",
+      "reference": "Explicitly authorized October 30 continuation of two exact accepted buying guides; immutable add-only batch."
+    },
+    "appliedAt": "2026-10-30",
+    "changes": [
+      "added ding-a-ling-answering-service as draft",
+      "added ai-receptionist-setup-cost as draft"
+    ]
   }
 ]
