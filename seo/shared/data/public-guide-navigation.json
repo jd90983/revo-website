@@ -1598,5 +1598,35 @@
     "slug": "ai-receptionist-setup-cost",
     "label": "Home-service buying guide",
     "template": "workflow"
+  },
+  {
+    "slug": "compare/ai-receptionist-call-summaries",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "business-number-and-answering-service",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "southern-answering-service",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "answerusa-answering-service",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "answerphone-of-america",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "answer-midwest",
+    "label": "Home-service buying guide",
+    "template": "workflow"
   }
 ]
