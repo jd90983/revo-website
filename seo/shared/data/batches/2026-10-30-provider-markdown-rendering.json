@@ -1,0 +1,234 @@
+{
+  "batchId": "2026-10-30-provider-markdown-rendering",
+  "source": {
+    "kind": "manual",
+    "reference": "Sequential mechanical rendering refinement within the same three-page October30 PR. Exact accepted manuscript bytes unchanged; existing shared renderer and components unchanged."
+  },
+  "operations": [
+    {
+      "op": "update",
+      "record": {
+        "slug": "answerhero-answering-service",
+        "title": "AnswerHero Answering Service: Human, AI or Hybrid?",
+        "description": "Evaluate AnswerHero's human, AI and hybrid answering plans. Check separate usage charges, transfer costs and unresolved plan details before choosing.",
+        "navigationLabel": "AnswerHero service",
+        "eyebrow": "Home-service buying guide",
+        "lead": "AnswerHero offers three ways to answer your business phone: human receptionists, AI receptionists and a hybrid arrangement. A home-service owner should choose the handling model before comparing the monthly amount. The same caller may create different work and different charges under each arrangement.",
+        "intro": "AnswerHero offers three ways to answer your business phone: human receptionists, AI receptionists and a hybrid arrangement. A home-service owner should choose the handling model before comparing the monthly amount. The same caller may create different work and different charges under each arrangement.",
+        "sections": [
+          {
+            "title": "Start with the actual AnswerHero product",
+            "paragraphs": [
+              "The [official rate card](https://answerhero.com/pricing-plans/) separates the offers. Its human Starter plan displays $79 per month with 50 minutes and $1.89 per additional minute. The AI-only card displays $19 per month and $0.79 for additional minutes, but does not show a numeric included allowance in the version reviewed. Do not fill that blank with the human plan's allowance.\n\nThe hybrid Starter card displays $90 per month, 50 minutes, $1.89 per AI minute and $1.89 per additional human minute. Other hybrid cards display $0.79 per AI minute. Treat that AI-rate difference as a question requiring confirmation. Do not silently correct the Starter card or use the lower figure to promise a saving.\n\n| Proposed arrangement | What the buyer must establish |\n| --- | --- |\n| Human reception | Which requested tasks the staffed plan includes, and what counts toward its minutes |\n| AI-only reception | The included allowance, chargeable time and outcome when the AI cannot complete the request |\n| Hybrid reception | Which minutes belong to which handling stage, who supplies the human and how the stages are charged |"
+            ],
+            "items": []
+          },
+          {
+            "title": "Ask for one call to be priced from beginning to end",
+            "paragraphs": [
+              "Use a fictional residential service inquiry. The caller asks whether the company serves an address, requests an estimate and then asks to speak with the office. Have AnswerHero identify the resulting message, appointment or transfer, and the charge associated with each stage.\n\nIts pricing FAQ describes quarter-minute rounding and a $0.06-per-minute charge for transferred calls. Confirm how those statements apply to the particular human, AI or hybrid offer you are considering. A general FAQ does not settle whether every handling stage shares an allowance.\n\nCopy this quote record and leave unresolved fields blank:\n\n| Field | Written answer for your selected plan |\n| --- | --- |\n| Exact product and plan | |\n| Recurring amount and billing period | |\n| Included human minutes | |\n| Included AI minutes | |\n| Rate and rounding for each additional stage | |\n| Transfer destination, charge and no-answer outcome | |\n| Supported booking system and record created | |\n| Person responsible for requests left unresolved | |\n\nUse the completed record rather than a calculation built from mismatched cards. This is particularly important when a longer intake, a transfer and a callback are separate activities."
+            ],
+            "items": []
+          },
+          {
+            "title": "Check the booking result and exit process",
+            "paragraphs": [
+              "For a roofing estimate or a plumbing service request, ask the supplier to show what reaches your office. A message containing a preferred time is different from an appointment entered in the authoritative calendar. Neither proves that a technician accepted the work. Obtain the supported software, permissions and task in writing rather than relying on a general integration label.\n\nAnswerHero advertises no contracts, while its FAQ describes notice 30 days before the end of the billing cycle. Read the applicable [terms](https://answerhero.com/terms-conditions/) and obtain the actual cancellation process. Marketing language does not remove subscription conditions. This guide does not interpret enforceability or replace review of your agreement."
+            ],
+            "items": []
+          },
+          {
+            "title": "When another handling model may fit better",
+            "paragraphs": [
+              "A staffed AnswerHero offer merits consideration if your requirement is a supplier-provided person handling the agreed conversation. The AI-only offer requires its own evaluation; do not assume that buying it automatically supplies the hybrid service.\n\nRevo can be evaluated for its published incoming-call answering, intake, supported booking and summaries. Team transfers and other features depend on the selected plan and configuration. This guide does not establish that Revo supplies outsourced human receptionists or an AnswerHero connection. Keep technical assessment, estimate approval and field-service commitments with the people your business authorizes."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Is the $19 AnswerHero card a complete all-in monthly quote?\n\nThe reviewed card also lists usage pricing and leaves the numeric included allowance unspecified. Request the full offer before calculating a bill.\n\n### Should I assume all hybrid AI minutes cost $0.79?\n\nNo. The Starter card displays a different AI rate. Ask AnswerHero to confirm the applicable rate and allowance in writing.\n\n### Does transferring a caller guarantee the office accepts the request?\n\nNo. Establish the recipient, availability and unresolved-call outcome separately from the connection itself.\n\n[Compare Revo's current answering plans](/pricing) when your requirement is supported AI reception, and evaluate AnswerHero's staffed options separately when contracted human handling is essential."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Compare Revo's current answering plans when your requirement is supported AI reception, and evaluate AnswerHero's staffed options separately when contracted human handling is essential.",
+        "pricingVariant": "full",
+        "template": "workflow",
+        "editorialDate": "2026-10-30",
+        "sourcePaths": [
+          "https://answerhero.com/pricing-plans/",
+          "https://answerhero.com/terms-conditions/",
+          "https://answerhero.com/",
+          "https://www.revoapp.ai/services",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "source": {
+          "kind": "manual",
+          "reference": "Mechanical import of the exact user-accepted October 30 Markdown manuscript using the existing renderer. No prose added or changed; source manuscript identity retained. PR code review remains pending."
+        },
+        "markdownArticle": {
+          "content": "# AnswerHero Answering Service: Human, AI or Hybrid?\n\nAnswerHero offers three ways to answer your business phone: human receptionists, AI receptionists and a hybrid arrangement. A home-service owner should choose the handling model before comparing the monthly amount. The same caller may create different work and different charges under each arrangement.\n\nRevo publishes this guide and offers a competing AI answering service. This is a review of public documentation, checked on October 30, 2026. We did not purchase AnswerHero or conduct test calls. Prices and ambiguities below describe the pages reviewed, not a quote for your account.\n\n## Start with the actual AnswerHero product\n\nThe [official rate card](https://answerhero.com/pricing-plans/) separates the offers. Its human Starter plan displays $79 per month with 50 minutes and $1.89 per additional minute. The AI-only card displays $19 per month and $0.79 for additional minutes, but does not show a numeric included allowance in the version reviewed. Do not fill that blank with the human plan's allowance.\n\nThe hybrid Starter card displays $90 per month, 50 minutes, $1.89 per AI minute and $1.89 per additional human minute. Other hybrid cards display $0.79 per AI minute. Treat that AI-rate difference as a question requiring confirmation. Do not silently correct the Starter card or use the lower figure to promise a saving.\n\n| Proposed arrangement | What the buyer must establish |\n| --- | --- |\n| Human reception | Which requested tasks the staffed plan includes, and what counts toward its minutes |\n| AI-only reception | The included allowance, chargeable time and outcome when the AI cannot complete the request |\n| Hybrid reception | Which minutes belong to which handling stage, who supplies the human and how the stages are charged |\n\n## Ask for one call to be priced from beginning to end\n\nUse a fictional residential service inquiry. The caller asks whether the company serves an address, requests an estimate and then asks to speak with the office. Have AnswerHero identify the resulting message, appointment or transfer, and the charge associated with each stage.\n\nIts pricing FAQ describes quarter-minute rounding and a $0.06-per-minute charge for transferred calls. Confirm how those statements apply to the particular human, AI or hybrid offer you are considering. A general FAQ does not settle whether every handling stage shares an allowance.\n\nCopy this quote record and leave unresolved fields blank:\n\n| Field | Written answer for your selected plan |\n| --- | --- |\n| Exact product and plan | |\n| Recurring amount and billing period | |\n| Included human minutes | |\n| Included AI minutes | |\n| Rate and rounding for each additional stage | |\n| Transfer destination, charge and no-answer outcome | |\n| Supported booking system and record created | |\n| Person responsible for requests left unresolved | |\n\nUse the completed record rather than a calculation built from mismatched cards. This is particularly important when a longer intake, a transfer and a callback are separate activities.\n\n## Check the booking result and exit process\n\nFor a roofing estimate or a plumbing service request, ask the supplier to show what reaches your office. A message containing a preferred time is different from an appointment entered in the authoritative calendar. Neither proves that a technician accepted the work. Obtain the supported software, permissions and task in writing rather than relying on a general integration label.\n\nAnswerHero advertises no contracts, while its FAQ describes notice 30 days before the end of the billing cycle. Read the applicable [terms](https://answerhero.com/terms-conditions/) and obtain the actual cancellation process. Marketing language does not remove subscription conditions. This guide does not interpret enforceability or replace review of your agreement.\n\n## When another handling model may fit better\n\nA staffed AnswerHero offer merits consideration if your requirement is a supplier-provided person handling the agreed conversation. The AI-only offer requires its own evaluation; do not assume that buying it automatically supplies the hybrid service.\n\nRevo can be evaluated for its published incoming-call answering, intake, supported booking and summaries. Team transfers and other features depend on the selected plan and configuration. This guide does not establish that Revo supplies outsourced human receptionists or an AnswerHero connection. Keep technical assessment, estimate approval and field-service commitments with the people your business authorizes.\n\n## Frequently asked questions\n\n### Is the $19 AnswerHero card a complete all-in monthly quote?\n\nThe reviewed card also lists usage pricing and leaves the numeric included allowance unspecified. Request the full offer before calculating a bill.\n\n### Should I assume all hybrid AI minutes cost $0.79?\n\nNo. The Starter card displays a different AI rate. Ask AnswerHero to confirm the applicable rate and allowance in writing.\n\n### Does transferring a caller guarantee the office accepts the request?\n\nNo. Establish the recipient, availability and unresolved-call outcome separately from the connection itself.\n\n[Compare Revo's current answering plans](/pricing) when your requirement is supported AI reception, and evaluate AnswerHero's staffed options separately when contracted human handling is essential.\n",
+          "sha256": "2824fa018425ddcdc68b35bdba9d57e50a81e15eb7124c7e1077f184d3b39a8a",
+          "assets": []
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "go-answer-answering-service",
+        "title": "Go Answer: Compare Live and AI Receptionist Plans",
+        "description": "Compare Go Answer's live and AI receptionist offers, minute allowances, optional charges and trial conditions for a home-service office.",
+        "navigationLabel": "Go Answer service",
+        "eyebrow": "Home-service buying guide",
+        "lead": "Go Answer sells live receptionist and AI receptionist subscriptions separately. If you are buying coverage for a home-service office, first decide which product will receive the calls and what it must accomplish. An AI-generated transcript added to a live plan does not turn that subscription into the separate AI receptionist product.",
+        "intro": "Go Answer sells live receptionist and AI receptionist subscriptions separately. If you are buying coverage for a home-service office, first decide which product will receive the calls and what it must accomplish. An AI-generated transcript added to a live plan does not turn that subscription into the separate AI receptionist product.",
+        "sections": [
+          {
+            "title": "Put the two products on separate lines",
+            "paragraphs": [
+              "The official [live rate card](https://www.goanswer.io/live-receptionist/pricing) displays an entry plan of $175 per month for 100 minutes, with $1.75-per-minute overage. The separate [AI rate card](https://www.goanswer.io/ai-receptionist/pricing) displays $95 per month for 100 minutes, with $0.95-per-minute overage.\n\nThose quantities describe time, not booked jobs. The price difference also does not establish equivalent work or a saving for your office. Compare the actual intake, scheduling and handoff your business needs before comparing costs.\n\n| Purchase question | Live receptionist offer | AI receptionist offer |\n| --- | --- | --- |\n| Who handles the initial conversation? | Supplier's staffed reception | Automated reception |\n| Which allowance applies? | The selected live plan | The selected AI plan |\n| What completes the request? | Agreed staffed task and office handoff | Demonstrated AI task and unresolved-request path |\n| What human support is offered? | Confirm the actual staffed scope | Homepage advertises live-agent handoff; confirm plan inclusion, trigger and charges |\n\nGo Answer's [homepage](https://www.goanswer.io/) explicitly describes its AI Virtual Receptionist handing off to a live agent when needed. That is a benefit to evaluate, not an absence of human support. Ask whether the selected AI plan includes the handoff, what triggers it, who handles the call and which charges apply. The existence of separate rate cards does not answer those questions by itself."
+            ],
+            "items": []
+          },
+          {
+            "title": "Separate ordinary features from paid routing choices",
+            "paragraphs": [
+              "The live page lists AI summaries/transcription at an additional $0.05 per minute and dedicated bilingual receptionist routing at $0.30 per minute. That dedicated routing option is more specific than general bilingual-agent availability. Ask which calls incur the charge and whether it applies to all handled time or another defined unit.\n\nFor a US contractor serving English- and Spanish-speaking customers, use two fictional inquiries for the same ordinary service. Ask the supplier to show who answers, what information is captured and where the office receives it. Obtain the applicable language-routing arrangement and charges. Do not infer that every language feature belongs to every product.\n\nThe published CRM language is qualified by platform support. A familiar logo or a general integration statement is not proof that the receptionist creates a job in your field-service system."
+            ],
+            "items": []
+          },
+          {
+            "title": "Ask the provider to demonstrate your office handoff",
+            "paragraphs": [
+              "Consider a residential HVAC company buying coverage while its dispatcher is busy. Give the supplier three fictional calls:\n\n1. A new customer asks for an appointment at an address inside the service area.\n2. An existing customer wants to change a previously arranged visit.\n3. A caller requests a person who is unavailable.\n\nFor each, record whether the output is a message, requested time, confirmed calendar entry or live connection. Identify the system containing the record, the person who may change it and the remaining work. Keep diagnosis, approved prices and field attendance under your business's authority.\n\nThe [home-services page](https://www.goanswer.io/industries/home-services) establishes the intended market. Your own agreed demonstration must establish the precise result for your software and operating rules. This guide reports proposed acceptance checks, not tests we performed."
+            ],
+            "items": []
+          },
+          {
+            "title": "Do not combine a trial with a refund guarantee",
+            "paragraphs": [
+              "The AI pricing page describes a 14-day trial with up to 500 minutes and separately advertises a 30-day money-back guarantee. The homepage also contains differing free-trial language. Confirm the offer presented for the selected product before signing up. A refund guarantee is not automatically an extra period of free usage.\n\nCopy these fields into your purchasing notes:\n\n| Item to confirm | Answer from the applicable offer |\n| --- | --- |\n| Product, plan and signup date | |\n| Trial duration and included usage | |\n| Event that begins paid billing | |\n| Paid usage rate during or after the trial | |\n| Refund eligibility, exclusions and request process | |\n| Add-ons selected and their chargeable units | |\n| Cancellation method and effective date | |"
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo belongs in the shortlist",
+            "paragraphs": [
+              "Revo's published offer covers AI answering, intake, supported booking and summaries, with team transfers and additional features dependent on plan and configuration. It is a candidate when that incoming-call scope matches the work you want covered. This guide does not claim a Go Answer integration, outsourced human receptionists or equivalent account-management services for Revo.\n\nChoose Go Answer's applicable live product when your verified requirement is supplier-staffed reception. Compare AI products on their demonstrated output and complete written costs when automated reception is appropriate."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Are Go Answer's live and AI minutes interchangeable?\n\nDo not assume that. They are displayed as separate subscriptions. Obtain any combined arrangement directly in the proposal.\n\n### Is a bilingual agent the same as dedicated bilingual routing?\n\nThe live page presents dedicated routing as a priced option. Confirm the arrangement required for your calls rather than treating those descriptions as identical.\n\n### Is a money-back guarantee a free trial?\n\nThey are different conditions. Confirm when billing starts and which paid charges, if any, qualify for a refund.\n\n[Review Revo's current plans](/pricing) alongside the specific Go Answer product and the completed purchasing notes."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo's current plans alongside the specific Go Answer product and the completed purchasing notes.",
+        "pricingVariant": "full",
+        "template": "workflow",
+        "editorialDate": "2026-10-30",
+        "sourcePaths": [
+          "https://www.goanswer.io/live-receptionist/pricing",
+          "https://www.goanswer.io/ai-receptionist/pricing",
+          "https://www.goanswer.io/industries/home-services",
+          "https://www.goanswer.io/",
+          "https://www.revoapp.ai/services",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "source": {
+          "kind": "manual",
+          "reference": "Mechanical import of the exact user-accepted October 30 Markdown manuscript using the existing renderer. No prose added or changed; source manuscript identity retained. PR code review remains pending."
+        },
+        "markdownArticle": {
+          "content": "# Go Answer: Compare Live and AI Receptionist Plans\n\nGo Answer sells live receptionist and AI receptionist subscriptions separately. If you are buying coverage for a home-service office, first decide which product will receive the calls and what it must accomplish. An AI-generated transcript added to a live plan does not turn that subscription into the separate AI receptionist product.\n\nRevo publishes this documentary buying guide and sells a competing AI answering service. We reviewed Go Answer's public pages on October 30, 2026. We did not buy the service, test its agents or verify customer outcomes.\n\n## Put the two products on separate lines\n\nThe official [live rate card](https://www.goanswer.io/live-receptionist/pricing) displays an entry plan of $175 per month for 100 minutes, with $1.75-per-minute overage. The separate [AI rate card](https://www.goanswer.io/ai-receptionist/pricing) displays $95 per month for 100 minutes, with $0.95-per-minute overage.\n\nThose quantities describe time, not booked jobs. The price difference also does not establish equivalent work or a saving for your office. Compare the actual intake, scheduling and handoff your business needs before comparing costs.\n\n| Purchase question | Live receptionist offer | AI receptionist offer |\n| --- | --- | --- |\n| Who handles the initial conversation? | Supplier's staffed reception | Automated reception |\n| Which allowance applies? | The selected live plan | The selected AI plan |\n| What completes the request? | Agreed staffed task and office handoff | Demonstrated AI task and unresolved-request path |\n| What human support is offered? | Confirm the actual staffed scope | Homepage advertises live-agent handoff; confirm plan inclusion, trigger and charges |\n\nGo Answer's [homepage](https://www.goanswer.io/) explicitly describes its AI Virtual Receptionist handing off to a live agent when needed. That is a benefit to evaluate, not an absence of human support. Ask whether the selected AI plan includes the handoff, what triggers it, who handles the call and which charges apply. The existence of separate rate cards does not answer those questions by itself.\n\n## Separate ordinary features from paid routing choices\n\nThe live page lists AI summaries/transcription at an additional $0.05 per minute and dedicated bilingual receptionist routing at $0.30 per minute. That dedicated routing option is more specific than general bilingual-agent availability. Ask which calls incur the charge and whether it applies to all handled time or another defined unit.\n\nFor a US contractor serving English- and Spanish-speaking customers, use two fictional inquiries for the same ordinary service. Ask the supplier to show who answers, what information is captured and where the office receives it. Obtain the applicable language-routing arrangement and charges. Do not infer that every language feature belongs to every product.\n\nThe published CRM language is qualified by platform support. A familiar logo or a general integration statement is not proof that the receptionist creates a job in your field-service system.\n\n## Ask the provider to demonstrate your office handoff\n\nConsider a residential HVAC company buying coverage while its dispatcher is busy. Give the supplier three fictional calls:\n\n1. A new customer asks for an appointment at an address inside the service area.\n2. An existing customer wants to change a previously arranged visit.\n3. A caller requests a person who is unavailable.\n\nFor each, record whether the output is a message, requested time, confirmed calendar entry or live connection. Identify the system containing the record, the person who may change it and the remaining work. Keep diagnosis, approved prices and field attendance under your business's authority.\n\nThe [home-services page](https://www.goanswer.io/industries/home-services) establishes the intended market. Your own agreed demonstration must establish the precise result for your software and operating rules. This guide reports proposed acceptance checks, not tests we performed.\n\n## Do not combine a trial with a refund guarantee\n\nThe AI pricing page describes a 14-day trial with up to 500 minutes and separately advertises a 30-day money-back guarantee. The homepage also contains differing free-trial language. Confirm the offer presented for the selected product before signing up. A refund guarantee is not automatically an extra period of free usage.\n\nCopy these fields into your purchasing notes:\n\n| Item to confirm | Answer from the applicable offer |\n| --- | --- |\n| Product, plan and signup date | |\n| Trial duration and included usage | |\n| Event that begins paid billing | |\n| Paid usage rate during or after the trial | |\n| Refund eligibility, exclusions and request process | |\n| Add-ons selected and their chargeable units | |\n| Cancellation method and effective date | |\n\n## Where Revo belongs in the shortlist\n\nRevo's published offer covers AI answering, intake, supported booking and summaries, with team transfers and additional features dependent on plan and configuration. It is a candidate when that incoming-call scope matches the work you want covered. This guide does not claim a Go Answer integration, outsourced human receptionists or equivalent account-management services for Revo.\n\nChoose Go Answer's applicable live product when your verified requirement is supplier-staffed reception. Compare AI products on their demonstrated output and complete written costs when automated reception is appropriate.\n\n## Frequently asked questions\n\n### Are Go Answer's live and AI minutes interchangeable?\n\nDo not assume that. They are displayed as separate subscriptions. Obtain any combined arrangement directly in the proposal.\n\n### Is a bilingual agent the same as dedicated bilingual routing?\n\nThe live page presents dedicated routing as a priced option. Confirm the arrangement required for your calls rather than treating those descriptions as identical.\n\n### Is a money-back guarantee a free trial?\n\nThey are different conditions. Confirm when billing starts and which paid charges, if any, qualify for a refund.\n\n[Review Revo's current plans](/pricing) alongside the specific Go Answer product and the completed purchasing notes.\n",
+          "sha256": "50e3317f02a412901cb1415f41c235848bc06fa2a16da6ac640198938fcd0c6f",
+          "assets": []
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "centratel-answering-service",
+        "title": "Centratel Answering Service: Scope, Billing and Fit",
+        "description": "Evaluate Centratel's human answering offer for trades, per-call billing, monthly cycle and quote requirements without assuming an unpublished price.",
+        "navigationLabel": "Centratel service",
+        "eyebrow": "Home-service buying guide",
+        "lead": "Centratel presents a human-first answering service for trades including plumbing, electrical work and restoration. For a residential contractor, the purchase is more specific than having someone pick up: decide which messages the supplier must capture, which contacts it must notify and which decisions remain with your office.",
+        "intro": "Centratel presents a human-first answering service for trades including plumbing, electrical work and restoration. For a residential contractor, the purchase is more specific than having someone pick up: decide which messages the supplier must capture, which contacts it must notify and which decisions remain with your office.",
+        "sections": [
+          {
+            "title": "Understand what the quoted unit buys",
+            "paragraphs": [
+              "Centratel's [trade-service page](https://www.centratel.com/trade-service-answering-service/) describes a fixed fee for each call, no electronic-message delivery charge and monthly billing with twelve statements per year. It also advertises a 30-day trial and no long-term contract. These statements are a starting point for a written proposal, not a complete account-specific price or cancellation agreement.\n\nDo not compare an unspecified per-call quote directly with another provider's minute allowance. Obtain the actual rate, included quantity, minimum charge and definition of a billable call. Confirm treatment of short calls, repeat callers, incorrect numbers and messages associated with an earlier inquiry. Leave an unknown rate blank rather than inserting an industry average.\n\nFor annual budgeting, use the billing period stated in each actual offer. A calendar-month subscription and a 28-day subscription do not create the same invoice schedule. This does not establish that a different provider uses either arrangement; inspect its documents."
+            ],
+            "items": []
+          },
+          {
+            "title": "Define the work before accepting a dispatch label",
+            "paragraphs": [
+              "The [published business service](https://www.centratel.com/24-7-business-answering-service/) describes human call handling. Its trade offer also describes dispatch work. Ask Centratel which actions are included for the requests your business actually receives.\n\nUse a fictional plumbing-company example: a homeowner requests an ordinary service visit while the office is unavailable. The receptionist collects the address and callback details and contacts the nominated recipient. Record whether the proposed service merely sends information, retries a contact, records acceptance or completes another specifically agreed action. Confirm the outcome when the recipient is unavailable.\n\nA sent message does not prove that a plumber accepted the work. Do not use a sales test to simulate an actual emergency or ask an answering provider to give technical safety advice. Keep price approval, job acceptance and field response under the authority your company assigns."
+            ],
+            "items": []
+          },
+          {
+            "title": "Bring this Centratel quote-and-acceptance record",
+            "paragraphs": [
+              "| Purchasing item | Evidence to obtain | Your accepted requirement |\n| --- | --- | --- |\n| Call-based price | Written rate, minimum and included quantity | |\n| Billing cycle | Invoice dates and renewal process | |\n| Billable-call definition | Short, repeat, wrong-number and related-call treatment | |\n| Electronic delivery | Included destinations and any separately charged action | |\n| Contact procedure | Recipient sequence, retries and unavailable-recipient result | |\n| Completion evidence | Record your office receives and meaning of each status | |\n| Trial | Eligibility, dates, permitted scope and post-trial billing | |\n| Exit | Cancellation method, effective date and return of instructions | |\n\nComplete the record from the actual offer. Keep any unresolved item visible to the person authorized to accept the arrangement. This worksheet organizes the purchase; it does not interpret legal enforceability."
+            ],
+            "items": []
+          },
+          {
+            "title": "Treat quality statistics as claims to examine",
+            "paragraphs": [
+              "Centratel's [website](https://www.centratel.com/) promotes customer-reported error statistics and a highest-quality position. We have not audited those figures or compared all providers. Do not turn supplier marketing into an independently measured ranking, contractual SLA or expected result for your company.\n\nAsk what event counts as an error, which transactions form the denominator and how a customer reports a correction. Request the reporting period and the process for resolving an incorrect message. For your own authorized evaluation, define an unacceptable result in advance\u2014for example, a wrong callback number or a visit promised without authority\u2014and keep the record of what occurred. A reassuring overall statistic cannot settle those operating questions."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare a staffed offer with Revo honestly",
+            "paragraphs": [
+              "Centratel merits consideration when a verified requirement calls for supplier-provided human handling and its quoted scope fits your office. Evaluate that benefit directly rather than describing human service as an AI feature.\n\nRevo can be considered for its published incoming-call answering, intake, supported booking and summaries. Transfers and additional features depend on plan and configuration. Revo is not presented here as an outsourced human team, active emergency-dispatch service or native Centratel integration. Compare the routine work each offer can demonstrably perform, the remaining office responsibility and the complete written cost."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### How much does Centratel cost?\n\nThis guide did not verify a public dollar tariff. Obtain the applicable written quote; do not assume a rate from its per-call billing description.\n\n### Does a 30-day trial establish the cancellation terms?\n\nNo. Confirm trial eligibility, paid conversion and exit conditions in the actual offer.\n\n### Does a quality statistic guarantee my calls will be handled correctly?\n\nNo. Clarify the supplier's method, contractual commitments and correction process, then evaluate your own supported workflow without treating marketing statistics as a guarantee.\n\n[Compare Revo's current answering plans](/pricing) if supported AI intake fits your requirements. Retain a staffed option in the shortlist when human handling is essential."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Compare Revo's current answering plans if supported AI intake fits your requirements. Retain a staffed option in the shortlist when human handling is essential.",
+        "pricingVariant": "full",
+        "template": "workflow",
+        "editorialDate": "2026-10-30",
+        "sourcePaths": [
+          "https://www.centratel.com/trade-service-answering-service/",
+          "https://www.centratel.com/24-7-business-answering-service/",
+          "https://www.centratel.com/",
+          "https://www.revoapp.ai/services",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "source": {
+          "kind": "manual",
+          "reference": "Mechanical import of the exact user-accepted October 30 Markdown manuscript using the existing renderer. No prose added or changed; source manuscript identity retained. PR code review remains pending."
+        },
+        "markdownArticle": {
+          "content": "# Centratel Answering Service: Scope, Billing and Fit\n\nCentratel presents a human-first answering service for trades including plumbing, electrical work and restoration. For a residential contractor, the purchase is more specific than having someone pick up: decide which messages the supplier must capture, which contacts it must notify and which decisions remain with your office.\n\nRevo publishes this guide and offers a competing AI answering service. We reviewed Centratel's public documentation on October 30, 2026. We did not buy its service, test its receptionists or independently verify its quality statistics. No public dollar tariff was verified for this guide.\n\n## Understand what the quoted unit buys\n\nCentratel's [trade-service page](https://www.centratel.com/trade-service-answering-service/) describes a fixed fee for each call, no electronic-message delivery charge and monthly billing with twelve statements per year. It also advertises a 30-day trial and no long-term contract. These statements are a starting point for a written proposal, not a complete account-specific price or cancellation agreement.\n\nDo not compare an unspecified per-call quote directly with another provider's minute allowance. Obtain the actual rate, included quantity, minimum charge and definition of a billable call. Confirm treatment of short calls, repeat callers, incorrect numbers and messages associated with an earlier inquiry. Leave an unknown rate blank rather than inserting an industry average.\n\nFor annual budgeting, use the billing period stated in each actual offer. A calendar-month subscription and a 28-day subscription do not create the same invoice schedule. This does not establish that a different provider uses either arrangement; inspect its documents.\n\n## Define the work before accepting a dispatch label\n\nThe [published business service](https://www.centratel.com/24-7-business-answering-service/) describes human call handling. Its trade offer also describes dispatch work. Ask Centratel which actions are included for the requests your business actually receives.\n\nUse a fictional plumbing-company example: a homeowner requests an ordinary service visit while the office is unavailable. The receptionist collects the address and callback details and contacts the nominated recipient. Record whether the proposed service merely sends information, retries a contact, records acceptance or completes another specifically agreed action. Confirm the outcome when the recipient is unavailable.\n\nA sent message does not prove that a plumber accepted the work. Do not use a sales test to simulate an actual emergency or ask an answering provider to give technical safety advice. Keep price approval, job acceptance and field response under the authority your company assigns.\n\n## Bring this Centratel quote-and-acceptance record\n\n| Purchasing item | Evidence to obtain | Your accepted requirement |\n| --- | --- | --- |\n| Call-based price | Written rate, minimum and included quantity | |\n| Billing cycle | Invoice dates and renewal process | |\n| Billable-call definition | Short, repeat, wrong-number and related-call treatment | |\n| Electronic delivery | Included destinations and any separately charged action | |\n| Contact procedure | Recipient sequence, retries and unavailable-recipient result | |\n| Completion evidence | Record your office receives and meaning of each status | |\n| Trial | Eligibility, dates, permitted scope and post-trial billing | |\n| Exit | Cancellation method, effective date and return of instructions | |\n\nComplete the record from the actual offer. Keep any unresolved item visible to the person authorized to accept the arrangement. This worksheet organizes the purchase; it does not interpret legal enforceability.\n\n## Treat quality statistics as claims to examine\n\nCentratel's [website](https://www.centratel.com/) promotes customer-reported error statistics and a highest-quality position. We have not audited those figures or compared all providers. Do not turn supplier marketing into an independently measured ranking, contractual SLA or expected result for your company.\n\nAsk what event counts as an error, which transactions form the denominator and how a customer reports a correction. Request the reporting period and the process for resolving an incorrect message. For your own authorized evaluation, define an unacceptable result in advance\u2014for example, a wrong callback number or a visit promised without authority\u2014and keep the record of what occurred. A reassuring overall statistic cannot settle those operating questions.\n\n## Compare a staffed offer with Revo honestly\n\nCentratel merits consideration when a verified requirement calls for supplier-provided human handling and its quoted scope fits your office. Evaluate that benefit directly rather than describing human service as an AI feature.\n\nRevo can be considered for its published incoming-call answering, intake, supported booking and summaries. Transfers and additional features depend on plan and configuration. Revo is not presented here as an outsourced human team, active emergency-dispatch service or native Centratel integration. Compare the routine work each offer can demonstrably perform, the remaining office responsibility and the complete written cost.\n\n## Frequently asked questions\n\n### How much does Centratel cost?\n\nThis guide did not verify a public dollar tariff. Obtain the applicable written quote; do not assume a rate from its per-call billing description.\n\n### Does a 30-day trial establish the cancellation terms?\n\nNo. Confirm trial eligibility, paid conversion and exit conditions in the actual offer.\n\n### Does a quality statistic guarantee my calls will be handled correctly?\n\nNo. Clarify the supplier's method, contractual commitments and correction process, then evaluate your own supported workflow without treating marketing statistics as a guarantee.\n\n[Compare Revo's current answering plans](/pricing) if supported AI intake fits your requirements. Retain a staffed option in the shortlist when human handling is essential.\n",
+          "sha256": "743df8cce159f51814b0d7e61b9cd192ab25a7b830d4cc246e8867f833b7f571",
+          "assets": []
+        }
+      }
+    }
+  ]
+}

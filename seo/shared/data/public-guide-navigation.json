@@ -1573,5 +1573,20 @@
     "slug": "answering-service-money-back-guarantee",
     "label": "Reception buying decisions",
     "template": "workflow"
+  },
+  {
+    "slug": "answerhero-answering-service",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "go-answer-answering-service",
+    "label": "Home-service buying guide",
+    "template": "workflow"
+  },
+  {
+    "slug": "centratel-answering-service",
+    "label": "Home-service buying guide",
+    "template": "workflow"
   }
 ]

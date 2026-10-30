@@ -1012,5 +1012,33 @@
       "added allo-ai-receptionist as draft",
       "added answering-service-money-back-guarantee as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-30-provider-evaluations",
+    "batchHash": "sha256:f3f002fe5fe2e432533d40831c277b5a4e11439a8a185b12bd390edb83a3c0e8",
+    "source": {
+      "kind": "manual",
+      "reference": "October 30 provider evaluations: three user-accepted texts, immutable add-only batch. Research remains outside this repository. Specific PR approval is still required."
+    },
+    "appliedAt": "2026-10-30",
+    "changes": [
+      "added answerhero-answering-service as draft",
+      "added go-answer-answering-service as draft",
+      "added centratel-answering-service as draft"
+    ]
+  },
+  {
+    "batchId": "2026-10-30-provider-markdown-rendering",
+    "batchHash": "sha256:b71c469371cd4b8041e729607c1051ae69464f19fae7a76fd7a465c7bbbbbf60",
+    "source": {
+      "kind": "manual",
+      "reference": "Sequential mechanical rendering refinement within the same three-page October30 PR. Exact accepted manuscript bytes unchanged; existing shared renderer and components unchanged."
+    },
+    "appliedAt": "2026-10-30",
+    "changes": [
+      "updated answerhero-answering-service; back to draft until re-approved",
+      "updated go-answer-answering-service; back to draft until re-approved",
+      "updated centratel-answering-service; back to draft until re-approved"
+    ]
   }
 ]
