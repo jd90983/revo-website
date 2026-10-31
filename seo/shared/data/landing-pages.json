@@ -34355,5 +34355,158 @@
       "contentHash": "sha256:0bbd9dd12ea4609abef211f27a3b0aec45b9d8fe973481bd6a2d37f964ea6f8f",
       "note": "Accepted continuation after the exact twelve-text review request. This records editorial acceptance of delivered public copy only, not a human code review or approval of a future PR."
     }
+  },
+  {
+    "slug": "answerfone-answering-service",
+    "title": "Answerfone: Confirm the Contractor Quote Scope",
+    "description": "Considering Answerfone for your service business? Separate its published capabilities from the message form, handoff and work your quote actually includes.",
+    "navigationLabel": "Answerfone scope",
+    "eyebrow": "Home-service buying guide",
+    "lead": "A supplier can serve several industries without providing the same call handling to every account. For a residential contractor considering Answerfone, the useful purchasing question is which parts of its broader offer will appear in your own instructions, message record and quote.",
+    "intro": "A supplier can serve several industries without providing the same call handling to every account. For a residential contractor considering Answerfone, the useful purchasing question is which parts of its broader offer will appear in your own instructions, message record and quote.",
+    "sections": [
+      {
+        "title": "Identify the company and the proposed service",
+        "paragraphs": [
+          "The [Answerfone website](https://answerfone.com/) identifies Answerfone, Inc., in Little Rock, Arkansas. It advertises human answering throughout the year and quotes tailored to business needs and call volume. This guide does not establish a fixed tariff, billing unit or cancellation policy.\n\nIts [services page](https://answerfone.com/our-services/) explicitly lists HVAC, plumbing, roofing and other contracting companies. The same page describes texting, email, fax and direct call patching under legal-office services, and tailored message forms alongside employee hotlines and advertising responses. Those descriptions give a contractor useful questions to ask; they do not establish that every capability belongs in its proposed account.\n\nKeep the company name, service description and dated proposal together. Do not substitute a similarly named answering company or another supplier's published plan when a term remains unanswered."
+        ],
+        "items": []
+      },
+      {
+        "title": "Map the advertised service to your actual calls",
+        "paragraphs": [
+          "Start with caller populations rather than one catch-all instruction. A homeowner requesting repair, an existing customer changing a visit and an employee reporting an absence may require different records and recipients.\n\nUse this applicability map with the supplier. Every confirmation is a purchasing question, not a claim about an included Answerfone feature.\n\n| Call population | Record your office needs | Confirmation for the contractor quote | Responsibility to retain |\n|---|---|---|---|\n| New residential inquiry | Contact details, service address and caller-described request | Which tailored form and delivery destination apply? | Decide whether the work is offered and approve any attendance promise |\n| Existing customer update | Available reference, requested change and callback details | Is the service collecting a message or authorized to act on a booking? | Own the actual schedule change and unresolved request |\n| Caller requesting an employee | Intended recipient and reason for contact | Does the proposed account include patching, and what happens when nobody answers? | Keep recipients current and assign follow-up |\n| Advertising response or employee hotline | Separate purpose, fields and recipient | Is this a separately scoped service, form or account arrangement? | Approve the purpose and keep unrelated records appropriately separated |\n\nFor each row, record one answer: included, separately quoted, excluded or unresolved. Attach the supplier's explanation. A capability described elsewhere on its website should not turn an unresolved cell into an assumed entitlement."
+        ],
+        "items": []
+      },
+      {
+        "title": "Review the resulting record before accepting the scope",
+        "paragraphs": [
+          "Consider a fictional roofing office that wants customer inquiries delivered to its estimator while employee absence messages go to its manager. A single “take a message” instruction leaves important questions open: which form is used, who receives it and what the caller is told next?\n\nAsk for an authorized demonstration using fictional information. Inspect the record delivered for each agreed call type. Check that its purpose and recipient are clear, and that a request is not presented as an accepted appointment. If a live connection is part of the proposal, review the unavailable-recipient outcome separately. An attempted patch does not prove that an employee accepted the work.\n\nThen request the commercial explanation for that exact scope: covered dates and hours, usage measure, additional work, later instruction changes and exit terms. Leave unknown figures blank rather than calculating a bill from an undefined meter."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare the routine reception work with Revo",
+        "paragraphs": [
+          "[Revo's published plans](/pricing) list scripts, hours and rules, appointment booking and a call dashboard with summaries. Transfers to your team are listed for Crew and Fleet, while Solo excludes them. Confirm the supported booking arrangement and transfer fallback for your business.\n\nRevo is AI reception, not a staffed human answering team. This guide does not establish an equivalent employee-hotline service, fax workflow or industry-specific specialist. Compare the routine customer-call requirements that both proposed arrangements can support; keep other requirements separate."
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Does Answerfone's contractor listing establish every advertised feature?\n\nNo. Ask the supplier to connect each required action to the contractor account and written quote.\n\n### Can I budget without a published price?\n\nPrepare the call populations and required outcomes first, then request a complete quote with its usage rules. No numerical total is reliable until the applicable terms are known.\n\n### What should I bring to a Revo comparison?\n\nBring the completed applicability map. [Compare current Revo plans](/pricing) against the supported intake, booking and office-handoff work your business actually needs."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Compare current Revo plans against the routine reception work your office needs.",
+    "pricingVariant": "full",
+    "template": "workflow",
+    "editorialDate": "2026-10-30",
+    "sourcePaths": [
+      "https://answerfone.com/",
+      "https://answerfone.com/our-services/",
+      "https://www.revoapp.ai/pricing"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Final two October 30 continuation; exact delivered manuscripts accepted for implementation and tests. Public body preserved. Specific code/PR approval remains separate."
+    },
+    "markdownArticle": {
+      "content": "# Answerfone: confirm what your contractor quote includes\n\nA supplier can serve several industries without providing the same call handling to every account. For a residential contractor considering Answerfone, the useful purchasing question is which parts of its broader offer will appear in your own instructions, message record and quote.\n\nRevo publishes this guide and offers a competing AI answering service. We reviewed public documentation on October 30, 2026. We did not place test calls, access a customer account or measure either provider's performance. The worksheet below is an original purchasing resource, not a completed evaluation.\n\n## Identify the company and the proposed service\n\nThe [Answerfone website](https://answerfone.com/) identifies Answerfone, Inc., in Little Rock, Arkansas. It advertises human answering throughout the year and quotes tailored to business needs and call volume. This guide does not establish a fixed tariff, billing unit or cancellation policy.\n\nIts [services page](https://answerfone.com/our-services/) explicitly lists HVAC, plumbing, roofing and other contracting companies. The same page describes texting, email, fax and direct call patching under legal-office services, and tailored message forms alongside employee hotlines and advertising responses. Those descriptions give a contractor useful questions to ask; they do not establish that every capability belongs in its proposed account.\n\nKeep the company name, service description and dated proposal together. Do not substitute a similarly named answering company or another supplier's published plan when a term remains unanswered.\n\n## Map the advertised service to your actual calls\n\nStart with caller populations rather than one catch-all instruction. A homeowner requesting repair, an existing customer changing a visit and an employee reporting an absence may require different records and recipients.\n\nUse this applicability map with the supplier. Every confirmation is a purchasing question, not a claim about an included Answerfone feature.\n\n| Call population | Record your office needs | Confirmation for the contractor quote | Responsibility to retain |\n|---|---|---|---|\n| New residential inquiry | Contact details, service address and caller-described request | Which tailored form and delivery destination apply? | Decide whether the work is offered and approve any attendance promise |\n| Existing customer update | Available reference, requested change and callback details | Is the service collecting a message or authorized to act on a booking? | Own the actual schedule change and unresolved request |\n| Caller requesting an employee | Intended recipient and reason for contact | Does the proposed account include patching, and what happens when nobody answers? | Keep recipients current and assign follow-up |\n| Advertising response or employee hotline | Separate purpose, fields and recipient | Is this a separately scoped service, form or account arrangement? | Approve the purpose and keep unrelated records appropriately separated |\n\nFor each row, record one answer: included, separately quoted, excluded or unresolved. Attach the supplier's explanation. A capability described elsewhere on its website should not turn an unresolved cell into an assumed entitlement.\n\n## Review the resulting record before accepting the scope\n\nConsider a fictional roofing office that wants customer inquiries delivered to its estimator while employee absence messages go to its manager. A single “take a message” instruction leaves important questions open: which form is used, who receives it and what the caller is told next?\n\nAsk for an authorized demonstration using fictional information. Inspect the record delivered for each agreed call type. Check that its purpose and recipient are clear, and that a request is not presented as an accepted appointment. If a live connection is part of the proposal, review the unavailable-recipient outcome separately. An attempted patch does not prove that an employee accepted the work.\n\nThen request the commercial explanation for that exact scope: covered dates and hours, usage measure, additional work, later instruction changes and exit terms. Leave unknown figures blank rather than calculating a bill from an undefined meter.\n\n## Compare the routine reception work with Revo\n\n[Revo's published plans](/pricing) list scripts, hours and rules, appointment booking and a call dashboard with summaries. Transfers to your team are listed for Crew and Fleet, while Solo excludes them. Confirm the supported booking arrangement and transfer fallback for your business.\n\nRevo is AI reception, not a staffed human answering team. This guide does not establish an equivalent employee-hotline service, fax workflow or industry-specific specialist. Compare the routine customer-call requirements that both proposed arrangements can support; keep other requirements separate.\n\n## Frequently asked questions\n\n### Does Answerfone's contractor listing establish every advertised feature?\n\nNo. Ask the supplier to connect each required action to the contractor account and written quote.\n\n### Can I budget without a published price?\n\nPrepare the call populations and required outcomes first, then request a complete quote with its usage rules. No numerical total is reliable until the applicable terms are known.\n\n### What should I bring to a Revo comparison?\n\nBring the completed applicability map. [Compare current Revo plans](/pricing) against the supported intake, booking and office-handoff work your business actually needs.\n",
+      "sha256": "ccff0eeaf2dc336fa108bcc291619a22e583d6863b9e1fd82729a719aa1ae7c2",
+      "assets": []
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User (Jorge), editorial acceptance; import recorded by Codex",
+      "reviewedAt": "2026-10-31",
+      "contentHash": "sha256:611d8a4cc4e8cce560c267d7dde35f5e7abff3387b94cbe5f5e0d28c5a40ab2f",
+      "note": "Exact delivered copy accepted for implementation and tests; specific code and PR approval separate."
+    }
+  },
+  {
+    "slug": "aspire-answering-service",
+    "title": "Aspire Answering Service: Define the Staff Handoff",
+    "description": "Evaluate Aspire's operator-to-staff messaging, delivery choices and account setup. Use a purchase worksheet to separate replies, messages and call logs.",
+    "navigationLabel": "Aspire staff handoff",
+    "eyebrow": "Home-service buying guide",
+    "lead": "A message telling your office that somebody called is different from an exchange between an answering operator and your staff. When evaluating Aspire Answering Service, decide which interaction your business needs and have the proposed account explain how it works.",
+    "intro": "A message telling your office that somebody called is different from an exchange between an answering operator and your staff. When evaluating Aspire Answering Service, decide which interaction your business needs and have the proposed account explain how it works.",
+    "sections": [
+      {
+        "title": "Identify the exchange you are buying",
+        "paragraphs": [
+          "[Aspire's service page](https://aspireansweringservice.com/answering_service.html) advertises interactive text messaging between its operators and the client's staff, alongside message delivery and call relay or patching. That supports asking about an operator-to-office exchange. It does not establish its timing, included usage or what the operator does when your employee does not respond.\n\nFor a fictional plumbing office, a caller might ask whether the business handles a particular fixture. The office may want an operator to record the question, or it may want an authorized employee to supply an answer. Those are different assignments. Neither should become a promised appointment or diagnosis without the office's approved instructions.\n\nAspire's [homepage](https://aspireansweringservice.com/) includes plumbers. Confirm your service area and call types separately."
+        ],
+        "items": []
+      },
+      {
+        "title": "Use this interaction worksheet with the proposal",
+        "paragraphs": [
+          "The rows below are purchasing questions, not confirmed Aspire entitlements. Complete them with the supplier before relying on the arrangement. Use fictional details in an agreed demonstration.\n\n| Decision | Answer to obtain | Evidence to inspect |\n| --- | --- | --- |\n| Entry mode | Live answering or the selected automated greeting and operator path | The actual caller experience for your configuration |\n| Message to staff | Who receives the question and what information accompanies it | A sample message with the facts your office requires |\n| Staff reply | Whether a reply is supported, who reads it and during which coverage hours | A demonstrated exchange under the proposed scope |\n| Caller outcome | Whether the operator relays an approved answer, records a callback request or takes another agreed step | The resulting caller wording and office record |\n| Unavailable employee | What happens when the selected staff member cannot respond | Written fallback instructions and remaining office responsibility |\n| Commercial scope | Applicable unit, included work, additional charges and change process | The dated account proposal, not assumptions from a feature list |\n\nA staff reply containing a preferred visit time does not itself reserve a crew. Identify who may approve a commitment and the wording used without approval."
+        ],
+        "items": []
+      },
+      {
+        "title": "Separate immediate delivery from the later call log",
+        "paragraphs": [
+          "Aspire's [FAQ](https://aspireansweringservice.com/faq.html) lists several message-delivery choices and a call log supplied on specified days. Decide what your staff needs promptly and what the office reviews later. A scheduled log is not proof that somebody noticed an individual request or completed its callback.\n\nMatch the sample log to your office's follow-up record. Any required archive, retention period or export needs separate confirmation."
+        ],
+        "items": []
+      },
+      {
+        "title": "Confirm the account and quote together",
+        "paragraphs": [
+          "The FAQ distinguishes a free local number from a toll-free option with a fee and describes an optional automated greeting leading to an operator. Its [plans page](https://aspireansweringservice.com/plans_and_pricing.html) describes customized arrangements without a numerical tariff in the reviewed text. Request the complete recurring and usage terms, including the selected number and any staff exchanges. Do not infer that a listed option is included in every quote.\n\nResolve account control and connection compatibility before changing your public number. Portability is not established here."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare the work with Revo's verified scope",
+        "paragraphs": [
+          "[Revo's published plans](/pricing) list AI reception, appointment booking, SMS follow-up and dashboard summaries; team transfers appear on Crew and Fleet, not Solo. Confirm your supported connection and booking arrangement. These features do not establish interactive texting between a human operator and your employees.\n\nIf operator-to-staff exchanges are essential, evaluate a supplier that documents them and confirm the purchased behavior. If supported incoming AI reception and an office-reviewed summary meet the requirement, compare that narrower scope with Revo. No like-for-like saving is established here."
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Does interactive texting mean the caller stays on the line?\n\nThe reviewed description does not settle that. Ask what happens to the caller while the office is contacted and what occurs when no answer arrives.\n\n### Is an operator-to-staff exchange the same as answering customer texts?\n\nNo. They involve different participants and responsibilities. Confirm any incoming customer-text requirement separately.\n\n[Compare Revo's current plans](/pricing) against the reception work your office actually needs and the responsibilities it will continue to own."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Compare current Revo plans against the routine reception work your office needs.",
+    "pricingVariant": "full",
+    "template": "workflow",
+    "editorialDate": "2026-10-30",
+    "sourcePaths": [
+      "https://aspireansweringservice.com/answering_service.html",
+      "https://aspireansweringservice.com/",
+      "https://aspireansweringservice.com/faq.html",
+      "https://aspireansweringservice.com/plans_and_pricing.html",
+      "https://www.revoapp.ai/pricing"
+    ],
+    "source": {
+      "kind": "manual",
+      "reference": "Final two October 30 continuation; exact delivered manuscripts accepted for implementation and tests. Public body preserved. Specific code/PR approval remains separate."
+    },
+    "markdownArticle": {
+      "content": "# Aspire Answering Service: define the operator-to-office handoff\n\nA message telling your office that somebody called is different from an exchange between an answering operator and your staff. When evaluating Aspire Answering Service, decide which interaction your business needs and have the proposed account explain how it works.\n\nPublished by Revo, a competing AI answering provider. This guide reviews public documents on October 30, 2026. It reports no purchased service trial, response-time measurement or verified customer outcome.\n\n## Identify the exchange you are buying\n\n[Aspire's service page](https://aspireansweringservice.com/answering_service.html) advertises interactive text messaging between its operators and the client's staff, alongside message delivery and call relay or patching. That supports asking about an operator-to-office exchange. It does not establish its timing, included usage or what the operator does when your employee does not respond.\n\nFor a fictional plumbing office, a caller might ask whether the business handles a particular fixture. The office may want an operator to record the question, or it may want an authorized employee to supply an answer. Those are different assignments. Neither should become a promised appointment or diagnosis without the office's approved instructions.\n\nAspire's [homepage](https://aspireansweringservice.com/) includes plumbers. Confirm your service area and call types separately.\n\n## Use this interaction worksheet with the proposal\n\nThe rows below are purchasing questions, not confirmed Aspire entitlements. Complete them with the supplier before relying on the arrangement. Use fictional details in an agreed demonstration.\n\n| Decision | Answer to obtain | Evidence to inspect |\n| --- | --- | --- |\n| Entry mode | Live answering or the selected automated greeting and operator path | The actual caller experience for your configuration |\n| Message to staff | Who receives the question and what information accompanies it | A sample message with the facts your office requires |\n| Staff reply | Whether a reply is supported, who reads it and during which coverage hours | A demonstrated exchange under the proposed scope |\n| Caller outcome | Whether the operator relays an approved answer, records a callback request or takes another agreed step | The resulting caller wording and office record |\n| Unavailable employee | What happens when the selected staff member cannot respond | Written fallback instructions and remaining office responsibility |\n| Commercial scope | Applicable unit, included work, additional charges and change process | The dated account proposal, not assumptions from a feature list |\n\nA staff reply containing a preferred visit time does not itself reserve a crew. Identify who may approve a commitment and the wording used without approval.\n\n## Separate immediate delivery from the later call log\n\nAspire's [FAQ](https://aspireansweringservice.com/faq.html) lists several message-delivery choices and a call log supplied on specified days. Decide what your staff needs promptly and what the office reviews later. A scheduled log is not proof that somebody noticed an individual request or completed its callback.\n\nMatch the sample log to your office's follow-up record. Any required archive, retention period or export needs separate confirmation.\n\n## Confirm the account and quote together\n\nThe FAQ distinguishes a free local number from a toll-free option with a fee and describes an optional automated greeting leading to an operator. Its [plans page](https://aspireansweringservice.com/plans_and_pricing.html) describes customized arrangements without a numerical tariff in the reviewed text. Request the complete recurring and usage terms, including the selected number and any staff exchanges. Do not infer that a listed option is included in every quote.\n\nResolve account control and connection compatibility before changing your public number. Portability is not established here.\n\n## Compare the work with Revo's verified scope\n\n[Revo's published plans](/pricing) list AI reception, appointment booking, SMS follow-up and dashboard summaries; team transfers appear on Crew and Fleet, not Solo. Confirm your supported connection and booking arrangement. These features do not establish interactive texting between a human operator and your employees.\n\nIf operator-to-staff exchanges are essential, evaluate a supplier that documents them and confirm the purchased behavior. If supported incoming AI reception and an office-reviewed summary meet the requirement, compare that narrower scope with Revo. No like-for-like saving is established here.\n\n## Frequently asked questions\n\n### Does interactive texting mean the caller stays on the line?\n\nThe reviewed description does not settle that. Ask what happens to the caller while the office is contacted and what occurs when no answer arrives.\n\n### Is an operator-to-staff exchange the same as answering customer texts?\n\nNo. They involve different participants and responsibilities. Confirm any incoming customer-text requirement separately.\n\n[Compare Revo's current plans](/pricing) against the reception work your office actually needs and the responsibilities it will continue to own.\n",
+      "sha256": "1a7f9e2e47e705bad6443a896d462f3363ba59953a02d33ed99a1096de56b59f",
+      "assets": []
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "User (Jorge), editorial acceptance; import recorded by Codex",
+      "reviewedAt": "2026-10-31",
+      "contentHash": "sha256:0666f0b66ffb4cd3bdc05a95bb95390aa59d1c9178cbea6cf588ac60c824704e",
+      "note": "Exact delivered copy accepted for implementation and tests; specific code and PR approval separate."
+    }
   }
 ]

@@ -1093,5 +1093,18 @@
       "added tcb-answering-service as draft",
       "added compare/barbaras-answering-service as draft"
     ]
+  },
+  {
+    "batchId": "2026-10-30-final-two-guides",
+    "batchHash": "sha256:76d5adb63cd060904fa20aeed46eba42b699901454c22471505a52c09765e8b4",
+    "source": {
+      "kind": "manual",
+      "reference": "Explicit final two-page continuation of October 30; separate from twenty-three verified publications."
+    },
+    "appliedAt": "2026-10-31",
+    "changes": [
+      "added answerfone-answering-service as draft",
+      "added aspire-answering-service as draft"
+    ]
   }
 ]
