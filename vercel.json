@@ -1692,6 +1692,16 @@
       "permanent": true
     },
     {
+      "source": "/ai-answering-service/answerfone-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answerfone-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/aspire-answering-service.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/aspire-answering-service",
+      "permanent": true
+    },
+    {
       "source": "/ai-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service",
       "permanent": true
@@ -3689,6 +3699,14 @@
     {
       "source": "/ai-answering-service/compare/barbaras-answering-service",
       "destination": "/ai-answering-service/compare/barbaras-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/answerfone-answering-service",
+      "destination": "/ai-answering-service/answerfone-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/aspire-answering-service",
+      "destination": "/ai-answering-service/aspire-answering-service.html"
     },
     {
       "source": "/ai-answering-service",
