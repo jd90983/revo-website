@@ -26,9 +26,12 @@ test('displayed launch prices disclose three post-trial payments and the regular
  }
 });
 test('automated snippet review cannot become a production release approval',()=>{
- assert.doesNotThrow(()=>assertReleaseReview(REVIEW_PAGES,'preview'));
- assert.throws(()=>assertReleaseReview(REVIEW_PAGES,'production'),/Owner approval of the exact PR/);
- assert.doesNotThrow(()=>assertReleaseReview(REVIEW_PAGES.filter(p=>!selected.includes(p.slug)),'production'));
+ const pending = REVIEW_PAGES.map(page=>selected.includes(page.slug)
+  ? {...page,review:{...page.review,releaseApproval:'pending'}} : page);
+ assert.doesNotThrow(()=>assertReleaseReview(pending,'preview'));
+ assert.throws(()=>assertReleaseReview(pending,'production'),/Owner approval of the exact PR/);
+ const approved = pending.map(page=>({...page,review:page.review ? Object.fromEntries(Object.entries(page.review).filter(([key])=>key!=='releaseApproval')) : undefined}));
+ assert.doesNotThrow(()=>assertReleaseReview(approved,'production'));
 });
 test('only the three selected guides switch to a demo hero; new guides retain the exact reviewed CTAs',()=>{
  for(const p of REVIEW_PAGES.filter(p=>p.template==='workflow')){
