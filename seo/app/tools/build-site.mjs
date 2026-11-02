@@ -1,3 +1,4 @@
+import {assertReleaseReview} from '../../shared/lib/release-review.mjs';
 import {readFile,writeFile,readdir,mkdir,rm,cp,stat,lstat,symlink} from 'node:fs/promises';
 import {resolve,dirname,join,extname,relative} from 'node:path';import {fileURLToPath,pathToFileURL} from 'node:url';import {spawn} from 'node:child_process';import {createHash} from 'node:crypto';
 const app=resolve(dirname(fileURLToPath(import.meta.url)),'..');const config=JSON.parse(await readFile(join(app,'site.config.json'),'utf8'));
@@ -8,6 +9,7 @@ const {readRegistry,landingPath,approvedPages}=await import(pathToFileURL(join(s
 const {publicRoutes,homeNavigation,seoRewrites,currentSeoRewrites,INDEX_PATH}=await import(pathToFileURL(join(app,'tools/routes.mjs')));
 // The registry is validated in full (fields, uniqueness, review hash, assets) before anything is built.
 const registry=readRegistry(pathToFileURL(shared+'/'),{websiteRoot:website});const pages=approvedPages(registry);if(!pages.length)throw Error('No approved pages');
+assertReleaseReview(registry, process.env.VERCEL_ENV);
 // Vercel reads routes from the committed vercel.json, so a stale file must stop the build rather than publish unrouted pages.
 const vercelConfig=JSON.parse(await readFile(join(website,'vercel.json'),'utf8'));if(JSON.stringify(currentSeoRewrites(vercelConfig))!==JSON.stringify(seoRewrites(registry,config)))throw Error('vercel.json routes are out of date with the approved registry: run `npm run seo:routes` and commit');
 const routes=publicRoutes(registry,config);

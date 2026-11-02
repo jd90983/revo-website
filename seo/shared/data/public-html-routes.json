@@ -67,5 +67,6 @@
   "/templates/intelligent-banner-section.html": "/templates/intelligent-banner-section",
   "/snippets/footer-links.html": "/snippets/footer-links",
   "/ser.html": "/services",
-  "/ind.html": "/industries"
+  "/ind.html": "/industries",
+  "/templates/industry-reviewed-form.html": "/templates/industry-reviewed-form"
 }
