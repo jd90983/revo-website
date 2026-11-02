@@ -1713,5 +1713,40 @@
     "slug": "marlie-ai",
     "label": "Marlie AI",
     "template": "workflow"
+  },
+  {
+    "slug": "alivo-ai-receptionist",
+    "label": "Alivo reception review",
+    "template": "workflow"
+  },
+  {
+    "slug": "podium-ai-home-services",
+    "label": "Podium reception review",
+    "template": "workflow"
+  },
+  {
+    "slug": "agentzap-ai-receptionist",
+    "label": "AgentZap reception review",
+    "template": "workflow"
+  },
+  {
+    "slug": "cloudtalk-ai-voice-agents",
+    "label": "CloudTalk reception review",
+    "template": "workflow"
+  },
+  {
+    "slug": "emitrr-ai-agent-home-services",
+    "label": "Emitrr reception review",
+    "template": "workflow"
+  },
+  {
+    "slug": "autocalls-ai-receptionist",
+    "label": "Autocalls reception review",
+    "template": "workflow"
+  },
+  {
+    "slug": "plumbline-answering-service-cost",
+    "label": "PlumbLine reception review",
+    "template": "workflow"
   }
 ]

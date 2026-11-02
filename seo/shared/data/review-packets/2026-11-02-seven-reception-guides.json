@@ -1,0 +1,61 @@
+{
+  "batchId": "2026-11-02-seven-approved-reception-guides",
+  "baseMain": "ae1ec7255527344add9d30b2ba02fcf474bf70b6",
+  "sourceFileSha256": "7dff6001cc0da1440c0e6fdf7f1b64ade9d03de6100beba77925f685e704a653",
+  "publicCopyFixture": "evidence/2026-11-02/seven-approved-public-copy.txt",
+  "publicCopyFixtureSha256": "5253ce79d189a3f33706702d4e73d721de953ba947b4b195cc6a5f555836c1a9",
+  "ownerBodyApprovalAt": "2026-11-02T21:24:55Z",
+  "implementationReview": "Automated mapping and exact article-body comparison; not independent human review",
+  "metadataAdjustment": {
+    "slug": "agentzap-ai-receptionist",
+    "previousCharacters": 163,
+    "newCharacters": 152,
+    "reason": "Existing metadata contract maximum 160; no change of meaning or commercial promise",
+    "approval": "Delegated implementation adjustment; exact final string pending PR review, not previously approved verbatim"
+  },
+  "releaseApproval": "pending; all seven records block production until specific PR review",
+  "pages": [
+    {
+      "slug": "alivo-ai-receptionist",
+      "url": "https://www.revoapp.ai/ai-answering-service/alivo-ai-receptionist",
+      "contentHash": "sha256:e78d2930f81662df415cacef52bb09b7c26ea61c6b3a233430877048c8a0f272",
+      "articleSha256": "c7610dd509d923503361ca573b90432584eb7f194857c7fbe168f9d751fffc32"
+    },
+    {
+      "slug": "podium-ai-home-services",
+      "url": "https://www.revoapp.ai/ai-answering-service/podium-ai-home-services",
+      "contentHash": "sha256:94f651f18514e46c7652bd3612d0a94bcf0f1c4239181d39257afa28202e8dd6",
+      "articleSha256": "3306859b269b98f75976951ee9878c51cf2a328df938cf31152f10ea5f5a0b38"
+    },
+    {
+      "slug": "agentzap-ai-receptionist",
+      "url": "https://www.revoapp.ai/ai-answering-service/agentzap-ai-receptionist",
+      "contentHash": "sha256:74b25e3ce13c662346e45b6769acca37f215264fc31938e6efff4ba33eb6f0e8",
+      "articleSha256": "1531c69df1c289939ea321d48fa4adf5aaa08cf33b4b32a4a5c60bcc2c648037"
+    },
+    {
+      "slug": "cloudtalk-ai-voice-agents",
+      "url": "https://www.revoapp.ai/ai-answering-service/cloudtalk-ai-voice-agents",
+      "contentHash": "sha256:68f03abda8594c896a4ed97bb9171309b696037ca345e7f61fe767836eb3d15d",
+      "articleSha256": "100147ca871b6ab4b00894cb3f9dcd3ae98959e2cbf9b982aaedcb6cdad2e98f"
+    },
+    {
+      "slug": "emitrr-ai-agent-home-services",
+      "url": "https://www.revoapp.ai/ai-answering-service/emitrr-ai-agent-home-services",
+      "contentHash": "sha256:1ffd2896ede5e248aa708d1ddcb06db95bd62b5d13b1ad3c6467c6fff4d76ccf",
+      "articleSha256": "574933d702ce4ac2db08369041ad566eaf4adfbb37be02431b1b9c21a8c07cc7"
+    },
+    {
+      "slug": "autocalls-ai-receptionist",
+      "url": "https://www.revoapp.ai/ai-answering-service/autocalls-ai-receptionist",
+      "contentHash": "sha256:134e760a6f205a5f282ecf5ec6de76207270b987324500db1f5da59b851914bf",
+      "articleSha256": "1aebedd41a4d79c68219b0847d1ce91d5b0d8cf35b59191f69d2bf2d55af0bbf"
+    },
+    {
+      "slug": "plumbline-answering-service-cost",
+      "url": "https://www.revoapp.ai/ai-answering-service/plumbline-answering-service-cost",
+      "contentHash": "sha256:fbe64015980d08dd92874b851acf3fa60abdcece214ea084462ca02714da127c",
+      "articleSha256": "968987dd03387fc66c62d0e2ee59daae3845a67228f41ab89051e58e424c14d9"
+    }
+  ]
+}

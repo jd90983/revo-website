@@ -1717,6 +1717,41 @@
       "permanent": true
     },
     {
+      "source": "/ai-answering-service/alivo-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/alivo-ai-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/podium-ai-home-services.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/podium-ai-home-services",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/agentzap-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/agentzap-ai-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/cloudtalk-ai-voice-agents.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/cloudtalk-ai-voice-agents",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/emitrr-ai-agent-home-services.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/emitrr-ai-agent-home-services",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/autocalls-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/autocalls-ai-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/plumbline-answering-service-cost.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/plumbline-answering-service-cost",
+      "permanent": true
+    },
+    {
       "source": "/ai-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service",
       "permanent": true
@@ -2367,6 +2402,10 @@
     {
       "source": "/ai-receptionist-demo",
       "destination": "/ai-receptionist-demo.html"
+    },
+    {
+      "source": "/templates/industry-reviewed-form",
+      "destination": "/templates/industry-reviewed-form.html"
     },
     {
       "source": "/ai-answering-service/after-hours",
@@ -3741,12 +3780,36 @@
       "destination": "/ai-answering-service/marlie-ai.html"
     },
     {
-      "source": "/ai-answering-service",
-      "destination": "/ai-answering-service.html"
+      "source": "/ai-answering-service/alivo-ai-receptionist",
+      "destination": "/ai-answering-service/alivo-ai-receptionist.html"
     },
     {
-      "source": "/templates/industry-reviewed-form",
-      "destination": "/templates/industry-reviewed-form.html"
+      "source": "/ai-answering-service/podium-ai-home-services",
+      "destination": "/ai-answering-service/podium-ai-home-services.html"
+    },
+    {
+      "source": "/ai-answering-service/agentzap-ai-receptionist",
+      "destination": "/ai-answering-service/agentzap-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/cloudtalk-ai-voice-agents",
+      "destination": "/ai-answering-service/cloudtalk-ai-voice-agents.html"
+    },
+    {
+      "source": "/ai-answering-service/emitrr-ai-agent-home-services",
+      "destination": "/ai-answering-service/emitrr-ai-agent-home-services.html"
+    },
+    {
+      "source": "/ai-answering-service/autocalls-ai-receptionist",
+      "destination": "/ai-answering-service/autocalls-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/plumbline-answering-service-cost",
+      "destination": "/ai-answering-service/plumbline-answering-service-cost.html"
+    },
+    {
+      "source": "/ai-answering-service",
+      "destination": "/ai-answering-service.html"
     }
   ],
   "headers": [
