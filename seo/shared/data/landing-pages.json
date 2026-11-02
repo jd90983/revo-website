@@ -34900,7 +34900,10 @@
       "reviewedAt": "2026-11-02",
       "contentHash": "sha256:e78d2930f81662df415cacef52bb09b7c26ea61c6b3a233430877048c8a0f272",
       "note": "Exact approved article body and metadata preserved; release requires separate PR approval",
-      "releaseApproval": "pending"
+      "releaseApprovedPR": 138,
+      "releaseApprovedHead": "4ba23532e0b4d0a62dad4cc40bb98cc34223e477",
+      "releaseApprovedAt": "2026-11-02T21:41:57Z",
+      "releaseApprovalRecord": "Owner explicitly approved PR 138 and its tested head; this subsequent change records that authorization only, without changing editorial content or code."
     }
   },
   {
@@ -34988,7 +34991,10 @@
       "reviewedAt": "2026-11-02",
       "contentHash": "sha256:94f651f18514e46c7652bd3612d0a94bcf0f1c4239181d39257afa28202e8dd6",
       "note": "Exact approved article body and metadata preserved; release requires separate PR approval",
-      "releaseApproval": "pending"
+      "releaseApprovedPR": 138,
+      "releaseApprovedHead": "4ba23532e0b4d0a62dad4cc40bb98cc34223e477",
+      "releaseApprovedAt": "2026-11-02T21:41:57Z",
+      "releaseApprovalRecord": "Owner explicitly approved PR 138 and its tested head; this subsequent change records that authorization only, without changing editorial content or code."
     }
   },
   {
@@ -35076,7 +35082,10 @@
       "reviewedAt": "2026-11-02",
       "contentHash": "sha256:74b25e3ce13c662346e45b6769acca37f215264fc31938e6efff4ba33eb6f0e8",
       "note": "Article body unchanged; AgentZap description shortened without meaning change, pending exact PR approval",
-      "releaseApproval": "pending"
+      "releaseApprovedPR": 138,
+      "releaseApprovedHead": "4ba23532e0b4d0a62dad4cc40bb98cc34223e477",
+      "releaseApprovedAt": "2026-11-02T21:41:57Z",
+      "releaseApprovalRecord": "Owner explicitly approved PR 138 and its tested head; this subsequent change records that authorization only, without changing editorial content or code."
     }
   },
   {
@@ -35164,7 +35173,10 @@
       "reviewedAt": "2026-11-02",
       "contentHash": "sha256:68f03abda8594c896a4ed97bb9171309b696037ca345e7f61fe767836eb3d15d",
       "note": "Exact approved article body and metadata preserved; release requires separate PR approval",
-      "releaseApproval": "pending"
+      "releaseApprovedPR": 138,
+      "releaseApprovedHead": "4ba23532e0b4d0a62dad4cc40bb98cc34223e477",
+      "releaseApprovedAt": "2026-11-02T21:41:57Z",
+      "releaseApprovalRecord": "Owner explicitly approved PR 138 and its tested head; this subsequent change records that authorization only, without changing editorial content or code."
     }
   },
   {
@@ -35251,7 +35263,10 @@
       "reviewedAt": "2026-11-02",
       "contentHash": "sha256:1ffd2896ede5e248aa708d1ddcb06db95bd62b5d13b1ad3c6467c6fff4d76ccf",
       "note": "Exact approved article body and metadata preserved; release requires separate PR approval",
-      "releaseApproval": "pending"
+      "releaseApprovedPR": 138,
+      "releaseApprovedHead": "4ba23532e0b4d0a62dad4cc40bb98cc34223e477",
+      "releaseApprovedAt": "2026-11-02T21:41:57Z",
+      "releaseApprovalRecord": "Owner explicitly approved PR 138 and its tested head; this subsequent change records that authorization only, without changing editorial content or code."
     }
   },
   {
@@ -35340,7 +35355,10 @@
       "reviewedAt": "2026-11-02",
       "contentHash": "sha256:134e760a6f205a5f282ecf5ec6de76207270b987324500db1f5da59b851914bf",
       "note": "Exact approved article body and metadata preserved; release requires separate PR approval",
-      "releaseApproval": "pending"
+      "releaseApprovedPR": 138,
+      "releaseApprovedHead": "4ba23532e0b4d0a62dad4cc40bb98cc34223e477",
+      "releaseApprovedAt": "2026-11-02T21:41:57Z",
+      "releaseApprovalRecord": "Owner explicitly approved PR 138 and its tested head; this subsequent change records that authorization only, without changing editorial content or code."
     }
   },
   {
@@ -35429,7 +35447,10 @@
       "reviewedAt": "2026-11-02",
       "contentHash": "sha256:fbe64015980d08dd92874b851acf3fa60abdcece214ea084462ca02714da127c",
       "note": "Exact approved article body and metadata preserved; release requires separate PR approval",
-      "releaseApproval": "pending"
+      "releaseApprovedPR": 138,
+      "releaseApprovedHead": "4ba23532e0b4d0a62dad4cc40bb98cc34223e477",
+      "releaseApprovedAt": "2026-11-02T21:41:57Z",
+      "releaseApprovalRecord": "Owner explicitly approved PR 138 and its tested head; this subsequent change records that authorization only, without changing editorial content or code."
     }
   }
 ]

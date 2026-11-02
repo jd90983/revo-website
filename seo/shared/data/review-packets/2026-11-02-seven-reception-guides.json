@@ -11,9 +11,9 @@
     "previousCharacters": 163,
     "newCharacters": 152,
     "reason": "Existing metadata contract maximum 160; no change of meaning or commercial promise",
-    "approval": "Delegated implementation adjustment; exact final string pending PR review, not previously approved verbatim"
+    "approval": "Included in the specific PR 138 owner approval at 2026-11-02T21:41:57Z"
   },
-  "releaseApproval": "pending; all seven records block production until specific PR review",
+  "releaseApproval": "Owner approved PR 138 head 4ba23532e0b4d0a62dad4cc40bb98cc34223e477 at 2026-11-02T21:41:57Z; authorization recorded without editorial or code changes",
   "pages": [
     {
       "slug": "alivo-ai-receptionist",
