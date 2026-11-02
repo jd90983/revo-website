@@ -1,4 +1,5 @@
 import {publicUrl} from '../lib/public-url';
+import Script from 'next/script';
 import {MarkdownArticle,articleHeading} from './MarkdownArticle';
 import {GuideTable} from './GuideTable';
 /* Shared guides use the actual HOME styles, logo, typography and button modules. */
@@ -32,5 +33,5 @@ export function WorkflowGuideTemplate({page}:{page:ReviewPage}){
  <section className="home-guide-section home-guide-close"><div className="home-guide-container"><h2>{page.takeaway}</h2><p>Review Revo’s current features and plans for the workflow your business needs.</p><a className="btn-primary-large" href={page.reviewedCtas?.primary.href ?? "/pricing"}>{page.reviewedCtas?.primary.label ?? "Compare plans"}</a>{related.length>0?<nav className="home-guide-related" aria-label="Related guides">{related.map(other=><a key={other.slug} href={reviewPath(other.slug)}>{other.navigationLabel}</a>)}<a href="/ai-answering-service">All call guides</a></nav>:null}</div></section>
  </main>
  <footer className="footer"><div className="footer-container"><div className="home-guide-footer-top"><div><a href="/" aria-label="Revo home"><img src="/images/logo.webp" alt="Revo" width="75" height="19"/></a><p>AI phone answering for home service businesses.</p></div><nav aria-label="Explore Revo"><a href="/services">Services</a><a href="/industries">Industry</a><a href="/pricing">Pricing</a><a href="/ai-answering-service">Call guides</a></nav></div><div className="footer-bottom"><p>© 2026 Revo</p><nav className="footer-legal" aria-label="Legal navigation"><a href="/privacy-policy">Privacy policy</a><a href="/terms-of-service">Terms of service</a><ConsentSettingsButton/></nav></div></div></footer>
- {demo ? <script src="/js/seo-demo-cta.js" defer/> : null}</div></>;
+ {demo ? <Script src="/js/seo-demo-cta.js" strategy="afterInteractive"/> : null}</div></>;
 }

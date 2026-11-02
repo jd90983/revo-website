@@ -24,6 +24,7 @@ registerHooks({
       }
       // Next Link's public CJS entry is needed by pure server-render tests only.
       if (specifier === 'next/link') return nextResolve(pathToFileURL(resolve(root, 'node_modules/next/link.js')).href, context);
+      if (specifier === 'next/script') return nextResolve(pathToFileURL(resolve(root, 'node_modules/next/script.js')).href, context);
       throw error;
     }
   },
