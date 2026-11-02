@@ -8,8 +8,23 @@ import {renderToStaticMarkup} from 'react-dom/server';
 import {REVIEW_PAGES} from '../lib/review-cohort.ts';
 import {WorkflowGuideTemplate} from '../components/WorkflowGuideTemplate.tsx';
 import {assertReleaseReview} from '../lib/release-review.mjs';
+import {OFFICIAL_PRICING} from '../lib/official-pricing.ts';
+import {OfficialPricing, PricingSummary} from '../components/OfficialPricing.tsx';
 const read=path=>readFileSync(new URL('../../../'+path,import.meta.url),'utf8');
 const selected=['zanus-ai-receptionist','broccoli-ai-pricing','rosie-ai-pricing'];
+test('displayed launch prices disclose three post-trial payments and the regular rate without changing amounts',()=>{
+ const page=read('pricing.html');assert.ok(!page.includes('lock in Launch Offer'));
+ for(const [index,amount,regular] of [[0,'$87.50','$175'],[1,'$175','$350'],[2,'$350','$700']]){
+  const plan=OFFICIAL_PRICING.plans[index];assert.equal(plan.amount,amount);assert.equal(plan.was,regular);
+  assert.ok(page.includes(plan.offerNote));assert.ok(plan.offerNote.includes('after the trial; then '+regular+'/mo.'));
+ }
+ const html=renderToStaticMarkup(React.createElement(OfficialPricing));
+ for(const plan of OFFICIAL_PRICING.plans)assert.ok(html.includes(plan.offerNote));
+ for(const context of ['missed-calls','voicemail','receptionist','worksheet']){
+  const summary=renderToStaticMarkup(React.createElement(PricingSummary,{context}));
+  for(const plan of OFFICIAL_PRICING.plans)assert.ok(summary.includes(plan.offerNote));
+ }
+});
 test('automated snippet review cannot become a production release approval',()=>{
  assert.doesNotThrow(()=>assertReleaseReview(REVIEW_PAGES,'preview'));
  assert.throws(()=>assertReleaseReview(REVIEW_PAGES,'production'),/Owner approval of the exact PR/);
