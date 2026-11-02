@@ -1702,6 +1702,21 @@
       "permanent": true
     },
     {
+      "source": "/ai-answering-service/answer-mti.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/answer-mti",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/lucy-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/lucy-ai-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/marlie-ai.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/marlie-ai",
+      "permanent": true
+    },
+    {
       "source": "/ai-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service",
       "permanent": true
@@ -2054,6 +2069,11 @@
     {
       "source": "/ind",
       "destination": "https://www.revoapp.ai/industries",
+      "permanent": true
+    },
+    {
+      "source": "/templates/industry-reviewed-form.html",
+      "destination": "https://www.revoapp.ai/templates/industry-reviewed-form",
       "permanent": true
     },
     {
@@ -3709,8 +3729,24 @@
       "destination": "/ai-answering-service/aspire-answering-service.html"
     },
     {
+      "source": "/ai-answering-service/answer-mti",
+      "destination": "/ai-answering-service/answer-mti.html"
+    },
+    {
+      "source": "/ai-answering-service/lucy-ai-receptionist",
+      "destination": "/ai-answering-service/lucy-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/marlie-ai",
+      "destination": "/ai-answering-service/marlie-ai.html"
+    },
+    {
       "source": "/ai-answering-service",
       "destination": "/ai-answering-service.html"
+    },
+    {
+      "source": "/templates/industry-reviewed-form",
+      "destination": "/templates/industry-reviewed-form.html"
     }
   ],
   "headers": [

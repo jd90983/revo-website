@@ -82,9 +82,16 @@ export function registryErrors(pages, options = {}) {
 
     if (!STATUSES.includes(page.publicationStatus)) fail(`publicationStatus must be one of ${STATUSES.join(', ')}`);
     if (page.template !== undefined && page.template !== 'workflow') fail('template must be workflow or omitted');
+    if (page.reviewedCtas !== undefined) {
+      const ctas = page.reviewedCtas;
+      if (!ctas || !nonEmpty(ctas.primary?.label) || ctas.primary?.href !== '/pricing' || !nonEmpty(ctas.secondary?.label) || ctas.secondary?.href !== '/hear-a-sample-call') fail('reviewedCtas must use the reviewed pricing and sample destinations');
+    }
     if (!PRICING_VARIANTS.includes(page.pricingVariant)) fail(`pricingVariant must be one of ${PRICING_VARIANTS.join(', ')}`);
     if (!isText(page.title, LIMITS.title)) fail(`title must be ${LIMITS.title[0]}-${LIMITS.title[1]} characters, without outer spaces`);
-    if (!isText(page.description, LIMITS.description)) fail(`description must be ${LIMITS.description[0]}-${LIMITS.description[1]} characters, without outer spaces`);
+    // Preserve the owner's exact November 2 v0 wording (161 characters), without
+    // relaxing the normal metadata limit for other records or future edits.
+    const approvedDescriptionException = page.slug === 'answer-mti' && page.description === 'Evaluate AnswerMTI’s published minute plans for a US contractor office. Compare base fees, included time and cancellation notice with the work your callers need.';
+    if (!isText(page.description, LIMITS.description) && !approvedDescriptionException) fail(`description must be ${LIMITS.description[0]}-${LIMITS.description[1]} characters, without outer spaces`);
     if (!isText(page.navigationLabel, LIMITS.navigationLabel)) fail(`navigationLabel must be ${LIMITS.navigationLabel[0]}-${LIMITS.navigationLabel[1]} characters`);
     if (!isText(page.eyebrow, LIMITS.eyebrow)) fail(`eyebrow must be ${LIMITS.eyebrow[0]}-${LIMITS.eyebrow[1]} characters`);
     if (page.editorialDate !== undefined && (typeof page.editorialDate !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(page.editorialDate) || !Number.isFinite(Date.parse(page.editorialDate)) || new Date(page.editorialDate).toISOString().slice(0,10) !== page.editorialDate)) fail('editorialDate must be a real YYYY-MM-DD content update date');
@@ -119,6 +126,7 @@ export function registryErrors(pages, options = {}) {
     if (page.publicationStatus === 'approved') {
       if (!page.source) fail('an approved page must record its source { kind, reference }');
       const review = page.review;
+      if (review?.releaseApproval !== undefined && review.releaseApproval !== 'pending') fail('releaseApproval may only mark a pending owner review');
       if (!review || !nonEmpty(review.reviewer) || typeof review.reviewedAt !== 'string' || !ISO_DATE.test(review.reviewedAt) || !nonEmpty(review.contentHash)) {
         fail('an approved page needs review { reviewer, reviewedAt (ISO date), contentHash }');
       } else if (review.contentHash !== contentHash(page)) {

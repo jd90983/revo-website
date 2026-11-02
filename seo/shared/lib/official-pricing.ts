@@ -1,4 +1,5 @@
-// Exact public pricing snapshot, 2026-10-06. User requested source replication.
+// Public plan amounts retained from the existing snapshot.
+// Owner confirmed November 2: launch rates cover three monthly payments after trial.
 // Not checkout configuration or a claim about measured customer outcomes.
 export const OFFICIAL_PRICING = {
   "source": "https://www.revoapp.ai/pricing",
@@ -8,6 +9,7 @@ export const OFFICIAL_PRICING = {
   "plans": [
     {
       "name": "Solo",
+      "offerNote": "First 3 monthly payments after the trial; then $175/mo.",
       "tag": "One tech",
       "amount": "$87.50",
       "period": "/mo",
@@ -102,6 +104,7 @@ export const OFFICIAL_PRICING = {
     },
     {
       "name": "Crew",
+      "offerNote": "First 3 monthly payments after the trial; then $350/mo.",
       "tag": "One crew",
       "amount": "$175",
       "period": "/mo",
@@ -196,6 +199,7 @@ export const OFFICIAL_PRICING = {
     },
     {
       "name": "Fleet",
+      "offerNote": "First 3 monthly payments after the trial; then $700/mo.",
       "tag": "Multi-location",
       "amount": "$350",
       "period": "/mo",

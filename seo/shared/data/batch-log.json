@@ -1106,5 +1106,22 @@
       "added answerfone-answering-service as draft",
       "added aspire-answering-service as draft"
     ]
+  },
+  {
+    "batchId": "2026-11-02-ctr-and-three-approved-guides",
+    "batchHash": "sha256:69e9629469beb5eae5f58b8f779c75dedb1de230f21c0647d253684b06e1725f",
+    "source": {
+      "kind": "owner-authorized-pr-preparation",
+      "reference": "Owner authorized combined PR 2026-11-02; metadata implementation review is automated, final PR approval pending"
+    },
+    "appliedAt": "2026-11-02",
+    "changes": [
+      "updated rosie-ai-pricing; back to draft until re-approved",
+      "updated broccoli-ai-pricing; back to draft until re-approved",
+      "updated zanus-ai-receptionist; back to draft until re-approved",
+      "added answer-mti as draft",
+      "added lucy-ai-receptionist as draft",
+      "added marlie-ai as draft"
+    ]
   }
 ]

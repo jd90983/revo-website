@@ -943,3 +943,14 @@
 .revo-official-pricing .revo-summary-links>a{color:white}
 .revo-official-pricing .revo-summary-links .btn-primary{color:#111}
 @media(max-width:767px){.revo-official-pricing.revo-pricing-summary{padding:56px 24px}.revo-official-pricing.revo-pricing-summary .pricing-heading{font-size:28px}.revo-official-pricing .revo-summary-links{align-items:stretch;flex-direction:column;text-align:center}}
+
+/* Offer conditions stay adjacent to each displayed price and wrap on mobile. */
+.revo-pricing .pricing-offer-note {
+  margin: 12px 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}

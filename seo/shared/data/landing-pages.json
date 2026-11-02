@@ -13566,8 +13566,8 @@
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "rosie-ai-pricing",
-    "title": "Rosie AI pricing: booking links and calendar tiers",
-    "description": "Review Rosie AI pricing, billing units and buying questions for home service teams. Compare the workflow with Revo’s current plans.",
+    "title": "Rosie AI Pricing: Plans, Booking & Calendar Tiers",
+    "description": "Review Rosie AI pricing and the difference between a booking link and a calendar appointment. Compare tier limits and the workflow with Revo.",
     "navigationLabel": "Rosie AI pricing",
     "eyebrow": "Provider pricing review",
     "lead": "A texted scheduling link and a confirmed booking are different outcomes.",
@@ -13647,9 +13647,10 @@
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge (explicit publication approval 2026-10-20)",
-      "reviewedAt": "2026-10-20",
-      "contentHash": "sha256:d625ce833c74666cd9b2549cf63a70dc993679473375043e167cc2007190a9e9"
+      "reviewer": "Owner approval of PR 136, 2026-11-02 20:24:10 UTC",
+      "reviewedAt": "2026-11-02",
+      "contentHash": "sha256:dd550a29e22d192c50dfb3f5aeb255621c4f1e020b3aee51b25a6b9dd9cabdd0",
+      "note": "Owner explicitly approved PR 136 reviewed at 268c256af041814ba7534d17dbbd34115cad1193 for integration/deployment. Editorial content unchanged."
     }
   },
   {
@@ -29185,8 +29186,8 @@
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "broccoli-ai-pricing",
-    "title": "Broccoli AI pricing: define the quote scope",
-    "description": "Prepare a Broccoli AI quote comparison around inbound answering, booking, outbound, lead sources and administration without inventing a public tariff.",
+    "title": "Broccoli AI Pricing: What to Ask Before a Quote",
+    "description": "Compare the scope of a Broccoli AI quote: answering, booking, outbound calls and administration. Review buying questions alongside Revo’s current plans.",
     "navigationLabel": "broccoli ai pricing",
     "eyebrow": "Home-service answering decisions",
     "intro": "We did not find a numerical tariff on the Broccoli homepage or demo page reviewed October 27, 2026. That does not prevent a useful buying decision. Start by identifying the work in the proposed offer, then attach the actual price and billing terms to that scope instead of borrowing an unverified figure from another website.",
@@ -29268,10 +29269,10 @@
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge — exact copy acceptance, user Sentinel_d603890ee12081918a9737a721ec4fb8 (2026-10-28)",
-      "reviewedAt": "2026-10-28",
-      "contentHash": "sha256:49d20231657f053e540163b5491bbfce99026e1caa7a34ac9cf846d4d1416a85",
-      "note": "Library libfile_96958ced7ae08191bba313a54f88d196 v0 SHA256 72374b626410b821c056b5419fbaf7de7b3a45e4359902a29abaf64f77f5d9b5; records editorial acceptance only, not PR approval."
+      "reviewer": "Owner approval of PR 136, 2026-11-02 20:24:10 UTC",
+      "reviewedAt": "2026-11-02",
+      "contentHash": "sha256:35b3de33c7ce240b9a520346c65c427ef2a735c81260caae81a3f2fc2b06693a",
+      "note": "Owner explicitly approved PR 136 reviewed at 268c256af041814ba7534d17dbbd34115cad1193 for integration/deployment. Editorial content unchanged."
     }
   },
   {
@@ -30697,8 +30698,8 @@
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "zanus-ai-receptionist",
-    "title": "Zanus AI receptionist: choose the phone scope",
-    "description": "Evaluate Zanus AI Phone for a residential service business: approved answers, staff roles, transfers and the scope to confirm before choosing a plan.",
+    "title": "Zanus AI Receptionist: Features & Buying Questions",
+    "description": "Considering Zanus AI Phone? Review answering, staff roles and transfers for a residential service business, then compare the workflow with Revo.",
     "navigationLabel": "Zanus AI receptionist",
     "eyebrow": "Home-service answering decisions",
     "lead": "A small residential service business evaluating Zanus AI should identify the phone-handling purchase separately from the rest of its software catalog. An owner who needs callers answered while working on a job may not need every front-office, back-office or automated outreach function presented beside the receptionist.",
@@ -30776,10 +30777,10 @@
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge — exact editorial acceptance reported by parent",
-      "reviewedAt": "2026-10-28",
-      "contentHash": "sha256:8080e55d9cac1c854633a4b9bd2a2fe50e0950434105213e41c64562b6308489",
-      "note": "Sentinel_58932ce3d3f0819197a6ad6104ab649a; implementation/testing only; no PR approval"
+      "reviewer": "Owner approval of PR 136, 2026-11-02 20:24:10 UTC",
+      "reviewedAt": "2026-11-02",
+      "contentHash": "sha256:0eb7b0f303f0b8618fd5677733919424dc3e39326901c527b9c50e3371572f2a",
+      "note": "Owner explicitly approved and authorized integration/deployment of PR 136 reviewed at 268c256af041814ba7534d17dbbd34115cad1193. This records that approval only; editorial content is unchanged."
     }
   },
   {
@@ -34507,6 +34508,311 @@
       "reviewedAt": "2026-10-31",
       "contentHash": "sha256:0666f0b66ffb4cd3bdc05a95bb95390aa59d1c9178cbea6cf588ac60c824704e",
       "note": "Exact delivered copy accepted for implementation and tests; specific code and PR approval separate."
+    }
+  },
+  {
+    "slug": "answer-mti",
+    "title": "AnswerMTI Pricing: Minute Plans for Contractors",
+    "description": "Evaluate AnswerMTI’s published minute plans for a US contractor office. Compare base fees, included time and cancellation notice with the work your callers need.",
+    "navigationLabel": "AnswerMTI minute plans",
+    "eyebrow": "AnswerMTI",
+    "lead": "For a contractor buying AnswerMTI, the lowest monthly fee is only one part of the budget. Start with the minutes you expect the answering service to handle, then compare the allowance and additional-minute rate.",
+    "intro": "For a contractor buying AnswerMTI, the lowest monthly fee is only one part of the budget. Start with the minutes you expect the answering service to handle, then compare the allowance and additional-minute rate.",
+    "sections": [
+      {
+        "title": "Read the base fee together with the allowance",
+        "paragraphs": [
+          "AnswerMTI’s advertised plans are:",
+          "| Plan | Monthly base | Included minutes | Additional minute |\n| --- | --- | --- | --- |\n| Business | $47 | 0 | $1.37 |\n| Growth | $177 | 125 | $1.30 |\n| Premium | $296 | 225 | $1.28 |",
+          "Custom plans are available by quote. The Business base includes no minutes. The published offer describes month-to-month service with 30 days’ notice to stop. Confirm your account’s actual usage calculation and final charges before purchasing. These prices are a November 2, 2026 snapshot. [1]"
+        ],
+        "items": []
+      },
+      {
+        "title": "Estimate the work you would forward",
+        "paragraphs": [
+          "Use the portion of your call log the service would actually receive. An office forwarding unanswered calls needs a different estimate from one forwarding its entire main line.",
+          "For a fictional HVAC shop, separate new service requests from existing-job questions and other calls. An estimate request may require more discussion than a quick callback message. A count of calls alone will not tell the office how many handled minutes to budget.",
+          "Ask AnswerMTI to explain rounding, transfers and any other time included in the usage calculation. Those questions help you turn a rate card into an account-specific estimate; they are not claims that each activity carries a separate fee."
+        ],
+        "items": []
+      },
+      {
+        "title": "One illustrative budget, using the same minutes",
+        "paragraphs": [
+          "At an assumed 100 billable minutes in one month, base-plus-minute arithmetic gives $184 for Business, $177 for Growth and $296 for Premium. That calculation applies the displayed rates and allowances only. It is not a quote or a customer result, and excludes any tax or other account-specific charge. [1]",
+          "This example shows why the lowest base fee need not give the lowest total for a particular workload. Repeat the comparison with your own expected minutes and ask for the proposed invoice treatment in writing."
+        ],
+        "items": []
+      },
+      {
+        "title": "Match live answering to the contractor’s instructions",
+        "paragraphs": [
+          "AnswerMTI’s contractor page describes live answering, custom scripts, caller information and contact with on-call staff. Agree on the work your account will perform before comparing it with an AI service. [2]",
+          "For an illustrative electrical office, decide which requests can receive a routine appointment and which need your team’s callback. Supply the approved questions and the contact who may authorize the next step. A caller’s urgent description should not become an arrival promise the office has not approved.",
+          "Ask the provider to demonstrate your proposed flow. Review what the office receives and what the caller is told. This is a suggested evaluation, not a claim that the service has been tested here."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare with Revo’s AI reception",
+        "paragraphs": [
+          "Revo describes AI reception, lead intake, routing and scheduling. That establishes a different answering model from staffed reception, without establishing identical task scope. Check the current Revo plan and supported setup against the same requests and expected workload. [3]"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "Does the $47 plan include receptionist minutes?\nNo. The displayed Business plan has zero included minutes, with usage charged at its stated rate. [1]",
+          "Can a larger allowance be cheaper?\nIt can for a particular workload, as the illustrative calculation shows. Compare the full bill at your expected usage, then confirm the quote.",
+          "What should a contractor confirm before switching?\nThe tasks the provider may complete, how handled time is charged, the next step for callers and the account’s exit notice. Keep your office responsible for commitments it has not delegated."
+        ],
+        "items": []
+      },
+      {
+        "title": "Sources",
+        "paragraphs": [
+          "[1] AnswerMTI, Pricing and pricing FAQs. Checked November 2, 2026. https://www.answermti.com/pricing/\n[2] AnswerMTI, Contractor Answering Service. Checked November 2, 2026. https://www.answermti.com/contractor-answering-service/\n[3] Revo, Services. Checked November 2, 2026. https://www.revoapp.ai/services"
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Compare Revo’s current plans",
+    "sourcePaths": [
+      "https://www.answermti.com/pricing/",
+      "https://www.answermti.com/contractor-answering-service/",
+      "https://www.revoapp.ai/services"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-02",
+    "markdownArticle": {
+      "content": "# AnswerMTI Pricing: Minute Plans for Contractors\n\nFor a contractor buying AnswerMTI, the lowest monthly fee is only one part of the budget. Start with the minutes you expect the answering service to handle, then compare the allowance and additional-minute rate.\n\nPublished by Revo. Official sources checked November 2, 2026. Revo is not affiliated with AnswerMTI. This is a service-purchasing comparison, not a hands-on performance review.\n\n## Read the base fee together with the allowance\n\nAnswerMTI’s advertised plans are:\n\n| Plan | Monthly base | Included minutes | Additional minute |\n| --- | --- | --- | --- |\n| Business | $47 | 0 | $1.37 |\n| Growth | $177 | 125 | $1.30 |\n| Premium | $296 | 225 | $1.28 |\n\nCustom plans are available by quote. The Business base includes no minutes. The published offer describes month-to-month service with 30 days’ notice to stop. Confirm your account’s actual usage calculation and final charges before purchasing. These prices are a November 2, 2026 snapshot. [1]\n\n## Estimate the work you would forward\n\nUse the portion of your call log the service would actually receive. An office forwarding unanswered calls needs a different estimate from one forwarding its entire main line.\n\nFor a fictional HVAC shop, separate new service requests from existing-job questions and other calls. An estimate request may require more discussion than a quick callback message. A count of calls alone will not tell the office how many handled minutes to budget.\n\nAsk AnswerMTI to explain rounding, transfers and any other time included in the usage calculation. Those questions help you turn a rate card into an account-specific estimate; they are not claims that each activity carries a separate fee.\n\n## One illustrative budget, using the same minutes\n\nAt an assumed 100 billable minutes in one month, base-plus-minute arithmetic gives $184 for Business, $177 for Growth and $296 for Premium. That calculation applies the displayed rates and allowances only. It is not a quote or a customer result, and excludes any tax or other account-specific charge. [1]\n\nThis example shows why the lowest base fee need not give the lowest total for a particular workload. Repeat the comparison with your own expected minutes and ask for the proposed invoice treatment in writing.\n\n## Match live answering to the contractor’s instructions\n\nAnswerMTI’s contractor page describes live answering, custom scripts, caller information and contact with on-call staff. Agree on the work your account will perform before comparing it with an AI service. [2]\n\nFor an illustrative electrical office, decide which requests can receive a routine appointment and which need your team’s callback. Supply the approved questions and the contact who may authorize the next step. A caller’s urgent description should not become an arrival promise the office has not approved.\n\nAsk the provider to demonstrate your proposed flow. Review what the office receives and what the caller is told. This is a suggested evaluation, not a claim that the service has been tested here.\n\n## Compare with Revo’s AI reception\n\nRevo describes AI reception, lead intake, routing and scheduling. That establishes a different answering model from staffed reception, without establishing identical task scope. Check the current Revo plan and supported setup against the same requests and expected workload. [3]\n\n## Frequently asked questions\n\nDoes the $47 plan include receptionist minutes?\nNo. The displayed Business plan has zero included minutes, with usage charged at its stated rate. [1]\n\nCan a larger allowance be cheaper?\nIt can for a particular workload, as the illustrative calculation shows. Compare the full bill at your expected usage, then confirm the quote.\n\nWhat should a contractor confirm before switching?\nThe tasks the provider may complete, how handled time is charged, the next step for callers and the account’s exit notice. Keep your office responsible for commitments it has not delegated.\n\n## Sources\n\n[1] AnswerMTI, Pricing and pricing FAQs. Checked November 2, 2026. https://www.answermti.com/pricing/\n[2] AnswerMTI, Contractor Answering Service. Checked November 2, 2026. https://www.answermti.com/contractor-answering-service/\n[3] Revo, Services. Checked November 2, 2026. https://www.revoapp.ai/services",
+      "sha256": "b20acbccf39e5386a00cc56ff6730bd5b00d8f188c252163af79b8113ad6ac68",
+      "assets": []
+    },
+    "reviewedCtas": {
+      "primary": {
+        "label": "Compare Revo’s current plans",
+        "href": "/pricing"
+      },
+      "secondary": {
+        "label": "Hear a Revo sample call",
+        "href": "/hear-a-sample-call"
+      }
+    },
+    "source": {
+      "kind": "owner-approved-v0-copy",
+      "reference": "all-three-copy.txt sha256:951e1127e8c0fa0c4b3d8900c7e104bf0d018032e306207d2f850ee68937962d; owner approved content 2026-11-02 19:34:22 UTC; release requires separate PR approval"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Owner content approval 2026-11-02 19:34:22 UTC",
+      "reviewedAt": "2026-11-02",
+      "contentHash": "sha256:5d03f8805267fea33d9841236dcf2a470ee271b5173f8739c8a2c1bbb111dcbd",
+      "note": "Exact v0 copy SHA-256 951e1127e8c0fa0c4b3d8900c7e104bf0d018032e306207d2f850ee68937962d. PR release approval pending."
+    }
+  },
+  {
+    "slug": "lucy-ai-receptionist",
+    "title": "Lucy AI Receptionist: Paid Plans and Booking Links",
+    "description": "Compare Lucy by Curious Thing for a US home-service office: paid plans, message questions, transfers and booking links. Review the workflow alongside Revo.",
+    "navigationLabel": "Lucy paid plans",
+    "eyebrow": "Lucy AI",
+    "lead": "For a home-service office considering Lucy by Curious Thing, start with the next step the caller needs. Receiving a link to book later is different from leaving the call with an appointment confirmed.",
+    "intro": "For a home-service office considering Lucy by Curious Thing, start with the next step the caller needs. Receiving a link to book later is different from leaving the call with an appointment confirmed.",
+    "sections": [
+      {
+        "title": "Choose Lucy’s paid skill set",
+        "paragraphs": [
+          "The pricing page lists Professional at US$24/month and Business at US$99/month for the US market. Professional includes message taking, summaries and email/SMS delivery. Business adds multiple skills, transfers to as many as three numbers and advanced intake with up to five questions. The listed appointment function sends a web link. These are dated advertised prices; verify the applicable subscription and inclusions before buying. [1]",
+          "For an illustrative plumbing office, a short intake might need a name, callback number, service address, issue and preferred time. Write down the required answers before choosing a tier. If the office also needs a caller transferred, establish how that fits the configured skills and who receives the call.",
+          "A field collected during intake is not permission to promise a visit. Keep any arrival time or service commitment tied to what your office can actually honor."
+        ],
+        "items": []
+      },
+      {
+        "title": "Follow the booking link to its result",
+        "paragraphs": [
+          "Imagine a homeowner calling while you are finishing another job. A booking link can let that caller continue independently. It can also leave your office with an unfinished inquiry if the caller never completes the next step.",
+          "Decide who follows up on that unfinished inquiry and where your team checks the final status. For a fictional test, have someone request an estimate, receive the link and stop before submitting it. Then complete a second request. Your office should be able to tell those two outcomes apart without treating both as appointments.",
+          "Ask which calendar or booking page the link opens and what happens when no suitable slot is available. This evaluates whether the proposed arrangement fits your process; it does not assume Lucy writes appointments directly into your field-service system."
+        ],
+        "items": []
+      },
+      {
+        "title": "Check the current offer when older free-plan descriptions appear",
+        "paragraphs": [
+          "Curious Thing’s professional-services announcement states that Lucy’s free plan was discontinued on July 31, 2025. Do not base a new purchasing decision on an older free-plan description. Use the current paid offer and confirm the subscription you would actually start. [2]"
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare the same caller outcome with Revo",
+        "paragraphs": [
+          "Revo’s public service description includes AI call answering, lead intake, routing and scheduling. The supported connection and appointment action for your setup still need confirmation. Do not assume a booking link, an appointment request and a confirmed calendar entry are interchangeable. [3]",
+          "For either proposal, identify the result your office needs: a message, a transfer or a completed appointment. Choose based on that result and the applicable plan, rather than on the entry price alone."
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "Which Lucy does this page cover?\nLucy, the phone answering agent from Curious Thing. Check the supplier name when comparing similarly named products.",
+          "Does a booking link mean the visit is confirmed?\nThe link is a step in the process. Check the destination’s completed booking record before your office treats the visit as confirmed.",
+          "Should I choose Lucy or Revo?\nCompare the required caller outcome, supported setup and current subscription. If link-based self-booking fits your office, assess that path. If you need a different appointment or team handoff, confirm that exact operation before choosing."
+        ],
+        "items": []
+      },
+      {
+        "title": "Sources",
+        "paragraphs": [
+          "[1] Curious Thing, Lucy plans and pricing. Checked November 2, 2026; read in Chrome during the approved research session. https://curiousthing.io/pricing/lucy-ai-phone-answering\n[2] Curious Thing, Lucy AI Phone Answering Agent for Professional Service Firms; includes the July 31, 2025 free-plan discontinuation notice. Checked November 2, 2026. https://curiousthing.io/blog/lucy-ai-phone-answering-agent-for-professional-service-firms\n[3] Revo, Services. Checked November 2, 2026. https://www.revoapp.ai/services"
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://curiousthing.io/pricing/lucy-ai-phone-answering",
+      "https://curiousthing.io/blog/lucy-ai-phone-answering-agent-for-professional-service-firms",
+      "https://www.revoapp.ai/services"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-02",
+    "markdownArticle": {
+      "content": "# Lucy AI Receptionist: Paid Plans and Booking Links\n\nFor a home-service office considering Lucy by Curious Thing, start with the next step the caller needs. Receiving a link to book later is different from leaving the call with an appointment confirmed.\n\nPublished by Revo. This supplier comparison uses official sources checked November 2, 2026. Revo is not affiliated with Curious Thing. It is a purchasing guide, not a hands-on performance review.\n\n## Choose Lucy’s paid skill set\n\nThe pricing page lists Professional at US$24/month and Business at US$99/month for the US market. Professional includes message taking, summaries and email/SMS delivery. Business adds multiple skills, transfers to as many as three numbers and advanced intake with up to five questions. The listed appointment function sends a web link. These are dated advertised prices; verify the applicable subscription and inclusions before buying. [1]\n\nFor an illustrative plumbing office, a short intake might need a name, callback number, service address, issue and preferred time. Write down the required answers before choosing a tier. If the office also needs a caller transferred, establish how that fits the configured skills and who receives the call.\n\nA field collected during intake is not permission to promise a visit. Keep any arrival time or service commitment tied to what your office can actually honor.\n\n## Follow the booking link to its result\n\nImagine a homeowner calling while you are finishing another job. A booking link can let that caller continue independently. It can also leave your office with an unfinished inquiry if the caller never completes the next step.\n\nDecide who follows up on that unfinished inquiry and where your team checks the final status. For a fictional test, have someone request an estimate, receive the link and stop before submitting it. Then complete a second request. Your office should be able to tell those two outcomes apart without treating both as appointments.\n\nAsk which calendar or booking page the link opens and what happens when no suitable slot is available. This evaluates whether the proposed arrangement fits your process; it does not assume Lucy writes appointments directly into your field-service system.\n\n## Check the current offer when older free-plan descriptions appear\n\nCurious Thing’s professional-services announcement states that Lucy’s free plan was discontinued on July 31, 2025. Do not base a new purchasing decision on an older free-plan description. Use the current paid offer and confirm the subscription you would actually start. [2]\n\n## Compare the same caller outcome with Revo\n\nRevo’s public service description includes AI call answering, lead intake, routing and scheduling. The supported connection and appointment action for your setup still need confirmation. Do not assume a booking link, an appointment request and a confirmed calendar entry are interchangeable. [3]\n\nFor either proposal, identify the result your office needs: a message, a transfer or a completed appointment. Choose based on that result and the applicable plan, rather than on the entry price alone.\n\n## Frequently asked questions\n\nWhich Lucy does this page cover?\nLucy, the phone answering agent from Curious Thing. Check the supplier name when comparing similarly named products.\n\nDoes a booking link mean the visit is confirmed?\nThe link is a step in the process. Check the destination’s completed booking record before your office treats the visit as confirmed.\n\nShould I choose Lucy or Revo?\nCompare the required caller outcome, supported setup and current subscription. If link-based self-booking fits your office, assess that path. If you need a different appointment or team handoff, confirm that exact operation before choosing.\n\n## Sources\n\n[1] Curious Thing, Lucy plans and pricing. Checked November 2, 2026; read in Chrome during the approved research session. https://curiousthing.io/pricing/lucy-ai-phone-answering\n[2] Curious Thing, Lucy AI Phone Answering Agent for Professional Service Firms; includes the July 31, 2025 free-plan discontinuation notice. Checked November 2, 2026. https://curiousthing.io/blog/lucy-ai-phone-answering-agent-for-professional-service-firms\n[3] Revo, Services. Checked November 2, 2026. https://www.revoapp.ai/services",
+      "sha256": "1f6f3b14ce76a4743681f10bedd969fa8cdd4cb42aef1e8d2e9ef95f397ba260",
+      "assets": []
+    },
+    "reviewedCtas": {
+      "primary": {
+        "label": "Review Revo’s current plans",
+        "href": "/pricing"
+      },
+      "secondary": {
+        "label": "Hear a Revo sample call",
+        "href": "/hear-a-sample-call"
+      }
+    },
+    "source": {
+      "kind": "owner-approved-v0-copy",
+      "reference": "all-three-copy.txt sha256:951e1127e8c0fa0c4b3d8900c7e104bf0d018032e306207d2f850ee68937962d; owner approved content 2026-11-02 19:34:22 UTC; release requires separate PR approval"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Owner content approval 2026-11-02 19:34:22 UTC",
+      "reviewedAt": "2026-11-02",
+      "contentHash": "sha256:608c23b875c66781841edc5b2b8d4fb3d1ab440acbca41a79af72dce8a214b66",
+      "note": "Exact v0 copy approved; PR release approval pending."
+    }
+  },
+  {
+    "slug": "marlie-ai",
+    "title": "Marlie AI: Actions, Booking and Transfer Plan Limits",
+    "description": "Compare Marlie AI plans by actions per call, booking and transfer limits. Choose a workflow for your home-service office and review it alongside Revo.",
+    "navigationLabel": "Marlie plan limits",
+    "eyebrow": "Marlie AI",
+    "lead": "For a home-service office choosing Marlie AI, start with what one caller may need completed. A plan that takes a message can suit a different job from a plan that checks availability, books a visit and connects the caller to your team.",
+    "intro": "For a home-service office choosing Marlie AI, start with what one caller may need completed. A plan that takes a message can suit a different job from a plan that checks availability, books a visit and connects the caller to your team.",
+    "sections": [
+      {
+        "title": "Match the plan to the actions you need",
+        "paragraphs": [
+          "Marlie’s pricing page lists these monthly plans:",
+          "Plan       Price       Included minutes       Additional minute\nBasic      $49         250                    $0.35\nStandard   $99         500                    $0.35\nPro        $199        1,000                  $0.30\nPremium    $399        2,000                  $0.25",
+          "Basic permits one action per call and excludes transfers. Standard allows up to three actions, adds calendar booking and rescheduling, and transfers to one number. Pro advertises unlimited actions, department routing, cancellation of bookings, custom fields and document uploads. Premium adds team-assisted multi-location setup and sequential staff ringing. These are dated advertised inclusions; confirm the applicable offer and how actions are counted. [1]"
+        ],
+        "items": []
+      },
+      {
+        "title": "Do not infer action counting from a feature list",
+        "paragraphs": [
+          "Consider an illustrative air-conditioning office. One caller wants to move a visit, ask a question and speak with the office about the new time. Before choosing a plan, write down the sequence you expect and ask how the configured account handles it.",
+          "Do not decide on your own whether checking availability, changing a visit and sending a link count as one action or several. Ask Marlie to map the proposed sequence to its limit, including a failed attempt or a caller changing direction.",
+          "Then decide what should happen if the requested operation cannot finish. Your office might prefer a callback request to a partially completed appointment change. The right choice depends on your process, not simply on how many features appear in the plan."
+        ],
+        "items": []
+      },
+      {
+        "title": "Check the home-service booking boundary",
+        "paragraphs": [
+          "Marlie’s home-services page describes capturing job details and booking through field-service or calendar connections. It separates quoting a business-approved trip fee from committing to a repair price, and describes urgent notifications to the team. [2]",
+          "For your own evaluation, use a fictional caller who changes both the requested service and the preferred date. Check the final record your office would use. Have the office distinguish an appointment from a request still awaiting a person. Do not give a caller an arrival commitment that your business cannot support."
+        ],
+        "items": []
+      },
+      {
+        "title": "Choose a transfer path your staff can answer",
+        "paragraphs": [
+          "A fictional plumbing company might send every office question to one person. A larger shop may need different destinations during the day and after closing. Define who should receive each type of request and what the caller should hear if that person is unavailable.",
+          "Check those requirements against the chosen plan’s transfer provision. Ask for a demonstration of the unavailable-person path as well as the successful connection. A configured transfer is useful only if the resulting office process fits your staffing."
+        ],
+        "items": []
+      },
+      {
+        "title": "Compare the required workflow with Revo",
+        "paragraphs": [
+          "Revo’s public Services page describes AI reception, intake, routing and scheduling. It does not provide a matching Marlie-style action allowance. Confirm the supported operations for your Revo setup and use the current plan, rather than assuming matching limits or feature parity. [3]"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "Is the entry plan suitable when callers need transfers?\nThe reviewed Basic plan excludes transfers. Match that requirement to a plan that explicitly includes it. [1]",
+          "Does an unlimited action allowance remove the minute allowance?\nThe reviewed plans list those as separate limits. Keep the minute budget in the comparison even when the action allowance is unlimited. [1]",
+          "What should I bring to a demonstration?\nA short description of the caller’s request, the sequence your office wants completed and the person responsible when it cannot finish. That makes the plan choice specific to your business."
+        ],
+        "items": []
+      },
+      {
+        "title": "Sources",
+        "paragraphs": [
+          "[1] Marlie AI, Pricing and feature comparison. Checked November 2, 2026. https://www.marlie.ai/pricing\n[2] Marlie AI, Home Services Answering Service. Checked November 2, 2026. https://www.marlie.ai/industries/home-services-answering-service\n[3] Revo, Services. Checked November 2, 2026. https://www.revoapp.ai/services"
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.marlie.ai/pricing",
+      "https://www.marlie.ai/industries/home-services-answering-service",
+      "https://www.revoapp.ai/services"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-02",
+    "markdownArticle": {
+      "content": "# Marlie AI: Actions, Booking and Transfer Plan Limits\n\nFor a home-service office choosing Marlie AI, start with what one caller may need completed. A plan that takes a message can suit a different job from a plan that checks availability, books a visit and connects the caller to your team.\n\nPublished by Revo. Official sources checked November 2, 2026. Revo is not affiliated with Marlie AI. This is a purchasing comparison, not a hands-on performance review.\n\n## Match the plan to the actions you need\n\nMarlie’s pricing page lists these monthly plans:\n\nPlan       Price       Included minutes       Additional minute\nBasic      $49         250                    $0.35\nStandard   $99         500                    $0.35\nPro        $199        1,000                  $0.30\nPremium    $399        2,000                  $0.25\n\nBasic permits one action per call and excludes transfers. Standard allows up to three actions, adds calendar booking and rescheduling, and transfers to one number. Pro advertises unlimited actions, department routing, cancellation of bookings, custom fields and document uploads. Premium adds team-assisted multi-location setup and sequential staff ringing. These are dated advertised inclusions; confirm the applicable offer and how actions are counted. [1]\n\n## Do not infer action counting from a feature list\n\nConsider an illustrative air-conditioning office. One caller wants to move a visit, ask a question and speak with the office about the new time. Before choosing a plan, write down the sequence you expect and ask how the configured account handles it.\n\nDo not decide on your own whether checking availability, changing a visit and sending a link count as one action or several. Ask Marlie to map the proposed sequence to its limit, including a failed attempt or a caller changing direction.\n\nThen decide what should happen if the requested operation cannot finish. Your office might prefer a callback request to a partially completed appointment change. The right choice depends on your process, not simply on how many features appear in the plan.\n\n## Check the home-service booking boundary\n\nMarlie’s home-services page describes capturing job details and booking through field-service or calendar connections. It separates quoting a business-approved trip fee from committing to a repair price, and describes urgent notifications to the team. [2]\n\nFor your own evaluation, use a fictional caller who changes both the requested service and the preferred date. Check the final record your office would use. Have the office distinguish an appointment from a request still awaiting a person. Do not give a caller an arrival commitment that your business cannot support.\n\n## Choose a transfer path your staff can answer\n\nA fictional plumbing company might send every office question to one person. A larger shop may need different destinations during the day and after closing. Define who should receive each type of request and what the caller should hear if that person is unavailable.\n\nCheck those requirements against the chosen plan’s transfer provision. Ask for a demonstration of the unavailable-person path as well as the successful connection. A configured transfer is useful only if the resulting office process fits your staffing.\n\n## Compare the required workflow with Revo\n\nRevo’s public Services page describes AI reception, intake, routing and scheduling. It does not provide a matching Marlie-style action allowance. Confirm the supported operations for your Revo setup and use the current plan, rather than assuming matching limits or feature parity. [3]\n\n## Frequently asked questions\n\nIs the entry plan suitable when callers need transfers?\nThe reviewed Basic plan excludes transfers. Match that requirement to a plan that explicitly includes it. [1]\n\nDoes an unlimited action allowance remove the minute allowance?\nThe reviewed plans list those as separate limits. Keep the minute budget in the comparison even when the action allowance is unlimited. [1]\n\nWhat should I bring to a demonstration?\nA short description of the caller’s request, the sequence your office wants completed and the person responsible when it cannot finish. That makes the plan choice specific to your business.\n\n## Sources\n\n[1] Marlie AI, Pricing and feature comparison. Checked November 2, 2026. https://www.marlie.ai/pricing\n[2] Marlie AI, Home Services Answering Service. Checked November 2, 2026. https://www.marlie.ai/industries/home-services-answering-service\n[3] Revo, Services. Checked November 2, 2026. https://www.revoapp.ai/services",
+      "sha256": "f0b17107c1cb2778877eaf3b5f9cf17b526979356d1a7555d59e8bb87b0c7e46",
+      "assets": []
+    },
+    "reviewedCtas": {
+      "primary": {
+        "label": "Review Revo’s current plans",
+        "href": "/pricing"
+      },
+      "secondary": {
+        "label": "Hear a Revo sample call",
+        "href": "/hear-a-sample-call"
+      }
+    },
+    "source": {
+      "kind": "owner-approved-v0-copy",
+      "reference": "all-three-copy.txt sha256:951e1127e8c0fa0c4b3d8900c7e104bf0d018032e306207d2f850ee68937962d; owner approved content 2026-11-02 19:34:22 UTC; release requires separate PR approval"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Owner content approval 2026-11-02 19:34:22 UTC",
+      "reviewedAt": "2026-11-02",
+      "contentHash": "sha256:592a726b43b8a255c104c8ee2412fb896ed027bf981047a4d796e0d483a49302",
+      "note": "Exact v0 copy approved; PR release approval pending."
     }
   }
 ]

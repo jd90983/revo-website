@@ -1698,5 +1698,20 @@
     "slug": "aspire-answering-service",
     "label": "Home-service buying guide",
     "template": "workflow"
+  },
+  {
+    "slug": "answer-mti",
+    "label": "AnswerMTI",
+    "template": "workflow"
+  },
+  {
+    "slug": "lucy-ai-receptionist",
+    "label": "Lucy AI",
+    "template": "workflow"
+  },
+  {
+    "slug": "marlie-ai",
+    "label": "Marlie AI",
+    "template": "workflow"
   }
 ]
