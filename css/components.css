@@ -517,3 +517,13 @@
   line-height: var(--line-height-relaxed);
   color: var(--color-gray-light);
 }
+
+/* Longer demo labels wrap within the five explicitly selected hero CTAs. */
+.btn-primary-large[data-seo-demo-cta="hero"] {
+  width: auto;
+  max-width: 100%;
+  white-space: normal;
+  justify-content: center;
+  text-align: center;
+}
+.pricing-header [data-seo-demo-cta="hero"] { margin-top: 16px; }
