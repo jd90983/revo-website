@@ -519,7 +519,8 @@
 }
 
 /* Longer demo labels wrap within the five explicitly selected hero CTAs. */
-.btn-primary-large[data-seo-demo-cta="hero"] {
+.btn-primary-large[data-seo-demo-cta="hero"],
+.btn-primary-large[data-reviewed-cta="primary"] {
   width: auto;
   max-width: 100%;
   white-space: normal;

@@ -10,15 +10,15 @@ The three existing guide snippets were prepared under the owner's authorization 
 
 ## Industry decisions
 
-The sitemap adds 13 existing, canonical, indexable destinations after removing unsupported numerical outcomes, unverifiable named testimonials and autonomous learning/estimation claims from those destinations. Their intake examples describe information to collect, rather than asserting measured results or automatic job acceptance. The shared existing lead form remains functionally unchanged; a scoped copy replaces its unsupported customer-count/growth promotional copy. Other pages keep their existing form template.
+The sitemap adds 19 existing, canonical, indexable destinations after removing unsupported numerical outcomes, unverifiable named testimonials and autonomous learning/estimation claims from those destinations. Their intake examples describe information to collect, rather than asserting measured results or automatic job acceptance. The shared existing lead form remains functionally unchanged; a scoped copy replaces its unsupported customer-count/growth promotional copy. Other pages keep their existing form template.
 
-Added suffixes under `/industry_`: alarm_security, carpet_cleaning, chimney_sweep, computer_repair, junk_removal, lawn_care, maid_cleaning, pool_services, pressure_washing, property_maintenance, solar_installation, window_cleaning, tilling.
+Added suffixes under `/industry_`: alarm_security, carpet_cleaning, chimney_sweep, computer_repair, junk_removal, lawn_care, maid_cleaning, pool_services, pressure_washing, property_maintenance, solar_installation, window_cleaning, tilling, building_construction_trades, construction, general_contracting, franchises, marketing_media_advertising, real_estate_property_management.
 
 `/industry_tilling` is retained as the canonical URL; visible wording is corrected to **Tiling**, matching the tile-installation content. No new URL or redirect is invented.
 
-Six omissions remain intentional pending separate editorial/product review: building_construction_trades, construction and general_contracting need differentiated intent; franchises, marketing_media_advertising and real_estate_property_management need scope review. No content on those six pages is changed. The five existing noindex conversion/utility pages remain excluded.
+The remaining six were initially held for overlap/scope review. On closer review, their existing labels and the verified general call-intake capability were sufficient for factual correction within the same PR. Construction distinguishes proposed/ongoing project inquiries; general contracting distinguishes estimate requests/existing jobs; building/construction/trades collects the specific trade and separates multiple tasks. Franchises distinguishes location requests from office inquiries and qualifies plan/configuration; marketing distinguishes new/existing client requests without performance promises; real estate distinguishes leasing, viewing and maintenance intake without eligibility or emergency-service claims. No new URLs, consolidation, removal or unverified service capability is needed. All 19 can therefore be included; overlap remains an editorial characteristic, not evidence that their URLs should be excluded. The five existing noindex conversion/utility pages remain excluded.
 
-The resulting built sitemap contains 389 URLs: 373 existing + 13 reviewed industries + 3 approved guides. Acceptance by a search engine is not evidence of indexation.
+The resulting built sitemap contains 395 URLs: 373 existing + 19 reviewed industries + 3 approved guides. Acceptance by a search engine is not evidence of indexation.
 
 ## Conversion measurement
 

@@ -79,10 +79,10 @@ test('demo clicks require consent, are deduplicated, and never replace campaigns
  for(const options of [{consent:'denied'},{consent:null},{gpc:true},{storageError:true},{path:'/services'},{href:'/free-trial'}]){const a=run(options);a.click();assert.equal(a.sent.length,0);}
  assert.ok(!/setItem|generate_lead|trial_started|utm_/.test(script));
 });
-test('sitemap additions exclude the five noindex destinations and unresolved industry overlaps',()=>{
+test('sitemap additions exclude the five noindex destinations and includes factually corrected industry pages',()=>{
  const sitemap=read('sitemap.xml');
- for(const path of ['ai-receptionist-demo','download','download-copy','revo-landing-page-campaign-1','thank-you','industry_construction','industry_building_construction_trades','industry_general_contracting','industry_franchises','industry_marketing_media_advertising','industry_real_estate_property_management'])assert.ok(!sitemap.includes('<loc>https://www.revoapp.ai/'+path+'</loc>'));
- for(const path of ['industry_tilling','industry_alarm_security','industry_window_cleaning'])assert.ok(sitemap.includes('<loc>https://www.revoapp.ai/'+path+'</loc>'));
+ for(const path of ['ai-receptionist-demo','download','download-copy','revo-landing-page-campaign-1','thank-you'])assert.ok(!sitemap.includes('<loc>https://www.revoapp.ai/'+path+'</loc>'));
+ for(const path of ['industry_tilling','industry_alarm_security','industry_window_cleaning','industry_construction','industry_building_construction_trades','industry_general_contracting','industry_franchises','industry_marketing_media_advertising','industry_real_estate_property_management'])assert.ok(sitemap.includes('<loc>https://www.revoapp.ai/'+path+'</loc>'));
  const tile=read('industry_tilling.html');assert.ok(tile.includes('Tiling'));assert.ok(!tile.includes('Tilling'));assert.ok(!tile.includes('home-service-testimonial-quote'));assert.ok(!tile.includes('data-target='));
  assert.equal(JSON.parse(read('seo/app/site.config.json')).acquisitionEnabled,false);
 });
