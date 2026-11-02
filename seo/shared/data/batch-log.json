@@ -1123,5 +1123,23 @@
       "added lucy-ai-receptionist as draft",
       "added marlie-ai as draft"
     ]
+  },
+  {
+    "batchId": "2026-11-02-seven-approved-reception-guides",
+    "batchHash": "sha256:f29cfbe91508711bb3c6cf0650049935b0b3bc5e60bdb90312f3375c45225a9b",
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Seven copy texts approved 2026-11-02T21:24:55Z; separate PR release approval required"
+    },
+    "appliedAt": "2026-11-02",
+    "changes": [
+      "added alivo-ai-receptionist as draft",
+      "added podium-ai-home-services as draft",
+      "added agentzap-ai-receptionist as draft",
+      "added cloudtalk-ai-voice-agents as draft",
+      "added emitrr-ai-agent-home-services as draft",
+      "added autocalls-ai-receptionist as draft",
+      "added plumbline-answering-service-cost as draft"
+    ]
   }
 ]

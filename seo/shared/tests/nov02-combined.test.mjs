@@ -12,6 +12,33 @@ import {OFFICIAL_PRICING} from '../lib/official-pricing.ts';
 import {OfficialPricing, PricingSummary} from '../components/OfficialPricing.tsx';
 const read=path=>readFileSync(new URL('../../../'+path,import.meta.url),'utf8');
 const selected=['zanus-ai-receptionist','broccoli-ai-pricing','rosie-ai-pricing'];
+test('seven additional November 2 articles preserve approved bodies and disclose the sole metadata adjustment',()=>{
+ const source=read('evidence/2026-11-02/seven-approved-public-copy.txt');
+ const parts=[...source.matchAll(/PAGE (\d+)\n([\s\S]*?)\nEND PAGE/g)];
+ assert.equal(parts.length,7);
+ for(const [,number,part] of parts){
+  const title=part.match(/^Title: (.+)$/m)[1],url=part.match(/^Proposed URL: (.+)$/m)[1];
+  const page=REVIEW_PAGES.find(p=>p.slug===url.split('/').at(-1));
+  assert.equal(page.title,title);
+  const body=part.slice(part.indexOf('\n\n')+2).split('\nPrimary CTA:')[0];
+  const actual=page.markdownArticle.content.split('\n\n## Official sources')[0].replace(/^#{1,2} /gm,'');
+  assert.equal(actual,body,number+': exact article body');
+  assert.equal(page.markdownArticle.sha256,createHash('sha256').update(page.markdownArticle.content).digest('hex'));
+  const description=part.match(/^Meta description: (.+)$/m)[1];
+  if(page.slug==='agentzap-ai-receptionist'){
+   assert.equal(description.length,163);
+   assert.equal(page.description,"Review AgentZap's monthly plans and setup fee, then confirm waiver terms, included reception scope and usage before choosing a contractor phone service.");
+   assert.equal(page.description.length,152);
+   assert.match(page.source.reference,/not previously owner-approved verbatim/);
+  }else assert.equal(page.description,description);
+  const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page}));
+  assert.ok(html.includes('href="/pricing"'));assert.ok(html.includes('href="/hear-a-sample-call"'));
+  assert.ok(!html.includes('PRIVATE EDITORIAL APPENDIX'));
+  for(const [,href] of part.matchAll(/^\[\d+\] (https:\/\/\S+)$/gm))assert.ok(page.sourcePaths.includes(href));
+ }
+ const pending=REVIEW_PAGES.map(p=>parts.some(([, ,part])=>part.includes('/'+p.slug+'\n'))?{...p,review:{...p.review,releaseApproval:'pending'}}:p);
+ assert.throws(()=>assertReleaseReview(pending,'production'),/Owner approval of the exact PR/);
+});
 test('displayed launch prices disclose three post-trial payments and the regular rate without changing amounts',()=>{
  const page=read('pricing.html');assert.ok(!page.includes('lock in Launch Offer'));
  for(const [index,amount,regular] of [[0,'$87.50','$175'],[1,'$175','$350'],[2,'$350','$700']]){
@@ -38,7 +65,7 @@ test('only the three selected guides switch to a demo hero; new guides retain th
   const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page:p}));
   assert.equal(html.includes('data-seo-demo-cta="hero"'),selected.includes(p.slug),p.slug);
   if(selected.includes(p.slug))assert.ok(html.includes('href="/ai-receptionist-demo#book-demo"'));
-  if(p.reviewedCtas){assert.ok(html.includes(p.reviewedCtas.primary.label));assert.ok(html.includes('href="/hear-a-sample-call"'));}
+  if(p.reviewedCtas){const label=renderToStaticMarkup(React.createElement('span',null,p.reviewedCtas.primary.label)).slice(6,-7);assert.ok(html.includes(label));assert.ok(html.includes('href="/hear-a-sample-call"'));}
  }
 });
 test('the two static pages retain their canonicals and expose the same tracked demo destination',()=>{
