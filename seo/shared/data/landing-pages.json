@@ -13647,11 +13647,10 @@
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Codex automated implementation review",
+      "reviewer": "Owner approval of PR 136, 2026-11-02 20:24:10 UTC",
       "reviewedAt": "2026-11-02",
       "contentHash": "sha256:dd550a29e22d192c50dfb3f5aeb255621c4f1e020b3aee51b25a6b9dd9cabdd0",
-      "note": "Owner authorized metadata/CTA PR preparation; technical review only. Exact PR human approval pending before merge/release.",
-      "releaseApproval": "pending"
+      "note": "Owner explicitly approved PR 136 reviewed at 268c256af041814ba7534d17dbbd34115cad1193 for integration/deployment. Editorial content unchanged."
     }
   },
   {
@@ -29270,11 +29269,10 @@
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Codex automated implementation review",
+      "reviewer": "Owner approval of PR 136, 2026-11-02 20:24:10 UTC",
       "reviewedAt": "2026-11-02",
       "contentHash": "sha256:35b3de33c7ce240b9a520346c65c427ef2a735c81260caae81a3f2fc2b06693a",
-      "note": "Owner authorized metadata/CTA PR preparation; technical review only. Exact PR human approval pending before merge/release.",
-      "releaseApproval": "pending"
+      "note": "Owner explicitly approved PR 136 reviewed at 268c256af041814ba7534d17dbbd34115cad1193 for integration/deployment. Editorial content unchanged."
     }
   },
   {
@@ -30779,11 +30777,10 @@
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Codex automated implementation review",
+      "reviewer": "Owner approval of PR 136, 2026-11-02 20:24:10 UTC",
       "reviewedAt": "2026-11-02",
       "contentHash": "sha256:0eb7b0f303f0b8618fd5677733919424dc3e39326901c527b9c50e3371572f2a",
-      "note": "Owner authorized metadata/CTA PR preparation; this is technical review of the proposed snippet, not human approval. Separate exact PR approval required before merge/release.",
-      "releaseApproval": "pending"
+      "note": "Owner explicitly approved and authorized integration/deployment of PR 136 reviewed at 268c256af041814ba7534d17dbbd34115cad1193. This records that approval only; editorial content is unchanged."
     }
   },
   {
