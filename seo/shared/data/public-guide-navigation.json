@@ -1748,5 +1748,30 @@
     "slug": "plumbline-answering-service-cost",
     "label": "PlumbLine reception review",
     "template": "workflow"
+  },
+  {
+    "slug": "compare/landscaping-answering-services",
+    "label": "Landscaping reception",
+    "template": "workflow"
+  },
+  {
+    "slug": "retell-ai-pricing",
+    "label": "Voice platform or reception service",
+    "template": "workflow"
+  },
+  {
+    "slug": "synthflow-pricing",
+    "label": "Enterprise scope and reception fit",
+    "template": "workflow"
+  },
+  {
+    "slug": "trillet-ai-receptionist",
+    "label": "Choose the correct product path",
+    "template": "workflow"
+  },
+  {
+    "slug": "newo-ai-receptionist",
+    "label": "Published terms, no performance rating",
+    "template": "workflow"
   }
 ]
