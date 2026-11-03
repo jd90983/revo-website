@@ -35526,7 +35526,11 @@
       "reviewedAt": "2026-11-03",
       "contentHash": "sha256:6f620f20d4da1091264a2707afde1fa29087b349eeec4fe5cc51cf3e1566bc79",
       "note": "Owner approved supplied copy for implementation; exact source/body/metadata checked; not an independent human review; specific PR release approval pending",
-      "releaseApproval": "pending"
+      "releaseApprovedPR": 140,
+      "releaseApprovedHead": "adf541ef3c3f115573ec0dbf5dda01c50dfaead3",
+      "releaseApprovedAt": "2026-11-03",
+      "releaseApprovalRecord": "Owner explicitly authorized publishing PR 140 while its tested head was adf541ef3c3f115573ec0dbf5dda01c50dfaead3. This subsequent change records that authorization only; editorial content and code are unchanged. No independent human review is claimed.",
+      "releaseApprovalRecordedAt": "2026-11-03T23:54:48.273935+00:00"
     }
   },
   {
@@ -35595,7 +35599,11 @@
       "reviewedAt": "2026-11-03",
       "contentHash": "sha256:4f602eabf56c4d0be82d68e451024055bed06f3cb36689a3e9bf48eb9f08853d",
       "note": "Owner approved supplied copy for implementation; exact source/body/metadata checked; not an independent human review; specific PR release approval pending",
-      "releaseApproval": "pending"
+      "releaseApprovedPR": 140,
+      "releaseApprovedHead": "adf541ef3c3f115573ec0dbf5dda01c50dfaead3",
+      "releaseApprovedAt": "2026-11-03",
+      "releaseApprovalRecord": "Owner explicitly authorized publishing PR 140 while its tested head was adf541ef3c3f115573ec0dbf5dda01c50dfaead3. This subsequent change records that authorization only; editorial content and code are unchanged. No independent human review is claimed.",
+      "releaseApprovalRecordedAt": "2026-11-03T23:54:48.274064+00:00"
     }
   },
   {
@@ -35671,7 +35679,11 @@
       "reviewedAt": "2026-11-03",
       "contentHash": "sha256:e97358c6f0bd4853ffcb8908cac4d435cde94e9fc4ae2639dbf5e854b8840898",
       "note": "Owner approved supplied copy for implementation; exact source/body/metadata checked; not an independent human review; specific PR release approval pending",
-      "releaseApproval": "pending"
+      "releaseApprovedPR": 140,
+      "releaseApprovedHead": "adf541ef3c3f115573ec0dbf5dda01c50dfaead3",
+      "releaseApprovedAt": "2026-11-03",
+      "releaseApprovalRecord": "Owner explicitly authorized publishing PR 140 while its tested head was adf541ef3c3f115573ec0dbf5dda01c50dfaead3. This subsequent change records that authorization only; editorial content and code are unchanged. No independent human review is claimed.",
+      "releaseApprovalRecordedAt": "2026-11-03T23:54:48.274066+00:00"
     }
   },
   {
@@ -35748,7 +35760,11 @@
       "reviewedAt": "2026-11-03",
       "contentHash": "sha256:8222c23adb49e451323b8b202d34d5ce4c8ff602a3474c02c075eb2be9a5557e",
       "note": "Owner approved supplied copy for implementation; exact source/body/metadata checked; not an independent human review; specific PR release approval pending",
-      "releaseApproval": "pending"
+      "releaseApprovedPR": 140,
+      "releaseApprovedHead": "adf541ef3c3f115573ec0dbf5dda01c50dfaead3",
+      "releaseApprovedAt": "2026-11-03",
+      "releaseApprovalRecord": "Owner explicitly authorized publishing PR 140 while its tested head was adf541ef3c3f115573ec0dbf5dda01c50dfaead3. This subsequent change records that authorization only; editorial content and code are unchanged. No independent human review is claimed.",
+      "releaseApprovalRecordedAt": "2026-11-03T23:54:48.274067+00:00"
     }
   },
   {
@@ -35824,7 +35840,11 @@
       "reviewedAt": "2026-11-03",
       "contentHash": "sha256:01083deafbba07e7b6341b230f40e9746e474f8d875030b7cd903a16ece406fd",
       "note": "Owner approved supplied copy for implementation; exact source/body/metadata checked; not an independent human review; specific PR release approval pending",
-      "releaseApproval": "pending"
+      "releaseApprovedPR": 140,
+      "releaseApprovedHead": "adf541ef3c3f115573ec0dbf5dda01c50dfaead3",
+      "releaseApprovedAt": "2026-11-03",
+      "releaseApprovalRecord": "Owner explicitly authorized publishing PR 140 while its tested head was adf541ef3c3f115573ec0dbf5dda01c50dfaead3. This subsequent change records that authorization only; editorial content and code are unchanged. No independent human review is claimed.",
+      "releaseApprovalRecordedAt": "2026-11-03T23:54:48.274068+00:00"
     }
   }
 ]
