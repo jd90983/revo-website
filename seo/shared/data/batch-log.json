@@ -1141,5 +1141,21 @@
       "added autocalls-ai-receptionist as draft",
       "added plumbline-answering-service-cost as draft"
     ]
+  },
+  {
+    "batchId": "2026-11-03-five-approved-reception-guides",
+    "batchHash": "sha256:0ff4e9a93be5de34c486b65a73199c90161de23229d238121090b7f954034cde",
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "revo-five-pages-copy-review.txt sha256:65d9a527871b0bbc63aacb3fffc6f6317650ab26abaf778050b48499d563b003; Library libfile_303bd57837388191830dcf52d354ef66; owner approved copy for implementation and testing November 3, 2026; exact PR release approval pending"
+    },
+    "appliedAt": "2026-11-03",
+    "changes": [
+      "added compare/landscaping-answering-services as draft",
+      "added retell-ai-pricing as draft",
+      "added synthflow-pricing as draft",
+      "added trillet-ai-receptionist as draft",
+      "added newo-ai-receptionist as draft"
+    ]
   }
 ]
