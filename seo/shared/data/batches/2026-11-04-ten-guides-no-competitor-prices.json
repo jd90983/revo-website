@@ -1,0 +1,605 @@
+{
+  "batchId": "2026-11-04-ten-guides-no-competitor-prices",
+  "source": {
+    "kind": "owner-approved-exact-copy",
+    "reference": "Owner-approved exact public copy (v2, no competitor prices); evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt SHA256 2d097bc4efa47b690583ecded4d789a97acfb4268363aecef3a569cf32cb729d; approved by Jorge Perez in chat on November 4, 2026; implementation by Claude"
+  },
+  "operations": [
+    {
+      "op": "update",
+      "record": {
+        "slug": "virtual-receptionist-pricing",
+        "title": "Virtual Receptionist Pricing: How the Models Work",
+        "description": "Virtual receptionists charge by minute, by call or by flat plan. Learn which costs to count before you compare quotes for a home service business.",
+        "navigationLabel": "Virtual receptionist pricing",
+        "eyebrow": "Pricing models explained",
+        "lead": "Virtual receptionist pricing is easier to compare once you know which unit you are buying. Most offers fall into three models, and each one charges for a different part of the same call.",
+        "intro": "Virtual receptionist pricing is easier to compare once you know which unit you are buying. Most offers fall into three models, and each one charges for a different part of the same call.",
+        "sections": [
+          {
+            "title": "The three pricing models",
+            "paragraphs": [
+              "- **Live receptionist minutes:** you pay for the time a person spends on your calls.\n- **AI minutes added to a phone plan:** you keep a phone plan and pay extra for AI answering time.\n- **Flat AI reception plan:** one monthly price with an included allowance of minutes."
+            ],
+            "items": []
+          },
+          {
+            "title": "Count these before you ask for quotes",
+            "paragraphs": [
+              "Write down four numbers from your phone records: calls per month, average call length, share that arrive after hours, and share that need a person. Then ask every provider the same three questions: what happens to the bill on very short calls, on transferred calls, and when you pass the allowance."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo is a flat AI reception plan. Solo is $87.50/mo at launch for the first three monthly payments after the trial, then $175/mo, with 100 minutes; calls under 20 seconds do not count. Every plan answers 24/7, books appointments with your rules, sends SMS follow-up and logs a call summary. Transfers to your team and a connection to your field service software start on Crew. [See all plans](/pricing)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Is a virtual receptionist cheaper than an answering service?\nIt depends on your call mix. Compare the same month of calls under each provider's billing rules.\n### Do AI receptionists charge per minute?\nSome do; others include minutes in a flat plan. Ask what happens after the allowance."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# Virtual Receptionist Pricing: How the Models Work\n\nVirtual receptionist pricing is easier to compare once you know which unit you are buying. Most offers fall into three models, and each one charges for a different part of the same call.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 4, 2026.\n\n## The three pricing models\n- **Live receptionist minutes:** you pay for the time a person spends on your calls.\n- **AI minutes added to a phone plan:** you keep a phone plan and pay extra for AI answering time.\n- **Flat AI reception plan:** one monthly price with an included allowance of minutes.\n\n## Count these before you ask for quotes\nWrite down four numbers from your phone records: calls per month, average call length, share that arrive after hours, and share that need a person. Then ask every provider the same three questions: what happens to the bill on very short calls, on transferred calls, and when you pass the allowance.\n\n## Where Revo fits\nRevo is a flat AI reception plan. Solo is $87.50/mo at launch for the first three monthly payments after the trial, then $175/mo, with 100 minutes; calls under 20 seconds do not count. Every plan answers 24/7, books appointments with your rules, sends SMS follow-up and logs a call summary. Transfers to your team and a connection to your field service software start on Crew. [See all plans](/pricing).\n\n## Frequently asked questions\n### Is a virtual receptionist cheaper than an answering service?\nIt depends on your call mix. Compare the same month of calls under each provider's billing rules.\n### Do AI receptionists charge per minute?\nSome do; others include minutes in a flat plan. Ask what happens after the allowance.",
+          "sha256": "07dbe37cb692348b492137c809a047375f58eccb36d3147ec73a5472edd6b6dc",
+          "assets": []
+        },
+        "related": [
+          "answering-service-cost",
+          "choose-virtual-receptionist"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy (v2, no competitor prices); evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt SHA256 2d097bc4efa47b690583ecded4d789a97acfb4268363aecef3a569cf32cb729d; approved by Jorge Perez in chat on November 4, 2026; implementation by Claude"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "grasshopper-pricing",
+        "title": "Grasshopper Pricing: What a Phone Line Does Not Cover",
+        "description": "Comparing Grasshopper? A virtual phone line routes calls but does not answer them. See what to check before you rely on it for job calls.",
+        "navigationLabel": "Grasshopper pricing",
+        "eyebrow": "Phone line or reception",
+        "lead": "Grasshopper sells a virtual business phone line. Its current plans are on [Grasshopper's pricing page](https://grasshopper.com/pricing/). Before you compare, settle one question: a phone line routes calls, but it does not decide who answers them.",
+        "intro": "Grasshopper sells a virtual business phone line. Its current plans are on [Grasshopper's pricing page](https://grasshopper.com/pricing/). Before you compare, settle one question: a phone line routes calls, but it does not decide who answers them.",
+        "sections": [
+          {
+            "title": "Questions to ask before you buy a phone line",
+            "paragraphs": [
+              "How many numbers and extensions do your crews need? What happens when nobody picks up: another phone, a menu or voicemail? Who records the greetings? Those answers decide whether a line alone covers your business."
+            ],
+            "items": []
+          },
+          {
+            "title": "The call nobody picks up",
+            "paragraphs": [
+              "For a home service business, the expensive call is the one that rings out while the crew is on a roof or under a sink. If voicemail is the default, the job often goes to the next company the caller tries."
+            ],
+            "items": []
+          },
+          {
+            "title": "Using Revo with your phone line",
+            "paragraphs": [
+              "Revo answers calls 24/7, books appointments with your rules, sends SMS follow-up and logs a summary of each call. It is a reception service, not a phone system, so you can keep the line you already have. Plans start at $87.50/mo at launch. [See Revo's plans](/pricing)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Does Revo replace Grasshopper?\nNo. Revo answers and books calls; your phone line can stay.\n### Where are Grasshopper's prices?\nOn [Grasshopper's pricing page](https://grasshopper.com/pricing/)."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://grasshopper.com/pricing/",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# Grasshopper Pricing: What a Phone Line Does Not Cover\n\nGrasshopper sells a virtual business phone line. Its current plans are on [Grasshopper's pricing page](https://grasshopper.com/pricing/). Before you compare, settle one question: a phone line routes calls, but it does not decide who answers them.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 4, 2026.\n\n## Questions to ask before you buy a phone line\nHow many numbers and extensions do your crews need? What happens when nobody picks up: another phone, a menu or voicemail? Who records the greetings? Those answers decide whether a line alone covers your business.\n\n## The call nobody picks up\nFor a home service business, the expensive call is the one that rings out while the crew is on a roof or under a sink. If voicemail is the default, the job often goes to the next company the caller tries.\n\n## Using Revo with your phone line\nRevo answers calls 24/7, books appointments with your rules, sends SMS follow-up and logs a summary of each call. It is a reception service, not a phone system, so you can keep the line you already have. Plans start at $87.50/mo at launch. [See Revo's plans](/pricing).\n\n## Frequently asked questions\n### Does Revo replace Grasshopper?\nNo. Revo answers and books calls; your phone line can stay.\n### Where are Grasshopper's prices?\nOn [Grasshopper's pricing page](https://grasshopper.com/pricing/).",
+          "sha256": "1ac344315525cfdd6eeaa6a2bb8c3dadabff6d351b65dd32c6d6645470040905",
+          "assets": []
+        },
+        "related": [
+          "missed-calls",
+          "compare/ai-vs-voicemail"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy (v2, no competitor prices); evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt SHA256 2d097bc4efa47b690583ecded4d789a97acfb4268363aecef3a569cf32cb729d; approved by Jorge Perez in chat on November 4, 2026; implementation by Claude"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "automated-phone-answering-system",
+        "title": "Automated Phone Answering System: Menu or AI Receptionist?",
+        "description": "Choose an automated phone answering system by what the caller needs: a menu that routes the call, or an AI receptionist that books the job.",
+        "navigationLabel": "Automated phone answering",
+        "eyebrow": "Menu or conversation",
+        "lead": "An automated phone answering system can mean two different products. A menu (auto attendant) plays options and routes the call. An AI receptionist holds a conversation and finishes the task. Choose by what most of your callers need.",
+        "intro": "An automated phone answering system can mean two different products. A menu (auto attendant) plays options and routes the call. An AI receptionist holds a conversation and finishes the task. Choose by what most of your callers need.",
+        "sections": [
+          {
+            "title": "Menus route, they do not resolve",
+            "paragraphs": [
+              "A menu works when callers know where to go: billing, a specific technician, an existing job. Many business phone plans include one. The limit is that someone still has to answer the routed call, or it ends in voicemail."
+            ],
+            "items": []
+          },
+          {
+            "title": "AI receptionists handle the request",
+            "paragraphs": [
+              "A homeowner with a leaking water heater does not want option three. An AI receptionist asks what happened, collects the address and books the visit under your rules. Revo does this 24/7 on every plan, with SMS follow-up and a call summary."
+            ],
+            "items": []
+          },
+          {
+            "title": "A simple test before you buy",
+            "paragraphs": [
+              "Take 30 recent calls and mark each one \"knew where to go\" or \"needed help\". If most needed help, a menu adds a step before the same problem. Many businesses use both: a menu for existing customers and an AI receptionist for new requests."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Is an auto attendant the same as an AI receptionist?\nNo. A menu routes calls; an AI receptionist converses and completes tasks such as booking.\n### Can Revo transfer to my team?\nYes, on Crew and Fleet. [See plans](/pricing)."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# Automated Phone Answering System: Menu or AI Receptionist?\n\nAn automated phone answering system can mean two different products. A menu (auto attendant) plays options and routes the call. An AI receptionist holds a conversation and finishes the task. Choose by what most of your callers need.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 4, 2026.\n\n## Menus route, they do not resolve\nA menu works when callers know where to go: billing, a specific technician, an existing job. Many business phone plans include one. The limit is that someone still has to answer the routed call, or it ends in voicemail.\n\n## AI receptionists handle the request\nA homeowner with a leaking water heater does not want option three. An AI receptionist asks what happened, collects the address and books the visit under your rules. Revo does this 24/7 on every plan, with SMS follow-up and a call summary.\n\n## A simple test before you buy\nTake 30 recent calls and mark each one \"knew where to go\" or \"needed help\". If most needed help, a menu adds a step before the same problem. Many businesses use both: a menu for existing customers and an AI receptionist for new requests.\n\n## Frequently asked questions\n### Is an auto attendant the same as an AI receptionist?\nNo. A menu routes calls; an AI receptionist converses and completes tasks such as booking.\n### Can Revo transfer to my team?\nYes, on Crew and Fleet. [See plans](/pricing).",
+          "sha256": "a80f70f31a956993f43a48424dcabf931824d6b2cf4b09e33767c5b2ef270476",
+          "assets": []
+        },
+        "related": [
+          "ivr-system-cost",
+          "call-routing"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy (v2, no competitor prices); evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt SHA256 2d097bc4efa47b690583ecded4d789a97acfb4268363aecef3a569cf32cb729d; approved by Jorge Perez in chat on November 4, 2026; implementation by Claude"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "hatch-ai-pricing",
+        "title": "Hatch AI Pricing: What to Clarify Before a Quote",
+        "description": "Hatch quotes its pricing through sales. See which questions to bring to the call and when a published reception plan is the simpler fit.",
+        "navigationLabel": "Hatch AI pricing",
+        "eyebrow": "Quoted platform or published plan",
+        "lead": "Hatch sells AI customer service for home service teams across voice, text and email, and quotes pricing through its sales team ([Hatch pricing page](https://www.usehatchapp.com/sales)). To compare it, bring your own volume numbers and a clear list of what you want automated.",
+        "intro": "Hatch sells AI customer service for home service teams across voice, text and email, and quotes pricing through its sales team ([Hatch pricing page](https://www.usehatchapp.com/sales)). To compare it, bring your own volume numbers and a clear list of what you want automated.",
+        "sections": [
+          {
+            "title": "Bring these numbers to the quote",
+            "paragraphs": [
+              "Locations, monthly calls, texts and leads, and how many follow-up campaigns you run. Ask how each one affects the bill, what happens when you exceed it, and what the minimum term is."
+            ],
+            "items": []
+          },
+          {
+            "title": "Decide the job first",
+            "paragraphs": [
+              "If your main problem is unanswered inbound calls rather than follow-up campaigns, say so. You may be pricing more platform than you need."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo is narrower: 24/7 inbound call answering, booking, SMS follow-up and call summaries, on published monthly plans from $87.50/mo at launch. It does not run marketing campaigns. [See Revo's plans](/pricing)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Is Revo a Hatch alternative?\nFor inbound call answering and booking, yes. For multichannel campaigns, no."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.usehatchapp.com/sales",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# Hatch AI Pricing: What to Clarify Before a Quote\n\nHatch sells AI customer service for home service teams across voice, text and email, and quotes pricing through its sales team ([Hatch pricing page](https://www.usehatchapp.com/sales)). To compare it, bring your own volume numbers and a clear list of what you want automated.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 4, 2026.\n\n## Bring these numbers to the quote\nLocations, monthly calls, texts and leads, and how many follow-up campaigns you run. Ask how each one affects the bill, what happens when you exceed it, and what the minimum term is.\n\n## Decide the job first\nIf your main problem is unanswered inbound calls rather than follow-up campaigns, say so. You may be pricing more platform than you need.\n\n## Where Revo fits\nRevo is narrower: 24/7 inbound call answering, booking, SMS follow-up and call summaries, on published monthly plans from $87.50/mo at launch. It does not run marketing campaigns. [See Revo's plans](/pricing).\n\n## Frequently asked questions\n### Is Revo a Hatch alternative?\nFor inbound call answering and booking, yes. For multichannel campaigns, no.",
+          "sha256": "68d66e8f1f0d629d50726bec662e394dac23807dd537b93851e8853c637c3927",
+          "assets": []
+        },
+        "related": [
+          "compare/home-services-ai-receptionists",
+          "speed-to-lead"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy (v2, no competitor prices); evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt SHA256 2d097bc4efa47b690583ecded4d789a97acfb4268363aecef3a569cf32cb729d; approved by Jorge Perez in chat on November 4, 2026; implementation by Claude"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "leadtruffle-ai-receptionist",
+        "title": "LeadTruffle Alternative: What Contractors Should Ask First",
+        "description": "Evaluating LeadTruffle for missed calls and lead response? Use these questions to compare it with a published-price AI receptionist.",
+        "navigationLabel": "LeadTruffle",
+        "eyebrow": "Lead response for contractors",
+        "lead": "LeadTruffle sells lead response for home service businesses, including AI voice answering and missed-call text-back. Its plans are on [LeadTruffle's pricing page](https://www.leadtruffle.co/pricing). Start the comparison with scope, not with the plan name.",
+        "intro": "LeadTruffle sells lead response for home service businesses, including AI voice answering and missed-call text-back. Its plans are on [LeadTruffle's pricing page](https://www.leadtruffle.co/pricing). Start the comparison with scope, not with the plan name.",
+        "sections": [
+          {
+            "title": "Questions that decide the fit",
+            "paragraphs": [
+              "Which software do you book into? How many calls arrive after hours? Do you need texts to leads from ad platforms, or only answered calls? Ask any provider to show the same call flow with your own scenario."
+            ],
+            "items": []
+          },
+          {
+            "title": "How Revo compares on scope",
+            "paragraphs": [
+              "Revo publishes its plans: from $87.50/mo at launch for the first three monthly payments after the trial, then $175/mo, with 100 minutes. Every plan includes 24/7 answering, booking, SMS follow-up and call summaries; field service software connection starts on Crew. [See plans](/pricing)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Does Revo connect to my field service software?\nOn Crew and Fleet. Confirm your tool with the team before you start."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.leadtruffle.co/pricing",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# LeadTruffle Alternative: What Contractors Should Ask First\n\nLeadTruffle sells lead response for home service businesses, including AI voice answering and missed-call text-back. Its plans are on [LeadTruffle's pricing page](https://www.leadtruffle.co/pricing). Start the comparison with scope, not with the plan name.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 4, 2026.\n\n## Questions that decide the fit\nWhich software do you book into? How many calls arrive after hours? Do you need texts to leads from ad platforms, or only answered calls? Ask any provider to show the same call flow with your own scenario.\n\n## How Revo compares on scope\nRevo publishes its plans: from $87.50/mo at launch for the first three monthly payments after the trial, then $175/mo, with 100 minutes. Every plan includes 24/7 answering, booking, SMS follow-up and call summaries; field service software connection starts on Crew. [See plans](/pricing).\n\n## Frequently asked questions\n### Does Revo connect to my field service software?\nOn Crew and Fleet. Confirm your tool with the team before you start.",
+          "sha256": "26124113ad4c201197602ff851a03f040e2d9a6b97cc2711592e98053adc46a9",
+          "assets": []
+        },
+        "related": [
+          "missed-call-text-back",
+          "compare/home-services-ai-receptionists"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy (v2, no competitor prices); evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt SHA256 2d097bc4efa47b690583ecded4d789a97acfb4268363aecef3a569cf32cb729d; approved by Jorge Perez in chat on November 4, 2026; implementation by Claude"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "mightycall-pricing",
+        "title": "MightyCall Pricing: Seats vs Answered Calls",
+        "description": "Comparing MightyCall? Per-user phone plans pay for people on the phones, not for calls answered when they are busy. See what to check.",
+        "navigationLabel": "MightyCall pricing",
+        "eyebrow": "Phone seats or reception",
+        "lead": "MightyCall sells a business phone system priced per user; its plans are on [MightyCall's pricing page](https://www.mightycall.com/pricing/). Per-user pricing pays for people on the phones. It does not answer when those people are busy.",
+        "intro": "MightyCall sells a business phone system priced per user; its plans are on [MightyCall's pricing page](https://www.mightycall.com/pricing/). Per-user pricing pays for people on the phones. It does not answer when those people are busy.",
+        "sections": [
+          {
+            "title": "Count users, then count missed calls",
+            "paragraphs": [
+              "Before adding seats to cover the phones, check how many calls ring out today and when. If most arrive while the crew is in the field or after hours, another seat may not change the result."
+            ],
+            "items": []
+          },
+          {
+            "title": "Adding an answering layer",
+            "paragraphs": [
+              "Revo answers calls 24/7, books jobs with your rules, sends SMS follow-up and logs summaries, from $87.50/mo at launch. It works alongside your phone system. [See Revo's plans](/pricing)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Does Revo replace MightyCall?\nNo. Revo is a reception service; your phone system can stay."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.mightycall.com/pricing/",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# MightyCall Pricing: Seats vs Answered Calls\n\nMightyCall sells a business phone system priced per user; its plans are on [MightyCall's pricing page](https://www.mightycall.com/pricing/). Per-user pricing pays for people on the phones. It does not answer when those people are busy.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 4, 2026.\n\n## Count users, then count missed calls\nBefore adding seats to cover the phones, check how many calls ring out today and when. If most arrive while the crew is in the field or after hours, another seat may not change the result.\n\n## Adding an answering layer\nRevo answers calls 24/7, books jobs with your rules, sends SMS follow-up and logs summaries, from $87.50/mo at launch. It works alongside your phone system. [See Revo's plans](/pricing).\n\n## Frequently asked questions\n### Does Revo replace MightyCall?\nNo. Revo is a reception service; your phone system can stay.",
+          "sha256": "30916258497d6c60ca994e663da0269784aaf9909d3bdac760210daddbffa676",
+          "assets": []
+        },
+        "related": [
+          "compare/voip-vs-landline",
+          "overflow-answering"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy (v2, no competitor prices); evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt SHA256 2d097bc4efa47b690583ecded4d789a97acfb4268363aecef3a569cf32cb729d; approved by Jorge Perez in chat on November 4, 2026; implementation by Claude"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "talkroute-pricing",
+        "title": "Talkroute Pricing: Phone Plan Plus AI Answering",
+        "description": "Comparing Talkroute? Its AI answering is an add-on to a phone plan. Learn how to compare the combined cost with a flat AI reception plan.",
+        "navigationLabel": "Talkroute pricing",
+        "eyebrow": "Phone plan plus AI add-on",
+        "lead": "Talkroute sells business phone plans and a separate AI receptionist add-on; both are on [Talkroute's pricing page](https://talkroute.com/pricing/). When AI answering is an add-on, compare the phone plan and the AI line together.",
+        "intro": "Talkroute sells business phone plans and a separate AI receptionist add-on; both are on [Talkroute's pricing page](https://talkroute.com/pricing/). When AI answering is an add-on, compare the phone plan and the AI line together.",
+        "sections": [
+          {
+            "title": "Add the two lines",
+            "paragraphs": [
+              "Price the phone plan you would keep anyway, then the AI tier your call minutes require, then the rate after the included minutes. That total is the number to compare."
+            ],
+            "items": []
+          },
+          {
+            "title": "Comparing with Revo",
+            "paragraphs": [
+              "Revo is a flat AI reception plan: Solo at $87.50/mo at launch for the first three monthly payments after the trial, then $175/mo, with 100 minutes; calls under 20 seconds do not count. Booking, SMS follow-up and call summaries are on every plan. [See plans](/pricing)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Do I need a new phone plan to use Revo?\nNo. Revo answers the calls you forward to it."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://talkroute.com/pricing/",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# Talkroute Pricing: Phone Plan Plus AI Answering\n\nTalkroute sells business phone plans and a separate AI receptionist add-on; both are on [Talkroute's pricing page](https://talkroute.com/pricing/). When AI answering is an add-on, compare the phone plan and the AI line together.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 4, 2026.\n\n## Add the two lines\nPrice the phone plan you would keep anyway, then the AI tier your call minutes require, then the rate after the included minutes. That total is the number to compare.\n\n## Comparing with Revo\nRevo is a flat AI reception plan: Solo at $87.50/mo at launch for the first three monthly payments after the trial, then $175/mo, with 100 minutes; calls under 20 seconds do not count. Booking, SMS follow-up and call summaries are on every plan. [See plans](/pricing).\n\n## Frequently asked questions\n### Do I need a new phone plan to use Revo?\nNo. Revo answers the calls you forward to it.",
+          "sha256": "a00befd6a746b50ae89a52478cfeef209ca1f9d893f2326b684c366793e90c39",
+          "assets": []
+        },
+        "related": [
+          "virtual-receptionist-pricing",
+          "answering-service-cost"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy (v2, no competitor prices); evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt SHA256 2d097bc4efa47b690583ecded4d789a97acfb4268363aecef3a569cf32cb729d; approved by Jorge Perez in chat on November 4, 2026; implementation by Claude"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "echowin-ai-receptionist",
+        "title": "Echowin Alternative: Usage Pricing or a Flat Plan?",
+        "description": "Evaluating echowin? Usage-based AI receptionists bill by minute. Learn when a flat monthly plan is easier to budget for a home service business.",
+        "navigationLabel": "Echowin",
+        "eyebrow": "Usage or flat plan",
+        "lead": "Echowin sells an AI receptionist billed on usage; its plans are on [echowin's pricing page](https://echo.win/pricing). Usage pricing rewards accurate call estimates. A flat plan is easier to budget.",
+        "intro": "Echowin sells an AI receptionist billed on usage; its plans are on [echowin's pricing page](https://echo.win/pricing). Usage pricing rewards accurate call estimates. A flat plan is easier to budget.",
+        "sections": [
+          {
+            "title": "What to count with usage pricing",
+            "paragraphs": [
+              "Monthly minutes, transferred minutes, text messages sent and phone numbers. Ask whether unused minutes roll over and how transfers and texts are billed."
+            ],
+            "items": []
+          },
+          {
+            "title": "When a flat plan is simpler",
+            "paragraphs": [
+              "Revo includes SMS follow-up, booking and call summaries in each plan, from $87.50/mo at launch for the first three monthly payments after the trial, then $175/mo, with 100 minutes; calls under 20 seconds do not count. [See plans](/pricing)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Which is cheaper, usage or flat?\nIt depends on volume. Compare both with the same month of calls, transfers and texts."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://echo.win/pricing",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# Echowin Alternative: Usage Pricing or a Flat Plan?\n\nEchowin sells an AI receptionist billed on usage; its plans are on [echowin's pricing page](https://echo.win/pricing). Usage pricing rewards accurate call estimates. A flat plan is easier to budget.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 4, 2026.\n\n## What to count with usage pricing\nMonthly minutes, transferred minutes, text messages sent and phone numbers. Ask whether unused minutes roll over and how transfers and texts are billed.\n\n## When a flat plan is simpler\nRevo includes SMS follow-up, booking and call summaries in each plan, from $87.50/mo at launch for the first three monthly payments after the trial, then $175/mo, with 100 minutes; calls under 20 seconds do not count. [See plans](/pricing).\n\n## Frequently asked questions\n### Which is cheaper, usage or flat?\nIt depends on volume. Compare both with the same month of calls, transfers and texts.",
+          "sha256": "3dc83de023d33ef43eee636e943e863f86c2f29353d77d3b7f0eecea6c543a21",
+          "assets": []
+        },
+        "related": [
+          "ai-receptionist-under-100",
+          "compare/per-call-vs-per-minute-answering-service"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy (v2, no competitor prices); evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt SHA256 2d097bc4efa47b690583ecded4d789a97acfb4268363aecef3a569cf32cb729d; approved by Jorge Perez in chat on November 4, 2026; implementation by Claude"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "vapi-pricing",
+        "title": "Vapi Pricing: Build a Voice Agent or Buy Reception?",
+        "description": "Vapi is a platform for building voice agents. Before you price it, count the build and upkeep work, or compare a ready-made AI receptionist.",
+        "navigationLabel": "Vapi pricing",
+        "eyebrow": "Build or buy reception",
+        "lead": "Vapi is a platform for building voice agents; its rates are on [Vapi's pricing page](https://vapi.ai/pricing). Platform pricing covers the minutes. The work of building and maintaining the agent is a separate cost.",
+        "intro": "Vapi is a platform for building voice agents; its rates are on [Vapi's pricing page](https://vapi.ai/pricing). Platform pricing covers the minutes. The work of building and maintaining the agent is a separate cost.",
+        "sections": [
+          {
+            "title": "The cost the calculator leaves out",
+            "paragraphs": [
+              "Someone has to write the prompts, connect the calendar, test calls and update the agent when your hours, service area or prices change. Put a name and an hourly cost beside that work."
+            ],
+            "items": []
+          },
+          {
+            "title": "Buying reception instead",
+            "paragraphs": [
+              "Revo is a finished reception service: 24/7 answering, booking, SMS follow-up and call summaries, from $87.50/mo at launch. It does not offer developer tools. Choose it if you need answered calls and booked jobs rather than a custom voice application. [See plans](/pricing)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Is Revo built on Vapi?\nThis page makes no such claim."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://vapi.ai/pricing",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# Vapi Pricing: Build a Voice Agent or Buy Reception?\n\nVapi is a platform for building voice agents; its rates are on [Vapi's pricing page](https://vapi.ai/pricing). Platform pricing covers the minutes. The work of building and maintaining the agent is a separate cost.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 4, 2026.\n\n## The cost the calculator leaves out\nSomeone has to write the prompts, connect the calendar, test calls and update the agent when your hours, service area or prices change. Put a name and an hourly cost beside that work.\n\n## Buying reception instead\nRevo is a finished reception service: 24/7 answering, booking, SMS follow-up and call summaries, from $87.50/mo at launch. It does not offer developer tools. Choose it if you need answered calls and booked jobs rather than a custom voice application. [See plans](/pricing).\n\n## Frequently asked questions\n### Is Revo built on Vapi?\nThis page makes no such claim.",
+          "sha256": "dd97bc3b9cd44c3ddd2c4536fe08603dda7a8c03d4d9bb70e7361224888aca11",
+          "assets": []
+        },
+        "related": [
+          "compare/build-vs-buy-ai-receptionist",
+          "retell-ai-pricing"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy (v2, no competitor prices); evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt SHA256 2d097bc4efa47b690583ecded4d789a97acfb4268363aecef3a569cf32cb729d; approved by Jorge Perez in chat on November 4, 2026; implementation by Claude"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "nextiva-pricing",
+        "title": "Nextiva Pricing: Phone System or Answered Calls?",
+        "description": "Comparing Nextiva? A phone system prices seats and features. If the gap is unanswered job calls, compare an AI receptionist instead.",
+        "navigationLabel": "Nextiva pricing",
+        "eyebrow": "Phone system or reception",
+        "lead": "Nextiva sells business phone plans priced per user, with AI features billed separately; details are on [Nextiva's pricing page](https://www.nextiva.com/pricing). Decide first whether you need a phone system or answered calls.",
+        "intro": "Nextiva sells business phone plans priced per user, with AI features billed separately; details are on [Nextiva's pricing page](https://www.nextiva.com/pricing). Decide first whether you need a phone system or answered calls.",
+        "sections": [
+          {
+            "title": "Check the term and the add-ons",
+            "paragraphs": [
+              "Ask whether the quoted price requires an annual term and which AI features are billed per use. Both change the real monthly cost."
+            ],
+            "items": []
+          },
+          {
+            "title": "Comparing with a reception plan",
+            "paragraphs": [
+              "Revo is not a phone system. It answers calls 24/7, books jobs, sends SMS follow-up and logs summaries, from $87.50/mo at launch. If you need desk phones and extensions, price a phone system for that. If the gap is unanswered job calls, compare reception. [See plans](/pricing)."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can I keep Nextiva and add Revo?\nYes. Revo answers the calls you forward to it."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.nextiva.com/pricing",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# Nextiva Pricing: Phone System or Answered Calls?\n\nNextiva sells business phone plans priced per user, with AI features billed separately; details are on [Nextiva's pricing page](https://www.nextiva.com/pricing). Decide first whether you need a phone system or answered calls.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 4, 2026.\n\n## Check the term and the add-ons\nAsk whether the quoted price requires an annual term and which AI features are billed per use. Both change the real monthly cost.\n\n## Comparing with a reception plan\nRevo is not a phone system. It answers calls 24/7, books jobs, sends SMS follow-up and logs summaries, from $87.50/mo at launch. If you need desk phones and extensions, price a phone system for that. If the gap is unanswered job calls, compare reception. [See plans](/pricing).\n\n## Frequently asked questions\n### Can I keep Nextiva and add Revo?\nYes. Revo answers the calls you forward to it.",
+          "sha256": "0a7dec4c0705b8fe1c0d89c4886601a52bd418bb8bd1d6b48af3cad62d9576a6",
+          "assets": []
+        },
+        "related": [
+          "ivr-system-cost",
+          "ringcentral-ai-receptionist-pricing"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy (v2, no competitor prices); evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt SHA256 2d097bc4efa47b690583ecded4d789a97acfb4268363aecef3a569cf32cb729d; approved by Jorge Perez in chat on November 4, 2026; implementation by Claude"
+        }
+      }
+    }
+  ]
+}

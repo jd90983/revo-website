@@ -1194,5 +1194,26 @@
       "added vapi-pricing as draft",
       "added nextiva-pricing as draft"
     ]
+  },
+  {
+    "batchId": "2026-11-04-ten-guides-no-competitor-prices",
+    "batchHash": "sha256:ec337d615b2c85a3bfffe439a11f017c1a61670ae5d88cca317755c7222055dd",
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy (v2, no competitor prices); evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt SHA256 2d097bc4efa47b690583ecded4d789a97acfb4268363aecef3a569cf32cb729d; approved by Jorge Perez in chat on November 4, 2026; implementation by Claude"
+    },
+    "appliedAt": "2026-11-04",
+    "changes": [
+      "updated virtual-receptionist-pricing; back to draft until re-approved",
+      "updated grasshopper-pricing; back to draft until re-approved",
+      "updated automated-phone-answering-system; back to draft until re-approved",
+      "updated hatch-ai-pricing; back to draft until re-approved",
+      "updated leadtruffle-ai-receptionist; back to draft until re-approved",
+      "updated mightycall-pricing; back to draft until re-approved",
+      "updated talkroute-pricing; back to draft until re-approved",
+      "updated echowin-ai-receptionist; back to draft until re-approved",
+      "updated vapi-pricing; back to draft until re-approved",
+      "updated nextiva-pricing; back to draft until re-approved"
+    ]
   }
 ]
