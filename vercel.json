@@ -1777,6 +1777,31 @@
       "permanent": true
     },
     {
+      "source": "/ai-answering-service/evoice-alternatives.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/evoice-alternatives",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/bland-ai-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/bland-ai-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/lindy-ai-receptionist.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/lindy-ai-receptionist",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/brightcall-ai-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/brightcall-ai-pricing",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/ringg-ai-pricing.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/ringg-ai-pricing",
+      "permanent": true
+    },
+    {
       "source": "/ai-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service",
       "permanent": true
@@ -3851,6 +3876,26 @@
     {
       "source": "/ai-answering-service/newo-ai-receptionist",
       "destination": "/ai-answering-service/newo-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/evoice-alternatives",
+      "destination": "/ai-answering-service/evoice-alternatives.html"
+    },
+    {
+      "source": "/ai-answering-service/bland-ai-pricing",
+      "destination": "/ai-answering-service/bland-ai-pricing.html"
+    },
+    {
+      "source": "/ai-answering-service/lindy-ai-receptionist",
+      "destination": "/ai-answering-service/lindy-ai-receptionist.html"
+    },
+    {
+      "source": "/ai-answering-service/brightcall-ai-pricing",
+      "destination": "/ai-answering-service/brightcall-ai-pricing.html"
+    },
+    {
+      "source": "/ai-answering-service/ringg-ai-pricing",
+      "destination": "/ai-answering-service/ringg-ai-pricing.html"
     },
     {
       "source": "/ai-answering-service",

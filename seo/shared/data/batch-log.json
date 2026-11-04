@@ -1157,5 +1157,21 @@
       "added trillet-ai-receptionist as draft",
       "added newo-ai-receptionist as draft"
     ]
+  },
+  {
+    "batchId": "2026-11-03-remaining-five-reception-guides",
+    "batchHash": "sha256:97acebe72d5692a628140b7a8016136729743d88df98e0d78f608d35cd109ffb",
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; Library libfile_bebd1b008b788191a49fe84c98f6f9b0; SHA256 8a069df4032c6f636fa73b33034ce93aa1c68a0e87e97d23220d5cf00eb92990; copy approved for implementation/testing; exact PR release approval pending"
+    },
+    "appliedAt": "2026-11-04",
+    "changes": [
+      "added evoice-alternatives as draft",
+      "added bland-ai-pricing as draft",
+      "added lindy-ai-receptionist as draft",
+      "added brightcall-ai-pricing as draft",
+      "added ringg-ai-pricing as draft"
+    ]
   }
 ]
