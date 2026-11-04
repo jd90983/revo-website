@@ -35922,7 +35922,8 @@
       "reviewedAt": "2026-11-04",
       "contentHash": "sha256:ae5876b946f2543b797b875ebf43b16874c0c26b25ad0f6fc2d57b28c8285e98",
       "note": "Owner approved public copy for implementation. Bodies preserved exactly; Brightcall navigation label shortening disclosed for final PR review. Exact PR release approval pending.",
-      "releaseApproval": "pending"
+      "releaseApprovalRecord": "Owner authorized publishing PR142 at tested head e312b5a1e522cd2e3878321515652e74f9d30969, then explicitly authorized this documentary approval-record commit. Exact resulting head requires subsequent specific approval before merge. Editorial content and code unchanged; no independent human review claimed.",
+      "releaseApprovalRecordedAt": "2026-11-04T02:22:33.220135+00:00"
     }
   },
   {
@@ -35993,7 +35994,8 @@
       "reviewedAt": "2026-11-04",
       "contentHash": "sha256:a5daf0ef6c7789b94eba6e2fd2c4a8af2c6e8ef0a92e814018392b403d963328",
       "note": "Owner approved public copy for implementation. Bodies preserved exactly; Brightcall navigation label shortening disclosed for final PR review. Exact PR release approval pending.",
-      "releaseApproval": "pending"
+      "releaseApprovalRecord": "Owner authorized publishing PR142 at tested head e312b5a1e522cd2e3878321515652e74f9d30969, then explicitly authorized this documentary approval-record commit. Exact resulting head requires subsequent specific approval before merge. Editorial content and code unchanged; no independent human review claimed.",
+      "releaseApprovalRecordedAt": "2026-11-04T02:22:33.220346+00:00"
     }
   },
   {
@@ -36071,7 +36073,8 @@
       "reviewedAt": "2026-11-04",
       "contentHash": "sha256:abf38cb6f3de272e615540dcf1df25f7f5db373bcbf26725aa8e3d3cf4c94035",
       "note": "Owner approved public copy for implementation. Bodies preserved exactly; Brightcall navigation label shortening disclosed for final PR review. Exact PR release approval pending.",
-      "releaseApproval": "pending"
+      "releaseApprovalRecord": "Owner authorized publishing PR142 at tested head e312b5a1e522cd2e3878321515652e74f9d30969, then explicitly authorized this documentary approval-record commit. Exact resulting head requires subsequent specific approval before merge. Editorial content and code unchanged; no independent human review claimed.",
+      "releaseApprovalRecordedAt": "2026-11-04T02:22:33.220348+00:00"
     }
   },
   {
@@ -36149,7 +36152,8 @@
       "reviewedAt": "2026-11-04",
       "contentHash": "sha256:07f6166e746120798799621081442102cb096b957db2899c0104deb2abaf8c3e",
       "note": "Owner approved public copy for implementation. Bodies preserved exactly; Brightcall navigation label shortening disclosed for final PR review. Exact PR release approval pending.",
-      "releaseApproval": "pending"
+      "releaseApprovalRecord": "Owner authorized publishing PR142 at tested head e312b5a1e522cd2e3878321515652e74f9d30969, then explicitly authorized this documentary approval-record commit. Exact resulting head requires subsequent specific approval before merge. Editorial content and code unchanged; no independent human review claimed.",
+      "releaseApprovalRecordedAt": "2026-11-04T02:22:33.220350+00:00"
     }
   },
   {
@@ -36226,7 +36230,8 @@
       "reviewedAt": "2026-11-04",
       "contentHash": "sha256:cb890d5bc38ce338323a9a3692fd3c6cf501bd64eedd895b3f14f761e187410d",
       "note": "Owner approved public copy for implementation. Bodies preserved exactly; Brightcall navigation label shortening disclosed for final PR review. Exact PR release approval pending.",
-      "releaseApproval": "pending"
+      "releaseApprovalRecord": "Owner authorized publishing PR142 at tested head e312b5a1e522cd2e3878321515652e74f9d30969, then explicitly authorized this documentary approval-record commit. Exact resulting head requires subsequent specific approval before merge. Editorial content and code unchanged; no independent human review claimed.",
+      "releaseApprovalRecordedAt": "2026-11-04T02:22:33.220351+00:00"
     }
   }
 ]
