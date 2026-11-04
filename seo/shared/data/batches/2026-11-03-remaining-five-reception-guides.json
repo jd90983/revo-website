@@ -1,0 +1,366 @@
+{
+  "batchId": "2026-11-03-remaining-five-reception-guides",
+  "source": {
+    "kind": "owner-approved-exact-copy",
+    "reference": "Owner-approved exact public copy; Library libfile_bebd1b008b788191a49fe84c98f6f9b0; SHA256 8a069df4032c6f636fa73b33034ce93aa1c68a0e87e97d23220d5cf00eb92990; copy approved for implementation/testing; exact PR release approval pending"
+  },
+  "operations": [
+    {
+      "op": "add",
+      "record": {
+        "slug": "evoice-alternatives",
+        "title": "eVoice Alternatives: Phone System or Reception Service?",
+        "description": "Compare eVoice alternatives for home services by separating business phone features, live receptionist coverage, and the reception tasks your office needs.",
+        "navigationLabel": "eVoice alternatives",
+        "eyebrow": "Phone service and reception",
+        "lead": "If you are comparing eVoice alternatives for a home service business, start with what you want to replace. A business phone number, an automated phone menu, and a person answering customer calls are different purchases. Replacing the reception task does not necessarily replace the phone system behind it.",
+        "intro": "If you are comparing eVoice alternatives for a home service business, start with what you want to replace. A business phone number, an automated phone menu, and a person answering customer calls are different purchases. Replacing the reception task does not necessarily replace the phone system behind it.",
+        "sections": [
+          {
+            "title": "Separate eVoice's phone plans from its live receptionist service",
+            "paragraphs": [
+              "[eVoice's pricing page](https://www.evoice.com/pricing/) describes business phone plans. Its advertised features include business calling and number-management functions. Those plans should not be read as the price of a human receptionist answering every incoming inquiry.\n\nThe separate [live receptionist service](https://www.evoice.com/live-receptionist/) describes a US-based team, appointment handling, and service customized to the business. It describes per-minute billing and publishes availability as 8 a.m.–8 p.m. EST, with virtual handling after hours. Confirm the applicable days, holiday schedule, time-zone treatment, and handling outside that window in your proposal. The published hour label does not establish round-the-clock human coverage.\n\nThat distinction changes the comparison. If you need extensions and business calling, evaluate a phone service against those requirements. If you need someone to receive an estimate request while your crew is working, compare the reception workflow as its own scope."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep the phone functions you still need",
+            "paragraphs": [
+              "Use this worksheet before moving a number or canceling a service. These are proposed purchasing checks, not tests we performed.\n\n| Requirement | What to establish before switching |\n| --- | --- |\n| Business number and outbound calling | Which provider supplies them and what remains available after the change |\n| Extensions or an automated menu | Whether the replacement supports the same routing your staff actually uses |\n| A new customer's estimate request | What may be booked, what is only collected, and who receives the result |\n| Calls outside staffed hours | Whether a human, automated system, or AI service handles the call |\n| An existing customer's unresolved issue | Who owns the follow-up and what information reaches that person |\n\nDo not assume that an AI receptionist includes number porting, a complete business phone system, or every messaging feature in your current plan. Keep those requirements in the written comparison."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare the reception offer on its own terms",
+            "paragraphs": [
+              "Revo offers 24/7 AI reception with business instructions, appointment booking, SMS follow-up, and call summaries. Team transfers and software connections depend on the selected plan. Confirm the exact supported workflow before choosing a plan or changing your existing phone arrangement.\n\nFor eVoice's live service, request the receptionist allowance, chargeable minutes, overage terms, and coverage schedule. For Revo, review the current plan and its applicable limits. Give both suppliers the same description of the calls your office needs handled. Neither a phone-plan headline nor an answered-call count proves a completed service appointment.\n\nAlso check the terms attached to the particular purchase. eVoice's live receptionist page excludes that service from its money-back guarantee. Do not carry a guarantee advertised for a phone plan over to the receptionist add-on."
+            ],
+            "items": []
+          },
+          {
+            "title": "Choose the arrangement your office can operate",
+            "paragraphs": [
+              "Keep a phone service when its calling and routing functions remain necessary. Choose human reception when that model and its agreed coverage fit the conversations your customers bring. Consider Revo when your reception rules and supported actions fit an AI service. The useful alternative is the arrangement that preserves the required phone functions and gives each unresolved call an owner."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Is eVoice's standard phone plan the same as its live receptionist service?\nNo. Its public pages present a business phone offer and a separate live receptionist service. Request the terms for the specific services you intend to buy.\n\n### Does eVoice advertise 24/7 human answering on the live receptionist page?\nThe reviewed page publishes 8 a.m.–8 p.m. EST and describes virtual handling after hours. Confirm the complete schedule directly rather than assuming 24/7 human coverage.\n\n### Can Revo replace every eVoice phone feature?\nDo not assume full phone-system equivalence. Match your number, calling, routing, messaging, and reception requirements to the applicable offer. [Review Revo's current plans](/pricing).\n\nSources reviewed November 4, 2026: [eVoice](https://www.evoice.com/), [phone pricing](https://www.evoice.com/pricing/), [live receptionist service](https://www.evoice.com/live-receptionist/), and [Revo plans](https://www.revoapp.ai/pricing). Supplier descriptions are not independent performance evidence."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.evoice.com/pricing/",
+          "https://www.evoice.com/live-receptionist/",
+          "https://www.evoice.com/",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# eVoice Alternatives: Phone System or Reception Service?\n\nIf you are comparing eVoice alternatives for a home service business, start with what you want to replace. A business phone number, an automated phone menu, and a person answering customer calls are different purchases. Replacing the reception task does not necessarily replace the phone system behind it.\n\nPublished by Revo, a competing provider. This comparison uses public documentation reviewed November 4, 2026. It is not a hands-on service test, and Revo is not affiliated with eVoice.\n\n## Separate eVoice's phone plans from its live receptionist service\n\n[eVoice's pricing page](https://www.evoice.com/pricing/) describes business phone plans. Its advertised features include business calling and number-management functions. Those plans should not be read as the price of a human receptionist answering every incoming inquiry.\n\nThe separate [live receptionist service](https://www.evoice.com/live-receptionist/) describes a US-based team, appointment handling, and service customized to the business. It describes per-minute billing and publishes availability as 8 a.m.–8 p.m. EST, with virtual handling after hours. Confirm the applicable days, holiday schedule, time-zone treatment, and handling outside that window in your proposal. The published hour label does not establish round-the-clock human coverage.\n\nThat distinction changes the comparison. If you need extensions and business calling, evaluate a phone service against those requirements. If you need someone to receive an estimate request while your crew is working, compare the reception workflow as its own scope.\n\n## Keep the phone functions you still need\n\nUse this worksheet before moving a number or canceling a service. These are proposed purchasing checks, not tests we performed.\n\n| Requirement | What to establish before switching |\n| --- | --- |\n| Business number and outbound calling | Which provider supplies them and what remains available after the change |\n| Extensions or an automated menu | Whether the replacement supports the same routing your staff actually uses |\n| A new customer's estimate request | What may be booked, what is only collected, and who receives the result |\n| Calls outside staffed hours | Whether a human, automated system, or AI service handles the call |\n| An existing customer's unresolved issue | Who owns the follow-up and what information reaches that person |\n\nDo not assume that an AI receptionist includes number porting, a complete business phone system, or every messaging feature in your current plan. Keep those requirements in the written comparison.\n\n## Compare the reception offer on its own terms\n\nRevo offers 24/7 AI reception with business instructions, appointment booking, SMS follow-up, and call summaries. Team transfers and software connections depend on the selected plan. Confirm the exact supported workflow before choosing a plan or changing your existing phone arrangement.\n\nFor eVoice's live service, request the receptionist allowance, chargeable minutes, overage terms, and coverage schedule. For Revo, review the current plan and its applicable limits. Give both suppliers the same description of the calls your office needs handled. Neither a phone-plan headline nor an answered-call count proves a completed service appointment.\n\nAlso check the terms attached to the particular purchase. eVoice's live receptionist page excludes that service from its money-back guarantee. Do not carry a guarantee advertised for a phone plan over to the receptionist add-on.\n\n## Choose the arrangement your office can operate\n\nKeep a phone service when its calling and routing functions remain necessary. Choose human reception when that model and its agreed coverage fit the conversations your customers bring. Consider Revo when your reception rules and supported actions fit an AI service. The useful alternative is the arrangement that preserves the required phone functions and gives each unresolved call an owner.\n\n## Frequently asked questions\n\n### Is eVoice's standard phone plan the same as its live receptionist service?\nNo. Its public pages present a business phone offer and a separate live receptionist service. Request the terms for the specific services you intend to buy.\n\n### Does eVoice advertise 24/7 human answering on the live receptionist page?\nThe reviewed page publishes 8 a.m.–8 p.m. EST and describes virtual handling after hours. Confirm the complete schedule directly rather than assuming 24/7 human coverage.\n\n### Can Revo replace every eVoice phone feature?\nDo not assume full phone-system equivalence. Match your number, calling, routing, messaging, and reception requirements to the applicable offer. [Review Revo's current plans](/pricing).\n\nSources reviewed November 4, 2026: [eVoice](https://www.evoice.com/), [phone pricing](https://www.evoice.com/pricing/), [live receptionist service](https://www.evoice.com/live-receptionist/), and [Revo plans](https://www.revoapp.ai/pricing). Supplier descriptions are not independent performance evidence.",
+          "sha256": "7032a36b1d7ad343b1e541490e4f890f90019c5f3b7c299ee34a29aba9a9f62c",
+          "assets": []
+        },
+        "related": [
+          "business-number-and-answering-service",
+          "compare/24-7-live-receptionist-services"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; Library libfile_bebd1b008b788191a49fe84c98f6f9b0; SHA256 8a069df4032c6f636fa73b33034ce93aa1c68a0e87e97d23220d5cf00eb92990; copy approved for implementation/testing; exact PR release approval pending"
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "bland-ai-pricing",
+        "title": "Bland AI Alternatives: Choose the Reception Model First",
+        "description": "Compare Bland AI alternatives for home services by separating platform usage, Agent Phone Plan limits, and the reception workflow your office needs.",
+        "navigationLabel": "Bland AI alternatives",
+        "eyebrow": "Platform or agent phone plan",
+        "lead": "A home service business comparing Bland AI alternatives should identify the Bland product it is considering before comparing prices. A configurable voice platform and an agent phone plan can have different billing and call-capacity rules. Neither should be treated as a universal reception package without checking the applicable terms.",
+        "intro": "A home service business comparing Bland AI alternatives should identify the Bland product it is considering before comparing prices. A configurable voice platform and an agent phone plan can have different billing and call-capacity rules. Neither should be treated as a universal reception package without checking the applicable terms.",
+        "sections": [
+          {
+            "title": "Decide which Bland offer is in the comparison",
+            "paragraphs": [
+              "[Bland's platform pricing](https://www.bland.ai/pricing) presents usage-based plans with different platform fees, minute rates, transfer rates, and capacity allowances. The total depends on the selected plan and the calls it processes. A per-minute headline is not, by itself, the full cost of running your reception workflow.\n\nThe separate [Agent Phone Plan documentation](https://docs.bland.ai/platform/agent-phone-plan) describes its own subscription and account-wide call limits. The reviewed documentation lists one concurrent call and additional call-frequency limits. If your purchase uses this product, establish what a second caller experiences while a call is already active. Do not substitute the larger voice platform's concurrency allowance for the phone plan's limits.\n\nThe reviewed official pages also contain inconsistent starting-price presentations for the agent phone offer. We therefore do not present one of those figures as a definitive universal price. Ask Bland to identify the current offer, applicable recurring price, introductory period, and governing terms in writing."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare the product, the capacity, and the owner",
+            "paragraphs": [
+              "This is a proposed evaluation worksheet, not a completed benchmark.\n\n| Buying decision | Evidence to request |\n| --- | --- |\n| Voice platform or Agent Phone Plan | The exact product and plan named in the order |\n| Two customers call together | The applicable concurrency limit and the second caller's experience |\n| A call needs a staff handoff | Transfer behavior, unanswered-call handling, and the relevant charges |\n| Your office changes its service area | Who updates the instructions and verifies the resulting behavior |\n| The requested appointment cannot be confirmed | What the caller is told and who receives the unresolved request |\n\n[Bland's home services page](https://www.bland.ai/industries/home-services) describes uses across trades such as HVAC, plumbing, electrical, and cleaning. Those descriptions support evaluating the product for a contractor's workflow. They do not prove that your particular scheduling system, exception rules, or capacity requirements are already configured."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare reception responsibility as well as usage cost",
+            "paragraphs": [
+              "Revo offers 24/7 AI reception with business instructions, appointment booking, SMS follow-up, and call summaries. Transfers and software connections depend on the selected plan. This does not establish feature parity with Bland's configurable platform or an equivalent concurrency allowance.\n\nIf your team has implementation support and wants to control a configurable voice workflow, include that work in the Bland proposal. If your immediate goal is a defined inbound reception service, compare the supported Revo workflow against the same caller requests. In either case, establish who maintains the instructions and handles exceptions after launch.\n\nUse a written scope for estimate requests, booking authority, and handoff. A receptionist should not promise a price, crew arrival, or appointment change that your business has not authorized. Ask each supplier to demonstrate the supported outcome without treating a demonstration as evidence of guaranteed production results."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Are Bland's platform plans and Agent Phone Plan interchangeable?\nNo. The reviewed pages describe different offers and limits. Compare the exact product you intend to purchase.\n\n### Why is there no single Bland price in this comparison?\nPlatform costs depend on the plan and usage, and the reviewed agent phone price presentations conflict. Obtain the applicable current terms rather than building a savings calculation from an uncertain starting price.\n\n### How should I compare Revo with Bland?\nAgree on the reception tasks, required connections, handoff behavior, and operating responsibility first. Then compare the complete offers. [Review Revo's current plans](/pricing).\n\nSources reviewed November 4, 2026: [Bland pricing](https://www.bland.ai/pricing), [Agent Phone Plan documentation](https://docs.bland.ai/platform/agent-phone-plan), [Bland for home services](https://www.bland.ai/industries/home-services), and [Revo plans](https://www.revoapp.ai/pricing). Published capabilities are supplier statements, not our test results."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.bland.ai/pricing",
+          "https://docs.bland.ai/platform/agent-phone-plan",
+          "https://www.bland.ai/industries/home-services",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# Bland AI Alternatives: Choose the Reception Model First\n\nA home service business comparing Bland AI alternatives should identify the Bland product it is considering before comparing prices. A configurable voice platform and an agent phone plan can have different billing and call-capacity rules. Neither should be treated as a universal reception package without checking the applicable terms.\n\nPublished by Revo, a competing provider. This documentation-based comparison was reviewed November 4, 2026. We have not tested these services or verified a customer deployment, and Revo is not affiliated with Bland.\n\n## Decide which Bland offer is in the comparison\n\n[Bland's platform pricing](https://www.bland.ai/pricing) presents usage-based plans with different platform fees, minute rates, transfer rates, and capacity allowances. The total depends on the selected plan and the calls it processes. A per-minute headline is not, by itself, the full cost of running your reception workflow.\n\nThe separate [Agent Phone Plan documentation](https://docs.bland.ai/platform/agent-phone-plan) describes its own subscription and account-wide call limits. The reviewed documentation lists one concurrent call and additional call-frequency limits. If your purchase uses this product, establish what a second caller experiences while a call is already active. Do not substitute the larger voice platform's concurrency allowance for the phone plan's limits.\n\nThe reviewed official pages also contain inconsistent starting-price presentations for the agent phone offer. We therefore do not present one of those figures as a definitive universal price. Ask Bland to identify the current offer, applicable recurring price, introductory period, and governing terms in writing.\n\n## Compare the product, the capacity, and the owner\n\nThis is a proposed evaluation worksheet, not a completed benchmark.\n\n| Buying decision | Evidence to request |\n| --- | --- |\n| Voice platform or Agent Phone Plan | The exact product and plan named in the order |\n| Two customers call together | The applicable concurrency limit and the second caller's experience |\n| A call needs a staff handoff | Transfer behavior, unanswered-call handling, and the relevant charges |\n| Your office changes its service area | Who updates the instructions and verifies the resulting behavior |\n| The requested appointment cannot be confirmed | What the caller is told and who receives the unresolved request |\n\n[Bland's home services page](https://www.bland.ai/industries/home-services) describes uses across trades such as HVAC, plumbing, electrical, and cleaning. Those descriptions support evaluating the product for a contractor's workflow. They do not prove that your particular scheduling system, exception rules, or capacity requirements are already configured.\n\n## Compare reception responsibility as well as usage cost\n\nRevo offers 24/7 AI reception with business instructions, appointment booking, SMS follow-up, and call summaries. Transfers and software connections depend on the selected plan. This does not establish feature parity with Bland's configurable platform or an equivalent concurrency allowance.\n\nIf your team has implementation support and wants to control a configurable voice workflow, include that work in the Bland proposal. If your immediate goal is a defined inbound reception service, compare the supported Revo workflow against the same caller requests. In either case, establish who maintains the instructions and handles exceptions after launch.\n\nUse a written scope for estimate requests, booking authority, and handoff. A receptionist should not promise a price, crew arrival, or appointment change that your business has not authorized. Ask each supplier to demonstrate the supported outcome without treating a demonstration as evidence of guaranteed production results.\n\n## Frequently asked questions\n\n### Are Bland's platform plans and Agent Phone Plan interchangeable?\nNo. The reviewed pages describe different offers and limits. Compare the exact product you intend to purchase.\n\n### Why is there no single Bland price in this comparison?\nPlatform costs depend on the plan and usage, and the reviewed agent phone price presentations conflict. Obtain the applicable current terms rather than building a savings calculation from an uncertain starting price.\n\n### How should I compare Revo with Bland?\nAgree on the reception tasks, required connections, handoff behavior, and operating responsibility first. Then compare the complete offers. [Review Revo's current plans](/pricing).\n\nSources reviewed November 4, 2026: [Bland pricing](https://www.bland.ai/pricing), [Agent Phone Plan documentation](https://docs.bland.ai/platform/agent-phone-plan), [Bland for home services](https://www.bland.ai/industries/home-services), and [Revo plans](https://www.revoapp.ai/pricing). Published capabilities are supplier statements, not our test results.",
+          "sha256": "d82505ba4fb64921a3bf97b721c248df2931dcfa08f9b4435883969816b98468",
+          "assets": []
+        },
+        "related": [
+          "compare/build-vs-buy-ai-receptionist",
+          "retell-ai-pricing"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; Library libfile_bebd1b008b788191a49fe84c98f6f9b0; SHA256 8a069df4032c6f636fa73b33034ce93aa1c68a0e87e97d23220d5cf00eb92990; copy approved for implementation/testing; exact PR release approval pending"
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "lindy-ai-receptionist",
+        "title": "Lindy Pricing: Budget for Reception and Shared Credits",
+        "description": "Understand Lindy pricing for home service reception: paid seats, shared credits, phone usage, and what to confirm before comparing a reception plan.",
+        "navigationLabel": "Lindy receptionist pricing",
+        "eyebrow": "Reception and shared credits",
+        "lead": "Lindy pricing needs a closer look when your home service office wants phone reception inside a broader AI workspace. The relevant question is how the people using that workspace and the work consuming its credits affect the calls your office needs answered.",
+        "intro": "Lindy pricing needs a closer look when your home service office wants phone reception inside a broader AI workspace. The relevant question is how the people using that workspace and the work consuming its credits affect the calls your office needs answered.",
+        "sections": [
+          {
+            "title": "Follow the shared credit pool",
+            "paragraphs": [
+              "[Lindy's phone product page](https://www.lindy.ai/product/phone) describes US phone numbers and calls, including inbound reception and calendar-related workflows. Its phone FAQ says calls consume credits by minute from the same pool used for other work.\n\nThe reviewed [pricing page](https://www.lindy.ai/pricing) describes paid active seats and a shared credit allowance. It also explains that credit-consuming actions pause when the available credits run out. That makes the reception budget depend partly on what else your workspace does.\n\nDo not convert a credit allowance into a promised number of phone minutes without the applicable conversion and configuration. We have not verified one universal phone-credit conversion that would justify that calculation. A monthly subscription headline alone does not establish the cost of answering your expected calls."
+            ],
+            "items": []
+          },
+          {
+            "title": "Confirm the applicable offer before using a starting price",
+            "paragraphs": [
+              "The official pages reviewed for this comparison show inconsistent starting-price presentations across the broader product. Rather than treating one figure as a fixed receptionist price, obtain the offer for your intended workspace, active seats, and phone use.\n\nAsk whether the quote includes the relevant phone setup, how usage draws down credits, and what happens as the balance approaches zero. The reviewed pricing terms distinguish monthly credits, which reset, from purchased top-ups. Verify the current top-up and renewal conditions for the offer you select."
+            ],
+            "items": []
+          },
+          {
+            "title": "Make reception visible inside the workspace budget",
+            "paragraphs": [
+              "The following is a purchasing worksheet, not a measured Lindy workload.\n\n| Budget item | Question for your proposal |\n| --- | --- |\n| Active users | Which people create a paid seat, and who administers access? |\n| Shared credits | Which other tasks consume the same allowance as phone work? |\n| Phone consumption | What is the applicable credit treatment for your configured calls? |\n| Low balance | What warning and replenishment process protects the supported workflow? |\n| A paused action | What operational fallback should your office use? |\n\nA remodeling office might want one workspace for reception and other administrative tasks. That can be relevant to its purchase, but the office still needs a clear owner for the reception allowance and any interruption. Do not assume that unused capacity elsewhere guarantees continuous phone handling."
+            ],
+            "items": []
+          },
+          {
+            "title": "Separate a product illustration from your approved workflow",
+            "paragraphs": [
+              "[Lindy's receptionist page](https://www.lindy.ai/hire/receptionist) illustrates a remodeling-related workflow. It is a product example, not a customer result or a test performed by Revo. Confirm the actual actions your account can perform, the calendar it may use, and which requests require approval.\n\nRevo offers 24/7 AI reception with business instructions, appointment booking, SMS follow-up, and summaries. Transfers and software connections are plan-dependent. Compare that supported reception scope with the portion of Lindy your office would use; do not assume Revo replaces the rest of an AI workspace.\n\nIf the broader workspace is the reason to buy, evaluate its value separately. If inbound reception is the immediate need, keep the comparison focused on permitted commitments, supported booking, and the unresolved requests your staff must finish."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Is every Lindy credit a phone minute?\nDo not assume that equivalence. The phone page describes credit consumption by minute, but you need the applicable conversion and configuration to estimate a workload.\n\n### Can other AI work affect the pool used for reception?\nThe reviewed phone page describes a shared pool. Ask which activities consume it and how your office will monitor and replenish the balance.\n\n### Where can I compare Revo's reception scope?\nReview the selected plan and confirm required connections and transfers before purchasing. [Review Revo's current plans](/pricing).\n\nSources reviewed November 4, 2026: [Lindy phone](https://www.lindy.ai/product/phone), [receptionist illustration](https://www.lindy.ai/hire/receptionist), [pricing](https://www.lindy.ai/pricing), and [Revo plans](https://www.revoapp.ai/pricing). No performance, savings, or completed-booking result has been independently established here."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.lindy.ai/product/phone",
+          "https://www.lindy.ai/pricing",
+          "https://www.lindy.ai/hire/receptionist",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# Lindy Pricing: Budget for Reception and Shared Credits\n\nLindy pricing needs a closer look when your home service office wants phone reception inside a broader AI workspace. The relevant question is how the people using that workspace and the work consuming its credits affect the calls your office needs answered.\n\nPublished by Revo, a competing provider. This review uses public documentation checked November 4, 2026. It is not a hands-on Lindy review, and Revo is not affiliated with Lindy.\n\n## Follow the shared credit pool\n\n[Lindy's phone product page](https://www.lindy.ai/product/phone) describes US phone numbers and calls, including inbound reception and calendar-related workflows. Its phone FAQ says calls consume credits by minute from the same pool used for other work.\n\nThe reviewed [pricing page](https://www.lindy.ai/pricing) describes paid active seats and a shared credit allowance. It also explains that credit-consuming actions pause when the available credits run out. That makes the reception budget depend partly on what else your workspace does.\n\nDo not convert a credit allowance into a promised number of phone minutes without the applicable conversion and configuration. We have not verified one universal phone-credit conversion that would justify that calculation. A monthly subscription headline alone does not establish the cost of answering your expected calls.\n\n## Confirm the applicable offer before using a starting price\n\nThe official pages reviewed for this comparison show inconsistent starting-price presentations across the broader product. Rather than treating one figure as a fixed receptionist price, obtain the offer for your intended workspace, active seats, and phone use.\n\nAsk whether the quote includes the relevant phone setup, how usage draws down credits, and what happens as the balance approaches zero. The reviewed pricing terms distinguish monthly credits, which reset, from purchased top-ups. Verify the current top-up and renewal conditions for the offer you select.\n\n## Make reception visible inside the workspace budget\n\nThe following is a purchasing worksheet, not a measured Lindy workload.\n\n| Budget item | Question for your proposal |\n| --- | --- |\n| Active users | Which people create a paid seat, and who administers access? |\n| Shared credits | Which other tasks consume the same allowance as phone work? |\n| Phone consumption | What is the applicable credit treatment for your configured calls? |\n| Low balance | What warning and replenishment process protects the supported workflow? |\n| A paused action | What operational fallback should your office use? |\n\nA remodeling office might want one workspace for reception and other administrative tasks. That can be relevant to its purchase, but the office still needs a clear owner for the reception allowance and any interruption. Do not assume that unused capacity elsewhere guarantees continuous phone handling.\n\n## Separate a product illustration from your approved workflow\n\n[Lindy's receptionist page](https://www.lindy.ai/hire/receptionist) illustrates a remodeling-related workflow. It is a product example, not a customer result or a test performed by Revo. Confirm the actual actions your account can perform, the calendar it may use, and which requests require approval.\n\nRevo offers 24/7 AI reception with business instructions, appointment booking, SMS follow-up, and summaries. Transfers and software connections are plan-dependent. Compare that supported reception scope with the portion of Lindy your office would use; do not assume Revo replaces the rest of an AI workspace.\n\nIf the broader workspace is the reason to buy, evaluate its value separately. If inbound reception is the immediate need, keep the comparison focused on permitted commitments, supported booking, and the unresolved requests your staff must finish.\n\n## Frequently asked questions\n\n### Is every Lindy credit a phone minute?\nDo not assume that equivalence. The phone page describes credit consumption by minute, but you need the applicable conversion and configuration to estimate a workload.\n\n### Can other AI work affect the pool used for reception?\nThe reviewed phone page describes a shared pool. Ask which activities consume it and how your office will monitor and replenish the balance.\n\n### Where can I compare Revo's reception scope?\nReview the selected plan and confirm required connections and transfers before purchasing. [Review Revo's current plans](/pricing).\n\nSources reviewed November 4, 2026: [Lindy phone](https://www.lindy.ai/product/phone), [receptionist illustration](https://www.lindy.ai/hire/receptionist), [pricing](https://www.lindy.ai/pricing), and [Revo plans](https://www.revoapp.ai/pricing). No performance, savings, or completed-booking result has been independently established here.",
+          "sha256": "fe837143bff9162525b0a1c5cd460fa4161f265ff4fc7d2155b9eb28a4446348",
+          "assets": []
+        },
+        "related": [
+          "newo-ai-receptionist",
+          "compare/build-vs-buy-ai-receptionist"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; Library libfile_bebd1b008b788191a49fe84c98f6f9b0; SHA256 8a069df4032c6f636fa73b33034ce93aa1c68a0e87e97d23220d5cf00eb92990; copy approved for implementation/testing; exact PR release approval pending"
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "brightcall-ai-pricing",
+        "title": "Brightcall AI Pricing and Integrations: Define the Offer",
+        "description": "Evaluate Brightcall AI pricing and integrations for inbound reception by checking the product, order form, usage charges, and connected booking scope.",
+        "navigationLabel": "Brightcall AI pricing",
+        "eyebrow": "Product and quote scope",
+        "lead": "If your home service office is researching Brightcall.ai pricing and integrations, identify the product and the work you want connected before comparing a quote. An inbound AI agent, a lead-callback product, and a dialer answer different operational needs. A proposal for one should not be treated as the price of all three.",
+        "intro": "If your home service office is researching Brightcall.ai pricing and integrations, identify the product and the work you want connected before comparing a quote. An inbound AI agent, a lead-callback product, and a dialer answer different operational needs. A proposal for one should not be treated as the price of all three.",
+        "sections": [
+          {
+            "title": "Specify the inbound reception offer",
+            "paragraphs": [
+              "[Brightcall's AI Agent page](https://www.brightcall.ai/en/ai-agent) describes answering, qualification, configured booking, and handoff. Brightcall also markets Speed To Lead and Dialer products. If incoming customer calls are the purchase, make the AI Agent scope explicit rather than accepting a general sales-automation description.\n\nWrite down what the agent may complete during a call. For an estimate inquiry, that might mean collecting the request or booking an authorized appointment. It should not imply authority to set an unapproved project price, allocate a crew, or confirm a change in another system without the required connection."
+            ],
+            "items": []
+          },
+          {
+            "title": "Read the order form alongside the pricing discussion",
+            "paragraphs": [
+              "We did not verify a complete public tariff that establishes one universal Brightcall AI reception price. Its [terms of use](https://www.brightcall.ai/en/terms-of-use), effective November 4, 2026, describe fees through the applicable order form or accepted plan and distinguish subscription fees from usage charges. The terms give the order form precedence where applicable.\n\nRequest a proposal that identifies the product, currency, recurring fees, usage treatment, contract duration, and included support. Do not infer a US reception total from a different product's advertised price or from a quote in another currency."
+            ],
+            "items": []
+          },
+          {
+            "title": "Turn an integration label into an agreed action",
+            "paragraphs": [
+              "A name on an [integrations page](https://www.brightcall.ai/en/integrations) is a reason to investigate a connection. It is not sufficient evidence that the precise booking or handoff your office needs is configured and included.\n\nUse this proposed quote checklist; it is not a report of completed integration tests.\n\n| Connection requirement | What to put in the agreed scope |\n| --- | --- |\n| Customer inquiry record | Destination, fields, duplicate handling, and the person responsible for failures |\n| Appointment request | Whether the action creates a request or a confirmed event |\n| Availability | Which calendar or operating system supplies the authorized openings |\n| Staff handoff | Destination, unanswered-call behavior, and what context reaches the recipient |\n| Later changes | Who maintains the connection and what additional work is chargeable |\n\nAsk the supplier to demonstrate the configured action in an authorized test environment and show its resulting record. Keep the difference between a calendar event and a confirmed field-service job explicit."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare the offer with a defined reception need",
+            "paragraphs": [
+              "Revo offers 24/7 AI reception, business instructions, appointment booking, SMS follow-up, and summaries. Team transfers and software connections depend on the selected plan. No particular CRM action or connector should be assumed from that general description.\n\nConsider Brightcall when its quoted AI Agent and connection scope fit the workflow you want configured. Consider Revo when its supported reception plan fits the incoming calls your office needs handled. If you also need outbound sales tooling, evaluate that requirement separately; this comparison does not establish that Revo replaces Brightcall's other products."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Is there one verified public price for Brightcall AI reception?\nNot in the sources reviewed here. Obtain the applicable product proposal and read its subscription, usage, currency, and contract terms together.\n\n### Does a listed integration guarantee booking in my system?\nNo. Establish the exact supported action, configuration, and included implementation work. A request, calendar event, and confirmed operational job are different outcomes.\n\n### How do I compare this with Revo?\nUse the same incoming-call requirements and confirm each supplier's actual scope. [Review Revo's current plans](/pricing).\n\nSources reviewed November 4, 2026: [Brightcall AI Agent](https://www.brightcall.ai/en/ai-agent), [integrations](https://www.brightcall.ai/en/integrations), [terms of use](https://www.brightcall.ai/en/terms-of-use), and [Revo plans](https://www.revoapp.ai/pricing). Supplier descriptions do not establish performance or a particular customer outcome."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.brightcall.ai/en/ai-agent",
+          "https://www.brightcall.ai/en/terms-of-use",
+          "https://www.brightcall.ai/en/integrations",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# Brightcall AI Pricing and Integrations: Define the Offer\n\nIf your home service office is researching Brightcall.ai pricing and integrations, identify the product and the work you want connected before comparing a quote. An inbound AI agent, a lead-callback product, and a dialer answer different operational needs. A proposal for one should not be treated as the price of all three.\n\nPublished by Revo, a competing provider. This documentary comparison was reviewed November 4, 2026. We have not tested Brightcall, verified a US contractor installation, or independently validated its listed connections. Revo is not affiliated with Brightcall.\n\n## Specify the inbound reception offer\n\n[Brightcall's AI Agent page](https://www.brightcall.ai/en/ai-agent) describes answering, qualification, configured booking, and handoff. Brightcall also markets Speed To Lead and Dialer products. If incoming customer calls are the purchase, make the AI Agent scope explicit rather than accepting a general sales-automation description.\n\nWrite down what the agent may complete during a call. For an estimate inquiry, that might mean collecting the request or booking an authorized appointment. It should not imply authority to set an unapproved project price, allocate a crew, or confirm a change in another system without the required connection.\n\n## Read the order form alongside the pricing discussion\n\nWe did not verify a complete public tariff that establishes one universal Brightcall AI reception price. Its [terms of use](https://www.brightcall.ai/en/terms-of-use), effective November 4, 2026, describe fees through the applicable order form or accepted plan and distinguish subscription fees from usage charges. The terms give the order form precedence where applicable.\n\nRequest a proposal that identifies the product, currency, recurring fees, usage treatment, contract duration, and included support. Do not infer a US reception total from a different product's advertised price or from a quote in another currency.\n\n## Turn an integration label into an agreed action\n\nA name on an [integrations page](https://www.brightcall.ai/en/integrations) is a reason to investigate a connection. It is not sufficient evidence that the precise booking or handoff your office needs is configured and included.\n\nUse this proposed quote checklist; it is not a report of completed integration tests.\n\n| Connection requirement | What to put in the agreed scope |\n| --- | --- |\n| Customer inquiry record | Destination, fields, duplicate handling, and the person responsible for failures |\n| Appointment request | Whether the action creates a request or a confirmed event |\n| Availability | Which calendar or operating system supplies the authorized openings |\n| Staff handoff | Destination, unanswered-call behavior, and what context reaches the recipient |\n| Later changes | Who maintains the connection and what additional work is chargeable |\n\nAsk the supplier to demonstrate the configured action in an authorized test environment and show its resulting record. Keep the difference between a calendar event and a confirmed field-service job explicit.\n\n## Compare the offer with a defined reception need\n\nRevo offers 24/7 AI reception, business instructions, appointment booking, SMS follow-up, and summaries. Team transfers and software connections depend on the selected plan. No particular CRM action or connector should be assumed from that general description.\n\nConsider Brightcall when its quoted AI Agent and connection scope fit the workflow you want configured. Consider Revo when its supported reception plan fits the incoming calls your office needs handled. If you also need outbound sales tooling, evaluate that requirement separately; this comparison does not establish that Revo replaces Brightcall's other products.\n\n## Frequently asked questions\n\n### Is there one verified public price for Brightcall AI reception?\nNot in the sources reviewed here. Obtain the applicable product proposal and read its subscription, usage, currency, and contract terms together.\n\n### Does a listed integration guarantee booking in my system?\nNo. Establish the exact supported action, configuration, and included implementation work. A request, calendar event, and confirmed operational job are different outcomes.\n\n### How do I compare this with Revo?\nUse the same incoming-call requirements and confirm each supplier's actual scope. [Review Revo's current plans](/pricing).\n\nSources reviewed November 4, 2026: [Brightcall AI Agent](https://www.brightcall.ai/en/ai-agent), [integrations](https://www.brightcall.ai/en/integrations), [terms of use](https://www.brightcall.ai/en/terms-of-use), and [Revo plans](https://www.revoapp.ai/pricing). Supplier descriptions do not establish performance or a particular customer outcome.",
+          "sha256": "782262f0016478e5fc8ff09d2cf9e70099971168806199b80b6dc8af02ef2917",
+          "assets": []
+        },
+        "related": [
+          "cloudtalk-ai-voice-agents",
+          "centralized-scheduling-integration"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; Library libfile_bebd1b008b788191a49fe84c98f6f9b0; SHA256 8a069df4032c6f636fa73b33034ce93aa1c68a0e87e97d23220d5cf00eb92990; copy approved for implementation/testing; exact PR release approval pending; navigation label shortened to fit existing32-character guard; new label pending final PR review, not previously approved verbatim"
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "ringg-ai-pricing",
+        "title": "Ringg Pricing: Separate US Voice and Additional Charges",
+        "description": "Review Ringg pricing for US reception by separating connected voice minutes, phone numbers, analytics, and the terms your complete quote must confirm.",
+        "navigationLabel": "Ringg pricing for reception",
+        "eyebrow": "US voice and optional charges",
+        "lead": "Ringg pricing should be compared using the country, product, and usage your home service office actually needs. A connected voice minute, a monthly phone number, and an optional analytics charge are separate items. Combining them correctly matters more than treating the headline voice rate as a complete reception bill.",
+        "intro": "Ringg pricing should be compared using the country, product, and usage your home service office actually needs. A connected voice minute, a monthly phone number, and an optional analytics charge are separate items. Combining them correctly matters more than treating the headline voice rate as a complete reception bill.",
+        "sections": [
+          {
+            "title": "Read the United States pricing column",
+            "paragraphs": [
+              "The reviewed [Ringg pricing page](https://www.ringg.ai/pricing) contains a United States dollar column. It lists connected voice at $0.10 per minute, a phone number at $5.99 per month, and advanced analytics at $0.02 per call. Treat those as dated published line items, subject to the applicable offer and terms—not as a guaranteed all-in monthly price.\n\nThe same page presents other products with different meters, including chat or WhatsApp sessions and browser-based use. Those are not interchangeable with telephone voice minutes. Include an optional product only if your office intends to use it and the supplier confirms its billing basis.\n\nDo not apply an India-denominated concurrency price to a US account. Ask for the US capacity terms in the proposal rather than converting a regional figure and assuming it applies."
+            ],
+            "items": []
+          },
+          {
+            "title": "Ask what the voice rate includes in your configuration",
+            "paragraphs": [
+              "Ringg's headline describes bundled voice components, while its FAQ distinguishes using its telephony from bringing your own provider. With an external provider, separate provider charges can matter. Request a clear answer for the configuration you intend to buy instead of combining the bundled headline and a bring-your-own arrangement as though they were identical.\n\nThe reviewed FAQ also describes connected time, including hold or silence, and notes that transfer billing depends on the provider arrangement. Confirm the applicable call states in writing. A customer's pause and the portion handled after a transfer should not disappear from your estimate simply because the AI is no longer speaking."
+            ],
+            "items": []
+          },
+          {
+            "title": "Build the quote from separate items",
+            "paragraphs": [
+              "This is an illustrative purchasing worksheet, not a calculated customer bill or a test of Ringg.\n\n| Item | What your office needs confirmed |\n| --- | --- |\n| Connected voice minutes | Applicable country rate, measured time, and included components |\n| Phone number | Monthly charge, quantity, and applicable setup or number conditions |\n| Advanced analytics | Whether enabled, which calls are chargeable, and the per-call treatment |\n| External telephony | Any separate provider bill and the treatment of transferred calls |\n| Optional channels | Their own meter and whether your reception workflow needs them |\n| Capacity and service terms | Applicable US limits, implementation scope, and cancellation conditions |\n\nRequest an example that reconciles a configured call record to the applicable charges. Without that information, a monthly savings estimate or cost-per-booked-job claim would be speculative."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare the supported reception outcome",
+            "paragraphs": [
+              "[Ringg's industry catalog](https://www.ringg.ai/industries) describes multiple business categories. A broad catalog is not proof that your US contractor workflow is already implemented. Confirm permitted answers, booking authority, the destination of the record, and the person who handles unresolved requests.\n\nRevo offers 24/7 AI reception with business instructions, appointment booking, SMS follow-up, and summaries. Transfers and software connections depend on the selected plan. This does not establish equivalence with every Ringg channel, configurable connection, or capacity option.\n\nConsider the configured Ringg offer when that scope and its complete charges fit your operation. Consider Revo when its supported reception plan meets the incoming-call need. In either case, compare the actual outcome your office can honor, rather than counting a captured inquiry as completed field work."
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Is $0.10 per minute the complete Ringg reception price?\nThe reviewed US page lists that connected voice rate alongside other charges and products. Your configuration, number, enabled options, and provider arrangement determine which additional items apply.\n\n### Can I use the same rate for voice, chat, and browser sessions?\nNo. The reviewed page presents different meters. Request the relevant product and country terms for each channel you intend to buy.\n\n### What should I verify before choosing Revo instead?\nConfirm the selected plan's supported booking, handoff, connections, and applicable limits against your reception requirements. [Review Revo's current plans](/pricing).\n\nSources reviewed November 4, 2026: [Ringg pricing and FAQ](https://www.ringg.ai/pricing), [industry catalog](https://www.ringg.ai/industries), and [Revo plans](https://www.revoapp.ai/pricing). Published prices and descriptions are dated supplier statements, not independent performance evidence."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.ringg.ai/pricing",
+          "https://www.ringg.ai/industries",
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-04",
+        "markdownArticle": {
+          "content": "# Ringg Pricing: Separate US Voice and Additional Charges\n\nRingg pricing should be compared using the country, product, and usage your home service office actually needs. A connected voice minute, a monthly phone number, and an optional analytics charge are separate items. Combining them correctly matters more than treating the headline voice rate as a complete reception bill.\n\nPublished by Revo, a competing provider. This review uses public documentation checked November 4, 2026. We have not tested Ringg or verified a specialized US home service deployment, and Revo is not affiliated with Ringg.\n\n## Read the United States pricing column\n\nThe reviewed [Ringg pricing page](https://www.ringg.ai/pricing) contains a United States dollar column. It lists connected voice at $0.10 per minute, a phone number at $5.99 per month, and advanced analytics at $0.02 per call. Treat those as dated published line items, subject to the applicable offer and terms—not as a guaranteed all-in monthly price.\n\nThe same page presents other products with different meters, including chat or WhatsApp sessions and browser-based use. Those are not interchangeable with telephone voice minutes. Include an optional product only if your office intends to use it and the supplier confirms its billing basis.\n\nDo not apply an India-denominated concurrency price to a US account. Ask for the US capacity terms in the proposal rather than converting a regional figure and assuming it applies.\n\n## Ask what the voice rate includes in your configuration\n\nRingg's headline describes bundled voice components, while its FAQ distinguishes using its telephony from bringing your own provider. With an external provider, separate provider charges can matter. Request a clear answer for the configuration you intend to buy instead of combining the bundled headline and a bring-your-own arrangement as though they were identical.\n\nThe reviewed FAQ also describes connected time, including hold or silence, and notes that transfer billing depends on the provider arrangement. Confirm the applicable call states in writing. A customer's pause and the portion handled after a transfer should not disappear from your estimate simply because the AI is no longer speaking.\n\n## Build the quote from separate items\n\nThis is an illustrative purchasing worksheet, not a calculated customer bill or a test of Ringg.\n\n| Item | What your office needs confirmed |\n| --- | --- |\n| Connected voice minutes | Applicable country rate, measured time, and included components |\n| Phone number | Monthly charge, quantity, and applicable setup or number conditions |\n| Advanced analytics | Whether enabled, which calls are chargeable, and the per-call treatment |\n| External telephony | Any separate provider bill and the treatment of transferred calls |\n| Optional channels | Their own meter and whether your reception workflow needs them |\n| Capacity and service terms | Applicable US limits, implementation scope, and cancellation conditions |\n\nRequest an example that reconciles a configured call record to the applicable charges. Without that information, a monthly savings estimate or cost-per-booked-job claim would be speculative.\n\n## Compare the supported reception outcome\n\n[Ringg's industry catalog](https://www.ringg.ai/industries) describes multiple business categories. A broad catalog is not proof that your US contractor workflow is already implemented. Confirm permitted answers, booking authority, the destination of the record, and the person who handles unresolved requests.\n\nRevo offers 24/7 AI reception with business instructions, appointment booking, SMS follow-up, and summaries. Transfers and software connections depend on the selected plan. This does not establish equivalence with every Ringg channel, configurable connection, or capacity option.\n\nConsider the configured Ringg offer when that scope and its complete charges fit your operation. Consider Revo when its supported reception plan meets the incoming-call need. In either case, compare the actual outcome your office can honor, rather than counting a captured inquiry as completed field work.\n\n## Frequently asked questions\n\n### Is $0.10 per minute the complete Ringg reception price?\nThe reviewed US page lists that connected voice rate alongside other charges and products. Your configuration, number, enabled options, and provider arrangement determine which additional items apply.\n\n### Can I use the same rate for voice, chat, and browser sessions?\nNo. The reviewed page presents different meters. Request the relevant product and country terms for each channel you intend to buy.\n\n### What should I verify before choosing Revo instead?\nConfirm the selected plan's supported booking, handoff, connections, and applicable limits against your reception requirements. [Review Revo's current plans](/pricing).\n\nSources reviewed November 4, 2026: [Ringg pricing and FAQ](https://www.ringg.ai/pricing), [industry catalog](https://www.ringg.ai/industries), and [Revo plans](https://www.revoapp.ai/pricing). Published prices and descriptions are dated supplier statements, not independent performance evidence.",
+          "sha256": "1573b242bf81e34b353d44a02bb82e744b428fba23726794965c4e8ad20bfc5d",
+          "assets": []
+        },
+        "related": [
+          "retell-ai-pricing",
+          "answering-service-cost"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; Library libfile_bebd1b008b788191a49fe84c98f6f9b0; SHA256 8a069df4032c6f636fa73b33034ce93aa1c68a0e87e97d23220d5cf00eb92990; copy approved for implementation/testing; exact PR release approval pending"
+        }
+      }
+    }
+  ]
+}
