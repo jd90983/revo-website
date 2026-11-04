@@ -20,3 +20,58 @@
 @media(prefers-reduced-motion:reduce){.home-guide *{scroll-behavior:auto!important;transition:none!important}}
 
 .home-guide-provider-sources{display:flex;gap:12px 20px;flex-wrap:wrap;margin-top:24px}.home-guide-provider-sources a{font-size:14px;color:#e0e0e0;text-underline-offset:5px}
+
+/* Revo guides — refinement over the current base (same palette, fonts and components) */
+.home-guide{--guide-col:760px;--guide-text:#d9dbe0;--guide-muted:#a9adb5;--guide-line:rgba(255,255,255,.12)}
+/* 1. One centered reading column shared by the outline, update line, article and sources */
+.home-guide .home-guide-container.home-guide-markdown,
+.home-guide .home-guide-outline>.home-guide-container,
+.home-guide .home-guide-container.guide-updated,
+.home-guide .home-guide-references>.home-guide-container{max-width:var(--guide-col);width:calc(100% - 48px);margin-inline:auto}
+/* 2. Calmer rhythm: single article background, thinner dividers, less padding */
+.home-guide .home-guide-section:not(.home-guide-close),.home-guide .home-guide-section:not(.home-guide-close):nth-child(even){padding:56px 0;background:#0a0b0c}
+.home-guide #read>.home-guide-section+.home-guide-section{border-top:1px solid var(--guide-line)}
+/* 3. Typography scale */
+.home-guide .hero .hero-title{font-size:60px;letter-spacing:-.02em}
+.home-guide .hero .hero-subtitle{font-size:19px;color:#e6e7ea;max-width:680px}
+.home-guide .home-guide-section h2{font-size:34px;line-height:1.2;margin-bottom:18px;letter-spacing:-.015em}
+.home-guide .home-guide-markdown h3{font-family:var(--font-heading);font-size:20px;line-height:1.35;margin:28px 0 8px;font-weight:600}
+.home-guide .home-guide-markdown p,.home-guide .home-guide-markdown li{font-size:17px;line-height:1.75;color:var(--guide-text);max-width:none}
+.home-guide .home-guide-markdown strong{color:#fff;font-weight:600}
+/* 4. Lists with brand markers */
+.home-guide .home-guide-markdown ul{list-style:none;padding-left:0;margin:8px 0 20px}
+.home-guide .home-guide-markdown ul li{position:relative;padding-left:24px;margin:10px 0}
+.home-guide .home-guide-markdown ul li::before{content:'';position:absolute;left:4px;top:.72em;width:7px;height:7px;border-radius:50%;background:var(--color-primary)}
+/* 5. Links in text: brand color; the plans link reads as a call to action */
+.home-guide .home-guide-markdown a{color:var(--color-primary);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.home-guide .home-guide-markdown a:hover{color:#ffb27a}
+.home-guide .home-guide-markdown a[href="/pricing"]{font-weight:600;text-decoration:none;border-bottom:2px solid var(--color-primary);white-space:nowrap}
+.home-guide .home-guide-markdown a[href="/pricing"]::after{content:' \2192'}
+/* 6. Disclosure as a quiet note under the outline */
+.home-guide #read>section.home-guide-section:first-of-type{padding:28px 0}
+.home-guide #read>section.home-guide-section:first-of-type p{font-size:14px;line-height:1.6;color:var(--guide-muted);border-left:3px solid var(--color-primary);padding-left:14px;margin:0}
+/* 7. CTAs: brand orange primary, outlined secondary */
+.home-guide .btn-primary-large,.home-guide .hero .hero-actions .btn-primary-large,.home-guide .navbar .btn-primary{background:var(--color-primary);border-color:var(--color-primary);color:#0a0b0c}
+.home-guide .btn-primary-large:hover,.home-guide .navbar .btn-primary:hover{background:#ffa25a;border-color:#ffa25a;color:#0a0b0c}
+.home-guide .btn-secondary-large,.home-guide .hero .hero-actions .btn-secondary-large{background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff}
+.home-guide .btn-secondary-large:hover{border-color:#fff}
+/* 8. Outline and meta */
+.home-guide .home-guide-outline{padding:16px 0}
+.home-guide .home-guide-outline a{color:var(--guide-text);text-decoration:none}
+.home-guide .home-guide-outline a:hover{color:var(--color-primary)}
+.home-guide .guide-updated{color:var(--guide-muted);padding-top:20px}
+/* 9. Sources and closing block */
+.home-guide .home-guide-references{padding:40px 0}
+.home-guide .home-guide-references h2{font-size:16px;text-transform:uppercase;letter-spacing:.08em;color:var(--guide-muted)}
+.home-guide .home-guide-references ul{padding-left:0;list-style:none}
+.home-guide .home-guide-close{padding:72px 0}
+.home-guide .home-guide-close h2{font-size:36px}
+.home-guide .home-guide-related a{color:var(--guide-text);text-decoration:none;border:1px solid var(--guide-line);border-radius:100px;padding:8px 16px}
+.home-guide .home-guide-related a:hover{border-color:var(--color-primary);color:#fff}
+@media(max-width:767px){
+ .home-guide .hero .hero-title{font-size:36px}.home-guide .hero .hero-subtitle{font-size:17px}
+ .home-guide .home-guide-section:not(.home-guide-close),.home-guide .home-guide-section:not(.home-guide-close):nth-child(even){padding:40px 0}
+ .home-guide .home-guide-section h2{font-size:27px}
+ .home-guide .home-guide-markdown p,.home-guide .home-guide-markdown li{font-size:16px}
+ .home-guide .home-guide-close h2{font-size:28px}
+}
