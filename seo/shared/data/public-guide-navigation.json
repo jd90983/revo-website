@@ -1798,5 +1798,55 @@
     "slug": "ringg-ai-pricing",
     "label": "US voice and optional charges",
     "template": "workflow"
+  },
+  {
+    "slug": "virtual-receptionist-pricing",
+    "label": "Pricing models explained",
+    "template": "workflow"
+  },
+  {
+    "slug": "grasshopper-pricing",
+    "label": "Phone line or reception",
+    "template": "workflow"
+  },
+  {
+    "slug": "automated-phone-answering-system",
+    "label": "Menu or conversation",
+    "template": "workflow"
+  },
+  {
+    "slug": "hatch-ai-pricing",
+    "label": "Quoted platform or published plan",
+    "template": "workflow"
+  },
+  {
+    "slug": "leadtruffle-ai-receptionist",
+    "label": "Lead response for contractors",
+    "template": "workflow"
+  },
+  {
+    "slug": "mightycall-pricing",
+    "label": "Phone seats or reception",
+    "template": "workflow"
+  },
+  {
+    "slug": "talkroute-pricing",
+    "label": "Phone plan plus AI add-on",
+    "template": "workflow"
+  },
+  {
+    "slug": "echowin-ai-receptionist",
+    "label": "Usage or flat plan",
+    "template": "workflow"
+  },
+  {
+    "slug": "vapi-pricing",
+    "label": "Build or buy reception",
+    "template": "workflow"
+  },
+  {
+    "slug": "nextiva-pricing",
+    "label": "Phone system or reception",
+    "template": "workflow"
   }
 ]
