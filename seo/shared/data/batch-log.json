@@ -1173,5 +1173,26 @@
       "added brightcall-ai-pricing as draft",
       "added ringg-ai-pricing as draft"
     ]
+  },
+  {
+    "batchId": "2026-11-04-ten-reception-guides",
+    "batchHash": "sha256:09bf94a8756f8b0bf92073907057c8858de88d2f896df092a60edb7a55daf305",
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-04-ten/ten-guides-approved-public-copy.txt SHA256 b9a70b20943f500df66470d237015740be22a78630e17622840fe48d53c2c324; copy approved by Jorge Perez in chat on November 4, 2026; implementation by Claude; exact PR release approval pending"
+    },
+    "appliedAt": "2026-11-04",
+    "changes": [
+      "added virtual-receptionist-pricing as draft",
+      "added grasshopper-pricing as draft",
+      "added automated-phone-answering-system as draft",
+      "added hatch-ai-pricing as draft",
+      "added leadtruffle-ai-receptionist as draft",
+      "added mightycall-pricing as draft",
+      "added talkroute-pricing as draft",
+      "added echowin-ai-receptionist as draft",
+      "added vapi-pricing as draft",
+      "added nextiva-pricing as draft"
+    ]
   }
 ]
