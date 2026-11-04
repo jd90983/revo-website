@@ -19,6 +19,7 @@ test('seven additional November 2 articles preserve approved bodies and disclose
  for(const [,number,part] of parts){
   const title=part.match(/^Title: (.+)$/m)[1],url=part.match(/^Proposed URL: (.+)$/m)[1];
   const page=REVIEW_PAGES.find(p=>p.slug===url.split('/').at(-1));
+  if(/no-competitor-prices/.test(page.source?.reference??''))continue; // superseded by the 2026-11-04 no-competitor-prices rewrite
   assert.equal(page.title,title);
   const body=part.slice(part.indexOf('\n\n')+2).split('\nPrimary CTA:')[0];
   const actual=page.markdownArticle.content.split('\n\n## Official sources')[0].replace(/^#{1,2} /gm,'');
@@ -84,6 +85,7 @@ test('approved v0 copy, titles, descriptions and article paragraphs are retained
  assert.equal(createHash('sha256').update(source).digest('hex'),'951e1127e8c0fa0c4b3d8900c7e104bf0d018032e306207d2f850ee68937962d');
  for(const part of source.split('TITLE / H1\n').slice(1)){
   const title=part.split('\n')[0],slug=part.split('PROPOSED URL\n')[1].split('\n')[0].split('/').at(-1),p=REVIEW_PAGES.find(x=>x.slug===slug);
+  if(/no-competitor-prices/.test(p.source?.reference??''))continue; // superseded by the 2026-11-04 no-competitor-prices rewrite
   assert.equal(p.title,title);assert.equal(p.description,part.split('META DESCRIPTION\n')[1].split('\n')[0]);
   const blocks=part.split('EXACT PAGE COPY\n\n')[1].split('\nPRIMARY CTA')[0].trim().split('\n\n');
   const text=p.markdownArticle.content;

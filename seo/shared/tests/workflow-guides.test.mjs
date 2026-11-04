@@ -31,15 +31,11 @@ test('approved workflow guides obey publication approval and have no acquisition
   assert.ok(html.includes('home-guide-title-accent'));
  }
 });
-test('named-provider comparison preserves tier boundaries and adjacent primary sources',()=>{
+test('named-provider comparison shows no competitor prices or tables (owner decision 2026-11-04)',()=>{
  const page=guides.find(p=>p.slug==='compare/home-services-ai-receptionists');
- assert.ok(page);
- const providers=page.sections.slice(0,5);
- assert.deepEqual(providers.map(s=>s.title.split(':')[0]),['Avoca','Goodcall','Revo','Sameday','Smith.ai']);
- assert.ok(providers.every(s=>s.sources?.length));
- const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page}));
- assert.ok(html.includes('Sources for Avoca'));
- assert.ok(page.sections[2].paragraphs.join(' ').includes('excluded from Solo'));
+ assert.ok(page&&page.markdownArticle);
+ assert.ok(!page.markdownArticle.content.includes('| ---'));
+ assert.ok(!/\$\d/.test(page.markdownArticle.content.replace(/\$(87\.50|175|350|700)\b/g,'')));
  const invalid={...page,sections:[{...page.sections[0],sources:[{label:'Unsafe',href:'javascript:alert(1)'}]}]};
  assert.ok(registryErrors([invalid]).some(e=>e.includes('HTTPS')));
 });
@@ -134,7 +130,7 @@ test('approved Markdown transfers retain exact copy, semantic tables, code and l
   const changed={...page,markdownArticle:{...article,content:article.content+'\nChanged'}};
   assert.notEqual(contentHash(changed),contentHash(page));
  }
- assert.ok(tables>=5);assert.ok(codes>=1);assert.equal(resources,7);
+ assert.ok(codes>=1);assert.equal(resources,5);
 });
 
 test('publication boundary permits only exact approved public resources and Google documentation',async()=>{
@@ -173,6 +169,15 @@ test('Markdown decision maps and code blocks have explicit AA text contrast',asy
  };
  const a=luminance(fg),b=luminance(bg);assert.ok((Math.max(a,b)+0.05)/(Math.min(a,b)+0.05)>=4.5);
  assert.match(css,/\.home-guide-markdown pre code\{color:inherit\}/);
- const breezy=guides.find(p=>p.slug==='breezy-ai-receptionist');const html=renderToStaticMarkup(React.createElement(WorkflowGuideTemplate,{page:breezy}));
- assert.ok(html.includes('<pre><code class="language-text">Where should the office manage the customer record?'));
+});
+
+test('pages rewritten without competitor prices keep only Revo amounts and no tables',()=>{
+ const rewritten=guides.filter(p=>/no-competitor-prices/.test(p.source?.reference??''));
+ assert.ok(rewritten.length>=42);
+ for(const p of rewritten){
+  const text=[p.title,p.description,p.lead,p.markdownArticle.content].join(' ');
+  assert.ok(!/\$\s?\d/.test(text.replace(/\$(87\.50|175|350|700)\b/g,'')),p.slug);
+  assert.ok(!/¢/.test(text),p.slug);assert.ok(!text.includes('| ---'),p.slug);
+  assert.equal(p.overviewTable,undefined,p.slug);
+ }
 });

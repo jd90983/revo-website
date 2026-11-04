@@ -14,7 +14,7 @@ test('November 3 remaining five preserves all five approved article bodies and m
  for(const [,number,part] of parts){
   const title=part.match(/^Title: (.+)$/m)[1],url=part.match(/^Proposed URL: (.+)$/m)[1];
   const page=REVIEW_PAGES.find(p=>'/ai-answering-service/'+p.slug===url);
-  assert.ok(page,number);assert.equal(page.title,title);
+  assert.ok(page,number);if(/no-competitor-prices/.test(page.source?.reference??''))continue; // superseded by the 2026-11-04 no-competitor-prices rewriteassert.equal(page.title,title);
   assert.equal(page.description,part.match(/^Meta description: (.+)$/m)[1]);
   const body=part.slice(part.indexOf('\n\n')+2);
   assert.equal(page.markdownArticle.content,body,number+': exact approved public body');
