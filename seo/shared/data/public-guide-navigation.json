@@ -1888,5 +1888,15 @@
     "slug": "electrician-answering-service",
     "label": "Calls while you are on a job",
     "template": "workflow"
+  },
+  {
+    "slug": "hvac-call-center-alternative",
+    "label": "Outsourced team or AI answering",
+    "template": "workflow"
+  },
+  {
+    "slug": "plumbing-call-center-alternative",
+    "label": "Call team or AI receptionist",
+    "template": "workflow"
   }
 ]
