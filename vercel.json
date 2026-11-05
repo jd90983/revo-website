@@ -1892,6 +1892,16 @@
       "permanent": true
     },
     {
+      "source": "/ai-answering-service/hvac-call-center-alternative.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/hvac-call-center-alternative",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/plumbing-call-center-alternative.html",
+      "destination": "https://www.revoapp.ai/ai-answering-service/plumbing-call-center-alternative",
+      "permanent": true
+    },
+    {
       "source": "/ai-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service",
       "permanent": true
@@ -4058,6 +4068,14 @@
     {
       "source": "/ai-answering-service/electrician-answering-service",
       "destination": "/ai-answering-service/electrician-answering-service.html"
+    },
+    {
+      "source": "/ai-answering-service/hvac-call-center-alternative",
+      "destination": "/ai-answering-service/hvac-call-center-alternative.html"
+    },
+    {
+      "source": "/ai-answering-service/plumbing-call-center-alternative",
+      "destination": "/ai-answering-service/plumbing-call-center-alternative.html"
     },
     {
       "source": "/ai-answering-service",
