@@ -130,7 +130,7 @@ test('approved Markdown transfers retain exact copy, semantic tables, code and l
   const changed={...page,markdownArticle:{...article,content:article.content+'\nChanged'}};
   assert.notEqual(contentHash(changed),contentHash(page));
  }
- assert.ok(codes>=1);assert.equal(resources,5);
+ assert.ok(codes>=1);assert.equal(resources,3); // lower-answering-service-cost no longer links its two example-amount companions (owner decision 2026-11-05)
 });
 
 test('publication boundary permits only exact approved public resources and Google documentation',async()=>{
