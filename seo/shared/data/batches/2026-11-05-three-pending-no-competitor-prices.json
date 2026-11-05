@@ -1,0 +1,254 @@
+{
+  "batchId": "2026-11-05-three-pending-no-competitor-prices",
+  "source": {
+    "kind": "owner-approved-exact-copy",
+    "reference": "Owner-approved rewrite without competitor prices or example amounts; evidence/2026-11-05/three-pending-no-competitor-prices.txt SHA256 e66cc9303c58a2400254a40eca64e2fd54a5083bbe559a3ad85af04d2f784df2; approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
+  },
+  "operations": [
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "lower-answering-service-cost",
+        "title": "Lower answering service cost: reconcile the bill first",
+        "navigationLabel": "Lower answering service cost",
+        "description": "Match answering-service charges to agreed billing rules and compare cost changes without cutting required coverage.",
+        "eyebrow": "Home-service operating guide",
+        "lead": "To lower an answering service bill, first work out what the bill represents. A busier month, a billing rule or a one-time charge can explain an increase; an unexplained amount is a question, not proof of an overcharge.",
+        "intro": "To lower an answering service bill, first work out what the bill represents. A busier month, a billing rule or a one-time charge can explain an increase; an unexplained amount is a question, not proof of an overcharge.",
+        "sections": [
+          {
+            "title": "Put the invoice and its rules in the same period",
+            "paragraphs": [
+              "Gather the invoice, the agreement and the activity records you are allowed to inspect. Write down the billing unit, included allowance, reset date, rate after the allowance and rounding method. A blank rate is not zero, and the [service agreement checklist](https://www.revoapp.ai/ai-answering-service/answering-service-contract-checklist) helps you find what is missing."
+            ],
+            "items": []
+          },
+          {
+            "title": "Rebuild the bill line by line",
+            "paragraphs": [
+              "Break the invoice into its parts and check each one against the agreement:\n- **Monthly base:** matches the plan you signed.\n- **Usage:** billable units after rounding, minus the allowance, times the rate after the allowance.\n- **Add-ons:** each one approved and still in use.\n- **One-time items:** setup fees and credits, kept apart from recurring cost.\n\nCheck whether each call rounds up separately. When billed usage has no supporting record, ask which activity it covers and keep the item open until the provider answers."
+            ],
+            "items": []
+          },
+          {
+            "title": "Compare options on the same workload",
+            "paragraphs": [
+              "Recurring cost is monthly base + usage + recurring add-ons. Price every option, including your current plan, with the same month of activity and coverage. A credit or an ended setup fee is not a lasting reduction, and a bundled feature is not a second saving.\n\nA larger allowance can cost more at lower volume. Reconcile the next invoice before calling any change a result."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo is a flat AI reception plan with included minutes, and calls under 20 seconds do not count. Every plan answers 24/7, books appointments with your rules, sends SMS follow-up and logs a call summary on a dashboard. Plans start at $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Does a difference on the invoice prove an overcharge?\nNo. Rule out missing records, period, billing unit and rounding first, then ask for the supporting activity.\n### Should I cut call handling to shorten billed time?\nNo. Removing callback checks or needed questions shifts correction work to your office. Fix avoidable handling, not required coverage.\n### Does this guide promise savings?\nNo. It is a method to use with your own records."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "7. Verify the next invoice before claiming a result",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "related": [],
+        "editorialDate": "2026-11-05",
+        "markdownArticle": {
+          "content": "# Lower answering service cost: reconcile the bill first\n\nTo lower an answering service bill, first work out what the bill represents. A busier month, a billing rule or a one-time charge can explain an increase; an unexplained amount is a question, not proof of an overcharge.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 5, 2026.\n\n## Put the invoice and its rules in the same period\nGather the invoice, the agreement and the activity records you are allowed to inspect. Write down the billing unit, included allowance, reset date, rate after the allowance and rounding method. A blank rate is not zero, and the [service agreement checklist](https://www.revoapp.ai/ai-answering-service/answering-service-contract-checklist) helps you find what is missing.\n\n## Rebuild the bill line by line\nBreak the invoice into its parts and check each one against the agreement:\n- **Monthly base:** matches the plan you signed.\n- **Usage:** billable units after rounding, minus the allowance, times the rate after the allowance.\n- **Add-ons:** each one approved and still in use.\n- **One-time items:** setup fees and credits, kept apart from recurring cost.\n\nCheck whether each call rounds up separately. When billed usage has no supporting record, ask which activity it covers and keep the item open until the provider answers.\n\n## Compare options on the same workload\nRecurring cost is monthly base + usage + recurring add-ons. Price every option, including your current plan, with the same month of activity and coverage. A credit or an ended setup fee is not a lasting reduction, and a bundled feature is not a second saving.\n\nA larger allowance can cost more at lower volume. Reconcile the next invoice before calling any change a result.\n\n## Where Revo fits\nRevo is a flat AI reception plan with included minutes, and calls under 20 seconds do not count. Every plan answers 24/7, books appointments with your rules, sends SMS follow-up and logs a call summary on a dashboard. Plans start at $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Does a difference on the invoice prove an overcharge?\nNo. Rule out missing records, period, billing unit and rounding first, then ask for the supporting activity.\n### Should I cut call handling to shorten billed time?\nNo. Removing callback checks or needed questions shifts correction work to your office. Fix avoidable handling, not required coverage.\n### Does this guide promise savings?\nNo. It is a method to use with your own records.\n",
+          "sha256": "f3159be1f0871d6c7f152cc60b773e1b3a85ff2e48f0e9f8b0dad0022c2e43e9",
+          "assets": []
+        },
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved rewrite without competitor prices or example amounts; evidence/2026-11-05/three-pending-no-competitor-prices.txt SHA256 e66cc9303c58a2400254a40eca64e2fd54a5083bbe559a3ad85af04d2f784df2; approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "ai-receptionist-return-on-investment",
+        "title": "AI receptionist return on investment: a net-value worksheet",
+        "description": "Evaluate an AI receptionist using incremental job contribution, full service costs and a baseline. Use a worksheet without assuming every call becomes revenue.",
+        "navigationLabel": "AI receptionist ROI",
+        "eyebrow": "Home-service answering decisions",
+        "lead": "An AI receptionist return on investment calculation should answer one question: does the extra value you can fairly attribute to the service exceed its full cost? Answered calls and gross job value are signals, not the return.",
+        "intro": "An AI receptionist return on investment calculation should answer one question: does the extra value you can fairly attribute to the service exceed its full cost? Answered calls and gross job value are signals, not the return.",
+        "sections": [
+          {
+            "title": "Choose the alternative you are comparing",
+            "paragraphs": [
+              "Describe what happens without the purchase, including callbacks your team already makes. A caller who would have booked after a callback is not an extra job created by the service."
+            ],
+            "items": []
+          },
+          {
+            "title": "Build the worksheet from five entries",
+            "paragraphs": [
+              "Use one period for every entry and note the source or assumption beside each one.\n- **A. Extra job contribution:** additional completed work minus the job costs it adds (parts, labor, travel).\n- **B. Avoided expense:** a cash cost that actually disappears.\n- **C. Recurring service cost:** subscription + expected usage + required add-ons.\n- **D. Retained operating cost:** paid time for review, corrections and handoffs.\n- **E. One-time launch cost:** setup and paid implementation work."
+            ],
+            "items": []
+          },
+          {
+            "title": "Run the three steps",
+            "paragraphs": [
+              "1. Recurring net benefit = A + B − C − D.\n2. First-period net benefit = recurring net benefit − E.\n3. First-period return = first-period net benefit ÷ (C + D + E), only when that total is above zero.\n\nIf recurring net benefit is zero or negative, there is no payback period under those assumptions. Also run a lower-demand case.\n\nRecord owner time freed from the phones separately unless it produces a real cash saving, and never count it twice."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers calls 24/7, books appointments with your script, hours and rules, sends SMS follow-up and logs call summaries on a dashboard. Transfers to your team and a field service software connection start on Crew. Plans start at $87.50/mo at launch; enter the plan you would actually use as entry C. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Is every answered call additional revenue?\nNo. Some calls are duplicates, existing-customer questions or inquiries your office would have recovered anyway.\n### Is the calculated return guaranteed?\nNo. It depends on the inputs you supply.\n### What if I cannot estimate extra completed jobs?\nLeave the benefit unknown and compare affordability and fit instead. Do not invent a conversion lift."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Compare the supported answering workflow.",
+        "related": [
+          "cost-of-missed-calls",
+          "answering-service-conversion-rate-comparison",
+          "answering-service-cost"
+        ],
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "markdownArticle": {
+          "content": "# AI receptionist return on investment: a net-value worksheet\n\nAn AI receptionist return on investment calculation should answer one question: does the extra value you can fairly attribute to the service exceed its full cost? Answered calls and gross job value are signals, not the return.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 5, 2026.\n\n## Choose the alternative you are comparing\nDescribe what happens without the purchase, including callbacks your team already makes. A caller who would have booked after a callback is not an extra job created by the service.\n\n## Build the worksheet from five entries\nUse one period for every entry and note the source or assumption beside each one.\n- **A. Extra job contribution:** additional completed work minus the job costs it adds (parts, labor, travel).\n- **B. Avoided expense:** a cash cost that actually disappears.\n- **C. Recurring service cost:** subscription + expected usage + required add-ons.\n- **D. Retained operating cost:** paid time for review, corrections and handoffs.\n- **E. One-time launch cost:** setup and paid implementation work.\n\n## Run the three steps\n1. Recurring net benefit = A + B − C − D.\n2. First-period net benefit = recurring net benefit − E.\n3. First-period return = first-period net benefit ÷ (C + D + E), only when that total is above zero.\n\nIf recurring net benefit is zero or negative, there is no payback period under those assumptions. Also run a lower-demand case.\n\nRecord owner time freed from the phones separately unless it produces a real cash saving, and never count it twice.\n\n## Where Revo fits\nRevo answers calls 24/7, books appointments with your script, hours and rules, sends SMS follow-up and logs call summaries on a dashboard. Transfers to your team and a field service software connection start on Crew. Plans start at $87.50/mo at launch; enter the plan you would actually use as entry C. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Is every answered call additional revenue?\nNo. Some calls are duplicates, existing-customer questions or inquiries your office would have recovered anyway.\n### Is the calculated return guaranteed?\nNo. It depends on the inputs you supply.\n### What if I cannot estimate extra completed jobs?\nLeave the benefit unknown and compare affordability and fit instead. Do not invent a conversion lift.\n",
+          "sha256": "ef798b7a4c8cdc1b2aaddd78ffd9acc7ef0ecac600820a4e73ef666108c01b2e",
+          "assets": []
+        },
+        "editorialDate": "2026-11-05",
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved rewrite without competitor prices or example amounts; evidence/2026-11-05/three-pending-no-competitor-prices.txt SHA256 e66cc9303c58a2400254a40eca64e2fd54a5083bbe559a3ad85af04d2f784df2; approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
+        }
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "cost-of-missed-calls",
+        "title": "Cost of missed calls: calculate potential job value",
+        "description": "Estimate missed-call opportunity value with your own records: missed calls × booking rate × average job value. A scenario, not a revenue forecast.",
+        "eyebrow": "Scenario worksheet",
+        "lead": "Estimate potential job value with three clear inputs.",
+        "intro": "Potential gross job value = unanswered qualified inquiries × assumed booking probability × assumed average job value, for one period you choose. Enter your own records; the inputs are assumptions, not measured losses or Revo results. A missed call is not automatically a lost job.",
+        "sourcePaths": [
+          "pricing/cost-of-missed-calls",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "calculator": true,
+        "sections": [
+          {
+            "title": "Define what belongs in the calculation.",
+            "paragraphs": [
+              "Use service inquiries rather than all phone calls. Existing customers, spam and wrong numbers should not be counted as new job opportunities. If you do not know the values, leave the inputs blank instead of inventing a baseline.",
+              "The formula is unanswered qualified inquiries × assumed booking probability × assumed average job value for one chosen period. It estimates potential gross job value under those assumptions; it is not cash collected or profit."
+            ],
+            "items": []
+          },
+          {
+            "title": "Work through the formula and test the assumptions.",
+            "paragraphs": [
+              "Fill in the three inputs for one labeled period, then multiply them. Hold the inquiry count and job value fixed and change only the booking probability to a lower and a higher estimate. The spread shows how sensitive the result is to that one assumption, not an observed range of business losses.",
+              "Start a simple call log with the period, new-service inquiry count, unanswered count, callback outcome and job value when known. Review duplicate callers and jobs your crew could not accept. Keep the worksheet separate from the revenue your accounts actually record."
+            ],
+            "items": [
+              "Label the period before entering values.",
+              "Record how each input was obtained and which values remain assumptions.",
+              "Review callbacks and completed work before calling any figure a measured loss."
+            ]
+          },
+          {
+            "title": "Read the result as a scenario.",
+            "paragraphs": [
+              "Not every booked job is completed or paid. Labor, materials, cancellations and capacity affect the business outcome. A caller may also contact you again, so an unanswered inquiry should not be counted twice.",
+              "Changing an answering process does not establish that all potential value will be captured. Keep observed results in your own records separate from the worksheet."
+            ],
+            "items": []
+          },
+          {
+            "title": "Use the worksheet to guide a decision.",
+            "paragraphs": [
+              "Compare conservative and optimistic assumptions for the same period, then ask whether the operating change is practical. The missed-calls page covers the actual handling and follow-up process; this page is specifically about transparent assumptions.",
+              "Current plan prices below are a separate reference. The worksheet does not subtract a subscription or calculate a guaranteed payback period."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does the result show money my business has lost?",
+            "a": "No. It shows potential gross job value under your assumptions. It is not measured loss, collected revenue, profit or a Revo outcome."
+          },
+          {
+            "q": "Can I use unknown inputs?",
+            "a": "Leave unknown inputs blank. The worksheet does not supply industry averages or inferred conversion rates."
+          },
+          {
+            "q": "What time period does the result cover?",
+            "a": "The period you choose and label. All inputs must use the same period; no automatic annualization is applied."
+          }
+        ],
+        "takeaway": "Distinct from missed-calls: user-entered scenario math and interpretation, rather than call-handling diagnosis.",
+        "pricingVariant": "worksheet",
+        "navigationLabel": "Cost of missed calls",
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved rewrite without competitor prices or example amounts; evidence/2026-11-05/three-pending-no-competitor-prices.txt SHA256 e66cc9303c58a2400254a40eca64e2fd54a5083bbe559a3ad85af04d2f784df2; approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
+        },
+        "overviewTable": {
+          "caption": "How the three inputs combine — your own records, not customer results",
+          "columns": [
+            "Input",
+            "In the formula",
+            "What to use for your business"
+          ],
+          "rows": [
+            [
+              "Unanswered qualified inquiries",
+              "A",
+              "Deduplicated new service inquiries for the period, excluding spam and existing-job calls"
+            ],
+            [
+              "Assumed booking probability",
+              "B",
+              "Your own supported estimate for that same period"
+            ],
+            [
+              "Assumed average job value",
+              "C",
+              "Your job records; gross value before labor, materials and other costs"
+            ],
+            [
+              "Potential gross job value",
+              "A × B × C",
+              "An opportunity scenario, not measured lost revenue or profit"
+            ]
+          ],
+          "sources": []
+        },
+        "editorialDate": "2026-11-05"
+      }
+    }
+  ]
+}
