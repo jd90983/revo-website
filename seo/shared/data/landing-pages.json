@@ -369,10 +369,10 @@
   {
     "slug": "cost-of-missed-calls",
     "title": "Cost of missed calls: calculate potential job value",
-    "description": "Estimate missed-call opportunity value with a transparent formula, a labeled $1,500 monthly example and your own call records; not a revenue forecast.",
+    "description": "Estimate missed-call opportunity value with your own records: missed calls × booking rate × average job value. A scenario, not a revenue forecast.",
     "eyebrow": "Scenario worksheet",
     "lead": "Estimate potential job value with three clear inputs.",
-    "intro": "Illustrative monthly scenario: 10 unanswered qualified inquiries × 30% assumed booking probability × $500 assumed average job value = $1,500 potential gross job value. These inputs are examples, not measured losses or Revo results. Replace them with your own records; a missed call is not automatically a lost job.",
+    "intro": "Potential gross job value = unanswered qualified inquiries × assumed booking probability × assumed average job value, for one period you choose. Enter your own records; the inputs are assumptions, not measured losses or Revo results. A missed call is not automatically a lost job.",
     "sourcePaths": [
       "pricing/cost-of-missed-calls",
       "https://www.revoapp.ai/pricing.html"
@@ -388,9 +388,9 @@
         "items": []
       },
       {
-        "title": "Work through the example and test the assumptions.",
+        "title": "Work through the formula and test the assumptions.",
         "paragraphs": [
-          "The example uses 10 × 0.30 × $500 = $1,500 for one month. Holding the inquiry count and job value fixed, a 10% booking assumption gives $500 and a 50% assumption gives $2,500. That is sensitivity to an assumption, not an observed range of business losses.",
+          "Fill in the three inputs for one labeled period, then multiply them. Hold the inquiry count and job value fixed and change only the booking probability to a lower and a higher estimate. The spread shows how sensitive the result is to that one assumption, not an observed range of business losses.",
           "Start a simple call log with the period, new-service inquiry count, unanswered count, callback outcome and job value when known. Review duplicate callers and jobs your crew could not accept. Keep the worksheet separate from the revenue your accounts actually record."
         ],
         "items": [
@@ -433,49 +433,49 @@
     "takeaway": "Distinct from missed-calls: user-entered scenario math and interpretation, rather than call-handling diagnosis.",
     "pricingVariant": "worksheet",
     "navigationLabel": "Cost of missed calls",
-    "publicationStatus": "approved",
     "source": {
-      "kind": "manual",
-      "reference": "jd90983/revo-website#43"
-    },
-    "review": {
-      "reviewer": "Codex — user-delegated local editorial review",
-      "reviewedAt": "2026-10-21",
-      "contentHash": "sha256:b1d05c79b3c7c3be12951358f9c7aa957613f2305cc7defca3893c6e47363d27",
-      "note": "Substantive editorial update; existing route and plan terms retained; primary-source documentation and illustrative arithmetic checked."
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved rewrite without competitor prices or example amounts; evidence/2026-11-05/three-pending-no-competitor-prices.txt SHA256 e66cc9303c58a2400254a40eca64e2fd54a5083bbe559a3ad85af04d2f784df2; approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
     },
     "overviewTable": {
-      "caption": "Illustrative monthly scenario — assumptions, not customer results",
+      "caption": "How the three inputs combine — your own records, not customer results",
       "columns": [
         "Input",
-        "Illustrative value",
+        "In the formula",
         "What to use for your business"
       ],
       "rows": [
         [
           "Unanswered qualified inquiries",
-          "10 in one month",
-          "Deduplicated new service inquiries, excluding spam and existing-job calls"
+          "A",
+          "Deduplicated new service inquiries for the period, excluding spam and existing-job calls"
         ],
         [
           "Assumed booking probability",
-          "30%",
+          "B",
           "Your own supported estimate for that same period"
         ],
         [
           "Assumed average job value",
-          "$500",
+          "C",
           "Your job records; gross value before labor, materials and other costs"
         ],
         [
           "Potential gross job value",
-          "$1,500 = 10 × 0.30 × $500",
+          "A × B × C",
           "An opportunity scenario, not measured lost revenue or profit"
         ]
       ],
       "sources": []
     },
-    "editorialDate": "2026-10-21"
+    "editorialDate": "2026-11-05",
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-05",
+      "contentHash": "sha256:f42c6f99b148a297accb7abc3ef6bc0aa1590044acee1dfeefc610da97895f35",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 5, 2026; implemented by Claude"
+    }
   },
   {
     "slug": "bilingual-answering",
@@ -23250,55 +23250,41 @@
     "navigationLabel": "Lower answering service cost",
     "description": "Match answering-service charges to agreed billing rules and compare cost changes without cutting required coverage.",
     "eyebrow": "Home-service operating guide",
-    "lead": "To lower an answering-service bill, first establish what the bill represents. A busier period, different billing rules, an additional task or a one-time charge can explain an increase. An amount you cannot yet explain is a question to investigate—not proof that the provider overcharged you.",
-    "intro": "To lower an answering-service bill, first establish what the bill represents. A busier period, different billing rules, an additional task or a one-time charge can explain an increase. An amount you cannot yet explain is a question to investigate—not proof that the provider overcharged you.",
+    "lead": "To lower an answering service bill, first work out what the bill represents. A busier month, a billing rule or a one-time charge can explain an increase; an unexplained amount is a question, not proof of an overcharge.",
+    "intro": "To lower an answering service bill, first work out what the bill represents. A busier month, a billing rule or a one-time charge can explain an increase; an unexplained amount is a question, not proof of an overcharge.",
     "sections": [
       {
-        "title": "1. Put the invoice and its rules in the same period",
+        "title": "Put the invoice and its rules in the same period",
         "paragraphs": [
-          "Gather the invoice, the applicable rate sheet or agreement, approved changes and the activity records your business is authorized to inspect. Record the start and end dates and the time zone. Do not assume the invoice issue date is the beginning of its usage period.\n\nWrite down the billing unit, included allowance, reset rule, excess-usage rate and rounding method. If the terms round each activity separately, adding raw seconds and rounding the monthly total will produce a different calculation. If the unit is calls or distinct customers, a minute calculation is not a substitute.\n\nKeep missing information visible. A blank rate is not zero. An incomplete export cannot establish the complete period's usage. If a term or charge is unclear, record the exact question for the provider rather than filling the gap with another provider's rules.\n\nThe [service agreement checklist](https://www.revoapp.ai/ai-answering-service/answering-service-contract-checklist) helps locate the documents and responsible people. This ledger connects those documents to individual charges. Use anonymized activity references; copying customer names or complete recordings into a cost worksheet is usually unnecessary."
+          "Gather the invoice, the agreement and the activity records you are allowed to inspect. Write down the billing unit, included allowance, reset date, rate after the allowance and rounding method. A blank rate is not zero, and the [service agreement checklist](https://www.revoapp.ai/ai-answering-service/answering-service-contract-checklist) helps you find what is missing."
         ],
         "items": []
       },
       {
-        "title": "2. Reconcile chargeable activity, not just conversation length",
+        "title": "Rebuild the bill line by line",
         "paragraphs": [
-          "For each invoice category, identify the supporting activity and the agreed rule. The relevant evidence might be a call record, transfer attempt or other recorded work if the contract makes it chargeable. Do not assume either that such work is always billed or that it is always included.\n\nKeep operational workload separate from billing. [Average handle time](https://www.revoapp.ai/ai-answering-service/average-handle-time) measures a defined handling process. The provider's contractual usage unit may include different events, exclusions or rounding. A mismatch between those totals is not, by itself, a billing error.\n\nThe fictional audit uses a calendar-month plan with a $40 recurring fee, 10 included billable minutes and $2 per additional minute. Its invented rules round each eligible activity up to the next 30 seconds, sum those rounded activities, and apply the allowance once to that sum. Partial additional minutes are charged proportionally. The model has no separate transfer surcharge or minimum beyond that rounding rule.\n\nEight available activity records contain 677 raw seconds. Rounding each one as specified produces 810 seconds, or **13.5 billable minutes**. Rounding the combined raw time only once would produce 11.5 minutes; that is not this fictional contract's method."
+          "Break the invoice into its parts and check each one against the agreement:\n- **Monthly base:** matches the plan you signed.\n- **Usage:** billable units after rounding, minus the allowance, times the rate after the allowance.\n- **Add-ons:** each one approved and still in use.\n- **One-time items:** setup fees and credits, kept apart from recurring cost.\n\nCheck whether each call rounds up separately. When billed usage has no supporting record, ask which activity it covers and keep the item open until the provider answers."
         ],
         "items": []
       },
       {
-        "title": "3. Leave an unexplained difference unresolved",
+        "title": "Compare options on the same workload",
         "paragraphs": [
-          "The fictional invoice states 15 billable minutes. Its arithmetic follows the stated quantity: five excess minutes at $2 produce a $10 usage charge. The eight available records support only 3.5 excess minutes and $7 of usage charges. The export has not been confirmed complete.\n\n| Fictional charge | Invoice amount | Amount supported by available evidence | Status |\n|---|---:|---:|---|\n| Monthly base | $40 | $40 | Matches the fictional rate sheet |\n| Excess usage | $10 | $7 | $3 difference; 1.5 billed minutes lack supporting records |\n| Optional recurring report add-on | $8 | $8 | Matches the fictional authorization |\n| One-time setup | $12 | $12 | Matches the fictional authorization |\n| One-time credit | −$5 | −$5 | Matches the fictional credit note |\n| **Pretax subtotal** | **$65** | **$62** | **$3 unexplained; not a proven overcharge** |\n\nThe $62 column is **not a corrected bill or the established amount owed**. Additional eligible activity could explain the difference. Ask for the records behind the unmatched usage and the rule applied to them. If evidence establishes an error, request the provider's correction process; if it establishes valid activity, update the reconciliation. Until then, keep the issue open.\n\nAn auditable question is more useful than a vague complaint: “Please identify the activity supporting the remaining 1.5 billable minutes in this period, including the duration and rounding applied.” The worksheet keeps that request, its owner and the response together."
+          "Recurring cost is monthly base + usage + recurring add-ons. Price every option, including your current plan, with the same month of activity and coverage. A credit or an ended setup fee is not a lasting reduction, and a bundled feature is not a second saving.\n\nA larger allowance can cost more at lower volume. Reconcile the next invoice before calling any change a result."
         ],
         "items": []
       },
       {
-        "title": "4. Separate recurring cost from a temporarily smaller invoice",
+        "title": "Where Revo fits",
         "paragraphs": [
-          "Do not count a one-time credit as a recurring reduction. Equally, the disappearance of a setup fee can lower a later invoice even though the plan and usage cost have not improved.\n\nUsing the fictional invoice's **still-unverified 15-minute quantity** solely to explain its arithmetic, the recurring components are $40 base + $10 usage + $8 add-on = $58. The $12 setup and −$5 credit bring the current subtotal to $65. A modeled later period with the same quantity and recurring terms, but neither one-time item, would be $58. That $7 decline would come from the one-time items ending—not a cheaper recurring arrangement. No later invoice has been observed.\n\nThe ledger separates changes in workload, rates, allowances, add-ons, one-time charges and credits. For a real comparison, use matching periods and supported quantities. Where several things changed, show each separately instead of attributing the whole difference to one action."
+          "Revo is a flat AI reception plan with included minutes, and calls under 20 seconds do not count. Every plan answers 24/7, books appointments with your rules, sends SMS follow-up and logs a call summary on a dashboard. Plans start at $87.50/mo at launch. [See Revo's plans](/pricing)"
         ],
         "items": []
       },
       {
-        "title": "5. Compare proposed plans on the same workload",
+        "title": "Frequently asked questions",
         "paragraphs": [
-          "The second worked example is a **separate, complete synthetic workload of 20 billable minutes**. It is not a repair of the incomplete audit, a forecast or an observed customer month. Its ten activity records are included in the ledger.\n\nThe fictional alternative costs $52 per calendar month, includes 25 billable minutes, and charges $1.50 per excess minute. It includes the same report that costs $8 separately on the current plan. For this comparison only, both plans are assumed eligible and to provide the same required answering coverage and tasks, with no switching charge. Those assumptions need written evidence in a real quote.\n\n| Scenario for the same synthetic 20-minute period | Pretax recurring cost | Difference from current setup |\n|---|---:|---:|\n| Current plan, report retained | $40 + $20 usage + $8 = **$68** | Baseline |\n| Current plan, optional report removed with approval | $40 + $20 usage = **$60** | **$8 modeled reduction** |\n| Alternative plan, report included | $52 + $0 excess usage = **$52** | **$16 modeled reduction** |\n| Alternative plan, bundled report unused | **$52** | Still **$16**, not $24 |\n\nThe alternative's $16 difference already includes replacing the separate report charge with a bundled feature. Adding another $8 “saving” would count that component twice. Do not add together changes that are alternatives or whose effects overlap.\n\nThe outcome also depends on usage. At a separate hypothetical 10-minute workload with the report retained, the current plan would cost $48 and the alternative $52. A higher allowance is not automatically the lower-cost choice. The ledger records modeled differences, not realized savings or a universal recommendation.\n\nDo not subtract the alternative's $52 from the earlier $65 invoice and call the result savings: those figures have different workloads and different treatment of one-time items."
-        ],
-        "items": []
-      },
-      {
-        "title": "6. Choose one authorized action and protect the work callers need",
-        "paragraphs": [
-          "A review may end with no change. Other outcomes include requesting missing evidence, asking for a documented correction, removing an unused optional charge, or evaluating a different eligible plan. Changing scripts or routing is a separate operational decision, not an automatic response to a bill.\n\nIf avoidable handling appears to be the issue, use the AHT guide to investigate it. Do not remove callback-number checks, necessary questions or required coverage simply to reduce duration. A shorter billed conversation can leave more correction work for the office.\n\nFor each proposed action, record the approver, effective date, expected billing change, required service checks and reversal or fallback arrangement where applicable. The examples authorize no cancellation, account change, forwarding change or payment adjustment. In the worked decision record, approval remains **not requested**, implementation remains **not started**, and next-invoice results remain **not available**."
-        ],
-        "items": []
-      },
-      {
-        "title": "7. Verify the next invoice before claiming a result",
-        "paragraphs": [
-          "After an authorized change, reconcile the applicable invoice using its actual period and activity. Record whether the effective date, allowance, add-on treatment and rate match the agreement. Keep incomplete intake, repeat contacts and failed handoffs visible alongside cost.\n\nReport separately what was modeled, what was approved, what was implemented and what the later evidence shows. A billing correction is not necessarily a recurring reduction. A lower bill during a quieter month is not proof of an improvement. Until the evidence is available, leave the result unverified.\n\n**Does a difference prove an overcharge?** No. First resolve missing records, periods, units and the rules applied. The worked $3 difference is deliberately unresolved.\n\n**Should every business move to the larger allowance?** No. Compare eligible offers using the same workload and required scope. The fictional alternative costs less at 20 minutes but more at 10.\n\n**Does this guide calculate Revo pricing or promise savings?** No. The ledger uses invented terms to demonstrate a method. Use [Revo's current pricing](https://www.revoapp.ai/pricing.html) and the applicable written terms for any Revo decision.\n\n**The useful result is a supported explanation and an approved next step—not a savings claim created by subtracting two unrelated bills.**"
+          "### Does a difference on the invoice prove an overcharge?\nNo. Rule out missing records, period, billing unit and rounding first, then ask for the supporting activity.\n### Should I cut call handling to shorten billed time?\nNo. Removing callback checks or needed questions shifts correction work to your office. Fix avoidable handling, not required coverage.\n### Does this guide promise savings?\nNo. It is a method to use with your own records."
         ],
         "items": []
       }
@@ -23306,44 +23292,25 @@
     "faqs": [],
     "takeaway": "7. Verify the next invoice before claiming a result",
     "sourcePaths": [
-      "https://www.revoapp.ai/ai-answering-service/answering-service-cost",
-      "https://www.revoapp.ai/ai-answering-service/answering-service-contract-checklist",
-      "https://www.revoapp.ai/ai-answering-service/average-handle-time",
-      "https://www.revoapp.ai/pricing.html",
-      "Approved public Markdown SHA256:7cb57dc1fbbaae8009957379e42c56a5621f449b83a0f34430b246deb822d21e",
-      "Companion asset SHA256:0acfc2530b404271f35cc9d9abc383995a67eda33c0e2dcaf3587455eb0d3765",
-      "Companion asset SHA256:17b396589ff036325762825ee5dd6012a8ca35728f2ce52d647eb9946020fc64"
+      "https://www.revoapp.ai/pricing"
     ],
     "related": [],
-    "editorialDate": "2026-10-23",
+    "editorialDate": "2026-11-05",
     "markdownArticle": {
-      "content": "# How to lower answering service cost: reconcile the bill before changing coverage\n\n**Description:** Match answering-service charges to the agreed billing rules, separate unexplained differences from real errors, and compare cost changes without cutting required coverage.\n\nTo lower an answering-service bill, first establish what the bill represents. A busier period, different billing rules, an additional task or a one-time charge can explain an increase. An amount you cannot yet explain is a question to investigate—not proof that the provider overcharged you.\n\nThis guide starts after you have an invoice. The [answering-service cost guide](https://www.revoapp.ai/ai-answering-service/answering-service-cost) covers offers, billing units and planning future usage. Here, the result is a checked bill, a specific proposed action and a record of what still needs verification.\n\nUse the accompanying [Bill-to-Action Reconciliation Ledger](bill-to-action-ledger.md). **Every business, contract, activity and dollar amount in its worked examples is fictional.** They are not Revo terms, competitor prices, customer invoices or measured savings. All worked amounts are US dollars before tax; tax is not modeled. This is an operational worksheet, not advice about tax treatment or contractual rights.\n\n## 1. Put the invoice and its rules in the same period\n\nGather the invoice, the applicable rate sheet or agreement, approved changes and the activity records your business is authorized to inspect. Record the start and end dates and the time zone. Do not assume the invoice issue date is the beginning of its usage period.\n\nWrite down the billing unit, included allowance, reset rule, excess-usage rate and rounding method. If the terms round each activity separately, adding raw seconds and rounding the monthly total will produce a different calculation. If the unit is calls or distinct customers, a minute calculation is not a substitute.\n\nKeep missing information visible. A blank rate is not zero. An incomplete export cannot establish the complete period's usage. If a term or charge is unclear, record the exact question for the provider rather than filling the gap with another provider's rules.\n\nThe [service agreement checklist](https://www.revoapp.ai/ai-answering-service/answering-service-contract-checklist) helps locate the documents and responsible people. This ledger connects those documents to individual charges. Use anonymized activity references; copying customer names or complete recordings into a cost worksheet is usually unnecessary.\n\n## 2. Reconcile chargeable activity, not just conversation length\n\nFor each invoice category, identify the supporting activity and the agreed rule. The relevant evidence might be a call record, transfer attempt or other recorded work if the contract makes it chargeable. Do not assume either that such work is always billed or that it is always included.\n\nKeep operational workload separate from billing. [Average handle time](https://www.revoapp.ai/ai-answering-service/average-handle-time) measures a defined handling process. The provider's contractual usage unit may include different events, exclusions or rounding. A mismatch between those totals is not, by itself, a billing error.\n\nThe fictional audit uses a calendar-month plan with a $40 recurring fee, 10 included billable minutes and $2 per additional minute. Its invented rules round each eligible activity up to the next 30 seconds, sum those rounded activities, and apply the allowance once to that sum. Partial additional minutes are charged proportionally. The model has no separate transfer surcharge or minimum beyond that rounding rule.\n\nEight available activity records contain 677 raw seconds. Rounding each one as specified produces 810 seconds, or **13.5 billable minutes**. Rounding the combined raw time only once would produce 11.5 minutes; that is not this fictional contract's method.\n\n## 3. Leave an unexplained difference unresolved\n\nThe fictional invoice states 15 billable minutes. Its arithmetic follows the stated quantity: five excess minutes at $2 produce a $10 usage charge. The eight available records support only 3.5 excess minutes and $7 of usage charges. The export has not been confirmed complete.\n\n| Fictional charge | Invoice amount | Amount supported by available evidence | Status |\n|---|---:|---:|---|\n| Monthly base | $40 | $40 | Matches the fictional rate sheet |\n| Excess usage | $10 | $7 | $3 difference; 1.5 billed minutes lack supporting records |\n| Optional recurring report add-on | $8 | $8 | Matches the fictional authorization |\n| One-time setup | $12 | $12 | Matches the fictional authorization |\n| One-time credit | −$5 | −$5 | Matches the fictional credit note |\n| **Pretax subtotal** | **$65** | **$62** | **$3 unexplained; not a proven overcharge** |\n\nThe $62 column is **not a corrected bill or the established amount owed**. Additional eligible activity could explain the difference. Ask for the records behind the unmatched usage and the rule applied to them. If evidence establishes an error, request the provider's correction process; if it establishes valid activity, update the reconciliation. Until then, keep the issue open.\n\nAn auditable question is more useful than a vague complaint: “Please identify the activity supporting the remaining 1.5 billable minutes in this period, including the duration and rounding applied.” The worksheet keeps that request, its owner and the response together.\n\n## 4. Separate recurring cost from a temporarily smaller invoice\n\nDo not count a one-time credit as a recurring reduction. Equally, the disappearance of a setup fee can lower a later invoice even though the plan and usage cost have not improved.\n\nUsing the fictional invoice's **still-unverified 15-minute quantity** solely to explain its arithmetic, the recurring components are $40 base + $10 usage + $8 add-on = $58. The $12 setup and −$5 credit bring the current subtotal to $65. A modeled later period with the same quantity and recurring terms, but neither one-time item, would be $58. That $7 decline would come from the one-time items ending—not a cheaper recurring arrangement. No later invoice has been observed.\n\nThe ledger separates changes in workload, rates, allowances, add-ons, one-time charges and credits. For a real comparison, use matching periods and supported quantities. Where several things changed, show each separately instead of attributing the whole difference to one action.\n\n## 5. Compare proposed plans on the same workload\n\nThe second worked example is a **separate, complete synthetic workload of 20 billable minutes**. It is not a repair of the incomplete audit, a forecast or an observed customer month. Its ten activity records are included in the ledger.\n\nThe fictional alternative costs $52 per calendar month, includes 25 billable minutes, and charges $1.50 per excess minute. It includes the same report that costs $8 separately on the current plan. For this comparison only, both plans are assumed eligible and to provide the same required answering coverage and tasks, with no switching charge. Those assumptions need written evidence in a real quote.\n\n| Scenario for the same synthetic 20-minute period | Pretax recurring cost | Difference from current setup |\n|---|---:|---:|\n| Current plan, report retained | $40 + $20 usage + $8 = **$68** | Baseline |\n| Current plan, optional report removed with approval | $40 + $20 usage = **$60** | **$8 modeled reduction** |\n| Alternative plan, report included | $52 + $0 excess usage = **$52** | **$16 modeled reduction** |\n| Alternative plan, bundled report unused | **$52** | Still **$16**, not $24 |\n\nThe alternative's $16 difference already includes replacing the separate report charge with a bundled feature. Adding another $8 “saving” would count that component twice. Do not add together changes that are alternatives or whose effects overlap.\n\nThe outcome also depends on usage. At a separate hypothetical 10-minute workload with the report retained, the current plan would cost $48 and the alternative $52. A higher allowance is not automatically the lower-cost choice. The ledger records modeled differences, not realized savings or a universal recommendation.\n\nDo not subtract the alternative's $52 from the earlier $65 invoice and call the result savings: those figures have different workloads and different treatment of one-time items.\n\n## 6. Choose one authorized action and protect the work callers need\n\nA review may end with no change. Other outcomes include requesting missing evidence, asking for a documented correction, removing an unused optional charge, or evaluating a different eligible plan. Changing scripts or routing is a separate operational decision, not an automatic response to a bill.\n\nIf avoidable handling appears to be the issue, use the AHT guide to investigate it. Do not remove callback-number checks, necessary questions or required coverage simply to reduce duration. A shorter billed conversation can leave more correction work for the office.\n\nFor each proposed action, record the approver, effective date, expected billing change, required service checks and reversal or fallback arrangement where applicable. The examples authorize no cancellation, account change, forwarding change or payment adjustment. In the worked decision record, approval remains **not requested**, implementation remains **not started**, and next-invoice results remain **not available**.\n\n## 7. Verify the next invoice before claiming a result\n\nAfter an authorized change, reconcile the applicable invoice using its actual period and activity. Record whether the effective date, allowance, add-on treatment and rate match the agreement. Keep incomplete intake, repeat contacts and failed handoffs visible alongside cost.\n\nReport separately what was modeled, what was approved, what was implemented and what the later evidence shows. A billing correction is not necessarily a recurring reduction. A lower bill during a quieter month is not proof of an improvement. Until the evidence is available, leave the result unverified.\n\n**Does a difference prove an overcharge?** No. First resolve missing records, periods, units and the rules applied. The worked $3 difference is deliberately unresolved.\n\n**Should every business move to the larger allowance?** No. Compare eligible offers using the same workload and required scope. The fictional alternative costs less at 20 minutes but more at 10.\n\n**Does this guide calculate Revo pricing or promise savings?** No. The ledger uses invented terms to demonstrate a method. Use [Revo's current pricing](https://www.revoapp.ai/pricing.html) and the applicable written terms for any Revo decision.\n\n**The useful result is a supported explanation and an approved next step—not a savings claim created by subtracting two unrelated bills.**",
-      "sha256": "7cb57dc1fbbaae8009957379e42c56a5621f449b83a0f34430b246deb822d21e",
-      "assets": [
-        {
-          "reference": "bill-to-action-ledger.md",
-          "label": "bill-to-action-ledger.md",
-          "href": "/ai-answering-service/assets/templates/bill-to-action-ledger-0acfc2530b40.md",
-          "sha256": "0acfc2530b404271f35cc9d9abc383995a67eda33c0e2dcaf3587455eb0d3765"
-        },
-        {
-          "reference": "worked-example.json",
-          "label": "worked-example.json",
-          "href": "/ai-answering-service/assets/templates/worked-example-17b396589ff0.json",
-          "sha256": "17b396589ff036325762825ee5dd6012a8ca35728f2ce52d647eb9946020fc64"
-        }
-      ]
+      "content": "# Lower answering service cost: reconcile the bill first\n\nTo lower an answering service bill, first work out what the bill represents. A busier month, a billing rule or a one-time charge can explain an increase; an unexplained amount is a question, not proof of an overcharge.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 5, 2026.\n\n## Put the invoice and its rules in the same period\nGather the invoice, the agreement and the activity records you are allowed to inspect. Write down the billing unit, included allowance, reset date, rate after the allowance and rounding method. A blank rate is not zero, and the [service agreement checklist](https://www.revoapp.ai/ai-answering-service/answering-service-contract-checklist) helps you find what is missing.\n\n## Rebuild the bill line by line\nBreak the invoice into its parts and check each one against the agreement:\n- **Monthly base:** matches the plan you signed.\n- **Usage:** billable units after rounding, minus the allowance, times the rate after the allowance.\n- **Add-ons:** each one approved and still in use.\n- **One-time items:** setup fees and credits, kept apart from recurring cost.\n\nCheck whether each call rounds up separately. When billed usage has no supporting record, ask which activity it covers and keep the item open until the provider answers.\n\n## Compare options on the same workload\nRecurring cost is monthly base + usage + recurring add-ons. Price every option, including your current plan, with the same month of activity and coverage. A credit or an ended setup fee is not a lasting reduction, and a bundled feature is not a second saving.\n\nA larger allowance can cost more at lower volume. Reconcile the next invoice before calling any change a result.\n\n## Where Revo fits\nRevo is a flat AI reception plan with included minutes, and calls under 20 seconds do not count. Every plan answers 24/7, books appointments with your rules, sends SMS follow-up and logs a call summary on a dashboard. Plans start at $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Does a difference on the invoice prove an overcharge?\nNo. Rule out missing records, period, billing unit and rounding first, then ask for the supporting activity.\n### Should I cut call handling to shorten billed time?\nNo. Removing callback checks or needed questions shifts correction work to your office. Fix avoidable handling, not required coverage.\n### Does this guide promise savings?\nNo. It is a method to use with your own records.\n",
+      "sha256": "f3159be1f0871d6c7f152cc60b773e1b3a85ff2e48f0e9f8b0dad0022c2e43e9",
+      "assets": []
     },
     "source": {
-      "kind": "manual",
-      "reference": "Eight public articles and four original companion resources approved by Jorge at2026-10-23T19:52:45Z; bundle was created before approval and retains its original pending provenance. Exact public copy SHA256 preserved; structured rendering only. (batch 2026-10-23-approved-final-eight)"
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved rewrite without competitor prices or example amounts; evidence/2026-11-05/three-pending-no-competitor-prices.txt SHA256 e66cc9303c58a2400254a40eca64e2fd54a5083bbe559a3ad85af04d2f784df2; approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge",
-      "reviewedAt": "2026-10-23",
-      "contentHash": "sha256:12eff6c4163ef7240909c6cd3e61c984d943073c7850738a216636c61b40c623",
-      "note": "Human approval by Jorge, recorded by Codex as operator. Nine-article cohort approved2026-10-23T19:42:15Z; final-eight cohort approved2026-10-23T19:52:45Z. Exact public Markdown and companion SHA256 retained; metadata and structured rendering bound to this content hash. Final-eight transfer pending label predates approval. Publication conditional on CI and authenticated visual QA."
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-05",
+      "contentHash": "sha256:d7501a584195c5e10b04f8b1dae628f4d0b3f341d807f114a05531ee4f0d61cd",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 5, 2026; implemented by Claude"
     }
   },
   {
@@ -28325,55 +28292,41 @@
     "description": "Evaluate an AI receptionist using incremental job contribution, full service costs and a baseline. Use a worksheet without assuming every call becomes revenue.",
     "navigationLabel": "AI receptionist ROI",
     "eyebrow": "Home-service answering decisions",
-    "lead": "An AI receptionist return-on-investment calculation should answer a purchasing question: does the additional value your business can reasonably attribute to the service exceed its full cost? Answered calls, appointment requests and gross job value are useful observations, but none is the final return. Start with a defined alternative, the work you can actually accept and the costs that change with the decision.",
-    "intro": "An AI receptionist return-on-investment calculation should answer a purchasing question: does the additional value your business can reasonably attribute to the service exceed its full cost? Answered calls, appointment requests and gross job value are useful observations, but none is the final return. Start with a defined alternative, the work you can actually accept and the costs that change with the decision.",
+    "lead": "An AI receptionist return on investment calculation should answer one question: does the extra value you can fairly attribute to the service exceed its full cost? Answered calls and gross job value are signals, not the return.",
+    "intro": "An AI receptionist return on investment calculation should answer one question: does the extra value you can fairly attribute to the service exceed its full cost? Answered calls and gross job value are signals, not the return.",
     "sections": [
       {
         "title": "Choose the alternative you are comparing",
         "paragraphs": [
-          "Write the decision at the top of the sheet: for example, adding answering coverage to the current office process. Describe what happens without the purchase, including callbacks your team already makes. A customer who would have booked after a callback is not automatically an additional job created by the new service.\n\nUse one evaluation window and allow the same time for inquiries to become completed work. Keep a second column for assumptions when you do not yet have an observed comparison. A forecast can support a decision, but labeling an assumed lift as measured performance makes the result less useful."
+          "Describe what happens without the purchase, including callbacks your team already makes. A caller who would have booked after a callback is not an extra job created by the service."
         ],
         "items": []
       },
       {
-        "title": "Use contribution from additional work, not the entire invoice",
+        "title": "Build the worksheet from five entries",
         "paragraphs": [
-          "For each additional completed job in your scenario, subtract the job costs that increase because you accept that work. These may include parts, consumables, incremental labor, subcontracting, travel and payment charges. Use the costs applicable to your operation rather than a generic margin benchmark.\n\nThe amount left is contribution toward service costs and the rest of the business. It is not the same as company net profit. Do not subtract the same job expense again as an answering-service expense. If an extra booking displaces another job your crew would otherwise have completed, account for the displaced contribution too. A full calendar can make additional inquiries valuable for selection without producing additional completed work."
+          "Use one period for every entry and note the source or assumption beside each one.\n- **A. Extra job contribution:** additional completed work minus the job costs it adds (parts, labor, travel).\n- **B. Avoided expense:** a cash cost that actually disappears.\n- **C. Recurring service cost:** subscription + expected usage + required add-ons.\n- **D. Retained operating cost:** paid time for review, corrections and handoffs.\n- **E. One-time launch cost:** setup and paid implementation work."
         ],
         "items": []
       },
       {
-        "title": "Copy this decision worksheet",
+        "title": "Run the three steps",
         "paragraphs": [
-          "Fill in amounts for the same period. Retain the source or assumption beside each entry. Leave an unknown value unresolved rather than replacing it with an industry average.\n\n| Entry | What belongs here | Your amount and evidence |\n| --- | --- | --- |\n| A. Additional completed-job contribution | Contribution from incremental completed work, after its incremental job costs and any displaced contribution | ______ |\n| B. Avoided cash expense | An expense that actually disappears because of this decision | ______ |\n| C. Recurring service expense | Subscription, expected billable usage and required recurring add-ons | ______ |\n| D. Retained operating expense | Additional paid time or external expense for review, corrections and handoff that is not already in A | ______ |\n| E. One-time launch expense | Setup charges and additional paid implementation work | ______ |\n| F. Recurring net benefit | A + B − C − D | ______ |\n| G. First-period net benefit | F − E | ______ |\n| H. First-period decision return | G ÷ (C + D + E) × 100, only when the denominator is positive | ______ |\n\nThis worksheet defines its return denominator explicitly so two options can be compared consistently. It does not measure a company's total profitability. If the denominator is zero, report the amounts separately; do not display an infinite percentage."
+          "1. Recurring net benefit = A + B − C − D.\n2. First-period net benefit = recurring net benefit − E.\n3. First-period return = first-period net benefit ÷ (C + D + E), only when that total is above zero.\n\nIf recurring net benefit is zero or negative, there is no payback period under those assumptions. Also run a lower-demand case.\n\nRecord owner time freed from the phones separately unless it produces a real cash saving, and never count it twice."
         ],
         "items": []
       },
       {
-        "title": "Check the arithmetic with a fictional case",
+        "title": "Where Revo fits",
         "paragraphs": [
-          "Suppose additional completed work contributes $600 after its incremental job costs. The business avoids no cash expense. Subscription and usage cost $200 for the period, additional paid operating work costs $100, and launch work costs $300 once. These are fictional inputs, not Revo prices or typical outcomes.\n\nRecurring net benefit is $600 − $200 − $100 = $300. First-period net benefit is $300 − $300 = $0. The defined first-period return is $0 ÷ $600 = 0%. The $600 contribution is therefore not a $600 return after implementation costs.\n\nIf the same recurring assumptions held, the $300 launch expense would take one period of positive $300 recurring net benefit to recover. That is a scenario, not a promised payback date. A zero or negative recurring net benefit does not yield a finite positive payback period under those assumptions."
-        ],
-        "items": []
-      },
-      {
-        "title": "Keep time savings and cash savings separate",
-        "paragraphs": [
-          "Owner time released from answering calls can matter even when payroll does not change. Record those hours and the work you intend to do with them. Do not automatically add an hourly valuation to avoided payroll and also count the contribution from jobs performed in the same hours. That would count one benefit twice.\n\nRun a lower-demand case as well as your expected case. Reduce additional completed work, increase paid usage or allow more office review. Ask whether the purchase remains affordable when the upside is smaller. Keep service quality and follow-up ownership alongside the calculation; a positive spreadsheet result does not establish that the answering workflow is suitable."
-        ],
-        "items": []
-      },
-      {
-        "title": "Compare the supported Revo scope before entering a price",
-        "paragraphs": [
-          "Use [Revo's current pricing](/pricing) for the actual plan and included usage, and confirm the setup needed for your business. Revo publishes AI answering, intake, appointment booking and summaries; team transfers and other features depend on the plan and supported configuration. A qualified inquiry is not a completed job, and booking does not establish dispatch or collected revenue.\n\nUse the [cost-of-missed-calls worksheet](/ai-answering-service/cost-of-missed-calls) when you need a gross opportunity scenario. Use the [conversion comparison guide](/ai-answering-service/answering-service-conversion-rate-comparison) to define comparable inquiry cohorts. Bring those inputs here only after deciding which outcomes and costs belong in the purchase decision."
+          "Revo answers calls 24/7, books appointments with your script, hours and rules, sends SMS follow-up and logs call summaries on a dashboard. Transfers to your team and a field service software connection start on Crew. Plans start at $87.50/mo at launch; enter the plan you would actually use as entry C. [See Revo's plans](/pricing)"
         ],
         "items": []
       },
       {
         "title": "Frequently asked questions",
         "paragraphs": [
-          "### Is every answered call additional revenue?\n\nNo. Calls may be duplicates, existing-customer questions or inquiries that your office would have recovered anyway. Separate answered calls from incremental completed work.\n\n### Can I count the owner's released time?\n\nRecord it separately unless it produces an identifiable cash saving or additional contribution. Avoid counting both the time valuation and the value created during those same hours.\n\n### Is the calculated return guaranteed?\n\nNo. The result depends on the baseline, attribution, capacity and cost inputs you supply. Keep forecast assumptions separate from observed records and update the decision when evidence changes.\n\n### What should I do if I cannot estimate additional completed jobs?\n\nLeave the benefit unknown. Compare the service's affordability and supported workflow, then define what evidence a limited evaluation would need to collect. Do not invent a conversion lift to make the purchase look attractive.\n\nReview [Revo's plans and included usage](/pricing), then complete the worksheet with your own operating records before choosing coverage."
+          "### Is every answered call additional revenue?\nNo. Some calls are duplicates, existing-customer questions or inquiries your office would have recovered anyway.\n### Is the calculated return guaranteed?\nNo. It depends on the inputs you supply.\n### What if I cannot estimate extra completed jobs?\nLeave the benefit unknown and compare affordability and fit instead. Do not invent a conversion lift."
         ],
         "items": []
       }
@@ -28386,24 +28339,24 @@
       "answering-service-cost"
     ],
     "sourcePaths": [
-      "https://www.revoapp.ai/pricing",
-      "Approved exact copy SHA256:1f41f5e3236713dfcb99cdedec8bd425d56fa20a05440ee05f9c202be727bf0b"
+      "https://www.revoapp.ai/pricing"
     ],
     "markdownArticle": {
-      "content": "# AI receptionist return on investment: work from net value\n\nAn AI receptionist return-on-investment calculation should answer a purchasing question: does the additional value your business can reasonably attribute to the service exceed its full cost? Answered calls, appointment requests and gross job value are useful observations, but none is the final return. Start with a defined alternative, the work you can actually accept and the costs that change with the decision.\n\nPublished by Revo, a provider of AI answering services. This is a planning worksheet, not a claim about customer results or a guarantee of savings.\n\n## Choose the alternative you are comparing\n\nWrite the decision at the top of the sheet: for example, adding answering coverage to the current office process. Describe what happens without the purchase, including callbacks your team already makes. A customer who would have booked after a callback is not automatically an additional job created by the new service.\n\nUse one evaluation window and allow the same time for inquiries to become completed work. Keep a second column for assumptions when you do not yet have an observed comparison. A forecast can support a decision, but labeling an assumed lift as measured performance makes the result less useful.\n\n## Use contribution from additional work, not the entire invoice\n\nFor each additional completed job in your scenario, subtract the job costs that increase because you accept that work. These may include parts, consumables, incremental labor, subcontracting, travel and payment charges. Use the costs applicable to your operation rather than a generic margin benchmark.\n\nThe amount left is contribution toward service costs and the rest of the business. It is not the same as company net profit. Do not subtract the same job expense again as an answering-service expense. If an extra booking displaces another job your crew would otherwise have completed, account for the displaced contribution too. A full calendar can make additional inquiries valuable for selection without producing additional completed work.\n\n## Copy this decision worksheet\n\nFill in amounts for the same period. Retain the source or assumption beside each entry. Leave an unknown value unresolved rather than replacing it with an industry average.\n\n| Entry | What belongs here | Your amount and evidence |\n| --- | --- | --- |\n| A. Additional completed-job contribution | Contribution from incremental completed work, after its incremental job costs and any displaced contribution | ______ |\n| B. Avoided cash expense | An expense that actually disappears because of this decision | ______ |\n| C. Recurring service expense | Subscription, expected billable usage and required recurring add-ons | ______ |\n| D. Retained operating expense | Additional paid time or external expense for review, corrections and handoff that is not already in A | ______ |\n| E. One-time launch expense | Setup charges and additional paid implementation work | ______ |\n| F. Recurring net benefit | A + B − C − D | ______ |\n| G. First-period net benefit | F − E | ______ |\n| H. First-period decision return | G ÷ (C + D + E) × 100, only when the denominator is positive | ______ |\n\nThis worksheet defines its return denominator explicitly so two options can be compared consistently. It does not measure a company's total profitability. If the denominator is zero, report the amounts separately; do not display an infinite percentage.\n\n## Check the arithmetic with a fictional case\n\nSuppose additional completed work contributes $600 after its incremental job costs. The business avoids no cash expense. Subscription and usage cost $200 for the period, additional paid operating work costs $100, and launch work costs $300 once. These are fictional inputs, not Revo prices or typical outcomes.\n\nRecurring net benefit is $600 − $200 − $100 = $300. First-period net benefit is $300 − $300 = $0. The defined first-period return is $0 ÷ $600 = 0%. The $600 contribution is therefore not a $600 return after implementation costs.\n\nIf the same recurring assumptions held, the $300 launch expense would take one period of positive $300 recurring net benefit to recover. That is a scenario, not a promised payback date. A zero or negative recurring net benefit does not yield a finite positive payback period under those assumptions.\n\n## Keep time savings and cash savings separate\n\nOwner time released from answering calls can matter even when payroll does not change. Record those hours and the work you intend to do with them. Do not automatically add an hourly valuation to avoided payroll and also count the contribution from jobs performed in the same hours. That would count one benefit twice.\n\nRun a lower-demand case as well as your expected case. Reduce additional completed work, increase paid usage or allow more office review. Ask whether the purchase remains affordable when the upside is smaller. Keep service quality and follow-up ownership alongside the calculation; a positive spreadsheet result does not establish that the answering workflow is suitable.\n\n## Compare the supported Revo scope before entering a price\n\nUse [Revo's current pricing](/pricing) for the actual plan and included usage, and confirm the setup needed for your business. Revo publishes AI answering, intake, appointment booking and summaries; team transfers and other features depend on the plan and supported configuration. A qualified inquiry is not a completed job, and booking does not establish dispatch or collected revenue.\n\nUse the [cost-of-missed-calls worksheet](/ai-answering-service/cost-of-missed-calls) when you need a gross opportunity scenario. Use the [conversion comparison guide](/ai-answering-service/answering-service-conversion-rate-comparison) to define comparable inquiry cohorts. Bring those inputs here only after deciding which outcomes and costs belong in the purchase decision.\n\n## Frequently asked questions\n\n### Is every answered call additional revenue?\n\nNo. Calls may be duplicates, existing-customer questions or inquiries that your office would have recovered anyway. Separate answered calls from incremental completed work.\n\n### Can I count the owner's released time?\n\nRecord it separately unless it produces an identifiable cash saving or additional contribution. Avoid counting both the time valuation and the value created during those same hours.\n\n### Is the calculated return guaranteed?\n\nNo. The result depends on the baseline, attribution, capacity and cost inputs you supply. Keep forecast assumptions separate from observed records and update the decision when evidence changes.\n\n### What should I do if I cannot estimate additional completed jobs?\n\nLeave the benefit unknown. Compare the service's affordability and supported workflow, then define what evidence a limited evaluation would need to collect. Do not invent a conversion lift to make the purchase look attractive.\n\nReview [Revo's plans and included usage](/pricing), then complete the worksheet with your own operating records before choosing coverage.\n",
-      "sha256": "1f41f5e3236713dfcb99cdedec8bd425d56fa20a05440ee05f9c202be727bf0b",
+      "content": "# AI receptionist return on investment: a net-value worksheet\n\nAn AI receptionist return on investment calculation should answer one question: does the extra value you can fairly attribute to the service exceed its full cost? Answered calls and gross job value are signals, not the return.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 5, 2026.\n\n## Choose the alternative you are comparing\nDescribe what happens without the purchase, including callbacks your team already makes. A caller who would have booked after a callback is not an extra job created by the service.\n\n## Build the worksheet from five entries\nUse one period for every entry and note the source or assumption beside each one.\n- **A. Extra job contribution:** additional completed work minus the job costs it adds (parts, labor, travel).\n- **B. Avoided expense:** a cash cost that actually disappears.\n- **C. Recurring service cost:** subscription + expected usage + required add-ons.\n- **D. Retained operating cost:** paid time for review, corrections and handoffs.\n- **E. One-time launch cost:** setup and paid implementation work.\n\n## Run the three steps\n1. Recurring net benefit = A + B − C − D.\n2. First-period net benefit = recurring net benefit − E.\n3. First-period return = first-period net benefit ÷ (C + D + E), only when that total is above zero.\n\nIf recurring net benefit is zero or negative, there is no payback period under those assumptions. Also run a lower-demand case.\n\nRecord owner time freed from the phones separately unless it produces a real cash saving, and never count it twice.\n\n## Where Revo fits\nRevo answers calls 24/7, books appointments with your script, hours and rules, sends SMS follow-up and logs call summaries on a dashboard. Transfers to your team and a field service software connection start on Crew. Plans start at $87.50/mo at launch; enter the plan you would actually use as entry C. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Is every answered call additional revenue?\nNo. Some calls are duplicates, existing-customer questions or inquiries your office would have recovered anyway.\n### Is the calculated return guaranteed?\nNo. It depends on the inputs you supply.\n### What if I cannot estimate extra completed jobs?\nLeave the benefit unknown and compare affordability and fit instead. Do not invent a conversion lift.\n",
+      "sha256": "ef798b7a4c8cdc1b2aaddd78ffd9acc7ef0ecac600820a4e73ef666108c01b2e",
       "assets": []
     },
-    "editorialDate": "2026-10-28",
+    "editorialDate": "2026-11-05",
     "source": {
-      "kind": "manual",
-      "reference": "Copy created 2026-10-28 America/Tijuana. Jorge accepted these exact two texts in Sentinel_9c1c15e9a52081919694be62fea19404 at 2026-10-28 19:08:31 UTC, responding to Sentinel_87b84ebf8f5081919e2f78f95ff810b6. Source package SHA256 43f39a43f4aac26bb2ee4b437e4c4d8386121d4590b9f15c9d137c5e05e0db34. User PDF libfile_d75aa67100fc8191a4a9e9553e5eccc5 v0 SHA256 7303474b89d5014b69f6edf5b2850b0895fa27cab1cc3c53fb81d20bbc543daf, parent confirms full-copy equivalence to these exact messages. Permission covers implementation and testing, not future PR integration. Private research excluded."
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved rewrite without competitor prices or example amounts; evidence/2026-11-05/three-pending-no-competitor-prices.txt SHA256 e66cc9303c58a2400254a40eca64e2fd54a5083bbe559a3ad85af04d2f784df2; approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge — accepted ROI text and Pricing source; Sentinel_9c1c15e9a52081919694be62fea19404; mechanical reference recorded by Codex",
-      "reviewedAt": "2026-10-28",
-      "contentHash": "sha256:6b2c23a7f9c2c4f0abcfd253eccede1558570df96180f4e7d4e3e9f32c97193a"
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-05",
+      "contentHash": "sha256:0ac444e5f0ba1eb9238f63739fa203fa7822bb19a15cd1236526d2c90b9c5b7c",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 5, 2026; implemented by Claude"
     }
   },
   {
@@ -35022,6 +34975,598 @@
       "reviewedAt": "2026-11-04",
       "contentHash": "sha256:1fe0e38ef82048ecd24322ab55caf0878d57de5cd7907f5104b047e29c489e0b",
       "note": "Owner approved v2 public copy (competitor prices removed). Bodies preserved exactly from evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt."
+    }
+  },
+  {
+    "slug": "emergency-call-answering-service",
+    "title": "Emergency Call Answering Service: Triage Urgent Calls",
+    "description": "How an emergency call answering service should sort urgent home service calls from routine ones after hours, and what to say to the caller.",
+    "navigationLabel": "Emergency call answering",
+    "eyebrow": "Triage urgent calls",
+    "lead": "An emergency call answering service is only useful if it knows what your business treats as an emergency. Without clear rules, every late call gets the same treatment, and the urgent ones wait with the routine ones.",
+    "intro": "An emergency call answering service is only useful if it knows what your business treats as an emergency. Without clear rules, every late call gets the same treatment, and the urgent ones wait with the routine ones.",
+    "sections": [
+      {
+        "title": "Define what counts as an emergency",
+        "paragraphs": [
+          "Write your list before you choose any service. For most home service businesses, the short list looks like this:\n\n- **No heat or no cooling** in extreme weather, or for a household with vulnerable people.\n- **An active leak** or a burst pipe that is damaging the home.\n- **No power** to the home or a part of it, or a burning smell from equipment.\n- **A lockout** or a security problem the caller cannot wait on.\n\nEverything else, such as a dripping faucet, a tune-up or a quote request, is routine. Routine calls get booked into the next open slot."
+        ],
+        "items": []
+      },
+      {
+        "title": "How urgent calls should be handled",
+        "paragraphs": [
+          "Every urgent call should follow the same three steps: capture, triage, act. Capture means the name, address, callback number and what is happening right now. Triage means checking the problem against your list, and act means a transfer to the person on call or a fast callback, depending on your rules.\n\nIf the caller is in danger, such as a gas smell or sparking wires, the script should tell them to leave and call emergency services first."
+        ],
+        "items": []
+      },
+      {
+        "title": "What not to promise",
+        "paragraphs": [
+          "An emergency answering service should never promise an arrival time it cannot control. The safer script confirms that the request is logged as urgent, says who will call back, and stops there. Your on-call technician sets the arrival time."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, and follows the script, hours and rules you give it. It collects the details, sends SMS follow-up and logs a call summary on your dashboard. On Crew and Fleet it can transfer urgent calls to your team. Revo does not dispatch technicians. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can an AI receptionist tell an emergency from a routine call?\nIt can follow the emergency list you write. Keep the list short and specific so the rules are easy to apply.\n### Does Revo send a technician?\nNo. Revo answers, captures details and books or transfers under your rules. Your team decides who goes and when."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-05",
+    "markdownArticle": {
+      "content": "# Emergency Call Answering Service: Triage Urgent Calls\n\nAn emergency call answering service is only useful if it knows what your business treats as an emergency. Without clear rules, every late call gets the same treatment, and the urgent ones wait with the routine ones.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 5, 2026.\n\n## Define what counts as an emergency\nWrite your list before you choose any service. For most home service businesses, the short list looks like this:\n\n- **No heat or no cooling** in extreme weather, or for a household with vulnerable people.\n- **An active leak** or a burst pipe that is damaging the home.\n- **No power** to the home or a part of it, or a burning smell from equipment.\n- **A lockout** or a security problem the caller cannot wait on.\n\nEverything else, such as a dripping faucet, a tune-up or a quote request, is routine. Routine calls get booked into the next open slot.\n\n## How urgent calls should be handled\nEvery urgent call should follow the same three steps: capture, triage, act. Capture means the name, address, callback number and what is happening right now. Triage means checking the problem against your list, and act means a transfer to the person on call or a fast callback, depending on your rules.\n\nIf the caller is in danger, such as a gas smell or sparking wires, the script should tell them to leave and call emergency services first.\n\n## What not to promise\nAn emergency answering service should never promise an arrival time it cannot control. The safer script confirms that the request is logged as urgent, says who will call back, and stops there. Your on-call technician sets the arrival time.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows the script, hours and rules you give it. It collects the details, sends SMS follow-up and logs a call summary on your dashboard. On Crew and Fleet it can transfer urgent calls to your team. Revo does not dispatch technicians. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can an AI receptionist tell an emergency from a routine call?\nIt can follow the emergency list you write. Keep the list short and specific so the rules are easy to apply.\n### Does Revo send a technician?\nNo. Revo answers, captures details and books or transfers under your rules. Your team decides who goes and when.\n",
+      "sha256": "7143d1a589f9501e03e4676d8064b1f74d5ba505c0490255519152acfa6cb234",
+      "assets": []
+    },
+    "related": [
+      "plan-24-7-phone-coverage",
+      "call-routing"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-05/eight-guides-approved-public-copy.txt SHA256 bc48f771876ad6ea2e2629e9aebff729b9cdcc87f3637926cb384d7788ea07cf; keywords and copy approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-05",
+      "contentHash": "sha256:624d08bf74d7740577f5c3d72d94d2a49c03dbb1d875c14c48753e05ad2f34d6",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 5, 2026; implemented by Claude"
+    }
+  },
+  {
+    "slug": "weekend-answering-service",
+    "title": "Weekend Answering Service for Home Service Businesses",
+    "description": "Cover Saturdays, Sundays and holidays without staff by the phone: what a weekend answering service should book, escalate and tell callers.",
+    "navigationLabel": "Weekend answering service",
+    "eyebrow": "Saturdays, Sundays and holidays",
+    "lead": "Homeowners notice problems on weekends, when they are home. A weekend answering service lets you answer those calls without paying someone to sit by the phone all Saturday.",
+    "intro": "Homeowners notice problems on weekends, when they are home. A weekend answering service lets you answer those calls without paying someone to sit by the phone all Saturday.",
+    "sections": [
+      {
+        "title": "Decide what gets booked and what gets escalated",
+        "paragraphs": [
+          "Most weekend calls are not emergencies. They are quote requests, maintenance questions and jobs that can wait for a weekday slot. Book those straight into your calendar so the caller hangs up with a time.\n\nKeep a short escalation list for the calls that cannot wait, such as active leaks or no heat. Those go to the person on call, and everything else waits for Monday."
+        ],
+        "items": []
+      },
+      {
+        "title": "Tell callers what happens on Monday",
+        "paragraphs": [
+          "A weekend caller who hears nothing specific often keeps dialing other companies. The script should say what happens next in plain words: who will call, which day and what they will confirm. If the job is booked, repeat the day and the address before the call ends."
+        ],
+        "items": []
+      },
+      {
+        "title": "Plan holiday schedules ahead",
+        "paragraphs": [
+          "A holiday answering service needs the same rules as weekends, plus a calendar. Before each holiday, update three things:\n\n- **Your hours**, so callers hear that the office is closed that day.\n- **Your on-call contact**, if it changes for the holiday.\n- **Your first open slot**, so bookings land on a day the crew is working.\n\nChanging these a week early avoids booking jobs on a day nobody is working."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers forwarded calls 24/7, including weekends and holidays, and books appointments with your script, hours and rules. It sends SMS follow-up and logs a summary of every call on your dashboard, so Monday starts with a list instead of voicemails. Crew and Fleet add transfers to your team. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Is a weekend answering service different from after-hours coverage?\nThe rules overlap, but weekends bring more routine bookings and fewer people on call. Write a separate weekend script.\n### Can I change Revo's hours for a holiday?\nYes. Revo follows the hours and rules you set, so update them before the holiday."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-05",
+    "markdownArticle": {
+      "content": "# Weekend Answering Service for Home Service Businesses\n\nHomeowners notice problems on weekends, when they are home. A weekend answering service lets you answer those calls without paying someone to sit by the phone all Saturday.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 5, 2026.\n\n## Decide what gets booked and what gets escalated\nMost weekend calls are not emergencies. They are quote requests, maintenance questions and jobs that can wait for a weekday slot. Book those straight into your calendar so the caller hangs up with a time.\n\nKeep a short escalation list for the calls that cannot wait, such as active leaks or no heat. Those go to the person on call, and everything else waits for Monday.\n\n## Tell callers what happens on Monday\nA weekend caller who hears nothing specific often keeps dialing other companies. The script should say what happens next in plain words: who will call, which day and what they will confirm. If the job is booked, repeat the day and the address before the call ends.\n\n## Plan holiday schedules ahead\nA holiday answering service needs the same rules as weekends, plus a calendar. Before each holiday, update three things:\n\n- **Your hours**, so callers hear that the office is closed that day.\n- **Your on-call contact**, if it changes for the holiday.\n- **Your first open slot**, so bookings land on a day the crew is working.\n\nChanging these a week early avoids booking jobs on a day nobody is working.\n\n## Where Revo fits\nRevo answers forwarded calls 24/7, including weekends and holidays, and books appointments with your script, hours and rules. It sends SMS follow-up and logs a summary of every call on your dashboard, so Monday starts with a list instead of voicemails. Crew and Fleet add transfers to your team. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Is a weekend answering service different from after-hours coverage?\nThe rules overlap, but weekends bring more routine bookings and fewer people on call. Write a separate weekend script.\n### Can I change Revo's hours for a holiday?\nYes. Revo follows the hours and rules you set, so update them before the holiday.\n",
+      "sha256": "a9a8c1faf9ec7c270bcec1ceac1aa51a7268097b8a119c6924dd796073c5258f",
+      "assets": []
+    },
+    "related": [
+      "after-hours",
+      "plan-24-7-phone-coverage"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-05/eight-guides-approved-public-copy.txt SHA256 bc48f771876ad6ea2e2629e9aebff729b9cdcc87f3637926cb384d7788ea07cf; keywords and copy approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-05",
+      "contentHash": "sha256:ba2c1586a98234304cb906bcb745404416c845cf79921231c67823d9ec85a19d",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 5, 2026; implemented by Claude"
+    }
+  },
+  {
+    "slug": "ai-receptionist-software",
+    "title": "AI Receptionist Software: A Buying Guide for Home Services",
+    "description": "What AI receptionist software must do on a call, how to set it up for a home service business, and how to test it before you rely on it.",
+    "navigationLabel": "AI receptionist software",
+    "eyebrow": "Buying guide for owners",
+    "lead": "AI receptionist software answers your business calls, talks with the caller and completes a task, such as booking a visit. For a home service business, the right choice comes down to what it does on a real call and how much work it takes to set up.",
+    "intro": "AI receptionist software answers your business calls, talks with the caller and completes a task, such as booking a visit. For a home service business, the right choice comes down to what it does on a real call and how much work it takes to set up.",
+    "sections": [
+      {
+        "title": "What the software must do on a call",
+        "paragraphs": [
+          "- **Answer every time**, including nights, weekends and while the crew is busy.\n- **Follow your rules:** service area, hours, job types you take and jobs you refuse.\n- **Book** into open slots instead of only taking a message.\n- **Text the caller** a confirmation or follow-up after the call.\n- **Summarize** each call so you know who called and why without listening back.\n- **Transfer** urgent calls to a person when your rules say so."
+        ],
+        "items": []
+      },
+      {
+        "title": "Setup steps to expect",
+        "paragraphs": [
+          "Most setups follow the same order. You forward your existing number to the service, write the script and the questions you want asked, and enter your hours, service area and booking rules. Then you decide which calls should reach a person and who that person is."
+        ],
+        "items": []
+      },
+      {
+        "title": "Test it before you rely on it",
+        "paragraphs": [
+          "Call it yourself as different customers: a routine booking, an urgent problem, a job outside your area, a caller who only wants a price. Check that each call ends the way your rules say and that the summary is accurate. Fix the script, then test again before you forward live calls."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo is AI receptionist software built for home service businesses. Every plan answers 24/7, books with your script, hours and rules, sends SMS follow-up and puts call summaries on a dashboard. Transfers to your team and a field service software connection start on Crew.\n\nRevo is a reception service, not a phone system, so you keep your number and forward calls. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Do I need a new phone number?\nNo. You keep your number and forward calls to Revo.\n### Can I change the script later?\nYes. Update your rules as your hours, services or service area change, then test a few calls again."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-05",
+    "markdownArticle": {
+      "content": "# AI Receptionist Software: A Buying Guide for Home Services\n\nAI receptionist software answers your business calls, talks with the caller and completes a task, such as booking a visit. For a home service business, the right choice comes down to what it does on a real call and how much work it takes to set up.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 5, 2026.\n\n## What the software must do on a call\n- **Answer every time**, including nights, weekends and while the crew is busy.\n- **Follow your rules:** service area, hours, job types you take and jobs you refuse.\n- **Book** into open slots instead of only taking a message.\n- **Text the caller** a confirmation or follow-up after the call.\n- **Summarize** each call so you know who called and why without listening back.\n- **Transfer** urgent calls to a person when your rules say so.\n\n## Setup steps to expect\nMost setups follow the same order. You forward your existing number to the service, write the script and the questions you want asked, and enter your hours, service area and booking rules. Then you decide which calls should reach a person and who that person is.\n\n## Test it before you rely on it\nCall it yourself as different customers: a routine booking, an urgent problem, a job outside your area, a caller who only wants a price. Check that each call ends the way your rules say and that the summary is accurate. Fix the script, then test again before you forward live calls.\n\n## Where Revo fits\nRevo is AI receptionist software built for home service businesses. Every plan answers 24/7, books with your script, hours and rules, sends SMS follow-up and puts call summaries on a dashboard. Transfers to your team and a field service software connection start on Crew.\n\nRevo is a reception service, not a phone system, so you keep your number and forward calls. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Do I need a new phone number?\nNo. You keep your number and forward calls to Revo.\n### Can I change the script later?\nYes. Update your rules as your hours, services or service area change, then test a few calls again.\n",
+      "sha256": "1b3f08f72c6870068f745ffc367e53e59eec6fe94dab4e0dcd7f8afcabbc012b",
+      "assets": []
+    },
+    "related": [
+      "choose-virtual-receptionist",
+      "compare/ai-vs-live-receptionist"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-05/eight-guides-approved-public-copy.txt SHA256 bc48f771876ad6ea2e2629e9aebff729b9cdcc87f3637926cb384d7788ea07cf; keywords and copy approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-05",
+      "contentHash": "sha256:af26bc51d63941c0422d61d9bbf1a7f010874e12548c65d205c777e7f6cab4ba",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 5, 2026; implemented by Claude"
+    }
+  },
+  {
+    "slug": "ai-for-hvac-business",
+    "title": "AI for HVAC Business: Where It Helps and Where It Does Not",
+    "description": "Practical uses of AI for an HVAC business: peak-season calls, maintenance booking and after-hours no-heat calls, plus what to keep human.",
+    "navigationLabel": "AI for HVAC",
+    "eyebrow": "HVAC phones and booking",
+    "lead": "AI for an HVAC business is most useful on the phone. Peak season brings more calls than the office can answer, and the calls that matter most often come at night. The work that needs a technician still needs a technician.",
+    "intro": "AI for an HVAC business is most useful on the phone. Peak season brings more calls than the office can answer, and the calls that matter most often come at night. The work that needs a technician still needs a technician.",
+    "sections": [
+      {
+        "title": "Peak season calls and maintenance booking",
+        "paragraphs": [
+          "On the first hot or cold week, the phones ring while every tech is out and the office is already busy. An AI receptionist can answer each call, collect the address and the problem, and book into your open slots so callers are not left on hold or sent to voicemail.\n\nMaintenance and tune-up calls are routine and easy to standardize. Set the questions once, such as system type, last service and preferred days, and let the AI book them into the windows you choose, so your dispatcher keeps time for urgent work."
+        ],
+        "items": []
+      },
+      {
+        "title": "After-hours no-heat and no-cool calls",
+        "paragraphs": [
+          "A no-heat call in winter or a no-cool call in summer should not wait until morning by default. Decide your rules ahead of time: which situations go to the on-call tech, which get booked for first thing, and what the caller hears either way."
+        ],
+        "items": []
+      },
+      {
+        "title": "What not to automate",
+        "paragraphs": [
+          "Keep diagnosis and pricing human. An AI receptionist should not guess what is wrong with a system or quote a repair or replacement over the phone. It should capture the details clearly so the technician arrives prepared."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo covers the phone part: it answers 24/7, books with your hours and rules, sends SMS follow-up and logs a summary of each call. On Crew and Fleet it can transfer urgent calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can Revo send a no-heat call to my on-call tech?\nYes, on Crew and Fleet, using the transfer rules you set.\n### Will Revo quote prices to callers?\nOnly what you put in your script. Most HVAC owners keep quotes for the technician."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-05",
+    "markdownArticle": {
+      "content": "# AI for HVAC Business: Where It Helps and Where It Does Not\n\nAI for an HVAC business is most useful on the phone. Peak season brings more calls than the office can answer, and the calls that matter most often come at night. The work that needs a technician still needs a technician.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 5, 2026.\n\n## Peak season calls and maintenance booking\nOn the first hot or cold week, the phones ring while every tech is out and the office is already busy. An AI receptionist can answer each call, collect the address and the problem, and book into your open slots so callers are not left on hold or sent to voicemail.\n\nMaintenance and tune-up calls are routine and easy to standardize. Set the questions once, such as system type, last service and preferred days, and let the AI book them into the windows you choose, so your dispatcher keeps time for urgent work.\n\n## After-hours no-heat and no-cool calls\nA no-heat call in winter or a no-cool call in summer should not wait until morning by default. Decide your rules ahead of time: which situations go to the on-call tech, which get booked for first thing, and what the caller hears either way.\n\n## What not to automate\nKeep diagnosis and pricing human. An AI receptionist should not guess what is wrong with a system or quote a repair or replacement over the phone. It should capture the details clearly so the technician arrives prepared.\n\n## Where Revo fits\nRevo covers the phone part: it answers 24/7, books with your hours and rules, sends SMS follow-up and logs a summary of each call. On Crew and Fleet it can transfer urgent calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can Revo send a no-heat call to my on-call tech?\nYes, on Crew and Fleet, using the transfer rules you set.\n### Will Revo quote prices to callers?\nOnly what you put in your script. Most HVAC owners keep quotes for the technician.\n",
+      "sha256": "ac76012ca0ff5e8cb4323c163807a917c3c8e3d6f6dc66777169ecab46b550e3",
+      "assets": []
+    },
+    "related": [
+      "hvac-after-hours-answering",
+      "hvac-overflow-answering"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-05/eight-guides-approved-public-copy.txt SHA256 bc48f771876ad6ea2e2629e9aebff729b9cdcc87f3637926cb384d7788ea07cf; keywords and copy approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-05",
+      "contentHash": "sha256:b341e8a5ed2775f9fdbc31787f53779236169d43096e0a72e9bbfa2a696080f1",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 5, 2026; implemented by Claude"
+    }
+  },
+  {
+    "slug": "ai-for-plumbing-business",
+    "title": "AI for Plumbing Business: Answer, Book and Brief the Tech",
+    "description": "Practical uses of AI for a plumbing business: emergency leak calls, booking drain and water heater jobs, and call summaries for the tech.",
+    "navigationLabel": "AI for plumbing",
+    "eyebrow": "Plumbing calls and booking",
+    "lead": "AI for a plumbing business starts with the phone. A caller with water on the floor wants a person or an answer right away, and a missed call is often a job booked with someone else. The repair itself stays with your plumbers.",
+    "intro": "AI for a plumbing business starts with the phone. A caller with water on the floor wants a person or an answer right away, and a missed call is often a job booked with someone else. The repair itself stays with your plumbers.",
+    "sections": [
+      {
+        "title": "Emergency leak calls",
+        "paragraphs": [
+          "Active leaks, burst pipes and sewer backups cannot sit in voicemail. Set clear rules: which situations go straight to the plumber on call, and what the caller should do while they wait, such as finding the main shutoff. An AI receptionist can follow those rules on every call, day or night."
+        ],
+        "items": []
+      },
+      {
+        "title": "Booking drain and water heater jobs",
+        "paragraphs": [
+          "Most plumbing calls are not emergencies. Slow drains, running toilets and water heater problems can be booked into open slots with a few questions:\n- What is the problem and where is it in the home?\n- Is it getting worse or steady?\n- For water heaters, is it gas or electric, and is there any hot water at all?"
+        ],
+        "items": []
+      },
+      {
+        "title": "Summaries for the tech, judgment for the team",
+        "paragraphs": [
+          "A good call summary saves a trip back to the truck. The plumber should know the address, the problem in the caller's words and anything unusual before arriving, so the right parts are on board.\n\nDiagnosis, pricing and judgment calls belong to your team. The AI should not promise a fix, quote a job or guess the cause. Its job is to answer, collect the details and book under your rules."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo handles the phone part: it answers 24/7, books with your script, hours and rules, sends SMS follow-up and logs call summaries on a dashboard. Transfers to your team, call recordings and a field service software connection start on Crew. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can Revo transfer a burst pipe call to my plumber?\nYes, on Crew and Fleet, following the transfer rules you set.\n### Does Revo dispatch my plumbers?\nNo. Revo answers, books and can transfer calls; your team handles dispatch."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-05",
+    "markdownArticle": {
+      "content": "# AI for Plumbing Business: Answer, Book and Brief the Tech\n\nAI for a plumbing business starts with the phone. A caller with water on the floor wants a person or an answer right away, and a missed call is often a job booked with someone else. The repair itself stays with your plumbers.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 5, 2026.\n\n## Emergency leak calls\nActive leaks, burst pipes and sewer backups cannot sit in voicemail. Set clear rules: which situations go straight to the plumber on call, and what the caller should do while they wait, such as finding the main shutoff. An AI receptionist can follow those rules on every call, day or night.\n\n## Booking drain and water heater jobs\nMost plumbing calls are not emergencies. Slow drains, running toilets and water heater problems can be booked into open slots with a few questions:\n- What is the problem and where is it in the home?\n- Is it getting worse or steady?\n- For water heaters, is it gas or electric, and is there any hot water at all?\n\n## Summaries for the tech, judgment for the team\nA good call summary saves a trip back to the truck. The plumber should know the address, the problem in the caller's words and anything unusual before arriving, so the right parts are on board.\n\nDiagnosis, pricing and judgment calls belong to your team. The AI should not promise a fix, quote a job or guess the cause. Its job is to answer, collect the details and book under your rules.\n\n## Where Revo fits\nRevo handles the phone part: it answers 24/7, books with your script, hours and rules, sends SMS follow-up and logs call summaries on a dashboard. Transfers to your team, call recordings and a field service software connection start on Crew. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can Revo transfer a burst pipe call to my plumber?\nYes, on Crew and Fleet, following the transfer rules you set.\n### Does Revo dispatch my plumbers?\nNo. Revo answers, books and can transfer calls; your team handles dispatch.\n",
+      "sha256": "f5c1a7977fca70c1b6d6d08c059f308691edfb104a887e9d4557eea0c4151436",
+      "assets": []
+    },
+    "related": [
+      "plumbing-24-7-answering",
+      "plumbing-answering-with-scheduling"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-05/eight-guides-approved-public-copy.txt SHA256 bc48f771876ad6ea2e2629e9aebff729b9cdcc87f3637926cb384d7788ea07cf; keywords and copy approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-05",
+      "contentHash": "sha256:da7899039a6b9146145562b54cd419bcb37c73247d35e58c6e2a9c5f34e1c2ef",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 5, 2026; implemented by Claude"
+    }
+  },
+  {
+    "slug": "answering-service-for-towing-company",
+    "title": "Answering Service for Towing Company: Capture Every Detail",
+    "description": "What an answering service for a towing company should capture on every call: location, vehicle, situation and callback number, 24/7.",
+    "navigationLabel": "Towing answering service",
+    "eyebrow": "Urgent roadside calls",
+    "lead": "An answering service for a towing company has a harder job than most. The caller is often stranded, stressed and unsure of exactly where they are. The call has to collect the right details fast and get them to the driver on duty.",
+    "intro": "An answering service for a towing company has a harder job than most. The caller is often stranded, stressed and unsure of exactly where they are. The call has to collect the right details fast and get them to the driver on duty.",
+    "sections": [
+      {
+        "title": "What every towing call must capture",
+        "paragraphs": [
+          "- **Location:** street, cross street, highway and direction, mile marker or nearby landmark.\n- **Vehicle:** make, model, color and anything that affects the tow, such as all-wheel drive or a lowered car.\n- **Situation:** accident, breakdown, lockout, flat tire or stuck vehicle, and whether anyone is in danger.\n- **Callback number:** confirmed, in case the call drops or the driver needs directions.\n- **Destination:** where the vehicle should go, if the caller knows."
+        ],
+        "items": []
+      },
+      {
+        "title": "Route to the driver on duty",
+        "paragraphs": [
+          "Decide in advance who gets which calls. Write the on-duty schedule, what goes straight to a driver and what can be called back. A towing answering service should never leave an urgent call waiting in a message queue overnight."
+        ],
+        "items": []
+      },
+      {
+        "title": "Answer 24/7, including the quiet hours",
+        "paragraphs": [
+          "Breakdowns and accidents happen at any hour, and late-night and holiday calls still need a calm answer, the same questions and a clear next step. Callers should hear that their details were taken and who will call them back. Do not promise arrival times on the phone; leave that to the driver."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers calls forwarded to it 24/7, asks your questions, sends an SMS follow-up and logs a summary of each call. On Crew and Fleet it can transfer calls to the driver on duty; Fleet adds multiple numbers and locations.\n\nRevo does not dispatch trucks; your team does. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can Revo send a call straight to my driver?\nYes, on Crew and Fleet, using the transfer rules you set.\n### Will Revo give the caller an arrival time?\nNo. Revo captures the details and passes the call or summary to your team, who confirm timing."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-05",
+    "markdownArticle": {
+      "content": "# Answering Service for Towing Company: Capture Every Detail\n\nAn answering service for a towing company has a harder job than most. The caller is often stranded, stressed and unsure of exactly where they are. The call has to collect the right details fast and get them to the driver on duty.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 5, 2026.\n\n## What every towing call must capture\n- **Location:** street, cross street, highway and direction, mile marker or nearby landmark.\n- **Vehicle:** make, model, color and anything that affects the tow, such as all-wheel drive or a lowered car.\n- **Situation:** accident, breakdown, lockout, flat tire or stuck vehicle, and whether anyone is in danger.\n- **Callback number:** confirmed, in case the call drops or the driver needs directions.\n- **Destination:** where the vehicle should go, if the caller knows.\n\n## Route to the driver on duty\nDecide in advance who gets which calls. Write the on-duty schedule, what goes straight to a driver and what can be called back. A towing answering service should never leave an urgent call waiting in a message queue overnight.\n\n## Answer 24/7, including the quiet hours\nBreakdowns and accidents happen at any hour, and late-night and holiday calls still need a calm answer, the same questions and a clear next step. Callers should hear that their details were taken and who will call them back. Do not promise arrival times on the phone; leave that to the driver.\n\n## Where Revo fits\nRevo answers calls forwarded to it 24/7, asks your questions, sends an SMS follow-up and logs a summary of each call. On Crew and Fleet it can transfer calls to the driver on duty; Fleet adds multiple numbers and locations.\n\nRevo does not dispatch trucks; your team does. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can Revo send a call straight to my driver?\nYes, on Crew and Fleet, using the transfer rules you set.\n### Will Revo give the caller an arrival time?\nNo. Revo captures the details and passes the call or summary to your team, who confirm timing.\n",
+      "sha256": "2d85750b4b8babd663d023474d05a06a5d3790a25a8c7c2e3fd11c82d7ca322f",
+      "assets": []
+    },
+    "related": [
+      "after-hours",
+      "call-routing"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-05/eight-guides-approved-public-copy.txt SHA256 bc48f771876ad6ea2e2629e9aebff729b9cdcc87f3637926cb384d7788ea07cf; keywords and copy approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-05",
+      "contentHash": "sha256:cc4fecd17bdca64c390c87c596889282470694ba7c6315c60c9e6cd42aedb609",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 5, 2026; implemented by Claude"
+    }
+  },
+  {
+    "slug": "answering-service-for-contractors",
+    "title": "Answering Service for Contractors: Never Miss a Job Call",
+    "description": "What an answering service for contractors should handle during work hours and after hours, from new job requests to project updates.",
+    "navigationLabel": "Answering for contractors",
+    "eyebrow": "Job calls during the workday",
+    "lead": "Contractors miss calls for a simple reason: the people who know the work are on site, on a ladder or driving between jobs. An answering service for contractors covers the phone while the crew works, so new job requests and project questions get a real answer instead of voicemail.",
+    "intro": "Contractors miss calls for a simple reason: the people who know the work are on site, on a ladder or driving between jobs. An answering service for contractors covers the phone while the crew works, so new job requests and project questions get a real answer instead of voicemail.",
+    "sections": [
+      {
+        "title": "Calls a contractor's phone line gets",
+        "paragraphs": [
+          "Most contractor calls fall into a few groups. Sort them before you choose a service:\n\n- **New job requests**: a homeowner wants a quote or an estimate visit.\n- **Current customers**: questions about schedule, materials or the next step on their project.\n- **Urgent problems**: a leak, a safety issue or damage on an active job.\n- **Vendors and inspectors**: deliveries, permits and inspection times.\n\nEach group needs a different outcome. New requests get booked, current customers get a message to the project lead, and urgent problems go to the person on call."
+        ],
+        "items": []
+      },
+      {
+        "title": "What to capture on a new job request",
+        "paragraphs": [
+          "Ask for the name, callback number, job address, type of work and how soon they want to start. Add one or two questions that tell you whether the job fits your business, such as the size of the project. That way you call back the right leads first."
+        ],
+        "items": []
+      },
+      {
+        "title": "During work hours and after hours",
+        "paragraphs": [
+          "Coverage during the workday matters as much as nights and weekends. If your office is small, calls pile up while you are on site. Set clear rules for each time block: who gets transferred, what gets booked and what waits for a callback."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, with the questions and rules you set. It can book estimate visits, send SMS follow-up and log a call summary for each call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Does an answering service work for construction companies?\nYes, if the rules match how your company works. Write down which calls get booked, which get transferred and which get a message.\n### Can Revo give quotes to callers?\nNo. Revo collects the job details and books the visit or callback. Your team prepares the quote."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-05",
+    "markdownArticle": {
+      "content": "# Answering Service for Contractors: Never Miss a Job Call\n\nContractors miss calls for a simple reason: the people who know the work are on site, on a ladder or driving between jobs. An answering service for contractors covers the phone while the crew works, so new job requests and project questions get a real answer instead of voicemail.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 5, 2026.\n\n## Calls a contractor's phone line gets\nMost contractor calls fall into a few groups. Sort them before you choose a service:\n\n- **New job requests**: a homeowner wants a quote or an estimate visit.\n- **Current customers**: questions about schedule, materials or the next step on their project.\n- **Urgent problems**: a leak, a safety issue or damage on an active job.\n- **Vendors and inspectors**: deliveries, permits and inspection times.\n\nEach group needs a different outcome. New requests get booked, current customers get a message to the project lead, and urgent problems go to the person on call.\n\n## What to capture on a new job request\nAsk for the name, callback number, job address, type of work and how soon they want to start. Add one or two questions that tell you whether the job fits your business, such as the size of the project. That way you call back the right leads first.\n\n## During work hours and after hours\nCoverage during the workday matters as much as nights and weekends. If your office is small, calls pile up while you are on site. Set clear rules for each time block: who gets transferred, what gets booked and what waits for a callback.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, with the questions and rules you set. It can book estimate visits, send SMS follow-up and log a call summary for each call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Does an answering service work for construction companies?\nYes, if the rules match how your company works. Write down which calls get booked, which get transferred and which get a message.\n### Can Revo give quotes to callers?\nNo. Revo collects the job details and books the visit or callback. Your team prepares the quote.\n",
+      "sha256": "29e107c8b37d26fdeb72e29082e332bb9f17c546d046cd0864422ba170bd9619",
+      "assets": []
+    },
+    "related": [
+      "contractors-after-hours-answering",
+      "remodeling-answering"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-05/eight-guides-approved-public-copy.txt SHA256 bc48f771876ad6ea2e2629e9aebff729b9cdcc87f3637926cb384d7788ea07cf; keywords and copy approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-05",
+      "contentHash": "sha256:c7472ed977a9a82eaeb9e0736a1588640a74b3f51fa55e101613a372b5f7730e",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 5, 2026; implemented by Claude"
+    }
+  },
+  {
+    "slug": "electrician-answering-service",
+    "title": "Electrician Answering Service: Book Jobs While You Work",
+    "description": "How an electrician answering service should handle service calls, safety issues and quote requests while you are on a job.",
+    "navigationLabel": "Answering for electricians",
+    "eyebrow": "Calls while you are on a job",
+    "lead": "Electricians cannot answer the phone with their hands inside a panel. An electrician answering service picks up those calls, collects the details and books the next step, so the job in front of you stays your focus.",
+    "intro": "Electricians cannot answer the phone with their hands inside a panel. An electrician answering service picks up those calls, collects the details and books the next step, so the job in front of you stays your focus.",
+    "sections": [
+      {
+        "title": "Sort the calls first",
+        "paragraphs": [
+          "Write down how you want each type of call handled:\n\n- **Safety issues**: a burning smell, sparks or a hot outlet. These need an urgent path.\n- **Service calls**: a dead circuit, a breaker that keeps tripping or lights that flicker.\n- **Install and upgrade requests**: panel upgrades, EV chargers, lighting or a generator.\n- **Existing customers**: rescheduling, directions or a question about a recent job.\n\nService calls and existing customers can usually be booked or messaged. Install requests may need a site visit before a quote."
+        ],
+        "items": []
+      },
+      {
+        "title": "Safety comes first in the script",
+        "paragraphs": [
+          "If a caller describes sparks, smoke or a burning smell, the script should tell them to stay away from the equipment and call emergency services if there is danger. Then it should follow your urgent rule: transfer to the person on call or a fast callback."
+        ],
+        "items": []
+      },
+      {
+        "title": "What to capture on every call",
+        "paragraphs": [
+          "Get the name, callback number, address, the problem in the caller's words and whether the home has power. For installs, ask what they want installed and when. Clear notes save a return call before you can schedule."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, and follows the script and rules you give it. It can book visits, send SMS follow-up and log a summary of every call. On Crew and Fleet it can transfer urgent calls to your team. Revo does not dispatch technicians or give electrical advice. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can an answering service give electrical advice?\nIt should not. The safe script gives one safety instruction and leaves diagnosis to a licensed electrician.\n### Can Revo book panel upgrade estimates?\nYes, if you set the rules. Revo collects the details and books the visit in the time slots you allow."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-05",
+    "markdownArticle": {
+      "content": "# Electrician Answering Service: Book Jobs While You Work\n\nElectricians cannot answer the phone with their hands inside a panel. An electrician answering service picks up those calls, collects the details and books the next step, so the job in front of you stays your focus.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 5, 2026.\n\n## Sort the calls first\nWrite down how you want each type of call handled:\n\n- **Safety issues**: a burning smell, sparks or a hot outlet. These need an urgent path.\n- **Service calls**: a dead circuit, a breaker that keeps tripping or lights that flicker.\n- **Install and upgrade requests**: panel upgrades, EV chargers, lighting or a generator.\n- **Existing customers**: rescheduling, directions or a question about a recent job.\n\nService calls and existing customers can usually be booked or messaged. Install requests may need a site visit before a quote.\n\n## Safety comes first in the script\nIf a caller describes sparks, smoke or a burning smell, the script should tell them to stay away from the equipment and call emergency services if there is danger. Then it should follow your urgent rule: transfer to the person on call or a fast callback.\n\n## What to capture on every call\nGet the name, callback number, address, the problem in the caller's words and whether the home has power. For installs, ask what they want installed and when. Clear notes save a return call before you can schedule.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows the script and rules you give it. It can book visits, send SMS follow-up and log a summary of every call. On Crew and Fleet it can transfer urgent calls to your team. Revo does not dispatch technicians or give electrical advice. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can an answering service give electrical advice?\nIt should not. The safe script gives one safety instruction and leaves diagnosis to a licensed electrician.\n### Can Revo book panel upgrade estimates?\nYes, if you set the rules. Revo collects the details and books the visit in the time slots you allow.\n",
+      "sha256": "39a5d7a4ee8636d5bc818bc4096a12dcce5a7690799052a9581022758205d38d",
+      "assets": []
+    },
+    "related": [
+      "electrical-contractor-call-screening",
+      "emergency-call-answering-service"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-05/eight-guides-approved-public-copy.txt SHA256 bc48f771876ad6ea2e2629e9aebff729b9cdcc87f3637926cb384d7788ea07cf; keywords and copy approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-05",
+      "contentHash": "sha256:a376add9c824ff04e8c9d46e780287deeb1b8c9cb5e658d2a8a434644fb0bb57",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 5, 2026; implemented by Claude"
     }
   }
 ]

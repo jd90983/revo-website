@@ -33,7 +33,8 @@ test('dated guide FAQs in structured data are the same answers rendered without 
   const p=page(slug),schema=guideStructuredData(p),web=schema['@graph'][0],faq=schema['@graph'][1];
   const template=slug==='after-hours'?ApprovedAfterHours:p.template==='workflow'?WorkflowGuideTemplate:LandingPageTemplate;
   const html=renderToStaticMarkup(React.createElement(template,slug==='after-hours'?{availableSlugs:REVIEW_PAGES.filter(p=>p.publicationStatus==='approved').map(p=>p.slug)}:{page:p,mode:'public',acquisitionEnabled:false}));
-  assert.equal(web.dateModified,'2026-10-21');assert.ok(html.includes('2026-10-21'));
+  const reviewed=slug==='cost-of-missed-calls'?'2026-11-05':'2026-10-21'; // cost-of-missed-calls rewritten without example amounts (owner decision 2026-11-05)
+  assert.equal(web.dateModified,reviewed);assert.ok(html.includes(reviewed));
   assert.deepEqual(faq.mainEntity.map(q=>[q.name,q.acceptedAnswer.text]),p.faqs.map(f=>[f.q,f.a]));
   for(const f of p.faqs){const escape=t=>renderToStaticMarkup(React.createElement('p',null,t)).slice(3,-4);assert.ok(html.includes(escape(f.q)),slug+' question');assert.ok(html.includes(escape(f.a)),slug+' answer');}
   assert.ok(!JSON.stringify(schema).includes('aggregateRating'));
@@ -46,7 +47,8 @@ test('content dates cannot be invalid calendar dates',()=>{
 });
 
 test('cost scenarios identify assumptions and keep gross value separate from results',()=>{
- const p=page('cost-of-missed-calls');assert.equal(10*0.30*500,1500);assert.ok(p.intro.includes('$1,500'));assert.ok(p.intro.includes('not measured losses or Revo results'));
+ const p=page('cost-of-missed-calls');// Owner decision 2026-11-05: no example dollar amounts; the formula is stated with the user's own inputs.
+ assert.ok(!/\$\d/.test(p.intro+p.description+JSON.stringify(p.overviewTable)),'no example amounts');assert.ok(p.intro.includes('assumed booking probability × assumed average job value'));assert.ok(p.intro.includes('not measured losses or Revo results'));
  assert.ok(p.calculator);assert.equal(p.pricingVariant,'worksheet');
  assert.equal(page('compare/home-services-ai-receptionists').overviewTable,undefined,'competitor price tables were removed (owner decision 2026-11-04)');
 });
