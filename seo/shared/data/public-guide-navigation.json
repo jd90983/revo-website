@@ -1848,5 +1848,45 @@
     "slug": "nextiva-pricing",
     "label": "Phone system or reception",
     "template": "workflow"
+  },
+  {
+    "slug": "emergency-call-answering-service",
+    "label": "Triage urgent calls",
+    "template": "workflow"
+  },
+  {
+    "slug": "weekend-answering-service",
+    "label": "Saturdays, Sundays and holidays",
+    "template": "workflow"
+  },
+  {
+    "slug": "ai-receptionist-software",
+    "label": "Buying guide for owners",
+    "template": "workflow"
+  },
+  {
+    "slug": "ai-for-hvac-business",
+    "label": "HVAC phones and booking",
+    "template": "workflow"
+  },
+  {
+    "slug": "ai-for-plumbing-business",
+    "label": "Plumbing calls and booking",
+    "template": "workflow"
+  },
+  {
+    "slug": "answering-service-for-towing-company",
+    "label": "Urgent roadside calls",
+    "template": "workflow"
+  },
+  {
+    "slug": "answering-service-for-contractors",
+    "label": "Job calls during the workday",
+    "template": "workflow"
+  },
+  {
+    "slug": "electrician-answering-service",
+    "label": "Calls while you are on a job",
+    "template": "workflow"
   }
 ]
