@@ -1,0 +1,645 @@
+{
+  "batchId": "2026-11-06-six-keyword-retargets",
+  "source": {
+    "kind": "owner-approved-exact-copy",
+    "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+  },
+  "operations": [
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "plumbing-24-7-answering",
+        "title": "Plumbing Answering Service: 24/7 Calls With a Clear Next Step",
+        "description": "A plumbing answering service that picks up day and night, captures the problem and address, and gives every caller a clear next step under your rules.",
+        "navigationLabel": "Plumbing answering service",
+        "eyebrow": "Plumbing calls, day and night",
+        "lead": "A plumbing answering service picks up when your crew is on a job, the office is busy or the call comes after closing. Revo answers with your greeting, questions and handling rules, so each caller leaves with a clear next step.",
+        "intro": "A plumbing answering service picks up when your crew is on a job, the office is busy or the call comes after closing. Revo answers with your greeting, questions and handling rules, so each caller leaves with a clear next step.\n\nGive callers a way to describe the work and leave accurate contact details without making promises your schedule cannot support. The purpose is a usable service request for your team, whether the caller needs routine work or asks about urgent availability.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "services.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "A caller reports an active plumbing problem",
+            "paragraphs": [
+              "Capture what the caller reports, where the work is needed and the requested next step. Follow the business’s approved urgent-call policy."
+            ],
+            "items": []
+          },
+          {
+            "title": "A customer checks a scheduled visit",
+            "paragraphs": [
+              "Collect identifying information and the question for the office. A call summary does not establish a technician’s current location."
+            ],
+            "items": []
+          },
+          {
+            "title": "A new customer asks about planned work",
+            "paragraphs": [
+              "Identify the type of plumbing project and service location before the team decides whether to accept or estimate it."
+            ],
+            "items": []
+          },
+          {
+            "title": "Information to collect",
+            "paragraphs": [],
+            "items": [
+              "Caller name and callback number",
+              "Full service address",
+              "Reported plumbing issue or project",
+              "Residential or commercial request",
+              "Existing customer or new inquiry",
+              "Requested timing and agreed follow-up path"
+            ]
+          },
+          {
+            "title": "Give each request a defined next step",
+            "paragraphs": [
+              "Set separate handling rules for staffed hours, busy periods and closed hours while keeping the same business identity.",
+              "Collect the request and distinguish urgent availability questions from ordinary appointment inquiries. Your policy determines the authorized handoff.",
+              "Use the call summary to assign office follow-up. Let the person responsible confirm service acceptance, attendance and any commitment to the customer."
+            ],
+            "items": []
+          },
+          {
+            "title": "Set accurate expectations",
+            "paragraphs": [
+              "24/7 answering does not mean 24/7 field service. Revo should not diagnose a leak, provide repair instructions, quote an unapproved price or promise that a plumber has been dispatched."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Revo: answering workflow and supported setup",
+                "href": "https://www.revoapp.ai/ai-receptionist-demo.html"
+              },
+              {
+                "label": "Revo: current plans and feature boundaries",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Does 24/7 answering mean someone is dispatched immediately?",
+            "a": "No. Dispatch is a business decision involving your available people and approved process. The answering flow captures the request and explains the next step you authorize."
+          },
+          {
+            "q": "Can one setup cover daytime and overnight calls?",
+            "a": "Discuss both situations in the demo. The greeting, coverage rules and handoff expectations must match each period."
+          },
+          {
+            "q": "Is this the same as a plumbing scheduling page?",
+            "a": "No. This page addresses coverage and intake across the full day. Scheduling requires its own rules for which work can be booked and by whom."
+          }
+        ],
+        "takeaway": "Set your answering workflow around the coverage, questions and next steps your business can support.",
+        "related": [
+          "after-hours",
+          "call-routing"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+        },
+        "editorialDate": "2026-11-06"
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "hvac-after-hours-answering",
+        "title": "HVAC Answering Service for After-Hours and On-Call Calls",
+        "description": "An HVAC answering service for calls after your office closes: capture no-heat and no-cooling calls, maintenance requests and callbacks under your on-call rules.",
+        "navigationLabel": "HVAC answering service",
+        "eyebrow": "HVAC calls after hours",
+        "lead": "An HVAC answering service matters most after your office closes. A homeowner with a failed air conditioner, a tenant following up on a heating visit and a customer asking for maintenance need different next steps. Revo answers with your business greeting and collects each request under your on-call rules.",
+        "intro": "An HVAC answering service matters most after your office closes. A homeowner with a failed air conditioner, a tenant following up on a heating visit and a customer asking for maintenance need different next steps. Revo answers with your business greeting and collects each request under your on-call rules.\n\nSet the overnight conversation around your actual coverage. Capture the system involved, the service address and what the caller wants, then make the available next step clear. Phone coverage is available around the clock; a technician visit still depends on your business.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "services.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "Heating or cooling has stopped",
+            "paragraphs": [
+              "Record the caller’s description and whether the request concerns heating, cooling or both. Use your approved escalation questions rather than offering a diagnosis."
+            ],
+            "items": []
+          },
+          {
+            "title": "An existing visit needs attention",
+            "paragraphs": [
+              "Identify the customer and appointment so the office can review the correct record. Do not promise a revised arrival time."
+            ],
+            "items": []
+          },
+          {
+            "title": "A routine request arrives overnight",
+            "paragraphs": [
+              "Capture the requested service and preferred callback period without presenting that preference as a confirmed booking."
+            ],
+            "items": []
+          },
+          {
+            "title": "Information to collect",
+            "paragraphs": [],
+            "items": [
+              "Name and reliable callback number",
+              "Service address and service-area fit",
+              "Heating or cooling system involved, if known",
+              "Problem as described by the caller",
+              "New request or existing appointment",
+              "Approved on-call contact or next-office follow-up path"
+            ]
+          },
+          {
+            "title": "Give each request a defined next step",
+            "paragraphs": [
+              "Define the closed-hours greeting separately from the daytime greeting, including what coverage the business actually offers.",
+              "Collect the request before applying the approved on-call policy. If a team transfer is included and configured, use only the authorized destination and unavailable-recipient fallback.",
+              "Have the office review the call summary and take responsibility for requests that remain open. A collected overnight inquiry still needs an assigned next action."
+            ],
+            "items": []
+          },
+          {
+            "title": "Set accurate expectations",
+            "paragraphs": [
+              "No remote diagnosis, repair instructions or guaranteed emergency attendance belongs in the answering script. Booking and team transfers depend on the selected plan and supported setup; do not assume a connection to a particular HVAC platform."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Revo: answering workflow and supported setup",
+                "href": "https://www.revoapp.ai/ai-receptionist-demo.html"
+              },
+              {
+                "label": "Revo: current plans and feature boundaries",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Can answering after hours guarantee an HVAC technician tonight?",
+            "a": "No. The answering conversation must reflect your real on-call availability. Confirm who may accept a visit and what callers hear when nobody is available."
+          },
+          {
+            "q": "How is this different from daytime overflow?",
+            "a": "This flow begins when the office is closed and follows a closed-hours policy. Daytime overflow supports an open office that cannot answer an additional call."
+          },
+          {
+            "q": "Can callers request a maintenance appointment overnight?",
+            "a": "Yes, the conversation can collect that request. Confirmed booking requires a supported, configured scheduling workflow and available appointments."
+          }
+        ],
+        "takeaway": "Set your answering workflow around the coverage, questions and next steps your business can support.",
+        "related": [
+          "after-hours",
+          "overflow-answering"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+        },
+        "editorialDate": "2026-11-06"
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "roofing-24-7-answering",
+        "title": "Roofing Answering Service: 24/7 Calls Your Crew Can't Take",
+        "description": "A roofing answering service that picks up day and night and captures leak, estimate and existing-project calls without promising an inspection time.",
+        "navigationLabel": "Roofing answering service",
+        "eyebrow": "Roofing calls, day and night",
+        "lead": "A roofing answering service picks up the calls that arrive while crews are on a roof, the office is busy or the day is over. Revo answers in your business name and captures whether the caller needs a repair review, a replacement estimate or an update on an existing project.",
+        "intro": "A roofing answering service picks up the calls that arrive while crews are on a roof, the office is busy or the day is over. Revo answers in your business name and captures whether the caller needs a repair review, a replacement estimate or an update on an existing project.\n\nKeep the coverage promise about answering the phone. Your roofing team still determines the service area, inspection availability, project acceptance and any attendance commitment. The caller gets an approved next step rather than an assumption about what the roof needs.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "services.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "A caller reports a leak or visible damage",
+            "paragraphs": [
+              "Collect the location and what the caller has observed. Do not diagnose the cause or promise temporary protection."
+            ],
+            "items": []
+          },
+          {
+            "title": "A homeowner requests a replacement estimate",
+            "paragraphs": [
+              "Identify the property and project request for the estimating team. An inquiry does not confirm a roof measurement or quote."
+            ],
+            "items": []
+          },
+          {
+            "title": "An existing customer calls after closing",
+            "paragraphs": [
+              "Capture the project reference and question, with the appropriate owner for office follow-up."
+            ],
+            "items": []
+          },
+          {
+            "title": "Information to collect",
+            "paragraphs": [],
+            "items": [
+              "Caller and callback details",
+              "Property address and service-area fit",
+              "Repair, replacement, inspection or existing-job request",
+              "Reported issue and timing",
+              "Property type, if relevant to acceptance",
+              "Preferred contact window and next-step owner"
+            ]
+          },
+          {
+            "title": "Give each request a defined next step",
+            "paragraphs": [
+              "Set answering rules for open hours, busy periods and closed hours. Keep the roofing service limits consistent across them.",
+              "Capture the request and apply the approved route. If a transfer is supported and configured, use the authorized recipient and no-answer fallback.",
+              "Review the call summary before arranging an inspection or promising a site visit. Assign responsibility for callers still waiting for a reply."
+            ],
+            "items": []
+          },
+          {
+            "title": "Set accurate expectations",
+            "paragraphs": [
+              "No roof access advice, remote inspection result, insurance outcome or guaranteed crew response belongs in this conversation. Around-the-clock phone coverage is separate from field availability."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Revo: answering workflow and supported setup",
+                "href": "https://www.revoapp.ai/ai-receptionist-demo.html"
+              },
+              {
+                "label": "Revo: current plans and feature boundaries",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is this a storm-response dispatch service?",
+            "a": "No. It is a phone-answering and request-intake workflow. Your business decides which requests it accepts and what response it can provide."
+          },
+          {
+            "q": "How does this differ from roofing lead qualification?",
+            "a": "This flow covers calls across hours and request types. Qualification examines whether a new project fits the estimating process before the team commits time."
+          },
+          {
+            "q": "Can the caller book an inspection?",
+            "a": "Only through a supported, configured booking workflow that matches the inspection types your office has approved. Otherwise capture a request."
+          }
+        ],
+        "takeaway": "Set your answering workflow around the coverage, questions and next steps your business can support.",
+        "related": [
+          "after-hours",
+          "lead-qualification"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+        },
+        "editorialDate": "2026-11-06"
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "restoration-after-hours-answering",
+        "title": "Restoration Answering Service for After-Hours Damage Calls",
+        "description": "A restoration answering service for water and fire damage calls after closing: capture the damage, location and callback details for your team.",
+        "navigationLabel": "Restoration answering service",
+        "eyebrow": "Damage calls after hours",
+        "lead": "A restoration answering service has to capture more than a name and number. Callers may report water damage, ask about fire cleanup or follow up on work already underway. Revo answers after your office closes and collects what your team needs to decide the next step.",
+        "intro": "A restoration answering service has to capture more than a name and number. Callers may report water damage, ask about fire cleanup or follow up on work already underway. Revo answers after your office closes and collects what your team needs to decide the next step.\n\nKeep the first conversation focused on the request, not an unverified assessment. A clear account of the property, reported damage and callback details gives the authorized person a starting point without promising a crew or a response time.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "services.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "A new damage inquiry arrives overnight",
+            "paragraphs": [
+              "Record the damage type as reported, the property address and how the caller can be reached. Apply your approved handoff policy."
+            ],
+            "items": []
+          },
+          {
+            "title": "A property manager calls about an occupied building",
+            "paragraphs": [
+              "Identify the affected property and the caller’s role. Capture access or contact coordination information your office has approved."
+            ],
+            "items": []
+          },
+          {
+            "title": "An existing restoration customer needs an update",
+            "paragraphs": [
+              "Capture the job reference and question so your team can locate the record and follow up."
+            ],
+            "items": []
+          },
+          {
+            "title": "Information to collect",
+            "paragraphs": [],
+            "items": [
+              "Caller name, role and callback number",
+              "Property address and relevant unit",
+              "Reported damage type and when it was noticed",
+              "New inquiry or existing project",
+              "Property contact and approved access details",
+              "Requested next step and handoff owner"
+            ]
+          },
+          {
+            "title": "Give each request a defined next step",
+            "paragraphs": [
+              "Define which closed-hours requests should reach an authorized on-call contact and which wait for office review.",
+              "Use approved questions to collect the caller’s report. Keep uncertainty in the record rather than assigning a cause or damage category the caller did not establish.",
+              "Have the responsible person decide whether the business can accept, assess or attend the property. Review unresolved calls in the summary when the office opens."
+            ],
+            "items": []
+          },
+          {
+            "title": "Set accurate expectations",
+            "paragraphs": [
+              "The answering flow is not a damage inspection, safety assessment or insurance determination. Do not promise mitigation dispatch, coverage approval, restoration results or an arrival window that your team has not accepted."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Revo: answering workflow and supported setup",
+                "href": "https://www.revoapp.ai/ai-receptionist-demo.html"
+              },
+              {
+                "label": "Revo: current plans and feature boundaries",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Can Revo assess water or fire damage over the phone?",
+            "a": "No assessment is established by this intake. The business must arrange the appropriate review and decide what it can offer."
+          },
+          {
+            "q": "Can the script collect an existing claim reference?",
+            "a": "Only collect information your business needs and has approved for intake. Do not request payment details or treat a reference as proof of insurance coverage."
+          },
+          {
+            "q": "What if the caller reports immediate danger?",
+            "a": "Use the business’s approved safety and escalation language. AI answering is not an emergency-response service and must not give a safety assurance."
+          }
+        ],
+        "takeaway": "Set your answering workflow around the coverage, questions and next steps your business can support.",
+        "related": [
+          "after-hours",
+          "call-transfer-language"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+        },
+        "editorialDate": "2026-11-06"
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "locksmith-overflow-answering",
+        "title": "Locksmith Answering Service for Calls Your Team Can't Take",
+        "description": "A locksmith answering service for overflow calls: capture lockouts, rekeying requests and service location without promising access, price or arrival time.",
+        "navigationLabel": "Locksmith answering service",
+        "eyebrow": "Locksmith overflow calls",
+        "lead": "A locksmith answering service picks up when your team is already helping a customer and the next request reaches the main number. Revo collects the new caller's request while your team stays focused on the work already accepted.",
+        "intro": "A locksmith answering service picks up when your team is already helping a customer and the next request reaches the main number. Revo collects the new caller's request while your team stays focused on the work already accepted.\n\nKeep automotive, residential and commercial inquiries distinct. The office needs the service location and requested work before deciding whether it can help. Answering the phone should not imply that access has been authorized, a technician is on the way or a final price has been set.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "services.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "A caller requests help with a lockout",
+            "paragraphs": [
+              "Capture the service category, location and callback details under your approved intake policy."
+            ],
+            "items": []
+          },
+          {
+            "title": "A customer asks about rekeying or lock work",
+            "paragraphs": [
+              "Identify the property type and requested service so the office can choose the right follow-up."
+            ],
+            "items": []
+          },
+          {
+            "title": "An existing customer checks an accepted job",
+            "paragraphs": [
+              "Collect the job reference and question without inventing an arrival update or a technician’s location."
+            ],
+            "items": []
+          },
+          {
+            "title": "Information to collect",
+            "paragraphs": [],
+            "items": [
+              "Caller name and callback number",
+              "Service location",
+              "Automotive, residential or commercial request",
+              "Requested locksmith service in the caller’s words",
+              "Existing job reference if applicable",
+              "Authorized recipient or office follow-up owner"
+            ]
+          },
+          {
+            "title": "Give each request a defined next step",
+            "paragraphs": [
+              "Verify the overflow trigger with your phone setup and define who owns additional requests while the business is operating.",
+              "Ask the approved category and location questions. Any eligibility or authorization review must remain with your business’s actual process.",
+              "Review the summary before accepting the job. Use a transfer only through the method and recipient your selected plan and setup support, with a clear no-answer fallback."
+            ],
+            "items": []
+          },
+          {
+            "title": "Set accurate expectations",
+            "paragraphs": [
+              "No entry technique, proof-of-authorization determination, exact price or guaranteed arrival time belongs in AI intake. Overflow answering does not dispatch or authorize physical access."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Revo: answering workflow and supported setup",
+                "href": "https://www.revoapp.ai/ai-receptionist-demo.html"
+              },
+              {
+                "label": "Revo: current plans and feature boundaries",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Can the answering flow tell a caller how to open a lock?",
+            "a": "No. Keep the conversation to approved request intake and the next business contact, without entry instructions."
+          },
+          {
+            "q": "Can a caller receive a technician arrival time?",
+            "a": "Only an authorized business process can confirm attendance and timing. Do not infer either from an answered call or captured request."
+          },
+          {
+            "q": "How is overflow different from overnight coverage?",
+            "a": "Overflow backs up the operating business while people are occupied. Overnight calls need their own availability and on-call instructions."
+          }
+        ],
+        "takeaway": "Set your answering workflow around the coverage, questions and next steps your business can support.",
+        "related": [
+          "overflow-answering",
+          "call-transfer-language"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+        },
+        "editorialDate": "2026-11-06"
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "landscaping-overflow-answering",
+        "title": "Landscaping Answering Service for a Busy Office",
+        "description": "A landscaping answering service for busy hours: separate recurring maintenance, project estimates and existing-client questions for useful follow-up.",
+        "navigationLabel": "Landscaping answering service",
+        "eyebrow": "Landscaping overflow calls",
+        "lead": "A landscaping answering service helps when calls arrive together while the office is scheduling crews or helping an existing customer. Revo picks up the caller your team cannot answer, using your approved greeting and intake rules.",
+        "intro": "A landscaping answering service helps when calls arrive together while the office is scheduling crews or helping an existing customer. Revo picks up the caller your team cannot answer, using your approved greeting and intake rules.\n\nKeep recurring service inquiries separate from landscape projects. A maintenance request may need an existing route reviewed, while a new installation may need an estimate consultation. Capture the distinction before the office decides what it can schedule.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "services.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "A caller asks about recurring maintenance",
+            "paragraphs": [
+              "Identify the property, requested work and desired service pattern for office review."
+            ],
+            "items": []
+          },
+          {
+            "title": "A new landscape project needs an estimate",
+            "paragraphs": [
+              "Capture the project description and planning stage rather than putting it into a routine maintenance slot."
+            ],
+            "items": []
+          },
+          {
+            "title": "An existing client asks about the next visit",
+            "paragraphs": [
+              "Collect the customer and property details so the office can check the actual schedule."
+            ],
+            "items": []
+          },
+          {
+            "title": "Information to collect",
+            "paragraphs": [],
+            "items": [
+              "Caller name and callback number",
+              "Property address",
+              "Recurring work, one-time request or landscape project",
+              "Existing customer or new inquiry",
+              "Requested timing or service pattern",
+              "Office owner and agreed next action"
+            ]
+          },
+          {
+            "title": "Give each request a defined next step",
+            "paragraphs": [
+              "Define the daytime overflow trigger and verify the actual route with your phone setup.",
+              "Use an open-office message and ask which type of landscaping request the caller has. Keep customer preferences distinct from approved route availability.",
+              "Have the office review summaries, check existing records and assign follow-up. Confirm a booking only through a supported workflow that matches the service."
+            ],
+            "items": []
+          },
+          {
+            "title": "Set accurate expectations",
+            "paragraphs": [
+              "Overflow answering does not create crew capacity, change a maintenance route or approve an installation estimate. Do not promise next-day work or a recurring slot that the office has not confirmed."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Revo: answering workflow and supported setup",
+                "href": "https://www.revoapp.ai/ai-receptionist-demo.html"
+              },
+              {
+                "label": "Revo: current plans and feature boundaries",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Can one script handle maintenance and installation inquiries?",
+            "a": "Yes, if it clearly identifies the work type and follows the different next steps your business approves."
+          },
+          {
+            "q": "Does this cover after-hours calls?",
+            "a": "This page is about backup while the office is open. Closed-hours coverage needs separate availability and follow-up instructions."
+          },
+          {
+            "q": "Can existing customers change a visit through the call?",
+            "a": "Collect the requested change. Whether it can be confirmed depends on the actual supported scheduling workflow and your office’s authority rules."
+          }
+        ],
+        "takeaway": "Set your answering workflow around the coverage, questions and next steps your business can support.",
+        "related": [
+          "overflow-answering",
+          "appointment-booking"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+        },
+        "editorialDate": "2026-11-06"
+      }
+    }
+  ]
+}
