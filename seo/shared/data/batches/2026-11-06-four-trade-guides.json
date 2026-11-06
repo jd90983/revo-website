@@ -1,0 +1,289 @@
+{
+  "batchId": "2026-11-06-four-trade-guides",
+  "source": {
+    "kind": "owner-approved-exact-copy",
+    "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+  },
+  "operations": [
+    {
+      "op": "add",
+      "record": {
+        "slug": "painter-answering-service",
+        "title": "Painter Answering Service: Book Estimates While You Paint",
+        "description": "A painter answering service for painting contractors: capture interior and exterior estimate requests, schedule questions and touch-up calls while you work.",
+        "navigationLabel": "Painter answering service",
+        "eyebrow": "Estimate calls while you paint",
+        "lead": "Painters miss calls for an obvious reason: their hands are full and the job is on a ladder or behind a drop cloth. A painter answering service picks up those calls, collects the details and books the estimate, so a new project does not go to the next name on the list.",
+        "intro": "Painters miss calls for an obvious reason: their hands are full and the job is on a ladder or behind a drop cloth. A painter answering service picks up those calls, collects the details and books the estimate, so a new project does not go to the next name on the list.",
+        "sections": [
+          {
+            "title": "Calls a painting company gets",
+            "paragraphs": [
+              "Most calls fall into a few groups:\n\n- **Interior estimates**: rooms, ceilings, cabinets or trim.\n- **Exterior estimates**: siding, decks, fences or a full house.\n- **Current customers**: color questions, start dates or a touch-up after the job.\n- **Commercial or property managers**: units between tenants or common areas.\n\nEstimate requests get booked. Current customers get a message to the project lead."
+            ],
+            "items": []
+          },
+          {
+            "title": "What to capture on an estimate request",
+            "paragraphs": [
+              "Ask for the name, callback number and address, interior or exterior, rough size of the job and when they want it done. Ask whether they have colors picked out and whether anyone lives in the home during the work. Good notes let you show up ready to measure and price."
+            ],
+            "items": []
+          },
+          {
+            "title": "Set the right expectations",
+            "paragraphs": [
+              "The answering service should not quote a price on the phone. Painting prices depend on surface condition, prep work and paint choice. The safer script books the estimate visit and says who will follow up."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, with your questions and rules. It can book estimate visits in the time slots you allow, send SMS follow-up and log a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can an answering service give painting quotes?\nIt should not. It collects the job details and books the estimate. You set the price after you see the surfaces.\n### Can I use it only during busy season?\nYes, as long as you forward calls during the hours you choose. Check the plan terms before you start."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-06",
+        "markdownArticle": {
+          "content": "# Painter Answering Service: Book Estimates While You Paint\n\nPainters miss calls for an obvious reason: their hands are full and the job is on a ladder or behind a drop cloth. A painter answering service picks up those calls, collects the details and books the estimate, so a new project does not go to the next name on the list.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 6, 2026.\n\n## Calls a painting company gets\nMost calls fall into a few groups:\n\n- **Interior estimates**: rooms, ceilings, cabinets or trim.\n- **Exterior estimates**: siding, decks, fences or a full house.\n- **Current customers**: color questions, start dates or a touch-up after the job.\n- **Commercial or property managers**: units between tenants or common areas.\n\nEstimate requests get booked. Current customers get a message to the project lead.\n\n## What to capture on an estimate request\nAsk for the name, callback number and address, interior or exterior, rough size of the job and when they want it done. Ask whether they have colors picked out and whether anyone lives in the home during the work. Good notes let you show up ready to measure and price.\n\n## Set the right expectations\nThe answering service should not quote a price on the phone. Painting prices depend on surface condition, prep work and paint choice. The safer script books the estimate visit and says who will follow up.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, with your questions and rules. It can book estimate visits in the time slots you allow, send SMS follow-up and log a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can an answering service give painting quotes?\nIt should not. It collects the job details and books the estimate. You set the price after you see the surfaces.\n### Can I use it only during busy season?\nYes, as long as you forward calls during the hours you choose. Check the plan terms before you start.\n",
+          "sha256": "121c49048fa219cbe913996af38da5fd0603bd89f70007f8b869fb0c6c1784ff",
+          "assets": []
+        },
+        "related": [
+          "answering-service-for-contractors",
+          "remodeling-answering"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "handyman-answering-service",
+        "title": "Handyman Answering Service: Sort Small Jobs and Book Them",
+        "description": "A handyman answering service that sorts small repairs from larger projects, collects the task list and books the visit while you work.",
+        "navigationLabel": "Handyman answering service",
+        "eyebrow": "Small jobs, booked right",
+        "lead": "A handyman business lives on many small jobs, and each one starts with a phone call you may not be able to take. A handyman answering service picks up, sorts the request and books the right next step, so you can finish the job in front of you.",
+        "intro": "A handyman business lives on many small jobs, and each one starts with a phone call you may not be able to take. A handyman answering service picks up, sorts the request and books the right next step, so you can finish the job in front of you.",
+        "sections": [
+          {
+            "title": "Sort the calls by job size",
+            "paragraphs": [
+              "Handyman calls cover a wide range. Write down how each type should be handled:\n\n- **Small repairs**: a door that sticks, a loose railing, drywall patches or mounting a TV.\n- **Punch lists**: several small jobs in one visit, often before a sale or a move.\n- **Larger projects**: bathroom updates or work that needs a licensed trade.\n- **Existing customers**: rescheduling or a question about a finished job.\n\nSmall repairs and punch lists can usually be booked. Larger projects may need a visit before you give a price, or a referral if the work is outside what you do."
+            ],
+            "items": []
+          },
+          {
+            "title": "What to capture on every call",
+            "paragraphs": [
+              "Get the name, callback number, address and a short list of the tasks. Ask whether the caller will provide materials or expects you to bring them. A clear task list lets you plan the visit and bring the right tools."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keep the promises realistic",
+            "paragraphs": [
+              "The answering service should not promise a price or confirm work you do not take. Give it a clear list of the jobs you do and the ones you refer out."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, and follows the rules you set. It can book visits, send SMS follow-up and log a summary of every call. On Crew and Fleet it can transfer calls to you. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can an answering service tell which jobs I take?\nYes, if you give it a list. It follows the list you write and books or declines the call under your rules.\n### What happens with jobs I refer out?\nIt takes the details and logs a call summary, so you can call back with a referral."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-06",
+        "markdownArticle": {
+          "content": "# Handyman Answering Service: Sort Small Jobs and Book Them\n\nA handyman business lives on many small jobs, and each one starts with a phone call you may not be able to take. A handyman answering service picks up, sorts the request and books the right next step, so you can finish the job in front of you.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 6, 2026.\n\n## Sort the calls by job size\nHandyman calls cover a wide range. Write down how each type should be handled:\n\n- **Small repairs**: a door that sticks, a loose railing, drywall patches or mounting a TV.\n- **Punch lists**: several small jobs in one visit, often before a sale or a move.\n- **Larger projects**: bathroom updates or work that needs a licensed trade.\n- **Existing customers**: rescheduling or a question about a finished job.\n\nSmall repairs and punch lists can usually be booked. Larger projects may need a visit before you give a price, or a referral if the work is outside what you do.\n\n## What to capture on every call\nGet the name, callback number, address and a short list of the tasks. Ask whether the caller will provide materials or expects you to bring them. A clear task list lets you plan the visit and bring the right tools.\n\n## Keep the promises realistic\nThe answering service should not promise a price or confirm work you do not take. Give it a clear list of the jobs you do and the ones you refer out.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows the rules you set. It can book visits, send SMS follow-up and log a summary of every call. On Crew and Fleet it can transfer calls to you. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can an answering service tell which jobs I take?\nYes, if you give it a list. It follows the list you write and books or declines the call under your rules.\n### What happens with jobs I refer out?\nIt takes the details and logs a call summary, so you can call back with a referral.\n",
+          "sha256": "db326912c3cb2752aa8ce5d6a7e3fad30389a11b7c77a40c9ac7923404f2eeb7",
+          "assets": []
+        },
+        "related": [
+          "answering-service-for-contractors",
+          "appointment-booking"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "carpet-cleaning-answering-service",
+        "title": "Carpet Cleaning Answering Service: Book Jobs by Room Count",
+        "description": "A carpet cleaning answering service that captures rooms, stains and pets on the first call and books the cleaning while your techs are on a job.",
+        "navigationLabel": "Carpet cleaning answering",
+        "eyebrow": "Bookings by room and stain",
+        "lead": "Carpet cleaning calls are short and frequent, and they often come in while your technicians are running equipment. A carpet cleaning answering service picks up, asks the questions that size the job and books the visit before the caller tries another company.",
+        "intro": "Carpet cleaning calls are short and frequent, and they often come in while your technicians are running equipment. A carpet cleaning answering service picks up, asks the questions that size the job and books the visit before the caller tries another company.",
+        "sections": [
+          {
+            "title": "What callers usually want",
+            "paragraphs": [
+              "Most calls are one of these:\n\n- **A standard cleaning**: a set number of rooms, stairs or hallways.\n- **Stains and odors**: pet accidents, spills or smoke.\n- **Upholstery, rugs or tile**: extra services on the same visit.\n- **Move-in or move-out**: a fixed date set by a lease or a sale."
+            ],
+            "items": []
+          },
+          {
+            "title": "Questions that size the job",
+            "paragraphs": [
+              "Ask for the address, number of rooms, stairs, any pets, the type of stains and the preferred date. Ask whether furniture needs to be moved. These answers help your team plan the time on site and avoid surprises."
+            ],
+            "items": []
+          },
+          {
+            "title": "Set expectations on price",
+            "paragraphs": [
+              "The answering service should follow your pricing rules exactly. If your script includes a published per-room price, it can share it. If prices depend on inspection, it should book the visit and leave the final price to your technician."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, with your questions and rules. It books appointments in the time slots you allow, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can an answering service book carpet cleaning jobs directly?\nRevo can book appointments under the rules and time slots you set.\n### What about repeat customers?\nThe call summary is logged for your team, so you can see what the customer asked for and follow up."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-06",
+        "markdownArticle": {
+          "content": "# Carpet Cleaning Answering Service: Book Jobs by Room Count\n\nCarpet cleaning calls are short and frequent, and they often come in while your technicians are running equipment. A carpet cleaning answering service picks up, asks the questions that size the job and books the visit before the caller tries another company.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 6, 2026.\n\n## What callers usually want\nMost calls are one of these:\n\n- **A standard cleaning**: a set number of rooms, stairs or hallways.\n- **Stains and odors**: pet accidents, spills or smoke.\n- **Upholstery, rugs or tile**: extra services on the same visit.\n- **Move-in or move-out**: a fixed date set by a lease or a sale.\n\n## Questions that size the job\nAsk for the address, number of rooms, stairs, any pets, the type of stains and the preferred date. Ask whether furniture needs to be moved. These answers help your team plan the time on site and avoid surprises.\n\n## Set expectations on price\nThe answering service should follow your pricing rules exactly. If your script includes a published per-room price, it can share it. If prices depend on inspection, it should book the visit and leave the final price to your technician.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, with your questions and rules. It books appointments in the time slots you allow, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can an answering service book carpet cleaning jobs directly?\nRevo can book appointments under the rules and time slots you set.\n### What about repeat customers?\nThe call summary is logged for your team, so you can see what the customer asked for and follow up.\n",
+          "sha256": "d052d31d09b69d879d1cef6dd44566ef430648dce6571ae1d59622ce7d246db9",
+          "assets": []
+        },
+        "related": [
+          "cleaning-answering-with-scheduling",
+          "appointment-booking"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+        }
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "lawn-care-answering-service",
+        "title": "Lawn Care Answering Service for Recurring Mowing Customers",
+        "description": "A lawn care answering service for mowing and treatment companies: handle skip requests, weather reschedules and new quotes by property size.",
+        "navigationLabel": "Lawn care answering service",
+        "eyebrow": "Recurring mowing calls",
+        "lead": "Lawn care companies run on routes and repeat customers. The phone rings with skip requests, rain questions and new quotes while your crews are mowing. A lawn care answering service handles those calls so the route stays on track.",
+        "intro": "Lawn care companies run on routes and repeat customers. The phone rings with skip requests, rain questions and new quotes while your crews are mowing. A lawn care answering service handles those calls so the route stays on track.",
+        "sections": [
+          {
+            "title": "The calls a lawn care company gets",
+            "paragraphs": [
+              "Most calls fall into four groups:\n\n- **Skip or pause requests**: a customer is away or the lawn does not need a cut this week.\n- **Weather questions**: whether the visit moves after rain.\n- **New quotes**: mowing, edging, fertilizing or weed control.\n- **Billing or service questions**: a missed spot or a change to the plan.\n\nSkip requests and service questions can be logged for your office. New quotes can be booked or called back."
+            ],
+            "items": []
+          },
+          {
+            "title": "What to capture on a new quote",
+            "paragraphs": [
+              "Ask for the address, lot size or a rough description, the services wanted and how often. Ask about gates, dogs and where the crew can park. These details help you price the route stop without a site visit when your rules allow it."
+            ],
+            "items": []
+          },
+          {
+            "title": "How it differs from landscaping projects",
+            "paragraphs": [
+              "Landscaping projects need a design visit and a custom estimate. Lawn care is mostly recurring work on a set route. Keep the two call types separate so project leads do not get lost among weekly service calls."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can an answering service change a customer's mowing schedule?\nIt can take the request and log it for your office. Your team confirms changes to the route.\n### Can it quote mowing prices?\nOnly if you give it a published pricing rule. Otherwise it collects the details and books a callback."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-06",
+        "markdownArticle": {
+          "content": "# Lawn Care Answering Service for Recurring Mowing Customers\n\nLawn care companies run on routes and repeat customers. The phone rings with skip requests, rain questions and new quotes while your crews are mowing. A lawn care answering service handles those calls so the route stays on track.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 6, 2026.\n\n## The calls a lawn care company gets\nMost calls fall into four groups:\n\n- **Skip or pause requests**: a customer is away or the lawn does not need a cut this week.\n- **Weather questions**: whether the visit moves after rain.\n- **New quotes**: mowing, edging, fertilizing or weed control.\n- **Billing or service questions**: a missed spot or a change to the plan.\n\nSkip requests and service questions can be logged for your office. New quotes can be booked or called back.\n\n## What to capture on a new quote\nAsk for the address, lot size or a rough description, the services wanted and how often. Ask about gates, dogs and where the crew can park. These details help you price the route stop without a site visit when your rules allow it.\n\n## How it differs from landscaping projects\nLandscaping projects need a design visit and a custom estimate. Lawn care is mostly recurring work on a set route. Keep the two call types separate so project leads do not get lost among weekly service calls.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can an answering service change a customer's mowing schedule?\nIt can take the request and log it for your office. Your team confirms changes to the route.\n### Can it quote mowing prices?\nOnly if you give it a published pricing rule. Otherwise it collects the details and books a callback.\n",
+          "sha256": "772b0970f43cb00d8e373a04a237aa5fd60f12dea83aa87420c1e405bdf373ed",
+          "assets": []
+        },
+        "related": [
+          "landscaping-overflow-answering",
+          "appointment-booking"
+        ],
+        "source": {
+          "kind": "owner-approved-exact-copy",
+          "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+        }
+      }
+    }
+  ]
+}
