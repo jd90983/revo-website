@@ -1400,5 +1400,22 @@
       "updated locksmith-overflow-answering; back to draft until re-approved",
       "updated landscaping-overflow-answering; back to draft until re-approved"
     ]
+  },
+  {
+    "batchId": "2026-11-06-six-traffic-retargets",
+    "batchHash": "sha256:585fbd7135011053f5980d1f0d0c618fc35d46950429cd18240295dcbd2c54d6",
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved public copy; evidence/2026-11-06/six-traffic-retargets-approved-public-copy.txt SHA256 2c0b9feb5892dc596faa9c087da8cf1aff231d65590811eb3eea294535854506; keywords and copy approved by Jorge Perez in chat on November 6, 2026 (two titles shortened to the 62-character limit); implementation by Claude"
+    },
+    "appliedAt": "2026-11-06",
+    "changes": [
+      "updated after-hours; back to draft until re-approved",
+      "updated answering-service-for-contractors; back to draft until re-approved",
+      "updated bilingual-answering; back to draft until re-approved",
+      "updated answering-service-cost; back to draft until re-approved",
+      "updated ai-receptionist-under-100; back to draft until re-approved",
+      "updated automated-phone-answering-system; back to draft until re-approved"
+    ]
   }
 ]

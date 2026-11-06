@@ -1,8 +1,8 @@
 [
   {
     "slug": "after-hours",
-    "title": "After-hours answering for home service businesses",
-    "description": "Plan a clear after-hours call flow: capture the request, set expectations and decide how your team follows up.",
+    "title": "After-Hours Answering Service for Home Service Businesses",
+    "description": "An after-hours answering service for home service businesses: capture each request while you are closed, set clear expectations and plan the follow-up.",
     "eyebrow": "After the workday",
     "lead": "Your business hours can end without ending the conversation.",
     "intro": "After-hours answering captures a caller’s request while your office is closed and gives the next step your team can support. Set separate rules for routine work, caller-reported urgency and an unavailable on-call contact. Phone coverage does not establish field-service availability.",
@@ -75,19 +75,19 @@
     ],
     "takeaway": "One after-hours page covers the commercial intent previously split between after-hours and 24/7 material.",
     "pricingVariant": "full",
-    "navigationLabel": "After-hours answering",
-    "publicationStatus": "approved",
+    "navigationLabel": "After-hours answering service",
     "source": {
-      "kind": "manual",
-      "reference": "jd90983/revo-website#43"
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved public copy; evidence/2026-11-06/six-traffic-retargets-approved-public-copy.txt SHA256 2c0b9feb5892dc596faa9c087da8cf1aff231d65590811eb3eea294535854506; keywords and copy approved by Jorge Perez in chat on November 6, 2026 (two titles shortened to the 62-character limit); implementation by Claude"
     },
+    "editorialDate": "2026-10-21",
+    "publicationStatus": "approved",
     "review": {
-      "reviewer": "Codex — user-delegated local editorial review",
-      "reviewedAt": "2026-10-21",
-      "contentHash": "sha256:3e6744c12144db4d5255363e1ad154401bb0538a2627da5b593d9c86e5af9477",
-      "note": "Substantive editorial update; existing route and plan terms retained; primary-source documentation and illustrative arithmetic checked."
-    },
-    "editorialDate": "2026-10-21"
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:ff63a003382f99b661a1a578c600fc076a36baeeec4a4426314c9c89bd167e1b",
+      "note": "Jorge Perez (owner) approved keywords and copy in chat November 6, 2026; implemented by Claude"
+    }
   },
   {
     "slug": "missed-calls",
@@ -479,11 +479,11 @@
   },
   {
     "slug": "bilingual-answering",
-    "title": "Bilingual answering for home service businesses",
-    "description": "Plan English and Spanish call intake with a practical bilingual checklist, clear handoffs and realistic service expectations.",
-    "navigationLabel": "Bilingual answering",
+    "title": "Bilingual Answering Service in English and Spanish",
+    "description": "Plan a bilingual answering service in English and Spanish for a home service business: a practical checklist, clear handoffs and realistic expectations.",
+    "navigationLabel": "Bilingual answering service",
     "eyebrow": "English and Spanish",
-    "lead": "Give both languages the same clear next step.",
+    "lead": "A bilingual answering service should give English and Spanish callers the same clear next step.",
     "intro": "A bilingual answering service should help callers explain their request and understand what happens next. For a US home service office, review the English and Spanish versions of your greeting, service boundaries and callback policy together.",
     "sections": [
       {
@@ -552,25 +552,26 @@
       "seo/shared/lib/official-pricing.ts"
     ],
     "source": {
-      "kind": "manual",
-      "reference": "Authorized second October 8 batch; Sentinel_31743d7c0fe081918f57addac5d853c0; official Services and Pricing reviewed 2026-10-08 (batch 2026-10-08-second-five)"
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved public copy; evidence/2026-11-06/six-traffic-retargets-approved-public-copy.txt SHA256 2c0b9feb5892dc596faa9c087da8cf1aff231d65590811eb3eea294535854506; keywords and copy approved by Jorge Perez in chat on November 6, 2026 (two titles shortened to the 62-character limit); implementation by Claude"
     },
+    "editorialDate": "2026-11-06",
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Codex, editorial review delegated by Sentinel_31743d7c0fe081918f57addac5d853c0",
-      "reviewedAt": "2026-10-08",
-      "contentHash": "sha256:2ade93a744e14771e43acc2a834658a813efb4cf5ba7283e0438d1eb2ba09e8b",
-      "note": "User authorized this specific second five-page batch and its editorial review. Atomic approval of mutually related pages; no authority for future batches."
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:01aa38a52a38f529139db903b64d3af68678cff339ca3a539f481791ff28eb5a",
+      "note": "Jorge Perez (owner) approved keywords and copy in chat November 6, 2026; implemented by Claude"
     }
   },
   {
     "slug": "answering-service-cost",
-    "title": "Answering Service Cost: Plan for Minutes and Coverage",
-    "description": "Answering services bill by minutes, calls, customers or staff time. Learn how to estimate your monthly usage before you compare quotes.",
-    "navigationLabel": "Answering service cost",
+    "title": "Answering Service Pricing and Cost: Minutes and Coverage",
+    "description": "Answering service pricing depends on the billing unit: minutes, calls, customers or staff time. Estimate your monthly usage before you compare quotes.",
+    "navigationLabel": "Answering service pricing",
     "eyebrow": "Budget and coverage",
-    "lead": "Answering service cost depends less on the headline than on the billing unit behind it. Some providers count minutes, others count calls or unique customers, and live services charge for receptionist time. Compare the unit first.",
-    "intro": "Answering service cost depends less on the headline than on the billing unit behind it. Some providers count minutes, others count calls or unique customers, and live services charge for receptionist time. Compare the unit first.",
+    "lead": "Answering service pricing and cost depend less on the headline than on the billing unit behind it. Some providers count minutes, others count calls or unique customers, and live services charge for receptionist time. Compare the unit first.",
+    "intro": "Answering service pricing and cost depend less on the headline than on the billing unit behind it. Some providers count minutes, others count calls or unique customers, and live services charge for receptionist time. Compare the unit first.",
     "sections": [
       {
         "title": "Know the billing models",
@@ -615,10 +616,10 @@
     ],
     "template": "workflow",
     "pricingVariant": "full",
-    "editorialDate": "2026-11-04",
+    "editorialDate": "2026-11-06",
     "markdownArticle": {
-      "content": "# Answering Service Cost: Plan for Minutes and Coverage\n\nAnswering service cost depends less on the headline than on the billing unit behind it. Some providers count minutes, others count calls or unique customers, and live services charge for receptionist time. Compare the unit first.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 4, 2026.\n\n## Know the billing models\n- **Included minutes:** a monthly plan with an allowance of conversation time.\n- **Calls or customers:** each call, or each unique phone number, uses the allowance.\n- **Live receptionist time:** you pay for the time a person spends on your calls.\n\nAsk what counts as billable time, how rounding works and whether transfers, short calls or follow-up use the allowance. Do not divide a monthly fee by its allowance and treat the result as an overage rate.\n\n## Estimate monthly minutes from your records\nMultiply handled calls by their average length. Example only: 40 calls at 2 minutes each is 80 minutes; 60 calls at 3 minutes is 180. Check a quiet month and a busy one, and separate new inquiries from existing customers and spam.\n\n## Keep cost separate from job value\nThis guide covers the cost of answering coverage, not the value of the jobs behind the calls. A lower monthly bill does not mean the same scope. Count who reviews summaries, confirms requests and handles exceptions.\n\n## Where Revo fits\nRevo plans include minutes, and calls under 20 seconds do not count. Solo starts at $87.50/mo at launch with 100 minutes, and every plan answers 24/7, books with your rules, sends SMS follow-up and logs call summaries. Transfers to your team, recordings and transcripts, and WhatsApp follow-up start on Crew. [See Revo's plans](/pricing).\n\n## Frequently asked questions\n### Is the monthly fee divided by minutes an overage rate?\nNo. Ask each provider for its written terms on extra usage.\n### Can I estimate usage without call records?\nUse a clearly labeled guess for planning, then replace it with real call counts and lengths.\n### Does this page calculate lost revenue?\nNo. It covers answering costs and minute planning only.",
-      "sha256": "186d3846d44f76f2b3780f817ba49d4c36a30c1007217189cc5cb9b293cbeda7",
+      "content": "# Answering Service Pricing and Cost: Minutes and Coverage\n\nAnswering service pricing and cost depend less on the headline than on the billing unit behind it. Some providers count minutes, others count calls or unique customers, and live services charge for receptionist time. Compare the unit first.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 6, 2026.\n\n## Know the billing models\n- **Included minutes:** a monthly plan with an allowance of conversation time.\n- **Calls or customers:** each call, or each unique phone number, uses the allowance.\n- **Live receptionist time:** you pay for the time a person spends on your calls.\n\nAsk what counts as billable time, how rounding works and whether transfers, short calls or follow-up use the allowance. Do not divide a monthly fee by its allowance and treat the result as an overage rate.\n\n## Estimate monthly minutes from your records\nMultiply handled calls by their average length. Example only: 40 calls at 2 minutes each is 80 minutes; 60 calls at 3 minutes is 180. Check a quiet month and a busy one, and separate new inquiries from existing customers and spam.\n\n## Keep cost separate from job value\nThis guide covers the cost of answering coverage, not the value of the jobs behind the calls. A lower monthly bill does not mean the same scope. Count who reviews summaries, confirms requests and handles exceptions.\n\n## Where Revo fits\nRevo plans include minutes, and calls under 20 seconds do not count. Solo starts at $87.50/mo at launch with 100 minutes, and every plan answers 24/7, books with your rules, sends SMS follow-up and logs call summaries. Transfers to your team, recordings and transcripts, and WhatsApp follow-up start on Crew. [See Revo's plans](/pricing).\n\n## Frequently asked questions\n### Is the monthly fee divided by minutes an overage rate?\nNo. Ask each provider for its written terms on extra usage.\n### Can I estimate usage without call records?\nUse a clearly labeled guess for planning, then replace it with real call counts and lengths.\n### Does this page calculate lost revenue?\nNo. It covers answering costs and minute planning only.",
+      "sha256": "2f1873d2a267e873181bbef70534331c665ad0528c96a36a2fba49b3a2dda036",
       "assets": []
     },
     "related": [
@@ -628,14 +629,14 @@
     ],
     "source": {
       "kind": "owner-approved-exact-copy",
-      "reference": "Lote A no-competitor-prices rewrite; evidence/2026-11-04-no-competitor-prices/lote-a-public-copy.txt SHA256 c8beca381bb93eac5a111d4677bc346f5830fa2cec59e9c53622fc2156a516f2; rewrite rule approved by Jorge Perez Nov 4, 2026; batch approval by sample pending"
+      "reference": "Owner-approved public copy; evidence/2026-11-06/six-traffic-retargets-approved-public-copy.txt SHA256 2c0b9feb5892dc596faa9c087da8cf1aff231d65590811eb3eea294535854506; keywords and copy approved by Jorge Perez in chat on November 6, 2026 (two titles shortened to the 62-character limit); implementation by Claude"
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge Perez (owner) approved Lote A by sample review in chat November 4, 2026; rewrite by Claude; not independent human review",
-      "reviewedAt": "2026-11-04",
-      "contentHash": "sha256:90ae1cf539a9714d6f26e7529274c5211e88362487b0a8436347da796a7171d0",
-      "note": "Competitor prices removed per owner decision of November 4, 2026. Bodies preserved exactly from evidence/2026-11-04-no-competitor-prices/lote-a-public-copy.txt."
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:aff1c13d5dcb3eeebd55cb4b4654ac7f8832d1c856840ea32e99c0c4788b2b71",
+      "note": "Jorge Perez (owner) approved keywords and copy in chat November 6, 2026; implemented by Claude"
     }
   },
   {
@@ -29177,12 +29178,12 @@
   },
   {
     "slug": "ai-receptionist-under-100",
-    "title": "AI Receptionists Under 100: Compare the Task First",
-    "description": "Shopping for an AI receptionist on a tight monthly budget? Compare plans by task, billing unit and renewal terms, not by the starting price.",
-    "navigationLabel": "Budget AI receptionist",
+    "title": "Cheap Answering Service Under $100: Compare the Task First",
+    "description": "Looking for a cheap or affordable answering service? Compare low-cost AI receptionist plans by task, billing unit and renewal terms, not the starting price.",
+    "navigationLabel": "Affordable answering service",
     "eyebrow": "Reception buying decisions",
-    "lead": "An owner with a monthly ceiling around 100 dollars needs two answers: does the plan do the phone task you need, and does the whole bill stay under the ceiling after any promotion ends. A low starting price answers neither.",
-    "intro": "An owner with a monthly ceiling around 100 dollars needs two answers: does the plan do the phone task you need, and does the whole bill stay under the ceiling after any promotion ends. A low starting price answers neither.",
+    "lead": "A cheap answering service only saves money if it handles your calls and the bill stays low after any promotion ends. An owner with a monthly ceiling around 100 dollars needs two answers: does the plan do the phone task you need, and does the whole bill stay under the ceiling? A low starting price answers neither.",
+    "intro": "A cheap answering service only saves money if it handles your calls and the bill stays low after any promotion ends. An owner with a monthly ceiling around 100 dollars needs two answers: does the plan do the phone task you need, and does the whole bill stay under the ceiling? A low starting price answers neither.",
     "sections": [
       {
         "title": "Compare the unit before the allowance",
@@ -29222,23 +29223,23 @@
     ],
     "template": "workflow",
     "pricingVariant": "full",
-    "editorialDate": "2026-11-04",
+    "editorialDate": "2026-11-06",
     "markdownArticle": {
-      "content": "# AI Receptionists Under 100: Compare the Task First\n\nAn owner with a monthly ceiling around 100 dollars needs two answers: does the plan do the phone task you need, and does the whole bill stay under the ceiling after any promotion ends. A low starting price answers neither.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 4, 2026.\n\n## Compare the unit before the allowance\n- **Goodcall** counts unique customers, by phone number within the month, rather than calls or minutes ([Goodcall's pricing page](https://www.goodcall.com/pricing)).\n- **Rosie**'s entry plan sends an appointment link by text; direct calendar booking and transfers are listed on a higher plan ([Rosie's pricing page](https://heyrosie.com/pricing)).\n- **Revo** includes minutes in each plan, and calls under 20 seconds do not count.\n\nA texted booking link is not an appointment booked by the receptionist.\n\n## Apply a task-first budget check\n- **Required result:** message, booking link, confirmed appointment or transfer?\n- **Workload:** distinct callers, calls and minutes from the same month.\n- **Full recurring cost:** base, extra usage, add-ons, taxes and fees.\n- **Renewal:** when a promotion ends, the regular price and how to cancel.\n\nA cheaper plan that cannot perform the task is not a budget solution.\n\n## Where Revo fits\nRevo Solo is $87.50/mo at launch for the first three monthly payments after the trial, then $175/mo, with 100 minutes. It fits a 100-dollar ceiling only during the launch period; if the regular price does not fit, leave it off your list. Every plan includes 24/7 answering, booking with your rules, SMS follow-up and call summaries, and transfers to your team start on Crew. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Is the plan with the lower headline always cheaper?\nNo. Apply each plan's unit and required tasks to the same workload.\n### Does \"under 100\" guarantee the final bill?\nNo. Get a complete quote for your expected use, including what happens at renewal.",
-      "sha256": "f6d65b0a956ec305793ba60e77c766d05cec22f6c41d090f8e3bf437e5068c3f",
+      "content": "# Cheap Answering Service Under $100: Compare the Task First\n\nA cheap answering service only saves money if it handles your calls and the bill stays low after any promotion ends. An owner with a monthly ceiling around 100 dollars needs two answers: does the plan do the phone task you need, and does the whole bill stay under the ceiling? A low starting price answers neither.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 6, 2026.\n\n## Compare the unit before the allowance\n- **Goodcall** counts unique customers, by phone number within the month, rather than calls or minutes ([Goodcall's pricing page](https://www.goodcall.com/pricing)).\n- **Rosie**'s entry plan sends an appointment link by text; direct calendar booking and transfers are listed on a higher plan ([Rosie's pricing page](https://heyrosie.com/pricing)).\n- **Revo** includes minutes in each plan, and calls under 20 seconds do not count.\n\nA texted booking link is not an appointment booked by the receptionist.\n\n## Apply a task-first budget check\n- **Required result:** message, booking link, confirmed appointment or transfer?\n- **Workload:** distinct callers, calls and minutes from the same month.\n- **Full recurring cost:** base, extra usage, add-ons, taxes and fees.\n- **Renewal:** when a promotion ends, the regular price and how to cancel.\n\nA cheaper plan that cannot perform the task is not a budget solution.\n\n## Where Revo fits\nRevo Solo is $87.50/mo at launch for the first three monthly payments after the trial, then $175/mo, with 100 minutes. It fits a 100-dollar ceiling only during the launch period; if the regular price does not fit, leave it off your list. Every plan includes 24/7 answering, booking with your rules, SMS follow-up and call summaries, and transfers to your team start on Crew. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Is the plan with the lower headline always cheaper?\nNo. Apply each plan's unit and required tasks to the same workload.\n### Does \"under 100\" guarantee the final bill?\nNo. Get a complete quote for your expected use, including what happens at renewal.",
+      "sha256": "5dea07331b70e94283c0577b22d6944af466b39fc787db4ecc5a35bfd254c68c",
       "assets": []
     },
     "related": [],
     "source": {
       "kind": "owner-approved-exact-copy",
-      "reference": "Lote A no-competitor-prices rewrite; evidence/2026-11-04-no-competitor-prices/lote-a-public-copy.txt SHA256 c8beca381bb93eac5a111d4677bc346f5830fa2cec59e9c53622fc2156a516f2; rewrite rule approved by Jorge Perez Nov 4, 2026; batch approval by sample pending"
+      "reference": "Owner-approved public copy; evidence/2026-11-06/six-traffic-retargets-approved-public-copy.txt SHA256 2c0b9feb5892dc596faa9c087da8cf1aff231d65590811eb3eea294535854506; keywords and copy approved by Jorge Perez in chat on November 6, 2026 (two titles shortened to the 62-character limit); implementation by Claude"
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge Perez (owner) approved Lote A by sample review in chat November 4, 2026; rewrite by Claude; not independent human review",
-      "reviewedAt": "2026-11-04",
-      "contentHash": "sha256:17811b3e3e6c32b3a6250715564c369b296870a5c223b79311505f8e78b7633d",
-      "note": "Competitor prices removed per owner decision of November 4, 2026. Bodies preserved exactly from evidence/2026-11-04-no-competitor-prices/lote-a-public-copy.txt."
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:583210519da7a442429265e1e29f73fb21187439e7da519b78fd762b8ff46761",
+      "note": "Jorge Perez (owner) approved keywords and copy in chat November 6, 2026; implemented by Claude"
     }
   },
   {
@@ -34484,12 +34485,12 @@
   },
   {
     "slug": "automated-phone-answering-system",
-    "title": "Automated Phone Answering System: Menu or AI Receptionist?",
-    "description": "Choose an automated phone answering system by what the caller needs: a menu that routes the call, or an AI receptionist that books the job.",
-    "navigationLabel": "Automated phone answering",
+    "title": "Automated Answering Service: Phone Menu or AI Receptionist?",
+    "description": "Choose an automated answering service by what callers need: a phone menu that routes the call, or an AI receptionist that books the job.",
+    "navigationLabel": "Automated answering service",
     "eyebrow": "Menu or conversation",
-    "lead": "An automated phone answering system can mean two different products. A menu (auto attendant) plays options and routes the call. An AI receptionist holds a conversation and finishes the task. Choose by what most of your callers need.",
-    "intro": "An automated phone answering system can mean two different products. A menu (auto attendant) plays options and routes the call. An AI receptionist holds a conversation and finishes the task. Choose by what most of your callers need.",
+    "lead": "An automated answering service can mean two different products. A menu (auto attendant) plays options and routes the call. An AI receptionist holds a conversation and finishes the task. Choose by what most of your callers need.",
+    "intro": "An automated answering service can mean two different products. A menu (auto attendant) plays options and routes the call. An AI receptionist holds a conversation and finishes the task. Choose by what most of your callers need.",
     "sections": [
       {
         "title": "Menus route, they do not resolve",
@@ -34527,10 +34528,10 @@
     ],
     "template": "workflow",
     "pricingVariant": "full",
-    "editorialDate": "2026-11-04",
+    "editorialDate": "2026-11-06",
     "markdownArticle": {
-      "content": "# Automated Phone Answering System: Menu or AI Receptionist?\n\nAn automated phone answering system can mean two different products. A menu (auto attendant) plays options and routes the call. An AI receptionist holds a conversation and finishes the task. Choose by what most of your callers need.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 4, 2026.\n\n## Menus route, they do not resolve\nA menu works when callers know where to go: billing, a specific technician, an existing job. Many business phone plans include one. The limit is that someone still has to answer the routed call, or it ends in voicemail.\n\n## AI receptionists handle the request\nA homeowner with a leaking water heater does not want option three. An AI receptionist asks what happened, collects the address and books the visit under your rules. Revo does this 24/7 on every plan, with SMS follow-up and a call summary.\n\n## A simple test before you buy\nTake 30 recent calls and mark each one \"knew where to go\" or \"needed help\". If most needed help, a menu adds a step before the same problem. Many businesses use both: a menu for existing customers and an AI receptionist for new requests.\n\n## Frequently asked questions\n### Is an auto attendant the same as an AI receptionist?\nNo. A menu routes calls; an AI receptionist converses and completes tasks such as booking.\n### Can Revo transfer to my team?\nYes, on Crew and Fleet. [See plans](/pricing).",
-      "sha256": "a80f70f31a956993f43a48424dcabf931824d6b2cf4b09e33767c5b2ef270476",
+      "content": "# Automated Answering Service: Phone Menu or AI Receptionist?\n\nAn automated answering service can mean two different products. A menu (auto attendant) plays options and routes the call. An AI receptionist holds a conversation and finishes the task. Choose by what most of your callers need.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 6, 2026.\n\n## Menus route, they do not resolve\nA menu works when callers know where to go: billing, a specific technician, an existing job. Many business phone plans include one. The limit is that someone still has to answer the routed call, or it ends in voicemail.\n\n## AI receptionists handle the request\nA homeowner with a leaking water heater does not want option three. An AI receptionist asks what happened, collects the address and books the visit under your rules. Revo does this 24/7 on every plan, with SMS follow-up and a call summary.\n\n## A simple test before you buy\nTake 30 recent calls and mark each one \"knew where to go\" or \"needed help\". If most needed help, a menu adds a step before the same problem. Many businesses use both: a menu for existing customers and an AI receptionist for new requests.\n\n## Frequently asked questions\n### Is an auto attendant the same as an AI receptionist?\nNo. A menu routes calls; an AI receptionist converses and completes tasks such as booking.\n### Can Revo transfer to my team?\nYes, on Crew and Fleet. [See plans](/pricing).",
+      "sha256": "3dc2a35d483486293c62f048b55f0639da15f41b8f9aed8e3e935629c39fc757",
       "assets": []
     },
     "related": [
@@ -34539,14 +34540,14 @@
     ],
     "source": {
       "kind": "owner-approved-exact-copy",
-      "reference": "Owner-approved exact public copy (v2, no competitor prices); evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt SHA256 2d097bc4efa47b690583ecded4d789a97acfb4268363aecef3a569cf32cb729d; approved by Jorge Perez in chat on November 4, 2026; implementation by Claude"
+      "reference": "Owner-approved public copy; evidence/2026-11-06/six-traffic-retargets-approved-public-copy.txt SHA256 2c0b9feb5892dc596faa9c087da8cf1aff231d65590811eb3eea294535854506; keywords and copy approved by Jorge Perez in chat on November 6, 2026 (two titles shortened to the 62-character limit); implementation by Claude"
     },
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge Perez (owner) approved exact v2 copy without competitor prices in chat November 4, 2026; implemented by Claude; not independent human review",
-      "reviewedAt": "2026-11-04",
-      "contentHash": "sha256:2abfd870d46a1b5a1f7f5ff5f6958a41544d882a1b79c7afdc60ec96f4dd7606",
-      "note": "Owner approved v2 public copy (competitor prices removed). Bodies preserved exactly from evidence/2026-11-04-ten/ten-guides-v2-approved-public-copy.txt."
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:28306ccf7dd75888feb346d1f59397349e275a6679483548b3707b14972e0fd6",
+      "note": "Jorge Perez (owner) approved keywords and copy in chat November 6, 2026; implemented by Claude"
     }
   },
   {
@@ -35429,12 +35430,12 @@
   },
   {
     "slug": "answering-service-for-contractors",
-    "title": "Answering Service for Contractors: Never Miss a Job Call",
-    "description": "What an answering service for contractors should handle during work hours and after hours, from new job requests to project updates.",
-    "navigationLabel": "Answering for contractors",
+    "title": "Contractor and Construction Answering Service for Job Calls",
+    "description": "A contractor and construction answering service for work hours and after hours: new job requests, project updates and urgent calls from active sites.",
+    "navigationLabel": "Contractor answering service",
     "eyebrow": "Job calls during the workday",
-    "lead": "Contractors miss calls for a simple reason: the people who know the work are on site, on a ladder or driving between jobs. An answering service for contractors covers the phone while the crew works, so new job requests and project questions get a real answer instead of voicemail.",
-    "intro": "Contractors miss calls for a simple reason: the people who know the work are on site, on a ladder or driving between jobs. An answering service for contractors covers the phone while the crew works, so new job requests and project questions get a real answer instead of voicemail.",
+    "lead": "Contractors and construction companies miss calls for a simple reason: the people who know the work are on site, on a ladder or driving between jobs. A construction answering service covers the phone while the crew works, so new job requests and project questions get a real answer instead of voicemail.",
+    "intro": "Contractors and construction companies miss calls for a simple reason: the people who know the work are on site, on a ladder or driving between jobs. A construction answering service covers the phone while the crew works, so new job requests and project questions get a real answer instead of voicemail.",
     "sections": [
       {
         "title": "Calls a contractor's phone line gets",
@@ -35479,10 +35480,10 @@
     ],
     "template": "workflow",
     "pricingVariant": "full",
-    "editorialDate": "2026-11-05",
+    "editorialDate": "2026-11-06",
     "markdownArticle": {
-      "content": "# Answering Service for Contractors: Never Miss a Job Call\n\nContractors miss calls for a simple reason: the people who know the work are on site, on a ladder or driving between jobs. An answering service for contractors covers the phone while the crew works, so new job requests and project questions get a real answer instead of voicemail.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 5, 2026.\n\n## Calls a contractor's phone line gets\nMost contractor calls fall into a few groups. Sort them before you choose a service:\n\n- **New job requests**: a homeowner wants a quote or an estimate visit.\n- **Current customers**: questions about schedule, materials or the next step on their project.\n- **Urgent problems**: a leak, a safety issue or damage on an active job.\n- **Vendors and inspectors**: deliveries, permits and inspection times.\n\nEach group needs a different outcome. New requests get booked, current customers get a message to the project lead, and urgent problems go to the person on call.\n\n## What to capture on a new job request\nAsk for the name, callback number, job address, type of work and how soon they want to start. Add one or two questions that tell you whether the job fits your business, such as the size of the project. That way you call back the right leads first.\n\n## During work hours and after hours\nCoverage during the workday matters as much as nights and weekends. If your office is small, calls pile up while you are on site. Set clear rules for each time block: who gets transferred, what gets booked and what waits for a callback.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, with the questions and rules you set. It can book estimate visits, send SMS follow-up and log a call summary for each call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Does an answering service work for construction companies?\nYes, if the rules match how your company works. Write down which calls get booked, which get transferred and which get a message.\n### Can Revo give quotes to callers?\nNo. Revo collects the job details and books the visit or callback. Your team prepares the quote.\n",
-      "sha256": "29e107c8b37d26fdeb72e29082e332bb9f17c546d046cd0864422ba170bd9619",
+      "content": "# Contractor and Construction Answering Service for Job Calls\n\nContractors and construction companies miss calls for a simple reason: the people who know the work are on site, on a ladder or driving between jobs. A construction answering service covers the phone while the crew works, so new job requests and project questions get a real answer instead of voicemail.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 6, 2026.\n\n## Calls a contractor's phone line gets\nMost contractor calls fall into a few groups. Sort them before you choose a service:\n\n- **New job requests**: a homeowner wants a quote or an estimate visit.\n- **Current customers**: questions about schedule, materials or the next step on their project.\n- **Urgent problems**: a leak, a safety issue or damage on an active job.\n- **Vendors and inspectors**: deliveries, permits and inspection times.\n\nEach group needs a different outcome. New requests get booked, current customers get a message to the project lead, and urgent problems go to the person on call.\n\n## What to capture on a new job request\nAsk for the name, callback number, job address, type of work and how soon they want to start. Add one or two questions that tell you whether the job fits your business, such as the size of the project. That way you call back the right leads first.\n\n## During work hours and after hours\nCoverage during the workday matters as much as nights and weekends. If your office is small, calls pile up while you are on site. Set clear rules for each time block: who gets transferred, what gets booked and what waits for a callback.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, with the questions and rules you set. It can book estimate visits, send SMS follow-up and log a call summary for each call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Does an answering service work for construction companies?\nYes, if the rules match how your company works. Write down which calls get booked, which get transferred and which get a message.\n### Can Revo give quotes to callers?\nNo. Revo collects the job details and books the visit or callback. Your team prepares the quote.\n",
+      "sha256": "e2987c9524bc1e5d724aaab5867697703f8ea2c895f4849041de30d301a21510",
       "assets": []
     },
     "related": [
@@ -35491,14 +35492,14 @@
     ],
     "source": {
       "kind": "owner-approved-exact-copy",
-      "reference": "Owner-approved exact public copy; evidence/2026-11-05/eight-guides-approved-public-copy.txt SHA256 bc48f771876ad6ea2e2629e9aebff729b9cdcc87f3637926cb384d7788ea07cf; keywords and copy approved by Jorge Perez in chat on November 5, 2026; implementation by Claude"
+      "reference": "Owner-approved public copy; evidence/2026-11-06/six-traffic-retargets-approved-public-copy.txt SHA256 2c0b9feb5892dc596faa9c087da8cf1aff231d65590811eb3eea294535854506; keywords and copy approved by Jorge Perez in chat on November 6, 2026 (two titles shortened to the 62-character limit); implementation by Claude"
     },
     "publicationStatus": "approved",
     "review": {
       "reviewer": "Jorge Perez (owner)",
-      "reviewedAt": "2026-11-05",
-      "contentHash": "sha256:c7472ed977a9a82eaeb9e0736a1588640a74b3f51fa55e101613a372b5f7730e",
-      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 5, 2026; implemented by Claude"
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:8d68ae2c411b271973045b68f23172d1815bd338a5cedf45c57620fe86125b52",
+      "note": "Jorge Perez (owner) approved keywords and copy in chat November 6, 2026; implemented by Claude"
     }
   },
   {
