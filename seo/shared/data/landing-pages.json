@@ -6836,12 +6836,12 @@
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "hvac-after-hours-answering",
-    "title": "HVAC after-hours answering that follows your on-call rules",
-    "description": "Give HVAC callers a clear next step after your office closes. Capture system issues, callback details and requests under your approved on-call rules.",
-    "navigationLabel": "HVAC after hours",
-    "eyebrow": "HVAC after hours",
-    "lead": "Your office can close before the calls stop. A homeowner describing a failed air conditioner, a tenant following up on a heating visit and a customer requesting maintenance need different next steps. Revo can answer with your business greeting and collect the request while your office is closed.",
-    "intro": "Your office can close before the calls stop. A homeowner describing a failed air conditioner, a tenant following up on a heating visit and a customer requesting maintenance need different next steps. Revo can answer with your business greeting and collect the request while your office is closed.\n\nSet the overnight conversation around your actual coverage. Capture the system involved, the service address and what the caller wants, then make the available next step clear. Phone coverage is available around the clock; a technician visit still depends on your business.",
+    "title": "HVAC Answering Service for After-Hours and On-Call Calls",
+    "description": "An HVAC answering service for calls after your office closes: capture no-heat and no-cooling calls, maintenance requests and callbacks under your on-call rules.",
+    "navigationLabel": "HVAC answering service",
+    "eyebrow": "HVAC calls after hours",
+    "lead": "An HVAC answering service matters most after your office closes. A homeowner with a failed air conditioner, a tenant following up on a heating visit and a customer asking for maintenance need different next steps. Revo answers with your business greeting and collects each request under your on-call rules.",
+    "intro": "An HVAC answering service matters most after your office closes. A homeowner with a failed air conditioner, a tenant following up on a heating visit and a customer asking for maintenance need different next steps. Revo answers with your business greeting and collects each request under your on-call rules.\n\nSet the overnight conversation around your actual coverage. Capture the system involved, the service address and what the caller wants, then make the available next step clear. Phone coverage is available around the clock; a technician visit still depends on your business.",
     "sourcePaths": [
       "ai-receptionist-demo.html",
       "pricing.html",
@@ -6930,27 +6930,28 @@
       "overflow-answering"
     ],
     "source": {
-      "kind": "user-authorized-content-drafts",
-      "reference": "20 English drafts delivered 2026-10-16; local implementation only; publication and visual review pending (batch 2026-10-16-twenty-trade-pages)"
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
     },
+    "editorialDate": "2026-11-06",
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge — explicit approval to review and publish this 20-page batch",
-      "reviewedAt": "2026-10-16",
-      "contentHash": "sha256:f1de6dc320c551310805d59a5f78bde96b81d4b00b16684b9400286447cec4ed",
-      "note": "User-authorized publication following final visual review. Official HTTPS source paths populate the template references; source links also sit beside operating limits."
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:15048f12ff083ec9008bae61abaa87b9262217a998d21e579b99c88d59cbb732",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 6, 2026; implemented by Claude"
     }
   },
   {
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "plumbing-24-7-answering",
-    "title": "24/7 plumbing answering with a clear next step",
-    "description": "Answer plumbing inquiries day and night. Capture the problem, address and next step while keeping service availability and dispatch under your control.",
-    "navigationLabel": "Plumbing 24/7",
-    "eyebrow": "Plumbing 24/7",
-    "lead": "A plumbing inquiry does not always arrive when someone can reach the phone. Your crew may be on a job, the office may be helping another customer, or the call may come after closing. Revo provides an answering conversation built around your greeting, questions and handling rules.",
-    "intro": "A plumbing inquiry does not always arrive when someone can reach the phone. Your crew may be on a job, the office may be helping another customer, or the call may come after closing. Revo provides an answering conversation built around your greeting, questions and handling rules.\n\nGive callers a way to describe the work and leave accurate contact details without making promises your schedule cannot support. The purpose is a usable service request for your team, whether the caller needs routine work or asks about urgent availability.",
+    "title": "Plumbing Answering Service: 24/7 Calls With a Clear Next Step",
+    "description": "A plumbing answering service that picks up day and night, captures the problem and address, and gives every caller a clear next step under your rules.",
+    "navigationLabel": "Plumbing answering service",
+    "eyebrow": "Plumbing calls, day and night",
+    "lead": "A plumbing answering service picks up when your crew is on a job, the office is busy or the call comes after closing. Revo answers with your greeting, questions and handling rules, so each caller leaves with a clear next step.",
+    "intro": "A plumbing answering service picks up when your crew is on a job, the office is busy or the call comes after closing. Revo answers with your greeting, questions and handling rules, so each caller leaves with a clear next step.\n\nGive callers a way to describe the work and leave accurate contact details without making promises your schedule cannot support. The purpose is a usable service request for your team, whether the caller needs routine work or asks about urgent availability.",
     "sourcePaths": [
       "ai-receptionist-demo.html",
       "pricing.html",
@@ -7039,15 +7040,16 @@
       "call-routing"
     ],
     "source": {
-      "kind": "user-authorized-content-drafts",
-      "reference": "20 English drafts delivered 2026-10-16; local implementation only; publication and visual review pending (batch 2026-10-16-twenty-trade-pages)"
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
     },
+    "editorialDate": "2026-11-06",
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge — explicit approval to review and publish this 20-page batch",
-      "reviewedAt": "2026-10-16",
-      "contentHash": "sha256:772ee522c9332606c4fdb48ca07ed2aafc074c9d93952212fd3cc546476915bc",
-      "note": "User-authorized publication following final visual review. Official HTTPS source paths populate the template references; source links also sit beside operating limits."
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:b87e7fa10e8a07964249745f1989337ffe223e0bae1415e9d633ebcac13436b0",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 6, 2026; implemented by Claude"
     }
   },
   {
@@ -7163,12 +7165,12 @@
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "restoration-after-hours-answering",
-    "title": "After-hours answering for restoration requests",
-    "description": "Capture restoration calls after closing with reported damage, location and callback details. Keep assessment and attendance decisions with your team.",
-    "navigationLabel": "Restoration after hours",
-    "eyebrow": "Restoration after hours",
-    "lead": "Restoration callers often need to explain more than a single repair. They may be reporting water damage, asking about fire-related cleanup or following up on work already underway. Revo can answer after your office closes and collect the information your restoration team needs to decide what happens next.",
-    "intro": "Restoration callers often need to explain more than a single repair. They may be reporting water damage, asking about fire-related cleanup or following up on work already underway. Revo can answer after your office closes and collect the information your restoration team needs to decide what happens next.\n\nKeep the first conversation focused on the request, not an unverified assessment. A clear account of the property, reported damage and callback details gives the authorized person a starting point without promising a crew or a response time.",
+    "title": "Restoration Answering Service for After-Hours Damage Calls",
+    "description": "A restoration answering service for water and fire damage calls after closing: capture the damage, location and callback details for your team.",
+    "navigationLabel": "Restoration answering service",
+    "eyebrow": "Damage calls after hours",
+    "lead": "A restoration answering service has to capture more than a name and number. Callers may report water damage, ask about fire cleanup or follow up on work already underway. Revo answers after your office closes and collects what your team needs to decide the next step.",
+    "intro": "A restoration answering service has to capture more than a name and number. Callers may report water damage, ask about fire cleanup or follow up on work already underway. Revo answers after your office closes and collects what your team needs to decide the next step.\n\nKeep the first conversation focused on the request, not an unverified assessment. A clear account of the property, reported damage and callback details gives the authorized person a starting point without promising a crew or a response time.",
     "sourcePaths": [
       "ai-receptionist-demo.html",
       "pricing.html",
@@ -7257,27 +7259,28 @@
       "call-transfer-language"
     ],
     "source": {
-      "kind": "user-authorized-content-drafts",
-      "reference": "20 English drafts delivered 2026-10-16; local implementation only; publication and visual review pending (batch 2026-10-16-twenty-trade-pages)"
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
     },
+    "editorialDate": "2026-11-06",
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge — explicit approval to review and publish this 20-page batch",
-      "reviewedAt": "2026-10-16",
-      "contentHash": "sha256:55895ff152c5daeb94855c17a7986d8a0c931aadc5128a037e472cd79d7857c4",
-      "note": "User-authorized publication following final visual review. Official HTTPS source paths populate the template references; source links also sit beside operating limits."
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:4cd9f30bd11565666b18f7a693cd3306d5b9821ed480eb05f0d545bc4b636921",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 6, 2026; implemented by Claude"
     }
   },
   {
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "roofing-24-7-answering",
-    "title": "24/7 roofing answering for the calls your crew cannot take",
-    "description": "Answer roofing inquiries day and night. Capture repair, estimate and existing-project requests without promising an inspection or crew response.",
-    "navigationLabel": "Roofing 24/7",
-    "eyebrow": "Roofing 24/7",
-    "lead": "Roofing calls arrive while crews are working, while the office is busy and after closing. Revo can answer in your business name and capture whether the caller wants a repair review, a replacement estimate or an update on an existing project.",
-    "intro": "Roofing calls arrive while crews are working, while the office is busy and after closing. Revo can answer in your business name and capture whether the caller wants a repair review, a replacement estimate or an update on an existing project.\n\nKeep the coverage promise about answering the phone. Your roofing team still determines the service area, inspection availability, project acceptance and any attendance commitment. The caller gets an approved next step rather than an assumption about what the roof needs.",
+    "title": "Roofing Answering Service: 24/7 Calls Your Crew Can't Take",
+    "description": "A roofing answering service that picks up day and night and captures leak, estimate and existing-project calls without promising an inspection time.",
+    "navigationLabel": "Roofing answering service",
+    "eyebrow": "Roofing calls, day and night",
+    "lead": "A roofing answering service picks up the calls that arrive while crews are on a roof, the office is busy or the day is over. Revo answers in your business name and captures whether the caller needs a repair review, a replacement estimate or an update on an existing project.",
+    "intro": "A roofing answering service picks up the calls that arrive while crews are on a roof, the office is busy or the day is over. Revo answers in your business name and captures whether the caller needs a repair review, a replacement estimate or an update on an existing project.\n\nKeep the coverage promise about answering the phone. Your roofing team still determines the service area, inspection availability, project acceptance and any attendance commitment. The caller gets an approved next step rather than an assumption about what the roof needs.",
     "sourcePaths": [
       "ai-receptionist-demo.html",
       "pricing.html",
@@ -7366,15 +7369,16 @@
       "lead-qualification"
     ],
     "source": {
-      "kind": "user-authorized-content-drafts",
-      "reference": "20 English drafts delivered 2026-10-16; local implementation only; publication and visual review pending (batch 2026-10-16-twenty-trade-pages)"
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
     },
+    "editorialDate": "2026-11-06",
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge — explicit approval to review and publish this 20-page batch",
-      "reviewedAt": "2026-10-16",
-      "contentHash": "sha256:358c54d6b9dafa38fe39650d82ff70484c79ce840def931894704ced27240e76",
-      "note": "User-authorized publication following final visual review. Official HTTPS source paths populate the template references; source links also sit beside operating limits."
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:7caf4c2e751e18e306877342e60956ef9ec8c38724a3563b8afd927a2621e048",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 6, 2026; implemented by Claude"
     }
   },
   {
@@ -8689,12 +8693,12 @@
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "landscaping-overflow-answering",
-    "title": "Landscaping overflow answering for a busy open office",
-    "description": "Capture landscaping calls while the open office is busy. Separate recurring service, project estimates and existing-client questions for useful follow-up.",
-    "navigationLabel": "Landscaping overflow",
-    "eyebrow": "Landscaping overflow",
-    "lead": "Landscaping calls can arrive together while the office is scheduling crews or answering an existing customer. Revo can support an overflow conversation for the caller your team cannot answer, using your approved greeting and intake rules.",
-    "intro": "Landscaping calls can arrive together while the office is scheduling crews or answering an existing customer. Revo can support an overflow conversation for the caller your team cannot answer, using your approved greeting and intake rules.\n\nKeep recurring service inquiries separate from landscape projects. A maintenance request may need an existing route reviewed, while a new installation may need an estimate consultation. Capture the distinction before the office decides what it can schedule.",
+    "title": "Landscaping Answering Service for a Busy Office",
+    "description": "A landscaping answering service for busy hours: separate recurring maintenance, project estimates and existing-client questions for useful follow-up.",
+    "navigationLabel": "Landscaping answering service",
+    "eyebrow": "Landscaping overflow calls",
+    "lead": "A landscaping answering service helps when calls arrive together while the office is scheduling crews or helping an existing customer. Revo picks up the caller your team cannot answer, using your approved greeting and intake rules.",
+    "intro": "A landscaping answering service helps when calls arrive together while the office is scheduling crews or helping an existing customer. Revo picks up the caller your team cannot answer, using your approved greeting and intake rules.\n\nKeep recurring service inquiries separate from landscape projects. A maintenance request may need an existing route reviewed, while a new installation may need an estimate consultation. Capture the distinction before the office decides what it can schedule.",
     "sourcePaths": [
       "ai-receptionist-demo.html",
       "pricing.html",
@@ -8783,15 +8787,16 @@
       "appointment-booking"
     ],
     "source": {
-      "kind": "user-authorized-content-drafts",
-      "reference": "20 English drafts delivered 2026-10-16; local implementation only; publication and visual review pending (batch 2026-10-16-twenty-trade-pages)"
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
     },
+    "editorialDate": "2026-11-06",
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge — explicit approval to review and publish this 20-page batch",
-      "reviewedAt": "2026-10-16",
-      "contentHash": "sha256:e1e831525e14a878a0d3d00c3849855dd6c5eda1054c5ef11724e3748055eb15",
-      "note": "User-authorized publication following final visual review. Official HTTPS source paths populate the template references; source links also sit beside operating limits."
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:ffd18725fffce1efac4f8a79f6c20a00d74562443d99c65220fe1fbfb05df498",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 6, 2026; implemented by Claude"
     }
   },
   {
@@ -8907,12 +8912,12 @@
     "template": "workflow",
     "pricingVariant": "full",
     "slug": "locksmith-overflow-answering",
-    "title": "Locksmith overflow answering while your team is occupied",
-    "description": "Capture locksmith requests while the team is on another call or job. Identify service type and location without promising access, price or arrival time.",
-    "navigationLabel": "Locksmith overflow",
-    "eyebrow": "Locksmith overflow",
-    "lead": "A locksmith may be helping a customer when the next request reaches the main number. Revo can support an overflow conversation that collects the new caller’s request while your team stays focused on the work already accepted.",
-    "intro": "A locksmith may be helping a customer when the next request reaches the main number. Revo can support an overflow conversation that collects the new caller’s request while your team stays focused on the work already accepted.\n\nKeep automotive, residential and commercial inquiries distinct. The office needs the service location and requested work before deciding whether it can help. Answering the phone should not imply that access has been authorized, a technician is on the way or a final price has been set.",
+    "title": "Locksmith Answering Service for Calls Your Team Can't Take",
+    "description": "A locksmith answering service for overflow calls: capture lockouts, rekeying requests and service location without promising access, price or arrival time.",
+    "navigationLabel": "Locksmith answering service",
+    "eyebrow": "Locksmith overflow calls",
+    "lead": "A locksmith answering service picks up when your team is already helping a customer and the next request reaches the main number. Revo collects the new caller's request while your team stays focused on the work already accepted.",
+    "intro": "A locksmith answering service picks up when your team is already helping a customer and the next request reaches the main number. Revo collects the new caller's request while your team stays focused on the work already accepted.\n\nKeep automotive, residential and commercial inquiries distinct. The office needs the service location and requested work before deciding whether it can help. Answering the phone should not imply that access has been authorized, a technician is on the way or a final price has been set.",
     "sourcePaths": [
       "ai-receptionist-demo.html",
       "pricing.html",
@@ -9001,15 +9006,16 @@
       "call-transfer-language"
     ],
     "source": {
-      "kind": "user-authorized-content-drafts",
-      "reference": "20 English drafts delivered 2026-10-16; local implementation only; publication and visual review pending (batch 2026-10-16-twenty-trade-pages)"
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
     },
+    "editorialDate": "2026-11-06",
     "publicationStatus": "approved",
     "review": {
-      "reviewer": "Jorge — explicit approval to review and publish this 20-page batch",
-      "reviewedAt": "2026-10-16",
-      "contentHash": "sha256:fd5da15a73eed47bfac3cd7cacf1e22530633f5a11efb1f0181c036d8eb2bf81",
-      "note": "User-authorized publication following final visual review. Official HTTPS source paths populate the template references; source links also sit beside operating limits."
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:ba09257505cd22dc2fe4ece9f774458b5f4d4c272317a74571dd76656d56d616",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 6, 2026; implemented by Claude"
     }
   },
   {
@@ -35729,6 +35735,302 @@
       "reviewedAt": "2026-11-05",
       "contentHash": "sha256:42ee51656597bfd52ecea3ae3e0f630fd0912215cdbea8b5e7d84b4afeaefa08",
       "note": "Jorge Perez (owner) approved keywords and publication as alternative pages in chat November 5, 2026; implemented by Claude"
+    }
+  },
+  {
+    "slug": "painter-answering-service",
+    "title": "Painter Answering Service: Book Estimates While You Paint",
+    "description": "A painter answering service for painting contractors: capture interior and exterior estimate requests, schedule questions and touch-up calls while you work.",
+    "navigationLabel": "Painter answering service",
+    "eyebrow": "Estimate calls while you paint",
+    "lead": "Painters miss calls for an obvious reason: their hands are full and the job is on a ladder or behind a drop cloth. A painter answering service picks up those calls, collects the details and books the estimate, so a new project does not go to the next name on the list.",
+    "intro": "Painters miss calls for an obvious reason: their hands are full and the job is on a ladder or behind a drop cloth. A painter answering service picks up those calls, collects the details and books the estimate, so a new project does not go to the next name on the list.",
+    "sections": [
+      {
+        "title": "Calls a painting company gets",
+        "paragraphs": [
+          "Most calls fall into a few groups:\n\n- **Interior estimates**: rooms, ceilings, cabinets or trim.\n- **Exterior estimates**: siding, decks, fences or a full house.\n- **Current customers**: color questions, start dates or a touch-up after the job.\n- **Commercial or property managers**: units between tenants or common areas.\n\nEstimate requests get booked. Current customers get a message to the project lead."
+        ],
+        "items": []
+      },
+      {
+        "title": "What to capture on an estimate request",
+        "paragraphs": [
+          "Ask for the name, callback number and address, interior or exterior, rough size of the job and when they want it done. Ask whether they have colors picked out and whether anyone lives in the home during the work. Good notes let you show up ready to measure and price."
+        ],
+        "items": []
+      },
+      {
+        "title": "Set the right expectations",
+        "paragraphs": [
+          "The answering service should not quote a price on the phone. Painting prices depend on surface condition, prep work and paint choice. The safer script books the estimate visit and says who will follow up."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, with your questions and rules. It can book estimate visits in the time slots you allow, send SMS follow-up and log a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can an answering service give painting quotes?\nIt should not. It collects the job details and books the estimate. You set the price after you see the surfaces.\n### Can I use it only during busy season?\nYes, as long as you forward calls during the hours you choose. Check the plan terms before you start."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-06",
+    "markdownArticle": {
+      "content": "# Painter Answering Service: Book Estimates While You Paint\n\nPainters miss calls for an obvious reason: their hands are full and the job is on a ladder or behind a drop cloth. A painter answering service picks up those calls, collects the details and books the estimate, so a new project does not go to the next name on the list.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 6, 2026.\n\n## Calls a painting company gets\nMost calls fall into a few groups:\n\n- **Interior estimates**: rooms, ceilings, cabinets or trim.\n- **Exterior estimates**: siding, decks, fences or a full house.\n- **Current customers**: color questions, start dates or a touch-up after the job.\n- **Commercial or property managers**: units between tenants or common areas.\n\nEstimate requests get booked. Current customers get a message to the project lead.\n\n## What to capture on an estimate request\nAsk for the name, callback number and address, interior or exterior, rough size of the job and when they want it done. Ask whether they have colors picked out and whether anyone lives in the home during the work. Good notes let you show up ready to measure and price.\n\n## Set the right expectations\nThe answering service should not quote a price on the phone. Painting prices depend on surface condition, prep work and paint choice. The safer script books the estimate visit and says who will follow up.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, with your questions and rules. It can book estimate visits in the time slots you allow, send SMS follow-up and log a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can an answering service give painting quotes?\nIt should not. It collects the job details and books the estimate. You set the price after you see the surfaces.\n### Can I use it only during busy season?\nYes, as long as you forward calls during the hours you choose. Check the plan terms before you start.\n",
+      "sha256": "121c49048fa219cbe913996af38da5fd0603bd89f70007f8b869fb0c6c1784ff",
+      "assets": []
+    },
+    "related": [
+      "answering-service-for-contractors",
+      "remodeling-answering"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:fa646ce0859f544894e5a7675c80080be7d5950357f306b74795ad0b86ecd946",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 6, 2026; implemented by Claude"
+    }
+  },
+  {
+    "slug": "handyman-answering-service",
+    "title": "Handyman Answering Service: Sort Small Jobs and Book Them",
+    "description": "A handyman answering service that sorts small repairs from larger projects, collects the task list and books the visit while you work.",
+    "navigationLabel": "Handyman answering service",
+    "eyebrow": "Small jobs, booked right",
+    "lead": "A handyman business lives on many small jobs, and each one starts with a phone call you may not be able to take. A handyman answering service picks up, sorts the request and books the right next step, so you can finish the job in front of you.",
+    "intro": "A handyman business lives on many small jobs, and each one starts with a phone call you may not be able to take. A handyman answering service picks up, sorts the request and books the right next step, so you can finish the job in front of you.",
+    "sections": [
+      {
+        "title": "Sort the calls by job size",
+        "paragraphs": [
+          "Handyman calls cover a wide range. Write down how each type should be handled:\n\n- **Small repairs**: a door that sticks, a loose railing, drywall patches or mounting a TV.\n- **Punch lists**: several small jobs in one visit, often before a sale or a move.\n- **Larger projects**: bathroom updates or work that needs a licensed trade.\n- **Existing customers**: rescheduling or a question about a finished job.\n\nSmall repairs and punch lists can usually be booked. Larger projects may need a visit before you give a price, or a referral if the work is outside what you do."
+        ],
+        "items": []
+      },
+      {
+        "title": "What to capture on every call",
+        "paragraphs": [
+          "Get the name, callback number, address and a short list of the tasks. Ask whether the caller will provide materials or expects you to bring them. A clear task list lets you plan the visit and bring the right tools."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keep the promises realistic",
+        "paragraphs": [
+          "The answering service should not promise a price or confirm work you do not take. Give it a clear list of the jobs you do and the ones you refer out."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, and follows the rules you set. It can book visits, send SMS follow-up and log a summary of every call. On Crew and Fleet it can transfer calls to you. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can an answering service tell which jobs I take?\nYes, if you give it a list. It follows the list you write and books or declines the call under your rules.\n### What happens with jobs I refer out?\nIt takes the details and logs a call summary, so you can call back with a referral."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-06",
+    "markdownArticle": {
+      "content": "# Handyman Answering Service: Sort Small Jobs and Book Them\n\nA handyman business lives on many small jobs, and each one starts with a phone call you may not be able to take. A handyman answering service picks up, sorts the request and books the right next step, so you can finish the job in front of you.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 6, 2026.\n\n## Sort the calls by job size\nHandyman calls cover a wide range. Write down how each type should be handled:\n\n- **Small repairs**: a door that sticks, a loose railing, drywall patches or mounting a TV.\n- **Punch lists**: several small jobs in one visit, often before a sale or a move.\n- **Larger projects**: bathroom updates or work that needs a licensed trade.\n- **Existing customers**: rescheduling or a question about a finished job.\n\nSmall repairs and punch lists can usually be booked. Larger projects may need a visit before you give a price, or a referral if the work is outside what you do.\n\n## What to capture on every call\nGet the name, callback number, address and a short list of the tasks. Ask whether the caller will provide materials or expects you to bring them. A clear task list lets you plan the visit and bring the right tools.\n\n## Keep the promises realistic\nThe answering service should not promise a price or confirm work you do not take. Give it a clear list of the jobs you do and the ones you refer out.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows the rules you set. It can book visits, send SMS follow-up and log a summary of every call. On Crew and Fleet it can transfer calls to you. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can an answering service tell which jobs I take?\nYes, if you give it a list. It follows the list you write and books or declines the call under your rules.\n### What happens with jobs I refer out?\nIt takes the details and logs a call summary, so you can call back with a referral.\n",
+      "sha256": "db326912c3cb2752aa8ce5d6a7e3fad30389a11b7c77a40c9ac7923404f2eeb7",
+      "assets": []
+    },
+    "related": [
+      "answering-service-for-contractors",
+      "appointment-booking"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:8aa2745fa76966ae98b0cf789ba24ef5952216347d4a2786c03decd1d29798a4",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 6, 2026; implemented by Claude"
+    }
+  },
+  {
+    "slug": "carpet-cleaning-answering-service",
+    "title": "Carpet Cleaning Answering Service: Book Jobs by Room Count",
+    "description": "A carpet cleaning answering service that captures rooms, stains and pets on the first call and books the cleaning while your techs are on a job.",
+    "navigationLabel": "Carpet cleaning answering",
+    "eyebrow": "Bookings by room and stain",
+    "lead": "Carpet cleaning calls are short and frequent, and they often come in while your technicians are running equipment. A carpet cleaning answering service picks up, asks the questions that size the job and books the visit before the caller tries another company.",
+    "intro": "Carpet cleaning calls are short and frequent, and they often come in while your technicians are running equipment. A carpet cleaning answering service picks up, asks the questions that size the job and books the visit before the caller tries another company.",
+    "sections": [
+      {
+        "title": "What callers usually want",
+        "paragraphs": [
+          "Most calls are one of these:\n\n- **A standard cleaning**: a set number of rooms, stairs or hallways.\n- **Stains and odors**: pet accidents, spills or smoke.\n- **Upholstery, rugs or tile**: extra services on the same visit.\n- **Move-in or move-out**: a fixed date set by a lease or a sale."
+        ],
+        "items": []
+      },
+      {
+        "title": "Questions that size the job",
+        "paragraphs": [
+          "Ask for the address, number of rooms, stairs, any pets, the type of stains and the preferred date. Ask whether furniture needs to be moved. These answers help your team plan the time on site and avoid surprises."
+        ],
+        "items": []
+      },
+      {
+        "title": "Set expectations on price",
+        "paragraphs": [
+          "The answering service should follow your pricing rules exactly. If your script includes a published per-room price, it can share it. If prices depend on inspection, it should book the visit and leave the final price to your technician."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, with your questions and rules. It books appointments in the time slots you allow, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can an answering service book carpet cleaning jobs directly?\nRevo can book appointments under the rules and time slots you set.\n### What about repeat customers?\nThe call summary is logged for your team, so you can see what the customer asked for and follow up."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-06",
+    "markdownArticle": {
+      "content": "# Carpet Cleaning Answering Service: Book Jobs by Room Count\n\nCarpet cleaning calls are short and frequent, and they often come in while your technicians are running equipment. A carpet cleaning answering service picks up, asks the questions that size the job and books the visit before the caller tries another company.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 6, 2026.\n\n## What callers usually want\nMost calls are one of these:\n\n- **A standard cleaning**: a set number of rooms, stairs or hallways.\n- **Stains and odors**: pet accidents, spills or smoke.\n- **Upholstery, rugs or tile**: extra services on the same visit.\n- **Move-in or move-out**: a fixed date set by a lease or a sale.\n\n## Questions that size the job\nAsk for the address, number of rooms, stairs, any pets, the type of stains and the preferred date. Ask whether furniture needs to be moved. These answers help your team plan the time on site and avoid surprises.\n\n## Set expectations on price\nThe answering service should follow your pricing rules exactly. If your script includes a published per-room price, it can share it. If prices depend on inspection, it should book the visit and leave the final price to your technician.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, with your questions and rules. It books appointments in the time slots you allow, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can an answering service book carpet cleaning jobs directly?\nRevo can book appointments under the rules and time slots you set.\n### What about repeat customers?\nThe call summary is logged for your team, so you can see what the customer asked for and follow up.\n",
+      "sha256": "d052d31d09b69d879d1cef6dd44566ef430648dce6571ae1d59622ce7d246db9",
+      "assets": []
+    },
+    "related": [
+      "cleaning-answering-with-scheduling",
+      "appointment-booking"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:0b5bfbb519d27fb9eed2f46ce5507905a341b1af5e06171868bafaa79dd27731",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 6, 2026; implemented by Claude"
+    }
+  },
+  {
+    "slug": "lawn-care-answering-service",
+    "title": "Lawn Care Answering Service for Recurring Mowing Customers",
+    "description": "A lawn care answering service for mowing and treatment companies: handle skip requests, weather reschedules and new quotes by property size.",
+    "navigationLabel": "Lawn care answering service",
+    "eyebrow": "Recurring mowing calls",
+    "lead": "Lawn care companies run on routes and repeat customers. The phone rings with skip requests, rain questions and new quotes while your crews are mowing. A lawn care answering service handles those calls so the route stays on track.",
+    "intro": "Lawn care companies run on routes and repeat customers. The phone rings with skip requests, rain questions and new quotes while your crews are mowing. A lawn care answering service handles those calls so the route stays on track.",
+    "sections": [
+      {
+        "title": "The calls a lawn care company gets",
+        "paragraphs": [
+          "Most calls fall into four groups:\n\n- **Skip or pause requests**: a customer is away or the lawn does not need a cut this week.\n- **Weather questions**: whether the visit moves after rain.\n- **New quotes**: mowing, edging, fertilizing or weed control.\n- **Billing or service questions**: a missed spot or a change to the plan.\n\nSkip requests and service questions can be logged for your office. New quotes can be booked or called back."
+        ],
+        "items": []
+      },
+      {
+        "title": "What to capture on a new quote",
+        "paragraphs": [
+          "Ask for the address, lot size or a rough description, the services wanted and how often. Ask about gates, dogs and where the crew can park. These details help you price the route stop without a site visit when your rules allow it."
+        ],
+        "items": []
+      },
+      {
+        "title": "How it differs from landscaping projects",
+        "paragraphs": [
+          "Landscaping projects need a design visit and a custom estimate. Lawn care is mostly recurring work on a set route. Keep the two call types separate so project leads do not get lost among weekly service calls."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can an answering service change a customer's mowing schedule?\nIt can take the request and log it for your office. Your team confirms changes to the route.\n### Can it quote mowing prices?\nOnly if you give it a published pricing rule. Otherwise it collects the details and books a callback."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-06",
+    "markdownArticle": {
+      "content": "# Lawn Care Answering Service for Recurring Mowing Customers\n\nLawn care companies run on routes and repeat customers. The phone rings with skip requests, rain questions and new quotes while your crews are mowing. A lawn care answering service handles those calls so the route stays on track.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 6, 2026.\n\n## The calls a lawn care company gets\nMost calls fall into four groups:\n\n- **Skip or pause requests**: a customer is away or the lawn does not need a cut this week.\n- **Weather questions**: whether the visit moves after rain.\n- **New quotes**: mowing, edging, fertilizing or weed control.\n- **Billing or service questions**: a missed spot or a change to the plan.\n\nSkip requests and service questions can be logged for your office. New quotes can be booked or called back.\n\n## What to capture on a new quote\nAsk for the address, lot size or a rough description, the services wanted and how often. Ask about gates, dogs and where the crew can park. These details help you price the route stop without a site visit when your rules allow it.\n\n## How it differs from landscaping projects\nLandscaping projects need a design visit and a custom estimate. Lawn care is mostly recurring work on a set route. Keep the two call types separate so project leads do not get lost among weekly service calls.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can an answering service change a customer's mowing schedule?\nIt can take the request and log it for your office. Your team confirms changes to the route.\n### Can it quote mowing prices?\nOnly if you give it a published pricing rule. Otherwise it collects the details and books a callback.\n",
+      "sha256": "772b0970f43cb00d8e373a04a237aa5fd60f12dea83aa87420c1e405bdf373ed",
+      "assets": []
+    },
+    "related": [
+      "landscaping-overflow-answering",
+      "appointment-booking"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-06/mixed-batch-approved-public-copy.txt SHA256 c00505bdde4985a1da9565636df4e2752e9d7f4181530e7555e6af812d18fd32; keywords and copy approved by Jorge Perez in chat on November 6, 2026; implementation by Claude"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-06",
+      "contentHash": "sha256:dd473dc7802d48a31a092e94523ef6f42ebe5638cf216e30c2eb31cea4c8a57f",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in chat November 6, 2026; implemented by Claude"
     }
   }
 ]

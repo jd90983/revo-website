@@ -266,12 +266,12 @@
   },
   {
     "slug": "hvac-after-hours-answering",
-    "label": "HVAC after hours",
+    "label": "HVAC calls after hours",
     "template": "workflow"
   },
   {
     "slug": "plumbing-24-7-answering",
-    "label": "Plumbing 24/7",
+    "label": "Plumbing calls, day and night",
     "template": "workflow"
   },
   {
@@ -281,12 +281,12 @@
   },
   {
     "slug": "restoration-after-hours-answering",
-    "label": "Restoration after hours",
+    "label": "Damage calls after hours",
     "template": "workflow"
   },
   {
     "slug": "roofing-24-7-answering",
-    "label": "Roofing 24/7",
+    "label": "Roofing calls, day and night",
     "template": "workflow"
   },
   {
@@ -351,7 +351,7 @@
   },
   {
     "slug": "landscaping-overflow-answering",
-    "label": "Landscaping overflow",
+    "label": "Landscaping overflow calls",
     "template": "workflow"
   },
   {
@@ -361,7 +361,7 @@
   },
   {
     "slug": "locksmith-overflow-answering",
-    "label": "Locksmith overflow",
+    "label": "Locksmith overflow calls",
     "template": "workflow"
   },
   {
@@ -1897,6 +1897,26 @@
   {
     "slug": "plumbing-call-center-alternative",
     "label": "Call team or AI receptionist",
+    "template": "workflow"
+  },
+  {
+    "slug": "painter-answering-service",
+    "label": "Estimate calls while you paint",
+    "template": "workflow"
+  },
+  {
+    "slug": "handyman-answering-service",
+    "label": "Small jobs, booked right",
+    "template": "workflow"
+  },
+  {
+    "slug": "carpet-cleaning-answering-service",
+    "label": "Bookings by room and stain",
+    "template": "workflow"
+  },
+  {
+    "slug": "lawn-care-answering-service",
+    "label": "Recurring mowing calls",
     "template": "workflow"
   }
 ]
