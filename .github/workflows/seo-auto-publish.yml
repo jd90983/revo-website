@@ -1,0 +1,228 @@
+# Automated daily SEO batch, started by the n8n approval flow.
+#
+# n8n only dispatches this after Jorge Perez approved the keywords AND the
+# exact copy in Slack. n8n first commits the approved request to
+# evidence/<date>/<batchId>-request.json on branch seo/auto-<batchId>, then
+# sends a repository_dispatch with { batchId, branch, date }.
+#
+# This job follows the runbook in seo/README.md: apply + approve with the
+# Slack approval ids, routes, every check, one PR, wait for every check on the
+# PR (seo-ci, Vercel Preview, Cursor), merge commit, production verification,
+# release record in a separate PR, then report to n8n (Slack + Sheet).
+#
+# It never bypasses branch protection: if a required check or review is
+# missing, the merge fails and the report says so. Secrets used:
+#   SEO_BOT_TOKEN       fine-grained token for this repo (contents, pull requests: write).
+#                       A token, not GITHUB_TOKEN, so seo-ci runs on the PR.
+#   N8N_REPORT_URL      n8n webhook that posts the result to Slack and the Sheet.
+#   N8N_REPORT_TOKEN    shared secret sent in the X-Report-Token header.
+#   VERCEL_AUTOMATION_BYPASS_SECRET (optional) to smoke-test the protected Preview.
+
+name: SEO auto publish
+
+on:
+  repository_dispatch:
+    types: [seo-auto-batch]
+  workflow_dispatch:
+    inputs:
+      batchId: { description: 'Batch id (YYYY-MM-DD-name)', required: true }
+      branch: { description: 'Branch holding the approved request', required: true }
+      date: { description: 'Batch date (YYYY-MM-DD)', required: true }
+      dryRun: { description: 'Stop before merging', type: boolean, default: true }
+
+permissions:
+  contents: read
+
+concurrency:
+  group: seo-auto-publish
+  cancel-in-progress: false
+
+env:
+  BATCH_ID: ${{ github.event.client_payload.batchId || inputs.batchId }}
+  BRANCH: ${{ github.event.client_payload.branch || inputs.branch }}
+  BATCH_DATE: ${{ github.event.client_payload.date || inputs.date }}
+  DRY_RUN: ${{ github.event.client_payload.dryRun || inputs.dryRun || false }}
+  GH_TOKEN: ${{ secrets.SEO_BOT_TOKEN }}
+  SITE: https://www.revoapp.ai
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Check inputs
+        run: |
+          [[ "$BATCH_ID" =~ ^[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9-]+$ ]] || { echo "bad batchId"; exit 1; }
+          [[ "$BRANCH" == "seo/auto-$BATCH_ID" ]] || { echo "branch must be seo/auto-<batchId>"; exit 1; }
+          [[ -n "$GH_TOKEN" ]] || { echo "SEO_BOT_TOKEN secret is missing"; exit 1; }
+
+      - name: Check out the approval branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ env.BRANCH }}
+          token: ${{ secrets.SEO_BOT_TOKEN }}
+          fetch-depth: 0
+
+      - name: Set up Node 24
+        uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 24
+
+      - name: Install locked dependencies
+        run: npm --prefix seo/app ci --no-audit --no-fund
+
+      - name: Apply and approve the Slack-approved batch
+        run: node seo/app/tools/auto-batch.mjs --request "evidence/$BATCH_DATE/$BATCH_ID-request.json"
+
+      - name: Routes and every runbook check
+        run: |
+          npm run seo:routes
+          npm run seo:validate
+          npm --prefix seo/app run build:site
+          npm run seo:test
+          npm run seo:verify
+          npm run seo:routes:check
+          node seo/app/tools/fixture-e2e.mjs
+
+      - name: Commit (including public-guide-navigation.json if the build changed it)
+        run: |
+          git config user.name "Revo SEO automation"
+          git config user.email "seo-automation@users.noreply.github.com"
+          git add -A seo/shared/data vercel.json evidence
+          git status --short
+          git commit -m "SEO batch $BATCH_ID (approved in Slack by Jorge Perez)"
+          git push origin "HEAD:$BRANCH"
+
+      - name: Open the pull request
+        id: pr
+        run: |
+          slugs=$(node -e "const r=require('./evidence/$BATCH_DATE/$BATCH_ID-request.json');console.log(r.pages.map(p=>'- '+p.op+' /ai-answering-service/'+p.slug+' ('+p.keyword+')').join('\n'))")
+          body=$(printf '%s\n\n%s\n\n%s\n%s\n%s' \
+            "Automated batch \`$BATCH_ID\`. Keywords and exact copy approved by Jorge Perez (owner) in Slack; ids in the evidence request." \
+            "$slugs" \
+            "- Evidence: \`evidence/$BATCH_DATE/$BATCH_ID-approved-public-copy.txt\` (SHA-256 in the batch source)." \
+            "- Applied with \`seo/app/tools/auto-batch.mjs\`: apply + approve in memory, validated once, to avoid the known \"related page ... is not approved\" error. Review shape matches approvePage." \
+            "- Runbook checks passed in the job before this PR.")
+          url=$(gh pr create --base main --head "$BRANCH" --title "SEO batch $BATCH_ID" --body "$body")
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+          echo "number=${url##*/}" >> "$GITHUB_OUTPUT"
+
+      - name: Wait for every check (seo-ci, Vercel Preview, Cursor)
+        run: |
+          sleep 60
+          for i in $(seq 1 90); do
+            out=$(gh pr checks "${{ steps.pr.outputs.number }}" --json name,bucket 2>/dev/null || echo '[]')
+            echo "$out"
+            pending=$(echo "$out" | jq '[.[]|select(.bucket=="pending")]|length')
+            failed=$(echo "$out" | jq '[.[]|select(.bucket=="fail" or .bucket=="cancel")]|length')
+            total=$(echo "$out" | jq 'length')
+            [[ "$failed" -gt 0 ]] && { echo "A check failed"; exit 1; }
+            [[ "$total" -ge 3 && "$pending" -eq 0 ]] && exit 0
+            sleep 30
+          done
+          echo "Timed out waiting for checks"; exit 1
+
+      - name: Preview smoke test (desktop and mobile, GET only)
+        env:
+          BYPASS: ${{ secrets.VERCEL_AUTOMATION_BYPASS_SECRET }}
+        run: |
+          [[ -z "$BYPASS" ]] && { echo "No bypass secret; Preview smoke test skipped"; exit 0; }
+          preview=$(gh api "repos/${{ github.repository }}/deployments?ref=$BRANCH&per_page=5" --jq '.[0].id' | xargs -I{} gh api "repos/${{ github.repository }}/deployments/{}/statuses" --jq '[.[]|select(.state=="success")][0].environment_url')
+          node -e "const r=require('./evidence/$BATCH_DATE/$BATCH_ID-request.json');for(const p of r.pages)console.log(p.slug)" | while read -r slug; do
+            for ua in "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)" "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X)"; do
+              code=$(curl -s -o page.html -w '%{http_code}' -A "$ua" -H "x-vercel-protection-bypass: $BYPASS" "$preview/ai-answering-service/$slug")
+              [[ "$code" == 200 ]] && grep -q '<h1' page.html || { echo "Preview check failed for $slug ($code)"; exit 1; }
+            done
+          done
+
+      - name: Merge with a merge commit
+        id: merge
+        if: env.DRY_RUN != 'true'
+        run: |
+          gh pr merge "${{ steps.pr.outputs.number }}" --merge
+          sha=$(gh pr view "${{ steps.pr.outputs.number }}" --json mergeCommit --jq .mergeCommit.oid)
+          echo "sha=$sha" >> "$GITHUB_OUTPUT"
+
+      - name: Wait for the production deployment
+        id: deploy
+        if: env.DRY_RUN != 'true'
+        run: |
+          sha=${{ steps.merge.outputs.sha }}
+          for i in $(seq 1 60); do
+            dep=$(gh api "repos/${{ github.repository }}/deployments?sha=$sha&environment=Production" --jq '.[0].id' 2>/dev/null || true)
+            if [[ -n "$dep" ]]; then
+              st=$(gh api "repos/${{ github.repository }}/deployments/$dep/statuses" --jq '.[0]')
+              state=$(echo "$st" | jq -r .state)
+              [[ "$state" == failure || "$state" == error ]] && { echo "Production deployment failed"; exit 1; }
+              if [[ "$state" == success ]]; then
+                url=$(echo "$st" | jq -r '.target_url // .log_url')
+                echo "deployment=dpl_${url##*/}" >> "$GITHUB_OUTPUT"
+                exit 0
+              fi
+            fi
+            sleep 30
+          done
+          echo "Timed out waiting for production"; exit 1
+
+      - name: Verify production
+        if: env.DRY_RUN != 'true'
+        run: |
+          sleep 30
+          curl -fsS "$SITE/sitemap.xml" -o sitemap.xml
+          fail=0
+          for path in / /pricing /free-test /free-test-v2; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' -L "$SITE$path"); echo "$path $code"; [[ "$code" == 200 ]] || fail=1
+          done
+          node -e "const r=require('./evidence/$BATCH_DATE/$BATCH_ID-request.json');for(const p of r.pages)console.log(p.slug)" | while read -r slug; do
+            url="$SITE/ai-answering-service/$slug"
+            code=$(curl -s -o page.html -w '%{http_code}' "$url")
+            robots=$(grep -o 'index, follow' page.html | head -1 || true)
+            insitemap=$(grep -c "$url<" sitemap.xml || true)
+            echo "$url $code $robots sitemap=$insitemap"
+            [[ "$code" == 200 && "$robots" == "index, follow" && "$insitemap" -ge 1 ]] || { echo "FAIL $url"; exit 1; }
+          done || fail=1
+          exit $fail
+
+      - name: Record the release in a separate PR
+        id: release
+        if: env.DRY_RUN != 'true'
+        run: |
+          git fetch origin main && git checkout -B "seo/release-record-$BATCH_ID" origin/main
+          npm run seo -- record-release --sha "${{ steps.merge.outputs.sha }}" --deployment "${{ steps.deploy.outputs.deployment }}" --batch "$BATCH_ID"
+          git add seo/shared/data/releases.json
+          git commit -m "Record release of SEO batch $BATCH_ID"
+          git push origin "HEAD:seo/release-record-$BATCH_ID"
+          url=$(gh pr create --base main --head "seo/release-record-$BATCH_ID" --title "Record release of $BATCH_ID" --body "Release record for PR #${{ steps.pr.outputs.number }} (merge ${{ steps.merge.outputs.sha }}, ${{ steps.deploy.outputs.deployment }}).")
+          n=${url##*/}
+          for i in $(seq 1 60); do
+            out=$(gh pr checks "$n" --json bucket 2>/dev/null || echo '[]')
+            [[ $(echo "$out" | jq '[.[]|select(.bucket=="fail")]|length') -gt 0 ]] && exit 1
+            [[ $(echo "$out" | jq 'length') -ge 1 && $(echo "$out" | jq '[.[]|select(.bucket=="pending")]|length') -eq 0 ]] && break
+            sleep 30
+          done
+          gh pr merge "$n" --merge
+          echo "url=$url" >> "$GITHUB_OUTPUT"
+
+      - name: Report to n8n
+        if: always()
+        env:
+          N8N_REPORT_URL: ${{ secrets.N8N_REPORT_URL }}
+          N8N_REPORT_TOKEN: ${{ secrets.N8N_REPORT_TOKEN }}
+          STATUS: ${{ job.status }}
+          PR_URL: ${{ steps.pr.outputs.url }}
+          MERGE_SHA: ${{ steps.merge.outputs.sha }}
+          DEPLOYMENT: ${{ steps.deploy.outputs.deployment }}
+          RELEASE_PR: ${{ steps.release.outputs.url }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          [[ -z "$N8N_REPORT_URL" ]] && { echo "No report webhook configured"; exit 0; }
+          pages='[]'
+          [[ -f "evidence/$BATCH_DATE/$BATCH_ID-request.json" ]] || git show "origin/$BRANCH:evidence/$BATCH_DATE/$BATCH_ID-request.json" > req.json 2>/dev/null || true
+          f="evidence/$BATCH_DATE/$BATCH_ID-request.json"; [[ -f "$f" ]] || f=req.json
+          [[ -s "$f" ]] && pages=$(jq '[.pages[]|{op,slug,keyword,title,url:("https://www.revoapp.ai/ai-answering-service/"+.slug)}]' "$f")
+          jq -n --arg status "$STATUS" --arg batchId "$BATCH_ID" --arg date "$BATCH_DATE" --arg dryRun "$DRY_RUN" \
+            --arg pr "$PR_URL" --arg sha "$MERGE_SHA" --arg deployment "$DEPLOYMENT" --arg releasePr "$RELEASE_PR" \
+            --arg run "$RUN_URL" --argjson pages "$pages" \
+            '{status:$status,batchId:$batchId,date:$date,dryRun:($dryRun=="true"),pr:$pr,mergeSha:$sha,deployment:$deployment,releasePr:$releasePr,run:$run,pages:$pages}' > report.json
+          cat report.json
+          curl -fsS -X POST -H "Content-Type: application/json" -H "X-Report-Token: $N8N_REPORT_TOKEN" --data @report.json "$N8N_REPORT_URL"
