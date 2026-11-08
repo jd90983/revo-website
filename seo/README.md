@@ -20,6 +20,15 @@ Each batch is one branch and one pull request. Merging and publishing stay with 
 7. **Maintainer merges.** Use a merge commit. Vercel builds production from main with Production variables.
 8. **Verify production.** Check the new URLs, sitemap, homepage, Pricing, Services and funnels on www.revoapp.ai. Then record the release with `npm run seo -- record-release --sha <merge sha> --deployment <dpl_...> --batch <batchId>` in a follow-up commit.
 
+## Automated daily batches (Slack approval)
+
+`.github/workflows/seo-auto-publish.yml` runs this same runbook without a person at the keyboard, after two approvals by the owner in Slack: the day's keywords, then the exact copy of every page. The n8n flow writes the approved request to `evidence/<date>/<batchId>-request.json` on `seo/auto-<batchId>` and dispatches the job.
+
+- `seo/app/tools/auto-batch.mjs` rejects any page whose copy hash differs from the one approved in Slack, enforces the editorial rules (280-450 words, 3-4 sections, 2-3 FAQs, no tables, one Revo price, the disclaimer and the pricing link), writes the evidence and batch files, and records the owner's review with the Slack message ids.
+- It applies and approves in one step and validates once, to avoid the known "related page ... is not approved" error on updates.
+- The job runs every check, opens one PR, waits for every PR check (seo-ci, Vercel Preview, Cursor), merges with a merge commit, verifies production, records the release in a separate PR and reports to n8n, which posts to Slack and adds new pages to the inventory Sheet.
+- Branch protection still applies: a failed or missing check stops the merge and the report says why.
+
 The Vercel build itself runs, in order, and stops on the first failure:
 
 1. Isolation probe
