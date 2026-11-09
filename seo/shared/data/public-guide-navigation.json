@@ -1918,5 +1918,30 @@
     "slug": "lawn-care-answering-service",
     "label": "Recurring mowing calls",
     "template": "workflow"
+  },
+  {
+    "slug": "ai-phone-answering-service",
+    "label": "Missed calls after hours",
+    "template": "workflow"
+  },
+  {
+    "slug": "24-hour-answering-service",
+    "label": "Late-night emergencies",
+    "template": "workflow"
+  },
+  {
+    "slug": "construction-receptionist",
+    "label": "Missed calls from project sites",
+    "template": "workflow"
+  },
+  {
+    "slug": "spanish-answering-service",
+    "label": "Missed calls from Spanish speakers",
+    "template": "workflow"
+  },
+  {
+    "slug": "pest-control-answering-service",
+    "label": "Missed calls from urgent customers",
+    "template": "workflow"
   }
 ]
