@@ -119,7 +119,10 @@ export function logBatch(log, batch, changes, { date = today() } = {}) {
 /** Records which commit and deployment published which batches; idempotent per commit. */
 export function recordRelease(releases, { sha, deploymentId, batchIds, routes, date = today() }) {
   if (!/^[0-9a-f]{7,40}$/.test(String(sha))) throw new Error('record-release needs --sha <commit>');
-  if (!/^dpl_[A-Za-z0-9]+$/.test(String(deploymentId))) throw new Error('record-release needs --deployment dpl_...');
+  // A Vercel deployment id (dpl_...), or its *.vercel.app hostname when the release job has no Vercel API token to resolve the id.
+  if (!/^dpl_[A-Za-z0-9]+$/.test(String(deploymentId)) && !/^[a-z0-9-]+\.vercel\.app$/.test(String(deploymentId))) {
+    throw new Error('record-release needs --deployment dpl_... (or the deployment\'s *.vercel.app hostname)');
+  }
   if (!Array.isArray(batchIds) || batchIds.length === 0) throw new Error('record-release needs --batch <id> (repeatable)');
   const existing = releases.find(release => release.sha === sha);
   if (existing) {

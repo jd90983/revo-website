@@ -124,6 +124,11 @@ test('batch log and release record are idempotent', () => {
   const releases = recordRelease([], entry);
   assert.equal(recordRelease(releases, entry).length, 1);
   assert.throws(() => recordRelease(releases, { ...entry, deploymentId: 'dpl_Other2' }), /already recorded/);
+
+  const byHost = recordRelease([], { ...entry, deploymentId: 'revo-website-abc123-group-u.vercel.app' });
+  assert.equal(byHost[0].deploymentId, 'revo-website-abc123-group-u.vercel.app');
+  assert.throws(() => recordRelease([], { ...entry, deploymentId: 'https://revo-website-abc123-group-u.vercel.app' }), /needs --deployment/);
+  assert.throws(() => recordRelease([], { ...entry, deploymentId: 'dpl_revo-website-abc123-group-u.vercel.app' }), /needs --deployment/);
 });
 
 test('routes, sitemap set and navigation come from the approved records only', () => {
