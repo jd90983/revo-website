@@ -146,6 +146,8 @@ jobs:
       - name: Wait for the production deployment
         id: deploy
         if: env.DRY_RUN != 'true'
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
         run: |
           sha=${{ steps.merge.outputs.sha }}
           for i in $(seq 1 60); do
@@ -155,8 +157,15 @@ jobs:
               state=$(echo "$st" | jq -r .state)
               [[ "$state" == failure || "$state" == error ]] && { echo "Production deployment failed"; exit 1; }
               if [[ "$state" == success ]]; then
-                url=$(echo "$st" | jq -r '.target_url // .log_url')
-                echo "deployment=dpl_${url##*/}" >> "$GITHUB_OUTPUT"
+                # GitHub's deployment status only carries the deployment's *.vercel.app URL, not its dpl_ id.
+                # Resolve the id with the Vercel API when a VERCEL_TOKEN secret exists; otherwise record the hostname.
+                url=$(echo "$st" | jq -r '.environment_url // .target_url // .log_url')
+                host=$(echo "$url" | sed -E 's#^https?://##; s#/.*$##')
+                id=""
+                if [[ -n "$VERCEL_TOKEN" ]]; then
+                  id=$(curl -fsS -H "Authorization: Bearer $VERCEL_TOKEN" "https://api.vercel.com/v13/deployments/$host?slug=group-u" | jq -r '.id // empty' || true)
+                fi
+                echo "deployment=${id:-$host}" >> "$GITHUB_OUTPUT"
                 exit 0
               fi
             fi
