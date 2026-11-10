@@ -1943,5 +1943,15 @@
     "slug": "pest-control-answering-service",
     "label": "Missed calls from urgent customers",
     "template": "workflow"
+  },
+  {
+    "slug": "24-7-answering-service",
+    "label": "Missed calls after business hours",
+    "template": "workflow"
+  },
+  {
+    "slug": "answering-service-for-construction",
+    "label": "Busy on the job site",
+    "template": "workflow"
   }
 ]
