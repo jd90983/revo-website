@@ -41,7 +41,7 @@
   },
   {
     "slug": "overflow-answering",
-    "label": "Office-hours backup",
+    "label": "Never Miss a Call",
     "template": null
   },
   {
@@ -346,7 +346,7 @@
   },
   {
     "slug": "remodeling-answering",
-    "label": "Remodeling calls",
+    "label": "For Remodeling Businesses",
     "template": "workflow"
   },
   {
@@ -1952,6 +1952,66 @@
   {
     "slug": "answering-service-for-construction",
     "label": "Busy on the job site",
+    "template": "workflow"
+  },
+  {
+    "slug": "ai-receptionist-for-small-businesses",
+    "label": "Missing calls after hours",
+    "template": "workflow"
+  },
+  {
+    "slug": "live-answering-service-for-small-business",
+    "label": "Busy lines during the day",
+    "template": "workflow"
+  },
+  {
+    "slug": "24-7-live-answering-service",
+    "label": "Urgent customer requests",
+    "template": "workflow"
+  },
+  {
+    "slug": "after-hours-answering-service-for-small-business",
+    "label": "Missed calls after closing",
+    "template": "workflow"
+  },
+  {
+    "slug": "roofing-call-center-alternative",
+    "label": "Missed calls from new leads",
+    "template": "workflow"
+  },
+  {
+    "slug": "roofer-answering-service",
+    "label": "Missed calls from new customers",
+    "template": "workflow"
+  },
+  {
+    "slug": "contractor-call-center-alternative",
+    "label": "Busy lines during peak season",
+    "template": "workflow"
+  },
+  {
+    "slug": "home-service-call-center-alternative",
+    "label": "Busy phones during peak hours",
+    "template": "workflow"
+  },
+  {
+    "slug": "dispatch-answering-service",
+    "label": "When every call matters",
+    "template": "workflow"
+  },
+  {
+    "slug": "home-inspection-call-center-alternative",
+    "label": "Clients want quick answers",
+    "template": "workflow"
+  },
+  {
+    "slug": "home-services-virtual-receptionist",
+    "label": "After-hours service requests",
+    "template": "workflow"
+  },
+  {
+    "slug": "ai-receptionist-for-small-business-uk",
+    "label": "Busy lines during peak times",
     "template": "workflow"
   }
 ]

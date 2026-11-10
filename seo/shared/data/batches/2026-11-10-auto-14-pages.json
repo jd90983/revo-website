@@ -1,0 +1,982 @@
+{
+  "batchId": "2026-11-10-auto-14-pages",
+  "source": {
+    "kind": "owner-approved-exact-copy",
+    "reference": "Owner-approved exact public copy; evidence/2026-11-10/2026-11-10-auto-14-pages-approved-public-copy.txt SHA256 67892d2fffbd93433508181a2aeee49c357e1b274e6ff034f24a2708c1685dcd; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-111164-keywords@2026-11-10T19:07:13.367Z) and copy approved in Slack (message n8n-exec-111164-copy@2026-11-10T19:08:41.773Z) on November 10, 2026; implementation by the Revo SEO automation"
+  },
+  "operations": [
+    {
+      "op": "add",
+      "record": {
+        "slug": "ai-receptionist-for-small-businesses",
+        "title": "How an AI Receptionist for Small Businesses Handles Calls",
+        "description": "An AI receptionist for small businesses answers calls, books appointments, and handles messages so owners can focus on running their company.",
+        "navigationLabel": "Always available answering",
+        "eyebrow": "Missing calls after hours",
+        "lead": "An AI receptionist for small businesses is designed to answer every call, day or night, using your script and rules. It can book appointments, send follow-up messages, and keep a log of every conversation, so you never miss important details or new business opportunities.",
+        "intro": "An AI receptionist for small businesses is designed to answer every call, day or night, using your script and rules. It can book appointments, send follow-up messages, and keep a log of every conversation, so you never miss important details or new business opportunities.",
+        "sections": [
+          {
+            "title": "How Calls Are Answered",
+            "paragraphs": [
+              "When a customer calls your business, the AI receptionist answers using your preferred greeting and follows your instructions for common questions. It speaks in both English and Spanish, making sure every caller feels understood. This approach ensures your business sounds professional, even when you are unavailable."
+            ],
+            "items": []
+          },
+          {
+            "title": "Booking and Follow-Up",
+            "paragraphs": [
+              "The AI receptionist can book appointments directly into your calendar or field service software if connected. After the call, it sends a confirmation text to the customer and logs a summary for your records. This keeps your schedule organized and your customers informed without extra effort from your team."
+            ],
+            "items": []
+          },
+          {
+            "title": "Keeping You in the Loop",
+            "paragraphs": [
+              "Every call is logged with a summary, so you can review what was discussed and follow up if needed. Some plans allow for call transfers, recordings, and transcripts, giving you more visibility and control over your customer interactions. This helps you stay on top of your business, even when you are on the job."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can the AI receptionist handle calls in Spanish?\nYes, calls are answered in both English and Spanish, following your script and instructions.\n### Will the AI receptionist give quotes or assign technicians?\nNo, it does not provide quotes or assign technicians. It focuses on answering, booking, and messaging."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-10",
+        "markdownArticle": {
+          "content": "# How an AI Receptionist for Small Businesses Handles Calls\n\nAn AI receptionist for small businesses is designed to answer every call, day or night, using your script and rules. It can book appointments, send follow-up messages, and keep a log of every conversation, so you never miss important details or new business opportunities.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 10, 2026.\n\n## How Calls Are Answered\nWhen a customer calls your business, the AI receptionist answers using your preferred greeting and follows your instructions for common questions. It speaks in both English and Spanish, making sure every caller feels understood. This approach ensures your business sounds professional, even when you are unavailable.\n\n## Booking and Follow-Up\nThe AI receptionist can book appointments directly into your calendar or field service software if connected. After the call, it sends a confirmation text to the customer and logs a summary for your records. This keeps your schedule organized and your customers informed without extra effort from your team.\n\n## Keeping You in the Loop\nEvery call is logged with a summary, so you can review what was discussed and follow up if needed. Some plans allow for call transfers, recordings, and transcripts, giving you more visibility and control over your customer interactions. This helps you stay on top of your business, even when you are on the job.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the AI receptionist handle calls in Spanish?\nYes, calls are answered in both English and Spanish, following your script and instructions.\n### Will the AI receptionist give quotes or assign technicians?\nNo, it does not provide quotes or assign technicians. It focuses on answering, booking, and messaging.\n",
+          "sha256": "a9d7b35c82dae058024fa6ccb19a3588691d35b2b7612a3d6e60ff0b7df6fc14",
+          "assets": []
+        },
+        "related": [
+          "small-business-crm-selection",
+          "small-business-technology-priorities"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "live-answering-service-for-small-business",
+        "title": "Live Answering Service for Small Business Success",
+        "description": "A live answering service for small business ensures no call goes unanswered, helping you manage appointments and customer needs around the clock.",
+        "navigationLabel": "How Calls Are Handled",
+        "eyebrow": "Busy lines during the day",
+        "lead": "A live answering service for small business helps you manage every call, even when you or your team are busy on the job. With dedicated call handling, your customers always reach a real person who can follow your script, book appointments, and keep your schedule organized.",
+        "intro": "A live answering service for small business helps you manage every call, even when you or your team are busy on the job. With dedicated call handling, your customers always reach a real person who can follow your script, book appointments, and keep your schedule organized.",
+        "sections": [
+          {
+            "title": "How Calls Are Answered and Managed",
+            "paragraphs": [
+              "When a customer calls your business, the call is forwarded to a live answering service. The service answers using your business name and follows your specific instructions for greeting and handling calls. This ensures every caller receives a professional and consistent experience, whether you are on a job site or after hours."
+            ],
+            "items": []
+          },
+          {
+            "title": "Booking Appointments and Following Up",
+            "paragraphs": [
+              "The answering service can schedule appointments directly into your calendar or field service software, based on your availability. After each call, a summary is logged and a follow-up SMS is sent to the customer. This keeps your bookings organized and your customers informed, without you needing to answer every call."
+            ],
+            "items": []
+          },
+          {
+            "title": "Support for English and Spanish Callers",
+            "paragraphs": [
+              "Home service businesses often serve a diverse community. A live answering service can handle calls in both English and Spanish, making sure every customer feels comfortable and understood. This helps you reach more customers and provide better service, no matter who is calling."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can the answering service transfer calls to my team?\nYes, call transfers are available so urgent or complex calls can reach the right person on your team.\n### Will the answering service give out quotes or prices?\nNo, the answering service does not provide quotes or pricing information to callers."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-10",
+        "markdownArticle": {
+          "content": "# Live Answering Service for Small Business Success\n\nA live answering service for small business helps you manage every call, even when you or your team are busy on the job. With dedicated call handling, your customers always reach a real person who can follow your script, book appointments, and keep your schedule organized.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 10, 2026.\n\n## How Calls Are Answered and Managed\nWhen a customer calls your business, the call is forwarded to a live answering service. The service answers using your business name and follows your specific instructions for greeting and handling calls. This ensures every caller receives a professional and consistent experience, whether you are on a job site or after hours.\n\n## Booking Appointments and Following Up\nThe answering service can schedule appointments directly into your calendar or field service software, based on your availability. After each call, a summary is logged and a follow-up SMS is sent to the customer. This keeps your bookings organized and your customers informed, without you needing to answer every call.\n\n## Support for English and Spanish Callers\nHome service businesses often serve a diverse community. A live answering service can handle calls in both English and Spanish, making sure every customer feels comfortable and understood. This helps you reach more customers and provide better service, no matter who is calling.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the answering service transfer calls to my team?\nYes, call transfers are available so urgent or complex calls can reach the right person on your team.\n### Will the answering service give out quotes or prices?\nNo, the answering service does not provide quotes or pricing information to callers.\n",
+          "sha256": "776108732595ed750fbab93a6c0a4886a194fae262b3eb49ba23bf90902bb1f0",
+          "assets": []
+        },
+        "related": [
+          "live-chat-answering-service",
+          "small-business-crm-selection"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "24-7-live-answering-service",
+        "title": "How a 24 7 Live Answering Service Handles Home Service Calls",
+        "description": "Learn how a 24 7 live answering service manages calls for home service businesses, from booking appointments to handling urgent situations.",
+        "navigationLabel": "Call management tips",
+        "eyebrow": "Urgent customer requests",
+        "lead": "A 24 7 live answering service ensures home service businesses never miss a call, no matter the hour. This guide explains how these services handle customer inquiries, book appointments, and keep your team informed, so you can focus on delivering quality work without worrying about missed opportunities.",
+        "intro": "A 24 7 live answering service ensures home service businesses never miss a call, no matter the hour. This guide explains how these services handle customer inquiries, book appointments, and keep your team informed, so you can focus on delivering quality work without worrying about missed opportunities.",
+        "sections": [
+          {
+            "title": "How Calls Are Answered and Routed",
+            "paragraphs": [
+              "Calls are answered promptly, following your business’s script and specific instructions. The service gathers essential details from the caller, such as the type of service needed, address, and preferred appointment times. If your team needs to be involved, calls can be transferred directly, or a summary is logged for your review. This process keeps your workflow organized and responsive."
+            ],
+            "items": []
+          },
+          {
+            "title": "Booking Appointments and Following Up",
+            "paragraphs": [
+              "Once the caller’s needs are understood, appointments are booked according to your availability rules. The caller receives a confirmation and follow-up via SMS, ensuring they know what to expect. Every interaction is summarized and logged, so your team can review customer requests and prepare before heading out to the job."
+            ],
+            "items": []
+          },
+          {
+            "title": "Handling Urgent and Routine Requests",
+            "paragraphs": [
+              "Urgent calls are identified based on your guidelines and can be escalated or transferred to the right person. Routine requests are managed efficiently, with clear communication and consistent follow-up. The service supports both English and Spanish, making it easy to assist a wide range of customers without language barriers."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can the answering service give quotes or assign technicians?\nNo, the service does not provide quotes or assign technicians. It focuses on booking appointments and gathering information.\n### Is it possible to get a summary or recording of calls?\nYes, call summaries are logged for every call, and recordings or transcripts are available on certain service levels."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-10",
+        "markdownArticle": {
+          "content": "# How a 24 7 Live Answering Service Handles Home Service Calls\n\nA 24 7 live answering service ensures home service businesses never miss a call, no matter the hour. This guide explains how these services handle customer inquiries, book appointments, and keep your team informed, so you can focus on delivering quality work without worrying about missed opportunities.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 10, 2026.\n\n## How Calls Are Answered and Routed\nCalls are answered promptly, following your business’s script and specific instructions. The service gathers essential details from the caller, such as the type of service needed, address, and preferred appointment times. If your team needs to be involved, calls can be transferred directly, or a summary is logged for your review. This process keeps your workflow organized and responsive.\n\n## Booking Appointments and Following Up\nOnce the caller’s needs are understood, appointments are booked according to your availability rules. The caller receives a confirmation and follow-up via SMS, ensuring they know what to expect. Every interaction is summarized and logged, so your team can review customer requests and prepare before heading out to the job.\n\n## Handling Urgent and Routine Requests\nUrgent calls are identified based on your guidelines and can be escalated or transferred to the right person. Routine requests are managed efficiently, with clear communication and consistent follow-up. The service supports both English and Spanish, making it easy to assist a wide range of customers without language barriers.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the answering service give quotes or assign technicians?\nNo, the service does not provide quotes or assign technicians. It focuses on booking appointments and gathering information.\n### Is it possible to get a summary or recording of calls?\nYes, call summaries are logged for every call, and recordings or transcripts are available on certain service levels.\n",
+          "sha256": "e97742269c23b1da2ab49f36b0210765ee1970fad8e95279abd7e20c2f16d85a",
+          "assets": []
+        },
+        "related": [
+          "24-7-answering-service",
+          "plumbing-24-7-answering"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "after-hours-answering-service-for-small-business",
+        "title": "After Hours Answering Service for Small Business Calls",
+        "description": "Learn how an after hours answering service for small business can handle calls, book appointments, and support your team when you are off the clock.",
+        "navigationLabel": "After hours coverage",
+        "eyebrow": "Missed calls after closing",
+        "lead": "An after hours answering service for small business keeps your phones covered when your team is off duty. This ensures every caller gets a friendly, informed response, whether it’s late at night, on weekends, or during holidays. You never have to worry about missing out on new jobs or leaving existing customers waiting.",
+        "intro": "An after hours answering service for small business keeps your phones covered when your team is off duty. This ensures every caller gets a friendly, informed response, whether it’s late at night, on weekends, or during holidays. You never have to worry about missing out on new jobs or leaving existing customers waiting.",
+        "sections": [
+          {
+            "title": "How Calls Are Handled After Hours",
+            "paragraphs": [
+              "When your business lines are forwarded, every call is answered by a live agent following your script and instructions. The service can respond in both English and Spanish, making sure your customers feel understood and cared for. Details from each call are logged and sent to you, so you stay informed even when you are away."
+            ],
+            "items": []
+          },
+          {
+            "title": "Booking Appointments and Following Up",
+            "paragraphs": [
+              "The answering service can book appointments directly into your calendar, based on your availability and rules. After each call, a summary is logged and a follow-up SMS is sent to the customer. This keeps your schedule organized and your customers updated, even if they reach out after hours."
+            ],
+            "items": []
+          },
+          {
+            "title": "Supporting Your Business and Team",
+            "paragraphs": [
+              "For businesses with larger teams or more complex needs, the service can transfer calls to your staff, connect with your field service software, and provide call recordings and transcripts. This helps your team stay on top of urgent issues and makes it easy to review important conversations."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can the answering service give quotes or assign technicians?\nNo, the service does not provide quotes or assign technicians to jobs. It focuses on answering calls and booking appointments.\n### Is the service available in both English and Spanish?\nYes, callers can be helped in both English and Spanish, making your business accessible to more customers."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-10",
+        "markdownArticle": {
+          "content": "# After Hours Answering Service for Small Business Calls\n\nAn after hours answering service for small business keeps your phones covered when your team is off duty. This ensures every caller gets a friendly, informed response, whether it’s late at night, on weekends, or during holidays. You never have to worry about missing out on new jobs or leaving existing customers waiting.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 10, 2026.\n\n## How Calls Are Handled After Hours\nWhen your business lines are forwarded, every call is answered by a live agent following your script and instructions. The service can respond in both English and Spanish, making sure your customers feel understood and cared for. Details from each call are logged and sent to you, so you stay informed even when you are away.\n\n## Booking Appointments and Following Up\nThe answering service can book appointments directly into your calendar, based on your availability and rules. After each call, a summary is logged and a follow-up SMS is sent to the customer. This keeps your schedule organized and your customers updated, even if they reach out after hours.\n\n## Supporting Your Business and Team\nFor businesses with larger teams or more complex needs, the service can transfer calls to your staff, connect with your field service software, and provide call recordings and transcripts. This helps your team stay on top of urgent issues and makes it easy to review important conversations.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the answering service give quotes or assign technicians?\nNo, the service does not provide quotes or assign technicians to jobs. It focuses on answering calls and booking appointments.\n### Is the service available in both English and Spanish?\nYes, callers can be helped in both English and Spanish, making your business accessible to more customers.\n",
+          "sha256": "13c8043d45375edad5cf2adbb9bc2289f3351d75b114cae1f054d05a073aad10",
+          "assets": []
+        },
+        "related": [
+          "after-hours",
+          "hvac-after-hours-answering"
+        ]
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "slug": "overflow-answering",
+        "title": "Overflow Phone Answering Service While Your Office Is Open",
+        "description": "Discover how an overflow phone answering service can help your office handle high call volumes, keep callers happy, and maintain smooth operations.",
+        "navigationLabel": "Why Use Overflow Answering",
+        "eyebrow": "Never Miss a Call",
+        "lead": "An overflow phone answering service helps your busy office handle more calls without confusion or missed opportunities. When your team is tied up or lines are full, overflow support ensures every caller gets a clear next step. This keeps your business running smoothly and helps you deliver a better experience to every customer.",
+        "intro": "An overflow phone answering service helps your busy office handle more calls without confusion or missed opportunities. When your team is tied up or lines are full, overflow support ensures every caller gets a clear next step. This keeps your business running smoothly and helps you deliver a better experience to every customer.",
+        "sections": [
+          {
+            "title": "Define when the backup takes over.",
+            "paragraphs": [
+              "Revo’s Services page describes configurable answering timing, including answering after a few rings or during selected hours. Confirm how that behavior works with your phone provider and supported setup; no particular forwarding method is assumed.",
+              "Choose the trigger with your team: unanswered ringing, a busy line or a planned period of limited coverage. Overflow differs from after-hours coverage because the office remains open."
+            ],
+            "items": [
+              "Record the normal office hours and primary answering route.",
+              "Agree when backup should answer and how callers are greeted.",
+              "Check how the phone setup handles busy and unanswered calls."
+            ]
+          },
+          {
+            "title": "Keep the backup message consistent with the office.",
+            "paragraphs": [
+              "The caller should know whether they are leaving a service request, receiving confirmed scheduling information or waiting for a callback. Do not promise immediate access to a staff member just because the office is open.",
+              "For example, while the receptionist is assisting another customer, the backup can collect the requested service, property ZIP code and callback details under your approved policy. This is an illustrative intake scenario, not a measured reduction in missed calls."
+            ],
+            "items": []
+          },
+          {
+            "title": "Assign ownership of the return to your team.",
+            "paragraphs": [
+              "Decide who reviews overflow requests during the day, where that person checks them and how unresolved requests are tracked. A call summary is useful only if someone owns its next step.",
+              "Team transfers are excluded from Solo and included in Crew and Fleet in the shared official pricing data. A transfer entitlement does not establish that a person will answer; review the unavailable-person fallback."
+            ],
+            "items": [
+              "Avoid creating a second request when the caller contacts the office again.",
+              "Keep existing appointments separate from new service inquiries.",
+              "Use an approved callback window your staffing can support."
+            ]
+          },
+          {
+            "title": "Test the busy-period transition.",
+            "paragraphs": [
+              "Review a call while the office is already on another line, a call that the office answers before the backup trigger and a request that cannot be transferred. Confirm who handles each outcome.",
+              "Track handled requests and actual follow-up using your own records. Do not assume every overflow call is a qualified job or that backup coverage guarantees revenue."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Is overflow answering the same as after-hours answering?",
+            "a": "No. Overflow backs up an open office when staff are busy. After-hours coverage follows the closed-office policy."
+          },
+          {
+            "q": "How many rings should pass before backup answers?",
+            "a": "Choose a timing rule with your team and confirm that your phone provider and answering setup support it. This guide does not prescribe a universal ring count."
+          },
+          {
+            "q": "Can every plan transfer an overflow call to staff?",
+            "a": "The shared official pricing data excludes transfers from Solo and includes them in Crew and Fleet. Confirm the supported setup and fallback before using transfers."
+          }
+        ],
+        "related": [
+          "after-hours",
+          "missed-calls",
+          "lead-qualification",
+          "answering-service-cost"
+        ],
+        "takeaway": "Keep a busy office from becoming an unclear next step.",
+        "pricingVariant": "missed-calls",
+        "sourcePaths": [
+          "https://www.revoapp.ai/services.html",
+          "https://www.revoapp.ai/pricing.html",
+          "seo/shared/lib/official-pricing.ts"
+        ],
+        "editorialDate": "2026-11-10"
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "roofing-call-center-alternative",
+        "title": "Roofing Call Center Solutions for Reliable Answering",
+        "description": "Learn how a roofing call center manages customer calls, books appointments, and supports your business with seamless communication.",
+        "navigationLabel": "Bilingual support",
+        "eyebrow": "Missed calls from new leads",
+        "lead": "A roofing call center is designed to handle incoming calls for roofing contractors and companies, ensuring no customer inquiry goes unanswered. With specialized call handling, appointment booking, and bilingual support, a roofing call center helps streamline your business operations and keeps your team focused on the job site.",
+        "intro": "A roofing call center is designed to handle incoming calls for roofing contractors and companies, ensuring no customer inquiry goes unanswered. With specialized call handling, appointment booking, and bilingual support, a roofing call center helps streamline your business operations and keeps your team focused on the job site.",
+        "sections": [
+          {
+            "title": "How Roofing Calls Are Answered",
+            "paragraphs": [
+              "Calls are answered promptly, following your business’s script and specific instructions. The call center gathers the caller’s details, listens to their needs, and provides clear information about your services. By keeping the conversation professional and consistent, callers feel confident that their concerns are being handled by a knowledgeable representative."
+            ],
+            "items": []
+          },
+          {
+            "title": "Appointment Booking and Follow-Up",
+            "paragraphs": [
+              "After collecting the necessary information, the call center books appointments directly into your calendar or scheduling system. Each caller receives a confirmation and a follow-up message via SMS, so they know exactly what to expect. This process helps reduce no-shows and keeps your schedule organized without extra effort from your team."
+            ],
+            "items": []
+          },
+          {
+            "title": "Supporting Your Roofing Team",
+            "paragraphs": [
+              "A roofing call center logs every call and provides summaries, so you can review customer interactions and stay informed. For businesses needing more integration, calls can be transferred to your team, and details can be synced with your field service software. Bilingual answering ensures you never miss a lead, no matter the caller’s language."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can the call center give quotes or pricing to callers?\nNo, the call center does not provide quotes or pricing information to callers.\n### Does the call center assign technicians to jobs?\nNo, technician assignment is not handled by the call center."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-10",
+        "markdownArticle": {
+          "content": "# Roofing Call Center Solutions for Reliable Answering\n\nA roofing call center is designed to handle incoming calls for roofing contractors and companies, ensuring no customer inquiry goes unanswered. With specialized call handling, appointment booking, and bilingual support, a roofing call center helps streamline your business operations and keeps your team focused on the job site.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 10, 2026.\n\n## How Roofing Calls Are Answered\nCalls are answered promptly, following your business’s script and specific instructions. The call center gathers the caller’s details, listens to their needs, and provides clear information about your services. By keeping the conversation professional and consistent, callers feel confident that their concerns are being handled by a knowledgeable representative.\n\n## Appointment Booking and Follow-Up\nAfter collecting the necessary information, the call center books appointments directly into your calendar or scheduling system. Each caller receives a confirmation and a follow-up message via SMS, so they know exactly what to expect. This process helps reduce no-shows and keeps your schedule organized without extra effort from your team.\n\n## Supporting Your Roofing Team\nA roofing call center logs every call and provides summaries, so you can review customer interactions and stay informed. For businesses needing more integration, calls can be transferred to your team, and details can be synced with your field service software. Bilingual answering ensures you never miss a lead, no matter the caller’s language.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the call center give quotes or pricing to callers?\nNo, the call center does not provide quotes or pricing information to callers.\n### Does the call center assign technicians to jobs?\nNo, technician assignment is not handled by the call center.\n",
+          "sha256": "55e44f9b60781ab925a937120edf95c1af41dbe6431324ad2542798c74a90d08",
+          "assets": []
+        },
+        "related": [
+          "roofing-24-7-answering",
+          "roofing-lead-qualification"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "roofer-answering-service",
+        "title": "Roofer Answering Service for Reliable Call Handling",
+        "description": "A roofer answering service ensures you never miss a call, books appointments, and keeps your team focused on the job. Learn how it works.",
+        "navigationLabel": "Always available call answering",
+        "eyebrow": "Missed calls from new customers",
+        "lead": "A roofer answering service helps your business handle every call professionally, even during busy jobs or after hours. With dedicated call answering, appointment booking, and follow-up, you can focus on roofing projects while knowing your callers are taken care of.",
+        "intro": "A roofer answering service helps your business handle every call professionally, even during busy jobs or after hours. With dedicated call answering, appointment booking, and follow-up, you can focus on roofing projects while knowing your callers are taken care of.",
+        "sections": [
+          {
+            "title": "Never Miss a Roofing Lead",
+            "paragraphs": [
+              "Roofing calls can come in at any time, including weekends and evenings. An answering service responds to every call, following your script and capturing essential details from homeowners or property managers. This ensures you never miss a potential job, even when your crew is on a roof or unavailable."
+            ],
+            "items": []
+          },
+          {
+            "title": "Appointment Booking Made Simple",
+            "paragraphs": [
+              "When a caller needs an inspection or repair, the answering service can book appointments directly into your calendar. This saves you time and keeps your schedule organized, so you can focus on completing jobs instead of managing calls. Call summaries and SMS follow-ups help keep everyone on the same page."
+            ],
+            "items": []
+          },
+          {
+            "title": "Seamless Communication for Your Team",
+            "paragraphs": [
+              "For larger roofing teams, calls can be transferred to the right person or connected to your field service software. Recordings and transcripts are available for review, and bilingual support ensures you can serve both English and Spanish-speaking clients easily."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can the answering service handle emergency roofing calls?\nYes, it can answer urgent calls and follow your instructions, but it will not dispatch technicians.\n### Will the answering service provide quotes or pricing to callers?\nNo, it does not give quotes or prices. It will gather information and book appointments according to your guidelines."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-10",
+        "markdownArticle": {
+          "content": "# Roofer Answering Service for Reliable Call Handling\n\nA roofer answering service helps your business handle every call professionally, even during busy jobs or after hours. With dedicated call answering, appointment booking, and follow-up, you can focus on roofing projects while knowing your callers are taken care of.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 10, 2026.\n\n## Never Miss a Roofing Lead\nRoofing calls can come in at any time, including weekends and evenings. An answering service responds to every call, following your script and capturing essential details from homeowners or property managers. This ensures you never miss a potential job, even when your crew is on a roof or unavailable.\n\n## Appointment Booking Made Simple\nWhen a caller needs an inspection or repair, the answering service can book appointments directly into your calendar. This saves you time and keeps your schedule organized, so you can focus on completing jobs instead of managing calls. Call summaries and SMS follow-ups help keep everyone on the same page.\n\n## Seamless Communication for Your Team\nFor larger roofing teams, calls can be transferred to the right person or connected to your field service software. Recordings and transcripts are available for review, and bilingual support ensures you can serve both English and Spanish-speaking clients easily.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the answering service handle emergency roofing calls?\nYes, it can answer urgent calls and follow your instructions, but it will not dispatch technicians.\n### Will the answering service provide quotes or pricing to callers?\nNo, it does not give quotes or prices. It will gather information and book appointments according to your guidelines.\n",
+          "sha256": "1bc63be4a31405a0152e48c8823a4d5b62b9a9b34c108a944b5b6a5fd3395f90",
+          "assets": []
+        },
+        "related": []
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "contractor-call-center-alternative",
+        "title": "Contractor Call Center Solutions for Home Services",
+        "description": "A contractor call center ensures every call is answered, appointments are booked, and callers receive prompt, professional service for your business.",
+        "navigationLabel": "Efficient appointment booking",
+        "eyebrow": "Busy lines during peak season",
+        "lead": "A contractor call center is designed to handle the unique needs of home service businesses. It answers every forwarded call, follows your script, and ensures callers get the information and scheduling support they need, day or night. This keeps your business responsive and professional, even when you are busy on the job.",
+        "intro": "A contractor call center is designed to handle the unique needs of home service businesses. It answers every forwarded call, follows your script, and ensures callers get the information and scheduling support they need, day or night. This keeps your business responsive and professional, even when you are busy on the job.",
+        "sections": [
+          {
+            "title": "How Calls Are Answered and Managed",
+            "paragraphs": [
+              "When a call comes in, the contractor call center greets the caller using your business’s preferred script. The agent gathers essential details, answers basic questions, and provides information based on your guidelines. This ensures every caller receives consistent, accurate communication, no matter when they reach out."
+            ],
+            "items": []
+          },
+          {
+            "title": "Appointment Booking and Follow-Up",
+            "paragraphs": [
+              "The call center can book appointments directly into your calendar or field service system, reducing back-and-forth and missed opportunities. After each call, a summary is logged and an SMS follow-up is sent to the customer, keeping everyone informed and reducing no-shows."
+            ],
+            "items": []
+          },
+          {
+            "title": "Connecting Callers to Your Team",
+            "paragraphs": [
+              "If a caller needs to speak with someone on your team, the call center can transfer calls or send messages according to your instructions. This ensures urgent requests or complex issues reach the right person quickly, while routine calls are handled efficiently."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can the call center answer in Spanish?\nYes, calls can be answered in both English and Spanish to serve a wider range of clients.\n### Will the call center give quotes or assign technicians?\nNo, it does not provide quotes or assign technicians. It focuses on answering calls and booking appointments."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-10",
+        "markdownArticle": {
+          "content": "# Contractor Call Center Solutions for Home Services\n\nA contractor call center is designed to handle the unique needs of home service businesses. It answers every forwarded call, follows your script, and ensures callers get the information and scheduling support they need, day or night. This keeps your business responsive and professional, even when you are busy on the job.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 10, 2026.\n\n## How Calls Are Answered and Managed\nWhen a call comes in, the contractor call center greets the caller using your business’s preferred script. The agent gathers essential details, answers basic questions, and provides information based on your guidelines. This ensures every caller receives consistent, accurate communication, no matter when they reach out.\n\n## Appointment Booking and Follow-Up\nThe call center can book appointments directly into your calendar or field service system, reducing back-and-forth and missed opportunities. After each call, a summary is logged and an SMS follow-up is sent to the customer, keeping everyone informed and reducing no-shows.\n\n## Connecting Callers to Your Team\nIf a caller needs to speak with someone on your team, the call center can transfer calls or send messages according to your instructions. This ensures urgent requests or complex issues reach the right person quickly, while routine calls are handled efficiently.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the call center answer in Spanish?\nYes, calls can be answered in both English and Spanish to serve a wider range of clients.\n### Will the call center give quotes or assign technicians?\nNo, it does not provide quotes or assign technicians. It focuses on answering calls and booking appointments.\n",
+          "sha256": "0f7e89b572b921984f85c7758dc583d81f250e6dce4c9f24fcf6f1d685533963",
+          "assets": []
+        },
+        "related": [
+          "answering-service-for-contractors",
+          "contractors-after-hours-answering"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "home-service-call-center-alternative",
+        "title": "How a Home Service Call Center Handles Your Calls",
+        "description": "Discover how a home service call center manages calls for contractors and service businesses, from booking appointments to follow-up.",
+        "navigationLabel": "Call management basics",
+        "eyebrow": "Busy phones during peak hours",
+        "lead": "A home service call center is designed to handle calls for businesses like plumbing, HVAC, cleaning, and landscaping. It ensures callers always reach a real person who follows your script, books appointments, and keeps your team updated. This guide explains what happens when your business uses a home service call center.",
+        "intro": "A home service call center is designed to handle calls for businesses like plumbing, HVAC, cleaning, and landscaping. It ensures callers always reach a real person who follows your script, books appointments, and keeps your team updated. This guide explains what happens when your business uses a home service call center.",
+        "sections": [
+          {
+            "title": "How Calls Are Answered and Routed",
+            "paragraphs": [
+              "When a customer calls your business, the call center answers promptly using your preferred greeting and follows your specific instructions. The agent collects key information such as the caller’s name, address, and service need. Depending on your workflow, calls can be routed to the right team member or handled entirely by the center for scheduling and follow-up."
+            ],
+            "items": []
+          },
+          {
+            "title": "Booking Appointments and Following Up",
+            "paragraphs": [
+              "The call center can book appointments directly into your calendar or field service software, reducing back-and-forth and saving you time. After each call, a summary is logged and a follow-up message is sent to the customer, confirming their appointment and providing next steps. This keeps your schedule organized and customers informed."
+            ],
+            "items": []
+          },
+          {
+            "title": "Handling Calls After Hours and in Spanish",
+            "paragraphs": [
+              "Calls are answered around the clock, including nights and weekends, so you never miss an opportunity. Spanish-speaking callers are supported, ensuring clear communication and a professional experience for every customer. The call center also manages overflow during busy periods, so your team stays focused on the work."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can the call center assign jobs to my technicians?\nNo, the call center does not assign technicians. It handles booking and caller communication only.\n### Will the call center provide quotes or pricing to callers?\nNo, the call center will not give quotes or prices. It will follow your script and direct callers to your team for pricing."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-10",
+        "markdownArticle": {
+          "content": "# How a Home Service Call Center Handles Your Calls\n\nA home service call center is designed to handle calls for businesses like plumbing, HVAC, cleaning, and landscaping. It ensures callers always reach a real person who follows your script, books appointments, and keeps your team updated. This guide explains what happens when your business uses a home service call center.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 10, 2026.\n\n## How Calls Are Answered and Routed\nWhen a customer calls your business, the call center answers promptly using your preferred greeting and follows your specific instructions. The agent collects key information such as the caller’s name, address, and service need. Depending on your workflow, calls can be routed to the right team member or handled entirely by the center for scheduling and follow-up.\n\n## Booking Appointments and Following Up\nThe call center can book appointments directly into your calendar or field service software, reducing back-and-forth and saving you time. After each call, a summary is logged and a follow-up message is sent to the customer, confirming their appointment and providing next steps. This keeps your schedule organized and customers informed.\n\n## Handling Calls After Hours and in Spanish\nCalls are answered around the clock, including nights and weekends, so you never miss an opportunity. Spanish-speaking callers are supported, ensuring clear communication and a professional experience for every customer. The call center also manages overflow during busy periods, so your team stays focused on the work.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the call center assign jobs to my technicians?\nNo, the call center does not assign technicians. It handles booking and caller communication only.\n### Will the call center provide quotes or pricing to callers?\nNo, the call center will not give quotes or prices. It will follow your script and direct callers to your team for pricing.\n",
+          "sha256": "c797805e266b372460905a0780915eacefcfd5c3e6c66ee5a9c64ab6aa7f1d70",
+          "assets": []
+        },
+        "related": [
+          "home-inspector-answering-service",
+          "home-automation-answering-service"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "dispatch-answering-service",
+        "title": "How a Dispatch Answering Service Handles Home Service Calls",
+        "description": "Learn how a dispatch answering service manages calls for home service businesses, books appointments, and supports your team around the clock.",
+        "navigationLabel": "Call Handling Process",
+        "eyebrow": "When every call matters",
+        "lead": "A dispatch answering service is designed to manage incoming calls for home service businesses, making sure every customer gets a professional response. Whether it’s booking appointments or connecting urgent calls to your team, these services help you stay organized and responsive, even when you’re out in the field or after hours.",
+        "intro": "A dispatch answering service is designed to manage incoming calls for home service businesses, making sure every customer gets a professional response. Whether it’s booking appointments or connecting urgent calls to your team, these services help you stay organized and responsive, even when you’re out in the field or after hours.",
+        "sections": [
+          {
+            "title": "How Calls Are Handled",
+            "paragraphs": [
+              "When a customer calls your business, a dispatch answering service answers the call using your preferred script and guidelines. The service gathers key details, such as the reason for the call and contact information. For routine requests, appointments can be booked directly. If the call is urgent or needs your attention, it can be transferred to your team."
+            ],
+            "items": []
+          },
+          {
+            "title": "Supporting Your Field Team",
+            "paragraphs": [
+              "A dispatch answering service can connect with your field service software, making it easier to log calls and keep your team updated. Call summaries, recordings, and transcripts help your staff stay informed about each customer’s needs. This integration keeps your operations running smoothly, even during high call volumes."
+            ],
+            "items": []
+          },
+          {
+            "title": "Managing Calls After Hours",
+            "paragraphs": [
+              "Home service businesses often receive calls outside of regular business hours. With a dispatch answering service, every call is answered promptly, and appointments can be booked anytime. Customers receive SMS follow-ups, so they know their request has been received and will be handled as soon as possible."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can the service assign technicians to jobs?\nNo, the service does not assign technicians. It books appointments and transfers urgent calls to your team.\n### Will callers get quotes or pricing information?\nNo, quotes or prices are not provided to callers. The service focuses on handling calls and booking appointments."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-10",
+        "markdownArticle": {
+          "content": "# How a Dispatch Answering Service Handles Home Service Calls\n\nA dispatch answering service is designed to manage incoming calls for home service businesses, making sure every customer gets a professional response. Whether it’s booking appointments or connecting urgent calls to your team, these services help you stay organized and responsive, even when you’re out in the field or after hours.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 10, 2026.\n\n## How Calls Are Handled\nWhen a customer calls your business, a dispatch answering service answers the call using your preferred script and guidelines. The service gathers key details, such as the reason for the call and contact information. For routine requests, appointments can be booked directly. If the call is urgent or needs your attention, it can be transferred to your team.\n\n## Supporting Your Field Team\nA dispatch answering service can connect with your field service software, making it easier to log calls and keep your team updated. Call summaries, recordings, and transcripts help your staff stay informed about each customer’s needs. This integration keeps your operations running smoothly, even during high call volumes.\n\n## Managing Calls After Hours\nHome service businesses often receive calls outside of regular business hours. With a dispatch answering service, every call is answered promptly, and appointments can be booked anytime. Customers receive SMS follow-ups, so they know their request has been received and will be handled as soon as possible.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the service assign technicians to jobs?\nNo, the service does not assign technicians. It books appointments and transfers urgent calls to your team.\n### Will callers get quotes or pricing information?\nNo, quotes or prices are not provided to callers. The service focuses on handling calls and booking appointments.\n",
+          "sha256": "2f7b19984e03304779778b1dfd50067dd47377cf571c693d84fab54df739aec8",
+          "assets": []
+        },
+        "related": [
+          "dispatch-fee-phone-script",
+          "appliance-repair-dispatch-software"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "home-inspection-call-center-alternative",
+        "title": "Home Inspection Call Center Solutions for Busy Teams",
+        "description": "A home inspection call center helps manage calls, book appointments, and support clients, so your team can focus on inspections.",
+        "navigationLabel": "Call handling essentials",
+        "eyebrow": "Clients want quick answers",
+        "lead": "A home inspection call center is designed to handle incoming calls for inspection businesses, ensuring no opportunity is missed. With dedicated call handling, appointment booking, and bilingual support, your callers get the help they need while your team stays focused on inspections and reporting.",
+        "intro": "A home inspection call center is designed to handle incoming calls for inspection businesses, ensuring no opportunity is missed. With dedicated call handling, appointment booking, and bilingual support, your callers get the help they need while your team stays focused on inspections and reporting.",
+        "sections": [
+          {
+            "title": "How Calls Are Answered and Managed",
+            "paragraphs": [
+              "When a client or agent calls your business, a call center answers using your script and protocols. This ensures every caller receives a consistent, professional greeting and the right information. Calls are handled in both English and Spanish, so you never miss a lead due to language barriers. All details are logged for your records."
+            ],
+            "items": []
+          },
+          {
+            "title": "Booking Inspections and Following Up",
+            "paragraphs": [
+              "The call center books appointments directly into your calendar, following your availability and specific instructions. After each call, a summary is logged and an SMS follow-up is sent to the client, confirming their appointment and providing any next steps. This keeps your schedule organized and your clients informed."
+            ],
+            "items": []
+          },
+          {
+            "title": "Seamless Connection to Your Team",
+            "paragraphs": [
+              "For urgent calls or special requests, the call center can transfer calls to your team members, ensuring nothing important slips through. Integration with field service software allows for smooth communication and accurate scheduling. Recordings and transcripts are available for quality assurance and training."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can the call center assign inspectors or give quotes?\nNo, the call center does not assign inspectors or provide pricing. It follows your script and books appointments only.\n### Is support available in Spanish for callers?\nYes, calls are answered in both English and Spanish to help all your clients feel comfortable and understood."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-10",
+        "markdownArticle": {
+          "content": "# Home Inspection Call Center Solutions for Busy Teams\n\nA home inspection call center is designed to handle incoming calls for inspection businesses, ensuring no opportunity is missed. With dedicated call handling, appointment booking, and bilingual support, your callers get the help they need while your team stays focused on inspections and reporting.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 10, 2026.\n\n## How Calls Are Answered and Managed\nWhen a client or agent calls your business, a call center answers using your script and protocols. This ensures every caller receives a consistent, professional greeting and the right information. Calls are handled in both English and Spanish, so you never miss a lead due to language barriers. All details are logged for your records.\n\n## Booking Inspections and Following Up\nThe call center books appointments directly into your calendar, following your availability and specific instructions. After each call, a summary is logged and an SMS follow-up is sent to the client, confirming their appointment and providing any next steps. This keeps your schedule organized and your clients informed.\n\n## Seamless Connection to Your Team\nFor urgent calls or special requests, the call center can transfer calls to your team members, ensuring nothing important slips through. Integration with field service software allows for smooth communication and accurate scheduling. Recordings and transcripts are available for quality assurance and training.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the call center assign inspectors or give quotes?\nNo, the call center does not assign inspectors or provide pricing. It follows your script and books appointments only.\n### Is support available in Spanish for callers?\nYes, calls are answered in both English and Spanish to help all your clients feel comfortable and understood.\n",
+          "sha256": "02e01b3d8976941ba987b159e73857e1b3416251b36a89042027ae0a7aa63d30",
+          "assets": []
+        },
+        "related": [
+          "home-inspector-answering-service",
+          "home-automation-answering-service"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "home-services-virtual-receptionist",
+        "title": "How a Home Services Virtual Receptionist Handles Calls",
+        "description": "A home services virtual receptionist answers and manages calls for your business, books appointments, and supports callers in English and Spanish.",
+        "navigationLabel": "Call handling workflow",
+        "eyebrow": "After-hours service requests",
+        "lead": "A home services virtual receptionist answers your business calls at any hour, following your script and rules. This service ensures every caller is greeted professionally, appointments are booked, and important details are logged. With support in both English and Spanish, your callers always reach a real solution, no matter when they call.",
+        "intro": "A home services virtual receptionist answers your business calls at any hour, following your script and rules. This service ensures every caller is greeted professionally, appointments are booked, and important details are logged. With support in both English and Spanish, your callers always reach a real solution, no matter when they call.",
+        "sections": [
+          {
+            "title": "How Calls Are Answered and Managed",
+            "paragraphs": [
+              "When a call comes in, the virtual receptionist greets the caller using your business’s script. They gather the necessary details, listen to the customer’s needs, and follow your rules for handling different types of requests. Every call is logged, and a summary is sent to your team so you stay updated."
+            ],
+            "items": []
+          },
+          {
+            "title": "Booking Appointments and Following Up",
+            "paragraphs": [
+              "The virtual receptionist can book appointments directly into your calendar or field service software. After each call, a follow-up SMS is sent to the caller to confirm the booking or provide next steps. This keeps your schedule full and your customers informed without extra effort from your team."
+            ],
+            "items": []
+          },
+          {
+            "title": "Seamless Communication for Your Business",
+            "paragraphs": [
+              "With support in both English and Spanish, callers always feel understood. For more advanced needs, calls can be transferred to your team, and transcripts or recordings are available for review. This creates a smooth, reliable experience for both your staff and your customers."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can the virtual receptionist assign technicians or give quotes?\nNo, they do not assign technicians or provide pricing information to callers.\n### Is support available in Spanish as well as English?\nYes, callers can be helped in both English and Spanish."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-10",
+        "markdownArticle": {
+          "content": "# How a Home Services Virtual Receptionist Handles Calls\n\nA home services virtual receptionist answers your business calls at any hour, following your script and rules. This service ensures every caller is greeted professionally, appointments are booked, and important details are logged. With support in both English and Spanish, your callers always reach a real solution, no matter when they call.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 10, 2026.\n\n## How Calls Are Answered and Managed\nWhen a call comes in, the virtual receptionist greets the caller using your business’s script. They gather the necessary details, listen to the customer’s needs, and follow your rules for handling different types of requests. Every call is logged, and a summary is sent to your team so you stay updated.\n\n## Booking Appointments and Following Up\nThe virtual receptionist can book appointments directly into your calendar or field service software. After each call, a follow-up SMS is sent to the caller to confirm the booking or provide next steps. This keeps your schedule full and your customers informed without extra effort from your team.\n\n## Seamless Communication for Your Business\nWith support in both English and Spanish, callers always feel understood. For more advanced needs, calls can be transferred to your team, and transcripts or recordings are available for review. This creates a smooth, reliable experience for both your staff and your customers.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the virtual receptionist assign technicians or give quotes?\nNo, they do not assign technicians or provide pricing information to callers.\n### Is support available in Spanish as well as English?\nYes, callers can be helped in both English and Spanish.\n",
+          "sha256": "bbbb99e9a1b8f369a91108d12420b1a3039092890723c773585f2aae6bd9c62e",
+          "assets": []
+        },
+        "related": [
+          "home-inspector-answering-service",
+          "home-automation-answering-service"
+        ]
+      }
+    },
+    {
+      "op": "add",
+      "record": {
+        "slug": "ai-receptionist-for-small-business-uk",
+        "title": "How an AI Receptionist for Small Business UK Handles Calls",
+        "description": "Discover how an AI receptionist for small business UK can manage calls, book appointments, and support callers in English and Spanish.",
+        "navigationLabel": "After-call follow-up",
+        "eyebrow": "Busy lines during peak times",
+        "lead": "For a small business in the UK, missing calls can mean lost opportunities. An AI receptionist for small business UK answers every call, follows your script, and handles appointments, so you never miss a customer—even outside regular hours.",
+        "intro": "For a small business in the UK, missing calls can mean lost opportunities. An AI receptionist for small business UK answers every call, follows your script, and handles appointments, so you never miss a customer—even outside regular hours.",
+        "sections": [
+          {
+            "title": "How Calls Are Answered and Routed",
+            "paragraphs": [
+              "When a customer calls your business, the AI receptionist answers promptly, using your chosen greeting and script. It can respond in English or Spanish, ensuring callers feel understood. If your plan includes it, important calls can be transferred directly to your team, so urgent matters reach the right person."
+            ],
+            "items": []
+          },
+          {
+            "title": "Appointment Booking and Call Summaries",
+            "paragraphs": [
+              "The AI receptionist books appointments directly into your calendar or field service software, following your rules. After each call, it sends a summary to your team, so you always know who called and why. This keeps your schedule organised and your team informed, without extra admin work."
+            ],
+            "items": []
+          },
+          {
+            "title": "Follow-Up and Communication",
+            "paragraphs": [
+              "After every call, the AI receptionist sends an SMS follow-up to the caller, confirming their appointment or next steps. For businesses using WhatsApp, messages can also be sent there. This helps keep customers engaged, reduces no-shows, and ensures everyone is on the same page."
+            ],
+            "items": []
+          },
+          {
+            "title": "Where Revo fits",
+            "paragraphs": [
+              "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)"
+            ],
+            "items": []
+          },
+          {
+            "title": "Frequently asked questions",
+            "paragraphs": [
+              "### Can the AI receptionist give quotes or prices over the phone?\nNo, it does not provide quotes or pricing information to callers. It can book appointments and answer questions within your script.\n### Does the AI receptionist assign technicians or jobs?\nNo, it does not assign technicians or dispatch jobs. It handles call answering, appointment booking, and follow-up."
+            ],
+            "items": []
+          }
+        ],
+        "faqs": [],
+        "takeaway": "Review Revo’s current plans",
+        "sourcePaths": [
+          "https://www.revoapp.ai/pricing"
+        ],
+        "template": "workflow",
+        "pricingVariant": "full",
+        "editorialDate": "2026-11-10",
+        "markdownArticle": {
+          "content": "# How an AI Receptionist for Small Business UK Handles Calls\n\nFor a small business in the UK, missing calls can mean lost opportunities. An AI receptionist for small business UK answers every call, follows your script, and handles appointments, so you never miss a customer—even outside regular hours.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 10, 2026.\n\n## How Calls Are Answered and Routed\nWhen a customer calls your business, the AI receptionist answers promptly, using your chosen greeting and script. It can respond in English or Spanish, ensuring callers feel understood. If your plan includes it, important calls can be transferred directly to your team, so urgent matters reach the right person.\n\n## Appointment Booking and Call Summaries\nThe AI receptionist books appointments directly into your calendar or field service software, following your rules. After each call, it sends a summary to your team, so you always know who called and why. This keeps your schedule organised and your team informed, without extra admin work.\n\n## Follow-Up and Communication\nAfter every call, the AI receptionist sends an SMS follow-up to the caller, confirming their appointment or next steps. For businesses using WhatsApp, messages can also be sent there. This helps keep customers engaged, reduces no-shows, and ensures everyone is on the same page.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the AI receptionist give quotes or prices over the phone?\nNo, it does not provide quotes or pricing information to callers. It can book appointments and answer questions within your script.\n### Does the AI receptionist assign technicians or jobs?\nNo, it does not assign technicians or dispatch jobs. It handles call answering, appointment booking, and follow-up.\n",
+          "sha256": "49682f3cbfcb5b3bb80fa1d214298ba1f86b4d3364a8c2368438606d4ec26b34",
+          "assets": []
+        },
+        "related": [
+          "small-business-crm-selection",
+          "small-business-technology-priorities"
+        ]
+      }
+    },
+    {
+      "op": "update",
+      "record": {
+        "template": "workflow",
+        "pricingVariant": "full",
+        "slug": "remodeling-answering",
+        "title": "Remodeling Answering Service for Project Calls and Inquiries",
+        "description": "A remodeling answering service helps capture every project inquiry, appointment request, and update call, so you never miss an opportunity.",
+        "navigationLabel": "Project Calls",
+        "eyebrow": "For Remodeling Businesses",
+        "lead": "A remodeling answering service can handle calls that start with a kitchen idea, a bathroom project inquiry, or a question about ongoing work. While you’re meeting clients or working on-site, the service collects the details your office needs, so you stay connected to every opportunity and keep projects moving smoothly.",
+        "intro": "A remodeling answering service can handle calls that start with a kitchen idea, a bathroom project inquiry, or a question about ongoing work. While you’re meeting clients or working on-site, the service collects the details your office needs, so you stay connected to every opportunity and keep projects moving smoothly.\n\nSeparate the sales conversation from project administration at intake. New inquiries need scope and planning context; existing customers need their question connected to the right project and authorized person. Neither should leave the call with an unapproved commitment.",
+        "sourcePaths": [
+          "ai-receptionist-demo.html",
+          "pricing.html",
+          "services.html",
+          "https://www.revoapp.ai/ai-receptionist-demo.html",
+          "https://www.revoapp.ai/pricing.html"
+        ],
+        "sections": [
+          {
+            "title": "A homeowner is exploring a remodel",
+            "paragraphs": [
+              "Capture the rooms or work involved, property location and stage of planning for a consultation review."
+            ],
+            "items": []
+          },
+          {
+            "title": "A caller wants to discuss an estimate",
+            "paragraphs": [
+              "Identify whether there is already a quote or visit so the office can find the relevant record."
+            ],
+            "items": []
+          },
+          {
+            "title": "An existing customer requests a change",
+            "paragraphs": [
+              "Record the request without accepting additional work, a revised price or a new completion date."
+            ],
+            "items": []
+          },
+          {
+            "title": "Information to collect",
+            "paragraphs": [],
+            "items": [
+              "Customer name and callback number",
+              "Property address and contact role",
+              "Rooms or project scope described by the caller",
+              "Planning, estimate or active-project stage",
+              "Existing project or estimate reference",
+              "Preferred consultation period and follow-up owner"
+            ]
+          },
+          {
+            "title": "Give each request a defined next step",
+            "paragraphs": [
+              "Define the remodeling work your business accepts and who owns new-project inquiries versus existing-job questions.",
+              "Collect the requested scope without presenting it as a verified design or fixed-price package.",
+              "Have the office review the summary and confirm a consultation or next action. Any appointment booking must use a supported configuration with the correct appointment type."
+            ],
+            "items": []
+          },
+          {
+            "title": "Set accurate expectations",
+            "paragraphs": [
+              "Intake cannot approve a design, permit, change order, project price or completion date. Do not assume a connection to a remodeling project-management system without verifying the actual workflow."
+            ],
+            "items": [],
+            "sources": [
+              {
+                "label": "Revo: answering workflow and supported setup",
+                "href": "https://www.revoapp.ai/ai-receptionist-demo.html"
+              },
+              {
+                "label": "Revo: current plans and feature boundaries",
+                "href": "https://www.revoapp.ai/pricing.html"
+              }
+            ]
+          }
+        ],
+        "faqs": [
+          {
+            "q": "Can the answering flow collect a project budget?",
+            "a": "It can ask an approved question about the caller’s stated budget. That information is not an estimate or a promise the work can be done for that amount."
+          },
+          {
+            "q": "Can existing customers request scope changes?",
+            "a": "They can describe the request. Acceptance and any effect on cost or schedule remain with your authorized team."
+          },
+          {
+            "q": "Can it book a remodeling consultation?",
+            "a": "Only through a supported appointment workflow your office has configured and reviewed. Otherwise capture the preferred next step for staff follow-up."
+          }
+        ],
+        "takeaway": "Set your answering workflow around the coverage, questions and next steps your business can support.",
+        "related": [
+          "lead-qualification",
+          "appointment-booking"
+        ],
+        "editorialDate": "2026-11-10"
+      }
+    }
+  ]
+}

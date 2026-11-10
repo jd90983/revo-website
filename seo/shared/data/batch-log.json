@@ -1453,5 +1453,44 @@
       "added answering-service-for-construction as draft",
       "approved answering-service-for-construction"
     ]
+  },
+  {
+    "batchId": "2026-11-10-auto-14-pages",
+    "batchHash": "sha256:782c6c20940d53f0dd9a9306cfc8cb1970bc0eeeb9dcab2f7715bff7a02f0f1d",
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-10/2026-11-10-auto-14-pages-approved-public-copy.txt SHA256 67892d2fffbd93433508181a2aeee49c357e1b274e6ff034f24a2708c1685dcd; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-111164-keywords@2026-11-10T19:07:13.367Z) and copy approved in Slack (message n8n-exec-111164-copy@2026-11-10T19:08:41.773Z) on November 10, 2026; implementation by the Revo SEO automation"
+    },
+    "appliedAt": "2026-11-10",
+    "changes": [
+      "added ai-receptionist-for-small-businesses as draft",
+      "approved ai-receptionist-for-small-businesses",
+      "added live-answering-service-for-small-business as draft",
+      "approved live-answering-service-for-small-business",
+      "added 24-7-live-answering-service as draft",
+      "approved 24-7-live-answering-service",
+      "added after-hours-answering-service-for-small-business as draft",
+      "approved after-hours-answering-service-for-small-business",
+      "updated overflow-answering; back to draft until re-approved",
+      "approved overflow-answering",
+      "added roofing-call-center-alternative as draft",
+      "approved roofing-call-center-alternative",
+      "added roofer-answering-service as draft",
+      "approved roofer-answering-service",
+      "added contractor-call-center-alternative as draft",
+      "approved contractor-call-center-alternative",
+      "added home-service-call-center-alternative as draft",
+      "approved home-service-call-center-alternative",
+      "added dispatch-answering-service as draft",
+      "approved dispatch-answering-service",
+      "added home-inspection-call-center-alternative as draft",
+      "approved home-inspection-call-center-alternative",
+      "added home-services-virtual-receptionist as draft",
+      "approved home-services-virtual-receptionist",
+      "added ai-receptionist-for-small-business-uk as draft",
+      "approved ai-receptionist-for-small-business-uk",
+      "updated remodeling-answering; back to draft until re-approved",
+      "approved remodeling-answering"
+    ]
   }
 ]
