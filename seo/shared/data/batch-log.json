@@ -1438,5 +1438,20 @@
       "added pest-control-answering-service as draft",
       "approved pest-control-answering-service"
     ]
+  },
+  {
+    "batchId": "2026-11-10-auto-2-pages",
+    "batchHash": "sha256:e74f7d6ce7023d716d4debf968a290d9db03ad81837540b70f6602867e788e1e",
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-10/2026-11-10-auto-2-pages-approved-public-copy.txt SHA256 183f813348b3cacaa71a75a8b5db0319ec1e681f3485924aae86075c79ba2b38; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-110958-keywords@2026-11-10T16:57:52.503Z) and copy approved in Slack (message n8n-exec-110958-copy@2026-11-10T16:58:44.978Z) on November 10, 2026; implementation by the Revo SEO automation"
+    },
+    "appliedAt": "2026-11-10",
+    "changes": [
+      "added 24-7-answering-service as draft",
+      "approved 24-7-answering-service",
+      "added answering-service-for-construction as draft",
+      "approved answering-service-for-construction"
+    ]
   }
 ]
