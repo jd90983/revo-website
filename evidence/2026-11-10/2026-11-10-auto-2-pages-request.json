@@ -1,0 +1,42 @@
+{
+  "batchId": "2026-11-10-auto-2-pages",
+  "date": "2026-11-10",
+  "approver": "Jorge Perez (owner)",
+  "slack": {
+    "keywordsTs": "n8n-exec-110958-keywords@2026-11-10T16:57:52.503Z",
+    "copyTs": "n8n-exec-110958-copy@2026-11-10T16:58:44.978Z"
+  },
+  "comments": {
+    "keywords": "",
+    "copy": ""
+  },
+  "pages": [
+    {
+      "op": "add",
+      "slug": "24-7-answering-service",
+      "keyword": "24 7 answering service",
+      "title": "How a 24 7 Answering Service Handles Home Service Calls",
+      "description": "A 24 7 answering service ensures every call is answered, appointments are booked, and customer needs are logged, day or night.",
+      "navigationLabel": "Always available support",
+      "eyebrow": "Missed calls after business hours",
+      "related": [],
+      "markdown": "# How a 24 7 Answering Service Handles Home Service Calls\n\nA 24 7 answering service is crucial for home service businesses that receive calls outside of regular hours. It ensures every caller is greeted professionally, appointments are booked based on your rules, and no opportunity is missed, no matter the time of day.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 10, 2026.\n\n## How Calls Are Handled at Any Hour\nCalls forwarded to a 24 7 answering service are answered by a virtual receptionist following your business script. Whether it’s late at night or early morning, callers are greeted in English or Spanish and guided through your process. The receptionist gathers the necessary details and reassures customers their needs are being addressed.\n\n## Booking Appointments and Following Up\nOnce the caller’s information is collected, the service books appointments directly into your calendar or field service software if connected. Every caller receives an SMS follow-up confirming their appointment or next steps. This keeps your schedule organized and helps reduce no-shows, even when you are off the clock.\n\n## Keeping You Informed with Call Summaries\nAfter each call, a summary is logged and sent to you or your team, so you always know what your customers need. For businesses using advanced features, recordings and transcripts are available. This transparency helps you stay on top of customer requests and ensures every call is handled professionally.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the answering service transfer calls to my team?\nYes, call transfers are available with certain service options, allowing you to speak directly with important callers.\n### Does the service provide quotes or assign technicians?\nNo, the service does not give quotes or assign technicians. It focuses on answering calls, booking appointments, and logging details.\n",
+      "approvedSha256": "417237b861a1a0de59b1a6edd15364c7fb0a41ab43bf2d62c7cca123d3538504"
+    },
+    {
+      "op": "add",
+      "slug": "answering-service-for-construction",
+      "keyword": "answering service for construction",
+      "title": "Answering Service for Construction: Streamline Your Calls",
+      "description": "An answering service for construction ensures every call is handled, appointments are booked, and messages reach your team without missing a beat.",
+      "navigationLabel": "Bilingual call handling",
+      "eyebrow": "Busy on the job site",
+      "related": [
+        "construction-receptionist"
+      ],
+      "markdown": "# Answering Service for Construction: Streamline Your Calls\n\nUsing an answering service for construction helps you stay connected with clients, subcontractors, and suppliers even when you are on-site or in meetings. Every call is answered, appointments are scheduled, and important messages are relayed to your team, so you never miss out on new business or critical updates.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 10, 2026.\n\n## Never Miss a Call, Even on the Job\nConstruction work often means you are away from the office and unable to answer the phone. An answering service for construction ensures that every call is answered, whether it’s a potential client, a supplier with a delivery update, or a team member needing support. This keeps your projects moving and your business growing.\n\n## Efficient Appointment Booking and Summaries\nWhen a caller needs to schedule a site visit or consultation, the answering service can book appointments directly into your calendar. After each call, you receive a summary so you know exactly what was discussed. This reduces back-and-forth and keeps your schedule organized, even during your busiest seasons.\n\n## Seamless Communication for Your Whole Team\nFor larger construction businesses, call transfers ensure urgent calls reach the right person. Integration with field service software and bilingual support means your team and clients can communicate clearly, whether they speak English or Spanish. Every call is logged for accountability and follow-up.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the answering service handle calls in Spanish?\nYes, calls are answered in both English and Spanish to support your diverse client base.\n### Will the service give quotes or assign jobs?\nNo, the service does not provide quotes or assign technicians. It focuses on booking and relaying messages.\n",
+      "approvedSha256": "001f0b47dae86db66edee3b64394ca93a184a6033eb77d25ad4b8a37d74d26a6"
+    }
+  ],
+  "copySha256": "183f813348b3cacaa71a75a8b5db0319ec1e681f3485924aae86075c79ba2b38"
+}
