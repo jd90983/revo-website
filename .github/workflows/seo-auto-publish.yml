@@ -15,7 +15,8 @@
 #   SEO_BOT_TOKEN       fine-grained token for this repo (contents, pull requests: write).
 #                       A token, not GITHUB_TOKEN, so seo-ci runs on the PR.
 #   N8N_REPORT_URL      n8n webhook that posts the result to Slack and the Sheet.
-#   N8N_REPORT_TOKEN    shared secret sent in the X-Report-Token header.
+#   (no report secret) the report is signed with this run's GitHub OIDC token
+#                       (audience revo-seo-report); n8n verifies repo, workflow and main.
 #   VERCEL_AUTOMATION_BYPASS_SECRET (optional) to smoke-test the protected Preview.
 
 name: SEO auto publish
@@ -32,6 +33,7 @@ on:
 
 permissions:
   contents: read
+  id-token: write   # only to sign the n8n report with a GitHub OIDC token
 
 concurrency:
   group: seo-auto-publish
@@ -216,7 +218,6 @@ jobs:
         if: always()
         env:
           N8N_REPORT_URL: ${{ secrets.N8N_REPORT_URL }}
-          N8N_REPORT_TOKEN: ${{ secrets.N8N_REPORT_TOKEN }}
           STATUS: ${{ job.status }}
           PR_URL: ${{ steps.pr.outputs.url }}
           MERGE_SHA: ${{ steps.merge.outputs.sha }}
@@ -234,4 +235,7 @@ jobs:
             --arg run "$RUN_URL" --argjson pages "$pages" \
             '{status:$status,batchId:$batchId,date:$date,dryRun:($dryRun=="true"),pr:$pr,mergeSha:$sha,deployment:$deployment,releasePr:$releasePr,run:$run,pages:$pages}' > report.json
           cat report.json
-          curl -fsS -X POST -H "Content-Type: application/json" -H "X-Report-Token: $N8N_REPORT_TOKEN" --data @report.json "$N8N_REPORT_URL"
+          oidc=$(curl -fsS -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=revo-seo-report" | jq -r .value)
+          [[ -n "$oidc" && "$oidc" != "null" ]] || { echo "could not get an OIDC token for the report"; exit 1; }
+          echo "::add-mask::$oidc"
+          curl -fsS -X POST -H "Content-Type: application/json" -H "Authorization: Bearer $oidc" --data @report.json "$N8N_REPORT_URL"
