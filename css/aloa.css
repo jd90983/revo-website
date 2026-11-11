@@ -1,0 +1,228 @@
+/* /aloa campaign page (Keynotes, ALOA magazine). Mobile first. */
+.aloa-page {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+.aloa-container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.aloa-hero {
+  padding: 112px 0 56px;
+  background:
+    radial-gradient(120% 70% at 50% 0%, rgba(250, 137, 50, 0.28) 0%, rgba(0, 0, 0, 0) 70%),
+    var(--color-black);
+  text-align: center;
+}
+
+.aloa-eyebrow,
+.aloa-pricing .pricing-section-eyebrow {
+  display: inline-block;
+  margin: 0 0 16px;
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  font-weight: var(--font-semibold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.aloa-hero h1 {
+  margin: 0 auto 16px;
+  max-width: 14ch;
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 40px;
+  font-weight: var(--font-bold);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.aloa-lead {
+  margin: 0 auto 32px;
+  max-width: 32ch;
+  color: rgba(255, 255, 255, 0.86);
+  font-family: var(--font-body);
+  font-size: var(--text-large);
+  line-height: var(--line-height-relaxed);
+}
+
+.aloa-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.aloa-actions .aloa-cta {
+  width: 100%;
+  max-width: 360px;
+  min-height: 52px;
+  justify-content: center;
+}
+
+.aloa-call {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 0 8px;
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: var(--text-regular);
+  font-weight: var(--font-medium);
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 4px;
+}
+
+.aloa-call:hover,
+.aloa-call:focus-visible {
+  color: var(--color-primary);
+}
+
+.aloa-nowrap {
+  white-space: nowrap;
+  margin-left: 0.3em;
+}
+
+.aloa-section {
+  padding: 56px 0;
+  border-top: 1px solid var(--color-white-10);
+}
+
+.aloa-section h2,
+.aloa-final h2,
+.aloa-pricing h2 {
+  margin: 0 0 24px;
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: 30px;
+  font-weight: var(--font-bold);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.aloa-features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.aloa-features li {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 18px 18px 18px 52px;
+  position: relative;
+  border: 1px solid var(--color-white-10);
+  border-radius: 14px;
+  background: rgba(18, 20, 24, 0.78);
+}
+
+.aloa-features li::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-primary)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cpath d='M5.5 9.2l2.2 2.2 4.8-4.8' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E")
+    center / 14px no-repeat;
+}
+
+.aloa-features strong {
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: var(--text-regular);
+  font-weight: var(--font-semibold);
+}
+
+.aloa-features span {
+  color: rgba(255, 255, 255, 0.72);
+  font-family: var(--font-body);
+  font-size: var(--text-small);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Pricing reuses the /pricing cards; only spacing is adjusted here. */
+.aloa-pricing.pricing-page {
+  padding: 56px 20px;
+  border-top: 1px solid var(--color-white-10);
+}
+
+.aloa-pricing .pricing-header {
+  margin-bottom: 28px;
+}
+
+.aloa-pricing .pricing-card-cta {
+  min-height: 48px;
+}
+
+.aloa-faqs {
+  border-top: 1px solid var(--color-white-10);
+}
+
+.aloa-final {
+  padding: 56px 0 64px;
+  border-top: 1px solid var(--color-white-10);
+  text-align: center;
+}
+
+.aloa-fine {
+  margin: 28px 0 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: var(--font-body);
+  font-size: var(--text-tiny);
+}
+
+@media (min-width: 768px) {
+  .aloa-hero {
+    padding: 160px 0 96px;
+  }
+
+  .aloa-hero h1 {
+    font-size: 64px;
+  }
+
+  .aloa-actions {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .aloa-actions .aloa-cta {
+    width: auto;
+  }
+
+  .aloa-section,
+  .aloa-final {
+    padding: 88px 0;
+  }
+
+  .aloa-section h2,
+  .aloa-final h2,
+  .aloa-pricing h2 {
+    font-size: 42px;
+  }
+
+  .aloa-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .aloa-pricing.pricing-page {
+    padding: 88px var(--page-padding);
+  }
+}
+
+@media (min-width: 1024px) {
+  .aloa-features {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
