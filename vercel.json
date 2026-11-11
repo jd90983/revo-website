@@ -2401,6 +2401,10 @@
   ],
   "rewrites": [
     {
+      "source": "/aloa",
+      "destination": "/aloa.html"
+    },
+    {
       "source": "/sms-consent",
       "destination": "/sms-consent.html"
     },
@@ -4405,6 +4409,24 @@
         {
           "key": "X-Robots-Tag",
           "value": "noindex"
+        }
+      ]
+    },
+    {
+      "source": "/aloa",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/aloa.html",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
         }
       ]
     }
