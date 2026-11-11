@@ -3,12 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PFJBFLVF');</script>
+<!-- Google Tag Manager, Meta Pixel: events queue at once; the tag scripts
+     load on the first tap, scroll or key press, or 3.5 s after the page loads,
+     so they do not block the first paint on mobile. -->
+<script>
+(function (w, d) {
+  w.dataLayer = w.dataLayer || [];
+  w.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+  var loaded = false;
+  function add(src) {
+    var j = d.createElement('script'); j.async = true; j.src = src;
+    d.head.appendChild(j);
+  }
+  function loadTags() {
+    if (loaded) return;
+    loaded = true;
+    add('https://www.googletagmanager.com/gtm.js?id=GTM-PFJBFLVF');
+    add('https://connect.facebook.net/en_US/fbevents.js');
+  }
+  ['pointerdown', 'touchstart', 'scroll', 'keydown'].forEach(function (e) {
+    w.addEventListener(e, loadTags, { once: true, passive: true });
+  });
+  w.addEventListener('load', function () { setTimeout(loadTags, 3500); });
+  w.revoLoadTags = loadTags;
+})(window, document);
+</script>
 <!-- End Google Tag Manager -->
   <!-- Primary Meta Tags -->
   <title>Revo for Keynotes Readers: 50% Off Your First 3 Months</title>
@@ -35,24 +54,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="css/aloa.css">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend+Deca:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend+Deca:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lexend+Deca:wght@400;500;600;700&display=swap" rel="stylesheet"></noscript>
 
-<!-- Meta Pixel Code -->
+<!-- Meta Pixel Code (stub; fbevents.js is loaded by revoLoadTags above) -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+!function(f){if(f.fbq)return;var n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}(window);
 fbq('init', '2435811520564771');
 fbq('track', 'PageView');
-document.addEventListener('click', function (e) {
-  var a = e.target.closest && e.target.closest('a[href*="apps.apple.com"]');
-  if (a && window.fbq) fbq('trackCustom', 'AppStoreClick');
-}, true);
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=2435811520564771&ev=PageView&noscript=1"
