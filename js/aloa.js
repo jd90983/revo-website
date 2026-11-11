@@ -61,6 +61,24 @@
     });
   });
 
+  // The shared header's "Get Started" buttons scroll to a form that this page
+  // does not have; here they open the free trial with the campaign instead.
+  var trialUrl = new URL('/free-test', window.location.origin);
+  Object.keys(utm).forEach(function (key) { trialUrl.searchParams.set(key, utm[key]); });
+  var headerButtons = document.querySelectorAll('.navbar-actions .btn-primary, .mobile-menu-actions .btn-register');
+  Array.prototype.forEach.call(headerButtons, function (button) {
+    button.addEventListener('click', function () {
+      track('aloa_trial_click', {
+        plan: 'not_selected',
+        cta_placement: 'header',
+        utm_source: utm.utm_source,
+        utm_medium: utm.utm_medium,
+        utm_campaign: utm.utm_campaign
+      });
+      window.location.href = trialUrl.pathname + trialUrl.search;
+    });
+  });
+
   var callLinks = document.querySelectorAll('[data-aloa-call]');
   Array.prototype.forEach.call(callLinks, function (link) {
     link.addEventListener('click', function () {
