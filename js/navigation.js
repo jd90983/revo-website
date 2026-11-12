@@ -2,6 +2,23 @@
    Navigation - Mobile Menu & Smooth Scroll
    ============================================ */
 
+// Remember the ad tags (UTM and click IDs) of the landing URL for the rest of the visit.
+// The free-trial and free-calls pages on this domain read sessionStorage "revo_attribution",
+// so a visitor who lands here from an ad and then signs up there is still attributed to the ad.
+// Runs on every page that loads this script; a page without tags keeps what was saved before.
+(function rememberLandingAttribution() {
+  try {
+    var keys = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'gclid', 'fbclid', 'msclkid', 'li_fat_id'];
+    var params = new URLSearchParams(window.location.search);
+    var fresh = {};
+    keys.forEach(function (key) {
+      var value = params.get(key);
+      if (value) fresh[key] = value.slice(0, 255);
+    });
+    if (Object.keys(fresh).length) sessionStorage.setItem('revo_attribution', JSON.stringify(fresh));
+  } catch (e) { /* storage blocked: attribution is optional */ }
+})();
+
 // Mobile Menu Toggle - Full Screen Overlay
 document.addEventListener('DOMContentLoaded', () => {
   const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
