@@ -71,6 +71,21 @@ const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]
 assert.equal(new Set(locs).size, locs.length, 'Duplicate sitemap URLs');
 const seoLocs = locs.filter(loc => loc === origin + '/ai-answering-service' || loc.startsWith(origin + '/ai-answering-service/'));
 assert.deepEqual([...seoLocs].sort(), routes.map(route => origin + route).sort(), 'Sitemap guide URLs differ from the approved routes');
+// 4b. Typed sitemaps (AGENT-12): together they hold exactly the URLs of sitemap.xml, each once, and the index lists them.
+{
+  const { SITEMAP_TYPES, sitemapType } = await import(new URL('../../shared/lib/sitemap-types.mjs', import.meta.url));
+  const typedLocs = [];
+  const indexXml = await readFile(join(output, 'sitemap-index.xml'), 'utf8');
+  for (const type of SITEMAP_TYPES) {
+    let xml;
+    try { xml = await readFile(join(output, `sitemap-${type}.xml`), 'utf8'); } catch { continue; }
+    const these = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => match[1]);
+    assert.ok(these.every(loc => sitemapType(loc, origin) === type), 'Wrong type in sitemap-' + type);
+    assert.ok(indexXml.includes(`<loc>${origin}/sitemap-${type}.xml</loc>`), 'Sitemap index misses ' + type);
+    typedLocs.push(...these);
+  }
+  assert.deepEqual([...typedLocs].sort(), [...locs].sort(), 'Typed sitemaps differ from sitemap.xml');
+}
 
 // 5. Homepage navigation is generated from the same approved set, capped.
 const home = await readFile(join(output, 'index.html'), 'utf8');
