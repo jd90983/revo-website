@@ -6,6 +6,7 @@
 // ============================================
 
 import { createClient } from '@supabase/supabase-js';
+import { attributionForStorage } from './_quote-attribution.js';
 
 // ============================================
 // SECURITY CONFIGURATION
@@ -504,6 +505,8 @@ export default async function handler(req, res) {
           calls_per_week: sanitizedData.callsPerWeek,
           source: 'website',
           status: 'new',
+          // First-touch marketing attribution (synced to the analytics engine)
+          attribution: attributionForStorage(attribution),
           // Country/Geo information
           country_code: country,
           country_name: countryName,
