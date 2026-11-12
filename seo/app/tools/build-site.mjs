@@ -42,6 +42,8 @@ const sitemapPath=join(stage,'sitemap.xml');let sitemap=await readFile(sitemapPa
 const contentDates=new Map(pages.filter(page=>page.editorialDate).map(page=>[landingPath(page),page.editorialDate]));
 for(const route of routes){const url=origin+route;const date=contentDates.get(route);if(!sitemap.includes('<loc>'+url+'</loc>'))sitemap=sitemap.replace('</urlset>',`  <url><loc>${url}</loc>${date?'<lastmod>'+date+'</lastmod>':''}</url>\n</urlset>`);}
 await writeFile(sitemapPath,sitemap);
+// AGENT-12: the same URLs split by page type (sitemap.xml stays the complete list), so Search Console reports indexing per type.
+{const {sitemapsByType}=await import(pathToFileURL(join(shared,'lib/sitemap-types.mjs')));for(const [file,body] of sitemapsByType(sitemap,origin))await writeFile(join(stage,file),body);}
 const indexPath=join(stage,'index.html');let index=await readFile(indexPath,'utf8');if(index.includes('data-revo-call-planning'))throw Error('Unexpected preexisting generated nav');const pos=index.lastIndexOf('</footer>');if(pos<0)throw Error('Homepage footer missing');const escape=s=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');const nav='<nav data-revo-call-planning aria-label="Call planning" style="padding:24px 0;display:flex;gap:20px;flex-wrap:wrap">'+homeNavigation(registry,config).map(link=>`<a href="${link.href}">${escape(link.label)}</a>`).join('')+'</nav>';await writeFile(indexPath,index.slice(0,pos)+nav+index.slice(pos));
 const all=await walk(stage);
 const {verifyPublicAssetBoundary}=await import(pathToFileURL(join(shared,'lib/publication-boundary.mjs')));
