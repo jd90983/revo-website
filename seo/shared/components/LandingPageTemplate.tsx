@@ -5,6 +5,7 @@ import {GuideTable} from './GuideTable';
 import type {ReviewPage, PageMode} from "@/lib/review-cohort";
 import {relatedPagesFor, reviewPath} from "@/lib/review-cohort";
 import {ReviewScenarioCalculator} from "./ReviewScenarioCalculator";
+import {RoiCalculator} from "./RoiCalculator";
 import {FunnelCTA} from "./FunnelCTA";
 import {OfficialPricing, PricingSummary} from "./OfficialPricing";
 
@@ -43,6 +44,7 @@ export function LandingPageTemplate({page,mode="review",reviewForm,acquisitionEn
     </section>)}
     {page.sourcePaths.some(path => path.startsWith("https://")) ? <section className="revo-section revo-light"><div className="revo-container"><h2>Sources and service details.</h2><p>These guides use Revo’s published service descriptions and shared plan data. Confirm the current offer and supported setup before routing customer calls.</p><ul>{page.sourcePaths.filter(path => path.startsWith("https://")).map(path => <li key={path}><a href={publicUrl(path)}>{new URL(path).hostname.replace(/^www\./, "") + " — " + new URL(path).pathname}</a></li>)}</ul></div></section> : null}
     {page.pricingVariant === "full" ? <OfficialPricing mode={mode} acquisitionEnabled={acquisitionEnabled} /> : !page.calculator ? <PricingSummary context={pricingContext} /> : null}
+    {page.calculator ? null : <RoiCalculator />}
     <section className="revo-section revo-faq" id="faq"><div className="revo-container revo-faq-grid"><div><h2>Questions worth asking.</h2><p>Review the details before choosing how your business handles calls.</p><a className="revo-button" href="#contact">Check the next step</a></div><div className="revo-accordion">{page.faqs.map(faq => <details key={faq.q}><summary>{faq.q}<span className="revo-chevron" aria-hidden="true" /></summary><p>{faq.a}</p></details>)}</div></div></section>
     {page.calculator ? <PricingSummary context={pricingContext} /> : null}
     <section className="revo-section revo-gradient"><div className="revo-container"><h2>{mode === "review" ? <>Review the flow before<br className="revo-desktop-break" /> routing real calls.</> : <>Choose the next step<br className="revo-desktop-break" /> for your calls.</>}</h2><p>{mode === "review" ? "Use the local test flow to review navigation. It does not activate an account, send a real lead or take a payment." : acquisitionEnabled ? "Explore Revo’s current setup flow and confirm the call-handling plan that fits your business." : "Compare plan features and the practical considerations for handling your calls."}</p><FunnelCTA mode={mode} acquisitionEnabled={acquisitionEnabled} placement={page.slug + "-footer"} className="revo-button">{mode === "review" ? "Preview test flow" : "Get Started"}</FunnelCTA></div></section>
