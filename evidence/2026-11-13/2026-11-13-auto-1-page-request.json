@@ -1,0 +1,31 @@
+{
+  "batchId": "2026-11-13-auto-1-page",
+  "date": "2026-11-13",
+  "approver": "Jorge Perez (owner)",
+  "slack": {
+    "keywordsTs": "n8n-exec-115610-keywords@2026-11-13T19:37:59.528Z",
+    "copyTs": "n8n-exec-115610-copy@2026-11-13T19:40:34.131Z"
+  },
+  "comments": {
+    "keywords": "",
+    "copy": ""
+  },
+  "pages": [
+    {
+      "op": "add",
+      "slug": "automated-answering-service-for-small-business",
+      "keyword": "automated answering service for small business",
+      "title": "Automated Answering Service for Small Business Success",
+      "description": "Discover how an automated answering service for small business can professionally handle calls, book appointments, and support your team.",
+      "navigationLabel": "Always-on call coverage",
+      "eyebrow": "No one available to answer",
+      "related": [
+        "automated-phone-answering-system",
+        "ai-receptionist-for-small-businesses"
+      ],
+      "markdown": "# Automated Answering Service for Small Business Success\n\nAn automated answering service for small business can handle every call your company receives, day or night. With professional scripts and reliable follow-up, you never miss a customer, even when your team is busy or unavailable. This approach helps you capture more opportunities and keep your operations running smoothly.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 13, 2026.\n\n## How Calls Are Handled for Home Service Businesses\nWhen a customer calls your business, the automated answering service responds right away, following your specific script and instructions. It can answer common questions, collect caller details, and ensure that every inquiry is handled with care. This keeps your business looking professional and responsive, no matter the time or day.\n\n## Booking Appointments and Following Up\nThe service can schedule appointments directly into your calendar, based on your availability and rules. After each call, it sends a follow-up SMS to confirm the details with the customer. Every call is logged with a summary, so you always know what was discussed and can track customer needs easily.\n\n## Bilingual Support and Seamless Handoffs\nAutomated answering services can handle calls in both English and Spanish, making your business accessible to a wider range of customers. For more complex needs or urgent issues, calls can be transferred to your team, ensuring customers always reach the right person when needed.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the service provide quotes or pricing to callers?\nNo, the service does not give quotes or pricing information to callers. It focuses on booking and information collection.\n### Will the service assign technicians or dispatch jobs?\nNo, technician assignment and dispatch are not handled. The service manages calls, bookings, and transfers only.\n",
+      "approvedSha256": "7ed82c78273af54c20461dab9975ceb3f3a761db1c059edb39b5dff36bee3567"
+    }
+  ],
+  "copySha256": "7ed82c78273af54c20461dab9975ceb3f3a761db1c059edb39b5dff36bee3567"
+}
