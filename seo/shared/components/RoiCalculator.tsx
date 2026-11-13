@@ -31,7 +31,7 @@ export function RoiCalculator() {
     try {
       const r = roiScenario(Number(calls), Number(pct), Number(job), plan);
       out = `Potential job value: ${usd(r.value)} a month. ${r.plan.name} is ${usd(r.plan.regular)}/mo (${usd(r.plan.launch)}/mo for the first 3 paid months). ` +
-        (r.jobsToCover === null ? "" : `At your job value, ${r.jobsToCover} booked job${r.jobsToCover === 1 ? "" : "s"} a month cover the regular plan price.`);
+        (r.jobsToCover === null ? "" : `At your job value, ${r.jobsToCover} booked job${r.jobsToCover === 1 ? " a month covers" : "s a month cover"} the regular plan price.`);
     } catch {
       out = "Use a whole number of missed calls, a percentage from 0 to 100 and a job value of 0 or more.";
     }
