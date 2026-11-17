@@ -1,0 +1,27 @@
+{
+  "batchId": "2026-11-17-auto-1-page",
+  "date": "2026-11-17",
+  "approver": "Jorge Perez (owner)",
+  "slack": {
+    "keywordsTs": "n8n-exec-123026-keywords@2026-11-17T17:32:33.363Z",
+    "copyTs": "n8n-exec-123026-copy@2026-11-17T17:33:02.008Z"
+  },
+  "comments": {
+    "keywords": "",
+    "copy": ""
+  },
+  "pages": [
+    {
+      "op": "update",
+      "slug": "ai-receptionist-for-small-businesses",
+      "keyword": "best answering service for small businesses",
+      "title": "Best Answering Service for Small Businesses: Complete Guide",
+      "description": "Discover how the best answering service for small businesses can handle calls, book appointments, and help you capture every opportunity.",
+      "navigationLabel": "How It Works",
+      "eyebrow": "For Small Business Owners",
+      "firstParagraph": "The best answering service for small businesses is designed to handle every call, day or night, following your specific script and rules. It can book appointments, send follow-up messages, and log each conversation, ensuring you never miss important details or potential new business.",
+      "approvedSha256": "7b6381e032fb141be2fa59f055b3901a2384a38102244136ffe72a5df6aaa220"
+    }
+  ],
+  "copySha256": "7b6381e032fb141be2fa59f055b3901a2384a38102244136ffe72a5df6aaa220"
+}
