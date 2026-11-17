@@ -1492,5 +1492,18 @@
       "updated remodeling-answering; back to draft until re-approved",
       "approved remodeling-answering"
     ]
+  },
+  {
+    "batchId": "2026-11-17-auto-1-page",
+    "batchHash": "sha256:189c5e98e1205f9111df1140c363c114bf15d43ee59a4f8a1620b11e39ad0781",
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-17/2026-11-17-auto-1-page-approved-public-copy.txt SHA256 7b6381e032fb141be2fa59f055b3901a2384a38102244136ffe72a5df6aaa220; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-123026-keywords@2026-11-17T17:32:33.363Z) and copy approved in Slack (message n8n-exec-123026-copy@2026-11-17T17:33:02.008Z) on November 17, 2026; implementation by the Revo SEO automation"
+    },
+    "appliedAt": "2026-11-17",
+    "changes": [
+      "updated ai-receptionist-for-small-businesses; back to draft until re-approved",
+      "approved ai-receptionist-for-small-businesses"
+    ]
   }
 ]
