@@ -49,7 +49,9 @@ export function crmPayload({ email, businessName, trade, zip, phone }, leadId, a
     zip,
     postal_code_is_us: isUsZip(zip) ? 'true' : 'false',
     icp: icp ? 'icp' : 'not-icp',
-    tags: ['revo-app', 'trade-' + trade, icp ? 'icp' : 'not-icp'].join(','),
+    trade_tag: 'trade-' + trade,
+    // "revo-app" and "revo-app-<event>" tags belong to the app's own CRM sync; this flow uses revo-app-start.
+    tags: ['revo-app-start', 'trade-' + trade, icp ? 'icp' : 'not-icp'].join(','),
     lead_id: leadId,
     utm_source: attribution.utm_source || '',
     utm_medium: attribution.utm_medium || '',

@@ -81,14 +81,16 @@ test('form validation messages', () => {
 test('GoHighLevel payload: tags and attribution', () => {
   const v = validate({ email: 'a@b.co', business_name: 'Key Pros', trade: 'locksmith', zip: '92101', phone: '6195550134' });
   const p = crmPayload(v, 'L1', { utm_source: 'facebook', fbclid: 'F' }, '/locksmith', '2026-11-19T20:00:00.000Z', 'now');
-  assert.equal(p.tags, 'revo-app,trade-locksmith,icp');
+  assert.equal(p.tags, 'revo-app-start,trade-locksmith,icp');
+  assert.equal(p.trade_tag, 'trade-locksmith');
+  assert.equal(p.icp, 'icp');
   assert.equal(p.trade, 'Locksmith');
   assert.equal(p.phone, '+16195550134');
   assert.equal(p.utm_source, 'facebook');
   assert.equal(p.fbclid, 'F');
   assert.equal(p.landing_page, '/locksmith');
   const other = crmPayload(validate({ email: 'a@b.co', business_name: 'X', trade: 'other', zip: '92101', phone: '6195550134' }), 'L2', {}, '', '', 'now');
-  assert.equal(other.tags, 'revo-app,trade-other,not-icp');
+  assert.equal(other.tags, 'revo-app-start,trade-other,not-icp');
 });
 
 const pages = [...TRADES.map(t => t.slug), 'start'];
