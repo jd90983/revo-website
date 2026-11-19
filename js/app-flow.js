@@ -66,6 +66,45 @@
     link.setAttribute('href', url.pathname + url.search);
   });
 
+  // Progress rail: logo on the first screen, back arrow + progress after it.
+  var fill = document.querySelector('.af-fill');
+  function setProgress(pct) { if (fill) fill.style.width = pct + '%'; }
+
+  // Trade landings: two screens (hero, what Revo does), like /free-test.
+  var steps = Array.prototype.slice.call(document.querySelectorAll('[data-step]'));
+  function show(n, push) {
+    steps.forEach(function (s) { s.hidden = Number(s.getAttribute('data-step')) !== n; });
+    document.body.classList.toggle('af-on-step', n > 0);
+    setProgress(n > 0 ? 33 : 0);
+    if (push) { try { history.pushState({ afStep: n }, ''); } catch (e) { /* ignore */ } }
+    window.scrollTo(0, 0);
+  }
+  if (steps.length) {
+    show(0, false);
+    Array.prototype.forEach.call(document.querySelectorAll('[data-next]'), function (b) {
+      b.addEventListener('click', function () { show(1, true); });
+    });
+    window.addEventListener('popstate', function (e) { show(e.state && e.state.afStep ? e.state.afStep : 0, false); });
+  }
+  var toggle = document.querySelector('[data-example-toggle]');
+  var example = document.getElementById('af-example');
+  if (toggle && example) {
+    toggle.addEventListener('click', function () {
+      example.hidden = !example.hidden;
+      toggle.setAttribute('aria-expanded', String(!example.hidden));
+    });
+  }
+  Array.prototype.forEach.call(document.querySelectorAll('[data-back]'), function (b) {
+    b.addEventListener('click', function () {
+      if (steps.length) return history.back();
+      var back = trade ? '/' + trade : (attr.lp && attr.lp !== '/start' ? attr.lp : '/');
+      if (document.referrer && document.referrer.indexOf(window.location.origin) === 0) return history.back();
+      window.location.href = back;
+    });
+  });
+  var bodyProgress = document.body.getAttribute('data-progress');
+  if (bodyProgress) setProgress(Number(bodyProgress));
+
   // Start page.
   var form = document.getElementById('app-start-form');
   if (!form) return;
