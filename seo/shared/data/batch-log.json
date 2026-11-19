@@ -1505,5 +1505,34 @@
       "updated ai-receptionist-for-small-businesses; back to draft until re-approved",
       "approved ai-receptionist-for-small-businesses"
     ]
+  },
+  {
+    "batchId": "2026-11-19-auto-9-pages",
+    "batchHash": "sha256:8b9a1b203640785cc42348497d3d60b665a7c3ed1d5cced2766f08a2bb401459",
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-19/2026-11-19-auto-9-pages-approved-public-copy.txt SHA256 aaeb9626ee9bf8f83bf6c4ceda4732143f0b5960666d95a0b7beb7dd8d0c19e2; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z) and copy approved in Slack (message n8n-exec-129306-copy@2026-11-19T18:56:42.174Z) on November 19, 2026; implementation by the Revo SEO automation"
+    },
+    "appliedAt": "2026-11-19",
+    "changes": [
+      "added ai-voice-agent-platforms as draft",
+      "approved ai-voice-agent-platforms",
+      "added conversational-ai-voice-agent as draft",
+      "approved conversational-ai-voice-agent",
+      "added ai-phone-assistant as draft",
+      "approved ai-phone-assistant",
+      "added ai-appointment-setter as draft",
+      "approved ai-appointment-setter",
+      "added call-handling-service as draft",
+      "approved call-handling-service",
+      "added ai-voice-agent-for-small-business as draft",
+      "approved ai-voice-agent-for-small-business",
+      "added what-is-an-ai-voice-agent as draft",
+      "approved what-is-an-ai-voice-agent",
+      "added ai-voice-agent-software as draft",
+      "approved ai-voice-agent-software",
+      "added ai-voice-agent-for-customer-support as draft",
+      "approved ai-voice-agent-for-customer-support"
+    ]
   }
 ]

@@ -37422,5 +37422,668 @@
       "contentHash": "sha256:39a7a6d42e7e7f02ef994315588c87d18ff7cb69fb605e0b06be0c241c732c43",
       "note": "Jorge Perez (owner) approved keywords and exact copy in Slack on November 10, 2026 (messages n8n-exec-111164-keywords@2026-11-10T19:07:13.367Z, n8n-exec-111164-copy@2026-11-10T19:08:41.773Z); implemented by the Revo SEO automation"
     }
+  },
+  {
+    "slug": "ai-voice-agent-platforms",
+    "title": "How Home Service Businesses Use AI Voice Agent Platforms",
+    "description": "AI voice agent platforms help home service businesses handle calls, book appointments, and keep customers updated, all with reliable automation.",
+    "navigationLabel": "Always-on answering",
+    "eyebrow": "Callers want fast booking",
+    "lead": "AI voice agent platforms are designed for home service businesses that want every call answered, no matter the time or day. These platforms follow your script, book appointments, and keep your team informed, so you never miss a potential customer or leave callers waiting for help.",
+    "intro": "AI voice agent platforms are designed for home service businesses that want every call answered, no matter the time or day. These platforms follow your script, book appointments, and keep your team informed, so you never miss a potential customer or leave callers waiting for help.",
+    "sections": [
+      {
+        "title": "How Calls Are Answered and Managed",
+        "paragraphs": [
+          "With an AI voice agent platform, every forwarded call is answered using your business’s script and rules. The platform gathers caller details, responds to common questions, and ensures each caller receives a professional experience. This means your business is always available, even outside regular office hours."
+        ],
+        "items": []
+      },
+      {
+        "title": "Booking Appointments and Sending Follow-ups",
+        "paragraphs": [
+          "Once a caller is ready to book, the platform schedules the appointment and sends a follow-up SMS to confirm the details. This reduces back-and-forth and keeps your calendar organized. Every call is summarized and logged, so your team can review what happened and stay in the loop."
+        ],
+        "items": []
+      },
+      {
+        "title": "Connecting With Your Team and Software",
+        "paragraphs": [
+          "Advanced AI voice agent platforms can transfer calls to your team, connect with your field service software, and provide call recordings and transcripts. This integration helps keep your workflow smooth and ensures all customer interactions are documented for reference."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can the platform assign technicians or give quotes?\nNo, it does not assign technicians or provide quotes or pricing to callers.\n### What happens after a call is answered?\nThe platform books appointments, sends SMS follow-ups, and logs a summary of every call for your records."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-19",
+    "markdownArticle": {
+      "content": "# How Home Service Businesses Use AI Voice Agent Platforms\n\nAI voice agent platforms are designed for home service businesses that want every call answered, no matter the time or day. These platforms follow your script, book appointments, and keep your team informed, so you never miss a potential customer or leave callers waiting for help.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 19, 2026.\n\n## How Calls Are Answered and Managed\nWith an AI voice agent platform, every forwarded call is answered using your business’s script and rules. The platform gathers caller details, responds to common questions, and ensures each caller receives a professional experience. This means your business is always available, even outside regular office hours.\n\n## Booking Appointments and Sending Follow-ups\nOnce a caller is ready to book, the platform schedules the appointment and sends a follow-up SMS to confirm the details. This reduces back-and-forth and keeps your calendar organized. Every call is summarized and logged, so your team can review what happened and stay in the loop.\n\n## Connecting With Your Team and Software\nAdvanced AI voice agent platforms can transfer calls to your team, connect with your field service software, and provide call recordings and transcripts. This integration helps keep your workflow smooth and ensures all customer interactions are documented for reference.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the platform assign technicians or give quotes?\nNo, it does not assign technicians or provide quotes or pricing to callers.\n### What happens after a call is answered?\nThe platform books appointments, sends SMS follow-ups, and logs a summary of every call for your records.\n",
+      "sha256": "42863dc4868c7eee0309fe294f4daa7c96800ebdfc2879caba20ed0c71c50dab",
+      "assets": []
+    },
+    "related": [
+      "aircall-ai-voice-agent",
+      "cloudtalk-ai-voice-agents"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-19/2026-11-19-auto-9-pages-approved-public-copy.txt SHA256 aaeb9626ee9bf8f83bf6c4ceda4732143f0b5960666d95a0b7beb7dd8d0c19e2; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z) and copy approved in Slack (message n8n-exec-129306-copy@2026-11-19T18:56:42.174Z) on November 19, 2026; implementation by the Revo SEO automation (batch 2026-11-19-auto-9-pages)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-19",
+      "contentHash": "sha256:743ff13b6eceb000c8e9b03db76c02994d4d7e7252dfc43a2f4180fdf3f984b5",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in Slack on November 19, 2026 (messages n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z, n8n-exec-129306-copy@2026-11-19T18:56:42.174Z); implemented by the Revo SEO automation"
+    }
+  },
+  {
+    "slug": "conversational-ai-voice-agent",
+    "title": "How a Conversational AI Voice Agent Handles Calls",
+    "description": "A conversational AI voice agent can answer, book, and summarize calls for home service businesses, ensuring no customer inquiry is missed.",
+    "navigationLabel": "How calls are answered",
+    "eyebrow": "Customers needing quick booking",
+    "lead": "A conversational AI voice agent is designed to answer calls for home service businesses, following your script and booking appointments around the clock. This ensures your callers always reach a professional voice, even when your team is busy or off the clock, so you never miss an opportunity to connect with customers.",
+    "intro": "A conversational AI voice agent is designed to answer calls for home service businesses, following your script and booking appointments around the clock. This ensures your callers always reach a professional voice, even when your team is busy or off the clock, so you never miss an opportunity to connect with customers.",
+    "sections": [
+      {
+        "title": "How a Conversational AI Voice Agent Answers Calls",
+        "paragraphs": [
+          "When a customer calls your business, a conversational AI voice agent can pick up every forwarded call, using your specific greeting and script. It responds naturally to the caller’s questions, collects the information you need, and keeps the conversation professional and on-topic. This means your callers always get a consistent experience, no matter when they reach out."
+        ],
+        "items": []
+      },
+      {
+        "title": "Booking Appointments and Following Up",
+        "paragraphs": [
+          "The conversational AI voice agent can book appointments directly into your calendar, following your rules for scheduling. After each call, it sends a follow-up SMS to the customer, confirming the appointment or providing additional information. Every call is logged with a summary, so you stay informed about each interaction without having to listen to every call."
+        ],
+        "items": []
+      },
+      {
+        "title": "Seamless Connection With Your Team",
+        "paragraphs": [
+          "For businesses that need more, the conversational AI voice agent can transfer calls to your team, connect with your field service software, and provide call recordings and transcripts. This makes it easy for your staff to pick up where the AI left off, ensuring a smooth handoff and keeping your operations running efficiently."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can the conversational AI voice agent assign technicians?\nNo, it does not assign technicians. It can book appointments and transfer calls, but scheduling specific staff is handled by your team.\n### Does the conversational AI voice agent provide quotes or prices?\nNo, it does not give out quotes or pricing details to callers. It follows your script and can collect information or book appointments."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-19",
+    "markdownArticle": {
+      "content": "# How a Conversational AI Voice Agent Handles Calls\n\nA conversational AI voice agent is designed to answer calls for home service businesses, following your script and booking appointments around the clock. This ensures your callers always reach a professional voice, even when your team is busy or off the clock, so you never miss an opportunity to connect with customers.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 19, 2026.\n\n## How a Conversational AI Voice Agent Answers Calls\nWhen a customer calls your business, a conversational AI voice agent can pick up every forwarded call, using your specific greeting and script. It responds naturally to the caller’s questions, collects the information you need, and keeps the conversation professional and on-topic. This means your callers always get a consistent experience, no matter when they reach out.\n\n## Booking Appointments and Following Up\nThe conversational AI voice agent can book appointments directly into your calendar, following your rules for scheduling. After each call, it sends a follow-up SMS to the customer, confirming the appointment or providing additional information. Every call is logged with a summary, so you stay informed about each interaction without having to listen to every call.\n\n## Seamless Connection With Your Team\nFor businesses that need more, the conversational AI voice agent can transfer calls to your team, connect with your field service software, and provide call recordings and transcripts. This makes it easy for your staff to pick up where the AI left off, ensuring a smooth handoff and keeping your operations running efficiently.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the conversational AI voice agent assign technicians?\nNo, it does not assign technicians. It can book appointments and transfer calls, but scheduling specific staff is handled by your team.\n### Does the conversational AI voice agent provide quotes or prices?\nNo, it does not give out quotes or pricing details to callers. It follows your script and can collect information or book appointments.\n",
+      "sha256": "e924b9d6c6faccfe49094e8a5240bb1c5e73d227d28c5b5ca01249ae351cf616",
+      "assets": []
+    },
+    "related": [
+      "aircall-ai-voice-agent",
+      "cloudtalk-ai-voice-agents"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-19/2026-11-19-auto-9-pages-approved-public-copy.txt SHA256 aaeb9626ee9bf8f83bf6c4ceda4732143f0b5960666d95a0b7beb7dd8d0c19e2; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z) and copy approved in Slack (message n8n-exec-129306-copy@2026-11-19T18:56:42.174Z) on November 19, 2026; implementation by the Revo SEO automation (batch 2026-11-19-auto-9-pages)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-19",
+      "contentHash": "sha256:fcb42e8c77ad848b1082b33751133dafb3eb2a6b15b431997fa0284dc8443aa4",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in Slack on November 19, 2026 (messages n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z, n8n-exec-129306-copy@2026-11-19T18:56:42.174Z); implemented by the Revo SEO automation"
+    }
+  },
+  {
+    "slug": "ai-phone-assistant",
+    "title": "How an AI Phone Assistant Handles Home Service Calls",
+    "description": "Learn how an ai phone assistant manages calls for home service businesses, books appointments, and keeps your team connected and organized.",
+    "navigationLabel": "Call handling basics",
+    "eyebrow": "Busy signal frustrations",
+    "lead": "An ai phone assistant is designed to answer every call your home service business receives, following your script and rules. It books appointments, sends follow-up texts, and logs call details, so you never miss an opportunity. This guide explains how an ai phone assistant fits into your daily operations and supports your team.",
+    "intro": "An ai phone assistant is designed to answer every call your home service business receives, following your script and rules. It books appointments, sends follow-up texts, and logs call details, so you never miss an opportunity. This guide explains how an ai phone assistant fits into your daily operations and supports your team.",
+    "sections": [
+      {
+        "title": "How Calls Are Answered and Managed",
+        "paragraphs": [
+          "When a customer calls your business, the ai phone assistant answers right away, using your preferred greeting and script. It can handle questions, gather information, and ensure every caller feels heard. All calls are logged, and summaries are created automatically, so you always know what happened on each call."
+        ],
+        "items": []
+      },
+      {
+        "title": "Booking Appointments and Following Up",
+        "paragraphs": [
+          "The ai phone assistant can book appointments directly into your calendar, following your rules for availability and service types. After the call, it sends a confirmation and follow-up message by SMS. This keeps customers informed and reduces no-shows, while freeing up your team from scheduling tasks."
+        ],
+        "items": []
+      },
+      {
+        "title": "Connecting Your Team and Staying Organized",
+        "paragraphs": [
+          "For businesses that need more, the ai phone assistant can transfer calls to your team, connect with field service software, and provide call recordings and transcripts. This helps your team stay organized, ensures nothing is missed, and makes it easier to manage customer relationships."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can the ai phone assistant give quotes or prices to callers?\nNo, it does not provide quotes or prices. It follows your script and books appointments, but pricing is handled by your team.\n### Does the ai phone assistant assign technicians to jobs?\nNo, it does not assign technicians. It books appointments and logs call details, but scheduling specific staff is done by your team."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-19",
+    "markdownArticle": {
+      "content": "# How an AI Phone Assistant Handles Home Service Calls\n\nAn ai phone assistant is designed to answer every call your home service business receives, following your script and rules. It books appointments, sends follow-up texts, and logs call details, so you never miss an opportunity. This guide explains how an ai phone assistant fits into your daily operations and supports your team.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 19, 2026.\n\n## How Calls Are Answered and Managed\nWhen a customer calls your business, the ai phone assistant answers right away, using your preferred greeting and script. It can handle questions, gather information, and ensure every caller feels heard. All calls are logged, and summaries are created automatically, so you always know what happened on each call.\n\n## Booking Appointments and Following Up\nThe ai phone assistant can book appointments directly into your calendar, following your rules for availability and service types. After the call, it sends a confirmation and follow-up message by SMS. This keeps customers informed and reduces no-shows, while freeing up your team from scheduling tasks.\n\n## Connecting Your Team and Staying Organized\nFor businesses that need more, the ai phone assistant can transfer calls to your team, connect with field service software, and provide call recordings and transcripts. This helps your team stay organized, ensures nothing is missed, and makes it easier to manage customer relationships.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the ai phone assistant give quotes or prices to callers?\nNo, it does not provide quotes or prices. It follows your script and books appointments, but pricing is handled by your team.\n### Does the ai phone assistant assign technicians to jobs?\nNo, it does not assign technicians. It books appointments and logs call details, but scheduling specific staff is done by your team.\n",
+      "sha256": "dfd154202764c4778b3fe5df21bf40026ae7f5cc36af36e0542ff66fb12590d4",
+      "assets": []
+    },
+    "related": [],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-19/2026-11-19-auto-9-pages-approved-public-copy.txt SHA256 aaeb9626ee9bf8f83bf6c4ceda4732143f0b5960666d95a0b7beb7dd8d0c19e2; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z) and copy approved in Slack (message n8n-exec-129306-copy@2026-11-19T18:56:42.174Z) on November 19, 2026; implementation by the Revo SEO automation (batch 2026-11-19-auto-9-pages)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-19",
+      "contentHash": "sha256:14ca938e11db7f7f6d5e61117e98cf4de10eafe33a9fc5ae7861ee09e459efa7",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in Slack on November 19, 2026 (messages n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z, n8n-exec-129306-copy@2026-11-19T18:56:42.174Z); implemented by the Revo SEO automation"
+    }
+  },
+  {
+    "slug": "ai-appointment-setter",
+    "title": "How an AI Appointment Setter Handles Service Calls",
+    "description": "Discover how an ai appointment setter manages calls, books appointments, and supports home service businesses with efficient call handling.",
+    "navigationLabel": "Booking appointments",
+    "eyebrow": "Busy phone lines during the day",
+    "lead": "An ai appointment setter can transform how home service businesses handle incoming calls. By answering every forwarded call, following your script, and booking appointments, this solution ensures no opportunity is missed. Learn how an ai appointment setter can keep your schedule full and your customers satisfied without extra staffing.",
+    "intro": "An ai appointment setter can transform how home service businesses handle incoming calls. By answering every forwarded call, following your script, and booking appointments, this solution ensures no opportunity is missed. Learn how an ai appointment setter can keep your schedule full and your customers satisfied without extra staffing.",
+    "sections": [
+      {
+        "title": "How Calls Are Answered and Managed",
+        "paragraphs": [
+          "When a call is forwarded, the ai appointment setter answers instantly and follows your business’s script and rules. The system is always available, so no call goes unanswered, even after hours or during busy periods. This approach ensures every caller receives a professional and consistent experience tailored to your service."
+        ],
+        "items": []
+      },
+      {
+        "title": "Booking Appointments and Following Up",
+        "paragraphs": [
+          "The ai appointment setter can book appointments directly into your calendar based on your availability and guidelines. After each call, a follow-up SMS is sent to the caller, confirming the appointment and providing any needed details. This helps reduce no-shows and keeps your customers informed."
+        ],
+        "items": []
+      },
+      {
+        "title": "Keeping Your Team in the Loop",
+        "paragraphs": [
+          "Every call is logged with a summary, so you always know who called and why. On certain plans, calls can be transferred to your team, and connections to field service software are available. Recordings and transcripts are also provided, making it easy to review calls and maintain quality."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can the ai appointment setter assign technicians?\nNo, it does not assign technicians. It focuses on answering calls and booking appointments.\n### Does the ai appointment setter provide quotes or pricing?\nNo, it does not give quotes or prices to callers. It follows your script and booking rules."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-19",
+    "markdownArticle": {
+      "content": "# How an AI Appointment Setter Handles Service Calls\n\nAn ai appointment setter can transform how home service businesses handle incoming calls. By answering every forwarded call, following your script, and booking appointments, this solution ensures no opportunity is missed. Learn how an ai appointment setter can keep your schedule full and your customers satisfied without extra staffing.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 19, 2026.\n\n## How Calls Are Answered and Managed\nWhen a call is forwarded, the ai appointment setter answers instantly and follows your business’s script and rules. The system is always available, so no call goes unanswered, even after hours or during busy periods. This approach ensures every caller receives a professional and consistent experience tailored to your service.\n\n## Booking Appointments and Following Up\nThe ai appointment setter can book appointments directly into your calendar based on your availability and guidelines. After each call, a follow-up SMS is sent to the caller, confirming the appointment and providing any needed details. This helps reduce no-shows and keeps your customers informed.\n\n## Keeping Your Team in the Loop\nEvery call is logged with a summary, so you always know who called and why. On certain plans, calls can be transferred to your team, and connections to field service software are available. Recordings and transcripts are also provided, making it easy to review calls and maintain quality.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the ai appointment setter assign technicians?\nNo, it does not assign technicians. It focuses on answering calls and booking appointments.\n### Does the ai appointment setter provide quotes or pricing?\nNo, it does not give quotes or prices to callers. It follows your script and booking rules.\n",
+      "sha256": "31cba26d9f65749869d5822e741f8e39fd9e99de4f90f24c06cecbd3801d3fba",
+      "assets": []
+    },
+    "related": [
+      "appointment-booking",
+      "appointment-reminders"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-19/2026-11-19-auto-9-pages-approved-public-copy.txt SHA256 aaeb9626ee9bf8f83bf6c4ceda4732143f0b5960666d95a0b7beb7dd8d0c19e2; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z) and copy approved in Slack (message n8n-exec-129306-copy@2026-11-19T18:56:42.174Z) on November 19, 2026; implementation by the Revo SEO automation (batch 2026-11-19-auto-9-pages)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-19",
+      "contentHash": "sha256:9d012a1a15c99cf889b8280c20e050a1f2e33abc19dc890dc664b46bc2b2ba44",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in Slack on November 19, 2026 (messages n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z, n8n-exec-129306-copy@2026-11-19T18:56:42.174Z); implemented by the Revo SEO automation"
+    }
+  },
+  {
+    "slug": "call-handling-service",
+    "title": "Call Handling Service for Home Service Businesses",
+    "description": "A call handling service ensures your home service business never misses a call, books appointments, and keeps customers informed around the clock.",
+    "navigationLabel": "Streamlined scheduling",
+    "eyebrow": "Busy phone lines during peak hours",
+    "lead": "A call handling service is designed to manage incoming calls for home service businesses, following your specific script and booking appointments. With this support, you can focus on your jobs while every caller receives a professional response, no matter the time of day.",
+    "intro": "A call handling service is designed to manage incoming calls for home service businesses, following your specific script and booking appointments. With this support, you can focus on your jobs while every caller receives a professional response, no matter the time of day.",
+    "sections": [
+      {
+        "title": "How Call Handling Service Works for Home Services",
+        "paragraphs": [
+          "When you forward your business calls, the service answers each one using your preferred script and rules. It gathers caller details, responds to common questions, and schedules appointments directly on your calendar. This ensures every inquiry is handled consistently, even outside regular business hours."
+        ],
+        "items": []
+      },
+      {
+        "title": "Appointment Booking and Follow-Up",
+        "paragraphs": [
+          "After speaking with a caller, the service books appointments based on your availability. It sends a follow-up text message to confirm the booking and provides a summary of the call for your records. This process keeps your schedule organized and your customers informed."
+        ],
+        "items": []
+      },
+      {
+        "title": "Seamless Team Communication",
+        "paragraphs": [
+          "Advanced call handling services can transfer calls to your team, connect with your field service software, and provide call recordings and transcripts. This makes it easy for your staff to stay updated on customer needs and follow up as needed, improving overall efficiency."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can the service provide quotes or pricing to callers?\nNo, it does not give quotes or prices. It gathers information and schedules appointments based on your guidelines.\n### Does the service assign technicians to jobs?\nNo, technician assignment is not handled. The service focuses on answering calls and booking appointments."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-19",
+    "markdownArticle": {
+      "content": "# Call Handling Service for Home Service Businesses\n\nA call handling service is designed to manage incoming calls for home service businesses, following your specific script and booking appointments. With this support, you can focus on your jobs while every caller receives a professional response, no matter the time of day.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 19, 2026.\n\n## How Call Handling Service Works for Home Services\nWhen you forward your business calls, the service answers each one using your preferred script and rules. It gathers caller details, responds to common questions, and schedules appointments directly on your calendar. This ensures every inquiry is handled consistently, even outside regular business hours.\n\n## Appointment Booking and Follow-Up\nAfter speaking with a caller, the service books appointments based on your availability. It sends a follow-up text message to confirm the booking and provides a summary of the call for your records. This process keeps your schedule organized and your customers informed.\n\n## Seamless Team Communication\nAdvanced call handling services can transfer calls to your team, connect with your field service software, and provide call recordings and transcripts. This makes it easy for your staff to stay updated on customer needs and follow up as needed, improving overall efficiency.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the service provide quotes or pricing to callers?\nNo, it does not give quotes or prices. It gathers information and schedules appointments based on your guidelines.\n### Does the service assign technicians to jobs?\nNo, technician assignment is not handled. The service focuses on answering calls and booking appointments.\n",
+      "sha256": "0cdf85b1386d863cdc53f018a14f7bdec9fe659f70b633b376b3da299b5f3844",
+      "assets": []
+    },
+    "related": [
+      "24-hour-answering-service",
+      "answering-service-for-construction"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-19/2026-11-19-auto-9-pages-approved-public-copy.txt SHA256 aaeb9626ee9bf8f83bf6c4ceda4732143f0b5960666d95a0b7beb7dd8d0c19e2; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z) and copy approved in Slack (message n8n-exec-129306-copy@2026-11-19T18:56:42.174Z) on November 19, 2026; implementation by the Revo SEO automation (batch 2026-11-19-auto-9-pages)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-19",
+      "contentHash": "sha256:f780686e33de636bd53a300ef40c3d42d9efc4a38076b837fb123e0e75096023",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in Slack on November 19, 2026 (messages n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z, n8n-exec-129306-copy@2026-11-19T18:56:42.174Z); implemented by the Revo SEO automation"
+    }
+  },
+  {
+    "slug": "ai-voice-agent-for-small-business",
+    "title": "How an AI Voice Agent for Small Business Handles Calls",
+    "description": "Discover how an AI voice agent for small business can answer calls, book appointments, and keep your team organized without missing a lead.",
+    "navigationLabel": "Call transfer options",
+    "eyebrow": "Busy phone lines",
+    "lead": "An AI voice agent for small business is designed to answer every call your team cannot get to. It follows your script, books appointments, and logs each conversation, so you never lose track of a lead or customer request. This solution helps you stay organized and responsive, even when your team is busy or out in the field.",
+    "intro": "An AI voice agent for small business is designed to answer every call your team cannot get to. It follows your script, books appointments, and logs each conversation, so you never lose track of a lead or customer request. This solution helps you stay organized and responsive, even when your team is busy or out in the field.",
+    "sections": [
+      {
+        "title": "Answering Calls Any Time",
+        "paragraphs": [
+          "Home service businesses often miss calls after hours or when staff are on job sites. An AI voice agent for small business can answer forwarded calls around the clock, following your preferred script and rules. This ensures that every caller gets a professional response, no matter when they reach out, helping you capture more opportunities."
+        ],
+        "items": []
+      },
+      {
+        "title": "Booking Appointments and Following Up",
+        "paragraphs": [
+          "With an AI voice agent, callers can book appointments directly over the phone, following your set availability and process. After each call, the system sends an SMS follow-up and logs a summary, so you and your team always know what was discussed. This keeps your schedule full and your records up to date."
+        ],
+        "items": []
+      },
+      {
+        "title": "Transferring Calls and Connecting Tools",
+        "paragraphs": [
+          "Some calls need a personal touch. Advanced AI voice agents can transfer calls to your team when needed. They can also connect with your field service software, provide call recordings and transcripts, and even use WhatsApp for communication, making it easier to manage and track all customer interactions."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can the AI voice agent assign technicians or give quotes?\nNo, it does not assign technicians or provide quotes or prices to callers.\n### Will I get a summary of each call?\nYes, every call is logged with a summary so you can review details and follow up as needed."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-19",
+    "markdownArticle": {
+      "content": "# How an AI Voice Agent for Small Business Handles Calls\n\nAn AI voice agent for small business is designed to answer every call your team cannot get to. It follows your script, books appointments, and logs each conversation, so you never lose track of a lead or customer request. This solution helps you stay organized and responsive, even when your team is busy or out in the field.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 19, 2026.\n\n## Answering Calls Any Time\nHome service businesses often miss calls after hours or when staff are on job sites. An AI voice agent for small business can answer forwarded calls around the clock, following your preferred script and rules. This ensures that every caller gets a professional response, no matter when they reach out, helping you capture more opportunities.\n\n## Booking Appointments and Following Up\nWith an AI voice agent, callers can book appointments directly over the phone, following your set availability and process. After each call, the system sends an SMS follow-up and logs a summary, so you and your team always know what was discussed. This keeps your schedule full and your records up to date.\n\n## Transferring Calls and Connecting Tools\nSome calls need a personal touch. Advanced AI voice agents can transfer calls to your team when needed. They can also connect with your field service software, provide call recordings and transcripts, and even use WhatsApp for communication, making it easier to manage and track all customer interactions.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the AI voice agent assign technicians or give quotes?\nNo, it does not assign technicians or provide quotes or prices to callers.\n### Will I get a summary of each call?\nYes, every call is logged with a summary so you can review details and follow up as needed.\n",
+      "sha256": "e210e35dc626da15f5eb69468a5f9674b32e5762d54fb62d27eacfe1cf3481d0",
+      "assets": []
+    },
+    "related": [
+      "aircall-ai-voice-agent",
+      "cloudtalk-ai-voice-agents"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-19/2026-11-19-auto-9-pages-approved-public-copy.txt SHA256 aaeb9626ee9bf8f83bf6c4ceda4732143f0b5960666d95a0b7beb7dd8d0c19e2; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z) and copy approved in Slack (message n8n-exec-129306-copy@2026-11-19T18:56:42.174Z) on November 19, 2026; implementation by the Revo SEO automation (batch 2026-11-19-auto-9-pages)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-19",
+      "contentHash": "sha256:a68142b9469b13e23efc73b50abd402491dbb4b989dc40eec668a2ccf807f80d",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in Slack on November 19, 2026 (messages n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z, n8n-exec-129306-copy@2026-11-19T18:56:42.174Z); implemented by the Revo SEO automation"
+    }
+  },
+  {
+    "slug": "what-is-an-ai-voice-agent",
+    "title": "What Is an AI Voice Agent for Home Service Calls",
+    "description": "Learn what is an AI voice agent and how it answers, books, and manages calls for home service businesses, making customer contact seamless.",
+    "navigationLabel": "Call handling details",
+    "eyebrow": "No time to answer every call",
+    "lead": "If you’re wondering what is an AI voice agent, it’s a digital receptionist that answers your business calls using advanced voice technology. For home service companies, this means every call is handled professionally, appointments are booked, and updates are sent to your team—without the need for a human to pick up the phone.",
+    "intro": "If you’re wondering what is an AI voice agent, it’s a digital receptionist that answers your business calls using advanced voice technology. For home service companies, this means every call is handled professionally, appointments are booked, and updates are sent to your team—without the need for a human to pick up the phone.",
+    "sections": [
+      {
+        "title": "How an AI Voice Agent Answers Calls",
+        "paragraphs": [
+          "An AI voice agent receives calls forwarded from your business line, responding instantly and following your company’s script. It can gather caller information, answer common questions, and ensure no call goes unanswered, whether it’s during business hours or in the middle of the night."
+        ],
+        "items": []
+      },
+      {
+        "title": "Booking Appointments and Sending Follow-Ups",
+        "paragraphs": [
+          "When a caller is ready to schedule, the AI voice agent can book appointments directly on your calendar. After the call, it sends a confirmation or follow-up message by SMS and logs a call summary. This keeps your records up to date and your customers informed without manual effort."
+        ],
+        "items": []
+      },
+      {
+        "title": "Connecting to Your Team and Software",
+        "paragraphs": [
+          "With advanced options, an AI voice agent can transfer calls to your staff, connect with your field service software, and provide call recordings and transcripts. This helps your team stay in the loop and access important details, making it easier to manage jobs and customer relationships."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can an AI voice agent assign technicians?\nNo, it does not assign technicians. It can book appointments and transfer calls, but scheduling specific staff is handled by your team.\n### Does the AI voice agent give quotes or prices?\nNo, it does not provide quotes or pricing information to callers. It follows your script and business rules for every call."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-19",
+    "markdownArticle": {
+      "content": "# What Is an AI Voice Agent for Home Service Calls\n\nIf you’re wondering what is an AI voice agent, it’s a digital receptionist that answers your business calls using advanced voice technology. For home service companies, this means every call is handled professionally, appointments are booked, and updates are sent to your team—without the need for a human to pick up the phone.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 19, 2026.\n\n## How an AI Voice Agent Answers Calls\nAn AI voice agent receives calls forwarded from your business line, responding instantly and following your company’s script. It can gather caller information, answer common questions, and ensure no call goes unanswered, whether it’s during business hours or in the middle of the night.\n\n## Booking Appointments and Sending Follow-Ups\nWhen a caller is ready to schedule, the AI voice agent can book appointments directly on your calendar. After the call, it sends a confirmation or follow-up message by SMS and logs a call summary. This keeps your records up to date and your customers informed without manual effort.\n\n## Connecting to Your Team and Software\nWith advanced options, an AI voice agent can transfer calls to your staff, connect with your field service software, and provide call recordings and transcripts. This helps your team stay in the loop and access important details, making it easier to manage jobs and customer relationships.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can an AI voice agent assign technicians?\nNo, it does not assign technicians. It can book appointments and transfer calls, but scheduling specific staff is handled by your team.\n### Does the AI voice agent give quotes or prices?\nNo, it does not provide quotes or pricing information to callers. It follows your script and business rules for every call.\n",
+      "sha256": "5230fbccae39bdd8487f26764e3b62cac367f0c6c6da312af02e235fedd89606",
+      "assets": []
+    },
+    "related": [
+      "aircall-ai-voice-agent",
+      "cloudtalk-ai-voice-agents"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-19/2026-11-19-auto-9-pages-approved-public-copy.txt SHA256 aaeb9626ee9bf8f83bf6c4ceda4732143f0b5960666d95a0b7beb7dd8d0c19e2; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z) and copy approved in Slack (message n8n-exec-129306-copy@2026-11-19T18:56:42.174Z) on November 19, 2026; implementation by the Revo SEO automation (batch 2026-11-19-auto-9-pages)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-19",
+      "contentHash": "sha256:8dc60696cb9ea95fca3b538dfab16a357ae464e8ade63769a645c73923331d9d",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in Slack on November 19, 2026 (messages n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z, n8n-exec-129306-copy@2026-11-19T18:56:42.174Z); implemented by the Revo SEO automation"
+    }
+  },
+  {
+    "slug": "ai-voice-agent-software",
+    "title": "How Home Services Use AI Voice Agent Software for Calls",
+    "description": "Discover how ai voice agent software helps home service businesses manage calls, book appointments, and log call details efficiently.",
+    "navigationLabel": "Always-on call coverage",
+    "eyebrow": "No time for constant answering",
+    "lead": "AI voice agent software is changing how home service businesses handle incoming calls. With this technology, every call is answered, appointments are booked, and details are logged, all without needing staff to be available around the clock. This guide explains how ai voice agent software fits into your daily operations.",
+    "intro": "AI voice agent software is changing how home service businesses handle incoming calls. With this technology, every call is answered, appointments are booked, and details are logged, all without needing staff to be available around the clock. This guide explains how ai voice agent software fits into your daily operations.",
+    "sections": [
+      {
+        "title": "How Calls Are Answered and Managed",
+        "paragraphs": [
+          "When a customer calls your business, ai voice agent software answers promptly, following your specific script and rules. It can handle calls at any time, so you never miss a potential job. The software gathers caller information, ensures polite and professional interactions, and keeps your business running smoothly even when you are out in the field."
+        ],
+        "items": []
+      },
+      {
+        "title": "Booking Appointments and Following Up",
+        "paragraphs": [
+          "AI voice agent software can book appointments directly into your calendar based on your availability. After each call, it sends an SMS follow-up to the customer, confirming the booking or providing additional information. This reduces the risk of no-shows and keeps your customers informed without extra manual work."
+        ],
+        "items": []
+      },
+      {
+        "title": "Call Logging and Team Integration",
+        "paragraphs": [
+          "Every call is logged with a summary, making it easy to review customer interactions. For teams using advanced features, calls can be transferred to staff, connected to field service software, and even include recordings and transcripts. This integration streamlines communication and ensures your team stays updated."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can the software give quotes or assign technicians?\nNo, it does not provide quotes or assign technicians to jobs.\n### Will I get a summary of each call?\nYes, a summary of every call is logged for your review."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-19",
+    "markdownArticle": {
+      "content": "# How Home Services Use AI Voice Agent Software for Calls\n\nAI voice agent software is changing how home service businesses handle incoming calls. With this technology, every call is answered, appointments are booked, and details are logged, all without needing staff to be available around the clock. This guide explains how ai voice agent software fits into your daily operations.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 19, 2026.\n\n## How Calls Are Answered and Managed\nWhen a customer calls your business, ai voice agent software answers promptly, following your specific script and rules. It can handle calls at any time, so you never miss a potential job. The software gathers caller information, ensures polite and professional interactions, and keeps your business running smoothly even when you are out in the field.\n\n## Booking Appointments and Following Up\nAI voice agent software can book appointments directly into your calendar based on your availability. After each call, it sends an SMS follow-up to the customer, confirming the booking or providing additional information. This reduces the risk of no-shows and keeps your customers informed without extra manual work.\n\n## Call Logging and Team Integration\nEvery call is logged with a summary, making it easy to review customer interactions. For teams using advanced features, calls can be transferred to staff, connected to field service software, and even include recordings and transcripts. This integration streamlines communication and ensures your team stays updated.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the software give quotes or assign technicians?\nNo, it does not provide quotes or assign technicians to jobs.\n### Will I get a summary of each call?\nYes, a summary of every call is logged for your review.\n",
+      "sha256": "86797f976b930809faaef45b462215e7fb796fc06a94046bcfef2be3db79ca0d",
+      "assets": []
+    },
+    "related": [
+      "aircall-ai-voice-agent",
+      "cloudtalk-ai-voice-agents"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-19/2026-11-19-auto-9-pages-approved-public-copy.txt SHA256 aaeb9626ee9bf8f83bf6c4ceda4732143f0b5960666d95a0b7beb7dd8d0c19e2; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z) and copy approved in Slack (message n8n-exec-129306-copy@2026-11-19T18:56:42.174Z) on November 19, 2026; implementation by the Revo SEO automation (batch 2026-11-19-auto-9-pages)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-19",
+      "contentHash": "sha256:8b6d71ded695114293c1bcf9a711f297bf42dc0e0ddd577744d4d9a78f4931e9",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in Slack on November 19, 2026 (messages n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z, n8n-exec-129306-copy@2026-11-19T18:56:42.174Z); implemented by the Revo SEO automation"
+    }
+  },
+  {
+    "slug": "ai-voice-agent-for-customer-support",
+    "title": "Using an AI Voice Agent for Customer Support Calls",
+    "description": "Learn how an AI voice agent for customer support manages calls for home service businesses, books appointments, and keeps your team organized.",
+    "navigationLabel": "Always-on call handling",
+    "eyebrow": "Customers needing quick answers",
+    "lead": "An AI voice agent for customer support is designed to answer, manage, and document calls for home service businesses. It follows your script and rules, ensuring every caller gets consistent service, whether you are on the job or away from the phone.",
+    "intro": "An AI voice agent for customer support is designed to answer, manage, and document calls for home service businesses. It follows your script and rules, ensuring every caller gets consistent service, whether you are on the job or away from the phone.",
+    "sections": [
+      {
+        "title": "How Calls Are Answered and Managed",
+        "paragraphs": [
+          "When a customer calls your business, the AI voice agent answers every time, day or night. It follows your exact instructions, greeting callers and gathering the information you need. This ensures no call goes unanswered, and every customer receives a professional, consistent experience, no matter when they reach out."
+        ],
+        "items": []
+      },
+      {
+        "title": "Booking Appointments and Sending Follow-Ups",
+        "paragraphs": [
+          "The AI voice agent can book appointments directly into your calendar, reducing back-and-forth and saving you time. After each call, it sends an SMS follow-up to the customer, confirming their booking or providing next steps. This keeps your schedule full and your customers informed."
+        ],
+        "items": []
+      },
+      {
+        "title": "Call Summaries, Transfers, and Team Integration",
+        "paragraphs": [
+          "Every call is logged with a summary, so you always know what was discussed. For businesses with larger teams, calls can be transferred to the right person, and all details are connected to your field service software. This helps your team stay organized and respond quickly to customer needs."
+        ],
+        "items": []
+      },
+      {
+        "title": "Where Revo fits",
+        "paragraphs": [
+          "Revo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)"
+        ],
+        "items": []
+      },
+      {
+        "title": "Frequently asked questions",
+        "paragraphs": [
+          "### Can the AI voice agent give quotes or prices to callers?\nNo, the AI voice agent does not provide quotes or pricing information to callers.\n### Does the AI voice agent assign technicians to jobs?\nNo, assigning technicians is not handled by the AI voice agent. It focuses on answering calls and booking appointments."
+        ],
+        "items": []
+      }
+    ],
+    "faqs": [],
+    "takeaway": "Review Revo’s current plans",
+    "sourcePaths": [
+      "https://www.revoapp.ai/pricing"
+    ],
+    "template": "workflow",
+    "pricingVariant": "full",
+    "editorialDate": "2026-11-19",
+    "markdownArticle": {
+      "content": "# Using an AI Voice Agent for Customer Support Calls\n\nAn AI voice agent for customer support is designed to answer, manage, and document calls for home service businesses. It follows your script and rules, ensuring every caller gets consistent service, whether you are on the job or away from the phone.\n\nPublished by Revo, which sells an AI receptionist for home service businesses. Reviewed November 19, 2026.\n\n## How Calls Are Answered and Managed\nWhen a customer calls your business, the AI voice agent answers every time, day or night. It follows your exact instructions, greeting callers and gathering the information you need. This ensures no call goes unanswered, and every customer receives a professional, consistent experience, no matter when they reach out.\n\n## Booking Appointments and Sending Follow-Ups\nThe AI voice agent can book appointments directly into your calendar, reducing back-and-forth and saving you time. After each call, it sends an SMS follow-up to the customer, confirming their booking or providing next steps. This keeps your schedule full and your customers informed.\n\n## Call Summaries, Transfers, and Team Integration\nEvery call is logged with a summary, so you always know what was discussed. For businesses with larger teams, calls can be transferred to the right person, and all details are connected to your field service software. This helps your team stay organized and respond quickly to customer needs.\n\n## Where Revo fits\nRevo answers the calls you forward to it, 24/7, and follows your script and rules. It books appointments, sends SMS follow-up and logs a summary of every call. On Crew and Fleet it can transfer calls to your team and connect to your field service software. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)\n\n## Frequently asked questions\n### Can the AI voice agent give quotes or prices to callers?\nNo, the AI voice agent does not provide quotes or pricing information to callers.\n### Does the AI voice agent assign technicians to jobs?\nNo, assigning technicians is not handled by the AI voice agent. It focuses on answering calls and booking appointments.\n",
+      "sha256": "40da37debdd5727438898695ddaa64144546ceba44d18dc0e2a396b9775d1362",
+      "assets": []
+    },
+    "related": [
+      "voice-of-customer-examples",
+      "aircall-ai-voice-agent"
+    ],
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-19/2026-11-19-auto-9-pages-approved-public-copy.txt SHA256 aaeb9626ee9bf8f83bf6c4ceda4732143f0b5960666d95a0b7beb7dd8d0c19e2; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z) and copy approved in Slack (message n8n-exec-129306-copy@2026-11-19T18:56:42.174Z) on November 19, 2026; implementation by the Revo SEO automation (batch 2026-11-19-auto-9-pages)"
+    },
+    "publicationStatus": "approved",
+    "review": {
+      "reviewer": "Jorge Perez (owner)",
+      "reviewedAt": "2026-11-19",
+      "contentHash": "sha256:3a3fbf37976663f93c1e642fbbf4a6805ceff030178daf523862353c802e6f1f",
+      "note": "Jorge Perez (owner) approved keywords and exact copy in Slack on November 19, 2026 (messages n8n-exec-129306-keywords@2026-11-19T18:25:47.703Z, n8n-exec-129306-copy@2026-11-19T18:56:42.174Z); implemented by the Revo SEO automation"
+    }
   }
 ]
