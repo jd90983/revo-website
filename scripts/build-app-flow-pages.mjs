@@ -113,18 +113,9 @@ ${gtmNoscript}
         </div>
         <div class="af-art">${art}</div>
       </div>
-      <button class="af-cta" type="button" data-next>See what Revo does on every call</button>
-      <button class="af-link" type="button" data-example-toggle aria-expanded="false" aria-controls="af-example">&#9654; See an example call</button>
-      <div class="af-example" id="af-example" hidden>
-        <p class="af-example-label">Example scenario</p>
-        <p><b>Caller:</b> Hi, ${esc(t.issue)}. Can someone come out?</p>
-        <p><b>Revo:</b> I can help with that. What’s the address, and when works for you?</p>
-        <p><b>Caller:</b> Tomorrow morning.</p>
-        <p><b>Revo:</b> You’re booked for tomorrow at 9 AM. I’ll text you the details now.</p>
-        <p class="af-example-note">Acted example, not a real customer call. Details are illustrative.</p>
-      </div>
-      <a class="af-link" href="/start?trade=${t.slug}" data-app-cta="hero">Skip ahead: create my account</a>
+      <a class="af-cta" href="/start?trade=${t.slug}" data-app-cta="hero">Create my free account</a>
       <p class="af-fine">10 free calls. No credit card.</p>
+      <button class="af-link" type="button" data-next>How Revo works &rsaquo;</button>
     </section>
 
     <section class="af-step af-step-dock" data-step="1" hidden>
@@ -135,6 +126,15 @@ ${gtmNoscript}
         <li class="af-card"><span class="af-ico">${ICON.calendar}</span><div><b>Revo books.</b><span>Appointments go on your calendar.</span></div></li>
         <li class="af-card"><span class="af-ico">${ICON.check}</span><div><b>Revo follows up.</b><span>Texts the caller after the call and shows you a summary.</span></div></li>
       </ul>
+      <button class="af-link af-link-left" type="button" data-example-toggle aria-expanded="false" aria-controls="af-example">&#9654; See an example call</button>
+      <div class="af-example" id="af-example" hidden>
+        <p class="af-example-label">Example scenario</p>
+        <p><b>Caller:</b> Hi, ${esc(t.issue)}. Can someone come out?</p>
+        <p><b>Revo:</b> I can help with that. What’s the address, and when works for you?</p>
+        <p><b>Caller:</b> Tomorrow morning.</p>
+        <p><b>Revo:</b> You’re booked for tomorrow at 9 AM. I’ll text you the details now.</p>
+        <p class="af-example-note">Acted example, not a real customer call. Details are illustrative.</p>
+      </div>
       <div class="af-callout"><b>Set up for your business.</b><span>You set the greeting, your hours and your rules.</span></div>
       <div class="af-stats">
         <div class="af-stat"><span class="af-big">24/7</span><small>call answering</small></div>
