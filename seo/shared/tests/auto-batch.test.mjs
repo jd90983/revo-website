@@ -25,7 +25,7 @@ ${'Ask for the address, the problem, how urgent it is and the best number to cal
 ${'A caller who reaches nobody often calls the next company in the search results. '.repeat(5)}
 
 ## Where Revo fits
-Revo answers the calls you forward to it, 24/7, and follows your script and rules. Plans start from $87.50/mo at launch. [See Revo's plans](/pricing)
+Revo answers the calls you forward to it, 24/7, and follows your script and rules. Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial. [See Revo's plans](/pricing)
 
 ## Frequently asked questions
 ### Can it dispatch a technician?
@@ -48,11 +48,17 @@ test('approved copy passes the editorial rules and becomes an approved record', 
 });
 
 test('copy edited after approval is rejected', () => {
-  const edited = { ...page, markdown: page.markdown.replace('Plans start', 'Plans begin') };
+  const edited = { ...page, markdown: page.markdown.replace('follows your script', 'follows the script') };
   assert.throws(() => buildBatch(registry, { ...request, pages: [edited] }), /differs from what was approved/);
 });
 
 test('a second price or a missing disclaimer is caught', () => {
   assert.ok(copyProblems({ ...page, markdown: page.markdown.replace('24/7,', '24/7 for $99,') }, date).length > 0);
   assert.ok(copyProblems({ ...page, markdown: page.markdown.replace(DISCLAIMER(date), '') }, date).length > 0);
+});
+
+test('only the approved price sentence may carry a price', () => {
+  assert.ok(copyProblems({ ...page, markdown: page.markdown.replace('Solo is $175/month', 'Solo is $150/month') }, date).length > 0);
+  assert.ok(copyProblems({ ...page, markdown: page.markdown.replace('24/7,', '24/7 from $175,') }, date).length > 0);
+  assert.ok(copyProblems({ ...page, markdown: page.markdown.replace(' Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial.', ' Plans start from $87.50/mo at launch.') }, date).length > 0);
 });
