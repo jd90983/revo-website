@@ -1,6 +1,7 @@
 // Generates the no-card app signup flow pages: one landing per trade + start.html.
 // Run: node scripts/build-app-flow-pages.mjs   (writes <trade>.html and start.html at the repo root)
-import { writeFileSync } from 'node:fs';
+import { writeFileSync, readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 
@@ -17,6 +18,11 @@ export const TRADES = [
   { slug: 'pest-control', label: 'Pest control', word: 'pest control', noun: 'pest control company', plural: 'Pest Control Companies', issue: 'there are ants all over my kitchen' },
   { slug: 'roofing', label: 'Roofing', word: 'roofing', noun: 'roofer', plural: 'Roofers', issue: 'my roof started leaking after the rain' }
 ];
+
+// Cache-busting: the file hash changes the URL whenever the CSS or JS changes.
+const ver = f => createHash('sha256').update(readFileSync(join(root, f))).digest('hex').slice(0, 10);
+const CSS_V = ver('css/app-flow.css');
+const JS_V = ver('js/app-flow.js');
 
 const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
@@ -57,7 +63,7 @@ const head = (title, description, path) => `<!DOCTYPE html>
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="stylesheet" href="/css/app-flow.css">
+  <link rel="stylesheet" href="/css/app-flow.css?v=${CSS_V}">
 <!-- Meta Pixel Code (stub; fbevents.js is loaded by revoLoadTags above) -->
 <script>
 !function(f){if(f.fbq)return;var n=f.fbq=function(){n.callMethod?
@@ -154,7 +160,7 @@ ${gtmNoscript}
   </div></main>
 ${footer}
 </div>
-  <script src="/js/app-flow.js" defer></script>
+  <script src="/js/app-flow.js?v=${JS_V}" defer></script>
 </body>
 </html>
 `;
@@ -186,7 +192,7 @@ ${gtmNoscript}
   </div></main>
 ${footer}
 </div>
-  <script src="/js/app-flow.js" defer></script>
+  <script src="/js/app-flow.js?v=${JS_V}" defer></script>
 </body>
 </html>
 `;
