@@ -41,7 +41,9 @@ const longDate = iso => { const [y, m, d] = iso.split('-').map(Number); return `
 
 export const REVIEWER = 'Jorge Perez (owner)';
 export const DISCLAIMER = date => `Published by Revo, which sells an AI receptionist for home service businesses. Reviewed ${longDate(date)}.`;
-const ALLOWED_PRICE = '$87.50/mo at launch';
+// Approved pricing wording (ledger, 2026-11-12). It is the only place a price may appear;
+// the old "$87.50/mo at launch" line was retired because the claims review (#41) blocks it.
+export const APPROVED_PRICE_SENTENCE = 'Solo is $175/month, and new accounts pay half price for the first 3 paid months ($87.50/month) after the 14-day free trial.';
 const PLANS_LINK = "[See Revo's plans](/pricing)";
 const BANNED = [/four million/i, /4,?000,?000/, /\b4M\b/];
 
@@ -62,8 +64,8 @@ export function copyProblems(page, date) {
   const faq = (t.split(/^## Frequently asked questions$/im)[1] ?? '').match(/^### /gm) ?? [];
   if (faq.length < 2 || faq.length > 3) p.push(`needs 2-3 FAQs, has ${faq.length}`);
   if (/^\s*\|.*\|\s*$/m.test(t)) p.push('tables are not allowed');
-  const prices = t.match(/\$\s?\d[\d,.]*/g) ?? [];
-  if (prices.some(x => x.replace(/\s/g, '') !== '$87.50') || !t.includes(ALLOWED_PRICE)) p.push(`only one Revo price is allowed: "${ALLOWED_PRICE}"`);
+  const strayPrices = t.split(APPROVED_PRICE_SENTENCE).join(' ').match(/\$\s?\d/g) ?? [];
+  if (!t.includes(APPROVED_PRICE_SENTENCE) || strayPrices.length) p.push(`the only allowed price is the approved sentence: "${APPROVED_PRICE_SENTENCE}"`);
   if (!t.includes(PLANS_LINK)) p.push(`Revo section must close with ${PLANS_LINK}`);
   for (const re of BANNED) if (re.test(t)) p.push(`banned phrase ${re}`);
   return p;
