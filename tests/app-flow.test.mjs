@@ -28,11 +28,11 @@ test('attribution: unsafe values dropped', () => {
 });
 
 test('/go/<channel>: defaults only fill missing keys, and point to /start or the trade landing', () => {
-  assert.equal(goTarget('meta', {}), '/start?utm_source=facebook&utm_medium=paid_social');
-  assert.equal(goTarget('meta', { utm_source: 'fb_ads', utm_campaign: 'trial' }), '/start?utm_source=fb_ads&utm_campaign=trial&utm_medium=paid_social');
+  assert.equal(goTarget('meta', {}), '/home-services?utm_source=facebook&utm_medium=paid_social');
+  assert.equal(goTarget('meta', { utm_source: 'fb_ads', utm_campaign: 'trial' }), '/home-services?utm_source=fb_ads&utm_campaign=trial&utm_medium=paid_social');
   assert.equal(goTarget('google', { trade: 'hvac', gclid: 'G1' }), '/hvac?gclid=G1&utm_source=google&utm_medium=cpc');
-  assert.equal(goTarget('qr', { trade: 'other' }), '/start?utm_source=print&utm_medium=offline&trade=other');
-  assert.equal(goTarget('unknown', { utm_source: 'x', evil: '1' }), '/start?utm_source=x');
+  assert.equal(goTarget('qr', { trade: 'other' }), '/home-services?utm_source=print&utm_medium=offline&trade=other');
+  assert.equal(goTarget('unknown', { utm_source: 'x', evil: '1' }), '/home-services?utm_source=x');
 });
 
 test('/go handler answers 302 with no-store and noindex', () => {
@@ -40,7 +40,7 @@ test('/go handler answers 302 with no-store and noindex', () => {
   const res = { statusCode: 0, setHeader: (k, v) => { headers[k] = v; }, end() { this.ended = true; } };
   goHandler({ query: { channel: 'tiktok', utm_campaign: 'c1', utm_source: ['a', 'b'] } }, res);
   assert.equal(res.statusCode, 302);
-  assert.equal(headers.Location, '/start?utm_campaign=c1&utm_source=tiktok&utm_medium=paid_social');
+  assert.equal(headers.Location, '/home-services?utm_campaign=c1&utm_source=tiktok&utm_medium=paid_social');
   assert.equal(headers['Cache-Control'], 'no-store');
   assert.ok(res.ended);
 });
@@ -114,11 +114,11 @@ test('GoHighLevel payload: same keys and tags, plus last_* and no ZIP', () => {
   assert.equal(p.fbclid, 'F');
   assert.equal(p.landing_page, '/locksmith');
   const other = crmPayload(validate({ email: 'a@b.co', business_name: 'X', trade: 'other', phone: '6195550134' }), 'L2', {}, '', '', 'now');
-  assert.equal(other.page_url, 'https://www.revoapp.ai/start');
+  assert.equal(other.page_url, 'https://www.revoapp.ai/home-services');
   assert.equal(other.tags, 'revo-app-start,trade-other,not-icp');
 });
 
-const pages = [...TRADES.map(t => t.slug), 'start'];
+const pages = [...TRADES.map(t => t.slug), 'start', 'home-services'];
 
 test('every new page: noindex, GTM, Meta stub, flow script, out of the sitemap', () => {
   const sitemap = read('sitemap.xml');
@@ -164,15 +164,17 @@ test('form on the first screen: email, phone, business name, hidden trade, no ZI
     assert.equal((html.match(/<form /g) || []).length, 1, t.slug);
     assert.doesNotMatch(html, /af-more|af-cta-secondary/, t.slug);
   }
-  const start = read('start.html');
+  assert.equal(read('home-services.html'), read('start.html'));
+  const start = read('home-services.html');
+  assert.ok(start.includes('home service'));
   assert.ok(start.includes('<select id="af-trade" name="trade" required>'));
   for (const t of TRADES) assert.ok(start.includes(`<option value="${t.slug}">`), t.slug);
   assert.doesNotMatch(start, /name="zip"/);
   assert.ok(TRADES.some(t => t.slug === 'landscaping') && TRADES.some(t => t.slug === 'cleaning'));
 });
 
-test('a trade with no landing (towing) goes to /start, keeping UTMs', () => {
-  assert.equal(goTarget('meta', { trade: 'towing', utm_campaign: 'c1' }), '/start?utm_campaign=c1&utm_source=facebook&utm_medium=paid_social');
+test('a trade with no page (towing) and links with no trade go to /home-services, keeping UTMs', () => {
+  assert.equal(goTarget('meta', { trade: 'towing', utm_campaign: 'c1' }), '/home-services?utm_campaign=c1&utm_source=facebook&utm_medium=paid_social');
 });
 
 test('last click goes to the app and to last_*; first touch stays in utm_*', async () => {
@@ -213,7 +215,7 @@ test('old funnels: each rewrites to the /go handler, which answers 302 and keeps
   const res = { statusCode: 0, setHeader: (k, v) => { headers[k] = v; }, end() {} };
   goHandler({ query: { channel: 'legacy', utm_source: 'facebook', utm_campaign: 'old_ad', utm_content: '123456789012', fbclid: 'F1', path: 'some-slug' } }, res);
   assert.equal(res.statusCode, 302);
-  assert.equal(headers.Location, '/start?utm_source=facebook&utm_campaign=old_ad&utm_content=123456789012&fbclid=F1');
+  assert.equal(headers.Location, '/home-services?utm_source=facebook&utm_campaign=old_ad&utm_content=123456789012&fbclid=F1');
   goHandler({ query: { channel: 'legacy', trade: 'hvac', utm_source: 'google' } }, res);
   assert.equal(headers.Location, '/hvac?utm_source=google');
 });

@@ -2494,6 +2494,10 @@
       "destination": "/cleaning.html"
     },
     {
+      "source": "/home-services",
+      "destination": "/home-services.html"
+    },
+    {
       "source": "/10-free-calls",
       "destination": "/api/go?channel=legacy"
     },
@@ -4782,6 +4786,24 @@
     },
     {
       "source": "/cleaning.html",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/home-services",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/home-services.html",
       "headers": [
         {
           "key": "X-Robots-Tag",

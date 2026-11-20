@@ -137,14 +137,14 @@ ${footer}
 
 export function start() {
   const options = TRADES.map(t => `<option value="${t.slug}">${esc(t.label)}</option>`).join('') + '<option value="other">Other</option>';
-  return `${head('Create your free Revo account | 10 Free Calls', 'Create your free Revo account: an AI receptionist that answers every call for your business. 10 free calls, no credit card.', '/start')}
+  return `${head('Revo for Home Services: Answer Every Call | 10 Free Calls', 'Revo answers every call for your home service business, 24/7, books the job and texts the caller back. 10 free calls, no credit card.', '/home-services')}
 <body>
 ${gtmNoscript}
 <div class="af-shell">${rail}
   <main class="af-main"><div class="af-col">
     <section class="af-hero" id="signup">
-      <h1 class="af-q">Answer every call. Book more jobs.</h1>
-      <p class="af-lede">Revo answers every call for your business, 24/7, books the job and texts the caller back.</p>
+      <h1 class="af-q">Missed calls are jobs for the next home service company.</h1>
+      <p class="af-lede">Revo answers every call for your home service business, 24/7, books the job and texts the caller back.</p>
       ${signupForm(`<div class="af-field"><label for="af-trade">What’s your trade?</label><select id="af-trade" name="trade" required><option value="">Select your trade</option>${options}</select></div>`)}
     </section>
   </div></main>
@@ -158,6 +158,7 @@ ${footer}
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
   for (const t of TRADES) writeFileSync(join(root, t.slug + '.html'), landing(t));
+  writeFileSync(join(root, 'home-services.html'), start());
   writeFileSync(join(root, 'start.html'), start());
-  console.log('Wrote', TRADES.length, 'trade landings + start.html');
+  console.log('Wrote', TRADES.length, 'trade pages + home-services.html + start.html');
 }

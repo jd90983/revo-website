@@ -69,7 +69,7 @@ export function crmPayload({ email, businessName, trade, phone }, leadId, attrib
     landing_page: landingPath || '',
     first_touch_at: firstTouchAt || '',
     submitted_at: now,
-    page_url: 'https://www.revoapp.ai' + (pagePath || '/start'),
+    page_url: 'https://www.revoapp.ai' + (pagePath || '/home-services'),
     offer: '10_free_calls_app'
   };
 }

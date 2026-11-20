@@ -113,7 +113,11 @@ export function appUrl(params) {
   return url.origin + url.pathname + url.search + APP_ROUTE;
 }
 
-// /go/<channel>: where a link with no landing page should go.
+// The main flow page: every home service, with the trade picker. Links with no trade,
+// or a trade with no page of its own, land here.
+export const HOME_SERVICES = '/home-services';
+
+// /go/<channel>: where a link should go.
 export function goTarget(channel, query) {
   const ch = Object.prototype.hasOwnProperty.call(CHANNELS, channel) ? channel : '';
   const attribution = cleanAttribution(query);
@@ -121,9 +125,9 @@ export function goTarget(channel, query) {
     for (const [key, value] of Object.entries(CHANNELS[ch])) if (!attribution[key]) attribution[key] = value;
   }
   const trade = tradeSlug(query && query.trade);
-  const path = trade && trade !== 'other' ? '/' + trade : '/start';
+  const path = trade && trade !== 'other' ? '/' + trade : HOME_SERVICES;
   const params = new URLSearchParams(attribution);
-  if (trade && path === '/start') params.set('trade', trade);
+  if (trade && path === HOME_SERVICES) params.set('trade', trade);
   const search = params.toString();
   return path + (search ? '?' + search : '');
 }
