@@ -142,10 +142,6 @@ test('copy rules: trial wording, prices, no banned claims, demo labeled', () => 
   }
   for (const t of TRADES) {
     const html = read(t.slug + '.html');
-    assert.ok(html.includes('Example scenario'));
-    assert.ok(html.includes('Acted example, not a real customer call.'));
-    assert.ok(html.includes('$87.50 USD/mo for your first 3 months, then $175 USD/mo.'));
-    assert.ok(html.includes('Free trial: 10 calls. Prices in USD.'));
     assert.ok(html.includes(`data-trade="${t.slug}"`));
     assert.doesNotMatch(html, /<audio/);
   }
@@ -163,6 +159,10 @@ test('form on the first screen: email, phone, business name, hidden trade, no ZI
     // Email, then phone, then business name.
     assert.ok(hero.indexOf('name="email"') < hero.indexOf('name="phone"') && hero.indexOf('name="phone"') < hero.indexOf('name="business_name"'), t.slug);
     assert.doesNotMatch(html, /name="zip"|href="\/start/, t.slug);
+    // A flow step, not a landing: one form, one call to action, nothing below it.
+    assert.equal((html.match(/Create my free account/g) || []).length, 1, t.slug);
+    assert.equal((html.match(/<form /g) || []).length, 1, t.slug);
+    assert.doesNotMatch(html, /af-more|af-cta-secondary/, t.slug);
   }
   const start = read('start.html');
   assert.ok(start.includes('<select id="af-trade" name="trade" required>'));

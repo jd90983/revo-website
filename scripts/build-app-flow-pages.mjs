@@ -125,35 +125,6 @@ ${gtmNoscript}
       ${signupForm(`<input type="hidden" name="trade" value="${t.slug}">`)}
     </section>
 
-    <section class="af-more">
-      <h2 class="af-h2">What Revo does on every call</h2>
-      <ul class="af-cards">
-        <li class="af-card"><span class="af-ico">${ICON.phone}</span><div><b>Revo answers.</b><span>Any hour: nights, weekends and while you’re on a job.</span></div></li>
-        <li class="af-card"><span class="af-ico">${ICON.calendar}</span><div><b>Revo books.</b><span>Appointments go on your calendar.</span></div></li>
-        <li class="af-card"><span class="af-ico">${ICON.check}</span><div><b>Revo follows up.</b><span>Texts the caller after the call and shows you a summary.</span></div></li>
-      </ul>
-      <button class="af-link af-link-left" type="button" data-example-toggle aria-expanded="false" aria-controls="af-example">&#9654; See an example call</button>
-      <div class="af-example" id="af-example" hidden>
-        <p class="af-example-label">Example scenario</p>
-        <p><b>Caller:</b> Hi, ${esc(t.issue)}. Can someone come out?</p>
-        <p><b>Revo:</b> I can help with that. What’s the address, and when works for you?</p>
-        <p><b>Caller:</b> Tomorrow morning.</p>
-        <p><b>Revo:</b> You’re booked for tomorrow at 9 AM. I’ll text you the details now.</p>
-        <p class="af-example-note">Acted example, not a real customer call. Details are illustrative.</p>
-      </div>
-      <div class="af-callout"><b>Set up for your business.</b><span>You set the greeting, your hours and your rules.</span></div>
-      <div class="af-stats">
-        <div class="af-stat"><span class="af-big">24/7</span><small>call answering</small></div>
-        <div class="af-stat"><span class="af-big">10</span><small>free calls</small></div>
-        <div class="af-stat"><span class="af-big">$0</span><small>due today</small></div>
-      </div>
-      <div class="af-faq">
-        <details><summary>Do I need a credit card?</summary><p>No. Your first 10 calls are free. You add a card only if you keep Revo.</p></details>
-        <details><summary>What happens after my 10 free calls?</summary><p>Solo is $87.50 USD/mo for your first 3 months, then $175 USD/mo. Cancel anytime.</p></details>
-      </div>
-      <a class="af-cta af-cta-secondary" href="#signup">Create my free account</a>
-      <p class="af-fine">10 free calls. No credit card. Free trial: 10 calls. Prices in USD.</p>
-    </section>
 
   </div></main>
 ${footer}
