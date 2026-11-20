@@ -20,6 +20,8 @@ export const TRADES = {
   'garage-door': { label: 'Garage door', word: 'garage door', noun: 'garage door company' },
   'pest-control': { label: 'Pest control', word: 'pest control', noun: 'pest control company' },
   roofing: { label: 'Roofing', word: 'roofing', noun: 'roofer' },
+  landscaping: { label: 'Landscaping', word: 'landscaping', noun: 'landscaper' },
+  cleaning: { label: 'Cleaning', word: 'cleaning', noun: 'cleaning company' },
   other: { label: 'Other', word: 'home service', noun: 'home service company' }
 };
 
@@ -33,12 +35,18 @@ export const CHANNELS = {
   qr: { utm_source: 'print', utm_medium: 'offline' }
 };
 
+// Keys whose values may be a bare ad / ad set id (digits only, up to 20).
+export const NUMERIC_ID_KEYS = ['utm_content', 'utm_term'];
+
 // Short plain values only: no URLs, emails, control characters, # or long digit runs.
-export function safeValue(value) {
+// utm_content and utm_term may also be a bare numeric id of up to 20 digits.
+export function safeValue(value, key) {
   if (typeof value !== 'string') return '';
   const v = value.trim();
   if (!v || v.length > 256) return '';
-  if (/[@#\r\n\u0000-\u001f]|:\/\/|\d{7,}/.test(v)) return '';
+  if (/[@#\r\n\u0000-\u001f]|:\/\//.test(v)) return '';
+  if (NUMERIC_ID_KEYS.includes(key) && /^\d{1,20}$/.test(v)) return v;
+  if (/\d{7,}/.test(v)) return '';
   return v;
 }
 
@@ -53,7 +61,7 @@ export function cleanAttribution(source) {
   const out = {};
   for (const key of ATTRIBUTION_KEYS) {
     const raw = source && source[key];
-    const value = key === 'gclid' || key === 'fbclid' ? safeClickId(raw) : safeValue(raw);
+    const value = key === 'gclid' || key === 'fbclid' ? safeClickId(raw) : safeValue(raw, key);
     if (value) out[key] = value;
   }
   return out;
@@ -68,11 +76,6 @@ export function tradeSlug(value) {
 export function safeLandingPath(value) {
   const v = String(value || '').trim();
   return /^\/[a-z0-9\-\/]{0,80}$/.test(v) ? v : '';
-}
-
-export function isUsZip(value) {
-  const v = String(value || '').trim();
-  return /^\d{5}(-\d{4})?$/.test(v) && !v.startsWith('00000');
 }
 
 export function normalizeUsPhone(value) {
@@ -95,8 +98,9 @@ export function leadIdFor(email, salt) {
   return `${h.slice(0, 8)}-${h.slice(8, 12)}-5${h.slice(13, 16)}-a${h.slice(17, 20)}-${h.slice(20, 32)}`;
 }
 
-export function isIcp(trade, zip) {
-  return trade !== '' && trade !== 'other' && isUsZip(zip);
+// ICP: a listed trade (not "other") and a valid US mobile number.
+export function isIcp(trade, phone) {
+  return trade !== '' && trade !== 'other' && normalizeUsPhone(phone) !== '';
 }
 
 // The app URL contract: query before the #, only APP_KEYS, nothing after the route.
