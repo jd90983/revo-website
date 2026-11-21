@@ -2,7 +2,7 @@
 // Validates the form, mints the lead_id, sends the lead to GoHighLevel and
 // returns the web.revoapp.ai URL. A CRM failure never blocks the signup.
 import {
-  TRADES, cleanAttribution, tradeSlug, safeLandingPath, isUsZip, normalizeUsPhone,
+  TRADES, ATTRIBUTION_KEYS, cleanAttribution, tradeSlug, safeLandingPath, normalizeUsPhone,
   isEmail, leadIdFor, isIcp, appUrl
 } from './_app-flow.js';
 
@@ -25,29 +25,34 @@ async function readBody(req) {
   return raw ? JSON.parse(raw) : {};
 }
 
+// Three fields: email, US mobile, business name. The trade comes from the landing
+// (hidden field) or from the picker on /start.
 export function validate(body) {
   const email = String(body.email || '').trim();
+  const phone = normalizeUsPhone(body.phone);
   const businessName = String(body.business_name || '').trim().replace(/\s+/g, ' ');
   const trade = tradeSlug(body.trade);
-  const zip = String(body.zip || '').trim().toUpperCase().slice(0, 10);
-  const phone = normalizeUsPhone(body.phone);
   if (!isEmail(email)) return { error: ['email', 'Enter a valid email.'] };
+  if (!phone) return { error: ['phone', 'Enter a valid US mobile number.'] };
   if (!businessName || businessName.length > 120) return { error: ['business_name', 'Enter your business name.'] };
   if (!trade) return { error: ['trade', 'Pick your trade.'] };
-  if (!zip || !/^[A-Z0-9 -]{3,10}$/.test(zip)) return { error: ['zip', 'Enter your ZIP code.'] };
-  if (!phone) return { error: ['phone', 'Enter a valid mobile number.'] };
-  return { email, businessName, trade, zip, phone };
+  return { email, businessName, trade, phone };
 }
 
-export function crmPayload({ email, businessName, trade, zip, phone }, leadId, attribution, landingPath, firstTouchAt, now) {
-  const icp = isIcp(trade, zip);
+// last_utm_source … last_fbclid: the last click before the form was sent.
+export function lastClickFields(last) {
+  const out = {};
+  for (const key of ATTRIBUTION_KEYS) out['last_' + key] = (last && last[key]) || '';
+  return out;
+}
+
+export function crmPayload({ email, businessName, trade, phone }, leadId, attribution, landingPath, firstTouchAt, now, last, pagePath) {
+  const icp = isIcp(trade, phone);
   return {
     email,
     phone,
     business_name: businessName,
     trade: TRADES[trade].label,
-    zip,
-    postal_code_is_us: isUsZip(zip) ? 'true' : 'false',
     icp: icp ? 'icp' : 'not-icp',
     trade_tag: 'trade-' + trade,
     // "revo-app" and "revo-app-<event>" tags belong to the app's own CRM sync; this flow uses revo-app-start.
@@ -60,10 +65,11 @@ export function crmPayload({ email, businessName, trade, zip, phone }, leadId, a
     utm_term: attribution.utm_term || '',
     gclid: attribution.gclid || '',
     fbclid: attribution.fbclid || '',
+    ...lastClickFields(last),
     landing_page: landingPath || '',
     first_touch_at: firstTouchAt || '',
     submitted_at: now,
-    page_url: 'https://www.revoapp.ai/start',
+    page_url: 'https://www.revoapp.ai' + (pagePath || '/home-services'),
     offer: '10_free_calls_app'
   };
 }
@@ -90,13 +96,17 @@ export default async function handler(req, res) {
   const v = validate(body || {});
   if (v.error) return bad(res, v.error[0], v.error[1]);
 
+  // First touch (30 days) for the CRM's utm_* keys; last click for last_* and for the app.
   const attribution = cleanAttribution(body.attribution || {});
+  const lastClick = cleanAttribution(body.last || {});
+  const forApp = Object.keys(lastClick).length ? lastClick : attribution;
   const landingPath = safeLandingPath(body.attribution && body.attribution.lp);
   const firstTouch = String((body.attribution && body.attribution.first_touch_at) || '');
   const firstTouchAt = /^\d{4}-\d{2}-\d{2}T[\d:.]+Z$/.test(firstTouch) ? firstTouch : '';
   const leadId = leadIdFor(v.email, process.env.APP_LEAD_SALT);
   const now = new Date().toISOString();
-  const payload = crmPayload(v, leadId, attribution, landingPath, firstTouchAt, now);
+  const pagePath = safeLandingPath(body.page);
+  const payload = crmPayload(v, leadId, attribution, landingPath, firstTouchAt, now, lastClick, pagePath);
 
   const webhook = process.env.GHL_APP_START_WEBHOOK_URL;
   if (webhook) {
@@ -124,6 +134,6 @@ export default async function handler(req, res) {
     lead_id: leadId,
     icp: payload.icp,
     trade: v.trade,
-    redirect: appUrl({ lead_id: leadId, ...attribution })
+    redirect: appUrl({ lead_id: leadId, ...forApp })
   }));
 }

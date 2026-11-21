@@ -2486,6 +2486,46 @@
       "destination": "/roofing.html"
     },
     {
+      "source": "/landscaping",
+      "destination": "/landscaping.html"
+    },
+    {
+      "source": "/cleaning",
+      "destination": "/cleaning.html"
+    },
+    {
+      "source": "/home-services",
+      "destination": "/home-services.html"
+    },
+    {
+      "source": "/10-free-calls",
+      "destination": "/api/go?channel=legacy"
+    },
+    {
+      "source": "/free-calls",
+      "destination": "/api/go?channel=legacy"
+    },
+    {
+      "source": "/free-account",
+      "destination": "/api/go?channel=legacy"
+    },
+    {
+      "source": "/free-agent",
+      "destination": "/api/go?channel=legacy"
+    },
+    {
+      "source": "/free-test",
+      "destination": "/api/go?channel=legacy"
+    },
+    {
+      "source": "/free-trial-b",
+      "destination": "/api/go?channel=legacy"
+    },
+    {
+      "source": "/lp/:path*",
+      "destination": "/api/go?channel=legacy"
+    },
+    {
       "source": "/start",
       "destination": "/start.html"
     },
@@ -4710,6 +4750,60 @@
     },
     {
       "source": "/roofing.html",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/landscaping",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/landscaping.html",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/cleaning",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/cleaning.html",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/home-services",
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/home-services.html",
       "headers": [
         {
           "key": "X-Robots-Tag",
