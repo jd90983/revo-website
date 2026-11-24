@@ -9,7 +9,7 @@ export const OFFICIAL_PRICING = {
   "plans": [
     {
       "name": "Solo",
-      "offerNote": "First 3 monthly payments after the trial; then $175/mo.",
+      "offerNote": "First 3 monthly payments after your 10 free calls; then $175/mo.",
       "tag": "One tech",
       "amount": "$87.50",
       "period": "/mo",
@@ -104,7 +104,7 @@ export const OFFICIAL_PRICING = {
     },
     {
       "name": "Crew",
-      "offerNote": "First 3 monthly payments after the trial; then $350/mo.",
+      "offerNote": "First 3 monthly payments after your 10 free calls; then $350/mo.",
       "tag": "One crew",
       "amount": "$175",
       "period": "/mo",
@@ -199,7 +199,7 @@ export const OFFICIAL_PRICING = {
     },
     {
       "name": "Fleet",
-      "offerNote": "First 3 monthly payments after the trial; then $700/mo.",
+      "offerNote": "First 3 monthly payments after your 10 free calls; then $700/mo.",
       "tag": "Multi-location",
       "amount": "$350",
       "period": "/mo",

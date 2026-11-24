@@ -44,7 +44,7 @@ test('displayed launch prices disclose three post-trial payments and the regular
  const page=read('pricing.html');assert.ok(!page.includes('lock in Launch Offer'));
  for(const [index,amount,regular] of [[0,'$87.50','$175'],[1,'$175','$350'],[2,'$350','$700']]){
   const plan=OFFICIAL_PRICING.plans[index];assert.equal(plan.amount,amount);assert.equal(plan.was,regular);
-  assert.ok(page.includes(plan.offerNote));assert.ok(plan.offerNote.includes('after the trial; then '+regular+'/mo.'));
+  assert.ok(page.includes(plan.offerNote));assert.ok(plan.offerNote.includes('after your 10 free calls; then '+regular+'/mo.'));
  }
  const html=renderToStaticMarkup(React.createElement(OfficialPricing));
  for(const plan of OFFICIAL_PRICING.plans)assert.ok(html.includes(plan.offerNote));
