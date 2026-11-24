@@ -200,7 +200,7 @@ export const OFFICIAL_PRICING = {
     {
       "name": "Fleet",
       "offerNote": "First 3 monthly payments after your 10 free calls; then $700/mo.",
-      "tag": "Multi-location",
+      "tag": "Multiple crews",
       "amount": "$350",
       "period": "/mo",
       "was": "$700",
