@@ -25,11 +25,6 @@
     "template": null
   },
   {
-    "slug": "bilingual-answering",
-    "label": "English and Spanish",
-    "template": null
-  },
-  {
     "slug": "answering-service-cost",
     "label": "Budget and coverage",
     "template": "workflow"
@@ -1932,11 +1927,6 @@
   {
     "slug": "construction-receptionist",
     "label": "Missed calls from project sites",
-    "template": "workflow"
-  },
-  {
-    "slug": "spanish-answering-service",
-    "label": "Missed calls from Spanish speakers",
     "template": "workflow"
   },
   {

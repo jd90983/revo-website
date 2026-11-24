@@ -2,6 +2,16 @@
   "outputDirectory": ".seo-dist",
   "redirects": [
     {
+      "source": "/ai-answering-service/bilingual-answering",
+      "destination": "/ai-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/spanish-answering-service",
+      "destination": "/ai-answering-service",
+      "permanent": true
+    },
+    {
       "source": "/ai-answering-service/after-hours.html",
       "destination": "https://www.revoapp.ai/ai-answering-service/after-hours",
       "permanent": true
@@ -24,11 +34,6 @@
     {
       "source": "/ai-answering-service/cost-of-missed-calls.html",
       "destination": "https://www.revoapp.ai/ai-answering-service/cost-of-missed-calls",
-      "permanent": true
-    },
-    {
-      "source": "/ai-answering-service/bilingual-answering.html",
-      "destination": "https://www.revoapp.ai/ai-answering-service/bilingual-answering",
       "permanent": true
     },
     {
@@ -1937,11 +1942,6 @@
       "permanent": true
     },
     {
-      "source": "/ai-answering-service/spanish-answering-service.html",
-      "destination": "https://www.revoapp.ai/ai-answering-service/spanish-answering-service",
-      "permanent": true
-    },
-    {
       "source": "/ai-answering-service/pest-control-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service/pest-control-answering-service",
       "permanent": true
@@ -2788,10 +2788,6 @@
     {
       "source": "/ai-answering-service/cost-of-missed-calls",
       "destination": "/ai-answering-service/cost-of-missed-calls.html"
-    },
-    {
-      "source": "/ai-answering-service/bilingual-answering",
-      "destination": "/ai-answering-service/bilingual-answering.html"
     },
     {
       "source": "/ai-answering-service/answering-service-cost",
@@ -4316,10 +4312,6 @@
     {
       "source": "/ai-answering-service/construction-receptionist",
       "destination": "/ai-answering-service/construction-receptionist.html"
-    },
-    {
-      "source": "/ai-answering-service/spanish-answering-service",
-      "destination": "/ai-answering-service/spanish-answering-service.html"
     },
     {
       "source": "/ai-answering-service/pest-control-answering-service",
