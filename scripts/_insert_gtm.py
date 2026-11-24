@@ -46,6 +46,9 @@ def insert_gtm(text: str, filename: str) -> str:
     return text
 
 
+# Afterwards run scripts/add_privacy_optout.py: the opt-out guard has to be the first script in <head>.
+
+
 def main() -> None:
     inserted = []
     skipped = []

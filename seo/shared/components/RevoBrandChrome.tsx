@@ -37,6 +37,6 @@ export function RevoBrandFooter({mode="review"}:{mode?:PageMode}={}) {
       <nav aria-label="Explore Revo"><h2>Explore</h2>{links.map(([text, url]) => <a key={url} href={url}>{text}</a>)}</nav>
       <nav aria-label="Call planning"><h2>Call planning</h2>{publicGuides.map(page => <a key={page.slug} href={reviewPath(page.slug)}>{page.label}</a>)}</nav>
     </div>
-    <div className="revo-footer-bottom"><p>© 2026 Revo. All communication rights reserved.</p><nav aria-label="Legal navigation"><a href="/privacy-policy">Privacy policy</a><a href="/terms-of-service">Terms of service</a>{mode === "public" ? <button onClick={()=>window.dispatchEvent(new Event("revo-consent-open"))}>Cookie settings</button> : null}</nav></div>
+    <div className="revo-footer-bottom"><p>© 2026 Revo. All communication rights reserved.</p><nav aria-label="Legal navigation"><a href="/privacy-policy">Privacy policy</a><a href="/privacy-choices">Your Privacy Choices</a><a href="/terms-of-service">Terms of service</a>{mode === "public" ? <button onClick={()=>window.dispatchEvent(new Event("revo-consent-open"))}>Cookie settings</button> : null}</nav></div>
   </div></footer>;
 }

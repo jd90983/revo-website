@@ -5,6 +5,7 @@ root = pathlib.Path(__file__).resolve().parent.parent
 pixel = """
   <!-- Meta Pixel Code -->
   <script>
+  if (!window.revoAdOptOut) {
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -15,11 +16,10 @@ pixel = """
   'https://connect.facebook.net/en_US/fbevents.js');
   fbq('init', '2435811520564771');
   fbq('track', 'PageView');
+  }
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=2435811520564771&ev=PageView&noscript=1"
-  /></noscript>
   <!-- End Meta Pixel Code -->"""
+# The privacy opt-out guard must come first in <head>: run scripts/add_privacy_optout.py after this.
 
 marker = '  <meta name="viewport" content="width=device-width, initial-scale=1.0">'
 

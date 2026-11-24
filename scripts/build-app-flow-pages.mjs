@@ -32,6 +32,24 @@ const head = (title, description, path) => `<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Privacy opt-out / GPC: must stay the first script in <head> -->
+<script>
+(function () {
+  var optout = false;
+  try { optout = navigator.globalPrivacyControl === true; } catch (e) {}
+  try { if (localStorage.getItem('revo_ad_optout') === '1') optout = true; } catch (e) {}
+  if (!optout && /(?:^|;\\s*)revo_ad_optout=1/.test(document.cookie)) optout = true;
+  window.revoAdOptOut = optout;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  if (optout) {
+    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+  }
+  dataLayer.push({ revo_ad_optout: optout ? 'yes' : 'no' });
+})();
+// Opted out: a no-op fbq keeps page code working and stops any later Meta snippet from loading.
+if (window.revoAdOptOut && !window.fbq) { window.fbq = window._fbq = function () {}; }
+</script>
   <script>document.documentElement.className += ' js';</script>
 <!-- Google Tag Manager, Meta Pixel: events queue at once; the tag scripts
      load on the first tap, scroll or key press, or 3.5 s after the page loads. -->
@@ -48,7 +66,7 @@ const head = (title, description, path) => `<!DOCTYPE html>
     if (loaded) return;
     loaded = true;
     add('https://www.googletagmanager.com/gtm.js?id=GTM-PFJBFLVF');
-    add('https://connect.facebook.net/en_US/fbevents.js');
+    if (!w.revoAdOptOut) add('https://connect.facebook.net/en_US/fbevents.js');
   }
   ['pointerdown', 'touchstart', 'scroll', 'keydown'].forEach(function (e) {
     w.addEventListener(e, loadTags, { once: true, passive: true });
@@ -66,11 +84,13 @@ const head = (title, description, path) => `<!DOCTYPE html>
   <link rel="stylesheet" href="/css/app-flow.css?v=${CSS_V}">
 <!-- Meta Pixel Code (stub; fbevents.js is loaded by revoLoadTags above) -->
 <script>
+if (!window.revoAdOptOut) {
 !function(f){if(f.fbq)return;var n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}(window);
 fbq('init', '2435811520564771');
 fbq('track', 'PageView');
+}
 </script>
 <!-- End Meta Pixel Code -->
 </head>`;
@@ -94,7 +114,7 @@ const rail = (withBrand) => `
 
 const footer = `
   <footer class="af-footer"><div class="af-col">
-    <a href="/terms-of-service">Terms</a><a href="/privacy-policy">Privacy</a><a href="/sms-consent">SMS consent</a>
+    <a href="/terms-of-service">Terms</a><a href="/privacy-policy">Privacy</a><a href="/privacy-choices">Your Privacy Choices</a><a href="/sms-consent">SMS consent</a>
   </div></footer>`;
 
 const gtmNoscript = `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFJBFLVF" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`;

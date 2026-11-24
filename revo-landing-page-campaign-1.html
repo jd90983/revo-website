@@ -3,6 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Privacy opt-out / GPC: must stay the first script in <head> -->
+<script>
+(function () {
+  var optout = false;
+  try { optout = navigator.globalPrivacyControl === true; } catch (e) {}
+  try { if (localStorage.getItem('revo_ad_optout') === '1') optout = true; } catch (e) {}
+  if (!optout && /(?:^|;\s*)revo_ad_optout=1/.test(document.cookie)) optout = true;
+  window.revoAdOptOut = optout;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  if (optout) {
+    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+  }
+  dataLayer.push({ revo_ad_optout: optout ? 'yes' : 'no' });
+})();
+// Opted out: a no-op fbq keeps page code working and stops any later Meta snippet from loading.
+if (window.revoAdOptOut && !window.fbq) { window.fbq = window._fbq = function () {}; }
+</script>
 <meta name="robots" content="noindex">
 <meta name="theme-color" content="#ffffff">
 
@@ -36,6 +54,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- Meta Pixel Code -->
 <script>
+if (!window.revoAdOptOut) {
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -53,10 +72,8 @@ document.addEventListener('click', function (e) {
     if (window.dataLayer) window.dataLayer.push({event: 'app_store_click'});
   }
 }, true);
+}
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2435811520564771&ev=PageView&noscript=1"
-/></noscript>
 <!-- End Meta Pixel Code -->
 
 <!-- TikTok Pixel (definition only; fires after ad consent via installRevoTikTokPixel) -->
@@ -65,7 +82,7 @@ src="https://www.facebook.com/tr?id=2435811520564771&ev=PageView&noscript=1"
   var installed = false;
 
   window.installRevoTikTokPixel = function () {
-    if (installed) return;
+    if (installed || window.revoAdOptOut) return;
     installed = true;
 
     window.TiktokAnalyticsObject = 'ttq';
@@ -692,6 +709,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span>© 2026 Revo AI. Serving businesses across the United States.</span>
     <span>
       <a href="privacy-policy">Privacy policy</a>
+          <a href="privacy-choices">Your Privacy Choices</a>
       <a href="terms-of-service">Terms of service</a>
     </span>
   </div>

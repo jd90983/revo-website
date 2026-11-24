@@ -18,7 +18,7 @@ TIKTOK_BLOCK = """<!-- TikTok Pixel (definition only; fires after ad consent via
   var installed = false;
 
   window.installRevoTikTokPixel = function () {
-    if (installed) return;
+    if (installed || window.revoAdOptOut) return;
     installed = true;
 
     window.TiktokAnalyticsObject = 'ttq';
