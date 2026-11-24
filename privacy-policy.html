@@ -3,6 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Privacy opt-out / GPC: must stay the first script in <head> -->
+<script>
+(function () {
+  var optout = false;
+  try { optout = navigator.globalPrivacyControl === true; } catch (e) {}
+  try { if (localStorage.getItem('revo_ad_optout') === '1') optout = true; } catch (e) {}
+  if (!optout && /(?:^|;\s*)revo_ad_optout=1/.test(document.cookie)) optout = true;
+  window.revoAdOptOut = optout;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  if (optout) {
+    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+  }
+  dataLayer.push({ revo_ad_optout: optout ? 'yes' : 'no' });
+})();
+// Opted out: a no-op fbq keeps page code working and stops any later Meta snippet from loading.
+if (window.revoAdOptOut && !window.fbq) { window.fbq = window._fbq = function () {}; }
+</script>
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -51,6 +69,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <!-- Meta Pixel Code -->
 <script>
+if (!window.revoAdOptOut) {
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -65,10 +84,8 @@ document.addEventListener('click', function (e) {
   var a = e.target.closest && e.target.closest('a[href*="apps.apple.com"]');
   if (a && window.fbq) fbq('trackCustom', 'AppStoreClick');
 }, true);
+}
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2435811520564771&ev=PageView&noscript=1"
-/></noscript>
 <!-- End Meta Pixel Code -->
 
 <!-- TikTok Pixel (definition only; fires after ad consent via installRevoTikTokPixel) -->
@@ -77,7 +94,7 @@ src="https://www.facebook.com/tr?id=2435811520564771&ev=PageView&noscript=1"
   var installed = false;
 
   window.installRevoTikTokPixel = function () {
-    if (installed) return;
+    if (installed || window.revoAdOptOut) return;
     installed = true;
 
     window.TiktokAnalyticsObject = 'ttq';
@@ -451,8 +468,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <header class="legal-hero">
         <div class="legal-container">
           <h1>Privacy Policy</h1>
-          <p class="legal-hero-desc">Welcome to Revo AI (“Revo”, “we”, “our”, or “us”). Your privacy is important to us. This Privacy Policy explains how Revo collects, uses, stores, and protects your information when you use our website, mobile application, AI voice services, and related products (collectively, the “Services”). By using Revo, you agree to the practices described in this Privacy Policy.</p>
-          <p class="legal-hero-date">Effective Date: July 2026</p>
+          <p class="legal-hero-desc">Welcome to Revo AI ("Revo", "we", "our", or "us"). Your privacy is important to us. This Privacy Policy explains how Revo collects, uses, stores, and protects your information when you use our website, mobile application, AI voice services, and related products (collectively, the "Services"). By using Revo, you agree to the practices described in this Privacy Policy.</p>
+          <p class="legal-hero-date">Effective Date: November 2026</p>
         </div>
       </header>
 
@@ -462,24 +479,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <nav class="legal-toc" aria-label="Table of contents">
               <h2>Table of Contents</h2>
               <ol>
-                <li><a href="#section-1">1. Information We Collect</a></li>
-                <li><a href="#section-2">2. How We Use Your Information</a></li>
-                <li><a href="#section-3">3. Artificial Intelligence Processing</a></li>
-                <li><a href="#section-4">4. Information Sharing</a></li>
-                <li><a href="#section-5">5. Data Retention</a></li>
-                <li><a href="#section-6">6. Data Security</a></li>
-                <li><a href="#section-7">7. Your Rights</a></li>
-                <li><a href="#section-8">8. California Privacy Rights</a></li>
-                <li><a href="#section-9">9. International Users</a></li>
-                <li><a href="#section-10">10. Children's Privacy</a></li>
-                <li><a href="#section-11">11. Third-Party Services</a></li>
-                <li><a href="#section-12">12. Changes to This Privacy Policy</a></li>
-                <li><a href="#section-13">13. Contact Us</a></li>
+                <li><a href="#information-we-collect">1. Information We Collect</a></li>
+                <li><a href="#how-we-use-your-information">2. How We Use Your Information</a></li>
+                <li><a href="#artificial-intelligence-processing">3. Artificial Intelligence Processing</a></li>
+                <li><a href="#information-sharing">4. Information Sharing</a></li>
+                <li><a href="#your-choices-about-advertising">5. Your Choices About Advertising</a></li>
+                <li><a href="#data-retention">6. Data Retention</a></li>
+                <li><a href="#data-security">7. Data Security</a></li>
+                <li><a href="#your-rights">8. Your Rights</a></li>
+                <li><a href="#california-privacy-rights">9. California Privacy Rights</a></li>
+                <li><a href="#international-users">10. International Users</a></li>
+                <li><a href="#childrens-privacy">11. Children's Privacy</a></li>
+                <li><a href="#third-party-services">12. Third-Party Services</a></li>
+                <li><a href="#changes-to-this-privacy-policy">13. Changes to This Privacy Policy</a></li>
+                <li><a href="#contact-us">14. Contact Us</a></li>
               </ol>
             </nav>
 
             <div class="legal-sections">
-          <section class="legal-section" id="section-1">
+          <section class="legal-section" id="information-we-collect">
             <h2>1. Information We Collect</h2>
             <p>We collect information to provide, improve, and secure our Services.</p>
             <p class="legal-subheading">Information You Provide</p>
@@ -490,75 +508,70 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <p>Device model, operating system, IP address, browser type, app version, crash reports, and usage analytics.</p>
             <p class="legal-subheading">Analytics</p>
             <p>Feature usage, session activity, performance metrics, error logs, and diagnostics.</p>
+            <p class="legal-subheading">Information From Advertising Partners</p>
+            <p>If you respond to one of our ads or submit a lead form on an advertising platform, such as Meta, we receive the information you submitted (for example, your name, email address, phone number and business information) and advertising identifiers, such as click or lead IDs, that tell us which ad you responded to.</p>
             <p class="legal-subheading">Cookies and Similar Technologies</p>
-            <p>When you visit our website, we and our service providers may use cookies, pixels, and similar tracking technologies to operate the site, remember preferences, and analyze traffic. You can control cookies through your browser settings, though disabling them may affect certain website features. We do not currently respond to browser “Do Not Track” signals.</p>
+            <p>When you visit our website or use our app, we and our service providers may use cookies, pixels, software development kits (SDKs) and similar tracking technologies to operate the site, remember preferences, measure the performance of our advertising, and analyze traffic. These include tags from advertising partners such as Meta, Google, TikTok and AppLovin, and analytics providers such as Google Analytics and Microsoft Clarity. You can control cookies through your browser settings, though disabling them may affect certain website features. We do not currently respond to browser "Do Not Track" signals. We honor Global Privacy Control (GPC) signals as a request to opt out of the sharing of personal information for targeted advertising.</p>
           </section>
-
-          <section class="legal-section" id="section-2">
+          <section class="legal-section" id="how-we-use-your-information">
             <h2>2. How We Use Your Information</h2>
-            <p>Provide AI receptionist services, answer and route calls, schedule appointments, generate summaries and transcripts, improve AI performance, provide support, detect fraud, enhance security, send service communications, and comply with legal obligations.</p>
+            <p>Provide AI receptionist services, answer and route calls, schedule appointments, generate summaries and transcripts, improve AI performance, provide support, detect fraud, enhance security, send service communications, measure and improve the effectiveness of our advertising, and comply with legal obligations.</p>
             <p>We may also use information in aggregated or de-identified form, which does not identify you or your callers, for research, reporting, and to develop new features.</p>
           </section>
-
-          <section class="legal-section" id="section-3">
+          <section class="legal-section" id="artificial-intelligence-processing">
             <h2>3. Artificial Intelligence Processing</h2>
             <p>Revo uses artificial intelligence to answer phone calls, understand caller intent, generate summaries and transcripts, schedule appointments, route conversations, and assist customer interactions. Automated responses may occasionally contain inaccuracies, and users remain responsible for reviewing important communications.</p>
-            <p>We may also use call interactions and related data, in de-identified or aggregated form, to develop, train, and improve our AI models and services. If you would prefer that your business’s data not be used for this purpose, contact us at privacy@revoapp.ai.</p>
+            <p>We may also use call interactions and related data, in de-identified or aggregated form, to develop, train, and improve our AI models and services. If you would prefer that your business's data not be used for this purpose, contact us at privacy@revoapp.ai.</p>
           </section>
-
-          <section class="legal-section" id="section-4">
+          <section class="legal-section" id="information-sharing">
             <h2>4. Information Sharing</h2>
-            <p>We do not sell personal information. We may share information with trusted providers including cloud hosting, AI infrastructure, CRM integrations, SMS providers, payment processors, analytics platforms, and customer support providers.</p>
+            <p>We do not sell personal information for money. We may share information with trusted providers including cloud hosting, AI infrastructure, CRM integrations, SMS providers, payment processors, analytics platforms, and customer support providers.</p>
             <p>These providers may only access information needed to perform their services and must protect it under confidentiality obligations. We may also disclose information when required by law or when necessary to protect Revo, our customers, or the public.</p>
+            <p><strong>Advertising and measurement partners.</strong> When you sign up for or use Revo after responding to one of our ads, we may share limited information with the advertising platform that showed you the ad, such as Meta, Google or TikTok, so we can measure our advertising and help the platform show our ads to businesses likely to benefit from Revo. This information is limited to your email address and phone number in hashed (encoded) form, advertising identifiers such as click or lead IDs, and the steps you complete with Revo, such as starting a trial, activating your line or making a payment, including the amount paid. We never share call recordings, transcripts, or information about the people who call your business. Some of this sharing may be considered "sharing" for targeted advertising under certain U.S. state laws. You can opt out at any time as described in "<a href="#your-choices-about-advertising">Your Choices About Advertising</a>" below.</p>
           </section>
-
-          <section class="legal-section" id="section-5">
-            <h2>5. Data Retention</h2>
+          <section class="legal-section" id="your-choices-about-advertising">
+            <h2>5. Your Choices About Advertising</h2>
+            <p>You can ask us not to share your information with advertising partners by using the "<a href="/privacy-choices">Your Privacy Choices</a>" link on our website, by emailing privacy@revoapp.ai, or by enabling Global Privacy Control in your browser. We will stop including your information in future advertising measurement. Where required by law, we use the advertising platforms' restricted or limited data use modes for residents of the states concerned.</p>
+          </section>
+          <section class="legal-section" id="data-retention">
+            <h2>6. Data Retention</h2>
             <p>We retain information only as long as necessary to provide our Services, comply with legal obligations, resolve disputes, and enforce our agreements. Businesses may request deletion of their account and associated data where permitted by law.</p>
           </section>
-
-          <section class="legal-section" id="section-6">
-            <h2>6. Data Security</h2>
+          <section class="legal-section" id="data-security">
+            <h2>7. Data Security</h2>
             <p>We use industry-standard safeguards including encryption in transit, secure cloud infrastructure, role-based access controls, authentication mechanisms, continuous monitoring, and regular security updates.</p>
           </section>
-
-          <section class="legal-section" id="section-7">
-            <h2>7. Your Rights</h2>
+          <section class="legal-section" id="your-rights">
+            <h2>8. Your Rights</h2>
             <p>You may have the right to access, correct, delete, restrict processing, object to processing, receive a copy of your data, and withdraw consent where applicable.</p>
             <p>To exercise these rights, contact us at privacy@revoapp.ai. We may need to verify your identity before responding to your request, and the rights available to you may vary depending on your location and applicable law.</p>
           </section>
-
-          <section class="legal-section" id="section-8">
-            <h2>8. California Privacy Rights</h2>
-            <p>California residents may have rights under the CCPA. Revo does not sell personal information. Depending on applicable law, this may include the right to know what personal information we collect, request deletion or correction of that information, and opt out of the sale or sharing of personal information, which Revo does not engage in. We will not discriminate against you for exercising these rights. Residents of other U.S. states may have similar rights under applicable state privacy laws. To submit a request, contact us at privacy@revoapp.ai.</p>
+          <section class="legal-section" id="california-privacy-rights">
+            <h2>9. California Privacy Rights</h2>
+            <p>California residents may have rights under the CCPA. Revo does not sell personal information for money. Depending on applicable law, this may include the right to know what personal information we collect, request deletion or correction of that information, and opt out of the sale or sharing of personal information. Revo may share limited, hashed information with advertising partners as described in Section 4; you can opt out of this sharing as described in "<a href="#your-choices-about-advertising">Your Choices About Advertising</a>". We will not discriminate against you for exercising these rights. Residents of other U.S. states may have similar rights under applicable state privacy laws. To submit a request, contact us at privacy@revoapp.ai.</p>
           </section>
-
-          <section class="legal-section" id="section-9">
-            <h2>9. International Users</h2>
+          <section class="legal-section" id="international-users">
+            <h2>10. International Users</h2>
             <p>Your information may be transferred to and processed in countries other than your own where permitted by law.</p>
             <p>Where such transfers occur, we take steps intended to ensure your information continues to receive an appropriate level of protection.</p>
           </section>
-
-          <section class="legal-section" id="section-10">
-            <h2>10. Children's Privacy</h2>
+          <section class="legal-section" id="childrens-privacy">
+            <h2>11. Children's Privacy</h2>
             <p>Revo is intended for business use and is not directed to children under 13.</p>
             <p>If we learn that we have inadvertently collected information from a child without appropriate consent, we will take steps to delete it.</p>
           </section>
-
-          <section class="legal-section" id="section-11">
-            <h2>11. Third-Party Services</h2>
+          <section class="legal-section" id="third-party-services">
+            <h2>12. Third-Party Services</h2>
             <p>Our Services may integrate with CRM systems, calendar providers, phone providers, payment providers, and messaging services. Their use is governed by their own privacy policies.</p>
             <p>We encourage you to review the privacy policies of these third-party providers, as Revo is not responsible for their practices.</p>
           </section>
-
-          <section class="legal-section" id="section-12">
-            <h2>12. Changes to This Privacy Policy</h2>
+          <section class="legal-section" id="changes-to-this-privacy-policy">
+            <h2>13. Changes to This Privacy Policy</h2>
             <p>We may update this Privacy Policy periodically. Material changes will update the Effective Date and may be communicated through our Services.</p>
             <p>We encourage you to review this Privacy Policy periodically. Your continued use of the Services after changes take effect constitutes acceptance of the revised policy.</p>
           </section>
-
-          <section class="legal-section" id="section-13">
-            <h2>13. Contact Us</h2>
+          <section class="legal-section" id="contact-us">
+            <h2>14. Contact Us</h2>
             <p>Revo AI</p>
             <p>Website: https://www.revoapp.ai</p>
             <p>Email: privacy@revoapp.ai</p>
@@ -689,6 +702,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>© 2026 Revo. All communication rights reserved</p>
         <div class="footer-legal">
           <a href="privacy-policy">Privacy policy</a>
+          <a href="privacy-choices">Your Privacy Choices</a>
           <a href="terms-of-service">Terms of service</a>
           <a href="#cookies">Cookie settings</a>
         </div>

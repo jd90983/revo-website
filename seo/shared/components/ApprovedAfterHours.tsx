@@ -164,6 +164,7 @@ const approvedHtml=`<header class="nav">
 <img class="logo" src="/images/revo-call-design/revo-logo.webp" alt="Revo">
 <span>AI phone answering for home service businesses.</span>
 <a href="/privacy-policy">Privacy</a>
+<a href="/privacy-choices">Your Privacy Choices</a>
 <a href="/terms-of-service">Terms</a>
 <button type="button" data-cookie-settings>Cookie settings</button>
 </div>

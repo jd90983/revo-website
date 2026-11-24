@@ -2542,6 +2542,10 @@
       "destination": "/privacy-policy.html"
     },
     {
+      "source": "/privacy-choices",
+      "destination": "/privacy-choices.html"
+    },
+    {
       "source": "/industry_construction",
       "destination": "/industry_construction.html"
     },

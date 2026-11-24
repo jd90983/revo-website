@@ -3,6 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Privacy opt-out / GPC: must stay the first script in <head> -->
+<script>
+(function () {
+  var optout = false;
+  try { optout = navigator.globalPrivacyControl === true; } catch (e) {}
+  try { if (localStorage.getItem('revo_ad_optout') === '1') optout = true; } catch (e) {}
+  if (!optout && /(?:^|;\s*)revo_ad_optout=1/.test(document.cookie)) optout = true;
+  window.revoAdOptOut = optout;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  if (optout) {
+    gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied' });
+  }
+  dataLayer.push({ revo_ad_optout: optout ? 'yes' : 'no' });
+})();
+// Opted out: a no-op fbq keeps page code working and stops any later Meta snippet from loading.
+if (window.revoAdOptOut && !window.fbq) { window.fbq = window._fbq = function () {}; }
+</script>
 <!-- Google Tag Manager, Meta Pixel: events queue at once; the tag scripts
      load on the first tap, scroll or key press, or 3.5 s after the page loads,
      so they do not block the first paint on mobile. -->
@@ -19,7 +37,7 @@
     if (loaded) return;
     loaded = true;
     add('https://www.googletagmanager.com/gtm.js?id=GTM-PFJBFLVF');
-    add('https://connect.facebook.net/en_US/fbevents.js');
+    if (!w.revoAdOptOut) add('https://connect.facebook.net/en_US/fbevents.js');
   }
   ['pointerdown', 'touchstart', 'scroll', 'keydown'].forEach(function (e) {
     w.addEventListener(e, loadTags, { once: true, passive: true });
@@ -59,15 +77,14 @@
 
 <!-- Meta Pixel Code (stub; fbevents.js is loaded by revoLoadTags above) -->
 <script>
+if (!window.revoAdOptOut) {
 !function(f){if(f.fbq)return;var n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
 if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}(window);
 fbq('init', '2435811520564771');
 fbq('track', 'PageView');
+}
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2435811520564771&ev=PageView&noscript=1"
-/></noscript>
 <!-- End Meta Pixel Code -->
 
 <!-- TikTok Pixel (definition only; fires after ad consent via installRevoTikTokPixel) -->
@@ -76,7 +93,7 @@ src="https://www.facebook.com/tr?id=2435811520564771&ev=PageView&noscript=1"
   var installed = false;
 
   window.installRevoTikTokPixel = function () {
-    if (installed) return;
+    if (installed || window.revoAdOptOut) return;
     installed = true;
 
     window.TiktokAnalyticsObject = 'ttq';
@@ -694,6 +711,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p>© 2026 Revo. All communication rights reserved</p>
         <div class="footer-legal">
           <a href="privacy-policy">Privacy policy</a>
+          <a href="privacy-choices">Your Privacy Choices</a>
           <a href="terms-of-service">Terms of service</a>
           <a href="#cookies">Cookie settings</a>
         </div>
