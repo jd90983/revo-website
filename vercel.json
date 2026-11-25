@@ -2546,6 +2546,10 @@
       "destination": "/privacy-choices.html"
     },
     {
+      "source": "/home-draft",
+      "destination": "/home-draft.html"
+    },
+    {
       "source": "/industry_construction",
       "destination": "/industry_construction.html"
     },

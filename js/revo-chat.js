@@ -94,6 +94,19 @@
 
   var $ = function (s) { return root.querySelector(s); };
   var launch = $('.launch'), panel = $('.panel'), log = $('.log'), form = $('.form'), input = $('.in'), send = $('.send');
+  // Optional v3 look ("Questions? Ask Revo" pill from the home v3 design), opted in with <html data-revo-chat-theme="v3">.
+  if (document.documentElement.getAttribute('data-revo-chat-theme') === 'v3') {
+    var v3 = document.createElement('style');
+    v3.textContent = '.launch{gap:10px;padding:8px 20px 8px 8px;background:linear-gradient(90deg,#3ba1ff,#0f59d6);border:1px solid rgba(255,255,255,.25);' +
+      'box-shadow:0 10px 12px rgba(10,51,153,.35),inset 0 1px 1px rgba(255,255,255,.25);font-family:Inter,system-ui,sans-serif;letter-spacing:-.01em;transition:padding .25s ease}' +
+      '.launch:hover{background:linear-gradient(90deg,#3ba1ff,#0f59d6);filter:brightness(1.05)}.launch svg{display:none}.launch img{width:36px;height:36px;flex:none}' +
+      '.launch span{white-space:nowrap;overflow:hidden;max-width:220px;transition:max-width .25s ease,opacity .2s ease}' +
+      '.launch.mini{padding:8px}.launch.mini span{max-width:0;opacity:0}';
+    root.appendChild(v3);
+    var ic = document.createElement('img'); ic.src = '/images/home-v3/ask-icon.svg'; ic.alt = '';
+    launch.insertBefore(ic, launch.firstChild);
+    if (window.matchMedia && window.matchMedia('(max-width: 640px)').matches) setTimeout(function () { launch.classList.add('mini'); }, 3000);
+  }
   var busy = false, greeted = false;
 
   function esc(t) { return String(t).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
