@@ -2650,6 +2650,10 @@
       "destination": "/terms-of-service.html"
     },
     {
+      "source": "/referral-terms",
+      "destination": "/referral-terms.html"
+    },
+    {
       "source": "/industry_plumbing",
       "destination": "/industry_plumbing.html"
     },
