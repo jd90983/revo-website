@@ -1,0 +1,45 @@
+# Temporary helper for the home v3 draft: downloads the Figma export URLs listed in
+# .figma-assets/manifest.json into images/home-v3/, converts large PNG photos to WebP and
+# commits them to the same branch. Removed before merge.
+name: fetch-figma-assets
+on:
+  push:
+    branches: [feat/home-draft-v3]
+    paths: ['.figma-assets/manifest.json']
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download
+        run: |
+          set -e
+          mkdir -p images/home-v3
+          python3 - <<'PY'
+          import json, urllib.request, os
+          m = json.load(open('.figma-assets/manifest.json'))
+          bad = []
+          for name, url in m.items():
+              try:
+                  with urllib.request.urlopen(url, timeout=60) as r:
+                      open('images/home-v3/' + name, 'wb').write(r.read())
+              except Exception as e:
+                  bad.append((name, str(e)))
+          print('failed:', bad)
+          PY
+          sudo apt-get install -y -qq webp >/dev/null
+          cd images/home-v3
+          for f in *.png; do
+            s=$(stat -c%s "$f")
+            if [ "$s" -gt 150000 ]; then cwebp -quiet -q 82 "$f" -o "${f%.png}.webp" && rm "$f"; fi
+          done
+          ls -la
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add images/home-v3
+          git commit -m "home v3 draft: Figma assets" || echo "nothing to commit"
+          git push
