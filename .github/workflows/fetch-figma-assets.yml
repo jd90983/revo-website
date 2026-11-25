@@ -17,18 +17,12 @@ jobs:
         run: |
           set -e
           mkdir -p images/home-v3
-          python3 - <<'PY'
-          import json, urllib.request, os
-          m = json.load(open('.figma-assets/manifest.json'))
-          bad = []
-          for name, url in m.items():
-              try:
-                  with urllib.request.urlopen(url, timeout=60) as r:
-                      open('images/home-v3/' + name, 'wb').write(r.read())
-              except Exception as e:
-                  bad.append((name, str(e)))
-          print('failed:', bad)
-          PY
+          : > images/home-v3/_fetch-log.txt
+          python3 -c "import json;[print(k, v) for k, v in json.load(open('.figma-assets/manifest.json')).items()]" | while read name url; do
+            code=$(curl -sS -L -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/124 Safari/537.36" -o "images/home-v3/$name" -w "%{http_code} %{size_download} %{content_type}" "$url" || echo "curl-failed")
+            echo "$name $code" >> images/home-v3/_fetch-log.txt
+          done
+          find images/home-v3 -type f -size 0 -delete
           sudo apt-get install -y -qq webp >/dev/null
           cd images/home-v3
           for f in *.png; do
