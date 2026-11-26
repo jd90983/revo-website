@@ -1534,5 +1534,20 @@
       "added ai-voice-agent-for-customer-support as draft",
       "approved ai-voice-agent-for-customer-support"
     ]
+  },
+  {
+    "batchId": "2026-11-26-auto-2-pages",
+    "batchHash": "sha256:8b8866aa134f2e9cfb53dd3bfae60929b716003917ceb6cea827fe97302c0faf",
+    "source": {
+      "kind": "owner-approved-exact-copy",
+      "reference": "Owner-approved exact public copy; evidence/2026-11-26/2026-11-26-auto-2-pages-approved-public-copy.txt SHA256 95d5a8cc959e20cc54690924bc2036ee14acc0ee50822e0b98b4693b35c14d18; keywords approved by Jorge Perez (owner) in Slack (message n8n-exec-149023-keywords@2026-11-26T18:32:35.858Z) and copy approved in Slack (message n8n-exec-149023-copy@2026-11-26T18:37:24.179Z) on November 26, 2026; implementation by the Revo SEO automation"
+    },
+    "appliedAt": "2026-11-26",
+    "changes": [
+      "updated ai-phone-assistant; back to draft until re-approved",
+      "approved ai-phone-assistant",
+      "updated ai-voice-agent-platforms; back to draft until re-approved",
+      "approved ai-voice-agent-platforms"
+    ]
   }
 ]
