@@ -1,0 +1,38 @@
+{
+  "batchId": "2026-11-26-auto-2-pages",
+  "date": "2026-11-26",
+  "approver": "Jorge Perez (owner)",
+  "slack": {
+    "keywordsTs": "n8n-exec-149023-keywords@2026-11-26T18:32:35.858Z",
+    "copyTs": "n8n-exec-149023-copy@2026-11-26T18:37:24.179Z"
+  },
+  "comments": {
+    "keywords": "",
+    "copy": ""
+  },
+  "pages": [
+    {
+      "op": "update",
+      "slug": "ai-phone-assistant",
+      "keyword": "ai phone call assistant",
+      "title": "How an AI Phone Call Assistant Supports Home Service Teams",
+      "description": "Discover how an AI phone call assistant can answer calls, book appointments, and support your home service business with reliable call handling.",
+      "navigationLabel": "Benefits",
+      "eyebrow": "Smarter Call Handling",
+      "firstParagraph": "An AI phone call assistant is built to answer every call your home service business receives, using your script and rules. It can book appointments, send follow-up texts, and log call details, so you never miss a lead. This guide shows how an AI phone call assistant fits into daily operations and supports your team.",
+      "approvedSha256": "6febd261960272f64f18e5bbe4611d54a67574a73724729173c376e8bbe4fb76"
+    },
+    {
+      "op": "update",
+      "slug": "ai-voice-agent-platforms",
+      "keyword": "voice ai agent platform",
+      "title": "How a Voice AI Agent Platform Helps Home Service Businesses",
+      "description": "Discover how a voice AI agent platform ensures every call to your home service business is answered, appointments are booked, and your team stays updated.",
+      "navigationLabel": "Key Features",
+      "eyebrow": "For Home Service Owners",
+      "firstParagraph": "A voice AI agent platform is built for home service businesses that want every call answered around the clock. These platforms use your script, handle appointment bookings, and keep your team in the loop. With a voice AI agent platform, you never miss a potential customer or leave callers waiting for help.",
+      "approvedSha256": "9d1596cd02d6ac5341ad71e3fd84b46c7bb706484f6e0a82da8e773e77bdc0fb"
+    }
+  ],
+  "copySha256": "95d5a8cc959e20cc54690924bc2036ee14acc0ee50822e0b98b4693b35c14d18"
+}

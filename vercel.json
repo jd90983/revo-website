@@ -2,16 +2,6 @@
   "outputDirectory": ".seo-dist",
   "redirects": [
     {
-      "source": "/ai-answering-service/bilingual-answering",
-      "destination": "/ai-answering-service",
-      "permanent": true
-    },
-    {
-      "source": "/ai-answering-service/spanish-answering-service",
-      "destination": "/ai-answering-service",
-      "permanent": true
-    },
-    {
       "source": "/ai-answering-service/after-hours.html",
       "destination": "https://www.revoapp.ai/ai-answering-service/after-hours",
       "permanent": true
@@ -2064,6 +2054,16 @@
     {
       "source": "/ai-answering-service.html",
       "destination": "https://www.revoapp.ai/ai-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/bilingual-answering",
+      "destination": "/ai-answering-service",
+      "permanent": true
+    },
+    {
+      "source": "/ai-answering-service/spanish-answering-service",
+      "destination": "/ai-answering-service",
       "permanent": true
     },
     {
